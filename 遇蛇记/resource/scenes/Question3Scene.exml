@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question3SceneSkin" width="2296" height="1706" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="163b4cfb344" ></w:Config>
+	<e:Image id="bg" left="0" top="0" right="0" bottom="0" source="question3_scene_bg_png"/>
+	<e:CheckBox id="topAnswerCheckbox" label="" x="1635" y="255" width="75" height="75" enabled="false"/>
+	<e:CheckBox id="bottomAnswerCheckbox" label="" x="1635" y="540" width="75" height="75" enabled="false"/>
+	<ns1:ImageButton id="topSpeakerButton" width="168" height="168" x="1770" y="190" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
+	<ns1:ImageButton id="bottomSpeakerButton" width="168" height="168" x="1770" y="480" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
+	<ns1:ImageButton id="nextSceneButton" width="204" height="204" x="1850" y="1095" source="next_button_normal_png" enabled="false"/>
+	<ns1:ImageButton id="exitButton" width="178" height="178" source="exit_button_normal_png" anchorOffsetX="89" anchorOffsetY="89" x="2167" y="1557"/>
+</e:Skin>

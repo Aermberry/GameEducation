@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSceneSkin" width="2296" height="1706" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="163a0afaec0" ></w:Config>
+	<e:Image id="bg" left="0" top="0" right="0" bottom="0" source="start_scene_bg_png"/>
+	<e:Image id="startButton" width="223" height="223" y="1025" horizontalCenter="0" source="start_button_normal_png" />
+	<ns1:ImageButton id="exitButton" width="178" height="178" source="exit_button_normal_png" anchorOffsetX="89" anchorOffsetY="89" scaleX="1" scaleY="1" x="2167" y="1557"/>
+</e:Skin>
