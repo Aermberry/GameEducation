@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,ask_fangfang_to_stop_crying_roughly_mp3,dad_feel_strange_and_would_not_be_certain_mp3,dad_found_snake_is_fake_mp3,dad_heard_fangfang_crying_and_come_to_see_why_mp3,dad_is_comforting_fangfang_and_would_not_be_rough_mp3,dont_afraid_dad_is_here_mp3,encounter_snake_mp3,fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3,fangfang_found_the_snake_is_fake_and_laugh_mp3,fangfang_see_dad_is_nearby_and_she_is_not_so_afraid_mp3,fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3,kids_there_is_a_story_below_mp3,the_snake_is_lying_motionless_with_price_on_its_neck_mp3,try_again_mp3,wa_a_snake_mp3,wa_it_is_a_fake_snake_and_almost_die_of_fear_just_then_mp3,what_the_fuck_who_place_a_fake_snake_herer_mp3,ye_you_completed_this_execcise_now_mp3,yi_a_snake_here_mp3,yi_why_there_is_a_price_on_its_neck_mp3,you_are_right_and_go_to_next_page_mp3,app_name_png,exit_button_normal_png,next_button_normal_png,speeker_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,question1_scene_bg_png,question2_scene_bg_png,question3_scene_bg_png,question4_scene_bg_png,start_scene_bg_png,complete_scene_bg_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,ask_fangfang_to_stop_crying_roughly_mp3,dad_feel_strange_and_would_not_be_certain_mp3,dad_found_snake_is_fake_mp3,dad_heard_fangfang_crying_and_come_to_see_why_mp3,dad_is_comforting_fangfang_and_would_not_be_rough_mp3,dont_afraid_dad_is_here_mp3,encounter_snake_mp3,fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3,fangfang_found_the_snake_is_fake_and_laugh_mp3,fangfang_see_dad_is_nearby_and_she_is_not_so_afraid_mp3,fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3,kids_there_is_a_story_below_mp3,the_snake_is_lying_motionless_with_price_on_its_neck_mp3,try_again_mp3,wa_a_snake_mp3,wa_it_is_a_fake_snake_and_almost_die_of_fear_just_then_mp3,what_the_fuck_who_place_a_fake_snake_herer_mp3,ye_you_completed_this_execcise_now_mp3,yi_a_snake_here_mp3,yi_why_there_is_a_price_on_its_neck_mp3,you_are_right_and_go_to_next_page_mp3,app_name_png,exit_button_normal_png,next_button_normal_png,speeker_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,question1_scene_bg_png,question2_scene_bg_png,question3_scene_bg_png,question4_scene_bg_png,start_scene_bg_png,complete_scene_bg_png,wlts_logo_jpg,exit_button_tip_png,next_button_tip_png,next_button_tip2_png",
 			"name": "preload"
 		}
 	],
@@ -295,6 +295,26 @@
 			"url": "images/complete_scene_bg.png",
 			"type": "image",
 			"name": "complete_scene_bg_png"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "images/exit_button_tip.png",
+			"type": "image",
+			"name": "exit_button_tip_png"
+		},
+		{
+			"url": "images/next_button_tip.png",
+			"type": "image",
+			"name": "next_button_tip_png"
+		},
+		{
+			"name": "next_button_tip2_png",
+			"type": "image",
+			"url": "images/next_button_tip.png"
 		}
 	]
 }

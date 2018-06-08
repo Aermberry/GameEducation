@@ -36,13 +36,13 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/widgets/ImageButton.exml",
 		"resource/scenes/CompleteScene.exml",
 		"resource/scenes/Question1Scene.exml",
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3Scene.exml",
 		"resource/scenes/Question4Scene.exml",
-		"resource/scenes/StartScene.exml"
+		"resource/scenes/StartScene.exml",
+		"resource/widgets/ImageButton.exml"
 	],
 	"path": "resource/default.thm.json"
 }

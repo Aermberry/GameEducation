@@ -6,7 +6,7 @@
 	<e:CheckBox id="bottomAnswerCheckbox" label="" x="1635" y="540" width="75" height="75" enabled="false"/>
 	<ns1:ImageButton id="topSpeakerButton" width="168" height="168" x="1770" y="190" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
 	<ns1:ImageButton id="bottomSpeakerButton" width="168" height="168" x="1770" y="480" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
-	<ns1:ImageButton id="nextSceneButton" width="204" height="204" x="1850" y="1095" source="next_button_normal_png" enabled="false"/>
-	<ns1:ImageButton id="exitButton" width="178" height="178" source="exit_button_normal_png" anchorOffsetX="89" anchorOffsetY="89" x="2167" y="1557"/>
+	<ns1:ImageButton id="nextSceneButton" width="204" height="204" x="1850" y="1095" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
+	<ns1:ImageButton id="exitButton" width="178" height="178" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="89" anchorOffsetY="89" x="2167" y="1557"/>
 	<e:Image id="appNameImage" width="2080" height="1260" source="app_name_png" x="105" y="74"/>
 </e:Skin>

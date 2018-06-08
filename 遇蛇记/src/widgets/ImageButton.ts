@@ -1,6 +1,9 @@
 class ImageButton extends eui.Button implements  eui.UIComponent {
 	private _source: string
+	private _tipSource: string
 	private _scaleWhenMouseOver = 1.1 //当鼠标悬停在DisplayObject上时，本DisplayObject的scale XY值
+	private mainImage: eui.Image;
+	private tipImage: eui.Image;
 
 	public constructor() {
 		super();
@@ -8,9 +11,29 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 		this.height = 100
 	}
 
+	public get source(): string
+	{
+		return this._source;
+	}
+
 	public set source(value: string)
 	{
 		this._source = value
+	}
+
+	public get tipSource(): string
+	{
+		return this._tipSource;
+	}
+
+	public set tipSource(value: string)
+	{
+		this._tipSource = value;
+	}
+
+	public get scaleWhenMouseOver(): number
+	{
+		return this._scaleWhenMouseOver;
 	}
 
 	public set scaleWhenMouseOver(value: number)
@@ -27,7 +50,9 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		(this.getChildByName('image') as eui.Image).source = this._source
+		this.mainImage.source = this.source
+		this.tipImage.source = this.tipSource
+		this.tipImage.y = this.mainImage.y + this.mainImage.height;
 		this.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver, this)
 		this.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut, this)
 		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this)
@@ -36,12 +61,14 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 
 	private onRollOver(e: mouse.MouseEvent): void
 	{
-		this.scaleX = this.scaleY = this._scaleWhenMouseOver
+		this.scaleX = this.scaleY = this.scaleWhenMouseOver;
+		this.tipImage.visible = true;
 	}
 
 	private onRollOut(e: mouse.MouseEvent): void
 	{
 		this.scaleX = this.scaleY = 1.0
+		this.tipImage.visible = false;
 	}
 
 	protected onTouchBegin(e: egret.TouchEvent): void
@@ -51,7 +78,7 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 
 	private onTouchEnd(e: egret.TouchEvent): void
 	{
-		this.scaleX = this.scaleY = this._scaleWhenMouseOver
+		this.scaleX = this.scaleY = this.scaleWhenMouseOver
 	}
 	
 }
