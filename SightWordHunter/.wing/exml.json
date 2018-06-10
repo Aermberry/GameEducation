@@ -3,5 +3,15 @@
         "path": "scenes/StartScene.ts",
         "class": "StartScene",
         "parentPath": ""
+    },
+    "163e84756da": {
+        "path": "scenes/SelectDifficultyScene.ts",
+        "class": "SelectDifficultyScene",
+        "parentPath": ""
+    },
+    "163ea46415e": {
+        "path": "scenes/ReadyToPlayScene.ts",
+        "class": "ReadyToPlayScene",
+        "parentPath": ""
     }
 }

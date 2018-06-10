@@ -1,0 +1,190 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,start_scene_bg_svg,movie_clip_json,movie_clip_png,rainbow_svg,sight_word_park_svg,sight_word_hunter_mouse_over_png,sight_word_hunter_normal_png,select_difficulty_scene_bg_svg,back_svg,snapshot_svg,start_scene_bgm_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/start_scene_bg.svg",
+			"type": "image",
+			"name": "start_scene_bg_svg"
+		},
+		{
+			"url": "textures/movie_clip.json",
+			"type": "json",
+			"name": "movie_clip_json"
+		},
+		{
+			"url": "textures/movie_clip.png",
+			"type": "image",
+			"name": "movie_clip_png"
+		},
+		{
+			"url": "textures/rainbow.svg",
+			"type": "image",
+			"name": "rainbow_svg"
+		},
+		{
+			"url": "textures/sight_word_park.svg",
+			"type": "image",
+			"name": "sight_word_park_svg"
+		},
+		{
+			"url": "textures/sight_word_hunter_mouse_over.png",
+			"type": "image",
+			"name": "sight_word_hunter_mouse_over_png"
+		},
+		{
+			"url": "textures/sight_word_hunter_normal.png",
+			"type": "image",
+			"name": "sight_word_hunter_normal_png"
+		},
+		{
+			"url": "textures/select_difficulty_scene_bg.svg",
+			"type": "image",
+			"name": "select_difficulty_scene_bg_svg"
+		},
+		{
+			"url": "textures/back.svg",
+			"type": "image",
+			"name": "back_svg"
+		},
+		{
+			"url": "textures/snapshot.svg",
+			"type": "image",
+			"name": "snapshot_svg"
+		},
+		{
+			"url": "fonts/Kristen-ITC.ttf",
+			"type": "bin",
+			"name": "Kristen-ITC_ttf"
+		},
+		{
+			"name": "start_scene_bgm_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_bgm.mp3"
+		}
+	]
+}

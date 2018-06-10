@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ReadyToPlaySceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:egret="egret.*" >
+	<w:Config id="163ea46415e" ></w:Config>
+	<e:Image source="select_difficulty_scene_bg_svg" horizontalCenter="31" verticalCenter="0" width="2040" height="1360"/>
+	<e:Image id="backImage" source="back_svg" x="1730" y="40" width="140" height="228" />
+	<e:Label text="Sight Word Hunter" y="150" fontFamily="Kristen-ITC" size="60" horizontalCenter="0"/>
+	
+		<e:Label text="1. " x="920" y="320" fontFamily="Kristen-ITC" size="40" />
+		<e:Label text="Listen to the word. " x="1000" y="320" fontFamily="Kristen-ITC" size="44" />
+		<e:Label text="2. " x="920" y="390" fontFamily="Kristen-ITC" size="40" />
+		<e:Label text="Click the picture with the correct word." x="1000" y="390" fontFamily="Kristen-ITC" size="44" />
+		<e:Label text="3. " x="920" y="490" fontFamily="Kristen-ITC" size="40" />
+		<e:Label text="Press          to listen to the word \nagain." x="1000" y="490" fontFamily="Kristen-ITC" size="44" />
+		<e:Image source="speaker_svg" x="1130" y="465" width="100" height="100" />
+		<e:Label text="4. " x="920" y="615" fontFamily="Kristen-ITC" size="40" />
+		<e:Label text="Answer as many questions as \npossible in 2 minutes." x="1000" y="615" fontFamily="Kristen-ITC" size="44" />
+	
+	<e:Image id="goImage" source="stars_joined_svg" horizontalCenter="0" y="845" width="255" height="200" anchorOffsetX="127" anchorOffsetY="100" />
+	<e:Label text="Go" horizontalCenter="0" y="830" fontFamily="Kristen-ITC" size="56" textColor="0x000000" anchorOffsetX="58" anchorOffsetY="20"/>
+	
+		<e:Image source="ball_svg" x="10" width="295" height="370"  y="985"/>
+		<e:Image source="ferris_wheel_svg" x="320" width="295" height="370"  y="970"/>
+		<e:Image source="castle_svg" x="645" width="295" height="390"  y="950"/>
+		<e:Image source="bird_svg" x="980" width="295" height="370"  y="975"/>
+		<e:Image source="balloon_svg" x="1320" width="295" height="380"  y="960"/>
+		<e:Image source="cake_svg" x="1620" width="295" height="370"  y="980"/>
+	
+</e:Skin>

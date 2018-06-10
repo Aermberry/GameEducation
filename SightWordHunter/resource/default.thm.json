@@ -13,7 +13,9 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"StartScene": "resource/scenes/StartScene.exml"
+		"StartScene": "resource/scenes/StartScene.exml",
+		"SelectDifficultyScene": "resource/scenes/SelectDifficultyScene.exml",
+		"ReadyToPlayScene": "resource/scenes/ReadyToPlayScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -30,6 +32,8 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/ReadyToPlayScene.exml",
+		"resource/scenes/SelectDifficultyScene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

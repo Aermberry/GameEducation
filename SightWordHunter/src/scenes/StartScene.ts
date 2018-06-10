@@ -1,8 +1,9 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
-	private rainbow: eui.Image;
-	private sightWordPark: eui.Image;
-	private sightWordHunter: eui.Image;
+	private rainbowImage: eui.Image;
+	private sightWordParkImage: eui.Image;
+	private sightWordHunterImage: eui.Image;
 	private mcFactory: egret.MovieClipDataFactory;
+	private bgmSoundChannel: egret.SoundChannel;
 
 	public constructor() {
 		super();
@@ -17,14 +18,16 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		this.sightWordHunter.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onSightWordHunterMouseOver, this);
-		this.sightWordHunter.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onSightWordHunterMouseOut, this);
-		this.sightWordHunter.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSightWordHunterClick, this);
+		this.sightWordHunterImage.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onSightWordHunterMouseOver, this);
+		this.sightWordHunterImage.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onSightWordHunterMouseOut, this);
+		this.sightWordHunterImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSightWordHunterClick, this);
+			
+		this.bgmSoundChannel = (RES.getRes('start_scene_bgm_mp3') as egret.Sound).play(0, -1);
 
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('movie_clip_json'), RES.getRes("movie_clip_png") );
-		egret.Tween.get(this.rainbow)
+		egret.Tween.get(this.rainbowImage)
 			.to({x: 0}, 500)
-			.call(() => this.sightWordPark.visible = true, this)
+			.call(() => this.sightWordParkImage.visible = true, this)
 			.wait(500)
 			.call(this.showChooseAGameToPlay, this);
 	}
@@ -40,16 +43,17 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	
 	private onSightWordHunterMouseOver(e: mouse.MouseEvent): void
 	{
-		this.sightWordHunter.source = "sight_word_hunter_mouse_over_png";
+		this.sightWordHunterImage.source = "sight_word_hunter_mouse_over_png";
 	}
 
 	private onSightWordHunterMouseOut(e: mouse.MouseEvent): void
 	{
-		this.sightWordHunter.source = "sight_word_hunter_normal_png";
+		this.sightWordHunterImage.source = "sight_word_hunter_normal_png";
 	}
 
 	private onSightWordHunterClick(e: egret.TouchEvent): void
 	{
-		
+		this.bgmSoundChannel.stop();
+		Main.instance.gotoScene(new SelectDifficultyScene());
 	}
 }
