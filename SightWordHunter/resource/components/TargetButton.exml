@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="TargetButtonSkin" states="up,down,disabled,selected,hitting" minHeight="50" minWidth="100" currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Label id="labelDisplay"/>
+    <e:Image id="hitImage" />
+    <e:Image id="sunshineImage"  />
+
+	<w:Config id="163ec7848e1" ></w:Config>
+</e:Skin>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayingSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="163eaae5ac4" ></w:Config>
+	<e:Image source="playing_scene_bg_wood_svg" horizontalCenter="31" verticalCenter="0" width="2040" height="1360"/>
+
+	<ns1:Cannon id="cannon" horizontalCenter="0" bottom="-150" currentState="right" />
+	<e:Image source="playing_scene_bg_red_silk_svg" horizontalCenter="0" width="4544" height="1723" y="-249"/>
+	<e:Image id="speakerImage" source="speaker_normal_svg" x="1575" y="90" width="285" height="285" />
+	<e:Image id="backImage" source="back_svg" x="1748" y="1050" width="140" height="228" />
+	<e:Image source="tube_empty_svg" x="140" y="300" width="110" height="685" />
+	<e:Image id="timeLeftInRoundImage" source="green_column_svg" x="154" width="80" height="658" bottom="308"/>
+	<e:Image source="sight_word_hunter_small_svg" x="25" y="130" width="380" height="268" />
+
+	<ns1:TargetButton skinName="BirdTarget" x="607" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="0" cannonballExitY="640" leftOrRight="left" />
+	<ns1:TargetButton skinName="BottleTarget" x="927" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="850" cannonballExitY="1280" leftOrRight="center" />
+	<ns1:TargetButton skinName="CakeTarget" x="1344" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="1920" cannonballExitY="640" leftOrRight="right" />
+
+	<ns1:TargetButton skinName="BalloonTarget" x="657" bottom="465" width="270" height="325" anchorOffsetX="135" cannonballExitX="0" cannonballExitY="840" leftOrRight="left" />
+	<ns1:TargetButton skinName="BallTarget" x="981" bottom="465" width="270" height="325" anchorOffsetX="135" cannonballExitX="1050" cannonballExitY="1280" leftOrRight="center" />
+	<ns1:TargetButton skinName="CastleTarget" x="1297" bottom="465" width="270" height="325" anchorOffsetX="135" cannonballExitX="1920" cannonballExitY="840" leftOrRight="right" />
+
+	<e:Label fontFamily="Kristen-ITC" size="60" textColor="#000000" text="Time Left" x="1520" y="400" />
+	<e:Label id="minutesLabel" fontFamily="Kristen-ITC" size="48" textColor="#000000" text="3" x="1590" y="500" />
+	<e:Label fontFamily="Kristen-ITC" size="44" textColor="#000000" text=":" x="1660" y="500" />
+	<e:Label id="secondsLabel" fontFamily="Kristen-ITC" size="48" textColor="#000000" text="00" x="1725" y="500" />
+
+	<e:Label id="hurryLabel" fontFamily="Kristen-ITC" size="200" textColor="#000" text="Hurry!" x="1240" y="850" visible="false" />
+	<e:Label id="tipLabel" fontFamily="Kristen-ITC" size="100" textColor="#000" text="Try Again!" bottom="235" horizontalCenter="0" visible="false" />
+</e:Skin>

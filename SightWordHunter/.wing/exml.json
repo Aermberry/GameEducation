@@ -13,5 +13,30 @@
         "path": "scenes/ReadyToPlayScene.ts",
         "class": "ReadyToPlayScene",
         "parentPath": ""
+    },
+    "163eaae5ac4": {
+        "path": "scenes/PlayingScene.ts",
+        "class": "PlayingScene",
+        "parentPath": ""
+    },
+    "163ec751664": {
+        "path": "components/Target.ts",
+        "class": "Target",
+        "parentPath": ""
+    },
+    "163ec7848e1": {
+        "path": "components/TargetButton.ts",
+        "class": "TargetButton",
+        "parentPath": "resource/eui_skins/ButtonSkin.exml"
+    },
+    "163ecd0210b": {
+        "path": "components/Target.ts",
+        "class": "Target",
+        "parentPath": "resource/eui_skins/ToggleSwitchSkin.exml"
+    },
+    "163f119cb20": {
+        "path": "components/Cannon.ts",
+        "class": "Cannon",
+        "parentPath": ""
     }
 }

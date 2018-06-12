@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,start_scene_bg_svg,movie_clip_json,movie_clip_png,rainbow_svg,sight_word_park_svg,sight_word_hunter_mouse_over_png,sight_word_hunter_normal_png,select_difficulty_scene_bg_svg,back_svg,snapshot_svg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,stars_joined_svg,stars_separated_svg,game_demo_json,game_demo_png,speaker_svg,ball_svg,ferris_wheel_svg,castle_svg,bird_svg,balloon_svg,cake_svg",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,start_scene_bg_svg,movie_clip_json,movie_clip_png,rainbow_svg,sight_word_park_svg,sight_word_hunter_mouse_over_png,sight_word_hunter_normal_png,select_difficulty_scene_bg_svg,back_svg,snapshot_svg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,stars_joined_svg,stars_separated_svg,game_demo_json,game_demo_png,speaker_svg,ball_svg,ferris_wheel_svg,castle_svg,bird_svg,balloon_svg,cake_svg,playing_scene_bg_wood_svg,playing_scene_bg_red_silk_svg,ferris_wheel_normal_svg,ferris_wheel_selected_svg,castle_normal_svg,castle_selected_svg,balloon_normal_svg,balloon_selected_svg,pig_normal_svg,pig_selected_svg,ball_normal_svg,ball_selected_svg,cake_normal_svg,cake_selected_svg,bird_normal_svg,bird_selected_svg,cow_normal_svg,cow_selected_svg,horse_normal_svg,horse_selected_svg,smiling_yellow_head_svg,arrow_right_svg,speaker_normal_svg,speaker_selected_svg,tube_empty_svg,green_column_svg,sight_word_hunter_small_svg,bottle_normal_png,bottle_selected_png,cannon_up_svg,cannon_up_left_svg,cannon_up_right_svg,sunshine_svg,cannonball_svg,white_mp3,with_mp3,work_mp3,sound_effect_kacha_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_ling_mp3,sound_effect_win_mp3,stop_mp3",
 			"name": "preload"
 		}
 	],
@@ -245,6 +245,221 @@
 			"name": "cake_svg",
 			"type": "image",
 			"url": "textures/cake.svg"
+		},
+		{
+			"name": "playing_scene_bg_wood_svg",
+			"type": "image",
+			"url": "textures/playing_scene_bg_wood.svg"
+		},
+		{
+			"name": "playing_scene_bg_red_silk_svg",
+			"type": "image",
+			"url": "textures/playing_scene_bg_red_silk.svg"
+		},
+		{
+			"name": "ferris_wheel_normal_svg",
+			"type": "image",
+			"url": "textures/ferris_wheel_normal.svg"
+		},
+		{
+			"name": "ferris_wheel_selected_svg",
+			"type": "image",
+			"url": "textures/ferris_wheel_selected.svg"
+		},
+		{
+			"name": "castle_normal_svg",
+			"type": "image",
+			"url": "textures/castle_normal.svg"
+		},
+		{
+			"name": "castle_selected_svg",
+			"type": "image",
+			"url": "textures/castle_selected.svg"
+		},
+		{
+			"name": "balloon_normal_svg",
+			"type": "image",
+			"url": "textures/balloon_normal.svg"
+		},
+		{
+			"name": "balloon_selected_svg",
+			"type": "image",
+			"url": "textures/balloon_selected.svg"
+		},
+		{
+			"name": "pig_normal_svg",
+			"type": "image",
+			"url": "textures/pig_normal.svg"
+		},
+		{
+			"name": "pig_selected_svg",
+			"type": "image",
+			"url": "textures/pig_selected.svg"
+		},
+		{
+			"name": "ball_normal_svg",
+			"type": "image",
+			"url": "textures/ball_normal.svg"
+		},
+		{
+			"name": "ball_selected_svg",
+			"type": "image",
+			"url": "textures/ball_selected.svg"
+		},
+		{
+			"name": "cake_normal_svg",
+			"type": "image",
+			"url": "textures/cake_normal.svg"
+		},
+		{
+			"name": "cake_selected_svg",
+			"type": "image",
+			"url": "textures/cake_selected.svg"
+		},
+		{
+			"name": "bird_normal_svg",
+			"type": "image",
+			"url": "textures/bird_normal.svg"
+		},
+		{
+			"name": "bird_selected_svg",
+			"type": "image",
+			"url": "textures/bird_selected.svg"
+		},
+		{
+			"name": "cow_normal_svg",
+			"type": "image",
+			"url": "textures/cow_normal.svg"
+		},
+		{
+			"name": "cow_selected_svg",
+			"type": "image",
+			"url": "textures/cow_selected.svg"
+		},
+		{
+			"name": "horse_normal_svg",
+			"type": "image",
+			"url": "textures/horse_normal.svg"
+		},
+		{
+			"name": "horse_selected_svg",
+			"type": "image",
+			"url": "textures/horse_selected.svg"
+		},
+		{
+			"name": "smiling_yellow_head_svg",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.svg"
+		},
+		{
+			"name": "arrow_right_svg",
+			"type": "image",
+			"url": "textures/arrow_right.svg"
+		},
+		{
+			"name": "speaker_normal_svg",
+			"type": "image",
+			"url": "textures/speaker_normal.svg"
+		},
+		{
+			"name": "speaker_selected_svg",
+			"type": "image",
+			"url": "textures/speaker_selected.svg"
+		},
+		{
+			"name": "tube_empty_svg",
+			"type": "image",
+			"url": "textures/tube_empty.svg"
+		},
+		{
+			"name": "green_column_svg",
+			"type": "image",
+			"url": "textures/green_column.svg"
+		},
+		{
+			"name": "sight_word_hunter_small_svg",
+			"type": "image",
+			"url": "textures/sight_word_hunter_small.svg"
+		},
+		{
+			"name": "bottle_normal_png",
+			"type": "image",
+			"url": "textures/bottle_normal.png"
+		},
+		{
+			"name": "bottle_selected_png",
+			"type": "image",
+			"url": "textures/bottle_selected.png"
+		},
+		{
+			"name": "cannon_up_svg",
+			"type": "image",
+			"url": "textures/cannon_up.svg"
+		},
+		{
+			"name": "cannon_up_left_svg",
+			"type": "image",
+			"url": "textures/cannon_up_left.svg"
+		},
+		{
+			"name": "cannon_up_right_svg",
+			"type": "image",
+			"url": "textures/cannon_up_right.svg"
+		},
+		{
+			"name": "sunshine_svg",
+			"type": "image",
+			"url": "textures/sunshine.svg"
+		},
+		{
+			"name": "cannonball_svg",
+			"type": "image",
+			"url": "textures/cannonball.svg"
+		},
+		{
+			"name": "white_mp3",
+			"type": "sound",
+			"url": "audios/white.mp3"
+		},
+		{
+			"name": "with_mp3",
+			"type": "sound",
+			"url": "audios/with.mp3"
+		},
+		{
+			"name": "work_mp3",
+			"type": "sound",
+			"url": "audios/work.mp3"
+		},
+		{
+			"name": "sound_effect_kacha_mp3",
+			"type": "sound",
+			"url": "audios/sound_effect_kacha.mp3"
+		},
+		{
+			"name": "sound_effect_dindum_mp3",
+			"type": "sound",
+			"url": "audios/sound_effect_dindum.mp3"
+		},
+		{
+			"name": "sound_effect_jiu_mp3",
+			"type": "sound",
+			"url": "audios/sound_effect_jiu.mp3"
+		},
+		{
+			"name": "sound_effect_ling_mp3",
+			"type": "sound",
+			"url": "audios/sound_effect_ling.mp3"
+		},
+		{
+			"name": "sound_effect_win_mp3",
+			"type": "sound",
+			"url": "audios/sound_effect_win.mp3"
+		},
+		{
+			"name": "stop_mp3",
+			"type": "sound",
+			"url": "audios/stop.mp3"
 		}
 	]
 }
