@@ -79,7 +79,7 @@
 		</tween:TweenGroup>
 		<tween:TweenGroup id="readyTweenGroup">
 			<tween:TweenItem target="{readyLabel}">
-				<tween:To duration="500" ease="bounceInOut">
+				<tween:To duration="1000" ease="bounceInOut">
 					<tween:props>
 						<e:Object y="{640}"/>
 					</tween:props>
