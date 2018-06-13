@@ -110,7 +110,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new StartScene());
 	}
 
-	private startGame(): void
+	public startGame(): void
 	{
 		this.readyTweenGroup.play(0);
 	}
@@ -120,19 +120,14 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			target.reset();
 			target.setLabel(this.getRandomWord());
 		}
-		this.spokenWord = this.targets[this.random(0, this.targets.length - 1)].label;
+		this.spokenWord = this.targets[Math.randomMinMax(0, this.targets.length - 1)].label;
 		this.speakCurrentWord();
 	}
 
 	private getRandomWord(): string
 	{
-		let randomIndex = this.random(0, this.allWords.length - 1)
+		let randomIndex = Math.randomMinMax(0, this.allWords.length - 1)
 		return this.allWords[randomIndex];
-	}
-
-	private random(min: number, max: number): number
-	{
-		return Math.floor(Math.random()*(max-min+1)+min);
 	}
 
 	private onTargetMouseOver(e: egret.Event): void
@@ -206,6 +201,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		if (this.secondsLeftInTotal <= 0) {
 			egret.clearInterval(this.tickInterval);
 			(RES.getRes('sound_effect_win_mp3') as egret.Sound).play(0, 1);
+			this.showResultScene();
 			return;
 		}
 
@@ -258,5 +254,10 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.tipLabel.text = tip;
 		this.tipTweenGroup.play(0);
+	}
+
+	private showResultScene()
+	{
+		this.addChild(new ResultScene(this));
 	}
 }

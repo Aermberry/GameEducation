@@ -18,11 +18,11 @@
 	<e:Image id="goImage" source="stars_joined_svg" horizontalCenter="0" y="845" width="255" height="200" anchorOffsetX="127" anchorOffsetY="100" />
 	<e:Label id="goLabel" text="Go" horizontalCenter="0" y="830" fontFamily="Kristen-ITC" size="56" textColor="0x000000" anchorOffsetX="58" anchorOffsetY="20"/>
 	
-		<e:Image source="ball_svg" x="10" width="295" height="370"  y="985"/>
-		<e:Image source="ferris_wheel_svg" x="320" width="295" height="370"  y="970"/>
-		<e:Image source="castle_svg" x="645" width="295" height="390"  y="950"/>
-		<e:Image source="bird_svg" x="980" width="295" height="370"  y="975"/>
-		<e:Image source="balloon_svg" x="1320" width="295" height="380"  y="960"/>
-		<e:Image source="cake_svg" x="1620" width="295" height="370"  y="980"/>
+		<e:Image source="ball_selected_svg" x="10" width="295" height="314"  y="985"/>
+		<e:Image source="ferris_wheel_selected_svg" x="320" width="295" height="335"  y="970"/>
+		<e:Image source="castle_selected_svg" x="645" width="295" height="365"  y="950"/>
+		<e:Image source="bird_selected_svg" x="980" width="295" height="340"  y="975"/>
+		<e:Image source="balloon_selected_svg" x="1320" width="283" height="351"  y="951"/>
+		<e:Image source="cake_selected_svg" x="1620" width="295" height="340"  y="971"/>
 	
 </e:Skin>

@@ -79,7 +79,12 @@
 		</tween:TweenGroup>
 		<tween:TweenGroup id="readyTweenGroup">
 			<tween:TweenItem target="{readyLabel}">
-				<tween:To duration="1000">
+				<tween:To duration="500" ease="bounceInOut">
+					<tween:props>
+						<e:Object y="{640}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object y="{640}"/>
 					</tween:props>
@@ -93,7 +98,12 @@
 			<tween:TweenItem target="{goLabel}">
 				<tween:Wait duration="1500"/>
 				<tween:Set/>
-				<tween:To duration="1000">
+				<tween:To duration="500" ease="bounceInOut">
+					<tween:props>
+						<e:Object y="{640}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object y="{640}"/>
 					</tween:props>
@@ -112,8 +122,8 @@
 	<ns1:Cannon id="cannon" horizontalCenter="0" bottom="-150" currentState="right" />
 	<e:Image source="playing_scene_bg_red_silk_svg" horizontalCenter="0" width="4544" height="1723" y="-249"/>
 
-	<e:Label id="readyLabel" fontFamily="Hoffmanhand" size="600" textColor="#89281C" text="Ready" anchorOffsetX="870" anchorOffsetY="300" horizontalCenter="0" y="-300" />
-	<e:Label id="goLabel" fontFamily="Hoffmanhand" size="600" textColor="#89281C" text="Go!!" anchorOffsetX="670" anchorOffsetY="300" horizontalCenter="0" y="-300" />
+	<e:Label id="readyLabel" fontFamily="Hoffmanhand" size="600" textColor="#89281C" text="Ready" anchorOffsetY="300" x="300" y="-300" />
+	<e:Label id="goLabel" fontFamily="Hoffmanhand" size="600" textColor="#89281C" text="Go!!" anchorOffsetY="300" x="600" y="-300" />
 
 	<e:Image id="speakerImage" source="speaker_normal_svg" x="1575" y="90" width="285" height="285" />
 	<e:Image id="backImage" source="back_svg" x="1748" y="1050" width="140" height="228" />

@@ -23,6 +23,7 @@
 		"bin-debug/scenes/ResultScene.js",
 		"bin-debug/scenes/SelectDifficultyScene.js",
 		"bin-debug/scenes/StartScene.js",
+		"bin-debug/utility/MathExtension.js",
 		"bin-debug/utility/ThreadUtility.js"
 	]
 }
