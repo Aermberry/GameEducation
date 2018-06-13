@@ -20,7 +20,7 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		//this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
+		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
 		mouse.enable(this.stage);
 
 		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
@@ -41,6 +41,7 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 
 	private onBackImageClick(e: egret.TouchEvent): void
 	{
+		this.bgmSoundChannel.stop();
 		Main.instance.gotoScene(new StartScene());
 	}
 	
@@ -56,11 +57,13 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 
 	private onEasyImageClick(e: egret.TouchEvent): void
 	{
+		this.bgmSoundChannel.stop();
 		Main.instance.gotoScene(new ReadyToPlayScene());
 	}
 
 	private onProImageClick(e: egret.TouchEvent): void
 	{
+		this.bgmSoundChannel.stop();
 		Main.instance.gotoScene(new ReadyToPlayScene());
 	}
 

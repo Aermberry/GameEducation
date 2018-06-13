@@ -10,15 +10,17 @@
 		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
-		"bin-debug/components/TargetButton.js",
+		"bin-debug/repositories/WordRepository.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/components/Cannon.js",
+		"bin-debug/components/TargetButton.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/scenes/PlayingScene.js",
 		"bin-debug/scenes/ReadyToPlayScene.js",
+		"bin-debug/scenes/ResultScene.js",
 		"bin-debug/scenes/SelectDifficultyScene.js",
 		"bin-debug/scenes/StartScene.js",
 		"bin-debug/utility/ThreadUtility.js"

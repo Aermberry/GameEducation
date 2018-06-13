@@ -7,22 +7,25 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private secondsLabel: eui.Label;
 	private timeLeftInRoundImage: eui.Image;
 	private timeLeftInRoundImageOriginalHeight = 658;
-	private hurryLabel: eui.Label;
 	private tipLabel: eui.Label;
+	private hurryTweenGroup: egret.tween.TweenGroup;
+	private tipTweenGroup: egret.tween.TweenGroup;
+	private readyTweenGroup: egret.tween.TweenGroup;
 
 	private readonly secondsInTotalGame = 180;
 	private secondsLeftInTotal = 0; //本游戏还剩多少秒
 
-	private readonly secondsPerRound = 10; //一轮的总秒数
+	private readonly secondsPerRound = 20; //一轮的总秒数
 	private secondsLeftInRound = 0;  ////本轮秤还剩多少秒
 
 	private tickInterval: number; //
 	private secondsToHurry = 6; //当本轮的剩余秒数低于该值时，系统显示Hurry提示
+	private hurryIsAlerting = false; //正在显示Hurry提示
 	private passedCurrentRound = false; //用户是否答对题目，通过本轮游戏？
 	private stoppedFire = false; //用户答对题目，暂时停火，等下一轮再开火
 
-	private allWords = ['stop', 'work', 'white'];
-	private spokenWord = 'work';
+	private allWords = new WordRepository().getAll();
+	private spokenWord = 'a';
 
 	public constructor() {
 		super();
@@ -40,6 +43,9 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		this.initTargets();
 		this.initSpeakerButton();
+		this.initReadyTweenGroup();
+		this.initHurryTweenGroup();
+		this.initBackButton();
 		this.startGame();
 	}
 
@@ -70,11 +76,43 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		this.speakerImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.speakCurrentWord(), this);
 	}
 
-	private startGame(): void
+	private initReadyTweenGroup()
+	{
+		this.readyTweenGroup.addEventListener(egret.Event.COMPLETE, this.onReadyTweenGroupComplete, this);
+	}
+
+	private onReadyTweenGroupComplete()
 	{
 		this.secondsLeftInTotal = this.secondsInTotalGame;
 		this.startNewRound();
 		this.tickInterval = egret.setInterval(this.intervalHandler, this, 100);
+	}
+
+	private initHurryTweenGroup()
+	{
+		this.hurryTweenGroup.addEventListener(egret.Event.COMPLETE, this.onHurryTweenGroupComplete, this);
+	}
+
+	private onHurryTweenGroupComplete(): void
+	{
+		if (this.hurryIsAlerting) {
+			this.playHurryAnimation();
+		}
+	}
+
+	private initBackButton(): void
+	{
+		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
+	}
+
+	private onBackImageClick(e: egret.TouchEvent): void
+	{
+		Main.instance.gotoScene(new StartScene());
+	}
+
+	private startGame(): void
+	{
+		this.readyTweenGroup.play(0);
 	}
 
 	private resetTargetWords() {
@@ -109,15 +147,14 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		}
 
 		let target = e.target as TargetButton;
-		this.tipLabel.visible = true;
 		this.shootAt(target);
 		if (this.spokenWord == target.label) {
 			this.stoppedFire = true;
-			this.tipLabel.text = "Good job!";
+			this.playTipAnimation("Good job!");
 			await ThreadUtility.sleep(2000);
 			this.passedCurrentRound = true;
 		} else {
-			this.tipLabel.text = "Try Again!";
+			this.playTipAnimation("Try Again!");
 		}
 	}
 
@@ -171,15 +208,19 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			(RES.getRes('sound_effect_win_mp3') as egret.Sound).play(0, 1);
 			return;
 		}
-		
-		this.hurryLabel.visible = (this.secondsLeftInRound <= this.secondsToHurry);
+
 		this.showTimeLeftInTotal();
+		
+		if (this.secondsLeftInRound < this.secondsToHurry && !this.hurryIsAlerting) {
+			this.hurryIsAlerting = true;
+			this.playHurryAnimation();
+		}
 
 		//本轮时间到，进入下一轮
 		if (this.secondsLeftInRound <= 0) {
 			console.log('时间到，进入下一轮');
 			//用户在本轮游戏时间内没有答对问题，跳过本轮，进入下一题。
-			this.tipLabel.text = 'Next Question!';
+			this.playTipAnimation('Next Question!');
 			this.startNewRound();
 		}
 
@@ -196,7 +237,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	**/	
 	private startNewRound(): void
 	{
-		this.hurryLabel.visible = false;
+		this.hurryIsAlerting = false;
 		this.resetTargetWords();
 		this.secondsLeftInRound = this.secondsPerRound;
 		this.stoppedFire = false;
@@ -207,5 +248,15 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		this.minutesLabel.text = Math.floor((this.secondsLeftInTotal / 60)).toString();
 		this.secondsLabel.text = Math.floor((this.secondsLeftInTotal % 60)).toString();
 	}
+
+	private playHurryAnimation(): void
+	{
+		this.hurryTweenGroup.play(0);
+	}
 	
+	private playTipAnimation(tip: string): void
+	{
+		this.tipLabel.text = tip;
+		this.tipTweenGroup.play(0);
+	}
 }

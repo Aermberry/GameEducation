@@ -16,7 +16,7 @@
 		<e:Label text="Answer as many questions as \npossible in 2 minutes." x="1000" y="615" fontFamily="Kristen-ITC" size="44" />
 	
 	<e:Image id="goImage" source="stars_joined_svg" horizontalCenter="0" y="845" width="255" height="200" anchorOffsetX="127" anchorOffsetY="100" />
-	<e:Label text="Go" horizontalCenter="0" y="830" fontFamily="Kristen-ITC" size="56" textColor="0x000000" anchorOffsetX="58" anchorOffsetY="20"/>
+	<e:Label id="goLabel" text="Go" horizontalCenter="0" y="830" fontFamily="Kristen-ITC" size="56" textColor="0x000000" anchorOffsetX="58" anchorOffsetY="20"/>
 	
 		<e:Image source="ball_svg" x="10" width="295" height="370"  y="985"/>
 		<e:Image source="ferris_wheel_svg" x="320" width="295" height="370"  y="970"/>

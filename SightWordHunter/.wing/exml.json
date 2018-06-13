@@ -38,5 +38,10 @@
         "path": "components/Cannon.ts",
         "class": "Cannon",
         "parentPath": ""
+    },
+    "163f6d836ac": {
+        "path": "scenes/ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
     }
 }

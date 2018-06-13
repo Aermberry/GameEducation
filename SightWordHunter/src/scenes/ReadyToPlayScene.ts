@@ -1,5 +1,6 @@
 class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 	private backImage: eui.Image;
+	private goLabel: eui.Label;
 	private goImage: eui.Image;
 	private mcFactory: egret.MovieClipDataFactory;
 	private bgmSoundChannel: egret.SoundChannel;
@@ -17,14 +18,14 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		//this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
-		//mouse.enable(this.stage);
+		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
 
 		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
 
 		this.goImage.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onGoImageMouseOver, this);
 		this.goImage.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onGoImageMouseOut, this);
 		this.goImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGoImageClick, this);
+		this.goLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGoImageClick, this);
 
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('game_demo_json'), RES.getRes("game_demo_png") );
 		this.planGameDemoAnimation();
@@ -32,6 +33,7 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 
 	private onBackImageClick(e: egret.TouchEvent): void
 	{
+		this.bgmSoundChannel.stop();
 		Main.instance.gotoScene(new StartScene());
 	}
 	
@@ -47,7 +49,8 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 
 	private onGoImageClick(e: egret.TouchEvent): void
 	{
-
+		this.bgmSoundChannel.stop();
+		Main.instance.gotoScene(new PlayingScene());
 	}
 
 	private planGameDemoAnimation()
