@@ -28,7 +28,7 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 		this.goLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGoImageClick, this);
 
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('game_demo_json'), RES.getRes("game_demo_png") );
-		this.planGameDemoAnimation();
+		this.playGameDemoAnimation();
 	}
 
 	private onBackImageClick(e: egret.TouchEvent): void
@@ -53,7 +53,7 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new PlayingScene());
 	}
 
-	private planGameDemoAnimation()
+	private playGameDemoAnimation()
 	{
 		var mc1:egret.MovieClip = new egret.MovieClip( this.mcFactory.generateMovieClipData( "game demo" ) );
 		mc1.x = 320;

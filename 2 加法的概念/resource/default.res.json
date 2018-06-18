@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,rectangle_light_blue_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,rectangle_yellow_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png",
 			"name": "preload"
 		}
 	],
@@ -135,6 +135,226 @@
 			"name": "description_json",
 			"type": "json",
 			"url": "config/description.json"
+		},
+		{
+			"name": "add_and_subtract_png",
+			"type": "image",
+			"url": "textures/splash/add_and_subtract.png"
+		},
+		{
+			"name": "add_info_png",
+			"type": "image",
+			"url": "textures/splash/add_info.png"
+		},
+		{
+			"name": "automobile_exhauts_png",
+			"type": "image",
+			"url": "textures/splash/automobile_exhauts.png"
+		},
+		{
+			"name": "cactus_png",
+			"type": "image",
+			"url": "textures/splash/cactus.png"
+		},
+		{
+			"name": "car_png",
+			"type": "image",
+			"url": "textures/splash/car.png"
+		},
+		{
+			"name": "cloud1_png",
+			"type": "image",
+			"url": "textures/splash/cloud1.png"
+		},
+		{
+			"name": "cloud2_png",
+			"type": "image",
+			"url": "textures/splash/cloud2.png"
+		},
+		{
+			"name": "cloud3_png",
+			"type": "image",
+			"url": "textures/splash/cloud3.png"
+		},
+		{
+			"name": "education_and_manpower_bureau_png",
+			"type": "image",
+			"url": "textures/splash/education_and_manpower_bureau.png"
+		},
+		{
+			"name": "eight_png",
+			"type": "image",
+			"url": "textures/splash/eight.png"
+		},
+		{
+			"name": "five_png",
+			"type": "image",
+			"url": "textures/splash/five.png"
+		},
+		{
+			"name": "four_and_cactus_png",
+			"type": "image",
+			"url": "textures/splash/four_and_cactus.png"
+		},
+		{
+			"name": "grass_dark_light_png",
+			"type": "image",
+			"url": "textures/splash/grass_dark_light.png"
+		},
+		{
+			"name": "grass_dark_png",
+			"type": "image",
+			"url": "textures/splash/grass_dark.png"
+		},
+		{
+			"name": "grass_light_dark_png",
+			"type": "image",
+			"url": "textures/splash/grass_light_dark.png"
+		},
+		{
+			"name": "grass_light_png",
+			"type": "image",
+			"url": "textures/splash/grass_light.png"
+		},
+		{
+			"name": "nine_png",
+			"type": "image",
+			"url": "textures/splash/nine.png"
+		},
+		{
+			"name": "one_png",
+			"type": "image",
+			"url": "textures/splash/one.png"
+		},
+		{
+			"name": "rectangle_cyan_png",
+			"type": "image",
+			"url": "textures/splash/rectangle_cyan.png"
+		},
+		{
+			"name": "rectangle_light_blue_png",
+			"type": "image",
+			"url": "textures/splash/rectangle_light_blue.png"
+		},
+		{
+			"name": "seven_png",
+			"type": "image",
+			"url": "textures/splash/seven.png"
+		},
+		{
+			"name": "six_png",
+			"type": "image",
+			"url": "textures/splash/six.png"
+		},
+		{
+			"name": "three_png",
+			"type": "image",
+			"url": "textures/splash/three.png"
+		},
+		{
+			"name": "two_png",
+			"type": "image",
+			"url": "textures/splash/two.png"
+		},
+		{
+			"name": "add_and_subtract_more_png",
+			"type": "image",
+			"url": "textures/add_and_subtract_more.png"
+		},
+		{
+			"name": "rectangle_yellow_png",
+			"type": "image",
+			"url": "textures/rectangle_yellow.png"
+		},
+		{
+			"name": "splash_bg_png",
+			"type": "image",
+			"url": "textures/splash/splash_bg.png"
+		},
+		{
+			"name": "one_roof_png",
+			"type": "image",
+			"url": "textures/splash/one_roof.png"
+		},
+		{
+			"name": "five_roof_png",
+			"type": "image",
+			"url": "textures/splash/five_roof.png"
+		},
+		{
+			"name": "seven_shadow_png",
+			"type": "image",
+			"url": "textures/splash/seven_shadow.png"
+		},
+		{
+			"name": "three_roof_png",
+			"type": "image",
+			"url": "textures/splash/three_roof.png"
+		},
+		{
+			"name": "three_shadow_png",
+			"type": "image",
+			"url": "textures/splash/three_shadow.png"
+		},
+		{
+			"name": "three_shadow_middle_png",
+			"type": "image",
+			"url": "textures/splash/three_shadow_middle.png"
+		},
+		{
+			"name": "three_shadow_bottom_png",
+			"type": "image",
+			"url": "textures/splash/three_shadow_bottom.png"
+		},
+		{
+			"name": "three_shadow_middle_bottom_png",
+			"type": "image",
+			"url": "textures/splash/three_shadow_middle_bottom.png"
+		},
+		{
+			"name": "nine_shadow_bottom_png",
+			"type": "image",
+			"url": "textures/splash/nine_shadow_bottom.png"
+		},
+		{
+			"name": "nine_shadow_middle_png",
+			"type": "image",
+			"url": "textures/splash/nine_shadow_middle.png"
+		},
+		{
+			"name": "nine_roof_png",
+			"type": "image",
+			"url": "textures/splash/nine_roof.png"
+		},
+		{
+			"name": "six_shadow_bottom_png",
+			"type": "image",
+			"url": "textures/splash/six_shadow_bottom.png"
+		},
+		{
+			"name": "six_shadow_middle_png",
+			"type": "image",
+			"url": "textures/splash/six_shadow_middle.png"
+		},
+		{
+			"name": "six_roof_png",
+			"type": "image",
+			"url": "textures/splash/six_roof.png"
+		},
+		{
+			"name": "eight_shadow_top_left_png",
+			"type": "image",
+			"url": "textures/splash/eight_shadow_top_left.png"
+		},
+		{
+			"name": "eight_shadow_bottom_right_png",
+			"type": "image",
+			"url": "textures/splash/eight_shadow_bottom_right.png"
+		},
+		{
+			"name": "eight_shadow_bottom_left_png",
+			"type": "image",
+			"url": "textures/splash/eight_shadow_bottom_left.png"
 		}
 	]
 }

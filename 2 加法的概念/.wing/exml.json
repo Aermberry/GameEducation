@@ -1,0 +1,10 @@
+{
+  "1640c3a80c2": {
+    "path": "scenes/StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}
