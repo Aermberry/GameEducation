@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChooseEquationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image source="choose equation scene_png" x="0" y="0" width="100%" height="100%" />
+	<e:Rect id="plus125And53Rect" width="272" height="217" x="197" y="740" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="plus16And27Rect" width="272" height="217" x="512" y="740" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="plus165And53Rect" width="272" height="217" x="824" y="740" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="plus175And168Rect" width="272" height="217" x="1138" y="740" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="plus134And168Rect" width="272" height="217" x="1446" y="740" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<w:Config id="164125dcecd" ></w:Config>
+</e:Skin>

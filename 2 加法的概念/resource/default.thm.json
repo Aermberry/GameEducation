@@ -13,7 +13,13 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"StartScene": "resource/scenes/StartScene.exml"
+		"StartScene": "resource/scenes/StartScene.exml",
+		"ChooseEquationScene": "resource/scenes/ChooseEquationScene.exml",
+		"Plus125And53Scene": "resource/scenes/Plus125And53Scene.exml",
+		"Plus16And27Scene": "resource/scenes/Plus16And27Scene.exml",
+		"Plus165And53Scene": "resource/scenes/Plus165And53Scene.exml",
+		"Plus175And168Scene": "resource/scenes/Plus175And168Scene.exml",
+		"Plus134And168Scene": "resource/scenes/Plus134And168Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -30,6 +36,12 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/ChooseEquationScene.exml",
+		"resource/scenes/Plus125And53Scene.exml",
+		"resource/scenes/Plus134And168Scene.exml",
+		"resource/scenes/Plus165And53Scene.exml",
+		"resource/scenes/Plus16And27Scene.exml",
+		"resource/scenes/Plus175And168Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

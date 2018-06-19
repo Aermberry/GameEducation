@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,rectangle_light_blue_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,rectangle_yellow_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,rectangle_yellow_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,choose equation scene_png,animations_json,animations_png,rectangle_cyan_large_png,rectangle_cyan_medium_png,rectangle_blue_small_png,boy_worry_png,boy_smile_png,bar_red_png,particle_red_png,five_particles_red_png,two_bars_red_png,chunk_red_png,five_bars_green_png,three_particles_green_png,angel_help_mp3,add_53_mp3,num_125_mp3,angel_good_mp3,one_chunk_mp3,one_bar_mp3,one_particle_mp3,num_125_is_one_chunk_mp3,two_bars_mp3,five_particles_mp3,num_53_is_five_bars_mp3,and_three_particles_mp3,what_is_sum_of_them_mp3,a_let_me_think_mp3,you_are_smart_mp3,scattered_particles_are_the_units_mp3,circle_for_the_unit_png,circle_for_decade_png,circle_for_hundred_png,bars_are_decades_mp3,chunks_are_hundreds_mp3,we_align_unit_and_unit_mp3,line_black_png,two_circles_for_decades_png,two_circles_for_units_png,we_align_decade_and_decade_mp3,two_circles_for_units_small_png,two_circles_for_decades_small_png,we_put_particles_together_mp3,let_me_see_carefully_mp3,you_are_correct_mp3,let_me_count_how_much_scattered_bars_now_mp3,two_add_five_is_seven_mp3,you_are_correct_decade_mp3,how_much_left_finally_mp3,circle_for_hundred_portrait_png,circle_for_hundred_small_png,there_is_one_chunk_left_mp3,you_are_correct_hundred_mp3,how_much_is_125_add_53_mp3,i_know_its_178_mp3,line_black_thin_png,you_are_correct_all_mp3,i_know_now_mp3,angel_say_goodbye_mp3,boy_say_goodbye_mp3,back_to_index_normal_png,back_to_index_mouse_over_png,all_is_done_png",
 			"name": "preload"
 		}
 	],
@@ -232,11 +232,6 @@
 			"url": "textures/splash/rectangle_cyan.png"
 		},
 		{
-			"name": "rectangle_light_blue_png",
-			"type": "image",
-			"url": "textures/splash/rectangle_light_blue.png"
-		},
-		{
 			"name": "seven_png",
 			"type": "image",
 			"url": "textures/splash/seven.png"
@@ -355,6 +350,326 @@
 			"name": "eight_shadow_bottom_left_png",
 			"type": "image",
 			"url": "textures/splash/eight_shadow_bottom_left.png"
+		},
+		{
+			"name": "choose equation scene_png",
+			"type": "image",
+			"url": "textures/choose equation scene.png"
+		},
+		{
+			"name": "animations_json",
+			"type": "json",
+			"url": "textures/animations.json"
+		},
+		{
+			"name": "animations_png",
+			"type": "image",
+			"url": "textures/animations.png"
+		},
+		{
+			"name": "rectangle_cyan_large_png",
+			"type": "image",
+			"url": "textures/rectangle_cyan_large.png"
+		},
+		{
+			"name": "rectangle_cyan_medium_png",
+			"type": "image",
+			"url": "textures/rectangle_cyan_medium.png"
+		},
+		{
+			"name": "rectangle_blue_small_png",
+			"type": "image",
+			"url": "textures/rectangle_blue_small.png"
+		},
+		{
+			"name": "boy_worry_png",
+			"type": "image",
+			"url": "textures/boy_worry.png"
+		},
+		{
+			"name": "boy_smile_png",
+			"type": "image",
+			"url": "textures/boy_smile.png"
+		},
+		{
+			"name": "bar_red_png",
+			"type": "image",
+			"url": "textures/bar_red.png"
+		},
+		{
+			"name": "particle_red_png",
+			"type": "image",
+			"url": "textures/particle_red.png"
+		},
+		{
+			"name": "five_particles_red_png",
+			"type": "image",
+			"url": "textures/five_particles_red.png"
+		},
+		{
+			"name": "two_bars_red_png",
+			"type": "image",
+			"url": "textures/two_bars_red.png"
+		},
+		{
+			"name": "chunk_red_png",
+			"type": "image",
+			"url": "textures/chunk_red.png"
+		},
+		{
+			"name": "five_bars_green_png",
+			"type": "image",
+			"url": "textures/five_bars_green.png"
+		},
+		{
+			"name": "three_particles_green_png",
+			"type": "image",
+			"url": "textures/three_particles_green.png"
+		},
+		{
+			"name": "angel_help_mp3",
+			"type": "sound",
+			"url": "audios/angel_help.mp3"
+		},
+		{
+			"name": "add_53_mp3",
+			"type": "sound",
+			"url": "audios/add_53.mp3"
+		},
+		{
+			"name": "num_125_mp3",
+			"type": "sound",
+			"url": "audios/num_125.mp3"
+		},
+		{
+			"name": "angel_good_mp3",
+			"type": "sound",
+			"url": "audios/angel_good.mp3"
+		},
+		{
+			"name": "one_chunk_mp3",
+			"type": "sound",
+			"url": "audios/one_chunk.mp3"
+		},
+		{
+			"name": "one_bar_mp3",
+			"type": "sound",
+			"url": "audios/one_bar.mp3"
+		},
+		{
+			"name": "one_particle_mp3",
+			"type": "sound",
+			"url": "audios/one_particle.mp3"
+		},
+		{
+			"name": "num_125_is_one_chunk_mp3",
+			"type": "sound",
+			"url": "audios/num_125_is_one_chunk.mp3"
+		},
+		{
+			"name": "two_bars_mp3",
+			"type": "sound",
+			"url": "audios/two_bars.mp3"
+		},
+		{
+			"name": "five_particles_mp3",
+			"type": "sound",
+			"url": "audios/five_particles.mp3"
+		},
+		{
+			"name": "num_53_is_five_bars_mp3",
+			"type": "sound",
+			"url": "audios/num_53_is_five_bars.mp3"
+		},
+		{
+			"name": "and_three_particles_mp3",
+			"type": "sound",
+			"url": "audios/and_three_particles.mp3"
+		},
+		{
+			"name": "what_is_sum_of_them_mp3",
+			"type": "sound",
+			"url": "audios/what_is_sum_of_them.mp3"
+		},
+		{
+			"name": "a_let_me_think_mp3",
+			"type": "sound",
+			"url": "audios/a_let_me_think.mp3"
+		},
+		{
+			"name": "you_are_smart_mp3",
+			"type": "sound",
+			"url": "audios/you_are_smart.mp3"
+		},
+		{
+			"name": "scattered_particles_are_the_units_mp3",
+			"type": "sound",
+			"url": "audios/scattered_particles_are_the_units.mp3"
+		},
+		{
+			"name": "circle_for_the_unit_png",
+			"type": "image",
+			"url": "textures/circle_for_the_unit.png"
+		},
+		{
+			"name": "circle_for_decade_png",
+			"type": "image",
+			"url": "textures/circle_for_decade.png"
+		},
+		{
+			"name": "circle_for_hundred_png",
+			"type": "image",
+			"url": "textures/circle_for_hundred.png"
+		},
+		{
+			"name": "bars_are_decades_mp3",
+			"type": "sound",
+			"url": "audios/bars_are_decades.mp3"
+		},
+		{
+			"name": "chunks_are_hundreds_mp3",
+			"type": "sound",
+			"url": "audios/chunks_are_hundreds.mp3"
+		},
+		{
+			"name": "we_align_unit_and_unit_mp3",
+			"type": "sound",
+			"url": "audios/we_align_unit_and_unit.mp3"
+		},
+		{
+			"name": "line_black_png",
+			"type": "image",
+			"url": "textures/line_black.png"
+		},
+		{
+			"name": "two_circles_for_decades_png",
+			"type": "image",
+			"url": "textures/two_circles_for_decades.png"
+		},
+		{
+			"name": "two_circles_for_units_png",
+			"type": "image",
+			"url": "textures/two_circles_for_units.png"
+		},
+		{
+			"name": "we_align_decade_and_decade_mp3",
+			"type": "sound",
+			"url": "audios/we_align_decade_and_decade.mp3"
+		},
+		{
+			"name": "two_circles_for_units_small_png",
+			"type": "image",
+			"url": "textures/two_circles_for_units_small.png"
+		},
+		{
+			"name": "two_circles_for_decades_small_png",
+			"type": "image",
+			"url": "textures/two_circles_for_decades_small.png"
+		},
+		{
+			"name": "we_put_particles_together_mp3",
+			"type": "sound",
+			"url": "audios/we_put_particles_together.mp3"
+		},
+		{
+			"name": "let_me_see_carefully_mp3",
+			"type": "sound",
+			"url": "audios/let_me_see_carefully.mp3"
+		},
+		{
+			"name": "you_are_correct_mp3",
+			"type": "sound",
+			"url": "audios/you_are_correct.mp3"
+		},
+		{
+			"name": "let_me_count_how_much_scattered_bars_now_mp3",
+			"type": "sound",
+			"url": "audios/let_me_count_how_much_scattered_bars_now.mp3"
+		},
+		{
+			"name": "two_add_five_is_seven_mp3",
+			"type": "sound",
+			"url": "audios/two_add_five_is_seven.mp3"
+		},
+		{
+			"name": "you_are_correct_decade_mp3",
+			"type": "sound",
+			"url": "audios/you_are_correct_decade.mp3"
+		},
+		{
+			"name": "how_much_left_finally_mp3",
+			"type": "sound",
+			"url": "audios/how_much_left_finally.mp3"
+		},
+		{
+			"name": "circle_for_hundred_portrait_png",
+			"type": "image",
+			"url": "textures/circle_for_hundred_portrait.png"
+		},
+		{
+			"name": "circle_for_hundred_small_png",
+			"type": "image",
+			"url": "textures/circle_for_hundred_small.png"
+		},
+		{
+			"name": "there_is_one_chunk_left_mp3",
+			"type": "sound",
+			"url": "audios/there_is_one_chunk_left.mp3"
+		},
+		{
+			"name": "you_are_correct_hundred_mp3",
+			"type": "sound",
+			"url": "audios/you_are_correct_hundred.mp3"
+		},
+		{
+			"name": "how_much_is_125_add_53_mp3",
+			"type": "sound",
+			"url": "audios/how_much_is_125_add_53.mp3"
+		},
+		{
+			"name": "i_know_its_178_mp3",
+			"type": "sound",
+			"url": "audios/i_know_its_178.mp3"
+		},
+		{
+			"name": "line_black_thin_png",
+			"type": "image",
+			"url": "textures/line_black_thin.png"
+		},
+		{
+			"name": "you_are_correct_all_mp3",
+			"type": "sound",
+			"url": "audios/you_are_correct_all.mp3"
+		},
+		{
+			"name": "i_know_now_mp3",
+			"type": "sound",
+			"url": "audios/i_know_now.mp3"
+		},
+		{
+			"name": "angel_say_goodbye_mp3",
+			"type": "sound",
+			"url": "audios/angel_say_goodbye.mp3"
+		},
+		{
+			"name": "boy_say_goodbye_mp3",
+			"type": "sound",
+			"url": "audios/boy_say_goodbye.mp3"
+		},
+		{
+			"name": "back_to_index_normal_png",
+			"type": "image",
+			"url": "textures/back_to_index_normal.png"
+		},
+		{
+			"name": "back_to_index_mouse_over_png",
+			"type": "image",
+			"url": "textures/back_to_index_mouse_over.png"
+		},
+		{
+			"name": "all_is_done_png",
+			"type": "image",
+			"url": "textures/all_is_done.png"
 		}
 	]
 }
