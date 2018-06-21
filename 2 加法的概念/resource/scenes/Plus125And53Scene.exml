@@ -681,7 +681,7 @@
 	<e:Label id="num125" text="1 2 5" x="127" y="270" size="48" textColor="0xcb503c"/>
 	<e:Label id="add" text="+" x="243" y="272" textColor="0x020202" size="48" alpha="0"/>
 	<e:Label id="num53" text="5 3" x="291" y="272" size="48" textColor="0x2e4e04" alpha="0"/>
-	<e:Label id="num125Copy" text="1 2 5" x="137" y="280" size="48" textColor="0xCB503C" alpha="0" fontFamily="Arial"/>
+	<e:Label id="num125Copy" text="1 2 5" x="137" y="280" size="48" textColor="0xCB503C" alpha="0"/>
 	<e:Label id="addCopy" text="+" x="225" y="282" textColor="0x020202" size="48" alpha="0"/>
 	<e:Label id="num53Copy" text="5 3" x="263" y="282" size="48" textColor="0x2E4E04" alpha="0"/>
 	<e:Label id="equal" text="=" x="101" y="340.5" textColor="0x020202" size="44" alpha="0"/>
