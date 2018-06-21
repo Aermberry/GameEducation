@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,rectangle_yellow_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,choose equation scene_png,animations_json,animations_png,rectangle_cyan_large_png,rectangle_cyan_medium_png,rectangle_blue_small_png,boy_worry_png,boy_smile_png,bar_red_png,particle_red_png,five_particles_red_png,two_bars_red_png,chunk_red_png,five_bars_green_png,three_particles_green_png,angel_help_mp3,add_53_mp3,num_125_mp3,angel_good_mp3,one_chunk_mp3,one_bar_mp3,one_particle_mp3,num_125_is_one_chunk_mp3,two_bars_mp3,five_particles_mp3,num_53_is_five_bars_mp3,and_three_particles_mp3,what_is_sum_of_them_mp3,a_let_me_think_mp3,you_are_smart_mp3,scattered_particles_are_the_units_mp3,circle_for_the_unit_png,circle_for_decade_png,circle_for_hundred_png,bars_are_decades_mp3,chunks_are_hundreds_mp3,we_align_unit_and_unit_mp3,line_black_png,two_circles_for_decades_png,two_circles_for_units_png,we_align_decade_and_decade_mp3,two_circles_for_units_small_png,two_circles_for_decades_small_png,we_put_particles_together_mp3,let_me_see_carefully_mp3,you_are_correct_mp3,let_me_count_how_much_scattered_bars_now_mp3,two_add_five_is_seven_mp3,you_are_correct_decade_mp3,how_much_left_finally_mp3,circle_for_hundred_portrait_png,circle_for_hundred_small_png,there_is_one_chunk_left_mp3,you_are_correct_hundred_mp3,how_much_is_125_add_53_mp3,i_know_its_178_mp3,line_black_thin_png,you_are_correct_all_mp3,i_know_now_mp3,angel_say_goodbye_mp3,boy_say_goodbye_mp3,back_to_index_normal_png,back_to_index_mouse_over_png,all_is_done_png,six_particles_red_png,seven_particles_green_png,three_particles_red_png,two_bars_green_png,add2_streamsound 0_mp3,add2_streamsound 1_mp3,add2_streamsound 2_mp3,add2_streamsound 3_mp3,add2_streamsound 4_mp3,add2_streamsound 5_mp3,add2_streamsound 6_mp3,add2_streamsound 7_mp3,add2_streamsound 8_mp3,add2_streamsound 9_mp3,add2_streamsound 10_mp3,add2_streamsound 11_mp3,add2_streamsound 12_mp3,add2_streamsound 13_mp3,add2_streamsound 14_mp3,add2_streamsound 15_mp3,add2_streamsound 16_mp3,add2_streamsound 17_mp3,add2_streamsound 18_mp3,add2_streamsound 19_mp3,particle_green_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,rectangle_yellow_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,choose equation scene_png,animations_json,animations_png,rectangle_cyan_large_png,rectangle_cyan_medium_png,rectangle_blue_small_png,boy_worry_png,boy_smile_png,bar_red_png,particle_red_png,five_particles_red_png,two_bars_red_png,chunk_red_png,five_bars_green_png,three_particles_green_png,angel_help_mp3,add_53_mp3,num_125_mp3,angel_good_mp3,one_chunk_mp3,one_bar_mp3,one_particle_mp3,num_125_is_one_chunk_mp3,two_bars_mp3,five_particles_mp3,num_53_is_five_bars_mp3,and_three_particles_mp3,what_is_sum_of_them_mp3,a_let_me_think_mp3,you_are_smart_mp3,scattered_particles_are_the_units_mp3,circle_for_the_unit_png,circle_for_decade_png,circle_for_hundred_png,bars_are_decades_mp3,chunks_are_hundreds_mp3,we_align_unit_and_unit_mp3,line_black_png,two_circles_for_decades_png,two_circles_for_units_png,we_align_decade_and_decade_mp3,two_circles_for_units_small_png,two_circles_for_decades_small_png,we_put_particles_together_mp3,let_me_see_carefully_mp3,you_are_correct_mp3,let_me_count_how_much_scattered_bars_now_mp3,two_add_five_is_seven_mp3,you_are_correct_decade_mp3,how_much_left_finally_mp3,circle_for_hundred_portrait_png,circle_for_hundred_small_png,there_is_one_chunk_left_mp3,you_are_correct_hundred_mp3,how_much_is_125_add_53_mp3,i_know_its_178_mp3,line_black_thin_png,you_are_correct_all_mp3,i_know_now_mp3,angel_say_goodbye_mp3,boy_say_goodbye_mp3,back_to_index_normal_png,back_to_index_mouse_over_png,all_is_done_png,six_particles_red_png,seven_particles_green_png,three_particles_red_png,two_bars_green_png,add2_streamsound 0_mp3,add2_streamsound 1_mp3,add2_streamsound 2_mp3,add2_streamsound 3_mp3,add2_streamsound 4_mp3,add2_streamsound 5_mp3,add2_streamsound 6_mp3,add2_streamsound 7_mp3,add2_streamsound 8_mp3,add2_streamsound 9_mp3,add2_streamsound 10_mp3,add2_streamsound 11_mp3,add2_streamsound 12_mp3,add2_streamsound 13_mp3,add2_streamsound 14_mp3,add2_streamsound 15_mp3,add2_streamsound 16_mp3,add2_streamsound 17_mp3,add2_streamsound 18_mp3,add2_streamsound 19_mp3,particle_green_png,add3_streamsound 0_mp3,add3_streamsound 1_mp3,add3_streamsound 2_mp3,add3_streamsound 3_mp3,add3_streamsound 4_mp3,add3_streamsound 5_mp3,add3_streamsound 6_mp3,add3_streamsound 7_mp3,add3_streamsound 8_mp3,add3_streamsound 9_mp3,add3_streamsound 10_mp3,add3_streamsound 11_mp3,add3_streamsound 12_mp3,add3_streamsound 13_mp3,add3_streamsound 14_mp3,add3_streamsound 15_mp3,add3_streamsound 16_mp3,add3_streamsound 17_mp3,add3_streamsound 18_mp3,add3_streamsound 19_mp3,add3_streamsound 20_mp3,add3_streamsound 21_mp3,add3_streamsound 22_mp3,add3_streamsound 23_mp3,add3_streamsound 24_mp3,add3_streamsound 25_mp3,add3_streamsound 26_mp3,add3_streamsound 27_mp3,add3_streamsound 28_mp3,add3_streamsound 29_mp3,bar_green_png",
 			"name": "preload"
 		}
 	],
@@ -795,6 +795,161 @@
 			"name": "particle_green_png",
 			"type": "image",
 			"url": "textures/particle_green.png"
+		},
+		{
+			"name": "add3_streamsound 0_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 0.mp3"
+		},
+		{
+			"name": "add3_streamsound 1_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 1.mp3"
+		},
+		{
+			"name": "add3_streamsound 2_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 2.mp3"
+		},
+		{
+			"name": "add3_streamsound 3_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 3.mp3"
+		},
+		{
+			"name": "add3_streamsound 4_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 4.mp3"
+		},
+		{
+			"name": "add3_streamsound 5_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 5.mp3"
+		},
+		{
+			"name": "add3_streamsound 6_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 6.mp3"
+		},
+		{
+			"name": "add3_streamsound 7_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 7.mp3"
+		},
+		{
+			"name": "add3_streamsound 8_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 8.mp3"
+		},
+		{
+			"name": "add3_streamsound 9_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 9.mp3"
+		},
+		{
+			"name": "add3_streamsound 10_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 10.mp3"
+		},
+		{
+			"name": "add3_streamsound 11_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 11.mp3"
+		},
+		{
+			"name": "add3_streamsound 12_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 12.mp3"
+		},
+		{
+			"name": "add3_streamsound 13_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 13.mp3"
+		},
+		{
+			"name": "add3_streamsound 14_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 14.mp3"
+		},
+		{
+			"name": "add3_streamsound 15_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 15.mp3"
+		},
+		{
+			"name": "add3_streamsound 16_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 16.mp3"
+		},
+		{
+			"name": "add3_streamsound 17_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 17.mp3"
+		},
+		{
+			"name": "add3_streamsound 18_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 18.mp3"
+		},
+		{
+			"name": "add3_streamsound 19_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 19.mp3"
+		},
+		{
+			"name": "add3_streamsound 20_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 20.mp3"
+		},
+		{
+			"name": "add3_streamsound 21_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 21.mp3"
+		},
+		{
+			"name": "add3_streamsound 22_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 22.mp3"
+		},
+		{
+			"name": "add3_streamsound 23_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 23.mp3"
+		},
+		{
+			"name": "add3_streamsound 24_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 24.mp3"
+		},
+		{
+			"name": "add3_streamsound 25_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 25.mp3"
+		},
+		{
+			"name": "add3_streamsound 26_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 26.mp3"
+		},
+		{
+			"name": "add3_streamsound 27_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 27.mp3"
+		},
+		{
+			"name": "add3_streamsound 28_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 28.mp3"
+		},
+		{
+			"name": "add3_streamsound 29_mp3",
+			"type": "sound",
+			"url": "audios/add3/add3_streamsound 29.mp3"
+		},
+		{
+			"name": "bar_green_png",
+			"type": "image",
+			"url": "textures/bar_green.png"
 		}
 	]
 }

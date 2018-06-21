@@ -21,6 +21,7 @@
 		"bin-debug/scenes/Plus165And53Scene.js",
 		"bin-debug/scenes/Plus16And27Scene.js",
 		"bin-debug/scenes/Plus175And168Scene.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/scenes/StartScene.js",
+		"bin-debug/utility/ThreadUtility.js"
 	]
 }
