@@ -432,7 +432,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg9">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" height="{275}" y="{299}"/>
@@ -446,7 +446,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -534,14 +534,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" x="{1593}" y="{730}"/>
@@ -557,7 +557,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg12">
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{1512}" y="{648}" width="{116}" height="{315}" alpha="{1}"/>
@@ -643,7 +643,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{609.5}" x="{1465}" width="{94}" height="{323}"/>
@@ -687,7 +687,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object width="{90}" x="{255}"/>
@@ -696,21 +696,21 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg15">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{202}" width="{90}" y="{299}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{816}" alpha="{1}" width="{780}" y="{559}" height="{442}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -805,14 +805,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object y="{562.5}" height="{427}" alpha="{1}" width="{346}" x="{1275.5}"/>
@@ -821,7 +821,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg18">
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{circleLarge}">
 				<tween:Set>
 					<tween:props>
 						<e:Object height="{414}" y="{583.5}" x="{791}" alpha="{1}" width="{442}"/>
@@ -835,14 +835,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -928,10 +928,10 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{circleLarge}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{311.5}" y="{578}" height="{414}" alpha="{1}"/>
+						<e:Object y="{578}" height="{414}" alpha="{1}" width="{498}" x="{309.5}"/>
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="50"/>
@@ -954,7 +954,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
@@ -971,14 +971,14 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg20">
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{circleLarge}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" width="{472}" height="{468}" x="{379.5}" y="{530.5}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object y="{299}" width="{90}" x="{141}"/>
@@ -996,14 +996,14 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg22">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{circleLarge}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -1098,12 +1098,13 @@
 	<e:Image id="eight_particles_green_2" x="1615" y="716" source="particle_green_png" alpha="0"/>
 	<e:Image id="eight_particles_green_1" x="1615" y="683" source="particle_green_png" alpha="0"/>
 	<e:Image id="eight_particles_green_0" x="1615" y="650" source="particle_green_png" alpha="0"/>
-	<e:Image id="circleForEquation" x="265.5" y="329" source="circle_for_hundred_small_png" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90"/>
+	<e:Image id="ellipseForEquation" x="265.5" y="329" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90" source="ellipse_small_portrait_png"/>
+	<e:Image id="circleLarge" x="907" y="486.5" source="circle_large_png" anchorOffsetY="0" height="501" alpha="0"/>
 	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>
 	<e:Image id="backToIndexImage" y="494" source="back_to_index_normal_png" horizontalCenter="0" alpha="0"/>
-	<e:Image id="circleForBars" x="1112" y="565.5" alpha="0" source="circle_for_hundred_png"/>
-	<e:Image id="circleForParticlesSmall" x="1521" y="544" source="circle_for_hundred_small_png" anchorOffsetY="0" anchorOffsetX="0" alpha="0"/>
-	<e:Image id="circleForParticlesLarge" x="1521" y="578" height="439" width="164" anchorOffsetY="0" anchorOffsetX="0" alpha="0" source="circle_for_hundred_portrait_png"/>
+	<e:Image id="ellipseLargeLandscape" x="1112" y="565.5" alpha="0" source="ellipse_large_landscape_png"/>
+	<e:Image id="ellipseSmallPortrait" x="1521" y="544" source="circle_for_hundred_small_png" anchorOffsetY="0" anchorOffsetX="0" alpha="0"/>
+	<e:Image id="ellipseLargePortrait" x="1521" y="578" height="439" width="164" anchorOffsetY="0" anchorOffsetX="0" alpha="0" source="ellipse_large_portrait_png"/>
 	<e:Group id="angelGroup" width="304" height="300" x="808" y="-150" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 	
 	<w:Config id="164126ef817" ></w:Config>
