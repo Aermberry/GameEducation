@@ -321,7 +321,7 @@
 			<tween:TweenItem target="{circleForEquation}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{185}" alpha="{1}" y="{302.5}" height="{253}"/>
+						<e:Object alpha="{1}" y="{302.5}" height="{253}" x="{175}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -474,7 +474,7 @@
 			<tween:TweenItem target="{circleForBars}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" x="{740}" y="{656}"/>
+						<e:Object alpha="{1}" x="{740}" y="{656}" width="{436}" height="{340}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -597,7 +597,7 @@
 			<tween:TweenItem target="{circleForEquation}">
 				<tween:Set>
 					<tween:props>
-						<e:Object width="{90}" x="{113.5}" y="{310}" height="{243}"/>
+						<e:Object x="{113.5}" y="{310}" height="{243}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -705,7 +705,7 @@
 	<e:Image id="fiveBarsGreen3" x="1265" y="706" alpha="0" source="bar_green_png"/>
 	<e:Image id="fiveBarsGreen4" x="1311" y="706" alpha="0" source="bar_green_png"/>
 	<e:Image id="threeParticlesGreen" x="1530" y="763" source="three_particles_green_png" alpha="0"/>
-	<e:Image id="circleForEquation" x="255.5" y="325" source="circle_for_hundred_small_png" alpha="0" anchorOffsetY="0" height="169"/>
+	<e:Image id="circleForEquation" x="247.5" y="317" source="circle_for_hundred_small_png" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90"/>
 	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>
 	<e:Image id="backToIndexImage" y="494" source="back_to_index_normal_png" horizontalCenter="0" alpha="0"/>
 	<e:Image id="circleForBars" x="1112" y="565.5" alpha="0" source="circle_for_hundred_png"/>

@@ -1,4 +1,379 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Plus175And168SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="Plus175And168SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="tg0">
+			<tween:TweenItem target="{add}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{num168}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lineBlack}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg1">
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{644}" x="{379.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boyWorry}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boySmile}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg2">
+			<tween:TweenItem target="{oneChunkRed}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{374}" x="{747}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg3">
+			<tween:TweenItem target="{sevenBarsRed0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed5}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sevenBarsRed6}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{350}" x="{1512}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg4">
+			<tween:TweenItem target="{five_particles_red_4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{five_particles_red_3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{five_particles_red_2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{five_particles_red_1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{five_particles_red_0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{344}" x="{1658.5}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg5">
+			<tween:TweenItem target="{addLargeLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{oneChunkGreen}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{726}" x="{734.5}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg6">
+			<tween:TweenItem target="{sixBarsGreen0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sixBarsGreen1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sixBarsGreen2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sixBarsGreen3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sixBarsGreen4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sixBarsGreen5}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1502}" y="{721}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="tg7">
+			<tween:TweenItem target="{eight_particles_green_0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_5}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_6}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eight_particles_green_7}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{angelGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1658}" y="{708}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Rect x="0" y="0" width="100%" height="100%" fillColor="#C1CBE1" />
+	<e:Image x="10" y="10" source="education_and_manpower_bureau_png"/>
+	<e:Image source="add_and_subtract_more_png" horizontalCenter="0" y="30" />
+	<e:Image source="add_info_png"  x="1138" y="52"/>
+	<e:Image id="image0" source="rectangle_cyan_large_png"  horizontalCenter="0" y="185"/>
+	<e:Image id="image" source="rectangle_cyan_medium_png"  y="215" anchorOffsetX="0" width="395" x="30"/>
+	<e:Image id="pauseRect" source="rectangle_blue_small_png"  y="210" right="20"/>
+	<e:Label id="pauseLabel" text="暫停" x="1727.5" y="234.5" textColor="0x010c5a" bold="true" size="60" fontFamily="Helvetica"/>
+	<e:Label id="num175" text="1   7   5" x="165" y="340" size="48" textColor="0xcb503c"/>
+	<e:Label id="add" text="+" x="95" y="415" textColor="0x020202" size="48" alpha="0"/>
+	<e:Label id="num168" text="1   6   8" x="165" y="410" size="48" textColor="0x2e4e04" alpha="0"/>
+	<e:Label id="hundredBitCarryLabel" text="1" x="198" y="425" textColor="0x000000" size="40"/>
+	<e:Label id="decadeBitCarryLabel" text="1" x="265" y="424" textColor="0x000000" size="40"/>
+	<e:Image id="lineBlack" x="75" y="465" source="line_black_png" alpha="0" anchorOffsetX="0" width="265" anchorOffsetY="0"/>
+	<e:Label id="resultLabel" text="2   1   8" x="165" y="488" textColor="0x000000" size="48" alpha="1"/>
+	<e:Rect id="unitMask" width="30" height="40" x="296" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="531" alpha="1"/>
+	<e:Rect id="hundredBitCarryMask" width="30" height="32" x="196" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="602" alpha="1"/>
+	<e:Rect id="decadeBitCarryMask" width="30" height="32" x="262" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="601" alpha="1"/>
+	<e:Image id="barRed" x="874" y="312.5" source="bar_red_png" alpha="0"/>
+	<e:Image id="boyWorry" x="79.5" source="boy_worry_png" bottom="16"/>
+	<e:Image id="boySmile" x="79.5" source="boy_smile_png" alpha="0" bottom="16"/>
+	<e:Rect id="decadeMask" width="30" height="40" x="231.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="533"/>
+	<e:Rect id="hundredMask" width="30" height="40" x="165.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="531"/>
+	<e:Group id="boyGroup" width="300" height="500" x="79.5" bottom="40" alpha="0">
+	</e:Group>
+	<e:Image id="oneChunkRed" x="500" y="290" source="chunk_red_png" alpha="0"/>
+	<e:Image id="sevenBarsRed0" x="1175" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed1" x="1221" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed2" x="1267" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed3" x="1313" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed4" x="1359" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed5" x="1405" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sevenBarsRed6" x="1451" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="five_particles_red_4" x="1615" y="467" source="particle_red_png" alpha="0"/>
+	<e:Image id="five_particles_red_3" x="1615" y="434" source="particle_red_png" alpha="0"/>
+	<e:Image id="five_particles_red_2" x="1615" y="401" source="particle_red_png" alpha="0"/>
+	<e:Image id="five_particles_red_1" x="1615" y="368" source="particle_red_png" alpha="0"/>
+	<e:Image id="five_particles_red_0" x="1615" y="335" source="particle_red_png" alpha="0"/>
+	<e:Label id="addLargeLabel" text="+" x="413.5" y="798.5" size="60" textColor="0x000000" alpha="0"/>
+	<e:Image id="oneChunkGreen" x="500" y="640" source="chunk_green_png" alpha="0"/>
+	<e:Image id="sixBarsGreen0" x="1220" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="sixBarsGreen1" x="1268" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="sixBarsGreen2" x="1312" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="sixBarsGreen3" x="1358" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="sixBarsGreen4" x="1404" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="sixBarsGreen5" x="1450" y="675" alpha="0" source="bar_green_png"/>
+	<e:Image id="eight_particles_green_7" x="1615" y="881" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_6" x="1615" y="848" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_5" x="1615" y="815" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_4" x="1615" y="782" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_3" x="1615" y="749" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_2" x="1615" y="716" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_1" x="1615" y="683" source="particle_green_png" alpha="0"/>
+	<e:Image id="eight_particles_green_0" x="1615" y="650" source="particle_green_png" alpha="0"/>
+	<e:Image id="circleForEquation" x="247.5" y="317" source="circle_for_hundred_small_png" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90"/>
+	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>
+	<e:Image id="backToIndexImage" y="494" source="back_to_index_normal_png" horizontalCenter="0" alpha="0"/>
+	<e:Image id="circleForBars" x="1112" y="565.5" alpha="0" source="circle_for_hundred_png"/>
+	<e:Image id="circleForParticlesSmall" x="1201.5" y="540" source="circle_for_hundred_small_png" anchorOffsetY="0" height="345" anchorOffsetX="0" width="110" alpha="0"/>
+	<e:Image id="circleForParticlesLarge" x="1211.5" y="550" anchorOffsetY="0" anchorOffsetX="0" alpha="0" source="circle_for_hundred_portrait_png"/>
+	<e:Group id="angelGroup" width="304" height="300" x="808" y="-150" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	
 	<w:Config id="164126ef817" ></w:Config>
 </e:Skin>
