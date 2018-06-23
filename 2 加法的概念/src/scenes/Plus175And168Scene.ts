@@ -24,6 +24,12 @@ class Plus175And168Scene extends eui.Component implements  eui.UIComponent {
 	private tg16: egret.tween.TweenGroup;
 	private tg17: egret.tween.TweenGroup;
 	private tg18: egret.tween.TweenGroup;
+	private tg19: egret.tween.TweenGroup;
+	private tg20: egret.tween.TweenGroup;
+	private tg21: egret.tween.TweenGroup;
+	private tg22: egret.tween.TweenGroup;
+	private tg23: egret.tween.TweenGroup;
+	private tg24: egret.tween.TweenGroup;
 
 	private currentTweenGroup: egret.tween.TweenGroup;
 	private currentSoundName: string; //当前音频文件的名称
@@ -119,6 +125,32 @@ class Plus175And168Scene extends eui.Component implements  eui.UIComponent {
 		await this.playTweenGroupAndSound(this.tg5, 'add4_streamsound 7_mp3');
 		await this.playTweenGroupAndSound(this.tg6, 'add4_streamsound 8_mp3');
 		await this.playTweenGroupAndSound(this.tg7, 'add4_streamsound 9_mp3');
+		await this.playTweenGroupAndSound(this.tg8, 'add4_streamsound 10_mp3');
+		await this.playTweenGroupAndSound(this.tg9, 'add4_streamsound 11_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 12_mp3');
+		await this.playTweenGroupAndSound(this.tg10, 'add4_streamsound 13_mp3');
+		await this.playTweenGroupAndSound(this.tg11, 'add4_streamsound 14_mp3');
+		await this.playTweenGroupAndSound(this.tg12, 'add4_streamsound 15_mp3');
+		this.tg13.play();
+		await ThreadUtility.sleep(1000);
+		await this.playTweenGroupAndSound(this.tg14, 'add4_streamsound 16_mp3');
+		await this.playTweenGroupAndSound(this.tg15, 'add4_streamsound 17_mp3');
+		await this.playTweenGroupAndSound(this.tg16, 'add4_streamsound 18_mp3');
+		await this.playTweenGroupAndSound(this.tg17, 'add4_streamsound 19_mp3');
+		await this.playTweenGroupAndSound(this.tg18, 'add4_streamsound 20_mp3');
+		await this.playTweenGroupAndSound(this.tg19, 'add4_streamsound 21_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 22_mp3');
+		await this.playTweenGroupAndSound(this.tg20, 'add4_streamsound 23_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 24_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 25_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 26_mp3');
+		await this.playTweenGroupAndSound(this.tg21, 'add4_streamsound 27_mp3');
+		await this.playTweenGroupAndSound(this.tg22, 'add4_streamsound 28_mp3');
+		await this.playTweenGroupAndSound(this.tg23, 'add4_streamsound 29_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 30_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 31_mp3');
+		await this.playTweenGroupAndSound(null, 'add4_streamsound 32_mp3');
+		await this.playTweenGroupAndSound(this.tg24, 'add4_streamsound 33_mp3');
 	}
 
 	private playTweenGroupAndSound(tweenGroup: egret.tween.TweenGroup, soundName: string): Promise<void>
