@@ -130,35 +130,35 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg4">
-			<tween:TweenItem target="{five_particles_red_4}">
+			<tween:TweenItem target="{fiveParticlesRed4}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_3}">
+			<tween:TweenItem target="{fiveParticlesRed3}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_2}">
+			<tween:TweenItem target="{fiveParticlesRed2}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_1}">
+			<tween:TweenItem target="{fiveParticlesRed1}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_0}">
+			<tween:TweenItem target="{fiveParticlesRed0}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -248,56 +248,56 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg7">
-			<tween:TweenItem target="{eight_particles_green_0}">
+			<tween:TweenItem target="{eightParticlesGreen0}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_1}">
+			<tween:TweenItem target="{eightParticlesGreen1}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_2}">
+			<tween:TweenItem target="{eightParticlesGreen2}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_3}">
+			<tween:TweenItem target="{eightParticlesGreen3}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_4}">
+			<tween:TweenItem target="{eightParticlesGreen4}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_5}">
+			<tween:TweenItem target="{eightParticlesGreen5}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_6}">
+			<tween:TweenItem target="{eightParticlesGreen6}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_7}">
+			<tween:TweenItem target="{eightParticlesGreen7}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -332,35 +332,35 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_4}">
+			<tween:TweenItem target="{fiveParticlesRed4}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{881}" x="{1555}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_3}">
+			<tween:TweenItem target="{fiveParticlesRed3}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{848}" x="{1555}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_2}">
+			<tween:TweenItem target="{fiveParticlesRed2}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{815}" x="{1555}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_1}">
+			<tween:TweenItem target="{fiveParticlesRed1}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{782}" x="{1555}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_0}">
+			<tween:TweenItem target="{fiveParticlesRed0}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{749}" x="{1555}"/>
@@ -455,70 +455,70 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg10">
-			<tween:TweenItem target="{five_particles_red_4}">
+			<tween:TweenItem target="{fiveParticlesRed4}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" y="{881}" x="{1555}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_3}">
+			<tween:TweenItem target="{fiveParticlesRed3}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{861}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_2}">
+			<tween:TweenItem target="{fiveParticlesRed2}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{841}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_1}">
+			<tween:TweenItem target="{fiveParticlesRed1}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{821}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_0}">
+			<tween:TweenItem target="{fiveParticlesRed0}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{801}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_4}">
+			<tween:TweenItem target="{eightParticlesGreen4}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{781}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_3}">
+			<tween:TweenItem target="{eightParticlesGreen3}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{761}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_2}">
+			<tween:TweenItem target="{eightParticlesGreen2}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{741}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_1}">
+			<tween:TweenItem target="{eightParticlesGreen1}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{721}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_0}">
+			<tween:TweenItem target="{eightParticlesGreen0}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1555}" y="{701}"/>
@@ -573,70 +573,70 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg13">
-			<tween:TweenItem target="{five_particles_red_4}">
+			<tween:TweenItem target="{fiveParticlesRed4}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{855}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_3}">
+			<tween:TweenItem target="{fiveParticlesRed3}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{835}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_2}">
+			<tween:TweenItem target="{fiveParticlesRed2}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{815}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_1}">
+			<tween:TweenItem target="{fiveParticlesRed1}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{795}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{five_particles_red_0}">
+			<tween:TweenItem target="{fiveParticlesRed0}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{775}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_4}">
+			<tween:TweenItem target="{eightParticlesGreen4}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{755}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_3}">
+			<tween:TweenItem target="{eightParticlesGreen3}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{735}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_2}">
+			<tween:TweenItem target="{eightParticlesGreen2}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{715}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_1}">
+			<tween:TweenItem target="{eightParticlesGreen1}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{695}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_0}">
+			<tween:TweenItem target="{eightParticlesGreen0}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{1}" x="{1496}" y="{675}"/>
@@ -650,21 +650,21 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_5}">
+			<tween:TweenItem target="{eightParticlesGreen5}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object y="{721}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_6}">
+			<tween:TweenItem target="{eightParticlesGreen6}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object y="{754}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{eight_particles_green_7}">
+			<tween:TweenItem target="{eightParticlesGreen7}">
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object y="{787}" alpha="{1}"/>
@@ -1078,11 +1078,11 @@
 	<e:Image id="sevenBarsRed4" x="1359" y="310" alpha="0" source="bar_red_png"/>
 	<e:Image id="sevenBarsRed5" x="1405" y="310" alpha="0" source="bar_red_png"/>
 	<e:Image id="sevenBarsRed6" x="1451" y="310" alpha="0" source="bar_red_png"/>
-	<e:Image id="five_particles_red_4" x="1615" y="467" source="particle_red_png" alpha="0"/>
-	<e:Image id="five_particles_red_3" x="1615" y="434" source="particle_red_png" alpha="0"/>
-	<e:Image id="five_particles_red_2" x="1615" y="401" source="particle_red_png" alpha="0"/>
-	<e:Image id="five_particles_red_1" x="1615" y="368" source="particle_red_png" alpha="0"/>
-	<e:Image id="five_particles_red_0" x="1615" y="335" source="particle_red_png" alpha="0"/>
+	<e:Image id="fiveParticlesRed4" x="1615" y="467" source="particle_red_png" alpha="0"/>
+	<e:Image id="fiveParticlesRed3" x="1615" y="434" source="particle_red_png" alpha="0"/>
+	<e:Image id="fiveParticlesRed2" x="1615" y="401" source="particle_red_png" alpha="0"/>
+	<e:Image id="fiveParticlesRed1" x="1615" y="368" source="particle_red_png" alpha="0"/>
+	<e:Image id="fiveParticlesRed0" x="1615" y="335" source="particle_red_png" alpha="0"/>
 	<e:Label id="addLargeLabel" text="+" x="413.5" y="798.5" size="60" textColor="0x000000" alpha="0"/>
 	<e:Image id="sixBarsGreen0" x="1220" y="675" alpha="0" source="bar_green_png"/>
 	<e:Image id="sixBarsGreen1" x="1268" y="675" alpha="0" source="bar_green_png"/>
@@ -1090,14 +1090,14 @@
 	<e:Image id="sixBarsGreen3" x="1358" y="675" alpha="0" source="bar_green_png"/>
 	<e:Image id="sixBarsGreen4" x="1404" y="675" alpha="0" source="bar_green_png"/>
 	<e:Image id="sixBarsGreen5" x="1450" y="675" alpha="0" source="bar_green_png"/>
-	<e:Image id="eight_particles_green_7" x="1615" y="881" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_6" x="1615" y="848" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_5" x="1615" y="815" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_4" x="1615" y="782" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_3" x="1615" y="749" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_2" x="1615" y="716" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_1" x="1615" y="683" source="particle_green_png" alpha="0"/>
-	<e:Image id="eight_particles_green_0" x="1615" y="650" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen7" x="1615" y="881" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen6" x="1615" y="848" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen5" x="1615" y="815" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen4" x="1615" y="782" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen3" x="1615" y="749" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen2" x="1615" y="716" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen1" x="1615" y="683" source="particle_green_png" alpha="0"/>
+	<e:Image id="eightParticlesGreen0" x="1615" y="650" source="particle_green_png" alpha="0"/>
 	<e:Image id="ellipseForEquation" x="265.5" y="329" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90" source="ellipse_small_portrait_png"/>
 	<e:Image id="circleLarge" x="907" y="486.5" source="circle_large_png" anchorOffsetY="0" height="501" alpha="0"/>
 	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>

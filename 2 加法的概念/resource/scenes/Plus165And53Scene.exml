@@ -66,13 +66,13 @@
 			<tween:TweenItem target="{angelGroup}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object y="{346}" x="{778}"/>
+						<e:Object y="{336}" x="{826}"/>
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="6000"/>
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{366}" x="{1363.5}"/>
+						<e:Object y="{366}" x="{1417.5}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -187,7 +187,7 @@
 			<tween:TweenItem target="{angelGroup}">
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{752}" x="{1384}"/>
+						<e:Object x="{1421}" y="{736}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -203,7 +203,7 @@
 			<tween:TweenItem target="{angelGroup}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{1592.5}" y="{724}"/>
+						<e:Object y="{722}" x="{1602.5}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -217,56 +217,56 @@
 				</tween:Set>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object y="{721}"/>
+						<e:Object y="{713}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed5}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1081}" y="{706}" alpha="{1}"/>
+						<e:Object alpha="{1}" x="{1129}" y="{680}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed4}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1035}" y="{706}" alpha="{1}"/>
+						<e:Object x="{1083}" y="{680}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed3}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{989}" y="{706}" alpha="{1}"/>
+						<e:Object x="{1037}" y="{680}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed2}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{943}" y="{706}" alpha="{1}"/>
+						<e:Object x="{991}" y="{680}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed1}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{897}" y="{706}" alpha="{1}"/>
+						<e:Object x="{945}" y="{680}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed0}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{851}" y="{706}" alpha="{1}"/>
+						<e:Object x="{899}" y="{680}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{oneChunkRed}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{527}" alpha="{1}" y="{669}"/>
+						<e:Object alpha="{1}" y="{639}" x="{549}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -280,23 +280,23 @@
 			<tween:TweenItem target="{fiveParticlesRed}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object alpha="{1}" x="{1483}" y="{729.5}"/>
+						<e:Object alpha="{1}" x="{1483}" y="{711.5}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg7">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" height="{257}" y="{299}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" width="{248}" x="{1386}" y="{593}" height="{395}"/>
+						<e:Object alpha="{1}" width="{248}" height="{395}" y="{593}" x="{1412}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -318,28 +318,28 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg9">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" y="{302.5}" height="{253}" x="{175}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" width="{678}" x="{761}" y="{601}" height="{412}"/>
+						<e:Object alpha="{1}" width="{678}" height="{412}" x="{801}" y="{583}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{angelGroup}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{1344}" y="{556}"/>
+						<e:Object y="{556}" x="{1362}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesLarge}">
+			<tween:TweenItem target="{ellipseLargePortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -351,70 +351,70 @@
 			<tween:TweenItem target="{sixBarsRed5}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{951}" y="{726}" alpha="{1}"/>
+						<e:Object x="{999}" y="{700}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed4}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{931}" y="{722}" alpha="{1}"/>
+						<e:Object x="{979}" y="{696}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed3}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{911}" y="{718}" alpha="{1}"/>
+						<e:Object x="{959}" y="{692}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed2}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object y="{714}" alpha="{1}" x="{891}"/>
+						<e:Object y="{688}" alpha="{1}" x="{939}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed1}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{871}" alpha="{1}" y="{710}"/>
+						<e:Object x="{919}" alpha="{1}" y="{684}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed0}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{851}" y="{706}" alpha="{1}"/>
+						<e:Object alpha="{1}" x="{899}" y="{680}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen0}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{971}" y="{732}" alpha="{1}"/>
+						<e:Object x="{1019}" y="{706}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen1}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{991}" y="{736}" alpha="{1}"/>
+						<e:Object x="{1039}" y="{710}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen2}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1011}" y="{740}" alpha="{1}"/>
+						<e:Object x="{1059}" y="{714}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen3}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1031}" y="{744}" alpha="{1}"/>
+						<e:Object x="{1079}" y="{718}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -434,17 +434,17 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" y="{634}" width="{148}" x="{1251.5}"/>
+						<e:Object alpha="{1}" width="{148}" y="{614}" x="{1301.5}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -457,7 +457,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg12">
-			<tween:TweenItem target="{circleForParticlesSmall}">
+			<tween:TweenItem target="{ellipseSmallPortrait}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -467,14 +467,14 @@
 			<tween:TweenItem target="{angelGroup}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{1064}" y="{651}"/>
+						<e:Object y="{627.5}" x="{1103}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" x="{740}" y="{656}" width="{436}" height="{340}"/>
+						<e:Object alpha="{1}" width="{436}" height="{340}" y="{634.5}" x="{785}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -483,81 +483,81 @@
 			<tween:TweenItem target="{oneChunkRed}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{527}" alpha="{1}" y="{669}"/>
+						<e:Object alpha="{1}" y="{639}" x="{549}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed5}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{588}" y="{724}" alpha="{1}"/>
+						<e:Object x="{596}" y="{692}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed4}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{568}" y="{720}" alpha="{1}"/>
+						<e:Object x="{576}" y="{688}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed3}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{548}" y="{716}" alpha="{1}"/>
+						<e:Object x="{556}" y="{684}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed2}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object y="{712}" alpha="{1}" x="{528}"/>
+						<e:Object y="{680}" alpha="{1}" x="{536}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed1}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object alpha="{1}" x="{508}" y="{708}"/>
+						<e:Object alpha="{1}" x="{516}" y="{676}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{sixBarsRed0}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object alpha="{1}" y="{704}" x="{488}"/>
+						<e:Object alpha="{1}" x="{496}" y="{672}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen0}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{608}" y="{730}" alpha="{1}"/>
+						<e:Object x="{616}" y="{698}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen1}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{628}" y="{734}" alpha="{1}"/>
+						<e:Object x="{636}" y="{702}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen2}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{648}" y="{738}" alpha="{1}"/>
+						<e:Object x="{656}" y="{706}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{fiveBarsGreen3}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{668}" y="{742}" alpha="{1}"/>
+						<e:Object x="{676}" y="{710}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -565,7 +565,7 @@
 				</tween:Set>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{388}" y="{639}"/>
+						<e:Object y="{611}" x="{408}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -594,7 +594,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg15">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{113.5}" y="{310}" height="{243}"/>
@@ -612,14 +612,14 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="tg17">
-			<tween:TweenItem target="{circleForEquation}">
+			<tween:TweenItem target="{ellipseForEquation}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{circleForBars}">
+			<tween:TweenItem target="{ellipseLargeLandscape}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -669,48 +669,48 @@
 	</w:Declarations>
 	<e:Rect x="0" y="0" width="100%" height="100%" fillColor="#C1CBE1" />
 	<e:Image x="10" y="10" source="education_and_manpower_bureau_png"/>
-	<e:Image source="add_and_subtract_more_png" horizontalCenter="0" y="20" />
-	<e:Image source="add_info_png"  x="1138" y="44"/>
-	<e:Image id="image0" source="rectangle_cyan_large_png"  bottom="20" horizontalCenter="0"/>
-	<e:Image id="image" source="rectangle_cyan_medium_png"  y="233.5" left="20" anchorOffsetX="0" width="395"/>
-	<e:Image id="pauseRect" source="rectangle_blue_small_png"  x="1671.5" y="231.5"/>
-	<e:Label id="pauseLabel" text="暫停" x="1724" y="256" textColor="0x010c5a" bold="true" size="60" fontFamily="Helvetica"/>
+	<e:Image source="add_and_subtract_more_png" horizontalCenter="0" y="30" />
+	<e:Image source="add_info_png"  x="1138" y="52"/>
+	<e:Image id="image0" source="rectangle_cyan_large_png"  horizontalCenter="0" y="185"/>
+	<e:Image id="image" source="rectangle_cyan_medium_png"  y="215" anchorOffsetX="0" width="395" x="30"/>
+	<e:Image id="pauseRect" source="rectangle_blue_small_png"  y="210" right="20"/>
+	<e:Label id="pauseLabel" text="暫停" x="1727.5" y="234.5" textColor="0x010c5a" bold="true" size="60" fontFamily="Helvetica"/>
 	<e:Label id="num165" text="1   6   5" x="147" y="325" size="48" textColor="0xcb503c"/>
 	<e:Label id="add" text="+" x="117" y="414" textColor="0x020202" size="48" alpha="0"/>
 	<e:Label id="num53" text="5   3" x="216" y="414" size="48" textColor="0x2e4e04" alpha="0"/>
-	<e:Label id="carryLabel" text="1" x="180" y="432" textColor="0x000000" size="40"/>
+	<e:Label id="carryLabel" text="1" x="180" y="432" textColor="0x000000" size="40" alpha="1"/>
 	<e:Image id="lineBlack" x="106.5" y="472.5" source="line_black_png" alpha="0" anchorOffsetX="0" width="237" anchorOffsetY="0" height="8"/>
 	<e:Label id="resultLabel" text="2   1   8" x="149" y="496" textColor="0x000000" size="48" alpha="1"/>
 	<e:Rect id="unitMask" width="30" height="40" x="278" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="524" alpha="1"/>
 	<e:Rect id="carryMask" width="30" height="32" x="178" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="595" alpha="1"/>
 	<e:Image id="barRed" x="874" y="312.5" source="bar_red_png" alpha="0"/>
-	<e:Image id="boyWorry" x="79.5" source="boy_worry_png" bottom="9"/>
-	<e:Image id="boySmile" x="79.5" source="boy_smile_png" alpha="0" bottom="6"/>
+	<e:Image id="boyWorry" x="79.5" source="boy_worry_png" bottom="20"/>
+	<e:Image id="boySmile" x="79.5" source="boy_smile_png" alpha="0" bottom="20"/>
 	<e:Rect id="decadeMask" width="30" height="40" x="217.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="525"/>
 	<e:Rect id="hundredMask" width="30" height="40" x="145.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="521"/>
-	<e:Group id="boyGroup" width="300" height="500" x="79.5" bottom="40" alpha="0">
+	<e:Group id="boyGroup" width="300" height="500" x="79.5" bottom="60" alpha="0">
 	</e:Group>
-	<e:Image id="oneChunkRed" x="535" y="300" source="chunk_red_png" alpha="0"/>
-	<e:Image id="sixBarsRed0" x="1081" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="sixBarsRed1" x="1127" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="sixBarsRed2" x="1173" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="sixBarsRed3" x="1219" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="sixBarsRed4" x="1265" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="sixBarsRed5" x="1311" y="300" alpha="0" source="bar_red_png"/>
-	<e:Image id="fiveParticlesRed" x="1530" y="329" source="five_particles_red_png" alpha="0"/>
-	<e:Label id="addLargeLabel" text="+" x="430" y="780" size="60" textColor="0x000000" alpha="0"/>
-	<e:Image id="fiveBarsGreen0" x="1127" y="706" alpha="0" source="bar_green_png"/>
-	<e:Image id="fiveBarsGreen1" x="1173" y="706" alpha="0" source="bar_green_png"/>
-	<e:Image id="fiveBarsGreen2" x="1219" y="706" alpha="0" source="bar_green_png"/>
-	<e:Image id="fiveBarsGreen3" x="1265" y="706" alpha="0" source="bar_green_png"/>
-	<e:Image id="fiveBarsGreen4" x="1311" y="706" alpha="0" source="bar_green_png"/>
-	<e:Image id="threeParticlesGreen" x="1530" y="763" source="three_particles_green_png" alpha="0"/>
-	<e:Image id="circleForEquation" x="247.5" y="317" source="circle_for_hundred_small_png" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90"/>
+	<e:Image id="oneChunkRed" x="580" y="290" source="chunk_red_png" alpha="0"/>
+	<e:Image id="sixBarsRed0" x="1131" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sixBarsRed1" x="1177" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sixBarsRed2" x="1223" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sixBarsRed3" x="1269" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sixBarsRed4" x="1315" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="sixBarsRed5" x="1361" y="310" alpha="0" source="bar_red_png"/>
+	<e:Image id="fiveParticlesRed" x="1540" y="335" source="five_particles_red_png" alpha="0"/>
+	<e:Label id="addLargeLabel" text="+" x="420" y="750" size="60" textColor="0x000000" alpha="0"/>
+	<e:Image id="fiveBarsGreen0" x="1175" y="680" alpha="0" source="bar_green_png"/>
+	<e:Image id="fiveBarsGreen1" x="1221" y="680" alpha="0" source="bar_green_png"/>
+	<e:Image id="fiveBarsGreen2" x="1267" y="680" alpha="0" source="bar_green_png"/>
+	<e:Image id="fiveBarsGreen3" x="1313" y="680" alpha="0" source="bar_green_png"/>
+	<e:Image id="fiveBarsGreen4" x="1359" y="680" alpha="0" source="bar_green_png"/>
+	<e:Image id="threeParticlesGreen" x="1540" y="745" source="three_particles_green_png" alpha="0"/>
+	<e:Image id="ellipseForEquation" x="247.5" y="317" alpha="0" anchorOffsetY="0" height="177" anchorOffsetX="0" width="90" source="ellipse_small_portrait_png"/>
 	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>
 	<e:Image id="backToIndexImage" y="494" source="back_to_index_normal_png" horizontalCenter="0" alpha="0"/>
-	<e:Image id="circleForBars" x="1112" y="565.5" alpha="0" source="circle_for_hundred_png"/>
-	<e:Image id="circleForParticlesSmall" x="1201.5" y="540" source="circle_for_hundred_small_png" anchorOffsetY="0" height="345" anchorOffsetX="0" width="110" alpha="0"/>
-	<e:Image id="circleForParticlesLarge" x="1211.5" y="550" anchorOffsetY="0" anchorOffsetX="0" alpha="0" source="circle_for_hundred_portrait_png"/>
+	<e:Image id="ellipseLargeLandscape" x="1112" y="565.5" alpha="0" source="ellipse_large_landscape_png"/>
+	<e:Image id="ellipseSmallPortrait" x="1201.5" y="540" anchorOffsetY="0" height="345" anchorOffsetX="0" width="110" alpha="0" source="ellipse_small_portrait_png"/>
+	<e:Image id="ellipseLargePortrait" x="1211.5" y="550" anchorOffsetY="0" anchorOffsetX="0" alpha="0" source="ellipse_large_portrait_png"/>
 	<e:Group id="angelGroup" width="304" height="300" x="808" y="-150" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 	
 	<w:Config id="164126e45ec" ></w:Config>
