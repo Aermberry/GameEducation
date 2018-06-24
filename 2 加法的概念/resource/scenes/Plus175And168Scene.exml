@@ -1065,8 +1065,8 @@
 	<e:Image id="barRed" x="874" y="312.5" source="bar_red_png" alpha="0"/>
 	<e:Image id="boyWorry" x="79.5" source="boy_worry_png" bottom="16"/>
 	<e:Image id="boySmile" x="79.5" source="boy_smile_png" alpha="0" bottom="16"/>
-	<e:Rect id="decadeMask" width="30" height="40" x="231.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="533"/>
-	<e:Rect id="hundredMask" width="30" height="40" x="165.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="533"/>
+	<e:Rect id="decadeMask" width="30" height="40" x="231.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="531"/>
+	<e:Rect id="hundredMask" width="30" height="40" x="165.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" alpha="1" bottom="531"/>
 	<e:Group id="boyGroup" width="300" height="500" x="79.5" bottom="40" alpha="0">
 	</e:Group>
 	<e:Image id="oneChunkRed" x="500" y="290" source="chunk_red_png" alpha="0"/>
