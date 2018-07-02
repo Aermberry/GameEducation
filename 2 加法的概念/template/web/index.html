@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; height: 59px;' src="resource/images/wlts_logo.jpg" />
-    <div id="egret-player" style="margin: auto;width: 100%;top: 59px; bottom: 28px;" class="egret-player"
+    <img id="logo" style='position: absolute; height: 10%;' src="resource/images/wlts_logo.jpg" />
+    <div id="egret-player" style="margin: auto;width: 100%;top: 10%; bottom: 3%;" class="egret-player"
         data-entry-class="Main"
         data-orientation="auto"
         data-scale-mode="showAll"
@@ -39,7 +39,7 @@
         data-show-fps="false" data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 28px; color: #666; font-size: 12px;'>
+    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'>
         2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html" style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
 <script>
@@ -104,6 +104,23 @@
         });
     });
     xhr.send(null);
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        resizeCopyrightFont();
+        $(window).resize(resizeCopyrightFont);
+    });
+
+    function resizeCopyrightFont() {
+        var fontSize = Math.floor($(window).height() / 1061 * 100).toString() + '%';
+        console.log('copyright new font-size: ' + fontSize);
+        $('#copyright').css('font-size', fontSize);
+        $('#copyright a').css('font-size', fontSize);
+    }
 </script>
 </body>
 
