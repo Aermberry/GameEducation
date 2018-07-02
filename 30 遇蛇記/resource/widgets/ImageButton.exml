@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<e:Skin class="ImageButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-    <e:Image id="mainImage" width="100%" height="100%" alpha.disabled="0.5"
-             source="button_up_png"/>
-    <e:Image id="tipImage" source="exit_button_tip_png" y="175" visible="false" scaleX="0.8" scaleY="0.8"/>
-	<w:Config id="163b9123877" ></w:Config>
-</e:Skin>

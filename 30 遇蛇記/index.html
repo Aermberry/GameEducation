@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>錦囊三　芳芳遇蛇記</title>
+    <title>遇蛇記</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -22,6 +22,30 @@
         a {
             font-size: 12px;
             color: #666;
+        }        
+        @font-face {
+            font-family:"华康超黑体";
+            src: url("resource/fonts/华康超黑体.ttc");
+        }
+        @font-face {
+            font-family:"华康粗黑体";
+            src: url("resource/fonts/华康粗黑体.ttf");
+        }
+        @font-face {
+            font-family:"华康娃娃体";
+            src: url("resource/fonts/华康娃娃体.ttf");
+        }
+        @font-face {
+            font-family:"华康中圆体";
+            src: url("resource/fonts/华康中圆体.ttc");
+        }
+        @font-face {
+            font-family:"新细明体";
+            src: url("resource/fonts/新细明体.ttc");
+        }
+        @font-face {
+            font-family:"标楷体";
+            src: url("resource/fonts/标楷体.ttf");
         }
     </style>
 </head>
@@ -33,8 +57,8 @@
         data-orientation="auto"
         data-scale-mode="showAll"
         data-frame-rate="30"
-        data-content-width="2296"
-        data-content-height="1706"
+        data-content-width="1920"
+        data-content-height="1440"
         data-multi-fingered="2"
         data-show-fps="false" data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
@@ -42,6 +66,8 @@
     <div id="copyright" style='position:absolute; bottom:0; height: 28px; color: #666; font-size: 12px;'>
         2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html" style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
+    <label style="font-family: 华康娃娃体; font-size: 1px;" />
+    <label style="font-family: 标楷体; font-size: 1px;" />
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;

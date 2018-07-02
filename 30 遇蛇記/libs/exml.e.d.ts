@@ -1,3 +1,5 @@
+declare class ImageButtonSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -61,6 +63,4 @@ declare class Question3SceneSkin extends eui.Skin{
 declare class Question4SceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
-}
-declare class ImageButtonSkin extends eui.Skin{
 }

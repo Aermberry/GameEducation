@@ -1,5 +1,5 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
-	private appNameImage: eui.Image;
+	private appNameLabel: eui.Image;
 	private topAnswerCheckbox: eui.CheckBox;
 	private bottomAnswerCheckbox: eui.CheckBox;
 	private topSpeakerButton: ImageButton;
@@ -11,6 +11,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private bottomSpeakerButtonPlayed = false; //用户是否已经播放底部答案
 
 	private currentSoundChannel: egret.SoundChannel;
+	private isCompleted = false;
 
 	public constructor() {
 		super();
@@ -38,7 +39,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private onEncounterSnakeMp3PlayComplete(e: egret.Event): void
 	{
-		this.removeChild(this.appNameImage);
+		this.appNameLabel.parent.removeChild(this.appNameLabel);
 
 		(RES.getRes('fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3') as egret.Sound)
 		.play(0, 1)
@@ -76,27 +77,33 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private confirmBothSpeakersArePlayed(): void
 	{
-		this.topAnswerCheckbox.enabled = this.bottomAnswerCheckbox.enabled 
-		= this.topSpeakerButtonPlayed && this.bottomSpeakerButtonPlayed;
+		this.topAnswerCheckbox.enabled 
+		= this.bottomAnswerCheckbox.enabled 
+		= !this.isCompleted && this.topSpeakerButtonPlayed && this.bottomSpeakerButtonPlayed;
 	}
 
 	private onTopAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.bottomAnswerCheckbox.selected = false;
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
-		.play(0, 1)
+		if (this.topAnswerCheckbox.selected) {
+			this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
+				.play(0, 1);
+		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;
 		this.nextSceneButton.enabled = true;
+		this.isCompleted = true;
 	}
 
 	private onBottomAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.topAnswerCheckbox.selected = false;
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3') as egret.Sound)
-		.play(0, 1)
+		if (this.bottomAnswerCheckbox.selected) {
+			this.currentSoundChannel = (RES.getRes('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3') as egret.Sound)
+				.play(0, 1);
+		}
 	}
 
 	private onNextPageButtonClick(e: egret.TouchEvent): void

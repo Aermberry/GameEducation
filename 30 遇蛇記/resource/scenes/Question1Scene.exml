@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question1SceneSkin" width="2296" height="1706" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Question1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="163b4cfb344" ></w:Config>
-	<e:Image id="bg" left="0" top="0" right="0" bottom="0" source="question1_scene_bg_png"/>
-	<e:CheckBox id="topAnswerCheckbox" label="" x="1635" y="255" width="75" height="75" enabled="false"/>
-	<e:CheckBox id="bottomAnswerCheckbox" label="" x="1635" y="540" width="75" height="75" enabled="false"/>
-	<ns1:ImageButton id="topSpeakerButton" width="168" height="168" x="1770" y="190" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
-	<ns1:ImageButton id="bottomSpeakerButton" width="168" height="168" x="1770" y="480" source="speeker_png" scaleWhenMouseOver="0.95" enabled="false"/>
-	<ns1:ImageButton id="nextSceneButton" width="204" height="204" x="1850" y="1095" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
-	<ns1:ImageButton id="exitButton" width="178" height="178" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="89" anchorOffsetY="89" x="2167" y="1557"/>
-	<e:Image id="appNameImage" width="2080" height="1260" source="app_name_png" x="105" y="74"/>
+
+	<e:Group left="0" top="0" bottom="232" right="0">
+		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
+		<e:Rect top="70" left="85" right="85" bottom="70" fillColor="0xffffff"/>
+		<e:CheckBox id="topAnswerCheckbox" label="" x="1375" y="205" width="60" height="60" enabled="false"/>
+		<e:CheckBox id="bottomAnswerCheckbox" label="" x="1375" y="450" width="60" height="60" enabled="false"/>
+		<ns1:ImageButton id="topSpeakerButton" x="1495" y="160" source="speaker_png" scaleWhenMouseOver="0.95" enabled="false"/>
+		<ns1:ImageButton id="bottomSpeakerButton" x="1495" y="400" source="speaker_png" scaleWhenMouseOver="0.95" enabled="false"/>
+		<ns1:ImageButton id="nextSceneButton" x="1560" y="930" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
+		<e:Group width="1090" height="775" x="230" y="120">
+			<e:Rect fillColor="0xffffff" strokeColor="0x000000" strokeWeight="25" ellipseWidth="50" left="0" bottom="0" right="0" top="0"/>
+			<e:Image source="question1_png"  top="35" bottom="35" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label id="appNameLabel" text="遇蛇记" textColor="0x000000" fontFamily="华康娃娃体" textAlign="center" size="154" backgroundColor="0xffffff" left="85" top="68" right="85" bottom="72" verticalAlign="middle"  background="true"/>
+	</e:Group>
+	<e:Group top="1208" left="0" right="0" bottom="0" >
+		<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffcf88"/>
+		<e:Group width="160" height="150" left="30" top="30">
+			<e:Rect left="0" top="0" fillColor="0xffffff" bottom="0" right="0"/>
+			<e:Label text="现时\r进度" textColor="0x000000" fontFamily="华康娃娃体" size="67" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="footprint0" x="356" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint1" x="471.2" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint3" x="705.2" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint5" x="941" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint7" x="1176" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint9" x="1416" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint11" x="1656" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint2" x="588" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint4" x="823" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint6" x="1058" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint8" x="1294" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint10" x="1530" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
+		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
+	</e:Group>
 </e:Skin>

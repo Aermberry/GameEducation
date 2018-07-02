@@ -10,6 +10,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private bottomSpeakerButtonPlayed = false; //用户是否已经播放底部答案
 
 	private currentSoundChannel: egret.SoundChannel;
+	private isCompleted = false;
 
 	public constructor() {
 		super();
@@ -66,27 +67,33 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private confirmBothSpeakersArePlayed(): void
 	{
-		this.topAnswerCheckbox.enabled = this.bottomAnswerCheckbox.enabled 
-		= this.topSpeakerButtonPlayed && this.bottomSpeakerButtonPlayed;
+		this.topAnswerCheckbox.enabled 
+		= this.bottomAnswerCheckbox.enabled 
+		= !this.isCompleted && this.topSpeakerButtonPlayed && this.bottomSpeakerButtonPlayed;
 	}
 
 	private onTopAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.bottomAnswerCheckbox.selected = false;
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('dad_is_comforting_fangfang_and_would_not_be_rough_mp3') as egret.Sound)
-		.play(0, 1)
+		if (this.topAnswerCheckbox.selected) {
+			this.currentSoundChannel = (RES.getRes('dad_is_comforting_fangfang_and_would_not_be_rough_mp3') as egret.Sound)
+			.play(0, 1);
+		}
 	}
 
 	private onBottomAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.topAnswerCheckbox.selected = false;
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
-		.play(0, 1)
+		if (this.bottomAnswerCheckbox.selected) {
+			this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
+			.play(0, 1);
+		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;
 		this.nextSceneButton.enabled = true;
+		this.isCompleted = true;
 	}
 
 	private onNextPageButtonClick(e: egret.TouchEvent): void

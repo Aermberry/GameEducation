@@ -24,8 +24,9 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private passedCurrentRound = false; //用户是否答对题目，通过本轮游戏？
 	private stoppedFire = false; //用户答对题目，暂时停火，等下一轮再开火
 
-	private allWords = new WordRepository().getAll();
-	private spokenWord = 'a';
+	private allWords = new WordRepository().getAll(); //词库中的所有单词
+	private desktopWords = []; //从词库中选到桌子上的单词，用于解决桌面上出现重复词的问题
+	private spokenWord = 'a'; //语音播报出来的单词，需要用户选中该单词才能进入下一关。
 
 	public constructor() {
 		super();
@@ -116,11 +117,16 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	}
 
 	private resetTargetWords() {
+		this.desktopWords = [];
 		for (let target of this.targets) {
 			target.reset();
-			target.setLabel(this.getRandomWord());
+			let candidate = this.getRandomWord();
+			if (this.desktopWords.indexOf(candidate) < 0) {
+				this.desktopWords.push(candidate);
+				target.setLabel(candidate);
+			}
 		}
-		this.spokenWord = this.targets[Math.randomMinMax(0, this.targets.length - 1)].label;
+		this.spokenWord = this.desktopWords[Math.randomMinMax(0, this.targets.length - 1)];
 		this.speakCurrentWord();
 	}
 

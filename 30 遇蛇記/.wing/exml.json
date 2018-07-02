@@ -10,7 +10,7 @@
         "parentPath": ""
     },
     "163b9123877": {
-        "path": "widgets/ImageButton.ts",
+        "path": "components/ImageButton.ts",
         "class": "ImageButton",
         "parentPath": "resource/eui_skins/ButtonSkin.exml"
     },

@@ -15,7 +15,7 @@
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartScene": "resource/scenes/StartScene.exml",
 		"Question1Scene": "resource/scenes/Question1Scene.exml",
-		"ImageButton": "resource/widgets/ImageButton.exml",
+		"ImageButton": "resource/components/ImageButton.exml",
 		"Question2Scene": "resource/scenes/Question2Scene.exml",
 		"Question3Scene": "resource/scenes/Question3Scene.exml",
 		"Question4Scene": "resource/scenes/Question4Scene.exml",
@@ -23,6 +23,7 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/ImageButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -41,8 +42,7 @@
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3Scene.exml",
 		"resource/scenes/Question4Scene.exml",
-		"resource/scenes/StartScene.exml",
-		"resource/widgets/ImageButton.exml"
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
