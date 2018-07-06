@@ -107,7 +107,7 @@ class Main extends eui.UILayer {
 
     public gotoScene(scene: eui.Component)
     {
-        this.removeChildren()
+        this.removeChildren();
         this.addChild(scene);
     }
 }

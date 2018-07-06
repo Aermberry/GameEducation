@@ -5,7 +5,8 @@
     "parentPath": ""
   },
   "global": {
-    "globalAutoLayerMarkEnable": true
+    "globalAutoLayerMarkEnable": true,
+    "globalRulerEnable": false
   },
   "164125dcecd": {
     "path": "scenes/ChooseEquationScene.ts",

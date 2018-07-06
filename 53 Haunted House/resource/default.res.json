@@ -1,0 +1,170 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "sound 7_mp3",
+			"type": "sound",
+			"url": "audios/sound 7.mp3"
+		},
+		{
+			"name": "sound 14_mp3",
+			"type": "sound",
+			"url": "audios/sound 14.mp3"
+		},
+		{
+			"name": "sound 19_mp3",
+			"type": "sound",
+			"url": "audios/sound 19.mp3"
+		},
+		{
+			"name": "sound 45_mp3",
+			"type": "sound",
+			"url": "audios/sound 45.mp3"
+		},
+		{
+			"name": "sound 63_mp3",
+			"type": "sound",
+			"url": "audios/sound 63.mp3"
+		},
+		{
+			"name": "sound 88_mp3",
+			"type": "sound",
+			"url": "audios/sound 88.mp3"
+		},
+		{
+			"name": "sound 102_mp3",
+			"type": "sound",
+			"url": "audios/sound 102.mp3"
+		},
+		{
+			"name": "sound 104_mp3",
+			"type": "sound",
+			"url": "audios/sound 104.mp3"
+		},
+		{
+			"name": "sound 106_mp3",
+			"type": "sound",
+			"url": "audios/sound 106.mp3"
+		},
+		{
+			"name": "sound 108_mp3",
+			"type": "sound",
+			"url": "audios/sound 108.mp3"
+		},
+		{
+			"name": "sound 139_mp3",
+			"type": "sound",
+			"url": "audios/sound 139.mp3"
+		},
+		{
+			"name": "sound 143_mp3",
+			"type": "sound",
+			"url": "audios/sound 143.mp3"
+		},
+		{
+			"name": "sound 145_mp3",
+			"type": "sound",
+			"url": "audios/sound 145.mp3"
+		},
+		{
+			"name": "sound 180_mp3",
+			"type": "sound",
+			"url": "audios/sound 180.mp3"
+		},
+		{
+			"name": "sound 184_mp3",
+			"type": "sound",
+			"url": "audios/sound 184.mp3"
+		},
+		{
+			"name": "sound 186_mp3",
+			"type": "sound",
+			"url": "audios/sound 186.mp3"
+		},
+		{
+			"name": "sound 216_mp3",
+			"type": "sound",
+			"url": "audios/sound 216.mp3"
+		},
+		{
+			"name": "sound 218_mp3",
+			"type": "sound",
+			"url": "audios/sound 218.mp3"
+		},
+		{
+			"name": "sound 220_mp3",
+			"type": "sound",
+			"url": "audios/sound 220.mp3"
+		},
+		{
+			"name": "sound 274_mp3",
+			"type": "sound",
+			"url": "audios/sound 274.mp3"
+		},
+		{
+			"name": "sound 276_mp3",
+			"type": "sound",
+			"url": "audios/sound 276.mp3"
+		},
+		{
+			"name": "sound 278_mp3",
+			"type": "sound",
+			"url": "audios/sound 278.mp3"
+		},
+		{
+			"name": "sound 283_mp3",
+			"type": "sound",
+			"url": "audios/sound 283.mp3"
+		},
+		{
+			"name": "start_scene_bg_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
+		},
+		{
+			"name": "gameEui_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "wlts_logo_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "moon_rise_bg_png",
+			"type": "image",
+			"url": "textures/moon_rise_bg.png"
+		},
+		{
+			"name": "bat_spread_png",
+			"type": "image",
+			"url": "textures/bat_spread.png"
+		},
+		{
+			"name": "bat_closure_png",
+			"type": "image",
+			"url": "textures/bat_closure.png"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MoonRiseScenes" width="2312" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Image id="moon_rise_bg.png"  source="moon_rise_bg.png" width="1920" height="1280" verticalCenter="0" horizontalCenter="0"/>
+
+</e:Skin>

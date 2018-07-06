@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartScenes" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<w:Declarations>
+	<tween:TweenGroup id="batTweenGroup">
+		<tween:TweenItem target="{batSpread}">
+			<tween:Set>
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+			</tween:Set>
+			<tween:Wait duration="250"/>
+			<tween:Set>
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
+			</tween:Set>
+		</tween:TweenItem>
+		<tween:TweenItem target="{batClosure}">
+			<tween:Set>
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
+			</tween:Set>
+			<tween:Wait duration="250"/>
+			<tween:Set>
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+			</tween:Set>
+		</tween:TweenItem>
+	</tween:TweenGroup>
+</w:Declarations>
+<e:Image id="start_scene_bg"  source="start_scene_bg_png" width="1920" height="1280" y="0" x="0"/>
+<e:Label id="hauntedHouseLable" fontFamily="Tempus-Sans-ITC" size="244"  textColor="#FFFF00" text="Haunted House" horizontalCenter="0" verticalCenter="-128"/>
+<e:Image id="batClosure"  source="bat_closure_png" x="1412" y="897" alpha="0"/>
+<e:Image id="batSpread"  source="bat_spread_png" x="1192" y="927"/>
+
+</e:Skin>

@@ -1,0 +1,16 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/MoonRiseScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/scenes/MoonRiseScene.exml",
+		"resource/scenes/StartScene.exml"
+	]
+}
