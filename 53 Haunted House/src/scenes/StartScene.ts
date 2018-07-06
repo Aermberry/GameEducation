@@ -8,15 +8,7 @@ class StartScene extends eui.Component implements eui.UIComponent{
         }
         protected childrenCreated():void
         {
-            this.batTweenGroup.addEventListener('complete', this.batTweenGroupLoopComplete, this);
-            this.batTweenGroup.play(0);
-        }
-
-        private batTweenGroupLoopComplete(): void
-        {
-            console.log('bat complete');
-            this.batTweenGroup.addEventListener('complete', this.batTweenGroupLoopComplete, this);
-            this.batTweenGroup.play(0);
+            TweenGroupUtility.playAnimation(this.batTweenGroup);
         }
 
 }

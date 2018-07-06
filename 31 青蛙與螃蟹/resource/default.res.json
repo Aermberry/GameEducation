@@ -1,0 +1,320 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,complete_scene_bg_png,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,question1_png,question2_png,question3_png,question4_png,speaker_png,radiobutton_select_down_png,sound 1 (inst_correct.mp3)_mp3,sound 2 (comic2_w4.mp3)_mp3,sound 3 (comic2_w3.mp3)_mp3,sound 4 (comic2_w2.mp3)_mp3,sound 5 (comic2_w1.mp3)_mp3,sound 6 (comic2_s4.mp3)_mp3,sound 7 (comic2_s3.mp3)_mp3,sound 8 (comic2_s2.mp3)_mp3,sound 9 (comic2_s1.mp3)_mp3,sound 60_mp3,sound 63_mp3,sound 65_mp3,sound 67_mp3,sound 69_mp3,sound 71_mp3,sound 73_mp3,sound 75_mp3,sound 77_mp3,sound 124_mp3,sound 127_mp3,sound 146_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "textures/complete_scene_bg.png",
+			"type": "image",
+			"name": "complete_scene_bg_png"
+		},
+		{
+			"url": "textures/exit_button_normal.png",
+			"type": "image",
+			"name": "exit_button_normal_png"
+		},
+		{
+			"url": "textures/exit_button_tip.png",
+			"type": "image",
+			"name": "exit_button_tip_png"
+		},
+		{
+			"url": "textures/next_button_normal.png",
+			"type": "image",
+			"name": "next_button_normal_png"
+		},
+		{
+			"url": "textures/next_button_tip.png",
+			"type": "image",
+			"name": "next_button_tip_png"
+		},
+		{
+			"url": "textures/start_button_mouse_down.png",
+			"type": "image",
+			"name": "start_button_mouse_down_png"
+		},
+		{
+			"url": "textures/start_button_mouse_over.png",
+			"type": "image",
+			"name": "start_button_mouse_over_png"
+		},
+		{
+			"url": "textures/start_button_normal.png",
+			"type": "image",
+			"name": "start_button_normal_png"
+		},
+		{
+			"url": "textures/start_button_tip.png",
+			"type": "image",
+			"name": "start_button_tip_png"
+		},
+		{
+			"url": "textures/start_scene_bg.png",
+			"type": "image",
+			"name": "start_scene_bg_png"
+		},
+		{
+			"url": "textures/footprint.png",
+			"type": "image",
+			"name": "footprint_png"
+		},
+		{
+			"url": "textures/question1.png",
+			"type": "image",
+			"name": "question1_png"
+		},
+		{
+			"url": "textures/question2.png",
+			"type": "image",
+			"name": "question2_png"
+		},
+		{
+			"url": "textures/question3.png",
+			"type": "image",
+			"name": "question3_png"
+		},
+		{
+			"url": "textures/question4.png",
+			"type": "image",
+			"name": "question4_png"
+		},
+		{
+			"url": "textures/speaker.png",
+			"type": "image",
+			"name": "speaker_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "audios/sound 1 (inst_correct.mp3).mp3",
+			"type": "sound",
+			"name": "sound 1 (inst_correct.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 2 (comic2_w4.mp3).mp3",
+			"type": "sound",
+			"name": "sound 2 (comic2_w4.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 3 (comic2_w3.mp3).mp3",
+			"type": "sound",
+			"name": "sound 3 (comic2_w3.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 4 (comic2_w2.mp3).mp3",
+			"type": "sound",
+			"name": "sound 4 (comic2_w2.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 5 (comic2_w1.mp3).mp3",
+			"type": "sound",
+			"name": "sound 5 (comic2_w1.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 6 (comic2_s4.mp3).mp3",
+			"type": "sound",
+			"name": "sound 6 (comic2_s4.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 7 (comic2_s3.mp3).mp3",
+			"type": "sound",
+			"name": "sound 7 (comic2_s3.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 8 (comic2_s2.mp3).mp3",
+			"type": "sound",
+			"name": "sound 8 (comic2_s2.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 9 (comic2_s1.mp3).mp3",
+			"type": "sound",
+			"name": "sound 9 (comic2_s1.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 60.mp3",
+			"type": "sound",
+			"name": "sound 60_mp3"
+		},
+		{
+			"url": "audios/sound 63.mp3",
+			"type": "sound",
+			"name": "sound 63_mp3"
+		},
+		{
+			"url": "audios/sound 65.mp3",
+			"type": "sound",
+			"name": "sound 65_mp3"
+		},
+		{
+			"url": "audios/sound 67.mp3",
+			"type": "sound",
+			"name": "sound 67_mp3"
+		},
+		{
+			"url": "audios/sound 69.mp3",
+			"type": "sound",
+			"name": "sound 69_mp3"
+		},
+		{
+			"url": "audios/sound 71.mp3",
+			"type": "sound",
+			"name": "sound 71_mp3"
+		},
+		{
+			"url": "audios/sound 73.mp3",
+			"type": "sound",
+			"name": "sound 73_mp3"
+		},
+		{
+			"url": "audios/sound 75.mp3",
+			"type": "sound",
+			"name": "sound 75_mp3"
+		},
+		{
+			"url": "audios/sound 77.mp3",
+			"type": "sound",
+			"name": "sound 77_mp3"
+		},
+		{
+			"url": "audios/sound 124.mp3",
+			"type": "sound",
+			"name": "sound 124_mp3"
+		},
+		{
+			"url": "audios/sound 127.mp3",
+			"type": "sound",
+			"name": "sound 127_mp3"
+		},
+		{
+			"url": "audios/sound 146.mp3",
+			"type": "sound",
+			"name": "sound 146_mp3"
+		}
+	]
+}

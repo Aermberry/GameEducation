@@ -3,28 +3,30 @@
 <w:Declarations>
 	<tween:TweenGroup id="batTweenGroup">
 		<tween:TweenItem target="{batSpread}">
+			<tween:Wait duration="250"/>
 			<tween:Set>
 				<tween:props>
-					<e:Object alpha="{1}"/>
+					<e:Object alpha="{0}"/>
 				</tween:props>
 			</tween:Set>
 			<tween:Wait duration="250"/>
 			<tween:Set>
 				<tween:props>
-					<e:Object alpha="{0}"/>
+					<e:Object alpha="{1}"/>
 				</tween:props>
 			</tween:Set>
 		</tween:TweenItem>
 		<tween:TweenItem target="{batClosure}">
+			<tween:Wait duration="250"/>
 			<tween:Set>
 				<tween:props>
-					<e:Object alpha="{0}"/>
+					<e:Object alpha="{1}"/>
 				</tween:props>
 			</tween:Set>
 			<tween:Wait duration="250"/>
 			<tween:Set>
 				<tween:props>
-					<e:Object alpha="{1}"/>
+					<e:Object alpha="{0}"/>
 				</tween:props>
 			</tween:Set>
 		</tween:TweenItem>
