@@ -67,7 +67,7 @@ class Question2AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private async onBottomCheckBoxClick(): Promise<void>
 	{
-		this.showCorrectResultGroup();
+		this.showWrongResultGroup();
 		this.stopCurrentSoundChannel();
 		this.currentSoundChannel = (RES.getRes('sound 35 (inst_fb_2c.mp3)_mp3') as egret.Sound).play(0, 1);
 		await ThreadUtility.sleep(3000);
