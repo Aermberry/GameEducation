@@ -1,4 +1,4 @@
-class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
+class Question4AnswerScene extends eui.Component implements  eui.UIComponent {
 	private topCheckBox: eui.CheckBox;
 	private middleCheckBox: eui.CheckBox;
 	private bottomCheckBox: eui.CheckBox;
@@ -34,10 +34,10 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private async playQuestionSound(): Promise<void>
 	{
-		await ThreadUtility.playSound('sound 25 (news_q1.mp3)_mp3');
-		await ThreadUtility.playSound('sound 24 (news_q1_c1.mp3)_mp3');
-		await ThreadUtility.playSound('sound 23 (news_q1_c2.mp3)_mp3');
-		await ThreadUtility.playSound('sound 22 (news_q1_c3.mp3)_mp3');
+		await ThreadUtility.playSound('sound 13 (news_q4.mp3)_mp3');
+		await ThreadUtility.playSound('sound 12 (news_q4_c1.mp3)_mp3');
+		await ThreadUtility.playSound('sound 11 (news_q4_c2.mp3)_mp3');
+		await ThreadUtility.playSound('sound 10 (news_q4_c3.mp3)_mp3');
 		this.topCheckBox.enabled = true;
 		this.middleCheckBox.enabled = true;
 		this.bottomCheckBox.enabled = true;
@@ -47,7 +47,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.showWrongResultGroup();
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('sound 40 (inst_fb_1a.mp3)_mp3') as egret.Sound).play(0, 1);
+		this.currentSoundChannel = (RES.getRes('sound 31 (inst_fb_4a.mp3)_mp3') as egret.Sound).play(0, 1);
 		await ThreadUtility.sleep(3000);
 		this.resultGroup.visible = false;
 	}
@@ -56,7 +56,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.showWrongResultGroup();
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('sound 39 (inst_fb_1b.mp3)_mp3') as egret.Sound).play(0, 1);
+		this.currentSoundChannel = (RES.getRes('sound 30 (inst_fb_4b.mp3)_mp3') as egret.Sound).play(0, 1);
 		await ThreadUtility.sleep(3000);
 		this.resultGroup.visible = false;
 	}
@@ -65,7 +65,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.showCorrectResultGroup();
 		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('sound 38 (inst_fb_1c.mp3)_mp3') as egret.Sound).play(0, 1);
+		this.currentSoundChannel = (RES.getRes('sound 29 (inst_fb_4c.mp3)_mp3') as egret.Sound).play(0, 1);
 		this.topCheckBox.enabled = false;
 		this.middleCheckBox.enabled = false;
 		this.bottomCheckBox.enabled = false;
@@ -98,12 +98,11 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 	private onNextPageButtonClick(e: egret.TouchEvent): void
 	{
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new Question2Scene());
+		Main.instance.gotoScene(new Question5Scene());
 	}
 
 	private onExitButtonClick(e: egret.TouchEvent): void
 	{
 		window.close();
 	}
-	
 }

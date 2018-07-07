@@ -1,4 +1,4 @@
-class Question1Scene extends eui.Component implements  eui.UIComponent {
+class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private startTipLabel: eui.Label;
 	private nextSceneTipLabel: eui.Label;
 	private questionNumberLabel: eui.Label;
@@ -6,10 +6,9 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private nextSceneButton: ImageButton;
 	private exitButton: ImageButton;
 	private startButtonTipLabel: eui.Label;
+	private tableGroup: eui.Group;
 
 	private currentSoundChannel: egret.SoundChannel;
-	private mcFactory: egret.MovieClipDataFactory;
-	private newsMc: egret.MovieClip; //播放新闻的Movie Clip
 
 	public constructor() {
 		super();
@@ -31,13 +30,12 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 
-		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('news_json'), RES.getRes("news_png") );
 		this.startScene();
 	}
 
 	private async startScene(): Promise<void>
 	{
-		await ThreadUtility.playSound('sound 25 (news_q1.mp3)_mp3');
+		await ThreadUtility.playSound('sound 21 (news_q2.mp3)_mp3');
 		this.questionNumberLabel.visible = false;
 		this.startTipLabel.visible = true;
 		this.startButton.visible = true;
@@ -70,21 +68,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.startButtonTipLabel.visible = false;
 		this.startTipLabel.visible = false;
 		this.startButton.visible = false;
-		this.playNewsBroadcastAnimation();
-		await ThreadUtility.playSound('sound 5 (report_p1.mp3)_mp3');
-		this.newsMc.stop();
-		this.removeChild(this.newsMc);
+		this.tableGroup.visible = true;
+		await ThreadUtility.playSound('sound 4 (report_p2.mp3)_mp3');
+		this.tableGroup.visible = false;
 		this.nextSceneTipLabel.visible = true;
 		this.nextSceneButton.enabled = true;
-	}
-
-	private playNewsBroadcastAnimation(): void
-	{
-		this.newsMc = new egret.MovieClip( this.mcFactory.generateMovieClipData( "News" ) );
-		this.newsMc.x = 345;
-		this.newsMc.y = 175;
-		this.addChild( this.newsMc );
-		this.newsMc.play(-1);
 	}
 
 	private stopCurrentSoundChannel(): void
@@ -97,7 +85,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private onNextPageButtonClick(e: egret.TouchEvent): void
 	{
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new Question1AnswerScene());
+		Main.instance.gotoScene(new Question2AnswerScene());
 	}
 
 	private onExitButtonClick(e: egret.TouchEvent): void

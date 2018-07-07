@@ -13,17 +13,15 @@
 			<e:Label text="现时\r进度" textColor="0x000000" fontFamily="华康娃娃体" size="67" verticalCenter="0" horizontalCenter="0"/>
 		</e:Group>
 		<e:Image id="footprint0" x="356" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint1" x="471.2" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint3" x="705.2" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint5" x="941" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint7" x="1176" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint9" x="1416" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint11" x="1656" y="185" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" />
-		<e:Image id="footprint2" x="588" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint4" x="823" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint6" x="1058" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint8" x="1294" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint10" x="1530" y="40" source="footprint_png" rotation="90" />
+		<e:Image id="footprint1" x="499.2" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
+		<e:Image id="footprint3" x="783.2" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
+		<e:Image id="footprint5" x="1071" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
+		<e:Image id="footprint7" x="1350" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
+		<e:Image id="footprint9" x="1632" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
+		<e:Image id="footprint2" x="640" y="38" source="footprint_png" rotation="90"/>
+		<e:Image id="footprint4" x="925" y="38" source="footprint_png" rotation="90"/>
+		<e:Image id="footprint6" x="1214" y="38" source="footprint_png" rotation="90"/>
+		<e:Image id="footprint8" x="1492" y="38" source="footprint_png" rotation="90"/>
 		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
 	</e:Group>
 </e:Skin>

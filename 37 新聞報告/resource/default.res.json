@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,speaker_png,radiobutton_select_down_png,sound 1 (report_p5.mp3)_mp3,sound 2 (report_p4.mp3)_mp3,sound 3 (report_p3.mp3)_mp3,sound 4 (report_p2.mp3)_mp3,sound 5 (report_p1.mp3)_mp3,sound 6 (news_q5_c3.mp3)_mp3,sound 7 (news_q5_c2.mp3)_mp3,sound 8 (news_q5_c1.mp3)_mp3,sound 9 (news_q5.mp3)_mp3,sound 10 (news_q4_c3.mp3)_mp3,sound 11 (news_q4_c2.mp3)_mp3,sound 12 (news_q4_c1.mp3)_mp3,sound 13 (news_q4.mp3)_mp3,sound 14 (news_q3_c3.mp3)_mp3,sound 15 (news_q3_c2.mp3)_mp3,sound 16 (news_q3_c1.mp3)_mp3,sound 17 (news_q3.mp3)_mp3,sound 18 (news_q2_c3.mp3)_mp3,sound 19 (news_q2_c2.mp3)_mp3,sound 20 (news_q2_c1.mp3)_mp3,sound 21 (news_q2.mp3)_mp3,sound 22 (news_q1_c3.mp3)_mp3,sound 23 (news_q1_c2.mp3)_mp3,sound 24 (news_q1_c1.mp3)_mp3,sound 25 (news_q1.mp3)_mp3,sound 26 (inst_fb_5c.mp3)_mp3,sound 27 (inst_fb_5b.mp3)_mp3,sound 28 (inst_fb_5a.mp3)_mp3,sound 29 (inst_fb_4c.mp3)_mp3,sound 30 (inst_fb_4b.mp3)_mp3,sound 31 (inst_fb_4a.mp3)_mp3,sound 32 (inst_fb_3c.mp3)_mp3,sound 33 (inst_fb_3b.mp3)_mp3,sound 34 (inst_fb_3a.mp3)_mp3,sound 35 (inst_fb_2c.mp3)_mp3,sound 36 (inst_fb_2b.mp3)_mp3,sound 37 (inst_fb_2a.mp3)_mp3,sound 38 (inst_fb_1c.mp3)_mp3,sound 39 (inst_fb_1b.mp3)_mp3,sound 40 (inst_fb_1a.mp3)_mp3,sound 41 (inst_correct.mp3)_mp3,sound 188_mp3,sound 213_mp3,correct_png,wrong_png,news_json,news_png,green_circle_dark_border_png,rectangle_blue_png,triangle_red_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,speaker_png,radiobutton_select_down_png,sound 1 (report_p5.mp3)_mp3,sound 2 (report_p4.mp3)_mp3,sound 3 (report_p3.mp3)_mp3,sound 4 (report_p2.mp3)_mp3,sound 5 (report_p1.mp3)_mp3,sound 6 (news_q5_c3.mp3)_mp3,sound 7 (news_q5_c2.mp3)_mp3,sound 8 (news_q5_c1.mp3)_mp3,sound 9 (news_q5.mp3)_mp3,sound 10 (news_q4_c3.mp3)_mp3,sound 11 (news_q4_c2.mp3)_mp3,sound 12 (news_q4_c1.mp3)_mp3,sound 13 (news_q4.mp3)_mp3,sound 14 (news_q3_c3.mp3)_mp3,sound 15 (news_q3_c2.mp3)_mp3,sound 16 (news_q3_c1.mp3)_mp3,sound 17 (news_q3.mp3)_mp3,sound 18 (news_q2_c3.mp3)_mp3,sound 19 (news_q2_c2.mp3)_mp3,sound 20 (news_q2_c1.mp3)_mp3,sound 21 (news_q2.mp3)_mp3,sound 22 (news_q1_c3.mp3)_mp3,sound 23 (news_q1_c2.mp3)_mp3,sound 24 (news_q1_c1.mp3)_mp3,sound 25 (news_q1.mp3)_mp3,sound 26 (inst_fb_5c.mp3)_mp3,sound 27 (inst_fb_5b.mp3)_mp3,sound 28 (inst_fb_5a.mp3)_mp3,sound 29 (inst_fb_4c.mp3)_mp3,sound 30 (inst_fb_4b.mp3)_mp3,sound 31 (inst_fb_4a.mp3)_mp3,sound 32 (inst_fb_3c.mp3)_mp3,sound 33 (inst_fb_3b.mp3)_mp3,sound 34 (inst_fb_3a.mp3)_mp3,sound 35 (inst_fb_2c.mp3)_mp3,sound 36 (inst_fb_2b.mp3)_mp3,sound 37 (inst_fb_2a.mp3)_mp3,sound 38 (inst_fb_1c.mp3)_mp3,sound 39 (inst_fb_1b.mp3)_mp3,sound 40 (inst_fb_1a.mp3)_mp3,sound 41 (inst_correct.mp3)_mp3,sound 188_mp3,sound 213_mp3,correct_png,wrong_png,news_json,news_png,green_circle_dark_border_png,rectangle_blue_png,triangle_red_png,question_png,table_png",
 			"name": "preload"
 		}
 	],
@@ -435,6 +435,16 @@
 			"name": "triangle_red_png",
 			"type": "image",
 			"url": "textures/triangle_red.png"
+		},
+		{
+			"name": "question_png",
+			"type": "image",
+			"url": "textures/question.png"
+		},
+		{
+			"name": "table_png",
+			"type": "image",
+			"url": "textures/table.png"
 		}
 	]
 }

@@ -100,7 +100,7 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        this.addChild(new Question1AnswerScene())
+        this.addChild(new StartScene())
     }
 
     public static instance: Main

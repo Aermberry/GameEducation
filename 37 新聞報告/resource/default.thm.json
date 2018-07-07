@@ -17,7 +17,15 @@
 		"Question1Scene": "resource/scenes/Question1Scene.exml",
 		"ImageButton": "resource/components/ImageButton.exml",
 		"CompleteScene": "resource/scenes/CompleteScene.exml",
-		"Question1AnswerScene": "resource/scenes/Question1AnswerScene.exml"
+		"Question1AnswerScene": "resource/scenes/Question1AnswerScene.exml",
+		"Question2Scene": "resource/scenes/Question2Scene.exml",
+		"Question2AnswerScene": "resource/scenes/Question2AnswerScene.exml",
+		"Question3Scene": "resource/scenes/Question3Scene.exml",
+		"Question3AnswerScene": "resource/scenes/Question3AnswerScene.exml",
+		"Question4Scene": "resource/scenes/Question4Scene.exml",
+		"Question4AnswerScene": "resource/scenes/Question4AnswerScene.exml",
+		"Question5Scene": "resource/scenes/Question5Scene.exml",
+		"Question5AnswerScene": "resource/scenes/Question5AnswerScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -38,6 +46,14 @@
 		"resource/scenes/CompleteScene.exml",
 		"resource/scenes/Question1AnswerScene.exml",
 		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2AnswerScene.exml",
+		"resource/scenes/Question2Scene.exml",
+		"resource/scenes/Question3AnswerScene.exml",
+		"resource/scenes/Question3Scene.exml",
+		"resource/scenes/Question4AnswerScene.exml",
+		"resource/scenes/Question4Scene.exml",
+		"resource/scenes/Question5AnswerScene.exml",
+		"resource/scenes/Question5Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

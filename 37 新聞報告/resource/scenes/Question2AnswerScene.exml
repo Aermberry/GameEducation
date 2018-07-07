@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question1AnswerSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
-	<w:Config id="16469d5e5ee" ></w:Config>
+<e:Skin class="Question2AnswerSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16472b2f646" ></w:Config>
 
 	<e:Group left="0" top="0" bottom="232" right="0">
 		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
@@ -8,16 +8,16 @@
 		<ns1:ImageButton id="nextSceneButton" x="1550" y="930" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
 		<e:Image y="130" source="rectangle_blue_png" horizontalCenter="0"/>
 		<e:Image x="500" y="200" source="triangle_red_png"/>
-		<e:Label text="衛生署證實一種高度傳染的病毒已由中央醫院傳播到哪裡？" y="150" background="true" backgroundColor="0xffffff" fontFamily="新细明体" size="77" left="600" right="270" height="250" textColor="0x050505"/>
+		<e:Label text="衛生署數字顯示三月十八日的累積染病人數有多少人？" y="150" background="true" backgroundColor="0xffffff" fontFamily="新细明体" size="77" left="600" right="270" height="250" textColor="0x050505"/>
 		<e:RadioButton id="topCheckBox" label="" x="265" y="500" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="天神邨" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="99人" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="middleCheckBox" label="" x="265" y="660" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="板橋邨" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="111人" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="bottomCheckBox" label="" x="265" y="820" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="板藍邨" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="222人" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:Image x="240" y="185" source="question_png"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
@@ -27,12 +27,12 @@
 			<e:Label text="现时\r进度" textColor="0x000000" fontFamily="华康娃娃体" size="67" verticalCenter="0" horizontalCenter="0" bold="true"/>
 		</e:Group>
 		<e:Image id="footprint0" x="356" y="40" source="footprint_png" rotation="90" />
-		<e:Image id="footprint1" x="499.2" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
+		<e:Image id="footprint1" x="499.2" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1"/>
 		<e:Image id="footprint3" x="783.2" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
 		<e:Image id="footprint5" x="1071" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
 		<e:Image id="footprint7" x="1350" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
 		<e:Image id="footprint9" x="1632" y="183" source="footprint_png" rotation="90" anchorOffsetX="0" anchorOffsetY="0" scaleX="-1" alpha="0.3"/>
-		<e:Image id="footprint2" x="640" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
+		<e:Image id="footprint2" x="640" y="38" source="footprint_png" rotation="90"/>
 		<e:Image id="footprint4" x="925" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
 		<e:Image id="footprint6" x="1214" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
 		<e:Image id="footprint8" x="1492" y="38" source="footprint_png" rotation="90" alpha="0.3"/>

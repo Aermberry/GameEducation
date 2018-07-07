@@ -1,4 +1,4 @@
-class Question1Scene extends eui.Component implements  eui.UIComponent {
+class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private startTipLabel: eui.Label;
 	private nextSceneTipLabel: eui.Label;
 	private questionNumberLabel: eui.Label;
@@ -37,7 +37,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private async startScene(): Promise<void>
 	{
-		await ThreadUtility.playSound('sound 25 (news_q1.mp3)_mp3');
+		await ThreadUtility.playSound('sound 17 (news_q3.mp3)_mp3');
 		this.questionNumberLabel.visible = false;
 		this.startTipLabel.visible = true;
 		this.startButton.visible = true;
@@ -71,7 +71,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.startTipLabel.visible = false;
 		this.startButton.visible = false;
 		this.playNewsBroadcastAnimation();
-		await ThreadUtility.playSound('sound 5 (report_p1.mp3)_mp3');
+		await ThreadUtility.playSound('sound 3 (report_p3.mp3)_mp3');
 		this.newsMc.stop();
 		this.removeChild(this.newsMc);
 		this.nextSceneTipLabel.visible = true;
