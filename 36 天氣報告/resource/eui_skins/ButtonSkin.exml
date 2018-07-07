@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="100" minWidth="130" currentState="down" xmlns:e="http://ns.egret.com/eui">
+    <e:Rect width="100%" height="100%" strokeColor="0x999999" strokeWeight="2" fillAlpha="0" />
+    <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+             size="70" fontFamily="華康中黑體" background="true" backgroundColor="0xffffff" backgroundColor.disabled="0xE3E3E3" text="确认"
+             textColor="0x000000" textColor.disabled="0x9A9A9A" verticalAlign="middle" textAlign="center"/>
+    <e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

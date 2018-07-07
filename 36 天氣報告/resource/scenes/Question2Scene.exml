@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="radioTweenGroup">
+			<tween:TweenItem target="{waveLeft1Image}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{waveLeft2Image}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{waveRight1Image}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{waveRight2Image}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rectangleRedImage}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{68}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{38}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rectanglePinkImage}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{58}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{48}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rectangleYellowImage}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{48}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{68}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="163b4cfb344" ></w:Config>
+
+	<e:Group left="0" top="0" bottom="232" right="0">
+		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
+		<e:Rect top="70" left="85" right="85" bottom="70" fillColor="0xffffff"/>
+		<ns1:ImageButton id="nextSceneButton" x="1550" y="930" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
+		<e:Group width="1090" height="770" x="215" y="115">
+			<e:Rect fillColor="0xffffff" strokeColor="0x000000" strokeWeight="25" ellipseWidth="50" left="0" bottom="0" right="0" top="0"/>
+			<e:Label id="questionNumberLabel" text="有關天氣報告問題" textColor="0x000000" fontFamily="华康中圆体" size="86" verticalCenter="0" horizontalCenter="0" textAlign="center" visible="false"/>
+			<e:Label id="startTipLabel" text="天氣報告\r第二節\r\r準備好，請按綠色按鈕" y="170" textColor="0x000000" horizontalCenter="0" size="70" fontFamily="华康中圆体" textAlign="center"/>
+			<e:Label id="nextSceneTipLabel" text="請按&quot;下一頁&quot;按鈕繼續" textColor="0x000000" horizontalCenter="0" size="86" fontFamily="标楷体" verticalCenter="0" visible="false"/>
+			<e:Image id="startButton" y="500" source="start_button_normal_png" horizontalCenter="0"/>
+			<e:Group id="radioGroup" width="930" height="560" y="130" horizontalCenter="0" visible="false">
+				<e:Image id="radioImage" y="98" source="radio_png" horizontalCenter="0"/>
+				<e:Image id="waveLeft1Image" x="44" y="38" source="wave_left_1_png"/>
+				<e:Image id="waveLeft2Image" x="44" y="38" source="wave_left_2_png" alpha="0"/>
+				<e:Image id="waveRight1Image" x="672" y="30" source="wave_right_1_png"/>
+				<e:Image id="waveRight2Image" x="672" y="30" source="wave_right_2_png" alpha="0"/>
+				<e:Image id="rectangleRedImage" x="423" source="rectangle_red_png" bottom="200"/>
+				<e:Image id="rectanglePinkImage" x="465" source="rectangle_pink_png" bottom="200"/>
+				<e:Image id="rectangleYellowImage" x="507" source="rectangle_yellow_png" bottom="200"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group top="1208" left="0" right="0" bottom="0" >
+		<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffcf88"/>
+		<e:Group width="160" height="150" left="30" top="30">
+			<e:Rect left="0" top="0" fillColor="0xffffff" bottom="0" right="0"/>
+			<e:Label text="現時\r進度" textColor="0x000000" fontFamily="華康娃娃体" size="67" verticalCenter="0" horizontalCenter="0" bold="true"/>
+		</e:Group>
+		<e:Image id="footprint0" x="210" y="14" source="footprint_png"/>
+		<e:Image id="footprint1" x="452" y="14" source="footprint_png"/>
+		<e:Image id="footprint2" x="696.5" y="14" source="footprint_png" alpha="0.3"/>
+		<e:Image id="footprint3" x="946" y="14" source="footprint_png" alpha="0.3"/>
+		<e:Image id="footprint4" x="1464" y="28" source="footprint_png" alpha="0.3"/>
+		<e:Image id="footprint5" x="1205" y="14" source="footprint_png" alpha="0.3"/>
+		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
+	</e:Group>
+</e:Skin>

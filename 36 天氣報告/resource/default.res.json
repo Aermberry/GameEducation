@@ -1,0 +1,480 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,speaker_png,radiobutton_select_down_png,correct_png,wrong_png,news_json,news_png,green_circle_dark_border_png,rectangle_blue_png,triangle_red_png,question_png,table_png,triangle_red_light_png,girl_png,sunny_png,thunderstorm_png,cloudy_png,radio_png,wave_left_1_png,wave_left_2_png,wave_right_1_png,wave_right_2_png,rectangle_red_png,rectangle_yellow_png,rectangle_pink_png,sound 1 (wreport2.mp3)_mp3,sound 2 (wreport1.mp3)_mp3,sound 3 (wreport0.mp3)_mp3,sound 4 (wQ23.mp3)_mp3,sound 5 (wQ22.mp3)_mp3,sound 6 (wQ20.mp3)_mp3,sound 7 (wQ19.mp3)_mp3,sound 8 (wQ18.mp3)_mp3,sound 9 (wQ17.mp3)_mp3,sound 10 (wQ16-22_tail.mp3)_mp3,sound 11 (wQ16.mp3)_mp3,sound 12 (wQ14.mp3)_mp3,sound 13 (wQ13.mp3)_mp3,sound 14 (wQ12.mp3)_mp3,sound 15 (wQ11.mp3)_mp3,sound 16 (wQ10.mp3)_mp3,sound 17 (wQ09.mp3)_mp3,sound 18 (wQ08.mp3)_mp3,sound 19 (wQ07.mp3)_mp3,sound 20 (wQ06.mp3)_mp3,sound 21 (wQ05.mp3)_mp3,sound 22 (wQ04.mp3)_mp3,sound 23 (wQ03.mp3)_mp3,sound 24 (wQ02.mp3)_mp3,sound 25 (wQ01-14_tail.mp3)_mp3,sound 26 (wQ01.mp3)_mp3,sound 27 (w_to_next.mp3)_mp3,sound 28 (w_inst_intro.mp3)_mp3,sound 232_mp3,wrong_answer_mp3,you_are_correct_mp3,replay_png,rectangle_gray_png,spissatus_png,rainy_png,shower_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "textures/exit_button_normal.png",
+			"type": "image",
+			"name": "exit_button_normal_png"
+		},
+		{
+			"url": "textures/exit_button_tip.png",
+			"type": "image",
+			"name": "exit_button_tip_png"
+		},
+		{
+			"url": "textures/next_button_normal.png",
+			"type": "image",
+			"name": "next_button_normal_png"
+		},
+		{
+			"url": "textures/next_button_tip.png",
+			"type": "image",
+			"name": "next_button_tip_png"
+		},
+		{
+			"url": "textures/start_button_mouse_down.png",
+			"type": "image",
+			"name": "start_button_mouse_down_png"
+		},
+		{
+			"url": "textures/start_button_mouse_over.png",
+			"type": "image",
+			"name": "start_button_mouse_over_png"
+		},
+		{
+			"url": "textures/start_button_normal.png",
+			"type": "image",
+			"name": "start_button_normal_png"
+		},
+		{
+			"url": "textures/start_button_tip.png",
+			"type": "image",
+			"name": "start_button_tip_png"
+		},
+		{
+			"url": "textures/start_scene_bg.png",
+			"type": "image",
+			"name": "start_scene_bg_png"
+		},
+		{
+			"url": "textures/footprint.png",
+			"type": "image",
+			"name": "footprint_png"
+		},
+		{
+			"url": "textures/speaker.png",
+			"type": "image",
+			"name": "speaker_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "textures/correct.png",
+			"type": "image",
+			"name": "correct_png"
+		},
+		{
+			"url": "textures/wrong.png",
+			"type": "image",
+			"name": "wrong_png"
+		},
+		{
+			"url": "textures/news.json",
+			"type": "json",
+			"name": "news_json"
+		},
+		{
+			"url": "textures/news.png",
+			"type": "image",
+			"name": "news_png"
+		},
+		{
+			"url": "textures/green_circle_dark_border.png",
+			"type": "image",
+			"name": "green_circle_dark_border_png"
+		},
+		{
+			"url": "textures/rectangle_blue.png",
+			"type": "image",
+			"name": "rectangle_blue_png"
+		},
+		{
+			"url": "textures/triangle_red.png",
+			"type": "image",
+			"name": "triangle_red_png"
+		},
+		{
+			"url": "textures/question.png",
+			"type": "image",
+			"name": "question_png"
+		},
+		{
+			"url": "textures/table.png",
+			"type": "image",
+			"name": "table_png"
+		},
+		{
+			"url": "textures/triangle_red_light.png",
+			"type": "image",
+			"name": "triangle_red_light_png"
+		},
+		{
+			"url": "textures/girl.png",
+			"type": "image",
+			"name": "girl_png"
+		},
+		{
+			"url": "textures/sunny.png",
+			"type": "image",
+			"name": "sunny_png"
+		},
+		{
+			"url": "textures/thunderstorm.png",
+			"type": "image",
+			"name": "thunderstorm_png"
+		},
+		{
+			"url": "textures/cloudy.png",
+			"type": "image",
+			"name": "cloudy_png"
+		},
+		{
+			"url": "textures/radio.png",
+			"type": "image",
+			"name": "radio_png"
+		},
+		{
+			"url": "textures/wave_left_1.png",
+			"type": "image",
+			"name": "wave_left_1_png"
+		},
+		{
+			"url": "textures/wave_left_2.png",
+			"type": "image",
+			"name": "wave_left_2_png"
+		},
+		{
+			"url": "textures/wave_right_1.png",
+			"type": "image",
+			"name": "wave_right_1_png"
+		},
+		{
+			"url": "textures/wave_right_2.png",
+			"type": "image",
+			"name": "wave_right_2_png"
+		},
+		{
+			"url": "textures/rectangle_red.png",
+			"type": "image",
+			"name": "rectangle_red_png"
+		},
+		{
+			"url": "textures/rectangle_yellow.png",
+			"type": "image",
+			"name": "rectangle_yellow_png"
+		},
+		{
+			"url": "textures/rectangle_pink.png",
+			"type": "image",
+			"name": "rectangle_pink_png"
+		},
+		{
+			"url": "audios/sound 1 (wreport2.mp3).mp3",
+			"type": "sound",
+			"name": "sound 1 (wreport2.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 2 (wreport1.mp3).mp3",
+			"type": "sound",
+			"name": "sound 2 (wreport1.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 3 (wreport0.mp3).mp3",
+			"type": "sound",
+			"name": "sound 3 (wreport0.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 4 (wQ23.mp3).mp3",
+			"type": "sound",
+			"name": "sound 4 (wQ23.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 5 (wQ22.mp3).mp3",
+			"type": "sound",
+			"name": "sound 5 (wQ22.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 6 (wQ20.mp3).mp3",
+			"type": "sound",
+			"name": "sound 6 (wQ20.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 7 (wQ19.mp3).mp3",
+			"type": "sound",
+			"name": "sound 7 (wQ19.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 8 (wQ18.mp3).mp3",
+			"type": "sound",
+			"name": "sound 8 (wQ18.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 9 (wQ17.mp3).mp3",
+			"type": "sound",
+			"name": "sound 9 (wQ17.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 10 (wQ16-22_tail.mp3).mp3",
+			"type": "sound",
+			"name": "sound 10 (wQ16-22_tail.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 11 (wQ16.mp3).mp3",
+			"type": "sound",
+			"name": "sound 11 (wQ16.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 12 (wQ14.mp3).mp3",
+			"type": "sound",
+			"name": "sound 12 (wQ14.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 13 (wQ13.mp3).mp3",
+			"type": "sound",
+			"name": "sound 13 (wQ13.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 14 (wQ12.mp3).mp3",
+			"type": "sound",
+			"name": "sound 14 (wQ12.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 15 (wQ11.mp3).mp3",
+			"type": "sound",
+			"name": "sound 15 (wQ11.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 16 (wQ10.mp3).mp3",
+			"type": "sound",
+			"name": "sound 16 (wQ10.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 17 (wQ09.mp3).mp3",
+			"type": "sound",
+			"name": "sound 17 (wQ09.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 18 (wQ08.mp3).mp3",
+			"type": "sound",
+			"name": "sound 18 (wQ08.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 19 (wQ07.mp3).mp3",
+			"type": "sound",
+			"name": "sound 19 (wQ07.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 20 (wQ06.mp3).mp3",
+			"type": "sound",
+			"name": "sound 20 (wQ06.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 21 (wQ05.mp3).mp3",
+			"type": "sound",
+			"name": "sound 21 (wQ05.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 22 (wQ04.mp3).mp3",
+			"type": "sound",
+			"name": "sound 22 (wQ04.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 23 (wQ03.mp3).mp3",
+			"type": "sound",
+			"name": "sound 23 (wQ03.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 24 (wQ02.mp3).mp3",
+			"type": "sound",
+			"name": "sound 24 (wQ02.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 25 (wQ01-14_tail.mp3).mp3",
+			"type": "sound",
+			"name": "sound 25 (wQ01-14_tail.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 26 (wQ01.mp3).mp3",
+			"type": "sound",
+			"name": "sound 26 (wQ01.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 27 (w_to_next.mp3).mp3",
+			"type": "sound",
+			"name": "sound 27 (w_to_next.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 28 (w_inst_intro.mp3).mp3",
+			"type": "sound",
+			"name": "sound 28 (w_inst_intro.mp3)_mp3"
+		},
+		{
+			"url": "audios/sound 232.mp3",
+			"type": "sound",
+			"name": "sound 232_mp3"
+		},
+		{
+			"url": "audios/wrong_answer.mp3",
+			"type": "sound",
+			"name": "wrong_answer_mp3"
+		},
+		{
+			"url": "audios/you_are_correct.mp3",
+			"type": "sound",
+			"name": "you_are_correct_mp3"
+		},
+		{
+			"name": "replay_png",
+			"type": "image",
+			"url": "textures/replay.png"
+		},
+		{
+			"name": "rectangle_gray_png",
+			"type": "image",
+			"url": "textures/rectangle_gray.png"
+		},
+		{
+			"name": "spissatus_png",
+			"type": "image",
+			"url": "textures/spissatus.png"
+		},
+		{
+			"name": "rainy_png",
+			"type": "image",
+			"url": "textures/rainy.png"
+		},
+		{
+			"name": "shower_png",
+			"type": "image",
+			"url": "textures/shower.png"
+		}
+	]
+}
