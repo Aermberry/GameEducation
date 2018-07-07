@@ -97,7 +97,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private onNextPageButtonClick(e: egret.TouchEvent): void
 	{
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new Question1AnswerScene());
+		Main.instance.gotoScene(new Question4AnswerScene());
 	}
 
 	private onExitButtonClick(e: egret.TouchEvent): void
