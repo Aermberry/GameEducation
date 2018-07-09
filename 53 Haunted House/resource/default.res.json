@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png",
 			"name": "preload"
 		}
 	],
@@ -165,6 +165,46 @@
 			"name": "bat_closure_png",
 			"type": "image",
 			"url": "textures/bat_closure.png"
+		},
+		{
+			"name": "first_tree_png",
+			"type": "image",
+			"url": "textures/first_tree.png"
+		},
+		{
+			"name": "middle_cloud_png",
+			"type": "image",
+			"url": "textures/middle_cloud.png"
+		},
+		{
+			"name": "second_tree_png",
+			"type": "image",
+			"url": "textures/second_tree.png"
+		},
+		{
+			"name": "moon_png",
+			"type": "image",
+			"url": "textures/moon.png"
+		},
+		{
+			"name": "third_tree_png",
+			"type": "image",
+			"url": "textures/third_tree.png"
+		},
+		{
+			"name": "head_could_png",
+			"type": "image",
+			"url": "textures/head_could.png"
+		},
+		{
+			"name": "platform_png",
+			"type": "image",
+			"url": "textures/platform.png"
+		},
+		{
+			"name": "platform_door_png",
+			"type": "image",
+			"url": "textures/platform_door.png"
 		}
 	]
 }

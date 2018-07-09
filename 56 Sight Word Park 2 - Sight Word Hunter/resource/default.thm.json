@@ -24,8 +24,8 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/components/BallTarget.exml",
 		"resource/components/BalloonTarget.exml",
+		"resource/components/BallTarget.exml",
 		"resource/components/BirdTarget.exml",
 		"resource/components/BottleTarget.exml",
 		"resource/components/CakeTarget.exml",

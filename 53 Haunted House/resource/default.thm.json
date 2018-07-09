@@ -1,16 +1,22 @@
 {
 	"skins": {
 		"StartScene": "resource/scenes/StartScene.exml",
-		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml"
+		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml",
+		"EnterHouseScene": "resource/scenes/EnterHouseScene.exml",
+		"InsideHouseScene":"resource/scenes/InsideHouseScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
 		"resource/scenes/StartScene.exml",
-		"resource/scenes/MoonRiseScene.exml"
+		"resource/scenes/MoonRiseScene.exml",
+		"resource/scenes/EnterHouseScene.exml",
+		"resource/scenes/InsideHouseScene.exml"
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
+		"resource/scenes/EnterHouseScene.exml",
 		"resource/scenes/MoonRiseScene.exml",
-		"resource/scenes/StartScene.exml"
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/InsideHouseScene.exml"
 	]
 }
