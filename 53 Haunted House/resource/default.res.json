@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png",
 			"name": "preload"
 		}
 	],
@@ -205,6 +205,91 @@
 			"name": "platform_door_png",
 			"type": "image",
 			"url": "textures/platform_door.png"
+		},
+		{
+			"name": "fifth_tree_png",
+			"type": "image",
+			"url": "textures/fifth_tree.png"
+		},
+		{
+			"name": "forth_tree_png",
+			"type": "image",
+			"url": "textures/forth_tree.png"
+		},
+		{
+			"name": "cart_png",
+			"type": "image",
+			"url": "textures/cart.png"
+		},
+		{
+			"name": "conversation_window_png",
+			"type": "image",
+			"url": "textures/conversation_window.png"
+		},
+		{
+			"name": "boyandgirl_positive_png",
+			"type": "image",
+			"url": "textures/boyandgirl_positive.png"
+		},
+		{
+			"name": "boyandgirl_negative_png",
+			"type": "image",
+			"url": "textures/boyandgirl_negative.png"
+		},
+		{
+			"name": "first_falsh_png",
+			"type": "image",
+			"url": "textures/first_falsh.png"
+		},
+		{
+			"name": "scroll_second_flash_png",
+			"type": "image",
+			"url": "textures/scroll_second_flash.png"
+		},
+		{
+			"name": "scroll_first_flash_png",
+			"type": "image",
+			"url": "textures/scroll_first_flash.png"
+		},
+		{
+			"name": "button_png",
+			"type": "image",
+			"url": "textures/button.png"
+		},
+		{
+			"name": "hover_button_png",
+			"type": "image",
+			"url": "textures/hover_button.png"
+		},
+		{
+			"name": "down_button_png",
+			"type": "image",
+			"url": "textures/down_button.png"
+		},
+		{
+			"name": "inside_house_bg_png",
+			"type": "image",
+			"url": "textures/inside_house_bg.png"
+		},
+		{
+			"name": "rail_png",
+			"type": "image",
+			"url": "textures/rail.png"
+		},
+		{
+			"name": "inside_house_deep_bg_png",
+			"type": "image",
+			"url": "textures/inside_house_deep_bg.png"
+		},
+		{
+			"name": "qusetion_scene_bg_png",
+			"type": "image",
+			"url": "textures/qusetion_scene_bg.png"
+		},
+		{
+			"name": "qusetion_scene_button_png",
+			"type": "image",
+			"url": "textures/qusetion_scene_button.png"
 		}
 	]
 }

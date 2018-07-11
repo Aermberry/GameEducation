@@ -15,14 +15,14 @@ class StartScene extends eui.Component implements eui.UIComponent{
         protected childrenCreated():void
         {   
             super.childrenCreated();
-            this.batTweenGroup.addEventListener(egret.Event.COMPLETE,this.onBatTweenGroupComplete,this);
-            // TweenGroupUtility.playAnimation(this.batTweenGroup);
-            this.batTweenGroup.play(0);
+            this.startScene();
         }
-        
-        private onBatTweenGroupComplete (e:egret.Event):void
+
+        private async startScene(): Promise<void>
         {
+            TweenGroupUtility.playAnimation(this.batTweenGroup);
+            await ThreadUtility.sleep(2000);
+            this.batTweenGroup.stop();
             Main.instance.gotoScene(new MoonRiseScene());
-            
         }
 }

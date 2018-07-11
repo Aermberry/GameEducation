@@ -1,28 +1,16 @@
-class  QuestionScene extends eui.Component implements eui.UIComponent{
-
-    
-    public constructor(){
+class QuestionScene extends eui.Component implements eui.UIComponent{
+     private textTweenGroup:egret.tween.TweenGroup
+     private QusetionSceneButton:eui.Image
+     
+     public constructor(){
         super();
+     }
+     protected childrenCreated():void
+    {   
+        super.childrenCreated();
+        mouse.enable(this.stage);
+        mouse.setButtonMode(this.QusetionSceneButton, true);
+        this.textTweenGroup.play(0);
+        this.QusetionSceneButton.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>Main.instance.gotoScene(new SeeScene),this);
     }
-    
-    protected partAdded(partName:string,instance:any):void
-        {
-            super.partAdded(partName,instance);
-        }
-        
-
-        protected childrenCreated():void
-        {   
-            super.childrenCreated();
-            
-            
-        }
-        
-        private InsideHouseSceneComplete (e:egret.Event):void
-        {
-            
-        }
-
-
-    
 }

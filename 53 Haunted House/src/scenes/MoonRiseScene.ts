@@ -15,7 +15,7 @@ class MoonRiseScene extends eui.Component implements eui.UIComponent{
         {   
             super.childrenCreated();
             this.moonRiseGreenGroup.addEventListener(egret.Event.COMPLETE,this.moonRiseGreenGroupComplete,this);
-            
+            this.moonRiseGreenGroup.play(0);
             
         }
         

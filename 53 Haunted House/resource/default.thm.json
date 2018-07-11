@@ -3,20 +3,24 @@
 		"StartScene": "resource/scenes/StartScene.exml",
 		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml",
 		"EnterHouseScene": "resource/scenes/EnterHouseScene.exml",
-		"InsideHouseScene":"resource/scenes/InsideHouseScene.exml"
+		"InsideHouseScene": "resource/scenes/InsideHouseScene.exml",
+		"QuestionScene": "resource/scenes/QuestionScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
 		"resource/scenes/StartScene.exml",
 		"resource/scenes/MoonRiseScene.exml",
 		"resource/scenes/EnterHouseScene.exml",
-		"resource/scenes/InsideHouseScene.exml"
+		"resource/scenes/InsideHouseScene.exml",
+		"resource/scenes/QuestionScene.exml"
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
 		"resource/scenes/EnterHouseScene.exml",
+		"resource/scenes/InsideHouseScene.exml",
 		"resource/scenes/MoonRiseScene.exml",
-		"resource/scenes/StartScene.exml",
-		"resource/scenes/InsideHouseScene.exml"
+		"resource/scenes/QuestionScene.exml",
+		"resource/scenes/SeeScene.exml",
+		"resource/scenes/StartScene.exml"
 	]
 }

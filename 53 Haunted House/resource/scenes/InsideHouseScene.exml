@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="insideHouseSceneSkin" width="2561" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="insideHouseTweenGroup">
+        <tween:TweenItem target="{InsideHouseSceneButton}">
+					<tween:Wait duration="500"/>
+					<tween:Set>
+						<tween:props>
+							<e:Object alpha="{1}"/>
+						</tween:props>
+					</tween:Set>		
+        </tween:TweenItem>
+		<tween:TweenItem target="{rail}">
+			<tween:To duration="1000">
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
+			</tween:To>
+
+		
+        </tween:TweenItem>
+        <tween:TweenItem target="{boyandgirl_negative}">
+					<tween:To duration="1000">
+						<tween:props>
+							<e:Object alpha="{0}"/>
+						</tween:props>
+					</tween:To>
+
+		
+        </tween:TweenItem>
+        <tween:TweenItem target="{cart}">
+					<tween:To duration="1000">
+						<tween:props>
+							<e:Object alpha="{0}"/>
+						</tween:props>
+					</tween:To>
+		
+        </tween:TweenItem>
+		<tween:TweenItem target="{inside_house_bg}">
+			<tween:To duration="1000">
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
+			</tween:To>
+	
+        </tween:TweenItem>
+
+        </tween:TweenGroup>
+    </w:Declarations>
+
+
+
+<e:Image id="inside_house_deep_bg" source="inside_house_deep_bg_png" horizontalCenter="0" verticalCenter="0" locked="true"/>
+<e:Image id="inside_house_bg" source="inside_house_bg_png" horizontalCenter="0" verticalCenter="0" locked="true"/>
+<e:Image id="rail" source="rail_png" x="936.5" y="581.7"/>
+<e:Image id="cart" source="cart_png" x="970" y="680" />
+<e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="382.75" scaleX="1.5" scaleY="1.5"/>
+<e:Image id="conversation_window" source="conversation_window_png" width="1677" height="492" x="430" y="771" locked="true"/>
+<e:Image id="InsideHouseSceneButton" source="button_png" x="1939" y="1102" alpha="0"/>
+<e:Label text="It is very dark inside. The train goes slowly..." x="936.5" y="922.5" textColor="#000000" locked="true"/>
+
+</e:Skin>
