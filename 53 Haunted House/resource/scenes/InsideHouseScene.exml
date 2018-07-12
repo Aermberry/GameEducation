@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="insideHouseSceneSkin" width="2561" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="insideHouseSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="insideHouseTweenGroup">
         <tween:TweenItem target="{InsideHouseSceneButton}">
-					<tween:Wait duration="500"/>
+					<tween:Wait duration="6250"/>
 					<tween:Set>
 						<tween:props>
 							<e:Object alpha="{1}"/>
@@ -11,7 +11,7 @@
 					</tween:Set>		
         </tween:TweenItem>
 		<tween:TweenItem target="{rail}">
-			<tween:To duration="1000">
+			<tween:To duration="3000">
 				<tween:props>
 					<e:Object alpha="{0}"/>
 				</tween:props>
@@ -20,7 +20,7 @@
 		
         </tween:TweenItem>
         <tween:TweenItem target="{boyandgirl_negative}">
-					<tween:To duration="1000">
+					<tween:To duration="3000">
 						<tween:props>
 							<e:Object alpha="{0}"/>
 						</tween:props>
@@ -29,7 +29,7 @@
 		
         </tween:TweenItem>
         <tween:TweenItem target="{cart}">
-					<tween:To duration="1000">
+					<tween:To duration="3000">
 						<tween:props>
 							<e:Object alpha="{0}"/>
 						</tween:props>
@@ -37,7 +37,7 @@
 		
         </tween:TweenItem>
 		<tween:TweenItem target="{inside_house_bg}">
-			<tween:To duration="1000">
+			<tween:To duration="3000">
 				<tween:props>
 					<e:Object alpha="{0}"/>
 				</tween:props>

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,sound 7_mp3,sound 14_mp3,sound 19_mp3,sound 45_mp3,sound 63_mp3,sound 88_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 63_mp3,sound 139_mp3,sound 143_mp3,sound 145_mp3,sound 180_mp3,sound 184_mp3,sound 186_mp3,sound 216_mp3,sound 218_mp3,sound 220_mp3,sound 274_mp3,sound 276_mp3,sound 278_mp3,sound 283_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png,spider_web_png,head_first_spider_png,head_second_spider_png,other_scene_window_png,select_answer_scene_bg_png,girl_sad_png,twoboy_whisper_png,door_png,flower_mushroom_png,fish_png,pointed_paper_png,description_scene_bg_png,description_exit_button_png,inverted_bat_png,skeleton_png,boyandgirl_cold_png,boyandgirl_excited_png,boyandgirl_horrified_png,description_text_png,start_scene_bgm_mp3,moon_rise_bgm_mp3,enter_house_first_mp3,enter_house_second_mp3,inside_house_bgm_mp3,question_first_bgm_mp3,question_second_bgm_mp3,question_third_bgm_mp3,question_forth_bgm_mp3",
 			"name": "preload"
 		}
 	],
@@ -22,54 +22,9 @@
 			"url": "config/description.json"
 		},
 		{
-			"name": "sound 7_mp3",
-			"type": "sound",
-			"url": "audios/sound 7.mp3"
-		},
-		{
-			"name": "sound 14_mp3",
-			"type": "sound",
-			"url": "audios/sound 14.mp3"
-		},
-		{
-			"name": "sound 19_mp3",
-			"type": "sound",
-			"url": "audios/sound 19.mp3"
-		},
-		{
-			"name": "sound 45_mp3",
-			"type": "sound",
-			"url": "audios/sound 45.mp3"
-		},
-		{
 			"name": "sound 63_mp3",
 			"type": "sound",
 			"url": "audios/sound 63.mp3"
-		},
-		{
-			"name": "sound 88_mp3",
-			"type": "sound",
-			"url": "audios/sound 88.mp3"
-		},
-		{
-			"name": "sound 102_mp3",
-			"type": "sound",
-			"url": "audios/sound 102.mp3"
-		},
-		{
-			"name": "sound 104_mp3",
-			"type": "sound",
-			"url": "audios/sound 104.mp3"
-		},
-		{
-			"name": "sound 106_mp3",
-			"type": "sound",
-			"url": "audios/sound 106.mp3"
-		},
-		{
-			"name": "sound 108_mp3",
-			"type": "sound",
-			"url": "audios/sound 108.mp3"
 		},
 		{
 			"name": "sound 139_mp3",
@@ -290,6 +245,146 @@
 			"name": "qusetion_scene_button_png",
 			"type": "image",
 			"url": "textures/qusetion_scene_button.png"
+		},
+		{
+			"name": "spider_web_png",
+			"type": "image",
+			"url": "textures/spider_web.png"
+		},
+		{
+			"name": "head_first_spider_png",
+			"type": "image",
+			"url": "textures/head_first_spider.png"
+		},
+		{
+			"name": "head_second_spider_png",
+			"type": "image",
+			"url": "textures/head_second_spider.png"
+		},
+		{
+			"name": "other_scene_window_png",
+			"type": "image",
+			"url": "textures/other_scene_window.png"
+		},
+		{
+			"name": "select_answer_scene_bg_png",
+			"type": "image",
+			"url": "textures/select_answer_scene_bg.png"
+		},
+		{
+			"name": "girl_sad_png",
+			"type": "image",
+			"url": "textures/girl_sad.png"
+		},
+		{
+			"name": "twoboy_whisper_png",
+			"type": "image",
+			"url": "textures/twoboy_whisper.png"
+		},
+		{
+			"name": "door_png",
+			"type": "image",
+			"url": "textures/door.png"
+		},
+		{
+			"name": "flower_mushroom_png",
+			"type": "image",
+			"url": "textures/flower_mushroom.png"
+		},
+		{
+			"name": "fish_png",
+			"type": "image",
+			"url": "textures/fish.png"
+		},
+		{
+			"name": "pointed_paper_png",
+			"type": "image",
+			"url": "textures/pointed_paper.png"
+		},
+		{
+			"name": "description_scene_bg_png",
+			"type": "image",
+			"url": "textures/description_scene_bg.png"
+		},
+		{
+			"name": "description_exit_button_png",
+			"type": "image",
+			"url": "textures/description_exit_button.png"
+		},
+		{
+			"name": "inverted_bat_png",
+			"type": "image",
+			"url": "textures/inverted_bat.png"
+		},
+		{
+			"name": "skeleton_png",
+			"type": "image",
+			"url": "textures/skeleton.png"
+		},
+		{
+			"name": "boyandgirl_cold_png",
+			"type": "image",
+			"url": "textures/boyandgirl_cold.png"
+		},
+		{
+			"name": "boyandgirl_excited_png",
+			"type": "image",
+			"url": "textures/boyandgirl_excited.png"
+		},
+		{
+			"name": "boyandgirl_horrified_png",
+			"type": "image",
+			"url": "textures/boyandgirl_horrified.png"
+		},
+		{
+			"name": "description_text_png",
+			"type": "image",
+			"url": "textures/description_text.png"
+		},
+		{
+			"name": "start_scene_bgm_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_bgm.mp3"
+		},
+		{
+			"name": "moon_rise_bgm_mp3",
+			"type": "sound",
+			"url": "audios/moon_rise_bgm.mp3"
+		},
+		{
+			"name": "enter_house_first_mp3",
+			"type": "sound",
+			"url": "audios/enter_house_first.mp3"
+		},
+		{
+			"name": "enter_house_second_mp3",
+			"type": "sound",
+			"url": "audios/enter_house_second.mp3"
+		},
+		{
+			"name": "inside_house_bgm_mp3",
+			"type": "sound",
+			"url": "audios/inside_house_bgm.mp3"
+		},
+		{
+			"name": "question_first_bgm_mp3",
+			"type": "sound",
+			"url": "audios/question_first_bgm.mp3"
+		},
+		{
+			"name": "question_second_bgm_mp3",
+			"type": "sound",
+			"url": "audios/question_second_bgm.mp3"
+		},
+		{
+			"name": "question_third_bgm_mp3",
+			"type": "sound",
+			"url": "audios/question_third_bgm.mp3"
+		},
+		{
+			"name": "question_forth_bgm_mp3",
+			"type": "sound",
+			"url": "audios/question_forth_bgm.mp3"
 		}
 	]
 }

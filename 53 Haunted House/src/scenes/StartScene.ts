@@ -1,6 +1,7 @@
 class StartScene extends eui.Component implements eui.UIComponent{
 
-        private  batTweenGroup:egret.tween.TweenGroup;
+        private batTweenGroup:egret.tween.TweenGroup;
+        private bgmSoundChannel:egret.SoundChannel;
 
         public constructor(){
             super();   
@@ -15,6 +16,7 @@ class StartScene extends eui.Component implements eui.UIComponent{
         protected childrenCreated():void
         {   
             super.childrenCreated();
+            this.bgmSoundChannel = RES.getRes('start_scene_bgm_mp3').play();
             this.startScene();
         }
 
@@ -23,6 +25,7 @@ class StartScene extends eui.Component implements eui.UIComponent{
             TweenGroupUtility.playAnimation(this.batTweenGroup);
             await ThreadUtility.sleep(2000);
             this.batTweenGroup.stop();
+            this.bgmSoundChannel.stop();
             Main.instance.gotoScene(new MoonRiseScene());
         }
 }

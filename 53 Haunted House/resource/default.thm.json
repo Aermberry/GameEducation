@@ -4,7 +4,12 @@
 		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml",
 		"EnterHouseScene": "resource/scenes/EnterHouseScene.exml",
 		"InsideHouseScene": "resource/scenes/InsideHouseScene.exml",
-		"QuestionScene": "resource/scenes/QuestionScene.exml"
+		"QuestionScene": "resource/scenes/QuestionScene.exml",
+		"SeeScene": "resource/scenes/SeeScene.exml",
+		"FeelScene": "resource/scenes/FeelScene.exml",
+		"HearScene": "resource/scenes/HearScene.exml",
+		"SmellScene": "resource/scenes/SmellScene.exml",
+		"DescriptionScene": "resource/scenes/DescriptionScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
@@ -12,15 +17,24 @@
 		"resource/scenes/MoonRiseScene.exml",
 		"resource/scenes/EnterHouseScene.exml",
 		"resource/scenes/InsideHouseScene.exml",
-		"resource/scenes/QuestionScene.exml"
+		"resource/scenes/QuestionScene.exml",
+		"resource/scenes/SeeScene.exml",
+		"resource/scenes/FeelScene.exml",
+		"resource/scenes/HearScene.exml",
+		"resource/scenes/SmellScene.exml",
+		"resource/scenes/DescriptionScene.exml"
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
+		"resource/scenes/DescriptionScene.exml",
 		"resource/scenes/EnterHouseScene.exml",
+		"resource/scenes/FeelScene.exml",
+		"resource/scenes/HearScene.exml",
 		"resource/scenes/InsideHouseScene.exml",
 		"resource/scenes/MoonRiseScene.exml",
 		"resource/scenes/QuestionScene.exml",
 		"resource/scenes/SeeScene.exml",
+		"resource/scenes/SmellScene.exml",
 		"resource/scenes/StartScene.exml"
 	]
 }

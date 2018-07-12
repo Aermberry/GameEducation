@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartScenes" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+
+<e:Image id="feel_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
+<e:Image id="BoyandgirlCold" source="boyandgirl_cold_png" y="44" x="468"/>
+<e:Image id="BoyandgirlExcited"  source="boyandgirl_excited_png" y="428" x="1041"/>
+<e:Image id="BoyandgirlHorrified" source="boyandgirl_horrified_png"  y="58" x="1733"/>
+<e:Image id="feel_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
+
+<e:Label id="FeelSceneText" text="They See ..." y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
+<e:Image id="FeelSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+</e:Skin>
+

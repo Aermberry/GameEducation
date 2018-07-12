@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DescriptionSceneSKin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Image id="description_scene_bg" source="description_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
+<e:Image id="InvertedBat" source="inverted_bat_png" y="17" x="415" locked="true"/>
+<e:Image id="DescriptionExitButton" source="description_exit_button_png" y="1155" x="1978" locked="true"/>	
+<e:Label id="ExitButtonText" text="Exit" size="60" y="1177" x="1997"/>
+<e:Image source="description_text_png" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

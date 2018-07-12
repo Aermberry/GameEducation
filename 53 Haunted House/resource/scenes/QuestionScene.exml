@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="QuestionSceneSkin" width="2561" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="QuestionSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="textTweenGroup">
 			<tween:TweenItem target="{see}">
@@ -8,9 +8,9 @@
 						<e:Object/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="250">
+				<tween:To duration="2000">
 					<tween:props>
-						<e:Object alpha="{0}" x="{355}"/>
+						<e:Object alpha="{0}" x="{325}"/>
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="50"/>
@@ -26,13 +26,13 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="350"/>
+				<tween:Wait duration="2250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="150">
+				<tween:To duration="2000">
 					<tween:props>
 						<e:Object alpha="{0}" x="{894}"/>
 					</tween:props>
@@ -50,19 +50,23 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="600"/>
+				<tween:Wait duration="4500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="150">
+				<tween:To duration="2000">
 					<tween:props>
-						<e:Object x="{325}"/>
+						<e:Object x="{325}" alpha="{0}"/>
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="50"/>
-				<tween:Set/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{smell}">
 				<tween:Set>
@@ -70,26 +74,43 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="850"/>
+				<tween:Wait duration="6750"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="150">
+				<tween:To duration="2000">
 					<tween:props>
-						<e:Object x="{765}"/>
+						<e:Object x="{765}" alpha="{0}"/>
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="50"/>
-				<tween:Set/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{QusetionSceneButton}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="9000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 <e:Image id="qusetion_scene_bg" source="qusetion_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
 <e:Image id="QusetionSceneButton" source="qusetion_scene_button_png" x="1792" y="1075"/>
 <e:Label id="see" text="What do they see?" x="355" y="124" size="89"/>
-<e:Label id="feel" text="What do they feel?" x="864" y="332" size="89"/>
+<e:Label id="feel" text="How do they feel?" x="864" y="332" size="89"/>
 <e:Label id="hear" text="What do they hear?" x="355" y="608" size="89"/>
 <e:Label id="smell" text="What do they smell?" x="735" y="884" size="89"/>
 </e:Skin>
