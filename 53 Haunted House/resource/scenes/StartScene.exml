@@ -33,7 +33,7 @@
 	</tween:TweenGroup>
 </w:Declarations>
 <e:Image id="start_scene_bg"  source="start_scene_bg_png" width="1920" height="1280" y="0" x="0" verticalCenter="0" horizontalCenter="0"/>
-<e:Label id="hauntedHouseLable" fontFamily="Tempus-Sans-ITC" size="244"  textColor="#FFFF00" text="Haunted House" horizontalCenter="0" verticalCenter="-128"/>
+<e:Label id="hauntedHouseLable" fontFamily="Westwood" size="244"  textColor="#FFFF00" text="Haunted House" horizontalCenter="0" verticalCenter="-128"/>
 <e:Image id="batClosure"  source="bat_closure_png" x="1412" y="897" alpha="0"/>
 <e:Image id="batSpread"  source="bat_spread_png" x="1192" y="927"/>
 
