@@ -114,7 +114,7 @@
 <e:Image id="moon_rise_bg"  source="moon_rise_bg_png" x="0" y="0" verticalCenter="0" horizontalCenter="0" locked="true"/>
 <e:Image id="moon" source="moon_png" x="1367.5" y="666" locked="true"/>
 <e:Image id="head_cloud" source="head_could_png" x="134" locked="true"/>
-<e:Image id="middle_cloud" source="middle_cloud_png" y="542" x="330.5" locked="true"/>
+<e:Image id="middle_cloud" source="middle_cloud_png" y="542" x="330" locked="true"/>
 
 <e:Image id="first_tree" source="first_tree_png" x="-81" y="240" locked="true"/>
 <e:Image id="third_tree" source="third_tree_png" x="673" y="432" locked="true"/>

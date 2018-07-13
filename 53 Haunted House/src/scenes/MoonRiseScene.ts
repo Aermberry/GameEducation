@@ -15,7 +15,7 @@ class MoonRiseScene extends eui.Component implements eui.UIComponent{
         protected childrenCreated():void
         {   
             super.childrenCreated();
-            this.moonRiseGreenGroup.addEventListener(egret.Event.COMPLETE,this.moonRiseGreenGroupComplete,this);
+            this.moonRiseGreenGroup.addEventListener(egret.Event.COMPLETE, this.moonRiseGreenGroupComplete, this);
             this.moonRiseGreenGroup.play(0);
             this.bgmSoundChannel = RES.getRes("moon_rise_bgm_mp3").play();
 

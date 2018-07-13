@@ -3,7 +3,7 @@
 	<w:Declarations>
 		<tween:TweenGroup id="insideHouseTweenGroup">
         <tween:TweenItem target="{InsideHouseSceneButton}">
-					<tween:Wait duration="6250"/>
+					<tween:Wait duration="6500"/>
 					<tween:Set>
 						<tween:props>
 							<e:Object alpha="{1}"/>

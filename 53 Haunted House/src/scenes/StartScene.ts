@@ -9,14 +9,14 @@ class StartScene extends eui.Component implements eui.UIComponent{
         
         protected partAdded(partName:string,instance:any):void
         {
-            super.partAdded(partName,instance);
+            super.partAdded(partName, instance);
         }
         
 
         protected childrenCreated():void
         {   
             super.childrenCreated();
-            this.bgmSoundChannel = RES.getRes('start_scene_bgm_mp3').play();
+            this.bgmSoundChannel = RES.getRes('start_scene_bgm_mp3').play(0,1);
             this.startScene();
         }
 

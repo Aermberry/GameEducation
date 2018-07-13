@@ -4,9 +4,10 @@
 	<e:Image id="hear_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0" locked="true"/>
 <e:Image id="hear_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 
-<e:Label id="HearSceneText" text="They Hear ..." y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
-<e:Image id="HearSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
-<e:Image id="GirlSad" source="girl_sad_png" y="60" x="388" locked="true"/>
-<e:Image id="TwoBoyWhisper" source="twoboy_whisper_png" y="444" x="1020" locked="true"/>
-<e:Image id="Door" source="door_png" y="41" x="1712"/>
+<e:Label id="HearSceneText" text="They hear" y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
+<e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="79"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Image id="girlSad" source="girl_sad_png" y="60" x="388" locked="true"/>
+<e:Image id="whisper" source="twoboy_whisper_png" y="444" x="1020" locked="true"/>
+<e:Image id="door" source="door_png" y="41" x="1712"/>
 </e:Skin>
