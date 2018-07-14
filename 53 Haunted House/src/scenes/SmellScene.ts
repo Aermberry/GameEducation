@@ -26,22 +26,31 @@ class SmellScene extends eui.Component implements eui.UIComponent{
     }
 
     private smellStrange():void{
-        this.scrollText.text='  something strange.'
+        this.scrollText.text='  something strange.';
+        this.switchFont();
         this.smellStrangeBgmChannel = RES.getRes('smell_strange_mp3').play(0,1);
         this.nextScene();
 
     }
 
     private smellBurning():void{
-        this.scrollText.text='  something burning.'
+        this.scrollText.text='  something burning.';
+        this.switchFont();
         this.smellBurningBgmChannel = RES.getRes('smell_burning_mp3').play(0,1);
         this.nextScene();
     }
 
     private smellRotten():void{
-        this.scrollText.text='  something rotten.'
+        this.scrollText.text='  something rotten.';
+        this.switchFont();
         this.smellRottenBgmChannel = RES.getRes('smell_rotten_mp3').play(0,1);
         this.nextScene();
+    }
+
+    private  switchFont():void{
+        this.scrollText.fontFamily = 'La-Bamba-LET';
+        this.scrollText.textColor = 9765173;
+        this.scrollText.size = 74.5;
     }
 
     private nextScene():void{

@@ -28,20 +28,29 @@ class FeelScene extends eui.Component implements eui.UIComponent{
 
     private feelCold():void{
         this.scrollText.text = 'cold.';
+        this.switchFont();
         this.feelColdBgmChaneel = RES.getRes('feel_cold_mp3').play(0,1);
         this.nextScene();
     }
 
     private feelExcited():void{
         this.scrollText.text = 'excited.';
+        this.switchFont();
         this.feelExcitedBgmChaneel = RES.getRes('feel_excited_mp3').play(0,1);
         this.nextScene();  
     }
 
     private feelHorrified():void{
         this.scrollText.text = 'horrified.';
+        this.switchFont
         this.feelHorrifiedBgmChaneel = RES.getRes('feel_horrified_mp3').play(0,1);
         this.nextScene();
+    }
+
+    private  switchFont():void{
+        this.scrollText.fontFamily = 'La-Bamba-LET';
+        this.scrollText.textColor = 9765173;
+        this.scrollText.size = 74.5;
     }
 
     private nextScene():void{

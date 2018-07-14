@@ -27,20 +27,29 @@ class HearScene extends eui.Component implements eui.UIComponent{
     
     private hearCry():void{
          this.scrollText.text = ' a girl crying.';
+         this.switchFont();
          this.hearCryBgmChannel = RES.getRes('hear_cry_mp3').play(0,1);
          this.nextScene(); 
     }
 
     private hearTalk():void{
-         this.scrollText.text = ' people taliking.';
+         this.scrollText.text = ' people talking.';
+         this.switchFont();
          this.hearTalkBgmChannel = RES.getRes('hear_talk_mp3').play(0,1);
          this.nextScene(); 
     }
 
     private hearDoorOpen():void{
          this.scrollText.text=' the door open.';
+         this.switchFont();
          this.hearTalkBgmChannel = RES.getRes('hear_door_open_mp3').play(0,1);
          this.nextScene();  
+    }
+
+    private  switchFont():void{
+        this.scrollText.fontFamily = 'La-Bamba-LET';
+        this.scrollText.textColor = 9765173;
+        this.scrollText.size = 74.5;
     }
 
     private nextScene():void{

@@ -109,8 +109,8 @@
 	</w:Declarations>
 <e:Image id="qusetion_scene_bg" source="qusetion_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
 <e:Image id="QusetionSceneButton" source="qusetion_scene_button_png" x="1792" y="1075"/>
-<e:Label id="see" text="What do they see?" x="355" y="124" size="89"/>
-<e:Label id="feel" text="How do they feel?" x="864" y="332" size="89"/>
-<e:Label id="hear" text="What do they hear?" x="355" y="608" size="89"/>
-<e:Label id="smell" text="What do they smell?" x="735" y="884" size="89"/>
+<e:Label id="see" text="What do they see?" x="355" y="124" size="74.5"/>
+<e:Label id="feel" text="How do they feel?" x="864" y="332" size="74.5"/>
+<e:Label id="hear" text="What do they hear?" x="355" y="608" size="74.5"/>
+<e:Label id="smell" text="What do they smell?" x="735" y="884" size="74.5"/>
 </e:Skin>

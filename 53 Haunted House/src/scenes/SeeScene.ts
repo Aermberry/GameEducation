@@ -27,21 +27,30 @@ class SeeScene extends eui.Component implements eui.UIComponent{
      }
 
     private seeBat():void{
-        this.scrollText.text = 'bat.';
+        this.scrollText.text = 'bats.';
+        this.switchFont();
         this.seeBatBgmChaneel = RES.getRes('see_bat_mp3').play(0,1);
         this.nextScene();
     }
  
      private seeSkeleton():void{
         this.scrollText.text = 'a skeleton.';
+        this.switchFont();
         this.seeSkeletonBgmChaneel = RES.getRes("see_skeleton_mp3").play(0,1);
         this.nextScene();
     }
 
     private seeSpiders():void{
         this.scrollText.text = 'spiders.';
+        this.switchFont();
         this.seeSpiderBgmChaneel = RES.getRes("see_spider_mp3").play(0,1);
         this.nextScene();
+    }
+
+    private  switchFont():void{
+        this.scrollText.fontFamily = 'La-Bamba-LET';
+        this.scrollText.textColor = 9765173;
+        this.scrollText.size = 74.5;
     }
 
     private nextScene():void{

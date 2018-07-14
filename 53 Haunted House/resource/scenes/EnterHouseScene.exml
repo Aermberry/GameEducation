@@ -300,11 +300,27 @@
 				</tween:Set>			
 			</tween:TweenItem>
 
-            <tween:TweenItem target="{conversation}">
+            <tween:TweenItem target="{conversation_first}">
 							<tween:Wait duration="1250"/>
 							<tween:Set>
 								<tween:props>
 									<e:Object alpha="{1}" x="{545}" y="{880.5}"/>
+								</tween:props>
+							</tween:Set>			
+			</tween:TweenItem>
+			<tween:TweenItem target="{conversation_second}">
+							<tween:Wait duration="1250"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}" x="{545}" y="{983.5}"/>
+								</tween:props>
+							</tween:Set>			
+			</tween:TweenItem>
+			<tween:TweenItem target="{conversation_third}">
+							<tween:Wait duration="1250"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}" x="{545}" y="{1086.5}"/>
 								</tween:props>
 							</tween:Set>			
 			</tween:TweenItem>
@@ -401,8 +417,9 @@
 <e:Image id="boyandgirl_positive" source="boyandgirl_positive_png" alpha="0" locked="true"/>
 <e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="125.5" width="543" height="514.4" alpha="1"/>
 <e:Image id="conversation_window" source="conversation_window_png" alpha="0" x="587.5" y="721" locked="true"/>
-<e:Label id="conversation" text="Nick and Monica are at the Haunted House now.  They quickly jump into the last car of the train." alpha="0" textColor="#000000"  locked="true"/>
-
+<e:Label id="conversation_first" text="Nick and Monica are at the Haunted" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
+<e:Label id="conversation_second" text="House now.  They quickly jump into" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
+<e:Label id="conversation_third" text="the last car of the train." alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
 <e:Image id="button" source="button_png" x="1841.5" y="1094"  alpha="0"/>
 
 </e:Skin>

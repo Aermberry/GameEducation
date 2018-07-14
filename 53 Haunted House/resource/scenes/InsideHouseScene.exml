@@ -57,6 +57,6 @@
 <e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="382.75" scaleX="1.5" scaleY="1.5"/>
 <e:Image id="conversation_window" source="conversation_window_png" width="1677" height="492" x="430" y="771" locked="true"/>
 <e:Image id="InsideHouseSceneButton" source="button_png" x="1939" y="1102" alpha="0"/>
-<e:Label text="It is very dark inside. The train goes slowly..." x="936.5" y="922.5" textColor="#000000" locked="true"/>
-
+<e:Label id="first_conversionn" text="It is very dark inside. The train goes" x="548" y="876" textColor="#000000" size="74.5" bold="true" locked="true"/>
+<e:Label id="second_conversion" text="slowly..." x="548" y="1004.5" textColor="#000000" size="74.5" bold="true" locked="true"/>
 </e:Skin>

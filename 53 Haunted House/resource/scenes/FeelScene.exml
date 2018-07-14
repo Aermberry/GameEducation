@@ -7,8 +7,8 @@
 <e:Image id="boyandgirlHorrified" source="boyandgirl_horrified_png"  y="58" x="1733"/>
 <e:Image id="feel_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 
-<e:Label id="FeelSceneText" text="They feel" y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
-<e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="79"/>
+<e:Label id="FeelSceneText" text="They feel" y="1038" x="583" textColor="#000000" size="74.5"  locked="true"/>
+<e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
 <e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
 </e:Skin>
 
