@@ -4,12 +4,8 @@ class SeeScene extends eui.Component implements eui.UIComponent{
     private invertedBat:eui.Image;
     private skeleton:eui.Image;
     private spiderWeb:eui.Image;
-    private headFirstSpider:eui.Image
-    private headSecondSpider:eui.Image
     private nextSceneButton:eui.Image;
-    private seeBatBgmChaneel:egret.SoundChannel
-    private seeSkeletonBgmChaneel:egret.SoundChannel
-    private seeSpiderBgmChaneel:egret.SoundChannel
+    private currentSoundChannel:egret.SoundChannel;
      
      public constructor(){
         super();
@@ -24,30 +20,34 @@ class SeeScene extends eui.Component implements eui.UIComponent{
         this.invertedBat.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeBat, this);
         this.skeleton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSkeleton , this);
         this.spiderWeb.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
-        this.headFirstSpider.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
-        this.headSecondSpider.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
+        
         // this.invertedBat.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.invertedBat.source='inverted_bat_png',this);
         // this.invertedBat.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onInvertedBatMouseOver, this);
      }
 
-    private seeBat():void{
+    private seeBat(e:egret.Event):void{
         this.scrollText.text = 'bats.';
+        this.stopCurrentSoundChannel();
+        this.currentSoundChannel = (RES.getRes('see_bat_mp3') as egret.Sound).play(0,1);
         this.switchFont();
-        this.seeBatBgmChaneel = RES.getRes('see_bat_mp3').play(0,1);
         this.nextScene();
     }
  
-     private seeSkeleton():void{
+     private seeSkeleton(e:egret.Event):void{
         this.scrollText.text = 'a skeleton.';
+        this.stopCurrentSoundChannel();
+        this.currentSoundChannel = (RES.getRes('see_skeleton_mp3') as egret.Sound).play(0,1);              
         this.switchFont();
-        this.seeSkeletonBgmChaneel = RES.getRes("see_skeleton_mp3").play(0,1);
+        
         this.nextScene();
     }
 
-    private seeSpiders():void{
+    private seeSpiders(e:egret.Event):void{
         this.scrollText.text = 'spiders.';
+        this.stopCurrentSoundChannel();   
+        this.currentSoundChannel = (RES.getRes('see_spider_mp3') as egret.Sound).play(0,1);                           
         this.switchFont();
-        this.seeSpiderBgmChaneel = RES.getRes("see_spider_mp3").play(0,1);
+        
         this.nextScene();
     }
 
@@ -57,7 +57,18 @@ class SeeScene extends eui.Component implements eui.UIComponent{
         this.scrollText.size = 74.5;
     }
 
+    private stopCurrentSoundChannel():void{
+        if(this.currentSoundChannel != null){
+           this.currentSoundChannel.stop();
+        }
+    }
+    
     private nextScene():void{
-        this.nextSceneButton.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new FeelScene), this);
+        this.nextSceneButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.stopSoundToNextScene, this);
+    }
+
+    private stopSoundToNextScene():void{
+        this.stopCurrentSoundChannel();
+        Main.instance.gotoScene(new FeelScene);
     }
 }

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,sound 63_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png,spider_web_png,head_first_spider_png,head_second_spider_png,other_scene_window_png,select_answer_scene_bg_png,girl_sad_png,twoboy_whisper_png,door_png,flower_mushroom_png,fish_png,pointed_paper_png,description_scene_bg_png,description_exit_button_png,inverted_bat_png,skeleton_png,boyandgirl_cold_png,boyandgirl_excited_png,boyandgirl_horrified_png,description_text_png,start_scene_bgm_mp3,moon_rise_bgm_mp3,enter_house_first_mp3,enter_house_second_mp3,inside_house_bgm_mp3,question_first_bgm_mp3,question_second_bgm_mp3,question_third_bgm_mp3,question_forth_bgm_mp3,description_bgm_mp3,spider_down_json,spider_down_png,see_bat_mp3,see_skeleton_mp3,see_spider_mp3,feel_cold_mp3,feel_excited_mp3,feel_horrified_mp3,hear_cry_mp3,hear_talk_mp3,hear_door_open_mp3,smell_strange_mp3,smell_burning_mp3,smell_rotten_mp3,skeleton_happy_png,blooming_flower_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 63_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png,spider_web_png,head_first_spider_png,head_second_spider_png,other_scene_window_png,select_answer_scene_bg_png,girl_sad_png,twoboy_whisper_png,door_png,flower_mushroom_png,fish_png,pointed_paper_png,description_scene_bg_png,description_exit_button_png,inverted_bat_png,skeleton_png,boyandgirl_cold_png,boyandgirl_excited_png,boyandgirl_horrified_png,description_text_png,start_scene_bgm_mp3,moon_rise_bgm_mp3,enter_house_first_mp3,enter_house_second_mp3,inside_house_bgm_mp3,question_first_bgm_mp3,question_second_bgm_mp3,question_third_bgm_mp3,question_forth_bgm_mp3,description_bgm_mp3,spider_down_json,spider_down_png,see_bat_mp3,see_skeleton_mp3,see_spider_mp3,feel_cold_mp3,feel_excited_mp3,feel_horrified_mp3,hear_cry_mp3,hear_talk_mp3,hear_door_open_mp3,smell_strange_mp3,smell_burning_mp3,smell_rotten_mp3,skeleton_happy_png,blooming_flower_png,two_spider_web_png",
 			"name": "preload"
 		}
 	],
@@ -405,6 +405,11 @@
 			"name": "blooming_flower_png",
 			"type": "image",
 			"url": "textures/blooming_flower.png"
+		},
+		{
+			"name": "two_spider_web_png",
+			"type": "image",
+			"url": "textures/two_spider_web.png"
 		}
 	]
 }

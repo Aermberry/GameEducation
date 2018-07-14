@@ -5,9 +5,8 @@ class SmellScene extends eui.Component implements eui.UIComponent{
     private fish :eui.Image   
     private nextSceneButton:eui.Image
     private scrollText:eui.Label
-    private smellStrangeBgmChannel:egret.SoundChannel
-    private smellBurningBgmChannel:egret.SoundChannel
-    private smellRottenBgmChannel:egret.SoundChannel
+    private currentSoundChannel:egret.SoundChannel
+    
 
     public constructor(){
         super();
@@ -28,22 +27,24 @@ class SmellScene extends eui.Component implements eui.UIComponent{
     private smellStrange():void{
         this.scrollText.text='  something strange.';
         this.switchFont();
-        this.smellStrangeBgmChannel = RES.getRes('smell_strange_mp3').play(0,1);
+        this.stopCurrentSoundChannel();
+        this.currentSoundChannel = (RES.getRes('smell_strange_mp3') as egret.Sound).play(0,1);  
         this.nextScene();
-
     }
 
     private smellBurning():void{
         this.scrollText.text='  something burning.';
         this.switchFont();
-        this.smellBurningBgmChannel = RES.getRes('smell_burning_mp3').play(0,1);
+        this.stopCurrentSoundChannel();
+        this.currentSoundChannel = (RES.getRes('smell_burning_mp3') as egret.Sound).play(0,1);  
         this.nextScene();
     }
 
     private smellRotten():void{
         this.scrollText.text='  something rotten.';
         this.switchFont();
-        this.smellRottenBgmChannel = RES.getRes('smell_rotten_mp3').play(0,1);
+        this.stopCurrentSoundChannel();
+        this.currentSoundChannel = (RES.getRes('smell_rotten_mp3') as egret.Sound).play(0,1);
         this.nextScene();
     }
 
@@ -53,8 +54,19 @@ class SmellScene extends eui.Component implements eui.UIComponent{
         this.scrollText.size = 74.5;
     }
 
+    private stopCurrentSoundChannel():void{
+        if(this.currentSoundChannel != null){
+           this.currentSoundChannel.stop();
+        }
+    }
+
     private nextScene():void{
-        this.nextSceneButton.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new DescriptionScene), this);
+        this.nextSceneButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.stopSoundToNextScene, this);
+    }
+
+    private stopSoundToNextScene():void{
+        this.stopCurrentSoundChannel();
+        Main.instance.gotoScene(new DescriptionScene);
     }
 
 }
