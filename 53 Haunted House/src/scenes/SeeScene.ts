@@ -4,6 +4,8 @@ class SeeScene extends eui.Component implements eui.UIComponent{
     private invertedBat:eui.Image;
     private skeleton:eui.Image;
     private spiderWeb:eui.Image;
+    private headFirstSpider:eui.Image
+    private headSecondSpider:eui.Image
     private nextSceneButton:eui.Image;
     private seeBatBgmChaneel:egret.SoundChannel
     private seeSkeletonBgmChaneel:egret.SoundChannel
@@ -22,6 +24,8 @@ class SeeScene extends eui.Component implements eui.UIComponent{
         this.invertedBat.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeBat, this);
         this.skeleton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSkeleton , this);
         this.spiderWeb.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
+        this.headFirstSpider.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
+        this.headSecondSpider.addEventListener(egret.TouchEvent.TOUCH_TAP, this.seeSpiders , this);
         // this.invertedBat.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.invertedBat.source='inverted_bat_png',this);
         // this.invertedBat.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onInvertedBatMouseOver, this);
      }

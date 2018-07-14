@@ -32,9 +32,9 @@
 	</w:Declarations>
 
 <e:Image id="see_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0" locked="true"/>
-<e:Image id="head_first_spider" source="head_first_spider_png" x="1905" y="230" anchorOffsetY="0" height="161" rotation="47.73" locked="true"/>
-<e:Image id="head_second_spider" source="head_second_spider_png" y="92" x="1681" locked="true"/>
 <e:Image id="spiderWeb" source="spider_web_png" x="1624" y="55"/>
+<e:Image id="headFirstSpider" source="head_first_spider_png" x="1905" y="230" anchorOffsetY="0" height="161" rotation="47.73" locked="true"/>
+<e:Image id="headSecondSpider" source="head_second_spider_png" y="92" x="1681" locked="true"/>
 <e:Image id="skeleton" source="skeleton_png" y="323" x="1041" locked="true"/>
 <e:Image id="see_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 <e:Label id="SeeSceneText" text="They see" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
