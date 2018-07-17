@@ -1,0 +1,22 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"SelectDifficultScene": "resource/scenes/SelectDifficultScene.exml",
+		"EasyGoScene": "resource/scenes/EasyGoScene.exml",
+		"ProGoScene": "resource/scenes/ProGoScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/SelectDifficultScene.exml",
+		"resource/scenes/EasyGoScene.exml",
+		"resource/scenes/ProGoScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/scenes/EasyGoScene.exml",
+		"resource/scenes/ProGoScene.exml",
+		"resource/scenes/SelectDifficultScene.exml",
+		"resource/scenes/StartScene.exml"
+	]
+}

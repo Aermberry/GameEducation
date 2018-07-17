@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ProGoSceneSKin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Image id="proGoBg" source="pro_go_bg_png" horizontalCenter="0" verticalCenter="0"/>
+<e:Group id="backGroup" x="1739" y="40" height="219" width="127"/>
+<e:Image id="boomBtn" source="black_boom_png" x="885" y="774"/>	
+</e:Skin>

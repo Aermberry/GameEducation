@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="selectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="163d5d682b6" ></w:Config>
+	<e:Image id="selectDifficultBg" source="select_difficult_bg_png" horizontalCenter="0" verticalCenter="0"/>
+    <e:Image id="easyStarNormalImage" source="easy_start_normal_png" x="594" y="874"/>
+    <e:Image id="proStarNormalImage" source="pro_start_normal_png" x="1092" y="853"/>
+    <e:Group id="easyGroup" x="594" y="874" height="213" width="241"/>
+    <e:Group id="proGroup" x="1092" y="853" height="211" width="243"/>
+    <e:Group id="backGroup" x="1739" y="40" height="219" width="126" alpha="0"/>
+</e:Skin>
