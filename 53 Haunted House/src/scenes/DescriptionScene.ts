@@ -1,9 +1,17 @@
 class DescriptionScene extends eui.Component implements eui.UIComponent{
 
-    private ExitButtonText:eui.Label
-    private DescriptionExitButton:eui.Image
-    private exitButtonTweenGroup:egret.tween.TweenGroup
-    private bgmSoundChanel:egret.SoundChannel
+    private ExitButtonText:eui.Label;
+    private DescriptionExitButton:eui.Image;
+    private exitButtonTweenGroup:egret.tween.TweenGroup;
+    private bgmSoundChanel:egret.SoundChannel;
+
+    private flowerMovieClip:egret.MovieClip;
+    private flowerFactory:egret.MovieClipDataFactory;
+    private smallflowerGroup:eui.Group;
+
+    private smallskeletonMovieClip:egret.MovieClip;
+    private smallskeletonFactory:egret.MovieClipDataFactory;
+    private smallskeletonGroup:eui.Group;
 
     public constructor(){
         super();
@@ -14,18 +22,17 @@ class DescriptionScene extends eui.Component implements eui.UIComponent{
         super.childrenCreated();
         this.bgmSoundChanel = RES.getRes('description_bgm_mp3').play(0,1);
         this.exitButtonTweenGroup.play(0);
-       
-    }
 
-    // private async waitSound():Promise<void>{
-    //     await RES.getRes('description_bgm_mp3').play(0,1).sleep(60000);
-    //     mouse.enable(this.stage);
-    //     mouse.setButtonMode(this.DescriptionExitButton, true);
-    //     // this.DescriptionExitButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.endScene,this);
-    // }
+        this.flowerFactory = new egret.MovieClipDataFactory( RES.getRes('small_flower_movie_json') , RES.getRes('small_flower_movie_png'));
+        this.flowerMovieClip = new egret.MovieClip(this.flowerFactory.generateMovieClipData('small_flower_movie'));
+        this.smallflowerGroup.addChild(this.flowerMovieClip);
+        this.flowerMovieClip.play(-1);
+
+        this.smallskeletonFactory = new egret.MovieClipDataFactory( RES.getRes('small_skeleton_json') , RES.getRes('small_skeleton_png'));
+        this.smallskeletonMovieClip = new egret.MovieClip(this.smallskeletonFactory.generateMovieClipData('small_skeleton_movie'));
+        this.smallskeletonGroup.addChild(this.smallskeletonMovieClip);
+        this.smallskeletonMovieClip.play(-1);
+    }
     
-    // private endScene(e:egret.TouchEvent):void {
-    //     this.bgmSoundChanel.stop();
-    //     window.close();
-    // }
+    
 }

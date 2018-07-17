@@ -10,5 +10,9 @@
 <e:Label id="FeelSceneText" text="They feel" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
 <e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
 <e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+
+<e:Group id="boyandgirlColdGroup" x="420" y="42" width="489" height="429"/>
+<e:Group id="boyandgirlExcitedGroup" x="1041"  y="427" height= "466" width="414"/>
+<e:Group id="boyandgirlHorrifiedGroup" x="1733" y="56" height="416" width="410"/>
 </e:Skin>
 

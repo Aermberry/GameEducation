@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,sound 63_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png,spider_web_png,head_first_spider_png,head_second_spider_png,other_scene_window_png,select_answer_scene_bg_png,girl_sad_png,twoboy_whisper_png,door_png,flower_mushroom_png,fish_png,pointed_paper_png,description_scene_bg_png,description_exit_button_png,inverted_bat_png,skeleton_png,boyandgirl_cold_png,boyandgirl_excited_png,boyandgirl_horrified_png,description_text_png,start_scene_bgm_mp3,moon_rise_bgm_mp3,enter_house_first_mp3,enter_house_second_mp3,inside_house_bgm_mp3,question_first_bgm_mp3,question_second_bgm_mp3,question_third_bgm_mp3,question_forth_bgm_mp3,description_bgm_mp3,spider_down_json,spider_down_png,see_bat_mp3,see_skeleton_mp3,see_spider_mp3,feel_cold_mp3,feel_excited_mp3,feel_horrified_mp3,hear_cry_mp3,hear_talk_mp3,hear_door_open_mp3,smell_strange_mp3,smell_burning_mp3,smell_rotten_mp3,skeleton_happy_png,blooming_flower_png,two_spider_web_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,sound 63_mp3,start_scene_bg_png,gameEui_json,wlts_logo_jpg,moon_rise_bg_png,bat_spread_png,bat_closure_png,first_tree_png,middle_cloud_png,second_tree_png,moon_png,third_tree_png,head_could_png,platform_png,platform_door_png,fifth_tree_png,forth_tree_png,cart_png,conversation_window_png,boyandgirl_positive_png,boyandgirl_negative_png,first_falsh_png,scroll_second_flash_png,scroll_first_flash_png,button_png,hover_button_png,down_button_png,inside_house_bg_png,rail_png,inside_house_deep_bg_png,qusetion_scene_bg_png,qusetion_scene_button_png,spider_web_png,head_first_spider_png,head_second_spider_png,other_scene_window_png,select_answer_scene_bg_png,girl_sad_png,twoboy_whisper_png,door_png,flower_mushroom_png,fish_png,pointed_paper_png,description_scene_bg_png,description_exit_button_png,inverted_bat_png,skeleton_png,boyandgirl_cold_png,boyandgirl_excited_png,boyandgirl_horrified_png,description_text_png,start_scene_bgm_mp3,moon_rise_bgm_mp3,enter_house_first_mp3,enter_house_second_mp3,inside_house_bgm_mp3,question_first_bgm_mp3,question_second_bgm_mp3,question_third_bgm_mp3,question_forth_bgm_mp3,description_bgm_mp3,spider_down_json,spider_down_png,see_bat_mp3,see_skeleton_mp3,see_spider_mp3,feel_cold_mp3,feel_excited_mp3,feel_horrified_mp3,hear_cry_mp3,hear_talk_mp3,hear_door_open_mp3,smell_strange_mp3,smell_burning_mp3,smell_rotten_mp3,blooming_flower_png,two_spider_web_png,bat_spread_closure_json,bat_spread_closure_png,skeleton_happy_json,skeleton_happy_png,boygirl_cold_json,boygirl_cold_png,boygirl_excited_json,boygirl_excited_png,boygirl_horrified_json,boygirl_horrified_png,a_girl_cry_json,a_girl_cry_png,whispering_json,whispering_png,door_opening_json,door_opening_png,flower_movie_json,flower_movie_png,pointed_movie_json,pointed_movie_png,fish_movie_json,fish_movie_png,small_flower_movie_json,small_flower_movie_png,small_skeleton_movie_json,small_skeleton_movie_png,fish_test_json,fish_test_png",
 			"name": "preload"
 		}
 	],
@@ -397,11 +397,6 @@
 			"url": "audios/smell_rotten.mp3"
 		},
 		{
-			"name": "skeleton_happy_png",
-			"type": "image",
-			"url": "textures/skeleton_happy.png"
-		},
-		{
 			"name": "blooming_flower_png",
 			"type": "image",
 			"url": "textures/blooming_flower.png"
@@ -410,6 +405,146 @@
 			"name": "two_spider_web_png",
 			"type": "image",
 			"url": "textures/two_spider_web.png"
+		},
+		{
+			"name": "bat_spread_closure_json",
+			"type": "json",
+			"url": "textures/bat_spread_closure.json"
+		},
+		{
+			"name": "bat_spread_closure_png",
+			"type": "image",
+			"url": "textures/bat_spread_closure.png"
+		},
+		{
+			"name": "skeleton_happy_json",
+			"type": "json",
+			"url": "textures/skeleton_happy.json"
+		},
+		{
+			"name": "skeleton_happy_png",
+			"type": "image",
+			"url": "textures/skeleton_happy.png"
+		},
+		{
+			"name": "boygirl_cold_json",
+			"type": "json",
+			"url": "textures/boygirl_cold.json"
+		},
+		{
+			"name": "boygirl_cold_png",
+			"type": "image",
+			"url": "textures/boygirl_cold.png"
+		},
+		{
+			"name": "boygirl_excited_json",
+			"type": "json",
+			"url": "textures/boygirl_excited.json"
+		},
+		{
+			"name": "boygirl_excited_png",
+			"type": "image",
+			"url": "textures/boygirl_excited.png"
+		},
+		{
+			"name": "boygirl_horrified_json",
+			"type": "json",
+			"url": "textures/boygirl_horrified.json"
+		},
+		{
+			"name": "boygirl_horrified_png",
+			"type": "image",
+			"url": "textures/boygirl_horrified.png"
+		},
+		{
+			"name": "a_girl_cry_json",
+			"type": "json",
+			"url": "textures/a_girl_cry.json"
+		},
+		{
+			"name": "a_girl_cry_png",
+			"type": "image",
+			"url": "textures/a_girl_cry.png"
+		},
+		{
+			"name": "whispering_json",
+			"type": "json",
+			"url": "textures/whispering.json"
+		},
+		{
+			"name": "whispering_png",
+			"type": "image",
+			"url": "textures/whispering.png"
+		},
+		{
+			"name": "door_opening_json",
+			"type": "json",
+			"url": "textures/door_opening.json"
+		},
+		{
+			"name": "door_opening_png",
+			"type": "image",
+			"url": "textures/door_opening.png"
+		},
+		{
+			"name": "flower_movie_json",
+			"type": "json",
+			"url": "textures/flower_movie.json"
+		},
+		{
+			"name": "flower_movie_png",
+			"type": "image",
+			"url": "textures/flower_movie.png"
+		},
+		{
+			"name": "pointed_movie_json",
+			"type": "json",
+			"url": "textures/pointed_movie.json"
+		},
+		{
+			"name": "pointed_movie_png",
+			"type": "image",
+			"url": "textures/pointed_movie.png"
+		},
+		{
+			"name": "fish_movie_json",
+			"type": "json",
+			"url": "textures/fish_movie.json"
+		},
+		{
+			"name": "fish_movie_png",
+			"type": "image",
+			"url": "textures/fish_movie.png"
+		},
+		{
+			"name": "small_flower_movie_json",
+			"type": "json",
+			"url": "textures/small_flower_movie.json"
+		},
+		{
+			"name": "small_flower_movie_png",
+			"type": "image",
+			"url": "textures/small_flower_movie.png"
+		},
+		{
+			"name": "small_skeleton_movie_json",
+			"type": "json",
+			"url": "textures/small_skeleton_movie.json"
+		},
+		{
+			"name": "small_skeleton_movie_png",
+			"type": "image",
+			"url": "textures/small_skeleton_movie.png"
+		},
+		{
+			"name": "fish_test_json",
+			"type": "json",
+			"url": "textures/fish_test.json"
+		},
+		{
+			"name": "fish_test_png",
+			"type": "image",
+			"url": "textures/fish_test.png"
 		}
 	]
 }

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SeeSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="QuestionSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="batTweenGroup">
 			<tween:TweenItem target="{bat_closure}">
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1000"/>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -16,12 +17,13 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{bat_spread}">
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1000"/>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -38,7 +40,9 @@
 <e:Label id="SeeSceneText" text="They see" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
 <e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
 <e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
-<e:Image id="bat_closure" source="bat_closure_png" alpha="0" x="520" y="60" locked="true"/>
-<e:Image id="bat_spread" source="bat_spread_png" alpha="0" x="406" y="60" locked="true"/>
 <e:Image id="invertedBat" source="inverted_bat_png" x="406" y="60" locked="true"/>
+
+<e:Group id="batGroup" height="300" width="520" x="406" y="60"/>
+<e:Group id="spiderGroup" height="445" width="500" x="1621" y="60"/>
+<e:Group id="skeletonGroup" height="578" width="341" x="1041" y="323"/>
 </e:Skin>
