@@ -2,7 +2,11 @@ class ProGoScene extends eui.Component implements eui.UIComponent{
 
     private boomBtn:eui.Image;
     private bgmSoundChannel:egret.SoundChannel;
-    private backGroup:eui.Group;
+    private backBtn:eui.Image;
+    
+    private proFactory:egret.MovieClipDataFactory;
+    private proMovieGroup:eui.Group;
+    private proMovieClip:egret.MovieClip;
 
     public constructor(){
         super();
@@ -11,7 +15,7 @@ class ProGoScene extends eui.Component implements eui.UIComponent{
     {   
         super.childrenCreated();
 
-        this.bgmSoundChannel = RES.getRes('select_difficulty_scene_bgm_mp3').play(0,-1); 
+        this.bgmSoundChannel = RES.getRes('select_difficulty_scene_bgm_mp3').play(0,-1);
 
         mouse.enable(this.stage);
         mouse.setButtonMode(this.boomBtn,true);
@@ -19,12 +23,17 @@ class ProGoScene extends eui.Component implements eui.UIComponent{
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.boomBtn.source='black_boom_png', this);
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.boomBtn.source='red_boom_png', this);
 
-        this.backGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);          
+        this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this); 
+
+        this.proFactory = new egret.MovieClipDataFactory( RES.getRes('pro_go_scene_json') , RES.getRes('pro_go_scene_png'));
+        this.proMovieClip = new egret.MovieClip(this.proFactory.generateMovieClipData('pro_go_scene'));
+        this.proMovieGroup.addChild(this.proMovieClip);
+        this.proMovieClip.play(-1);         
     }
     
     private goEnterProGameScene() {
         this.bgmSoundChannel.stop();
-        // Main.instance.gotoScene(new EnterEasyGameScene);
+        // Main.instance.gotoScene(new EnterproGameScene);
     }
 
     private goStartScene() {

@@ -2,7 +2,7 @@ class EasyGoScene extends eui.Component implements eui.UIComponent{
 
     private boomBtn:eui.Image;
     private bgmSoundChannel:egret.SoundChannel;
-    private backGroup:eui.Group;
+    private backBtn:eui.Image;
     private easyMovieGroup:eui.Group;
     private easyMovieClip:egret.MovieClip;
     private easyFactory:egret.MovieClipDataFactory;
@@ -22,10 +22,10 @@ class EasyGoScene extends eui.Component implements eui.UIComponent{
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.boomBtn.source='black_boom_png', this);
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.boomBtn.source='red_boom_png', this);
 
-        this.backGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
+        this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 
-        this.easyFactory = new egret.MovieClipDataFactory( RES.getRes('easy_go_movie_json') , RES.getRes('easy_go_movie_png'));
-        this.easyMovieClip = new egret.MovieClip(this.easyFactory.generateMovieClipData('easy_go_movie'));
+        this.easyFactory = new egret.MovieClipDataFactory( RES.getRes('easy_go_scene_json') , RES.getRes('easy_go_scene_png'));
+        this.easyMovieClip = new egret.MovieClip(this.easyFactory.generateMovieClipData('easy_go_scene'));
         this.easyMovieGroup.addChild(this.easyMovieClip);
         this.easyMovieClip.play(-1);
          
@@ -33,11 +33,15 @@ class EasyGoScene extends eui.Component implements eui.UIComponent{
     
     private goEnterEasyGameScene() {
         this.bgmSoundChannel.stop();
-        // Main.instance.gotoScene(new EnterEasyGameScene);
+        this.easyMovieClip.stop();
+        this.easyMovieGroup.removeChild(this.easyMovieClip);
+        Main.instance.gotoScene(new PlayEasyGameScene);
     }
 
     private goStartScene() {
         this.bgmSoundChannel.stop();
+        this.easyMovieClip.stop();
+        this.easyMovieGroup.removeChild(this.easyMovieClip);
         Main.instance.gotoScene(new StartScene);
     }
 }

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayEasyGameSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playEasyGameTweenGroup">
+			<tween:TweenItem target="{readyText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{416}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{goText}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{400}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250"/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{peopelImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-350}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{37}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{fortImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-320}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{185}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{firstSelectImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{860}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{secondSelectImage}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{870}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{thirdSelectImage}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{870}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+<e:Image id="playGameBg" source="play_game_bg_png" x="0" y="-30"/>
+<e:Image id="whiteCloud" source="white_cloud_png" x="160" y="0"/>
+<e:Image id="hosueImage" source="house_image_png" x="511" y="0"/>
+<e:Image id="whiteCanvas" source="white_canvas_png" x="1120" y="550" height="221" width="607" alpha="0.7"/>
+<e:Image id="peopelImage" source="people_normal_png" x="37" y="421" alpha="0"/>
+<e:Image id="fortImage" source="fort_png" x="185" y="814" alpha="0"/>
+<e:Image id="firstSelectImage" source="boom_png" x="600" y="860" alpha="0"/>
+<e:Image id="secondSelectImage" source="boom_png" x="849"  y="870" alpha="0"/>
+<e:Image id="thirdSelectImage" source="boom_png" x="1102" y="870" alpha="0"/>
+<e:Image id="redStageImage" source="red_stage_png" x="-1317" y="-216"/>
+<e:Label id="readyText" text="Ready!"  size="480" textColor=" #9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0"/>
+<e:Image id="backBtn" source="back_btn_png" x="1740" y="1053"/>
+<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="#9D0000" size="480" alpha="0" horizontalCenter="0"/>
+<e:Image id="bloodStrip" source="blood_strip_png" x="1000" y="840"/>
+</e:Skin>

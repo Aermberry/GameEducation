@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,easy_start_json,easy_start_png,easy_start_normal_png,movie_clip_json,movie_clip_png,pro_start_json,pro_start_png,pro_start_normal_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,pro_go_bg_png,easy_go_bg_png,easy_go_scene_json,easy_go_scene_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,blood_strip_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png",
 			"name": "preload"
 		}
 	],
@@ -47,21 +47,6 @@
 			"url": "textures/black_boom.png"
 		},
 		{
-			"name": "easy_start_json",
-			"type": "json",
-			"url": "textures/easy_start.json"
-		},
-		{
-			"name": "easy_start_png",
-			"type": "image",
-			"url": "textures/easy_start.png"
-		},
-		{
-			"name": "easy_start_normal_png",
-			"type": "image",
-			"url": "textures/easy_start_normal.png"
-		},
-		{
 			"name": "movie_clip_json",
 			"type": "json",
 			"url": "textures/movie_clip.json"
@@ -70,21 +55,6 @@
 			"name": "movie_clip_png",
 			"type": "image",
 			"url": "textures/movie_clip.png"
-		},
-		{
-			"name": "pro_start_json",
-			"type": "json",
-			"url": "textures/pro_start.json"
-		},
-		{
-			"name": "pro_start_png",
-			"type": "image",
-			"url": "textures/pro_start.png"
-		},
-		{
-			"name": "pro_start_normal_png",
-			"type": "image",
-			"url": "textures/pro_start_normal.png"
 		},
 		{
 			"name": "rainbow_svg",
@@ -122,16 +92,6 @@
 			"url": "textures/start_scene_bg.svg"
 		},
 		{
-			"name": "pro_go_bg_png",
-			"type": "image",
-			"url": "textures/pro_go_bg.png"
-		},
-		{
-			"name": "easy_go_bg_png",
-			"type": "image",
-			"url": "textures/easy_go_bg.png"
-		},
-		{
 			"name": "easy_go_scene_json",
 			"type": "json",
 			"url": "textures/easy_go_scene.json"
@@ -140,6 +100,116 @@
 			"name": "easy_go_scene_png",
 			"type": "image",
 			"url": "textures/easy_go_scene.png"
+		},
+		{
+			"name": "easy_star_hover_png",
+			"type": "image",
+			"url": "textures/easy_star_hover.png"
+		},
+		{
+			"name": "easy_star_normal_png",
+			"type": "image",
+			"url": "textures/easy_star_normal.png"
+		},
+		{
+			"name": "pro_star_normal_png",
+			"type": "image",
+			"url": "textures/pro_star_normal.png"
+		},
+		{
+			"name": "pro_star_hover_png",
+			"type": "image",
+			"url": "textures/pro_star_hover.png"
+		},
+		{
+			"name": "pro_go_scene_json",
+			"type": "json",
+			"url": "textures/pro_go_scene.json"
+		},
+		{
+			"name": "pro_go_scene_png",
+			"type": "image",
+			"url": "textures/pro_go_scene.png"
+		},
+		{
+			"name": "white_canvas_png",
+			"type": "image",
+			"url": "textures/white_canvas.png"
+		},
+		{
+			"name": "back_btn_png",
+			"type": "image",
+			"url": "textures/back_btn.png"
+		},
+		{
+			"name": "white_canvas_picture_png",
+			"type": "image",
+			"url": "textures/white_canvas_picture.png"
+		},
+		{
+			"name": "red_stage_png",
+			"type": "image",
+			"url": "textures/red_stage.png"
+		},
+		{
+			"name": "house_image_png",
+			"type": "image",
+			"url": "textures/house_image.png"
+		},
+		{
+			"name": "white_cloud_png",
+			"type": "image",
+			"url": "textures/white_cloud.png"
+		},
+		{
+			"name": "play_game_bg_png",
+			"type": "image",
+			"url": "textures/play_game_bg.png"
+		},
+		{
+			"name": "blood_strip_png",
+			"type": "image",
+			"url": "textures/blood_strip.png"
+		},
+		{
+			"name": "boom_png",
+			"type": "image",
+			"url": "textures/boom.png"
+		},
+		{
+			"name": "fort_png",
+			"type": "image",
+			"url": "textures/fort.png"
+		},
+		{
+			"name": "people_normal_png",
+			"type": "image",
+			"url": "textures/people_normal.png"
+		},
+		{
+			"name": "people_hover_png",
+			"type": "image",
+			"url": "textures/people_hover.png"
+		},
+		{
+			"name": "true_json",
+			"type": "json",
+			"url": "textures/true.json"
+		},
+		{
+			"name": "true_png",
+			"type": "image",
+			"url": "textures/true.png"
+		},
+		{
+			"name": "false_json",
+			"type": "json",
+			"url": "textures/false.json"
+		},
+		{
+			"name": "false_png",
+			"type": "image",
+			"url": "textures/false.png"
 		}
 	]
 }

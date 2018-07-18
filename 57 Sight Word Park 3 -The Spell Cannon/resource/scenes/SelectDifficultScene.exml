@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="selectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="SelectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="163d5d682b6" ></w:Config>
-	<e:Image id="selectDifficultBg" source="select_difficult_bg_png" horizontalCenter="0" verticalCenter="0"/>
-    <e:Image id="easyStarNormalImage" source="easy_start_normal_png" x="594" y="874"/>
-    <e:Image id="proStarNormalImage" source="pro_start_normal_png" x="1092" y="853"/>
-    <e:Group id="easyGroup" x="594" y="874" height="213" width="241"/>
-    <e:Group id="proGroup" x="1092" y="853" height="211" width="243"/>
-    <e:Group id="backGroup" x="1739" y="40" height="219" width="126" alpha="0"/>
+	<e:Image id="selectDifficultBg" source="select_difficult_bg_png"  x="-194" y="-412"/>
+    <e:Image id="whiteCanvas" source="white_canvas_png" x="79" y="74" alpha="0.8"/>
+    <e:Image id="easyStarImg" source="easy_star_normal_png" x="594" y="874"/>
+    <e:Image id="proStarImg" source="pro_star_normal_png" x="1092" y="853"/>
+    <e:Image id="backBtn" source="back_btn_png" x="1739" y="40"/>
+    <e:Image id="whiteCanvasPicture" source="white_canvas_picture_png" x="689" y="336"/>
+    <e:Label id="theSpellCannon" x="693" y="253" size="60" text="The Spelling Cannon" textColor="#000000" fontFamily="Kristen_ITC"/>
+    <e:Label id="descriptionOneText" x="426" y="743" fontFamily="Kristen_ITC" size="44" text="Shoot the castle and defeat the enemy by choosing" textColor="#000000"/>
+    <e:Label id="descriptionTwoText" x="426" y="798" fontFamily="Kristen_ITC" size="44" text="the right world!" textColor="#000000"/>
 </e:Skin>
