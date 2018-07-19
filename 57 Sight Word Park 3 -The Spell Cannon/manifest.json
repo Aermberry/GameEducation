@@ -15,10 +15,12 @@
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/repositories/WordRepository.js",
 		"bin-debug/scenes/EasyGoScene.js",
 		"bin-debug/scenes/PlayEasyGameScene.js",
 		"bin-debug/scenes/ProGoScene.js",
 		"bin-debug/scenes/SelectDifficultScene.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/scenes/StartScene.js",
+		"bin-debug/utility/MathExtension.js"
 	]
 }

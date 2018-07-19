@@ -38,6 +38,8 @@ class ProGoScene extends eui.Component implements eui.UIComponent{
 
     private goStartScene() {
         this.bgmSoundChannel.stop();
-        Main.instance.gotoScene(new StartScene);
+        this.proMovieClip.stop();
+        this.proMovieGroup.removeChild(this.proMovieClip);
+        Main.instance.gotoScene(new StartScene());
     }
 }

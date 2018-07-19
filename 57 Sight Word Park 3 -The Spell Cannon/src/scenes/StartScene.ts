@@ -55,6 +55,6 @@ class StartScene extends eui.Component implements eui.UIComponent{
 	private nextScene(e: egret.TouchEvent): void
 	{
 		this.startSceneBgmSound.stop();
-		Main.instance.gotoScene(new SelectDifficultScene);
+		Main.instance.gotoScene(new SelectDifficultScene());
 	}
 }

@@ -4,7 +4,7 @@
 		"SelectDifficultScene": "resource/scenes/SelectDifficultScene.exml",
 		"EasyGoScene": "resource/scenes/EasyGoScene.exml",
 		"ProGoScene": "resource/scenes/ProGoScene.exml",
-		"EnterEasyGameScene": "resource/scenes/PlayEasyGameScene.exml"
+		"PlayEasyGameScene": "resource/scenes/PlayEasyGameScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [

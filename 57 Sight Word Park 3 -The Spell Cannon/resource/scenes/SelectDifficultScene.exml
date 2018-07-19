@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="SelectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="163d5d682b6" ></w:Config>
 	<e:Image id="selectDifficultBg" source="select_difficult_bg_png"  x="-194" y="-412"/>
     <e:Image id="whiteCanvas" source="white_canvas_png" x="79" y="74" alpha="0.8"/>
     <e:Image id="easyStarImg" source="easy_star_normal_png" x="594" y="874"/>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="163d5d682b6" ></w:Config>
 	<e:Image id="bg" source="start_scene_bg_svg"  horizontalCenter="-327.5" verticalCenter="317.5"/>
 	<e:Image id="rainbowImage" source="rainbow_svg" x="1920" y="85" height="295"/>
 	<e:Image id="sightWordParkImage" source="sight_word_park_svg"  y="85" width="1520" height="350" horizontalCenter="0" visible="false"/>

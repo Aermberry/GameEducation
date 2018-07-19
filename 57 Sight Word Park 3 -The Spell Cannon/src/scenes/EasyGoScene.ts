@@ -35,13 +35,13 @@ class EasyGoScene extends eui.Component implements eui.UIComponent{
         this.bgmSoundChannel.stop();
         this.easyMovieClip.stop();
         this.easyMovieGroup.removeChild(this.easyMovieClip);
-        Main.instance.gotoScene(new PlayEasyGameScene);
+        Main.instance.gotoScene(new PlayEasyGameScene());
     }
 
     private goStartScene() {
         this.bgmSoundChannel.stop();
         this.easyMovieClip.stop();
         this.easyMovieGroup.removeChild(this.easyMovieClip);
-        Main.instance.gotoScene(new StartScene);
+        Main.instance.gotoScene(new StartScene());
     }
 }

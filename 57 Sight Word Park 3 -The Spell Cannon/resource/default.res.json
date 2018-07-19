@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,blood_strip_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,blood_strip_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,first_launched_boom_json,first_launched_boom_png,second_launched_boom_json,second_launched_boom_png,third_launched_boom_json,third_launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,shape225_png,shape228_png,shape231_png,hover_boom_png",
 			"name": "preload"
 		}
 	],
@@ -210,6 +210,91 @@
 			"name": "false_png",
 			"type": "image",
 			"url": "textures/false.png"
+		},
+		{
+			"name": "launched_boom_png",
+			"type": "image",
+			"url": "textures/launched_boom.png"
+		},
+		{
+			"name": "first_launched_boom_json",
+			"type": "json",
+			"url": "textures/first_launched_boom.json"
+		},
+		{
+			"name": "first_launched_boom_png",
+			"type": "image",
+			"url": "textures/first_launched_boom.png"
+		},
+		{
+			"name": "second_launched_boom_json",
+			"type": "json",
+			"url": "textures/second_launched_boom.json"
+		},
+		{
+			"name": "second_launched_boom_png",
+			"type": "image",
+			"url": "textures/second_launched_boom.png"
+		},
+		{
+			"name": "third_launched_boom_json",
+			"type": "json",
+			"url": "textures/third_launched_boom.json"
+		},
+		{
+			"name": "third_launched_boom_png",
+			"type": "image",
+			"url": "textures/third_launched_boom.png"
+		},
+		{
+			"name": "star_explosion_json",
+			"type": "json",
+			"url": "textures/star_explosion.json"
+		},
+		{
+			"name": "star_explosion_png",
+			"type": "image",
+			"url": "textures/star_explosion.png"
+		},
+		{
+			"name": "false_drop_down_box_png",
+			"type": "image",
+			"url": "textures/false_drop_down_box.png"
+		},
+		{
+			"name": "false_drop_down_box_json",
+			"type": "json",
+			"url": "textures/false_drop_down_box.json"
+		},
+		{
+			"name": "right_drop_down_box_json",
+			"type": "json",
+			"url": "textures/right_drop_down_box.json"
+		},
+		{
+			"name": "right_drop_down_box_png",
+			"type": "image",
+			"url": "textures/right_drop_down_box.png"
+		},
+		{
+			"name": "shape225_png",
+			"type": "image",
+			"url": "textures/shape225.png"
+		},
+		{
+			"name": "shape228_png",
+			"type": "image",
+			"url": "textures/shape228.png"
+		},
+		{
+			"name": "shape231_png",
+			"type": "image",
+			"url": "textures/shape231.png"
+		},
+		{
+			"name": "hover_boom_png",
+			"type": "image",
+			"url": "textures/hover_boom.png"
 		}
 	]
 }
