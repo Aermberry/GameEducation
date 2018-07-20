@@ -16,6 +16,9 @@
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
+		"resource/components/FirstBoomTarget.exml",
+		"resource/components/SecondBoomTarget.exml",
+		"resource/components/ThirdBoomTarget.exml",
 		"resource/scenes/EasyGoScene.exml",
 		"resource/scenes/PlayEasyGameScene.exml",
 		"resource/scenes/ProGoScene.exml",
