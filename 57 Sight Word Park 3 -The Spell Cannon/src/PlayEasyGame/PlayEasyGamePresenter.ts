@@ -18,6 +18,8 @@ class PlayEasyGamePresenter {
 	 */
 	public async playGame(): Promise<void>
 	{
+		this.view.castleBlood = 20;
+		this.view.enableAllBombs();
 		this.initCastleWordAndBombs();
 	}
 
@@ -44,6 +46,7 @@ class PlayEasyGamePresenter {
 		}
 
 		if (!this.view.isCastleGood) {
+			this.view.disableAllBombs();
 			this.view.playGameCompleteAnimation();
 		}
 		this.view.enableAllBombs();

@@ -17,4 +17,6 @@ interface IPlayEasyGameView {
     disableAllBombs(): void;
     /** 城堡被炮弹击中，显示击中效果，城堡血减一 */
     markCastleShot(): void;
+    /** 城堡的血量 */
+    castleBlood: number;
 }

@@ -5,7 +5,8 @@
 		"EasyGoScene": "resource/scenes/EasyGoScene.exml",
 		"ProGoScene": "resource/scenes/ProGoScene.exml",
 		"PlayEasyGameScene": "resource/scenes/PlayEasyGameScene.exml",
-		"EasyCastle": "resource/components/EasyCastle.exml"
+		"EasyCastle": "resource/components/EasyCastle.exml",
+		"ResultScene": "resource/scenes/ResultScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
@@ -24,6 +25,7 @@
 		"resource/scenes/EasyGoScene.exml",
 		"resource/scenes/PlayEasyGameScene.exml",
 		"resource/scenes/ProGoScene.exml",
+		"resource/scenes/ResultScene.exml",
 		"resource/scenes/SelectDifficultScene.exml",
 		"resource/scenes/StartScene.exml"
 	]

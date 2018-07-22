@@ -1,0 +1,3 @@
+interface IPlayingScene {
+	startGame(): void;
+}

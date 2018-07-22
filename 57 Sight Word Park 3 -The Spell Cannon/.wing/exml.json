@@ -1,20 +1,25 @@
 {
-    "164b0243984": {
-        "path": "scenes\\PlayEasyGameScene.ts",
-        "class": "PlayEasyGameScene",
-        "parentPath": ""
-    },
-    "164bfeb3db5": {
-        "path": "components/EasyCastle.ts",
-        "class": "EasyCastle",
-        "parentPath": ""
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true
-    },
-    "164c0226b9f": {
-        "path": "components/EasyCastle.ts",
-        "class": "EasyCastle",
-        "parentPath": ""
-    }
+  "164b0243984": {
+    "path": "scenes\\PlayEasyGameScene.ts",
+    "class": "PlayEasyGameScene",
+    "parentPath": ""
+  },
+  "164bfeb3db5": {
+    "path": "components/EasyCastle.ts",
+    "class": "EasyCastle",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "164c0226b9f": {
+    "path": "components/EasyCastle.ts",
+    "class": "EasyCastle",
+    "parentPath": ""
+  },
+  "164c1207196": {
+    "path": "scenes/ResultScene.ts",
+    "class": "ResultScene",
+    "parentPath": ""
+  }
 }

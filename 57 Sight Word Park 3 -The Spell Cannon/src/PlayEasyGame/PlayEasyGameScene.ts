@@ -1,4 +1,4 @@
-class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayEasyGameView {
+class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayEasyGameView, IPlayingScene {
 
     private playEasyGameTweenGroup:egret.tween.TweenGroup;
     private peopelImage:eui.Image;
@@ -122,7 +122,13 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     /** 向城堡开炮 */
     public async shoot(): Promise<void>
     {
+        (RES.getRes('pum_mp3') as egret.Sound).play(0, 1);
         await this.playShootMovieClip();
+        (RES.getRes('pum_mp3') as egret.Sound).play(0, 1);
+        await lzlib.ThreadUtility.sleep(200);
+        (RES.getRes('pum_mp3') as egret.Sound).play(0, 1);
+        await lzlib.ThreadUtility.sleep(200);
+        (RES.getRes('pum_mp3') as egret.Sound).play(0, 1);
         await this.playStarMovieClip();
     }
 
@@ -133,6 +139,7 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
         this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('right_drop_down_box'));
         this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
         this.dropDownBoxMovieClip.play(0); 
+        this.goodJobTweenGroup.play(0);
     }
     /** 播放用户选择错误字母的动画 */
     public playWrongAnimation(): void
@@ -141,6 +148,7 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
         this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('false_drop_down_box'));
         this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
         this.dropDownBoxMovieClip.play(0); 
+        (RES.getRes('diao_mp3') as egret.Sound).play(0, 1);
     }
 
     /** 城堡上的单词 */
@@ -160,7 +168,7 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     /** 播放游戏通关动画 */
     public playGameCompleteAnimation(): void
     {
-
+        this.addChild(new ResultScene(this));
     }
 
     public enableAllBombs(): void
@@ -182,5 +190,15 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     {
         this.castle.markShot();
         this.bloodStripImage.source = `blood_strip_${this.castle.blood}_png`;
+    }
+
+    public set castleBlood(value: number)
+    {
+        this.castle.blood = value;
+    }
+
+    public startGame(): void
+    {
+        this.presenter.playGame();
     }
 }

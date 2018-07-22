@@ -12,6 +12,8 @@ declare class PlayEasyGameSceneSkin extends eui.Skin{
 }
 declare class ProGoSceneSKin extends eui.Skin{
 }
+declare class ResultSceneSkin extends eui.Skin{
+}
 declare class SelectDifficultSceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{

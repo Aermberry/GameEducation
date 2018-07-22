@@ -164,7 +164,6 @@
 <ns1:EasyCastle id="castle" x="511" y="0" width="1500" height="1248" />
 <e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
 <e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920">
-	<e:Image id="bloodStripImage" source="blood_strip_20_png" x="786" y="534" width="868" height="124"/>
 </e:Group>
 <e:Image id="cannonImage" source="fort_png" x="185" y="814" alpha="0"/>
 <e:Image id="peopelImage" source="people_normal_png" x="37" y="421" alpha="0"/>
@@ -174,12 +173,13 @@
 <ns1:TargetButton id="bomb1" skinName="FirstBoomTarget" x="600" y="845"  alpha="0"/>
 <ns1:TargetButton id="bomb2" skinName="SecondBoomTarget" x="849" y="845"  alpha="0"/>
 <ns1:TargetButton id="bomb3" skinName="ThirdBoomTarget" x="1100" y="845"  alpha="0"/>
+	<e:Image id="bloodStripImage" source="blood_strip_20_png" x="926" y="761" width="868" height="124"/>
 
 <e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
 <e:Image id="backBtn" source="back_btn_png" x="1740" y="1053" locked="true"/>
 <e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
 
 <e:Group id="starExplosionGroup" x="1029" y="223" width="891" height="727" locked="true"/>
-<e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="0x000000" alpha="0"/>
+<e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC"/>
 <e:Group id="peopleTouchGroup" x="248" y="461" width="222" height="222" />
 </e:Skin>

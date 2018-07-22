@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,first_launched_boom_json,first_launched_boom_png,second_launched_boom_json,second_launched_boom_png,third_launched_boom_json,third_launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,first_launched_boom_json,first_launched_boom_png,second_launched_boom_json,second_launched_boom_png,third_launched_boom_json,third_launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png,smoke_4_png,smoke_5_png,smoke_6_png,smoke_7_png,smoke_8_png,smoke_9_png,door_png,castle_bottom_png,arrow_right_svg,smiling_yellow_head_svg,pum_mp3,kacha_mp3,diao_mp3,congratulation_mp3",
 			"name": "preload"
 		}
 	],
@@ -400,6 +400,76 @@
 			"name": "smoke_3_png",
 			"type": "image",
 			"url": "textures/smoke_3.png"
+		},
+		{
+			"name": "smoke_4_png",
+			"type": "image",
+			"url": "textures/smoke_4.png"
+		},
+		{
+			"name": "smoke_5_png",
+			"type": "image",
+			"url": "textures/smoke_5.png"
+		},
+		{
+			"name": "smoke_6_png",
+			"type": "image",
+			"url": "textures/smoke_6.png"
+		},
+		{
+			"name": "smoke_7_png",
+			"type": "image",
+			"url": "textures/smoke_7.png"
+		},
+		{
+			"name": "smoke_8_png",
+			"type": "image",
+			"url": "textures/smoke_8.png"
+		},
+		{
+			"name": "smoke_9_png",
+			"type": "image",
+			"url": "textures/smoke_9.png"
+		},
+		{
+			"name": "door_png",
+			"type": "image",
+			"url": "textures/door.png"
+		},
+		{
+			"name": "castle_bottom_png",
+			"type": "image",
+			"url": "textures/castle_bottom.png"
+		},
+		{
+			"name": "arrow_right_svg",
+			"type": "image",
+			"url": "textures/arrow_right.svg"
+		},
+		{
+			"name": "smiling_yellow_head_svg",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.svg"
+		},
+		{
+			"name": "pum_mp3",
+			"type": "sound",
+			"url": "audios/pum.mp3"
+		},
+		{
+			"name": "kacha_mp3",
+			"type": "sound",
+			"url": "audios/kacha.mp3"
+		},
+		{
+			"name": "diao_mp3",
+			"type": "sound",
+			"url": "audios/diao.mp3"
+		},
+		{
+			"name": "congratulation_mp3",
+			"type": "sound",
+			"url": "audios/congratulation.mp3"
 		}
 	]
 }

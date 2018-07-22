@@ -168,7 +168,7 @@ class WordRepository {
 'so',
 'some',
 'soon',
-'sound_again.as',
+'sound',
 'Sprite',
 'start',
 'stop',
