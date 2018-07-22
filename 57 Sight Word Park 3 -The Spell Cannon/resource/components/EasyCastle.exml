@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EasyCastleSkin" width="1500" height="1248" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164bfeb3db5" ></w:Config>
+	<e:Image source="house_image_png" x="0" y="0" />
+	<e:Group height="221" width="607" x="606" y="554">
+		<e:Image source="white_canvas_png" alpha="0.7" left="0" right="0" bottom="0" top="0" />
+		<e:Label id="displayLabel" left="0" right="0" bottom="0" top="0" textAlign="center" verticalAlign="middle" size="119" textColor="0x000000"/>
+	</e:Group>
+	<e:Image id="hole1Image" x="596" y="450" source="hole_png" anchorOffsetX="0" width="50" anchorOffsetY="0" height="38" visible="false"/>
+	<e:Image id="smoke1Image" x="457" y="-195" source="smoke_1_png" alpha="0.8" visible="false"/>
+	<e:Image id="hole2Image" x="1235.9" y="429.46" source="hole_png" rotation="90" visible="false"/>
+	<e:Image id="smoke2Image" x="1170" y="-212" source="smoke_2_png" alpha="0.8" visible="false"/>
+	<e:Image id="hole3Image" x="861.5" y="153" source="hole_png" anchorOffsetX="0" width="50" anchorOffsetY="0" height="38" rotation="0" visible="false"/>
+	<e:Image id="smoke3Image" x="783.5" y="-132" source="smoke_3_png" alpha="0.8" visible="false"/>
+</e:Skin>

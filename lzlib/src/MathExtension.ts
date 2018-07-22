@@ -1,5 +1,4 @@
 // TypeScript file
-
 interface Math {
     randomMinMax(min: number, max: number): number;
 }

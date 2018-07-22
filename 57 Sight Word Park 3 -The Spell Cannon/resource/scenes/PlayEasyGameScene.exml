@@ -66,7 +66,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{fortImage}">
+			<tween:TweenItem target="{cannonImage}">
 				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
@@ -79,7 +79,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{firstSelectImage}">
+			<tween:TweenItem target="{bomb1}">
 				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
@@ -92,7 +92,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{secondSelectImage}">
+			<tween:TweenItem target="{bomb2}">
 				<tween:Wait duration="1250"/>
 				<tween:Set>
 					<tween:props>
@@ -105,7 +105,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{thirdSelectImage}">
+			<tween:TweenItem target="{bomb3}">
 				<tween:Wait duration="1500"/>
 				<tween:Set>
 					<tween:props>
@@ -161,27 +161,25 @@
 
 <e:Image id="playGameBg" source="play_game_bg_png" x="0" y="-30" locked="true"/>
 <e:Image id="whiteCloud" source="white_cloud_png" x="160" y="0" locked="true"/>
-<e:Image id="hosueImage" source="house_image_png" x="511" y="0" locked="true"/>
+<ns1:EasyCastle id="castle" x="511" y="0" width="1500" height="1248" />
 <e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
-<e:Image id="whiteCanvas" source="white_canvas_png" x="1120" y="550" height="221" width="607" alpha="0.7" locked="true"/>
-<e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920"/>
-<e:Image id="fortImage" source="fort_png" x="185" y="814" alpha="0" locked="true"/>
+<e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920">
+	<e:Image id="bloodStripImage" source="blood_strip_20_png" x="786" y="534" width="868" height="124"/>
+</e:Group>
+<e:Image id="cannonImage" source="fort_png" x="185" y="814" alpha="0"/>
 <e:Image id="peopelImage" source="people_normal_png" x="37" y="421" alpha="0"/>
 
 <e:Image id="redStageImage" source="red_stage_png" x="-1317" y="-216" locked="true"/>
 
-<e:Label id="canvasText" text="_like"  x="1300" y="596" size="119" textColor="#000000"/>
+<ns1:TargetButton id="bomb1" skinName="FirstBoomTarget" x="600" y="845"  alpha="0"/>
+<ns1:TargetButton id="bomb2" skinName="SecondBoomTarget" x="849" y="845"  alpha="0"/>
+<ns1:TargetButton id="bomb3" skinName="ThirdBoomTarget" x="1100" y="845"  alpha="0"/>
 
-<ns1:TargetButton id="firstSelectImage" skinName="FirstBoomTarget" x="600" y="845" />
-<ns1:TargetButton id="secondSelectImage" skinName="SecondBoomTarget" x="849" y="845" />
-<ns1:TargetButton id="thirdSelectImage" skinName="ThirdBoomTarget" x="1100" y="845" />
-
-<e:Label id="readyText" text="Ready!"  size="480" textColor="#9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
+<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
 <e:Image id="backBtn" source="back_btn_png" x="1740" y="1053" locked="true"/>
-<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="#9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
-<e:Image id="bloodStrip" source="blood_strip_png" x="1000" y="840" locked="true"/>
+<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
 
 <e:Group id="starExplosionGroup" x="1029" y="223" width="891" height="727" locked="true"/>
-<e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="#000000" alpha="0"/>
+<e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="0x000000" alpha="0"/>
 <e:Group id="peopleTouchGroup" x="248" y="461" width="222" height="222" />
 </e:Skin>

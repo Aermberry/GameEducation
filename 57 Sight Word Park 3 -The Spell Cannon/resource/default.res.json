@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,blood_strip_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,first_launched_boom_json,first_launched_boom_png,second_launched_boom_json,second_launched_boom_png,third_launched_boom_json,third_launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,shape225_png,shape228_png,shape231_png,hover_boom_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,first_launched_boom_json,first_launched_boom_png,second_launched_boom_json,second_launched_boom_png,third_launched_boom_json,third_launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png",
 			"name": "preload"
 		}
 	],
@@ -167,11 +167,6 @@
 			"url": "textures/play_game_bg.png"
 		},
 		{
-			"name": "blood_strip_png",
-			"type": "image",
-			"url": "textures/blood_strip.png"
-		},
-		{
 			"name": "boom_png",
 			"type": "image",
 			"url": "textures/boom.png"
@@ -277,24 +272,134 @@
 			"url": "textures/right_drop_down_box.png"
 		},
 		{
-			"name": "shape225_png",
-			"type": "image",
-			"url": "textures/shape225.png"
-		},
-		{
-			"name": "shape228_png",
-			"type": "image",
-			"url": "textures/shape228.png"
-		},
-		{
-			"name": "shape231_png",
-			"type": "image",
-			"url": "textures/shape231.png"
-		},
-		{
 			"name": "hover_boom_png",
 			"type": "image",
 			"url": "textures/hover_boom.png"
+		},
+		{
+			"name": "blood_strip_20_png",
+			"type": "image",
+			"url": "textures/blood_strip_20.png"
+		},
+		{
+			"name": "blood_strip_19_png",
+			"type": "image",
+			"url": "textures/blood_strip_19.png"
+		},
+		{
+			"name": "blood_strip_18_png",
+			"type": "image",
+			"url": "textures/blood_strip_18.png"
+		},
+		{
+			"name": "blood_strip_17_png",
+			"type": "image",
+			"url": "textures/blood_strip_17.png"
+		},
+		{
+			"name": "blood_strip_16_png",
+			"type": "image",
+			"url": "textures/blood_strip_16.png"
+		},
+		{
+			"name": "blood_strip_15_png",
+			"type": "image",
+			"url": "textures/blood_strip_15.png"
+		},
+		{
+			"name": "blood_strip_14_png",
+			"type": "image",
+			"url": "textures/blood_strip_14.png"
+		},
+		{
+			"name": "blood_strip_13_png",
+			"type": "image",
+			"url": "textures/blood_strip_13.png"
+		},
+		{
+			"name": "blood_strip_12_png",
+			"type": "image",
+			"url": "textures/blood_strip_12.png"
+		},
+		{
+			"name": "blood_strip_11_png",
+			"type": "image",
+			"url": "textures/blood_strip_11.png"
+		},
+		{
+			"name": "blood_strip_10_png",
+			"type": "image",
+			"url": "textures/blood_strip_10.png"
+		},
+		{
+			"name": "blood_strip_9_png",
+			"type": "image",
+			"url": "textures/blood_strip_9.png"
+		},
+		{
+			"name": "blood_strip_8_png",
+			"type": "image",
+			"url": "textures/blood_strip_8.png"
+		},
+		{
+			"name": "blood_strip_7_png",
+			"type": "image",
+			"url": "textures/blood_strip_7.png"
+		},
+		{
+			"name": "blood_strip_6_png",
+			"type": "image",
+			"url": "textures/blood_strip_6.png"
+		},
+		{
+			"name": "blood_strip_5_png",
+			"type": "image",
+			"url": "textures/blood_strip_5.png"
+		},
+		{
+			"name": "blood_strip_4_png",
+			"type": "image",
+			"url": "textures/blood_strip_4.png"
+		},
+		{
+			"name": "blood_strip_3_png",
+			"type": "image",
+			"url": "textures/blood_strip_3.png"
+		},
+		{
+			"name": "blood_strip_2_png",
+			"type": "image",
+			"url": "textures/blood_strip_2.png"
+		},
+		{
+			"name": "blood_strip_1_png",
+			"type": "image",
+			"url": "textures/blood_strip_1.png"
+		},
+		{
+			"name": "blood_strip_0_png",
+			"type": "image",
+			"url": "textures/blood_strip_0.png"
+		},
+		{
+			"name": "smoke_1_png",
+			"type": "image",
+			"url": "textures/smoke_1.png"
+		},
+		{
+			"name": "smoke_2_png",
+			"type": "image",
+			"url": "textures/smoke_2.png"
+		},
+		{
+			"name": "hole_png",
+			"type": "image",
+			"url": "textures/hole.png"
+		},
+		{
+			"name": "smoke_3_png",
+			"type": "image",
+			"url": "textures/smoke_3.png"
 		}
 	]
 }

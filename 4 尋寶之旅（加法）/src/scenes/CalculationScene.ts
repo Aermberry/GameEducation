@@ -26,13 +26,12 @@ class CalculationScene extends eui.Component implements  eui.UIComponent {
 	private boyGroup: eui.Group;
 	private boyImage: eui.Image;
 	private boxImage: eui.Image;
+	private boxOpenTweenGroup: egret.tween.TweenGroup;
 
     private boyFactory:egret.MovieClipDataFactory;
     private boyMovie:egret.MovieClip;
-
     private strawberryUpFactory:egret.MovieClipDataFactory;
     private strawberryUpMovie:egret.MovieClip;
-
     private strawberryDownFactory:egret.MovieClipDataFactory;
     private strawberryDownMovie:egret.MovieClip;
 

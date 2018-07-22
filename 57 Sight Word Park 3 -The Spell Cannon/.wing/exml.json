@@ -3,5 +3,18 @@
         "path": "scenes\\PlayEasyGameScene.ts",
         "class": "PlayEasyGameScene",
         "parentPath": ""
+    },
+    "164bfeb3db5": {
+        "path": "components/EasyCastle.ts",
+        "class": "EasyCastle",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "164c0226b9f": {
+        "path": "components/EasyCastle.ts",
+        "class": "EasyCastle",
+        "parentPath": ""
     }
 }

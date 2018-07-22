@@ -48,8 +48,6 @@
 	<e:Image id="degreeImage" scaleX="0.8" scaleY="0.8" source="senior_normal_png" x="170" y="235"/>
 	<e:Group width="660" height="585" y="240" horizontalCenter="0">
 		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="0" bottom="0"/>
-		<e:Image id="decadeIndicatorImage" x="332.5" y="485" source="tick_png"/>
-		<e:Image id="thousandIndicatorImage" x="138.5" y="485" source="tick_png"/>
 		<e:Group width="97" height="75" y="25" x="40">
 			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
 			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675"/>
@@ -63,22 +61,24 @@
 		<ns1:EditableLargeLabel id="unitLabel" x="433" y="360" width="80" height="120" currentState="view" text=""/>
 		<ns1:EditableLargeLabel id="hundredLabel" x="239" y="360" width="80" height="120" currentState="view" text=""/>
 		<ns1:EditableLargeLabel id="thousandLabel" x="144" y="360" width="80" height="120" currentState="view" text=""/>
-		<e:Image id="hundredCarryIndicatorImage" x="279" y="185" source="tick_png"/>
-		<e:Image id="decadeCarryIndicatorImage" x="378" y="185" source="tick_png"/>
-		<e:Image id="hundredIndicatorImage" x="228" y="485" source="tick_png"/>
-		<e:Image id="unitIndicatorImage" x="424" y="485" source="tick_png"/>
+		<e:Image id="hundredCarryIndicatorImage" x="279" y="185" source="tick_png" visible="false"/>
+		<e:Image id="decadeCarryIndicatorImage" x="378" y="185" source="tick_png" visible="false"/>
+		<e:Image id="thousandIndicatorImage" x="138.5" y="485" source="tick_png" visible="false"/>
+		<e:Image id="hundredIndicatorImage" x="228" y="485" source="tick_png" visible="false"/>
+		<e:Image id="decadeIndicatorImage" x="332.5" y="485" source="tick_png" visible="false"/>
+		<e:Image id="unitIndicatorImage" x="424" y="485" source="tick_png" visible="false"/>
 	</e:Group>
-	<e:Group id="dialogUpGroup" width="560" height="260" x="1170" y="240">
+	<e:Group id="dialogUpGroup" width="560" height="260" x="1170" y="240" visible="false">
 		<e:Image id="topDialogImage" x="0" y="0" source="dialog_up_png"/>
-		<e:Label id="topDialogTitleLabel" text="要進位嗎？" y="25" textColor="0x000000" size="60" horizontalCenter="0" fontFamily="標楷體"/>
-		<e:Label id="topDialogBodyLabel" text="" textColor="0x000000" fontFamily="標楷體" left="10" top="10" right="10" bottom="10" verticalAlign="middle" wordWrap="true"/>
-		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
-		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png"/>
+		<e:Label id="topDialogTitleLabel" text="要進位嗎？" y="25" textColor="0x000000" size="60" horizontalCenter="0" fontFamily="標楷體" visible="false"/>
+		<e:Label id="topDialogBodyLabel" text="" textColor="0x000000" fontFamily="標楷體" left="10" top="10" right="10" bottom="10" verticalAlign="middle" wordWrap="true" visible="false"/>
+		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png" visible="false"/>
+		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png" visible="false"/>
 	</e:Group>
 	<e:Image id="boxIClosedmage" source="box_closed_png" bottom="255" x="454"/>
 	<e:Image id="boxIOpenmage" source="box_open_png" alpha="0" bottom="255" x="454"/>
 	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
-	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535"/>
+	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
 	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
 	</e:Group>
@@ -96,7 +96,7 @@
 		<ns1:ImageButton id="zeroButton" x="1170" verticalCenter="0" source="zero_normal_png" mouseOverSource="zero_selected_png"/>
 		<ns1:ImageButton id="eraserButton" x="1360" verticalCenter="0" source="eraser_normal_png" mouseOverSource="eraser_selected_png"/>
 	</e:Group>
-	<e:Group id="dialogDownGroup" width="560" height="260" x="1225" y="640">
+	<e:Group id="dialogDownGroup" width="560" height="260" x="1225" y="640" visible="false">
 		<e:Image id="bottomDialogImage" x="0" y="243" source="dialog_up_png" scaleY="-1"/>
 		<e:Label id="bottomDialogBodyLabel" text="如果個位數相加大於或等於10，就應進1至十位" textColor="0x000000" wordWrap="true" left="10" top="10" right="10" bottom="10" verticalAlign="middle" textAlign="left" fontFamily="標楷體"/>
 	</e:Group>
