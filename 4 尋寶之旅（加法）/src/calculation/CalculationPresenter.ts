@@ -1,7 +1,26 @@
 class CalculationPresenter {
 	public view: ICalculationView;
+	public numberGenerator: INumberGenerator;
+	public maxQuestionCount = 0;
 
 	public constructor() {
+	}
+
+	public set degree(value: Degree)
+	{
+		switch (value) {
+			case Degree.junior:
+			this.numberGenerator = new JuniorNumberGenerator();
+			break;
+
+			case Degree.medium:
+			this.numberGenerator = new MediumNumberGenerator();
+			break;
+
+			default:
+			this.numberGenerator = new SeniorNumberGenerator();
+			break;
+		}
 	}
 
 	/**
@@ -13,28 +32,53 @@ class CalculationPresenter {
 	 */
 	public async startCalulation(): Promise<void>
 	{
-		let addend = 456;
-		let augend = 789;
-
-		this.view.addend = addend;
-		this.view.augend = augend;
-		var carry = 0; //进位
-		
-		for	(let position = 0; position < (addend + augend).toString().length; position++) {
-			let correctSum = this.getDigitAtPosition(addend, position) + this.getDigitAtPosition(augend, position) + carry;
-			await this.calculateSumBit(addend, augend, carry, position);
-			if (position < this.getMaxNumberLength(addend, augend) - 1) {
-				//最后一位不需要确认进位
-				this.view.changeCarryToEditMode(position);
-				await this.confirmCarryNeed(correctSum); 
-				await this.calculateCarry(correctSum, position);
-				this.view.changeCarryToViewMode(position);
+		this.maxQuestionCount = 10;
+		this.resetUI();
+		for (let questionIndex = 0; questionIndex < this.maxQuestionCount; questionIndex++) {
+			this.view.questionIndex = questionIndex + 1;
+			let pair = this.numberGenerator.generate();
+			let addend = this.view.addend = pair[0];
+			let augend = this.view.augend = pair[1];
+			var carry = 0; //进位
+			
+			for	(let position = 0; position < (addend + augend).toString().length; position++) {
+				let correctSum = this.getDigitAtPosition(addend, position) + this.getDigitAtPosition(augend, position) + carry;
+				await this.calculateSumBit(addend, augend, carry, position);
+				if (position < this.getMaxNumberLength(addend, augend) - 1) {
+					//最后一位不需要确认进位
+					this.view.changeCarryToEditMode(position);
+					if (await this.confirmCarryNeed(correctSum)) {
+						await this.calculateCarry(correctSum, position);
+					}
+					this.view.changeCarryToViewMode(position);
+				}
+				carry = this.getDigitAtPosition(correctSum, 1);
 			}
-			carry = this.getDigitAtPosition(correctSum, 1);
+
+			if (questionIndex != this.maxQuestionCount - 1) {
+				//这不是最后一题，用户可以按下一题
+				this.view.showNextQuestionButton();
+				this.view.openBox();
+				await this.view.nextQuestionButtonClickAsync();
+				this.view.hideNextQuestionButton();
+				this.view.closeBox();
+				this.view.clearUserInput();
+			}
 		}
 
 		this.view.showAngle();
-		this.view.congratulation();
+		this.view.startCongratulation();
+	}
+
+	private resetUI(): void
+	{
+		this.view.hideAngel();
+		this.view.hideSumError();
+		this.view.hideNeedCarryDialog();
+		this.view.hideNeedCarryError();
+		this.view.closeBox();
+		this.view.clearUserInput();
+		this.view.stopCongratulation();
 	}
 
 	/**
@@ -64,7 +108,7 @@ class CalculationPresenter {
 	/**
 	 * 确认是否需要进位
 	 */
-	private async confirmCarryNeed(correctSum: number): Promise<void>
+	private async confirmCarryNeed(correctSum: number): Promise<boolean>
 	{
 		this.view.showNeedCarryDialog();
 		while(await this.view.confirmNeedCarryAsync() != (correctSum >= 10)) {
@@ -74,6 +118,7 @@ class CalculationPresenter {
 		this.view.hideAngel();
 		this.view.hideNeedCarryDialog();
 		this.view.hideNeedCarryError();
+		return correctSum >= 10;
 	}
 
 	/**

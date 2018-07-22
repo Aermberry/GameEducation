@@ -1,4 +1,6 @@
 interface ICalculationView {
+	questionIndex: number;
+
 	addend: number;
 	augend: number;
 
@@ -46,6 +48,19 @@ interface ICalculationView {
 	showAngle(): void;
 	hideAngel(): void;
 
+	showNextQuestionButton(): void;
+	hideNextQuestionButton(): void;
+	/** 等待用户点击“下一题" */
+	nextQuestionButtonClickAsync(): Promise<void>;
+
+	openBox(): void;
+	closeBox(): void;
+
+	/** 清除用户的输入 */
+	clearUserInput(): void;
+
 	/** 显示通关动画 */
-	congratulation(): void;
+	startCongratulation(): void;
+	/** 关闭通关动画 */
+	stopCongratulation(): void;
 }

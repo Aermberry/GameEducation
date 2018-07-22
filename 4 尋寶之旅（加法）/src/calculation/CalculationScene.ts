@@ -18,8 +18,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 
 	private boyGroup: eui.Group;
 	private boyImage: eui.Image;
-	private boxImage: eui.Image;
+	private boxOpenImage: eui.Image;
+	private boxClosedImage: eui.Image;
 	private boxOpenTweenGroup: egret.tween.TweenGroup;
+	private strawberryImage: eui.Image;
 
     private boyFactory:egret.MovieClipDataFactory;
     private boyMovie:egret.MovieClip;
@@ -45,10 +47,12 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 
 	private congratulationImage: eui.Image;
 
+	private degree: Degree;
 	private presenter = new CalculationPresenter();
 
-	public constructor() {
+	public constructor(degree: Degree) {
 		super();
+		this.degree = degree;
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -63,7 +67,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		mouse.enable(this.stage);
 		this.initRestartExitButton();
 		this.initAngelGroup();
+		this.initBoyMovie();
+		this.formatDegree();
 		this.presenter.view = this;
+		this.presenter.degree = this.degree;
 		this.presenter.startCalulation();
 	}
 
@@ -83,10 +90,8 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.angelMovie.play(-1);
 	}
 	
-	private playBoyJumpMovie(): void
+	private initBoyMovie(): void
 	{
-		this.boyImage.visible = false;
-
 		this.boyFactory = new egret.MovieClipDataFactory( RES.getRes('boy_jump_json'), RES.getRes('boy_jump_png'));
 		this.boyMovie = new egret.MovieClip(this.boyFactory.generateMovieClipData('boy'));
 		this.boyMovie.y = 0;
@@ -104,6 +109,28 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.strawberryUpMovie.y = 300;
 		this.boyGroup.addChild(this.strawberryUpMovie);
 		this.strawberryUpMovie.play(-1);
+	}
+
+	private formatDegree(): void
+	{
+		switch (this.degree) {
+			case Degree.junior:
+			this.degreeImage.source = 'junior_normal_png';
+			break;
+
+			case Degree.medium:
+			this.degreeImage.source = 'medium_normal_png';
+			break;
+
+			default:
+			this.degreeImage.source = 'senior_normal_png';
+			break;
+		}
+	}
+
+	public set questionIndex(value: number)
+	{
+		this.questionIndexLabel.text = value.toString();
 	}
 
 	public set addend(value: number)
@@ -260,10 +287,71 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.angelGroup.visible = false;
 	}
 
-	/** 显示通关动画 */
-	public congratulation(): void
+	public showNextQuestionButton(): void
 	{
-		this.playBoyJumpMovie();
+		this.nextQuestionButton.visible = true;
+	}
+
+	public hideNextQuestionButton(): void
+	{
+		this.nextQuestionButton.visible = false;
+	}
+
+	/** 等待用户点击“下一题" */
+	public nextQuestionButtonClickAsync(): Promise<void>
+	{
+		return new Promise<void>(resolver => {
+			this.nextQuestionButton.once(egret.TouchEvent.TOUCH_TAP, resolver, this);
+		});
+	}
+
+	public openBox(): void
+	{
+		this.boxOpenTweenGroup.play(0);
+		
+	}
+	public closeBox(): void
+	{
+		this.boxOpenImage.alpha = 0;
+		this.boxClosedImage.alpha = 1;
+		this.strawberryImage.alpha = 0;
+	}
+
+	/** 清除用户的输入 */
+	public clearUserInput(): void
+	{
+		for (let index = 0; index < this.calculationGroup.numChildren; index++) {
+			let child = this.calculationGroup.getChildAt(index);
+			if (child instanceof EditableLabel) {
+				(child as EditableLabel).currentState = 'view';
+				(child as EditableLabel).text = '';
+			}
+
+			if (child instanceof eui.Image && child.name.indexOf('StatusImage') >= 0) {
+				(child as eui.Image).source = '';
+				child.visible = false;
+			}
+		}
+
+	}
+
+	/** 显示通关动画 */
+	public startCongratulation(): void
+	{
+		this.boyImage.visible = false;
+		this.boyMovie.visible = true;
+		this.strawberryUpMovie.visible = true;
+		this.strawberryDownMovie.visible = true;
 		this.congratulationImage.visible = true;
+	}
+
+	/** 关闭通关动画 */
+	public stopCongratulation(): void
+	{
+		this.boyImage.visible = true;
+		this.boyMovie.visible = false;
+		this.strawberryUpMovie.visible = false;
+		this.strawberryDownMovie.visible = false;
+		this.congratulationImage.visible = false;
 	}
 }

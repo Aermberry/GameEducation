@@ -2,7 +2,7 @@
 <e:Skin class="CalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="boxOpenTweenGroup">
-			<tween:TweenItem target="{boxIClosedmage}">
+			<tween:TweenItem target="{boxClosedImage}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -15,7 +15,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{boxIOpenmage}">
+			<tween:TweenItem target="{boxOpenImage}">
 				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
@@ -75,8 +75,8 @@
 		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png" visible="false"/>
 		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png" visible="false"/>
 	</e:Group>
-	<e:Image id="boxIClosedmage" source="box_closed_png" bottom="255" x="454"/>
-	<e:Image id="boxIOpenmage" source="box_open_png" alpha="0" bottom="255" x="454"/>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
 	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
 	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
 	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">

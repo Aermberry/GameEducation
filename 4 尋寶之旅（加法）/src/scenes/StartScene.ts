@@ -39,16 +39,16 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onJuniorImageClick(): void
 	{
-
+		Main.instance.gotoScene(new CalculationScene(Degree.junior));
 	}
 
 	private onMediumImageClick(): void
 	{
-		
+		Main.instance.gotoScene(new CalculationScene(Degree.medium));
 	}
 
 	private onSeniorImageClick(): void
 	{
-		
+		Main.instance.gotoScene(new CalculationScene(Degree.senior));
 	}
 }
