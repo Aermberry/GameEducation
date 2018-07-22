@@ -51,4 +51,9 @@ class PlayEasyGamePresenter {
 		}
 		this.view.enableAllBombs();
 	}
+
+	public onSpeakerClick(): void
+	{
+		this.view.playCastleWord(this.castleWord);
+	}
 }

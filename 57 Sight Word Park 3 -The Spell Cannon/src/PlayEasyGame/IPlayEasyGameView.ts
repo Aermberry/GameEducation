@@ -19,4 +19,6 @@ interface IPlayEasyGameView {
     markCastleShot(): void;
     /** 城堡的血量 */
     castleBlood: number;
+    /** 播放城堡单词的声音 */
+    playCastleWord(word: string): void;
 }

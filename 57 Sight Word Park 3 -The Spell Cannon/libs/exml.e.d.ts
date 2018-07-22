@@ -1,4 +1,4 @@
-declare class EasyCastleSkin extends eui.Skin{
+declare class CastleSkin extends eui.Skin{
 }
 declare class FirstBoomTarget extends eui.Skin{
 }
@@ -9,6 +9,8 @@ declare class ThirdBoomTarget extends eui.Skin{
 declare class EasyGoSceneSkin extends eui.Skin{
 }
 declare class PlayEasyGameSceneSkin extends eui.Skin{
+}
+declare class PlayProGameSceneSkin extends eui.Skin{
 }
 declare class ProGoSceneSKin extends eui.Skin{
 }

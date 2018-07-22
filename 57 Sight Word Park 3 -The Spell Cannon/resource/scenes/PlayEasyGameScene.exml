@@ -161,7 +161,7 @@
 
 <e:Image id="playGameBg" source="play_game_bg_png" x="0" y="-30" locked="true"/>
 <e:Image id="whiteCloud" source="white_cloud_png" x="160" y="0" locked="true"/>
-<ns1:EasyCastle id="castle" x="511" y="0" width="1500" height="1248" />
+<ns1:Castle id="castle" x="511" y="0" width="1500" height="1248" />
 <e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
 <e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920">
 </e:Group>
@@ -179,7 +179,12 @@
 <e:Image id="backBtn" source="back_btn_png" x="1740" y="1053" locked="true"/>
 <e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
 
-<e:Group id="starExplosionGroup" x="1029" y="223" width="891" height="727" locked="true"/>
+<e:Group id="starExplosionGroup" x="1029" y="223" width="891" height="727"/>
 <e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC"/>
 <e:Group id="peopleTouchGroup" x="248" y="461" width="222" height="222" />
+
+<e:Group height="221" width="607" x="1126" y="496.5">
+	<e:Image source="white_canvas_png" alpha="0.7" left="0" right="0" bottom="0" top="0"/>
+	<e:Label id="castleWordLabel" left="0" right="0" bottom="0" top="0" textAlign="center" verticalAlign="middle" size="119" textColor="0x000000"/>
+</e:Group>
 </e:Skin>

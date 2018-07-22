@@ -5,7 +5,6 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     private backBtn:eui.Image;
   
     //开场过渡动画
-    private easyGameLaunchedBoomGroup:eui.Group;
     private easyGameLaunchedBoomMovieClip:egret.MovieClip;
     private easyGameLaunchedBoomFactory:egret.MovieClipDataFactory;
     
@@ -31,7 +30,8 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     private goodJobTweenGroup:egret.tween.TweenGroup;
      
     //城堡
-    private castle: EasyCastle;
+    private castle: Castle;
+	private castleWordLabel: eui.Label;
 
     //本轮游戏血条
     private bloodStripImage:eui.Image;
@@ -65,11 +65,13 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     private async playShootMovieClip(): Promise<void>
     {
         this.cannonImage.visible = false;
-        this.easyGameLaunchedBoomFactory = new egret.MovieClipDataFactory( RES.getRes('first_launched_boom_json'), RES.getRes('first_launched_boom_png'));
-        this.easyGameLaunchedBoomMovieClip = new egret.MovieClip(this.easyGameLaunchedBoomFactory.generateMovieClipData('first_launched_boom'));
-        this.easyGameLaunchedBoomGroup.addChild(this.easyGameLaunchedBoomMovieClip);
+        this.easyGameLaunchedBoomFactory = new egret.MovieClipDataFactory( RES.getRes('launched_boom_0_json'), RES.getRes('launched_boom_0_png'));
+        this.easyGameLaunchedBoomMovieClip = new egret.MovieClip(this.easyGameLaunchedBoomFactory.generateMovieClipData('launched_boom'));
+        this.easyGameLaunchedBoomMovieClip.x = 140;
+        this.easyGameLaunchedBoomMovieClip.y = 280;
+        this.addChild(this.easyGameLaunchedBoomMovieClip);
         await this.easyGameLaunchedBoomMovieClip.playAsync();
-        this.easyGameLaunchedBoomGroup.removeChild(this.easyGameLaunchedBoomMovieClip);
+        this.removeChild(this.easyGameLaunchedBoomMovieClip);
         this.cannonImage.visible = true;
     }
 
@@ -77,9 +79,11 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     {
         this.starExplosionFactory = new egret.MovieClipDataFactory( RES.getRes('star_explosion_json'), RES.getRes('star_explosion_png'));
         this.starExplosionMovieClip = new egret.MovieClip(this.starExplosionFactory.generateMovieClipData('star_explosion'));
-        this.starExplosionGroup.addChild(this.starExplosionMovieClip);
+        this.starExplosionMovieClip.x = 1029;
+        this.starExplosionMovieClip.y = 223;
+        this.addChild(this.starExplosionMovieClip);
         await this.starExplosionMovieClip.playAsync();
-        this.starExplosionGroup.removeChild(this.starExplosionMovieClip);
+        this.removeChild(this.starExplosionMovieClip);
     }
     //动画测试代码这里为止
     
@@ -92,7 +96,8 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     private initPeopleMouseEvent(): void
     {
        this.peopleTouchGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.peopelImage.source='people_normal_png', this);
-       this.peopleTouchGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.peopelImage.source='people_hover_png', this);       
+       this.peopleTouchGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.peopelImage.source='people_hover_png', this);  
+       this.peopleTouchGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onSpeakerClick, this.presenter);     
     }
 
     private initBackTouchEvent(): void
@@ -154,7 +159,7 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     /** 城堡上的单词 */
     public set castleWord(value: string)
     {
-        this.castle.label = value;
+        this.castleWordLabel.text = value;
     }
 
     /** 炮弹上的字母列表 */
@@ -195,6 +200,15 @@ class PlayEasyGameScene extends eui.Component implements eui.UIComponent, IPlayE
     public set castleBlood(value: number)
     {
         this.castle.blood = value;
+    }
+
+    /** 播放城堡单词的声音 */
+    public playCastleWord(word: string): void
+    {
+        let sound = RES.getRes(word + '_mp3');
+        if (sound != null) {
+            (sound as egret.Sound).play(0, 1);
+        }
     }
 
     public startGame(): void
