@@ -9,6 +9,7 @@ class ImageButton extends eui.Image implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this, true);
 		this.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onMouseOver, this);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}

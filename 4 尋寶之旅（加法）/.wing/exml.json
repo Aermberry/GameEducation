@@ -68,5 +68,10 @@
         "path": "components/EditableLargeLabel.ts",
         "class": "EditableLargeLabel",
         "parentPath": ""
+    },
+    "164c37cff9c": {
+        "path": "components/NumberPad.ts",
+        "class": "NumberPad",
+        "parentPath": ""
     }
 }

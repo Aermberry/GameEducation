@@ -1,5 +1,7 @@
 declare class EditableLabelSkin extends eui.Skin{
 }
+declare class NumberPadSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}

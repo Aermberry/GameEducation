@@ -15,11 +15,13 @@
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartScene": "resource/scenes/StartScene.exml",
 		"CalculationScene": "resource/scenes/CalculationScene.exml",
-		"EditableLabel": "resource/components/EditableLabel.exml"
+		"EditableLabel": "resource/components/EditableLabel.exml",
+		"NumberPad": "resource/components/NumberPad.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/EditableLabel.exml",
+		"resource/components/NumberPad.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
