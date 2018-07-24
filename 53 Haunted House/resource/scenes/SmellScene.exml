@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="SmellSceneSKin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
-
-	<e:Image id="smell_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
+<e:Image id="smell_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
 <e:Image id="smell_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
-
-<e:Label id="SmellSceneText" text="They Smell ..." y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
-<e:Image id="SmellSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
-
-<e:Image id="FlowerMushroom" source="flower_mushroom_png" y="168" x="541" locked="true"/>
-<e:Image id="PointedPaper" source="pointed_paper_png" x="880" y="598" locked="true"/>
-<e:Image id="Fish" source="fish_png" x="1377" y="258"/>
+<e:Label id="SmellSceneText" text="They smell" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
+<e:Image id="flowerMushroom" source="flower_mushroom_png" y="168" x="541" locked="true"/>
+<e:Image id="pointedPaper" source="pointed_paper_png" x="880" y="598" locked="true"/>
+<e:Image id="fish" source="fish_png" x="1377" y="258"/>
+<e:Group id="flowerMushroomGroup" x="538" y="168" height="399" width="366"/>
+<e:Group id="pointedPaperGroup" x="881" y="600" height="256" width="588"/>
+<e:Group id="fishGroup" x="1375" y="0" height="516" width="675"/>
 </e:Skin>

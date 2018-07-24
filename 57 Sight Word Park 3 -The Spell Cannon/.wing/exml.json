@@ -1,0 +1,35 @@
+{
+    "164b0243984": {
+        "path": "scenes\\PlayEasyGameScene.ts",
+        "class": "PlayEasyGameScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "164c0226b9f": {
+        "path": "components/Castle.ts",
+        "class": "Castle",
+        "parentPath": ""
+    },
+    "164c1207196": {
+        "path": "scenes/ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
+    },
+    "164c1713de3": {
+        "path": "PlayProGame/PlayProGameScene.ts",
+        "class": "PlayProGameScene",
+        "parentPath": ""
+    },
+    "164c179bd8c": {
+        "path": "components/ProCastle.ts",
+        "class": "ProCastle",
+        "parentPath": ""
+    },
+    "164c2b11afb": {
+        "path": "components/Castle.ts",
+        "class": "Castle",
+        "parentPath": ""
+    }
+}

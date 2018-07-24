@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayEasyGameSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playEasyGameTweenGroup">
+			<tween:TweenItem target="{readyText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{416}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{goText}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{400}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250"/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{peopelImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-350}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{37}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cannonImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-320}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{185}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bomb1}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{860}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bomb2}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{870}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bomb3}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1280}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{870}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="goodJobTweenGroup">
+			<tween:TweenItem target="{goodJobTip}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+<e:Image id="playGameBg" source="play_game_bg_png" x="0" y="-30" locked="true"/>
+<e:Image id="whiteCloud" source="white_cloud_png" x="160" y="0" locked="true"/>
+<ns1:Castle id="castle" x="511" y="0" width="1500" height="1248" />
+<e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
+<e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920">
+</e:Group>
+<e:Image id="cannonImage" source="fort_png" x="185" y="814" alpha="0"/>
+<e:Image id="peopelImage" source="people_normal_png" x="37" y="421" alpha="0"/>
+
+<e:Image id="redStageImage" source="red_stage_png" x="-1317" y="-216" locked="true"/>
+
+<ns1:TargetButton id="bomb1" skinName="FirstBoomTarget" x="600" y="845"  alpha="0"/>
+<ns1:TargetButton id="bomb2" skinName="SecondBoomTarget" x="849" y="845"  alpha="0"/>
+<ns1:TargetButton id="bomb3" skinName="ThirdBoomTarget" x="1100" y="845"  alpha="0"/>
+	<e:Image id="bloodStripImage" source="blood_strip_20_png" x="926" y="761" width="868" height="124"/>
+
+<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
+<e:Image id="backBtn" source="back_btn_png" x="1740" y="1053" locked="true"/>
+<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
+
+<e:Group id="starExplosionGroup" x="1029" y="223" width="891" height="727"/>
+<e:Label id="goodJobTip" x="465" y="319" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC"/>
+<e:Group id="peopleTouchGroup" x="248" y="461" width="222" height="222" />
+
+<e:Group height="221" width="607" x="1126" y="496.5">
+	<e:Image source="white_canvas_png" alpha="0.7" left="0" right="0" bottom="0" top="0"/>
+	<e:Label id="castleWordLabel" left="0" right="0" bottom="0" top="0" textAlign="center" verticalAlign="middle" size="119" textColor="0x000000"/>
+</e:Group>
+</e:Skin>

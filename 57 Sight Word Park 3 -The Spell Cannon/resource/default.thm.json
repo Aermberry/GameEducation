@@ -1,0 +1,34 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"SelectDifficultScene": "resource/scenes/SelectDifficultScene.exml",
+		"EasyGoScene": "resource/scenes/EasyGoScene.exml",
+		"ProGoScene": "resource/scenes/ProGoScene.exml",
+		"PlayEasyGameScene": "resource/scenes/PlayEasyGameScene.exml",
+		"ResultScene": "resource/scenes/ResultScene.exml",
+		"PlayProGameScene": "resource/scenes/PlayProGameScene.exml",
+		"Castle": "resource/components/Castle.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/SelectDifficultScene.exml",
+		"resource/scenes/EasyGoScene.exml",
+		"resource/scenes/ProGoScene.exml",
+		"resource/scenes/PlayEasyGameScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/components/Castle.exml",
+		"resource/components/FirstBoomTarget.exml",
+		"resource/components/SecondBoomTarget.exml",
+		"resource/components/ThirdBoomTarget.exml",
+		"resource/scenes/EasyGoScene.exml",
+		"resource/scenes/PlayEasyGameScene.exml",
+		"resource/scenes/PlayProGameScene.exml",
+		"resource/scenes/ProGoScene.exml",
+		"resource/scenes/ResultScene.exml",
+		"resource/scenes/SelectDifficultScene.exml",
+		"resource/scenes/StartScene.exml"
+	]
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayProGameSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playEasyGameTweenGroup">
+			<tween:TweenItem target="{readyText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{416}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{goText}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{400}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250"/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{peopelImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-350}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{37}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cannonImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{-320}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object x="{185}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="goodJobTweenGroup">
+			<tween:TweenItem target="{goodJobTip}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+<e:Image id="playGameBg" source="play_game_bg_png" x="0" y="-30" locked="true"/>
+<e:Image id="whiteCloud" source="white_cloud_png" x="160" y="0" locked="true"/>
+<ns1:Castle id="castle" x="511" y="0" width="1500" height="1248" />
+	<e:Group id="easyGameLaunchedBoomGroup" x="140" y="280" height="1280" width="1920"/>
+<e:Group id="dropDownBoxGroup" x="200" y="-400" height="688" width="848">
+</e:Group>
+<e:Image id="cannonImage" source="fort_png" x="185" y="814" alpha="0"/>
+<e:Image id="peopelImage" source="people_normal_png" x="37" y="421" alpha="0"/>
+
+<e:Image id="redStageImage" source="red_stage_png" x="-1317" y="-216" locked="true"/>
+
+	<e:Image id="bloodStripImage" source="blood_strip_20_png" x="926" y="761" width="868" height="124"/>
+
+<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
+<e:Image id="backBtn" source="back_btn_png" x="1740" y="1053" locked="true"/>
+<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>
+
+<e:Label id="goodJobTip" x="1171" y="572" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC"/>
+<e:Group id="peopleTouchGroup" x="248" y="461" width="222" height="222" />
+<e:Group id="leftSignGroup" x="948" y="273" width="416" height="388" >
+	<e:Image id="leftSignImage" source="left_sign_normal_png" horizontalCenter="0" verticalCenter="0" touchEnabled="true"/>
+</e:Group>
+<e:Label id="leftSignLabel" text="Label" x="1044" y="324" textColor="0x000000" size="60" width="236" height="80" verticalAlign="middle" textAlign="center" anchorOffsetX="0" anchorOffsetY="0"/>
+<e:Group id="middleSignGroup" x="1235" y="92" width="416" height="436">
+	<e:Image id="middleSignImage" source="middle_sign_normal_png" horizontalCenter="0" verticalCenter="0" touchEnabled="true"/>
+</e:Group>
+<e:Label id="middleSignLabel" text="Label" x="1331" y="142" textColor="0x000000" size="60" width="216" height="80" verticalAlign="middle" textAlign="center" anchorOffsetX="0" anchorOffsetY="0"/>
+<e:Group id="rightSignGroup" x="1496" y="278" width="416" height="388">
+	<e:Image id="rightSignImage" source="right_sign_normal_png" horizontalCenter="0" verticalCenter="0" touchEnabled="true"/>
+</e:Group>
+<e:Label id="rightSignLabel" text="Label" x="1579" y="328" textColor="0x000000" size="60" width="218" height="76" verticalAlign="middle" textAlign="center" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

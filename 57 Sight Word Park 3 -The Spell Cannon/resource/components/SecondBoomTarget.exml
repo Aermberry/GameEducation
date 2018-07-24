@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SecondBoomTarget" states="normal,hover" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="boom_png" includeIn="normal"/>
+    <e:Image source="hover_boom_png" includeIn="hover"/>
+    <e:Label id="labelDisplay" size="93" textColor="#000000" textAlign="center"  horizontalCenter="0" verticalCenter="40" />
+</e:Skin>

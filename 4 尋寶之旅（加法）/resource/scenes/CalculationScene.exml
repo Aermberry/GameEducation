@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="boxOpenTweenGroup">
+			<tween:TweenItem target="{boxClosedImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boxOpenImage}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{strawberryImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{571}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0" />
+	<e:Image source="add_tour_png" x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73"/>
+	
+	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75"/>
+	<e:Group id="exitGroup" top="25" right="25" width="190" height="105">
+		<e:Rect top="0" right="0" bottom="0" left="0" strokeWeight="10" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50"/>
+		<e:Image id="exitImage" source="exit_normal_png" horizontalCenter="0" verticalCenter="0" />
+	</e:Group>
+	<e:Image id="degreeImage" scaleX="0.8" scaleY="0.8" source="senior_normal_png" x="170" y="235"/>
+	<e:Group id="calculationGroup" width="660" height="585" y="240" horizontalCenter="0">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="0" bottom="0"/>
+		<e:Group width="97" height="75" y="25" x="40">
+			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
+			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675"/>
+		</e:Group>
+		<e:Image horizontalCenter="0" y="275" source="add_expression_png"/>
+		<e:BitmapLabel id="addendLabel" width="246" height="62" y="125" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<e:BitmapLabel id="augendLabel" width="246" height="62" y="250" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<ns1:EditableSmallLabel id="decadeCarryLabel" name="carry0Label" x="398" y="255" width="60" height="95" currentState="view" text="" />
+		<ns1:EditableSmallLabel id="hundredCarryLabel" name="carry1Label" x="303" y="255" width="60" height="95" currentState="view" text="" />
+		<ns1:EditableLargeLabel id="unitLabel" name="sum0Label" x="433" y="360" width="80" height="120" currentState="view" text=""/>
+		<ns1:EditableLargeLabel id="decadeLabel" name="sum1Label" x="338" y="360" width="80" height="120" currentState="view" text=""/>
+		<ns1:EditableLargeLabel id="hundredLabel" name="sum2Label" x="239" y="360" width="80" height="120" currentState="view" text=""/>
+		<ns1:EditableLargeLabel id="thousandLabel" name="sum3Label"  x="144" y="360" width="80" height="120" currentState="view" text=""/>
+		<e:Image id="hundredCarryIndicatorImage" name="carry1StatusImage" x="279" y="185" source="tick_png" visible="false"/>
+		<e:Image id="decadeCarryIndicatorImage" name="carry0StatusImage" x="378" y="185" source="tick_png" visible="false"/>
+		<e:Image id="thousandIndicatorImage" name="sum3StatusImage" x="138.5" y="485" source="tick_png" visible="false"/>
+		<e:Image id="hundredIndicatorImage" name="sum2StatusImage" x="228" y="485" source="tick_png" visible="false"/>
+		<e:Image id="decadeIndicatorImage" name="sum1StatusImage" x="332.5" y="485" source="tick_png" visible="false"/>
+		<e:Image id="unitIndicatorImage" name="sum0StatusImage" x="424" y="485" source="tick_png" visible="false"/>
+	</e:Group>
+	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240" visible="false">
+		<e:Image id="topDialogImage" x="0" y="0" source="dialog_up_png"/>
+		<e:Label id="topDialogTitleLabel" text="要進位嗎？" y="25" textColor="0x000000" size="60" horizontalCenter="0" fontFamily="標楷體" visible="false"/>
+		<e:Label id="topDialogBodyLabel" text="" textColor="0x000000" fontFamily="標楷體" left="10" top="10" right="10" bottom="10" verticalAlign="middle" wordWrap="true" textAlign="center" size="45" visible="false"/>
+		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png" visible="false"/>
+		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png" visible="false"/>
+	</e:Group>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
+	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
+	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
+	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
+	<e:Group id="bottomDialogGroup" width="560" height="260" x="1225" y="640" visible="false">
+		<e:Image id="bottomDialogImage" x="0" y="243" source="dialog_up_png" scaleY="-1"/>
+		<e:Label id="bottomDialogBodyLabel" text="如果個位數相加大於或等於10，就應進1至十位" textColor="0x000000" wordWrap="true" left="10" top="10" right="10" bottom="10" verticalAlign="middle" textAlign="left" fontFamily="標楷體"/>
+	</e:Group>
+	<ns1:ImageButton id="nextQuestionButton" y="725" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="15" visible="false"/>
+	<e:Group id="restartGroup" top="185" right="10" width="240" height="115">
+		<e:Rect top="0" right="0" bottom="0" left="0" strokeWeight="10" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50"/>
+		<e:Image id="restartImage" horizontalCenter="0" verticalCenter="0" source="restart_normal_png" scaleX="0.8" scaleY="0.8"/>
+	</e:Group>
+	<e:Image id="congratulationImage" x="1336" y="332" source="congratulation_png" visible="false"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>

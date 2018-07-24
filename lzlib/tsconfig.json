@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"declaration": true,
+		"outFile": "bin/lzlib.js"
+	},
+	"files": [
+		"libs/egret.d.ts",
+		"libs/game.d.ts",
+		"libs/tween.d.ts",
+		"libs/res.d.ts",
+		"libs/lib.es5.d.ts",
+		"libs/lib.es2015.promise.d.ts",
+		"src/ArrayExtension.ts",
+		"src/MathExtension.ts",
+		"src/MovieClipExtension.ts",
+		"src/StringExtension.ts",
+		"src/ThreadUtility.ts",
+		"src/TweenGroupUtility.ts"
+	]
+}

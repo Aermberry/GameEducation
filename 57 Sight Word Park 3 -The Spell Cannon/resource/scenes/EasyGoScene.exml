@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EasyGoSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Image id="easyGoBg" source="select_difficult_bg_png"  x="-194" y="-412"/>
+<e:Image id="whiteCanvas" source="white_canvas_png" x="79" y="74" alpha="0.8"/>
+<e:Image id="backBtn" source="back_btn_png"  x="1739" y="40" />
+<e:Image id="easyStar" source="easy_star_normal_png" x="202" y="201"/>
+<e:Image id="blackBorderImg" source="" x="" y=""/>
+<e:Group id="easyMovieGroup" x="442" y="371" height="384" width="574" />
+<e:Image id="boomBtn" source="black_boom_png" x="885" y="774"/>
+<e:Label id="theSpellingCannon" text="The Spelling Cannon" fontFamily="Kristen_ITC" size="60" x="722" y="228" textColor="#000000"/>
+<e:Label id="firstPointText" text="1. Look at the words" fontFamily="Kristen_ITC" size="44" x="1043" y="450" textColor="#000000"/>
+<e:Label id="secondPointText" text="  carefully." fontFamily="Kristen_ITC" size="44" x="1055" y="505" textColor="#000000"/>
+<e:Label id="thirdPointText" text="2. Click (the green horn icon)" fontFamily="Kristen_ITC" size="44" x="1043" y="575" textColor="#000000"/>
+<e:Label id="forthPointText" text="   to listen to the word." fontFamily="Kristen_ITC" size="44" x="1050" y="630" textColor="#000000"/>	
+</e:Skin>

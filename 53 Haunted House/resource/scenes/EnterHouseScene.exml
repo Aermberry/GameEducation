@@ -300,11 +300,27 @@
 				</tween:Set>			
 			</tween:TweenItem>
 
-            <tween:TweenItem target="{conversation}">
+            <tween:TweenItem target="{conversation_first}">
 							<tween:Wait duration="1250"/>
 							<tween:Set>
 								<tween:props>
 									<e:Object alpha="{1}" x="{545}" y="{880.5}"/>
+								</tween:props>
+							</tween:Set>			
+			</tween:TweenItem>
+			<tween:TweenItem target="{conversation_second}">
+							<tween:Wait duration="1250"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}" x="{545}" y="{983.5}"/>
+								</tween:props>
+							</tween:Set>			
+			</tween:TweenItem>
+			<tween:TweenItem target="{conversation_third}">
+							<tween:Wait duration="1250"/>
+							<tween:Set>
+								<tween:props>
+									<e:Object alpha="{1}" x="{545}" y="{1086.5}"/>
 								</tween:props>
 							</tween:Set>			
 			</tween:TweenItem>
@@ -384,14 +400,14 @@
 
 
 <e:Image id="moon_rise_bg"  source="moon_rise_bg_png" x="0" y="0" horizontalCenter="0" verticalCenter="0" locked="true"/>
-<e:Image id="moon" source="moon_png" x="1093" y="-264.79" locked="true"/>
+<e:Image id="moon" source="moon_png" x="1093" y="-264.8" locked="true"/>
 <e:Image id="head_cloud" source="head_could_png" x="1192.5" y="1" locked="true"/>
 <e:Image id="first_tree" source="first_tree_png" x="238.7" y="-410.5" width="448.5" height="895.5" locked="true"/>
 <e:Image id="third_tree" source="third_tree_png" x="673" y="432" locked="true"/>
 <e:Image id="second_tree" source="second_tree_png" y="-257" x="530.5" height="742" width="429.5" locked="true"/>
 
-<e:Image id="forth_tree" source="forth_tree_png" y="-117.75" x="1641.2" width="448.5" height="895.5" locked="true"/>
-<e:Image id="fifth_tree" source="fifth_tree_png"  x="2344.46" y="-80.2" width="429.5" height="742" skewY="180" locked="true"/>
+<e:Image id="forth_tree" source="forth_tree_png" y="-117.8" x="1641.2" width="448.5" height="895.5" locked="true"/>
+<e:Image id="fifth_tree" source="fifth_tree_png"  x="2344.5" y="-80.2" width="429.5" height="742" skewY="180" locked="true"/>
 
 <e:Image id="platform" source="platform_png" y="146.5" x="0" alpha="0"/>
 <e:Image id="first_flash" source="first_falsh_png" alpha="0" locked="true"/>
@@ -401,8 +417,9 @@
 <e:Image id="boyandgirl_positive" source="boyandgirl_positive_png" alpha="0" locked="true"/>
 <e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="125.5" width="543" height="514.4" alpha="1"/>
 <e:Image id="conversation_window" source="conversation_window_png" alpha="0" x="587.5" y="721" locked="true"/>
-<e:Label id="conversation" text="Nick and Monica are at the Haunted House now.  They quickly jump into the last car of the train." alpha="0" textColor="#000000" locked="true"/>
-
+<e:Label id="conversation_first" text="Nick and Monica are at the Haunted" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
+<e:Label id="conversation_second" text="House now.  They quickly jump into" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
+<e:Label id="conversation_third" text="the last car of the train." alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
 <e:Image id="button" source="button_png" x="1841.5" y="1094"  alpha="0"/>
 
 </e:Skin>

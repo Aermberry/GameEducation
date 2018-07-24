@@ -12,7 +12,5 @@ declare class MoonRiseSceneSkin extends eui.Skin{
 }
 declare class QuestionSceneSkin extends eui.Skin{
 }
-declare class SeeSceneSkin extends eui.Skin{
-}
 declare class SmellSceneSKin extends eui.Skin{
 }

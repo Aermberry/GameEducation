@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SeeSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="QuestionSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="batTweenGroup">
+			<tween:TweenItem target="{bat_closure}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bat_spread}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 
-	
 <e:Image id="see_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0" locked="true"/>
-<e:Image id="inverted_first_bat" source="bat_closure_png" rotation="179.7" x="547" y="292" scaleX="0.75" scaleY="0.75" width="194" height="259" locked="true"/>
-<e:Image id="inverted_second_bat" source="bat_closure_png" x="744" y="314" rotation="179.4" width="194" height="259" locked="true"/>
-<e:Image id="inverted_third_bat" source="bat_closure_png" x="899" rotation="180.5" width="194" height="259" scaleX="0.8" scaleY="0.8" y="334" locked="true"/>
-<e:Image id="spider_web" source="spider_web_png" x="1624" y="55" locked="true"/>
-<e:Image id="head_first_spider" source="head_first_spider_png" x="1905" y="230" anchorOffsetY="0" height="161" rotation="47.73" locked="true"/>
-<e:Image id="head_second_spider" source="head_second_spider_png" y="92" x="1681" locked="true"/>
-<e:Image id="skeleton" source="skeleton_png" y="323" x="1041"/>
+<e:Image id="spiderWeb" source="two_spider_web_png" x="1624" y="55"/>
+<e:Image id="skeleton" source="skeleton_png" y="323" x="1041" locked="true"/>
 <e:Image id="see_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
+<e:Label id="SeeSceneText" text="They see" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
+<e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Image id="invertedBat" source="inverted_bat_png" x="406" y="60" locked="true"/>
 
-<e:Label id="SeeSceneText" text="They See ..." y="1038" x="583" textColor="#000000" size="79"  locked="true"/>
-<e:Image id="SeeSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Group id="batGroup" height="300" width="520" x="406" y="60"/>
+<e:Group id="spiderGroup" height="445" width="500" x="1621" y="60"/>
+<e:Group id="skeletonGroup" height="578" width="341" x="1041" y="323"/>
 </e:Skin>
