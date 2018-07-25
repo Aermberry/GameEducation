@@ -1,0 +1,42 @@
+{
+    "164c50d709e": {
+        "path": "scenes\\FirstLevelStartScene.ts",
+        "class": "FirstLevelStartScene",
+        "parentPath": ""
+    },
+    "164c51677a3": {
+        "path": "scenes\\FirstLevelStartScene.ts",
+        "class": "FirstLevelStartScene",
+        "parentPath": ""
+    },
+    "164c53962b8": {
+        "path": "scenes\\FirstLevelPlaySoundScene.ts",
+        "class": "FirstLevelPlaySoundScene",
+        "parentPath": ""
+    },
+    "164c53acbeb": {
+        "path": "scenes\\FirstLevelSelectScene.ts",
+        "class": "FirstLevelSelectScene",
+        "parentPath": ""
+    },
+    "164caca894d": {
+        "path": "scenes\\SecondLevelStartScene.ts",
+        "class": "SecondLevelStartScene",
+        "parentPath": ""
+    },
+    "164cb0deb92": {
+        "path": "scenes\\FirstLevelSelectScene.ts",
+        "class": "FirstLevelSelectScene",
+        "parentPath": ""
+    },
+    "164cb124788": {
+        "path": "scenes\\FirstLevelSelectScene.ts",
+        "class": "FirstLevelSelectScene",
+        "parentPath": ""
+    },
+    "164cb89aa1f": {
+        "path": "scenes\\SecondLevelSelectScene.ts",
+        "class": "SecondLevelSelectScene",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SecondLevelStartSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playSoundFirstTweenGroup">
+			<tween:TweenItem target="{closeImg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{squareFrame}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{whiteProgress}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{PlayText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{yellowFrame}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+<e:Image id="bgImg" source="bg_png" locked="true"/>
+<e:Label id="firstTitleLabel" text="友誼第一" textColor="#FF9901" fontFamily="huakangchaoheiti" size="129" x="1155" y="83"/>
+<e:Label id="secondTitleLabel" text="比賽第二" textColor="#FF9901" fontFamily="huakangchaoheiti" size="129" x="1510" y="251"/>
+
+<e:Image id="sportHallImg" source="sports_hall_png" locked="true"/>
+<e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
+<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="#000000" bold="true" locked="true"/>
+<e:Group id="exitGroup" x="445" y="1056" height="161" width="161" locked="true"/>
+
+<e:Image id="soundBtn" source="btn_png" x="1953" y="1056" locked="true"/>
+<e:Image id="soundImg" source="sound_png" x="1970" y="1090" locked="true"/>
+<e:Group id="soundGroup" x="1953" y="1056" height="161" width="161" anchorOffsetY="0" locked="true"/>
+
+<e:Image id="yellowFrame" source="rectangular _frame_png" x="868" y="520" alpha="0"/>
+<e:Image id="squareFrame" source="square_frame_png" x="1624" y="531" alpha="0"/>
+<e:Image id="closeImg" source="close_png" x="1637" y="545" alpha="0" />
+<e:Group id="StopSoundToNextSceneGroup" x="1624" y="531" height="53" width="53"/>
+<e:Label id="PlayText" text="播放中" x="882" y="535" alpha="0" fontFamily="huakangchaoheiti"/>
+
+<e:Image id="whiteProgress" source="white_progress _bar_png" x="981" y="645" alpha="0"/>
+<e:Image id="buleProgressBar" source="blue_progress _bar_png" x="991" y="656" alpha="0"/>
+</e:Skin>
+
+

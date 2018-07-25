@@ -1,0 +1,23 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/FirstLevelStartScene.exml",
+		"FirstLevelStartScene": "resource/scenes/FirstLevelStartScene.exml",
+		"FirstLevelPlaySoundScene": "resource/scenes/FirstLevelPlaySoundScene.exml",
+		"FirstLevelSelectScene": "resource/scenes/FirstLevelSelectScene.exml",
+		"SecondLevelStartScene": "resource/scenes/SecondLevelStartScene.exml",
+		"SecondLevelSelectScene": "resource/scenes/SecondLevelSelectScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/FirstLevelStartScene.exml",
+		"resource/scenes/FirstLevelSelectScene.exml",
+		"resource/scenes/SecondLevelStartScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/scenes/FirstLevelSelectScene.exml",
+		"resource/scenes/FirstLevelStartScene.exml",
+		"resource/scenes/SecondLevelSelectScene.exml",
+		"resource/scenes/SecondLevelStartScene.exml"
+	]
+}
