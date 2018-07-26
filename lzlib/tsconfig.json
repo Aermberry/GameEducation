@@ -18,6 +18,7 @@
 		"src/MovieClipExtension.ts",
 		"src/StringExtension.ts",
 		"src/ThreadUtility.ts",
+		"src/TweenGroupExtension.ts",
 		"src/TweenGroupUtility.ts"
 	]
 }

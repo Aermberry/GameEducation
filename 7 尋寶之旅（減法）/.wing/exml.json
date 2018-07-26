@@ -1,0 +1,77 @@
+{
+    "1640c3a80c2": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true,
+        "globalRulerEnable": false
+    },
+    "16412674b60": {
+        "path": "scenes/Plus125And53.ts",
+        "class": "Plus125And53",
+        "parentPath": ""
+    },
+    "164126c4907": {
+        "path": "scenes/Plus125And53Scene.ts",
+        "class": "Plus125And53Scene",
+        "parentPath": ""
+    },
+    "164126dba31": {
+        "path": "scenes/Plus16And27Scene.ts",
+        "class": "Plus16And27Scene",
+        "parentPath": "",
+        "guideLinesEnabled": false
+    },
+    "164126e45ec": {
+        "path": "scenes/Plus165And53Scene.ts",
+        "class": "Plus165And53Scene",
+        "parentPath": ""
+    },
+    "164126ef817": {
+        "path": "scenes/Plus175And168Scene.ts",
+        "class": "Plus175And168Scene",
+        "parentPath": ""
+    },
+    "164126f8527": {
+        "path": "scenes/Plus134And168Scene.ts",
+        "class": "Plus134And168Scene",
+        "parentPath": ""
+    },
+    "164a26657c5": {
+        "path": "scenes/CalculationScene.ts",
+        "class": "CalculationScene",
+        "parentPath": ""
+    },
+    "164a8b5e925": {
+        "path": "components/ImageButton.ts",
+        "class": "ImageButton",
+        "parentPath": ""
+    },
+    "164acd60fb7": {
+        "path": "components/EditableLabel.ts",
+        "class": "EditableLabel",
+        "parentPath": ""
+    },
+    "164b08d45be": {
+        "path": "components/EditableSmallLabel.ts",
+        "class": "EditableSmallLabel",
+        "parentPath": ""
+    },
+    "164b08e08b9": {
+        "path": "components/EditableSmallLabel.ts",
+        "class": "EditableSmallLabel",
+        "parentPath": ""
+    },
+    "164b08e8e03": {
+        "path": "components/EditableLargeLabel.ts",
+        "class": "EditableLargeLabel",
+        "parentPath": ""
+    },
+    "164c37cff9c": {
+        "path": "components/NumberPad.ts",
+        "class": "NumberPad",
+        "parentPath": ""
+    }
+}

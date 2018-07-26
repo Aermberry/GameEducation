@@ -1,0 +1,35 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
+	],
+	"game": [
+		"bin-debug/components/EditableLabel.js",
+		"bin-debug/calculation/CalculationScene.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/biz/IExpressionRepository.js",
+		"bin-debug/biz/JuniorExpressionRepository.js",
+		"bin-debug/biz/MediumExpressionRepository.js",
+		"bin-debug/biz/SeniorExpressionRepository.js",
+		"bin-debug/calculation/CalculationPresenter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/calculation/ICalculationView.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/components/EditableLargeLabel.js",
+		"bin-debug/components/EditableSmallLabel.js",
+		"bin-debug/components/ImageButton.js",
+		"bin-debug/components/NumberPad.js",
+		"bin-debug/domains/Degree.js",
+		"bin-debug/domains/Expression.js",
+		"bin-debug/scenes/StartScene.js"
+	]
+}
