@@ -1,0 +1,410 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,wlts_logo_jpg,gameEui_json,bg_png,btn_png,sound_png,pig_png,cat_png,dog_png,fox_png,frog_png,hippo_png,penguin_png,squirrel_png,yellow_frame_png,red_circle_png,confirm_button_png,continue_normal_png,continue_hover_png,sound_hover_png,sound 4 (scene_throw.mp3)_mp3,sound 5 (scene_stadium.mp3)_mp3,sound 6 (scene_seats.mp3)_mp3,sound 8 (scene_pool.mp3)_mp3,sound 9 (scene_ballcourt.mp3)_mp3,sound 10 (prop_pine.mp3)_mp3,sound 11 (prop_football.mp3)_mp3,sound 12 (prop_basketball.mp3)_mp3,sound 13 (ex1_part2_miss_scene.mp3)_mp3,sound 14 (ex1_part2_miss_prop.mp3)_mp3,sound 15 (ex1_part2_miss_actor.mp3)_mp3,sound 16 (ex1_part2_incorrect.mp3)_mp3,sound 17 (ex1_part2_correct.mp3)_mp3,first_level_bgm_mp3,fitst_level_description_mp3,sports_hall_png,close_png,rectangular _frame_png,square_frame_png,blue_progress _bar_png,white_progress _bar_png,squirrel_mp3,pig_mp3,penguin_mp3,hippo_mp3,frog_mp3,fox_mp3,dog_mp3,cat_mp3,kolala_mp3,kolala_png,correct_mp3,incorrect_mp3,first_select_bgm_mp3,second_level_mp3,second_level_description_mp3,small_yellow_frame_png,video_tape_png,first_place_png,third_place_png,forth_place_png,fifth_place_png,sixth_place_png,second_place_png,orange_btn_png,soccer_png,basketball_png,pine_cone_png,yes_png,no_png,checkbox_png,first_compition_mp3,second_compition_mp3,place_png,person_png,thing_png,second_select_bgm_mp3,first_place_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "wlts_logo_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "gameEui_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "textures/bg.png"
+		},
+		{
+			"name": "btn_png",
+			"type": "image",
+			"url": "textures/btn.png"
+		},
+		{
+			"name": "sound_png",
+			"type": "image",
+			"url": "textures/sound.png"
+		},
+		{
+			"name": "pig_png",
+			"type": "image",
+			"url": "textures/pig.png"
+		},
+		{
+			"name": "cat_png",
+			"type": "image",
+			"url": "textures/cat.png"
+		},
+		{
+			"name": "dog_png",
+			"type": "image",
+			"url": "textures/dog.png"
+		},
+		{
+			"name": "fox_png",
+			"type": "image",
+			"url": "textures/fox.png"
+		},
+		{
+			"name": "frog_png",
+			"type": "image",
+			"url": "textures/frog.png"
+		},
+		{
+			"name": "hippo_png",
+			"type": "image",
+			"url": "textures/hippo.png"
+		},
+		{
+			"name": "penguin_png",
+			"type": "image",
+			"url": "textures/penguin.png"
+		},
+		{
+			"name": "squirrel_png",
+			"type": "image",
+			"url": "textures/squirrel.png"
+		},
+		{
+			"name": "yellow_frame_png",
+			"type": "image",
+			"url": "textures/yellow_frame.png"
+		},
+		{
+			"name": "red_circle_png",
+			"type": "image",
+			"url": "textures/red_circle.png"
+		},
+		{
+			"name": "confirm_button_png",
+			"type": "image",
+			"url": "textures/confirm_button.png"
+		},
+		{
+			"name": "continue_normal_png",
+			"type": "image",
+			"url": "textures/continue_normal.png"
+		},
+		{
+			"name": "continue_hover_png",
+			"type": "image",
+			"url": "textures/continue_hover.png"
+		},
+		{
+			"name": "sound_hover_png",
+			"type": "image",
+			"url": "textures/sound_hover.png"
+		},
+		{
+			"name": "sound 4 (scene_throw.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 4 (scene_throw.mp3).mp3"
+		},
+		{
+			"name": "sound 5 (scene_stadium.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 5 (scene_stadium.mp3).mp3"
+		},
+		{
+			"name": "sound 6 (scene_seats.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 6 (scene_seats.mp3).mp3"
+		},
+		{
+			"name": "sound 8 (scene_pool.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 8 (scene_pool.mp3).mp3"
+		},
+		{
+			"name": "sound 9 (scene_ballcourt.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 9 (scene_ballcourt.mp3).mp3"
+		},
+		{
+			"name": "sound 10 (prop_pine.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 10 (prop_pine.mp3).mp3"
+		},
+		{
+			"name": "sound 11 (prop_football.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 11 (prop_football.mp3).mp3"
+		},
+		{
+			"name": "sound 12 (prop_basketball.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 12 (prop_basketball.mp3).mp3"
+		},
+		{
+			"name": "sound 13 (ex1_part2_miss_scene.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 13 (ex1_part2_miss_scene.mp3).mp3"
+		},
+		{
+			"name": "sound 14 (ex1_part2_miss_prop.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 14 (ex1_part2_miss_prop.mp3).mp3"
+		},
+		{
+			"name": "sound 15 (ex1_part2_miss_actor.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 15 (ex1_part2_miss_actor.mp3).mp3"
+		},
+		{
+			"name": "sound 16 (ex1_part2_incorrect.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 16 (ex1_part2_incorrect.mp3).mp3"
+		},
+		{
+			"name": "sound 17 (ex1_part2_correct.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 17 (ex1_part2_correct.mp3).mp3"
+		},
+		{
+			"name": "first_level_bgm_mp3",
+			"type": "sound",
+			"url": "audios/first_level_bgm.mp3"
+		},
+		{
+			"name": "fitst_level_description_mp3",
+			"type": "sound",
+			"url": "audios/fitst_level_description.mp3"
+		},
+		{
+			"name": "sports_hall_png",
+			"type": "image",
+			"url": "textures/sports_hall.png"
+		},
+		{
+			"name": "close_png",
+			"type": "image",
+			"url": "textures/close.png"
+		},
+		{
+			"name": "rectangular _frame_png",
+			"type": "image",
+			"url": "textures/rectangular _frame.png"
+		},
+		{
+			"name": "square_frame_png",
+			"type": "image",
+			"url": "textures/square_frame.png"
+		},
+		{
+			"name": "blue_progress _bar_png",
+			"type": "image",
+			"url": "textures/blue_progress _bar.png"
+		},
+		{
+			"name": "white_progress _bar_png",
+			"type": "image",
+			"url": "textures/white_progress _bar.png"
+		},
+		{
+			"name": "squirrel_mp3",
+			"type": "sound",
+			"url": "audios/squirrel.mp3"
+		},
+		{
+			"name": "pig_mp3",
+			"type": "sound",
+			"url": "audios/pig.mp3"
+		},
+		{
+			"name": "penguin_mp3",
+			"type": "sound",
+			"url": "audios/penguin.mp3"
+		},
+		{
+			"name": "hippo_mp3",
+			"type": "sound",
+			"url": "audios/hippo.mp3"
+		},
+		{
+			"name": "frog_mp3",
+			"type": "sound",
+			"url": "audios/frog.mp3"
+		},
+		{
+			"name": "fox_mp3",
+			"type": "sound",
+			"url": "audios/fox.mp3"
+		},
+		{
+			"name": "dog_mp3",
+			"type": "sound",
+			"url": "audios/dog.mp3"
+		},
+		{
+			"name": "cat_mp3",
+			"type": "sound",
+			"url": "audios/cat.mp3"
+		},
+		{
+			"name": "kolala_mp3",
+			"type": "sound",
+			"url": "audios/kolala.mp3"
+		},
+		{
+			"name": "kolala_png",
+			"type": "image",
+			"url": "textures/kolala.png"
+		},
+		{
+			"name": "correct_mp3",
+			"type": "sound",
+			"url": "audios/correct.mp3"
+		},
+		{
+			"name": "incorrect_mp3",
+			"type": "sound",
+			"url": "audios/incorrect.mp3"
+		},
+		{
+			"name": "first_select_bgm_mp3",
+			"type": "sound",
+			"url": "audios/first_select_bgm.mp3"
+		},
+		{
+			"name": "second_level_mp3",
+			"type": "sound",
+			"url": "audios/second_level.mp3"
+		},
+		{
+			"name": "second_level_description_mp3",
+			"type": "sound",
+			"url": "audios/second_level_description.mp3"
+		},
+		{
+			"name": "small_yellow_frame_png",
+			"type": "image",
+			"url": "textures/small_yellow_frame.png"
+		},
+		{
+			"name": "video_tape_png",
+			"type": "image",
+			"url": "textures/video_tape.png"
+		},
+		{
+			"name": "first_place_png",
+			"type": "image",
+			"url": "textures/first_place.png"
+		},
+		{
+			"name": "third_place_png",
+			"type": "image",
+			"url": "textures/third_place.png"
+		},
+		{
+			"name": "forth_place_png",
+			"type": "image",
+			"url": "textures/forth_place.png"
+		},
+		{
+			"name": "fifth_place_png",
+			"type": "image",
+			"url": "textures/fifth_place.png"
+		},
+		{
+			"name": "sixth_place_png",
+			"type": "image",
+			"url": "textures/sixth_place.png"
+		},
+		{
+			"name": "second_place_png",
+			"type": "image",
+			"url": "textures/second_place.png"
+		},
+		{
+			"name": "orange_btn_png",
+			"type": "image",
+			"url": "textures/orange_btn.png"
+		},
+		{
+			"name": "soccer_png",
+			"type": "image",
+			"url": "textures/soccer.png"
+		},
+		{
+			"name": "basketball_png",
+			"type": "image",
+			"url": "textures/basketball.png"
+		},
+		{
+			"name": "pine_cone_png",
+			"type": "image",
+			"url": "textures/pine_cone.png"
+		},
+		{
+			"name": "yes_png",
+			"type": "image",
+			"url": "textures/yes.png"
+		},
+		{
+			"name": "no_png",
+			"type": "image",
+			"url": "textures/no.png"
+		},
+		{
+			"name": "checkbox_png",
+			"type": "image",
+			"url": "textures/checkbox.png"
+		},
+		{
+			"name": "first_compition_mp3",
+			"type": "sound",
+			"url": "audios/first_compition.mp3"
+		},
+		{
+			"name": "second_compition_mp3",
+			"type": "sound",
+			"url": "audios/second_compition.mp3"
+		},
+		{
+			"name": "place_png",
+			"type": "image",
+			"url": "textures/place.png"
+		},
+		{
+			"name": "person_png",
+			"type": "image",
+			"url": "textures/person.png"
+		},
+		{
+			"name": "thing_png",
+			"type": "image",
+			"url": "textures/thing.png"
+		},
+		{
+			"name": "second_select_bgm_mp3",
+			"type": "sound",
+			"url": "audios/second_select_bgm.mp3"
+		},
+		{
+			"name": "first_place_mp3",
+			"type": "sound",
+			"url": "audios/first_place.mp3"
+		}
+	]
+}
