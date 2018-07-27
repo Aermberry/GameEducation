@@ -1,0 +1,17 @@
+{
+    "164d4293be7": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "164d58fd342": {
+        "path": "scenes\\DescriptionExampleScene.ts",
+        "class": "DescriptionExampleScene",
+        "parentPath": ""
+    },
+    "164d605fef6": {
+        "path": "scenes\\DescriptionGameplayScene.ts",
+        "class": "DescriptionGameplayScene",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FristSelectTarget" states="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="left_arrow_btn_png" includeIn="normal"/>
+    <e:Label size="40" textColor="#000000" textAlign="center" text="101衣不稱身" fontFamily="方正標楷體" x="0" y="58"/>
+</e:Skin>

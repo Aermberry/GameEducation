@@ -1,0 +1,155 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,description_example_frame_png,description_example_bg_png,doctor_png,trash_can_png,trash_can_cover_png,cue_box_png,blue_frame_dialog_png,blue_btn_png,exit_btn_png,exit_btn_touch_png,cue_box_bgm_mp3,doctor_say_json,doctor_say_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "fonts/方正凖圓.ttf",
+			"type": "bin",
+			"name": "方正凖圓_ttf"
+		},
+		{
+			"url": "textures/dialog.png",
+			"type": "image",
+			"name": "dialog_png"
+		},
+		{
+			"url": "textures/front_desk.png",
+			"type": "image",
+			"name": "front_desk_png"
+		},
+		{
+			"url": "textures/head_icon.png",
+			"type": "image",
+			"name": "head_icon_png"
+		},
+		{
+			"url": "textures/headline-bg.png",
+			"type": "image",
+			"name": "headline-bg_png"
+		},
+		{
+			"url": "textures/left_arrow_btn.png",
+			"type": "image",
+			"name": "left_arrow_btn_png"
+		},
+		{
+			"url": "textures/nurse.png",
+			"type": "image",
+			"name": "nurse_png"
+		},
+		{
+			"url": "textures/right_arrow_btn.png",
+			"type": "image",
+			"name": "right_arrow_btn_png"
+		},
+		{
+			"url": "textures/right_headline.png",
+			"type": "image",
+			"name": "right_headline_png"
+		},
+		{
+			"url": "textures/start_scene_bg.png",
+			"type": "image",
+			"name": "start_scene_bg_png"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "fonts/華康標楷體.ttf",
+			"type": "bin",
+			"name": "華康標楷體_ttf"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"name": "description_example_frame_png",
+			"type": "image",
+			"url": "textures/description_example_frame.png"
+		},
+		{
+			"name": "description_example_bg_png",
+			"type": "image",
+			"url": "textures/description_example_bg.png"
+		},
+		{
+			"name": "doctor_png",
+			"type": "image",
+			"url": "textures/doctor.png"
+		},
+		{
+			"name": "trash_can_png",
+			"type": "image",
+			"url": "textures/trash_can.png"
+		},
+		{
+			"name": "trash_can_cover_png",
+			"type": "image",
+			"url": "textures/trash_can_cover.png"
+		},
+		{
+			"name": "cue_box_png",
+			"type": "image",
+			"url": "textures/cue_box.png"
+		},
+		{
+			"name": "blue_frame_dialog_png",
+			"type": "image",
+			"url": "textures/blue_frame_dialog.png"
+		},
+		{
+			"name": "blue_btn_png",
+			"type": "image",
+			"url": "textures/blue_btn.png"
+		},
+		{
+			"name": "exit_btn_png",
+			"type": "image",
+			"url": "textures/exit_btn.png"
+		},
+		{
+			"name": "exit_btn_touch_png",
+			"type": "image",
+			"url": "textures/exit_btn_touch.png"
+		},
+		{
+			"name": "cue_box_bgm_mp3",
+			"type": "sound",
+			"url": "audios/cue_box_bgm.mp3"
+		},
+		{
+			"name": "doctor_say_json",
+			"type": "json",
+			"url": "textures/doctor_say.json"
+		},
+		{
+			"name": "doctor_say_png",
+			"type": "image",
+			"url": "textures/doctor_say.png"
+		}
+	]
+}
