@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="YesTargetBtn" states="normal" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="exit_blue_btn_png" includeIn="normal"/>
+    <e:Label text="是" size="40" fontFamily="金梅新中圆国际码" verticalCenter="0" horizontalCenter="0" textColor="#000000"/>
+</e:Skin>

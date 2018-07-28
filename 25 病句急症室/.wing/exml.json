@@ -13,5 +13,20 @@
         "path": "scenes\\DescriptionGameplayScene.ts",
         "class": "DescriptionGameplayScene",
         "parentPath": ""
+    },
+    "164da7ab662": {
+        "path": "scenes\\PlayGameScene.ts",
+        "class": "PlayGameScene",
+        "parentPath": ""
+    },
+    "164dabde492": {
+        "path": "gameLevelScenes\\FirstLevelScene.ts",
+        "class": "FirstLevelScene",
+        "parentPath": ""
+    },
+    "164de87b829": {
+        "path": "scenes\\ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
     }
 }

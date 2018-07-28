@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="DescriptionExampleSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="DescriptionExampleSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 <w:Config id="164d58fd342" ></w:Config>
 <e:Image source="description_example_frame_png"/>
 <e:Image source="description_example_bg_png" y="154"/>
@@ -7,13 +7,25 @@
 <e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25"/>
 <e:Image source="head_icon_png" x="1480" y="24"/>
 <e:Image source="right_headline_png" x="1610" y="24"/>
-<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="方正凖圓"/>
+<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="金梅新中圆国际码"/>
 <e:Image id="cueBoxImg" source="cue_box_png" x="1269" y="239"/>
 <e:Image source="doctor_png" x="0" y="341"/>
+
 <e:Image id="blueFrameDialogImg" source="blue_frame_dialog_png" x="800" y="552"/>
+<e:Label id="blueFrameFirstDialogLabel" text="句子多了些沒有用的東西，除了會給" x="819" y="586" size="43" textColor="#000000" fontFamily="cwTeX明體"/>
+<e:Label id="blueFrameSecondDialogLabel" text="人不通順的感覺之外，有時還會令人" x="819" y="640" size="43" textColor="#000000"  fontFamily="cwTeX明體"/>
+<e:Label id="blueFrameThirdDialogLabel" text="錯誤理解句子的意思哩！" x="819" y="700" size="43" textColor="#000000" fontFamily="cwTeX明體"/>
+
+<e:Label id="exampleFirstDialog" text="例如：我們一起慶祝聖誕節的到來。"   fontFamily="金梅新中圆国际码" alpha="0" textColor="#000000" x="820" y="588"/>
+<e:Label id="exampleSecondtDialog" text="這個句子中，「的到來」是多餘的部分，因爲，我們慶"  fontFamily="金梅新中圆国际码" alpha="0" textColor="#000000" x="820" y="650"/>
+<e:Label id="exampleThirdDialog" text="祝的是「聖誕節」，而不是慶祝這個節日「的到來」。"  fontFamily="金梅新中圆国际码" alpha="0" textColor="#000000" x="820" y="712"/>
+
+
 <e:Image source="trash_can_png" x="1372" y="966"/>
 <e:Image source="trash_can_cover_png" x="1372" y="901"/>
 
-<e:Image id="beginBtn" source="blue_btn_png" x="1662" y="777" visible="false"/>
-<e:Image id="ExitBtn" source="exit_btn_png" x="1763" y="1130"/>
+<ns1:BeginButton id="beginbutton" skinName="BeginTargetButton" x="1663" y="777" visible="false"/>
+
+
+<ns1:ExitButton id="exitBtn" skinName="ExitTargetBTn" x="1762" y="1130"/>
 </e:Skin>

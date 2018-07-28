@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,description_example_frame_png,description_example_bg_png,doctor_png,trash_can_png,trash_can_cover_png,cue_box_png,blue_frame_dialog_png,blue_btn_png,exit_btn_png,exit_btn_touch_png,cue_box_bgm_mp3,doctor_say_json,doctor_say_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,description_example_frame_png,description_example_bg_png,doctor_png,trash_can_png,trash_can_cover_png,cue_box_png,blue_frame_dialog_png,blue_btn_png,exit_btn_png,exit_btn_touch_png,cue_box_bgm_mp3,doctor_say_json,doctor_say_png,blue_dialog_png,doctor_no_head_png,gold_yellow_dialog_png,doctor_smell_head_png,level_doctor_no_head_png,bed_png,green_frame_dialog_png,red_circle_frame_png,trash_can_open_png,cue_box_open_png,green_blue_frame_png,arrow_png,manyarrows_png,doctor_normal_png,doctor_angry_png,doctor_blink_png,blue_frame_png,exit_blue_btn_png,exit_purple_btn_png,doctor_desk_png,orange_frame_png,orange_dialog_frame_png,blue_again_png,green_exit_png,class_png,when_png,comma_png,period_png,keep_out_png,listen_png,very_png,first_our_png,second_our_png,green_frame_png,return-btn_png,doctor_tip_png",
 			"name": "preload"
 		}
 	],
@@ -150,6 +150,186 @@
 			"name": "doctor_say_png",
 			"type": "image",
 			"url": "textures/doctor_say.png"
+		},
+		{
+			"name": "blue_dialog_png",
+			"type": "image",
+			"url": "textures/blue_dialog.png"
+		},
+		{
+			"name": "doctor_no_head_png",
+			"type": "image",
+			"url": "textures/doctor_no_head.png"
+		},
+		{
+			"name": "gold_yellow_dialog_png",
+			"type": "image",
+			"url": "textures/gold_yellow_dialog.png"
+		},
+		{
+			"name": "doctor_smell_head_png",
+			"type": "image",
+			"url": "textures/doctor_smell_head.png"
+		},
+		{
+			"name": "level_doctor_no_head_png",
+			"type": "image",
+			"url": "textures/level_doctor_no_head.png"
+		},
+		{
+			"name": "bed_png",
+			"type": "image",
+			"url": "textures/bed.png"
+		},
+		{
+			"name": "green_frame_dialog_png",
+			"type": "image",
+			"url": "textures/green_frame_dialog.png"
+		},
+		{
+			"name": "red_circle_frame_png",
+			"type": "image",
+			"url": "textures/red_circle_frame.png"
+		},
+		{
+			"name": "trash_can_open_png",
+			"type": "image",
+			"url": "textures/trash_can_open.png"
+		},
+		{
+			"name": "cue_box_open_png",
+			"type": "image",
+			"url": "textures/cue_box_open.png"
+		},
+		{
+			"name": "green_blue_frame_png",
+			"type": "image",
+			"url": "textures/green_blue_frame.png"
+		},
+		{
+			"name": "arrow_png",
+			"type": "image",
+			"url": "textures/arrow.png"
+		},
+		{
+			"name": "manyarrows_png",
+			"type": "image",
+			"url": "textures/manyarrows.png"
+		},
+		{
+			"name": "doctor_normal_png",
+			"type": "image",
+			"url": "textures/doctor_normal.png"
+		},
+		{
+			"name": "doctor_angry_png",
+			"type": "image",
+			"url": "textures/doctor_angry.png"
+		},
+		{
+			"name": "doctor_blink_png",
+			"type": "image",
+			"url": "textures/doctor_blink.png"
+		},
+		{
+			"name": "blue_frame_png",
+			"type": "image",
+			"url": "textures/blue_frame.png"
+		},
+		{
+			"name": "exit_blue_btn_png",
+			"type": "image",
+			"url": "textures/exit_blue_btn.png"
+		},
+		{
+			"name": "exit_purple_btn_png",
+			"type": "image",
+			"url": "textures/exit_purple_btn.png"
+		},
+		{
+			"name": "doctor_desk_png",
+			"type": "image",
+			"url": "textures/doctor_desk.png"
+		},
+		{
+			"name": "orange_frame_png",
+			"type": "image",
+			"url": "textures/orange_frame.png"
+		},
+		{
+			"name": "orange_dialog_frame_png",
+			"type": "image",
+			"url": "textures/orange_dialog_frame.png"
+		},
+		{
+			"name": "blue_again_png",
+			"type": "image",
+			"url": "textures/blue_again.png"
+		},
+		{
+			"name": "green_exit_png",
+			"type": "image",
+			"url": "textures/green_exit.png"
+		},
+		{
+			"name": "class_png",
+			"type": "image",
+			"url": "textures/class.png"
+		},
+		{
+			"name": "when_png",
+			"type": "image",
+			"url": "textures/when.png"
+		},
+		{
+			"name": "comma_png",
+			"type": "image",
+			"url": "textures/comma.png"
+		},
+		{
+			"name": "period_png",
+			"type": "image",
+			"url": "textures/period.png"
+		},
+		{
+			"name": "keep_out_png",
+			"type": "image",
+			"url": "textures/keep_out.png"
+		},
+		{
+			"name": "listen_png",
+			"type": "image",
+			"url": "textures/listen.png"
+		},
+		{
+			"name": "very_png",
+			"type": "image",
+			"url": "textures/very.png"
+		},
+		{
+			"name": "first_our_png",
+			"type": "image",
+			"url": "textures/first_our.png"
+		},
+		{
+			"name": "second_our_png",
+			"type": "image",
+			"url": "textures/second_our.png"
+		},
+		{
+			"name": "green_frame_png",
+			"type": "image",
+			"url": "textures/green_frame.png"
+		},
+		{
+			"name": "return-btn_png",
+			"type": "image",
+			"url": "textures/return-btn.png"
+		},
+		{
+			"name": "doctor_tip_png",
+			"type": "image",
+			"url": "textures/doctor_tip.png"
 		}
 	]
 }

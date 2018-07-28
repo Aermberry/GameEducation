@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BeginTargetButton" states="normal" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="blue_btn_png" includeIn="normal"/>
+    <e:Label text="開始" size="40" fontFamily="" verticalCenter="0" horizontalCenter="0" textColor="#000000"/>
+</e:Skin>
