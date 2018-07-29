@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="boxOpenTweenGroup">
+			<tween:TweenItem target="{boxClosedImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boxOpenImage}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{strawberryImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{571}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0" />
+	<e:Image source="add_tour_png" x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73"/>
+	
+	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75"/>
+	<e:Group id="questionGroup" width="660" height="585" y="240" horizontalCenter="0">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="-2" bottom="2"/>
+		<e:Group width="97" height="75" y="25" x="40">
+			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
+			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675"/>
+		</e:Group>
+		<e:Image horizontalCenter="0" y="275" source="add_expression_png"/>
+		<e:BitmapLabel id="questionAddendLabel" width="246" height="62" y="125" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<e:BitmapLabel id="questionAugendLabel" width="246" height="62" y="250" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<e:Group id="answerCarryGroup">
+			<ns1:EditableSmallLabel id="answerDecadeCarryLabel" name="carry0Label" x="390" y="245" width="60" height="95" currentState="view" text=""/>
+			<ns1:EditableSmallLabel id="answerHundredCarryLabel" name="carry1Label" x="300" y="245" width="60" height="95" currentState="view" text=""/>
+		</e:Group>
+		<e:Group id="answerSumGroup">
+			<ns1:EditableLargeLabel id="answerUnitLabel" name="sum0Label" x="433" y="360" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="answerDecadeLabel" name="sum1Label" x="338" y="360" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="answerHundredLabel" name="sum2Label" x="239" y="360" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="answerThousandLabel" name="sum3Label"  x="144" y="360" width="80" height="120" currentState="view" text=""/>
+		</e:Group>
+		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
+	</e:Group>
+	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="-2" top="0" bottom="-5" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image horizontalCenter="-2" y="205" source="add_expression_png"/>
+		<e:BitmapLabel id="correctAddendLabel" width="246" height="62" y="45" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="55" textAlign="right"/>
+		<e:BitmapLabel id="correctAugendLabel" width="246" height="62" y="170" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="55" textAlign="right"/>
+		<e:Group id="correctCarryGroup">
+			<ns1:EditableSmallLabel id="correctDecadeCarryLabel" name="carry0Label" x="282" y="177" width="60" height="95" currentState="view" text=""/>
+			<ns1:EditableSmallLabel id="correctHundredCarryLabel" name="carry1Label" x="187" y="177" width="60" height="95" currentState="view" text=""/>
+		</e:Group>
+		<e:Group id="correctSumGroup">
+			<ns1:EditableLargeLabel id="correctUnitLabel" name="sum0Label" x="320" y="295" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="correctDecadeLabel" name="sum1Label" x="230" y="295" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="correctHundredLabel" name="sum2Label" x="135" y="295" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="correctThousandLabel" name="sum3Label" x="40" y="295" width="80" height="120" currentState="view" text=""/>
+		</e:Group>
+		<e:Image x="165" y="-41" source="correct_answer_png"/>
+	</e:Group>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
+	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
+	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
+	<ns1:ImageButton id="nextQuestionButton" y="725" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="15" visible="false"/>
+	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>

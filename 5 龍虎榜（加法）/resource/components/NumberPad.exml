@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NumberPadSkin" width="1485" height="155" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="164c37cff9c" ></w:Config>
+
+	<e:Rect left="0" top="0" right="0" bottom="0" ellipseWidth="50" strokeColor="0x3e9190" strokeWeight="15" fillColor="0x9bfcfd"/>
+	<ns1:ImageButton id="oneButton" x="220" verticalCenter="0" source="one_normal_png" mouseOverSource="one_selected_png"/>
+	<ns1:ImageButton id="twoButton" x="325" verticalCenter="0" source="two_normal_png" mouseOverSource="two_selected_png"/>
+	<ns1:ImageButton id="threeButton" x="430" verticalCenter="0" source="three_normal_png" mouseOverSource="three_selected_png"/>
+	<ns1:ImageButton id="fourButton" x="535" verticalCenter="0" source="four_normal_png" mouseOverSource="four_selected_png"/>
+	<ns1:ImageButton id="fiveButton" x="640" verticalCenter="0" source="five_normal_png" mouseOverSource="five_selected_png"/>
+	<ns1:ImageButton id="sixButton" x="750" verticalCenter="0" source="six_normal_png" mouseOverSource="six_selected_png"/>
+	<ns1:ImageButton id="sevenButton" x="855" verticalCenter="0" source="seven_normal_png" mouseOverSource="seven_selected_png"/>
+	<ns1:ImageButton id="eightButton" x="960" verticalCenter="0" source="eight_normal_png" mouseOverSource="eight_selected_png"/>
+	<ns1:ImageButton id="nineButton" x="1065" verticalCenter="0" source="nine_normal_png" mouseOverSource="nine_selected_png"/>
+	<ns1:ImageButton id="zeroButton" x="1170" verticalCenter="0" source="zero_normal_png" mouseOverSource="zero_selected_png"/>
+	<ns1:ImageButton id="eraserButton" x="1360" verticalCenter="0" source="eraser_normal_png" mouseOverSource="eraser_selected_png"/>
+</e:Skin>

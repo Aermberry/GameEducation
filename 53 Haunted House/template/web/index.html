@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sight Word Park 2 - Sight Word Hunter</title>
+    <title>Haunted House</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -24,8 +24,20 @@
             color: #666;
         }        
         @font-face {
-            font-family:"Westwood-LET";
-            src: url("resource/fonts/Westwood-LET.ttf");
+            font-family:"Westwood";
+            src: url("resource/fonts/Westwood.ttf") format('truetype');
+        }
+        @font-face {
+            font-family:"Tempus-Sans-ITC";
+            src: url("resource/fonts/Tempus-Sans-ITC.ttf");
+        }
+        @font-face {
+            font-family:"La-Bamba-LET";
+            src: url("resource/fonts/La-Bamba-LET.ttf");
+        }
+        @font-face {
+            font-family:"Ravie";
+            src: url("resource/fonts/Ravie.ttf");
         }
     </style>
 </head>
@@ -46,7 +58,10 @@
     <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'>
         2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html" style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: Westwood-LET; font-size: 1px;"/>
+    <label style="font-family: Westwood; font-size: 1px;"/>
+    <label style="font-family: Tempus-Sans-ITC; font-size: 1px;"/>
+    <label style="font-family: La-Bamba-LET; font-size: 1px;"/>
+    <label style="font-family: Ravie; font-size: 1px;"/>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -121,7 +136,7 @@
     });
 
     function resizeCopyrightFont() {
-        var fontSize = Math.floor($(window).height() / 1061 * 100).toString() + '%';
+        var fontSize = Math.floor($(window).height() / 1280 * 100).toString() + '%';
         console.log('copyright new font-size: ' + fontSize);
         $('#copyright').css('font-size', fontSize);
         $('#copyright a').css('font-size', fontSize);
