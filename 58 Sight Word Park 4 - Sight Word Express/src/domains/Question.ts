@@ -1,5 +1,10 @@
-class Question {
-	public constructor() {
+class Question 
+{
+	public constructor(sentence: string, answer: string, options: string[]) 
+	{
+		this.sentence = sentence;
+		this.answer = answer;
+		this.options = options;
 	}
 
 	public sentence: string;
