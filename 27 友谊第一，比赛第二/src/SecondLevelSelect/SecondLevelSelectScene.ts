@@ -98,7 +98,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		for (let index = 0; index < this.placeGroup.numChildren; index++) {
 			let child = this.placeGroup.getChildAt(index);
-			let drag = new Drag();
+			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, true, new DragData(DragType.place, index));
 			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPlaceMouseDown(index), this);
@@ -109,7 +109,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		for (let index = 0; index < this.personGroup.numChildren; index++) {
 			let child = this.personGroup.getChildAt(index);
-			let drag = new Drag();
+			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, true, new DragData(DragType.person, index));
 			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPersonMouseDown(index), this);
@@ -120,7 +120,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		for (let index = 0; index < this.thingGroup.numChildren; index++) {
 			let child = this.thingGroup.getChildAt(index);
-			let drag = new Drag();
+			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, true, new DragData(DragType.thing, index));
 			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onThingMouseDown(index), this);
@@ -136,14 +136,14 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	private initVideoTapGroup(): void
 	{
 		for (let child of this.videoTapGroup.$children) {
-			let drop = new Drop();
+			let drop = new lzlib.Drop();
 			this.addChild(drop);
 			drop.enableDrop(child);
-			child.addEventListener(LzDragEvent.DROP, this.onSceneDrop, this);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onSceneDrop, this);
 		}
 	}
 
-	private onSceneDrop(e: LzDragEvent): void
+	private onSceneDrop(e: lzlib.LzDragEvent): void
 	{
 		this.presenter.onSceneDrop(e.data as DragData, new egret.Point(e.localX, e.localY), this.videoTapGroup.getChildIndex((e.target as eui.Group))) ;
 		e.preventDefault();
@@ -211,13 +211,13 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 
 	private initStageDrop(): void
 	{
-		let drop = new Drop();
+		let drop = new lzlib.Drop();
 		this.stage.addChild(drop);
 		drop.enableDrop(this.stage);
-		this.stage.addEventListener(LzDragEvent.DROP, this.onStageDrop, this);
+		this.stage.addEventListener(lzlib.LzDragEvent.DROP, this.onStageDrop, this);
 	}
 
-	private onStageDrop(e: LzDragEvent): void
+	private onStageDrop(e: lzlib.LzDragEvent): void
 	{
 		if (this.videoTapGroup.$children.filter( child => child.hitTestPoint(e.stageX, e.stageY)).length > 0) {
 			//用户拖动到tap里，stage不用处理
@@ -282,7 +282,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		background.left = background.right = background.top = background.bottom = 0;
 		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(background);
 		
-		let drag = new Drag();
+		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
 		drag.enableDrag(background, false, new DragData(DragType.place, 0, sceneIndex));
 	}
@@ -307,7 +307,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		image.name = person.toString();
 		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(image);
 
-		let drag = new Drag();
+		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
 		drag.enableDrag(image, false, new DragData(DragType.person, person, sceneIndex));
 	}
@@ -331,7 +331,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		image.name = thing.toString();
 		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(image);
 
-		let drag = new Drag();
+		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
 		drag.enableDrag(image, false, new DragData(DragType.person, thing, sceneIndex));
 	}

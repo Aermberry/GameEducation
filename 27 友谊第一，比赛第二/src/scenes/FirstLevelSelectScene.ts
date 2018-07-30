@@ -126,7 +126,7 @@ class FirstLevelSelectScene extends eui.Component implements  eui.UIComponent {
             for (let second = 0; second < 110; second++) {
 				this.playSoundFirstTweenGroup.play();
                 this.buleProgressBar.width = second / 110 * 575;
-                await ThreadUtility.sleep(1000);
+                await lzlib.ThreadUtility.sleep(1000);
             }
 	}
 

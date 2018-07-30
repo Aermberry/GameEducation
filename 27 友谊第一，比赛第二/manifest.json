@@ -7,11 +7,12 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/eui/eui.js",
 		"libs/modules/promise/promise.js",
-		"libs/modules/mouse/mouse.js"
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/scenes/FirstLevelSelectScene.js",
-		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/domains/SceneCompareResult.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -20,9 +21,9 @@
 		"bin-debug/domains/Person.js",
 		"bin-debug/domains/Place.js",
 		"bin-debug/domains/Scene.js",
-		"bin-debug/domains/SceneCompareResult.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/domains/Thing.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/scenes/FirstLevelSelectScene.js",
 		"bin-debug/scenes/FirstLevelStartScene.js",
 		"bin-debug/scenes/SecondLevelStartScene.js",
 		"bin-debug/SecondLevelSelect/ISecondLevelSelectView.js",
@@ -30,10 +31,6 @@
 		"bin-debug/SecondLevelSelect/PlaceFormatter.js",
 		"bin-debug/SecondLevelSelect/SecondLevelSelectPresenter.js",
 		"bin-debug/SecondLevelSelect/SecondLevelSelectScene.js",
-		"bin-debug/SecondLevelSelect/ThingFormatter.js",
-		"bin-debug/utility/Drag.js",
-		"bin-debug/utility/DragEvent.js",
-		"bin-debug/utility/Drop.js",
-		"bin-debug/utility/ThreadUtility.js"
+		"bin-debug/SecondLevelSelect/ThingFormatter.js"
 	]
 }
