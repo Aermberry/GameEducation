@@ -1,0 +1,125 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,shape222_png,shape251_png,shape268_png,shape266_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/movie_clip.png",
+			"type": "image",
+			"name": "movie_clip_png"
+		},
+		{
+			"url": "textures/rainbow.svg",
+			"type": "image",
+			"name": "rainbow_svg"
+		},
+		{
+			"url": "textures/sight_word_park.svg",
+			"type": "image",
+			"name": "sight_word_park_svg"
+		},
+		{
+			"url": "textures/start_game_hover.png",
+			"type": "image",
+			"name": "start_game_hover_png"
+		},
+		{
+			"url": "textures/start_game_normal.png",
+			"type": "image",
+			"name": "start_game_normal_png"
+		},
+		{
+			"url": "textures/start_scene_bg.svg",
+			"type": "image",
+			"name": "start_scene_bg_svg"
+		},
+		{
+			"url": "textures/movie_clip.json",
+			"type": "json",
+			"name": "movie_clip_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"name": "start_scene_bgm_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_bgm.mp3"
+		},
+		{
+			"name": "select_difficulty_scene_bgm_mp3",
+			"type": "sound",
+			"url": "audios/select_difficulty_scene_bgm.mp3"
+		},
+		{
+			"name": "false_drop_down_box_json",
+			"type": "json",
+			"url": "textures/false_drop_down_box.json"
+		},
+		{
+			"name": "false_drop_down_box_png",
+			"type": "image",
+			"url": "textures/false_drop_down_box.png"
+		},
+		{
+			"name": "right_drop_down_box_png",
+			"type": "image",
+			"url": "textures/right_drop_down_box.png"
+		},
+		{
+			"name": "right_drop_down_box_json",
+			"type": "json",
+			"url": "textures/right_drop_down_box.json"
+		},
+		{
+			"name": "box_drop_down_json",
+			"type": "json",
+			"url": "textures/box_drop_down.json"
+		},
+		{
+			"name": "box_drop_down_png",
+			"type": "image",
+			"url": "textures/box_drop_down.png"
+		},
+		{
+			"name": "shape222_png",
+			"type": "image",
+			"url": "textures/shape222.png"
+		},
+		{
+			"name": "shape251_png",
+			"type": "image",
+			"url": "textures/shape251.png"
+		},
+		{
+			"name": "shape268_png",
+			"type": "image",
+			"url": "textures/shape268.png"
+		},
+		{
+			"name": "shape266_png",
+			"type": "image",
+			"url": "textures/shape266.png"
+		}
+	]
+}

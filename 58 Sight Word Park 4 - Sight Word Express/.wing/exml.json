@@ -1,0 +1,12 @@
+{
+    "164d4293be7": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "164e8c20850": {
+        "path": "scenes\\SelectDifficultScene.ts",
+        "class": "SelectDifficultScene",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "skins": {
+        "StartScene": "resource/scenes/StartScene.exml",
+        "SelectDifficultScene": "resource/scenes/SelectDifficultScene.exml"
+    },
+    "autoGenerateExmlsList": true,
+    "exml": [
+        "resource/scenes/StartScene.exml"
+    ],
+    "path": "resource/default.thm.json",
+    "exmls": [
+        "resource/scenes/StartScene.exml"
+    ]
+}
