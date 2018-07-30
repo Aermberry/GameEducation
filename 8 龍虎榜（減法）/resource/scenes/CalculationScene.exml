@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="boxOpenTweenGroup">
+			<tween:TweenItem target="{boxClosedImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boxOpenImage}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{strawberryImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{571}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="answerDeleteMinuend20Movie">
+			<tween:TweenItem target="{answerHundredRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="answerDeleteMinuend10Movie">
+			<tween:TweenItem target="{answerDecade0RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="answerDeleteMinuend11Movie">
+			<tween:TweenItem target="{answerDecade1RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="answerDeleteMinuend00Movie">
+			<tween:TweenItem target="{answerUnitRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		
+		<tween:TweenGroup id="correctDeleteMinuend20Movie">
+			<tween:TweenItem target="{correctHundredRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctDeleteMinuend10Movie">
+			<tween:TweenItem target="{correctDecade0RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctDeleteMinuend11Movie">
+			<tween:TweenItem target="{correctDecade1RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctDeleteMinuend00Movie">
+			<tween:TweenItem target="{correctUnitRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0" />
+	<e:Image source="minus_tour_png" x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73"/>
+	
+	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75"/>
+	<e:Group id="questionGroup" width="660" height="585" y="240" horizontalCenter="0">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="-1" right="1" top="0" bottom="0"/>
+		<e:Group width="97" height="75" y="25" x="40">
+			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
+			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675"/>
+		</e:Group>
+		<e:Image horizontalCenter="0" y="307" source="minus_expression_png"/>
+		<e:BitmapLabel id="answerMinuendLabel" width="246" height="62" y="215.5" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<e:BitmapLabel id="answerSubtrahendLabel" width="246" height="62" y="284" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
+		<ns1:EditableSmallLabel id="answerUnitNewMinuendLabel" name="newMinuend00Label" x="435" y="139" width="60" height="75" currentState="view" />
+		<ns1:EditableSmallLabel id="answerDecade0NewMinuendLabel" name="newMinuend10Label" x="345" y="139" width="60" height="75" currentState="view" />
+		<ns1:EditableSmallLabel id="answerDecade1NewMinuendLabel" name="newMinuend11Label" x="345" y="60" width="60" height="75" currentState="view" />
+		<ns1:EditableSmallLabel id="answerHundredNewMinuendLabel" name="newMinuend20Label" x="251.5" y="139" width="60" height="75" currentState="view" />
+		<ns1:EditableLargeLabel id="answerUnitLabel" name="difference0Label" x="431" y="360" width="80" height="120" currentState="view" text="" anchorOffsetX="0"/>
+		<ns1:EditableLargeLabel id="answerDecadeLabel" name="difference1Label" x="334" y="360" width="80" height="120" currentState="view" text=""/>
+		<ns1:EditableLargeLabel id="answerHundredLabel" name="difference2Label" x="243" y="360" width="80" height="120" currentState="view" text=""/>
+		
+		<e:Image id="answerHundredRedLineImage" source="red_line_png" x="260" bottom="313" width="0" height="0"/>
+		<e:Image id="answerDecade0RedLineImage" x="358" source="red_line_png" bottom="315" width="0" height="0"/>
+		<e:Image id="answerDecade1RedLineImage" x="358" source="red_line_png" bottom="371" width="0" height="0"/>
+		<e:Image id="answerUnitRedLineImage" x="448.5" source="red_line_png" bottom="315" width="0" height="0"/>
+		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
+	</e:Group>
+	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240" visible="false">
+		<e:Image id="topDialogImage" x="0" y="0" source="dialog_up_png"/>
+		<e:Label id="topDialogTitleLabel" text="要退位嗎？" y="25" textColor="0x000000" size="45" horizontalCenter="0" fontFamily="標楷體"/>
+		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
+		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png"/>
+	</e:Group>
+	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect strokeWeight="10" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="-1" right="1" top="0" bottom="0"/>
+		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image y="275" source="minus_expression_png" x="20"/>
+		<ns1:EditableSmallLabel id="correctUnitNewMinuendLabel" name="newMinuend00Label" x="330" y="80" width="60" height="75" currentState="view" />
+		<ns1:EditableSmallLabel id="correctDecade0NewMinuendLabel" name="newMinuend10Label" x="235" y="80" width="60" height="75" currentState="view"  />
+		<ns1:EditableSmallLabel id="correctDecade1NewMinuendLabel" name="newMinuend11Label" x="235" y="6" width="60" height="75" currentState="view" />
+		<ns1:EditableSmallLabel id="correctHundredNewMinuendLabel" name="newMinuend20Label" x="142" y="80" width="60" height="75" currentState="view"  />
+		<ns1:EditableLargeLabel id="correctUnitLabel" name="difference0Label" x="320" y="306" width="80" height="120" currentState="view" text="" anchorOffsetX="0"/>
+		<ns1:EditableLargeLabel id="correctDecadeLabel" name="difference1Label" x="225" y="306" width="80" height="120" currentState="view" text=""/>
+		<ns1:EditableLargeLabel id="correctHundredLabel" name="difference2Label" x="135" y="306" width="80" height="120" currentState="view" text=""/>
+		
+		<e:Image id="correctHundredRedLineImage" source="red_line_png" x="152" bottom="211" width="0" height="0"/>
+		<e:Image id="correctDecade0RedLineImage" x="244" source="red_line_png" bottom="209" width="0" height="0"/>
+		<e:Image id="correctDecade1RedLineImage" x="242" source="red_line_png" bottom="269" width="0" height="0"/>
+		<e:Image id="correctUnitRedLineImage" x="340" source="red_line_png" bottom="211" width="0" height="0"/>
+		
+		<e:BitmapLabel id="correctMinuendLabel" width="246" height="62" y="165" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" textAlign="right" x="130"/>
+		<e:BitmapLabel id="correctSubtrahendLabel" width="246" height="62" y="250" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" textAlign="right" x="130"/>
+		<e:Image x="165" y="-47" source="correct_answer_png"/>
+	</e:Group>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
+	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
+	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
+	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
+	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false"/>
+	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>

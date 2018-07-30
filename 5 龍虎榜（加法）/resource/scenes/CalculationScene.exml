@@ -62,7 +62,7 @@
 		</e:Group>
 		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
 	</e:Group>
-	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="-2" top="0" bottom="-5" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Image horizontalCenter="-2" y="205" source="add_expression_png"/>
