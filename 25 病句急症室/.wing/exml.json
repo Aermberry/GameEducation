@@ -28,5 +28,45 @@
         "path": "scenes\\ResultScene.ts",
         "class": "ResultScene",
         "parentPath": ""
+    },
+    "164eb63e3df": {
+        "path": "gameLevelScenes\\ThiridLevelScene.ts",
+        "class": "ThiridLevelScene",
+        "parentPath": ""
+    },
+    "164eb6c3644": {
+        "path": "gameLevelScenes\\ForthLevelScene.ts",
+        "class": "ForthLevelScene",
+        "parentPath": ""
+    },
+    "164eb8218de": {
+        "path": "gameLevelScenes\\FifthLevelScene.ts",
+        "class": "FifthLevelScene",
+        "parentPath": ""
+    },
+    "164eb877b02": {
+        "path": "gameLevelScenes\\SixthLevelScene.ts",
+        "class": "SixthLevelScene",
+        "parentPath": ""
+    },
+    "164eb8a138c": {
+        "path": "gameLevelScenes\\SeventhLevelScene.ts",
+        "class": "SeventhLevelScene",
+        "parentPath": ""
+    },
+    "164eb987be3": {
+        "path": "gameLevelScenes\\EightLevelScene.ts",
+        "class": "EightLevelScene",
+        "parentPath": ""
+    },
+    "164eba68cd8": {
+        "path": "gameLevelScenes\\NinthLevelScene.ts",
+        "class": "NinthLevelScene",
+        "parentPath": ""
+    },
+    "164ebaf391e": {
+        "path": "gameLevelScenes\\TenthScene.ts",
+        "class": "TenthScene",
+        "parentPath": ""
     }
 }

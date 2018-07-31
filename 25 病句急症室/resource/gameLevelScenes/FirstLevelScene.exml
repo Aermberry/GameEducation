@@ -217,8 +217,7 @@
 <e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="金梅新中圆国际码" locked="true"/>
 <e:Image id="cueBoxImg" source="cue_box_png" x="1269" y="239" locked="true"/>
 <e:Image id="cueBoxOpenImg" source="cue_box_open_png" x="1269" y="239" visible="false" locked="true"/>
-<!--<e:Image id="arrowImg" source="arrow_png"/>
-<e:Image id="manyArrowImg" source="manyarrows_png" />-->
+
 
 <e:Image id="greenFrame" source="green_frame_png" x="960" y="303" locked="true" visible="false"/>
 
@@ -230,28 +229,33 @@
 
 <e:Image source="level_doctor_no_head_png" x="386" y="635" locked="true"/>
 
-<e:Image source="doctor_normal_png" x="392" y="341" locked="true" alpha="0"/>
+<e:Image source="doctor_normal_png" x="392" y="341" locked="true" alpha="1"/>
 <e:Image id="doctorAngryImg" source="doctor_angry_png" x="392" y="341" alpha="0" locked="true"/>
 <e:Image id="doctorBlinkImg" source="doctor_blink_png" x="392" y="341" alpha="0" locked="true"/>
 <e:Image id="docotrorTipImg" source="doctor_tip_png" x="713" y="433" locked="true" visible="false"/>
-<e:Label id="doctorTipLabel" text="請再試一次！" size="43" textColor="#000000" fontFamily="金梅新中圆国际码" x="830.46" y="476.61" visible="false"/>
+<e:Label id="doctorTipLabel" text="請再試一次！" size="43" textColor="#000000" fontFamily="金梅新中圆国际码" x="830.46" y="476.61" visible="false" locked="true"/>
 
 
 <e:Image source="bed_png" x="3" y="824" locked="true"/>
-<e:Image id="ourFirstImg" source="first_our_png" x="63.5" y="752" locked="true"/>
-<e:Image id="ourSecondImg" source="second_our_png" x="615.49" y="782" locked="true"/>
 
-<e:Image id="classImg" source="class_png" x="206" y="752.7" locked="true"/>
-<e:Image id="commaImg" source="comma_png" x="540" y="714.2" locked="true"/>
-<e:Image id="keepOutImg" source="keep_out_png" x="893" y="746.7" locked="true"/>
-<e:Image id="listenImg" source="listen_png" x="1041.7" y="780.7" locked="true"/>
-<e:Image id="periodImg" source="period_png" x="1166.7" y="762.7" locked="true"/>
-<e:Image id="veryImg" source="very_png" x="749.3" y="745.3" locked="true"/>
-<e:Image id="whenImg" source="when_png" x="338" y="718.7" locked="true"/>
+<e:Group id="wordGroup" locked="true">
+	<e:Image id="ourFirstImg" source="first_our_png" x="63.5" y="752" locked="true"/>
+	<e:Image id="classImg" source="class_png" x="206" y="752.7" locked="true"/>
+	<e:Image id="whenImg" source="when_png" x="338" y="718.7" locked="true"/>	
+	<e:Image id="commaImg" source="comma_png" x="540" y="714.2" locked="true"/>
+	<e:Image id="ourSecondImg" source="second_our_png" x="615.49" y="782" locked="true"/>
+	<e:Image id="veryImg" source="very_png" x="749.3" y="745.3" locked="true"/>		
+	<e:Image id="keepOutImg" source="keep_out_png" x="893" y="746.7" locked="true"/>
+	<e:Image id="listenImg" source="listen_png" x="1041.7" y="780.7" locked="true"/>
+	<e:Image id="periodImg" source="period_png" x="1166.7" y="762.7" locked="true"/>
+</e:Group>
 
-<e:Image id="trashCanImg" source="trash_can_png" x="1372" y="966" locked="true"/>
+<e:Group id="trashGroup" x="1372" y="966" width="206" height="265" locked="true">
+	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0" />
+	<e:Image id="trashCanImg" source="trash_can_png" locked="true"/>
+</e:Group>
 <e:Image id="trashCanCoverImg" source="trash_can_cover_png" x="1372" y="901" locked="true"/>
-<e:Image id="trashCanOpenImg" source="trash_can_open_png" x="1387" y="807" locked="true"/>
+<e:Image id="trashCanOpenImg" source="trash_can_open_png" x="1387" y="807" locked="true" visible="false"/>
 
 <ns1:ExitButton id="exitBtn" skinName="ExitTargetBTn" x="1762" y="1130" locked="true"/>
 <e:Image id="blueFrame" source="blue_frame_png" x="1384" y="933" visible="false" locked="true"/>
@@ -259,4 +263,9 @@
 <ns1:YesOrNoButton id="yes" skinName="YesTargetBtn" x="1555" y="1072"  locked="true" visible="false"/>
 <ns1:YesOrNoButton id="no" skinName="NoTargetBtn" x="1666" y="1072"  locked="true" visible="false"/>
 
+<e:Group id="correctGroup" width="1044" height="101" visible="false">
+    <e:Image source="green_blue_frame_png" x="309" y="733"/>
+	<e:Label text="我們上課的時候，我們都很留心聽講。" textColor="#000000" fontFamily="金梅新中圆国际码" x="400" y="758.5" size="50"/>
+</e:Group>
+	
 </e:Skin>
