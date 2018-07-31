@@ -1,0 +1,195 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"url": "textures/false_drop_down_box.png",
+			"type": "image",
+			"name": "false_drop_down_box_png"
+		},
+		{
+			"url": "textures/rainbow.svg",
+			"type": "image",
+			"name": "rainbow_svg"
+		},
+		{
+			"url": "textures/right_drop_down_box.png",
+			"type": "image",
+			"name": "right_drop_down_box_png"
+		},
+		{
+			"url": "textures/sight_word_park.svg",
+			"type": "image",
+			"name": "sight_word_park_svg"
+		},
+		{
+			"url": "textures/start_game_hover.png",
+			"type": "image",
+			"name": "start_game_hover_png"
+		},
+		{
+			"url": "textures/start_game_normal.png",
+			"type": "image",
+			"name": "start_game_normal_png"
+		},
+		{
+			"url": "textures/start_scene_bg.svg",
+			"type": "image",
+			"name": "start_scene_bg_svg"
+		},
+		{
+			"url": "textures/false_drop_down_box.json",
+			"type": "json",
+			"name": "false_drop_down_box_json"
+		},
+		{
+			"url": "textures/right_drop_down_box.json",
+			"type": "json",
+			"name": "right_drop_down_box_json"
+		},
+		{
+			"url": "textures/student_select_bg.png",
+			"type": "image",
+			"name": "student_select_bg_png"
+		},
+		{
+			"url": "textures/select_diffcult_bg.png",
+			"type": "image",
+			"name": "select_diffcult_bg_png"
+		},
+		{
+			"url": "audios/select_difficulty_scene_bgm.mp3",
+			"type": "sound",
+			"name": "select_difficulty_scene_bgm_mp3"
+		},
+		{
+			"url": "audios/start_scene_bgm.mp3",
+			"type": "sound",
+			"name": "start_scene_bgm_mp3"
+		},
+		{
+			"url": "textures/movie_clip.json",
+			"type": "json",
+			"name": "movie_clip_json"
+		},
+		{
+			"url": "textures/movie_clip.png",
+			"type": "image",
+			"name": "movie_clip_png"
+		},
+		{
+			"name": "back_png",
+			"type": "image",
+			"url": "textures/back.png"
+		},
+		{
+			"name": "game_bg_png",
+			"type": "image",
+			"url": "textures/game_bg.png"
+		},
+		{
+			"name": "word_grid_png",
+			"type": "image",
+			"url": "textures/word_grid.png"
+		},
+		{
+			"name": "hide_word_png",
+			"type": "image",
+			"url": "textures/hide_word.png"
+		},
+		{
+			"name": "show_word_png",
+			"type": "image",
+			"url": "textures/show_word.png"
+		},
+		{
+			"name": "hints_png",
+			"type": "image",
+			"url": "textures/hints.png"
+		},
+		{
+			"name": "water_pump_png",
+			"type": "image",
+			"url": "textures/water_pump.png"
+		},
+		{
+			"name": "red_line_png",
+			"type": "image",
+			"url": "textures/red_line.png"
+		},
+		{
+			"name": "confirm_hover_png",
+			"type": "image",
+			"url": "textures/confirm_hover.png"
+		},
+		{
+			"name": "red_stage_png",
+			"type": "image",
+			"url": "textures/red_stage.png"
+		},
+		{
+			"name": "next_puzzle_png",
+			"type": "image",
+			"url": "textures/next_puzzle.png"
+		},
+		{
+			"name": "word_list_box_png",
+			"type": "image",
+			"url": "textures/word_list_box.png"
+		},
+		{
+			"name": "correct_words_box_png",
+			"type": "image",
+			"url": "textures/correct_words_box.png"
+		},
+		{
+			"name": "select_word_box_png",
+			"type": "image",
+			"url": "textures/select_word_box.png"
+		},
+		{
+			"name": "fire_pump_png",
+			"type": "image",
+			"url": "textures/fire_pump.png"
+		},
+		{
+			"name": "fire_png",
+			"type": "image",
+			"url": "textures/fire.png"
+		},
+		{
+			"name": "orange_canvas_png",
+			"type": "image",
+			"url": "textures/orange_canvas.png"
+		},
+		{
+			"name": "confirm_normal_png",
+			"type": "image",
+			"url": "textures/confirm_normal.png"
+		},
+		{
+			"name": "white_canvas_png",
+			"type": "image",
+			"url": "textures/white_canvas.png"
+		}
+	]
+}

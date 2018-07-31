@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StudentSelectSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164ef1a7b85" ></w:Config>
+	<e:Image source="student_select_bg_png"/>
+	<e:Group id="stuedntGroup" x="837" y="898" height="204" width="228"/>
+	<e:Group id="backGroup" x="1741" y="38" width="123" height="219"/>
+</e:Skin>

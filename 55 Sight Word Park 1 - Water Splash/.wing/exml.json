@@ -1,0 +1,22 @@
+{
+    "164d4293be7": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "164ef120242": {
+        "path": "scenes\\SelectDiffcultScene.ts",
+        "class": "SelectDiffcultScene",
+        "parentPath": ""
+    },
+    "164ef1a7b85": {
+        "path": "scenes\\StudentSelectScene.ts",
+        "class": "StudentSelectScene",
+        "parentPath": ""
+    },
+    "164ef3ce84c": {
+        "path": "components\\EasyGameScene.ts",
+        "class": "EasyGameScene",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playBeginTweenGroup">
+		<tween:TweenItem target="{readyText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{416}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{goText}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{400}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250"/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="playCompelectGameTweenGroup">
+			<tween:TweenItem target="{compelectText}">
+				<tween:Set>
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object y="{416}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object y="{316}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+				<tween:props>
+					<e:Object y="{316}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object y="{1280}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="playGoodJobTweenGroup">
+			<tween:TweenItem target="{goodJob}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{330.5}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{whiteCanvas}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="164ef3ce84c" ></w:Config>
+	<e:Image id="gameBgImg" source="game_bg_png" verticalCenter="196" horizontalCenter="0" locked="true"/>
+	<e:Image id="wordListBoxImg" source="word_list_box_png" x="-40" locked="true"/>	
+	<e:Image id="orangeCanvasImg" source="orange_canvas_png" x="765" y="-86.5"/>
+	<e:Image id="firePumpImg" source="fire_pump_png" x="344" y="1019" locked="true"/>
+	<e:Image id="redStageImg" source="red_stage_png"  verticalCenter="0" horizontalCenter="0" locked="true"/>
+     
+	<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="0" alpha="0" locked="true"/>
+	<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" locked="true"/>	
+	
+	<e:Label id="compelectText" text="Compelect" fontFamily="Hoffmanhand" textColor="0x9D0000" size="432" alpha="0" horizontalCenter="0"/>
+	<e:Image id="shootBtnImg" source="confirm_normal_png" x="595" y="544" locked="true"/>
+	<e:Image id="resetBtnImg" source="confirm_normal_png" x="595" y="363" locked="true"/>
+
+<e:Group visible="false" id="goodJobGroup">
+	<e:Image id="whiteCanvas" source="white_canvas_png" x="24" y="527.5"/>
+    <e:Label id="goodJob" text="Good Job!" horizontalCenter="0" y="527.5" fontFamily="Hoffmanhand" size="300" textColor="#000000" />
+</e:Group>
+
+	<e:Image id="hintsBtnImg" source="hints_png" x="24" y="1024" locked="true"/>
+    <e:Image id="hideWordImg" source="hide_word_png" x="254" y="1019"/>
+
+	<e:Image id="nextPuzzleImg" source="next_puzzle_png" x="1404" y="1039" locked="true"/>
+	<e:Image id="backImg" source="back_png" x="1741" y="1052" locked="true"/>
+</e:Skin>

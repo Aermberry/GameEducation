@@ -1,0 +1,32 @@
+{
+	"engineVersion": "5.2.5",
+	"compilerVersion": "5.2.5",
+	"template": {},
+	"target": {
+		"current": "web"
+	},
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "assetsmanager"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "promise"
+		},
+		{
+			"name": "mouse",
+			"path": "../egret-game-library-master/mouse/libsrc"
+		}
+	]
+}

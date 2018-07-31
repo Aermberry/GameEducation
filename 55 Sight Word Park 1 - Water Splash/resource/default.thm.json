@@ -1,0 +1,19 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"SelectDiffcultScene": "resource/scenes/SelectDiffcultScene.exml",
+		"StudentSelectScene": "resource/scenes/StudentSelectScene.exml",
+		"GameScene": "resource/components/GameScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/SecondLevelStartScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/components/GameScene.exml",
+		"resource/scenes/SelectDiffcultScene.exml",
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/StudentSelectScene.exml"
+	]
+}
