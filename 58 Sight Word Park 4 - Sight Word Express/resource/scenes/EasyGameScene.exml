@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EasyGameSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*" >
+	<w:Declarations>
+		<tween:TweenGroup id="playEasyGmeTweenGroup">
+			<tween:TweenItem target="{readyText}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{416}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object y="{316}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{goText}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{400}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250"/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object y="{1280}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="goodJobTweenGroup">
+			<tween:TweenItem target="{goodJobTip}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="trainEnterTweenGroup">
+			<tween:TweenItem target="{trainImg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1920}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{162}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{driverImg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1920}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{409}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{smokeImg}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1920}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{233}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="trainAwayTweenGroup">
+			<tween:TweenItem target="{smokeImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{-1920}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{driverImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{-1920}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{trainImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{-1920}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="firstBoxTweenGroup">
+			<tween:TweenItem target="{firstBoxImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{693.5}" y="{680}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="secondBoxTweenGroup">
+			<tween:TweenItem target="{secondBoxImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{640}" x="{1115.2}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="thirdBoxTweenGroup">
+			<tween:TweenItem target="{thirdBoxImg}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1530.03}" y="{638}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="164ea200f36" ></w:Config>
+	<e:Image source="river_bg_png" x="-61.69" y="-86" locked="true"/>
+	<e:Image id="railway" x="0" y="915" source="railway_png"/>
+	<e:Image id="trainImg" source="train_png" x="162" y="720" visible="true"/>
+	<e:Image id="topTrain" source="top_train_png"  x="92" y="-76"/>
+	<e:Image source="sight_word_express_png" x="232.97" y="188"/>
+	<e:Image source="red_stage_png" x="-1262" y="-230"/>
+	<e:Image source="back_png" x="1738" y="1052" />
+
+	<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="-500" alpha="0"/>
+	<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" y="-500"/>
+	<e:Label id="goodJobTip" x="1171" y="572" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC"/>
+	<e:Image  id="birdImg" source="bird_normal_png" x="1314" y="381" visible="false"/>
+
+	
+
+	<e:Image id="redLightImg" source="red_light_png"  x="148.97" y="408" visible="false"/>
+	<e:Image id="greenLightImg" source="green_light_png"  x="190.97" y="570"  visible="false"/>
+    
+	<e:Label id="sentenceLabel" text=""  size="50"  verticalCenter="275" horizontalCenter="286" anchorOffsetX="0" width="1076" textAlign="center" textColor="0xffffff"/>
+	<e:Image id="driverImg" source="driver_png"  x="408.97" y="726" height="100" locked="true" visible="false"/>
+	<e:Image id="smokeImg" source="smoke_png" x="224.97" y="500" locked="true" visible="false"/>
+	<e:Label id="cargoLeftLabel" text="Cargo Left: 20" x="422" y="527" textColor="0x000000" size="45"/>
+	<e:Group id="cargoGroup">
+		<e:Group id="cargoGroup0" width="312" height="260" x="625" y="55" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="cargoGroup1" width="312" height="280" x="950" y="55" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="cargoGroup2" width="312" height="210" x="1280" y="55" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+
+	<e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
+</e:Skin>

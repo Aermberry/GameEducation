@@ -27,6 +27,10 @@
 		{
 			"name": "mouse",
 			"path": "../egret-game-library-master/mouse/libsrc"
+		},
+		{
+			"name": "lzlib",
+			"path": "../lzlib"
 		}
 	]
 }

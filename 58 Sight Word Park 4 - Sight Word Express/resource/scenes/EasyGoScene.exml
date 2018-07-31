@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EasyGoSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164ea0ee801" ></w:Config>
+	<e:Image source="go_bg_png"/>
+	<e:Group  id="playGameGroup" x="862" y="842" height="213" width="295"/>
+	<e:Group id="backGroup" x="1740" y="41" width="127" height="218"/>
+</e:Skin>

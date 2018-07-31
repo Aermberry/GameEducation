@@ -10,6 +10,7 @@
 		"libs/egret.d.ts",
 		"libs/eui.d.ts",
 		"libs/game.d.ts",
+		"libs/lib.dom.d.ts",
 		"libs/tween.d.ts",
 		"libs/res.d.ts",
 		"libs/lib.es5.d.ts",

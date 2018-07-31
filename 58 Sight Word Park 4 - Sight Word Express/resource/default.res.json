@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,shape222_png,shape251_png,shape268_png,shape266_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg",
 			"name": "preload"
 		}
 	],
@@ -47,11 +47,6 @@
 			"name": "start_game_normal_png"
 		},
 		{
-			"url": "textures/start_scene_bg.svg",
-			"type": "image",
-			"name": "start_scene_bg_svg"
-		},
-		{
 			"url": "textures/movie_clip.json",
 			"type": "json",
 			"name": "movie_clip_json"
@@ -62,9 +57,49 @@
 			"name": "wlts_logo_jpg"
 		},
 		{
-			"name": "start_scene_bgm_mp3",
-			"type": "sound",
-			"url": "audios/start_scene_bgm.mp3"
+			"url": "textures/false_drop_down_box.json",
+			"type": "json",
+			"name": "false_drop_down_box_json"
+		},
+		{
+			"url": "textures/false_drop_down_box.png",
+			"type": "image",
+			"name": "false_drop_down_box_png"
+		},
+		{
+			"url": "textures/right_drop_down_box.png",
+			"type": "image",
+			"name": "right_drop_down_box_png"
+		},
+		{
+			"url": "textures/right_drop_down_box.json",
+			"type": "json",
+			"name": "right_drop_down_box_json"
+		},
+		{
+			"url": "textures/box_drop_down.json",
+			"type": "json",
+			"name": "box_drop_down_json"
+		},
+		{
+			"url": "textures/box_drop_down.png",
+			"type": "image",
+			"name": "box_drop_down_png"
+		},
+		{
+			"url": "textures/select_diffcult_bg.png",
+			"type": "image",
+			"name": "select_diffcult_bg_png"
+		},
+		{
+			"url": "textures/go_bg.png",
+			"type": "image",
+			"name": "go_bg_png"
+		},
+		{
+			"url": "textures/start_scene_bg.svg",
+			"type": "image",
+			"name": "start_scene_bg_svg"
 		},
 		{
 			"name": "select_difficulty_scene_bgm_mp3",
@@ -72,54 +107,119 @@
 			"url": "audios/select_difficulty_scene_bgm.mp3"
 		},
 		{
-			"name": "false_drop_down_box_json",
-			"type": "json",
-			"url": "textures/false_drop_down_box.json"
+			"name": "start_scene_bgm_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_bgm.mp3"
 		},
 		{
-			"name": "false_drop_down_box_png",
+			"name": "red_stage_png",
 			"type": "image",
-			"url": "textures/false_drop_down_box.png"
+			"url": "textures/red_stage.png"
 		},
 		{
-			"name": "right_drop_down_box_png",
+			"name": "river_bg_png",
 			"type": "image",
-			"url": "textures/right_drop_down_box.png"
+			"url": "textures/river_bg.png"
 		},
 		{
-			"name": "right_drop_down_box_json",
-			"type": "json",
-			"url": "textures/right_drop_down_box.json"
-		},
-		{
-			"name": "box_drop_down_json",
-			"type": "json",
-			"url": "textures/box_drop_down.json"
-		},
-		{
-			"name": "box_drop_down_png",
+			"name": "back_png",
 			"type": "image",
-			"url": "textures/box_drop_down.png"
+			"url": "textures/back.png"
 		},
 		{
-			"name": "shape222_png",
+			"name": "bird_normal_png",
 			"type": "image",
-			"url": "textures/shape222.png"
+			"url": "textures/bird_normal.png"
 		},
 		{
-			"name": "shape251_png",
+			"name": "bird_hover_png",
 			"type": "image",
-			"url": "textures/shape251.png"
+			"url": "textures/bird_hover.png"
 		},
 		{
-			"name": "shape268_png",
+			"name": "sight_word_express_png",
 			"type": "image",
-			"url": "textures/shape268.png"
+			"url": "textures/sight_word_express.png"
 		},
 		{
-			"name": "shape266_png",
+			"name": "top_train_png",
 			"type": "image",
-			"url": "textures/shape266.png"
+			"url": "textures/top_train.png"
+		},
+		{
+			"name": "clipper_normal_png",
+			"type": "image",
+			"url": "textures/clipper_normal.png"
+		},
+		{
+			"name": "clipper_hover_png",
+			"type": "image",
+			"url": "textures/clipper_hover.png"
+		},
+		{
+			"name": "smoke_png",
+			"type": "image",
+			"url": "textures/smoke.png"
+		},
+		{
+			"name": "driver_png",
+			"type": "image",
+			"url": "textures/driver.png"
+		},
+		{
+			"name": "train_png",
+			"type": "image",
+			"url": "textures/train.png"
+		},
+		{
+			"name": "green_light_png",
+			"type": "image",
+			"url": "textures/green_light.png"
+		},
+		{
+			"name": "red_light_png",
+			"type": "image",
+			"url": "textures/red_light.png"
+		},
+		{
+			"name": "box_png",
+			"type": "image",
+			"url": "textures/box.png"
+		},
+		{
+			"name": "railway_png",
+			"type": "image",
+			"url": "textures/railway.png"
+		},
+		{
+			"name": "dingding_mp3",
+			"type": "sound",
+			"url": "audios/dingding.mp3"
+		},
+		{
+			"name": "diao_mp3",
+			"type": "sound",
+			"url": "audios/diao.mp3"
+		},
+		{
+			"name": "wuwu_mp3",
+			"type": "sound",
+			"url": "audios/wuwu.mp3"
+		},
+		{
+			"name": "congratulation_mp3",
+			"type": "sound",
+			"url": "audios/congratulation.mp3"
+		},
+		{
+			"name": "smiling_yellow_head_svg",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.svg"
+		},
+		{
+			"name": "arrow_right_svg",
+			"type": "image",
+			"url": "textures/arrow_right.svg"
 		}
 	]
 }

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="SelectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="164e8c20850" ></w:Config>
-	
+	<e:Image source="select_diffcult_bg_png"/>
+	<e:Group id="backGroup" x="1737" y="41" height="217" width="127"/>
+	<e:Group id="easyGroup" x="593" y="853" height="175" width="240"/>
+	<e:Group id="proGroup" x="1089" y="853" height="175" width="243"/>
 </e:Skin>

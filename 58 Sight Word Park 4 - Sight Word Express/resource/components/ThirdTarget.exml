@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ThirdTarget" states="normal,hover" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="clipper_normal_png" includeIn="normal"/>
+    <e:Image source="clipper_hover_png" includeIn="hover"/>
+    <e:Label id="labelDisplay" size="50" textColor="#000000" textAlign="center"  horizontalCenter="0" verticalCenter="40"/>
+</e:Skin>
