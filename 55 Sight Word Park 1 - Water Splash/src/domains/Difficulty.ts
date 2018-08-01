@@ -1,0 +1,3 @@
+enum Difficulty {
+	easy, pro
+}

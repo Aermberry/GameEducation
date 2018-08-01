@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RedLineLabelSkin" width="200" height="65" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,deleted" >
+	<w:Config id="164f2db9707" ></w:Config>
+	<e:Label id="label" text="front" left="20" right="0" top="0" bottom="0" size="45" textColor="0x000000" verticalAlign="middle" />
+	<e:Image source="red_line_png" verticalCenter="0" x="15" visible="false" visible.deleted="true" />
+</e:Skin>

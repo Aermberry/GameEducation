@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PuzzleCellSkin" width="100" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,selected,disabled" >
+	<w:Config id="164f1133b14" ></w:Config>
+	<e:Label id="label" left="0" right="0" top="0" bottom="0" background="true" border.selected="true" borderColor.selected="0x990000" backgroundColor="0xff9900" backgroundColor.selected="0xCC1E00" textColor="0xff0300" textColor.selected="0xFF0100" textAlign="center" verticalAlign="middle" bold="true" />
+	<e:Image source="correct_words_box_png" horizontalCenter="0" verticalCenter="0" visible="false" visible.disabled="true" alpha="0.7" touchEnabled="false" />
+</e:Skin>

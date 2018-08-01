@@ -34,13 +34,13 @@ class SelectDiffcultScene extends eui.Component implements  eui.UIComponent {
 	private goEasyGameScene():void
 	{
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new GameScene);
+		Main.instance.gotoScene(new PlayingScene(Difficulty.easy));
 	}
 
 	private goProGameScene():void
 	{
 		this.stopCurrentSoundChannel();
-		// Main.instance.gotoScene(new proGameScene);
+		Main.instance.gotoScene(new PlayingScene(Difficulty.pro));
 	}
 
 	private goStartScene():void

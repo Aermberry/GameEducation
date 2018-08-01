@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PuzzleSkin" width="775" height="775" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Rect fillColor="0xFF9300" left="0" right="0" top="0" bottom="0"  strokeColor="0xff8500" strokeWeight="5"/>
+	<w:Config id="164f0ba22de" ></w:Config>
+</e:Skin>

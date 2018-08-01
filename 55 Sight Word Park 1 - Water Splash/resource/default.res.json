@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png",
+			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg",
 			"name": "preload"
 		}
 	],
@@ -190,6 +190,26 @@
 			"name": "white_canvas_png",
 			"type": "image",
 			"url": "textures/white_canvas.png"
+		},
+		{
+			"name": "peng_mp3",
+			"type": "sound",
+			"url": "audios/peng.mp3"
+		},
+		{
+			"name": "congratulation_mp3",
+			"type": "sound",
+			"url": "audios/congratulation.mp3"
+		},
+		{
+			"name": "smiling_yellow_head_svg",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.svg"
+		},
+		{
+			"name": "arrow_right_svg",
+			"type": "image",
+			"url": "textures/arrow_right.svg"
 		}
 	]
 }

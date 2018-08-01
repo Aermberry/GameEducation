@@ -18,5 +18,23 @@
         "path": "components\\EasyGameScene.ts",
         "class": "EasyGameScene",
         "parentPath": ""
+    },
+    "164f0ba22de": {
+        "path": "components/Puzzle.ts",
+        "class": "Puzzle",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "164f2db9707": {
+        "path": "components/RedLineLabel.ts",
+        "class": "RedLineLabel",
+        "parentPath": ""
+    },
+    "164f327644e": {
+        "path": "scenes/ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
     }
 }

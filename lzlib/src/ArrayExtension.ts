@@ -1,6 +1,6 @@
 // TypeScript file
 interface Array<T> {
-    shuffle(): void
+    shuffle(): void;
 }
 
 Array.prototype.shuffle = function(): void 
