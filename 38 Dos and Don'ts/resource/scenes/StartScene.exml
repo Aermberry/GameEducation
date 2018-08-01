@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="bannerTweenGroup">
+			<tween:TweenItem target="{group}">
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{schoolGroup}">
+				<tween:Wait duration="150"/>
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="164d4293be7" ></w:Config>
+
+  
+	<e:Group id="group" verticalCenter="0" horizontalCenter="0" locked="true">
+    <e:Image id="pingBgImg" source="pink_bg_png" horizontalCenter="0" verticalCenter="0"/>		
+	<e:Image id="pinkBannerImg" source="pink_banner_png"  horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="bannerText" source="banner_text_png"  horizontalCenter="0" verticalCenter="0"/>	
+	<e:Image id="bannerImg" source="banner_png"  horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+
+   <e:Group id="schoolGroup" verticalCenter="0" horizontalCenter="0" alpha="0">
+	<e:Image id="schoolImg" source="school_png"  verticalCenter="0" horizontalCenter="0" locked="true"/>
+	<e:Image id="amyImg" source="amy_png"  x="1470" y="463"/>
+	<e:Label id="goSchoolText" text="Amy is going to school." size="63" horizontalCenter="0" y="1100" textColor="#000000" fontFamily="ComicSansMS3"/>
+   </e:Group>
+	
+</e:Skin>

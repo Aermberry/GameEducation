@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BirdScene7Skin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="lightTweenGroup">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1.2}" scaleY="{1.2}" x="{960}" y="{421}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" x="{1006}" y="{444}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+<w:Config id="164f4dc8012" ></w:Config>
+
+   <e:Group id="firstDialogGroup" visible="true">
+      <e:Image source="sky_png" locked="true"/>
+      <e:Image source="tree_left_png" x="-91" locked="true"/>
+      <e:Image source="trunk_png" x="1141"/>
+      <e:Image source="bird_foot_png" x="1189.29" y="387"/>
+      <e:Image source="bird_png" x="1043" y="210.5"/>
+      <e:Image source="cage_png" x="678.79" y="-5.5" locked="true"/>
+      <e:Image id="workerFirstImg" source="worker_bird_first_png" x="385.83" y="132"/>
+   </e:Group>
+
+   <e:Group id="nextDialogGroup" locked="true" visible="false">
+      <e:Image source="bird_woker_png" x="330" y="130"/>
+      <e:Image source="bird_work_hands_png" x="533.5" y="343"/>
+      <e:Image source="purple_dialog_frame_png" x="42.5" y="74"/>
+      <e:Image id="purpleCircleImg" source="purple_circle_png" x="87" y="83.5"/>
+      <e:Image id="wordkerTouchImg" source="worker_normal_png" x="94" y="94.5"/>
+      <e:Label id="firstLabel" text="......" size="45" textColor="#000000" fontFamily="ComicSansMS3" x="64.5" y="234.5"/>
+      <e:Label id="secondLabel" text="  " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="64.5" y="318"/>
+      <e:Label id="thirdLabel" text="   " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="64.5" y="422"/>
+      <e:Image source="light_png" x="1006" y="438"/>      
+	</e:Group>
+
+   <e:Group id="amyGroup">
+	  <e:Image source="amy_feed_png" x="257" y="578"/>
+      <e:Image source="pink_bottom_frame_png" x="605" y="796"/>
+      <e:Label  text="Can I feed" fontFamily="ComicSansMS3" size="50" textColor="#000000" x="723.83" y="895.5"/>
+	  <e:Label text=" the birds here?" fontFamily="ComicSansMS3" size="50" textColor="#000000" x="640" y="945.5"/>		
+   </e:Group>
+
+	   <e:Image id="forkIconImg" source="green_hover_png" x="1706" y="1152.5" alpha="0.3"/>
+	   <e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
+	   <e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105" locked="true"/>
+  
+  <e:Group id="nextGroup" visible="false">
+	   <e:Image  source="next_noraml_png" x="1653.5" y="970"/>
+	   <e:Label id="nextLabel" text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+	   <e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
+  </e:Group>
+	
+	<e:Group id="workerTouchEventGroup" x="87" y="83.5" width="132" height="132"/>
+
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164f5daafa6" ></w:Config>
+	<e:Image source="result_bg_png"/>
+	<e:Image source="result_frame_png" x="701.09" y="275.76"/>
+	<e:Image source="result_amy_png" x="209.09" y="275.76"/>
+	<e:Image source="light_red_normal_png" x="1577.48" y="459.76"/>
+	<e:Label text="I had a good day, bye bye!" fontFamily="ComicSansMS3" size="40" textColor="#0000000" x="754.59" y="323.76"/>	
+	<e:Label text="Exit" fontFamily="ComicSansMS3" size="45" textColor="#FF3200" x="1585.98" y="483.26"/>
+	<e:Group id="ExitGroup" x="1577.5" y="459.7" height="90" width="90"/>
+</e:Skin>

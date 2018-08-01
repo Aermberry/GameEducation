@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="lineUpScene2Skin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164f3be2818" ></w:Config>
+
+   	<e:Image source="line_up_bg_png" y="-46"/>
+    
+	<e:Group id="studentAndTeacher">
+		<e:Image source="teacher_line_up_png" x="1020" y="112.5"/>
+		<e:Image source="student1_png" x="-112.5" y="570"/>
+		<e:Image source="student2_png" x="351" y="597.5"/>
+		<e:Image source="student3_png" x="772" y="583.5"/>
+		<e:Image source="student4_png" x="328.5" y="727.5"/>
+	</e:Group>
+  
+   
+
+   	<e:Image id="forkIconImg" source="fork_icon_png" x="1706" y="1152.5" alpha="0.3"/>
+	<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
+	<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
+
+
+    <e:Group id="amyGroup">
+		<e:Image source="amy_png" x="1534" y="663.5" width="362" height="532"/>	
+		<e:Image source="pink_frame_png" x="1091" y="624"/>
+		<e:Label id="CanIPlayHereLabel" text="Can they play here?" textColor="#000000" fontFamily="ComicSansMS3" size="40" x="1125" y="730.5"/>
+			
+    </e:Group>
+
+	<e:Group id="nextGroup" visible="false">
+		<e:Image  source="next_noraml_png" x="1653.5" y="970"/>
+		<e:Label id="nextLabel" text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+		<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/> 	
+	</e:Group>
+    
+	<e:Group id="teacherDialogGroup" visible="false" >
+     	<e:Image source="left_blue_frame_png" x="368" y="98"/>		
+		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="#000000" x="447" y="230"/>	
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="#000000" x="448" y="308"/>	
+   </e:Group>
+
+	<e:Image id="teacherUnhappyImg" source="teacher_head_unhappy_png" x="415" y="112" visible="false"/>
+	<e:Image id="teacherTouchImg" source="blue_circle_png" x="415" y="112" visible="false"/>
+
+</e:Skin>

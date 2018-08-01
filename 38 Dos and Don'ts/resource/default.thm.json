@@ -1,0 +1,42 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"FirstLevelStartScene": "resource/scenes/FirstLevelStartScene.exml",
+		"FirstLevelPlaySoundScene": "resource/scenes/FirstLevelPlaySoundScene.exml",
+		"FirstLevelSelectScene": "resource/scenes/FirstLevelSelectScene.exml",
+		"SecondLevelStartScene": "resource/scenes/SecondLevelStartScene.exml",
+		"SecondLevelSelectScene": "resource/scenes/SecondLevelSelectScene.exml",
+		"1BookSence": "resource/scenes/1BookSence.exml",
+		"BookSence1": "resource/scenes/BookSence1.exml",
+		"lineUpScene2": "resource/scenes/lineUpScene2.exml",
+		"TalkScene3": "resource/scenes/TalkScene3.exml",
+		"LeaveAndEnterScene4": "resource/scenes/LeaveAndEnterScene4.exml",
+		"PhotoSCene5": "resource/scenes/PhotoSCene5.exml",
+		"Flowers": "resource/scenes/Flowers.exml",
+		"FlowersScenes": "resource/scenes/FlowersScenes.exml",
+		"FlowersScene6": "resource/scenes/FlowersScene6.exml",
+		"BirdScene7": "resource/scenes/BirdScene7.exml",
+		"BicycleScene": "resource/scene/BicycleScene.exml",
+		"BicycleScene8": "resource/scenes/BicycleScene8.exml",
+		"ResultScene": "resource/scenes/ResultScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/FirstLevelStartScene.exml",
+		"resource/scenes/FirstLevelSelectScene.exml",
+		"resource/scenes/SecondLevelStartScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/scenes/BicycleScene8.exml",
+		"resource/scenes/BirdScene7.exml",
+		"resource/scenes/BookSence1.exml",
+		"resource/scenes/FlowersScene6.exml",
+		"resource/scenes/LeaveAndEnterScene4.exml",
+		"resource/scenes/PhotoSCene5.exml",
+		"resource/scenes/ResultScene.exml",
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/TalkScene3.exml",
+		"resource/scenes/lineUpScene2.exml"
+	]
+}

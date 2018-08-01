@@ -1,0 +1,580 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,wlts_logo_jpg,gameEui_json,pink_bg_png,banner_png,school_png,pink_banner_png,banner_text_png,amy_png,teacher_head_normal_png,fork_icon_png,next_noraml_png,next_touch_png,teacher_normal_png,students_png,blue_frame_png,pink_frame_png,gray_canvas_png,black_board_png,fork_green_png,teacher_line_up_png,left_blue_frame_png,teacher_head_unhappy_png,student1_png,student2_png,student3_png,student4_png,line_up_bg_png,teacher_head_hover_png,blue_circle_png,green_circle_png,teacher_head_bb_png,talk_bg_png,talk_student_png,teacher_talk_png,pink_right_frame_png,amy_leave_png,leave_school_png,park_left_png,park_rigtht_png,board_png,worker_hover_png,worker_normal_png,light_png,pink_bottom_frame_png,purple_frame_png,door_png,tree_png,sky_png,amy_go_shcool_mp3,can_they_play_here_mp3,can_we_talk_now_mp3,enter_park_mp3,in_class_room_mp3,leave_school_mp3,line_up_mp3,listen_me_mp3,put_book_mp3,vo_books_mp3,purple_circle_png,purple_bottom_png,sound 4 (VO_FLOWERS)_mp3,flowers_mp3,amy_flowers_mp3,green_normal_png,green_hover_png,bird_woker_png,bird_work_hands_png,purple_dialog_frame_png,cage_png,pink_circle_png,worker_bird_first_png,trunk_png,bird_foot_png,tree_left_png,amy_feed_png,bird_png,can_i_feed_mp3,can_not_feed_mp3,worker_bicycle_png,amy_bicycle_png,blue_sky_png,left_cloud_png,right_cloud_png,road_png,light_red_hover_png,light_red_normal_png,tip_board_png,oragne_hover_png,orange_normal_png,bicycle_amy_frame_png,bicycle_worker_frame_png,bicycle_png,bicycle_amy_mp3,bicycle_worker_mp3,result_frame_png,result_amy_png,result_bg_png,photo_cloud_png,photo_worker_png,photo_amy_png,photo_worker_frame_png,photo_amy_mp3,photo_worker_mp3,flower_amy_frame_png,flowe_png,flower_worker_frame_png,flower_normal_circle _png,flower_hover_png,flower_worker_png,flower_worker_normal_png,flower_worker_hover_png,flower_worker_mp3,flower_amy_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"url": "textures/pink_bg.png",
+			"type": "image",
+			"name": "pink_bg_png"
+		},
+		{
+			"url": "textures/banner.png",
+			"type": "image",
+			"name": "banner_png"
+		},
+		{
+			"url": "textures/school.png",
+			"type": "image",
+			"name": "school_png"
+		},
+		{
+			"url": "textures/pink_banner.png",
+			"type": "image",
+			"name": "pink_banner_png"
+		},
+		{
+			"url": "textures/banner_text.png",
+			"type": "image",
+			"name": "banner_text_png"
+		},
+		{
+			"url": "textures/amy.png",
+			"type": "image",
+			"name": "amy_png"
+		},
+		{
+			"url": "textures/teacher_head_normal.png",
+			"type": "image",
+			"name": "teacher_head_normal_png"
+		},
+		{
+			"url": "textures/fork_icon.png",
+			"type": "image",
+			"name": "fork_icon_png"
+		},
+		{
+			"url": "textures/next_noraml.png",
+			"type": "image",
+			"name": "next_noraml_png"
+		},
+		{
+			"url": "textures/next_touch.png",
+			"type": "image",
+			"name": "next_touch_png"
+		},
+		{
+			"url": "textures/teacher_normal.png",
+			"type": "image",
+			"name": "teacher_normal_png"
+		},
+		{
+			"url": "textures/students.png",
+			"type": "image",
+			"name": "students_png"
+		},
+		{
+			"url": "textures/blue_frame.png",
+			"type": "image",
+			"name": "blue_frame_png"
+		},
+		{
+			"url": "textures/pink_frame.png",
+			"type": "image",
+			"name": "pink_frame_png"
+		},
+		{
+			"url": "textures/gray_canvas.png",
+			"type": "image",
+			"name": "gray_canvas_png"
+		},
+		{
+			"url": "textures/black_board.png",
+			"type": "image",
+			"name": "black_board_png"
+		},
+		{
+			"url": "textures/fork_green.png",
+			"type": "image",
+			"name": "fork_green_png"
+		},
+		{
+			"url": "textures/teacher_line_up.png",
+			"type": "image",
+			"name": "teacher_line_up_png"
+		},
+		{
+			"url": "textures/left_blue_frame.png",
+			"type": "image",
+			"name": "left_blue_frame_png"
+		},
+		{
+			"url": "textures/teacher_head_unhappy.png",
+			"type": "image",
+			"name": "teacher_head_unhappy_png"
+		},
+		{
+			"url": "textures/student1.png",
+			"type": "image",
+			"name": "student1_png"
+		},
+		{
+			"url": "textures/student2.png",
+			"type": "image",
+			"name": "student2_png"
+		},
+		{
+			"url": "textures/student3.png",
+			"type": "image",
+			"name": "student3_png"
+		},
+		{
+			"url": "textures/student4.png",
+			"type": "image",
+			"name": "student4_png"
+		},
+		{
+			"url": "textures/line_up_bg.png",
+			"type": "image",
+			"name": "line_up_bg_png"
+		},
+		{
+			"url": "textures/teacher_head_hover.png",
+			"type": "image",
+			"name": "teacher_head_hover_png"
+		},
+		{
+			"url": "textures/blue_circle.png",
+			"type": "image",
+			"name": "blue_circle_png"
+		},
+		{
+			"url": "textures/green_circle.png",
+			"type": "image",
+			"name": "green_circle_png"
+		},
+		{
+			"url": "textures/teacher_head_bb.png",
+			"type": "image",
+			"name": "teacher_head_bb_png"
+		},
+		{
+			"url": "textures/talk_bg.png",
+			"type": "image",
+			"name": "talk_bg_png"
+		},
+		{
+			"url": "textures/talk_student.png",
+			"type": "image",
+			"name": "talk_student_png"
+		},
+		{
+			"url": "textures/teacher_talk.png",
+			"type": "image",
+			"name": "teacher_talk_png"
+		},
+		{
+			"url": "textures/pink_right_frame.png",
+			"type": "image",
+			"name": "pink_right_frame_png"
+		},
+		{
+			"name": "amy_leave_png",
+			"type": "image",
+			"url": "textures/amy_leave.png"
+		},
+		{
+			"name": "leave_school_png",
+			"type": "image",
+			"url": "textures/leave_school.png"
+		},
+		{
+			"name": "park_left_png",
+			"type": "image",
+			"url": "textures/park_left.png"
+		},
+		{
+			"name": "park_rigtht_png",
+			"type": "image",
+			"url": "textures/park_rigtht.png"
+		},
+		{
+			"name": "board_png",
+			"type": "image",
+			"url": "textures/board.png"
+		},
+		{
+			"name": "worker_hover_png",
+			"type": "image",
+			"url": "textures/worker_hover.png"
+		},
+		{
+			"name": "worker_normal_png",
+			"type": "image",
+			"url": "textures/worker_normal.png"
+		},
+		{
+			"name": "light_png",
+			"type": "image",
+			"url": "textures/light.png"
+		},
+		{
+			"name": "pink_bottom_frame_png",
+			"type": "image",
+			"url": "textures/pink_bottom_frame.png"
+		},
+		{
+			"name": "purple_frame_png",
+			"type": "image",
+			"url": "textures/purple_frame.png"
+		},
+		{
+			"name": "door_png",
+			"type": "image",
+			"url": "textures/door.png"
+		},
+		{
+			"name": "tree_png",
+			"type": "image",
+			"url": "textures/tree.png"
+		},
+		{
+			"name": "sky_png",
+			"type": "image",
+			"url": "textures/sky.png"
+		},
+		{
+			"name": "amy_go_shcool_mp3",
+			"type": "sound",
+			"url": "audios/amy_go_shcool.mp3"
+		},
+		{
+			"name": "can_they_play_here_mp3",
+			"type": "sound",
+			"url": "audios/can_they_play_here.mp3"
+		},
+		{
+			"name": "can_we_talk_now_mp3",
+			"type": "sound",
+			"url": "audios/can_we_talk_now.mp3"
+		},
+		{
+			"name": "enter_park_mp3",
+			"type": "sound",
+			"url": "audios/enter_park.mp3"
+		},
+		{
+			"name": "in_class_room_mp3",
+			"type": "sound",
+			"url": "audios/in_class_room.mp3"
+		},
+		{
+			"name": "leave_school_mp3",
+			"type": "sound",
+			"url": "audios/leave_school.mp3"
+		},
+		{
+			"name": "line_up_mp3",
+			"type": "sound",
+			"url": "audios/line_up.mp3"
+		},
+		{
+			"name": "listen_me_mp3",
+			"type": "sound",
+			"url": "audios/listen_me.mp3"
+		},
+		{
+			"name": "put_book_mp3",
+			"type": "sound",
+			"url": "audios/put_book.mp3"
+		},
+		{
+			"name": "vo_books_mp3",
+			"type": "sound",
+			"url": "audios/vo_books.mp3"
+		},
+		{
+			"name": "purple_circle_png",
+			"type": "image",
+			"url": "textures/purple_circle.png"
+		},
+		{
+			"name": "purple_bottom_png",
+			"type": "image",
+			"url": "textures/purple_bottom.png"
+		},
+		{
+			"name": "sound 4 (VO_FLOWERS)_mp3",
+			"type": "sound",
+			"url": "audios/sound 4 (VO_FLOWERS).mp3"
+		},
+		{
+			"name": "flowers_mp3",
+			"type": "sound",
+			"url": "audios/flowers.mp3"
+		},
+		{
+			"name": "amy_flowers_mp3",
+			"type": "sound",
+			"url": "audios/amy_flowers.mp3"
+		},
+		{
+			"name": "green_normal_png",
+			"type": "image",
+			"url": "textures/green_normal.png"
+		},
+		{
+			"name": "green_hover_png",
+			"type": "image",
+			"url": "textures/green_hover.png"
+		},
+		{
+			"name": "bird_woker_png",
+			"type": "image",
+			"url": "textures/bird_woker.png"
+		},
+		{
+			"name": "bird_work_hands_png",
+			"type": "image",
+			"url": "textures/bird_work_hands.png"
+		},
+		{
+			"name": "purple_dialog_frame_png",
+			"type": "image",
+			"url": "textures/purple_dialog_frame.png"
+		},
+		{
+			"name": "cage_png",
+			"type": "image",
+			"url": "textures/cage.png"
+		},
+		{
+			"name": "pink_circle_png",
+			"type": "image",
+			"url": "textures/pink_circle.png"
+		},
+		{
+			"name": "worker_bird_first_png",
+			"type": "image",
+			"url": "textures/worker_bird_first.png"
+		},
+		{
+			"name": "trunk_png",
+			"type": "image",
+			"url": "textures/trunk.png"
+		},
+		{
+			"name": "bird_foot_png",
+			"type": "image",
+			"url": "textures/bird_foot.png"
+		},
+		{
+			"name": "tree_left_png",
+			"type": "image",
+			"url": "textures/tree_left.png"
+		},
+		{
+			"name": "amy_feed_png",
+			"type": "image",
+			"url": "textures/amy_feed.png"
+		},
+		{
+			"name": "bird_png",
+			"type": "image",
+			"url": "textures/bird.png"
+		},
+		{
+			"name": "can_i_feed_mp3",
+			"type": "sound",
+			"url": "audios/can_i_feed.mp3"
+		},
+		{
+			"name": "can_not_feed_mp3",
+			"type": "sound",
+			"url": "audios/can_not_feed.mp3"
+		},
+		{
+			"name": "worker_bicycle_png",
+			"type": "image",
+			"url": "textures/worker_bicycle.png"
+		},
+		{
+			"name": "amy_bicycle_png",
+			"type": "image",
+			"url": "textures/amy_bicycle.png"
+		},
+		{
+			"name": "blue_sky_png",
+			"type": "image",
+			"url": "textures/blue_sky.png"
+		},
+		{
+			"name": "left_cloud_png",
+			"type": "image",
+			"url": "textures/left_cloud.png"
+		},
+		{
+			"name": "right_cloud_png",
+			"type": "image",
+			"url": "textures/right_cloud.png"
+		},
+		{
+			"name": "road_png",
+			"type": "image",
+			"url": "textures/road.png"
+		},
+		{
+			"name": "light_red_hover_png",
+			"type": "image",
+			"url": "textures/light_red_hover.png"
+		},
+		{
+			"name": "light_red_normal_png",
+			"type": "image",
+			"url": "textures/light_red_normal.png"
+		},
+		{
+			"name": "tip_board_png",
+			"type": "image",
+			"url": "textures/tip_board.png"
+		},
+		{
+			"name": "oragne_hover_png",
+			"type": "image",
+			"url": "textures/oragne_hover.png"
+		},
+		{
+			"name": "orange_normal_png",
+			"type": "image",
+			"url": "textures/orange_normal.png"
+		},
+		{
+			"name": "bicycle_amy_frame_png",
+			"type": "image",
+			"url": "textures/bicycle_amy_frame.png"
+		},
+		{
+			"name": "bicycle_worker_frame_png",
+			"type": "image",
+			"url": "textures/bicycle_worker_frame.png"
+		},
+		{
+			"name": "bicycle_png",
+			"type": "image",
+			"url": "textures/bicycle.png"
+		},
+		{
+			"name": "bicycle_amy_mp3",
+			"type": "sound",
+			"url": "audios/bicycle_amy.mp3"
+		},
+		{
+			"name": "bicycle_worker_mp3",
+			"type": "sound",
+			"url": "audios/bicycle_worker.mp3"
+		},
+		{
+			"name": "result_frame_png",
+			"type": "image",
+			"url": "textures/result_frame.png"
+		},
+		{
+			"name": "result_amy_png",
+			"type": "image",
+			"url": "textures/result_amy.png"
+		},
+		{
+			"name": "result_bg_png",
+			"type": "image",
+			"url": "textures/result_bg.png"
+		},
+		{
+			"name": "photo_cloud_png",
+			"type": "image",
+			"url": "textures/photo_cloud.png"
+		},
+		{
+			"name": "photo_worker_png",
+			"type": "image",
+			"url": "textures/photo_worker.png"
+		},
+		{
+			"name": "photo_amy_png",
+			"type": "image",
+			"url": "textures/photo_amy.png"
+		},
+		{
+			"name": "photo_worker_frame_png",
+			"type": "image",
+			"url": "textures/photo_worker_frame.png"
+		},
+		{
+			"name": "photo_amy_mp3",
+			"type": "sound",
+			"url": "audios/photo_amy.mp3"
+		},
+		{
+			"name": "photo_worker_mp3",
+			"type": "sound",
+			"url": "audios/photo_worker.mp3"
+		},
+		{
+			"name": "flower_amy_frame_png",
+			"type": "image",
+			"url": "textures/flower_amy_frame.png"
+		},
+		{
+			"name": "flowe_png",
+			"type": "image",
+			"url": "textures/flowe.png"
+		},
+		{
+			"name": "flower_worker_frame_png",
+			"type": "image",
+			"url": "textures/flower_worker_frame.png"
+		},
+		{
+			"name": "flower_normal_circle _png",
+			"type": "image",
+			"url": "textures/flower_normal_circle .png"
+		},
+		{
+			"name": "flower_hover_png",
+			"type": "image",
+			"url": "textures/flower_hover.png"
+		},
+		{
+			"name": "flower_worker_png",
+			"type": "image",
+			"url": "textures/flower_worker.png"
+		},
+		{
+			"name": "flower_worker_normal_png",
+			"type": "image",
+			"url": "textures/flower_worker_normal.png"
+		},
+		{
+			"name": "flower_worker_hover_png",
+			"type": "image",
+			"url": "textures/flower_worker_hover.png"
+		},
+		{
+			"name": "flower_worker_mp3",
+			"type": "sound",
+			"url": "audios/flower_worker.mp3"
+		},
+		{
+			"name": "flower_amy_mp3",
+			"type": "sound",
+			"url": "audios/flower_amy.mp3"
+		}
+	]
+}

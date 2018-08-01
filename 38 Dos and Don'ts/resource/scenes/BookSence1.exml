@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BookSence1Skin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="grayTweenGroup">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.5}" scaleY="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="164f32d16f1" ></w:Config>
+
+	<e:Group id="classRoomGroup">
+	<e:Image id="blackBoard" source="black_board_png"/>	
+	<e:Image id="teacherImg" source="teacher_normal_png" x="360.8" y="-124.4"/>
+	<e:Image id="studentsImg" source="students_png" x="303" y="493.5"/>	
+	</e:Group>
+ 
+	<e:Group id="dialogGroup" visible="false">
+	<e:Image source="blue_frame_png"  x="825.5" y="-2.4"/>
+
+	<e:Image id="teacherHeadImg" source="teacher_head_normal_png" x="980.97" y="27.27"/>	
+	<e:Image id="teacherTouchImg" source="pink_circle_png" x="980.97" y="27.27"/>
+
+	<e:Image id="pinkFrameImg" source="pink_frame_png" x="560" y="640"/>
+	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="586" y="709.5" textColor="#000000" size="50"/>
+	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="588.5" y="769.5" textColor="#000000" size="50"/>
+	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="159.27" size="70" textColor="#000000"/>
+	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="300" size="70" textColor="#000000"/>
+	
+	
+	<e:Image source="fork_icon_png" x="1706" y="1152.5"/>
+	<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
+	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
+	
+	</e:Group>
+
+	<e:Group id="nextGroup" visible="false">
+	<e:Image  source="next_noraml_png" x="1653.5" y="970"/>
+	<e:Label text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+	<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/> 	
+	</e:Group>
+    
+	<e:Group id="grayCanvasGroup" horizontalCenter="0" verticalCenter="0">
+	<e:Image id="image" source="gray_canvas_png"  verticalCenter="0" horizontalCenter="0" alpha="0.8" />
+	<e:Label id="label" text="She is in the classroom now." fontFamily="ComicSansMS3" horizontalCenter="0" verticalCenter="0" size="100"/>
+	</e:Group>
+	
+</e:Skin>
