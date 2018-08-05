@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChunkSkin" width.joined="303" height.joined="320" width.separated="446" height.separated="358" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="joined,separated" >
+	<w:Config id="164fb770ffa" ></w:Config>
+
+	<ns1:Block x.joined="90" bottom.joined="72" x.separated="234" bottom.separated="108" />
+	<ns1:Block x.joined="80" bottom.joined="64" x.separated="208" bottom.separated="96" />
+	<ns1:Block x.joined="70" bottom.joined="56" x.separated="182" bottom.separated="84" />
+	<ns1:Block x.joined="60" bottom.joined="48" x.separated="156" bottom.separated="72" />
+	<ns1:Block x.joined="50" bottom.joined="40" x.separated="130" bottom.separated="60" />
+	<ns1:Block x.joined="40" bottom.joined="32" x.separated="104" bottom.separated="48" />
+	<ns1:Block x.joined="30" bottom.joined="24" x.separated="78" bottom.separated="36"  />
+	<ns1:Block x.joined="20" bottom.joined="16" x.separated="52" bottom.separated="24" />
+	<ns1:Block x.joined="10" bottom.joined="8" x.separated="26" bottom.separated="12" />
+	<ns1:Block x="0" bottom="0" />
+
+</e:Skin>

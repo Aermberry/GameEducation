@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AddCalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		
+	</w:Declarations>
+	<e:Image y="30" horizontalCenter="0"  source="add_and_subtract_more_png"/>
+	<e:Image source="minus_tour_png" x="960" y="55"  anchorOffsetX="0" anchorOffsetY="0" width="635" height="82"/>
+
+	<e:Group id="restartGroup" top="47" right="25" width="214" height="79" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect top="0" right="0" bottom="2" left="0" strokeWeight="5" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:ImageButton id="restartButton" source="restart_normal_png" mouseOverSource="restart_selected_png" verticalCenter="0"  scaleX="0.6" scaleY="0.6" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="demoGroup" top="235" bottom="20" left="275" right="53">
+		<e:Rect top="0" bottom="0" left="0" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1" ellipseWidth="75" y="0" scaleX="1" scaleY="1" right="0"/>
+		<e:Group id="demoHighlightGroup" x="10" y="10">
+			<e:Rect width="152" height="748" x="1400" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="628" height="748" x="783" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="486" height="746" x="315" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="476" height="394" x="18" y="372" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		</e:Group>
+		<e:Group id="addendGroup">
+			<ns1:Bar id="addendBar" color='red' currentState="separated" x="1434" y="46"/>
+			<ns1:Block id="addendBlock" color='red' currentState="separated" x="966" y="95"/>
+			<ns1:Chunk id="addendChunk" color='red' currentState="separated" x="378" y="20"/>
+		</e:Group>
+
+		<e:Group id="augendGroup">
+			<ns1:Bar id="augendBar" color='green' currentState="separated" x="1434" y="452"/>
+			<ns1:Block id="augendBlock" color='green' currentState="separated" x="1035" y="500"/>
+			<ns1:Chunk id="augendChunk" color='green' currentState="separated" x="327" y="412"/>
+		</e:Group>
+		<ns1:ImageButton id="startButton" source="start_normal_png" mouseOverSource="start_selected_png" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+
+	<e:Group id="exitGroup" top="145" right="25" width="145" height="76" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Rect top="0" right="0" bottom="4" left="0" strokeWeight="5" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:ImageButton id="exitButton" source="exit_normal_png" mouseOverSource="exit_selected_png" horizontalCenter="0" verticalCenter="0"  scaleX="0.6" scaleY="0.6"/>
+	</e:Group>
+	
+	<e:Group id="expressionGroup" width="550" height="425" y="180" x="60">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="0" bottom="0"/>
+		<e:Group id="expressionHighlightGroup">
+			<e:Rect width="102" height="382" x="374" y="22" fillColor="0xc5bef2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="382" x="264" y="22" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="382" x="150" y="22" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="120" x="34" y="284" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		</e:Group>
+		<e:Image id="addExpression" horizontalCenter="0" y="209" source="add_expression_png"/>
+		<e:BitmapLabel id="addendLabel" width="276" height="62" y="61" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="85" right="105" textAlign="right"/>
+		<e:BitmapLabel id="augendLabel" width="290" height="62" y="181.5" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="85" right="102" textAlign="right"/>
+		<e:Group id="carryGroup">
+			<ns1:EditableSmallLabel id="decadeCarryLabel" currentState="view"  y="185" x="350"/>
+			<ns1:EditableSmallLabel id="hundredCarryLabel" currentState="view" y="185" x="234"/>
+		</e:Group>
+		<e:Group id="sumGroup">
+			<ns1:EditableLargeLabel id="unitLabel" name="difference0Label" x="389" y="288" width="80" height="120" currentState="view" text="" anchorOffsetX="0"/>
+			<ns1:EditableLargeLabel id="decadeLabel" name="difference1Label" x="278" y="288" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="hundredLabel" name="difference2Label" x="163" y="288" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="thousandLabel" name="difference2Label" x="48" y="288" width="80" height="120" currentState="view" text=""/>
+		</e:Group>
+		
+	</e:Group>
+	<e:Group id="confirmDialogGroup" width="560" height="300" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" strokeColor="0x3e9190" strokeWeight="15"  ellipseWidth="50" fillColor="0x9fded7"/>
+		<e:Label text="要進位嗎？" y="45" textColor="0x000000" size="50" horizontalCenter="0.5" fontFamily="標楷體"/>
+		<ns1:ImageButton id="yesButton" x="70" y="134" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
+		<ns1:ImageButton id="noButton" x="320" y="134" source="no_normal_png" mouseOverSource="no_selected_png"/>
+	</e:Group>
+	<e:Group id="boyGroup" width="338" height="532" bottom="30" left="30" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="thinkCarefullyGroup" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image source="yellow_rectangle_png"/>
+		<e:Label text="想清楚，再試一次！" textColor="0x000000" size="50" horizontalCenter="0" fontFamily="標楷體" verticalCenter="0"/>
+	</e:Group>
+	<ns1:NumberPad id="numberPad" isAddVisible="false" isMinusVisible="false" isEraserVisible="false"  y="172.5" x="625.5" visible="false"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>

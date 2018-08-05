@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BlockSkin" width.joined="213" width.separated="375" height.joined="250" height.separated="213" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="joined,separated" >
+	<w:Config id="164fb76d595" ></w:Config>
+
+	<ns1:Bar x="0" bottom.joined="36" x.separated="0" bottom.separated="0" />
+	<ns1:Bar x="20" bottom.joined="32" x.separated="38" bottom.separated="0" />
+	<ns1:Bar x="40" bottom.joined="28" x.separated="76" bottom.separated="0" />
+	<ns1:Bar x="60" bottom.joined="24" x.separated="114" bottom.separated="0" />
+	<ns1:Bar x="80" bottom.joined="20" x.separated="152" bottom.separated="0" />
+	<ns1:Bar x="100" bottom.joined="16" x.separated="190" bottom.separated="0" />
+	<ns1:Bar x="120" bottom.joined="12" x.separated="228" bottom.separated="0" />
+	<ns1:Bar x="140" bottom.joined="8" x.separated="266" bottom.separated="0" />
+	<ns1:Bar x="160" bottom.joined="4" x.separated="304" bottom.separated="0" />
+	<ns1:Bar x="180" bottom.joined="0" x.separated="342" bottom.separated="0" />
+
+</e:Skin>

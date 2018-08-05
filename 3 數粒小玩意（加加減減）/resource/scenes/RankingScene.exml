@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankingSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="boxOpenTweenGroup">
+			<tween:TweenItem target="{boxClosedImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boxOpenImage}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{strawberryImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{571}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0" />
+	<e:Image x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73" source="minus_tour_png"/>
+	
+	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75"/>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
+	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
+	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label text="排名榜" x="608" y="224" textColor="0x436374" size="60"/>
+	<e:Label text="null" x="758" y="324" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1108" y="324" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="760" y="382" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1110" y="382" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="760" y="448" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1110" y="448" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="760" y="508" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1110" y="508" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="762" y="566" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1112" y="566" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="762" y="632" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1112" y="632" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="760" y="703" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1110" y="703" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="762" y="761" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1112" y="761" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="762" y="827" textColor="0x436374" size="45"/>
+	<e:Label text="null" x="1112" y="827" textColor="0x436374" size="45"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>
