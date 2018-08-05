@@ -40,6 +40,6 @@ class InputExpressionScene extends eui.Component implements  eui.UIComponent, II
 
 	public openSubtractCalculationScene(minuend: number, subtrahend: number): void
 	{
-
+		Main.instance.gotoScene(new SubtractCalculationScene(minuend, subtrahend));
 	}
 }

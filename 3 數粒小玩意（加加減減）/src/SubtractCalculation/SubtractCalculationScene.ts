@@ -1,18 +1,18 @@
-class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAddCalculationView {
+class SubtractCalculationScene extends eui.Component implements  eui.UIComponent, ISubtractCalculationView {
 	private startButton: eui.Button;
 	private restartGroup: eui.Group;
 	private exitGroup: eui.Group;
 
-	private addendLabel: eui.BitmapLabel;
-	private augendLabel: eui.BitmapLabel;
+	private minuendLabel: eui.BitmapLabel;
+	private subtrahendLabel: eui.BitmapLabel;
 	private expressionHighlightGroup: eui.Group;
-	private carryGroup: eui.Group;
-	private sumGroup: eui.Group;
+	private newMinuendGroup: eui.Group;
+	private differenceGroup: eui.Group;
 
 	private demoGroup: eui.Group;
 	private demoHighlightGroup: eui.Group;
-	private addendGroup: eui.Group;
-	private augendGroup: eui.Group;
+	private minuendGroup: eui.Group;
+	private subtrahendGroup: eui.Group;
 
 	private confirmDialogGroup: eui.Group;
 	private yesButton: eui.Button;
@@ -23,45 +23,58 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 	private boyFactory: egret.MovieClipDataFactory;
 	private boyMovie: egret.MovieClip;
 
+	private deleteMinuend20Movie: egret.tween.TweenGroup;
+	private deleteMinuend10Movie: egret.tween.TweenGroup;
+	private deleteMinuend11Movie: egret.tween.TweenGroup;
+	private deleteMinuend00Movie: egret.tween.TweenGroup;
+	private deleteMinuendMovies = {};
+
 	private numberPad: NumberPad;
 	private thinkCarefullyGroup: eui.Group;
+	private thinkCarefullyLabel: eui.Label;
 
-	private presenter: AddCalculationPresenter;
-
-	public constructor(addend: number, augend: number) {
+	private presenter: SubtractCalculationPresenter;
+	
+	public constructor(minuend: number, subtrahend: number) {
 		super();
-		this.presenter = new AddCalculationPresenter(addend, augend);
+		this.presenter = new SubtractCalculationPresenter(minuend, subtrahend);
 	}
 
 	protected partAdded(partName:string,instance:any):void
 	{
 		super.partAdded(partName,instance);
 	}
-
+	
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.deleteMinuendMovies = {
+			"deleteMinuend20Movie": this.deleteMinuend20Movie,
+			"deleteMinuend10Movie": this.deleteMinuend10Movie,
+			"deleteMinuend11Movie": this.deleteMinuend11Movie,
+			"deleteMinuend00Movie": this.deleteMinuend00Movie
+		};
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onStartButtonClick, this.presenter);
 		this.restartGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onRestartButtonClick, this.presenter);
 		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
 
-		this.presenter.loadView(this)
+		this.presenter.loadView(this);
 	}
 	
-	public set addend(value: number)
+	public set minuend(value: number)
 	{
-		this.addendLabel.text = value.toString();
+		this.minuendLabel.text = value.toString();
 		for (let position = 0; position < 3; position++) {
-			(this.addendGroup.getChildAt(position) as IParticleComponent).digit = this.presenter.getDigitAtPosition(value, position);
+			(this.minuendGroup.getChildAt(position) as IParticleComponent).digit = this.presenter.getDigitAtPosition(value, position);
 		}
 	}
 	
-	public set augend(value: number)
+	public set subtrahend(value: number)
 	{
-		this.augendLabel.text = value.toString();
+		this.subtrahendLabel.text = value.toString();
 		for (let position = 0; position < 3; position++) {
-			(this.augendGroup.getChildAt(position) as IParticleComponent).digit = this.presenter.getDigitAtPosition(value, position);
+			(this.subtrahendGroup.getChildAt(position) as IParticleComponent).digit = this.presenter.getDigitAtPosition(value, position);
 		}
 	}
 
@@ -88,14 +101,14 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 	}
 
 	/** 把被加数移动到加数旁边 */
-	public async moveAddendToAugend(position: number): Promise<void>
+	/*public async moveAddendToAugend(position: number): Promise<void>
 	{
 		(this.addendGroup.getChildAt(position) as IParticleComponent).moveTo((this.augendGroup.getChildAt(position) as IParticleComponent));
 		await lzlib.ThreadUtility.sleep(2000);
-	}
+	}*/
 
 	/** 合并被加数和加数 */
-	public async mergeAddendAndAugend(position: number): Promise<void>
+	/*public async mergeAddendAndAugend(position: number): Promise<void>
 	{
 		if (position == 1) {
 			(this.addendGroup.getChildAt(position) as IParticleComponent).mergeAddend((this.augendGroup.getChildAt(position) as IParticleComponent))
@@ -103,10 +116,10 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 			(this.augendGroup.getChildAt(position) as IParticleComponent).mergeAddend((this.addendGroup.getChildAt(position) as IParticleComponent))
 		}
 		await lzlib.ThreadUtility.sleep(2000);
-	}
+	}*/
 
 	/** 合并进位 */
-	public async mergeCarry(position: number): Promise<void>
+	/*public async mergeCarry(position: number): Promise<void>
 	{
 		if (position == 1) {
 			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.addendGroup.getChildAt(position) as IParticleComponent));
@@ -114,32 +127,32 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.augendGroup.getChildAt(position) as IParticleComponent));
 		}
 		await lzlib.ThreadUtility.sleep(2000);
-	}
+	}*/
 
-	/** 设置进位 */
-	public setCarry(carry: number, position: number): void
+	/** 设置新被减数 */
+	public setNewMinuend(minuend: number, position: number, borrowTime: number): void
 	{
-		(this.carryGroup.getChildAt(position) as EditableLabel).text = carry.toString();
+		((this.newMinuendGroup.getChildAt(position) as eui.Group).getChildAt(borrowTime) as EditableLabel).text = minuend.toString();
 	}
 
 	/** 令和的指定位进入编辑模式 */
-	public changeSumToEditMode(position: number): void
+	public changeDifferenceToEditMode(position: number): void
 	{
-		(this.sumGroup.getChildAt(position) as EditableLabel).currentState = 'edit';
+		(this.differenceGroup.getChildAt(position) as EditableLabel).currentState = 'edit';
 	}
 
 	/** 令和的指定位进入只读模式 */
-	public changeSumToViewMode(position: number): void
+	public changeDifferenceToViewMode(position: number): void
 	{
-		(this.sumGroup.getChildAt(position) as EditableLabel).currentState = 'view';
+		(this.differenceGroup.getChildAt(position) as EditableLabel).currentState = 'view';
 	}
 
 	/** 读取用户输入的指定位的和 */
-	public async getSumAsync(position: number): Promise<string>
+	public async getDifferenceAsync(position: number): Promise<string>
 	{
 		this.numberPad.visible = true;
 		let char = await this.numberPad.getCharAsync();
-		(this.sumGroup.getChildAt(position) as EditableLabel).text = char;
+		(this.differenceGroup.getChildAt(position) as EditableLabel).text = char;
 		this.numberPad.visible = false;
 		return char;
 	}
@@ -147,30 +160,46 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 	/** 显示仔细想一想的提示 */
 	public async alertThingCarefully(): Promise<void>
 	{
-		this.thinkCarefullyGroup.visible = true;
+		this.thinkCarefullyGroup.visible = true; 
+		this.thinkCarefullyLabel.text = '想清楚，再試一次！';
 		await lzlib.ThreadUtility.sleep(1500);
 		this.thinkCarefullyGroup.visible = false;
 	}
 
-	/** 显示是否需要进位的对话框 */
-	public showNeedCarryDialog(): void
+	/** 显示是否需要退位的对话框 */
+	public showNeedBorrowDialog(): void
 	{
 		this.confirmDialogGroup.visible = true;
 	}
 
-	/** 隐藏是否需要进位的对话框 */
-	public hideNeedCarryDialog(): void
+	/** 隐藏是否需要退位的对话框 */
+	public hideNeedBorrowDialog(): void
 	{
 		this.confirmDialogGroup.visible = false;
 	}
 
-	/** 获取用户是否需要进位的选择 */
-	public confirmNeedCarryAsync(): Promise<boolean>
+	/** 获取用户是否需要退位的选择 */
+	public confirmNeedBorrowAsync(): Promise<boolean>
 	{
 		return new Promise<boolean>(resolve => {
 			this.yesButton.once(egret.TouchEvent.TOUCH_TAP, () => resolve(true), this);
 			this.noButton.once(egret.TouchEvent.TOUCH_TAP, () => resolve(false), this);
 		});
+	}
+
+	/** 显示提示“十位是0, 再向百位借” */
+	public async alertBorrowOneFromHundredBecauseTenIsZeroTip(minuend: number): Promise<void>
+	{
+		this.thinkCarefullyGroup.visible = true;
+		this.thinkCarefullyLabel.text = '十位是零，再向百位借。';
+		await lzlib.ThreadUtility.sleep(1500);
+		this.thinkCarefullyGroup.visible = false;
+	}
+
+	/** 播放被减数被删除的动画 */
+	public playMinuendDeleteMovie(position: number, borrowTime: number): void
+	{
+		(this.deleteMinuendMovies[`deleteMinuend${position}${borrowTime}Movie`] as egret.tween.TweenGroup).play(0);
 	}
 
 	public openInputExpressoionScene(): void

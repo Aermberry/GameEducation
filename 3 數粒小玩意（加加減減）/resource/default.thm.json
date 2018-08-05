@@ -22,7 +22,8 @@
 		"Particle": "resource/components/Particle.exml",
 		"Bar": "resource/components/Bar.exml",
 		"Block": "resource/components/Block.exml",
-		"Chunk": "resource/components/Chunk.exml"
+		"Chunk": "resource/components/Chunk.exml",
+		"SubtractCalculationScene": "resource/eui_skins/SubtractCalculationScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -41,6 +42,7 @@
 		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
+		"resource/eui_skins/SubtractCalculationScene.exml",
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",

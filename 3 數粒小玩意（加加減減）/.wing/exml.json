@@ -108,5 +108,10 @@
         "path": "components/Chunk.ts",
         "class": "Chunk",
         "parentPath": ""
+    },
+    "1650958ffab": {
+        "path": "SubtractCalculation/SubtractCalculationScene.ts",
+        "class": "SubtractCalculationScene",
+        "parentPath": ""
     }
 }
