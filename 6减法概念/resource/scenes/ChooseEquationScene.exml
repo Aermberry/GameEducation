@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChooseEquationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image source="math143Less21Rectbg_png"/>
+	<e:Rect id="math143Less21Rect" width="279" height="222" x="195" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="math134Less115Rect" width="279" height="222" x="509" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="math315Less123Rect" width="279" height="222" x="823" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="math321Less125Rect" width="279" height="222" x="1132" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+	<e:Rect id="math203Less24Rect" width="279" height="222" x="1441" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+</e:Skin>

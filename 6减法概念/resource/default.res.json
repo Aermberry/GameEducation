@@ -1,0 +1,350 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,math143Less21Rectbg_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/splash/add_and_subtract.png",
+			"type": "image",
+			"name": "add_and_subtract_png"
+		},
+		{
+			"url": "textures/splash/add_info.png",
+			"type": "image",
+			"name": "add_info_png"
+		},
+		{
+			"url": "textures/splash/automobile_exhauts.png",
+			"type": "image",
+			"name": "automobile_exhauts_png"
+		},
+		{
+			"url": "textures/splash/cactus.png",
+			"type": "image",
+			"name": "cactus_png"
+		},
+		{
+			"url": "textures/splash/car.png",
+			"type": "image",
+			"name": "car_png"
+		},
+		{
+			"url": "textures/splash/cloud1.png",
+			"type": "image",
+			"name": "cloud1_png"
+		},
+		{
+			"url": "textures/splash/cloud2.png",
+			"type": "image",
+			"name": "cloud2_png"
+		},
+		{
+			"url": "textures/splash/cloud3.png",
+			"type": "image",
+			"name": "cloud3_png"
+		},
+		{
+			"url": "textures/splash/education_and_manpower_bureau.png",
+			"type": "image",
+			"name": "education_and_manpower_bureau_png"
+		},
+		{
+			"url": "textures/splash/eight.png",
+			"type": "image",
+			"name": "eight_png"
+		},
+		{
+			"url": "textures/splash/five.png",
+			"type": "image",
+			"name": "five_png"
+		},
+		{
+			"url": "textures/splash/four_and_cactus.png",
+			"type": "image",
+			"name": "four_and_cactus_png"
+		},
+		{
+			"url": "textures/splash/grass_dark_light.png",
+			"type": "image",
+			"name": "grass_dark_light_png"
+		},
+		{
+			"url": "textures/splash/grass_dark.png",
+			"type": "image",
+			"name": "grass_dark_png"
+		},
+		{
+			"url": "textures/splash/grass_light_dark.png",
+			"type": "image",
+			"name": "grass_light_dark_png"
+		},
+		{
+			"url": "textures/splash/grass_light.png",
+			"type": "image",
+			"name": "grass_light_png"
+		},
+		{
+			"url": "textures/splash/nine.png",
+			"type": "image",
+			"name": "nine_png"
+		},
+		{
+			"url": "textures/splash/one.png",
+			"type": "image",
+			"name": "one_png"
+		},
+		{
+			"url": "textures/splash/rectangle_cyan.png",
+			"type": "image",
+			"name": "rectangle_cyan_png"
+		},
+		{
+			"url": "textures/splash/seven.png",
+			"type": "image",
+			"name": "seven_png"
+		},
+		{
+			"url": "textures/splash/six.png",
+			"type": "image",
+			"name": "six_png"
+		},
+		{
+			"url": "textures/splash/three.png",
+			"type": "image",
+			"name": "three_png"
+		},
+		{
+			"url": "textures/splash/two.png",
+			"type": "image",
+			"name": "two_png"
+		},
+		{
+			"url": "textures/splash/splash_bg.png",
+			"type": "image",
+			"name": "splash_bg_png"
+		},
+		{
+			"url": "textures/splash/one_roof.png",
+			"type": "image",
+			"name": "one_roof_png"
+		},
+		{
+			"url": "textures/splash/five_roof.png",
+			"type": "image",
+			"name": "five_roof_png"
+		},
+		{
+			"url": "textures/splash/seven_shadow.png",
+			"type": "image",
+			"name": "seven_shadow_png"
+		},
+		{
+			"url": "textures/splash/three_roof.png",
+			"type": "image",
+			"name": "three_roof_png"
+		},
+		{
+			"url": "textures/splash/three_shadow.png",
+			"type": "image",
+			"name": "three_shadow_png"
+		},
+		{
+			"url": "textures/splash/three_shadow_middle.png",
+			"type": "image",
+			"name": "three_shadow_middle_png"
+		},
+		{
+			"url": "textures/splash/three_shadow_bottom.png",
+			"type": "image",
+			"name": "three_shadow_bottom_png"
+		},
+		{
+			"url": "textures/splash/three_shadow_middle_bottom.png",
+			"type": "image",
+			"name": "three_shadow_middle_bottom_png"
+		},
+		{
+			"url": "textures/splash/nine_shadow_bottom.png",
+			"type": "image",
+			"name": "nine_shadow_bottom_png"
+		},
+		{
+			"url": "textures/splash/nine_shadow_middle.png",
+			"type": "image",
+			"name": "nine_shadow_middle_png"
+		},
+		{
+			"url": "textures/splash/nine_roof.png",
+			"type": "image",
+			"name": "nine_roof_png"
+		},
+		{
+			"url": "textures/splash/six_shadow_bottom.png",
+			"type": "image",
+			"name": "six_shadow_bottom_png"
+		},
+		{
+			"url": "textures/splash/six_shadow_middle.png",
+			"type": "image",
+			"name": "six_shadow_middle_png"
+		},
+		{
+			"url": "textures/splash/six_roof.png",
+			"type": "image",
+			"name": "six_roof_png"
+		},
+		{
+			"url": "textures/splash/eight_shadow_top_left.png",
+			"type": "image",
+			"name": "eight_shadow_top_left_png"
+		},
+		{
+			"url": "textures/splash/eight_shadow_bottom_right.png",
+			"type": "image",
+			"name": "eight_shadow_bottom_right_png"
+		},
+		{
+			"url": "textures/splash/eight_shadow_bottom_left.png",
+			"type": "image",
+			"name": "eight_shadow_bottom_left_png"
+		},
+		{
+			"name": "math143Less21Rectbg_png",
+			"type": "image",
+			"url": "textures/math143Less21Rectbg.png"
+		}
+	]
+}
