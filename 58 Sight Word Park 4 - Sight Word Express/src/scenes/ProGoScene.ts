@@ -16,7 +16,8 @@ class ProGoScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-        
+        mouse.setButtonMode(this.playGameGroup, true);
+        mouse.setButtonMode(this.backGroup, true);
 		this.backGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 		this.playGameGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.playGameScene, this);
         this.currentSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play(0,1);	

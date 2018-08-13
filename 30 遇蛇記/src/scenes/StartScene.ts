@@ -10,13 +10,15 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected partAdded(partName:string,instance:any):void
 	{
 		super.partAdded(partName,instance);
-		mouse.enable(this.stage);
 	}
 
 
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.exitButton, true);
 		this.startSoundChannel = (RES.getRes('kids_there_is_a_story_below_mp3') as egret.Sound).play(0, 1);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);

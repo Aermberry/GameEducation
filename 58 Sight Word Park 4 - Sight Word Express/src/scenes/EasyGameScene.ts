@@ -45,6 +45,7 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.backBtn, true);
 
 		this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.birdImg.source= 'bird_normal_png', this);
 		this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.birdImg.source= 'bird_hover_png', this);
@@ -58,12 +59,11 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 			cargo.addChild(cargoDropdownMovieClip);
 			cargo.swapChildren(cargoDropdownMovieClip, cargo.getChildByName('label'));
 			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
-			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
-			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
+			mouse.setButtonMode(cargo, true);
 		}
 
 		this.startGame();
-		//this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
+		this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 		
 	}
 

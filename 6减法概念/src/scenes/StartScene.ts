@@ -14,6 +14,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
 		this.splashTweenGroup.addEventListener(egret.Event.COMPLETE, this.onSplashTweenGroupComplete, this);
 		this.splashTweenGroup.play(0);
 	}

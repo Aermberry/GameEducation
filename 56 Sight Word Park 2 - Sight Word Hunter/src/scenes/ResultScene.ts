@@ -22,6 +22,8 @@ class ResultScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this.exitImage, true);
+		mouse.setButtonMode(this.playAgainImage, true);
 		this.playAgainLabel.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPlayAgainLabelMouseOver, this);
 		this.playAgainLabel.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPlayAgainLabelMouseOut, this);
 		this.playAgainLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPlayAgainLabelClick, this);

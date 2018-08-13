@@ -20,8 +20,11 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.backImage, true);
+		mouse.setButtonMode(this.easyImage, true);
+		mouse.setButtonMode(this.proImage, true);
+		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
 
 		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
 

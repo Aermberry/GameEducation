@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>27友谊第一，比赛第二</title>
+    <title>友誼第一，比賽第二</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -19,9 +19,16 @@
             margin: 0;
             height: 100%;
         }
+        #copyright{
+            font-size: 12px;
+        }
         a {
             font-size: 12px;
             color: #666;
+        }    
+        #egret-player{
+        margin: auto;width: 100%;top: 59px; bottom: 3%;
+
         }
         @font-face {
             font-family:"huakangchaoheiti";
@@ -31,29 +38,53 @@
             font-family:"huakangchaoheiti";
             src: url("resource/fonts/huakangcuheiti.ttf");
         }
-       
-        
+        @media screen and (max-device-width:641px) and (max-device-height:823px){
+           #logo {
+               height: 25px;
+           }
+           #egret-player{
+               top: 25px;
+           }
+        }
+        @media screen and (orientation: landscape) {
+            #logo {
+               height: 25px;
+           }
+           #egret-player{
+               top: 25px;
+           }
+        }
+        @media (min-width: 1200px) {
+            #logo {
+               height: auto;
+           }
+           #egret-player{
+               top: 59px;
+           }
+        } 
     </style>
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; height: 10%;' src="resource/images/wlts_logo.jpg" />
-    <div id="egret-player" style="margin: auto;width: 100%;top: 10%; bottom: 3%;" class="egret-player"
-        data-entry-class="Main"
-        data-orientation="auto"
-        data-scale-mode="showAll"
+    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <div id="egret-player" 
+        class="egret-player" 
+        data-entry-class="Main" 
+        data-orientation="auto" 
+        data-scale-mode="showAll" 
         data-frame-rate="30"
         data-content-width="2560"
         data-content-height="1280"
-        data-multi-fingered="2"
-        data-show-fps="false" data-show-log="false"
+        data-multi-fingered="2" 
+        data-show-fps="false" 
+        data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'>
-        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html" style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
+    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+        style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-     <label style="font-family: huakangchaoheiti; font-size: 1px;" />
-     <label style="font-family: huakangcuheiti; font-size: 1px;" />
+    <label style="font-family: huakangchaoheiti; font-size: 1px;" />
+    <label style="font-family: huakangcuheiti; font-size: 1px;" />   
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -97,15 +128,17 @@
              * "calculateCanvasScaleFactor": //a function return canvas scale factor
              * }
              **/
-            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
-                var backingStore = context.backingStorePixelRatio ||
-                    context.webkitBackingStorePixelRatio ||
-                    context.mozBackingStorePixelRatio ||
-                    context.msBackingStorePixelRatio ||
-                    context.oBackingStorePixelRatio ||
-                    context.backingStorePixelRatio || 1;
-                return (window.devicePixelRatio || 1) / backingStore;
-            }});
+            egret.runEgret({
+                renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                    var backingStore = context.backingStorePixelRatio ||
+                        context.webkitBackingStorePixelRatio ||
+                        context.mozBackingStorePixelRatio ||
+                        context.msBackingStorePixelRatio ||
+                        context.oBackingStorePixelRatio ||
+                        context.backingStorePixelRatio || 1;
+                    return (window.devicePixelRatio || 1) / backingStore;
+                }
+            });
 
             var egretPlayer = document.getElementById('egret-player');
             var canvas = egretPlayer.childNodes[1];
@@ -117,22 +150,19 @@
     });
     xhr.send(null);
 </script>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function(){
-        resizeCopyrightFont();
-        $(window).resize(resizeCopyrightFont);
-    });
-
-    function resizeCopyrightFont() {
-        var fontSize = Math.floor($(window).height() / 1280 * 100).toString() + '%';
-        console.log('copyright new font-size: ' + fontSize);
-        $('#copyright').css('font-size', fontSize);
-        $('#copyright a').css('font-size', fontSize);
+    //判断手机横竖屏状态：
+    function hengshuping() {
+        // 竖
+        if (window.orientation == 180 || window.orientation == 0) {
+            window.location.reload()
+        }
+        // 横
+        if (window.orientation == 90 || window.orientation == -90) {
+            window.location.reload()
+        }
     }
+    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
 </script>
 </body>
 
