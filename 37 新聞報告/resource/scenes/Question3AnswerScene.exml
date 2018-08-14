@@ -11,13 +11,13 @@
 		<e:Label text="行政長官建議向立法局申請多少錢用來預防和治療該高度傳染的病毒？" y="150" background="true" backgroundColor="0xffffff" fontFamily="新细明体" size="77" left="600" right="270" height="250" textColor="0x050505"/>
 		<e:RadioButton id="topCheckBox" label="" x="265" y="500" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="一億元" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="a. 一億元" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="middleCheckBox" label="" x="265" y="660" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="二億元" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="b. 二億元" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="bottomCheckBox" label="" x="265" y="820" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="false">
 		</e:RadioButton>
-		<e:Label text="三億元" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="c. 三億元" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:Image x="240" y="185" source="question_png"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >

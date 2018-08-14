@@ -45,10 +45,6 @@
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3AnswerScene.exml",
 		"resource/scenes/Question3Scene.exml",
-		"resource/scenes/Question4AnswerScene.exml",
-		"resource/scenes/Question4Scene.exml",
-		"resource/scenes/Question5AnswerScene.exml",
-		"resource/scenes/Question5Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

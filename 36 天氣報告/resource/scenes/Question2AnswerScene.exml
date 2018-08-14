@@ -13,13 +13,13 @@
 		<e:Label text="聽一聽" x="932" y="239" textColor="0x000000" size="48" fontFamily="華康少女体"/>
 		<e:RadioButton id="topCheckBox" label="" x="265" y="500" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Label text="短暫時間有陽光" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="A. 短暫時間有陽光" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="middleCheckBox" label="" x="265" y="660" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Label text="顯著轉涼" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="B. 顯著轉涼" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<e:RadioButton id="bottomCheckBox" label="" x="265" y="820" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Label text="多雲" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="C. 多雲" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
 		<ns1:ImageButton id="replayButton" source="speaker_png" tipSource="replay_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1625" y="600"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
