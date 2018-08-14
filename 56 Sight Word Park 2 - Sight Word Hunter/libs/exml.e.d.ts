@@ -1,6 +1,6 @@
-declare class BallTarget extends eui.Skin{
-}
 declare class BalloonTarget extends eui.Skin{
+}
+declare class BallTarget extends eui.Skin{
 }
 declare class BirdTarget extends eui.Skin{
 }

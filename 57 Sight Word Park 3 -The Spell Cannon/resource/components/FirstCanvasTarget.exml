@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FirstCanvasTarget" states="normal,hover" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="first_canvas_png" includeIn="normal"/>
+    <e:Image source="first_canvas_hover_png" includeIn="hover" width="93%" height="93%"/>
+    <e:Label id="labelDisplay" size="77" textColor="#000000" textAlign="center"  horizontalCenter="0" verticalCenter="-100"/>
+</e:Skin>

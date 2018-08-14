@@ -48,6 +48,19 @@ var lzlib;
     lzlib.ThreadUtility = ThreadUtility;
     __reflect(ThreadUtility.prototype, "lzlib.ThreadUtility");
 })(lzlib || (lzlib = {}));
+var egret;
+(function (egret) {
+    var tween;
+    (function (tween) {
+        tween.TweenGroup.prototype.playOnceAsync = function () {
+            var _this = this;
+            return new Promise(function (resolve, reject) {
+                _this.once(egret.Event.COMPLETE, resolve, _this);
+                _this.play(0);
+            });
+        };
+    })(tween = egret.tween || (egret.tween = {}));
+})(egret || (egret = {}));
 var lzlib;
 (function (lzlib) {
     var TweenGroupUtility = (function () {

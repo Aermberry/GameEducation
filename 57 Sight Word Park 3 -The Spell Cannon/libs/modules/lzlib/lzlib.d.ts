@@ -18,6 +18,11 @@ declare namespace lzlib {
         static playSound(soundName: string): Promise<void>;
     }
 }
+declare namespace egret.tween {
+    interface TweenGroup {
+        playOnceAsync(): Promise<void>;
+    }
+}
 declare namespace lzlib {
     class TweenGroupUtility {
         /**

@@ -1,6 +1,8 @@
 // TypeScript file
 
-class TargetButton extends eui.Button implements eui.UIComponent{
+// TypeScript file
+
+class ProButton extends eui.Button implements eui.UIComponent{
     
 
     
@@ -21,24 +23,27 @@ class TargetButton extends eui.Button implements eui.UIComponent{
 	}
     
     private onMouseOver(e: mouse.MouseEvent): void
-	{
-		this.currentState = "hover";
+	{    
+        if(this.enabled){
+        this.currentState = "hover";
+        }
+		
 	}
 
 	private onMouseOut(e: mouse.MouseEvent): void
-	{
+	{   
+
 		this.currentState = "normal";
 		
 	}
 
-    public setLabel(value: string): void
+    public setProLabel(value: string): void
 	{   
-		
 		this.label = value;
 	}
     
 	
-    public reset(): void
+    public resetpro(): void
 	{
 		this.currentState = 'normal';
 		this.enabled = true;

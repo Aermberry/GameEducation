@@ -10,13 +10,13 @@
 		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
+		"bin-debug/scenes/Plus125And53Scene.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/scenes/ChooseEquationScene.js",
-		"bin-debug/scenes/Plus125And53Scene.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/scenes/Plus134And168Scene.js",
 		"bin-debug/scenes/Plus165And53Scene.js",
 		"bin-debug/scenes/Plus16And27Scene.js",

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Cannon" states="left,center,right" currentState="left" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="fort_png" includeIn="left" rotation="-20"/>
+    <e:Image source="fort_png" includeIn="center" rotation="0"/>
+    <e:Image source="fort_png" includeIn="right" rotation="20"/>    
+</e:Skin>
