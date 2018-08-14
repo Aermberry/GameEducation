@@ -9,6 +9,7 @@ class Question2AnswerScene extends eui.Component implements  eui.UIComponent {
 	private nextSceneButton: ImageButton;
 	private exitButton: ImageButton;
 	private startButtonTipLabel: eui.Label;
+	private girl: Girl;
 
 	private currentSoundChannel: egret.SoundChannel;
 
@@ -31,6 +32,12 @@ class Question2AnswerScene extends eui.Component implements  eui.UIComponent {
 		this.replayButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onReplayButtonClick, this);
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+		this.girl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGirlClick, this);
+	}
+
+	private async onGirlClick(): Promise<void>
+	{
+		await ThreadUtility.playSound('sound 4 (wQ23.mp3)_mp3');
 	}
 
 	private onReplayButtonClick(): void

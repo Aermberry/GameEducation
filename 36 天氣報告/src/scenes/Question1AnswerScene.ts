@@ -7,6 +7,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 	private exitButton: ImageButton;
 	private weatherTextbox: eui.TextInput;
 	private submitButton: eui.Button;
+	private girl: Girl;
 
 	private currentSoundChannel: egret.SoundChannel;
 	private weather: Weather;
@@ -31,6 +32,13 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 		this.weatherTextbox.addEventListener(egret.Event.CHANGE, this.onWeatherTextboxChange, this);
 		this.submitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSubmitButtonClick, this);
+		this.girl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGirlClick, this);
+	}
+
+	private async onGirlClick(): Promise<void>
+	{
+		await ThreadUtility.playSound(this.weather.audio);
+		await ThreadUtility.playSound('sound 10 (wQ16-22_tail.mp3)_mp3');
 	}
 
 	private onReplayButtonClick(): void
