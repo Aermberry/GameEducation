@@ -51,6 +51,8 @@ class Plus175And168Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.pauseRect, true);
+		mouse.setButtonMode(this.backToIndexImage, true);
 		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);
 		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPauseLabelMouseOut, this);
 		this.pauseLabel.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);

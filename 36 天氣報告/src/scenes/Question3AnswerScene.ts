@@ -49,6 +49,7 @@ class Question3AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private onReplayButtonClick(): void
 	{
+		this.stopCurrentSoundChannel();
 		this.currentSoundChannel = (RES.getRes('sound 1 (wreport2.mp3)_mp3') as egret.Sound).play(0, 1);
 	}
 

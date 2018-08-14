@@ -17,6 +17,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.exitButton, true);
 		this.startSoundChannel = (RES.getRes('sound 188_mp3') as egret.Sound).play(0, 1);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);

@@ -1,6 +1,70 @@
 interface Array<T> {
     shuffle(): void;
 }
+declare namespace lzlib {
+    /**
+     * 使用方法
+     *  let drag = new Drag();
+        this.stage.addChild(drag);
+        drag.enableDrag(dragObject, true, data);
+    */
+    class Drag extends egret.Sprite {
+        static isDraging: boolean;
+        static dragingObject: egret.DisplayObject;
+        static isAccepted: boolean;
+        static dataTransfer: any;
+        static isCopy: boolean;
+        static originalParent: egret.DisplayObjectContainer;
+        private static originalX;
+        private static originalY;
+        private dragObject;
+        private isCopy;
+        private dataTransfer;
+        private distance;
+        constructor();
+        private onAddToStage(event);
+        enableDrag(dragObject: egret.DisplayObject, isCopy?: boolean, dataTransfer?: any): void;
+        private onTouchBegin(e);
+        private cloneDragObject(dragObject);
+        private onTouchMove(e);
+        private onTouchEnd(e);
+        private static init(dragingObject, isCopy, dataTransfer);
+        private static reset();
+        disableDrag(): void;
+    }
+}
+declare namespace lzlib {
+    class LzDragEvent extends egret.TouchEvent {
+        static readonly DRAG_OVER: string;
+        static readonly DRAG_OUT: string;
+        static readonly DROP: string;
+        dragObject: egret.DisplayObject;
+        constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
+    }
+}
+declare namespace lzlib {
+    /**
+     * 使用方法
+     *  let drop = new Drop();
+        this.stage.addChild(drop);
+        drop.enableDrag(dropObject);
+        dropObject.addEventListener(lzlib.LzDragEvent.DROP, this.onDrop, this);
+
+        onDrop(e: lzlib.DragEvent): void
+        {
+            //处理 e.dragData
+            //调用e.preventDefault()，表示dropObject接受拖入的对象
+            e.preventDefault();
+        }
+    */
+    class Drop extends egret.Sprite {
+        private dropObject;
+        constructor();
+        enableDrop(dropObject: egret.DisplayObject): void;
+        disableDrop(): void;
+        private onTouchEnd(e);
+    }
+}
 interface Math {
     randomMinMax(min: number, max: number): number;
 }

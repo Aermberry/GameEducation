@@ -23,6 +23,8 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated(): void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.exitButton, true);
 		this.startButton.once(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonMouseOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonMouseOut, this);

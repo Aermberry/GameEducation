@@ -194,7 +194,7 @@
 	<e:Image id="topTrain" source="top_train_png"  x="92" y="-76"/>
 	<e:Image source="sight_word_express_png" x="232.97" y="188"/>
 	<e:Image source="red_stage_png" x="-1262" y="-230"/>
-	<e:Image source="back_png" x="1738" y="1052" />
+	<e:Image id="backBtn" source="back_png" x="1738" y="1052" />
 
 	<e:Label id="readyText" text="Ready!"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="-500" alpha="0"/>
 	<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" y="-500"/>

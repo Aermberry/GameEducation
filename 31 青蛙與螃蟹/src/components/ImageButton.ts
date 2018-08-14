@@ -7,8 +7,9 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 
 	public constructor() {
 		super();
-		this.width = 100
-		this.height = 100
+		this.width = 100;
+		this.height = 100;
+		mouse.setButtonMode(this, true);
 	}
 
 	public get source(): string

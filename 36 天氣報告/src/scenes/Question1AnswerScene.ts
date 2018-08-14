@@ -35,6 +35,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private onReplayButtonClick(): void
 	{
+		this.stopCurrentSoundChannel();
 		this.currentSoundChannel = (RES.getRes('sound 3 (wreport0.mp3)_mp3') as egret.Sound).play(0, 1);
 	}
 
@@ -64,6 +65,7 @@ class Question1AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private async onSubmitButtonClick(): Promise<void>
 	{
+		this.stopCurrentSoundChannel();
 		if (this.weatherTextbox.text.trim() != this.weather.result) {
 			this.showWrongResultGroup();
 			this.currentSoundChannel = (RES.getRes('wrong_answer_mp3') as egret.Sound).play(0, 1);

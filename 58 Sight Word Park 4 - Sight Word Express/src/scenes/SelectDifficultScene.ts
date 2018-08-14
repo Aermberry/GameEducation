@@ -17,6 +17,9 @@ class SelectDifficultScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this.backGroup, true);
+		mouse.setButtonMode(this.easyGroup, true);
+		mouse.setButtonMode(this.proGroup, true);
 		this.backGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 		this.easyGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goEasyGoGameScene, this);
 		this.proGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goProGoGameScene, this);

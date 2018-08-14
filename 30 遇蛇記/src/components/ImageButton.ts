@@ -50,6 +50,7 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.setButtonMode(this, true);
 		this.mainImage.source = this.source
 		this.tipImage.source = this.tipSource
 		this.tipImage.y = this.mainImage.y + this.mainImage.height;

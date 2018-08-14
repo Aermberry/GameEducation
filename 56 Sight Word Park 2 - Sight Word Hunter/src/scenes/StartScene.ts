@@ -18,6 +18,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.sightWordHunterImage, true);
 		this.sightWordHunterImage.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onSightWordHunterMouseOver, this);
 		this.sightWordHunterImage.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onSightWordHunterMouseOut, this);
 		this.sightWordHunterImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSightWordHunterClick, this);
