@@ -1,0 +1,205 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/HittheGong/HittheGong.json",
+			"type": "json",
+			"name": "HittheGong_json"
+		},
+		{
+			"url": "textures/HittheGong/HittheGong.png",
+			"type": "image",
+			"name": "HittheGong_png"
+		},
+		{
+			"url": "textures/KenWritesSong/KenWritesSong.json",
+			"type": "json",
+			"name": "KenWritesSong_json"
+		},
+		{
+			"url": "textures/KenWritesSong/KenWritesSong.png",
+			"type": "image",
+			"name": "KenWritesSong_png"
+		},
+		{
+			"url": "textures/Kingkong/Kingkong.json",
+			"type": "json",
+			"name": "Kingkong_json"
+		},
+		{
+			"url": "textures/Kingkong/Kingkong.png",
+			"type": "image",
+			"name": "Kingkong_png"
+		},
+		{
+			"url": "textures/Meets/Meets.json",
+			"type": "json",
+			"name": "Meets_json"
+		},
+		{
+			"url": "textures/Meets/Meets.png",
+			"type": "image",
+			"name": "Meets_png"
+		},
+		{
+			"url": "images/The owl.png",
+			"type": "image",
+			"name": "The owl_png"
+		},
+		{
+			"url": "images/Ball&Box.png",
+			"type": "image",
+			"name": "Ball&Box_png"
+		},
+		{
+			"url": "images/man&girl.png",
+			"type": "image",
+			"name": "man&girl_png"
+		},
+		{
+			"url": "textures/band/band.png",
+			"type": "image",
+			"name": "band_png"
+		},
+		{
+			"url": "textures/band/band.json",
+			"type": "json",
+			"name": "band_json"
+		}
+	]
+}
