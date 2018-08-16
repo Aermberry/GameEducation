@@ -16,6 +16,7 @@ class Question3AnswerScene extends eui.Component implements  eui.UIComponent {
 	private nextSceneButton: ImageButton;
 	private exitButton: ImageButton;
 	private startButtonTipLabel: eui.Label;
+	private girl: Girl;
 
 	private currentSoundChannel: egret.SoundChannel;
 	private allWeathers = ['cloudy', 'spissatus', 'rainy', 'sunny', 'thunderstorm', 'shower'];
@@ -45,6 +46,13 @@ class Question3AnswerScene extends eui.Component implements  eui.UIComponent {
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 		this.setCheckBoxImages();
+		this.girl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onGirlClick, this);
+	}
+
+	private async onGirlClick(): Promise<void>
+	{
+		await ThreadUtility.playSound(this.weather.audio);
+		await ThreadUtility.playSound('sound 25 (wQ01-14_tail.mp3)_mp3');
 	}
 
 	private onReplayButtonClick(): void

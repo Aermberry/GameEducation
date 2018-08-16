@@ -51,8 +51,9 @@ class ImageButton extends eui.Button implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.setButtonMode(this, true);
-		this.mainImage.source = this.source
-		this.tipImage.source = this.tipSource
+		this.mainImage.source = this.source;
+		this.tipImage.source = this.tipSource;
+		this.tipImage.x = (this.mainImage.width - this.tipImage.width) / 2;
 		this.tipImage.y = this.mainImage.y + this.mainImage.height;
 		this.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver, this)
 		this.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut, this)

@@ -20,10 +20,12 @@
 		"Question2Scene": "resource/scenes/Question2Scene.exml",
 		"Question2AnswerScene": "resource/scenes/Question2AnswerScene.exml",
 		"Question3Scene": "resource/scenes/Question3Scene.exml",
-		"Question3AnswerScene": "resource/scenes/Question3AnswerScene.exml"
+		"Question3AnswerScene": "resource/scenes/Question3AnswerScene.exml",
+		"Girl": "resource/components/Girl.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/Girl.exml",
 		"resource/components/ImageButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
@@ -45,10 +47,6 @@
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3AnswerScene.exml",
 		"resource/scenes/Question3Scene.exml",
-		"resource/scenes/Question4AnswerScene.exml",
-		"resource/scenes/Question4Scene.exml",
-		"resource/scenes/Question5AnswerScene.exml",
-		"resource/scenes/Question5Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

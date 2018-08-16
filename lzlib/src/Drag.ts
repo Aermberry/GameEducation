@@ -49,10 +49,11 @@ namespace lzlib {
         private onTouchBegin(e:egret.TouchEvent) {
             Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject as eui.Image) : this.dragObject, this.isCopy, this.dataTransfer);
 
+            let globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
+            Drag.dragingObject.x = globalPoint.x;
+            Drag.dragingObject.y = globalPoint.y;
+
             if (Drag.dragingObject.parent != null) {
-                let globalPoint = Drag.dragingObject.localToGlobal(Drag.dragingObject.x, Drag.dragingObject.y);
-                Drag.dragingObject.x = globalPoint.x;
-                Drag.dragingObject.y = globalPoint.y;
                 Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
 
@@ -82,7 +83,7 @@ namespace lzlib {
         }
     
         private onTouchEnd(e:egret.TouchEvent) {
-            this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
+            this.stage && this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
             if (!Drag.isDraging) {
                 //不处于拖动状态，就不用继续运行了。
                 return;

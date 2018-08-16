@@ -83,6 +83,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.radioGroup.visible = true;
 		TweenGroupUtility.playAnimation(this.radioTweenGroup);
 		await ThreadUtility.playSound('sound 1 (wreport2.mp3)_mp3');
+		await ThreadUtility.playSound('sound 27 (w_to_next.mp3)_mp3');
 		this.radioTweenGroup.stop();
 		this.radioGroup.visible = false;
 		this.nextSceneTipLabel.visible = true;

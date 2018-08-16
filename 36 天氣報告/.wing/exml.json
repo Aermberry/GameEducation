@@ -83,5 +83,15 @@
         "path": "scenes/Question5AnswerScene.ts",
         "class": "Question5AnswerScene",
         "parentPath": ""
+    },
+    "16539599af7": {
+        "path": "components/Girl.ts",
+        "class": "Girl",
+        "parentPath": ""
+    },
+    "165395a1582": {
+        "path": "components/Girl.ts",
+        "class": "Girl",
+        "parentPath": ""
     }
 }

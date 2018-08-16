@@ -10,15 +10,16 @@
 		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
+		"bin-debug/scenes/Question1AnswerScene.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/components/Girl.js",
 		"bin-debug/components/ImageButton.js",
 		"bin-debug/domains/Weather.js",
 		"bin-debug/scenes/CompleteScene.js",
-		"bin-debug/scenes/Question1AnswerScene.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/scenes/Question1Scene.js",
 		"bin-debug/scenes/Question2AnswerScene.js",
 		"bin-debug/scenes/Question2Scene.js",
