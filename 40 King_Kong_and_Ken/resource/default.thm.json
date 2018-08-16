@@ -16,7 +16,9 @@
         "Let's listen to the poem about them": "resource/scenes/Let's listen to the poem about them.exml",
         "Scence00": "resource/scenes/Scence00.exml",
         "Scene00": "resource/scenes/Scene00.exml",
-        "Scence01": "resource/scenes/Scence01.exml"
+        "Scence01": "resource/scenes/Scence01.exml",
+        "Scence03": "resource/scenes/Scence03.exml",
+        "Scene02": "resource/scenes/Scene02.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [
