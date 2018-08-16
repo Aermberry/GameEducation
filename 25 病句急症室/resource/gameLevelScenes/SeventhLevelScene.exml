@@ -267,7 +267,7 @@
 	
 <e:Group id="correctGroup" width="1044" height="101" visible="false">
     <e:Image source="green_blue_frame_png" x="309" y="733" width="1400"/>	
-	<e:Label text="上星期六，學校為畢業的六年級的同學舉行了畢業典禮。" textColor="#000000" fontFamily="金梅新中圆国际码" x="419" y="758.5" size="50"/>
+	<e:Label text="上星期六，學校為六年級的同學舉行了畢業典禮。" textColor="#000000" fontFamily="金梅新中圆国际码" x="419" y="758.5" size="50"/>
 </e:Group>
 	
 

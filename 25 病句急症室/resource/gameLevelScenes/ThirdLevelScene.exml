@@ -265,7 +265,7 @@
 	
 <e:Group id="correctGroup" width="1044" height="101" visible="false">
     <e:Image source="green_blue_frame_png" x="309" y="733" width="1200"/>
-	<e:Label text="頑皮的弟弟太頑皮了，竟在家裡踢足球。" textColor="#000000" fontFamily="金梅新中圆国际码" x="451" y="760" size="50"/>	
+	<e:Label text="弟弟太頑皮了，竟在家裡踢足球。" textColor="#000000" fontFamily="金梅新中圆国际码" x="451" y="760" size="50"/>	
 </e:Group>
 	
 	

@@ -37,7 +37,8 @@ class Question2AnswerScene extends eui.Component implements  eui.UIComponent {
 
 	private async onGirlClick(): Promise<void>
 	{
-		await ThreadUtility.playSound('sound 4 (wQ23.mp3)_mp3');
+		this.stopCurrentSoundChannel();
+		this.currentSoundChannel = await ThreadUtility.playSound('sound 4 (wQ23.mp3)_mp3');
 	}
 
 	private onReplayButtonClick(): void

@@ -57,23 +57,23 @@ class FirstLevelScene extends eui.Component implements  eui.UIComponent {
 		for (let index = 0; index < this.wordGroup.numChildren; index++) {
 			let child = this.wordGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
-			this.stage.addChild(drag);
-			drag.enableDrag(child, true, index);
+			this.addChild(drag);
+			drag.enableDrag(child, false, index);
 		}
 
 		let drop = new lzlib.Drop();
-		this.addChild(drop);
+		this.stage.addChild(drop);
 		drop.enableDrop(this.trashGroup);
 		this.trashGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 	}
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-        console.log('执行了onTrashDrop');
-		console.log('drop index: ' + e.data);
+		this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 
 		if ((e.data as number) == 4) {
             e.preventDefault();
+			this.stage.removeChild(e.dragObject);
 			this.correctGroup.visible = true
 			this.wordGroup.visible = false;			
 			this.doctorAngryImg.visible = false;

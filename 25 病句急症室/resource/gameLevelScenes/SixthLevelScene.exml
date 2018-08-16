@@ -266,9 +266,9 @@
 <ns1:YesOrNoButton id="no" skinName="NoTargetBtn" x="1666" y="1072"  locked="true" visible="false"/>
 	
 	
-<e:Group id="correctGroup" width="1044" height="101" visible="true">
+<e:Group id="correctGroup" width="1044" height="101" visible="false">
     <e:Image source="green_blue_frame_png" x="309" y="733" />
-	<e:Label text="從上星期二那一天起，我便患上了感冒。" textColor="#000000" fontFamily="金梅新中圆国际码" x="451" y="760" size="50"/>	
+	<e:Label text="從上星期二起，我便患上了感冒。" textColor="#000000" fontFamily="金梅新中圆国际码" x="451" y="760" size="50"/>	
 </e:Group>
 
 	

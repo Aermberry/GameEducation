@@ -58,7 +58,7 @@ class TenthLevelScene extends eui.Component implements  eui.UIComponent {
 			let child = this.wordGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, true, index);
+			drag.enableDrag(child, false, index);
 		}
 
 		let drop = new lzlib.Drop();
@@ -69,11 +69,11 @@ class TenthLevelScene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-        console.log('执行了onTrashDrop');
-		console.log('drop index: ' + e.data);
+		this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 
 		if ((e.data as number) == 1) {
             e.preventDefault();
+			this.stage.removeChild(e.dragObject);
 			this.correctGroup.visible = true
 			this.wordGroup.visible = false;	
 			this.doctorAngryImg.visible = false;
