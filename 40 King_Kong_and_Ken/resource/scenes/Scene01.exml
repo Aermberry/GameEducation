@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Scence01Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="Scene01Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16540a434c4" ></w:Config>
 	<e:Group width="1096.98" anchorOffsetX="0" right="0" top="0" bottom="199" anchorOffsetY="0">
 		<e:Label id="text_name" text="      King Kong and Ken" textColor="0xed0eba" anchorOffsetY="0" left="0" right="-44.01999999999998" top="0" height="166.36" verticalAlign="bottom" textAlign="center" size="87" anchorOffsetX="0" width="1141"/>
@@ -11,4 +11,5 @@
 			<e:VerticalLayout/>
 		</e:layout>
 	</e:Group>
+	<ns1:MovieClipPlayer width="384" height="307" x="266" y="34" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="HittheGong"/>
 </e:Skin>

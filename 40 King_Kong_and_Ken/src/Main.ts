@@ -61,7 +61,6 @@ class Main extends eui.UILayer {
         await this.loadResource()
         this.createGameScene();
         const result = await RES.getResAsync("description_json")
-        this.startAnimation(result);
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
@@ -100,6 +99,16 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-           
+        this.addChild(new Scene00())
     }
+
+    public static instance: Main
+
+    public gotoScene(scene: eui.Component)
+    {
+        this.removeChildren()
+        this.addChild(scene);
+    }
+
+    
 }

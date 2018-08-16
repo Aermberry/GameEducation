@@ -1,4 +1,4 @@
-class Scence03 extends eui.Component implements  eui.UIComponent {
+class Scene01 extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}
