@@ -10,6 +10,9 @@
     "parentPath": "",
     "backgroundType": "user"
   },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
   "165405c5d66": {
     "backgroundType": "user"
   }
