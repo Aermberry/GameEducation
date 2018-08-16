@@ -1,29 +1,34 @@
 {
-  "1653b55f616": {
-    "path": "scenes\\Let's listen to the poem about them.ts",
-    "class": "Let's listen to the poem about them",
-    "parentPath": ""
-  },
-  "1653c64b35f": {
-    "path": "scenes\\Scence00.ts",
-    "class": "Scence00",
-    "parentPath": "",
-    "backgroundType": "user"
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  },
-  "165405c5d66": {
-    "backgroundType": "user",
-    "guideLines": [
-      {
-        "type": "v",
-        "pos": 221.212
-      },
-      {
-        "type": "h",
-        "pos": 127.273
-      }
-    ]
-  }
+    "1653b55f616": {
+        "path": "scenes\\Let's listen to the poem about them.ts",
+        "class": "Let's listen to the poem about them",
+        "parentPath": ""
+    },
+    "1653c64b35f": {
+        "path": "scenes\\Scence00.ts",
+        "class": "Scence00",
+        "parentPath": "",
+        "backgroundType": "user"
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165405c5d66": {
+        "backgroundType": "user",
+        "guideLines": [
+            {
+                "type": "v",
+                "pos": 221.212
+            },
+            {
+                "type": "h",
+                "pos": 127.273
+            }
+        ]
+    },
+    "16540a434c4": {
+        "path": "scenes\\Scence01.ts",
+        "class": "Scence01",
+        "parentPath": ""
+    }
 }
