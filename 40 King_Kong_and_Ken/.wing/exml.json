@@ -14,6 +14,16 @@
     "globalAutoLayerMarkEnable": true
   },
   "165405c5d66": {
-    "backgroundType": "user"
+    "backgroundType": "user",
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 221.212
+      },
+      {
+        "type": "h",
+        "pos": 127.273
+      }
+    ]
   }
 }

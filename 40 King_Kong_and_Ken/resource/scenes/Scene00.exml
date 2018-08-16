@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene00Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165405c5d66" ></w:Config>
-	<e:Group height="263" y="3" left="0" right="0">
+	<e:Group height="478.79" left="0" right="0" top="0" anchorOffsetY="0">
+		<e:Label text="Hi children ! This is a poem about a man and a gorilla." textColor="0xb70570" top="0" left="0" right="4" height="240.28" size="73" verticalAlign="middle" anchorOffsetY="0" anchorOffsetX="0" textAlign="center" width="1916"/>
+		<e:Label text="They both love music so they become friends." textColor="0xB70570" top="177" left="0" right="4" height="222.09" size="73" verticalAlign="top" anchorOffsetY="-3" anchorOffsetX="0" textAlign="center" width="1916" x="10" y="10"/>
 		<e:layout>
 			<e:VerticalLayout/>
 		</e:layout>
-
-		<e:Label text="Hi children!This is a poem about a man and a gorilla." x="-4.13" y="200" textColor="0xf709c6" size="41" anchorOffsetX="-2.37" fontFamily="Trebuchet MS" scaleX="1.9" scaleY="1.9" width="1009.29" anchorOffsetY="0" height="93.08" textAlign="center" verticalAlign="middle"/>
-		<e:Label text="They both love music so they become friends." x="82.58" y="131.5" textColor="0xe21dc6" width="1009.29" height="93.08" anchorOffsetX="0" size="41" verticalAlign="top" scaleX="1.9" scaleY="1.9" textAlign="center"/>
-
 	</e:Group>
-
 </e:Skin>
