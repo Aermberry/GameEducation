@@ -16,7 +16,13 @@
 		"Let's listen to the poem about them": "resource/scenes/Let's listen to the poem about them.exml",
 		"Scence00": "resource/scenes/Scence00.exml",
 		"Scene00": "resource/scenes/Scene00.exml",
+<<<<<<< HEAD
 		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
+=======
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
+		"Scene01": "resource/scenes/Scene01.exml",
+		"Scene02": "resource/scenes/Scene02.exml"
+>>>>>>> King_Kong
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -34,7 +40,13 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+<<<<<<< HEAD
 		"resource/scenes/Scene00.exml"
+=======
+		"resource/scenes/Scene00.exml",
+		"resource/scenes/Scene01.exml",
+		"resource/scenes/Scene02.exml"
+>>>>>>> King_Kong
 	],
 	"path": "resource/default.thm.json"
 }
