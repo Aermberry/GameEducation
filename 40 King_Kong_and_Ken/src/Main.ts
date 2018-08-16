@@ -99,7 +99,7 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        this.addChild(new Scene00())
+        this.addChild(new Scene02())
     }
 
     public static instance: Main

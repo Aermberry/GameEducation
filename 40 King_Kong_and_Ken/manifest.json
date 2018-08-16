@@ -17,7 +17,6 @@
 		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/scenes/Scene00.js",
 		"bin-debug/scenes/Scene01.js",
-		"bin-debug/scenes/Scene02.js",
-		"bin-debug/scenes/Scene03.js"
+		"bin-debug/scenes/Scene02.js"
 	]
 }
