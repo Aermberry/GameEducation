@@ -20,8 +20,5 @@ class Scence01 extends eui.Component implements  eui.UIComponent {
 
 		this.addChild(mc1);
 		mc1.gotoAndPlay(1,-1);
-	}
-
-
-	
+	}	
 }

@@ -3,6 +3,10 @@
 		{
 			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png",
 			"name": "preload"
+		},
+		{
+			"keys": "band_json,band_png,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png",
+			"name": "textture"
 		}
 	],
 	"resources": [
