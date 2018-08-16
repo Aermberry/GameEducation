@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,_DS_Store,bar-col-gray_png,bar-col-gray2_png,bar-col-gray3_png,bar-row-blue_png,bar-row-gray_png,biscuit_png,circle-black_png,circle-colours_png,circle-green_png,circle-pink_png,circle-yellow_png,circle_check_unclick_png,circle_horn_click_png,circle_leave_png,floor_red_png,furniture_door_white_png,furniture_hanger_coat_png,furniture_lamp_desk_png,furniture_stool_png,furniture_table_png,furniture_wardrobe_png,goods_bear_png,goods_bird_and_birdcage_png,goods_book_png,goods_cat_png,goods_dog_png,goods_pot_umbrella_png,horn_black_png,panel-bottom_png,panel_bottom_02_png,rect-square-row-seablue_png,rect-square-row-seablue2_png,rect-square-seablue_png,rect-square-seablue2_png,rect-square-white_png,rect-square-white2_png,rect-square-white3_png,rect-white2_png,rect-white3_png,rect_white_floor_png,shape115_png,shape123_png,shape127_png,shape130_png,shape132_png,shape138_png,shape141_png,shape142_png,shape143_png,shape144_png,shape145_png,shape146_png,shape154_png,shape159_png,shape161_png,shape162_png,shape163_png,shape164_png,shape165_png,shape166_png,shape169_png,shape171_png,shape82_png,shape92_png,shape95_png,shape98_png,title-blue_png,title_blue_text_png,wall_left_png,wall_window_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,title-blue_png,title_blue_text_png,rect_white_floor_png,panel-bottom_png,panel_bottom_02_png,horn_black_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle-yellow_png,circle-pink_png,circle-green_png,circle-black_png,circle_leave_png,circle_horn_click_png,circle_check_unclick_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_info_png,alert_border_blue_png",
 			"name": "preload"
 		}
 	],
@@ -137,24 +137,14 @@
 			"name": "description_json"
 		},
 		{
-			"url": "textures/.DS_Store",
-			"type": "bin",
-			"name": "_DS_Store"
+			"url": "textures/alert_border_blue.png",
+			"type": "image",
+			"name": "alert_border_blue_png"
 		},
 		{
-			"url": "textures/bar-col-gray.png",
+			"url": "textures/alert_info.png",
 			"type": "image",
-			"name": "bar-col-gray_png"
-		},
-		{
-			"url": "textures/bar-col-gray2.png",
-			"type": "image",
-			"name": "bar-col-gray2_png"
-		},
-		{
-			"url": "textures/bar-col-gray3.png",
-			"type": "image",
-			"name": "bar-col-gray3_png"
+			"name": "alert_info_png"
 		},
 		{
 			"url": "textures/bar-row-blue.png",
@@ -175,11 +165,6 @@
 			"url": "textures/circle-black.png",
 			"type": "image",
 			"name": "circle-black_png"
-		},
-		{
-			"url": "textures/circle-colours.png",
-			"type": "image",
-			"name": "circle-colours_png"
 		},
 		{
 			"url": "textures/circle-green.png",
@@ -292,184 +277,9 @@
 			"name": "panel_bottom_02_png"
 		},
 		{
-			"url": "textures/rect-square-row-seablue.png",
-			"type": "image",
-			"name": "rect-square-row-seablue_png"
-		},
-		{
-			"url": "textures/rect-square-row-seablue2.png",
-			"type": "image",
-			"name": "rect-square-row-seablue2_png"
-		},
-		{
-			"url": "textures/rect-square-seablue.png",
-			"type": "image",
-			"name": "rect-square-seablue_png"
-		},
-		{
-			"url": "textures/rect-square-seablue2.png",
-			"type": "image",
-			"name": "rect-square-seablue2_png"
-		},
-		{
-			"url": "textures/rect-square-white.png",
-			"type": "image",
-			"name": "rect-square-white_png"
-		},
-		{
-			"url": "textures/rect-square-white2.png",
-			"type": "image",
-			"name": "rect-square-white2_png"
-		},
-		{
-			"url": "textures/rect-square-white3.png",
-			"type": "image",
-			"name": "rect-square-white3_png"
-		},
-		{
-			"url": "textures/rect-white2.png",
-			"type": "image",
-			"name": "rect-white2_png"
-		},
-		{
-			"url": "textures/rect-white3.png",
-			"type": "image",
-			"name": "rect-white3_png"
-		},
-		{
 			"url": "textures/rect_white_floor.png",
 			"type": "image",
 			"name": "rect_white_floor_png"
-		},
-		{
-			"url": "textures/shape115.png",
-			"type": "image",
-			"name": "shape115_png"
-		},
-		{
-			"url": "textures/shape123.png",
-			"type": "image",
-			"name": "shape123_png"
-		},
-		{
-			"url": "textures/shape127.png",
-			"type": "image",
-			"name": "shape127_png"
-		},
-		{
-			"url": "textures/shape130.png",
-			"type": "image",
-			"name": "shape130_png"
-		},
-		{
-			"url": "textures/shape132.png",
-			"type": "image",
-			"name": "shape132_png"
-		},
-		{
-			"url": "textures/shape138.png",
-			"type": "image",
-			"name": "shape138_png"
-		},
-		{
-			"url": "textures/shape141.png",
-			"type": "image",
-			"name": "shape141_png"
-		},
-		{
-			"url": "textures/shape142.png",
-			"type": "image",
-			"name": "shape142_png"
-		},
-		{
-			"url": "textures/shape143.png",
-			"type": "image",
-			"name": "shape143_png"
-		},
-		{
-			"url": "textures/shape144.png",
-			"type": "image",
-			"name": "shape144_png"
-		},
-		{
-			"url": "textures/shape145.png",
-			"type": "image",
-			"name": "shape145_png"
-		},
-		{
-			"url": "textures/shape146.png",
-			"type": "image",
-			"name": "shape146_png"
-		},
-		{
-			"url": "textures/shape154.png",
-			"type": "image",
-			"name": "shape154_png"
-		},
-		{
-			"url": "textures/shape159.png",
-			"type": "image",
-			"name": "shape159_png"
-		},
-		{
-			"url": "textures/shape161.png",
-			"type": "image",
-			"name": "shape161_png"
-		},
-		{
-			"url": "textures/shape162.png",
-			"type": "image",
-			"name": "shape162_png"
-		},
-		{
-			"url": "textures/shape163.png",
-			"type": "image",
-			"name": "shape163_png"
-		},
-		{
-			"url": "textures/shape164.png",
-			"type": "image",
-			"name": "shape164_png"
-		},
-		{
-			"url": "textures/shape165.png",
-			"type": "image",
-			"name": "shape165_png"
-		},
-		{
-			"url": "textures/shape166.png",
-			"type": "image",
-			"name": "shape166_png"
-		},
-		{
-			"url": "textures/shape169.png",
-			"type": "image",
-			"name": "shape169_png"
-		},
-		{
-			"url": "textures/shape171.png",
-			"type": "image",
-			"name": "shape171_png"
-		},
-		{
-			"url": "textures/shape82.png",
-			"type": "image",
-			"name": "shape82_png"
-		},
-		{
-			"url": "textures/shape92.png",
-			"type": "image",
-			"name": "shape92_png"
-		},
-		{
-			"url": "textures/shape95.png",
-			"type": "image",
-			"name": "shape95_png"
-		},
-		{
-			"url": "textures/shape98.png",
-			"type": "image",
-			"name": "shape98_png"
 		},
 		{
 			"url": "textures/title-blue.png",

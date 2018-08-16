@@ -1,6 +1,11 @@
 {
-  "global": {
-    "globalAutoLayerMarkEnable": true,
-    "globalAdsorbEnable": true
-  }
+    "global": {
+        "globalAutoLayerMarkEnable": true,
+        "globalAdsorbEnable": true
+    },
+    "16541ee7aa3": {
+        "path": "scenes/MainScene.ts",
+        "class": "MainScene",
+        "parentPath": ""
+    }
 }

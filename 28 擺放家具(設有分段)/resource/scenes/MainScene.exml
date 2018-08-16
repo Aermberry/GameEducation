@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="MainScene" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-<e:Group id="containerGoods" width="960" height="974" x="1" y="3">
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16541ee7aa3" ></w:Config>
+	<e:Group id="containerGoods" width="960" height="974" x="1" y="3">
 		<e:Rect width="960" height="974" x="11" y="10" anchorOffsetX="11" anchorOffsetY="9" fillColor="0xc5edfd"/>
 		<e:Rect bottom="0" width="960" x="0" height="4" fillColor="0x610316"/>
 		<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
 	<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_text_png"/>
-	<e:Label text="选择物件" x="53.64" y="45.76" textColor="0x000000" bold="true" size="50" anchorOffsetX="0" width="296.97" anchorOffsetY="0" height="128.79" textAlign="center" horizontalCenter="center" verticalAlign="middle" visible="false"/>
 	<e:Group id="goods" width="863" height="881" x="52" y="52">
 		<e:Image id="bookImage" width="150" height="85" x="416" y="69" anchorOffsetX="0" anchorOffsetY="0" source="goods_book_png"/>
 		<e:Image id="bearImage" width="131" height="141" x="690" y="35" anchorOffsetX="0" anchorOffsetY="0" source="goods_bear_png"/>
@@ -27,6 +27,10 @@
 		<e:Image id="furnitureTableImage" width="293" height="263" x="531.39" y="502.3" anchorOffsetX="139.39" anchorOffsetY="130.3" rotation="3.85" source="furniture_table_png"/>
 		<e:Image id="furnitureStoolImage" width="373" height="277" x="249" y="629" source="furniture_stool_png"/>
 		<e:Image id="floorRedImage" width="128" height="71" x="806" y="637" anchorOffsetX="0" anchorOffsetY="0" skewY="12" skewX="40" source="floor_red_png"/>
+		<e:Group width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="alertBorderBlueImage" width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
+			<e:Image id="alertInfoImage" width="807.88" height="165.45" x="25" y="30" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" source="alert_info_png"/>
+		</e:Group>
 
 	
 	</e:Group>
