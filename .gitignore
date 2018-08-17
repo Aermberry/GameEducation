@@ -1,2 +1,7 @@
 bin-debug
 bin-release
+./node_modules
+./.eslintrc.js
+./package.json
+./package-lock.json
+./.gitignore
