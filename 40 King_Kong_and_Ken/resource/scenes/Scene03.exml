@@ -12,6 +12,6 @@
 			</e:layout>
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="97.6" y="205.36000000000004" anchorOffsetX="0" anchorOffsetY="0" dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.6" scaleY="0.6"/>
-		<e:Button label="Next" x="1556.7600000000002" y="951.0000000000001" scaleX="1" scaleY="1"/>
+		<e:Button id="btnNext" label="Next" x="1556.7600000000002" y="951.0000000000001" scaleX="1" scaleY="1"/>
 	</e:Group>
 </e:Skin>

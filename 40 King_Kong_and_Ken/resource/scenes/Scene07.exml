@@ -17,6 +17,6 @@
 			<e:VerticalLayout paddingTop="74" gap="176"/>
 			</e:layout>
 		</e:Group>
-		<e:Button label="Next" x="1514.5" y="918" scaleX="1" scaleY="1"/>
+		<e:Button id="nextBtn" label="Next" x="1514.5" y="918" scaleX="1" scaleY="1"/>
 	</e:Group>
 </e:Skin>

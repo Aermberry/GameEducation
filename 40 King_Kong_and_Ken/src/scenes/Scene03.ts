@@ -1,4 +1,5 @@
 class Scene03 extends eui.Component implements  eui.UIComponent {
+	private btnNext:eui.Button;
 	public constructor() {
 		super();
 	}
@@ -12,6 +13,12 @@ class Scene03 extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.btnNext.addEventListener(
+			egret.TouchEvent.TOUCH_TAP,this.onNextBtnClick,this);
+	}
+
+	private onNextBtnClick():void {
+		Main.instance.gotoScene(new Scene04());
 	}
 	
 }

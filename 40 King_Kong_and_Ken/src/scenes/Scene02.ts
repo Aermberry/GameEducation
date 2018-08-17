@@ -13,11 +13,11 @@ class Scene02 extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.nextBtn.touchEnabled=true;
 		this.nextBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextBtnClick,this);
 	}
 
 	private onNextBtnClick():void {
 		Main.instance.gotoScene(new Scene03());
 	}
-	
 }
