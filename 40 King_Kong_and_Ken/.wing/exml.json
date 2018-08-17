@@ -51,5 +51,8 @@
     "path": "scenes\\Scene02.ts",
     "class": "Scene02",
     "parentPath": ""
+  },
+  "16545bc6d4e": {
+    "backgroundType": "user"
   }
 }
