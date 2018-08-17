@@ -20,7 +20,8 @@
 		"Scene01": "resource/scenes/Scene01.exml",
 		"Scene02": "resource/scenes/Scene02.exml",
 		"btn_next": "resource/components/btn_next.exml",
-		"Scene03": "resource/scenes/Scene03.exml"
+		"Scene03": "resource/scenes/Scene03.exml",
+		"Scene04": "resource/scenes/Scene04.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -42,7 +43,8 @@
 		"resource/scenes/Scene00.exml",
 		"resource/scenes/Scene01.exml",
 		"resource/scenes/Scene02.exml",
-		"resource/scenes/Scene03.exml"
+		"resource/scenes/Scene03.exml",
+		"resource/scenes/Scene04.exml"
 	],
 	"path": "resource/default.thm.json"
 }
