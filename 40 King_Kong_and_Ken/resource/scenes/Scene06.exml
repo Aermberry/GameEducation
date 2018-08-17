@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene06Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16545ec3d8f" ></w:Config>
+	<e:Group horizontalCenter="0" top="0" bottom="0">
+		<e:Label text="Now listen carefully to the " textColor="0x8d3936" size="116" anchorOffsetY="0" height="119.02" anchorOffsetX="0" left="323" right="274" verticalCenter="-222.5" lineSpacing="10" x="-365" y="149" scaleX="1" scaleY="1" verticalAlign="middle"/>
+		<e:Label text="'ong' sound" x="407.5" y="130" textColor="0x8d3936" size="116" scaleX="1" scaleY="1" anchorOffsetX="0" width="1356.69" textAlign="center"/>
+		<e:layout>
+			<e:VerticalLayout gap="65" paddingTop="342"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>
