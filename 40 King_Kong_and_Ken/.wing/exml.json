@@ -1,55 +1,55 @@
 {
-    "1653b55f616": {
-        "path": "scenes\\Let's listen to the poem about them.ts",
-        "class": "Let's listen to the poem about them",
-        "parentPath": ""
-    },
-    "1653c64b35f": {
-        "path": "scenes\\Scence00.ts",
-        "class": "Scence00",
-        "parentPath": "",
-        "backgroundType": "user"
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true,
-        "gridColor": 8421504,
-        "gridEnabled": true,
-        "gridSize": "82"
-    },
-    "165405c5d66": {
-        "backgroundType": "user",
-        "guideLines": [
-            {
-                "type": "v",
-                "pos": 221.212
-            },
-            {
-                "type": "h",
-                "pos": 127.273
-            }
-        ]
-    },
-    "16540c81fc5": {
-        "backgroundType": "user"
-    },
-    "16540a434c4": {
-        "backgroundType": "user"
-    },
-    "16540c71631": {
-        "backgroundType": "user"
-    },
-    "16541a33100": {
-        "path": "scenes\\Scene01.ts",
-        "class": "Scene01",
-        "parentPath": "",
-        "backgroundType": "user"
-    },
-    "16541dea95e": {
-        "backgroundType": "user"
-    },
-    "16541f3b9b5": {
-        "path": "scenes\\Scene02.ts",
-        "class": "Scene02",
-        "parentPath": ""
-    }
+  "1653b55f616": {
+    "path": "scenes\\Let's listen to the poem about them.ts",
+    "class": "Let's listen to the poem about them",
+    "parentPath": ""
+  },
+  "1653c64b35f": {
+    "path": "scenes\\Scence00.ts",
+    "class": "Scence00",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true,
+    "gridColor": 8421504,
+    "gridEnabled": true,
+    "gridSize": "82"
+  },
+  "165405c5d66": {
+    "backgroundType": "user",
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 221.212
+      },
+      {
+        "type": "h",
+        "pos": 127.273
+      }
+    ]
+  },
+  "16540c81fc5": {
+    "backgroundType": "user"
+  },
+  "16540a434c4": {
+    "backgroundType": "user"
+  },
+  "16540c71631": {
+    "backgroundType": "user"
+  },
+  "16541a33100": {
+    "path": "scenes\\Scene01.ts",
+    "class": "Scene01",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "16541dea95e": {
+    "backgroundType": "user"
+  },
+  "16541f3b9b5": {
+    "path": "scenes\\Scene02.ts",
+    "class": "Scene02",
+    "parentPath": ""
+  }
 }

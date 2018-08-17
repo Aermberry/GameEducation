@@ -13,4 +13,5 @@
 	</e:Group>
 	<ns1:MovieClipPlayer width="384" height="307" x="130.8" y="492" anchorOffsetX="0" anchorOffsetY="0" dataSet="HittheGong_json" texture="HittheGong_png" movieClipName="HittheGong" scaleX="0.5" scaleY="0.5"/>
 	<ns1:MovieClipPlayer width="384" height="307" x="34.8" y="60.95" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>
+	<e:Button label="Button" x="1561" y="918"/>
 </e:Skin>

@@ -69,17 +69,18 @@ class FirstLevelScene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
-
 		if ((e.data as number) == 4) {
             e.preventDefault();
+			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);
 			this.correctGroup.visible = true
 			this.wordGroup.visible = false;			
 			this.doctorAngryImg.visible = false;
 			this.doctorBlinkImg.alpha = 1;
-			this.doctorBlinkTweenGroup.play(0);
-			this.trashComplexTweenGroup.play(0);
+			await lzlib.ThreadUtility.playSound('sound 77 (over to down )_mp3');
+			await this.doctorBlinkTweenGroup.playOnceAsync();
+			await lzlib.ThreadUtility.playSound('sound 78_mp3');
+			await this.trashComplexTweenGroup.playOnceAsync();
 			await lzlib.ThreadUtility.sleep(300);
 			
 			this.doctorBlinkTweenGroup.stop();

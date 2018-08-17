@@ -69,10 +69,9 @@ class ForthLevelScene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
-
 		if ((e.data as number) == 2) {
             e.preventDefault();
+			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);
 			this.correctGroup.visible = true
 			this.wordGroup.visible = false;	
