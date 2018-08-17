@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Scene02Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="16540c81fc5" ></w:Config>
-	<e:Group width="960.06" height="796.61" y="1" anchorOffsetY="0" anchorOffsetX="0" right="0">
-		<e:Label text="Ken hears the gong." x="24.06" y="165" textColor="0x5d20f5" size="80"/>
-		<e:Label text="He writes a song." x="172.79" y="321.03" textColor="0x5D20F5" size="80"/>
-		<e:Label text="And not for long," x="57.64" y="499" textColor="0x5D20F5" size="80"/>
-		<e:Label text="He meets King Kong." x="106.06" y="697" textColor="0x5D20F5" size="80"/>
+<e:Skin class="Scene02Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16541f3b9b5"></w:Config>
+	<e:Group width="942.42" height="751.52" x="972.25" y="3.45" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80" />
+		<e:Label text="Ken hears the gong." x="88.06" y="289.55" textColor="0x6042F5" size="80" />
+		<e:Label text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80" />
+		<e:Label text="He meets King Kong," x="82.06" y="652.55" textColor="0x6042F5" size="80" />
 	</e:Group>
-	<e:Image source="Meets_png" x="234.45" y="574" anchorOffsetX="0" width="831.55" anchorOffsetY="0" height="858"/>
+	<ns1:MovieClipPlayer width="384" height="307" x="92.4" y="41.2" anchorOffsetX="0" anchorOffsetY="0"
+	                     dataSet="KenWritesSong_json" texture="KenWritesSong_png" movieClipName="KenWritesSong"
+	                     scaleX="0.4" scaleY="0.4" />
+	<ns1:MovieClipPlayer width="384" height="307" x="292.76" y="533.2" anchorOffsetX="0" anchorOffsetY="0"
+	                     dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.4" scaleY="0.4" />
+	<e:Button label="Next" x="1443.46" y="942"/>
+
 </e:Skin>

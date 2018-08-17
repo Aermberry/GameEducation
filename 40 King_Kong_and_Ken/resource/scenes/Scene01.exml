@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene01Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
-	<w:Config id="16540a434c4" ></w:Config>
-	<e:Group width="1096.98" anchorOffsetX="0" right="0" top="0" bottom="199" anchorOffsetY="0">
-		<e:Label id="text_name" text="      King Kong and Ken" textColor="0xed0eba" anchorOffsetY="0" left="0" right="-44.01999999999998" top="0" height="166.36" verticalAlign="bottom" textAlign="center" size="87" anchorOffsetX="0" width="1141"/>
-		<e:Label id="text_voice" text="     &quot;Ping-Pong,Ping-Pong!&quot;" textColor="0xc36ff7" top="136" left="0" right="-43.01999999999998" anchorOffsetY="-2.73" height="163.33" verticalAlign="bottom" size="80" width="1140" textAlign="center" anchorOffsetX="-5.65"/>
-		<e:Label id="text_content" text="    King kong is Strong." textColor="0xc36ff7" top="279" left="0" right="121.98000000000002" anchorOffsetY="0" height="178.48" verticalAlign="bottom" size="80" width="975" textAlign="left" x="10" y="10"/>
-		<e:Label text="&quot;Ding- Dong ,Ding-Dong&quot;" top="528" left="0" right="-37.01999999999998" anchorOffsetY="0" height="172.42" verticalAlign="bottom" size="80" width="1134" textAlign="center" id="text_content0" x="20" y="20" textColor="0xc36ff7" anchorOffsetX="0"/>
-		<e:Label text="   kong hits the gong." textColor="0xc36ff7" top="728" left="0" right="-45.01999999999998" anchorOffsetY="0" height="151.2" verticalAlign="bottom" size="80" width="1142" textAlign="left" id="text_content1" x="30" y="30"/>
+	<w:Config id="16541a33100" ></w:Config>
+	<e:Group width="1081.83" anchorOffsetX="0" right="0" top="0" bottom="227" anchorOffsetY="0">
+		<e:Label text="King kong and Ken" x="202.35" y="84" size="94" anchorOffsetY="0" height="137.7" verticalAlign="bottom" width="904" textAlign="center" textColor="0xeb3495"/>
+		<e:Label text="&quot;Ping-Pong, Ping-Pong!&quot;" x="0" y="186.3" size="80" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="915" textAlign="center" textColor="0x5d20f5"/>
+		<e:Label text="King Kong is strong." x="0" y="186.3" size="80" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
+		<e:Label text="&quot;Ding-Dong,Ding-Dong&quot;" x="-41.29" y="509.79" size="94" anchorOffsetY="0" height="171.7" verticalAlign="bottom" width="1067.42" textAlign="center" anchorOffsetX="0" textColor="0x5d20f5"/>
+		<e:Label text="Kong hits the gong." x="10" y="196.3" size="80" anchorOffsetY="0" height="151.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
 		<e:layout>
 			<e:VerticalLayout/>
 		</e:layout>
 	</e:Group>
-	<ns1:MovieClipPlayer width="384" height="307" x="266" y="34" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="HittheGong"/>
+	<ns1:MovieClipPlayer width="384" height="307" x="130.8" y="492" anchorOffsetX="0" anchorOffsetY="0" dataSet="HittheGong_json" texture="HittheGong_png" movieClipName="HittheGong" scaleX="0.5" scaleY="0.5"/>
+	<ns1:MovieClipPlayer width="384" height="307" x="34.8" y="60.95" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>
+	<e:Button label="Button" x="1561" y="918"/>
 </e:Skin>
