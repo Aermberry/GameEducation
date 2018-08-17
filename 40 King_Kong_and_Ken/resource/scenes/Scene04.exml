@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene04Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16545cfd85e" ></w:Config>
-	<e:Group anchorOffsetX="0" left="991" right="0" top="0" bottom="0">
-		<e:Label text="Ken needs King Kong" x="0" y="0" textColor="0x5d20f5" size="68" anchorOffsetY="0" height="193.34" verticalAlign="bottom"/>
-		<e:Label text="To give a hand." x="75" y="226.04" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="147.89" verticalAlign="bottom"/>
-		<e:Label text="King Kong begs Ken" x="0" y="373.93" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
-		<e:Label text="To shake his hand." x="163" y="574" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
-		<e:Button label="Next" x="577.5" y="918"/>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group anchorOffsetX="0" left="991" right="0" top="0" bottom="0" x="991.0000000000001" y="0" scaleX="1" scaleY="1">
+			<e:Label text="Ken needs King Kong" x="0" y="0" textColor="0x5d20f5" size="68" anchorOffsetY="0" height="193.34" verticalAlign="bottom"/>
+			<e:Label text="To give a hand." x="75" y="226.04" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="147.89" verticalAlign="bottom"/>
+			<e:Label text="King Kong begs Ken" x="0" y="373.93" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
+			<e:Label text="To shake his hand." x="163" y="574" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
+			<e:Button label="Next" x="577.5" y="918"/>
+		</e:Group>
+		<ns1:MovieClipPlayer width="384" height="307" x="54" y="256.50000000000006" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>
 	</e:Group>
-<ns1:MovieClipPlayer width="384" height="307" x="54" y="256.5" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>
 </e:Skin>

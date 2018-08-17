@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16545f6272b" ></w:Config>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group top="0" bottom="0" horizontalCenter="0" x="325" y="0" scaleX="1" scaleY="1">
+			<e:Label text="Click on the words  in red and listen." y="0" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="0"/>
+			<e:Group width="1266.67" height="706.06" x="3.33" y="303.27" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label text="'Ping-Pong,Ping-Pong!'" y="-85" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="0" anchorOffsetX="0" width="1266.55"/>
+			<e:Label text="'King Kong is strong'" y="-75" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="10" anchorOffsetX="0" width="1266.55"/>
+			<e:Label text="'Ding-Dong,Ding-Dong.'" y="-65" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="20" anchorOffsetX="0" width="1266.55"/>
+			<e:Label text="Kong hits the gong." y="-55" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="30" anchorOffsetX="0" width="1266.55"/>
+			<e:layout>
+				<e:VerticalLayout paddingTop="-13" gap="60"/>
+			</e:layout>
+			</e:Group>
+			<e:layout>
+			<e:VerticalLayout paddingTop="74" gap="176"/>
+			</e:layout>
+		</e:Group>
+		<e:Button label="Next" x="1514.5" y="918" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

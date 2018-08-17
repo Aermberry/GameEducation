@@ -66,3 +66,7 @@ declare class Scene04Skin extends eui.Skin{
 }
 declare class Scene05Skin extends eui.Skin{
 }
+declare class Scene06Skin extends eui.Skin{
+}
+declare class Scene07Skin extends eui.Skin{
+}
