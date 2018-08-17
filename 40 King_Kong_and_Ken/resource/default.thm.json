@@ -30,6 +30,14 @@
 	"exmls": [
 		"resource/components/btn_next.exml",
 		"resource/components/MovieClipPlayer.exml",
+		"resource/scenes/Scene00.exml",
+		"resource/scenes/Scene01.exml",
+		"resource/scenes/Scene02.exml",
+		"resource/scenes/Scene03.exml",
+		"resource/scenes/Scene04.exml",
+		"resource/scenes/Scene05.exml",
+		"resource/scenes/Scene06.exml",
+		"resource/scenes/Scene07.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -42,15 +50,7 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scenes/Scene00.exml",
-		"resource/scenes/Scene01.exml",
-		"resource/scenes/Scene02.exml",
-		"resource/scenes/Scene03.exml",
-		"resource/scenes/Scene04.exml",
-		"resource/scenes/Scene05.exml",
-		"resource/scenes/Scene06.exml",
-		"resource/scenes/Scene07.exml"
+		"resource/eui_skins/VSliderSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }
