@@ -209,6 +209,23 @@ var egret;
         });
     };
 })(egret || (egret = {}));
+var lzlib;
+(function (lzlib) {
+    var SoundUtility = (function () {
+        function SoundUtility() {
+        }
+        SoundUtility.playSound = function (soundName) {
+            var _this = this;
+            return new Promise(function (resolve, reject) {
+                RES.getRes(soundName).play(0, 1)
+                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+            });
+        };
+        return SoundUtility;
+    }());
+    lzlib.SoundUtility = SoundUtility;
+    __reflect(SoundUtility.prototype, "lzlib.SoundUtility");
+})(lzlib || (lzlib = {}));
 String.prototype.replaceAt = function (index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 };
@@ -244,24 +261,11 @@ var egret;
                 _this.play(0);
             });
         };
+        tween.TweenGroup.prototype.playLoopAsync = function () {
+            for (var key in this.items) {
+                this.items[key].props = { loop: true };
+            }
+            this.play(0);
+        };
     })(tween = egret.tween || (egret.tween = {}));
 })(egret || (egret = {}));
-var lzlib;
-(function (lzlib) {
-    var TweenGroupUtility = (function () {
-        function TweenGroupUtility() {
-        }
-        /**
-         * 循环播放动画
-         */
-        TweenGroupUtility.playAnimation = function (target) {
-            for (var key in target.items) {
-                target.items[key].props = { loop: true };
-            }
-            target.play(0);
-        };
-        return TweenGroupUtility;
-    }());
-    lzlib.TweenGroupUtility = TweenGroupUtility;
-    __reflect(TweenGroupUtility.prototype, "lzlib.TweenGroupUtility");
-})(lzlib || (lzlib = {}));
