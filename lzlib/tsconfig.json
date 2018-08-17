@@ -21,9 +21,9 @@
 		"src/Drop.ts",
 		"src/MathExtension.ts",
 		"src/MovieClipExtension.ts",
+		"src/SoundExtension.ts",
 		"src/StringExtension.ts",
 		"src/ThreadUtility.ts",
-		"src/TweenGroupExtension.ts",
-		"src/TweenGroupUtility.ts"
+		"src/TweenGroupExtension.ts"
 	]
 }
