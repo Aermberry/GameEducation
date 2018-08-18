@@ -7,5 +7,15 @@
         "path": "scenes/MainScene.ts",
         "class": "MainScene",
         "parentPath": ""
+    },
+    "1654b615ed3": {
+        "path": "components/ArticleComponent.ts",
+        "class": "ArticleComponent",
+        "parentPath": ""
+    },
+    "1654b6b7685": {
+        "path": "components/GoodsComponent.ts",
+        "class": "GoodsComponent",
+        "parentPath": ""
     }
 }
