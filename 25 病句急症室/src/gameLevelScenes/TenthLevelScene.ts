@@ -5,33 +5,22 @@ class TenthLevelScene extends eui.Component implements  eui.UIComponent {
 	private yes:YesOrNoButton;
 	private no:YesOrNoButton;
 	private blueFrame:eui.Image;
-	private cueBoxImg:eui.Image;
-	private cueBoxOpenImg:eui.Image;
 	private currentSoundChannel:egret.SoundChannel;
 
-	private greenFrame:eui.Image;
-	private firstTipLabel:eui.Label;
-	private secondTipLabel:eui.Label;
-	private returnBtnImg:eui.Image;
-	private returnLabel:eui.Label;
-	private returnGroup:eui.Group;
+	private cueButton: eui.Button;
+	private cueGroup: eui.Group;
+	private returnGroup: eui.Group;
 	
 	private wordGroup: eui.Group;
 	private correctGroup:eui.Group;
+	private correctLabel: eui.Label;
 
-
-	private trashCanImg: eui.Image;
 	private trashGroup: eui.Group;
 
-	private doctorBlinkTweenGroup:egret.tween.TweenGroup;
 	private doctorAngryTweenGroup:egret.tween.TweenGroup;
 	private trashComplexTweenGroup:egret.tween.TweenGroup;
 	private doctorBlinkImg:eui.Image;
-	private docotrorTipImg:eui.Image;
-    private doctorTipLabel:eui.Label;
 	private doctorAngryImg:eui.Image;
-
-
 
 	public constructor() {
 		super();
@@ -48,69 +37,60 @@ class TenthLevelScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.exitBtn, true);
-		mouse.setButtonMode(this.cueBoxImg, true);
+		mouse.setButtonMode(this.cueButton, true);
 
 		
 		this.exitBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.confrimToExit, this);
-		this.cueBoxImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.cueBoxTouchEevnt, this);
+		this.cueButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.cueBoxTouchEevnt, this);
+		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onReturnGroupClick, this);
 
 		for (let index = 0; index < this.wordGroup.numChildren; index++) {
 			let child = this.wordGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
-			this.stage.addChild(drag);
+			this.addChild(drag);
 			drag.enableDrag(child, false, index);
 		}
 
 		let drop = new lzlib.Drop();
-		this.addChild(drop);
+		this.stage.addChild(drop);
 		drop.enableDrop(this.trashGroup);
 		this.trashGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 	}
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
-
 		if ((e.data as number) == 1) {
             e.preventDefault();
+			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);
-			this.correctGroup.visible = true
-			this.wordGroup.visible = false;	
+			
+			lzlib.SoundUtility.playSound('sound 77 (over to down )_mp3');
+			await this.trashComplexTweenGroup.playOnceAsync();
+			await lzlib.SoundUtility.playSound('sound 78_mp3');
+			this.correctGroup.visible = true;
+			this.wordGroup.visible = false;			
 			this.doctorAngryImg.visible = false;
-			this.doctorBlinkImg.alpha = 1;
-			this.doctorBlinkTweenGroup.play(0);
-			this.trashComplexTweenGroup.play(0);
-			await lzlib.ThreadUtility.sleep(300);
-			this.doctorBlinkTweenGroup.stop();
-			this.trashComplexTweenGroup.stop();
+			this.doctorBlinkImg.visible = true;
+			await lzlib.ThreadUtility.sleep(1500);
 			Main.instance.gotoScene(new ResultScene());
 		}
 		else{
-		   this.docotrorTipImg.visible = true;
-		   this.doctorTipLabel.visible =true;
-           this.doctorAngryTweenGroup.play(0);
-		   await lzlib.ThreadUtility.sleep(300);
-		   this.docotrorTipImg.visible = false;
-           this.doctorTipLabel.visible =false;
-		   this.doctorAngryTweenGroup.stop();
+           await this.doctorAngryTweenGroup.playOnceAsync();
 		}
 	}  
 
 	private cueBoxTouchEevnt():void
 	{   
 		this.stopCurrentSoundChannel();
-		this.cueBoxImg.visible = false;
-		this.cueBoxOpenImg.visible = true;
-		this.greenFrame.visible = true;
-		this.firstTipLabel.visible = true;
-		this.secondTipLabel.visible = true;
-		this.returnBtnImg.visible = true;
-		this.returnLabel.visible = true;
-		this.returnGroup.visible = true;
-		
-
-		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new TenthLevelScene()), this);
+		this.cueButton.currentState = 'down';
+		this.cueGroup.visible = true;
 	    this.currentSoundChannel = (RES.getRes('cue_box_bgm_mp3') as egret.Sound).play(0,1);	
+	}
+
+	private onReturnGroupClick(): void
+	{
+		this.cueGroup.visible = false;
+		this.cueButton.currentState = 'up';
 	}
 
 	private async confrimToExit():Promise<void>
@@ -122,7 +102,7 @@ class TenthLevelScene extends eui.Component implements  eui.UIComponent {
 		this.yes.visible = true;
 		this.no.visible = true;
 		this.yes.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>window.close(), this);
-		this.no.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new TenthLevelScene()), this);
+		this.no.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new FirstLevelScene()), this);
 	}
 
 	private stopCurrentSoundChannel():void
