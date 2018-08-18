@@ -1,37 +1,43 @@
 {
-    "163a0afaec0": {
-        "path": "scenes/StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    },
-    "163b4cfb344": {
-        "path": "scenes/Question1Scene.ts",
-        "class": "Question1Scene",
-        "parentPath": ""
-    },
-    "163b9123877": {
-        "path": "components/ImageButton.ts",
-        "class": "ImageButton",
-        "parentPath": "resource/eui_skins/ButtonSkin.exml"
-    },
-    "163c350201a": {
-        "path": "scenes/Question2Scene.ts",
-        "class": "Question2Scene",
-        "parentPath": ""
-    },
-    "163c36727c5": {
-        "path": "scenes/Question3Scene.ts",
-        "class": "Question3Scene",
-        "parentPath": ""
-    },
-    "163c3afba59": {
-        "path": "scenes/Question4Scene.ts",
-        "class": "Question4Scene",
-        "parentPath": ""
-    },
-    "163c3b811d2": {
-        "path": "scenes/CompleteScene.ts",
-        "class": "CompleteScene",
-        "parentPath": ""
-    }
+  "163a0afaec0": {
+    "path": "scenes/StartScene.ts",
+    "class": "StartScene",
+    "parentPath": "",
+    "guideLinesEnabled": false
+  },
+  "163b4cfb344": {
+    "path": "scenes/Question1Scene.ts",
+    "class": "Question1Scene",
+    "parentPath": ""
+  },
+  "163b9123877": {
+    "path": "components/ImageButton.ts",
+    "class": "ImageButton",
+    "parentPath": "resource/eui_skins/ButtonSkin.exml"
+  },
+  "163c350201a": {
+    "path": "scenes/Question2Scene.ts",
+    "class": "Question2Scene",
+    "parentPath": ""
+  },
+  "163c36727c5": {
+    "path": "scenes/Question3Scene.ts",
+    "class": "Question3Scene",
+    "parentPath": ""
+  },
+  "163c3afba59": {
+    "path": "scenes/Question4Scene.ts",
+    "class": "Question4Scene",
+    "parentPath": ""
+  },
+  "163c3b811d2": {
+    "path": "scenes/CompleteScene.ts",
+    "class": "CompleteScene",
+    "parentPath": ""
+  },
+  "165470e5393": {
+    "path": "components/CircleButton.ts",
+    "class": "CircleButton",
+    "parentPath": ""
+  }
 }

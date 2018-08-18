@@ -1,3 +1,5 @@
+declare class CircleButtonSkin extends eui.Skin{
+}
 declare class ImageButtonSkin extends eui.Skin{
 }
 declare module skins{
