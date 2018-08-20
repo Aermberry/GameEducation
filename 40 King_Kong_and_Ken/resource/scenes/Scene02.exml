@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene02Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16541f3b9b5"></w:Config>
+	<e:Group width="942.42" height="751.52" x="972.25" y="3.45" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80" />
+		<e:Label text="Ken hears the gong." x="88.06" y="289.55" textColor="0x6042F5" size="80" />
+		<e:Label text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80" />
+		<e:Label text="He meets King Kong," x="82.06" y="652.55" textColor="0x6042F5" size="80" />
+	</e:Group>
+	<ns1:MovieClipPlayer width="384" height="307" x="92.4" y="41.2" anchorOffsetX="0" anchorOffsetY="0"
+	                     dataSet="KenWritesSong_json" texture="KenWritesSong_png" movieClipName="KenWritesSong"
+	                     scaleX="0.4" scaleY="0.4" />
+	<ns1:MovieClipPlayer width="384" height="307" x="292.76" y="533.2" anchorOffsetX="0" anchorOffsetY="0"
+	                     dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.4" scaleY="0.4" />
+	<e:Button label="Next" x="1443.46" y="942"/>
+
+</e:Skin>

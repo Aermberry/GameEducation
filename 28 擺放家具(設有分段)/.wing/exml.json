@@ -7,5 +7,25 @@
         "path": "scenes/MainScene.ts",
         "class": "MainScene",
         "parentPath": ""
+    },
+    "16546660e15": {
+        "path": "components/MovieClipPlayer.ts",
+        "class": "MovieClipPlayer",
+        "parentPath": ""
+    },
+    "165467fb6d2": {
+        "path": "components/BiscuitProgressBar.ts",
+        "class": "BiscuitProgressBar",
+        "parentPath": ""
+    },
+    "16546c68142": {
+        "path": "components/goods.ts",
+        "class": "goods",
+        "parentPath": ""
+    },
+    "165474297fe": {
+        "path": "components/TextButton.ts",
+        "class": "TextButton",
+        "parentPath": "resource/eui_skins/ButtonSkin.exml"
     }
 }

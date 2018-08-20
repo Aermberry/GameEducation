@@ -14,6 +14,9 @@
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/components/BiscuitProgressBar.js",
+		"bin-debug/components/goods.js",
+		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/scenes/MainScene.js"
 	]
 }

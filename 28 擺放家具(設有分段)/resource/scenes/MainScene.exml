@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16541ee7aa3" ></w:Config>
 	<e:Group id="containerGoods" width="960" height="974" x="1" y="3">
 		<e:Rect width="960" height="974" x="11" y="10" anchorOffsetX="11" anchorOffsetY="9" fillColor="0xc5edfd"/>
@@ -30,9 +30,9 @@
 		<e:Group width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
 			<e:Image id="alertBorderBlueImage" width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
 			<e:Image id="alertInfoImage" width="807.88" height="165.45" x="25" y="30" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" source="alert_info_png"/>
+			<ns1:MovieClipPlayer width="333" height="20" x="281.55" y="167" anchorOffsetX="0" anchorOffsetY="0" dataSet="horn_animation_json" texture="horn_animation_png" movieClipName="horn_animation" />
 		</e:Group>
 
-	
 	</e:Group>
 	<e:Group id="containerButtom" left="0" right="0" anchorOffsetY="0" top="979" bottom="0">
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
@@ -42,15 +42,6 @@
 			<e:Image id="circleGreenImage" width="147" height="147" x="209" y="70" anchorOffsetX="0" anchorOffsetY="0" source="circle_check_unclick_png"/>
 			<e:Image id="circleBlackImage" width="144" height="147" x="385" y="69" anchorOffsetX="0" anchorOffsetY="0" source="circle_leave_png"/>
 		</e:Group>
-		<e:Group id="rightProcess" width="1212.12" height="275.76" x="666.97" y="151" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="biscuit" width="127" height="159" x="14.73" y="51.82" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
-			<e:Image id="biscuit0" width="127" height="159" x="195.2" y="33.73" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
-			<e:Image id="biscuit1" width="127" height="159" x="315.64" y="55.76" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
-			<e:Image id="biscuit2" width="127" height="159" x="496.11" y="37.67" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
-			<e:Image id="biscuit3" width="127" height="159" x="616.55" y="56.67" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
-			<e:Image id="biscuit4" width="127" height="159" x="797.02" y="38.58" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
-			<e:Image id="biscuit5" width="127" height="159" x="917.46" y="54.55" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
-			<e:Image id="biscuit6" width="127" height="159" x="1097.93" y="36.46" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
-		</e:Group>
+		<ns1:BiscuitProgressBar id="BiscuitProgressBar" width="20" height="20" x="664" y="157.85"/>
 	</e:Group>
 </e:Skin>
