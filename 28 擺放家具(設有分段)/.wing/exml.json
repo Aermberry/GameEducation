@@ -8,24 +8,14 @@
         "class": "MainScene",
         "parentPath": ""
     },
-    "16546660e15": {
-        "path": "components/MovieClipPlayer.ts",
-        "class": "MovieClipPlayer",
+    "1654b615ed3": {
+        "path": "components/ArticleComponent.ts",
+        "class": "ArticleComponent",
         "parentPath": ""
     },
-    "165467fb6d2": {
-        "path": "components/BiscuitProgressBar.ts",
-        "class": "BiscuitProgressBar",
+    "1654b6b7685": {
+        "path": "components/GoodsComponent.ts",
+        "class": "GoodsComponent",
         "parentPath": ""
-    },
-    "16546c68142": {
-        "path": "components/goods.ts",
-        "class": "goods",
-        "parentPath": ""
-    },
-    "165474297fe": {
-        "path": "components/TextButton.ts",
-        "class": "TextButton",
-        "parentPath": "resource/eui_skins/ButtonSkin.exml"
     }
 }

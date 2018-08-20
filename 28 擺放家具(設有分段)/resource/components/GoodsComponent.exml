@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GoodsComponentSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,wrong" >
+	<w:Config id="1654b6b7685" ></w:Config>
+	<e:Image source="circle_pink_png" top="0" left="0" bottom="0" right="0" visible="false" visible.wrong="true" />
+	<e:Image id="goodsImage" source="goods_pot_umbrella_png" horizontalCenter="0" top="40" bottom="30"  />
+</e:Skin>

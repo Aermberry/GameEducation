@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,title-blue_png,title_blue_text_png,rect_white_floor_png,panel-bottom_png,panel_bottom_02_png,horn_black_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle-yellow_png,circle-pink_png,circle-green_png,circle-black_png,circle_leave_png,circle_horn_click_png,circle_check_unclick_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_info_png,alert_border_blue_png,horn_animation_json,horn_animation_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,title-blue_png,title_blue_text_png,rect_white_floor_png,panel-bottom_png,panel_bottom_02_png,horn_black_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle-green_png,circle-black_png,circle_leave_png,circle_horn_click_png,circle_check_unclick_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_info_png,alert_border_blue_png,circle_pink_png",
 			"name": "preload"
 		}
 	],
@@ -172,16 +172,6 @@
 			"name": "circle-green_png"
 		},
 		{
-			"url": "textures/circle-pink.png",
-			"type": "image",
-			"name": "circle-pink_png"
-		},
-		{
-			"url": "textures/circle-yellow.png",
-			"type": "image",
-			"name": "circle-yellow_png"
-		},
-		{
 			"url": "textures/circle_check_unclick.png",
 			"type": "image",
 			"name": "circle_check_unclick_png"
@@ -302,14 +292,9 @@
 			"name": "wall_window_png"
 		},
 		{
-			"url": "textures/horn/horn_animation.json",
-			"type": "json",
-			"name": "horn_animation_json"
-		},
-		{
-			"url": "textures/horn/horn_animation.png",
+			"url": "textures/circle_pink.png",
 			"type": "image",
-			"name": "horn_animation_png"
+			"name": "circle_pink_png"
 		}
 	]
 }
