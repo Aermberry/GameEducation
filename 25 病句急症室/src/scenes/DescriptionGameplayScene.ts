@@ -93,7 +93,7 @@ class DescriptionGameplayScene extends eui.Component implements  eui.UIComponent
 	private goPlayGameScene():void 
 	{
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new FirstLevelScene());
+		Main.instance.gotoScene(new Level01Scene());
 	}
 
 	private initExitBtn():void
