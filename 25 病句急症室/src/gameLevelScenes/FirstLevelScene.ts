@@ -77,9 +77,9 @@ class FirstLevelScene extends eui.Component implements  eui.UIComponent {
 			this.wordGroup.visible = false;			
 			this.doctorAngryImg.visible = false;
 			this.doctorBlinkImg.alpha = 1;
-			await lzlib.ThreadUtility.playSound('sound 77 (over to down )_mp3');
+			await lzlib.SoundUtility.playSound('sound 77 (over to down )_mp3');
 			await this.doctorBlinkTweenGroup.playOnceAsync();
-			await lzlib.ThreadUtility.playSound('sound 78_mp3');
+			await lzlib.SoundUtility.playSound('sound 78_mp3');
 			await this.trashComplexTweenGroup.playOnceAsync();
 			await lzlib.ThreadUtility.sleep(300);
 			
