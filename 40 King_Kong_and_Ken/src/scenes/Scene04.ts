@@ -17,6 +17,11 @@ class Scene04 extends eui.Component implements  eui.UIComponent {
 			egret.TouchEvent.TOUCH_TAP,
 			this.onNextBtnClick,this
 		);
+		this.playBackgroundMusic();
+	}
+
+	private async playBackgroundMusic():Promise<void> {
+		await lzlib.SoundUtility.playSound('01b2_mp3');
 	}
 
 	private onNextBtnClick():void {

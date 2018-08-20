@@ -8,10 +8,14 @@ class Scene06 extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.playBackgroundMusic();
+	}
+
+		private async playBackgroundMusic():Promise<void> {
+		await lzlib.SoundUtility.playSound('');
 	}
 	
 }

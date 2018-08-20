@@ -1,16 +1,8 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png,01a2_mp3,01b2_mp3,022_mp3,032_mp3,042_mp3,052_mp3,062_mp3,072_mp3,08_dong2_mp3,08_gong2_mp3,08_kong2_mp3,08_pong2_mp3,08_startgame1a2_mp3,08_startgame1b2_mp3,08_strong2_mp3,09_click_on_tree2_mp3,09_startgame22_mp3,10_startgame_a2_mp3,10_startgame_b2_mp3,10_wrong2_mp3,11startgame42_mp3,27a2_mp3,27b2_mp3,282_mp3,292_mp3,302_mp3,312_mp3,322_mp3,332_mp3,342_mp3,352_mp3,362_mp3,372_mp3,382_mp3,392_mp3,402_mp3,412_mp3,422_mp3,432_mp3,442_mp3,452_mp3,462_mp3,472_mp3,482_mp3,492_mp3,502_mp3,512_mp3,522_mp3,532_mp3,542_mp3,552_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png,01a2_mp3,01a_mp3,01b2_mp3,01b_mp3,022_mp3,02_mp3,032_mp3,03_mp3,042_mp3,04_mp3,052_mp3,05_mp3,062_mp3,06_mp3,072_mp3,07_mp3,08_dong_mp3,08_dong2_mp3,08_gong2_mp3,08_gong_mp3,08_kong2_mp3,08_kong_mp3,08_pong2_mp3,08_pong_mp3,08_startgame1a2_mp3,08_startgame1a_mp3,08_startgame1b2_mp3,08_startgame1b_mp3,08_strong2_mp3,08_strong_mp3,09_click_on_tree2_mp3,09_click_on_tree_mp3,09_startgame2_mp3,09_startgame22_mp3,10_startgame_a_mp3,10_startgame_a2_mp3,10_startgame_b_mp3,10_startgame_b2_mp3,10_wrong_mp3,10_wrong2_mp3,11startgame42_mp3,11startgame4_mp3,27a2_mp3,27a_mp3,27b_mp3,27b2_mp3,282_mp3,28_mp3,292_mp3,29_mp3,302_mp3,30_mp3,31_mp3,312_mp3,322_mp3,32_mp3,33_mp3,332_mp3,34_mp3,342_mp3,352_mp3,35_mp3,36_mp3,362_mp3,372_mp3,37_mp3,38_mp3,382_mp3,39_mp3,392_mp3,40_mp3,402_mp3,41_mp3,412_mp3,422_mp3,42_mp3,432_mp3,43_mp3,442_mp3,44_mp3,452_mp3,45_mp3,462_mp3,46_mp3,472_mp3,47_mp3,482_mp3,48_mp3,492_mp3,49_mp3,502_mp3,50_mp3,51_mp3,512_mp3,522_mp3,52_mp3,532_mp3,53_mp3,542_mp3,54_mp3,55_mp3,552_mp3",
 			"name": "preload"
-		},
-		{
-			"keys": "band_json,band_png,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png",
-			"name": "textture"
-		},
-		{
-			"keys": "01a_mp3,01b_mp3,02_mp3,03_mp3,04_mp3,05_mp3,06_mp3,07_mp3,08_dong_mp3,08_gong_mp3,08_kong_mp3,08_pong_mp3,08_startgame1a_mp3,08_startgame1b_mp3,08_strong_mp3,09_click_on_tree_mp3,09_startgame2_mp3,10_startgame_a_mp3,10_startgame_b_mp3,10_wrong_mp3,11startgame4_mp3,27a_mp3,27b_mp3,28_mp3,29_mp3,30_mp3,31_mp3,32_mp3,33_mp3,34_mp3,35_mp3,36_mp3,37_mp3,38_mp3,39_mp3,40_mp3,41_mp3,42_mp3,43_mp3,44_mp3,45_mp3,46_mp3,47_mp3,48_mp3,49_mp3,50_mp3,51_mp3,52_mp3,53_mp3,54_mp3,55_mp3",
-			"name": "audio"
 		}
 	],
 	"resources": [
@@ -465,259 +457,259 @@
 			"name": "55_mp3"
 		},
 		{
-			"name": "01a2_mp3",
+			"url": "audio/01a.mp3",
 			"type": "sound",
-			"url": "audio/01a.mp3"
+			"name": "01a2_mp3"
 		},
 		{
-			"name": "01b2_mp3",
+			"url": "audio/01b.mp3",
 			"type": "sound",
-			"url": "audio/01b.mp3"
+			"name": "01b2_mp3"
 		},
 		{
-			"name": "022_mp3",
+			"url": "audio/02.mp3",
 			"type": "sound",
-			"url": "audio/02.mp3"
+			"name": "022_mp3"
 		},
 		{
-			"name": "032_mp3",
+			"url": "audio/03.mp3",
 			"type": "sound",
-			"url": "audio/03.mp3"
+			"name": "032_mp3"
 		},
 		{
-			"name": "042_mp3",
+			"url": "audio/04.mp3",
 			"type": "sound",
-			"url": "audio/04.mp3"
+			"name": "042_mp3"
 		},
 		{
-			"name": "052_mp3",
+			"url": "audio/05.mp3",
 			"type": "sound",
-			"url": "audio/05.mp3"
+			"name": "052_mp3"
 		},
 		{
-			"name": "062_mp3",
+			"url": "audio/06.mp3",
 			"type": "sound",
-			"url": "audio/06.mp3"
+			"name": "062_mp3"
 		},
 		{
-			"name": "072_mp3",
+			"url": "audio/07.mp3",
 			"type": "sound",
-			"url": "audio/07.mp3"
+			"name": "072_mp3"
 		},
 		{
-			"name": "08_dong2_mp3",
+			"url": "audio/08_dong.mp3",
 			"type": "sound",
-			"url": "audio/08_dong.mp3"
+			"name": "08_dong2_mp3"
 		},
 		{
-			"name": "08_gong2_mp3",
+			"url": "audio/08_gong.mp3",
 			"type": "sound",
-			"url": "audio/08_gong.mp3"
+			"name": "08_gong2_mp3"
 		},
 		{
-			"name": "08_kong2_mp3",
+			"url": "audio/08_kong.mp3",
 			"type": "sound",
-			"url": "audio/08_kong.mp3"
+			"name": "08_kong2_mp3"
 		},
 		{
-			"name": "08_pong2_mp3",
+			"url": "audio/08_pong.mp3",
 			"type": "sound",
-			"url": "audio/08_pong.mp3"
+			"name": "08_pong2_mp3"
 		},
 		{
-			"name": "08_startgame1a2_mp3",
+			"url": "audio/08_startgame1a.mp3",
 			"type": "sound",
-			"url": "audio/08_startgame1a.mp3"
+			"name": "08_startgame1a2_mp3"
 		},
 		{
-			"name": "08_startgame1b2_mp3",
+			"url": "audio/08_startgame1b.mp3",
 			"type": "sound",
-			"url": "audio/08_startgame1b.mp3"
+			"name": "08_startgame1b2_mp3"
 		},
 		{
-			"name": "08_strong2_mp3",
+			"url": "audio/08_strong.mp3",
 			"type": "sound",
-			"url": "audio/08_strong.mp3"
+			"name": "08_strong2_mp3"
 		},
 		{
-			"name": "09_click_on_tree2_mp3",
+			"url": "audio/09_click_on_tree.mp3",
 			"type": "sound",
-			"url": "audio/09_click_on_tree.mp3"
+			"name": "09_click_on_tree2_mp3"
 		},
 		{
-			"name": "09_startgame22_mp3",
+			"url": "audio/09_startgame2.mp3",
 			"type": "sound",
-			"url": "audio/09_startgame2.mp3"
+			"name": "09_startgame22_mp3"
 		},
 		{
-			"name": "10_startgame_a2_mp3",
+			"url": "audio/10_startgame_a.mp3",
 			"type": "sound",
-			"url": "audio/10_startgame_a.mp3"
+			"name": "10_startgame_a2_mp3"
 		},
 		{
-			"name": "10_startgame_b2_mp3",
+			"url": "audio/10_startgame_b.mp3",
 			"type": "sound",
-			"url": "audio/10_startgame_b.mp3"
+			"name": "10_startgame_b2_mp3"
 		},
 		{
-			"name": "10_wrong2_mp3",
+			"url": "audio/10_wrong.mp3",
 			"type": "sound",
-			"url": "audio/10_wrong.mp3"
+			"name": "10_wrong2_mp3"
 		},
 		{
-			"name": "11startgame42_mp3",
+			"url": "audio/11startgame4.mp3",
 			"type": "sound",
-			"url": "audio/11startgame4.mp3"
+			"name": "11startgame42_mp3"
 		},
 		{
-			"name": "27a2_mp3",
+			"url": "audio/27a.mp3",
 			"type": "sound",
-			"url": "audio/27a.mp3"
+			"name": "27a2_mp3"
 		},
 		{
-			"name": "27b2_mp3",
+			"url": "audio/27b.mp3",
 			"type": "sound",
-			"url": "audio/27b.mp3"
+			"name": "27b2_mp3"
 		},
 		{
-			"name": "282_mp3",
+			"url": "audio/28.mp3",
 			"type": "sound",
-			"url": "audio/28.mp3"
+			"name": "282_mp3"
 		},
 		{
-			"name": "292_mp3",
+			"url": "audio/29.mp3",
 			"type": "sound",
-			"url": "audio/29.mp3"
+			"name": "292_mp3"
 		},
 		{
-			"name": "302_mp3",
+			"url": "audio/30.mp3",
 			"type": "sound",
-			"url": "audio/30.mp3"
+			"name": "302_mp3"
 		},
 		{
-			"name": "312_mp3",
+			"url": "audio/31.mp3",
 			"type": "sound",
-			"url": "audio/31.mp3"
+			"name": "312_mp3"
 		},
 		{
-			"name": "322_mp3",
+			"url": "audio/32.mp3",
 			"type": "sound",
-			"url": "audio/32.mp3"
+			"name": "322_mp3"
 		},
 		{
-			"name": "332_mp3",
+			"url": "audio/33.mp3",
 			"type": "sound",
-			"url": "audio/33.mp3"
+			"name": "332_mp3"
 		},
 		{
-			"name": "342_mp3",
+			"url": "audio/34.mp3",
 			"type": "sound",
-			"url": "audio/34.mp3"
+			"name": "342_mp3"
 		},
 		{
-			"name": "352_mp3",
+			"url": "audio/35.mp3",
 			"type": "sound",
-			"url": "audio/35.mp3"
+			"name": "352_mp3"
 		},
 		{
-			"name": "362_mp3",
+			"url": "audio/36.mp3",
 			"type": "sound",
-			"url": "audio/36.mp3"
+			"name": "362_mp3"
 		},
 		{
-			"name": "372_mp3",
+			"url": "audio/37.mp3",
 			"type": "sound",
-			"url": "audio/37.mp3"
+			"name": "372_mp3"
 		},
 		{
-			"name": "382_mp3",
+			"url": "audio/38.mp3",
 			"type": "sound",
-			"url": "audio/38.mp3"
+			"name": "382_mp3"
 		},
 		{
-			"name": "392_mp3",
+			"url": "audio/39.mp3",
 			"type": "sound",
-			"url": "audio/39.mp3"
+			"name": "392_mp3"
 		},
 		{
-			"name": "402_mp3",
+			"url": "audio/40.mp3",
 			"type": "sound",
-			"url": "audio/40.mp3"
+			"name": "402_mp3"
 		},
 		{
-			"name": "412_mp3",
+			"url": "audio/41.mp3",
 			"type": "sound",
-			"url": "audio/41.mp3"
+			"name": "412_mp3"
 		},
 		{
-			"name": "422_mp3",
+			"url": "audio/42.mp3",
 			"type": "sound",
-			"url": "audio/42.mp3"
+			"name": "422_mp3"
 		},
 		{
-			"name": "432_mp3",
+			"url": "audio/43.mp3",
 			"type": "sound",
-			"url": "audio/43.mp3"
+			"name": "432_mp3"
 		},
 		{
-			"name": "442_mp3",
+			"url": "audio/44.mp3",
 			"type": "sound",
-			"url": "audio/44.mp3"
+			"name": "442_mp3"
 		},
 		{
-			"name": "452_mp3",
+			"url": "audio/45.mp3",
 			"type": "sound",
-			"url": "audio/45.mp3"
+			"name": "452_mp3"
 		},
 		{
-			"name": "462_mp3",
+			"url": "audio/46.mp3",
 			"type": "sound",
-			"url": "audio/46.mp3"
+			"name": "462_mp3"
 		},
 		{
-			"name": "472_mp3",
+			"url": "audio/47.mp3",
 			"type": "sound",
-			"url": "audio/47.mp3"
+			"name": "472_mp3"
 		},
 		{
-			"name": "482_mp3",
+			"url": "audio/48.mp3",
 			"type": "sound",
-			"url": "audio/48.mp3"
+			"name": "482_mp3"
 		},
 		{
-			"name": "492_mp3",
+			"url": "audio/49.mp3",
 			"type": "sound",
-			"url": "audio/49.mp3"
+			"name": "492_mp3"
 		},
 		{
-			"name": "502_mp3",
+			"url": "audio/50.mp3",
 			"type": "sound",
-			"url": "audio/50.mp3"
+			"name": "502_mp3"
 		},
 		{
-			"name": "512_mp3",
+			"url": "audio/51.mp3",
 			"type": "sound",
-			"url": "audio/51.mp3"
+			"name": "512_mp3"
 		},
 		{
-			"name": "522_mp3",
+			"url": "audio/52.mp3",
 			"type": "sound",
-			"url": "audio/52.mp3"
+			"name": "522_mp3"
 		},
 		{
-			"name": "532_mp3",
+			"url": "audio/53.mp3",
 			"type": "sound",
-			"url": "audio/53.mp3"
+			"name": "532_mp3"
 		},
 		{
-			"name": "542_mp3",
+			"url": "audio/54.mp3",
 			"type": "sound",
-			"url": "audio/54.mp3"
+			"name": "542_mp3"
 		},
 		{
-			"name": "552_mp3",
+			"url": "audio/55.mp3",
 			"type": "sound",
-			"url": "audio/55.mp3"
+			"name": "552_mp3"
 		}
 	]
 }

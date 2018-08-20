@@ -16,6 +16,10 @@ class Scene07 extends eui.Component implements  eui.UIComponent {
 		this.nextBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextBtnClick,this);
 	}
 
+	private async playBackgroundMusic():Promise<void> {
+		await lzlib.SoundUtility.playSound('');
+	}
+
 	private onNextBtnClick():void{
 		Main.instance.gotoScene(new Scene00());
 	}

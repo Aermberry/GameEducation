@@ -13,10 +13,12 @@ class Scene01 extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextButtonClick, this);
-		(RES.getRes('01a_mp3') as egret.Sound).play(0, 1);
+		this.playBackgroundMusic();
 	}
 
 	private async playBackgroundMusic(): Promise<void> {
+		await lzlib.SoundUtility.playSound('01a2_mp3');
+		Main.instance.gotoScene(new Scene02());
 	}
 
 	private onNextButtonClick(): void {
