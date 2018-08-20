@@ -1,15 +1,7 @@
 class DescriptionExampleScene extends eui.Component implements  eui.UIComponent {
 	private cueBoxImg:eui.Image;
-	private blueFrameDialogImg:eui.Image;
-    private blueFrameFirstDialogLabel:eui.Label;
-	private blueFrameSecondDialogLabel:eui.Label;
-	private blueFrameThirdDialogLabel:eui.Label;
-
-    private exampleFirstDialog:eui.Label;
-    private exampleSecondtDialog:eui.Label;
-    private exampleThirdDialog:eui.Label;
-	
-	private beginbutton:BeginButton;
+    private descriptionLabel:eui.Label;
+	private startButton:eui.Button;
 	private currentSoundChannel:egret.SoundChannel;
     private exitBtn:ExitButton;
 
@@ -29,45 +21,22 @@ class DescriptionExampleScene extends eui.Component implements  eui.UIComponent 
 		mouse.enable(this.stage);
         mouse.setButtonMode(this.cueBoxImg, true);
 		mouse.setButtonMode(this.exitBtn, true);
-		mouse.setButtonMode(this.beginbutton, true);
-
-		this.initExitBtn();
-		this.goNextDialog();
-		this.cueBoxImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.playTouchCueBoxSOund, this);
-	}
-
-	private playTouchCueBoxSOund() {
-		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('cue_box_bgm_mp3') as egret.Sound).play(0,1)
-	}
-
-	private async goNextDialog():Promise<void> {
-		await lzlib.ThreadUtility.sleep(4000);
-		this.blueFrameDialogImg.visible = false;
-		this.blueFrameFirstDialogLabel.visible = false;
-		this.blueFrameSecondDialogLabel.visible = false;
-		this.blueFrameThirdDialogLabel.visible = false;
-		this.showExample();
-	}
-    
-	private async showExample():Promise<void> {
-        this.exampleFirstDialog.alpha = 1;
-		this.exampleSecondtDialog.alpha = 1;
-		this.exampleThirdDialog.alpha = 1;
-		
-		await lzlib.ThreadUtility.sleep(4000);
-		this.showBeginBtn();
-		
-
-	}
-	private showBeginBtn() {
-		this.beginbutton.visible = true;
-		this.beginbutton.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new DescriptionGameplayScene()), this);
-	}
-
-	private initExitBtn() {
+		mouse.setButtonMode(this.startButton, true);
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
 		this.exitBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.exitGame, this);
+
 	}
+
+	private onStartButtonClick(): void
+	{
+		if (this.startButton.label == '下頁') {
+			this.descriptionLabel.text = '例如：我們一起慶祝聖誕節的到來。\r這個句子中，「的到來」是多餘的部分，因爲，我們慶\r祝的是「聖誕節」，而不是慶祝這個節日「的到來」。';
+			this.startButton.label = '開始';
+		} else {
+			Main.instance.gotoScene(new DescriptionGameplayScene());	
+		}
+	}
+
 	private exitGame() {
 		window.close();
 	}
