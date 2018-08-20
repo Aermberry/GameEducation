@@ -1,4 +1,8 @@
 namespace lzlib {
+    interface Cloneable {
+		clone(): object;
+    }
+    
     /**
      * 使用方法
      *  let drag = new Drag();
@@ -47,7 +51,7 @@ namespace lzlib {
         }
     
         private onTouchBegin(e:egret.TouchEvent) {
-            Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject as eui.Image) : this.dragObject, this.isCopy, this.dataTransfer);
+            Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
 
             let globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
             Drag.dragingObject.x = globalPoint.x;
@@ -63,7 +67,18 @@ namespace lzlib {
             this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
         }
 
-        private cloneDragObject(dragObject: eui.Image): egret.DisplayObject
+        private cloneDragObject(dragObject: egret.DisplayObject): egret.DisplayObject
+        {
+            if (dragObject instanceof eui.Image) {
+                return this.cloneImage(dragObject as eui.Image);
+            }
+            if (dragObject['clone']) {
+                return dragObject['clone']() as egret.DisplayObject;
+            }
+            throw new Error('not supported dragObject Type');
+        }
+
+        private cloneImage(dragObject: eui.Image): egret.DisplayObject
         {
             let clone = new eui.Image();
             clone.x = dragObject.x;
