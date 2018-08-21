@@ -51,11 +51,11 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	    this.dialogFifthcLabel.visible = false;
         this.dialogGroup.visible = false;
 		
-		this.firstSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.firstTweenGroup.play(0), this);
+		//this.firstSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.firstTweenGroup.play(0), this);
 		this.secondSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new DescriptionExampleScene()), this);
-		this.thirdSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.thirdTweenGroup.play(0), this);
-		this.forthSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.forthTweenGroup.play(0), this);
-		this.fifthSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.fifthTweenGroup.play(0), this);
-		this.sixSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.sixthTweenGroup.play(0), this);
+		//this.thirdSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.thirdTweenGroup.play(0), this);
+		//this.forthSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.forthTweenGroup.play(0), this);
+		//this.fifthSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.fifthTweenGroup.play(0), this);
+		//this.sixSelectGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.sixthTweenGroup.play(0), this);
         }
 }
