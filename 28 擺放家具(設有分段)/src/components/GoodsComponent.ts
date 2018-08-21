@@ -1,5 +1,6 @@
 class GoodsComponent extends eui.Component implements  eui.UIComponent {
 	private goodsImage: eui.Image;
+	private circleImage: eui.Image;
 
 	public constructor() {
 		super();
@@ -15,6 +16,7 @@ class GoodsComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.goodsImage.source = this.source;
+		
 	}
 	
 	private _source = '';

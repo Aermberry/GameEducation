@@ -16,6 +16,7 @@ class BiscuitProgressBar extends eui.Component implements  eui.UIComponent {
 
 		let curIndex = 1;
 		let alphaSet = this._alphaSet;
+		console.log(this.rightProcess);
 		let ImgArr = this.rightProcess.$children;
 		
 		ImgArr.map(function(index){
