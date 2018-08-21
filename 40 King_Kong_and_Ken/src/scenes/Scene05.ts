@@ -14,10 +14,12 @@ class Scene05 extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.btnNext.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextBtnClick,this);
+		this.playBackgroundMusic();
 	}
 
+
 	private async playBackgroundMusic():Promise<void> {
-		await lzlib.SoundUtility.playSound('');
+		await lzlib.SoundUtility.playSound('Scene05_mp3');
 	}
 
 	private onNextBtnClick():void {

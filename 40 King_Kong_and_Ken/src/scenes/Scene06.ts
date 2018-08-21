@@ -1,4 +1,6 @@
 class Scene06 extends eui.Component implements  eui.UIComponent {
+
+	private nextBtn:eui.Button;
 	public constructor() {
 		super();
 	}
@@ -11,11 +13,16 @@ class Scene06 extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.nextBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextBtnClick,this);
 		this.playBackgroundMusic();
 	}
 
 		private async playBackgroundMusic():Promise<void> {
-		await lzlib.SoundUtility.playSound('');
+		await lzlib.SoundUtility.playSound('07_mp3');
+	}
+
+	private onNextBtnClick():void {
+		Main.instance.gotoScene(new Scene07());
 	}
 	
 }

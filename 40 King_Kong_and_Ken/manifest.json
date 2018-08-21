@@ -18,6 +18,7 @@
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/components/btn_next.js",
 		"bin-debug/components/MovieClipPlayer.js",
+		"bin-debug/scenes/Scene00_1.js",
 		"bin-debug/scenes/Scene00.js",
 		"bin-debug/scenes/Scene01.js",
 		"bin-debug/scenes/Scene02.js",

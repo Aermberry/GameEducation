@@ -56,6 +56,8 @@ declare module skins{
 }
 declare class Scene00Skin extends eui.Skin{
 }
+declare class Scene00_1Skin extends eui.Skin{
+}
 declare class Scene01Skin extends eui.Skin{
 }
 declare class Scene02Skin extends eui.Skin{

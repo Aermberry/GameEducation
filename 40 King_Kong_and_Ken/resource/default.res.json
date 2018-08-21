@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png,01a2_mp3,01a_mp3,01b2_mp3,01b_mp3,022_mp3,02_mp3,032_mp3,03_mp3,042_mp3,04_mp3,052_mp3,05_mp3,062_mp3,06_mp3,072_mp3,07_mp3,08_dong_mp3,08_dong2_mp3,08_gong2_mp3,08_gong_mp3,08_kong2_mp3,08_kong_mp3,08_pong2_mp3,08_pong_mp3,08_startgame1a2_mp3,08_startgame1a_mp3,08_startgame1b2_mp3,08_startgame1b_mp3,08_strong2_mp3,08_strong_mp3,09_click_on_tree2_mp3,09_click_on_tree_mp3,09_startgame2_mp3,09_startgame22_mp3,10_startgame_a_mp3,10_startgame_a2_mp3,10_startgame_b_mp3,10_startgame_b2_mp3,10_wrong_mp3,10_wrong2_mp3,11startgame42_mp3,11startgame4_mp3,27a2_mp3,27a_mp3,27b_mp3,27b2_mp3,282_mp3,28_mp3,292_mp3,29_mp3,302_mp3,30_mp3,31_mp3,312_mp3,322_mp3,32_mp3,33_mp3,332_mp3,34_mp3,342_mp3,352_mp3,35_mp3,36_mp3,362_mp3,372_mp3,37_mp3,38_mp3,382_mp3,39_mp3,392_mp3,40_mp3,402_mp3,41_mp3,412_mp3,422_mp3,42_mp3,432_mp3,43_mp3,442_mp3,44_mp3,452_mp3,45_mp3,462_mp3,46_mp3,472_mp3,47_mp3,482_mp3,48_mp3,492_mp3,49_mp3,502_mp3,50_mp3,51_mp3,512_mp3,522_mp3,52_mp3,532_mp3,53_mp3,542_mp3,54_mp3,55_mp3,552_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,The owl_png,Ball&Box_png,man&girl_png,band_json,band_png,01a2_mp3,01a_mp3,01b2_mp3,01b_mp3,022_mp3,02_mp3,032_mp3,03_mp3,042_mp3,04_mp3,052_mp3,05_mp3,062_mp3,06_mp3,072_mp3,07_mp3,08_dong_mp3,08_dong2_mp3,08_gong2_mp3,08_gong_mp3,08_kong2_mp3,08_kong_mp3,08_pong2_mp3,08_pong_mp3,08_startgame1a2_mp3,08_startgame1a_mp3,08_startgame1b2_mp3,08_startgame1b_mp3,08_strong2_mp3,08_strong_mp3,09_click_on_tree2_mp3,09_click_on_tree_mp3,09_startgame2_mp3,09_startgame22_mp3,10_startgame_a_mp3,10_startgame_a2_mp3,10_startgame_b_mp3,10_startgame_b2_mp3,10_wrong_mp3,10_wrong2_mp3,11startgame42_mp3,11startgame4_mp3,27a2_mp3,27a_mp3,27b_mp3,27b2_mp3,282_mp3,28_mp3,292_mp3,29_mp3,302_mp3,30_mp3,31_mp3,312_mp3,322_mp3,32_mp3,33_mp3,332_mp3,34_mp3,342_mp3,352_mp3,35_mp3,36_mp3,362_mp3,372_mp3,37_mp3,38_mp3,382_mp3,39_mp3,392_mp3,40_mp3,402_mp3,41_mp3,412_mp3,422_mp3,42_mp3,432_mp3,43_mp3,442_mp3,44_mp3,452_mp3,45_mp3,462_mp3,46_mp3,472_mp3,47_mp3,482_mp3,48_mp3,492_mp3,49_mp3,502_mp3,50_mp3,51_mp3,512_mp3,522_mp3,52_mp3,532_mp3,53_mp3,542_mp3,54_mp3,55_mp3,552_mp3,Scene01_mp3,Scene012_mp3,Scene05_mp3,Scene052_mp3",
 			"name": "preload"
 		}
 	],
@@ -710,6 +710,26 @@
 			"url": "audio/55.mp3",
 			"type": "sound",
 			"name": "552_mp3"
+		},
+		{
+			"url": "audio/Scene01.mp3",
+			"type": "sound",
+			"name": "Scene01_mp3"
+		},
+		{
+			"url": "audio/Scene01.mp3",
+			"type": "sound",
+			"name": "Scene012_mp3"
+		},
+		{
+			"url": "audio/Scene05.mp3",
+			"type": "sound",
+			"name": "Scene05_mp3"
+		},
+		{
+			"name": "Scene052_mp3",
+			"type": "sound",
+			"url": "audio/Scene05.mp3"
 		}
 	]
 }

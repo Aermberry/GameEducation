@@ -9,6 +9,7 @@
 			<e:Label text="'King Kong is strong'" y="-75" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="10" anchorOffsetX="0" width="1266.55"/>
 			<e:Label text="'Ding-Dong,Ding-Dong.'" y="-65" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="20" anchorOffsetX="0" width="1266.55"/>
 			<e:Label text="Kong hits the gong." y="-55" textColor="0x50962B" size="79" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="3.19500000000005" x="30" anchorOffsetX="0" width="1266.55"/>
+
 			<e:layout>
 				<e:VerticalLayout paddingTop="-13" gap="60"/>
 			</e:layout>
@@ -17,6 +18,7 @@
 			<e:VerticalLayout paddingTop="74" gap="176"/>
 			</e:layout>
 		</e:Group>
-		<e:Button id="nextBtn" label="Next" x="1514.5" y="918" scaleX="1" scaleY="1"/>
+		<e:Button id="nextBtn" label="Button" x="1397" y="902"/>
+
 	</e:Group>
 </e:Skin>

@@ -17,10 +17,11 @@ class Scene00 extends eui.Component implements eui.UIComponent {
 
 	private async playBackgroundMusic():Promise<void> {
 		await lzlib.SoundUtility.playSound('01a_mp3');
+		Main.instance.gotoScene(new Scene00_1());
 	}
 
 	private onSceneClick(): void 
 	{
-		Main.instance.gotoScene(new Scene01());
+		Main.instance.gotoScene(new Scene00_1());
 	}
 }
