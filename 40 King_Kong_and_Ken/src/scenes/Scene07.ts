@@ -17,11 +17,12 @@ class Scene07 extends eui.Component implements  eui.UIComponent {
 		this.playBackgroundMusic();
 	}
 
-	private async playBackgroundMusic():Promise<void> {
-		await lzlib.SoundUtility.playSound('08_mp3');
+	private async playBackgroundMusic():Promise<void>{
+await lzlib.SoundUtility.playSound('08_startgame1a_mp3');
+await lzlib.SoundUtility.playSound('08_startgame1b_mp3');
 	}
 
-	private onNextBtnClick():void{
+	private onNextBtnClick():void {
 		Main.instance.gotoScene(new Scene00());
 	}
 	

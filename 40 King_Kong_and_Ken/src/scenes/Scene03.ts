@@ -1,4 +1,5 @@
 class Scene03 extends eui.Component implements  eui.UIComponent {
+	
 	private btnNext:eui.Button;
 	public constructor() {
 		super();

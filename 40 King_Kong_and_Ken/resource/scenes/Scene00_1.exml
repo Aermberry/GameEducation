@@ -4,6 +4,6 @@
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Label text="Let's listen to  the poem about them" y="126" textColor="0x5d20f5" scaleX="1" scaleY="1" size="99" horizontalCenter="0"/>
 		<ns1:MovieClipPlayer width="1911.88" height="1298.71" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.6" scaleY="0.6" rotation="359.59" horizontalCenter="0.5" bottom="-4.149999999999977"/>
-		<e:Button id="nextButton" label="Button" x="1582" y="869"/>
+		<e:Button id="nextButton" label="Next" x="1582" y="869"/>
 	</e:Group>
 </e:Skin>
