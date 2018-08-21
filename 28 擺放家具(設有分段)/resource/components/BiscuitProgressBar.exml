@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BiscuitProgressBarSkin" width="1212.12" height="275.76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165467fb6d2" ></w:Config>
+	<e:Group id="rightProcess" width="1212.12" height="275.76" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="biscuit1" width="127" height="159" x="14.73" y="51.82" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
+		<e:Image id="biscuit2" width="127" height="159" x="195.2" y="33.73" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
+		<e:Image id="biscuit3" width="127" height="159" x="315.64" y="55.76" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
+		<e:Image id="biscuit4" width="127" height="159" x="496.11" y="37.67" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
+		<e:Image id="biscuit5" width="127" height="159" x="616.55" y="56.67" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
+		<e:Image id="biscuit6" width="127" height="159" x="797.02" y="38.58" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
+		<e:Image id="biscuit7" width="127" height="159" x="917.46" y="54.55" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4"/>
+		<e:Image id="biscuit8" width="127" height="159" x="1097.93" y="36.46" anchorOffsetX="0" anchorOffsetY="0" source="biscuit_png" alpha="0.4" rotation="20"/>
+	</e:Group>
+</e:Skin>
