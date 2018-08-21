@@ -110,8 +110,8 @@
 
 
 <e:Image id="firstSelectImg" source="left_arrow_btn_png" x="924" y="291"/>
-<e:Label text="101" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="304"/>
-<e:Label text="衣不稱身" textColor="#000000" fontFamily="方正準圓" size="36"  x="1022" y="372"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="304"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36"  x="1022" y="372"/>
 <e:Group id="firstSelectGroup" x="924" y="291" height="138" width="403"/>
 
 <e:Image id="secondSelectImg" source="right_arrow_btn_png" x="1331" y="291"/>
@@ -120,26 +120,26 @@
 <e:Group  id="secondSelectGroup" x="1331" y="291" height="138" width="403"/>
 
 <e:Image id="thirdSelectImg" source="left_arrow_btn_png" x="924" y="429" locked="true"  />
-<e:Label text="103" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="447"/>
-<e:Label text="少了些那麽？" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="504"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="447"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="504"/>
 <e:Group id="thirdSelectGroup" x="924" y="429" height="138" width="403"/>
 
 
 <e:Image id="forthSelectImg" source="right_arrow_btn_png" x="1331" y="429" locked="true"/>
-<e:Label text="104" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="446"/>
-<e:Label text="張冠李戴?" textColor="#000000" fontFamily="方正準圓" size="36" x="1485" y="504"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="446"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1485" y="504"/>
 <e:Group id="forthSelectGroup" x="1331" y="429" height="138" width="403"/>
 
 
 <e:Image id="fifthSelectImg" source="left_arrow_btn_png" x="924" y="566" locked="true"/>
-<e:Label text="105" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="580"/>
-<e:Label text="顛三倒四" textColor="#000000" fontFamily="方正準圓" size="36" x="1019" y="640"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="580"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1019" y="640"/>
 <e:Group id="fifthSelectGroup" x="924" y="566" height="138" width="403"/>
 
 
 <e:Image id="sixSelectImg" source="right_arrow_btn_png" x="1331" y="566"/>
-<e:Label text="106" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="580"/>
-<e:Label text="摸不著頭腦" textColor="#000000" fontFamily="方正準圓" size="36" x="1445" y="640"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="580"/>
+<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1445" y="640"/>
 <e:Group id="sixSelectGroup" x="1331" y="566" height="138" width="403"/>
 
 
