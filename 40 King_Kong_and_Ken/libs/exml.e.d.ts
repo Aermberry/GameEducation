@@ -1,6 +1,6 @@
-declare class MovieClipPlayerSkin extends eui.Skin{
-}
 declare class btn_nextSkin extends eui.Skin{
+}
+declare class MovieClipPlayerSkin extends eui.Skin{
 }
 declare module skins{
 	class ButtonSkin extends eui.Skin{
