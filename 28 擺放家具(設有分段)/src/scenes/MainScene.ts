@@ -27,7 +27,7 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 			let child = this.goods.getChildAt(index);
 			let drag = new lzlib.Drag();
 			this.addChild(drag);
-			drag.enableDrag(child, false, index);
+			drag.enableDrag(child, true, index);
 		
 		}
 
@@ -39,11 +39,14 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		let dragObject = this.cloneDragObject(e.dragObject);
-		dragObject.x = e.$stageX - 960 - (dragObject.width / 2);
-		dragObject.y = e.$stageY - (dragObject.height / 2);
-		this.containerHome.addChild(dragObject);
+		
+		// let dragObject = this.cloneObject(e.dragObject);
+		// dragObject.x = e.$stageX - 960 - (dragObject.width / 2);
+		// dragObject.y = e.$stageY - (dragObject.height / 2);
+		// this.containerHome.addChild(dragObject);
+		// console.log(e);
 		console.log(e);
+
 	}
 
 
@@ -58,6 +61,15 @@ class MainScene extends eui.Component implements  eui.UIComponent {
         clone.alpha = 1;
         return clone;
     }
+
+	private cloneObject(object: egret.DisplayObject): egret.DisplayObject
+	{
+		var obj = new egret.DisplayObject;
+		for(let val in object) {
+			obj[val] = object[val]
+		}
+		return obj;
+	}
 
 	private sound:egret.Sound;
 	private soundInitChannel:egret.SoundChannel;
@@ -106,9 +118,9 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 			console.log(i);
 			console.log(goodsArr[i]);
 			goodsArr[i].alpha = 1;
-			// let drag = new lzlib.Drag();
-			// this.addChild(drag);
-			// drag.enableDrag(goodsArr[goodsArr.length], false, i);
+			let drag = new lzlib.Drag();
+			this.addChild(drag);
+			drag.enableDrag(goodsArr[goodsArr.length]);
 			index++
 
 		}
