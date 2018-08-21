@@ -1,4 +1,4 @@
-class GoodsComponent extends eui.Component implements  eui.UIComponent {
+class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Cloneable {
 	private goodsImage: eui.Image;
 	private circleImage: eui.Image;
 
@@ -30,5 +30,13 @@ class GoodsComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this._source = value;
 		this.goodsImage && (this.goodsImage.source = value);
+	}
+
+	public clone(): Object
+	{
+		let result = new GoodsComponent();
+		result.currentState = this.currentState;
+		result.source = this.source;
+		return result;
 	}
 }

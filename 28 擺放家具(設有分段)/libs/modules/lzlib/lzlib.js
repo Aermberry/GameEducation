@@ -8,6 +8,9 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
+Math.randomMinMax = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
 Array.prototype.shuffle = function () {
     var input = this;
     for (var i = input.length - 1; i >= 0; i--) {
@@ -68,6 +71,15 @@ var lzlib;
             this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
         };
         Drag.prototype.cloneDragObject = function (dragObject) {
+            if (dragObject instanceof eui.Image) {
+                return this.cloneImage(dragObject);
+            }
+            if (dragObject['clone']) {
+                return dragObject['clone']();
+            }
+            throw new Error('not supported dragObject Type');
+        };
+        Drag.prototype.cloneImage = function (dragObject) {
             var clone = new eui.Image();
             clone.x = dragObject.x;
             clone.y = dragObject.y;
@@ -196,9 +208,6 @@ var lzlib;
     lzlib.Drop = Drop;
     __reflect(Drop.prototype, "lzlib.Drop");
 })(lzlib || (lzlib = {}));
-Math.randomMinMax = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
 var egret;
 (function (egret) {
     egret.MovieClip.prototype.playAsync = function () {
