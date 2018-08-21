@@ -19,10 +19,12 @@
 		"Question2Scene": "resource/scenes/Question2Scene.exml",
 		"Question3Scene": "resource/scenes/Question3Scene.exml",
 		"Question4Scene": "resource/scenes/Question4Scene.exml",
-		"CompleteScene": "resource/scenes/CompleteScene.exml"
+		"CompleteScene": "resource/scenes/CompleteScene.exml",
+		"CircleButton": "resource/components/CircleButton.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/CircleButton.exml",
 		"resource/components/ImageButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

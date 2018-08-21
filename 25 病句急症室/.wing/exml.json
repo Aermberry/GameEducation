@@ -20,8 +20,8 @@
         "parentPath": ""
     },
     "164dabde492": {
-        "path": "gameLevelScenes\\FirstLevelScene.ts",
-        "class": "FirstLevelScene",
+        "path": "gameLevelScenes\\Level01Scene.ts",
+        "class": "Level01Scene",
         "parentPath": ""
     },
     "164de87b829": {
@@ -30,43 +30,43 @@
         "parentPath": ""
     },
     "164eb63e3df": {
-        "path": "gameLevelScenes\\ThiridLevelScene.ts",
-        "class": "ThiridLevelScene",
+        "path": "gameLevelScenes\\Level03Scene.ts",
+        "class": "Level03Scene",
         "parentPath": ""
     },
     "164eb6c3644": {
-        "path": "gameLevelScenes\\ForthLevelScene.ts",
-        "class": "ForthLevelScene",
+        "path": "gameLevelScenes\\Level04Scene.ts",
+        "class": "Level04Scene",
         "parentPath": ""
     },
     "164eb8218de": {
-        "path": "gameLevelScenes\\FifthLevelScene.ts",
-        "class": "FifthLevelScene",
+        "path": "gameLevelScenes\\Level05Scene.ts",
+        "class": "Level05Scene",
         "parentPath": ""
     },
     "164eb877b02": {
-        "path": "gameLevelScenes\\SixthLevelScene.ts",
-        "class": "SixthLevelScene",
+        "path": "gameLevelScenes\\Level06Scene.ts",
+        "class": "Level06Scene",
         "parentPath": ""
     },
     "164eb8a138c": {
-        "path": "gameLevelScenes\\SeventhLevelScene.ts",
-        "class": "SeventhLevelScene",
+        "path": "gameLevelScenes\\Level07Scene.ts",
+        "class": "Level07Scene",
         "parentPath": ""
     },
     "164eb987be3": {
-        "path": "gameLevelScenes\\EightLevelScene.ts",
-        "class": "EightLevelScene",
+        "path": "gameLevelScenes\\Level08Scene.ts",
+        "class": "Level08Scene",
         "parentPath": ""
     },
     "164eba68cd8": {
-        "path": "gameLevelScenes\\NinthLevelScene.ts",
-        "class": "NinthLevelScene",
+        "path": "gameLevelScenes\\Level09Scene.ts",
+        "class": "Level09Scene",
         "parentPath": ""
     },
     "164ebaf391e": {
-        "path": "gameLevelScenes\\TenthScene.ts",
-        "class": "TenthScene",
+        "path": "gameLevelScenes\\Level10Scene.ts",
+        "class": "Level10Scene",
         "parentPath": ""
     }
 }

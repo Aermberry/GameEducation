@@ -6,25 +6,25 @@ declare class NoTargetBtn extends eui.Skin{
 }
 declare class YesTargetBtn extends eui.Skin{
 }
-declare class EightLevelSceneSkin extends eui.Skin{
+declare class Level01SceneSkin extends eui.Skin{
 }
-declare class FifthLevelSceneSkin extends eui.Skin{
+declare class Level02SceneSkin extends eui.Skin{
 }
-declare class FirstLevelSceneSkin extends eui.Skin{
+declare class Level03SceneSkin extends eui.Skin{
 }
-declare class ForthLevelSceneSkin extends eui.Skin{
+declare class Level04SceneSkin extends eui.Skin{
 }
-declare class NinthLevelSceneSkin extends eui.Skin{
+declare class Level05SceneSkin extends eui.Skin{
 }
-declare class SecondLevelSceneSkin extends eui.Skin{
+declare class Level06SceneSkin extends eui.Skin{
 }
-declare class SeventhLevelSceneSkin extends eui.Skin{
+declare class Level07SceneSkin extends eui.Skin{
 }
-declare class SixthLevelSceneSkin extends eui.Skin{
+declare class Level08SceneSkin extends eui.Skin{
 }
-declare class TenthLevelSceneSkin extends eui.Skin{
+declare class Level09SceneSkin extends eui.Skin{
 }
-declare class ThirdLevelSceneSkin extends eui.Skin{
+declare class Level10SceneSkin extends eui.Skin{
 }
 declare class DescriptionExampleSceneSkin extends eui.Skin{
 }
