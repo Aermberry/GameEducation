@@ -21,6 +21,8 @@ class Scene00_1 extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('01b_mp3');
 	}
 
+	
+
 	private onNextButtonClick():void {
 		Main.instance.gotoScene(new Scene01());
 	}
