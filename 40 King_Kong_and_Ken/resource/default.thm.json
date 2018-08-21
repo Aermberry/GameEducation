@@ -27,8 +27,8 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/components/MovieClipPlayer.exml",
 		"resource/components/btn_next.exml",
+		"resource/components/MovieClipPlayer.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
