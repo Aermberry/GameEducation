@@ -36,8 +36,8 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private onRollOver(): void
 	{
 		this.currentState = 'over';
-
-		if (this._tip == '播放/暂停') {
+		
+		if (this._tip == '播放/暫停') {
 			this.backgroundRect.fillColor = 15951391;
 		}
 
@@ -46,8 +46,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private onRollOut(): void
 	{
 		this.currentState = 'normal';
-
-		if (this._tip == '播放/暂停') {
+		if (this._tip == '播放/暫停') {
 			this.backgroundRect.fillColor = 16777215;
 		}
 

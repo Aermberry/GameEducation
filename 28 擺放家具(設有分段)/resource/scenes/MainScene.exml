@@ -43,6 +43,9 @@
 			<ns1:CircleButton id="circleBlack" width="147" height="147" x="385" y="69" anchorOffsetX="0" anchorOffsetY="0" title="離開" tip="離開" titleColor="65793" strokeColor="0x010101" backgroundColor="0xFFFFFF"/>
 			<e:Image width="94" height="84" x="60" y="109" anchorOffsetX="0" anchorOffsetY="0" source="horn_non_border_png"/>
 		</e:Group>
-		<ns1:BiscuitProgressBar id="BiscuitProgressBar" width="20" height="20" x="664" y="157.85"/>
+		<ns1:BiscuitProgressBar id="BiscuitProgressBar" width="20" height="20" x="664" y="157.85" alphaSet="3" wrong="4" biscuiNum="8" visible="false"/>
+		<ns1:BiscuitProgressBar width="20" height="20" x="650" y="170" biscuiNum="3" alphaSet="2" wrong="1"/>
+		<ns1:BiscuitProgressBar width="20" height="20" x="1050" y="170" biscuiNum="3"/>
+		<ns1:BiscuitProgressBar width="20" height="20" x="1450" y="170" biscuiNum="3"/>
 	</e:Group>
 </e:Skin>

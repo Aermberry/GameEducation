@@ -40,35 +40,11 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
 		
-		// let dragObject = this.cloneObject(e.dragObject);
-		// dragObject.x = e.$stageX - 960 - (dragObject.width / 2);
-		// dragObject.y = e.$stageY - (dragObject.height / 2);
-		// this.containerHome.addChild(dragObject);
-		// console.log(e);
-		console.log(e);
+		let dragObj = e.dragObject;
+		dragObj.x = e.$stageX - 960 - (dragObj.width / 2);
+		dragObj.y = e.$stageY - (dragObj.height / 2);
+		this.containerHome.addChild(dragObj);
 
-	}
-
-
-	private cloneDragObject(dragObject: any): egret.DisplayObject
-    {
-        let clone = new eui.Image();
-        clone.x = dragObject.x;
-        clone.y = dragObject.y;
-        clone.width = dragObject.width * 1.2;
-        clone.height = dragObject.height * 1.2;
-        clone.source = dragObject.source;
-        clone.alpha = 1;
-        return clone;
-    }
-
-	private cloneObject(object: egret.DisplayObject): egret.DisplayObject
-	{
-		var obj = new egret.DisplayObject;
-		for(let val in object) {
-			obj[val] = object[val]
-		}
-		return obj;
 	}
 
 	private sound:egret.Sound;
