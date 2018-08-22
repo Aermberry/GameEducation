@@ -1,0 +1,32 @@
+{
+    "1655bc40f38": {
+        "path": "scenes/mainScene.ts",
+        "class": "mainScene",
+        "parentPath": ""
+    },
+    "1655f48fcdf": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "1655f527028": {
+        "path": "scenes/BackgroundScene.ts",
+        "class": "BackgroundScene",
+        "parentPath": ""
+    },
+    "1655f64624c": {
+        "path": "scenes/Game1Scene.ts",
+        "class": "Game1Scene",
+        "parentPath": ""
+    },
+    "1655f78f107": {
+        "path": "scenes/GameScene.ts",
+        "class": "GameScene",
+        "parentPath": ""
+    },
+    "1655f9f7f8f": {
+        "path": "components/TextComponent.ts",
+        "class": "TextComponent",
+        "parentPath": ""
+    }
+}
