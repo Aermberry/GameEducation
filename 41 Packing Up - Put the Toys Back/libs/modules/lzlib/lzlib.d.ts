@@ -73,11 +73,6 @@ declare namespace egret {
         playAsync(): Promise<void>;
     }
 }
-declare namespace lzlib {
-    class SoundUtility {
-        static playSound(soundName: string): Promise<void>;
-    }
-}
 interface String {
     replaceAt(index: number, replacement: string): string;
 }
@@ -89,13 +84,14 @@ declare namespace lzlib {
 }
 declare namespace egret.tween {
     interface TweenGroup {
-        /**
-         * 播放一次动画
-         */
         playOnceAsync(): Promise<void>;
+    }
+}
+declare namespace lzlib {
+    class TweenGroupUtility {
         /**
          * 循环播放动画
          */
-        playLoopAsync(): void;
+        static playAnimation(target: egret.tween.TweenGroup): void;
     }
 }
