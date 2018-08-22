@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="game_startSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="game_startSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16560ef4aa5" ></w:Config>
+	<e:Image source="2_png" anchorOffsetX="0" left="9" right="9" top="367" bottom="0" anchorOffsetY="0"/>
+	<e:Group height="472.73" anchorOffsetY="0" top="0" left="0" right="0">
+		<e:Label text="Sara's room is untidy.Father tells her where to " x="-349.71" y="58" textColor="0xc40b0b" size="81" anchorOffsetY="0" height="108.91" anchorOffsetX="0" width="1655.84" scaleX="1" scaleY="1"/>
+		<e:Label text="put the toys.Please help her by dragging the " x="-349.21" y="166.91" textColor="0xC40B0B" size="81" anchorOffsetY="0" height="111.94" anchorOffsetX="0" width="1655.84" scaleX="1" scaleY="1"/>
+		<e:Label text=" pictures to the right places." x="-349.71" y="278.85" textColor="0xC40B0B" size="81" anchorOffsetY="0" height="111.94" anchorOffsetX="0" width="1655.84" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" verticalAlign="top" paddingTop="58" gap="17"/>
+		</e:layout>
+	</e:Group>
+	<e:Button label="Start" x="1566.46" y="1327.64" anchorOffsetX="0" width="299.99" anchorOffsetY="0" height="119.7"/>
 </e:Skin>

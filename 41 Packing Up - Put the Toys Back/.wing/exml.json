@@ -1,22 +1,27 @@
 {
-    "16560ef4aa5": {
-        "path": "Scenes\\game_start.ts",
-        "class": "game_start",
-        "parentPath": ""
-    },
-    "16560f00938": {
-        "path": "Scenes\\game_scene.ts",
-        "class": "game_scene",
-        "parentPath": ""
-    },
-    "16560f0d84f": {
-        "path": "Scenes\\tips_scene.ts",
-        "class": "tips_scene",
-        "parentPath": ""
-    },
-    "16560f1bf16": {
-        "path": "Scenes\\status_scene.ts",
-        "class": "status_scene",
-        "parentPath": ""
-    }
+  "16560ef4aa5": {
+    "path": "Scenes\\game_start.ts",
+    "class": "game_start",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "16560f00938": {
+    "path": "Scenes\\game_scene.ts",
+    "class": "game_scene",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "16560f0d84f": {
+    "path": "Scenes\\tips_scene.ts",
+    "class": "tips_scene",
+    "parentPath": ""
+  },
+  "16560f1bf16": {
+    "path": "Scenes\\status_scene.ts",
+    "class": "status_scene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  }
 }
