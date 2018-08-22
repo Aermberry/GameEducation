@@ -5,24 +5,25 @@
 		<e:Rect bottom="0" top="0" left="0" right="0" fillColor="0xb35a16"/>
 		<e:Group width="1754" height="1077" verticalCenter="0" horizontalCenter="0">
 			<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xffffff"/>
-			<e:Group width="147" height="147" x="1481" y="675"  visible="false">
-				<e:Image width="147" height="147" x="0" y="0" source="circle_check_png"/>
-				<e:Label id="startButton" text="開始" x="0" y="0" width="147" height="147" verticalAlign="middle" textAlign="center" size="50"/>
-			</e:Group>
 			<e:Group height="348.48" y="725" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0">
 				<e:Image left="0" right="0" top="0" bottom="0" source="text_area_background_png"/>
 				<e:Group height="284.85" y="64" anchorOffsetY="0" left="0" right="0">
 					<e:Group width="1233" x="0" anchorOffsetX="0" top="0" bottom="-0.14999999999997726">
-						<ns1:TextComponent width="244" height="157" x="5.61" y="6" text="因為"/>
-						<ns1:TextComponent width="244" height="157" x="223.22" y="110.24" text="雖然"/>
+						<ns1:TextComponent width="244" height="157" x="5.61" y="-3.09" text="因為"/>
+						<ns1:TextComponent width="244" height="157" x="205.04" y="122.36" text="雖然"/>
 						<ns1:TextComponent width="244" height="157" x="411.88" y="0" text="所以"/>
-						<ns1:TextComponent width="244" height="157" x="607.68" y="110.24" text="但是"/>
-						<ns1:TextComponent width="244" height="157" x="807.53" y="6" text="如果"/>
-						<ns1:TextComponent width="244" height="157" x="971.17" y="118.39" text="就"/>
-						<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
-						</e:Group>
+						<ns1:TextComponent width="244" height="157" x="607.68" y="122.36" text="但是"/>
+						<ns1:TextComponent width="244" height="157" x="807.53" y="-3.09" text="如果"/>
+						<ns1:TextComponent width="244" height="157" x="998.44" y="121.42" text="就"/>
 					</e:Group>
-				</e:Group>
+					<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
+						<e:Group width="147.27" height="147.27" x="270" y="57">
+							<ns1:CircleButton id="checkButton" width="147.27" height="147.27" anchorOffsetX="0" anchorOffsetY="0" titleColor="11921816" backgroundColor="0xd7ffcd" strokeColor="0x99b491" tip="下壹頁"/>
+							<e:Image width="77.58" height="77.58" y="39" anchorOffsetX="0" anchorOffsetY="0" source="next_page_green_png" horizontalCenter="0"/>
+						</e:Group>
+						<ns1:CircleButton width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對" title="核對" titleColor="0xB5E998" backgroundColor="0x9BE090" strokeColor="0x6EBB67"/>
+					</e:Group>
+				</e:Group>		
 			</e:Group>
 			<e:Group width="1754" x="0" y="213" height="576">
 				<e:Image width="454" height="542" x="62" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_head_png"/>
@@ -44,7 +45,7 @@
 		</e:Group>
 		<e:Group width="147" height="147" x="1738" y="38" >
 				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png"/>
-			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000"/>
+			<ns1:CircleButton tip="離開" title="離開" top="0" bottom="0" left="0" right="0" backgroundColor="0xffffff"/>
 				
 			</e:Group>
 	</e:Group>

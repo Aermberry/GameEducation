@@ -20,6 +20,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		console.log(this.titleLabel);
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.backgroundRect, true);
 		mouse.setButtonMode(this.titleLabel, true);
@@ -31,6 +32,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.tipLabel.text = this.tip;
 		this.backgroundRect.strokeColor = this.strokeColor;
 		this.backgroundRect.fillColor = this.backgroundColor;
+		// await lzlib.SoundUtility.playSound('');
 	}
 
 	private onRollOver(): void

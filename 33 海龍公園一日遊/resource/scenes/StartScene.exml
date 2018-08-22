@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1655f48fcdf" ></w:Config>
-	<e:Group width="1920" height="1205" x="0" y="0">
+	<e:Group id="containerTop" width="1920" height="1205" x="0" y="0">
 		<e:Rect bottom="0" top="0" left="0" right="0" fillColor="0xb35a16"/>
-		<e:Group width="1754" height="1077" verticalCenter="0" horizontalCenter="0">
-			<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xffffff"/>
+		<e:Group id="displayArea" width="1754" height="1077" verticalCenter="0" horizontalCenter="0">
+			<e:Rect id="backgroundRect" top="0" bottom="0" left="0" right="0" fillColor="0xffffff"/>
 			<e:Image width="1205" height="294" x="247" y="225" source="text_init_png"/>
-			<e:Group width="147" height="147" x="1481" y="675" >
-				<e:Image width="147" height="147" x="0" y="0" source="circle_check_png"/>
-				<e:Label id="startButton" text="開始" x="0" y="0" width="147" height="147" verticalAlign="middle" textAlign="center" size="50"/>
+			<e:Group id="start" width="147" height="147" x="1481" y="675" >
+				<ns1:CircleButton id="startButton" width="147" height="147" x="0" y="0" backgroundColor="0x3dc824" tip="開始" title="開始" strokeColor="0x166610" titleColor="16777215"/>
 			</e:Group>
 			
 		</e:Group>
 	</e:Group>
-	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
+	<e:Group id="containerButtom" height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
 		<e:Image width="156" height="156" x="26" y="39" source="text_process_png"/>
 		<e:Group width="1508" height="190" x="192" y="20">
@@ -22,8 +21,9 @@
 		</e:Group>
 		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
 		<e:Group width="147" height="147" x="1738" y="38" >
-				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png"/>
-			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000"/>
+				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png" visible="false"/>
+			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000" visible="false"/>
+			<ns1:CircleButton width="147" height="147" x="0" y="0" backgroundColor="0xffffff" tip="離開" title="離開"/>
 				
 			</e:Group>
 	</e:Group>

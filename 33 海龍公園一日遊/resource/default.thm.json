@@ -16,10 +16,12 @@
 		"StartScene": "resource/scenes/StartScene.exml",
 		"BackgroundScene": "resource/scenes/BackgroundScene.exml",
 		"GameScene": "resource/scenes/GameScene.exml",
-		"TextComponent": "resource/components/TextComponent.exml"
+		"TextComponent": "resource/components/TextComponent.exml",
+		"CircleButton": "resource/components/CircleButton.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/CircleButton.exml",
 		"resource/components/TextComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

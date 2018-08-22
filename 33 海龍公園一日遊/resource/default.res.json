@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,shape6_png,shape48_png,shape51_png,shape60_png,shape62_png,shape249_png,shape252_png,shape253_png,shape262_png,shape266_png,shape269_png,shape270_png,shape293_png,shape297_png,shape299_png,shape301_png,shape304_png,shape311_png,shape312_png,shape313_png,shape315_png,shape322_png,shape323_png,shape324_png,shape325_png,shape327_png,shape330_png,shape333_png,shape335_png,shape339_png,shape344_png,shape350_png,shape352_png,shape354_png,shape355_png,shape357_png,shape358_png,shape359_png,shape361_png,border_slow_png,background_gray_png,roller_coaster_png,windmill_png,Dolphin_png,dinner_png,house_png,people_png,background_gray_deep_png,border_left_up_gray_png,border_left_up_grap_deep_png,border_right_down_gray_png,border_right_down_grap_deep_png,border_rect_png,border_rect_yellow_png,trail_head_png,me_png,circle_check_png,circle_black_png,circle_page_next_png,circle_border_png,trail_mid_png,trail_end_png,triangle_png,text_init_png,text_process_png,circle_check_deep_png,finish_png,circle_leave_png,next_page_gray_png,house_and_people_png,text_area_background_png,text_background_png,wlts_logo_jpg",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,shape6_png,shape48_png,shape51_png,shape60_png,shape62_png,shape249_png,shape252_png,shape253_png,shape262_png,shape266_png,shape269_png,shape270_png,shape293_png,shape297_png,shape299_png,shape301_png,shape304_png,shape311_png,shape312_png,shape313_png,shape315_png,shape322_png,shape323_png,shape324_png,shape325_png,shape327_png,shape330_png,shape333_png,shape335_png,shape339_png,shape344_png,shape350_png,shape352_png,shape354_png,shape355_png,shape357_png,shape358_png,shape359_png,shape361_png,border_slow_png,background_gray_png,roller_coaster_png,windmill_png,Dolphin_png,dinner_png,house_png,people_png,background_gray_deep_png,border_left_up_gray_png,border_left_up_grap_deep_png,border_right_down_gray_png,border_right_down_grap_deep_png,border_rect_png,border_rect_yellow_png,trail_head_png,me_png,circle_check_png,circle_black_png,circle_page_next_png,circle_border_png,trail_mid_png,trail_end_png,triangle_png,text_init_png,text_process_png,circle_check_deep_png,finish_png,circle_leave_png,next_page_gray_png,house_and_people_png,text_area_background_png,text_background_png,wlts_logo_jpg,next_page_green_png,sound 1 (park_s5.mp3)_mp3,sound 2 (park_s4.mp3)_mp3,sound 3 (park_s3.mp3)_mp3,sound 4 (park_s2.mp3)_mp3,sound 26_mp3,sound 80_mp3,sound 82_mp3,sound 84_mp3,sound 86_mp3,sound 88_mp3,sound 90_mp3,sound 92_mp3,sound 94_mp3,sound 96_mp3,sound 98_mp3,sound 100_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 110_mp3,sound 112_mp3,sound 114_mp3,sound 116_mp3,sound 118_mp3,sound 120_mp3,sound 122_mp3,sound 124_mp3,sound 126_mp3,sound 128_mp3,sound 130_mp3,sound 132_mp3,sound 134_mp3,sound 136_mp3,sound 138_mp3,sound 140_mp3,sound 142_mp3,sound 144_mp3,sound 146_mp3,sound 148_mp3,sound 150_mp3,sound 152_mp3,sound 154_mp3,sound 156_mp3,sound 158_mp3,sound 160_mp3,sound 162_mp3,sound 164_mp3,sound 167_mp3,sound 170_mp3,sound 172_mp3,sound 174_mp3,sound 176_mp3,sound 178_mp3,sound 180_mp3,sound 182_mp3,sound 184_mp3,sound 186_mp3,sound 188_mp3,sound 190_mp3,sound 192_mp3,sound 194_mp3,sound 196_mp3,sound 198_mp3,sound 200_mp3,sound 202_mp3,sound 204_mp3,sound 206_mp3,sound 208_mp3,sound 212_mp3,sound 214_mp3,sound 217_mp3,sound 219_mp3,sound 221_mp3,sound 223_mp3,sound 241_mp3,sound 402_mp3,sound1_park_s1_mp3",
 			"name": "preload"
 		}
 	],
@@ -500,6 +500,401 @@
 			"name": "wlts_logo_jpg",
 			"type": "image",
 			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "next_page_green_png",
+			"type": "image",
+			"url": "texture/next_page_green.png"
+		},
+		{
+			"name": "sound 1 (park_s5.mp3)_mp3",
+			"type": "sound",
+			"url": "audio/sound 1 (park_s5.mp3).mp3"
+		},
+		{
+			"name": "sound 2 (park_s4.mp3)_mp3",
+			"type": "sound",
+			"url": "audio/sound 2 (park_s4.mp3).mp3"
+		},
+		{
+			"name": "sound 3 (park_s3.mp3)_mp3",
+			"type": "sound",
+			"url": "audio/sound 3 (park_s3.mp3).mp3"
+		},
+		{
+			"name": "sound 4 (park_s2.mp3)_mp3",
+			"type": "sound",
+			"url": "audio/sound 4 (park_s2.mp3).mp3"
+		},
+		{
+			"name": "sound 26_mp3",
+			"type": "sound",
+			"url": "audio/sound 26.mp3"
+		},
+		{
+			"name": "sound 80_mp3",
+			"type": "sound",
+			"url": "audio/sound 80.mp3"
+		},
+		{
+			"name": "sound 82_mp3",
+			"type": "sound",
+			"url": "audio/sound 82.mp3"
+		},
+		{
+			"name": "sound 84_mp3",
+			"type": "sound",
+			"url": "audio/sound 84.mp3"
+		},
+		{
+			"name": "sound 86_mp3",
+			"type": "sound",
+			"url": "audio/sound 86.mp3"
+		},
+		{
+			"name": "sound 88_mp3",
+			"type": "sound",
+			"url": "audio/sound 88.mp3"
+		},
+		{
+			"name": "sound 90_mp3",
+			"type": "sound",
+			"url": "audio/sound 90.mp3"
+		},
+		{
+			"name": "sound 92_mp3",
+			"type": "sound",
+			"url": "audio/sound 92.mp3"
+		},
+		{
+			"name": "sound 94_mp3",
+			"type": "sound",
+			"url": "audio/sound 94.mp3"
+		},
+		{
+			"name": "sound 96_mp3",
+			"type": "sound",
+			"url": "audio/sound 96.mp3"
+		},
+		{
+			"name": "sound 98_mp3",
+			"type": "sound",
+			"url": "audio/sound 98.mp3"
+		},
+		{
+			"name": "sound 100_mp3",
+			"type": "sound",
+			"url": "audio/sound 100.mp3"
+		},
+		{
+			"name": "sound 102_mp3",
+			"type": "sound",
+			"url": "audio/sound 102.mp3"
+		},
+		{
+			"name": "sound 104_mp3",
+			"type": "sound",
+			"url": "audio/sound 104.mp3"
+		},
+		{
+			"name": "sound 106_mp3",
+			"type": "sound",
+			"url": "audio/sound 106.mp3"
+		},
+		{
+			"name": "sound 108_mp3",
+			"type": "sound",
+			"url": "audio/sound 108.mp3"
+		},
+		{
+			"name": "sound 110_mp3",
+			"type": "sound",
+			"url": "audio/sound 110.mp3"
+		},
+		{
+			"name": "sound 112_mp3",
+			"type": "sound",
+			"url": "audio/sound 112.mp3"
+		},
+		{
+			"name": "sound 114_mp3",
+			"type": "sound",
+			"url": "audio/sound 114.mp3"
+		},
+		{
+			"name": "sound 116_mp3",
+			"type": "sound",
+			"url": "audio/sound 116.mp3"
+		},
+		{
+			"name": "sound 118_mp3",
+			"type": "sound",
+			"url": "audio/sound 118.mp3"
+		},
+		{
+			"name": "sound 120_mp3",
+			"type": "sound",
+			"url": "audio/sound 120.mp3"
+		},
+		{
+			"name": "sound 122_mp3",
+			"type": "sound",
+			"url": "audio/sound 122.mp3"
+		},
+		{
+			"name": "sound 124_mp3",
+			"type": "sound",
+			"url": "audio/sound 124.mp3"
+		},
+		{
+			"name": "sound 126_mp3",
+			"type": "sound",
+			"url": "audio/sound 126.mp3"
+		},
+		{
+			"name": "sound 128_mp3",
+			"type": "sound",
+			"url": "audio/sound 128.mp3"
+		},
+		{
+			"name": "sound 130_mp3",
+			"type": "sound",
+			"url": "audio/sound 130.mp3"
+		},
+		{
+			"name": "sound 132_mp3",
+			"type": "sound",
+			"url": "audio/sound 132.mp3"
+		},
+		{
+			"name": "sound 134_mp3",
+			"type": "sound",
+			"url": "audio/sound 134.mp3"
+		},
+		{
+			"name": "sound 136_mp3",
+			"type": "sound",
+			"url": "audio/sound 136.mp3"
+		},
+		{
+			"name": "sound 138_mp3",
+			"type": "sound",
+			"url": "audio/sound 138.mp3"
+		},
+		{
+			"name": "sound 140_mp3",
+			"type": "sound",
+			"url": "audio/sound 140.mp3"
+		},
+		{
+			"name": "sound 142_mp3",
+			"type": "sound",
+			"url": "audio/sound 142.mp3"
+		},
+		{
+			"name": "sound 144_mp3",
+			"type": "sound",
+			"url": "audio/sound 144.mp3"
+		},
+		{
+			"name": "sound 146_mp3",
+			"type": "sound",
+			"url": "audio/sound 146.mp3"
+		},
+		{
+			"name": "sound 148_mp3",
+			"type": "sound",
+			"url": "audio/sound 148.mp3"
+		},
+		{
+			"name": "sound 150_mp3",
+			"type": "sound",
+			"url": "audio/sound 150.mp3"
+		},
+		{
+			"name": "sound 152_mp3",
+			"type": "sound",
+			"url": "audio/sound 152.mp3"
+		},
+		{
+			"name": "sound 154_mp3",
+			"type": "sound",
+			"url": "audio/sound 154.mp3"
+		},
+		{
+			"name": "sound 156_mp3",
+			"type": "sound",
+			"url": "audio/sound 156.mp3"
+		},
+		{
+			"name": "sound 158_mp3",
+			"type": "sound",
+			"url": "audio/sound 158.mp3"
+		},
+		{
+			"name": "sound 160_mp3",
+			"type": "sound",
+			"url": "audio/sound 160.mp3"
+		},
+		{
+			"name": "sound 162_mp3",
+			"type": "sound",
+			"url": "audio/sound 162.mp3"
+		},
+		{
+			"name": "sound 164_mp3",
+			"type": "sound",
+			"url": "audio/sound 164.mp3"
+		},
+		{
+			"name": "sound 167_mp3",
+			"type": "sound",
+			"url": "audio/sound 167.mp3"
+		},
+		{
+			"name": "sound 170_mp3",
+			"type": "sound",
+			"url": "audio/sound 170.mp3"
+		},
+		{
+			"name": "sound 172_mp3",
+			"type": "sound",
+			"url": "audio/sound 172.mp3"
+		},
+		{
+			"name": "sound 174_mp3",
+			"type": "sound",
+			"url": "audio/sound 174.mp3"
+		},
+		{
+			"name": "sound 176_mp3",
+			"type": "sound",
+			"url": "audio/sound 176.mp3"
+		},
+		{
+			"name": "sound 178_mp3",
+			"type": "sound",
+			"url": "audio/sound 178.mp3"
+		},
+		{
+			"name": "sound 180_mp3",
+			"type": "sound",
+			"url": "audio/sound 180.mp3"
+		},
+		{
+			"name": "sound 182_mp3",
+			"type": "sound",
+			"url": "audio/sound 182.mp3"
+		},
+		{
+			"name": "sound 184_mp3",
+			"type": "sound",
+			"url": "audio/sound 184.mp3"
+		},
+		{
+			"name": "sound 186_mp3",
+			"type": "sound",
+			"url": "audio/sound 186.mp3"
+		},
+		{
+			"name": "sound 188_mp3",
+			"type": "sound",
+			"url": "audio/sound 188.mp3"
+		},
+		{
+			"name": "sound 190_mp3",
+			"type": "sound",
+			"url": "audio/sound 190.mp3"
+		},
+		{
+			"name": "sound 192_mp3",
+			"type": "sound",
+			"url": "audio/sound 192.mp3"
+		},
+		{
+			"name": "sound 194_mp3",
+			"type": "sound",
+			"url": "audio/sound 194.mp3"
+		},
+		{
+			"name": "sound 196_mp3",
+			"type": "sound",
+			"url": "audio/sound 196.mp3"
+		},
+		{
+			"name": "sound 198_mp3",
+			"type": "sound",
+			"url": "audio/sound 198.mp3"
+		},
+		{
+			"name": "sound 200_mp3",
+			"type": "sound",
+			"url": "audio/sound 200.mp3"
+		},
+		{
+			"name": "sound 202_mp3",
+			"type": "sound",
+			"url": "audio/sound 202.mp3"
+		},
+		{
+			"name": "sound 204_mp3",
+			"type": "sound",
+			"url": "audio/sound 204.mp3"
+		},
+		{
+			"name": "sound 206_mp3",
+			"type": "sound",
+			"url": "audio/sound 206.mp3"
+		},
+		{
+			"name": "sound 208_mp3",
+			"type": "sound",
+			"url": "audio/sound 208.mp3"
+		},
+		{
+			"name": "sound 212_mp3",
+			"type": "sound",
+			"url": "audio/sound 212.mp3"
+		},
+		{
+			"name": "sound 214_mp3",
+			"type": "sound",
+			"url": "audio/sound 214.mp3"
+		},
+		{
+			"name": "sound 217_mp3",
+			"type": "sound",
+			"url": "audio/sound 217.mp3"
+		},
+		{
+			"name": "sound 219_mp3",
+			"type": "sound",
+			"url": "audio/sound 219.mp3"
+		},
+		{
+			"name": "sound 221_mp3",
+			"type": "sound",
+			"url": "audio/sound 221.mp3"
+		},
+		{
+			"name": "sound 223_mp3",
+			"type": "sound",
+			"url": "audio/sound 223.mp3"
+		},
+		{
+			"name": "sound 241_mp3",
+			"type": "sound",
+			"url": "audio/sound 241.mp3"
+		},
+		{
+			"name": "sound 402_mp3",
+			"type": "sound",
+			"url": "audio/sound 402.mp3"
+		},
+		{
+			"name": "sound1_park_s1_mp3",
+			"type": "sound",
+			"url": "audio/sound1_park_s1.mp3"
 		}
 	]
 }
