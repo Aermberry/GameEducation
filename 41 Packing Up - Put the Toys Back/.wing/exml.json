@@ -14,12 +14,14 @@
   "16560f0d84f": {
     "path": "Scenes\\tips_scene.ts",
     "class": "tips_scene",
-    "parentPath": ""
+    "parentPath": "",
+    "backgroundType": "user"
   },
   "16560f1bf16": {
     "path": "Scenes\\status_scene.ts",
     "class": "status_scene",
-    "parentPath": ""
+    "parentPath": "",
+    "backgroundType": "user"
   },
   "global": {
     "globalAutoLayerMarkEnable": false
