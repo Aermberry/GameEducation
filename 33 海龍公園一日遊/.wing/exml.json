@@ -1,42 +1,55 @@
 {
-    "1655bc40f38": {
-        "path": "scenes/mainScene.ts",
-        "class": "mainScene",
-        "parentPath": ""
-    },
-    "1655f48fcdf": {
-        "path": "scenes/StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    },
-    "1655f527028": {
-        "path": "scenes/BackgroundScene.ts",
-        "class": "BackgroundScene",
-        "parentPath": ""
-    },
-    "1655f64624c": {
-        "path": "scenes/Game1Scene.ts",
-        "class": "Game1Scene",
-        "parentPath": ""
-    },
-    "1655f78f107": {
-        "path": "scenes/GameScene.ts",
-        "class": "GameScene",
-        "parentPath": ""
-    },
-    "1655f9f7f8f": {
-        "path": "components/TextComponent.ts",
-        "class": "TextComponent",
-        "parentPath": ""
-    },
-    "165611c77a3": {
-        "path": "components/BackgroundComponent.ts",
-        "class": "BackgroundComponent",
-        "parentPath": ""
-    },
-    "165647755ff": {
-        "path": "scenes/NextPageComponent.ts",
-        "class": "NextPageComponent",
-        "parentPath": ""
-    }
+  "1655bc40f38": {
+    "path": "scenes/mainScene.ts",
+    "class": "mainScene",
+    "parentPath": ""
+  },
+  "1655f48fcdf": {
+    "path": "scenes/StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "1655f527028": {
+    "path": "scenes/BackgroundScene.ts",
+    "class": "BackgroundScene",
+    "parentPath": ""
+  },
+  "1655f64624c": {
+    "path": "scenes/Game1Scene.ts",
+    "class": "Game1Scene",
+    "parentPath": ""
+  },
+  "1655f78f107": {
+    "path": "scenes/GameScene.ts",
+    "class": "GameScene",
+    "parentPath": ""
+  },
+  "1655f9f7f8f": {
+    "path": "components/TextComponent.ts",
+    "class": "TextComponent",
+    "parentPath": ""
+  },
+  "165611c77a3": {
+    "path": "components/backgroundComponent.ts",
+    "class": "backgroundComponent",
+    "parentPath": ""
+  },
+  "1656475dc63": {
+    "path": "components/NextPageComponent.ts",
+    "class": "NextPageComponent",
+    "parentPath": ""
+  },
+  "165647755ff": {
+    "path": "components/NextPageComponent.ts",
+    "class": "NextPageComponent",
+    "parentPath": ""
+  },
+  "16564e5ca1f": {
+    "path": "components/NextPageComponent.ts",
+    "class": "NextPageComponent",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
 }

@@ -1,10 +1,11 @@
 class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	
-	public stepImage: eui.Image;
-	public curStep: eui.Label;
-	public contentButtom: eui.Group;
-	public currentStepStartLabel: eui.Label;
-	public NextPageButton;
+	private stepImage: eui.Image;
+	private curStep: eui.Label;
+	private contentButtom: eui.Group;
+	private currentStepStartLabel: eui.Label;
+	private nextPageButton: eui.Image;
+	private startTweenGroup: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -15,39 +16,31 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-	public tw;
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.stepImage.visible = false;
-		this.contentButtom.visible = false;
-
-		this.tw = egret.Tween.get(this.currentStepStartLabel);
-		this.tw.to({alpha:1},2000,egret.Ease.backInOut).call(() => {
-			this.displayBackground('第一节');
-		})
-		
+		this.nextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
+		this.startTweenGroup.play(0);
+		this.displayBackground('第一節');
 	}
 
-	private async displayBackground(bg: string){
-		this.currentStepStartLabel.alpha = 0;
-		this.stepImage.visible = true;
-		this.contentButtom.visible = true;
+	private onNextPageButtonClick(): void
+	{
+		Main.instance.gotoScene(new NextPageScene());
+	}
 
-		if(bg == '第一节')
+	private async displayBackground(bg: string): Promise<void> {
+		if(bg == '第一節')
 		{
 			await lzlib.SoundUtility.playSound('sound1_park_s1_mp3');
-			this.NextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP,() => {
-				Main.instance.gotoScene(new NextPageScene());
-			})	 
-			
+			this.nextPageButton.touchEnabled = true;
 		}
-		else if(bg == '第二节')
+		else if(bg == '第二節')
 		{
 		}
-		else if(bg == '第三节') {
+		else if(bg == '第三節') {
 		}
-		else if(bg == '第四节') {
+		else if(bg == '第四節') {
 
 		}
 
