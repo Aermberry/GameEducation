@@ -1,3 +1,6 @@
+interface Math {
+    randomMinMax(min: number, max: number): number;
+}
 interface Array<T> {
     shuffle(): void;
 }
@@ -26,6 +29,7 @@ declare namespace lzlib {
         enableDrag(dragObject: egret.DisplayObject, isCopy?: boolean, dataTransfer?: any): void;
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
+        private cloneImage(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -65,12 +69,19 @@ declare namespace lzlib {
         private onTouchEnd(e);
     }
 }
-interface Math {
-    randomMinMax(min: number, max: number): number;
+declare namespace lzlib {
+    interface Cloneable {
+        clone(): object;
+    }
 }
 declare namespace egret {
     interface MovieClip {
         playAsync(): Promise<void>;
+    }
+}
+declare namespace lzlib {
+    class SoundUtility {
+        static playSound(soundName: string): Promise<void>;
     }
 }
 interface String {
@@ -84,14 +95,13 @@ declare namespace lzlib {
 }
 declare namespace egret.tween {
     interface TweenGroup {
+        /**
+         * 播放一次动画
+         */
         playOnceAsync(): Promise<void>;
-    }
-}
-declare namespace lzlib {
-    class TweenGroupUtility {
         /**
          * 循环播放动画
          */
-        static playAnimation(target: egret.tween.TweenGroup): void;
+        playLoopAsync(): void;
     }
 }

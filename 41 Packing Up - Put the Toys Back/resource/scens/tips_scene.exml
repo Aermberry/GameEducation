@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="tips_sceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="tipsSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16564b36b7f" ></w:Config>
 	<e:Image id="behind" source="behind_png" x="435.5" y="192" visible="false"/>
 	<e:Label id="text_behind" text="The ball is behind the box." x="255.5" y="1156" textColor="0x0739f7" size="116" visible="false"/>

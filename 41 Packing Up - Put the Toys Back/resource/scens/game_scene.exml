@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="game_sceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="gameSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+
+	</w:Declarations>
 	<w:Config id="16564b2e611" ></w:Config>
 	<e:Image id="room" source="room_png" x="38.5" y="50"/>
 	<e:Button id="help" label="Help" x="877.5" y="1294" anchorOffsetX="0" width="165" anchorOffsetY="0" height="78"/>

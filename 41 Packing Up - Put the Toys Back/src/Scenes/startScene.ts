@@ -1,4 +1,4 @@
-class game_start extends eui.Component implements  eui.UIComponent {
+class startScene extends eui.Component implements  eui.UIComponent {
 	private starBtn:eui.Button;
 	public constructor() {
 		super();
@@ -14,10 +14,16 @@ class game_start extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.starBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnextBtnClick,this);
+		this.playBackgroundMusic();
 	}
 
-	private onnextBtnClick():void {
-		Main.instance.gotoScene(new game_scene());
+// 播放背景音樂
+	private async playBackgroundMusic():Promise<void> {
+		await lzlib.SoundUtility.playSound('01a_mp3');
 	}
-	
+
+// 點擊進入游戲場景
+	private onnextBtnClick():void {
+		Main.instance.gotoScene(new gameScene());
+	}
 }

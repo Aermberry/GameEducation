@@ -1,5 +1,6 @@
-class game_scene extends eui.Component implements  eui.UIComponent {
+class gameScene extends eui.Component implements  eui.UIComponent {
 	private help:eui.Button;
+	private display:egret.tween.TweenGroup;
 	public constructor() {
 		super();
 	}
@@ -14,7 +15,7 @@ class game_scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.help.addEventListener(egret.TouchEvent.TOUCH_TAP,function():void{
-			Main.instance.gotoScene(new tips_scene())
+			Main.instance.gotoScene(new tipsScene())
 		},this)
 	}
 	

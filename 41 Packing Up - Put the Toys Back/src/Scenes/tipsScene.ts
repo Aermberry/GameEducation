@@ -1,4 +1,4 @@
-class tips_scene extends eui.Component implements  eui.UIComponent {
+class tipsScene extends eui.Component implements  eui.UIComponent {
 	private back:eui.Button;
 	public constructor() {
 		super();
@@ -15,7 +15,7 @@ class tips_scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 
 		this.back.addEventListener(egret.TouchEvent.TOUCH_TAP,function(){
-			Main.instance.gotoScene(new game_scene());
+			Main.instance.gotoScene(new gameScene());
 		},this);
 	}
 	

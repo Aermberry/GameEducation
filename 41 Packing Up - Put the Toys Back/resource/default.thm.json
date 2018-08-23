@@ -13,10 +13,10 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"game_start": "resource/scens/game_start.exml",
-		"game_scene": "resource/scens/game_scene.exml",
-		"tips_scene": "resource/scens/tips_scene.exml",
-		"status_scene": "resource/scens/status_scene.exml"
+		"startScene": "resource/scens/start_scene.exml",
+		"gameScene": "resource/scens/game_scene.exml",
+		"tipsScene": "resource/scens/tips_scene.exml",
+		"statusScene": "resource/scens/status_scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -34,7 +34,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scens/game_scene.exml",
-		"resource/scens/game_start.exml",
+		"resource/scens/start_scene.exml",
 		"resource/scens/status_scene.exml",
 		"resource/scens/tips_scene.exml"
 	],

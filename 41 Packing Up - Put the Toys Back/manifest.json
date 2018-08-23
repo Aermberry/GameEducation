@@ -6,7 +6,9 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
 		"libs/modules/game/game.js",
-		"libs/modules/promise/promise.js"
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
 		"bin-debug/AssetAdapter.js",
@@ -14,9 +16,9 @@
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
-		"bin-debug/Scenes/game_scene.js",
-		"bin-debug/Scenes/game_start.js",
-		"bin-debug/Scenes/status_scene.js",
-		"bin-debug/Scenes/tips_scene.js"
+		"bin-debug/Scenes/gameScene.js",
+		"bin-debug/Scenes/startScene.js",
+		"bin-debug/Scenes/statusScene.js",
+		"bin-debug/Scenes/tipsScene.js"
 	]
 }
