@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BackgroundComponentSkin" width="1754" height="1077" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165611c77a3" ></w:Config>
+	<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xffffff"/>
+	<e:Label id="titleText" text="Label" top="0" bottom="0" left="0" right="0" textAlign="center" verticalAlign="middle" textColor="0x000000" size="150"/>
+</e:Skin>
