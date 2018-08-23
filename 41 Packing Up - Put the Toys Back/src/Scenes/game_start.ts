@@ -13,6 +13,11 @@ class game_start extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.starBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnextBtnClick,this);
+	}
+
+	private onnextBtnClick():void {
+		Main.instance.gotoScene(new game_scene());
 	}
 	
 }

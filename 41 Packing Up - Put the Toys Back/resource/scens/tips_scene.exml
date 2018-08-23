@@ -11,5 +11,5 @@
 	<e:Label id="text_under" text="The ball is under the box." x="392.5" y="1164" textColor="0x0739F7" size="116" visible="false"/>
 	<e:Image id="near" source="nearby_png" x="390.5" y="116" visible="false"/>
 	<e:Label id="text_near" text="The ball is near the box." x="402.5" y="1174" textColor="0x0739F7" size="116" visible="false"/>
-	<e:Button id="back" label="Back" x="1527.5" y="1332" anchorOffsetX="0" width="166" anchorOffsetY="0" height="84"/>
+	<e:Button id="back" label="Back" x="1627.5" y="1310.79" anchorOffsetX="0" width="205.39" anchorOffsetY="0" height="105.21"/>
 </e:Skin>
