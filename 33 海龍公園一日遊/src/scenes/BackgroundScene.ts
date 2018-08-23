@@ -2,7 +2,10 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	
 	public stepImage: eui.Image;
 	public curStep: eui.Label;
-	
+	public contentButtom: eui.Group;
+	public currentStepStartLabel: eui.Label;
+	public NextPageButton;
+
 	public constructor() {
 		super();
 	}
@@ -12,39 +15,42 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
+	public tw;
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		// this.stepImage.source = this._source;
-		// this.curStep.text = this._text;
-		console.log('BackgroundScene');
-		console.log(this.stepImage);
-		console.log(this.curStep);
+		this.stepImage.visible = false;
+		this.contentButtom.visible = false;
+
+		this.tw = egret.Tween.get(this.currentStepStartLabel);
+		this.tw.to({alpha:1},2000,egret.Ease.backInOut).call(() => {
+			this.displayBackground('第一节');
+		})
+		
 	}
 
-	// private _source = 'house_and_people_png';
+	private async displayBackground(bg: string){
+		this.currentStepStartLabel.alpha = 0;
+		this.stepImage.visible = true;
+		this.contentButtom.visible = true;
 
-	// public get source(): string
-	// {
-	// 	return this._source;
-	// }
+		if(bg == '第一节')
+		{
+			await lzlib.SoundUtility.playSound('sound1_park_s1_mp3');
+			this.NextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP,() => {
+				Main.instance.gotoScene(new NextPageScene());
+			})	 
+			
+		}
+		else if(bg == '第二节')
+		{
+		}
+		else if(bg == '第三节') {
+		}
+		else if(bg == '第四节') {
 
-	// public set source(sourcePath:string)
-	// {
-	// 	this._source = sourcePath;
-	// }
+		}
 
-	// private _text = '第一节';
-
-	// public get text(): string
-	// {
-	// 	return this._text;
-	// }
-
-	// public set text(text:string)
-	// {
-	// 	this._text = text;
-	// }
+	}
 	
 }

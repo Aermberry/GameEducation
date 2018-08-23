@@ -42,6 +42,12 @@
 					<e:BasicLayout/>
 				</e:layout>
 			</e:Group>
+			<e:Group width="417" height="111" x="520" y="372" visible="false">
+				<e:Label text="請按" x="0" y="28" size="74" textColor="0x000000"/>
+				<e:Label text="請按" x="269" y="28" size="74" textColor="0x000000"/>
+				<e:Image width="106" height="111" x="158" source="circle_page_next_png"/>
+			</e:Group>
+			<e:Label id="curStepEnd" text="第一節完" left="0" right="0" top="0" bottom="0" size="150" textColor="0x000000" textAlign="center" verticalAlign="middle" visible="false"/>
 			<e:layout>
 				<e:BasicLayout/>
 			</e:layout>

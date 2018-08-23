@@ -37,16 +37,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private displayStepStr(str: string)
 	{
-
-		this.curStep = new BackgroundComponent();
-		this.curStep._text = str;
-		this.displayArea.removeChildren();
-		this.displayArea.addChild(this.curStep);
-		let tw = egret.Tween.get(this.curStep.titleText);
-		tw.to({alpha:0},2000).call(() => {
-			this.nextBackground(str);
-		});
-
+		this.curStep = new BackgroundScene();
+		Main.instance.gotoScene(this.curStep);
 	}
 
 	private async nextBackground(bg:string){
@@ -70,7 +62,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 			let backgroundScene = new BackgroundScene();
 			backgroundScene.stepImage.source = 'roller_coaster_png';
 			
-			backgroundScene.curStep.text = bg;
+			backgroundScene.currentStepStartLabel.text = bg;
 			this.addChild(backgroundScene);
 
 			await lzlib.SoundUtility.playSound('sound1_park_s2_mp3');

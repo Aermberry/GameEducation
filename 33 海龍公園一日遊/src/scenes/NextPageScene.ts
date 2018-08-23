@@ -25,9 +25,7 @@ class NextPageScene extends eui.Component implements  eui.UIComponent {
 
 	private onNextPage(step: string)
 	{
-		console.log(step);
-		this.removeChildren();
-		this.addChild(new GameScene());
+		Main.instance.gotoScene(new GameScene());
 	}
 
 	private _text = '';
