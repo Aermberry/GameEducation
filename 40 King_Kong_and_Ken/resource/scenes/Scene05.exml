@@ -2,14 +2,14 @@
 <e:Skin class="Scene05Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
 	<w:Config id="16545ddd65b"></w:Config>
-	<e:Group width="1056" anchorOffsetX="0" right="0" top="0" bottom="248" anchorOffsetY="0">
-		<e:Label text="&quot;Ping-Pong,Ping-Pong!&quot;" x="21.5" y="90" scaleX="1" scaleY="1" size="74" textColor="0x5d20f5" />
-		<e:Label text="&quot;Ding-Dong,Ding-Dong!&quot;" x="155" y="309" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5" />
-		<e:Label text="Ken and King Kong" x="33" y="527" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5" />
-		<e:Label text="Play their new song." x="299" y="713" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5" />
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group width="1056" anchorOffsetX="0" right="0" top="0" bottom="248" anchorOffsetY="0" x="864" y="0" scaleX="1" scaleY="1">
+			<e:Label text="&quot;Ping-Pong,Ping-Pong!&quot;" x="21.5" y="90" scaleX="1" scaleY="1" size="74" textColor="0x5d20f5"/>
+			<e:Label text="&quot;Ding-Dong,Ding-Dong!&quot;" x="155" y="309" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5"/>
+			<e:Label text="Ken and King Kong" x="33" y="527" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5"/>
+			<e:Label text="Play their new song." x="299" y="713" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5"/>
+		</e:Group>
+		<e:Button id="btnNext" label="Next" x="1590.0000000000002" y="902.0000000000001" scaleX="1" scaleY="1"/>
+		<ns1:MovieClipPlayer width="1156.18" height="785.38" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.5" scaleY="0.5" rotation="359.59" horizontalCenter="-669.5" bottom="519" x="0" y="168"/>
 	</e:Group>
-	<e:Button label="Next" x="1590" y="902" />
-	<ns1:MovieClipPlayer width="1156.18" height="785.38" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json"
-	                     texture="band_png" movieClipName="band" scaleX="0.5" scaleY="0.5" rotation="359.59"
-	                     horizontalCenter="-669.5" bottom="519" />
 </e:Skin>

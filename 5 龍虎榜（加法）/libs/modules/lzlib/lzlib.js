@@ -56,10 +56,10 @@ var lzlib;
         };
         Drag.prototype.onTouchBegin = function (e) {
             Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
+            var globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
+            Drag.dragingObject.x = globalPoint.x;
+            Drag.dragingObject.y = globalPoint.y;
             if (Drag.dragingObject.parent != null) {
-                var globalPoint = Drag.dragingObject.localToGlobal(Drag.dragingObject.x, Drag.dragingObject.y);
-                Drag.dragingObject.x = globalPoint.x;
-                Drag.dragingObject.y = globalPoint.y;
                 Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
             this.stage.addChild(Drag.dragingObject);
@@ -84,7 +84,7 @@ var lzlib;
             }
         };
         Drag.prototype.onTouchEnd = function (e) {
-            this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
+            this.stage && this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
             if (!Drag.isDraging) {
                 //不处于拖动状态，就不用继续运行了。
                 return;

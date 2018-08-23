@@ -23,7 +23,9 @@
 		"Scene03": "resource/scenes/Scene03.exml",
 		"Scene04": "resource/scenes/Scene04.exml",
 		"Scene05": "resource/scenes/Scene05.exml",
-		"Scene06": "resource/scenes/Scene06.exml"
+		"Scene06": "resource/scenes/Scene06.exml",
+		"Scene00_1": "resource/scenes/Scene00_1.exml",
+		"Scene07": "resource/scenes/Scene07.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -43,12 +45,14 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/Scene00.exml",
+		"resource/scenes/Scene00_1.exml",
 		"resource/scenes/Scene01.exml",
 		"resource/scenes/Scene02.exml",
 		"resource/scenes/Scene03.exml",
 		"resource/scenes/Scene04.exml",
 		"resource/scenes/Scene05.exml",
-		"resource/scenes/Scene06.exml"
+		"resource/scenes/Scene06.exml",
+		"resource/scenes/Scene07.exml"
 	],
 	"path": "resource/default.thm.json"
 }

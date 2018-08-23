@@ -11,13 +11,13 @@
         "backgroundType": "user"
     },
     "global": {
-        "globalAutoLayerMarkEnable": true,
+        "globalAutoLayerMarkEnable": false,
         "gridColor": 8421504,
         "gridEnabled": true,
         "gridSize": "82"
     },
     "165405c5d66": {
-        "backgroundType": "user",
+        "backgroundType": "null",
         "guideLines": [
             {
                 "type": "v",
@@ -64,9 +64,15 @@
     "16545e839fb": {
         "backgroundType": "user"
     },
-    "16545ec3d8f": {
-        "path": "scenes\\Scene06.ts",
-        "class": "Scene06",
+    "16545f6272b": {
+        "backgroundType": "user"
+    },
+    "1655a3ac702": {
+        "backgroundType": "user"
+    },
+    "1655b2a4d69": {
+        "path": "scenes\\Scene07.ts",
+        "class": "Scene07",
         "parentPath": ""
     }
 }
