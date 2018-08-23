@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,01a_mp3,01b_mp3,02a_plant_mp3,02b_books_mp3,03_robot_mp3,04_clock_mp3,05_toy_bus_mp3,06_bicycle_mp3,behind_png,bicycle_png,books_png,bus_png,clock_png,flower_png,inside_png,man_girl_png,nearby_png,owl_png,robot_png,room_png,under_png,up_png,text01_png,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,bg2_jpg,egret_icon2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,inside2_png,man_girl2_png,nearby2_png,owl2_png,robot2_png,room2_png,text012_png,under2_png,up2_png,text02_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,behind_png,bicycle_png,books_png,bus_png,clock_png,flower_png,inside_png,man_girl_png,nearby_png,owl_png,robot_png,room_png,under_png,up_png,text01_png,bg2_jpg,egret_icon2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,inside2_png,man_girl2_png,nearby2_png,owl2_png,robot2_png,room2_png,text012_png,under2_png,up2_png,text02_png,01a_mp3,01b_mp3,02a_plant_mp3,02b_books_mp3,03_robot_mp3,04_clock_mp3,05_toy_bus_mp3,06_bicycle_mp3",
 			"name": "preload"
 		}
 	],
@@ -137,46 +137,6 @@
 			"name": "description_json"
 		},
 		{
-			"url": "audio/01a.mp3",
-			"type": "sound",
-			"name": "01a_mp3"
-		},
-		{
-			"url": "audio/01b.mp3",
-			"type": "sound",
-			"name": "01b_mp3"
-		},
-		{
-			"url": "audio/02a_plant.mp3",
-			"type": "sound",
-			"name": "02a_plant_mp3"
-		},
-		{
-			"url": "audio/02b_books.mp3",
-			"type": "sound",
-			"name": "02b_books_mp3"
-		},
-		{
-			"url": "audio/03_robot.mp3",
-			"type": "sound",
-			"name": "03_robot_mp3"
-		},
-		{
-			"url": "audio/04_clock.mp3",
-			"type": "sound",
-			"name": "04_clock_mp3"
-		},
-		{
-			"url": "audio/05_toy_bus.mp3",
-			"type": "sound",
-			"name": "05_toy_bus_mp3"
-		},
-		{
-			"url": "audio/06_bicycle.mp3",
-			"type": "sound",
-			"name": "06_bicycle_mp3"
-		},
-		{
 			"url": "textures/behind.png",
 			"type": "image",
 			"name": "behind_png"
@@ -252,134 +212,134 @@
 			"name": "text01_png"
 		},
 		{
-			"name": "01a2_mp3",
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg2_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon2_png"
+		},
+		{
+			"url": "textures/behind.png",
+			"type": "image",
+			"name": "behind2_png"
+		},
+		{
+			"url": "textures/bicycle.png",
+			"type": "image",
+			"name": "bicycle2_png"
+		},
+		{
+			"url": "textures/books.png",
+			"type": "image",
+			"name": "books2_png"
+		},
+		{
+			"url": "textures/bus.png",
+			"type": "image",
+			"name": "bus2_png"
+		},
+		{
+			"url": "textures/clock.png",
+			"type": "image",
+			"name": "clock2_png"
+		},
+		{
+			"url": "textures/flower.png",
+			"type": "image",
+			"name": "flower2_png"
+		},
+		{
+			"url": "textures/inside.png",
+			"type": "image",
+			"name": "inside2_png"
+		},
+		{
+			"url": "textures/man_girl.png",
+			"type": "image",
+			"name": "man_girl2_png"
+		},
+		{
+			"url": "textures/nearby.png",
+			"type": "image",
+			"name": "nearby2_png"
+		},
+		{
+			"url": "textures/owl.png",
+			"type": "image",
+			"name": "owl2_png"
+		},
+		{
+			"url": "textures/robot.png",
+			"type": "image",
+			"name": "robot2_png"
+		},
+		{
+			"url": "textures/room.png",
+			"type": "image",
+			"name": "room2_png"
+		},
+		{
+			"url": "textures/text01.png",
+			"type": "image",
+			"name": "text012_png"
+		},
+		{
+			"url": "textures/under.png",
+			"type": "image",
+			"name": "under2_png"
+		},
+		{
+			"url": "textures/up.png",
+			"type": "image",
+			"name": "up2_png"
+		},
+		{
+			"url": "textures/text02.png",
+			"type": "image",
+			"name": "text02_png"
+		},
+		{
+			"url": "audios/01a.mp3",
 			"type": "sound",
-			"url": "audio/01a.mp3"
+			"name": "01a_mp3"
 		},
 		{
-			"name": "01b2_mp3",
+			"url": "audios/01b.mp3",
 			"type": "sound",
-			"url": "audio/01b.mp3"
+			"name": "01b_mp3"
 		},
 		{
-			"name": "02a_plant2_mp3",
+			"url": "audios/02a_plant.mp3",
 			"type": "sound",
-			"url": "audio/02a_plant.mp3"
+			"name": "02a_plant_mp3"
 		},
 		{
-			"name": "02b_books2_mp3",
+			"url": "audios/02b_books.mp3",
 			"type": "sound",
-			"url": "audio/02b_books.mp3"
+			"name": "02b_books_mp3"
 		},
 		{
-			"name": "03_robot2_mp3",
+			"url": "audios/03_robot.mp3",
 			"type": "sound",
-			"url": "audio/03_robot.mp3"
+			"name": "03_robot_mp3"
 		},
 		{
-			"name": "04_clock2_mp3",
+			"url": "audios/04_clock.mp3",
 			"type": "sound",
-			"url": "audio/04_clock.mp3"
+			"name": "04_clock_mp3"
 		},
 		{
-			"name": "05_toy_bus2_mp3",
+			"url": "audios/05_toy_bus.mp3",
 			"type": "sound",
-			"url": "audio/05_toy_bus.mp3"
+			"name": "05_toy_bus_mp3"
 		},
 		{
-			"name": "06_bicycle2_mp3",
+			"url": "audios/06_bicycle.mp3",
 			"type": "sound",
-			"url": "audio/06_bicycle.mp3"
-		},
-		{
-			"name": "bg2_jpg",
-			"type": "image",
-			"url": "assets/bg.jpg"
-		},
-		{
-			"name": "egret_icon2_png",
-			"type": "image",
-			"url": "assets/egret_icon.png"
-		},
-		{
-			"name": "behind2_png",
-			"type": "image",
-			"url": "textures/behind.png"
-		},
-		{
-			"name": "bicycle2_png",
-			"type": "image",
-			"url": "textures/bicycle.png"
-		},
-		{
-			"name": "books2_png",
-			"type": "image",
-			"url": "textures/books.png"
-		},
-		{
-			"name": "bus2_png",
-			"type": "image",
-			"url": "textures/bus.png"
-		},
-		{
-			"name": "clock2_png",
-			"type": "image",
-			"url": "textures/clock.png"
-		},
-		{
-			"name": "flower2_png",
-			"type": "image",
-			"url": "textures/flower.png"
-		},
-		{
-			"name": "inside2_png",
-			"type": "image",
-			"url": "textures/inside.png"
-		},
-		{
-			"name": "man_girl2_png",
-			"type": "image",
-			"url": "textures/man_girl.png"
-		},
-		{
-			"name": "nearby2_png",
-			"type": "image",
-			"url": "textures/nearby.png"
-		},
-		{
-			"name": "owl2_png",
-			"type": "image",
-			"url": "textures/owl.png"
-		},
-		{
-			"name": "robot2_png",
-			"type": "image",
-			"url": "textures/robot.png"
-		},
-		{
-			"name": "room2_png",
-			"type": "image",
-			"url": "textures/room.png"
-		},
-		{
-			"name": "text012_png",
-			"type": "image",
-			"url": "textures/text01.png"
-		},
-		{
-			"name": "under2_png",
-			"type": "image",
-			"url": "textures/under.png"
-		},
-		{
-			"name": "up2_png",
-			"type": "image",
-			"url": "textures/up.png"
-		},
-		{
-			"name": "text02_png",
-			"type": "image",
-			"url": "textures/text02.png"
+			"name": "06_bicycle_mp3"
 		}
 	]
 }

@@ -8,5 +8,5 @@
 	         lineSpacing="25" />
 	<e:Image id="man_girl" source="man_girl_png" x="545" y="449.05" anchorOffsetX="0" width="830" anchorOffsetY="0"
 	         height="1050.95" />
-	<e:Button id="starBtn" label="Start" x="1576" y="1308" anchorOffsetX="0" width="208" anchorOffsetY="0" height="88" />
+	<e:Button id="startButton" label="Start" x="1576" y="1308" anchorOffsetX="0" width="208" anchorOffsetY="0" height="88"  visible="false"/>
 </e:Skin>
