@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tips_sceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16564b36b7f" ></w:Config>
+	<e:Image id="behind" source="behind_png" x="435.5" y="192" visible="false"/>
+	<e:Label id="text_behind" text="The ball is behind the box." x="255.5" y="1156" textColor="0x0739f7" size="116" visible="false"/>
+	<e:Image id="inside" source="inside_png" x="343.5" y="87" visible="false"/>
+	<e:Label id="text_inside" text="The ball is in the box." x="392.5" y="1152" textColor="0x0739F7" size="116" visible="false"/>
+	<e:Image id="up" x="546" y="58" source="up_png" anchorOffsetX="0" width="828" anchorOffsetY="0" height="1072.55"/>
+	<e:Label id="text_on" text="The ball is on the box." x="392.5" y="1164" textColor="0x0739F7" size="116"/>
+	<e:Image id="under" source="under_png" x="548.5" y="74.5" visible="false"/>
+	<e:Label id="text_under" text="The ball is under the box." x="392.5" y="1164" textColor="0x0739F7" size="116" visible="false"/>
+	<e:Image id="near" source="nearby_png" x="390.5" y="116" visible="false"/>
+	<e:Label id="text_near" text="The ball is near the box." x="402.5" y="1174" textColor="0x0739F7" size="116" visible="false"/>
+	<e:Button id="back" label="Back" x="1527.5" y="1332" anchorOffsetX="0" width="166" anchorOffsetY="0" height="84"/>
+</e:Skin>

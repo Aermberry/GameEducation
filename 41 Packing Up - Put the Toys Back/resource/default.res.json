@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,01_png,02_png,03_png,04_png,05_png,06_png,07_png,08_png,09_png,11_png,12_png,13_png,14_png,15_png,16_png,EDB_game_ai,Thumbs_db",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,01a_mp3,01b_mp3,02a_plant_mp3,02b_books_mp3,03_robot_mp3,04_clock_mp3,05_toy_bus_mp3,06_bicycle_mp3,behind_png,bicycle_png,books_png,bus_png,clock_png,flower_png,inside_png,man_girl_png,nearby_png,owl_png,robot_png,room_png,under_png,up_png,text01_png",
 			"name": "preload"
 		}
 	],
@@ -122,29 +122,19 @@
 			"name": "track_sb_png"
 		},
 		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "assets/CheckBox/checkbox_select_disabled.png",
-			"type": "image",
-			"name": "checkbox_select_disabled2_png"
-		},
-		{
-			"url": "assets/CheckBox/checkbox_select_down.png",
-			"type": "image",
-			"name": "checkbox_select_down2_png"
-		},
-		{
-			"url": "assets/CheckBox/checkbox_select_up.png",
-			"type": "image",
-			"name": "checkbox_select_up2_png"
-		},
-		{
-			"url": "assets/CheckBox/checkbox_unselect.png",
-			"type": "image",
-			"name": "checkbox_unselect2_png"
 		},
 		{
 			"url": "audio/01a.mp3",
@@ -187,89 +177,79 @@
 			"name": "06_bicycle_mp3"
 		},
 		{
-			"url": "images/11.png",
+			"url": "textures/behind.png",
 			"type": "image",
-			"name": "11_png"
+			"name": "behind_png"
 		},
 		{
-			"url": "images/12.png",
+			"url": "textures/bicycle.png",
 			"type": "image",
-			"name": "12_png"
+			"name": "bicycle_png"
 		},
 		{
-			"url": "images/13.png",
+			"url": "textures/books.png",
 			"type": "image",
-			"name": "13_png"
+			"name": "books_png"
 		},
 		{
-			"url": "images/14.png",
+			"url": "textures/bus.png",
 			"type": "image",
-			"name": "14_png"
+			"name": "bus_png"
 		},
 		{
-			"url": "images/15.png",
+			"url": "textures/clock.png",
 			"type": "image",
-			"name": "15_png"
+			"name": "clock_png"
 		},
 		{
-			"url": "images/16.png",
+			"url": "textures/flower.png",
 			"type": "image",
-			"name": "16_png"
+			"name": "flower_png"
 		},
 		{
-			"url": "images/EDB_game.ai",
-			"type": "bin",
-			"name": "EDB_game_ai"
-		},
-		{
-			"url": "images/Thumbs.db",
-			"type": "bin",
-			"name": "Thumbs_db"
-		},
-		{
-			"url": "images/01.png",
+			"url": "textures/inside.png",
 			"type": "image",
-			"name": "01_png"
+			"name": "inside_png"
 		},
 		{
-			"url": "images/02.png",
+			"url": "textures/man_girl.png",
 			"type": "image",
-			"name": "02_png"
+			"name": "man_girl_png"
 		},
 		{
-			"url": "images/03.png",
+			"url": "textures/nearby.png",
 			"type": "image",
-			"name": "03_png"
+			"name": "nearby_png"
 		},
 		{
-			"url": "images/04.png",
+			"url": "textures/owl.png",
 			"type": "image",
-			"name": "04_png"
+			"name": "owl_png"
 		},
 		{
-			"url": "images/05.png",
+			"url": "textures/robot.png",
 			"type": "image",
-			"name": "05_png"
+			"name": "robot_png"
 		},
 		{
-			"url": "images/06.png",
+			"url": "textures/room.png",
 			"type": "image",
-			"name": "06_png"
+			"name": "room_png"
 		},
 		{
-			"url": "images/07.png",
+			"url": "textures/under.png",
 			"type": "image",
-			"name": "07_png"
+			"name": "under_png"
 		},
 		{
-			"url": "images/08.png",
+			"url": "textures/up.png",
 			"type": "image",
-			"name": "08_png"
+			"name": "up_png"
 		},
 		{
-			"url": "images/09.png",
+			"url": "textures/text01.png",
 			"type": "image",
-			"name": "09_png"
+			"name": "text01_png"
 		}
 	]
 }
