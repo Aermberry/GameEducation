@@ -6,18 +6,18 @@
 		<e:Rect bottom="0" width="960" x="0" height="4" fillColor="0x610316"/>
 		<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
 	<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_text_png"/>
-	<e:Group id="goods" width="863" height="881" x="52" y="52">
-		<ns1:GoodsComponent id="bookImage" width="150" height="85" x="416" y="69" anchorOffsetX="0" anchorOffsetY="0" source="goods_book_png"/>
-		<ns1:GoodsComponent id="bearImage" width="131" height="141" x="690" y="35" anchorOffsetX="0" anchorOffsetY="0" source="goods_bear_png"/>
-		<ns1:GoodsComponent id="catImage" width="179" height="127" x="112" y="259" anchorOffsetX="0" anchorOffsetY="0" source="goods_cat_png"/>
-		<ns1:GoodsComponent id="birdAndBirdcageImage" width="132" height="200" x="416" y="231" anchorOffsetX="0" anchorOffsetY="0" source="goods_bird_and_birdcage_png"/>
-		<ns1:GoodsComponent id="godImage" width="160" height="192" x="695" y="256" anchorOffsetX="0" anchorOffsetY="0" source="goods_dog_png"/>
-		<ns1:GoodsComponent id="hangerCostImage" width="116" height="323" x="122" y="497" anchorOffsetX="0" anchorOffsetY="0" source="furniture_hanger_coat_png"/>
-		<ns1:GoodsComponent id="potUmbrellaImage" width="132" height="279" x="405" y="525" anchorOffsetX="0" anchorOffsetY="0" source="goods_pot_umbrella_png"/>
-		<ns1:GoodsComponent id="lampDeskImage" width="123" height="184" x="707" y="565" anchorOffsetX="0" anchorOffsetY="0" source="furniture_lamp_desk_png"/>
+	<e:Group id="goodsGroup" width="863" height="881" x="52" y="52">
+		<ns1:GoodsComponent id="bookImage" width="150" height="85" x="416" y="69" anchorOffsetX="0" anchorOffsetY="0" source="goods_book_png" enabled="false"/>
+		<ns1:GoodsComponent id="bearImage" width="131" height="141" x="690" y="35" anchorOffsetX="0" anchorOffsetY="0" source="goods_bear_png" enabled="false"/>
+		<ns1:GoodsComponent id="catImage" width="179" height="127" x="112" y="259" anchorOffsetX="0" anchorOffsetY="0" source="goods_cat_png" enabled="false"/>
+		<ns1:GoodsComponent id="birdAndBirdcageImage" width="132" height="200" x="416" y="231" anchorOffsetX="0" anchorOffsetY="0" source="goods_bird_and_birdcage_png" enabled="false"/>
+		<ns1:GoodsComponent id="godImage" width="160" height="192" x="695" y="256" anchorOffsetX="0" anchorOffsetY="0" source="goods_dog_png" enabled="false"/>
+		<ns1:GoodsComponent id="hangerCostImage" width="116" height="323" x="122" y="497" anchorOffsetX="0" anchorOffsetY="0" source="furniture_hanger_coat_png" enabled="false"/>
+		<ns1:GoodsComponent id="potUmbrellaImage" width="132" height="279" x="405" y="525" anchorOffsetX="0" anchorOffsetY="0" source="goods_pot_umbrella_png" enabled="false"/>
+		<ns1:GoodsComponent id="lampDeskImage" width="123" height="184" x="707" y="565" anchorOffsetX="0" anchorOffsetY="0" source="furniture_lamp_desk_png" enabled="false"/>
 	</e:Group>
 	</e:Group>
-	<e:Group id="containerHome" width="960" height="974" x="964" y="0">
+	<e:Group id="roomGroup" width="960" height="974" x="964" y="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 		<e:Image id="rectWhiteFloorImage" width="962.43" height="474.54" x="-7" y="498.46" anchorOffsetX="0" anchorOffsetY="0" source="rect_white_floor_png"/>
 		<e:Image id="wallLeftImage" width="417" height="559" x="-8" y="155" anchorOffsetX="0" anchorOffsetY="0" source="wall_left_png"/>
@@ -27,8 +27,8 @@
 		<e:Image id="furnitureTableImage" width="293" height="263" x="531.39" y="502.3" anchorOffsetX="139.39" anchorOffsetY="130.3" rotation="3.85" source="furniture_table_png"/>
 		<e:Image id="furnitureStoolImage" width="373" height="277" x="249" y="629" source="furniture_stool_png"/>
 		<e:Image id="floorRedImage" width="128" height="71" x="806" y="637" anchorOffsetX="0" anchorOffsetY="0" skewY="12" skewX="40" source="floor_red_png"/>
-		<e:Group width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="alertBorderBlueImage" width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
+		<e:Group id="alertGroup" width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
 			<e:Image id="alertInfoImage" width="807.88" height="165.45" x="25" y="30" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" source="alert_info_png"/>
 			<ns1:MovieClipPlayer id="hornAnimation" width="333" height="20" x="281.55" y="167" anchorOffsetX="0" anchorOffsetY="0" dataSet="horn_animation_json" texture="horn_animation_png" movieClipName="horn_animation" />
 		</e:Group>
@@ -36,16 +36,13 @@
 	</e:Group>
 	<e:Group id="containerButtom" left="0" right="0" anchorOffsetY="0" top="979" bottom="0">
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
-		<e:Image id="panelBottomImage" height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_02_png"/>
+		<e:s id="panelBottomImage" height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_02_png"/>
 		<e:Group id="leftButton" width="560.61" height="281.82" x="36" y="145.09" anchorOffsetX="0" anchorOffsetY="0">
 			<ns1:CircleButton id="circle_check" width="147" height="147" x="209" y="70" anchorOffsetX="0" anchorOffsetY="0" title="核對" titleColor="7910007" strokeColor="0x78b277" backgroundColor="0xffffff" tip="核對"/>
 			<ns1:CircleButton id="hornBlack" width="147" height="147" x="34" y="76" anchorOffsetX="0" anchorOffsetY="0" titleColor="15951391" strokeColor="0x010101" backgroundColor="0xFFFFFF" tip="播放/暫停"/>
 			<ns1:CircleButton id="circleBlack" width="147" height="147" x="385" y="69" anchorOffsetX="0" anchorOffsetY="0" title="離開" tip="離開" titleColor="65793" strokeColor="0x010101" backgroundColor="0xFFFFFF"/>
 			<e:Image width="94" height="84" x="60" y="109" anchorOffsetX="0" anchorOffsetY="0" source="horn_non_border_png"/>
 		</e:Group>
-		<ns1:BiscuitProgressBar id="BiscuitProgressBar" width="20" height="20" x="664" y="157.85" alphaSet="3" wrong="4" biscuiNum="8" visible="false"/>
-		<ns1:BiscuitProgressBar width="20" height="20" x="650" y="170" biscuiNum="3" alphaSet="2" wrong="1"/>
-		<ns1:BiscuitProgressBar width="20" height="20" x="1050" y="170" biscuiNum="3"/>
-		<ns1:BiscuitProgressBar width="20" height="20" x="1450" y="170" biscuiNum="3"/>
+		<ns1:BiscuitProgressBar x="650" y="170" />
 	</e:Group>
 </e:Skin>

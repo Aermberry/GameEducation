@@ -21,6 +21,12 @@ Array.prototype.shuffle = function () {
     }
     return input;
 };
+Array.prototype.all = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length == this.length;
+};
+Array.prototype.any = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length > 0;
+};
 var lzlib;
 (function (lzlib) {
     /**

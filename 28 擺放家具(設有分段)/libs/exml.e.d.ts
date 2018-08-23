@@ -1,3 +1,5 @@
+declare class BiscuitComponentSkin extends eui.Skin{
+}
 declare class BiscuitProgressBarSkin extends eui.Skin{
 }
 declare class CircleButtonSkin extends eui.Skin{
@@ -5,8 +7,6 @@ declare class CircleButtonSkin extends eui.Skin{
 declare class GoodsComponentSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
-}
-declare class goodsSkin extends eui.Skin{
 }
 declare module skins{
 	class ButtonSkin extends eui.Skin{

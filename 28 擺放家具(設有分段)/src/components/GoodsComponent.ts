@@ -37,6 +37,28 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 		let result = new GoodsComponent();
 		result.currentState = this.currentState;
 		result.source = this.source;
+		result.width = this.width;
+		result.height = this.height;
 		return result;
+	}
+
+	public validateInCorrectPlace(): void
+	{
+
+	}
+
+	public get isInRoom(): boolean
+	{
+		return false;
+	}
+
+	public get isInCorrectPlace(): boolean
+	{
+		return false;
+	}
+
+	public get isInWrongPlace(): boolean
+	{
+		return false;
 	}
 }

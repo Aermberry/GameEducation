@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BiscuitComponentSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,correct,wrong" >
+	<w:Config id="1655e99b963" ></w:Config>
+	<e:Image source="biscuit_png" alpha.correct="1" alpha.wrong="0.7" alpha="0.4" />
+</e:Skin>

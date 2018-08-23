@@ -1,5 +1,4 @@
-class BiscuitProgressBar extends eui.Component implements  eui.UIComponent {
-
+class BiscuitComponent extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}
@@ -9,8 +8,10 @@ class BiscuitProgressBar extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
+
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
 	}
+	
 }

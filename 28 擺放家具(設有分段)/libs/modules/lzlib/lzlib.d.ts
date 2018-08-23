@@ -2,7 +2,10 @@ interface Math {
     randomMinMax(min: number, max: number): number;
 }
 interface Array<T> {
+    /** 混洗 */
     shuffle(): void;
+    all(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
+    any(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
 }
 declare namespace lzlib {
     /**
