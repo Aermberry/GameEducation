@@ -1,4 +1,5 @@
 class game_start extends eui.Component implements  eui.UIComponent {
+	private starBtn:eui.Button;
 	public constructor() {
 		super();
 	}
