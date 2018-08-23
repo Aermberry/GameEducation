@@ -28,5 +28,15 @@
         "path": "components/TextComponent.ts",
         "class": "TextComponent",
         "parentPath": ""
+    },
+    "165611c77a3": {
+        "path": "components/BackgroundComponent.ts",
+        "class": "BackgroundComponent",
+        "parentPath": ""
+    },
+    "165647755ff": {
+        "path": "scenes/NextPageComponent.ts",
+        "class": "NextPageComponent",
+        "parentPath": ""
     }
 }

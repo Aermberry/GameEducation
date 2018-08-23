@@ -16,11 +16,11 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
-		console.log(this);
-		await lzlib.SoundUtility.playSound('sound1_park_s1_mp3').then(() => {
-			console.log(this);
-			this.startSound();
-		});
+		// await lzlib.SoundUtility.playSound('sound 80_mp3').then(() => {
+		// 	console.log(this);
+		// 	this.startSound();
+		// });
+		this.startSound();
 	}
 
 	private startSound() 
@@ -33,31 +33,20 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	//显示当前第几个关卡
 
-	private curStep: eui.Label;
+	private curStep;
 
 	private displayStepStr(str: string)
 	{
-		let backgroundRect = new eui.Rect();
-		backgroundRect.width = this.displayArea.width;
-		backgroundRect.height = this.displayArea.height;
-		backgroundRect.fillColor = 0xffffff;
 
-		this.curStep = new eui.Label();
-		this.curStep.width = this.displayArea.width;
-		this.curStep.height = this.displayArea.height;
-		this.curStep.textAlign = 'center';
-		this.curStep.verticalAlign = 'middle';
-		this.curStep.textColor = 0x000000;
-		this.curStep.size = 150;
-		this.curStep.text = str;
+		this.curStep = new BackgroundComponent();
+		this.curStep._text = str;
 		this.displayArea.removeChildren();
-		this.displayArea.addChild(backgroundRect);
 		this.displayArea.addChild(this.curStep);
-		console.log(this.displayArea);
-		let tw = egret.Tween.get(this.curStep);
+		let tw = egret.Tween.get(this.curStep.titleText);
 		tw.to({alpha:0},2000).call(() => {
 			this.nextBackground(str);
 		});
+
 	}
 
 	private async nextBackground(bg:string){
@@ -65,18 +54,36 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		{
 			this.removeChildren();
 			this.addChild(new BackgroundScene());
-			await lzlib.SoundUtility.playSound('sound 80_mp3')
+			await lzlib.SoundUtility.playSound('sound1_park_s1_mp3');
+			this.removeChildren();
+
+			let nextPageComponent = new NextPageScene();
+			nextPageComponent.text = '第一节';
+			this.addChild(nextPageComponent);
+
+			 
+			
 		}
 		else if(bg == '第二节')
 		{
+			this.removeChildren();
+			let backgroundScene = new BackgroundScene();
+			backgroundScene.stepImage.source = 'roller_coaster_png';
 			
-		}
-		else if(bg == '第三节')
-		{
+			backgroundScene.curStep.text = bg;
+			this.addChild(backgroundScene);
+
+			await lzlib.SoundUtility.playSound('sound1_park_s2_mp3');
+			this.removeChildren();
+			let nextPageComponent = new NextPageScene();
+			nextPageComponent.text = '第二节';
+			this.addChild(nextPageComponent);
+
 
 		}
-		else if(bg == '第四节')
-		{
+		else if(bg == '第三节') {
+		}
+		else if(bg == '第四节') {
 
 		}
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GirlSkin" width="204" height="140" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image id="girlNormalImage" source="girl_png" anchorOffsetX="0" anchorOffsetY="0" width="204" height="146"/>
+	<e:Label text="聽一聽" id="listenLabel" x="180" y="-30" textColor="0x000000" size="48" fontFamily="華康少女体"/>
+	<!--<e:Image id="girlSmileImage" source="girl_smile_png" anchorOffsetX="0" anchorOffsetY="0"  width="204" height="146" visible="false"/>-->
+	<w:Config id="165395a1582" ></w:Config>
+</e:Skin>

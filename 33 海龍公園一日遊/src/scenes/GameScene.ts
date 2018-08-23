@@ -3,9 +3,11 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
+	protected async partAdded(partName:string,instance:any): Promise<void>
 	{
 		super.partAdded(partName,instance);
+		await lzlib.SoundUtility.playSound('sound_step_introduce_mp3');
+		console.log('introduce');
 	}
 
 
