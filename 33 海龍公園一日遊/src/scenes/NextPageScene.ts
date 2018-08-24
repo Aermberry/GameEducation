@@ -1,6 +1,6 @@
 class NextPageScene extends eui.Component implements  eui.UIComponent {
 	
-	public curStep: eui.Label;
+	public currentLevelLabel: eui.Label;
 	public nextPageButton: eui.Button;
 	
 	public constructor() {
@@ -16,27 +16,12 @@ class NextPageScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.curStep.text = this._text;
-
-		this.nextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-			this.onNextPage(this.curStep.text);
-		}, this)
+		this.nextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
+		this.currentLevelLabel.text = `第${(LevelBiz.currentLevel + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}節`;
 	}
 
-	private onNextPage(step: string)
+	private onNextPageButtonClick(): void
 	{
 		Main.instance.gotoScene(new GameScene());
-	}
-
-	private _text = '';
-
-	public get text():string
-	{
-		return this._text;
-	}
-	
-	public set text(step: string)
-	{
-		this._text = step;
 	}
 }

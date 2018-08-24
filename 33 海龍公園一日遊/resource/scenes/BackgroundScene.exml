@@ -2,7 +2,7 @@
 <e:Skin class="BackgroundSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="startTweenGroup">
-			<tween:TweenItem target="{currentStepStartLabel}">
+			<tween:TweenItem target="{currentLevelLargeLabel}">
 				<tween:To duration="2000">
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -15,7 +15,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{contentWrap}">
+			<tween:TweenItem target="{coverGroup}">
 				<tween:Wait duration="4000"/>
 				<tween:Set>
 					<tween:props>
@@ -28,32 +28,25 @@
 	<w:Config id="1655f527028" ></w:Config>
 		<e:Group width="1920" height="1205" x="0" y="0">
 		<e:Rect bottom="0" top="0" left="0" right="0" fillColor="0xffffff" strokeColor="0xb35a16" strokeWeight="85"/>
-			<e:Label id="currentStepStartLabel" text="第一節開始" textColor="0x000000" size="150" verticalAlign="middle" textAlign="center" alpha="0" horizontalCenter="0" verticalCenter="0"/>
-			<e:Group id="contentWrap" alpha="0">
-				<e:Image id="stepImage" width="1097" height="778" x="118" y="87.21" source="house_and_people_png"/>
-				<e:Group id="contentButtom" width="1446" height="164" x="117" y="884" anchorOffsetX="0" anchorOffsetY="0">
-				<e:Label id="curStrp" text="第一节" x="30" y="61" anchorOffsetX="0" width="252.77" anchorOffsetY="0" height="87.58" textColor="0x000000" size="80"/>
+			<e:Label id="currentLevelLargeLabel" text="第一節開始" textColor="0x000000" size="150" verticalAlign="middle" textAlign="center" alpha="0" horizontalCenter="0" verticalCenter="0"/>
+			<e:Group id="coverGroup" alpha="0">
+				<e:Image id="coverImage" width="1097" height="778" x="118" y="87.21" source="house_and_people_png"/>
+				<e:Group width="1446" height="164" x="117" y="884" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Label id="currentLevelSmallLabel" text="第一节" x="30" y="61" anchorOffsetX="0" width="252.77" anchorOffsetY="0" height="87.58" textColor="0x000000" size="80"/>
 				<e:Image id="nextPageButton" width="164" height="162" x="1282" y="0" anchorOffsetX="0" anchorOffsetY="0" source="next_page_gray_png" touchEnabled="false"/>
 				</e:Group>
 			</e:Group>
 	</e:Group>
 	<e:Group id="containerButtom" height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
-		<e:Image width="156" height="156" x="26" y="39" source="process_border_png"/>
 		<e:Group width="1508" height="190" x="192" y="20">
-			<e:Rect height="20" y="170" left="0" right="0" fillColor="0x656364"/>
 			<e:Image width="1510.61" height="187.18" x="-2.61" y="0" source="finish_png" anchorOffsetX="0" anchorOffsetY="0"/>
 			<e:Label text="終點" x="1425" y="4" width="75" height="140" size="66" fontFamily="華康娃娃体"/>
 			<ns1:MovieClipPlayer width="174" height="188.91" x="0" y="0" anchorOffsetY="0" dataSet="train_animation_json" texture="train_animation_png" movieClipName="train"/>
 		</e:Group>
 		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
-		<e:Group width="147" height="147" x="1738" y="38" >
-				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png" visible="false"/>
-			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000" visible="false"/>
-			<ns1:CircleButton width="147" height="147" x="0" y="0" backgroundColor="0xffffff" tip="離開" title="離開"/>
-				
-			</e:Group>
-		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>
+		<ns1:CircleButton width="147" height="147" x="1738" backgroundColor="0xffffff" tip="離開" title="離開" verticalCenter="0"/>
+		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff" strokeWeight="1"/>
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
 	</e:Group>
 </e:Skin>

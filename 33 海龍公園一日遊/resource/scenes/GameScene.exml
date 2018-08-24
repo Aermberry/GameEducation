@@ -18,14 +18,14 @@
 					</e:Group>
 					<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
 						<e:Group width="147.27" height="147.27" x="270" y="57">
-							<ns1:CircleButton id="checkButton" width="147.27" height="147.27" anchorOffsetX="0" anchorOffsetY="0" titleColor="11921816" backgroundColor="0xd7ffcd" strokeColor="0x99b491" tip="下壹頁"/>
+							<ns1:CircleButton id="nextQuestionButton" width="147.27" height="147.27" anchorOffsetX="0" anchorOffsetY="0" titleColor="11921816" backgroundColor="0xd7ffcd" strokeColor="0x99b491" tip="下壹頁"/>
 							<e:Image width="77.58" height="77.58" y="39" anchorOffsetX="0" anchorOffsetY="0" source="next_page_green_png" horizontalCenter="0"/>
 						</e:Group>
 						<ns1:CircleButton width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對" title="核對" titleColor="0xB5E998" backgroundColor="0x9BE090" strokeColor="0x6EBB67"/>
 					</e:Group>
 				</e:Group>		
 			</e:Group>
-			<e:Group width="1754" x="0" y="213" height="576">
+			<e:Group width="1754" x="0" y="213" height="576" visible="false">
 				<e:Image width="454" height="542" x="19.58" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_head_png"/>
 
 				<e:Group width="465" height="542" x="644.12" y="0" anchorOffsetX="0" anchorOffsetY="0">
@@ -42,19 +42,19 @@
 					<e:BasicLayout/>
 				</e:layout>
 			</e:Group>
-			<e:Group width="417" height="111" x="520" y="372" visible="false">
-				<e:Label text="請按" x="0" y="28" size="74" textColor="0x000000"/>
-				<e:Label text="請按" x="269" y="28" size="74" textColor="0x000000"/>
+			<e:Group id="nextPageGroup" x="520" y="372">
+				<e:Label text="請按" x="0" size="74" textColor="0x000000" verticalCenter="0"/>
+				<e:Label text="請按" x="269" size="74" textColor="0x000000" verticalCenter="0"/>
 				<e:Image width="106" height="111" x="158" source="circle_page_next_png"/>
 			</e:Group>
-			<e:Label id="curStepEnd" text="第一節完" left="0" right="0" top="0" bottom="0" size="150" textColor="0x000000" textAlign="center" verticalAlign="middle" visible="false"/>
+			<e:Label id="currentLevelLabel" text="第一節完" size="150" textColor="0x000000" textAlign="center" verticalAlign="middle" backgroundColor="0xffffff" background="true" left="0" right="0" bottom="0" top="0" visible="false"/>
 			<e:layout>
 				<e:BasicLayout/>
 			</e:layout>
 			
 		</e:Group>
 	</e:Group>
-	<e:Group id="containerButtom" height="237" y="1205" anchorOffsetY="0" left="0" right="0">
+	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
 		<e:Image width="156" height="156" x="26" y="39" source="process_border_png"/>
 		<e:Group width="1508" height="190" x="192" y="20">

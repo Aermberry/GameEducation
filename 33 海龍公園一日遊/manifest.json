@@ -16,13 +16,16 @@
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/biz/LevelBiz.js",
 		"bin-debug/components/BackgroundComponent.js",
 		"bin-debug/components/CircleButton.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/components/TextComponent.js",
+		"bin-debug/domains/Background.js",
+		"bin-debug/Game/GameScene.js",
+		"bin-debug/repositories/BackgroundRepository.js",
 		"bin-debug/scenes/BackgroundScene.js",
-		"bin-debug/scenes/GameScene.js",
 		"bin-debug/scenes/NextPageScene.js",
 		"bin-debug/scenes/StartScene.js"
 	]

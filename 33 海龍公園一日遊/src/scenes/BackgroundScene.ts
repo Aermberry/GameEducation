@@ -1,11 +1,12 @@
 class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	
-	private stepImage: eui.Image;
-	private curStep: eui.Label;
-	private contentButtom: eui.Group;
-	private currentStepStartLabel: eui.Label;
+	private coverImage: eui.Image;
+	private currentLevelLargeLabel: eui.Label;
+	private currentLevelSmallLabel: eui.Label;
 	private nextPageButton: eui.Image;
 	private startTweenGroup: egret.tween.TweenGroup;
+
+	private backgroundRepo = new BackgroundRepository();
 
 	public constructor() {
 		super();
@@ -19,9 +20,9 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.nextPageButton.touchEnabled = true;
 		this.nextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
-		this.startTweenGroup.play(0);
-		this.displayBackground('第一節');
+		this.loadView();
 	}
 
 	private onNextPageButtonClick(): void
@@ -29,21 +30,13 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new NextPageScene());
 	}
 
-	private async displayBackground(bg: string): Promise<void> {
-		if(bg == '第一節')
-		{
-			await lzlib.SoundUtility.playSound('sound1_park_s1_mp3');
-			this.nextPageButton.touchEnabled = true;
-		}
-		else if(bg == '第二節')
-		{
-		}
-		else if(bg == '第三節') {
-		}
-		else if(bg == '第四節') {
-
-		}
-
+	private async loadView(): Promise<void> 
+	{
+		let background = this.backgroundRepo.getAll()[LevelBiz.currentLevel];
+		this.currentLevelLargeLabel.text = this.currentLevelSmallLabel.text = `第${(LevelBiz.currentLevel + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}節`;
+		this.startTweenGroup.play(0);
+		//await lzlib.SoundUtility.playSound(background.introductionAudioName);
+		this.nextPageButton.source = 'circle_page_next_png';
 	}
 	
 }
