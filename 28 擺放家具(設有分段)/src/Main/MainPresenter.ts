@@ -10,12 +10,13 @@ class MainPresenter {
 	{
 		this.view = view;
 		this.rounds = [
-			new RoundPresenter(view, 'sound 11 (contentSoundRaw0)_mp3', goods.slice(0, 2)),
-			new RoundPresenter(view, 'sound 10 (contentSoundRaw1))_mp3', goods.slice(3, 5)),
+			new RoundPresenter(view, 'sound 11 (contentSoundRaw0)_mp3', goods.slice(0, 3)),
+			new RoundPresenter(view, 'sound 10 (contentSoundRaw1))_mp3', goods.slice(3, 6)),
 			new RoundPresenter(view, 'sound 9 (contentSoundRaw2)_mp3', goods.slice(6, 7))
 		];
 		this.currentRound = this.rounds[0];
-		await this.view.playIntroductionAudio();
+		//await this.view.playIntroductionAudio();
+		this.view.hideToastView();
 		this.currentRound.play();
 	}
 

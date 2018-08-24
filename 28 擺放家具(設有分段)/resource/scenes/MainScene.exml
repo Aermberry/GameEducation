@@ -20,50 +20,52 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16541ee7aa3" ></w:Config>
-	<e:Group width="960" height="974" x="1" y="3">
-		<e:Rect width="960" height="974" x="11" y="10" anchorOffsetX="11" anchorOffsetY="9" fillColor="0xc5edfd"/>
-		<e:Rect bottom="0" width="960" x="0" height="4" fillColor="0x610316"/>
-		<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
-		<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_png"/>
-		<e:Group id="goodsGroup" width="863" height="881" x="52" y="52">
-			<ns1:GoodsComponent id="bookImage" width="150" height="85" x="416" y="69" anchorOffsetX="0" anchorOffsetY="0" source="goods_book_png" enabled="false"/>
-			<ns1:GoodsComponent id="bearImage" width="131" height="141" x="690" y="35" anchorOffsetX="0" anchorOffsetY="0" source="goods_bear_png" enabled="false"/>
-			<ns1:GoodsComponent id="catImage" width="179" height="127" x="112" y="259" anchorOffsetX="0" anchorOffsetY="0" source="goods_cat_png" enabled="false"/>
-			<ns1:GoodsComponent id="birdAndBirdcageImage" width="132" height="200" x="416" y="231" anchorOffsetX="0" anchorOffsetY="0" source="goods_bird_and_birdcage_png" enabled="false"/>
-			<ns1:GoodsComponent id="godImage" width="160" height="192" x="695" y="256" anchorOffsetX="0" anchorOffsetY="0" source="goods_dog_png" enabled="false"/>
-			<ns1:GoodsComponent id="hangerCostImage" width="116" height="323" x="122" y="497" anchorOffsetX="0" anchorOffsetY="0" source="furniture_hanger_coat_png" enabled="false"/>
-			<ns1:GoodsComponent id="potUmbrellaImage" width="132" height="279" x="405" y="525" anchorOffsetX="0" anchorOffsetY="0" source="goods_pot_umbrella_png" enabled="false"/>
-			<ns1:GoodsComponent id="lampDeskImage" width="123" height="184" x="707" y="565" anchorOffsetX="0" anchorOffsetY="0" source="furniture_lamp_desk_png" enabled="false"/>
-			<e:Label text="選擇物件" x="5.91" y="21" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
-		</e:Group>
-	</e:Group>
-	<e:Group id="roomGroup" width="960" height="974" x="964" y="0">
-		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-		<e:Image id="rectWhiteFloorImage" width="962.43" height="474.54" x="-7" y="498.46" anchorOffsetX="0" anchorOffsetY="0" source="rect_white_floor_png"/>
-		<e:Image id="wallLeftImage" width="417" height="559" x="-8" y="155" anchorOffsetX="0" anchorOffsetY="0" source="wall_left_png"/>
-		<e:Image id="wallWindowImage" width="545.98" height="488" x="405.97" y="158.03" anchorOffsetX="0" anchorOffsetY="0" rotation="359.67" source="wall_window_png"/>
-		<e:Image id="furnitureDoorWhiteImage" width="97" height="311" x="-4" y="401.94" anchorOffsetX="0" anchorOffsetY="0" skewY="-22" source="furniture_door_white_png"/>
-		<e:Image id="furnitureWardrobeImage" width="180" height="321" x="148" y="366" anchorOffsetX="0" anchorOffsetY="0" source="furniture_wardrobe_png"/>
-		<e:Image id="furnitureTableImage" width="293" height="263" x="531.39" y="502.3" anchorOffsetX="139.39" anchorOffsetY="130.3" rotation="3.85" source="furniture_table_png"/>
-		<e:Image id="furnitureStoolImage" width="373" height="277" x="249" y="629" source="furniture_stool_png"/>
-		<e:Image id="floorRedImage" width="128" height="71" x="806" y="637" anchorOffsetX="0" anchorOffsetY="0" skewY="12" skewX="40" source="floor_red_png"/>
-		<e:Group id="toastGroup" width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
-			<e:Label id="toastLabel" y="55" fontFamily="華康中黑體" size="85"  horizontalCenter="0" text="請留心聆聽指示內容" textColor="0x000000"/>
-			<ns1:MovieClipPlayer id="hornAnimation" width="333" height="20" x="281.55" y="167" anchorOffsetX="0" anchorOffsetY="0" dataSet="horn_animation_json" texture="horn_animation_png" movieClipName="horn_animation" />
-		</e:Group>
-	</e:Group>
 	<e:Group id="dogsGroup" height="974" left="5" right="5" y="3" alpha="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 		<ns1:MovieClipPlayer id="dogMovie" horizontalCenter="0" y="550" width="247" height="307" dataSet="dog_movie_json" texture="dog_movie_png" movieClipName="dog_movie"  scaleX="-1" alpha="0"/>
+	</e:Group>
+	<e:Group id="goodsAndRoomGroup">
+		<e:Group width="960" height="974" x="1" y="3">
+			<e:Rect width="960" height="974" x="11" y="10" anchorOffsetX="11" anchorOffsetY="9" fillColor="0xc5edfd"/>
+			<e:Rect bottom="0" width="960" x="0" height="4" fillColor="0x610316"/>
+			<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
+			<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_png"/>
+			<e:Group id="goodsGroup" width="863" height="881" x="52" y="52">
+				<ns1:GoodsComponent id="lampDeskImage" width="123" height="184" x="707" y="565" anchorOffsetX="0" anchorOffsetY="0" source="furniture_lamp_desk_png" audioName="sound 3 (oSound2)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="potUmbrellaImage" width="132" height="279" x="405" y="525" anchorOffsetX="0" anchorOffsetY="0" source="goods_pot_umbrella_png" audioName="sound 1 (oSound1)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="hangerCostImage" width="116" height="323" x="122" y="497" anchorOffsetX="0" anchorOffsetY="0" source="furniture_hanger_coat_png" audioName="sound 2 (oSound0)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="godImage" width="160" height="192" x="695" y="256" anchorOffsetX="0" anchorOffsetY="0" source="goods_dog_png" audioName="sound 8 (oSound5)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="birdAndBirdcageImage" width="132" height="200" x="416" y="231" anchorOffsetX="0" anchorOffsetY="0" source="goods_bird_and_birdcage_png" audioName="sound 14 (oSound4)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="catImage" width="179" height="127" x="112" y="259" anchorOffsetX="0" anchorOffsetY="0" source="goods_cat_png" audioName="sound 13 (oSound3)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="bearImage" width="131" height="141" x="690" y="35" anchorOffsetX="0" anchorOffsetY="0" source="goods_bear_png" audioName="sound 16 (oSound7)_mp3" enabled="false"/>
+				<ns1:GoodsComponent id="bookImage" width="150" height="85" x="416" y="69" anchorOffsetX="0" anchorOffsetY="0" source="goods_book_png" audioName="sound 15 (oSound6)_mp3" enabled="false"/>
+				<e:Label text="選擇物件" x="5.91" y="21" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="roomGroup" width="960" height="974" x="964" y="0">
+			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+			<e:Image id="rectWhiteFloorImage" width="962.43" height="474.54" x="-7" y="498.46" anchorOffsetX="0" anchorOffsetY="0" source="rect_white_floor_png"/>
+			<e:Image id="wallLeftImage" width="417" height="559" x="-8" y="155" anchorOffsetX="0" anchorOffsetY="0" source="wall_left_png"/>
+			<e:Image id="wallWindowImage" width="545.98" height="488" x="405.97" y="158.03" anchorOffsetX="0" anchorOffsetY="0" rotation="359.67" source="wall_window_png"/>
+			<e:Image id="furnitureDoorWhiteImage" width="97" height="311" x="-4" y="401.94" anchorOffsetX="0" anchorOffsetY="0" skewY="-22" source="furniture_door_white_png"/>
+			<e:Image id="furnitureWardrobeImage" width="180" height="321" x="148" y="366" anchorOffsetX="0" anchorOffsetY="0" source="furniture_wardrobe_png"/>
+			<e:Image id="furnitureTableImage" width="293" height="263" x="531.39" y="502.3" anchorOffsetX="139.39" anchorOffsetY="130.3" rotation="3.85" source="furniture_table_png"/>
+			<e:Image id="furnitureStoolImage" width="373" height="277" x="249" y="629" source="furniture_stool_png"/>
+			<e:Image id="floorRedImage" width="128" height="71" x="806" y="637" anchorOffsetX="0" anchorOffsetY="0" skewY="12" skewX="40" source="floor_red_png"/>
+			<e:Group id="toastGroup" width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Image width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
+				<e:Label id="toastLabel" y="55" fontFamily="華康中黑體" size="85"  horizontalCenter="0" text="請留心聆聽指示內容" textColor="0x000000"/>
+				<ns1:MovieClipPlayer id="hornAnimation" width="333" height="20" x="281.55" y="167" anchorOffsetX="0" anchorOffsetY="0" dataSet="horn_animation_json" texture="horn_animation_png" movieClipName="horn_animation" />
+			</e:Group>
+		</e:Group>
 	</e:Group>
 	<e:Group left="0" right="0" anchorOffsetY="0" top="979" bottom="0">
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
 		<e:Image height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_png"/>
 		<e:Group width="560.61" height="281.82" x="36" y="145.09" anchorOffsetX="0" anchorOffsetY="0">
-			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" anchorOffsetX="0" anchorOffsetY="0" titleColor="15951391" strokeColor="0x010101" backgroundColor="0xFFFFFF" iconSource="speaker_png" tip="播放/暫停"/>
-			<ns1:CircleButton id="validateButton" width="147" height="147" x="209" y="70" anchorOffsetX="0" anchorOffsetY="0" title="核對" titleColor="7910007" strokeColor="0x78b277" backgroundColor="0xDEFDD9" tip="核對物件"/>
-			<ns1:CircleButton id="exitButton" width="147" height="147" x="385" y="70" anchorOffsetX="0" anchorOffsetY="0" title="離開" tip="離開" titleColor="65793" strokeColor="0x010101" backgroundColor="0xFFFFFF"/>
+			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" iconSource="speaker_png" tip="播放/暫停"/>
+			<ns1:CircleButton id="validateButton" width="147" height="147" x="209" y="70" title="核對" titleColor="0x296419" strokeColor="0x41962A" backgroundColor="0xDEFDD9" tip="核對物件"/>
+			<ns1:CircleButton id="exitButton" width="147" height="147" x="385" y="70" title="離開" tip="離開" />
 		</e:Group>
 		<ns1:BiscuitProgressBar id="progressBar" x="650" y="170" />
 		<e:Label text="控制臺" x="58" y="60" textColor="0x000000" fontFamily="華康超黑體" size="70"/>

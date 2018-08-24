@@ -30,5 +30,5 @@ interface MainView {
 	openNextRoundPanel(): void;
 	closeNextRoundPanel(): void;
 	updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void;
-
+	hideToastView(): void;
 }

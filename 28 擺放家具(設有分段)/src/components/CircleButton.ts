@@ -78,7 +78,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.tipLabel && (this.tipLabel.text = value);
 	}
 
-	private _strokeColor = 0;
+	private _strokeColor = 0x000000;
 
 	public get strokeColor(): number
 	{
@@ -91,7 +91,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.backgroundRect && (this.backgroundRect.strokeColor = value);
 	}
 
-	private _titleColor = 0;
+	private _titleColor = 0x000000;
 
 	public get titleColor(): number
 	{
@@ -104,7 +104,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.titleLabel && (this.titleLabel.textColor = value);
 	}
 
-	private _backgroundColor = 0;
+	private _backgroundColor = 0xffffff;
 
 	public get backgroundColor(): number
 	{

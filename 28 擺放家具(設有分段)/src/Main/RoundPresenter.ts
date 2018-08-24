@@ -21,7 +21,7 @@ class RoundPresenter {
 		this.view.normalizeInstructionButton();
 		this.view.disableInstructionButton();
 		this.view.alertPlayingInstruction();
-		await this.view.playInstructionAsync(this.instructionAudioName);
+		//await this.view.playInstructionAsync(this.instructionAudioName);
 		this.view.alertYouCanMoveGoodsNow();
 		this.view.enableInstructionButton();
 		this.view.enableValidateButton();

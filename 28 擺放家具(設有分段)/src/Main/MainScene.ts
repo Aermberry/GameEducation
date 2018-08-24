@@ -8,7 +8,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 
 	private instructionButton: CircleButton;
 	private validateButton: CircleButton;
-	private eixtButton: CircleButton;
+	private exitButton: CircleButton;
 
 	private progressBar: BiscuitProgressBar;
 
@@ -38,6 +38,16 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		this.initGoodsDragDrop();
+		this.instructionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onInstructionButtonClick, this.presenter);
+		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidateButtonClick, this.presenter);
+		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
+		this.presenter.loadView(this, this.goodsGroup.$children.map(child => child as GoodsComponent));
+	}
+
+	private initGoodsDragDrop(): void
+	{
 		for (let index = 0; index < this.goodsGroup.numChildren; index++) {
 			let child = this.goodsGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
@@ -49,17 +59,18 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		this.stage.addChild(drop);
 		drop.enableDrop(this.roomGroup);
 		this.roomGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
-		this.presenter.loadView(this, this.goodsGroup.$children.map(child => child as GoodsComponent));
 	}
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
 		e.preventDefault();
 
-		let dragObj = e.dragObject;
+		let dragObj = e.dragObject as GoodsComponent;
 		dragObj.x = e.localX - (e.stageX - e.dragObject.x);
 		dragObj.y = e.localY - (e.stageY - e.dragObject.y);
 		this.roomGroup.addChild(dragObj);
+		dragObj.enabledAudioName = false;
+		dragObj.isInRoom = true;
 	}
 
 	private stopCurrentSound(): void
@@ -107,7 +118,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public playGamePassedAudio(): void
 	{
 		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 12 (completeSoundRaw)_mp3') as egret.Sound).play();
+		this.currentSoundChannel = (RES.getRes('sound 12 (completeSoundRaw)_mp3') as egret.Sound).play(0, 1);
 	}
 
 	public playGamePassedMovie(): void
@@ -187,13 +198,13 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public playSomeGoodsNotInRoomAudio(): void 
 	{
 		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play();
+		this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play(0, 1);
 	}
 	
 	public playNotAllGoodsInCorrectPlayAudio(): void 
 	{
 		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play();
+		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
 		this.actionGroup.visible = true;
 	}
 
@@ -221,7 +232,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public playNextRoundAudio(): void
 	{
 		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play();
+		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
 	}
 
 	public toastNextRoundMessage(): void
@@ -249,6 +260,11 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void 
 	{
 		this.progressBar.updateProgress(inCorrectPlaceCount, inWrongPlaceCount);
+	}
+
+	public hideToastView(): void
+	{
+		this.toastGroup.visible = false;
 	}
 	
 }
