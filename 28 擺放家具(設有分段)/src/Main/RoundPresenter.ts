@@ -35,16 +35,20 @@ class RoundPresenter {
 		this.view.disableGoods(this.goods);
 
 		if (!this.goods.all(goods => goods.isInRoom)) {
-			this.view.alertSomeGoodsNotInRoom();
+			this.view.playSomeGoodsNotInRoomAudio();
+			this.view.openContinuePanel();
 			return;
 		}
 
 		if (!this.goods.all(goods => goods.isInCorrectPlace)) {
-			this.view.alertNotAllGoodsInCorrectPlace();
+			this.view.playNotAllGoodsInCorrectPlayAudio();
+			this.view.openContinuePanel();
 			return;
 		}
 
-		this.view.showNextRoundPanel();
+		this.view.playNextRoundAudio();
+		this.view.toastNextRoundMessage();
+		this.view.openNextRoundPanel();
 	}
 
 	private getInCorrectPlaceCount(): number
@@ -59,7 +63,7 @@ class RoundPresenter {
 
 	public onContinueButtonClick(): void
 	{
-		this.view.closeNextRoundPanel();
+		this.view.closeContinuePanel();
 		this.view.enableGoods(this.goods);
 	}
 }

@@ -24,6 +24,7 @@
 		"bin-debug/Main/MainPresenter.js",
 		"bin-debug/Main/MainScene.js",
 		"bin-debug/Main/MainView.js",
+		"bin-debug/Main/NextRound.js",
 		"bin-debug/Main/RoundPresenter.js"
 	]
 }

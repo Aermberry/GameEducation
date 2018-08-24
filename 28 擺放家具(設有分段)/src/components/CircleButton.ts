@@ -6,6 +6,8 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private backgroundRect: eui.Rect;
 	private titleLabel: eui.Label;
 	private tipLabel: eui.Label;
+	private iconImage: eui.Image;
+	private blinkingTweenGroup: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -29,6 +31,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.titleLabel.text = this.title;
 		this.titleLabel.textColor = this.titleColor;
 		this.tipLabel.text = this.tip;
+		this.iconImage.source = this.iconSource;
 		this.backgroundRect.strokeColor = this.strokeColor;
 		this.backgroundRect.fillColor = this.backgroundColor;
 	}
@@ -36,19 +39,11 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private onRollOver(): void
 	{
 		this.currentState = 'over';
-		
-		if (this._tip == '播放/暫停') {
-			this.backgroundRect.fillColor = 15951391;
-		}
-
 	}
 
 	private onRollOut(): void
 	{
 		this.currentState = 'normal';
-		if (this._tip == '播放/暫停') {
-			this.backgroundRect.fillColor = 16777215;
-		}
 
 	}
 
@@ -120,5 +115,25 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	{
 		this._backgroundColor = value;
 		this.backgroundRect && (this.backgroundRect.fillColor = value);
+	}
+
+	private _iconSource = '';
+
+	public get iconSource(): string
+	{
+		return this._iconSource;
+	}
+
+	public set iconSource(value: string)
+	{
+		this._iconSource = value;
+		this.iconImage && (this.iconImage.source = value);
+	}
+
+	public set highlight(value: boolean) 
+	{
+		value
+		? this.blinkingTweenGroup.playLoopAsync()
+		: this.blinkingTweenGroup.stop();
 	}
 }

@@ -1,8 +1,11 @@
 interface MainView {
+	playIntroductionAudio(): Promise<void>;
 	/** 提升progress bar的base count，表示当前round已经完成 */
 	addProgressBarBaseCount(delta: number): void;
-	/** 播放通关动画 */
-	playGamePassedAnimation(): void;
+	toastGamePassedMessage(): void;
+	showGamePassedPanel(): void;
+	playGamePassedAudio(): void;
+	playGamePassedMovie(): void;
 	/** 关闭游戏 */
 	exit(): void;
 	/** 启用goods */
@@ -17,10 +20,14 @@ interface MainView {
 	disableInstructionButton(): void;
 	playInstructionAsync(instructionAudioName: string): Promise<void>;
 	alertPlayingInstruction(): void;
-	alertYouCanMoveGoodsNow(): void;
-	alertSomeGoodsNotInRoom(): void;
-	alertNotAllGoodsInCorrectPlace(): void;
-	showNextRoundPanel(): void;
+	alertYouCanMoveGoodsNow(): Promise<void>;
+	playSomeGoodsNotInRoomAudio(): void;
+	playNotAllGoodsInCorrectPlayAudio(): void;
+	openContinuePanel(): void;
+	closeContinuePanel(): void;
+	playNextRoundAudio(): void;
+	toastNextRoundMessage(): void;
+	openNextRoundPanel(): void;
 	closeNextRoundPanel(): void;
 	updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void;
 

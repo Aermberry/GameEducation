@@ -6,7 +6,8 @@ class MainPresenter {
 	public constructor() {
 	}
 
-	public loadView(view: MainView, goods: GoodsComponent[]) {
+	public async loadView(view: MainView, goods: GoodsComponent[]): Promise<void>
+	{
 		this.view = view;
 		this.rounds = [
 			new RoundPresenter(view, 'sound 11 (contentSoundRaw0)_mp3', goods.slice(0, 2)),
@@ -14,6 +15,7 @@ class MainPresenter {
 			new RoundPresenter(view, 'sound 9 (contentSoundRaw2)_mp3', goods.slice(6, 7))
 		];
 		this.currentRound = this.rounds[0];
+		await this.view.playIntroductionAudio();
 		this.currentRound.play();
 	}
 
@@ -41,7 +43,10 @@ class MainPresenter {
 			this.currentRound = this.rounds[roundIndex + 1];
 			this.currentRound.play();
 		} else {
-			this.view.playGamePassedAnimation();
+			this.view.toastGamePassedMessage();
+			this.view.showGamePassedPanel();
+			this.view.playGamePassedAudio();
+			this.view.playGamePassedMovie();
 			this.currentRound = null;
 		}
 	}
