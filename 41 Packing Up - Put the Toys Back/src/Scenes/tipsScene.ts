@@ -15,7 +15,7 @@ class TipsScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 
 		this.backButton.addEventListener(egret.TouchEvent.TOUCH_TAP,function(){
-			Main.instance.gotoScene(new GameScene());
+			this.parent.removeChild(this);
 		},this);
 	}
 	

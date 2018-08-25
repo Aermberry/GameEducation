@@ -12,14 +12,21 @@
     "backgroundType": "user"
   },
   "16564b36b7f": {
-    
     "path": "scenes\\tipsScene.ts",
     "class": "TipsScene",
     "parentPath": "",
-    "backgroundType": "user"
+    "backgroundType": "null",
+    "useBgImage": false,
+    "useBgColor": true,
+    "backgroundAlpha": "100",
+    "backgroundColor": "#ffffff",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1
   },
   "16564b3e437": {
-     "path": "scenes\\statusScene.ts",
+    "path": "scenes\\statusScene.ts",
     "class": "StatusScene",
     "parentPath": "",
     "backgroundType": "user"

@@ -2,9 +2,7 @@
 <e:Skin class="TipsSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16564b36b7f" ></w:Config>
 
-
-
-
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff" />
 	<e:Image id="tipsImage" x="585" y="116" source="up_png" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 	<e:Label id="helpLabel" text="The ball is on the box." x="414.5" y="1180.49" textColor="0x0739F7" size="100"/>
 

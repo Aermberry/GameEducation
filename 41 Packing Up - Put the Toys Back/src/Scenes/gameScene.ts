@@ -1,27 +1,25 @@
-class GameScene extends eui.Component implements  eui.UIComponent {
-	private helpButton:eui.Button;
-	private toysImage:eui.Image;
-	private toyNameLabel:eui.Label;
+class GameScene extends eui.Component implements eui.UIComponent {
+	private helpButton: eui.Button;
+	private toysImage: eui.Image;
+	private toyNameLabel: eui.Label;
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP,function():void{
-			Main.instance.gotoScene(new TipsScene())
-		},this);
-		this.startGame(); 
+		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP, function (): void {
+			this.addChild(new TipsScene());
+		}, this);
+		this.startGame();
 	}
 
-	private async startGame():Promise<void>{
+	private async startGame(): Promise<void> {
 		await lzlib.SoundUtility.playSound('01b_mp3');
 		this.toysImage.visible = true;
 		this.toyNameLabel.visible = true;
@@ -30,5 +28,5 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	
+
 }
