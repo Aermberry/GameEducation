@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="TextComponentSkin" width="244" height="157" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="TextComponentSkin" width="244" height="157" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="move,flicker,normal" >
 	<w:Config id="1655f9f7f8f" ></w:Config>
-	<e:Image top="0" bottom="0" left="0" right="0" source="text_background_png"/>
-	<e:Label id="Text" text="Label" top="0" bottom="0" left="0" right="0" textAlign="center" verticalAlign="middle" size="80" textColor="0x000000" fontFamily="標楷體"/>
+	<e:Image top="0" bottom="0" left="0" right="0" source="text_background_png" source.move="text_background_gray_png" source.flicker="text_background_alpha_png"/>
+	<e:Label id="textLabel" text="Label" includeIn="normal" anchorOffsetX="0" anchorOffsetY="0" size="70" textColor="0x000000" verticalAlign="middle" textAlign="center" left="0" right="0" top="0" bottom="0"/>
 </e:Skin>

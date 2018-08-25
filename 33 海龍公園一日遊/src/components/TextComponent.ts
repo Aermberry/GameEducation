@@ -1,6 +1,6 @@
 class TextComponent extends eui.Component implements  eui.UIComponent {
 	
-	public Text:eui.Label;
+	public textLabel:eui.Label;
 	
 	public constructor() {
 		super();
@@ -15,7 +15,7 @@ class TextComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.Text.text = this._text;
+		this.textLabel.text = this._text;
 	}
 
 	private _text = '';

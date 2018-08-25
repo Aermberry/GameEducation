@@ -18,10 +18,10 @@
 		"GameScene": "resource/scenes/GameScene.exml",
 		"NextPageScene": "resource/scenes/NextPageScene.exml",
 		"TextComponent": "resource/components/TextComponent.exml",
-		"CircleButton": "resource/components/CircleButton.exml",
 		"Girl": "resource/components/Girl.exml",
 		"BackgroundComponent": "resource/components/BackgroundComponent.exml",
-		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
+		"CircleButton": "resource/components/CircleButton.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [

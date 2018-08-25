@@ -37,7 +37,7 @@
 				</e:Group>
 			</e:Group>
 	</e:Group>
-	<e:Group id="containerButtom" height="237" y="1205" anchorOffsetY="0" left="0" right="0">
+	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
 		<e:Group width="1508" height="190" x="192" y="20">
 			<e:Image width="1510.61" height="187.18" x="-2.61" y="0" source="finish_png" anchorOffsetX="0" anchorOffsetY="0"/>
