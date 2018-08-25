@@ -20,10 +20,6 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/scenes/game_scene.exml",
-		"resource/scenes/start_scene.exml",
-		"resource/scenes/status_scene.exml",
-		"resource/scenes/tips_scene.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -36,7 +32,11 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/game_scene.exml",
+		"resource/scenes/start_scene.exml",
+		"resource/scenes/status_scene.exml",
+		"resource/scenes/tips_scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
