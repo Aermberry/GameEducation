@@ -17,15 +17,16 @@
 		"ArticleComponent": "resource/components/ArticleComponent.exml",
 		"GoodsComponent": "resource/components/GoodsComponent.exml",
 		"BiscuitProgressBar": "resource/components/BiscuitProgressBar.exml",
-		"CircleButton": "resource/components/CircleButton.exml"
+		"CircleButton": "resource/components/CircleButton.exml",
+		"BiscuitComponent": "resource/components/BiscuitComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/BiscuitComponent.exml",
 		"resource/components/BiscuitProgressBar.exml",
 		"resource/components/CircleButton.exml",
 		"resource/components/GoodsComponent.exml",
 		"resource/components/MovieClipPlayer.exml",
-		"resource/components/goods.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -39,8 +40,7 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scenes/MainScene.exml",
-		"resource/scenes/MainScene1.exml"
+		"resource/scenes/MainScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

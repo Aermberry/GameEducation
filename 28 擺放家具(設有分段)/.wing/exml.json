@@ -17,5 +17,10 @@
         "path": "components/GoodsComponent.ts",
         "class": "GoodsComponent",
         "parentPath": ""
+    },
+    "1655e99b963": {
+        "path": "components/BiscuitComponent.ts",
+        "class": "BiscuitComponent",
+        "parentPath": ""
     }
 }
