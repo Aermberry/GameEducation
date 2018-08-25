@@ -16,6 +16,7 @@ class TextComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.textLabel.text = this._text;
+		this.AnswerAudioBind();
 	}
 
 	private _text = '';
@@ -29,5 +30,23 @@ class TextComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this._text = val;
 		this.textLabel && (this.textLabel.text = val);
+	}
+
+	private AnswerAudioBind():void
+	{
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this, true);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onRollOver, this);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRollOut, this);	
+	}
+
+	private onRollOver(e): void
+	{
+		
+	}
+	
+	private onRollOut(e): void
+	{
+		
 	}
 }

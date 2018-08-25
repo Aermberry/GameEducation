@@ -96,13 +96,6 @@
 	</e:Group>
 	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
-		<e:Image width="156" height="156" x="26" y="39" source="process_border_png"/>
-		<e:Group width="1508" height="190" x="192" y="20">
-			<e:Rect height="20" y="170" left="0" right="0" fillColor="0x656364"/>
-			<e:Image width="1510.61" height="187.18" x="-2.61" y="0" source="finish_png" anchorOffsetX="0" anchorOffsetY="0"/>
-			<e:Label text="終點" x="1425" y="4" width="75" height="140" size="66" fontFamily="華康娃娃体"/>
-			<ns1:MovieClipPlayer width="174" height="188.91" x="0" y="0" anchorOffsetY="0" dataSet="train_animation_json" texture="train_animation_png" movieClipName="train"/>
-		</e:Group>
 		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
 		<e:Group width="147" height="147" x="1738" y="38" >
 				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png" visible="false"/>
@@ -112,5 +105,6 @@
 			</e:Group>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>	
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
+		<ns1:ProcessComponent width="20" height="20" x="205" y="16" currentQuestionIndex="2"/>
 	</e:Group>
 </e:Skin>

@@ -21,14 +21,18 @@
 		"Girl": "resource/components/Girl.exml",
 		"BackgroundComponent": "resource/components/BackgroundComponent.exml",
 		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
-		"CircleButton": "resource/components/CircleButton.exml"
+		"CircleButton": "resource/components/CircleButton.exml",
+		"ProcessComponent": "resource/components/ProcessComponent.exml",
+		"BottomComponent": "resource/components/BottomComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/BackgroundComponent.exml",
+		"resource/components/BottomComponent.exml",
 		"resource/components/CircleButton.exml",
 		"resource/components/Girl.exml",
 		"resource/components/MovieClipPlayer.exml",
+		"resource/components/ProcessComponent.exml",
 		"resource/components/TextComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

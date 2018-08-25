@@ -1,10 +1,14 @@
 declare class BackgroundComponentSkin extends eui.Skin{
 }
+declare class bottomComponentSkin extends eui.Skin{
+}
 declare class CircleButtonSkin extends eui.Skin{
 }
 declare class GirlSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
+}
+declare class ProcessComponentSkin extends eui.Skin{
 }
 declare class TextComponentSkin extends eui.Skin{
 }

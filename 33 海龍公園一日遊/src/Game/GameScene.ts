@@ -25,6 +25,7 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 		this.checkButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCheckButtonClick, this);
 		// lzlib.SoundUtility.playSound('sound_step_introduce_mp3');
 		this.enableDrag(this.textAnswerGroup.$children.map(child => child as TextComponent));
+		
 
 
 	}
@@ -75,5 +76,5 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 		dragObj.visible = false;
 		
 	}
-	
+
 }
