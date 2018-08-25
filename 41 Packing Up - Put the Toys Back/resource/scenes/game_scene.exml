@@ -7,10 +7,15 @@
 	<e:Button id="helpButton" label="Help" x="838.5" y="1257.64" anchorOffsetX="0" width="165" anchorOffsetY="0"
 	          height="78" visible="false" />
 	<e:Label id="toyNameLabel" text="Plant" x="1053.7" y="1099.34" textColor="0xee0000" anchorOffsetX="0" anchorOffsetY="0"
-	         size="85" textAlign="center" visible="false" />
-	<e:Image id="toysImage" source="flower_png" x="865" y="1079" anchorOffsetX="0" anchorOffsetY="0" visible="false" />
+	         size="85" textAlign="center"  visible="false"/>
+	<e:Image id="toysImage" source="flower_png" x="865" y="1079" anchorOffsetX="0" anchorOffsetY="0"  visible="false"/>
 	<e:Group id="plantGroup" width="403.03" height="187.88" x="1354.85" y="239" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image id="plantImage" source="flower_png" x="27.480000000000018" y="39.450000000000045" anchorOffsetX="0"
-		         anchorOffsetY="0" scaleX="1" scaleY="1" visible="false" />
+		         anchorOffsetY="0" scaleX="1" scaleY="1"  visible="false"/>
 	</e:Group>
+	<e:Image id="clockImage" source="clock2_png" x="511.73" y="509" visible="false"/>
+	<e:Image id="busImage" source="bus_png" x="1474.36" y="586" visible="false"/>
+	<e:Image id="bikeImage" source="bicycle2_png" x="343.23" y="355.88" visible="false"/>
+	<e:Image id="robotImage" source="robot_png" x="1003.27" y="725.76" visible="false"/>
+	<e:Image id="booksImage" source="books_png" x="960" y="130" visible="false"/>
 </e:Skin>

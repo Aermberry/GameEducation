@@ -1,5 +1,6 @@
 class GameScene extends eui.Component implements eui.UIComponent, GameView {
 	private plantImage: eui.Image;
+	private booksImage: eui.Image;
 	private plantGroup: eui.Group;
 
 	private helpButton: eui.Button;
