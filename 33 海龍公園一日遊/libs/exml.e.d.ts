@@ -1,4 +1,10 @@
+declare class BackgroundComponentSkin extends eui.Skin{
+}
 declare class CircleButtonSkin extends eui.Skin{
+}
+declare class GirlSkin extends eui.Skin{
+}
+declare class MovieClipPlayerSkin extends eui.Skin{
 }
 declare class TextComponentSkin extends eui.Skin{
 }
@@ -57,6 +63,8 @@ declare module skins{
 declare class BackgroundSceneSkin extends eui.Skin{
 }
 declare class GameSceneSkin extends eui.Skin{
+}
+declare class NextPageSceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
 }
