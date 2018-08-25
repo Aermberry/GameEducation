@@ -6,6 +6,8 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 	private currentLevelLabel: eui.Label;
 	private checkButton: CircleButton;
 	private train: egret.tween.TweenGroup;
+	private answerLeftTextComponent: TextComponent;
+	private answerRightTextComponent: TextComponent;
 	public constructor() {
 		super();
 	}
@@ -22,7 +24,7 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionClick, this);
 		this.checkButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCheckButtonClick, this);
 		// lzlib.SoundUtility.playSound('sound_step_introduce_mp3');
-		this.enDrag(this.textAnswerGroup.$children);
+		this.enableDrag(this.textAnswerGroup.$children.map(child => child as TextComponent));
 
 
 	}
@@ -43,19 +45,35 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 
 	}
 
-	private enDrag(arr)
+	private enableDrag(arr: TextComponent[]): void
 	{
 		for (let index = 0; index < arr.length-1; index++) {
 			let child = arr[index]
 			let drag = new lzlib.Drag();
 			this.addChild(drag);
-			drag.enableDrag(child, false, index);
+			drag.enableDrag(child, false);
 		}
 
-		// let drop = new lzlib.Drop();
-		// this.stage.addChild(drop);
-		// drop.enableDrop(this.containerHome);
-		// this.containerHome.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
+		let drop = new lzlib.Drop();
+		this.stage.addChild(drop);
+		drop.enableDrop(this.answerLeftTextComponent);
+		this.answerLeftTextComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onTextComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.stage.addChild(drop);
+		drop.enableDrop(this.answerRightTextComponent);
+		this.answerRightTextComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onTextComponentDrop, this);
+
+	}
+
+	private onTextComponentDrop(e: lzlib.LzDragEvent): void {
+		e.preventDefault();
+		let dragObj = e.dragObject as TextComponent;
+		let targetObj = e.target as TextComponent;
+		targetObj.alpha = 1;
+		targetObj.text = dragObj.text;
+		dragObj.visible = false;
+		
 	}
 	
 }

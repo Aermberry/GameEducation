@@ -28,5 +28,6 @@ class TextComponent extends eui.Component implements  eui.UIComponent {
 	public set text(val: string)
 	{
 		this._text = val;
+		this.textLabel && (this.textLabel.text = val);
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wlts_logo_jpg,sound 100_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 110_mp3,sound 112_mp3,sound 114_mp3,sound 116_mp3,sound 118_mp3,sound 120_mp3,sound 122_mp3,sound 124_mp3,sound 126_mp3,sound 128_mp3,sound 130_mp3,sound 132_mp3,sound 134_mp3,sound 136_mp3,sound 138_mp3,sound 140_mp3,sound 142_mp3,sound 144_mp3,sound 146_mp3,sound 148_mp3,sound 150_mp3,sound 152_mp3,sound 154_mp3,sound 156_mp3,sound 158_mp3,sound 160_mp3,sound 162_mp3,sound 164_mp3,sound 167_mp3,sound 170_mp3,sound 172_mp3,sound 174_mp3,sound 176_mp3,sound 178_mp3,sound 180_mp3,sound 182_mp3,sound 184_mp3,sound 186_mp3,sound 188_mp3,sound 190_mp3,sound 192_mp3,sound 194_mp3,sound 196_mp3,sound 198_mp3,sound 200_mp3,sound 202_mp3,sound 204_mp3,sound 206_mp3,sound 208_mp3,sound 212_mp3,sound 214_mp3,sound 217_mp3,sound 219_mp3,sound 221_mp3,sound 223_mp3,sound 241_mp3,sound 402_mp3,sound 80_mp3,sound 82_mp3,sound 84_mp3,sound 86_mp3,sound 88_mp3,sound 90_mp3,sound 92_mp3,sound 94_mp3,sound 96_mp3,sound 98_mp3,sound1_park_s1_mp3,background_gray_deep_png,border_left_up_gray_png,border_rect_yellow_png,border_right_down_grap_deep_png,border_right_down_gray_png,circle_black_png,circle_border_png,circle_check_deep_png,circle_check_png,circle_leave_png,circle_page_next_png,dinner_png,Dolphin_png,finish_png,girl_png,house_and_people_png,house_png,next_page_gray_png,next_page_green_png,people_png,process_border_png,roller_coaster_png,shape330_png,shape344_png,text_area_background_png,text_background_png,trail_end_png,trail_head_png,trail_mid_png,train_animation_json,train_animation_png,triangle_png,windmill_png,cur_step_border_png,sound_step_introduce_mp3,sound1_park_s2_mp3,camera_and_food_png,sound1_park_s3_mp3,sound1_park_s4_mp3,sound1_park_s5_mp3,girl_smile_png,text_background_alpha_png,text_background_gray_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wlts_logo_jpg,sound 100_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 110_mp3,sound 112_mp3,sound 114_mp3,sound 116_mp3,sound 118_mp3,sound 120_mp3,sound 122_mp3,sound 124_mp3,sound 126_mp3,sound 128_mp3,sound 130_mp3,sound 132_mp3,sound 134_mp3,sound 136_mp3,sound 138_mp3,sound 140_mp3,sound 142_mp3,sound 144_mp3,sound 146_mp3,sound 148_mp3,sound 150_mp3,sound 152_mp3,sound 154_mp3,sound 156_mp3,sound 170_mp3,sound 172_mp3,sound 174_mp3,sound 176_mp3,sound 178_mp3,sound 180_mp3,sound 182_mp3,sound 184_mp3,sound 186_mp3,sound 188_mp3,sound 190_mp3,sound 192_mp3,sound 194_mp3,sound 196_mp3,sound 198_mp3,sound 200_mp3,sound 202_mp3,sound 204_mp3,sound 206_mp3,sound 208_mp3,sound 212_mp3,sound 217_mp3,sound 219_mp3,sound 221_mp3,sound 223_mp3,sound 241_mp3,sound 402_mp3,sound 80_mp3,sound 82_mp3,sound 84_mp3,sound 86_mp3,sound 88_mp3,sound 90_mp3,sound 92_mp3,sound 94_mp3,sound 96_mp3,sound 98_mp3,sound1_park_s1_mp3,background_gray_deep_png,border_left_up_gray_png,border_rect_yellow_png,border_right_down_grap_deep_png,border_right_down_gray_png,circle_black_png,circle_border_png,circle_check_deep_png,circle_check_png,circle_leave_png,circle_page_next_png,dinner_png,Dolphin_png,finish_png,girl_png,house_and_people_png,house_png,next_page_gray_png,next_page_green_png,people_png,process_border_png,roller_coaster_png,shape330_png,shape344_png,text_area_background_png,text_background_png,trail_end_png,trail_head_png,trail_mid_png,train_animation_json,train_animation_png,triangle_png,windmill_png,cur_step_border_png,sound_step_introduce_mp3,sound1_park_s2_mp3,camera_and_food_png,sound1_park_s3_mp3,sound1_park_s4_mp3,sound1_park_s5_mp3,girl_smile_png,text_background_alpha_png,text_background_gray_png,jiu_mp3,but_mp3,because_mp3,if_mp3,although_mp3,therefore_mp3",
 			"name": "preload"
 		}
 	],
@@ -287,31 +287,6 @@
 			"name": "sound 156_mp3"
 		},
 		{
-			"url": "audios/sound 158.mp3",
-			"type": "sound",
-			"name": "sound 158_mp3"
-		},
-		{
-			"url": "audios/sound 160.mp3",
-			"type": "sound",
-			"name": "sound 160_mp3"
-		},
-		{
-			"url": "audios/sound 162.mp3",
-			"type": "sound",
-			"name": "sound 162_mp3"
-		},
-		{
-			"url": "audios/sound 164.mp3",
-			"type": "sound",
-			"name": "sound 164_mp3"
-		},
-		{
-			"url": "audios/sound 167.mp3",
-			"type": "sound",
-			"name": "sound 167_mp3"
-		},
-		{
 			"url": "audios/sound 170.mp3",
 			"type": "sound",
 			"name": "sound 170_mp3"
@@ -415,11 +390,6 @@
 			"url": "audios/sound 212.mp3",
 			"type": "sound",
 			"name": "sound 212_mp3"
-		},
-		{
-			"url": "audios/sound 214.mp3",
-			"type": "sound",
-			"name": "sound 214_mp3"
 		},
 		{
 			"url": "audios/sound 217.mp3",
@@ -720,6 +690,36 @@
 			"name": "text_background_gray_png",
 			"type": "image",
 			"url": "textures/text_background_gray.png"
+		},
+		{
+			"name": "jiu_mp3",
+			"type": "sound",
+			"url": "audios/jiu.mp3"
+		},
+		{
+			"name": "but_mp3",
+			"type": "sound",
+			"url": "audios/but.mp3"
+		},
+		{
+			"name": "because_mp3",
+			"type": "sound",
+			"url": "audios/because.mp3"
+		},
+		{
+			"name": "if_mp3",
+			"type": "sound",
+			"url": "audios/if.mp3"
+		},
+		{
+			"name": "although_mp3",
+			"type": "sound",
+			"url": "audios/although.mp3"
+		},
+		{
+			"name": "therefore_mp3",
+			"type": "sound",
+			"url": "audios/therefore.mp3"
 		}
 	]
 }
