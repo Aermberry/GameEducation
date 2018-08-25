@@ -16,12 +16,19 @@
 		"StartScene": "resource/scenes/StartScene.exml",
 		"BackgroundScene": "resource/scenes/BackgroundScene.exml",
 		"GameScene": "resource/scenes/GameScene.exml",
+		"NextPageScene": "resource/scenes/NextPageScene.exml",
 		"TextComponent": "resource/components/TextComponent.exml",
-		"CircleButton": "resource/components/CircleButton.exml"
+		"CircleButton": "resource/components/CircleButton.exml",
+		"Girl": "resource/components/Girl.exml",
+		"BackgroundComponent": "resource/components/BackgroundComponent.exml",
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/BackgroundComponent.exml",
 		"resource/components/CircleButton.exml",
+		"resource/components/Girl.exml",
+		"resource/components/MovieClipPlayer.exml",
 		"resource/components/TextComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
@@ -38,6 +45,7 @@
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/BackgroundScene.exml",
 		"resource/scenes/GameScene.exml",
+		"resource/scenes/NextPageScene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
