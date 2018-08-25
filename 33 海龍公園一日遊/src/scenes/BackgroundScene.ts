@@ -32,8 +32,8 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 
 	private async loadView(): Promise<void> 
 	{
-		let background = this.backgroundRepo.getAll()[LevelBiz.currentLevel];
-		this.currentLevelLargeLabel.text = this.currentLevelSmallLabel.text = `第${(LevelBiz.currentLevel + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}節`;
+		let background = this.backgroundRepo.getAll()[LevelBiz.instance.currentLevel];
+		this.currentLevelLargeLabel.text = this.currentLevelSmallLabel.text = `第${(LevelBiz.instance.currentLevel + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}節`;
 		this.startTweenGroup.play(0);
 		//await lzlib.SoundUtility.playSound(background.introductionAudioName);
 		this.nextPageButton.source = 'circle_page_next_png';

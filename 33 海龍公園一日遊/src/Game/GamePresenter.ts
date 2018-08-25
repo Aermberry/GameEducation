@@ -1,0 +1,4 @@
+class GamePresenter {
+	public constructor() {
+	}
+}

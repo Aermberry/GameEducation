@@ -11,7 +11,7 @@
 		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/components/Girl.js",
+		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
@@ -19,11 +19,13 @@
 		"bin-debug/biz/LevelBiz.js",
 		"bin-debug/components/BackgroundComponent.js",
 		"bin-debug/components/CircleButton.js",
+		"bin-debug/components/Girl.js",
 		"bin-debug/LoadingUI.js",
-		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/components/TextComponent.js",
 		"bin-debug/domains/Background.js",
+		"bin-debug/Game/GamePresenter.js",
 		"bin-debug/Game/GameScene.js",
+		"bin-debug/Game/GameView.js",
 		"bin-debug/repositories/BackgroundRepository.js",
 		"bin-debug/scenes/BackgroundScene.js",
 		"bin-debug/scenes/NextPageScene.js",
