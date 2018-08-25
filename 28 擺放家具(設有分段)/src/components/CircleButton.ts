@@ -4,6 +4,7 @@
  */
 class CircleButton extends eui.Component implements  eui.UIComponent {
 	private backgroundRect: eui.Rect;
+	private highlightRect: eui.Rect;
 	private titleLabel: eui.Label;
 	private tipLabel: eui.Label;
 	private iconImage: eui.Image;
@@ -38,13 +39,12 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 
 	private onRollOver(): void
 	{
-		this.currentState = 'over';
+		this.enabled && (this.currentState = 'over');
 	}
 
 	private onRollOut(): void
 	{
-		this.currentState = 'normal';
-
+		this.enabled && (this.currentState = 'normal');
 	}
 
 	private onTouchBegin(): void
@@ -132,8 +132,17 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 
 	public set highlight(value: boolean) 
 	{
-		value
-		? this.blinkingTweenGroup.playLoopAsync()
-		: this.blinkingTweenGroup.stop();
+		if (value) {
+			this.blinkingTweenGroup.playLoopAsync();
+		} else {
+			this.blinkingTweenGroup.stop();
+			this.highlightRect.alpha = 0;
+		}
+	}
+
+	public set enabled(value: boolean)
+	{
+		this.currentState = value ? 'normal' : 'disabled';
+		super.$setEnabled(value);
 	}
 }
