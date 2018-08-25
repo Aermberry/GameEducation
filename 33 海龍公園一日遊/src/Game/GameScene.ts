@@ -1,6 +1,9 @@
 class GameScene extends eui.Component implements  eui.UIComponent {
+	private trainGroup: eui.Group;
+	private nextPageGroup: eui.Group;
+	private nextQuestionButton: eui.Group;
 	private currentLevelLabel: eui.Label;
-	private nextQuestionButton: CircleButton;
+	private checkButton: CircleButton;
 
 	public constructor() {
 		super();
@@ -16,6 +19,7 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionClick, this);
+		this.checkButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCheckButtonClick, this);
 	}
 
 	private async onNextQuestionClick(): Promise<void>
@@ -25,6 +29,13 @@ class GameScene extends eui.Component implements  eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(1500);
 		LevelBiz.instance.currentLevel++;
 		Main.instance.gotoScene(new BackgroundScene());
+	}
+
+	private onCheckButtonClick() {
+		//判断当前答案是否正确，正确执行下面代码
+		console.log(1);
+		this.trainGroup.visible = false;
+		this.nextPageGroup.visible = true;
 	}
 	
 }

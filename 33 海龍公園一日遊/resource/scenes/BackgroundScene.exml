@@ -32,7 +32,7 @@
 			<e:Group id="coverGroup" alpha="0">
 				<e:Image id="coverImage" width="1097" height="778" x="118" y="87.21" source="house_and_people_png"/>
 				<e:Group width="1446" height="164" x="117" y="884" anchorOffsetX="0" anchorOffsetY="0">
-				<e:Label id="currentLevelSmallLabel" text="第一节" x="30" y="61" anchorOffsetX="0" width="252.77" anchorOffsetY="0" height="87.58" textColor="0x000000" size="80"/>
+				<e:Label id="currentLevelSmallLabel" text="第一節" x="30" y="61" anchorOffsetX="0" width="252.77" anchorOffsetY="0" height="87.58" textColor="0x000000" size="80"/>
 				<e:Image id="nextPageButton" width="164" height="162" x="1282" y="0" anchorOffsetX="0" anchorOffsetY="0" source="next_page_gray_png" touchEnabled="false"/>
 				</e:Group>
 			</e:Group>
