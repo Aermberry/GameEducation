@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,01_png,02_png,03_png,04_png,05_png,06_png,07_png,08_png,09_png,11_png,12_png,13_png,14_png,15_png,16_png,EDB_game_ai,Thumbs_db",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,01_png,02_png,03_png,04_png,05_png,06_png,07_png,08_png,09_png,11_png,12_png,13_png,14_png,15_png,16_png,EDB_game_ai,Thumbs_db,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,012_png,022_png,032_png,042_png,052_png,062_png,072_png,082_png,092_png,112_png,122_png,132_png,142_png,152_png,162_png",
 			"name": "preload"
 		}
 	],
@@ -270,6 +270,121 @@
 			"url": "images/09.png",
 			"type": "image",
 			"name": "09_png"
+		},
+		{
+			"name": "01a2_mp3",
+			"type": "sound",
+			"url": "audio/01a.mp3"
+		},
+		{
+			"name": "01b2_mp3",
+			"type": "sound",
+			"url": "audio/01b.mp3"
+		},
+		{
+			"name": "02a_plant2_mp3",
+			"type": "sound",
+			"url": "audio/02a_plant.mp3"
+		},
+		{
+			"name": "02b_books2_mp3",
+			"type": "sound",
+			"url": "audio/02b_books.mp3"
+		},
+		{
+			"name": "03_robot2_mp3",
+			"type": "sound",
+			"url": "audio/03_robot.mp3"
+		},
+		{
+			"name": "04_clock2_mp3",
+			"type": "sound",
+			"url": "audio/04_clock.mp3"
+		},
+		{
+			"name": "05_toy_bus2_mp3",
+			"type": "sound",
+			"url": "audio/05_toy_bus.mp3"
+		},
+		{
+			"name": "06_bicycle2_mp3",
+			"type": "sound",
+			"url": "audio/06_bicycle.mp3"
+		},
+		{
+			"name": "012_png",
+			"type": "image",
+			"url": "images/01.png"
+		},
+		{
+			"name": "022_png",
+			"type": "image",
+			"url": "images/02.png"
+		},
+		{
+			"name": "032_png",
+			"type": "image",
+			"url": "images/03.png"
+		},
+		{
+			"name": "042_png",
+			"type": "image",
+			"url": "images/04.png"
+		},
+		{
+			"name": "052_png",
+			"type": "image",
+			"url": "images/05.png"
+		},
+		{
+			"name": "062_png",
+			"type": "image",
+			"url": "images/06.png"
+		},
+		{
+			"name": "072_png",
+			"type": "image",
+			"url": "images/07.png"
+		},
+		{
+			"name": "082_png",
+			"type": "image",
+			"url": "images/08.png"
+		},
+		{
+			"name": "092_png",
+			"type": "image",
+			"url": "images/09.png"
+		},
+		{
+			"name": "112_png",
+			"type": "image",
+			"url": "images/11.png"
+		},
+		{
+			"name": "122_png",
+			"type": "image",
+			"url": "images/12.png"
+		},
+		{
+			"name": "132_png",
+			"type": "image",
+			"url": "images/13.png"
+		},
+		{
+			"name": "142_png",
+			"type": "image",
+			"url": "images/14.png"
+		},
+		{
+			"name": "152_png",
+			"type": "image",
+			"url": "images/15.png"
+		},
+		{
+			"name": "162_png",
+			"type": "image",
+			"url": "images/16.png"
 		}
 	]
 }
