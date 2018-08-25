@@ -1,4 +1,4 @@
-class statusScene extends eui.Component implements  eui.UIComponent {
+class StatusScene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}

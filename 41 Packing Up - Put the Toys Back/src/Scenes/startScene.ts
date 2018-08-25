@@ -1,4 +1,4 @@
-class startScene extends eui.Component implements eui.UIComponent {
+class StartScene extends eui.Component implements eui.UIComponent {
 	private startButton: eui.Button;
 	public constructor() {
 		super();
@@ -22,6 +22,6 @@ class startScene extends eui.Component implements eui.UIComponent {
 
 	// 點擊進入游戲場景
 	private onnextBtnClick(): void {
-		Main.instance.gotoScene(new gameScene());
+		Main.instance.gotoScene(new GameScene());
 	}
 }

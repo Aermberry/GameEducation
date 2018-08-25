@@ -1,7 +1,7 @@
-class gameScene extends eui.Component implements  eui.UIComponent {
+class GameScene extends eui.Component implements  eui.UIComponent {
 	private helpButton:eui.Button;
-	private flower:eui.Image;
-	private text_plant:eui.Label;
+	private toysImage:eui.Image;
+	private toyNameLabel:eui.Label;
 	public constructor() {
 		super();
 	}
@@ -16,16 +16,19 @@ class gameScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP,function():void{
-			Main.instance.gotoScene(new tipsScene())
+			Main.instance.gotoScene(new TipsScene())
 		},this);
-		this.startGame();
+		this.startGame(); 
 	}
 
 	private async startGame():Promise<void>{
-		await lzlib.SoundUtility.playSound('01a_mp3');
-		this.helpButton.visible=true;
-		this.flower.visible=true;
-		this.text_plant.visible=true;
+		await lzlib.SoundUtility.playSound('01b_mp3');
+		this.toysImage.visible = true;
+		this.toyNameLabel.visible = true;
+		await lzlib.ThreadUtility.sleep(500);
+		this.helpButton.visible = true;
 	}
+
+
 	
 }

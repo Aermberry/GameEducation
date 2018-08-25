@@ -1,26 +1,26 @@
 {
   "16564b28bc4": {
-    "path": "scenes\\startScene.ts",
-    "class": "startScene",
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
     "parentPath": "",
     "backgroundType": "user"
   },
   "16564b2e611": {
     "path": "scenes\\gameScene.ts",
-    "class": "gameScene",
+    "class": "GameScene",
     "parentPath": "",
     "backgroundType": "user"
   },
   "16564b36b7f": {
     
     "path": "scenes\\tipsScene.ts",
-    "class": "tipsScene",
+    "class": "TipsScene",
     "parentPath": "",
     "backgroundType": "user"
   },
   "16564b3e437": {
      "path": "scenes\\statusScene.ts",
-    "class": "statusScene",
+    "class": "StatusScene",
     "parentPath": "",
     "backgroundType": "user"
   }
