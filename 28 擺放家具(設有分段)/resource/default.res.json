@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,title-blue_png,title_blue_text_png,rect_white_floor_png,panel-bottom_png,panel_bottom_02_png,horn_black_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle-green_png,circle-black_png,circle_leave_png,circle_horn_click_png,circle_check_unclick_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_info_png,alert_border_blue_png,circle_pink_png,horn_non_border_png,horn_animation_json,horn_animation_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,title-blue_png,title_blue_text_png,rect_white_floor_png,panel-bottom_png,panel_bottom_02_png,horn_black_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle-green_png,circle-black_png,circle_leave_png,circle_horn_click_png,circle_check_unclick_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_info_png,alert_border_blue_png,circle_pink_png,horn_non_border_png,horn_animation_json,horn_animation_png,big_furniture_mp3,init_mp3,alert_info2_png,circle-black2_png,circle-green2_png,circle_check_unclick2_png,circle_leave2_png,circle_pink2_png,circle_yellow_png,horn_black2_png,horn_non_border2_png,panel-bottom2_png,panel_bottom_022_png,title-blue2_png,title_blue_text2_png",
 			"name": "preload"
 		}
 	],
@@ -310,6 +310,81 @@
 			"url": "textures/horn/horn_animation.png",
 			"type": "image",
 			"name": "horn_animation_png"
+		},
+		{
+			"name": "big_furniture_mp3",
+			"type": "sound",
+			"url": "audio/big_furniture.mp3"
+		},
+		{
+			"name": "init_mp3",
+			"type": "sound",
+			"url": "audio/init.mp3"
+		},
+		{
+			"name": "alert_info2_png",
+			"type": "image",
+			"url": "textures/alert_info.png"
+		},
+		{
+			"name": "circle-black2_png",
+			"type": "image",
+			"url": "textures/circle-black.png"
+		},
+		{
+			"name": "circle-green2_png",
+			"type": "image",
+			"url": "textures/circle-green.png"
+		},
+		{
+			"name": "circle_check_unclick2_png",
+			"type": "image",
+			"url": "textures/circle_check_unclick.png"
+		},
+		{
+			"name": "circle_leave2_png",
+			"type": "image",
+			"url": "textures/circle_leave.png"
+		},
+		{
+			"name": "circle_pink2_png",
+			"type": "image",
+			"url": "textures/circle_pink.png"
+		},
+		{
+			"name": "circle_yellow_png",
+			"type": "image",
+			"url": "textures/circle_yellow.png"
+		},
+		{
+			"name": "horn_black2_png",
+			"type": "image",
+			"url": "textures/horn_black.png"
+		},
+		{
+			"name": "horn_non_border2_png",
+			"type": "image",
+			"url": "textures/horn_non_border.png"
+		},
+		{
+			"name": "panel-bottom2_png",
+			"type": "image",
+			"url": "textures/panel-bottom.png"
+		},
+		{
+			"name": "panel_bottom_022_png",
+			"type": "image",
+			"url": "textures/panel_bottom_02.png"
+		},
+		{
+			"name": "title-blue2_png",
+			"type": "image",
+			"url": "textures/title-blue.png"
+		},
+		{
+			"name": "title_blue_text2_png",
+			"type": "image",
+			"url": "textures/title_blue_text.png"
 		}
 	]
 }

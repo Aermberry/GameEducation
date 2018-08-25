@@ -1,4 +1,4 @@
-class MainScene extends eui.Component implements  eui.UIComponent {
+class MainScene extends eui.Component implements eui.UIComponent {
 
 	public goods: eui.Group;
 	public containerHome: eui.Group;
@@ -9,18 +9,16 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 		super();
 	}
 
-	
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
-		
-		this.loadAudio('resource/audio/init.mp3', this.soundInitChannel , this.soundinitComplete);
+
+		this.loadAudio('resource/audio/init.mp3', this.soundInitChannel, this.soundinitComplete);
 
 		for (let index = 0; index < this.goods.numChildren; index++) {
 
@@ -28,7 +26,7 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.addChild(drag);
 			drag.enableDrag(child, true, index);
-		
+
 		}
 
 		let drop = new lzlib.Drop();
@@ -37,9 +35,8 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 		this.containerHome.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 	}
 
-	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
-	{
-		
+	private async onTrashDrop(e: lzlib.LzDragEvent): Promise<void> {
+
 		let dragObj = e.dragObject;
 		dragObj.x = e.$stageX - 960 - (dragObj.width / 2);
 		dragObj.y = e.$stageY - (dragObj.height / 2);
@@ -47,46 +44,45 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 
 	}
 
-	private sound:egret.Sound;
-	private soundInitChannel:egret.SoundChannel;
+	private sound: egret.Sound;
+	private soundInitChannel: egret.SoundChannel;
 
-	private loadAudio(url: string, soundChannel:egret.SoundChannel, callback) 
-	{
-		
+	private loadAudio(url: string, soundChannel: egret.SoundChannel, callback) {
+
 		this.sound = new egret.Sound();
-		this.sound.addEventListener(egret.Event.COMPLETE, (event:egret.Event) => {
-      		soundChannel = this.sound.play(0,1);
+		this.sound.addEventListener(egret.Event.COMPLETE, (event: egret.Event) => {
+			soundChannel = this.sound.play(0, 1);
 			soundChannel.addEventListener(egret.Event.SOUND_COMPLETE, callback, this)
-  		}, this);
-  		this.sound.addEventListener(egret.IOErrorEvent.IO_ERROR, (event:egret.IOErrorEvent) => {
-      		console.log("loaded error!");
-  		}, this);
-  		this.sound.load(url);
-		
+		}, this);
+		this.sound.addEventListener(egret.IOErrorEvent.IO_ERROR, (event: egret.IOErrorEvent) => {
+			console.log("loaded error!");
+		}, this);
+		this.sound.load(url);
+
 	}
 
-	private soundinitComplete(e:egret.Event) {
+	private soundinitComplete(e: egret.Event) {
 
 		this.hornAnimation.visible = false;
 		this.hornBlack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.hornBlackTop, this)
 	}
 
-	private bigFurnitureChannel:egret.SoundChannel
-	private hornBlackTop(e:egret.TouchEvent){
+	private bigFurnitureChannel: egret.SoundChannel
+	private hornBlackTop(e: egret.TouchEvent) {
 
 		// let goodsChild = this.goods.$children;
 		this.hornAnimation.visible = true;
 
-		this.goods.$children.map( (index) => {
+		this.goods.$children.map((index) => {
 			index.alpha = 0.4;
 		})
 
-		this.loadAudio('resource/audio/big_furniture.mp3', this.bigFurnitureChannel ,this.bigFurnitureComplete)
+		this.loadAudio('resource/audio/big_furniture.mp3', this.bigFurnitureChannel, this.bigFurnitureComplete)
 
 
 	}
 
-	private bigFurnitureComplete(e:egret.Event) {
+	private bigFurnitureComplete(e: egret.Event) {
 		var goodsArr = this.goods.$children;
 		var index = 0;
 		for (let i = goodsArr.length - 1; index < 3; i--) {
@@ -101,5 +97,5 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 
 		}
 	}
-	
+
 }
