@@ -22,7 +22,7 @@
 	<w:Config id="16541ee7aa3" ></w:Config>
 	<e:Group id="dogsGroup" height="974" left="5" right="5" y="3" alpha="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-		<ns1:MovieClipPlayer id="dogMovie" horizontalCenter="0" y="550" width="247" height="307" dataSet="dog_movie_json" texture="dog_movie_png" movieClipName="dog_movie"  scaleX="-1" alpha="0"/>
+		<ns1:MovieClipPlayer id="dogMovie" horizontalCenter="0" y="550" width="247" height="307" dataSet="dog_movie_json" texture="dog_movie_png" movieClipName="dog_movie" scaleX="-1" alpha="0"/>
 	</e:Group>
 	<e:Group id="goodsAndRoomGroup">
 		<e:Group width="960" height="974" x="1" y="3">
@@ -31,14 +31,14 @@
 			<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
 			<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_png"/>
 			<e:Group id="goodsGroup" width="863" height="881" x="52" y="52">
-				<ns1:GoodsComponent id="lampDeskImage" x="557.5" y="582" source="furniture_lamp_desk_png" audioName="sound 3 (oSound2)_mp3" targetRectX="333" targetRectY="590" enabled='false'/>
-				<ns1:GoodsComponent id="potUmbrellaImage" x="305.5" y="591.01" source="goods_pot_umbrella_png" audioName="sound 1 (oSound1)_mp3" targetRectX="795" targetRectY="650" enabled="false"/>
-				<ns1:GoodsComponent id="hangerCostImage" x="17" y="582" source="furniture_hanger_coat_png" audioName="sound 2 (oSound0)_mp3" targetRectX="105" targetRectY="665" enabled="false"/>
-				<ns1:GoodsComponent id="godImage" x="591" y="265" source="goods_dog_png" audioName="sound 8 (oSound5)_mp3" targetRectX="690" targetRectY="615" enabled="false"/>
-				<ns1:GoodsComponent id="birdAndBirdcageImage" x="302" y="277" source="goods_bird_and_birdcage_png" audioName="sound 14 (oSound4)_mp3" targetRectX="70" targetRectY="535" enabled="false"/>
-				<ns1:GoodsComponent id="catImage" x="17" y="277" source="goods_cat_png" audioName="sound 13 (oSound3)_mp3" targetRectX="340" targetRectY="830" targetRectWidth="200" enabled="false" />
-				<ns1:GoodsComponent id="bearImage" x="591" y="15" source="goods_bear_png" audioName="sound 16 (oSound7)_mp3" targetRectX="485" targetRectY="515" enabled="false"/>
-				<ns1:GoodsComponent id="bookImage" x="305.5" y="15" source="goods_book_png" audioName="sound 15 (oSound6)_mp3" targetRectX="255" targetRectY="635" targetRectWidth="363" targetRectHeight="157" enabled="false"/>
+				<ns1:GoodsComponent id="lampDeskImage" x="581.74" y="582" source="furniture_lamp_desk_png" audioName="sound 3 (oSound2)_mp3" targetRectX="333" targetRectY="590" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="potUmbrellaImage" x="305.5" y="591.01" source="goods_pot_umbrella_png" audioName="sound 1 (oSound1)_mp3" targetRectX="795" targetRectY="650" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="hangerCostImage" x="17" y="554.73" source="furniture_hanger_coat_png" audioName="sound 2 (oSound0)_mp3" targetRectX="105" targetRectY="665" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="godImage" x="591" y="265" source="goods_dog_png" audioName="sound 8 (oSound5)_mp3" targetRectX="690" targetRectY="615" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="birdAndBirdcageImage" x="302" y="277" source="goods_bird_and_birdcage_png" audioName="sound 14 (oSound4)_mp3" targetRectX="70" targetRectY="535" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="catImage" x="17" y="277" source="goods_cat_png" audioName="sound 13 (oSound3)_mp3" targetRectX="340" targetRectY="830" targetRectWidth="200" enabled="false" currentState="gray" />
+				<ns1:GoodsComponent id="bearImage" x="591" y="15" source="goods_bear_png" audioName="sound 16 (oSound7)_mp3" targetRectX="485" targetRectY="515" enabled="false" currentState="gray"/>
+				<ns1:GoodsComponent id="bookImage" x="305.5" y="15" source="goods_book_png" audioName="sound 15 (oSound6)_mp3" targetRectX="255" targetRectY="635" targetRectWidth="363" targetRectHeight="157" enabled="false" currentState="gray"/>
 			</e:Group>
 			<e:Label text="選擇物件" x="61.91" y="77" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
 		</e:Group>
@@ -63,8 +63,8 @@
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
 		<e:Image height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_png"/>
 		<e:Group width="560.61" height="281.82" x="36" y="145.09" anchorOffsetX="0" anchorOffsetY="0">
-			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" iconSource="speaker_png" tip="播放/暫停"/>
-			<ns1:CircleButton id="validateButton" width="147" height="147" x="209" y="70" title="核對" titleColor="0x296419" strokeColor="0x41962A" backgroundColor="0xDEFDD9" tip="核對物件"/>
+			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" iconSource="speaker_png" tip="播放/暫停" enabled="false"/>
+			<ns1:CircleButton id="validateButton" width="147" height="147" x="209" y="70" title="核對" titleColor="0x296419" strokeColor="0x41962A" backgroundColor="0xDEFDD9" tip="核對物件" enabled="false"/>
 			<ns1:CircleButton id="exitButton" width="147" height="147" x="385" y="70" title="離開" tip="離開" />
 		</e:Group>
 		<ns1:BiscuitProgressBar id="progressBar" x="650" y="170" />

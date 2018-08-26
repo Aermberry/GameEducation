@@ -3,7 +3,6 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	private circleImage: eui.Image;
 	public enabledAudioName = true; //是否允许播放音频
 	public isInRoom = false; //是否已经被放入房间
-	private _enabled = true;
 
 	public constructor() {
 		super();
@@ -19,7 +18,6 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	{
 		super.childrenCreated();
 		this.goodsImage.source = this.source;
-		this.enabled = this._enabled;
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 	}
 
@@ -101,21 +99,13 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	 * 物件底部的点
 	 * 用于判断该物件是否放在房间中的指定位置
 	 */
-	private _bottomPoint = new egret.Point(); 
-
 	public get bottomPoint(): egret.Point
 	{
-		return new egret.Point(this.x + this.goodsImage.x + this.goodsImage.width / 2, this.y + this.goodsImage.y + this.goodsImage.height);
-	}
-
-	public set bottomPointX(value: number)
-	{
-		this.bottomPoint.x = value;
-	}
-
-	public set bottomPointY(value: number)
-	{
-		this.bottomPoint.y = value;
+		if (this.goodsImage) {
+			return new egret.Point(this.x + this.goodsImage.x + this.goodsImage.width / 2, this.y + this.goodsImage.y + this.goodsImage.height);
+		} else {
+			return new egret.Point();
+		}
 	}
 
 	/**
@@ -146,16 +136,5 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	public set targetRectHeight(value: number)
 	{
 		this.targetRect.height = value;
-	}
-
-	/**
-	 * TypeScript有bug，当用户通过exml文件设置该属性时，value是string，不是boolean。
-	 * 所以我只能强行转换成string再判断
-	 */
-	public set enabled(value: boolean)
-	{
-		//this._enabled = value.toString().toLowerCase() === 'true';
-		//super.$setEnabled(this._enabled);
-		//this.currentState = this._enabled ? 'normal' : 'disabled';
 	}
 }

@@ -23,11 +23,11 @@ class BiscuitProgressBar extends eui.Component implements  eui.UIComponent {
 
 	public updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void 
 	{
-		for (let index = this.baseCount; index < inCorrectPlaceCount; index++) {
+		for (let index = 0; index < inCorrectPlaceCount; index++) {
 			(this.getChildAt(this.baseCount + index) as BiscuitComponent).currentState = 'correct';
 		}
 
-		for (let index = this.baseCount + inCorrectPlaceCount; index < inWrongPlaceCount; index++) {
+		for (let index = 0; index < inWrongPlaceCount; index++) {
 			(this.getChildAt(this.baseCount + inCorrectPlaceCount + index) as BiscuitComponent).currentState = 'wrong';
 		}
 	}

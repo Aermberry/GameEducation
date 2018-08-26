@@ -5,6 +5,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	private hornAnimation: MovieClipPlayer;
 	private toastGroup: eui.Group;
 	private toastLabel: eui.Label;
+	private goodsAndRoomGroup: eui.Group;
 
 	private instructionButton: CircleButton;
 	private validateButton: CircleButton;
@@ -56,16 +57,26 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		}
 
 		let drop = new lzlib.Drop();
-		this.stage.addChild(drop);
+		this.addChild(drop);
 		drop.enableDrop(this.roomGroup);
-		this.roomGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
+		this.roomGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onRoomDrop, this);
 	}
 
-	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
+	private async onRoomDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
 		e.preventDefault();
-
 		let dragObj = e.dragObject as GoodsComponent;
+
+		if (!dragObj.isInRoom) {
+			//当前物件还未进入房间，要先在GoodsGroup放一个PlaceHolder
+			let placeHolder = dragObj.clone() as GoodsComponent;
+			placeHolder.x = e.originalPoint.x;
+			placeHolder.y = e.originalPoint.y;
+			placeHolder.currentState = 'gray';
+			placeHolder.enabled = false;
+			this.goodsGroup.addChild(placeHolder);
+		}
+
 		dragObj.x = e.localX - (e.stageX - e.dragObject.x);
 		dragObj.y = e.localY - (e.stageY - e.dragObject.y);
 		this.roomGroup.addChild(dragObj);
@@ -123,6 +134,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 
 	public playGamePassedMovie(): void
 	{
+		this.swapChildren(this.dogsGroup, this.goodsAndRoomGroup);
 		this.gamePassedMovie.play(0);
 	}
 	
@@ -142,6 +154,11 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public disableGoods(goods: GoodsComponent[]): void 
 	{
 		goods.forEach(x => x.enabled = false);
+	}
+
+	public updateGoodsStateToNormal(goods: GoodsComponent[]): void
+	{
+		goods.forEach(x => x.currentState = 'normal');
 	}
 	
 	public highlightInstructionButton(): void 
@@ -224,10 +241,6 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		this.actionLeftButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onContinueButtonClick, this.presenter);
 		this.actionRightButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
 	}
-	
-	public alertNextRound(): void 
-	{
-	}
 
 	public toastNextRoundMessage(): void
 	{
@@ -238,6 +251,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	{
 		this.actionGroup.visible = true;
 		this.actionLeftButton.title = this.actionLeftButton.tip = '下一節';
+		this.actionLeftButton.titleSize = 62;
 		this.actionLeftButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onNextRoundButtonClick, this.presenter);
 		this.actionRightButton.title = this.actionRightButton.tip = '離開';
 		this.actionRightButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
@@ -247,6 +261,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	{
 		this.toastGroup.visible = false;
 		this.actionGroup.visible = false;
+		this.actionLeftButton.titleSize = 92;
 		this.actionLeftButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onNextRoundButtonClick, this.presenter);
 		this.actionRightButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
 	}
@@ -261,4 +276,8 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		this.toastGroup.visible = false;
 	}
 	
+	public reopenMyself(): void
+	{
+		Main.instance.gotoScene(new MainScene());
+	}
 }

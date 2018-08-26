@@ -12,6 +12,7 @@ interface MainView {
 	enableGoods(goods: GoodsComponent[]): void;
 	/** 禁用goods */
 	disableGoods(goods: GoodsComponent[]): void;
+	updateGoodsStateToNormal(goods: GoodsComponent[]): void;
 	highlightInstructionButton(): void;
 	normalizeInstructionButton(): void;
 	enableValidateButton(): void;
@@ -30,4 +31,5 @@ interface MainView {
 	closeNextRoundPanel(): void;
 	updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void;
 	hideToastView(): void;
+	reopenMyself(): void;
 }

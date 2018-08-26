@@ -166,6 +166,7 @@ var lzlib;
             var _this = _super.call(this, type, true, true, stageX, stageY, touchPointID) || this;
             _this.data = data;
             _this.dragObject = dragObject;
+            _this.originalPoint = new egret.Point(lzlib.Drag.originalX, lzlib.Drag.originalY);
             return _this;
         }
         LzDragEvent.DRAG_OVER = 'drag_enter';
