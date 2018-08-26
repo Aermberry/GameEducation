@@ -9,6 +9,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private tipLabel: eui.Label;
 	private iconImage: eui.Image;
 	private blinkingTweenGroup: egret.tween.TweenGroup;
+	private _enabled = true;
 
 	public constructor() {
 		super();
@@ -31,25 +32,27 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
 		this.titleLabel.text = this.title;
 		this.titleLabel.textColor = this.titleColor;
+		this.titleLabel.size = this.titleSize;
 		this.tipLabel.text = this.tip;
 		this.iconImage.source = this.iconSource;
 		this.backgroundRect.strokeColor = this.strokeColor;
 		this.backgroundRect.fillColor = this.backgroundColor;
+		this.enabled = this._enabled;
 	}
 
 	private onRollOver(): void
 	{
-		this.enabled && (this.currentState = 'over');
+		this._enabled && (this.currentState = 'over');
 	}
 
 	private onRollOut(): void
 	{
-		this.enabled && (this.currentState = 'normal');
+		this._enabled && (this.currentState = 'normal');
 	}
 
 	private onTouchBegin(): void
 	{
-		this.currentState = 'normal';
+		this._enabled && (this.currentState = 'normal');
 	}
 	
 	private _title = '';
@@ -63,6 +66,19 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	{
 		this._title = value;
 		this.titleLabel && (this.titleLabel.text = value);
+	}
+
+	private _titleSize = 92;
+
+	public get titleSize(): number
+	{
+		return this._titleSize;
+	}
+
+	public set titleSize(value: number)
+	{
+		this._titleSize = value;
+		this.titleLabel && (this.titleLabel.size = value);
 	}
 
 	private _tip = '';
@@ -133,16 +149,23 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	public set highlight(value: boolean) 
 	{
 		if (value) {
+			this.highlightRect.alpha = 1; //通过代码隐藏highlightRect后，要通过代码显示highlightRect，才能正常播放动画
 			this.blinkingTweenGroup.playLoopAsync();
 		} else {
 			this.blinkingTweenGroup.stop();
-			this.highlightRect.alpha = 0;
+			this.highlightRect.alpha = 0; //动画被强制停止时，可能停在任何一帧，我们需要手动显示所需控件。
+			this.backgroundRect.alpha = 1;
 		}
 	}
 
+	/**
+	 * TypeScript有bug，当用户通过exml文件设置该属性时，value是string，不是boolean。
+	 * 所以我只能强行转换成string再判断
+	 */
 	public set enabled(value: boolean)
 	{
-		this.currentState = value ? 'normal' : 'disabled';
-		super.$setEnabled(value);
+		this._enabled = value.toString().toLowerCase() === 'true';
+		super.$setEnabled(this._enabled);
+		this.currentState = this._enabled ? 'normal' : 'disabled';
 	}
 }

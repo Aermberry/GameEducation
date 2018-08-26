@@ -51,30 +51,36 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 
 	public validateInCorrectPlace(): void
 	{
-		if (!this.isInRoom) {
+		if (!this.isInRoom || this.isInCorrectPlace) {
 			this.currentState = 'normal';
 			return;
 		}
 
-		if (!this.isInCorrectPlace) {
+		if (this.isInWrongPlace) {
 			this.currentState = 'wrong';
 			return;
+		}
+
+		if (!this.enabled) {
+			this.currentState = 'disabled';
 		}
 	}
 
 	public get isInCorrectPlace(): boolean
 	{
-		return this.isInRoom && this.targetRect.containsPoint(this.bottomPoint);
+		//egret.Rectangele.containsPoint有bug，不要用
+		return this.isInRoom && GoodsComponent.containsPoint(this.targetRect, this.bottomPoint);
 	}
 
 	public get isInWrongPlace(): boolean
 	{
-		return false;
+		return this.isInRoom && !GoodsComponent.containsPoint(this.targetRect, this.bottomPoint);
 	}
 
-	public set currentState(value: string)
+	private static containsPoint(rect: egret.Rectangle, point: egret.Point): boolean
 	{
-		this.currentState = value;
+		return (0 <= point.x - rect.x && point.x - rect.x <= rect.width)
+		&& (0 <= point.y - rect.y && point.y - rect.y <= rect.height);
 	}
 
 	private _audioName = ''; //mouse over时播放的音频
@@ -93,27 +99,19 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	 * 物件底部的点
 	 * 用于判断该物件是否放在房间中的指定位置
 	 */
-	private _bottomPoint = new egret.Point(); 
-
 	public get bottomPoint(): egret.Point
 	{
-		return this._bottomPoint;
-	}
-
-	public set bottomPointX(value: number)
-	{
-		this.bottomPoint.x = value;
-	}
-
-	public set bottomPointY(value: number)
-	{
-		this.bottomPoint.y = value;
+		if (this.goodsImage) {
+			return new egret.Point(this.x + this.goodsImage.x + this.goodsImage.width / 2, this.y + this.goodsImage.y + this.goodsImage.height);
+		} else {
+			return new egret.Point();
+		}
 	}
 
 	/**
 	 * 物件的目标摆放位置，当bottomPoint位于targetRect内时，系统认为物件摆放正确
 	 */
-	private _targetRect = new egret.Rectangle(0, 0, 80, 80);
+	private _targetRect = new egret.Rectangle(0, 0, 100, 100);
 
 	public get targetRect(): egret.Rectangle
 	{

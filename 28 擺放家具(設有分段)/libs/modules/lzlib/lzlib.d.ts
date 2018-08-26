@@ -21,8 +21,8 @@ declare namespace lzlib {
         static dataTransfer: any;
         static isCopy: boolean;
         static originalParent: egret.DisplayObjectContainer;
-        private static originalX;
-        private static originalY;
+        static originalX: number;
+        static originalY: number;
         private dragObject;
         private isCopy;
         private dataTransfer;
@@ -46,6 +46,8 @@ declare namespace lzlib {
         static readonly DRAG_OUT: string;
         static readonly DROP: string;
         dragObject: egret.DisplayObject;
+        /** 该拖拉控件的原始local point */
+        originalPoint: egret.Point;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
     }
 }

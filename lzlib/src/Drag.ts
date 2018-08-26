@@ -17,8 +17,8 @@ namespace lzlib {
         public static isCopy: boolean = false;
         public static originalParent: egret.DisplayObjectContainer = null;
 
-        private static originalX = 0;
-        private  static originalY = 0;
+        public static originalX = 0;
+        public static originalY = 0;
 
         private dragObject:egret.DisplayObject;
         private isCopy: boolean = false;

@@ -2,18 +2,22 @@ class RoundPresenter {
 	private view: MainView;
 	private instructionAudioName: string;
 	public goods: GoodsComponent[];
+	public isLastRound = false;
 
-	public constructor(view: MainView, instructionAudioName: string, goods: GoodsComponent[]) {
+	public constructor(view: MainView, instructionAudioName: string, goods: GoodsComponent[], isLastRound: boolean) {
 		this.view = view;
 		this.instructionAudioName = instructionAudioName;
 		this.goods = goods;
+		this.isLastRound = isLastRound;
 	}
 
 	public play(): void
 	{
 		this.view.disableGoods(this.goods);
+		this.view.enableInstructionButton();
 		this.view.highlightInstructionButton();
 		this.view.disableValidateButton();
+		this.view.closeNextRoundPanel();
 	}
 
 	public async onInstructionButtonClick(): Promise<void>
@@ -26,13 +30,13 @@ class RoundPresenter {
 		this.view.enableInstructionButton();
 		this.view.enableValidateButton();
 		this.view.enableGoods(this.goods);
+		this.view.updateGoodsStateToNormal(this.goods);
 	}
 
 	public onValidateButtonClick(): void
 	{
 		this.goods.forEach(goods => goods.validateInCorrectPlace());
 		this.view.updateProgress(this.getInCorrectPlaceCount(), this.getInWrongPlaceCount());
-		this.view.disableGoods(this.goods);
 
 		if (!this.goods.all(goods => goods.isInRoom)) {
 			this.view.playSomeGoodsNotInRoomAudio();
@@ -46,9 +50,16 @@ class RoundPresenter {
 			return;
 		}
 
-		this.view.playNextRoundAudio();
-		this.view.toastNextRoundMessage();
-		this.view.openNextRoundPanel();
+		this.view.disableGoods(this.goods);
+		if (this.isLastRound) {
+			this.view.toastGamePassedMessage();
+			this.view.showGamePassedPanel();
+			this.view.playGamePassedAudio();
+			this.view.playGamePassedMovie();
+		} else {
+			this.view.toastNextRoundMessage();
+			this.view.openNextRoundPanel();
+		}
 	}
 
 	private getInCorrectPlaceCount(): number
@@ -64,6 +75,5 @@ class RoundPresenter {
 	public onContinueButtonClick(): void
 	{
 		this.view.closeContinuePanel();
-		this.view.enableGoods(this.goods);
 	}
 }
