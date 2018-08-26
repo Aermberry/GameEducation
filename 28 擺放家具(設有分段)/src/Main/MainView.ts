@@ -25,7 +25,6 @@ interface MainView {
 	playNotAllGoodsInCorrectPlayAudio(): void;
 	openContinuePanel(): void;
 	closeContinuePanel(): void;
-	playNextRoundAudio(): void;
 	toastNextRoundMessage(): void;
 	openNextRoundPanel(): void;
 	closeNextRoundPanel(): void;

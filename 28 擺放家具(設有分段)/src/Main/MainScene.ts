@@ -229,12 +229,6 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	{
 	}
 
-	public playNextRoundAudio(): void
-	{
-		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
-	}
-
 	public toastNextRoundMessage(): void
 	{
 		this.toastMessage('請前往下一節啦！');

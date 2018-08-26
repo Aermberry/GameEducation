@@ -14,6 +14,7 @@ class RoundPresenter {
 		this.view.disableGoods(this.goods);
 		this.view.highlightInstructionButton();
 		this.view.disableValidateButton();
+		this.view.closeNextRoundPanel();
 	}
 
 	public async onInstructionButtonClick(): Promise<void>
@@ -32,7 +33,6 @@ class RoundPresenter {
 	{
 		this.goods.forEach(goods => goods.validateInCorrectPlace());
 		this.view.updateProgress(this.getInCorrectPlaceCount(), this.getInWrongPlaceCount());
-		this.view.disableGoods(this.goods);
 
 		if (!this.goods.all(goods => goods.isInRoom)) {
 			this.view.playSomeGoodsNotInRoomAudio();
@@ -46,7 +46,6 @@ class RoundPresenter {
 			return;
 		}
 
-		this.view.playNextRoundAudio();
 		this.view.toastNextRoundMessage();
 		this.view.openNextRoundPanel();
 	}
@@ -64,6 +63,5 @@ class RoundPresenter {
 	public onContinueButtonClick(): void
 	{
 		this.view.closeContinuePanel();
-		this.view.enableGoods(this.goods);
 	}
 }

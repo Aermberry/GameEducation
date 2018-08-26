@@ -3,6 +3,7 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	private circleImage: eui.Image;
 	public enabledAudioName = true; //是否允许播放音频
 	public isInRoom = false; //是否已经被放入房间
+	private _enabled = true;
 
 	public constructor() {
 		super();
@@ -18,6 +19,7 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	{
 		super.childrenCreated();
 		this.goodsImage.source = this.source;
+		this.enabled = this._enabled;
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 	}
 
@@ -51,25 +53,36 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 
 	public validateInCorrectPlace(): void
 	{
-		if (!this.isInRoom) {
+		if (!this.isInRoom || this.isInCorrectPlace) {
 			this.currentState = 'normal';
 			return;
 		}
 
-		if (!this.isInCorrectPlace) {
+		if (this.isInWrongPlace) {
 			this.currentState = 'wrong';
 			return;
+		}
+
+		if (!this.enabled) {
+			this.currentState = 'disabled';
 		}
 	}
 
 	public get isInCorrectPlace(): boolean
 	{
-		return this.isInRoom && this.targetRect.containsPoint(this.bottomPoint);
+		//egret.Rectangele.containsPoint有bug，不要用
+		return this.isInRoom && GoodsComponent.containsPoint(this.targetRect, this.bottomPoint);
 	}
 
 	public get isInWrongPlace(): boolean
 	{
-		return false;
+		return this.isInRoom && !GoodsComponent.containsPoint(this.targetRect, this.bottomPoint);
+	}
+
+	private static containsPoint(rect: egret.Rectangle, point: egret.Point): boolean
+	{
+		return (0 <= point.x - rect.x && point.x - rect.x <= rect.width)
+		&& (0 <= point.y - rect.y && point.y - rect.y <= rect.height);
 	}
 
 	private _audioName = ''; //mouse over时播放的音频
@@ -92,7 +105,7 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 
 	public get bottomPoint(): egret.Point
 	{
-		return this._bottomPoint;
+		return new egret.Point(this.x + this.goodsImage.x + this.goodsImage.width / 2, this.y + this.goodsImage.y + this.goodsImage.height);
 	}
 
 	public set bottomPointX(value: number)
@@ -108,7 +121,7 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	/**
 	 * 物件的目标摆放位置，当bottomPoint位于targetRect内时，系统认为物件摆放正确
 	 */
-	private _targetRect = new egret.Rectangle(0, 0, 80, 80);
+	private _targetRect = new egret.Rectangle(0, 0, 100, 100);
 
 	public get targetRect(): egret.Rectangle
 	{
@@ -135,9 +148,14 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 		this.targetRect.height = value;
 	}
 
+	/**
+	 * TypeScript有bug，当用户通过exml文件设置该属性时，value是string，不是boolean。
+	 * 所以我只能强行转换成string再判断
+	 */
 	public set enabled(value: boolean)
 	{
-		super.$setEnabled(value);
-		this.currentState = value ? 'normal' : 'disabled';
+		//this._enabled = value.toString().toLowerCase() === 'true';
+		//super.$setEnabled(this._enabled);
+		//this.currentState = this._enabled ? 'normal' : 'disabled';
 	}
 }

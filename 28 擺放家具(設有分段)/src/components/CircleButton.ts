@@ -9,6 +9,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	private tipLabel: eui.Label;
 	private iconImage: eui.Image;
 	private blinkingTweenGroup: egret.tween.TweenGroup;
+	private _enabled = true;
 
 	public constructor() {
 		super();
@@ -35,21 +36,22 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.iconImage.source = this.iconSource;
 		this.backgroundRect.strokeColor = this.strokeColor;
 		this.backgroundRect.fillColor = this.backgroundColor;
+		this.enabled = this._enabled;
 	}
 
 	private onRollOver(): void
 	{
-		this.enabled && (this.currentState = 'over');
+		this._enabled && (this.currentState = 'over');
 	}
 
 	private onRollOut(): void
 	{
-		this.enabled && (this.currentState = 'normal');
+		this._enabled && (this.currentState = 'normal');
 	}
 
 	private onTouchBegin(): void
 	{
-		this.currentState = 'normal';
+		this._enabled && (this.currentState = 'normal');
 	}
 	
 	private _title = '';
@@ -140,9 +142,14 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		}
 	}
 
+	/**
+	 * TypeScript有bug，当用户通过exml文件设置该属性时，value是string，不是boolean。
+	 * 所以我只能强行转换成string再判断
+	 */
 	public set enabled(value: boolean)
 	{
-		this.currentState = value ? 'normal' : 'disabled';
-		super.$setEnabled(value);
+		this._enabled = value.toString().toLowerCase() === 'true';
+		super.$setEnabled(this._enabled);
+		this.currentState = this._enabled ? 'normal' : 'disabled';
 	}
 }

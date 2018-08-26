@@ -12,7 +12,7 @@ class MainPresenter {
 		this.rounds = [
 			new RoundPresenter(view, 'sound 11 (contentSoundRaw0)_mp3', goods.slice(0, 3)),
 			new RoundPresenter(view, 'sound 10 (contentSoundRaw1))_mp3', goods.slice(3, 6)),
-			new RoundPresenter(view, 'sound 9 (contentSoundRaw2)_mp3', goods.slice(6, 7))
+			new RoundPresenter(view, 'sound 9 (contentSoundRaw2)_mp3', goods.slice(6, 8))
 		];
 		this.currentRound = this.rounds[0];
 		//await this.view.playIntroductionAudio();
@@ -39,9 +39,10 @@ class MainPresenter {
 	{
 		this.view.addProgressBarBaseCount(this.currentRound.goods.length);
 		let roundIndex = this.rounds.indexOf(this.currentRound);
+		roundIndex++;
 		if (roundIndex < this.rounds.length) {
 			//这不是最后一轮
-			this.currentRound = this.rounds[roundIndex + 1];
+			this.currentRound = this.rounds[roundIndex];
 			this.currentRound.play();
 		} else {
 			this.view.toastGamePassedMessage();
