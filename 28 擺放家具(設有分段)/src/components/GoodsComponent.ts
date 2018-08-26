@@ -72,11 +72,6 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 		return false;
 	}
 
-	public set currentState(value: string)
-	{
-		this.currentState = value;
-	}
-
 	private _audioName = ''; //mouse over时播放的音频
 
 	public get audioName(): string
@@ -138,5 +133,11 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 	public set targetRectHeight(value: number)
 	{
 		this.targetRect.height = value;
+	}
+
+	public set enabled(value: boolean)
+	{
+		super.$setEnabled(value);
+		this.currentState = value ? 'normal' : 'disabled';
 	}
 }
