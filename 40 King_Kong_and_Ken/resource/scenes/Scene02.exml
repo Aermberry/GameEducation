@@ -14,7 +14,7 @@
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="92.4" y="41.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="KenWritesSong_json" texture="KenWritesSong_png" movieClipName="KenWritesSong" scaleX="0.4" scaleY="0.4"/>
 		<ns1:MovieClipPlayer width="384" height="307" x="292.76" y="533.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.4" scaleY="0.4"/>
-		<e:Button id="nextBtn" label="Next" x="1443.46" y="942" scaleX="1" scaleY="1"/>
+		<e:Button id="nextBtn" label="Next" x="1463.65" y="902" scaleX="1" scaleY="1" width="188.7" height="120.54" visible="false"/>
 	</e:Group>
 
 </e:Skin>

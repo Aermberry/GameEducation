@@ -21,6 +21,7 @@ class Scene03 extends eui.Component implements  eui.UIComponent {
 
 	private async playBackgroundMusic():Promise<void> {
 		await lzlib.SoundUtility.playSound('04_mp3')
+		this.btnNext.visible = true;
 	}
 
 	private onNextBtnClick():void {

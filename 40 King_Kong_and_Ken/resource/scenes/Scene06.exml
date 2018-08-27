@@ -8,5 +8,5 @@
 			<e:VerticalLayout gap="65" paddingTop="342"/>
 		</e:layout>
 	</e:Group>
-	<e:Button id="nextBtn" label="Next" x="1475" y="869"/>
+	<e:Button id="nextBtn" label="Next" x="1475" y="869" width="188.7" height="120.54" visible="false"/>
 </e:Skin>

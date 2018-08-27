@@ -7,7 +7,7 @@
 			<e:Label text="To form his band." x="75" y="226.04" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="147.89" verticalAlign="bottom"/>
 			<e:Label text="King Kong wants Ken" x="0" y="373.93" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
 			<e:Label text="For the King's land." x="163" y="574" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
-			<e:Button id="nextBtn" label="Next" x="577.5" y="918"/>
+			<e:Button id="nextBtn" label="Next" x="577.5" y="918" height="120.54" width="188.7" visible="false"/>
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="54" y="256.50000000000006" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>
 	</e:Group>

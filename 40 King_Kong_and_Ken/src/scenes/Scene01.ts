@@ -18,6 +18,7 @@ class Scene01 extends eui.Component implements eui.UIComponent {
 
 	private async playBackgroundMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('Scene01_mp3');
+		this.nextButton.visible = true;
 
 	}
 
