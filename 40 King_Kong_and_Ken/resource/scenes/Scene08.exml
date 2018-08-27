@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene08Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165796077df" ></w:Config>
+	<e:Label text="Click on the tree and listen\n  to the 'ong' sound again. " x="82" y="391.5" size="88" textColor="0xdf6f98" lineSpacing="25"/>
+	<e:Image source="资源 1_png" x="1271.64" y="175.5"/>
+	<e:Button id="nextButton" label="Next" x="466" y="744" width="188.7" height="120.54"/>
+</e:Skin>

@@ -14,7 +14,6 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"Let's listen to the poem about them": "resource/scenes/Let's listen to the poem about them.exml",
-		"Scence00": "resource/scenes/Scence00.exml",
 		"Scene00": "resource/scenes/Scene00.exml",
 		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
 		"Scene01": "resource/scenes/Scene01.exml",
@@ -25,7 +24,9 @@
 		"Scene05": "resource/scenes/Scene05.exml",
 		"Scene06": "resource/scenes/Scene06.exml",
 		"Scene00_1": "resource/scenes/Scene00_1.exml",
-		"Scene07": "resource/scenes/Scene07.exml"
+		"Scene07": "resource/scenes/Scene07.exml",
+		"Scene08": "resource/scenes/Scene08.exml",
+		"Scenes09": "resource/scenes/Scenes09.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -45,14 +46,15 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/Scene00.exml",
-		"resource/scenes/Scene00_1.exml",
 		"resource/scenes/Scene01.exml",
 		"resource/scenes/Scene02.exml",
 		"resource/scenes/Scene03.exml",
 		"resource/scenes/Scene04.exml",
 		"resource/scenes/Scene05.exml",
 		"resource/scenes/Scene06.exml",
-		"resource/scenes/Scene07.exml"
+		"resource/scenes/Scene07.exml",
+		"resource/scenes/Scene08.exml",
+		"resource/scenes/Scenes09.exml"
 	],
 	"path": "resource/default.thm.json"
 }
