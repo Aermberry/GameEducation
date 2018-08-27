@@ -1,3 +1,6 @@
+interface Math {
+    randomMinMax(min: number, max: number): number;
+}
 interface Array<T> {
     shuffle(): void;
 }
@@ -26,6 +29,7 @@ declare namespace lzlib {
         enableDrag(dragObject: egret.DisplayObject, isCopy?: boolean, dataTransfer?: any): void;
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
+        private cloneImage(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -65,8 +69,10 @@ declare namespace lzlib {
         private onTouchEnd(e);
     }
 }
-interface Math {
-    randomMinMax(min: number, max: number): number;
+declare namespace lzlib {
+    interface Cloneable {
+        clone(): object;
+    }
 }
 declare namespace egret {
     interface MovieClip {
