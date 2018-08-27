@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,behind_png,bicycle_png,books_png,bus_png,clock_png,flower_png,inside_png,man_girl_png,nearby_png,owl_png,robot_png,room_png,under_png,up_png,bg2_jpg,egret_icon2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,inside2_png,man_girl2_png,nearby2_png,owl2_png,robot2_png,room2_png,under2_png,up2_png,text02_png,01a_mp3,01b_mp3,02a_plant_mp3,02b_books_mp3,03_robot_mp3,04_clock_mp3,05_toy_bus_mp3,06_bicycle_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,behind_png,bicycle_png,books_png,bus_png,clock_png,flower_png,inside_png,man_girl_png,nearby_png,owl_png,robot_png,room_png,under_png,up_png,bg2_jpg,egret_icon2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,inside2_png,man_girl2_png,nearby2_png,owl2_png,robot2_png,room2_png,under2_png,up2_png,text02_png,bg3_jpg,egret_icon3_png,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,behind3_png,bicycle3_png,books3_png,bus3_png,clock3_png,flower3_png,inside3_png,man_girl3_png,nearby3_png,owl3_png,robot3_png,room3_png,text022_png,under3_png,up3_png,wlts_logo_jpg",
 			"name": "preload"
 		}
 	],
@@ -330,6 +330,136 @@
 			"url": "audios/06_bicycle.mp3",
 			"type": "sound",
 			"name": "06_bicycle_mp3"
+		},
+		{
+			"name": "bg3_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon3_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "01a2_mp3",
+			"type": "sound",
+			"url": "audios/01a.mp3"
+		},
+		{
+			"name": "01b2_mp3",
+			"type": "sound",
+			"url": "audios/01b.mp3"
+		},
+		{
+			"name": "02a_plant2_mp3",
+			"type": "sound",
+			"url": "audios/02a_plant.mp3"
+		},
+		{
+			"name": "02b_books2_mp3",
+			"type": "sound",
+			"url": "audios/02b_books.mp3"
+		},
+		{
+			"name": "03_robot2_mp3",
+			"type": "sound",
+			"url": "audios/03_robot.mp3"
+		},
+		{
+			"name": "04_clock2_mp3",
+			"type": "sound",
+			"url": "audios/04_clock.mp3"
+		},
+		{
+			"name": "05_toy_bus2_mp3",
+			"type": "sound",
+			"url": "audios/05_toy_bus.mp3"
+		},
+		{
+			"name": "06_bicycle2_mp3",
+			"type": "sound",
+			"url": "audios/06_bicycle.mp3"
+		},
+		{
+			"name": "behind3_png",
+			"type": "image",
+			"url": "textures/behind.png"
+		},
+		{
+			"name": "bicycle3_png",
+			"type": "image",
+			"url": "textures/bicycle.png"
+		},
+		{
+			"name": "books3_png",
+			"type": "image",
+			"url": "textures/books.png"
+		},
+		{
+			"name": "bus3_png",
+			"type": "image",
+			"url": "textures/bus.png"
+		},
+		{
+			"name": "clock3_png",
+			"type": "image",
+			"url": "textures/clock.png"
+		},
+		{
+			"name": "flower3_png",
+			"type": "image",
+			"url": "textures/flower.png"
+		},
+		{
+			"name": "inside3_png",
+			"type": "image",
+			"url": "textures/inside.png"
+		},
+		{
+			"name": "man_girl3_png",
+			"type": "image",
+			"url": "textures/man_girl.png"
+		},
+		{
+			"name": "nearby3_png",
+			"type": "image",
+			"url": "textures/nearby.png"
+		},
+		{
+			"name": "owl3_png",
+			"type": "image",
+			"url": "textures/owl.png"
+		},
+		{
+			"name": "robot3_png",
+			"type": "image",
+			"url": "textures/robot.png"
+		},
+		{
+			"name": "room3_png",
+			"type": "image",
+			"url": "textures/room.png"
+		},
+		{
+			"name": "text022_png",
+			"type": "image",
+			"url": "textures/text02.png"
+		},
+		{
+			"name": "under3_png",
+			"type": "image",
+			"url": "textures/under.png"
+		},
+		{
+			"name": "up3_png",
+			"type": "image",
+			"url": "textures/up.png"
+		},
+		{
+			"name": "wlts_logo_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
 		}
 	]
 }

@@ -3,12 +3,13 @@
 	<w:Config id="16564b36b7f" ></w:Config>
 
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff" />
-	<e:Image id="tipsImage" x="585" y="116" source="up_png" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Label id="helpLabel" text="The ball is on the box." x="414.5" y="1180.49" textColor="0x0739F7" size="100"/>
+
+	<e:Label id="helpLabel" text="The ball is near the box." x="414.5" y="1180.49" textColor="0x0739F7" size="100"/>
 
 
 
 
 	<e:Button id="backButton" label="Back" x="1491.14" y="1280.49" anchorOffsetX="0" width="205.39" anchorOffsetY="0" height="105.21"/>
+	<e:Image id="tipsImage" source="nearby_png" x="414.5" y="200"/>
 
 </e:Skin>

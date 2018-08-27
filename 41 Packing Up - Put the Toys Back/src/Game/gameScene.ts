@@ -20,6 +20,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		this.playIntroductionAudio();
 		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onHelpButtonClick, this.presenter);
 		this.initDragDrop();
 		this.presenter.loadView(this);
@@ -42,7 +43,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 		e.dragObject.visible = false;
 		this.presenter.onDropCorrectly();
 	}
-
+	
 	public async playIntroductionAudio(): Promise<void> {
 		return lzlib.SoundUtility.playSound('01b_mp3');
 	}

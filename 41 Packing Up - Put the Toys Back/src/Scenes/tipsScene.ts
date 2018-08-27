@@ -11,10 +11,14 @@ class TipsScene extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-
+		this.playTipAudio();
 		this.backButton.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
 			this.parent.removeChild(this);
 		}, this);
+	}
+
+	public async playTipAudio(): Promise<void> {
+		return lzlib.SoundUtility.playSound('02a_plant_mp3')
 	}
 
 }
