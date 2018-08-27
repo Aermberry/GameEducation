@@ -138,6 +138,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			{
 				group.$children[group.$children.length-1].visible = false
 			}
+			
 
 		})
 	}
