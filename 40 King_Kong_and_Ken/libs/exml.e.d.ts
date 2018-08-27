@@ -2,6 +2,24 @@ declare class btn_nextSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
 }
+declare class Scene00Skin extends eui.Skin{
+}
+declare class Scene01Skin extends eui.Skin{
+}
+declare class Scene02Skin extends eui.Skin{
+}
+declare class Scene03Skin extends eui.Skin{
+}
+declare class Scene04Skin extends eui.Skin{
+}
+declare class Scene05Skin extends eui.Skin{
+}
+declare class Scene06Skin extends eui.Skin{
+}
+declare class Scene07Skin extends eui.Skin{
+}
+declare class Scene08Skin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -53,24 +71,4 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
-}
-declare class Scene00Skin extends eui.Skin{
-}
-declare class Scene01Skin extends eui.Skin{
-}
-declare class Scene02Skin extends eui.Skin{
-}
-declare class Scene03Skin extends eui.Skin{
-}
-declare class Scene04Skin extends eui.Skin{
-}
-declare class Scene05Skin extends eui.Skin{
-}
-declare class Scene06Skin extends eui.Skin{
-}
-declare class Scene07Skin extends eui.Skin{
-}
-declare class Scene08Skin extends eui.Skin{
-}
-declare class Scenes09Skin extends eui.Skin{
 }

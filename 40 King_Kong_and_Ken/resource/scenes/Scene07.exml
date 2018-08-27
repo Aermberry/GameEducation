@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
-		<tween:TweenGroup id="display">
-			<tween:TweenItem target="{Scene_title}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="2500">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
-		<tween:TweenGroup id="content">
-			<tween:TweenItem target="{label}">
-				<tween:Set/>
-			</tween:TweenItem>
+
+		<tween:TweenGroup id="contentTweenGroup">
+			<tween:TweenItem target="{textLabelGoup00}"/>
+			<tween:TweenItem target="{textLabelGoup01}"/>
+			<tween:TweenItem target="{textLabelGoup02}"/>
+			<tween:TweenItem target="{textLabelGoup03}"/>
+
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1655b2a4d69" ></w:Config>
 	<e:Group top="0" bottom="0" left="0" right="0">
 		<e:Label id="Scene_title" text="Click on the words in red and listen." y="96.39" textColor="0x50962b" size="80" horizontalCenter="0.5"/>
 		<e:Label id="label" text="'Ping-Pong,Ping-Pong!'" y="281.24" size="80" horizontalCenter="0.5" textColor="0x5c20f5" visible="false"/>
-		<e:Group height="200" y="242" left="0" right="0">
-			<e:Label id="label0" text="'Ping" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="88.00000000000011" scaleX="1" scaleY="1"/>
+		<e:Group id="textLabelGoup00" height="200" y="242" left="0" right="0">
+			<e:Label id="label0" text="'Ping-" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="88.00000000000011" scaleX="1" scaleY="1"/>
 			<e:Label id="label1" text="Pong" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="82" scaleX="1" scaleY="1"/>
 			<e:Label id="label4" text="," y="49.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="92" scaleX="1" scaleY="1"/>
 			<e:Label id="label2" text="Ping-" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="82" scaleX="1" scaleY="1"/>
@@ -35,12 +24,8 @@
 				<e:HorizontalLayout horizontalAlign="center" paddingTop="49" paddingLeft="0" gap="6"/>
 			</e:layout>
 		</e:Group>
-		<e:Group height="200" y="439.55" horizontalCenter="0">
-			<e:layout>
-				<e:HorizontalLayout paddingTop="3" gap="29" verticalAlign="top" horizontalAlign="center"/>
-			</e:layout>
-		</e:Group>
-		<e:Group height="200" y="427.3" left="0" right="0">
+
+		<e:Group id="textLabelGoup01" height="200" y="427.3" left="0" right="0">
 			<e:Label text="King" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-745.0000000000002" scaleX="1" scaleY="1"/>
 			<e:Label text="Kong" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-555.0000000000002" scaleX="1" scaleY="1"/>
 			<e:Label text="is" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-339.0000000000001" scaleX="1" scaleY="1"/>
@@ -49,7 +34,7 @@
 				<e:HorizontalLayout horizontalAlign="center" gap="27"/>
 			</e:layout>
 		</e:Group>
-		<e:Group height="200" y="566.7" left="0" right="0">
+		<e:Group id="textLabelGoup02" height="200" y="566.7" left="0" right="0">
 			<e:Label text="'Ding-" y="-3.6400000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="521" scaleX="1" scaleY="1"/>
 			<e:Label text="Dong" y="6.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="531" scaleX="1" scaleY="1"/>
 			<e:Label text=" ," y="16.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="541" scaleX="1" scaleY="1"/>
@@ -59,7 +44,7 @@
 			<e:HorizontalLayout horizontalAlign="center" gap="6"/>
 			</e:layout>
 		</e:Group>
-		<e:Group height="200" y="700.03" left="0" right="0">
+		<e:Group id="textLabelGoup03" height="200" y="700.03" left="0" right="0">
 			<e:Label text="Konng" y="135.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="594" scaleX="1" scaleY="1"/>
 			<e:Label text="hits" y="145.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="604" scaleX="1" scaleY="1"/>
 			<e:Label text="the" y="155.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="614" scaleX="1" scaleY="1"/>

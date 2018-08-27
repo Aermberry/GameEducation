@@ -1,5 +1,6 @@
 class Scene05 extends eui.Component implements eui.UIComponent {
 	private btnNext: eui.Button;
+	private diplayTweenGroup:egret.tween.TweenGroup;
 	public constructor() {
 		super();
 	}
@@ -13,6 +14,7 @@ class Scene05 extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		this.btnNext.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextBtnClick, this);
 		this.playBackgroundMusic();
+		this.diplayTweenGroup.play(0);
 	}
 
 
