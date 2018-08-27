@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LabelComponentsSkin" width="270" height="95" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165798785f3" ></w:Config>
+	<e:Rect id="backgroundRect" left="0" right="0" top="0" bottom="0" fillColor="0xfffd38"/>
+	<e:Label id="textLabel" text="上款" textColor="0x000000" anchorOffsetX="0" anchorOffsetY="0" size="70" horizontalCenter="0" verticalCenter="-4" verticalAlign="middle" textAlign="center"/>
+</e:Skin>
