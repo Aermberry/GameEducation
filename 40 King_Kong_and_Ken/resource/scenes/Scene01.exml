@@ -64,11 +64,11 @@
 
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Group width="1081.83" anchorOffsetX="0" right="0" top="0" bottom="227" anchorOffsetY="0" x="838.1700000000001" y="0" scaleX="1" scaleY="1">
-			<e:Label text="King kong and Ken" x="202.35" y="84" size="94" anchorOffsetY="0" height="137.7" verticalAlign="bottom" width="904" textAlign="center" textColor="0xeb3495"/>
-			<e:Label text="&quot;Ping-Pong, Ping-Pong!&quot;" x="-33.84" y="214.45" size="90" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="1081.67" textAlign="center" textColor="0x5d20f5" anchorOffsetX="0"/>
-			<e:Label text="King Kong is strong." x="0" y="186.3" size="80" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
-			<e:Label text="&quot;Ding-Dong,Ding-Dong&quot;" x="-41.29" y="509.79" size="90" anchorOffsetY="0" height="171.7" verticalAlign="bottom" width="1067.42" textAlign="center" anchorOffsetX="0" textColor="0x5d20f5"/>
-			<e:Label text="Kong hits the gong." x="10" y="196.3" size="80" anchorOffsetY="0" height="151.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
+			<e:Label id="textLabel00" text="King kong and Ken" x="202.35" y="84" size="94" anchorOffsetY="0" height="137.7" verticalAlign="bottom" width="904" textAlign="center" textColor="0xeb3495"/>
+			<e:Label id="textLabel01" text="&quot;Ping-Pong, Ping-Pong!&quot;" x="-33.84" y="214.45" size="90" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="1081.67" textAlign="center" textColor="0x5d20f5" anchorOffsetX="0"/>
+			<e:Label id="textLabel02" text="King Kong is strong." x="0" y="186.3" size="80" anchorOffsetY="0" height="158.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
+			<e:Label id="textLabel03" text="&quot;Ding-Dong,Ding-Dong&quot;" x="-41.29" y="509.79" size="90" anchorOffsetY="0" height="171.7" verticalAlign="bottom" width="1067.42" textAlign="center" anchorOffsetX="0" textColor="0x5d20f5"/>
+			<e:Label id="textLabel04" text="Kong hits the gong." x="10" y="196.3" size="80" anchorOffsetY="0" height="151.79" verticalAlign="bottom" width="915" textAlign="left" textColor="0x5d20f5"/>
 			<e:layout>
 			<e:VerticalLayout/>
 			</e:layout>

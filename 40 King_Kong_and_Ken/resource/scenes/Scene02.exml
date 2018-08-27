@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene02Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="diplayTweenGroup">
+			<tween:TweenItem target="{textLabel00}"/>
+			<tween:TweenItem target="{textLabel01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="5200"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabel02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="9200"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabel03}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="13000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="16541f3b9b5"></w:Config>
 
 
 
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Group width="942.42" height="751.52" x="972.2500000000001" y="3.45" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
-			<e:Label text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80"/>
-			<e:Label text="He writes a song." x="88.06" y="289.55" textColor="0x6042F5" size="80"/>
-			<e:Label text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80"/>
-			<e:Label text="He meets King Kong," x="82.06" y="652.55" textColor="0x6042F5" size="80"/>
+			<e:Label id="textLabel00" text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80"/>
+			<e:Label id="textLabel01" text="He writes a song." x="88.06" y="289.55" textColor="0x6042F5" size="80"/>
+			<e:Label id="textLabel02" text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80"/>
+			<e:Label id="textLabel03" text="He meets King Kong." x="82.06" y="652.55" textColor="0x6042F5" size="80"/>
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="92.4" y="41.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="KenWritesSong_json" texture="KenWritesSong_png" movieClipName="KenWritesSong" scaleX="0.4" scaleY="0.4"/>
 		<ns1:MovieClipPlayer width="384" height="307" x="292.76" y="533.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.4" scaleY="0.4"/>
