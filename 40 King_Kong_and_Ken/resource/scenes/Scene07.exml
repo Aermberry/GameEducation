@@ -3,10 +3,58 @@
 	<w:Declarations>
 
 		<tween:TweenGroup id="contentTweenGroup">
-			<tween:TweenItem target="{textLabelGoup00}"/>
-			<tween:TweenItem target="{textLabelGoup01}"/>
-			<tween:TweenItem target="{textLabelGoup02}"/>
-			<tween:TweenItem target="{textLabelGoup03}"/>
+			<tween:TweenItem target="{textLabelGoup00}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1600"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabelGoup01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2650"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabelGoup02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="3550"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabelGoup03}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="4100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 
 		</tween:TweenGroup>
 	</w:Declarations>
@@ -48,8 +96,8 @@
 			<e:Label text="Konng" y="135.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="594" scaleX="1" scaleY="1"/>
 			<e:Label text="hits" y="145.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="604" scaleX="1" scaleY="1"/>
 			<e:Label text="the" y="155.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="614" scaleX="1" scaleY="1"/>
-			<e:Label text="gong" y="165.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="624" scaleX="1" scaleY="1"/>
-			<e:Label text="." y="175.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="634" scaleX="1" scaleY="1"/>
+			<e:Label text="gong." y="165.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="624" scaleX="1" scaleY="1"/>
+
 			<e:layout>
 			<e:HorizontalLayout horizontalAlign="center" gap="32" paddingTop="20"/>
 			</e:layout>
