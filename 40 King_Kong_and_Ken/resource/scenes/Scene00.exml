@@ -7,7 +7,7 @@
 			<e:Label text="They both love music so they become friends." textColor="0xB70570" top="177" left="0" right="4" height="903.91" size="73" verticalAlign="top" anchorOffsetY="-12.21" anchorOffsetX="0" textAlign="center" width="1916" x="10" y="10"/>
 		</e:Group>
 		<e:Group height="684.85" y="391" anchorOffsetY="0" left="0" right="0" x="0" scaleX="1" scaleY="1">
-			<ns1:MovieClipPlayer width="1911.88" height="1298.71" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.6" scaleY="0.6" rotation="359.59" horizontalCenter="0.5" bottom="-4.149999999999977"/>
+			<ns1:MovieClipPlayer anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.6" scaleY="0.6" rotation="359.59" bottom="505.85" horizontalCenter="-429.5"/>
 		</e:Group>
 
 	</e:Group>

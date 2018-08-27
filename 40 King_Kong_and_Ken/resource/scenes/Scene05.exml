@@ -9,7 +9,7 @@
 			<e:Label text="Ken and King Kong" x="33" y="527" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5"/>
 			<e:Label text="Play their new song." x="299" y="713" scaleX="1" scaleY="1" size="74" textColor="0x5D20F5"/>
 		</e:Group>
-		<e:Button id="btnNext" label="Next" x="1590.0000000000002" y="902.0000000000001" scaleX="1" scaleY="1"/>
+		<e:Button id="btnNext" label="Next" x="1590.0000000000002" y="902.0000000000001" scaleX="1" scaleY="1" width="188.7" height="120.54" visible="false"/>
 		<ns1:MovieClipPlayer width="1156.18" height="785.38" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.5" scaleY="0.5" rotation="359.59" horizontalCenter="-669.5" bottom="519" x="0" y="168"/>
 	</e:Group>
 </e:Skin>

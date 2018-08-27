@@ -1,6 +1,7 @@
 {
 	"search.exclude": {
 		"**/bin-debug": true,
-		"**/bin-release": true
+		"**/bin-release": true,
+		"editor.formatOnSave": true
 	}
 }

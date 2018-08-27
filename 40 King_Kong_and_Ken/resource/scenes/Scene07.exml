@@ -69,6 +69,6 @@
 			<e:HorizontalLayout horizontalAlign="center" gap="32" paddingTop="20"/>
 			</e:layout>
 		</e:Group>
-		<e:Button id="nextBtn" label="Next" x="1582.31" y="908.7"/>
+		<e:Button id="nextBtn" label="Next" x="1582.31" y="887.49" anchorOffsetX="0" width="188.7" anchorOffsetY="0" height="120.54" visible="false"/>
 	</e:Group>
 </e:Skin>
