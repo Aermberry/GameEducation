@@ -100,7 +100,7 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new Scene05())
+        this.addChild(new Scene07())
     }
 
     public static instance: Main

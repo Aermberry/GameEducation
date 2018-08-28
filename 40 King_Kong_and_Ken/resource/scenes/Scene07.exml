@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1655b2a4d69" ></w:Config>
-	<e:Label text="'Ping-Pong，Ping-Pong!\nTo give a hand.\nKing Kong begs Ken\nTo shake his hand.'" size="86" textAlign="center" left="0" right="0" y="250.73" lineSpacing="60" textColor="0x5d20f5"/>
+	<e:Label text="'Ping-Pong，Ping-Pong!'\nKing Kong is strong.\nDing-Dong,Ding-Dong.'\nKong hits the gong." size="82" textAlign="center" left="0" right="0" y="250.73" lineSpacing="80" textColor="0x5d20f5"/>
 	<e:Label text="Click on the words in red listen." y="87.82" textColor="0x08dd50" size="86" textAlign="center" left="0" right="0"/>
-	<e:Button label="Next" x="1476" y="902" anchorOffsetX="0" width="249.1" anchorOffsetY="0" height="109.33"/>
+	<e:Button id="textButton" label="Next" x="1476" y="902" anchorOffsetX="0" width="249.1" anchorOffsetY="0" height="109.33"/>
 </e:Skin>

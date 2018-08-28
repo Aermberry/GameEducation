@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene13Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1657fb63f1a" ></w:Config>
+	<e:Label text="Which word begins with?\nClick on the correct picture." x="82" y="82" textColor="0xd54b96" size="80" lineSpacing="25"/>
+	<e:Image source="speaker_png" x="1012.61" y="67.41"/>
+	<e:Image source="girl_png" x="246" y="438"/>
+	<e:Image source="king_png" x="881.61" y="341.41"/>
+	<e:Image source="ring_png" x="1476" y="402.5"/>
+	<e:Image source="speaker_png" x="302.17" y="820"/>
+	<e:Image source="speaker_png" x="966.06" y="820"/>
+	<e:Image source="speaker_png" x="1611" y="820"/>
+</e:Skin>
