@@ -36,5 +36,20 @@
         "path": "scenes/Game2Scene.ts",
         "class": "Game2Scene",
         "parentPath": ""
+    },
+    "1657e021d08": {
+        "path": "../resource/components/AlertGame2Component.ts",
+        "class": "AlertGame2Component",
+        "parentPath": ""
+    },
+    "1657e311dc9": {
+        "path": "components/AlertElderComponent.ts",
+        "class": "AlertElderComponent",
+        "parentPath": ""
+    },
+    "1657e658e52": {
+        "path": "scenes/Game3Scene.ts",
+        "class": "Game3Scene",
+        "parentPath": ""
     }
 }

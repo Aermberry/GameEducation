@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,shape5_png,shape7_png,shape9_png,shape12_png,shape14_png,shape21_png,shape22_png,shape60_png,shape62_png,shape67_png,shape64_png,shape69_png,shape72_png,shape77_png,shape74_png,shape79_png,shape82_png,shape84_png,shape87_png,shape89_png,shape93_png,shape111_png,shape120_png,shape123_png,shape127_png,shape128_png,shape129_png,shape130_png,shape133_png,shape134_png,shape137_png,shape138_png,shape141_png,shape142_png,shape145_png,shape146_png,shape149_png,shape151_png,shape153_png,shape156_png,shape159_png,shape162_png,shape165_png,shape180_png,shape184_png,shape189_png,shape191_png,shape200_png,shape196_png,shape207_png,shape208_png,shape209_png,shape211_png,shape212_png,shape214_png,shape215_png,shape218_png,shape219_png,shape221_png,shape222_png,shape232_png,shape230_png,shape237_png,shape242_png,shape244_png,shape247_png,shape250_png,shape253_png,shape262_png,shape264_png,shape265_png,shape267_png,shape269_png,shape270_png,shape272_png,shape273_png,shape282_png,shape284_png,shape289_png,shape294_png,shape302_png,start_title_png,wlts_logo_jpg,start_letter_png,start_pen_png,background_paper_png,next_question_background_png,background_clock_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,shape5_png,shape7_png,shape9_png,shape12_png,shape14_png,shape21_png,shape22_png,shape60_png,shape62_png,shape67_png,shape64_png,shape69_png,shape72_png,shape77_png,shape74_png,shape79_png,shape82_png,shape84_png,shape87_png,shape89_png,shape93_png,shape111_png,shape120_png,shape123_png,shape129_png,shape130_png,shape133_png,shape134_png,shape137_png,shape138_png,shape141_png,shape142_png,shape145_png,shape146_png,shape149_png,shape151_png,shape153_png,shape156_png,shape159_png,shape162_png,shape165_png,shape189_png,shape191_png,shape196_png,shape208_png,shape209_png,shape211_png,shape212_png,shape214_png,shape215_png,shape218_png,shape219_png,shape221_png,shape222_png,shape232_png,shape237_png,shape242_png,shape244_png,shape247_png,shape250_png,shape253_png,shape262_png,shape264_png,shape265_png,shape267_png,shape269_png,shape270_png,shape272_png,shape273_png,shape282_png,shape284_png,shape289_png,shape294_png,shape302_png,start_title_png,wlts_logo_jpg,start_letter_png,background_clock_png,bubble_png,paper_png,pen_start_png,pen_alert_png,elder_alert_png,rectangle_gradual_png,rectangle_gray_png,box_and_paper_png,star_border_png,paper_and_pen_png",
 			"name": "preload"
 		}
 	],
@@ -267,16 +267,6 @@
 			"url": "textures/shape123.png"
 		},
 		{
-			"name": "shape127_png",
-			"type": "image",
-			"url": "textures/shape127.png"
-		},
-		{
-			"name": "shape128_png",
-			"type": "image",
-			"url": "textures/shape128.png"
-		},
-		{
 			"name": "shape129_png",
 			"type": "image",
 			"url": "textures/shape129.png"
@@ -362,16 +352,6 @@
 			"url": "textures/shape165.png"
 		},
 		{
-			"name": "shape180_png",
-			"type": "image",
-			"url": "textures/shape180.png"
-		},
-		{
-			"name": "shape184_png",
-			"type": "image",
-			"url": "textures/shape184.png"
-		},
-		{
 			"name": "shape189_png",
 			"type": "image",
 			"url": "textures/shape189.png"
@@ -382,19 +362,9 @@
 			"url": "textures/shape191.png"
 		},
 		{
-			"name": "shape200_png",
-			"type": "image",
-			"url": "textures/shape200.png"
-		},
-		{
 			"name": "shape196_png",
 			"type": "image",
 			"url": "textures/shape196.png"
-		},
-		{
-			"name": "shape207_png",
-			"type": "image",
-			"url": "textures/shape207.png"
 		},
 		{
 			"name": "shape208_png",
@@ -450,11 +420,6 @@
 			"name": "shape232_png",
 			"type": "image",
 			"url": "textures/shape232.png"
-		},
-		{
-			"name": "shape230_png",
-			"type": "image",
-			"url": "textures/shape230.png"
 		},
 		{
 			"name": "shape237_png",
@@ -567,24 +532,59 @@
 			"url": "textures/start_letter.png"
 		},
 		{
-			"name": "start_pen_png",
-			"type": "image",
-			"url": "textures/start_pen.png"
-		},
-		{
-			"name": "background_paper_png",
-			"type": "image",
-			"url": "textures/background_paper.png"
-		},
-		{
-			"name": "next_question_background_png",
-			"type": "image",
-			"url": "textures/next_question_background.png"
-		},
-		{
 			"name": "background_clock_png",
 			"type": "image",
 			"url": "textures/background_clock.png"
+		},
+		{
+			"name": "bubble_png",
+			"type": "image",
+			"url": "textures/bubble.png"
+		},
+		{
+			"name": "paper_png",
+			"type": "image",
+			"url": "textures/paper.png"
+		},
+		{
+			"name": "pen_start_png",
+			"type": "image",
+			"url": "textures/pen_start.png"
+		},
+		{
+			"name": "pen_alert_png",
+			"type": "image",
+			"url": "textures/pen_alert.png"
+		},
+		{
+			"name": "elder_alert_png",
+			"type": "image",
+			"url": "textures/elder_alert.png"
+		},
+		{
+			"name": "rectangle_gradual_png",
+			"type": "image",
+			"url": "textures/rectangle_gradual.png"
+		},
+		{
+			"name": "rectangle_gray_png",
+			"type": "image",
+			"url": "textures/rectangle_gray.png"
+		},
+		{
+			"name": "box_and_paper_png",
+			"type": "image",
+			"url": "textures/box_and_paper.png"
+		},
+		{
+			"name": "star_border_png",
+			"type": "image",
+			"url": "textures/star_border.png"
+		},
+		{
+			"name": "paper_and_pen_png",
+			"type": "image",
+			"url": "textures/paper_and_pen.png"
 		}
 	]
 }

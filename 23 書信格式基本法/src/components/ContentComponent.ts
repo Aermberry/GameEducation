@@ -20,17 +20,18 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	protected childrenCreated():void
 	{
+		
 		super.childrenCreated();
 		if (!this._isDisplayLabel){
 			this.hideLabel();
 		}
-		console.log(this.textLabel);
 		this.shangKuanLabel.text = this._shangkuan;
 		this.xiaKuanLabel.text = this._xiakuan;
 		this.greetLabel.text = this._greet;
 		this.textLabel.text = this._text;
 		this.blessLabel.text = this._bless;
 		this.dateLabel.text = this._date;
+		this.hideText();
 	}
 
 	private _shangkuan = '小雄：';
@@ -130,15 +131,28 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	}
 
-	private hideLabel()
+	private hideText()
 	{
 		this.$children.map((group) => {
 
-			for(let index = 0; index < group.$children.length; index++)
-			{
-				group.$children[group.$children.length-1].visible = false
-			}
+				let textLabel = group.$children[0] as eui.Label;
+				console.log(textLabel);
+				console.log(textLabel.text);
+				if(textLabel.text == ' ')
+				{
+					console.log(group);
+					group.visible = false;
+				}
 			
+			
+
+		})
+	}
+
+	private hideLabel()
+	{
+		this.$children.map((group) => {
+			group.$children[group.$children.length-1].visible = false
 
 		})
 	}

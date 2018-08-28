@@ -4,7 +4,7 @@
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 	<e:Label text="請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格" size="80" textColor="0xf70612" y="38" horizontalCenter="-0.5"/>
 	<e:Group width="1570" height="1306" x="26" y="125">
-		<e:Image left="0" right="0" top="0" bottom="0" source="background_paper_png"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="paper_png"/>
 		<ns1:ContentComponent width="1388" height="1008" x="119" y="69" anchorOffsetX="0" anchorOffsetY="0"/>
 		<ns1:AlertGame1Component width="775" height="204" x="86" y="1015" anchorOffsetX="0" anchorOffsetY="0" message="下款是發信人的署名，壹般寫於日期之前。" visible="false"/>
 	</e:Group>
@@ -16,7 +16,7 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="743" text="祝賀語" fillColor="0x1fca3e"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="920" text="問候語" fillColor="0x1b9bfc"/>
 		<e:Group id="nextQuestionGroup" width="266" height="89" x="12" y="1128">
-			<e:Image left="0" right="0" top="0" bottom="0" source="next_question_background_png"/>
+			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gradual_png"/>
 			<e:Label text="下一题" size="54" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" width="266" textColor="0xfc0202"/>
 		</e:Group>
 	</e:Group>

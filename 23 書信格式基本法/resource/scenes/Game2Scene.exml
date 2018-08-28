@@ -3,9 +3,16 @@
 	<w:Config id="1657a5554c2" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 	<e:Label text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
+	<e:Label id="shangkuanLabel" text="請選出正確的上款：" x="184" y="45" textColor="0xF40000" size="80" visible="false"/>
 	<e:Group width="1570" height="1306" x="26" y="125">
 		<e:Image left="0" right="0" top="0" bottom="0" source="background_clock_png"/>
-		<ns1:ContentComponent width="976" height="1036" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到妳的來信，十分掛念，妳的身體好嗎？" text="妳到日本工作已有三個多月，我和妹妹都十分掛念妳。妹妹會在壹月十日舉行的學校開放日中表演，她希望妳能回來欣賞，妳可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用妳和媽媽擔心。當妳回來時，我們壹定給妳壹張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>
+		<ns1:ContentComponent width="1008" height="1068" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到妳的來信，十分掛念，妳的身體好嗎？" text="妳到日本工作已有三個多月，我和妹妹都十分掛念妳。妹妹會在壹月十日舉行的學校開放日中表演，她希望妳能回來欣賞，妳可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用妳和媽媽擔心。當妳回來時，我們壹定給妳壹張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>
+		<ns1:AlertGame2Component width="496" height="424" x="102" y="785.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<ns1:AlertElderComponent width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label text="妳 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>
+			<e:Image width="480" height="290" x="16" y="76" source="box_and_paper_png"/>
+		</e:Group>
 		
 	</e:Group>
 	<e:Group width="270" height="1306" x="1625" y="125">
@@ -15,12 +22,11 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="600" text="日期" fillColor="0xcb6cfa"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝賀語" fillColor="0x376bfc"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
-		<!--<ns1:LabelComponents width="270" height="95" x="0" y="43" text="上款"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="230" text="下款" fillColor="0xfd9b9c"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="398" text="正文" fillColor="0xfb1367"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="570" text="日期" fillColor="0xfb3cc8"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="743" text="祝賀語" fillColor="0x1fca3e"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="920" text="問候語" fillColor="0x1b9bfc"/>-->
 		
+	</e:Group>
+	<e:Group width="270" height="1306" x="1625" y="125" visible="false">
+		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="媽 媽" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="陳 老 師" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="爸 爸" fillColor="0x999999"/>
 	</e:Group>
 </e:Skin>

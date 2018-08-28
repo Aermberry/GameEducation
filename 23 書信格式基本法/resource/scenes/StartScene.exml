@@ -4,6 +4,6 @@
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 	<e:Image width="1470" height="398" y="28" x="216" source="start_title_png"/>
 	<e:Image width="1155" height="988" x="182" y="437" source="start_letter_png"/>
-	<e:Image width="602" height="755" x="1300" y="646" source="start_pen_png"/>
+	<e:Image width="602" height="755" x="1300" y="646" source="pen_start_png"/>
 	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99"/>
 </e:Skin>
