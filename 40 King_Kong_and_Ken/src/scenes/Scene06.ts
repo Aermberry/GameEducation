@@ -21,7 +21,7 @@ class Scene06 extends eui.Component implements eui.UIComponent {
 	}
 
 	private onNextBtnClick(): void {
-		Main.instance.gotoScene(new Scene07());
+		Main.instance.gotoScene(new Scene00());
 	}
 
 }

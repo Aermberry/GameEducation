@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
-	<w:Declarations>
-
-		<tween:TweenGroup id="contentTweenGroup">
-			<tween:TweenItem target="{textLabelGoup00}"/>
-			<tween:TweenItem target="{textLabelGoup01}"/>
-			<tween:TweenItem target="{textLabelGoup02}"/>
-			<tween:TweenItem target="{textLabelGoup03}"/>
-
-		</tween:TweenGroup>
-	</w:Declarations>
+<e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1655b2a4d69" ></w:Config>
-	<e:Group top="0" bottom="0" left="0" right="0">
-		<e:Label id="Scene_title" text="Click on the words in red and listen." y="96.39" textColor="0x50962b" size="80" horizontalCenter="0.5"/>
-		<e:Label id="label" text="'Ping-Pong,Ping-Pong!'" y="281.24" size="80" horizontalCenter="0.5" textColor="0x5c20f5" visible="false"/>
-		<e:Group id="textLabelGoup00" height="200" y="242" left="0" right="0">
-			<e:Label id="label0" text="'Ping-" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="88.00000000000011" scaleX="1" scaleY="1"/>
-			<e:Label id="label1" text="Pong" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="82" scaleX="1" scaleY="1"/>
-			<e:Label id="label4" text="," y="49.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="92" scaleX="1" scaleY="1"/>
-			<e:Label id="label2" text="Ping-" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="82" scaleX="1" scaleY="1"/>
-			<e:Label id="label3" text="Pong!'" y="39.24000000000001" size="80" horizontalCenter="0.5" textColor="0x5C20F5" x="63.000000000000114" scaleX="1" scaleY="1"/>
-			<e:layout>
-				<e:HorizontalLayout horizontalAlign="center" paddingTop="49" paddingLeft="0" gap="6"/>
-			</e:layout>
-		</e:Group>
-
-		<e:Group id="textLabelGoup01" height="200" y="427.3" left="0" right="0">
-			<e:Label text="King" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-745.0000000000002" scaleX="1" scaleY="1"/>
-			<e:Label text="Kong" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-555.0000000000002" scaleX="1" scaleY="1"/>
-			<e:Label text="is" y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-339.0000000000001" scaleX="1" scaleY="1"/>
-			<e:Label text="strong." y="0" textColor="0x5C20F5" size="80" horizontalCenter="1" x="-252.00000000000023" scaleX="1" scaleY="1"/>
-			<e:layout>
-				<e:HorizontalLayout horizontalAlign="center" gap="27"/>
-			</e:layout>
-		</e:Group>
-		<e:Group id="textLabelGoup02" height="200" y="566.7" left="0" right="0">
-			<e:Label text="'Ding-" y="-3.6400000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="521" scaleX="1" scaleY="1"/>
-			<e:Label text="Dong" y="6.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="531" scaleX="1" scaleY="1"/>
-			<e:Label text=" ," y="16.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="541" scaleX="1" scaleY="1"/>
-			<e:Label text=" Ding-" y="26.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="551" scaleX="1" scaleY="1"/>
-			<e:Label text="Dong.'" y="36.3599999999999" textColor="0x5C20F5" size="80" horizontalCenter="1" x="561" scaleX="1" scaleY="1"/>
-			<e:layout>
-			<e:HorizontalLayout horizontalAlign="center" gap="6"/>
-			</e:layout>
-		</e:Group>
-		<e:Group id="textLabelGoup03" height="200" y="700.03" left="0" right="0">
-			<e:Label text="Konng" y="135.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="594" scaleX="1" scaleY="1"/>
-			<e:Label text="hits" y="145.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="604" scaleX="1" scaleY="1"/>
-			<e:Label text="the" y="155.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="614" scaleX="1" scaleY="1"/>
-			<e:Label text="gong" y="165.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="624" scaleX="1" scaleY="1"/>
-			<e:Label text="." y="175.7600000000001" textColor="0x5C20F5" size="80" horizontalCenter="1" x="634" scaleX="1" scaleY="1"/>
-			<e:layout>
-			<e:HorizontalLayout horizontalAlign="center" gap="32" paddingTop="20"/>
-			</e:layout>
-		</e:Group>
-		<e:Button id="nextBtn" label="Next" x="1582.31" y="887.49" anchorOffsetX="0" width="188.7" anchorOffsetY="0" height="120.54" visible="false"/>
-	</e:Group>
+	<e:Label text="'Ping-Pong，Ping-Pong!\nTo give a hand.\nKing Kong begs Ken\nTo shake his hand.'" size="86" textAlign="center" left="0" right="0" y="250.73" lineSpacing="60" textColor="0x5d20f5"/>
+	<e:Label text="Click on the words in red listen." y="87.82" textColor="0x08dd50" size="86" textAlign="center" left="0" right="0"/>
+	<e:Button label="Next" x="1476" y="902" anchorOffsetX="0" width="249.1" anchorOffsetY="0" height="109.33"/>
 </e:Skin>

@@ -11,7 +11,7 @@
     "backgroundType": "user"
   },
   "global": {
-    "globalAutoLayerMarkEnable": false,
+    "globalAutoLayerMarkEnable": true,
     "gridColor": 8421504,
     "gridEnabled": true,
     "gridSize": "82"
@@ -50,8 +50,7 @@
   "16541f3b9b5": {
     "path": "scenes\\Scene02.ts",
     "class": "Scene02",
-    "parentPath": "",
-    "backgroundType": "user"
+    "parentPath": ""
   },
   "16545bc6d4e": {
     "backgroundType": "user"
@@ -65,36 +64,13 @@
   "16545e839fb": {
     "backgroundType": "user"
   },
-  "16545f6272b": {
-    "backgroundType": "user"
-  },
-  "1655a3ac702": {
-    "backgroundType": "user"
-  },
-  "1655b2a4d69": {
-    "path": "scenes\\Scene07.ts",
-    "class": "Scene07",
+  "16545ec3d8f": {
+    "path": "scenes\\Scene06.ts",
+    "class": "Scene06",
     "parentPath": "",
     "backgroundType": "user"
   },
-  "165408fd026": {
-    "backgroundX": 0,
-    "backgroundY": 0,
-    "backgroundWidth": -1,
-    "backgroundHeight": -1,
-    "useBgImage": true,
-    "useBgColor": true,
-    "backgroundAlpha": 100
-  },
-  "165796077df": {
-    "backgroundType": "user"
-  },
-  "16579839e4f": {
-    "path": "scenes\\Scenes08.ts",
-    "class": "Scenes08",
-    "parentPath": ""
-  },
-  "16545ec3d8f": {
+  "1655b2a4d69": {
     "backgroundType": "user"
   }
 }
