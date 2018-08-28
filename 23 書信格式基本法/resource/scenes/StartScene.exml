@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{52}" y="{28}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{458.5}" y="{-150.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{0}" y="{342.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{650}" y="{176}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{531}" y="{632}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1337}" y="{437}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="2750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}" width="{1170}" height="{316.78}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{360}" width="{1258.64}" height="{340.78}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{1376.83}" height="{372.78}" rotation="{720}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{360}" width="{1470}" height="{398}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Wait duration="2750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1500">
+					<tween:props>
+						<e:Object x="{182}" y="{437}" width="{1155}" height="{988}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{startLabel}">
+				<tween:Wait duration="4250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="16579552f5b" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-	<e:Image width="1470" height="398" y="28" x="216" source="start_title_png"/>
-	<e:Image width="1155" height="988" x="182" y="437" source="start_letter_png"/>
-	<e:Image width="602" height="755" x="1300" y="646" source="pen_start_png"/>
-	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99"/>
+	<e:Image id="image0" width="1470" height="398" y="28" x="216" source="start_title_png" alpha="0"/>
+	<e:Image id="image1" width="499" height="426.85" x="837.43" y="997" source="start_letter_png" alpha="0" anchorOffsetX="-0.57" anchorOffsetY="-1.15"/>
+	<e:Image id="image" width="602" height="755" x="1300" y="646" source="pen_start_png"/>
+	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99" alpha="0"/>
 </e:Skin>

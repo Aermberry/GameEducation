@@ -6,7 +6,13 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private dateLabel: eui.Label;
 	private blessLabel: eui.Label;
 	private greetLabel: eui.Label;
-	private LabelComponents: LabelComponents;
+	private shangKuanLabelComponent: LabelComponents;
+	private xiaKuanLabelComponent: LabelComponents;
+	private textLabelComponent: LabelComponents;
+	private dateLabelComponent: LabelComponents;
+	private blessLabelComponent: LabelComponents;
+	private greetLabelComponent: LabelComponents;
+	private alertGame1Component: AlertGame1Component;
 
 	public constructor() {
 		super();
@@ -32,6 +38,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		this.blessLabel.text = this._bless;
 		this.dateLabel.text = this._date;
 		this.hideText();
+		this.enableDrop();
 	}
 
 	private _shangkuan = '小雄：';
@@ -134,26 +141,104 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private hideText()
 	{
 		this.$children.map((group) => {
-
 				let textLabel = group.$children[0] as eui.Label;
-				console.log(textLabel);
-				console.log(textLabel.text);
 				if(textLabel.text == ' ')
 				{
-					console.log(group);
 					group.visible = false;
-				}
-			
-			
-
+				}	
 		})
 	}
 
-	private hideLabel()
+	private hideLabel():void
 	{
 		this.$children.map((group) => {
 			group.$children[group.$children.length-1].visible = false
 
 		})
+	}
+
+	private enableDrop():void
+	{
+
+		let drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.shangKuanLabelComponent);
+		this.shangKuanLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onShangKuanLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.greetLabelComponent);
+		this.greetLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onGreetLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.textLabelComponent);
+		this.textLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onTextLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.blessLabelComponent);
+		this.blessLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onBlessLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.xiaKuanLabelComponent);
+		this.xiaKuanLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onXiaKuanLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this.dateLabelComponent);
+		this.dateLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onDateLabelComponentDrop, this);
+	}
+
+	private onShangKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'上款');
+	}
+
+	private onGreetLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'問候語');
+	}
+
+	private onTextLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'正文');
+	}
+
+	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'祝頌語');
+	}
+
+	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'下款');
+	}
+
+	private onDateLabelComponentDrop(e: lzlib.LzDragEvent): void
+	{
+		this.dealDrop(e,e.dragObject as LabelComponents,'日期');
+	}
+
+	private dealDrop(e: lzlib.LzDragEvent,dragObject:LabelComponents ,dropStr: string)
+	{
+		dragObject = e.dragObject as LabelComponents;
+		if(dragObject.text !== dropStr)
+		{
+			this.alertTip(dragObject.text,dropStr);
+		}else{
+			this.alertGame1Component.visible = false;
+		}
+	}
+
+	private alertTip(drapStr: string, dropStr: string): void
+	{
+		this.alertGame1Component = this.alertGame1Component?this.alertGame1Component:new AlertGame1Component();
+		this.alertGame1Component.visible = true;
+		this.alertGame1Component.message = Game1Repository.alertInfo[drapStr];
+		this.alertGame1Component.x = 88;
+		this.alertGame1Component.y = 1015;
+		this.addChild(this.alertGame1Component);
 	}
 }
