@@ -4,6 +4,8 @@ declare class AlertGame1ComponentSkin extends eui.Skin{
 }
 declare class AlertGame2ComponentSkin extends eui.Skin{
 }
+declare class AlertSantaClausComponentSkin extends eui.Skin{
+}
 declare class ContentComponentSkin extends eui.Skin{
 }
 declare class LabelComponentsSkin extends eui.Skin{
@@ -65,6 +67,8 @@ declare class Game1SceneSkin extends eui.Skin{
 declare class Game2SceneSkin extends eui.Skin{
 }
 declare class Game3SceneSkin extends eui.Skin{
+}
+declare class Game4SceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
 }

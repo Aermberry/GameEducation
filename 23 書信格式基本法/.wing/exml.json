@@ -42,14 +42,19 @@
         "class": "AlertGame2Component",
         "parentPath": ""
     },
-    "1657e311dc9": {
-        "path": "components/AlertElderComponent.ts",
-        "class": "AlertElderComponent",
+    "1657f2072ee": {
+        "path": "scenes/Game4Scene.ts",
+        "class": "Game4Scene",
         "parentPath": ""
     },
-    "1657e658e52": {
-        "path": "scenes/Game3Scene.ts",
-        "class": "Game3Scene",
+    "1657f41e3f5": {
+        "path": "components/AlertGame4Component.ts",
+        "class": "AlertGame4Component",
+        "parentPath": ""
+    },
+    "1657f454737": {
+        "path": "components/AlertSantaClausComponent.ts",
+        "class": "AlertSantaClausComponent",
         "parentPath": ""
     }
 }

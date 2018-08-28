@@ -21,13 +21,16 @@
 		"Game2Scene": "resource/scenes/Game2Scene.exml",
 		"AlertGame2Component": "resource/components/AlertGame2Component.exml",
 		"AlertElderComponent": "resource/components/AlertElderComponent.exml",
-		"Game3Scene": "resource/scenes/Game3Scene.exml"
+		"Game3Scene": "resource/scenes/Game3Scene.exml",
+		"Game4Scene": "resource/scenes/Game4Scene.exml",
+		"AlertSantaClausComponent": "resource/components/AlertSantaClausComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/AlertElderComponent.exml",
 		"resource/components/AlertGame1Component.exml",
 		"resource/components/AlertGame2Component.exml",
+		"resource/components/AlertSantaClausComponent.exml",
 		"resource/components/ContentComponent.exml",
 		"resource/components/LabelComponents.exml",
 		"resource/eui_skins/ButtonSkin.exml",
@@ -46,6 +49,7 @@
 		"resource/scenes/Game1Scene.exml",
 		"resource/scenes/Game2Scene.exml",
 		"resource/scenes/Game3Scene.exml",
+		"resource/scenes/Game4Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
