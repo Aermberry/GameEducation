@@ -13,5 +13,4 @@ class Scene05 extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 	}
-	
 }
