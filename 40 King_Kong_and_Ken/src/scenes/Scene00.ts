@@ -22,7 +22,7 @@ class Scene00 extends eui.Component implements eui.UIComponent {
 		this.textLabel.text = "Let's listen to  the poem about them.";//文字變換
 		this.textLabel.textColor = 0x5d20f5;//我腦子顔色變換
 		await lzlib.SoundUtility.playSound('01b_mp3')
-		// await lzlib.ThreadUtility.sleep(3000);//
+		// await lzlib.ThreadUtility.sleep(3000);
 		this.nextButton.visible = true;
 		// Main.instance.gotoScene(new Scene01());
 	}
