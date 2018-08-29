@@ -32,7 +32,14 @@
         "Scene14": "resource/scenes/Scene14.exml",
         "Scene15": "resource/eui_skins/Scene15.exml",
         "Scene16": "resource/eui_skins/Scene16.exml",
-        "Scene17": "resource/eui_skins/Scene17.exml"
+        "Scene17": "resource/eui_skins/Scene17.exml",
+        "Scene18": "resource/eui_skins/Scene18.exml",
+        "Scene19": "resource/eui_skins/Scene19.exml",
+        "Scene20": "resource/eui_skins/Scene20.exml",
+        "Scene21": "resource/eui_skins/Scene21.exml",
+        "Scene22": "resource/eui_skins/Scene22.exml",
+        "Scene23": "resource/eui_skins/Scene23.exml",
+        "Scene24": "resource/eui_skins/Scene24.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [
