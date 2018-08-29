@@ -8,7 +8,7 @@
 		<e:Image left="0" right="0" top="0" bottom="0" source="bell_border_png"/>
 		<ns1:ContentComponent width="1256" height="976" x="308" y="44" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" xiakuan=" " shangkuan="伯父：" greet="很久没有和你痛心，你生活好嗎？" text="今年的聖誕節，爸爸答應帶我到美國探望妳們壹家，我真的十分開心。記得妳告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望妳時，妳壹定要帶我去那裏玩啊！" bless="身體健康" date="十一月二十日"/>
 		<ns1:AlertGame2Component width="496" height="424" x="188" y="528" anchorOffsetX="0" anchorOffsetY="0" source="paper_alert_png" visible="false"/>
-		<ns1:AlertSantaClausComponent width="1212" height="841" x="248" y="200"/>
+		<ns1:AlertSantaClausComponent width="1212" height="841" x="248" y="200" visible="false"/>
 	</e:Group>
 	<e:Group width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0">
 		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="下款" fillColor="0x6efd31"/>

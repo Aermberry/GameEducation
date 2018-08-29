@@ -10,6 +10,8 @@ declare class ContentComponentSkin extends eui.Skin{
 }
 declare class LabelComponentsSkin extends eui.Skin{
 }
+declare class NextLevelComponentSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}

@@ -15,9 +15,6 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="570" text="日期" fillColor="0xfb3cc8"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="743" text="祝頌語" fillColor="0x1fca3e"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="920" text="問候語" fillColor="0x1b9bfc"/>
-		<e:Group id="nextQuestionGroup" width="266" height="89" x="12" y="1128">
-			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gradual_png"/>
-			<e:Label text="下一题" size="54" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" width="266" textColor="0xfc0202" fontFamily="times"/>
-		</e:Group>
+		<ns1:NextLevelComponent id="nextLevelComponent" width="266" height="89" x="12" y="1128"/>
 	</e:Group>
 </e:Skin>

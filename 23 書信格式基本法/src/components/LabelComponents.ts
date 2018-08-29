@@ -18,6 +18,20 @@ class LabelComponents extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.textLabel.text = this._text;
 		this.backgroundRect.fillColor = this.fillColor;
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this, true);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
+	}
+
+	private onMouseOver():void
+	{
+		this.backgroundRect.fillColor = this._movefillColor;
+	}
+
+	private onMouseOut():void
+	{
+		this.backgroundRect.fillColor = this.fillColor;
 	}
 
 	private _text = '';
@@ -43,6 +57,19 @@ class LabelComponents extends eui.Component implements  eui.UIComponent {
 	public set fillColor(color: number)
 	{
 		this._fillColor = color;
+		this.backgroundRect && (this.backgroundRect.fillColor = color)
+	}
+
+	private _movefillColor = 0xFF0000;
+
+	public get moveFillColor(): number
+	{
+		return this._movefillColor;
+	}
+
+	public set moveFillColor(color: number)
+	{
+		this._movefillColor = color;
 		this.backgroundRect && (this.backgroundRect.fillColor = color)
 	}
 }

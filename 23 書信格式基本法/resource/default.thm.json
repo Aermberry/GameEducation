@@ -23,7 +23,8 @@
 		"AlertElderComponent": "resource/components/AlertElderComponent.exml",
 		"Game3Scene": "resource/scenes/Game3Scene.exml",
 		"Game4Scene": "resource/scenes/Game4Scene.exml",
-		"AlertSantaClausComponent": "resource/components/AlertSantaClausComponent.exml"
+		"AlertSantaClausComponent": "resource/components/AlertSantaClausComponent.exml",
+		"NextLevelComponent": "resource/components/NextLevelComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -33,6 +34,7 @@
 		"resource/components/AlertSantaClausComponent.exml",
 		"resource/components/ContentComponent.exml",
 		"resource/components/LabelComponents.exml",
+		"resource/components/NextLevelComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",

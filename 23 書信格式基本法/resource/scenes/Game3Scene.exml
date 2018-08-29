@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Game3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Game3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup/>
+		<tween:TweenGroup id="nextQuestionAnimation">
+			<tween:TweenItem target="{lackNameGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lackLabel}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1657e658e52" ></w:Config>
 	<e:Rect left="0" right="0" top="4" bottom="-4" fillColor="0xffffff"/>
-	<e:Label text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
-	<e:Label text="請選出正確的祝賀語：" x="184" y="45" textColor="0xF40000" size="80" visible="false"/>
+	<e:Label id="lackLabel" text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
+	<e:Label id="correctLabel" text="請選出正確的祝賀語：" x="184" y="45" textColor="0xF40000" size="80" alpha="0"/>
 	<e:Group height="1142" y="136" left="0" right="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="star_border_png"/>
-		<ns1:ContentComponent width="1550" height="801" x="212" y="163" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan="舅父：" greet="很久沒有寫信給妳了，妳好嗎？" text="上星期，我們壹家到太空館參觀，那兒有很多有關宇宙天文的展品。我們參觀了天象庭、太空科學展覽庭及全天域電影放映室等，使我們認識了許多宇宙天文的知識。我們壹家還拍了不少照片，下次見面時，壹定帶給妳看。" xiakuan="甥康兒" date="十月十日" bless=" "/>
-		<ns1:AlertGame2Component width="500" height="456" x="464" y="664" anchorOffsetX="0" anchorOffsetY="0" source="paper_and_pen_png" visible="false"/>
+		<ns1:ContentComponent width="1550" height="877" x="212" y="131" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan="舅父：" greet="很久沒有寫信給妳了，妳好嗎？" text="上星期，我們壹家到太空館參觀，那兒有很多有關宇宙天文的展品。我們參觀了天象庭、太空科學展覽庭及全天域電影放映室等，使我們認識了許多宇宙天文的知識。我們壹家還拍了不少照片，下次見面時，壹定帶給妳看。" xiakuan="甥康兒" date="十月十日" bless=" "/>
+		<ns1:AlertGame2Component id="alertGame2Component" width="500" height="456" x="464" y="664" anchorOffsetX="0" anchorOffsetY="0" source="paper_and_pen_png" visible="false"/>
 	</e:Group>
-	<e:Group height="95" y="1300" anchorOffsetX="0" x="50">
-		<ns1:LabelComponents width="270" height="95" x="68" y="0" text="下款" fillColor="0x6efd31"/>
-		<ns1:LabelComponents width="270" height="95" x="0" text="下款" fillColor="0xfb0d1c"/>
-		<ns1:LabelComponents width="270" height="95" x="0" text="正文" fillColor="0xfc9725"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="日期" fillColor="0xcb6cfa"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="祝賀語" fillColor="0x376bfc"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="問候語" fillColor="0xfd9b9c"/>
-		<e:layout>
-			<e:HorizontalLayout horizontalAlign="justify" gap="40"/>
-		</e:layout>
-	</e:Group>
-	<e:Group height="140" y="1286" anchorOffsetX="0" x="236" width="1394" visible="false">
+	<e:Group id="correctNameGroup" height="140" y="1286" anchorOffsetX="0" x="236" width="1394" alpha="0">
 		<e:Group width="200" height="140" x="424" y="2" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
@@ -38,6 +46,17 @@
 		</e:Group>
 		<e:layout>
 		<e:HorizontalLayout horizontalAlign="justify" gap="170"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="lackNameGroup" height="95" y="1300" anchorOffsetX="0" x="50">
+		<ns1:LabelComponents width="270" height="95" x="68" y="0" text="上款" fillColor="0x6efd31"/>
+		<ns1:LabelComponents width="270" height="95" x="0" text="下款" fillColor="0xfb0d1c"/>
+		<ns1:LabelComponents width="270" height="95" x="0" text="正文" fillColor="0xfc9725"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="日期" fillColor="0xcb6cfa"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="祝賀語" fillColor="0x376bfc"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="0" text="問候語" fillColor="0xfd9b9c"/>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="justify" gap="40"/>
 		</e:layout>
 	</e:Group>
 </e:Skin>

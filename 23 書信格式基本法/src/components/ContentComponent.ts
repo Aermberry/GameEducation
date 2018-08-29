@@ -14,12 +14,10 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private greetLabelComponent: LabelComponents;
 	private alertGame1Component: AlertGame1Component;
 	//当前拖拽完成的个数；
-	public finishNum: number;
-	public static isFinish = false;
+	private finishNum = 0;
 
 	public constructor() {
 		super();
-		this.finishNum = 0;
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -177,7 +175,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		drop = new lzlib.Drop();
 		this.addChild(drop);
 		drop.enableDrop(this.textLabelComponent);
-		this.textLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onTextLabelComponentDrop, this);
+		this.textLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onBodyLabelComponentDrop, this);
 
 		drop = new lzlib.Drop();
 		this.addChild(drop);
@@ -197,35 +195,35 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	private onShangKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'上款');
+		this.handleStringDrop(e,'上款');
 	}
 
 	private onGreetLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'問候語');
+		this.handleStringDrop(e,'問候語');
 	}
 
-	private onTextLabelComponentDrop(e: lzlib.LzDragEvent): void
+	private onBodyLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'正文');
+		this.handleStringDrop(e,'正文');
 	}
 
 	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'祝頌語');
+		this.handleStringDrop(e,'祝頌語');
 	}
 
 	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'下款');
+		this.handleStringDrop(e,'下款');
 	}
 
 	private onDateLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.dealDrop(e,'日期');
+		this.handleStringDrop(e,'日期');
 	}
 
-	private dealDrop(e: lzlib.LzDragEvent ,dropStr: string)
+	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string)
 	{
 		let dragObject = e.dragObject as LabelComponents;
 		let targetObject = e.target as LabelComponents;
@@ -235,7 +233,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		}else{
 			this.alertGame1Component && (this.alertGame1Component.visible = false);
 			targetObject.text = dropStr;
-			this.finishNum = this.finishNum==6?this.finishNum:this.finishNum+1;	
+			this.finishNum++;
 		}
 	}
 
@@ -249,9 +247,9 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		this.addChild(this.alertGame1Component);
 	}
 
-	public isFinish(): boolean
+	public get isFinish(): boolean
 	{
-		return this.finishNum==6?true:false;
+		return this.finishNum >= 6;
 	}
 
 }

@@ -1,7 +1,7 @@
 class Game1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private nameGroup: eui.Group;
-	private nextQuestionGroup: eui.Group;
+	private nextLevelComponent: eui.Group;
 	private contentComponent: ContentComponent;
 
 	public constructor() {
@@ -18,10 +18,10 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.enableDrag();
-		this.nextQuestionGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
+		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
 	}
 
-	private enableDrag():void
+	private enableDrag(): void
 	{
 		for (let index = 0; index < this.nameGroup.numChildren; index++) {
 			let child = this.nameGroup.getChildAt(index);
@@ -31,9 +31,11 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 		}
 	}
 
-	private onNextQuestionTap()
+	private onNextQuestionTap(): void
 	{
-		this.contentComponent.isFinish()==true?Main.instance.gotoScene(new Game2Scene):false;
+		if (this.contentComponent.isFinish) {
+			Main.instance.gotoScene(new Game2Scene())	
+		}
 	}
 	
 }
