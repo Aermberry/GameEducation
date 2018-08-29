@@ -12,7 +12,13 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.onPlayBackgroundMusic();
 		this.textButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextClick,this);
+	}
+
+	private onPlayBackgroundMusic():void {
+		lzlib.SoundUtility.playSound('06_mp3');
+
 	}
 
 	private onNextClick():void {
