@@ -39,7 +39,7 @@
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
 		<e:Image id="panelBottomImage" height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_02_png"/>
 		<e:Group id="leftButton" width="560.61" height="281.82" x="36" y="145.09" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="hornBlackImage" width="148" height="148" x="34" y="76" anchorOffsetX="0" anchorOffsetY="0" source="horn_black_png"/>
+			<e:Image id="hornBlackImage" width="148" height="148" x="37.03" y="76" anchorOffsetX="0" anchorOffsetY="0" source="horn_black_png"/>
 			<e:Image id="circleGreenImage" width="147" height="147" x="209" y="70" anchorOffsetX="0" anchorOffsetY="0" source="circle_check_unclick_png"/>
 			<e:Image id="circleBlackImage" width="144" height="147" x="385" y="69" anchorOffsetX="0" anchorOffsetY="0" source="circle_leave_png"/>
 		</e:Group>

@@ -38,6 +38,8 @@ declare module skins{
 	class ScrollerSkin extends eui.Skin{
 	}
 }
+declare class speak extends eui.Skin{
+}
 declare module skins{
 	class TextInputSkin extends eui.Skin{
 	}

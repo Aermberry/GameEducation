@@ -14,7 +14,7 @@
 			<e:Rect fillColor="0xffffff" strokeColor="0x000000" strokeWeight="25" ellipseWidth="50" left="0" bottom="0" right="0" top="0"/>
 			<e:Image source="question1_png"  top="35" bottom="35" horizontalCenter="0"/>
 		</e:Group>
-		<e:Label id="appNameLabel" text="遇蛇記" textColor="0x000000" fontFamily="华康娃娃体" textAlign="center" size="154" backgroundColor="0xffffff" left="85" top="68" right="85" bottom="72" verticalAlign="middle"  background="true"/>
+		<e:Label id="appNameLabel" text="遇蛇記" textColor="0x000000" fontFamily="华康娃娃体" textAlign="center" size="154" backgroundColor="0xffffff" left="85" top="68" right="85" bottom="72" verticalAlign="middle"  background="true" visible="false"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
 		<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffcf88"/>
