@@ -2,7 +2,7 @@
 <e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="startAnimation">
-			<tween:TweenItem target="{image}">
+			<tween:TweenItem target="{penStart}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{52}" y="{28}"/>
@@ -34,7 +34,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image0}">
+			<tween:TweenItem target="{startTitle}">
 				<tween:Wait duration="2750"/>
 				<tween:Set>
 					<tween:props>
@@ -57,7 +57,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image1}">
+			<tween:TweenItem target="{startLetter}">
 				<tween:Wait duration="2750"/>
 				<tween:Set>
 					<tween:props>
@@ -82,8 +82,8 @@
 	</w:Declarations>
 	<w:Config id="16579552f5b" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-	<e:Image id="image0" width="1470" height="398" y="28" x="216" source="start_title_png" alpha="0"/>
-	<e:Image id="image1" width="499" height="426.85" x="837.43" y="997" source="start_letter_png" alpha="0" anchorOffsetX="-0.57" anchorOffsetY="-1.15"/>
-	<e:Image id="image" width="602" height="755" x="1300" y="646" source="pen_start_png"/>
-	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99" alpha="0"/>
+	<e:Image id="startTitle" width="1470" height="398" y="28" x="216" source="start_title_png" alpha="0"/>
+	<e:Image id="startLetter" width="499" height="426.85" x="837.43" y="997" source="start_letter_png" alpha="0" anchorOffsetX="-0.57" anchorOffsetY="-1.15"/>
+	<e:Image id="penStart" width="602" height="755" x="1300" y="646" source="pen_start_png"/>
+	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99" alpha="0" fontFamily="times"/>
 </e:Skin>

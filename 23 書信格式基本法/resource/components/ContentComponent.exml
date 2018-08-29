@@ -2,11 +2,11 @@
 <e:Skin class="ContentComponentSkin" width="1386" height="1031" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1657a0770c5" ></w:Config>
 	<e:Group width="608" x="0" y="0" anchorOffsetX="0">
-		<e:Label id="shangKuanLabel" text="小雄：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000"/>
+		<e:Label id="shangKuanLabel" text="小雄：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="shangKuanLabelComponent" width="270" height="104" x="198" y="0"/>
 	</e:Group>
 	<e:Group width="1079" x="100" y="108">
-		<e:Label id="greetLabel" text="很久沒有見面了，你好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true"/>
+		<e:Label id="greetLabel" text="很久沒有見面了，你好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="times"/>
 		<ns1:LabelComponents id="greetLabelComponent" width="270" x="809" top="0" bottom="0"/>
 	</e:Group>
 	<!--<e:Group height="393" y="248" left="0" right="0">
@@ -14,20 +14,20 @@
 		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
 	</e:Group>-->
 	<e:Group height="393" y="213" left="0" right="0">
-		<e:Label id="textLabel" text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="0" right="0" lineSpacing="40" y="0"/>
+		<e:Label id="textLabel" text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="0" right="0" lineSpacing="40" y="0" fontFamily="times"/>
 		<ns1:LabelComponents id="textLabelComponent" width="270" height="107" x="136" y="280"/>
 	</e:Group>
 	<e:Group y="628" left="0" right="0" bottom="214">
-		<e:Label id="blessLabel" text="身體健康" x="52" y="100" size="56" textColor="0x000000"/>
-		<e:Label text="祝" x="138" y="8" size="56" textColor="0x000000"/>
+		<e:Label id="blessLabel" text="身體健康" x="52" y="100" size="56" textColor="0x000000" fontFamily="times"/>
+		<e:Label text="祝" x="138" y="8" size="56" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="blessLabelComponent" width="207" height="107" x="312" y="76"/>
 	</e:Group>
 	<e:Group y="815" anchorOffsetX="0" right="270" bottom="107">
-		<e:Label id="xiaKuanLabel" text="伯父" x="261" top="0" bottom="0" verticalAlign="middle" size="56" textColor="0x000000"/>
+		<e:Label id="xiaKuanLabel" text="伯父" x="261" top="0" bottom="0" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="xiaKuanLabelComponent" width="207" height="107" x="0" y="0"/>
 	</e:Group>
 	<e:Group y="928" anchorOffsetX="0" right="114" bottom="0">
-		<e:Label id="dateLabel" text="八月十日" x="242" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000"/>
+		<e:Label id="dateLabel" text="八月十日" x="242" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="dateLabelComponent" width="207" height="107" x="0" y="0"/>
 	</e:Group>
 	
