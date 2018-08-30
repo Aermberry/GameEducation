@@ -64,7 +64,7 @@
 			<tween:TweenItem target="{group1}">
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{715}"/>
+						<e:Object y="{750}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="1000">
@@ -106,7 +106,7 @@
 			<tween:TweenItem target="{group1}">
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{715}"/>
+						<e:Object y="{750}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -150,7 +150,7 @@
 		<e:Label id="xiaKuanLabel" text="伯父" x="267.06" top="0" bottom="0" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="xiaKuanLabelComponent" width="207" height="107" x="0" y="0"/>
 	</e:Group>
-	<e:Group id="group1" y="928" anchorOffsetX="0" right="59" width="520.55">
+	<e:Group id="group1" y="928" anchorOffsetX="0" right="14" width="608.42">
 		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
 		<e:Label id="dateLabel" text="八月十日" x="242" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="dateLabelComponent" width="207" height="107" x="0" y="0"/>
