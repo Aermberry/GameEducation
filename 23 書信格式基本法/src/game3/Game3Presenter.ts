@@ -15,16 +15,16 @@ class Game3Presenter {
 	{
 		console.log(UtilString.trim(text,'g'));
 		if(UtilString.trim(text,'g') == this.game3Repository.lackOfPart){
-			console.log(text);
 			//选择正确
+			this.view.hideRect();
 			this.view.showAlertInfo('你答對了');
-			
 			this.view.hideLackNameGroup();
 			this.view.showNextQuestionAnimation();
 			await lzlib.ThreadUtility.sleep(1000);
 			this.view.hideAlertInfo();
 		}else{
-			// this.view.showPartBorder(Main.instance.trim(labelComponent.text,'g'));
+			this.view.showPartBorder(UtilString.trim(text,'g'));
+			this.view.showWrongInfo(UtilString.trim(text,'g'));
 		}
 		
 	}

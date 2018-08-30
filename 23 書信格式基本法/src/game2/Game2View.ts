@@ -7,6 +7,9 @@ interface Game2View {
 	showAlertElder(info: string): void;
 	showNextLevelComponent(): void;
 	showCorrectOfPart(): void;
+	showPartBorder(string: string): void;
+	showWrongInfo(string: string): void;
+	hideRect(): void
  	hideAlertInfo(): void;
 	hideLackNameGroup(): void;
 	hideCorrectGroup(): void;

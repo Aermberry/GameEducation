@@ -6,6 +6,9 @@ interface Game4View {
 	showCompleteAnimation(): void;
 	showCorrectNameGroup(): void;
 	showCorrectOfPart(): void;
+	showPartBorder(string: string): void;
+	showWrongInfo(string: string): void;
+	hideRect(): void
  	hideAlertInfo(): void;
 	hideLackNameGroup(): void;
 	hideCorrectGroup(): void;

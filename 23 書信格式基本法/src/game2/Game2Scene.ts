@@ -105,6 +105,12 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		this.alertElderComponent.visible = true;
 		this.correctNameGroup.visible = false;
 	}
+
+	public showWrongInfo(string: string): void
+	{
+		this.alertGame2Component.text = '這便是' + string;
+		this.alertGame2Component.visible = true;
+	}
 	
 	public showCorrectNameGroup(): void
 	{
@@ -121,6 +127,17 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		this.contentComponent.shangkuan = this.game2Repository.correctOfPart + ' :';
 		this.contentComponent.$children[this.game2Repository.index].visible = true;
 	
+	}
+
+	public hideRect(): void
+	{
+		this.contentComponent.hideRect();
+	}
+
+	public showPartBorder(string: string): void
+	{
+		this.contentComponent.getAllRectHandle(string);
+		
 	}
 
 }

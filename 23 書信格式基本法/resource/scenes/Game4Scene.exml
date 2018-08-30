@@ -84,11 +84,11 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="662" text="甥健仁" fillColor="0x999999"/>
 	</e:Group>
 	<e:Group id="lackNameGroup" width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0">
-		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="下款" fillColor="0x6efd31"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="上款" fillColor="0x6efd31"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="下款" fillColor="0x6bcdfe"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="正文" fillColor="0xfc9725"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="600" text="日期" fillColor="0xcb6cfa"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝賀語" fillColor="0x376bfc"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝頌語" fillColor="0x376bfc"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
 	</e:Group>
 	<e:Group id="correctGroup" width="494" height="484" x="1400" y="40" visible="false">

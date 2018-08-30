@@ -120,8 +120,25 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 		this.contentComponent.$children[this.game3Repository.index].visible = true;
 	}
 
+	public showWrongInfo(string: string): void
+	{
+		this.alertGame2Component.text = '這便是' + string;
+		this.alertGame2Component.visible = true;
+	}
+
 	public playGame3CorrectAnimation(): void
 	{
 		this.contentComponent.playGame3End();
+	}
+
+	public hideRect(): void
+	{
+		this.contentComponent.hideRect();
+	}
+
+	public showPartBorder(string: string): void
+	{
+		this.contentComponent.getAllRectHandle(string);
+		
 	}
 }

@@ -6,6 +6,15 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private dateLabel: eui.Label;
 	private blessLabel: eui.Label;
 	private greetLabel: eui.Label;
+
+	private shangKuanRect: eui.Rect;
+	private xiaKuanRect: eui.Rect;
+	private textRect: eui.Rect;
+	private dateRect: eui.Rect;
+	private blessRect: eui.Rect;
+	private greetRect: eui.Rect;
+	private currentRect: eui.Rect;
+
 	private shangKuanLabelComponent: LabelComponents;
 	private xiaKuanLabelComponent: LabelComponents;
 	private textLabelComponent: LabelComponents;
@@ -134,6 +143,61 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	}
 
+	public hideRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+	}
+
+	public showShangKuanRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.shangKuanRect.visible = true;
+		this.currentRect = this.shangKuanRect;
+	}
+
+	public showXiaKuanRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.xiaKuanRect.visible = true;
+		this.currentRect = this.xiaKuanRect;
+	}
+
+	public showGreetRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.greetRect.visible = true;
+		this.currentRect = this.greetRect;
+	}
+
+	public showTextRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.textRect.visible = true;
+		this.currentRect = this.textRect;
+	}
+
+
+	public showBlessRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.blessRect.visible = true;
+		this.currentRect = this.blessRect;
+	}
+
+	public showDateRect(): void
+	{
+		this.currentRect && (this.currentRect.visible = false);
+		this.dateRect.visible = true;
+		this.currentRect = this.dateRect;
+	}
+
+	public getAllRectHandle(text: string): void
+	{
+		console.log(text);
+		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝頌語':this.showBlessRect};
+		obj[text].apply(this);
+	}
+
 	private _isDisplayLabel = true;
 
 	public get isDisplayLabel(): boolean
@@ -150,7 +214,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private hideText()
 	{
 		this.$children.map((group) => {
-				let textLabel = group.$children[0] as eui.Label;
+				let textLabel = group.$children[1] as eui.Label;
 				if(textLabel.text == ' ')
 				{
 					group.visible = false;

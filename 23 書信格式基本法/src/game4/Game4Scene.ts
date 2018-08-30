@@ -115,6 +115,12 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 		this.alertSantaClausComponent.text = this.game4Repository.alertInfo[info];
 	}
 
+	public showWrongInfo(string: string): void
+	{
+		this.alertGame2Component.text = '這便是' + string;
+		this.alertGame2Component.visible = true;
+	}
+
 	public showCorrectNameGroup(): void
 	{
 		this.correctNameGroup.visible = true;
@@ -129,6 +135,16 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	public playGame4CorrectAnimation(): void
 	{
 		this.contentComponent.playGame4End();
+	}
+
+	public hideRect(): void
+	{
+		this.contentComponent.hideRect();
+	}
+
+	public showPartBorder(string: string): void
+	{
+		this.contentComponent.getAllRectHandle(string);
 	}
 	
 }

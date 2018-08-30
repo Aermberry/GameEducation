@@ -14,13 +14,15 @@ class Game2Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game2Repo.lackOfPart){
 			//选择正确
+			this.view.hideRect();
 			this.view.alertYouAreCorrect();
 			this.view.hideLackNameGroup();
 			this.view.showNextQuestionAnimation();
 			await lzlib.ThreadUtility.sleep(1000);
 			this.view.hideAlertInfo();
 		}else{
-			// this.view.showPartBorder(Main.instance.trim(labelComponent.text,'g'));
+			this.view.showPartBorder(text);
+			this.view.showWrongInfo(UtilString.trim(text,'g'));
 		}
 	}
 
