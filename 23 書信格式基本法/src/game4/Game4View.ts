@@ -1,13 +1,12 @@
-interface Game3View {
+interface Game4View {
 	showNextQuestionAnimation(): void;
-	showNextLevelAnimation(): void;
 	showAlertInfo(info: string): void;
 	showCorrectGroup(): void;
-	showAlertBoy(info: string): void;
-	showNextLevelComponent(): void;
+	showAlertSantaClaus(info: string): void;
+	showCompleteAnimation(): void;
+	showCorrectNameGroup(): void;
 	showCorrectOfPart(): void;
  	hideAlertInfo(): void;
 	hideLackNameGroup(): void;
 	hideCorrectGroup(): void;
-	playGame3CorrectAnimation(): void;
 }

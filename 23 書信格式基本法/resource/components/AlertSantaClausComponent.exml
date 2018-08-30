@@ -3,7 +3,7 @@
 	<w:Config id="1657f454737" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="SantaClaus_alert_png"/>
 	<e:Label id="alertLabel" text="壹般寫信給長輩的書信，在名字的前面都要寫上自稱。" x="413" y="123" width="753.3" size="72" multiline="true" lineSpacing="40" textColor="0xff0011" anchorOffsetX="0" fontFamily="華康康楷體W51"/>
-	<e:Group width="188" height="93" x="960" y="500" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="hideAlertGroup" width="188" height="93" x="960" y="500" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_png"/>
 		<e:Label text="關閉" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" size="40" textColor="0xc40f1a"/>
 	</e:Group>

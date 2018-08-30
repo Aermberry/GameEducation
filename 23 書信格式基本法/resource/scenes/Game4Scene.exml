@@ -1,16 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Game4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Game4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*"  >
+	<w:Declarations>
+		<tween:TweenGroup id="nextQuestionAnimation">
+			<tween:TweenItem target="{lackLabel}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lackNameGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctLabel}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctNameGroup}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="completeAnimation">
+			<tween:TweenItem target="{correctLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctNameGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{exitCompoent}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1657f2072ee" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-	<e:Label text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
-	<e:Label text="請選出正確的下款：" x="184" y="45" textColor="0xF40000" size="80" visible="false"/>
+	<e:Label id="lackLabel" text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
+	<e:Label id="correctLabel" text="請選出正確的下款：" x="184" y="45" textColor="0xF40000" size="80" alpha="0"/>
 	<e:Group width="1570" height="1234" x="36" y="176" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="bell_border_png"/>
-		<ns1:ContentComponent width="1256" height="976" x="308" y="44" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" xiakuan=" " shangkuan="伯父：" greet="很久没有和你痛心，你生活好嗎？" text="今年的聖誕節，爸爸答應帶我到美國探望妳們壹家，我真的十分開心。記得妳告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望妳時，妳壹定要帶我去那裏玩啊！" bless="身體健康" date="十一月二十日"/>
-		<ns1:AlertGame2Component width="496" height="424" x="188" y="528" anchorOffsetX="0" anchorOffsetY="0" source="paper_alert_png" visible="false"/>
-		<ns1:AlertSantaClausComponent width="1212" height="841" x="248" y="200" visible="false"/>
+		<ns1:ContentComponent id="contentComponent" width="1256" height="976" x="308" y="44" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" xiakuan=" " shangkuan="伯父：" greet="很久没有和你痛心，你生活好嗎？" text="今年的聖誕節，爸爸答應帶我到美國探望妳們壹家，我真的十分開心。記得妳告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望妳時，妳壹定要帶我去那裏玩啊！" bless="身體健康" date="十一月二十日"/>
+		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="528" y="584" anchorOffsetX="0" anchorOffsetY="0" source="paper_alert_png" visible="false"/>
+		<ns1:AlertSantaClausComponent id="alertSantaClausComponent" width="1212" height="841" x="248" y="200" visible="false"/>
 	</e:Group>
-	<e:Group width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group id="correctNameGroup" width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="健仁" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="367" text="侄健仁" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="662" text="甥健仁" fillColor="0x999999"/>
+	</e:Group>
+	<e:Group id="lackNameGroup" width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0">
 		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="下款" fillColor="0x6efd31"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="下款" fillColor="0x6bcdfe"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="正文" fillColor="0xfc9725"/>
@@ -18,9 +91,9 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝賀語" fillColor="0x376bfc"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
 	</e:Group>
-		<e:Group width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="健仁" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="367" text="侄健仁" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="662" text="甥健仁" fillColor="0x999999"/>
+	<e:Group id="correctGroup" width="494" height="484" x="1400" y="40" visible="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="moon_and_star_png"/>
+		<e:Label text="你答對了！" x="136" y="112" anchorOffsetX="0" width="362" anchorOffsetY="0" height="226" textColor="0xe53030" size="66" verticalAlign="middle"/>
 	</e:Group>
+	<ns1:NextLevelComponent id="exitCompoent" width="266" height="89" y="1284" alpha="0" anchorOffsetX="0" anchorOffsetY="0" x="1648" text="離 開"/>
 </e:Skin>

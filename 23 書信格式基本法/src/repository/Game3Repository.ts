@@ -1,5 +1,6 @@
 class Game3Repository {
 
+	public index = 3;
 	public lackOfPart = '祝頌語';
 	public correctOfPart = '生活愉快'
 	public alertInfo = {

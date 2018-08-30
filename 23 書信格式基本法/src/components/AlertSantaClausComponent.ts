@@ -1,6 +1,8 @@
 class AlertSantaClausComponent extends eui.Component implements  eui.UIComponent {
 	
-	public alertLabel: eui.Label;
+	private alertLabel: eui.Label;
+	private hideAlertGroup: eui.Group;
+	public game4Scene: Game4Scene;
 
 	public constructor() {
 		super();
@@ -16,8 +18,15 @@ class AlertSantaClausComponent extends eui.Component implements  eui.UIComponent
 	{
 		super.childrenCreated();
 		this.alertLabel.text = this._text;
+		this.hideAlertGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHideAlertGroupTap, this);
 	}
 	
+	private onHideAlertGroupTap(e: egret.TouchEvent): void
+	{
+		this.game4Scene.showCorrectNameGroup();
+		this.visible = false;
+	}
+
 	private _text = '在書信的內容中，[媽媽]和[妳]是同時出現，因此，[妳]是不可能是媽媽。';
 
 	public get text(): string

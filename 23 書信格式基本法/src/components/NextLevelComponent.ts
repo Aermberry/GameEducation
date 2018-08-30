@@ -1,4 +1,7 @@
 class NextLevelComponent extends eui.Component implements  eui.UIComponent {
+	
+	private textLabel: eui.Label;
+
 	public constructor() {
 		super();
 	}
@@ -12,6 +15,7 @@ class NextLevelComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.textLabel.text = this._text;
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this, true);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseMove, this);
@@ -29,6 +33,20 @@ class NextLevelComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this.currentState = 'normal';
 	}
+
+	private _text = '下一題';
+
+	public get text(): string
+	{
+		return this._text;
+	}
+
+	public set text(text: string)
+	{
+		this._text = text;
+		this.textLabel && (this.textLabel.text = this._text)
+	}
+
 	
 	// private onBegin(): void
 	// {

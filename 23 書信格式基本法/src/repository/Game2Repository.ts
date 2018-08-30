@@ -1,5 +1,8 @@
 class Game2Repository {
+	//此文件保存当前关卡的答案以及提示信息
 
+	//index表示上款部分在哪个数组位置；
+	public index = 0;
 	public lackOfPart = '上款';
 	public correctOfPart = '爸爸'
 	public alertInfo = {

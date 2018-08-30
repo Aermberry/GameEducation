@@ -10,6 +10,7 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	private alertGroup: eui.Group;
 	private alertInfoLabel: eui.Label;
 	private hideAlertGroup: eui.Group;
+	private contentComponent:ContentComponent;
 
 	private presenter:Game3Presenter;
 
@@ -30,6 +31,7 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	{
 		super.childrenCreated();
 		this.initTap();
+		this.contentComponent.playGame3Start();
 		this.hideAlertGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHideAlertGroupTap, this);
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextLevelComponentTap, this);
 		this.presenter.loadView(this);
@@ -108,8 +110,18 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 
 	public showAlertBoy(info: string): void
 	{
-		console.log(info);
 		this.alertGroup.visible = true;
 		this.alertInfoLabel.text = this.game3Repository.alertInfo[info];
+	}
+
+	public showCorrectOfPart(): void
+	{
+		this.contentComponent.bless = this.game3Repository.correctOfPart;
+		this.contentComponent.$children[this.game3Repository.index].visible = true;
+	}
+
+	public playGame3CorrectAnimation(): void
+	{
+		this.contentComponent.playCorrectGame3();
 	}
 }

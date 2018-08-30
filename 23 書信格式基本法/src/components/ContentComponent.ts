@@ -13,6 +13,9 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private blessLabelComponent: LabelComponents;
 	private greetLabelComponent: LabelComponents;
 	private alertGame1Component: AlertGame1Component;
+	private game2:egret.tween.TweenGroup;
+	private endGame3:egret.tween.TweenGroup;
+	private startGame3:egret.tween.TweenGroup;
 	//当前拖拽完成的个数；
 	private finishNum:number;
 
@@ -54,7 +57,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set shangkuan(str: string)
 	{
 		this._shangkuan = str;
-		// this.shangKuanLabel && (this.shangKuanLabel.text = this._shangkuan);
+		this.shangKuanLabel && (this.shangKuanLabel.text = this._shangkuan);
 
 	}
 
@@ -68,7 +71,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set xiakuan(str: string)
 	{
 		this._xiakuan = str;
-		// this.xiaKuanLabel && (this.xiaKuanLabel.text = this._xiakuan);
+		this.xiaKuanLabel && (this.xiaKuanLabel.text = this._xiakuan);
 
 	}
 
@@ -82,7 +85,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set bless(str: string)
 	{
 		this._bless = str;
-		// this.blessLabel && (this.blessLabel.text = this._bless);
+		this.blessLabel && (this.blessLabel.text = this._bless);
 
 	}
 
@@ -96,7 +99,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set text(str: string)
 	{
 		this._text = str;
-		// this.textLabel && (this.textLabel.text = this._text);
+		this.textLabel && (this.textLabel.text = this._text);
 
 	}
 
@@ -110,7 +113,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set greet(str: string)
 	{
 		this._greet = str;
-		// this.greetLabel && (this.greetLabel.text = this._greet);
+		this.greetLabel && (this.greetLabel.text = this._greet);
 
 	}
 	
@@ -124,7 +127,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public set date(str: string)
 	{
 		this._date = str;
-		// this.dateLabel && (this.dateLabel.text = this.date);
+		this.dateLabel && (this.dateLabel.text = this.date);
 
 	}
 
@@ -253,4 +256,18 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		return this.finishNum >= 6;
 	}
 
+	public playGame2()
+	{
+		this.game2.play(0);
+	}
+
+	public playGame3Start(): void
+	{
+		this.startGame3.play(0);
+	}
+
+	public playCorrectGame3(): void
+	{
+		this.endGame3.play(0);
+	}
 }

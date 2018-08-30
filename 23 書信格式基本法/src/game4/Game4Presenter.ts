@@ -1,20 +1,19 @@
-class Game3Presenter {
-	private view: Game3View;
+class Game4Presenter {
+	private view: Game4View;
 
-	private game3Repository = new Game3Repository();
+	private game4Repository = new Game4Repository();
 
 	public constructor() {
 	}
 
-	public loadView(view: Game3View)
+	public loadView(view: Game4View)
 	{
 		this.view = view;
 	}
 
 	public async onLackLabelComponentTap(text: string)
 	{
-		console.log(UtilString.trim(text,'g'));
-		if(UtilString.trim(text,'g') == this.game3Repository.lackOfPart){
+		if(UtilString.trim(text,'g') == this.game4Repository.lackOfPart){
 			console.log(text);
 			//选择正确
 			this.view.showAlertInfo('你答對了');
@@ -31,17 +30,16 @@ class Game3Presenter {
 
 	public async onCorrectLabelComponentTap(text: string)
 	{
-		if(UtilString.trim(text,'g') == this.game3Repository.correctOfPart){
+		if(UtilString.trim(text,'g') == this.game4Repository.correctOfPart){
 			//选择正确
 			this.view.showCorrectOfPart();
-			this.view.playGame3CorrectAnimation();
 			this.view.showCorrectGroup();
-			this.view.showNextLevelAnimation();
+			this.view.showCompleteAnimation();
 			await lzlib.ThreadUtility.sleep(1000);
 			this.view.hideCorrectGroup();
-			this.view.showNextLevelComponent();
 		}else{
-			this.view.showAlertBoy(UtilString.trim(text,'g'));
+			console.log(text);
+			this.view.showAlertSantaClaus(UtilString.trim(text,'g'));
 		}
 	}
 }

@@ -28,6 +28,7 @@ class Game2Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game2Repo.correctOfPart){
 			//选择正确
+			this.view.showCorrectOfPart();
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();
 			await lzlib.ThreadUtility.sleep(1000);

@@ -1,20 +1,23 @@
-class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
-	
-	private lackNameGroup: eui.Group;
+class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	private correctNameGroup: eui.Group;
-	private correctGroup: eui.Group;
-	private alertGame2Component: AlertGame2Component;
-	private alertElderComponent: AlertElderComponent;
+	private lackNameGroup: eui.Group;
+	private alertGame2Component: AlertElderComponent;
 	private nextQuestionAnimation: egret.tween.TweenGroup;
-	private nextLevelAnimation: egret.tween.TweenGroup;
+	private completeAnimation: egret.tween.TweenGroup;
+	private correctGroup: eui.Group;
+	private exitCompoent: NextLevelComponent;
+	private alertSantaClausComponent: AlertSantaClausComponent;
+	private alertInfoLabel: eui.Label;
+	private hideAlertGroup: eui.Group;
 	private contentComponent: ContentComponent;
-	private nextLevelComponent: NextLevelComponent;
 
-	private presenter = new Game2Presenter();
+	private presenter:Game4Presenter;
 
-	private game2Repository = new Game2Repository();
+	private game4Repository = new Game4Repository();
+
 	public constructor() {
 		super();
+		this.presenter = new Game4Presenter();
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -27,15 +30,9 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 	{
 		super.childrenCreated();
 		this.initTap();
-		this.alertElderComponent.game2Scene = this;
-		this.contentComponent.playGame2();
-		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
+		this.exitCompoent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitCompoentTap, this);
+		this.alertSantaClausComponent.game4Scene = this;
 		this.presenter.loadView(this);
-	}
-
-	private onNextQuestionTap()
-	{
-		Main.instant.gotoScene(new Game3Scene())			
 	}
 
 	private initTap(): void
@@ -47,7 +44,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 			label.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onCorrectLabelComponentTap,this);
 		})
 	}
-	
+
 	private onLackLabelComponentTap(e:egret.TouchEvent): void
 	{
 		this.presenter.onLackLabelComponentTap((e.target as LabelComponents).text);
@@ -58,25 +55,21 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		this.presenter.onCorrectLabelComponentTap((e.target as LabelComponents).text);
 	}
 
-	public showNextQuestionAnimation(): void
+	private onExitCompoentTap(e: egret.TouchEvent)
 	{
-		this.nextQuestionAnimation.play(0);
+		window.close();
+	}
+
+	private onHideAlertGroupTap(e: egret.TouchEvent): void
+	{
+		this.alertSantaClausComponent.visible = false;
 	}
 
 	public showAlertInfo(info: string): void
 	{
+		console.log('showAlertInfo');
 		this.alertGame2Component.text = info;
 		this.alertGame2Component.visible = true;
-	}
-
-	public alertYouAreCorrect(): void
-	{
-		this.showAlertInfo('你答對了');
-	}
-
-	public hideAlertInfo(): void
-	{
-		this.alertGame2Component.visible = false;
 	}
 
 	public hideLackNameGroup(): void
@@ -84,43 +77,52 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		this.lackNameGroup.visible = false;
 	}
 
+	public hideAlertInfo(): void
+	{
+		this.alertGame2Component.visible = false;
+	}
+
+	public showNextQuestionAnimation(): void
+	{
+		this.nextQuestionAnimation.play(0);
+	}
+
 	public showCorrectGroup(): void
 	{
 		this.correctGroup.visible = true;
 	}
 
+	public showCompleteAnimation(): void
+	{
+		this.completeAnimation.play(0);
+	}
+	
 	public hideCorrectGroup(): void
 	{
 		this.correctGroup.visible = false;
 	}
 
-	public showNextLevelAnimation(): void
+	public showNextLevelComponent(): void
 	{
-		this.nextLevelAnimation.play(0);
+		this.exitCompoent.visible = true;
 	}
 
-	public showAlertElder(info: string): void
+	public showAlertSantaClaus(info: string): void
 	{
-		this.alertElderComponent.text = this.game2Repository.alertInfo[info];
-		this.alertElderComponent.visible = true;
 		this.correctNameGroup.visible = false;
+		this.alertSantaClausComponent.visible = true;
+		this.alertSantaClausComponent.text = this.game4Repository.alertInfo[info];
 	}
-	
+
 	public showCorrectNameGroup(): void
 	{
 		this.correctNameGroup.visible = true;
 	}
 
-	public showNextLevelComponent(): void
-	{
-		this.nextLevelComponent.visible = true;
-	}
-
 	public showCorrectOfPart(): void
 	{
-		this.contentComponent.shangkuan = this.game2Repository.correctOfPart + ' :';
-		this.contentComponent.$children[this.game2Repository.index].visible = true;
-	
+		this.contentComponent.xiakuan = this.game4Repository.correctOfPart;
+		this.contentComponent.$children[this.game4Repository.index].visible = true;
 	}
-
+	
 }

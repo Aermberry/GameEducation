@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ContentComponentSkin" width="1386" height="1031" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="ContentComponentSkin" width="1386" height="1031" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="endGame3">
+			<tween:TweenItem target="{label}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{blessLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{570}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{620}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{698}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{748}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="game2">
+			<tween:TweenItem target="{group}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{668}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="game4"/>
+		<tween:TweenGroup id="startGame3">
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{570}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{698}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1657a0770c5" ></w:Config>
 	<e:Group width="608" x="0" y="0" anchorOffsetX="0">
 		<e:Label id="shangKuanLabel" text="小雄：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="times"/>
@@ -13,20 +91,20 @@
 		<e:Label text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
 		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
 	</e:Group>-->
-	<e:Group height="393" y="213" left="0" right="0">
+	<e:Group y="213" left="0" right="0">
 		<e:Label id="textLabel" text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="0" right="0" lineSpacing="40" y="0" fontFamily="times"/>
 		<ns1:LabelComponents id="textLabelComponent" width="270" height="107" x="136" y="280"/>
 	</e:Group>
-	<e:Group y="628" left="0" right="0" bottom="230">
+	<e:Group id="group" y="597.7" left="0" right="0">
 		<e:Label id="blessLabel" text="身體健康" x="52" y="100" size="56" textColor="0x000000" fontFamily="times"/>
-		<e:Label text="祝" x="138" y="8" size="56" textColor="0x000000" fontFamily="times"/>
+		<e:Label id="label" text="祝" x="138" y="8" size="56" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="blessLabelComponent" width="207" height="107" x="312" y="76"/>
 	</e:Group>
-	<e:Group y="815" anchorOffsetX="0" right="270" bottom="118">
+	<e:Group id="group0" y="815" anchorOffsetX="0" right="270">
 		<e:Label id="xiaKuanLabel" text="伯父" x="261" top="0" bottom="0" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="xiaKuanLabelComponent" width="207" height="107" x="0" y="0"/>
 	</e:Group>
-	<e:Group y="928" anchorOffsetX="0" right="114" bottom="0">
+	<e:Group id="group1" y="928" anchorOffsetX="0" right="114">
 		<e:Label id="dateLabel" text="八月十日" x="242" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="times"/>
 		<ns1:LabelComponents id="dateLabelComponent" width="207" height="107" x="0" y="0"/>
 	</e:Group>

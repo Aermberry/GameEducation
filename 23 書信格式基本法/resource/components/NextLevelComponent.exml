@@ -3,6 +3,6 @@
 	<w:Config id="165849da7fe" ></w:Config>
 		<e:Group id="nextQuestionGroup" left="0" right="0" top="0" bottom="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gradual_png"/>
-			<e:Label text="下一题" size="54" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0xfc0202" fontFamily="times" textColor.move="0x5bc90e"/>
+			<e:Label id="textLabel" text="下一题" size="54" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0xfc0202" fontFamily="times" textColor.move="0x5bc90e"/>
 		</e:Group>
 </e:Skin>
