@@ -28,7 +28,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		super.childrenCreated();
 		this.initTap();
 		this.alertElderComponent.game2Scene = this;
-		this.contentComponent.playGame2();
+		this.contentComponent.playGame2Start();
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
 		this.presenter.loadView(this);
 	}

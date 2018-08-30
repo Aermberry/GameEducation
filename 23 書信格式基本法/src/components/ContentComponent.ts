@@ -13,9 +13,12 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private blessLabelComponent: LabelComponents;
 	private greetLabelComponent: LabelComponents;
 	private alertGame1Component: AlertGame1Component;
-	private game2:egret.tween.TweenGroup;
-	private endGame3:egret.tween.TweenGroup;
-	private startGame3:egret.tween.TweenGroup;
+
+	private startGame2: egret.tween.TweenGroup;
+	private endGame3: egret.tween.TweenGroup;
+	private startGame3: egret.tween.TweenGroup;
+	private startGame4: egret.tween.TweenGroup;
+	private endGame4: egret.tween.TweenGroup;
 	//当前拖拽完成的个数；
 	private finishNum:number;
 
@@ -256,9 +259,9 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		return this.finishNum >= 6;
 	}
 
-	public playGame2()
+	public playGame2Start()
 	{
-		this.game2.play(0);
+		this.startGame2.play(0);
 	}
 
 	public playGame3Start(): void
@@ -266,8 +269,18 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		this.startGame3.play(0);
 	}
 
-	public playCorrectGame3(): void
+	public playGame3End(): void
 	{
 		this.endGame3.play(0);
+	}
+
+	public playGame4Start(): void
+	{
+		this.startGame4.play(0);
+	}
+
+	public playGame4End(): void
+	{
+		this.endGame4.play(0);
 	}
 }

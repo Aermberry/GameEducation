@@ -100,7 +100,7 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instant = this;
-        this.addChild(new Game1Scene());
+        this.addChild(new Game4Scene());
     }
 
     public static instant: Main

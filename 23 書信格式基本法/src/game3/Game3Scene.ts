@@ -122,6 +122,6 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 
 	public playGame3CorrectAnimation(): void
 	{
-		this.contentComponent.playCorrectGame3();
+		this.contentComponent.playGame3End();
 	}
 }

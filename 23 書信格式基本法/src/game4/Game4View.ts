@@ -9,4 +9,5 @@ interface Game4View {
  	hideAlertInfo(): void;
 	hideLackNameGroup(): void;
 	hideCorrectGroup(): void;
+	playGame4CorrectAnimation(): void;
 }

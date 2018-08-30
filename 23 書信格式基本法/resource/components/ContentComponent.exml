@@ -51,7 +51,7 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="game2">
+		<tween:TweenGroup id="startGame2">
 			<tween:TweenItem target="{group}">
 				<tween:Set>
 					<tween:props>
@@ -60,7 +60,32 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="game4"/>
+		<tween:TweenGroup id="endGame4">
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{715}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{828}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 		<tween:TweenGroup id="startGame3">
 			<tween:TweenItem target="{group0}">
 				<tween:Set>
@@ -73,6 +98,22 @@
 				<tween:Set>
 					<tween:props>
 						<e:Object y="{698}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="startGame4">
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{715}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{715}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>

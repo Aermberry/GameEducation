@@ -30,6 +30,7 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	{
 		super.childrenCreated();
 		this.initTap();
+		this.contentComponent.playGame4Start();
 		this.exitCompoent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitCompoentTap, this);
 		this.alertSantaClausComponent.game4Scene = this;
 		this.presenter.loadView(this);
@@ -123,6 +124,11 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	{
 		this.contentComponent.xiakuan = this.game4Repository.correctOfPart;
 		this.contentComponent.$children[this.game4Repository.index].visible = true;
+	}
+
+	public playGame4CorrectAnimation(): void
+	{
+		this.contentComponent.playGame4End();
 	}
 	
 }

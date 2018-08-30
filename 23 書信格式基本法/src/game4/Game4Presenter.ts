@@ -32,13 +32,13 @@ class Game4Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game4Repository.correctOfPart){
 			//选择正确
+			this.view.playGame4CorrectAnimation();
 			this.view.showCorrectOfPart();
 			this.view.showCorrectGroup();
 			this.view.showCompleteAnimation();
 			await lzlib.ThreadUtility.sleep(1000);
 			this.view.hideCorrectGroup();
 		}else{
-			console.log(text);
 			this.view.showAlertSantaClaus(UtilString.trim(text,'g'));
 		}
 	}
