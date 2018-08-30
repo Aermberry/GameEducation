@@ -14,10 +14,11 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	private greetLabelComponent: LabelComponents;
 	private alertGame1Component: AlertGame1Component;
 	//当前拖拽完成的个数；
-	private finishNum = 0;
+	private finishNum:number;
 
 	public constructor() {
 		super();
+		this.finishNum = 0;
 	}
 
 	protected partAdded(partName:string,instance:any):void

@@ -12,6 +12,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 
 	private presenter = new Game2Presenter();
 
+	private game2Repository = new Game2Repository();
 	public constructor() {
 		super();
 	}
@@ -33,7 +34,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 
 	private onNextQuestionTap()
 	{
-		Main.instance.gotoScene(new Game3Scene())			
+		Main.instant.gotoScene(new Game3Scene())			
 	}
 
 	private initTap(): void
@@ -53,7 +54,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 
 	private onCorrectLabelComponentTap(e:egret.TouchEvent): void
 	{
-		this.presenter.onCorrectLabelComponentTap(e.target);
+		this.presenter.onCorrectLabelComponentTap((e.target as LabelComponents).text);
 	}
 
 	public showNextQuestionAnimation(): void
@@ -99,7 +100,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 
 	public showAlertElder(info: string): void
 	{
-		this.alertElderComponent.text = Game2Repository.alertInfo[info];
+		this.alertElderComponent.text = this.game2Repository.alertInfo[info];
 		this.alertElderComponent.visible = true;
 		this.correctNameGroup.visible = false;
 	}

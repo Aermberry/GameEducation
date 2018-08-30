@@ -99,26 +99,15 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        Main.instance = this;
+        Main.instant = this;
         this.addChild(new Game3Scene());
     }
 
-    public static instance: Main
+    public static instant: Main
 
     public gotoScene(scene: eui.Component)
     {
         this.removeChildren();
         this.addChild(scene);
-    }
-
-    public trim(str:string,is_global:string)
-    {
-        let result;
-        result = str.replace(/(^\s+)|(\s+$)/g,"");
-        if(is_global.toLowerCase()=="g")
-        {
-            result = result.replace(/\s/g,"");
-        }
-        return result;
     }
 }

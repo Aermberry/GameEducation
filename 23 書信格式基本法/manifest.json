@@ -11,8 +11,8 @@
 		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
+		"bin-debug/game2/Game2Presenter.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -23,7 +23,7 @@
 		"bin-debug/components/ContentComponent.js",
 		"bin-debug/components/LabelComponents.js",
 		"bin-debug/components/NextLevelComponent.js",
-		"bin-debug/game2/Game2Presenter.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/game2/Game2Scene.js",
 		"bin-debug/game2/Game2View.js",
 		"bin-debug/game3/Game3Presenter.js",
@@ -34,6 +34,7 @@
 		"bin-debug/repository/Game3Repository.js",
 		"bin-debug/scenes/Game1Scene.js",
 		"bin-debug/scenes/Game4Scene.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/scenes/StartScene.js",
+		"bin-debug/utility/UtilString.js"
 	]
 }

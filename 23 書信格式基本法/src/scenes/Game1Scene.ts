@@ -34,7 +34,7 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 	private onNextQuestionTap(): void
 	{
 		if (this.contentComponent.isFinish) {
-			Main.instance.gotoScene(new Game2Scene())	
+			Main.instant.gotoScene(new Game2Scene())	
 		}
 	}
 	

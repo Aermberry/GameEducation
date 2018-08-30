@@ -12,7 +12,7 @@ class Game2Presenter {
 
 	public async onLackLabelComponentTap(text: string): Promise<void>
 	{
-		if(Main.instance.trim(text,'g') == this.game2Repo.lackOfPart){
+		if(UtilString.trim(text,'g') == this.game2Repo.lackOfPart){
 			//选择正确
 			this.view.alertYouAreCorrect();
 			this.view.hideLackNameGroup();
@@ -24,9 +24,9 @@ class Game2Presenter {
 		}
 	}
 
-	public async onCorrectLabelComponentTap(labelComponent:LabelComponents)
+	public async onCorrectLabelComponentTap(text: string)
 	{
-		if(Main.instance.trim(labelComponent.text,'g') == this.game2Repo.correctOfPart){
+		if(UtilString.trim(text,'g') == this.game2Repo.correctOfPart){
 			//选择正确
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();
@@ -34,7 +34,7 @@ class Game2Presenter {
 			this.view.hideCorrectGroup();
 			this.view.showNextLevelComponent();
 		}else{
-			this.view.showAlertElder(Main.instance.trim(labelComponent.text,'g'));
+			this.view.showAlertElder(UtilString.trim(text,'g'));
 		}
 	}
 }

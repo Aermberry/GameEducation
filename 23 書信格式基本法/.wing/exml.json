@@ -1,50 +1,50 @@
 {
-    "16579552f5b": {
-        "path": "scenes/StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    },
-    "165796e00c3": {
-        "path": "scenes/Game1Scene.ts",
-        "class": "Game1Scene",
-        "parentPath": ""
-    },
-    "165798785f3": {
-        "path": "components/LabelComponents.ts",
-        "class": "LabelComponents",
-        "parentPath": ""
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true
-    },
-    "1657a3de143": {
-        "path": "components/AlertGame1Component.ts",
-        "class": "AlertGame1Component",
-        "parentPath": ""
-    },
-    "1657a0770c5": {
-        "path": "components/ContentComponent.ts",
-        "class": "ContentComponent",
-        "parentPath": ""
-    },
-    "1657a5448a4": {
-        "path": "../resource/scenes/Game2Scene.ts",
-        "class": "Game2Scene",
-        "parentPath": ""
-    },
-    "1657a5554c2": {
-        "path": "scenes/Game2Scene.ts",
-        "class": "Game2Scene",
-        "parentPath": ""
-    },
-    "1657e021d08": {
-        "path": "../resource/components/AlertGame2Component.ts",
-        "class": "AlertGame2Component",
-        "parentPath": ""
-    },
-    "165849da7fe": {
-        "path": "components/NextLevelComponent.ts",
-        "class": "NextLevelComponent",
-        "parentPath": ""
-    }
+  "16579552f5b": {
+    "path": "scenes/StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "165796e00c3": {
+    "path": "scenes/Game1Scene.ts",
+    "class": "Game1Scene",
+    "parentPath": ""
+  },
+  "165798785f3": {
+    "path": "components/LabelComponents.ts",
+    "class": "LabelComponents",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "1657a3de143": {
+    "path": "components/AlertGame1Component.ts",
+    "class": "AlertGame1Component",
+    "parentPath": ""
+  },
+  "1657a0770c5": {
+    "path": "components/ContentComponent.ts",
+    "class": "ContentComponent",
+    "parentPath": ""
+  },
+  "1657a5448a4": {
+    "path": "../resource/scenes/Game2Scene.ts",
+    "class": "Game2Scene",
+    "parentPath": ""
+  },
+  "1657a5554c2": {
+    "path": "scenes/Game2Scene.ts",
+    "class": "Game2Scene",
+    "parentPath": ""
+  },
+  "1657e021d08": {
+    "path": "../resource/components/AlertGame2Component.ts",
+    "class": "AlertGame2Component",
+    "parentPath": ""
+  },
+  "165849da7fe": {
+    "path": "components/NextLevelComponent.ts",
+    "class": "NextLevelComponent",
+    "parentPath": ""
+  }
 }

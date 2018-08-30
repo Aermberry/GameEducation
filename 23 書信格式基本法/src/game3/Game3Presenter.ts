@@ -1,6 +1,8 @@
 class Game3Presenter {
 	private view: Game3View;
 
+	private game3Repository = new Game3Repository();
+
 	public constructor() {
 	}
 
@@ -11,8 +13,7 @@ class Game3Presenter {
 
 	public async onLackLabelComponentTap(labelComponent:LabelComponents)
 	{
-		console.log(1);
-		if(Main.instance.trim(labelComponent.text,'g') == Game3Repository.lackOfPart){
+		if(UtilString.trim(labelComponent.text,'g') == this.game3Repository.lackOfPart){
 			console.log(2);
 			//选择正确
 			this.view.showAlertInfo('你答對了');
@@ -29,15 +30,15 @@ class Game3Presenter {
 
 	public async onCorrectLabelComponentTap(labelComponent:LabelComponents)
 	{
-		// if(Main.instance.trim(labelComponent.text,'g') == Game2Repository.correctOfPart){
-		// 	//选择正确
-		// 	this.view.showCorrectGroup();
-		// 	this.view.showNextLevelAnimation();
-		// 	await lzlib.ThreadUtility.sleep(1000);
-		// 	this.view.hideCorrectGroup();
-		// 	this.view.showNextLevelComponent();
-		// }else{
-		// 	this.view.showAlertElder(Main.instance.trim(labelComponent.text,'g'));
-		// }
+		if(UtilString.trim(labelComponent.text,'g') == this.game3Repository.correctOfPart){
+			//选择正确
+			this.view.showCorrectGroup();
+			this.view.showNextLevelAnimation();
+			await lzlib.ThreadUtility.sleep(1000);
+			this.view.hideCorrectGroup();
+			this.view.showNextLevelComponent();
+		}else{
+			this.view.showAlertBoy(UtilString.trim(labelComponent.text,'g'));
+		}
 	}
 }

@@ -22,7 +22,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onStartLabelTap()
 	{
-		Main.instance.gotoScene(new Game1Scene());
+		Main.instant.gotoScene(new Game1Scene());
 	}
 	
 }
