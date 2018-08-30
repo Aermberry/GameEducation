@@ -47,12 +47,12 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 
 	private onLackLabelComponentTap(e:egret.TouchEvent): void
 	{
-		this.presenter.onLackLabelComponentTap(e.target);
+		this.presenter.onLackLabelComponentTap((e.target as LabelComponents).text);
 	}
 
 	private onCorrectLabelComponentTap(e:egret.TouchEvent): void
 	{
-		this.presenter.onCorrectLabelComponentTap(e.target);
+		this.presenter.onCorrectLabelComponentTap((e.target as LabelComponents).text);
 	}
 
 	private onNextLevelComponentTap(e: egret.TouchEvent)
@@ -108,7 +108,8 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 
 	public showAlertBoy(info: string): void
 	{
+		console.log(info);
 		this.alertGroup.visible = true;
-		this.alertInfoLabel.text = this.game3Repository[info];
+		this.alertInfoLabel.text = this.game3Repository.alertInfo[info];
 	}
 }

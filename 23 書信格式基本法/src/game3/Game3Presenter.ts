@@ -11,10 +11,11 @@ class Game3Presenter {
 		this.view = view;
 	}
 
-	public async onLackLabelComponentTap(labelComponent:LabelComponents)
+	public async onLackLabelComponentTap(text: string)
 	{
-		if(UtilString.trim(labelComponent.text,'g') == this.game3Repository.lackOfPart){
-			console.log(2);
+		console.log(UtilString.trim(text,'g'));
+		if(UtilString.trim(text,'g') == this.game3Repository.lackOfPart){
+			console.log(text);
 			//选择正确
 			this.view.showAlertInfo('你答對了');
 			
@@ -28,9 +29,9 @@ class Game3Presenter {
 		
 	}
 
-	public async onCorrectLabelComponentTap(labelComponent:LabelComponents)
+	public async onCorrectLabelComponentTap(text: string)
 	{
-		if(UtilString.trim(labelComponent.text,'g') == this.game3Repository.correctOfPart){
+		if(UtilString.trim(text,'g') == this.game3Repository.correctOfPart){
 			//选择正确
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();
@@ -38,7 +39,8 @@ class Game3Presenter {
 			this.view.hideCorrectGroup();
 			this.view.showNextLevelComponent();
 		}else{
-			this.view.showAlertBoy(UtilString.trim(labelComponent.text,'g'));
+			console.log(text);
+			this.view.showAlertBoy(UtilString.trim(text,'g'));
 		}
 	}
 }
