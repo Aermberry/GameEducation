@@ -13,5 +13,9 @@ class Scene10 extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 	}
+
+	private onBackgroundMusic():void {
+		
+	}
 	
 }

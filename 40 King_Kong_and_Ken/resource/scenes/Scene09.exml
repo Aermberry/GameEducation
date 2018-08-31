@@ -4,7 +4,7 @@
 	<e:Label text="Which words end with &quot;ong&quot;?\nDrag the right words to\n the tree" x="464" y="52" size="69" left="61" lineSpacing="30" textColor="0xbc2865"/>
 	<e:Label text="Ken hears the gong.\nHe writes a song.\nAnd not for long.\nHe meets King Kong" x="164" y="389.03" textColor="0x5c1ac3" size="80" lineSpacing="70" textAlign="center"/>
 	<e:Image source="filltree_png" x="1230" y="136"/>
-	<e:Button label="Next" x="1613.37" y="938.42" anchorOffsetX="0" width="217.27" anchorOffsetY="0" height="91.15"/>
+	<e:Button id="nextButton" label="Next" x="1613.37" y="938.42" anchorOffsetX="0" width="217.27" anchorOffsetY="0" height="91.15" visible="false"/>
 	<e:Image source="23_speaker_png" x="1421.59" y="605.12"/>
 	<e:Image source="speaker_png" x="1484.85" y="689"/>
 </e:Skin>

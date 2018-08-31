@@ -17,7 +17,7 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 	}
 
 	private onPlayBackgroundMusic():void {
-		lzlib.SoundUtility.playSound('07_mp3');
+		lzlib.SoundUtility.playSound('08_startgame1a_mp3');
 
 	}
 
