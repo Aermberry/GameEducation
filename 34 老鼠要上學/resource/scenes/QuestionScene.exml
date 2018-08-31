@@ -6,6 +6,7 @@
 	</e:Group>
 	<e:Group width="1920" height="1315" x="0" y="125" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
-		<e:Image width="1816" height="1293" x="76" y="47" top="26" bottom="0" left="58" source="whiteboard_png"/>
+		<e:Image width="1816" height="1500" x="76" y="47" top="26" left="58" source="whiteboard_png"/>
+		<e:Group width="1652" height="896" x="144" y="99" top="105"/>
 	</e:Group>
 </e:Skin>
