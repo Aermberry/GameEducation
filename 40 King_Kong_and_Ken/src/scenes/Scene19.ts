@@ -1,4 +1,5 @@
 class Scene19 extends eui.Component implements  eui.UIComponent {
+	private nextButton:eui.Button;
 	public constructor() {
 		super();
 	}
@@ -12,6 +13,9 @@ class Scene19 extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		Base.onAsyncPlayBlackgroundMusic('45_mp3',this.nextButton)
+		Base.onClickNextScene(this.nextButton,new Scene20());
+		
 	}
 	
 }

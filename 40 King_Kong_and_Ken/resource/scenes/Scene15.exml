@@ -4,5 +4,5 @@
 	<e:Label text="Correct!" x="1087.5" y="370" textColor="0xec3596" size="80"/>
 	<e:Label text="king" x="1165" y="574" size="80" textColor="0xee6f2e"/>
 	<e:Image source="Maxking_png" x="502" y="199"/>
-	<e:Button label="Next" x="1558" y="902" anchorOffsetX="0" width="188.48" anchorOffsetY="0" height="91.15"/>
+	<e:Button id="nextButton" label="Next" x="1558" y="902" anchorOffsetX="0" width="188.48" anchorOffsetY="0" height="91.15" visible="false"/>
 </e:Skin>

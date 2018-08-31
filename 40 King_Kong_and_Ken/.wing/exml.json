@@ -92,10 +92,15 @@
     "backgroundType": "user"
   },
   "1657fbf0fee": {
-    "backgroundType": "user",
+    "backgroundType": "null",
     "useBgImage": true,
     "useBgColor": false,
-    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png"
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "backgroundAlpha": 100
   },
   "1657fe5a0eb": {
     "backgroundType": "user",
@@ -107,7 +112,8 @@
     "backgroundType": "user",
     "useBgImage": false,
     "useBgColor": true,
-    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png"
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png",
+    "guideLinesEnabled": false
   },
   "1657ff8af93": {
     "path": "scenes\\Scene17.ts",
@@ -116,8 +122,8 @@
     "backgroundType": "user"
   },
   "165834148dc": {
-    "backgroundType": "user",
-    "useBgImage": true,
+    "backgroundType": "null",
+    "useBgImage": false,
     "useBgColor": false,
     "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png"
   },

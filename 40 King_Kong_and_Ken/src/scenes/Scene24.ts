@@ -10,8 +10,9 @@ class Scene24 extends eui.Component implements  eui.UIComponent {
 
 
 	protected childrenCreated():void
-	{
+	{  
 		super.childrenCreated();
+		Base.onPlayBlackgroundMusic('55_mp3');
 	}
 	
 }

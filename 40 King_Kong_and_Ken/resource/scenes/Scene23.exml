@@ -4,5 +4,5 @@
 	<e:Image source="dog_png" x="538" y="248"/>
 	<e:Label text="Correct!" x="1005.5" y="370" textColor="0xec3596" size="80"/>
 	<e:Label text="Dog" x="1074.5" y="574" textColor="0xec333d" size="80"/>
-	<e:Button label="Next" x="1627.64" y="889.82" anchorOffsetX="0" width="176.36" anchorOffsetY="0" height="94.18"/>
+	<e:Button id="nextButton" label="Next" x="1627.64" y="889.82" anchorOffsetX="0" width="176.36" anchorOffsetY="0" height="94.18"/>
 </e:Skin>
