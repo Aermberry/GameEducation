@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ListenSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{mushroom_and_mouseImage}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{radioImage}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabel}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{guidepostGroup}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1658eee88cd" ></w:Config>
+	<e:Group height="125" y="0" left="0" right="0">
+		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	<e:Group height="1312" y="125" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0">
+		<e:Rect left="0" right="0" top="-8" bottom="8" fillColor="0xfdcccf"/>
+		<e:Image id="radioImage" width="379" height="330" x="1084" y="79" anchorOffsetX="0" anchorOffsetY="0" source="radio_png" right="25" alpha="0"/>
+		<e:Group height="764" y="350" anchorOffsetY="0" left="0" right="0">
+			<e:Image id="mushroom_and_mouseImage" width="955" height="761" x="450" y="0" anchorOffsetX="0" anchorOffsetY="0" source="mushroom_and_mouse_png" alpha="0"/>
+			<e:Group id="guidepostGroup" width="454" height="454" x="1460" y="264" alpha="0">
+				<e:Image width="454" height="454" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="guidepost_png"/>
+				<e:Label id="label" text="作 答" x="84" anchorOffsetX="0" top="0" bottom="92" width="266" verticalAlign="middle" size="112" textColor="0xfb35fc" anchorOffsetY="0"/>
+			</e:Group>
+			<e:Group height="200" y="761" left="0" right="0">
+				<e:Label id="textLabel" text="話 語 取 自 《 目 標 為 本 課 程 中 國 語 文 科 參 考 資 料 學 習 表 現 等 級 指 標 及 示 例 ——聽 》）" y="20" textColor="0x000000" left="40" right="32" multiline="true" size="74" anchorOffsetX="0" lineSpacing="20" alpha="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

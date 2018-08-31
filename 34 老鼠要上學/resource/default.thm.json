@@ -12,10 +12,15 @@
 		"eui.ToggleSwitch": "resource/eui_skins/ToggleSwitchSkin.exml",
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
-		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
+		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
+		"StartScene": "resource/scenes/StartScene.exml",
+		"ListenScene": "resource/scenes/ListenScene.exml",
+		"TopTitleComponent": "resource/components/TopTitleComponent.exml",
+		"QuestionScene": "resource/scenes/QuestionScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/TopTitleComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -28,7 +33,10 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/ListenScene.exml",
+		"resource/scenes/QuestionScene.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,shape100_png,shape103_png,shape120_png,shape124_png,shape132_png,shape133_png,shape134_png,shape144_png,shape15_png,shape165_png,shape186_png,shape19_png,shape191_png,shape194_png,shape2_png,shape20_png,shape200_png,shape21_png,shape23_png,shape235_png,shape240_png,shape242_png,shape245_png,shape252_png,shape254_png,shape256_png,shape26_png,shape27_png,shape29_png,shape3_png,shape31_png,shape317_png,shape320_png,shape359_png,shape363_png,shape365_png,shape367_png,shape368_png,shape37_png,shape371_png,shape373_png,shape375_png,shape376_png,shape378_png,shape381_png,shape382_png,shape56_png,shape59_png,shape61_png,shape63_png,shape73_png,shape76_png,shape78_png,shape83_png,shape85_png,shape86_png,shape88_png,shape89_png,shape9_png,shape90_png,shape92_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png",
 			"name": "preload"
 		}
 	],
@@ -122,29 +122,384 @@
 			"name": "track_sb_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "checkbox_select_disabled2_png",
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_disabled.png"
+			"name": "checkbox_select_disabled2_png"
 		},
 		{
-			"name": "checkbox_select_down2_png",
+			"url": "assets/CheckBox/checkbox_select_down.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_down.png"
+			"name": "checkbox_select_down2_png"
 		},
 		{
-			"name": "checkbox_select_up2_png",
+			"url": "assets/CheckBox/checkbox_select_up.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_up.png"
+			"name": "checkbox_select_up2_png"
 		},
 		{
-			"name": "checkbox_unselect2_png",
+			"url": "assets/CheckBox/checkbox_unselect.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_unselect.png"
+			"name": "checkbox_unselect2_png"
+		},
+		{
+			"url": "textures/horn.png",
+			"type": "image",
+			"name": "horn_png"
+		},
+		{
+			"url": "textures/shape100.png",
+			"type": "image",
+			"name": "shape100_png"
+		},
+		{
+			"url": "textures/shape103.png",
+			"type": "image",
+			"name": "shape103_png"
+		},
+		{
+			"url": "textures/shape120.png",
+			"type": "image",
+			"name": "shape120_png"
+		},
+		{
+			"url": "textures/shape124.png",
+			"type": "image",
+			"name": "shape124_png"
+		},
+		{
+			"url": "textures/shape132.png",
+			"type": "image",
+			"name": "shape132_png"
+		},
+		{
+			"url": "textures/shape133.png",
+			"type": "image",
+			"name": "shape133_png"
+		},
+		{
+			"url": "textures/shape134.png",
+			"type": "image",
+			"name": "shape134_png"
+		},
+		{
+			"url": "textures/shape144.png",
+			"type": "image",
+			"name": "shape144_png"
+		},
+		{
+			"url": "textures/shape15.png",
+			"type": "image",
+			"name": "shape15_png"
+		},
+		{
+			"url": "textures/shape165.png",
+			"type": "image",
+			"name": "shape165_png"
+		},
+		{
+			"url": "textures/shape186.png",
+			"type": "image",
+			"name": "shape186_png"
+		},
+		{
+			"url": "textures/shape19.png",
+			"type": "image",
+			"name": "shape19_png"
+		},
+		{
+			"url": "textures/shape191.png",
+			"type": "image",
+			"name": "shape191_png"
+		},
+		{
+			"url": "textures/shape194.png",
+			"type": "image",
+			"name": "shape194_png"
+		},
+		{
+			"url": "textures/shape2.png",
+			"type": "image",
+			"name": "shape2_png"
+		},
+		{
+			"url": "textures/shape20.png",
+			"type": "image",
+			"name": "shape20_png"
+		},
+		{
+			"url": "textures/shape200.png",
+			"type": "image",
+			"name": "shape200_png"
+		},
+		{
+			"url": "textures/shape21.png",
+			"type": "image",
+			"name": "shape21_png"
+		},
+		{
+			"url": "textures/shape23.png",
+			"type": "image",
+			"name": "shape23_png"
+		},
+		{
+			"url": "textures/shape235.png",
+			"type": "image",
+			"name": "shape235_png"
+		},
+		{
+			"url": "textures/shape240.png",
+			"type": "image",
+			"name": "shape240_png"
+		},
+		{
+			"url": "textures/shape242.png",
+			"type": "image",
+			"name": "shape242_png"
+		},
+		{
+			"url": "textures/shape245.png",
+			"type": "image",
+			"name": "shape245_png"
+		},
+		{
+			"url": "textures/shape252.png",
+			"type": "image",
+			"name": "shape252_png"
+		},
+		{
+			"url": "textures/shape254.png",
+			"type": "image",
+			"name": "shape254_png"
+		},
+		{
+			"url": "textures/shape256.png",
+			"type": "image",
+			"name": "shape256_png"
+		},
+		{
+			"url": "textures/shape26.png",
+			"type": "image",
+			"name": "shape26_png"
+		},
+		{
+			"url": "textures/shape27.png",
+			"type": "image",
+			"name": "shape27_png"
+		},
+		{
+			"url": "textures/shape29.png",
+			"type": "image",
+			"name": "shape29_png"
+		},
+		{
+			"url": "textures/shape3.png",
+			"type": "image",
+			"name": "shape3_png"
+		},
+		{
+			"url": "textures/shape31.png",
+			"type": "image",
+			"name": "shape31_png"
+		},
+		{
+			"url": "textures/shape317.png",
+			"type": "image",
+			"name": "shape317_png"
+		},
+		{
+			"url": "textures/shape320.png",
+			"type": "image",
+			"name": "shape320_png"
+		},
+		{
+			"url": "textures/shape359.png",
+			"type": "image",
+			"name": "shape359_png"
+		},
+		{
+			"url": "textures/shape363.png",
+			"type": "image",
+			"name": "shape363_png"
+		},
+		{
+			"url": "textures/shape365.png",
+			"type": "image",
+			"name": "shape365_png"
+		},
+		{
+			"url": "textures/shape367.png",
+			"type": "image",
+			"name": "shape367_png"
+		},
+		{
+			"url": "textures/shape368.png",
+			"type": "image",
+			"name": "shape368_png"
+		},
+		{
+			"url": "textures/shape37.png",
+			"type": "image",
+			"name": "shape37_png"
+		},
+		{
+			"url": "textures/shape371.png",
+			"type": "image",
+			"name": "shape371_png"
+		},
+		{
+			"url": "textures/shape373.png",
+			"type": "image",
+			"name": "shape373_png"
+		},
+		{
+			"url": "textures/shape375.png",
+			"type": "image",
+			"name": "shape375_png"
+		},
+		{
+			"url": "textures/shape376.png",
+			"type": "image",
+			"name": "shape376_png"
+		},
+		{
+			"url": "textures/shape378.png",
+			"type": "image",
+			"name": "shape378_png"
+		},
+		{
+			"url": "textures/shape381.png",
+			"type": "image",
+			"name": "shape381_png"
+		},
+		{
+			"url": "textures/shape382.png",
+			"type": "image",
+			"name": "shape382_png"
+		},
+		{
+			"url": "textures/shape56.png",
+			"type": "image",
+			"name": "shape56_png"
+		},
+		{
+			"url": "textures/shape59.png",
+			"type": "image",
+			"name": "shape59_png"
+		},
+		{
+			"url": "textures/shape61.png",
+			"type": "image",
+			"name": "shape61_png"
+		},
+		{
+			"url": "textures/shape63.png",
+			"type": "image",
+			"name": "shape63_png"
+		},
+		{
+			"url": "textures/shape73.png",
+			"type": "image",
+			"name": "shape73_png"
+		},
+		{
+			"url": "textures/shape76.png",
+			"type": "image",
+			"name": "shape76_png"
+		},
+		{
+			"url": "textures/shape78.png",
+			"type": "image",
+			"name": "shape78_png"
+		},
+		{
+			"url": "textures/shape83.png",
+			"type": "image",
+			"name": "shape83_png"
+		},
+		{
+			"url": "textures/shape85.png",
+			"type": "image",
+			"name": "shape85_png"
+		},
+		{
+			"url": "textures/shape86.png",
+			"type": "image",
+			"name": "shape86_png"
+		},
+		{
+			"url": "textures/shape88.png",
+			"type": "image",
+			"name": "shape88_png"
+		},
+		{
+			"url": "textures/shape89.png",
+			"type": "image",
+			"name": "shape89_png"
+		},
+		{
+			"url": "textures/shape9.png",
+			"type": "image",
+			"name": "shape9_png"
+		},
+		{
+			"url": "textures/shape90.png",
+			"type": "image",
+			"name": "shape90_png"
+		},
+		{
+			"url": "textures/shape92.png",
+			"type": "image",
+			"name": "shape92_png"
+		},
+		{
+			"url": "textures/top_title_background.png",
+			"type": "image",
+			"name": "top_title_background_png"
+		},
+		{
+			"name": "cake_png",
+			"type": "image",
+			"url": "textures/cake.png"
+		},
+		{
+			"name": "next_question_background_png",
+			"type": "image",
+			"url": "textures/next_question_background.png"
+		},
+		{
+			"name": "mouse_png",
+			"type": "image",
+			"url": "textures/mouse.png"
+		},
+		{
+			"name": "book_png",
+			"type": "image",
+			"url": "textures/book.png"
+		},
+		{
+			"name": "radio_png",
+			"type": "image",
+			"url": "textures/radio.png"
+		},
+		{
+			"name": "mushroom_and_mouse_png",
+			"type": "image",
+			"url": "textures/mushroom_and_mouse.png"
+		},
+		{
+			"name": "guidepost_png",
+			"type": "image",
+			"url": "textures/guidepost.png"
+		},
+		{
+			"name": "whiteboard_png",
+			"type": "image",
+			"url": "textures/whiteboard.png"
 		}
 	]
 }
