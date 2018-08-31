@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene12Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657f8c9adf" ></w:Config>
-	<e:Label text="Click on the kite and listen to the sound again." y="108.58" textColor="0xdf6f98" textAlign="center" size="70" left="0" right="0"/>
-	<e:Image source="speaker_png" x="1691.7" y="94.58"/>
-	<e:Image source="kite_png" x="654.76" y="23.36" rotation="19.9"/>
-	<e:Button label="Next" x="1573.15" y="880.79" anchorOffsetX="0" width="232.42" anchorOffsetY="0" height="109.33"/>
+	<e:Label text="Click on the kite and listen to the &quot;K&quot; sound again." y="108.58" textColor="0xdf6f98" textAlign="center" size="70" left="0" right="0"/>
+
+	<e:Image id="voiceImage" source="kite_png" x="654.76" y="23.36" rotation="19.9"/>
+	<e:Button id="nextButton" label="Next" x="1573.15" y="880.79" anchorOffsetX="0" width="232.42" anchorOffsetY="0" height="109.33"/>
 </e:Skin>

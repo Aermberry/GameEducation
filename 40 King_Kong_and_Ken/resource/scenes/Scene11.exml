@@ -2,6 +2,6 @@
 <e:Skin class="Scene11Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657f7c429b" ></w:Config>
 	<e:Label text="Ken asks King Kong\n To give a hand.\nKing Kong begs Ken\n To shake his hand." y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xc26ff7"/>
-	<e:Button label="Next" x="1476" y="895.88" anchorOffsetX="0" width="200.61" anchorOffsetY="0" height="91.15"/>
+	<e:Button id="nextButton" label="Next" x="1476" y="895.88" anchorOffsetX="0" width="200.61" anchorOffsetY="0" height="91.15" visible="false"/>
 	<e:Label text="Click the words in red and listen." y="87.64" textColor="0x509780" size="92" left="0" right="0" textAlign="center"/>
 </e:Skin>

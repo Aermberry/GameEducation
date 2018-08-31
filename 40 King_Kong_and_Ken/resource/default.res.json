@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,band_json,band_png,01a2_mp3,01a_mp3,01b2_mp3,01b_mp3,022_mp3,02_mp3,032_mp3,03_mp3,042_mp3,04_mp3,052_mp3,05_mp3,062_mp3,06_mp3,072_mp3,07_mp3,08_dong_mp3,08_dong2_mp3,08_gong2_mp3,08_gong_mp3,08_kong2_mp3,08_kong_mp3,08_pong2_mp3,08_pong_mp3,08_startgame1a2_mp3,08_startgame1a_mp3,08_startgame1b2_mp3,08_startgame1b_mp3,08_strong2_mp3,08_strong_mp3,09_click_on_tree2_mp3,09_click_on_tree_mp3,09_startgame2_mp3,09_startgame22_mp3,10_startgame_a_mp3,10_startgame_a2_mp3,10_startgame_b_mp3,10_startgame_b2_mp3,10_wrong_mp3,10_wrong2_mp3,11startgame42_mp3,11startgame4_mp3,27a2_mp3,27a_mp3,27b_mp3,27b2_mp3,282_mp3,28_mp3,292_mp3,29_mp3,302_mp3,30_mp3,31_mp3,312_mp3,322_mp3,32_mp3,33_mp3,332_mp3,34_mp3,342_mp3,352_mp3,35_mp3,36_mp3,362_mp3,372_mp3,37_mp3,38_mp3,382_mp3,39_mp3,392_mp3,40_mp3,402_mp3,41_mp3,412_mp3,422_mp3,42_mp3,432_mp3,43_mp3,442_mp3,44_mp3,452_mp3,45_mp3,462_mp3,46_mp3,472_mp3,47_mp3,482_mp3,48_mp3,492_mp3,49_mp3,502_mp3,50_mp3,51_mp3,512_mp3,522_mp3,52_mp3,532_mp3,53_mp3,542_mp3,54_mp3,55_mp3,552_mp3,Scene01_mp3,Scene012_mp3,Scene05_mp3,Scene052_mp3,01a3_mp3,01b3_mp3,023_mp3,033_mp3,043_mp3,053_mp3,063_mp3,073_mp3,08_dong3_mp3,08_gong3_mp3,08_kong3_mp3,08_pong3_mp3,08_startgame1a3_mp3,08_startgame1b3_mp3,08_strong3_mp3,09_click_on_tree3_mp3,09_startgame23_mp3,10_startgame_a3_mp3,10_startgame_b3_mp3,10_wrong3_mp3,11startgame43_mp3,27a3_mp3,27b3_mp3,283_mp3,293_mp3,303_mp3,313_mp3,323_mp3,333_mp3,343_mp3,353_mp3,363_mp3,373_mp3,383_mp3,393_mp3,403_mp3,413_mp3,423_mp3,433_mp3,443_mp3,453_mp3,463_mp3,473_mp3,483_mp3,493_mp3,503_mp3,513_mp3,523_mp3,533_mp3,543_mp3,553_mp3,Scene013_mp3,Scene053_mp3,01a4_mp3,01b4_mp3,024_mp3,034_mp3,044_mp3,054_mp3,064_mp3,074_mp3,08_dong4_mp3,08_gong4_mp3,08_kong4_mp3,08_pong4_mp3,08_startgame1a4_mp3,08_startgame1b4_mp3,08_strong4_mp3,09_click_on_tree4_mp3,09_startgame24_mp3,10_startgame_a4_mp3,10_startgame_b4_mp3,10_wrong4_mp3,11startgame44_mp3,27a4_mp3,27b4_mp3,284_mp3,294_mp3,304_mp3,314_mp3,324_mp3,334_mp3,344_mp3,354_mp3,364_mp3,374_mp3,384_mp3,394_mp3,404_mp3,414_mp3,424_mp3,434_mp3,444_mp3,454_mp3,464_mp3,474_mp3,484_mp3,494_mp3,504_mp3,514_mp3,524_mp3,534_mp3,544_mp3,554_mp3,Scene014_mp3,Scene054_mp3,tree_png,filltree_png,speaker_png,speaker2_png,kite_png,kite2_png,girl_png,king_png,ring_png,background_png,minkite_png,Maxking_png,boil_png,chicken_png,pen_png,ten_png,MaxPen_png,duck_png,man_png,wood_png,dog_png,speaking_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,HittheGong_json,HittheGong_png,KenWritesSong_json,KenWritesSong_png,Kingkong_json,Kingkong_png,Meets_json,Meets_png,band_json,band_png,01a2_mp3,01a_mp3,01b2_mp3,01b_mp3,022_mp3,02_mp3,032_mp3,03_mp3,042_mp3,04_mp3,052_mp3,05_mp3,062_mp3,06_mp3,072_mp3,07_mp3,08_dong_mp3,08_dong2_mp3,08_gong2_mp3,08_gong_mp3,08_kong2_mp3,08_kong_mp3,08_pong2_mp3,08_pong_mp3,08_startgame1a2_mp3,08_startgame1a_mp3,08_startgame1b2_mp3,08_startgame1b_mp3,08_strong2_mp3,08_strong_mp3,09_click_on_tree2_mp3,09_click_on_tree_mp3,09_startgame2_mp3,09_startgame22_mp3,10_startgame_a_mp3,10_startgame_a2_mp3,10_startgame_b_mp3,10_startgame_b2_mp3,10_wrong_mp3,10_wrong2_mp3,11startgame42_mp3,11startgame4_mp3,27a2_mp3,27a_mp3,27b_mp3,27b2_mp3,282_mp3,28_mp3,292_mp3,29_mp3,302_mp3,30_mp3,31_mp3,312_mp3,322_mp3,32_mp3,33_mp3,332_mp3,34_mp3,342_mp3,352_mp3,35_mp3,36_mp3,362_mp3,372_mp3,37_mp3,38_mp3,382_mp3,39_mp3,392_mp3,40_mp3,402_mp3,41_mp3,412_mp3,422_mp3,42_mp3,432_mp3,43_mp3,442_mp3,44_mp3,452_mp3,45_mp3,462_mp3,46_mp3,472_mp3,47_mp3,482_mp3,48_mp3,492_mp3,49_mp3,502_mp3,50_mp3,51_mp3,512_mp3,522_mp3,52_mp3,532_mp3,53_mp3,542_mp3,54_mp3,55_mp3,552_mp3,Scene01_mp3,Scene012_mp3,Scene05_mp3,Scene052_mp3,01a3_mp3,01b3_mp3,023_mp3,033_mp3,043_mp3,053_mp3,063_mp3,073_mp3,08_dong3_mp3,08_gong3_mp3,08_kong3_mp3,08_pong3_mp3,08_startgame1a3_mp3,08_startgame1b3_mp3,08_strong3_mp3,09_click_on_tree3_mp3,09_startgame23_mp3,10_startgame_a3_mp3,10_startgame_b3_mp3,10_wrong3_mp3,11startgame43_mp3,27a3_mp3,27b3_mp3,283_mp3,293_mp3,303_mp3,313_mp3,323_mp3,333_mp3,343_mp3,353_mp3,363_mp3,373_mp3,383_mp3,393_mp3,403_mp3,413_mp3,423_mp3,433_mp3,443_mp3,453_mp3,463_mp3,473_mp3,483_mp3,493_mp3,503_mp3,513_mp3,523_mp3,533_mp3,543_mp3,553_mp3,Scene013_mp3,Scene053_mp3,01a4_mp3,01b4_mp3,024_mp3,034_mp3,044_mp3,054_mp3,064_mp3,074_mp3,08_dong4_mp3,08_gong4_mp3,08_kong4_mp3,08_pong4_mp3,08_startgame1a4_mp3,08_startgame1b4_mp3,08_strong4_mp3,09_click_on_tree4_mp3,09_startgame24_mp3,10_startgame_a4_mp3,10_startgame_b4_mp3,10_wrong4_mp3,11startgame44_mp3,27a4_mp3,27b4_mp3,284_mp3,294_mp3,304_mp3,314_mp3,324_mp3,334_mp3,344_mp3,354_mp3,364_mp3,374_mp3,384_mp3,394_mp3,404_mp3,414_mp3,424_mp3,434_mp3,444_mp3,454_mp3,464_mp3,474_mp3,484_mp3,494_mp3,504_mp3,514_mp3,524_mp3,534_mp3,544_mp3,554_mp3,Scene014_mp3,Scene054_mp3,tree_png,filltree_png,speaker_png,speaker2_png,kite_png,kite2_png,girl_png,king_png,ring_png,background_png,minkite_png,Maxking_png,boil_png,chicken_png,pen_png,ten_png,MaxPen_png,duck_png,man_png,wood_png,dog_png,speaking_png,MaxPen2_png,Maxking2_png,background2_png,boil2_png,chicken2_png,dog2_png,duck2_png,filltree2_png,girl2_png,king2_png,kite3_png,man2_png,minkite2_png,pen2_png,ring2_png,speaker3_png,speaking2_png,ten2_png,tree2_png,wood2_png",
 			"name": "preload"
 		}
 	],
@@ -1355,6 +1355,106 @@
 			"name": "speaking_png",
 			"type": "image",
 			"url": "textures/speaking.png"
+		},
+		{
+			"name": "MaxPen2_png",
+			"type": "image",
+			"url": "textures/MaxPen.png"
+		},
+		{
+			"name": "Maxking2_png",
+			"type": "image",
+			"url": "textures/Maxking.png"
+		},
+		{
+			"name": "background2_png",
+			"type": "image",
+			"url": "textures/background.png"
+		},
+		{
+			"name": "boil2_png",
+			"type": "image",
+			"url": "textures/boil.png"
+		},
+		{
+			"name": "chicken2_png",
+			"type": "image",
+			"url": "textures/chicken.png"
+		},
+		{
+			"name": "dog2_png",
+			"type": "image",
+			"url": "textures/dog.png"
+		},
+		{
+			"name": "duck2_png",
+			"type": "image",
+			"url": "textures/duck.png"
+		},
+		{
+			"name": "filltree2_png",
+			"type": "image",
+			"url": "textures/filltree.png"
+		},
+		{
+			"name": "girl2_png",
+			"type": "image",
+			"url": "textures/girl.png"
+		},
+		{
+			"name": "king2_png",
+			"type": "image",
+			"url": "textures/king.png"
+		},
+		{
+			"name": "kite3_png",
+			"type": "image",
+			"url": "textures/kite.png"
+		},
+		{
+			"name": "man2_png",
+			"type": "image",
+			"url": "textures/man.png"
+		},
+		{
+			"name": "minkite2_png",
+			"type": "image",
+			"url": "textures/minkite.png"
+		},
+		{
+			"name": "pen2_png",
+			"type": "image",
+			"url": "textures/pen.png"
+		},
+		{
+			"name": "ring2_png",
+			"type": "image",
+			"url": "textures/ring.png"
+		},
+		{
+			"name": "speaker3_png",
+			"type": "image",
+			"url": "textures/speaker.png"
+		},
+		{
+			"name": "speaking2_png",
+			"type": "image",
+			"url": "textures/speaking.png"
+		},
+		{
+			"name": "ten2_png",
+			"type": "image",
+			"url": "textures/ten.png"
+		},
+		{
+			"name": "tree2_png",
+			"type": "image",
+			"url": "textures/tree.png"
+		},
+		{
+			"name": "wood2_png",
+			"type": "image",
+			"url": "textures/wood.png"
 		}
 	]
 }
