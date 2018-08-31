@@ -78,7 +78,7 @@
 		</e:layout>
 	</e:Group>
 	
-	<e:Button id="nextButton" label="Next" x="1476" y="895.88" anchorOffsetX="0" width="200.61" anchorOffsetY="0" height="91.15"  visible="false"/>
+	<e:Button id="nextButton" label="Next" x="1476" y="895.88" anchorOffsetX="0" width="200.61" anchorOffsetY="0" height="91.15" />
 	
 	<e:Label text="Click the words in red and listen." y="87.64" textColor="0x509780" size="92" left="0" right="0"
 	         textAlign="center"  visible="false"/>

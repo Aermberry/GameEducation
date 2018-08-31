@@ -5,7 +5,10 @@ class Base{
     
     public static async onAsyncPlayBlackgroundMusic(voice:string,btn?:eui.Button):Promise<void>{
         await lzlib.SoundUtility.playSound(voice);
-        btn.visible=true;
+        if(btn){
+            btn.visible=true;
+        }
+        
     }
 
     public  static onClickVoice(btn:eui.Image,voice:string,btn2?:eui.Button|eui.Image):void{

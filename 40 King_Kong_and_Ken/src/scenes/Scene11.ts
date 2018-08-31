@@ -21,7 +21,7 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 		// this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextScene, this);
 		Base.onAsyncPlayBlackgroundMusic('27a_mp3');
 		this.display.play(0);
-		Base.onClickNextScene(this.nextButton,new Scene12())
+		// Base.onClickNextScene(this.nextButton,new Scene12())
 		// this.nextButton.visible=true;
 	}
 
@@ -33,10 +33,6 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 		// var shap:egret.Shape
 		await lzlib.ThreadUtility.sleep(2000);
 		 element.textColor= 0xd92e20;
-		 await lzlib.ThreadUtility.sleep(2000);
-		 await lzlib.ThreadUtility.sleep(2000);
-		 await lzlib.ThreadUtility.sleep(2000);
-		 await lzlib.ThreadUtility.sleep(2000);
 	}
 
 	// private onPlayBlackgroundMusic():void{
