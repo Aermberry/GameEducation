@@ -144,7 +144,7 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 
 	public showPartBorder(string: string): void
 	{
-		this.contentComponent.getAllRectHandle(string);
+		this.contentComponent.RectHandle(string);
 	}
 	
 }

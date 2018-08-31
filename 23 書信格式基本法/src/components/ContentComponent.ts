@@ -191,7 +191,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		this.currentRect = this.dateRect;
 	}
 
-	public getAllRectHandle(text: string): void
+	public RectHandle(text: string): void
 	{
 		console.log(text);
 		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝頌語':this.showBlessRect};

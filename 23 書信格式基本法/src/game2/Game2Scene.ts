@@ -136,7 +136,7 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 
 	public showPartBorder(string: string): void
 	{
-		this.contentComponent.getAllRectHandle(string);
+		this.contentComponent.RectHandle(string);
 		
 	}
 
