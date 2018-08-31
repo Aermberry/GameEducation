@@ -1,6 +1,6 @@
 class Scene01 extends eui.Component implements eui.UIComponent {
 	private nextButton: eui.Button;
-	private diplayTweenGroup:egret.tween.TweenGroup;
+	private diplayTweenGroup: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -13,9 +13,10 @@ class Scene01 extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextButtonClick, this);
 		this.playBackgroundMusic();
 		this.diplayTweenGroup.play(0);
+		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextButtonClick, this);
+		
 	}
 
 	private async playBackgroundMusic(): Promise<void> {

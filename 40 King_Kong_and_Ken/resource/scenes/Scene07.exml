@@ -1,13 +1,9 @@
 
 <e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="1655b2a4d69"  x="-606" scaleX="1" scaleY="1"></w:Config>
-	<e:Label text="'Ping-Pong，Ping-Pong!'" size="82" textAlign="center" left="0" right="0" y="250.73" lineSpacing="80" textColor="0x5d20f5"/>
-	<e:Label text="King Kong is strong." size="82" textAlign="center" left="0" right="0" y="250.73" lineSpacing="80" textColor="0x5D20F5"/>
-	<e:Label text="Ding-Dong,Ding-Dong.'" y="491" textColor="0x08dd50" size="86" textAlign="center" left="0" right="0"/>
-	<e:Label text="Kong hits the gong." size="82" textAlign="center" left="0" right="0" y="250.73" lineSpacing="80" textColor="0x5D20F5"/>
+	<e:Label text="'Ping-Pong，Ping-Pong!'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509"/>
+	<e:Label text="King Kong is strong." size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593"/>
+	<e:Label text="Ding-Dong,Ding-Dong.'" y="524.94" textColor="0x08dd50" size="86" textAlign="center" x="517"/>
+	<e:Label text="Kong hits the gong." size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620"/>
 	<e:Button id="textButton" label="Next" x="1476" y="902" anchorOffsetX="0" width="249.1" anchorOffsetY="0" height="109.33"/>
-	<e:Label text="'Ping-Pong，Ping-Pong!'
-	King Kong is strong.
-	Ding-Dong,Ding-Dong.'
-	Kong hits the gong." size="82" textAlign="center" left="0" right="0" y="250.73" lineSpacing="80" textColor="0x5D20F5"/>
 </e:Skin>

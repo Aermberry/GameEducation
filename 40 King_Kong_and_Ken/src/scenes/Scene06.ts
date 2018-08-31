@@ -11,17 +11,17 @@ class Scene06 extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.nextBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextBtnClick, this);
 		this.playBackgroundMusic();
+		this.nextBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextBtnClick, this);
 	}
 
-	private async playBackgroundMusic(): Promise<void> {
-		await lzlib.SoundUtility.playSound('07_mp3');
-		this.nextBtn.visible = true;
+	 private async playBackgroundMusic(): Promise<void> {
+		 await lzlib.SoundUtility.playSound('07_mp3');
+		 this.nextBtn.visible = true; 
 	}
 
 	private onNextBtnClick(): void {
-		Main.instance.gotoScene(new Scene00());
+		Main.instance.gotoScene(new Scene07());
 	}
 
 }
