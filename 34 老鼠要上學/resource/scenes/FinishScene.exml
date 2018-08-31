@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="1658f678f8d" ></w:Config>
+	<e:Group height="125" y="0" left="0" right="0">
+		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	<e:Group height="1315" y="125" left="0" right="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bluesky_png"/>
+		<e:Group width="1916" height="483" x="0" y="251" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image width="116" x="556" source="rope_png" height="275" y="118"/>
+			<e:Image width="608" anchorOffsetX="0" anchorOffsetY="0" source="mouse_and_plane_png" top="0" bottom="0"/>
+			<e:Image width="1213" height="396" x="624" y="40" anchorOffsetX="0" anchorOffsetY="0" source="flag_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

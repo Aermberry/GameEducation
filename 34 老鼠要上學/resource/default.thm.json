@@ -16,10 +16,13 @@
 		"StartScene": "resource/scenes/StartScene.exml",
 		"ListenScene": "resource/scenes/ListenScene.exml",
 		"TopTitleComponent": "resource/components/TopTitleComponent.exml",
-		"QuestionScene": "resource/scenes/QuestionScene.exml"
+		"QuestionScene": "resource/scenes/QuestionScene.exml",
+		"OptionComponent": "resource/components/OptionComponent.exml",
+		"FinishScene": "resource/scenes/FinishScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/OptionComponent.exml",
 		"resource/components/TopTitleComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
@@ -34,6 +37,7 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/FinishScene.exml",
 		"resource/scenes/ListenScene.exml",
 		"resource/scenes/QuestionScene.exml",
 		"resource/scenes/StartScene.exml"

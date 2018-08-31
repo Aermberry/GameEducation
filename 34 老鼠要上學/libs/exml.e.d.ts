@@ -1,3 +1,5 @@
+declare class OptionComponentSkin extends eui.Skin{
+}
 declare class TopTitleComponentSkin extends eui.Skin{
 }
 declare module skins{
@@ -51,6 +53,8 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
+}
+declare class FinishSceneSkin extends eui.Skin{
 }
 declare class ListenSceneSkin extends eui.Skin{
 }

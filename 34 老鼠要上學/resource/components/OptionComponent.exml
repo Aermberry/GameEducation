@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OptionComponentSkin" width="1180" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1658f549e88" ></w:Config>
+	<e:Image source="option_background_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="textLabel" text="Label" anchorOffsetX="0" left="59" right="0" top="0" bottom="0" textColor="0x0d31f5" size="62" verticalAlign="middle"/>
+</e:Skin>

@@ -7,6 +7,19 @@
 	<e:Group width="1920" height="1315" x="0" y="125" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
 		<e:Image width="1816" height="1500" x="76" y="47" top="26" left="58" source="whiteboard_png"/>
-		<e:Group width="1652" height="896" x="144" y="99" top="105"/>
+		<e:Image width="382" height="206" x="1272" y="232" right="197" source="horn_png"/>
+		<e:Group width="1652" height="896" x="144" y="99" top="105">
+			<e:Label text="1 . 小 老 鼠 說 他 不 願 意 上 學 的 原 因 是 " x="0" y="0" textColor="0x000000" size="78"/>
+			<e:Group width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 年 紀 太 小 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 怕 見 公 雞 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 學 校 在 很 遠 的 地 方 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 媽 媽 時 常 催 他 上 學 。"/>
+				<e:layout>
+					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Image width="464" height="440" x="1672" y="1187" right="32" bottom="5" source="mouse_png"/>
 	</e:Group>
 </e:Skin>
