@@ -2,7 +2,7 @@
 <e:Skin class="Scene22Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1658360075f" ></w:Config>
 	<e:Image source="background_png" />
-	<e:Label text="Click on the duck and listen again!" y="126.79" textColor="0xec333d" size="80" horizontalCenter="0.5"/>
+	<e:Label text="Click on the duck and listen again!" y="126.79" textColor="0xec333d" size="80" horizontalCenter="0.5" fontFamily="Comic Sans MS" anchorOffsetY="0" height="110.3"/>
 	<e:Image id="duckImage" source="duck_png" x="750" y="303.72"/>
 	<e:Button id="BackButton" label="Back" x="885.27" y="932.37" anchorOffsetX="0" width="253.64" anchorOffsetY="0" height="103.27"/>
 </e:Skin>

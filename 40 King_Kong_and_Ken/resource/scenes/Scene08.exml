@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene08Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  >
 	<w:Config id="165796077df" ></w:Config>
-	<e:Label text="Click on the tree and listen\nto the 'ong' sound again" x="82" y="322.12" textAlign="center" size="88" lineSpacing="25" textColor="0xdf6f98"/>
+	<e:Label text="Click on the tree and listen\nto the 'ong' sound again" x="82" y="322.12" textAlign="center" size="88" lineSpacing="25" textColor="0xdf6f98" fontFamily="Comic Sans MS" anchorOffsetY="0" height="255.55"/>
 	<e:Image source="tree_png" x="1230" y="136"/>
 	<e:Button id="textButton" label="Next" x="468.39" y="614.97" anchorOffsetX="0" width="211.21" anchorOffsetY="0" height="100.24" visible="false"/>
 	<e:Image id="speakerImage" source="speaker_png" x="1476" y="689"/>

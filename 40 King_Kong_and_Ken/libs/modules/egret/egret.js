@@ -2387,7 +2387,7 @@ var egret;
          */
         DisplayObject.prototype.$hitTest = function (stageX, stageY) {
             var self = this;
-            if (!self.$renderNode || !self.$visible || self.$scaleX == 0 || self.$scaleY == 0) {
+            if ((!egret.nativeRender && !self.$renderNode) || !self.$visible || self.$scaleX == 0 || self.$scaleY == 0) {
                 return null;
             }
             var m = self.$getInvertedConcatenatedMatrix();
@@ -4417,6 +4417,9 @@ var egret;
             }
             self.$children.splice(index, 0, child);
             child.$setParent(self);
+            if (egret.nativeRender) {
+                self.$nativeDisplayObject.addChildAt(child.$nativeDisplayObject.id, index);
+            }
             var stage = self.$stage;
             if (stage) {
                 child.$onAddToStage(stage, self.$nestLevel + 1);
@@ -4433,10 +4436,7 @@ var egret;
                     }
                 }
             }
-            if (egret.nativeRender) {
-                self.$nativeDisplayObject.addChildAt(child.$nativeDisplayObject.id, index);
-            }
-            else {
+            if (!egret.nativeRender) {
                 if (child.$maskedObject) {
                     child.$maskedObject.$updateRenderMode();
                 }
@@ -17044,7 +17044,7 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
-        Capabilities.engineVersion = "5.2.7";
+        Capabilities.engineVersion = "5.2.8";
         /***
          * current render mode.
          * @type {string}

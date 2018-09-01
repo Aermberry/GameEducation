@@ -47,10 +47,10 @@
 	<w:Config id="16545ec3d8f" ></w:Config>
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Group anchorOffsetX="0" left="991" right="0" top="0" bottom="0" x="991.0000000000001" y="0" scaleX="1" scaleY="1">
-			<e:Label id="textLabel00" text="Ken needs King Kong" x="0" y="0" textColor="0x5d20f5" size="68" anchorOffsetY="0" height="193.34" verticalAlign="bottom"/>
-			<e:Label id="textLabel01" text="To form his band." x="75" y="226.04" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="147.89" verticalAlign="bottom"/>
-			<e:Label id="textLabel02" text="King Kong wants Ken" x="0" y="373.93" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
-			<e:Label id="textLabel03" text="For the King's land." x="163" y="574" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="bottom"/>
+			<e:Label id="textLabel00" text="Ken needs King Kong" x="0" y="0" textColor="0x5d20f5" size="68" anchorOffsetY="0" height="193.34" verticalAlign="middle" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel01" text="To form his band." x="75" y="226.04" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="147.89" verticalAlign="middle" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel02" text="King Kong wants Ken" x="0" y="373.93" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="middle" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel03" text="For the King's land." x="163" y="574" textColor="0x5D20F5" size="68" anchorOffsetY="0" height="166.07" verticalAlign="middle" fontFamily="Comic Sans MS"/>
 			<e:Button id="nextBtn" label="Next" x="577.5" y="918" height="120.54" width="188.7" visible="false"/>
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="54" y="256.50000000000006" anchorOffsetX="0" anchorOffsetY="0" dataSet="Kingkong_json" texture="Kingkong_png" movieClipName="Kingkong" scaleX="0.5" scaleY="0.5"/>

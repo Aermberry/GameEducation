@@ -74,6 +74,9 @@ var lzlib;
             if (dragObject instanceof eui.Image) {
                 return this.cloneImage(dragObject);
             }
+            if (dragObject instanceof eui.Label) {
+                return this.cloneLabel(dragObject);
+            }
             if (dragObject['clone']) {
                 return dragObject['clone']();
             }
@@ -86,6 +89,19 @@ var lzlib;
             clone.width = dragObject.width * 1.2;
             clone.height = dragObject.height * 1.2;
             clone.source = dragObject.source;
+            clone.alpha = 0.8;
+            return clone;
+        };
+        Drag.prototype.cloneLabel = function (dragObject) {
+            var clone = new eui.Label();
+            clone.x = dragObject.x;
+            clone.y = dragObject.y;
+            clone.width = dragObject.width * 1.2;
+            clone.height = dragObject.height * 1.2;
+            clone.text = dragObject.text;
+            clone.textColor = dragObject.textColor;
+            clone.size = dragObject.size;
+            clone.fontFamily = dragObject.fontFamily;
             clone.alpha = 0.8;
             return clone;
         };
@@ -223,11 +239,16 @@ var lzlib;
     var SoundUtility = (function () {
         function SoundUtility() {
         }
-        SoundUtility.playSound = function (soundName) {
+        SoundUtility.playSound = function (soundName, stopCurrentSound) {
             var _this = this;
+            if (stopCurrentSound === void 0) { stopCurrentSound = true; }
             return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+                if (_this.currentSoundChannel && stopCurrentSound) {
+                    //默认先暂停当前的声音
+                    _this.currentSoundChannel.stop();
+                }
+                _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
+                _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
             });
         };
         return SoundUtility;

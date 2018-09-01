@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene17Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657ff8af93" ></w:Config>
-	<e:Label text="Which word begins witth?\nClick on the correct picture." x="82" y="82" size="80" lineSpacing="25" textColor="0xec3596"/>
+	<e:Label text="Which word begins witth?\nClick on the correct picture." x="82" y="82" size="80" lineSpacing="25" textColor="0xec3596" fontFamily="Comic Sans MS" anchorOffsetY="0" height="233.48"/>
 	<e:Image id="optionImage00" source="pen_png" x="164" y="416.36"/>
 	<e:Image id="optionImage01" source="chicken_png" x="763.5" y="381.36"/>
 	<e:Image id="optionImage02" source="ten_png" x="1394" y="417.36"/>

@@ -30,6 +30,7 @@ declare namespace lzlib {
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
         private cloneImage(dragObject);
+        private cloneLabel(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -81,7 +82,8 @@ declare namespace egret {
 }
 declare namespace lzlib {
     class SoundUtility {
-        static playSound(soundName: string): Promise<void>;
+        static currentSoundChannel: egret.SoundChannel;
+        static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
     }
 }
 interface String {

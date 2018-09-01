@@ -49,30 +49,30 @@
 	<w:Config id="1657f7c429b"></w:Config>
 	<e:Group id="group00" left="0" right="0" y="224">
 		<e:Label id="kenLabel" text="Ken" y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0"
-		         textColor="0xc26ff7" />
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" height="105"/>
 		<e:Label text="asks" y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0"
-		         textColor="0xc26ff7" />
-		<e:Label id="KingLabel" text="King" y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0"
-		         textColor="0xc26ff7" />
-		<e:Label id="KongLabel" text="Kong " y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0"
-		         textColor="0xc26ff7" />
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" height="105"/>
+		<e:Label id="KingLabel" text="King" y="252.06" size="80" lineSpacing="80" textAlign="center" left="944" right="820"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="105"/>
+		<e:Label id="KongLabel" text="Kong " y="252.06" size="80" lineSpacing="80" textAlign="center" left="1125" right="595"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="105"/>
 		<e:layout>
 			<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
 		</e:layout>
 	</e:Group>
 	<e:Group id="group01" left="0" right="0" y="376">
 	<e:Label text="To give a hand." y="392.06" size="80"
-	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" />
+	         lineSpacing="80" textAlign="center" left="684" right="683" textColor="0xC26FF7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="101.21"/>
 		<e:layout>
 		<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
 		</e:layout>
 	</e:Group>
 	<e:Group id="group02" left="0" right="0" y="548">
 	<e:Label id="KingLabel0" text="King" y="528.06" size="80"
-	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" />
-		<e:Label text="Kong" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"/>
-		<e:Label text="begs" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"/>
-		<e:Label text="Ken" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"/>
+	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"  fontFamily="Comic Sans MS" height="105"/>
+		<e:Label text="Kong" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105"/>
+		<e:Label text="begs" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105"/>
+		<e:Label text="Ken" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105"/>
 		<e:layout>
 		<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
 		</e:layout>
@@ -83,5 +83,5 @@
 	<e:Label text="Click the words in red and listen." y="87.64" textColor="0x509780" size="92" left="0" right="0"
 	         textAlign="center"  visible="false"/>
 	<e:Label id="group03" text="To shake his hand." y="704.06" size="80"
-	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" />
+	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="98.18"/>
 </e:Skin>

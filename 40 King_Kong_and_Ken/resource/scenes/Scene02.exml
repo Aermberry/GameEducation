@@ -50,11 +50,11 @@
 
 
 	<e:Group left="0" right="0" top="0" bottom="0">
-		<e:Group width="942.42" height="751.52" x="972.2500000000001" y="3.45" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
-			<e:Label id="textLabel00" text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80"/>
-			<e:Label id="textLabel01" text="He writes a song." x="88.06" y="289.55" textColor="0x6042F5" size="80"/>
-			<e:Label id="textLabel02" text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80"/>
-			<e:Label id="textLabel03" text="He meets King Kong." x="82.06" y="652.55" textColor="0x6042F5" size="80"/>
+		<e:Group width="942.42" height="769.7" x="972.2500000000001" y="3.45" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:Label id="textLabel00" text="Ken hears the gong" x="6.06" y="125.55" textColor="0x6042f5" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="101.21"/>
+			<e:Label id="textLabel01" text="He writes a song." x="88.06" y="289.55" textColor="0x6042F5" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="110.3"/>
+			<e:Label id="textLabel02" text="And not for long," x="6.06" y="466.55" textColor="0x6042F5" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="107.27"/>
+			<e:Label id="textLabel03" text="He meets King Kong." x="82.06" y="652.55" textColor="0x6042F5" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="119.39"/>
 		</e:Group>
 		<ns1:MovieClipPlayer width="384" height="307" x="92.4" y="41.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="KenWritesSong_json" texture="KenWritesSong_png" movieClipName="KenWritesSong" scaleX="0.4" scaleY="0.4"/>
 		<ns1:MovieClipPlayer width="384" height="307" x="292.76" y="533.2" anchorOffsetX="0" anchorOffsetY="0" dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.4" scaleY="0.4"/>
