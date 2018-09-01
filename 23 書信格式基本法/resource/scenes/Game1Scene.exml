@@ -2,7 +2,7 @@
 <e:Skin class="Game1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="165796e00c3" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-	<e:Label text="請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格" size="80" textColor="0xf70612" y="38" horizontalCenter="-0.5" fontFamily="times"/>
+	<e:Label text="請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格" size="80" textColor="0xf70612" y="38" horizontalCenter="-0.5" fontFamily="華康楷書體"/>
 	<e:Group width="1570" height="1306" x="26" y="125">
 		<e:Image left="0" right="0" top="0" bottom="0" source="paper_png"/>
 		<ns1:ContentComponent id="contentComponent" width="1388" height="1008" x="119" y="69" anchorOffsetX="0" anchorOffsetY="0"/>

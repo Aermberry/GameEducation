@@ -16,8 +16,12 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.startLabel, true);
 		this.startAnimation.play(0);
 		this.startLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartLabelTap, this);
+		this.startLabel.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.startLabel.textColor = 0x71FBFD, this);
+		this.startLabel.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.startLabel.textColor = 0xfa3a99, this);
 	}
 
 	private onStartLabelTap()
