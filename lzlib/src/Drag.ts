@@ -72,6 +72,9 @@ namespace lzlib {
             if (dragObject instanceof eui.Image) {
                 return this.cloneImage(dragObject as eui.Image);
             }
+            if (dragObject instanceof eui.Label) {
+                return this.cloneLabel(dragObject as eui.Label);
+            }
             if (dragObject['clone']) {
                 return dragObject['clone']() as egret.DisplayObject;
             }
@@ -86,6 +89,21 @@ namespace lzlib {
             clone.width = dragObject.width * 1.2;
             clone.height = dragObject.height * 1.2;
             clone.source = dragObject.source;
+            clone.alpha = 0.8;
+            return clone;
+        }
+
+        private cloneLabel(dragObject: eui.Label): egret.DisplayObject
+        {
+            let clone = new eui.Label();
+            clone.x = dragObject.x;
+            clone.y = dragObject.y;
+            clone.width = dragObject.width * 1.2;
+            clone.height = dragObject.height * 1.2;
+            clone.text = dragObject.text;
+            clone.textColor = dragObject.textColor;
+            clone.size = dragObject.size;
+            clone.fontFamily = dragObject.fontFamily;
             clone.alpha = 0.8;
             return clone;
         }
