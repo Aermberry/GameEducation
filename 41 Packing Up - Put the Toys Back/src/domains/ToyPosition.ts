@@ -1,3 +1,7 @@
 enum ToyPosition {
-	top, under, inside, behide, near
-}
+	on = 'on',
+	under = 'under',
+	in = 'in',
+	behind = 'behind',
+	near = 'near'
+};

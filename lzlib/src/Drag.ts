@@ -108,12 +108,18 @@ namespace lzlib {
                 Drag.dragingObject.parent && Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
 
-            if (!Drag.isAccepted && !Drag.isCopy) {
-                //没有其他对象愿意接收你，就从哪里来回到哪里去。
-                Drag.dragingObject.x = Drag.originalX;
-                Drag.dragingObject.y = Drag.originalY;
-                if (Drag.originalParent != Drag.dragingObject.parent) {
-                    Drag.originalParent.addChild(Drag.dragingObject);
+            if (!Drag.isAccepted) {
+                //not one accept it, dispatch cancel event
+                Drag.dragingObject.dispatchEvent(
+                    new LzDragEvent(LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                    
+                if (!Drag.isCopy) {
+                    //没有其他对象愿意接收你，就从哪里来回到哪里去。
+                    Drag.dragingObject.x = Drag.originalX;
+                    Drag.dragingObject.y = Drag.originalY;
+                    if (Drag.originalParent != Drag.dragingObject.parent) {
+                        Drag.originalParent.addChild(Drag.dragingObject);
+                    }
                 }
             }
             Drag.reset();

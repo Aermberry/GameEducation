@@ -10,7 +10,7 @@ class GamePresenter {
 	public async loadView(view: GameView): Promise<void> {
 		this.view = view;
 		this.allToys = this.toyRepo.getAll()
-		//await this.view.playIntroductionAudio();
+		await this.view.playIntroductionAudio();
 		this.view.showToyImage();
 		this.view.showToyName();
 		await lzlib.ThreadUtility.sleep(500);
@@ -24,12 +24,14 @@ class GamePresenter {
 		return this.allToys[this.currentTopIndex];
 	}
 
-	public onDropCorrectly(): void {
+	public async onDropCorrectly(): Promise<void> {
 		this.currentTopIndex++;
 		if (this.currentTopIndex < this.allToys.length) {
 			this.view.putToyInDragPosition(this.currentToy.imageName);
 			this.view.currentToyName = this.currentToy.name;
+			this.view.playAudio(this.currentToy.audioName);
 		} else {
+			await lzlib.ThreadUtility.sleep(2000);
 			this.view.openStatusScene(true);
 		}
 	}

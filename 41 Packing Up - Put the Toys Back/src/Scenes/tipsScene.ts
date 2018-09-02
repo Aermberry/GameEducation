@@ -1,7 +1,14 @@
 class TipsScene extends eui.Component implements eui.UIComponent {
+	private tipsImage: eui.Image;
+	private helpLabel: eui.Label;
 	private backButton: eui.Button;
-	public constructor(position: ToyPosition) {
+	private position: ToyPosition;
+	private toyImage: eui.Image;
+
+	public constructor(position: ToyPosition, toyImage: eui.Image) {
 		super();
+		this.position = position;
+		this.toyImage = toyImage;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -11,14 +18,17 @@ class TipsScene extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.playTipAudio();
+		this.toyImage.visible = false;
+		this.showTip();
 		this.backButton.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+			this.toyImage.visible = true;
 			this.parent.removeChild(this);
 		}, this);
 	}
 
-	public async playTipAudio(): Promise<void> {
-		return lzlib.SoundUtility.playSound('02a_plant_mp3')
+	private showTip(): void {
+		this.tipsImage.source = this.position.toString() + '_png';
+		this.helpLabel.text = `The ball is ${this.position.toString()} the box.`
 	}
 
 }

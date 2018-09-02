@@ -2,11 +2,10 @@
 <e:Skin class="StartSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="16564b28bc4"></w:Config>
-	<e:Label
-	         text="Sara's room is untidy.Father tells her where to\nput the toys. Please help her by dragging the\n pictures to the right places."
+	<e:Label text="Sara's room is untidy.Father tells her where to\nput the toys. Please help her by dragging the\n pictures to the right places."
 	         y="64" textColor="0xaf0000" size="84" textAlign="left" horizontalCenter="24.5" anchorOffsetY="0"
-	         lineSpacing="25" />
-	<e:Image source="man_girl_png" x="614.5" y="498.97" anchorOffsetX="0" anchorOffsetY="0"
-	         />
-	<e:Button id="startButton" label="Start" x="1576" y="1308" anchorOffsetX="0" width="208" anchorOffsetY="0" height="88"  visible="false"/>
+	         lineSpacing="25" fontFamily="Comic Sans MS" />
+	<e:Image source="man_girl_png" x="614.5" y="498.97" anchorOffsetX="0" anchorOffsetY="0" />
+	<e:Button id="startButton" label="Start" x="1576" y="1308" anchorOffsetX="0" width="208" anchorOffsetY="0" height="88"
+	          visible="false" />
 </e:Skin>

@@ -4,18 +4,27 @@
 	<w:Declarations></w:Declarations>
 	<w:Config id="16564b2e611"></w:Config>
 	<e:Image source="room_png" x="38.5" y="50" scaleX="1" scaleY="1" />
-	<e:Button id="helpButton" label="Help" x="838.5" y="1257.64" anchorOffsetX="0" width="165" anchorOffsetY="0"
+	<e:Button id="helpButton" label="Help" x="838.5" y="1312.18" anchorOffsetX="0" width="165" anchorOffsetY="0"
 	          height="78" visible="false" />
-	<e:Label id="toyNameLabel" text="Plant" x="1053.7" y="1099.34" textColor="0xee0000" anchorOffsetX="0" anchorOffsetY="0"
-	         size="85" textAlign="center"  visible="false"/>
-	<e:Image id="toysImage" source="flower_png" x="865" y="1079" anchorOffsetX="0" anchorOffsetY="0"  visible="false"/>
-	<e:Group id="plantGroup" width="403.03" height="187.88" x="1354.85" y="239" anchorOffsetX="0" anchorOffsetY="0">
-		<e:Image id="plantImage" source="flower_png" x="27.480000000000018" y="39.450000000000045" anchorOffsetX="0"
-		         anchorOffsetY="0" scaleX="1" scaleY="1"  visible="false"/>
-	</e:Group>
-	<e:Image id="clockImage" source="clock2_png" x="511.73" y="509" visible="false"/>
-	<e:Image id="busImage" source="bus_png" x="1474.36" y="586" visible="false"/>
-	<e:Image id="bikeImage" source="bicycle2_png" x="343.23" y="355.88" visible="false"/>
-	<e:Image id="robotImage" source="robot_png" x="1003.27" y="725.76" visible="false"/>
-	<e:Image id="booksImage" source="books_png" x="960" y="130" visible="false"/>
+	<e:Label id="toyNameLabel" text="Plant" x="1114.27" y="1087.22" textColor="0xee0000" anchorOffsetX="0"
+	         anchorOffsetY="0" size="85" fontFamily="Comic Sans MS" height="139.55" visible="false" />
+	<e:Image id="toysImage" source="flower_png" x="865.5" y="1087.22" anchorOffsetX="0" anchorOffsetY="0" visible="false" />
+	<e:Image id="plantImage" source="flower_png" x="1382" y="278" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"
+	         visible="false" />
+	<e:Rect id="plantRect" fillAlpha="0" width="403.03" height="127.27" x="1354.85" y="299.61" anchorOffsetY="0" />
+	<e:Image id="clockImage" x="511.73" y="509" source="clock_png" visible="false" />
+	<e:Rect id="clockRect" fillAlpha="0" width="427.27" height="93.93" x="282.27" y="622.73" anchorOffsetX="0"
+	        anchorOffsetY="0" />
+	<e:Image id="busImage" source="bus_png" x="1474.36" y="586" visible="false" />
+	<e:Rect id="busRect" fillAlpha="0" width="515.15" height="127.27" x="1313.33" y="562.12" anchorOffsetX="0"
+	        anchorOffsetY="0" />
+	<e:Image id="bikeImage" x="79.47" y="133.56" source="bicycle_behind_desk_png" visible="false" />
+	<e:Rect id="bikeRect" fillAlpha="0" width="215.15" height="357.57" x="398" y="140.31" anchorOffsetX="0"
+	        anchorOffsetY="0" />
+	<e:Image id="robotImage" x="961.51" y="689.39" source="robot_in_box_png" visible="false" />
+	<e:Rect id="robotRect" fillAlpha="0" width="212.12" height="157.57" x="966.82" y="689.39" anchorOffsetX="0"
+	        anchorOffsetY="0" />
+	<e:Image id="booksImage" source="books_png" x="960" y="130" visible="false" />
+	<e:Rect id="booksRect" fillAlpha="0" width="536.36" height="121.21" x="663.79" y="130" anchorOffsetX="0"
+	        anchorOffsetY="0" />
 </e:Skin>
