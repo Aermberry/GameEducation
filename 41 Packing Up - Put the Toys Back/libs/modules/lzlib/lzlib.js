@@ -8,6 +8,9 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
+Math.randomMinMax = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
 Array.prototype.shuffle = function () {
     var input = this;
     for (var i = input.length - 1; i >= 0; i--) {
@@ -56,10 +59,10 @@ var lzlib;
         };
         Drag.prototype.onTouchBegin = function (e) {
             Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
+            var globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
+            Drag.dragingObject.x = globalPoint.x;
+            Drag.dragingObject.y = globalPoint.y;
             if (Drag.dragingObject.parent != null) {
-                var globalPoint = Drag.dragingObject.localToGlobal(Drag.dragingObject.x, Drag.dragingObject.y);
-                Drag.dragingObject.x = globalPoint.x;
-                Drag.dragingObject.y = globalPoint.y;
                 Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
             this.stage.addChild(Drag.dragingObject);
@@ -68,6 +71,15 @@ var lzlib;
             this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
         };
         Drag.prototype.cloneDragObject = function (dragObject) {
+            if (dragObject instanceof eui.Image) {
+                return this.cloneImage(dragObject);
+            }
+            if (dragObject['clone']) {
+                return dragObject['clone']();
+            }
+            throw new Error('not supported dragObject Type');
+        };
+        Drag.prototype.cloneImage = function (dragObject) {
             var clone = new eui.Image();
             clone.x = dragObject.x;
             clone.y = dragObject.y;
@@ -84,7 +96,7 @@ var lzlib;
             }
         };
         Drag.prototype.onTouchEnd = function (e) {
-            this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
+            this.stage && this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
             if (!Drag.isDraging) {
                 //不处于拖动状态，就不用继续运行了。
                 return;
@@ -212,9 +224,6 @@ var lzlib;
     lzlib.Drop = Drop;
     __reflect(Drop.prototype, "lzlib.Drop");
 })(lzlib || (lzlib = {}));
-Math.randomMinMax = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
 var egret;
 (function (egret) {
     egret.MovieClip.prototype.playAsync = function () {
@@ -225,6 +234,23 @@ var egret;
         });
     };
 })(egret || (egret = {}));
+var lzlib;
+(function (lzlib) {
+    var SoundUtility = (function () {
+        function SoundUtility() {
+        }
+        SoundUtility.playSound = function (soundName) {
+            var _this = this;
+            return new Promise(function (resolve, reject) {
+                RES.getRes(soundName).play(0, 1)
+                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+            });
+        };
+        return SoundUtility;
+    }());
+    lzlib.SoundUtility = SoundUtility;
+    __reflect(SoundUtility.prototype, "lzlib.SoundUtility");
+})(lzlib || (lzlib = {}));
 String.prototype.replaceAt = function (index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 };
@@ -260,24 +286,11 @@ var egret;
                 _this.play(0);
             });
         };
+        tween.TweenGroup.prototype.playLoopAsync = function () {
+            for (var key in this.items) {
+                this.items[key].props = { loop: true };
+            }
+            this.play(0);
+        };
     })(tween = egret.tween || (egret.tween = {}));
 })(egret || (egret = {}));
-var lzlib;
-(function (lzlib) {
-    var TweenGroupUtility = (function () {
-        function TweenGroupUtility() {
-        }
-        /**
-         * 循环播放动画
-         */
-        TweenGroupUtility.playAnimation = function (target) {
-            for (var key in target.items) {
-                target.items[key].props = { loop: true };
-            }
-            target.play(0);
-        };
-        return TweenGroupUtility;
-    }());
-    lzlib.TweenGroupUtility = TweenGroupUtility;
-    __reflect(TweenGroupUtility.prototype, "lzlib.TweenGroupUtility");
-})(lzlib || (lzlib = {}));
