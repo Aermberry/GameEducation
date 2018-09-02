@@ -37,7 +37,10 @@ declare namespace lzlib {
     class LzDragEvent extends egret.TouchEvent {
         static readonly DRAG_OVER: string;
         static readonly DRAG_OUT: string;
+        /** drop inside the target */
         static readonly DROP: string;
+        /** drop outside the target */
+        static readonly CANCEL: string;
         dragObject: egret.DisplayObject;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
     }
@@ -63,6 +66,7 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
+        private isDragDropObjectIntersets();
     }
 }
 interface Math {
