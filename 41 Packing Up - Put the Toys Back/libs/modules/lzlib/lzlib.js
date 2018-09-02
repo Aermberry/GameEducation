@@ -21,6 +21,12 @@ Array.prototype.shuffle = function () {
     }
     return input;
 };
+Array.prototype.all = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length == this.length;
+};
+Array.prototype.any = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length > 0;
+};
 var lzlib;
 (function (lzlib) {
     /**
@@ -74,6 +80,9 @@ var lzlib;
             if (dragObject instanceof eui.Image) {
                 return this.cloneImage(dragObject);
             }
+            if (dragObject instanceof eui.Label) {
+                return this.cloneLabel(dragObject);
+            }
             if (dragObject['clone']) {
                 return dragObject['clone']();
             }
@@ -86,6 +95,19 @@ var lzlib;
             clone.width = dragObject.width * 1.2;
             clone.height = dragObject.height * 1.2;
             clone.source = dragObject.source;
+            clone.alpha = 0.8;
+            return clone;
+        };
+        Drag.prototype.cloneLabel = function (dragObject) {
+            var clone = new eui.Label();
+            clone.x = dragObject.x;
+            clone.y = dragObject.y;
+            clone.width = dragObject.width * 1.2;
+            clone.height = dragObject.height * 1.2;
+            clone.text = dragObject.text;
+            clone.textColor = dragObject.textColor;
+            clone.size = dragObject.size;
+            clone.fontFamily = dragObject.fontFamily;
             clone.alpha = 0.8;
             return clone;
         };
@@ -164,6 +186,7 @@ var lzlib;
             var _this = _super.call(this, type, true, true, stageX, stageY, touchPointID) || this;
             _this.data = data;
             _this.dragObject = dragObject;
+            _this.originalPoint = new egret.Point(lzlib.Drag.originalX, lzlib.Drag.originalY);
             return _this;
         }
         LzDragEvent.DRAG_OVER = 'drag_enter';
@@ -239,11 +262,16 @@ var lzlib;
     var SoundUtility = (function () {
         function SoundUtility() {
         }
-        SoundUtility.playSound = function (soundName) {
+        SoundUtility.playSound = function (soundName, stopCurrentSound) {
             var _this = this;
+            if (stopCurrentSound === void 0) { stopCurrentSound = true; }
             return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+                if (_this.currentSoundChannel && stopCurrentSound) {
+                    //默认先暂停当前的声音
+                    _this.currentSoundChannel.stop();
+                }
+                _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
+                _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
             });
         };
         return SoundUtility;

@@ -2,7 +2,10 @@ interface Math {
     randomMinMax(min: number, max: number): number;
 }
 interface Array<T> {
+    /** 混洗 */
     shuffle(): void;
+    all(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
+    any(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
 }
 declare namespace lzlib {
     /**
@@ -18,8 +21,8 @@ declare namespace lzlib {
         static dataTransfer: any;
         static isCopy: boolean;
         static originalParent: egret.DisplayObjectContainer;
-        private static originalX;
-        private static originalY;
+        static originalX: number;
+        static originalY: number;
         private dragObject;
         private isCopy;
         private dataTransfer;
@@ -30,6 +33,7 @@ declare namespace lzlib {
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
         private cloneImage(dragObject);
+        private cloneLabel(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -46,6 +50,8 @@ declare namespace lzlib {
         /** drop outside the target */
         static readonly CANCEL: string;
         dragObject: egret.DisplayObject;
+        /** 该拖拉控件的原始local point */
+        originalPoint: egret.Point;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
     }
 }
@@ -85,7 +91,8 @@ declare namespace egret {
 }
 declare namespace lzlib {
     class SoundUtility {
-        static playSound(soundName: string): Promise<void>;
+        static currentSoundChannel: egret.SoundChannel;
+        static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
     }
 }
 interface String {
