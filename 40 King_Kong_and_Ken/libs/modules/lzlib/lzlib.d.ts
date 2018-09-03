@@ -2,7 +2,10 @@ interface Math {
     randomMinMax(min: number, max: number): number;
 }
 interface Array<T> {
+    /** 混洗 */
     shuffle(): void;
+    all(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
+    any(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
 }
 declare namespace lzlib {
     /**
@@ -18,8 +21,8 @@ declare namespace lzlib {
         static dataTransfer: any;
         static isCopy: boolean;
         static originalParent: egret.DisplayObjectContainer;
-        private static originalX;
-        private static originalY;
+        static originalX: number;
+        static originalY: number;
         private dragObject;
         private isCopy;
         private dataTransfer;
@@ -42,8 +45,13 @@ declare namespace lzlib {
     class LzDragEvent extends egret.TouchEvent {
         static readonly DRAG_OVER: string;
         static readonly DRAG_OUT: string;
+        /** drop inside the target */
         static readonly DROP: string;
+        /** drop outside the target */
+        static readonly CANCEL: string;
         dragObject: egret.DisplayObject;
+        /** 该拖拉控件的原始local point */
+        originalPoint: egret.Point;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
     }
 }
@@ -68,6 +76,7 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
+        private isDragDropObjectIntersets();
     }
 }
 declare namespace lzlib {

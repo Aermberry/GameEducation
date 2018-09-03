@@ -21,6 +21,12 @@ Array.prototype.shuffle = function () {
     }
     return input;
 };
+Array.prototype.all = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length == this.length;
+};
+Array.prototype.any = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length > 0;
+};
 var lzlib;
 (function (lzlib) {
     /**
@@ -120,12 +126,16 @@ var lzlib;
             if (Drag.isCopy) {
                 Drag.dragingObject.parent && Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
-            if (!Drag.isAccepted && !Drag.isCopy) {
-                //没有其他对象愿意接收你，就从哪里来回到哪里去。
-                Drag.dragingObject.x = Drag.originalX;
-                Drag.dragingObject.y = Drag.originalY;
-                if (Drag.originalParent != Drag.dragingObject.parent) {
-                    Drag.originalParent.addChild(Drag.dragingObject);
+            if (!Drag.isAccepted) {
+                //not one accept it, dispatch cancel event
+                Drag.dragingObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                if (!Drag.isCopy) {
+                    //没有其他对象愿意接收你，就从哪里来回到哪里去。
+                    Drag.dragingObject.x = Drag.originalX;
+                    Drag.dragingObject.y = Drag.originalY;
+                    if (Drag.originalParent != Drag.dragingObject.parent) {
+                        Drag.originalParent.addChild(Drag.dragingObject);
+                    }
                 }
             }
             Drag.reset();
@@ -176,11 +186,15 @@ var lzlib;
             var _this = _super.call(this, type, true, true, stageX, stageY, touchPointID) || this;
             _this.data = data;
             _this.dragObject = dragObject;
+            _this.originalPoint = new egret.Point(lzlib.Drag.originalX, lzlib.Drag.originalY);
             return _this;
         }
         LzDragEvent.DRAG_OVER = 'drag_enter';
         LzDragEvent.DRAG_OUT = 'drag_out';
+        /** drop inside the target */
         LzDragEvent.DROP = 'drag_drop';
+        /** drop outside the target */
+        LzDragEvent.CANCEL = 'dran_cancel';
         return LzDragEvent;
     }(egret.TouchEvent));
     lzlib.LzDragEvent = LzDragEvent;
@@ -215,9 +229,18 @@ var lzlib;
             this.dropObject.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
         };
         Drop.prototype.onTouchEnd = function (e) {
-            if (lzlib.Drag.isDraging && this.dropObject.hitTestPoint(e.stageX, e.stageY)) {
-                lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+            if (lzlib.Drag.isDraging) {
+                if (this.isDragDropObjectIntersets()) {
+                    //drop on target
+                    lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                }
             }
+        };
+        Drop.prototype.isDragDropObjectIntersets = function () {
+            var dragingObjectGlobalPoint = lzlib.Drag.dragingObject.parent.localToGlobal(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y);
+            var dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
+            return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, lzlib.Drag.dragingObject.width, lzlib.Drag.dragingObject.height)
+                .intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height));
         };
         return Drop;
     }(egret.Sprite));

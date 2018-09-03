@@ -50,7 +50,8 @@
   "16541f3b9b5": {
     "path": "scenes\\Scene02.ts",
     "class": "Scene02",
-    "parentPath": ""
+    "parentPath": "",
+    "backgroundType": "user"
   },
   "16545bc6d4e": {
     "backgroundType": "user"
