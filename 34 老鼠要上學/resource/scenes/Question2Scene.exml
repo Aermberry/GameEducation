@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Question2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startCockAnimation">
+			<tween:TweenItem target="{cockImage}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctAnimation">
+			<tween:TweenItem target="{image}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1659e6d9151" ></w:Config>
 		<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" top="0" bottom="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
@@ -11,7 +51,7 @@
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 想 和 小 老 鼠 玩 耍 。"/>
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 告 訴 小 老 鼠 大 貓 就 在 附 近 。"/>
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 問 小 老 鼠 為 什 麽 不 上 學 去 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 要 小 老 鼠 走 開 ， 不 要 靠 近 自 己 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 要 小 老 鼠 走 開 ， 不 要 靠 近 自 己 "/>
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
 				</e:layout>
@@ -19,15 +59,15 @@
 			</e:Group>
 		</e:Group>
 		<e:Group x="1376" y="485" width="464" anchorOffsetY="0" height="932">
-			<e:Image width="464" height="440" source="biddy_png" x="0" y="484"/>
-			<e:Image width="536" height="492" x="-29" y="26" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png"/>
-			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="28" y="95" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8"/>
+			<e:Image id="cockImage" width="464" height="440" source="biddy_png" x="0" y="484"/>
+			<e:Image id="messageBorderBigImage" width="536" height="492" x="-29" y="26" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" visible="false"/>
+			<e:Label id="alertInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="28" y="95" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" visible="false"/>
 		</e:Group>
 		
-		<e:Group x="1236" y="844" height="850" bottom="18" visible="false">
-			<e:Image width="580" height="333" source="magic_lamp_png" bottom="0"/>
-			<e:Image width="649" height="573" source="cloud_message_border_png" bottom="268"/>
-			<e:Label text="答 對 了 ！" x="172" y="160" anchorOffsetX="0" width="394" anchorOffsetY="0" height="154" textColor="0xcd46b1" size="80"/>
+		<e:Group x="1236" y="844" height="850" bottom="18" alpha="1">
+			<e:Image id="image0" width="580" height="333" source="magic_lamp_png" bottom="0" alpha="0"/>
+			<e:Image id="image" width="649" height="573" source="cloud_message_border_png" bottom="268" alpha="0"/>
+			<e:Label id="label" text="答 對 了 ！" x="172" y="160" anchorOffsetX="0" width="394" anchorOffsetY="0" height="154" textColor="0xcd46b1" size="80" alpha="0"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>

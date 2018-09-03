@@ -1,6 +1,8 @@
 class OptionComponent extends eui.Component implements  eui.UIComponent {
 	
 	private textLabel: eui.Label;
+	private correct: eui.Label;
+	private wrong: eui.Label;
 
 	public constructor() {
 		super();
@@ -15,7 +17,21 @@ class OptionComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
+		this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
 		this.textLabel.text = this._text;
+	}
+
+	private onStageBegin(): void
+	{
+		this.scaleX = 0.7;
+		this.scaleY = 0.7;
+	}
+
+	private onStageEnd(): void
+	{
+		this.scaleX = 1;
+		this.scaleY = 1;
 	}
 
 	private _text = '';
@@ -29,6 +45,16 @@ class OptionComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this._text = text;
 		this.textLabel && (this.textLabel.text = this._text);
+	}
+
+	public showCorrect(): void
+	{
+		this.correct.alpha = 1;
+	}
+
+	public showWrong(): void
+	{
+		this.wrong.alpha = 1;
 	}
 	
 }

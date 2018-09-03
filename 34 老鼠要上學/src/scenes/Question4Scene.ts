@@ -1,4 +1,7 @@
 class Question4Scene extends eui.Component implements  eui.UIComponent {
+	
+	private startMouseAnimation:egret.tween.TweenGroup;
+
 	public constructor() {
 		super();
 	}
@@ -12,6 +15,12 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.playMouseAnimation();
+	}
+
+	private playMouseAnimation(): void
+	{
+		this.startMouseAnimation.playLoopAsync();
 	}
 	
 }

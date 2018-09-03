@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Question4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startMouseAnimation">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{300}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1659e74654e" ></w:Config>
 				<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" top="0" bottom="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
@@ -20,9 +32,9 @@
 			</e:Group>
 		</e:Group>
 		<e:Group  x="1420" y="483" width="464" anchorOffsetY="0" height="932">
-			<e:Image width="492" height="492" x="0" y="424" right="4" source="mouse_and_balloon_png"/>
-			<e:Image width="536" height="492" x="-321" y="46" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png"/>
-			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-248" y="123" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8"/>
+			<e:Image id="image" width="492" height="492" x="0" y="424" right="4" source="mouse_and_balloon_png"/>
+			<e:Image width="536" height="492" x="-321" y="46" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" visible="false"/>
+			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-248" y="123" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" visible="false"/>
 		</e:Group>
 		<!--<e:Image width="492" height="492" x="1672" y="1187" right="32" bottom="5" source="mouse_and_balloon_png"/>-->
 	</e:Group>

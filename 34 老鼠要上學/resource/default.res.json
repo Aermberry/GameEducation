@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,shape103_png,shape120_png,shape124_png,shape132_png,shape133_png,shape134_png,shape144_png,shape15_png,shape186_png,shape19_png,shape194_png,shape2_png,shape20_png,shape200_png,shape21_png,shape23_png,shape245_png,shape252_png,shape254_png,shape26_png,shape27_png,shape29_png,shape3_png,shape31_png,shape317_png,shape320_png,shape359_png,shape363_png,shape365_png,shape367_png,shape37_png,shape371_png,shape373_png,shape56_png,shape59_png,shape61_png,shape63_png,shape76_png,shape78_png,shape83_png,shape85_png,shape86_png,shape88_png,shape89_png,shape9_png,shape90_png,shape92_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png,option_background_png,bluesky_png,mouse_and_plane_png,flag_png,rope_png,exit_background_png,sound 25_mp3,sound 55 (over to down )_mp3,sound 80 (over to down )_mp3,sound 106 (over to down )_mp3,sound 123 (over to down )_mp3,sound 187_mp3,sound 188_mp3,sound 195_mp3,sound 236_mp3,sound 311_mp3,sound 312_mp3,sound 313_mp3,sound 314_mp3,sound 315_mp3,sound 360_mp3,start_introduction_mp3,cock_border_png,box_png,biddy_png,mouse_mother_png,mouse_and_balloon_png,magic_lamp_png,cloud_message_border_png,message_border_big_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,shape103_png,shape120_png,shape124_png,shape132_png,shape133_png,shape134_png,shape144_png,shape15_png,shape19_png,shape2_png,shape20_png,shape200_png,shape21_png,shape23_png,shape245_png,shape252_png,shape254_png,shape26_png,shape27_png,shape29_png,shape3_png,shape31_png,shape317_png,shape320_png,shape359_png,shape363_png,shape365_png,shape367_png,shape37_png,shape371_png,shape373_png,shape56_png,shape59_png,shape61_png,shape63_png,shape76_png,shape78_png,shape83_png,shape85_png,shape86_png,shape88_png,shape89_png,shape9_png,shape90_png,shape92_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png,option_background_png,bluesky_png,mouse_and_plane_png,flag_png,rope_png,exit_background_png,sound 25_mp3,sound 55 (over to down )_mp3,sound 80 (over to down )_mp3,sound 106 (over to down )_mp3,sound 123 (over to down )_mp3,sound 187_mp3,sound 188_mp3,sound 195_mp3,sound 236_mp3,sound 311_mp3,sound 312_mp3,sound 313_mp3,sound 314_mp3,sound 315_mp3,sound 360_mp3,start_introduction_mp3,cock_border_png,box_png,biddy_png,mouse_mother_png,mouse_and_balloon_png,magic_lamp_png,cloud_message_border_png,message_border_big_png,correct_png,wrong_png",
 			"name": "preload"
 		}
 	],
@@ -192,19 +192,9 @@
 			"name": "shape15_png"
 		},
 		{
-			"url": "textures/shape186.png",
-			"type": "image",
-			"name": "shape186_png"
-		},
-		{
 			"url": "textures/shape19.png",
 			"type": "image",
 			"name": "shape19_png"
-		},
-		{
-			"url": "textures/shape194.png",
-			"type": "image",
-			"name": "shape194_png"
 		},
 		{
 			"url": "textures/shape2.png",
@@ -580,6 +570,16 @@
 			"name": "message_border_big_png",
 			"type": "image",
 			"url": "textures/message_border_big.png"
+		},
+		{
+			"name": "correct_png",
+			"type": "image",
+			"url": "textures/correct.png"
+		},
+		{
+			"name": "wrong_png",
+			"type": "image",
+			"url": "textures/wrong.png"
 		}
 	]
 }
