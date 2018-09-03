@@ -12,11 +12,22 @@
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 怕 見 公 雞 。"/>
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 學 校 在 很 遠 的 地 方 。"/>
 				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 媽 媽 時 常 催 他 上 學 。"/>
+				
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
 				</e:layout>
 			</e:Group>
 		</e:Group>
-		<e:Image width="464" height="440" x="1672" y="1187" right="32" bottom="5" source="mouse_png"/>
+
+		<e:Group x="1352" y="507" width="568" anchorOffsetY="0" height="932" anchorOffsetX="0">
+			<e:Image width="460" height="440" x="0" y="0" right="32" bottom="5" source="mouse_png"/>
+			<e:Image width="536" height="492" x="-109" y="58" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png"/>
+			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-48" y="127" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8"/>
+		</e:Group>
+
+		<!--<e:Group width="464" height="440" x="1672" y="1187" right="32" bottom="5">
+			<e:Image width="20" height="20"/>
+			<e:Image source="mouse_png" left="0" right="0" top="0" bottom="0"/>
+		</e:Group>-->
 	</e:Group>
 </e:Skin>

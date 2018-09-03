@@ -23,7 +23,7 @@ class ListenScene extends eui.Component implements  eui.UIComponent {
 
 	private onStartAnswerGroupTap(): void
 	{
-		Main.instance.gotoScene(new QuestionScene());
+		Main.instance.gotoScene(new Question1Scene());
 	}
 
 	public animationStart(): void

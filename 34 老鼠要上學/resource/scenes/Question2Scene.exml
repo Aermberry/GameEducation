@@ -18,6 +18,16 @@
 				
 			</e:Group>
 		</e:Group>
-		<e:Image width="464" height="440" x="1672" y="1187" right="32" bottom="5" source="mouse_png"/>
+		<e:Group x="1376" y="485" width="464" anchorOffsetY="0" height="932">
+			<e:Image width="464" height="440" source="biddy_png" x="0" y="484"/>
+			<e:Image width="536" height="492" x="-29" y="26" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png"/>
+			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="28" y="95" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8"/>
+		</e:Group>
+		
+		<e:Group x="1236" y="844" height="850" bottom="18" visible="false">
+			<e:Image width="580" height="333" source="magic_lamp_png" bottom="0"/>
+			<e:Image width="649" height="573" source="cloud_message_border_png" bottom="268"/>
+			<e:Label text="答 對 了 ！" x="172" y="160" anchorOffsetX="0" width="394" anchorOffsetY="0" height="154" textColor="0xcd46b1" size="80"/>
+		</e:Group>
 	</e:Group>
 </e:Skin>
