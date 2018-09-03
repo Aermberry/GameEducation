@@ -1,0 +1,22 @@
+{
+    "1659e7b396d": {
+        "path": "Scenes\\game_start.ts",
+        "class": "game_start",
+        "parentPath": ""
+    },
+    "1659eb33c9f": {
+        "backgroundType": "user",
+        "useBgImage": false,
+        "useBgColor": true
+    },
+    "1659ed2767a": {
+        "path": "..\\resource\\materials\\textbackground.ts",
+        "class": "textbackground",
+        "parentPath": ""
+    },
+    "1659edab201": {
+        "path": "components\\textBackground.ts",
+        "class": "textBackground",
+        "parentPath": ""
+    }
+}

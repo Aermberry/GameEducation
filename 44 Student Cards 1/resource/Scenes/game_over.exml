@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameOverSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1659e7bec9e" ></w:Config>
+	<e:Label text="Label" x="389.38" y="529" anchorOffsetX="0" width="386.12" anchorOffsetY="0" height="466.36"/>
+	<e:Button label="Button" x="496" y="263"/>
+</e:Skin>
