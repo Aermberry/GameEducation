@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="QuestionSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
-	<w:Config id="1658f31530a" ></w:Config>
-	<e:Group height="125" y="0" left="0" right="0">
-		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
-	</e:Group>
-	<e:Group width="1920" height="1315" x="0" y="125" anchorOffsetX="0" anchorOffsetY="0">
+<e:Skin class="Question1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="1659e67b2ee" ></w:Config>
+	<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" top="0" bottom="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
 		<e:Image width="1816" height="1500" x="76" y="47" top="26" left="58" source="whiteboard_png"/>
 		<e:Image width="382" height="206" x="1272" y="232" right="197" source="horn_png"/>

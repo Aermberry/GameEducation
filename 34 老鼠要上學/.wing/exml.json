@@ -1,20 +1,70 @@
 {
-  "1658e9c9bdd": {
-    "path": "scenes/StartScene.ts",
-    "class": "StartScene",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  },
-  "1658f31530a": {
-    "path": "scenes/QuestionScene.ts",
-    "class": "QuestionScene",
-    "parentPath": ""
-  },
-  "1658f549e88": {
-    "path": "components/OptionComponent.ts",
-    "class": "OptionComponent",
-    "parentPath": ""
-  }
+    "1658e9c9bdd": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "1658f31530a": {
+        "path": "scenes/QuestionScene.ts",
+        "class": "QuestionScene",
+        "parentPath": ""
+    },
+    "1658f549e88": {
+        "path": "components/OptionComponent.ts",
+        "class": "OptionComponent",
+        "parentPath": ""
+    },
+    "1659d83d304": {
+        "path": "components/NextQuestionComponent.ts",
+        "class": "NextQuestionComponent",
+        "parentPath": ""
+    },
+    "1659e32ca58": {
+        "path": "scenes/Start1Scene.ts",
+        "class": "Start1Scene",
+        "parentPath": ""
+    },
+    "1659e387b75": {
+        "path": "scenes/Start2Scene.ts",
+        "class": "Start2Scene",
+        "parentPath": ""
+    },
+    "1659e3cc19b": {
+        "path": "scenes/Start3Scene.ts",
+        "class": "Start3Scene",
+        "parentPath": ""
+    },
+    "1659e410738": {
+        "path": "scenes/Start4Scene.ts",
+        "class": "Start4Scene",
+        "parentPath": ""
+    },
+    "1659e67b2ee": {
+        "path": "scenes/Question1Scene.ts",
+        "class": "Question1Scene",
+        "parentPath": ""
+    },
+    "1659e6a1d18": {
+        "path": "scenes/Question2Scene.ts",
+        "class": "Question2Scene",
+        "parentPath": ""
+    },
+    "1659e6d9151": {
+        "path": "scenes/Question2Scene.ts",
+        "class": "Question2Scene",
+        "parentPath": ""
+    },
+    "1659e70d18f": {
+        "path": "scenes/Question3Scene.ts",
+        "class": "Question3Scene",
+        "parentPath": ""
+    },
+    "1659e74654e": {
+        "path": "scenes/Question4Scene.ts",
+        "class": "Question4Scene",
+        "parentPath": ""
+    }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="1659e74654e" ></w:Config>
+				<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" top="0" bottom="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
+		<e:Image width="1816" height="1500" x="76" y="47" top="26" left="58" source="whiteboard_png"/>
+		<e:Image width="382" height="206" x="1272" y="308" right="197" source="horn_png"/>
+		<e:Group width="1652" height="896" x="144" y="99" top="105">
+			<e:Label text="4 . 小 老 鼠 最 後 為 什 麽 決 定 要 上 學 呢 ？" y="0" textColor="0x000000" size="78" left="0" right="0" multiline="true"/>
+			<e:Group width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 想 和 大 貓 玩 耍 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 被 媽 媽 教 訓 了 一 頓 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 要 知 道 公 雞 說 什 麽 。"/>
+				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 明 白 了 媽 媽 要 他 上 學 的 原 因 。"/>
+				
+				<e:layout>
+					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
+				</e:layout>
+	
+			</e:Group>
+		</e:Group>
+		<e:Image width="464" height="440" x="1672" y="1187" right="32" bottom="5" source="mouse_png"/>
+	</e:Group>
+</e:Skin>

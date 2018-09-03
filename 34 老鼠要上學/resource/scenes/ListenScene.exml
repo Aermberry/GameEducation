@@ -25,7 +25,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{guidepostGroup}">
+			<tween:TweenItem target="{startAnswerGroup}">
 				<tween:Wait duration="2000"/>
 				<tween:Set>
 					<tween:props>
@@ -44,7 +44,7 @@
 		<e:Image id="radioImage" width="379" height="330" x="1084" y="79" anchorOffsetX="0" anchorOffsetY="0" source="radio_png" right="25" alpha="0"/>
 		<e:Group height="764" y="350" anchorOffsetY="0" left="0" right="0">
 			<e:Image id="mushroom_and_mouseImage" width="955" height="761" x="450" y="0" anchorOffsetX="0" anchorOffsetY="0" source="mushroom_and_mouse_png" alpha="0"/>
-			<e:Group id="guidepostGroup" width="454" height="454" x="1460" y="264" alpha="0">
+			<e:Group id="startAnswerGroup" width="454" height="454" x="1460" y="264" alpha="0">
 				<e:Image width="454" height="454" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="guidepost_png"/>
 				<e:Label id="label" text="作 答" x="84" anchorOffsetX="0" top="0" bottom="92" width="266" verticalAlign="middle" size="112" textColor="0xfb35fc" anchorOffsetY="0"/>
 			</e:Group>

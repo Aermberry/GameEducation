@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="FinishAnimation">
+			<tween:TweenItem target="{mouseAndFlag}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1916}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object x="{1700}" y="{200}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{499}" x="{1500}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{200}" x="{1200}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{499}" x="{900}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{200}" x="{500}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{499}" x="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group}">
+				<tween:Wait duration="3750"/>
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1658f678f8d" ></w:Config>
 	<e:Group height="125" y="0" left="0" right="0">
 		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
 	</e:Group>
 	<e:Group height="1315" y="125" left="0" right="0">
-		<e:Image left="0" right="0" top="0" bottom="0" source="bluesky_png"/>
-		<e:Group width="1916" height="483" x="0" y="251" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image left="0" right="-92" top="0" bottom="0" source="bluesky_png" anchorOffsetX="0"/>
+		<e:Group id="mouseAndFlag" width="1916" height="483" x="0" y="499" anchorOffsetX="0" anchorOffsetY="0">
 			<e:Image width="116" x="556" source="rope_png" height="275" y="118"/>
 			<e:Image width="608" anchorOffsetX="0" anchorOffsetY="0" source="mouse_and_plane_png" top="0" bottom="0"/>
-			<e:Image width="1213" height="396" x="624" y="40" anchorOffsetX="0" anchorOffsetY="0" source="flag_png"/>
+			<e:Image width="1277" height="396" x="614" y="31" anchorOffsetX="0" anchorOffsetY="0" source="flag_png"/>
+			<e:Label text="你已完成這個練習，" x="684" y="132" anchorOffsetX="0" anchorOffsetY="0" height="170" size="120" textColor="0xcd34cd"/>
+			<e:Label text="再見！" x="1456" y="272" size="120" textColor="0xcd34cd"/>
+		</e:Group>
+		<e:Group id="group" width="470" height="234" x="1368" y="1051" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+			<e:Image left="0" right="0" top="0" bottom="0" source="exit_background_png"/>
+			<e:Label text="離 開" left="0" right="0" top="0" bottom="0" size="160" verticalAlign="middle" textAlign="center" textColor="0xf33349"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>
