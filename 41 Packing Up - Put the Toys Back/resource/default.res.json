@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png,bicycle_behind_desk2_png,in2_png,near2_png,on2_png,robot_in_box2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,man_girl2_png,owl2_png,robot2_png,room2_png,text022_png,under2_png",
 			"name": "preload"
 		}
 	],
@@ -182,46 +182,6 @@
 			"name": "egret_icon2_png"
 		},
 		{
-			"url": "audios/01a.mp3",
-			"type": "sound",
-			"name": "01a_mp3"
-		},
-		{
-			"url": "audios/01b.mp3",
-			"type": "sound",
-			"name": "01b_mp3"
-		},
-		{
-			"url": "audios/02a_plant.mp3",
-			"type": "sound",
-			"name": "02a_plant_mp3"
-		},
-		{
-			"url": "audios/02b_books.mp3",
-			"type": "sound",
-			"name": "02b_books_mp3"
-		},
-		{
-			"url": "audios/03_robot.mp3",
-			"type": "sound",
-			"name": "03_robot_mp3"
-		},
-		{
-			"url": "audios/04_clock.mp3",
-			"type": "sound",
-			"name": "04_clock_mp3"
-		},
-		{
-			"url": "audios/05_toy_bus.mp3",
-			"type": "sound",
-			"name": "05_toy_bus_mp3"
-		},
-		{
-			"url": "audios/06_bicycle.mp3",
-			"type": "sound",
-			"name": "06_bicycle_mp3"
-		},
-		{
 			"url": "assets/bg.jpg",
 			"type": "image",
 			"name": "bg3_jpg"
@@ -230,46 +190,6 @@
 			"url": "assets/egret_icon.png",
 			"type": "image",
 			"name": "egret_icon3_png"
-		},
-		{
-			"url": "audios/01a.mp3",
-			"type": "sound",
-			"name": "01a2_mp3"
-		},
-		{
-			"url": "audios/01b.mp3",
-			"type": "sound",
-			"name": "01b2_mp3"
-		},
-		{
-			"url": "audios/02a_plant.mp3",
-			"type": "sound",
-			"name": "02a_plant2_mp3"
-		},
-		{
-			"url": "audios/02b_books.mp3",
-			"type": "sound",
-			"name": "02b_books2_mp3"
-		},
-		{
-			"url": "audios/03_robot.mp3",
-			"type": "sound",
-			"name": "03_robot2_mp3"
-		},
-		{
-			"url": "audios/04_clock.mp3",
-			"type": "sound",
-			"name": "04_clock2_mp3"
-		},
-		{
-			"url": "audios/05_toy_bus.mp3",
-			"type": "sound",
-			"name": "05_toy_bus2_mp3"
-		},
-		{
-			"url": "audios/06_bicycle.mp3",
-			"type": "sound",
-			"name": "06_bicycle2_mp3"
 		},
 		{
 			"url": "textures/text02.png",
@@ -310,6 +230,91 @@
 			"name": "bicycle_behind_desk_png",
 			"type": "image",
 			"url": "textures/bicycle_behind_desk.png"
+		},
+		{
+			"name": "bicycle_behind_desk2_png",
+			"type": "image",
+			"url": "textures/bicycle_behind_desk.png"
+		},
+		{
+			"name": "in2_png",
+			"type": "image",
+			"url": "textures/in.png"
+		},
+		{
+			"name": "near2_png",
+			"type": "image",
+			"url": "textures/near.png"
+		},
+		{
+			"name": "on2_png",
+			"type": "image",
+			"url": "textures/on.png"
+		},
+		{
+			"name": "robot_in_box2_png",
+			"type": "image",
+			"url": "textures/robot_in_box.png"
+		},
+		{
+			"name": "behind2_png",
+			"type": "image",
+			"url": "textures/behind.png"
+		},
+		{
+			"name": "bicycle2_png",
+			"type": "image",
+			"url": "textures/bicycle.png"
+		},
+		{
+			"name": "books2_png",
+			"type": "image",
+			"url": "textures/books.png"
+		},
+		{
+			"name": "bus2_png",
+			"type": "image",
+			"url": "textures/bus.png"
+		},
+		{
+			"name": "clock2_png",
+			"type": "image",
+			"url": "textures/clock.png"
+		},
+		{
+			"name": "flower2_png",
+			"type": "image",
+			"url": "textures/flower.png"
+		},
+		{
+			"name": "man_girl2_png",
+			"type": "image",
+			"url": "textures/man_girl.png"
+		},
+		{
+			"name": "owl2_png",
+			"type": "image",
+			"url": "textures/owl.png"
+		},
+		{
+			"name": "robot2_png",
+			"type": "image",
+			"url": "textures/robot.png"
+		},
+		{
+			"name": "room2_png",
+			"type": "image",
+			"url": "textures/room.png"
+		},
+		{
+			"name": "text022_png",
+			"type": "image",
+			"url": "textures/text02.png"
+		},
+		{
+			"name": "under2_png",
+			"type": "image",
+			"url": "textures/under.png"
 		}
 	]
 }
