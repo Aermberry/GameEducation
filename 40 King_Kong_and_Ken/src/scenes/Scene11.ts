@@ -31,10 +31,6 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 		// this.nextButton.visible=true;
 	}
 
-	private onNextScene(): void {
-		Main.instance.gotoScene(new Scene12());
-	}
-
 	private async changColor(arry: eui.Label[]): Promise<void> {
 		await lzlib.ThreadUtility.sleep(20000);
 		for (let i = 0; i < arry.length; i++) {
