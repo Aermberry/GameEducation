@@ -1,72 +1,156 @@
 {
-    "1653b55f616": {
-        "path": "scenes\\Let's listen to the poem about them.ts",
-        "class": "Let's listen to the poem about them",
-        "parentPath": ""
-    },
-    "1653c64b35f": {
-        "path": "scenes\\Scence00.ts",
-        "class": "Scence00",
-        "parentPath": "",
-        "backgroundType": "user"
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true,
-        "gridColor": 8421504,
-        "gridEnabled": true,
-        "gridSize": "82"
-    },
-    "165405c5d66": {
-        "backgroundType": "user",
-        "guideLines": [
-            {
-                "type": "v",
-                "pos": 221.212
-            },
-            {
-                "type": "h",
-                "pos": 127.273
-            }
-        ]
-    },
-    "16540c81fc5": {
-        "backgroundType": "user"
-    },
-    "16540a434c4": {
-        "backgroundType": "user"
-    },
-    "16540c71631": {
-        "backgroundType": "user"
-    },
-    "16541a33100": {
-        "path": "scenes\\Scene01.ts",
-        "class": "Scene01",
-        "parentPath": "",
-        "backgroundType": "user"
-    },
-    "16541dea95e": {
-        "backgroundType": "user"
-    },
-    "16541f3b9b5": {
-        "path": "scenes\\Scene02.ts",
-        "class": "Scene02",
-        "parentPath": ""
-    },
-    "16545bc6d4e": {
-        "backgroundType": "user"
-    },
-    "16545cfd85e": {
-        "backgroundType": "user"
-    },
-    "16545ddd65b": {
-        "backgroundType": "user"
-    },
-    "16545e839fb": {
-        "backgroundType": "user"
-    },
-    "16545ec3d8f": {
-        "path": "scenes\\Scene06.ts",
-        "class": "Scene06",
-        "parentPath": ""
-    }
+  "1653b55f616": {
+    "path": "scenes\\Let's listen to the poem about them.ts",
+    "class": "Let's listen to the poem about them",
+    "parentPath": ""
+  },
+  "1653c64b35f": {
+    "path": "scenes\\Scence00.ts",
+    "class": "Scence00",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true,
+    "gridColor": 8421504,
+    "gridEnabled": true,
+    "gridSize": "82"
+  },
+  "165405c5d66": {
+    "backgroundType": "user",
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 221.212
+      },
+      {
+        "type": "h",
+        "pos": 127.273
+      }
+    ]
+  },
+  "16540c81fc5": {
+    "backgroundType": "user"
+  },
+  "16540a434c4": {
+    "backgroundType": "user"
+  },
+  "16540c71631": {
+    "backgroundType": "user"
+  },
+  "16541a33100": {
+    "path": "scenes\\Scene01.ts",
+    "class": "Scene01",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "16541dea95e": {
+    "backgroundType": "user"
+  },
+  "16541f3b9b5": {
+    "path": "scenes\\Scene02.ts",
+    "class": "Scene02",
+    "parentPath": ""
+  },
+  "16545bc6d4e": {
+    "backgroundType": "user"
+  },
+  "16545cfd85e": {
+    "backgroundType": "user"
+  },
+  "16545ddd65b": {
+    "backgroundType": "user"
+  },
+  "16545e839fb": {
+    "backgroundType": "user"
+  },
+  "16545ec3d8f": {
+    "path": "scenes\\Scene06.ts",
+    "class": "Scene06",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "1655b2a4d69": {
+    "backgroundType": "user"
+  },
+  "165796077df": {
+    "backgroundType": "user"
+  },
+  "1657f5a921c": {
+    "backgroundType": "user"
+  },
+  "1657f781cd4": {
+    "backgroundType": "user"
+  },
+  "1657f7c429b": {
+    "backgroundType": "user"
+  },
+  "1657f8c9adf": {
+    "backgroundType": "user"
+  },
+  "1657fb63f1a": {
+    "backgroundType": "user"
+  },
+  "1657fbf0fee": {
+    "backgroundType": "null",
+    "useBgImage": true,
+    "useBgColor": false,
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "backgroundAlpha": 100
+  },
+  "1657fe5a0eb": {
+    "backgroundType": "user",
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png",
+    "useBgImage": false,
+    "useBgColor": true
+  },
+  "1657fee5225": {
+    "backgroundType": "user",
+    "useBgImage": false,
+    "useBgColor": true,
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png",
+    "guideLinesEnabled": false
+  },
+  "1657ff8af93": {
+    "path": "scenes\\Scene17.ts",
+    "class": "Scene17",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "165834148dc": {
+    "backgroundType": "null",
+    "useBgImage": false,
+    "useBgColor": false,
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png"
+  },
+  "1658346ce26": {
+    "backgroundType": "user"
+  },
+  "165834f7bb7": {
+    "backgroundType": "user"
+  },
+  "165835718ac": {
+    "backgroundType": "user"
+  },
+  "1658360075f": {
+    "backgroundType": "user",
+    "backgroundImage": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\40 King_Kong_and_Ken\\resource\\textures\\background.png"
+  },
+  "1658368e7f2": {
+    "backgroundType": "user"
+  },
+  "165836d3dd9": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100,
+    "backgroundType": "user"
+  }
 }

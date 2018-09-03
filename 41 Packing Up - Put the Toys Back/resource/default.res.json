@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,01_png,02_png,03_png,04_png,05_png,06_png,07_png,08_png,09_png,11_png,12_png,13_png,14_png,15_png,16_png,EDB_game_ai,Thumbs_db,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,012_png,022_png,032_png,042_png,052_png,062_png,072_png,082_png,092_png,112_png,122_png,132_png,142_png,152_png,162_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,01a2_mp3,01b2_mp3,02a_plant2_mp3,02b_books2_mp3,03_robot2_mp3,04_clock2_mp3,05_toy_bus2_mp3,06_bicycle2_mp3,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png",
 			"name": "preload"
 		}
 	],
@@ -82,21 +82,6 @@
 			"name": "tracklight_png"
 		},
 		{
-			"url": "assets/ToggleSwitch/handle.png",
-			"type": "image",
-			"name": "handle_png"
-		},
-		{
-			"url": "assets/ToggleSwitch/off.png",
-			"type": "image",
-			"name": "off_png"
-		},
-		{
-			"url": "assets/ToggleSwitch/on.png",
-			"type": "image",
-			"name": "on_png"
-		},
-		{
 			"url": "assets/Button/button_down.png",
 			"type": "image",
 			"name": "button_down_png"
@@ -122,269 +107,209 @@
 			"name": "track_sb_png"
 		},
 		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
 		},
 		{
-			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"url": "textures/bicycle.png",
 			"type": "image",
-			"name": "checkbox_select_disabled2_png"
+			"name": "bicycle_png"
 		},
 		{
-			"url": "assets/CheckBox/checkbox_select_down.png",
+			"url": "textures/books.png",
 			"type": "image",
-			"name": "checkbox_select_down2_png"
+			"name": "books_png"
 		},
 		{
-			"url": "assets/CheckBox/checkbox_select_up.png",
+			"url": "textures/bus.png",
 			"type": "image",
-			"name": "checkbox_select_up2_png"
+			"name": "bus_png"
 		},
 		{
-			"url": "assets/CheckBox/checkbox_unselect.png",
+			"url": "textures/clock.png",
 			"type": "image",
-			"name": "checkbox_unselect2_png"
+			"name": "clock_png"
 		},
 		{
-			"url": "audio/01a.mp3",
+			"url": "textures/flower.png",
+			"type": "image",
+			"name": "flower_png"
+		},
+		{
+			"url": "textures/man_girl.png",
+			"type": "image",
+			"name": "man_girl_png"
+		},
+		{
+			"url": "textures/owl.png",
+			"type": "image",
+			"name": "owl_png"
+		},
+		{
+			"url": "textures/robot.png",
+			"type": "image",
+			"name": "robot_png"
+		},
+		{
+			"url": "textures/room.png",
+			"type": "image",
+			"name": "room_png"
+		},
+		{
+			"url": "textures/under.png",
+			"type": "image",
+			"name": "under_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg2_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon2_png"
+		},
+		{
+			"url": "audios/01a.mp3",
 			"type": "sound",
 			"name": "01a_mp3"
 		},
 		{
-			"url": "audio/01b.mp3",
+			"url": "audios/01b.mp3",
 			"type": "sound",
 			"name": "01b_mp3"
 		},
 		{
-			"url": "audio/02a_plant.mp3",
+			"url": "audios/02a_plant.mp3",
 			"type": "sound",
 			"name": "02a_plant_mp3"
 		},
 		{
-			"url": "audio/02b_books.mp3",
+			"url": "audios/02b_books.mp3",
 			"type": "sound",
 			"name": "02b_books_mp3"
 		},
 		{
-			"url": "audio/03_robot.mp3",
+			"url": "audios/03_robot.mp3",
 			"type": "sound",
 			"name": "03_robot_mp3"
 		},
 		{
-			"url": "audio/04_clock.mp3",
+			"url": "audios/04_clock.mp3",
 			"type": "sound",
 			"name": "04_clock_mp3"
 		},
 		{
-			"url": "audio/05_toy_bus.mp3",
+			"url": "audios/05_toy_bus.mp3",
 			"type": "sound",
 			"name": "05_toy_bus_mp3"
 		},
 		{
-			"url": "audio/06_bicycle.mp3",
+			"url": "audios/06_bicycle.mp3",
 			"type": "sound",
 			"name": "06_bicycle_mp3"
 		},
 		{
-			"url": "images/11.png",
+			"url": "assets/bg.jpg",
 			"type": "image",
-			"name": "11_png"
+			"name": "bg3_jpg"
 		},
 		{
-			"url": "images/12.png",
+			"url": "assets/egret_icon.png",
 			"type": "image",
-			"name": "12_png"
+			"name": "egret_icon3_png"
 		},
 		{
-			"url": "images/13.png",
-			"type": "image",
-			"name": "13_png"
-		},
-		{
-			"url": "images/14.png",
-			"type": "image",
-			"name": "14_png"
-		},
-		{
-			"url": "images/15.png",
-			"type": "image",
-			"name": "15_png"
-		},
-		{
-			"url": "images/16.png",
-			"type": "image",
-			"name": "16_png"
-		},
-		{
-			"url": "images/EDB_game.ai",
-			"type": "bin",
-			"name": "EDB_game_ai"
-		},
-		{
-			"url": "images/Thumbs.db",
-			"type": "bin",
-			"name": "Thumbs_db"
-		},
-		{
-			"url": "images/01.png",
-			"type": "image",
-			"name": "01_png"
-		},
-		{
-			"url": "images/02.png",
-			"type": "image",
-			"name": "02_png"
-		},
-		{
-			"url": "images/03.png",
-			"type": "image",
-			"name": "03_png"
-		},
-		{
-			"url": "images/04.png",
-			"type": "image",
-			"name": "04_png"
-		},
-		{
-			"url": "images/05.png",
-			"type": "image",
-			"name": "05_png"
-		},
-		{
-			"url": "images/06.png",
-			"type": "image",
-			"name": "06_png"
-		},
-		{
-			"url": "images/07.png",
-			"type": "image",
-			"name": "07_png"
-		},
-		{
-			"url": "images/08.png",
-			"type": "image",
-			"name": "08_png"
-		},
-		{
-			"url": "images/09.png",
-			"type": "image",
-			"name": "09_png"
-		},
-		{
-			"name": "01a2_mp3",
+			"url": "audios/01a.mp3",
 			"type": "sound",
-			"url": "audio/01a.mp3"
+			"name": "01a2_mp3"
 		},
 		{
-			"name": "01b2_mp3",
+			"url": "audios/01b.mp3",
 			"type": "sound",
-			"url": "audio/01b.mp3"
+			"name": "01b2_mp3"
 		},
 		{
-			"name": "02a_plant2_mp3",
+			"url": "audios/02a_plant.mp3",
 			"type": "sound",
-			"url": "audio/02a_plant.mp3"
+			"name": "02a_plant2_mp3"
 		},
 		{
-			"name": "02b_books2_mp3",
+			"url": "audios/02b_books.mp3",
 			"type": "sound",
-			"url": "audio/02b_books.mp3"
+			"name": "02b_books2_mp3"
 		},
 		{
-			"name": "03_robot2_mp3",
+			"url": "audios/03_robot.mp3",
 			"type": "sound",
-			"url": "audio/03_robot.mp3"
+			"name": "03_robot2_mp3"
 		},
 		{
-			"name": "04_clock2_mp3",
+			"url": "audios/04_clock.mp3",
 			"type": "sound",
-			"url": "audio/04_clock.mp3"
+			"name": "04_clock2_mp3"
 		},
 		{
-			"name": "05_toy_bus2_mp3",
+			"url": "audios/05_toy_bus.mp3",
 			"type": "sound",
-			"url": "audio/05_toy_bus.mp3"
+			"name": "05_toy_bus2_mp3"
 		},
 		{
-			"name": "06_bicycle2_mp3",
+			"url": "audios/06_bicycle.mp3",
 			"type": "sound",
-			"url": "audio/06_bicycle.mp3"
+			"name": "06_bicycle2_mp3"
 		},
 		{
-			"name": "012_png",
+			"url": "textures/text02.png",
 			"type": "image",
-			"url": "images/01.png"
+			"name": "text02_png"
 		},
 		{
-			"name": "022_png",
+			"url": "images/wlts_logo.jpg",
 			"type": "image",
-			"url": "images/02.png"
+			"name": "wlts_logo_jpg"
 		},
 		{
-			"name": "032_png",
+			"url": "textures/near.png",
 			"type": "image",
-			"url": "images/03.png"
+			"name": "near_png"
 		},
 		{
-			"name": "042_png",
+			"url": "textures/on.png",
 			"type": "image",
-			"url": "images/04.png"
+			"name": "on_png"
 		},
 		{
-			"name": "052_png",
+			"url": "textures/in.png",
 			"type": "image",
-			"url": "images/05.png"
+			"name": "in_png"
 		},
 		{
-			"name": "062_png",
+			"name": "behind_png",
 			"type": "image",
-			"url": "images/06.png"
+			"url": "textures/behind.png"
 		},
 		{
-			"name": "072_png",
+			"name": "robot_in_box_png",
 			"type": "image",
-			"url": "images/07.png"
+			"url": "textures/robot_in_box.png"
 		},
 		{
-			"name": "082_png",
+			"name": "bicycle_behind_desk_png",
 			"type": "image",
-			"url": "images/08.png"
-		},
-		{
-			"name": "092_png",
-			"type": "image",
-			"url": "images/09.png"
-		},
-		{
-			"name": "112_png",
-			"type": "image",
-			"url": "images/11.png"
-		},
-		{
-			"name": "122_png",
-			"type": "image",
-			"url": "images/12.png"
-		},
-		{
-			"name": "132_png",
-			"type": "image",
-			"url": "images/13.png"
-		},
-		{
-			"name": "142_png",
-			"type": "image",
-			"url": "images/14.png"
-		},
-		{
-			"name": "152_png",
-			"type": "image",
-			"url": "images/15.png"
-		},
-		{
-			"name": "162_png",
-			"type": "image",
-			"url": "images/16.png"
+			"url": "textures/bicycle_behind_desk.png"
 		}
 	]
 }

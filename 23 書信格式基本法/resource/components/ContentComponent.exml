@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ContentComponentSkin" width="1386" height="1031" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="endGame3">
+			<tween:TweenItem target="{blessRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{blessLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{570}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{620}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{698}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{748}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="startGame2">
+			<tween:TweenItem target="{group}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{668}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="endGame4">
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{750}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{828}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="startGame3">
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{570}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{698}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="startGame4">
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{750}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{715}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1657a0770c5" ></w:Config>
+	<e:Group width="741.33" x="0" y="0" anchorOffsetX="0">
+		<e:Rect id="shangKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="shangKuanLabel" text="小雄：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="華康楷書體" left="14"/>
+		<ns1:LabelComponents id="shangKuanLabelComponent" width="270" height="95" x="288.91" y="0"/>
+	</e:Group>
+	<e:Group width="1079" x="100" y="108">
+		<e:Rect id="greetRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeWeight="4" strokeColor="0xfc0000" visible="false"/>
+		<e:Label id="greetLabel" text="很久沒有見面了，你好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="華康楷書體" top="14" left="14"/>
+		<ns1:LabelComponents id="greetLabelComponent" width="270" x="809" top="0" bottom="0"/>
+	</e:Group>
+	<!--<e:Group height="393" y="248" left="0" right="0">
+		<e:Label text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
+		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
+	</e:Group>-->
+	<e:Group y="213" left="0" right="0">
+		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="textLabel" text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
+		<ns1:LabelComponents id="textLabelComponent" width="270" height="95" x="136" y="280"/>
+	</e:Group>
+	<e:Group id="group" y="597.7" left="0" right="0">
+		<e:Rect id="blessRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="blessLabel" text="身體健康" x="52" y="100" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Label text="祝" x="138" y="8" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<ns1:LabelComponents id="blessLabelComponent" width="270" height="95" x="312" y="76"/>
+	</e:Group>
+	<e:Group id="group0" y="815" anchorOffsetX="0" right="140" width="497.3">
+		<e:Rect id="xiaKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="xiaKuanLabel" text="伯父" x="362.82" top="0" bottom="0" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<ns1:LabelComponents id="xiaKuanLabelComponent" width="270" height="95" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="group1" y="928" anchorOffsetX="0" right="14" width="608.42">
+		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="dateLabel" text="八月十日" x="326.84" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="華康楷書體"/>
+		<ns1:LabelComponents id="dateLabelComponent" width="270" height="95" x="0" y="0"/>
+	</e:Group>
+	
+</e:Skin>
