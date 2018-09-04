@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Start1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1659e32ca58" ></w:Config>
-	<e:Group left="0" right="0" top="0" bottom="0">
-			<e:Rect fillColor="0xfdcccf" left="0" right="0" top="0" bottom="0"/>
+	<e:Group height="125" y="0" left="0" right="0">
+		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	
+	<e:Group left="0" right="0" y="125" height="1314">
+			<e:Rect fillColor="0xfdcccf" left="0" right="0" top="-8" bottom="-118"/>
 			<e:Group height="200" y="70" left="0" right="0">
-				<e:Label id="titleLabel" text="1. 小  老  鼠  說  他  不  願  意  上  學  的  原  因  是 " x="0" y="0" textColor="0xfa1526" size="100" multiline="true" width="1920" lineSpacing="30"/>
+				<e:Label id="titleLabel" text="1. 小  老  鼠  說  他  不  願  意  上  學  的  原  因  是 " x="0" y="0" textColor="0xfa1526" size="100" multiline="true" width="1920" lineSpacing="30" fontFamily="標楷體"/>
 			</e:Group>
 		<e:Group id="optionGroup" width="1848" height="700" x="60" anchorOffsetY="0" anchorOffsetX="0" bottom="278">
-			<e:Label text="A . 年 紀 太 小 。" x="68" y="51" size="94" textColor="0x0f37fc"/>
-			<e:Label text="B . 怕 見 公 雞 。" x="68" y="61" size="94" textColor="0x0F37FC"/>
-			<e:Label text="C . 學 校 在 很 遠 的 地 方 。" x="68" y="61" size="94" textColor="0x0F37FC"/>
-			<e:Label text="D . 媽 媽 時 常 催 他 上 學 。" x="78" y="71" size="94" textColor="0x0F37FC"/>
+			<e:Label text="A . 年 紀 太 小 。" x="68" y="51" size="94" textColor="0x0f37fc" fontFamily="標楷體"/>
+			<e:Label text="B . 怕 見 公 雞 。" x="68" y="61" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
+			<e:Label text="C . 學 校 在 很 遠 的 地 方 。" x="68" y="61" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
+			<e:Label text="D . 媽 媽 時 常 催 他 上 學 。" x="78" y="71" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
 			<e:layout>
 				<e:VerticalLayout verticalAlign="justify"/>
 			</e:layout>
@@ -23,7 +27,8 @@
 			
 		</e:Group>-->
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="380" height="238" x="40" right="50" source="cake_png" bottom="600"/>
-		<e:Image id="mouseImage" width="464" height="440" x="1672" y="1187" right="32" bottom="33" source="mouse_png" scaleX="1" scaleY="1"/>
+		<ns1:MovieClipPlayer width="124" height="64" x="1684" y="1128" anchorOffsetX="0" anchorOffsetY="0" dataSet="mouseTailAnimation_json" texture="mouseTailAnimation_png" movieClipName="mouseTail" rotation="347.81"/>
+		<e:Image id="mouseImage" width="464" height="440" x="1672" y="1187" right="32" bottom="29" source="mouse_png" scaleX="1" scaleY="1"/>
 		<e:Group id="listenWordGroup" width="560" height="260" x="316" y="1155" bottom="14" right="20" visible="false">
 			<e:Image left="0" right="0" top="0" bottom="0" source="book_png"/>
 			<e:Label text="傾  聽  話  語" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0xcc71ef" size="98"/>

@@ -1,4 +1,8 @@
 class FinishScene extends eui.Component implements  eui.UIComponent {
+	
+	private finishAnimation: egret.tween.TweenGroup;
+	private exitLabel: eui.Label;
+	
 	public constructor() {
 		super();
 	}
@@ -12,6 +16,16 @@ class FinishScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.playStartAnimation();
+		this.exitLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+			window.close();
+		}, this);
+
+	}
+
+	private playStartAnimation(): void
+	{
+		this.finishAnimation.play(0);
 	}
 	
 }

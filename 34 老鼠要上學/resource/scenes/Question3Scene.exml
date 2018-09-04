@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Question3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1659e70d18f" ></w:Config>
-			<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" top="0" bottom="0">
+	<e:Group height="125" y="0" left="0" right="0">
+		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+			
+			<e:Group width="1920" x="0" anchorOffsetX="0" anchorOffsetY="0" y="117" height="1314">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfdcccf"/>
 		<e:Image width="1816" height="1500" x="76" y="47" top="26" left="58" source="whiteboard_png"/>
 		<e:Image width="382" height="206" x="1272" y="308" right="197" source="horn_png"/>
 		<e:Group width="1652" height="896" x="144" y="99" top="105">
-			<e:Label text="3 . 老 鼠 媽 媽 勸 小 老 鼠 上 學 去 。 下 列 哪 項 原 因 是 兩 次 勸 小 老 鼠 上 學 時 都 有 說 的 呢 ？" y="0" textColor="0x000000" size="78" left="0" right="0" multiline="true"/>
-			<e:Group width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 懂 得 謀 生 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 知 道 誰 是 敵 人 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 知 道 公 雞 說 什 麽 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 知 道 花 猫 会 吃 老 鼠 。"/>
+			<e:Label text="3 . 老 鼠 媽 媽 勸 小 老 鼠 上 學 去 。 下 列 哪 項 原 因 是 兩 次 勸 小 老 鼠 上 學 時 都 有 說 的 呢 ？" y="0" textColor="0x000000" size="78" left="0" right="0" multiline="true" fontFamily="標楷體"/>
+			<e:Group id="optionGroup" width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
+				<ns1:OptionComponent width="1180" height="150" x="576" y="64" text="A . 懂 得 謀 生 。" anchorOffsetX="576" anchorOffsetY="64"/>
+				<ns1:OptionComponent width="1180" height="150" x="592" y="240" text="B . 知 道 誰 是 敵 人 。" anchorOffsetX="592" anchorOffsetY="72"/>
+				<ns1:OptionComponent width="1180" height="150" x="588" y="392" text="C . 知 道 公 雞 說 什 麽 。" anchorOffsetX="588" anchorOffsetY="56"/>
+				<ns1:OptionComponent width="1180" height="150" x="588" y="580" text="D . 知 道 花 猫 会 吃 老 鼠 。" anchorOffsetX="588" anchorOffsetY="76"/>
 				
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
 				</e:layout>		
 			</e:Group>
 		</e:Group>
-		<e:Group x="1376" y="485" width="464" anchorOffsetY="0" height="932">
+		<e:Group x="1376" y="485" width="464" anchorOffsetY="0" height="932" bottom="18">
 			<e:Image width="370" height="514" x="0" y="0" right="32" bottom="5" source="mouse_mother_png"/>
-			<e:Image width="536" height="492" x="-401" y="-14" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png"/>
-			<e:Label text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-332" y="59" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8"/>
+			<e:Image id="messageBorderBigImage" width="536" height="492" x="-345" y="58" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" visible="false"/>
+			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-272" y="127" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" visible="false"/>
+			<e:Image id="messageBorderSmallImage" width="464" height="336" x="-284" y="161" anchorOffsetX="0" anchorOffsetY="0" source="message_border_small_png" visible="false"/>
+			<e:Label id="alertCorrectInfoLabel" text="答 對 了 ！" x="-220" y="257" anchorOffsetX="0" width="402" anchorOffsetY="0" height="130" textColor="0xcd46b1" size="80" visible="false"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>

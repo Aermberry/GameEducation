@@ -17,8 +17,8 @@ class OptionComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
-		this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
+		// this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
+		// this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
 		this.textLabel.text = this._text;
 	}
 
@@ -57,4 +57,9 @@ class OptionComponent extends eui.Component implements  eui.UIComponent {
 		this.wrong.alpha = 1;
 	}
 	
+	public hideMark(): void
+	{
+		this.correct.alpha = 0;
+		this.wrong.alpha = 0;
+	}
 }

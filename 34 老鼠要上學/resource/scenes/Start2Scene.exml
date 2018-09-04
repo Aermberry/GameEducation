@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Start2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1659e387b75" ></w:Config>
-		<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Group height="125" y="0" left="0" right="0">
+		<ns1:TopTitleComponent left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+		
+		<e:Group left="0" right="0" height="1314" y="117">
 			<e:Rect fillColor="0xfdcccf" left="0" right="0" top="0" bottom="0"/>
 			<e:Group height="200" y="70" left="0" right="0">
-				<e:Label id="titleLabel" text="2.  公 雞 為 什 麽 向 小 老 鼠 叫 呢 ？" x="0" y="0" textColor="0xfa1526" size="100" multiline="true" width="1920" lineSpacing="30"/>
+				<e:Label id="titleLabel" text="2.  公 雞 為 什 麽 向 小 老 鼠 叫 呢 ？" x="0" y="0" textColor="0xfa1526" size="100" multiline="true" width="1920" lineSpacing="30" fontFamily="標楷體"/>
 			</e:Group>
-		<e:Group id="optionGroup" width="1848" height="700" x="60" anchorOffsetY="0" anchorOffsetX="0" bottom="278">
-			<e:Label text="A . 想 和 小 老 鼠 玩 耍 。" x="68" y="51" size="94" textColor="0x0f37fc"/>
-			<e:Label text="B . 告 訴 小 老 鼠 大 貓 就 在 附 近 。" x="68" y="61" size="94" textColor="0x0F37FC"/>
-			<e:Label text="C . 問 小 老 鼠 為 什 麽 不 上 學 去 。" x="68" y="61" size="94" textColor="0x0F37FC"/>
-			<e:Label text="D . 要 小 老 鼠 走 開 ， 不 要 靠 近 自 己 。" x="78" y="71" size="94" textColor="0x0F37FC"/>
+		<e:Group id="optionGroup" width="1848" height="700" x="60" anchorOffsetY="0" anchorOffsetX="0" bottom="318">
+			<e:Label text="A . 想 和 小 老 鼠 玩 耍 。" x="68" y="51" size="94" textColor="0x0f37fc" fontFamily="標楷體"/>
+			<e:Label text="B . 告 訴 小 老 鼠 大 貓 就 在 附 近 。" x="68" y="61" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
+			<e:Label text="C . 問 小 老 鼠 為 什 麽 不 上 學 去 。" x="68" y="61" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
+			<e:Label text="D . 要 小 老 鼠 走 開 ， 不 要 靠 近 自 己 。" x="78" y="71" size="94" textColor="0x0F37FC" fontFamily="標楷體"/>
 			<e:layout>
 				<e:VerticalLayout verticalAlign="justify"/>
 			</e:layout>
 		</e:Group>
 		<e:Image width="382" height="206" x="1272" y="200" right="129" source="horn_png"/>
-		<!--<ns1:NextQuestionComponent width="380" height="238" x="40" right="50" source="next_question_background_png" bottom="600"/>-->
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="374" height="326" x="40" right="50" source="cock_border_png" bottom="20" nextQuestionY="25" nextQuestionX="40"/>
-		<e:Group id="listenWordGroup" width="560" height="260" x="316" y="1155" bottom="14" right="20" visible="false">
-			<e:Image left="0" right="0" top="0" bottom="0" source="book_png"/>
-			<e:Label text="傾  聽  話  語" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0xcc71ef" size="98"/>
-		</e:Group>
 	</e:Group>
 </e:Skin>

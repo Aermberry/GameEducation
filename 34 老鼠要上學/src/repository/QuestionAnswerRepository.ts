@@ -21,36 +21,10 @@ class QuestionAnswerRepository {
 		}
 	];
 
-	public answer = [
+	public static answer = [
 		'C . 學 校 在 很 遠 的 地 方 。','B . 告 訴 小 老 鼠 大 貓 就 在 附 近 。','C . 知 道 公 雞 說 什 麽 。','D . 明 白 了 媽 媽 要 他 上 學 的 原 因 。'
 	]
 
-	public images = [
-		'cake_png','cock_border_png','box_png','book_png'
-	]
-
-	public imageWidthHeightBottom = [
-		{
-			'width':380,
-			'height':238,
-			'bottom':600
-		},
-		{
-			'width':374,
-			'height':326,
-			'bottom':20
-		},
-		{
-			'width':376,
-			'height':317,
-			'bottom':150
-		},
-		{
-			'width':376,
-			'height':317,
-			'bottom':10
-		}
-	]
 	public constructor() {
 	}
 }

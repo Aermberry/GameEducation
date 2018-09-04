@@ -2,6 +2,7 @@ class NextQuestionComponent extends eui.Component implements  eui.UIComponent {
 	
 	private BackgroundImage: eui.Image;
 	private nextQuestionGroup: eui.Group;
+	private textLabel: eui.Label;
 	
 	public constructor() {
 		super();
@@ -16,11 +17,28 @@ class NextQuestionComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
-		this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
+		mouse.enable(this.stage);
+		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOut, this);
+		// this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
+		// this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
 		this.BackgroundImage.source = this._source;
 		this.nextQuestionGroup.x = this._nextQuestionX;
 		this.nextQuestionGroup.y = this._nextQuestionY;
+	}
+
+	private onMouseOver(e: egret.TouchEvent): void
+	{
+		console.log('a');
+		(e.target as eui.Label).textColor = 0x99ecca;
+		console.log((e.target as eui.Label).textColor);
+	}
+
+
+	private onMouseOut(e: egret.TouchEvent): void
+	{
+		console.log('b');
+		(e.target as eui.Label).textColor = 0xFF37FB;
 	}
 
 	private onStageBegin(): void
