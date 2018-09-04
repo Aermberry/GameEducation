@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,shape103_png,shape120_png,shape124_png,shape132_png,shape133_png,shape134_png,shape144_png,shape15_png,shape19_png,shape2_png,shape20_png,shape200_png,shape21_png,shape23_png,shape245_png,shape252_png,shape254_png,shape26_png,shape27_png,shape29_png,shape3_png,shape31_png,shape320_png,shape359_png,shape363_png,shape365_png,shape367_png,shape37_png,shape371_png,shape373_png,shape56_png,shape59_png,shape61_png,shape63_png,shape76_png,shape78_png,shape83_png,shape85_png,shape86_png,shape88_png,shape89_png,shape9_png,shape90_png,shape92_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png,option_background_png,bluesky_png,mouse_and_plane_png,flag_png,rope_png,exit_background_png,sound 25_mp3,sound 55 (over to down )_mp3,sound 80 (over to down )_mp3,sound 106 (over to down )_mp3,sound 123 (over to down )_mp3,sound 187_mp3,sound 188_mp3,sound 195_mp3,sound 236_mp3,sound 311_mp3,sound 312_mp3,sound 313_mp3,sound 314_mp3,sound 315_mp3,sound 360_mp3,start_introduction_mp3,cock_border_png,box_png,biddy_png,mouse_mother_png,mouse_and_balloon_png,magic_lamp_png,cloud_message_border_png,message_border_big_png,correct_png,wrong_png,message_border_small_png,radiuAnimation_json,radiuAnimation_png,mouseTailAnimation_json,mouseTailAnimation_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png,option_background_png,bluesky_png,mouse_and_plane_png,flag_png,rope_png,exit_background_png,start_introduction_mp3,cock_border_png,box_png,biddy_png,mouse_mother_png,mouse_and_balloon_png,magic_lamp_png,cloud_message_border_png,message_border_big_png,correct_png,wrong_png,message_border_small_png,radiuAnimation_json,radiuAnimation_png,mouseTailAnimation_json,mouseTailAnimation_png,question_scene_question2_answer_mp3,question_scene_question4_answer_mp3,question_scene_question3_answer_mp3,question_scene_question3_wrong_mp3,question_scene_question2_dialog_mp3,question_scene_question1_dialog_mp3,wrong_dlalog_mp3,star_game_mp3,correct_mp3,start_scene_question3_option_mp3,start_scene_question2_option_mp3,start_scene_question4_option_mp3,start_scene_question1_option_mp3,First_mp3,Second_mp3,second_mp3,first_mp3,Squirrel1_png,Squirrel2_png,Squirrel3_png,squirrel1_png,squirrel2_png,squirrel3_png",
 			"name": "preload"
 		}
 	],
@@ -152,226 +152,6 @@
 			"name": "horn_png"
 		},
 		{
-			"url": "textures/shape103.png",
-			"type": "image",
-			"name": "shape103_png"
-		},
-		{
-			"url": "textures/shape120.png",
-			"type": "image",
-			"name": "shape120_png"
-		},
-		{
-			"url": "textures/shape124.png",
-			"type": "image",
-			"name": "shape124_png"
-		},
-		{
-			"url": "textures/shape132.png",
-			"type": "image",
-			"name": "shape132_png"
-		},
-		{
-			"url": "textures/shape133.png",
-			"type": "image",
-			"name": "shape133_png"
-		},
-		{
-			"url": "textures/shape134.png",
-			"type": "image",
-			"name": "shape134_png"
-		},
-		{
-			"url": "textures/shape144.png",
-			"type": "image",
-			"name": "shape144_png"
-		},
-		{
-			"url": "textures/shape15.png",
-			"type": "image",
-			"name": "shape15_png"
-		},
-		{
-			"url": "textures/shape19.png",
-			"type": "image",
-			"name": "shape19_png"
-		},
-		{
-			"url": "textures/shape2.png",
-			"type": "image",
-			"name": "shape2_png"
-		},
-		{
-			"url": "textures/shape20.png",
-			"type": "image",
-			"name": "shape20_png"
-		},
-		{
-			"url": "textures/shape200.png",
-			"type": "image",
-			"name": "shape200_png"
-		},
-		{
-			"url": "textures/shape21.png",
-			"type": "image",
-			"name": "shape21_png"
-		},
-		{
-			"url": "textures/shape23.png",
-			"type": "image",
-			"name": "shape23_png"
-		},
-		{
-			"url": "textures/shape245.png",
-			"type": "image",
-			"name": "shape245_png"
-		},
-		{
-			"url": "textures/shape252.png",
-			"type": "image",
-			"name": "shape252_png"
-		},
-		{
-			"url": "textures/shape254.png",
-			"type": "image",
-			"name": "shape254_png"
-		},
-		{
-			"url": "textures/shape26.png",
-			"type": "image",
-			"name": "shape26_png"
-		},
-		{
-			"url": "textures/shape27.png",
-			"type": "image",
-			"name": "shape27_png"
-		},
-		{
-			"url": "textures/shape29.png",
-			"type": "image",
-			"name": "shape29_png"
-		},
-		{
-			"url": "textures/shape3.png",
-			"type": "image",
-			"name": "shape3_png"
-		},
-		{
-			"url": "textures/shape31.png",
-			"type": "image",
-			"name": "shape31_png"
-		},
-		{
-			"url": "textures/shape320.png",
-			"type": "image",
-			"name": "shape320_png"
-		},
-		{
-			"url": "textures/shape359.png",
-			"type": "image",
-			"name": "shape359_png"
-		},
-		{
-			"url": "textures/shape363.png",
-			"type": "image",
-			"name": "shape363_png"
-		},
-		{
-			"url": "textures/shape365.png",
-			"type": "image",
-			"name": "shape365_png"
-		},
-		{
-			"url": "textures/shape367.png",
-			"type": "image",
-			"name": "shape367_png"
-		},
-		{
-			"url": "textures/shape37.png",
-			"type": "image",
-			"name": "shape37_png"
-		},
-		{
-			"url": "textures/shape371.png",
-			"type": "image",
-			"name": "shape371_png"
-		},
-		{
-			"url": "textures/shape373.png",
-			"type": "image",
-			"name": "shape373_png"
-		},
-		{
-			"url": "textures/shape56.png",
-			"type": "image",
-			"name": "shape56_png"
-		},
-		{
-			"url": "textures/shape59.png",
-			"type": "image",
-			"name": "shape59_png"
-		},
-		{
-			"url": "textures/shape61.png",
-			"type": "image",
-			"name": "shape61_png"
-		},
-		{
-			"url": "textures/shape63.png",
-			"type": "image",
-			"name": "shape63_png"
-		},
-		{
-			"url": "textures/shape76.png",
-			"type": "image",
-			"name": "shape76_png"
-		},
-		{
-			"url": "textures/shape78.png",
-			"type": "image",
-			"name": "shape78_png"
-		},
-		{
-			"url": "textures/shape83.png",
-			"type": "image",
-			"name": "shape83_png"
-		},
-		{
-			"url": "textures/shape85.png",
-			"type": "image",
-			"name": "shape85_png"
-		},
-		{
-			"url": "textures/shape86.png",
-			"type": "image",
-			"name": "shape86_png"
-		},
-		{
-			"url": "textures/shape88.png",
-			"type": "image",
-			"name": "shape88_png"
-		},
-		{
-			"url": "textures/shape89.png",
-			"type": "image",
-			"name": "shape89_png"
-		},
-		{
-			"url": "textures/shape9.png",
-			"type": "image",
-			"name": "shape9_png"
-		},
-		{
-			"url": "textures/shape90.png",
-			"type": "image",
-			"name": "shape90_png"
-		},
-		{
-			"url": "textures/shape92.png",
-			"type": "image",
-			"name": "shape92_png"
-		},
-		{
 			"url": "textures/top_title_background.png",
 			"type": "image",
 			"name": "top_title_background_png"
@@ -445,81 +225,6 @@
 			"name": "exit_background_png",
 			"type": "image",
 			"url": "textures/exit_background.png"
-		},
-		{
-			"name": "sound 25_mp3",
-			"type": "sound",
-			"url": "audios/sound 25.mp3"
-		},
-		{
-			"name": "sound 55 (over to down )_mp3",
-			"type": "sound",
-			"url": "audios/sound 55 (over to down ).mp3"
-		},
-		{
-			"name": "sound 80 (over to down )_mp3",
-			"type": "sound",
-			"url": "audios/sound 80 (over to down ).mp3"
-		},
-		{
-			"name": "sound 106 (over to down )_mp3",
-			"type": "sound",
-			"url": "audios/sound 106 (over to down ).mp3"
-		},
-		{
-			"name": "sound 123 (over to down )_mp3",
-			"type": "sound",
-			"url": "audios/sound 123 (over to down ).mp3"
-		},
-		{
-			"name": "sound 187_mp3",
-			"type": "sound",
-			"url": "audios/sound 187.mp3"
-		},
-		{
-			"name": "sound 188_mp3",
-			"type": "sound",
-			"url": "audios/sound 188.mp3"
-		},
-		{
-			"name": "sound 195_mp3",
-			"type": "sound",
-			"url": "audios/sound 195.mp3"
-		},
-		{
-			"name": "sound 236_mp3",
-			"type": "sound",
-			"url": "audios/sound 236.mp3"
-		},
-		{
-			"name": "sound 311_mp3",
-			"type": "sound",
-			"url": "audios/sound 311.mp3"
-		},
-		{
-			"name": "sound 312_mp3",
-			"type": "sound",
-			"url": "audios/sound 312.mp3"
-		},
-		{
-			"name": "sound 313_mp3",
-			"type": "sound",
-			"url": "audios/sound 313.mp3"
-		},
-		{
-			"name": "sound 314_mp3",
-			"type": "sound",
-			"url": "audios/sound 314.mp3"
-		},
-		{
-			"name": "sound 315_mp3",
-			"type": "sound",
-			"url": "audios/sound 315.mp3"
-		},
-		{
-			"name": "sound 360_mp3",
-			"type": "sound",
-			"url": "audios/sound 360.mp3"
 		},
 		{
 			"name": "start_introduction_mp3",
@@ -600,6 +305,121 @@
 			"name": "mouseTailAnimation_png",
 			"type": "image",
 			"url": "mouseTail/mouseTailAnimation.png"
+		},
+		{
+			"name": "question_scene_question2_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question2_answer.mp3"
+		},
+		{
+			"name": "question_scene_question4_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question4_answer.mp3"
+		},
+		{
+			"name": "question_scene_question3_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question3_answer.mp3"
+		},
+		{
+			"name": "question_scene_question3_wrong_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question3_wrong.mp3"
+		},
+		{
+			"name": "question_scene_question2_dialog_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question2_dialog.mp3"
+		},
+		{
+			"name": "question_scene_question1_dialog_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question1_dialog.mp3"
+		},
+		{
+			"name": "wrong_dlalog_mp3",
+			"type": "sound",
+			"url": "audios/wrong_dlalog.mp3"
+		},
+		{
+			"name": "star_game_mp3",
+			"type": "sound",
+			"url": "audios/star_game.mp3"
+		},
+		{
+			"name": "correct_mp3",
+			"type": "sound",
+			"url": "audios/correct.mp3"
+		},
+		{
+			"name": "start_scene_question3_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question3_option.mp3"
+		},
+		{
+			"name": "start_scene_question2_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question2_option.mp3"
+		},
+		{
+			"name": "start_scene_question4_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question4_option.mp3"
+		},
+		{
+			"name": "start_scene_question1_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question1_option.mp3"
+		},
+		{
+			"name": "First_mp3",
+			"type": "sound",
+			"url": "audios/First.mp3"
+		},
+		{
+			"name": "Second_mp3",
+			"type": "sound",
+			"url": "audios/Second.mp3"
+		},
+		{
+			"name": "second_mp3",
+			"type": "sound",
+			"url": "audios/second.mp3"
+		},
+		{
+			"name": "first_mp3",
+			"type": "sound",
+			"url": "audios/first.mp3"
+		},
+		{
+			"name": "Squirrel1_png",
+			"type": "image",
+			"url": "textures/Squirrel1.png"
+		},
+		{
+			"name": "Squirrel2_png",
+			"type": "image",
+			"url": "textures/Squirrel2.png"
+		},
+		{
+			"name": "Squirrel3_png",
+			"type": "image",
+			"url": "textures/Squirrel3.png"
+		},
+		{
+			"name": "squirrel1_png",
+			"type": "image",
+			"url": "textures/squirrel1.png"
+		},
+		{
+			"name": "squirrel2_png",
+			"type": "image",
+			"url": "textures/squirrel2.png"
+		},
+		{
+			"name": "squirrel3_png",
+			"type": "image",
+			"url": "textures/squirrel3.png"
 		}
 	]
 }

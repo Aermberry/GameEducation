@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Question4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
-		<tween:TweenGroup id="correctMouseAnimation">
-			<tween:TweenItem target="{mouseAndBalloon}">
-				<tween:Set/>
+		<tween:TweenGroup id="wrongAlertAnimation">
+			<tween:TweenItem target="{messageBorderBigImage}">
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object y="{300}"/>
+						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{alertWrongInfoLabel}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{squirrel1}">
+				<tween:Wait duration="950"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{squirrel2}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{squirrel3}">
+				<tween:Wait duration="2500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="correctAlertInfo">
@@ -59,10 +101,10 @@
 		<e:Group width="1652" height="896" x="144" y="99" top="105">
 			<e:Label text="4 . 小 老 鼠 最 後 為 什 麽 決 定 要 上 學 呢 ？" y="0" textColor="0x000000" size="78" left="0" right="0" multiline="true" fontFamily="標楷體"/>
 			<e:Group id="optionGroup" width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 想 和 大 貓 玩 耍 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 被 媽 媽 教 訓 了 一 頓 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 要 知 道 公 雞 說 什 麽 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 明 白 了 媽 媽 要 他 上 學 的 原 因 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="A . 想 和 大 貓 玩 耍 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="B . 被 媽 媽 教 訓 了 一 頓 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="C . 要 知 道 公 雞 說 什 麽 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="D . 明白了媽媽要他上學的原因。"/>
 				
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
@@ -72,11 +114,18 @@
 		</e:Group>
 		<e:Group  x="1420" y="483" width="464" anchorOffsetY="0" height="932" bottom="18">
 			<e:Image id="mouseAndBalloon" width="492" height="492" x="0" y="424" right="4" source="mouse_and_balloon_png" alpha="0"/>
-			<e:Image id="messageBorderBigImage" width="536" height="492" x="-321" y="46" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" alpha="0"/>
+		
 			<e:Image id="messageBorderSmallImage" width="580" height="380" x="-339" y="144" anchorOffsetX="0" anchorOffsetY="0" source="message_border_small_png" alpha="0"/>
-			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-248" y="123" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" alpha="0"/>
-			<e:Label id="alertCorrectInfoLabel" text="答 對 了 ！" x="-232" y="263" anchorOffsetX="0" width="398" anchorOffsetY="0" height="122" size="80" textColor="0xcd46b1" alpha="0"/>
+			
+			<e:Label id="alertCorrectInfoLabel" text="答對了！" x="-232" y="263" anchorOffsetX="0" width="398" anchorOffsetY="0" height="122" size="80" textColor="0xcd46b1" alpha="0" fontFamily="標楷體"/>
 		</e:Group>
-		<!--<e:Image width="492" height="492" x="1672" y="1187" right="32" bottom="5" source="mouse_and_balloon_png"/>-->
+		<e:Group id="wrongAlertGroup" width="572" height="856" x="1260" y="451" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Image id="messageBorderBigImage" width="536" height="492" y="10" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" alpha="0" x="48"/>
+			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="112" y="71" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" alpha="0" fontFamily="標楷體"/>
+			<e:Image id="squirrel1" width="480" height="440" x="120" y="408" anchorOffsetX="0" anchorOffsetY="0" source="squirrel1_png" alpha="0"/>
+			<e:Image id="squirrel2" width="480" height="440" x="118" y="414" anchorOffsetX="0" anchorOffsetY="0" source="squirrel2_png" alpha="0"/>
+			<e:Image id="squirrel3" width="480" height="512" x="128" y="352" anchorOffsetX="0" anchorOffsetY="0" source="squirrel3_png" alpha="0"/>
+		</e:Group>
+		
 	</e:Group>
 </e:Skin>

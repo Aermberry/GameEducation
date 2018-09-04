@@ -16,6 +16,8 @@ class FinishScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.exitLabel,true);
 		this.playStartAnimation();
 		this.exitLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
 			window.close();

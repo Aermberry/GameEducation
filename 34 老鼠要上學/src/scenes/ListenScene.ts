@@ -28,15 +28,12 @@ class ListenScene extends eui.Component implements  eui.UIComponent {
 
 	private mouseOver(e: egret.TouchEvent): void
 	{
-		let label = e.target as eui.Label;
-		label.textColor = 0x1C99EF;
+		(e.target as eui.Label).textColor = 0x1C99EF;	
 	}
 
 	private mouseOut(e: egret.TouchEvent): void
 	{
-		let label = e.target as eui.Label;
-		label.textColor = 0xFB35FC;
-
+		(e.target as eui.Label).textColor = 0xFB35FC;
 	}
 
 	private onStartAnswerGroupTap(): void

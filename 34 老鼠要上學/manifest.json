@@ -30,7 +30,6 @@
 		"bin-debug/scenes/Start1Scene.js",
 		"bin-debug/scenes/Start2Scene.js",
 		"bin-debug/scenes/Start3Scene.js",
-		"bin-debug/scenes/Start4Scene.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/scenes/Start4Scene.js"
 	]
 }

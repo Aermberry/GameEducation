@@ -19,10 +19,10 @@
 			</e:layout>
 		</e:Group>
 		<e:Image width="382" height="206" x="1272" y="360" right="129" source="horn_png"/>
-		<ns1:NextQuestionComponent id="nextQuestionComponent" width="374" height="326" x="40" right="50" source="box_png" bottom="20" nextQuestionX="40" nextQuestionY="40"/>
-		<e:Group id="listenWordGroup" width="376" height="317" x="316" y="1155" bottom="150" right="20" visible="false">
-			<e:Image left="0" right="0" top="0" bottom="0" source="book_png"/>
-			<e:Label text="傾  聽  話  語" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0xcc71ef" size="98"/>
+	
+		<e:Group id="nextQuestionGroup" width="374" height="326" x="40" right="50" bottom="20" anchorOffsetX="0">
+			<e:Image left="-40" right="0" top="0" bottom="0" source="box_png" anchorOffsetX="0"/>
+			<e:Label id="nextQuestionLabel" text="下 一 題" left="-108" right="-76" top="32" bottom="-32" verticalAlign="middle" textAlign="center" size="98" anchorOffsetX="0" fontFamily="標楷體" textColor="0xff37fb"/>
 		</e:Group>
 				
 	</e:Group>

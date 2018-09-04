@@ -20,9 +20,10 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
+		await this.playQuestionOptionMP3();
 		this.initTap();
 		this.playStartCockAnimation();
 	}
@@ -44,6 +45,13 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		})
 	}
 
+	private removeTap(): void
+	{
+		this.optionGroup.$children.map((item) => {
+			item.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onOptionTap, this);
+		})
+	}
+
 	private async onOptionTap(e:egret.TouchEvent): Promise<void>
 	{
 		console.log('clicked');
@@ -55,7 +63,8 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 			this.hideWrongInfo();
 			this.hideCockImage();
 			this.showCorrectInfo();
-			await lzlib.ThreadUtility.sleep(2500);
+			await this.playCorrectMP3();
+			await lzlib.ThreadUtility.sleep(1000);
 			Main.instance.gotoScene(new Question3Scene());
 		}
 		else
@@ -64,8 +73,13 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 			this.stopStartCockAnimation();
 			this.showWrongInfo();
 			//同步播放音频，播放完后隐藏提示信息并且重新播放playStartCockAnimation();
-			// this.hideWrongInfo();
-			// this.startCockAnimation()
+			this.removeTap();
+			await this.playWrongMP3();
+			await this.playAnwerMP3();
+			this.hideWrongInfo();
+			this.playStartCockAnimation();
+			this.initTap();
+			this.optionComponent.hideMark();
 		}
 	}
 
@@ -100,6 +114,26 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private hideCockImage(): void
 	{
 		this.cockImage.visible = false;
+	}
+
+	private async playQuestionOptionMP3(): Promise<void>
+	{
+		return lzlib.SoundUtility.playSound('start_scene_question2_option_mp3');
+	}
+
+	private async playWrongMP3(): Promise<void>
+	{
+		return lzlib.SoundUtility.playSound('wrong_dlalog_mp3');
+	}
+
+	private async playCorrectMP3(): Promise<void>
+	{
+		return lzlib.SoundUtility.playSound('correct_mp3');
+	}
+
+	private async playAnwerMP3(): Promise<void>
+	{
+		return lzlib.SoundUtility.playSound('question_scene_question2_answer_mp3');
 	}
 	
 }

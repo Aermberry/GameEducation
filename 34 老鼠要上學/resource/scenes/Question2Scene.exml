@@ -51,10 +51,10 @@
 		<e:Group width="1652" height="896" x="144" y="99" top="105">
 			<e:Label text="2.  公 雞 為 什 麽 向 小 老 鼠 叫 呢 ？" x="0" y="0" textColor="0x000000" size="78" fontFamily="標楷體"/>
 			<e:Group id="optionGroup" width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 想 和 小 老 鼠 玩 耍 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 告 訴 小 老 鼠 大 貓 就 在 附 近 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 問 小 老 鼠 為 什 麽 不 上 學 去 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 要 小 老 鼠 走 開 ， 不 要 靠 近 自 己 "/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="A . 想和小老鼠玩耍。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="B . 告訴小老鼠大貓就在附近。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="C . 問小老鼠為什麽不上學去。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="D . 要小老鼠走開，不要靠近自己"/>
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
 				</e:layout>
@@ -64,13 +64,13 @@
 		<e:Group x="1376" y="485" width="464" anchorOffsetY="0" height="932" bottom="18">
 			<e:Image id="cockImage" width="464" height="440" source="biddy_png" x="0" y="484"/>
 			<e:Image id="messageBorderBigImage" width="536" height="492" x="-29" y="26" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" visible="false"/>
-			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="28" y="95" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" visible="false"/>
+			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="28" y="95" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" fontFamily="標楷體" visible="false"/>
 		</e:Group>
 		
 		<e:Group x="1236" y="844" height="850" bottom="18" alpha="1">
 			<e:Image id="image0" width="580" height="333" source="magic_lamp_png" bottom="0" alpha="0"/>
 			<e:Image id="image" width="649" height="573" source="cloud_message_border_png" bottom="268" alpha="0"/>
-			<e:Label id="label" text="答 對 了 ！" x="172" y="160" anchorOffsetX="0" width="394" anchorOffsetY="0" height="154" textColor="0xcd46b1" size="80" alpha="0"/>
+			<e:Label id="label" text="答 對 了 ！" x="172" y="160" anchorOffsetX="0" width="394" anchorOffsetY="0" height="154" textColor="0xcd46b1" size="80" alpha="0" fontFamily="標楷體"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>

@@ -18,8 +18,9 @@ class NextQuestionComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.textLabel,true);
 		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
-		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOut, this);
+		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 		// this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageBegin, this);
 		// this.addEventListener(egret.TouchEvent.TOUCH_END, this.onStageEnd, this);
 		this.BackgroundImage.source = this._source;
@@ -29,15 +30,12 @@ class NextQuestionComponent extends eui.Component implements  eui.UIComponent {
 
 	private onMouseOver(e: egret.TouchEvent): void
 	{
-		console.log('a');
 		(e.target as eui.Label).textColor = 0x99ecca;
-		console.log((e.target as eui.Label).textColor);
 	}
 
 
 	private onMouseOut(e: egret.TouchEvent): void
 	{
-		console.log('b');
 		(e.target as eui.Label).textColor = 0xFF37FB;
 	}
 

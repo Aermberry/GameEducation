@@ -11,10 +11,10 @@
 		<e:Group width="1652" height="896" x="144" y="99" top="105">
 			<e:Label text="1 . 小 老 鼠 說 他 不 願 意 上 學 的 原 因 是 " x="0" y="0" textColor="0x000000" size="78" fontFamily="標楷體"/>
 			<e:Group id="optionGroup" width="1644" height="648" x="0" y="242" anchorOffsetX="0" anchorOffsetY="0">
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="A . 年 紀 太 小 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="B . 怕 見 公 雞 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="C . 學 校 在 很 遠 的 地 方 。"/>
-				<ns1:OptionComponent width="1180" height="150" x="0" y="0" text="D . 媽 媽 時 常 催 他 上 學 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="A . 年 紀 太 小 。" anchorOffsetX="0"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="B . 怕 見 公 雞 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="C . 學 校 在 很 遠 的 地 方 。"/>
+				<ns1:OptionComponent width="1212" height="150" x="0" y="0" text="D . 媽 媽 時 常 催 他 上 學 。"/>
 				
 				<e:layout>
 					<e:VerticalLayout verticalAlign="contentJustify" gap="18"/>
@@ -26,9 +26,9 @@
 			<ns1:MovieClipPlayer width="124" height="64" x="340" y="760" anchorOffsetX="0" anchorOffsetY="0" dataSet="mouseTailAnimation_json" texture="mouseTailAnimation_png" movieClipName="mouseTail" rotation="347.81"/>
 			<e:Image width="460" height="440" x="0" y="0" right="32" bottom="5" source="mouse_png"/>
 			<e:Image id="messageBorderBigImage" width="536" height="492" x="-109" y="58" anchorOffsetX="0" anchorOffsetY="0" source="message_border_big_png" visible="false"/>
-			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-48" y="127" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" visible="false"/>
+			<e:Label id="alertWrongInfoLabel" text="不 對 . . . . 想 清 楚 ，再 試 一 次 ！" x="-48" y="127" anchorOffsetX="0" width="418" anchorOffsetY="0" height="258" size="80" textColor="0xcd46b1" multiline="true" lineSpacing="8" fontFamily="標楷體" visible="false"/>
 			<e:Image id="messageBorderSmallImage" width="464" height="336" x="-60" y="213" anchorOffsetX="0" anchorOffsetY="0" source="message_border_small_png" visible="false"/>
-			<e:Label id="alertCorrectInfoLabel" text="答 對 了 ！" x="4" y="309" anchorOffsetX="0" width="402" anchorOffsetY="0" height="130" textColor="0xcd46b1" size="80" visible="false"/>
+			<e:Label id="alertCorrectInfoLabel" text="答對了！" x="4" y="309" anchorOffsetX="0" width="446" anchorOffsetY="0" height="130" textColor="0xcd46b1" size="80" fontFamily="標楷體" visible="false"/>
 		</e:Group>
 
 		<!--<e:Group width="464" height="440" x="1672" y="1187" right="32" bottom="5">

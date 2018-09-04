@@ -1,7 +1,8 @@
 class Start2Scene extends eui.Component implements  eui.UIComponent {
 	
 	public nextQuestionComponent: NextQuestionComponent;
-	
+	private soundChannel: egret.SoundChannel;
+
 	public constructor() {
 		super();
 	}
@@ -15,14 +16,19 @@ class Start2Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		console.log(this.nextQuestionComponent);
+		let sound:egret.Sound = RES.getRes('start_scene_question2_option_mp3');
+		this.soundChannel = sound.play();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponentTap, this);
 	}
 
 	private onNextQuestionComponentTap(): void
 	{
-		console.log(12345);
+		this.stopMP3();
 		Main.instance.gotoScene(new Start3Scene());
 	}
 	
+	private stopMP3(): void
+	{
+		this.soundChannel.stop();
+	}
 }
