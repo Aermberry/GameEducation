@@ -1,4 +1,4 @@
-class GameStart extends eui.Component implements  eui.UIComponent {
+class MainScene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}

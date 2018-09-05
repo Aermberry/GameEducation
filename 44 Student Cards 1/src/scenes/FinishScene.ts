@@ -1,4 +1,4 @@
-class GameOver extends eui.Component implements  eui.UIComponent {
+class FinishScene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}

@@ -1,4 +1,5 @@
-class textBackground extends eui.Component implements  eui.UIComponent {
+class StartScene extends eui.Component implements  eui.UIComponent {
+	private titleLabel:eui.Label;
 	public constructor() {
 		super();
 	}
@@ -12,6 +13,9 @@ class textBackground extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		let underLine=new Base();
+		underLine.drawLine(this.titleLabel,this);
+
 	}
 	
 }

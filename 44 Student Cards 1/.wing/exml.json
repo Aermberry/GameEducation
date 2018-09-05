@@ -1,22 +1,75 @@
 {
-    "1659e7b396d": {
-        "path": "Scenes\\game_start.ts",
-        "class": "game_start",
-        "parentPath": ""
-    },
-    "1659eb33c9f": {
-        "backgroundType": "user",
-        "useBgImage": false,
-        "useBgColor": true
-    },
-    "1659ed2767a": {
-        "path": "..\\resource\\materials\\textbackground.ts",
-        "class": "textbackground",
-        "parentPath": ""
-    },
-    "1659edab201": {
-        "path": "components\\textBackground.ts",
-        "class": "textBackground",
-        "parentPath": ""
-    }
+  "165a279925e": {
+    "path": "scenes\\GameScenes.ts",
+    "class": "GameScenes",
+    "parentPath": ""
+  },
+  "165a27a8ac3": {
+    "path": "scenes\\GameScenes.ts",
+    "class": "GameScenes",
+    "parentPath": ""
+  },
+  "165a27b608f": {
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": "",
+    "backgroundType": "user",
+    "backgroundColor": "#ffffcc",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "165a27c0b9a": {
+    "path": "..\\resource\\scenes\\MainScene.ts",
+    "class": "MainScene",
+    "parentPath": "",
+    "backgroundType": "user",
+    "backgroundColor": "#ffffcc",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "165a27d487e": {
+    "path": "scenes\\FinishScene.ts",
+    "class": "FinishScene",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "165a2806f1e": {
+    "path": "components\\TextLabel.ts",
+    "class": "TextLabel",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  },
+  "165a3f747cc": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "165a84017cd": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 148
+      },
+      {
+        "type": "v",
+        "pos": 128
+      }
+    ]
+  }
 }

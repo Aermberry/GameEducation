@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
+	<w:Config id="165a27b608f" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xFFFFCC"/>
+	<Ui:TextLabel anchorOffsetX="0" anchorOffsetY="0" skinName="TextLabelSkin" text=" Mary's teacher asks the pupils to talk\n about themselves\n\nRead what Mary says.\n\nHelp her fill in her student card.\n\nDrag the correct words to the blanks." left="109" right="109" top="242" bottom="328" fontSize="91"/>
+	
+	<e:Button label="Next" x="1559.48" y="1230.33" anchorOffsetX="0" width="251.52" anchorOffsetY="0" height="113.64"/>
+	<e:Label id="titleLabel" text="Part 1" x="860.53" y="148.61" bold="true" italic="false" size="74" textAlign="right" border="false" fontFamily="Comic Sans MS" anchorOffsetY="75.76" anchorOffsetX="3.03" textColor="0x114c12"/>
+</e:Skin>

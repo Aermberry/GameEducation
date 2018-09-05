@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
+	<w:Config id="165a27c0b9a" ></w:Config>
+	<Ui:resume width="826.06" height="1183.63" x="30.61" y="45.82" skinName="ResumeSkin" anchorOffsetX="0" anchorOffsetY="0" fontSize="70" text=" Hi,I'm Mary Li.I'm 9\n years old.My birthday\n is on 4th April.\n\n I live at Flat B,6/F,\n Happy Garden,Shatin.I\n go to school on foot. I'm\n in 3A.\n\n I like reading and\n playing the piano. I join\n the Music Club." borderColor="0xEB8A1E" fontColor="0x178AF1"/>
+	<Ui:Table width="1001.82" height="1183.62" x="903.03" y="45.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TableSkin"/>
+	<e:Image source="girl_min_png" x="361.82" y="1269.79"/>
+</e:Skin>
