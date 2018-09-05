@@ -210,6 +210,7 @@
 	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
 	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+
 	</e:Group>
 	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
 	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false"/>
