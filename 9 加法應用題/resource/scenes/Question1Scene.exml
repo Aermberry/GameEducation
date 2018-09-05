@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
 	<w:Config id="1659e229649"/>
 	<w:Declarations>
 		<tween:TweenGroup id="movement_1">
@@ -15,7 +15,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image1}">
+			<tween:TweenItem target="{particle208Image}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -49,7 +49,7 @@
 				</tween:Set>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1411}"/>
+						<e:Object x="{1411}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -83,7 +83,7 @@
 				<tween:Set/>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{670.66}"/>
+						<e:Object x="{670.66}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -91,7 +91,7 @@
 				<tween:Set/>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{999.95}"/>
+						<e:Object x="{999.95}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -106,6 +106,14 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{button}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="movement_4">
@@ -157,11 +165,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="4000">
-					<tween:props>
-						<e:Object/>
-					</tween:props>
-				</tween:Wait>
+				<tween:Wait duration="4000" />
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -178,18 +182,18 @@
 
 	</w:Declarations>
 	<e:Image x="127.5" y="188" source="rectangle_blue_large_png"/>
-	<e:Image id="boyImage" x="48.48" y="308.64" source="boy_png"/>
-	<e:Image id="particle124Image" x="1041.82" y="220" source="wave_count2_png"/>
-	<e:Image id="image1" x="378.72" y="220" source="wave_count1_png"/>
-	<e:Image x="554.8" y="362.26" source="wave_count3_bg_png" anchorOffsetX="0" width="742" height="74"/>
-	<e:Image id="image5" x="697.81" y="375.43" source="wave_count3_png"/>
-	<e:Image id="girlImage" x="1411.42" y="320.48" source="girl_png"/>
-	<e:Image id="image" x="504" y="498" source="wave_1_png"/>
-	<e:Image id="image3" x="1163.58" y="498" source="wave_2_png"/>
-	<e:Image id="image6" x="810" y="788" source="result_zg_png"/>
-	<e:Image id="image7" x="818" y="858" source="result_208_png"/>
-	<e:Image id="image8" x="942" y="858" source="result_124_png"/>
-	<e:Image id="image9" x="764" y="924.91" source="result_332_png"/>
+	<e:Image id="boyImage" x="48.48" y="308.64" source="boy_png" alpha="0"/>
+	<e:Image id="particle124Image" x="1041.82" y="220" source="wave_count2_png" alpha="0"/>
+	<e:Image id="particle208Image" x="378.72" y="220" source="wave_count1_png" alpha="0"/>
+	<e:Image x="554.8" y="362.26" source="wave_count3_bg_png" anchorOffsetX="0" width="742" height="74" alpha="0"/>
+	<e:Image id="image5" x="697.81" y="375.43" source="wave_count3_png" alpha="0"/>
+	<e:Image id="girlImage" x="1411.42" y="320.48" source="girl_png" alpha="0"/>
+	<e:Image id="image" x="504" y="498" source="wave_1_png" alpha="0"/>
+	<e:Image id="image3" x="1163.58" y="498" source="wave_2_png" alpha="0"/>
+	<e:Image id="image6" x="810" y="788" source="result_zg_png" alpha="0"/>
+	<e:Image id="image7" x="818" y="858" source="result_208_png" alpha="0"/>
+	<e:Image id="image8" x="942" y="858" source="result_124_png" alpha="0"/>
+	<e:Image id="image9" x="764" y="924.91" source="result_332_png" alpha="0"/>
 	<e:Image x="276" y="36" source="header_head_png"/>
 	<e:Image x="1091" y="60.91" source="addition_png"/>
 	<e:Image x="1706" y="142" source="leave_box_png" width="192" height="110"/>
