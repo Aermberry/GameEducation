@@ -61,5 +61,10 @@
         "path": "components/BottomComponent.ts",
         "class": "BottomComponent",
         "parentPath": ""
+    },
+    "16599916680": {
+        "path": "repositories/SentenceRepository.ts",
+        "class": "SentenceRepository",
+        "parentPath": ""
     }
 }
