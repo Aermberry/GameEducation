@@ -18,13 +18,15 @@
 		"FinishScene": "resource/scenes/FinishScene.exml",
 		"TextLabel": "resource/components/TextLabel.exml",
 		"Resume": "resource/components/Resume.exml",
-		"Table": "resource/eui_skins/Table.exml"
+		"Table": "resource/components/Table.exml",
+		"Tips": "resource/components/Tips.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/Resume.exml",
 		"resource/components/Table.exml",
 		"resource/components/TextLabel.exml",
+		"resource/components/Tips.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/GameScenes.exml",
