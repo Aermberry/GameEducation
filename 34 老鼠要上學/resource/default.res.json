@@ -1,0 +1,425 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,horn_png,top_title_background_png,cake_png,next_question_background_png,mouse_png,book_png,radio_png,mushroom_and_mouse_png,guidepost_png,whiteboard_png,option_background_png,bluesky_png,mouse_and_plane_png,flag_png,rope_png,exit_background_png,start_introduction_mp3,cock_border_png,box_png,biddy_png,mouse_mother_png,mouse_and_balloon_png,magic_lamp_png,cloud_message_border_png,message_border_big_png,correct_png,wrong_png,message_border_small_png,radiuAnimation_json,radiuAnimation_png,mouseTailAnimation_json,mouseTailAnimation_png,question_scene_question2_answer_mp3,question_scene_question4_answer_mp3,question_scene_question3_answer_mp3,question_scene_question3_wrong_mp3,question_scene_question2_dialog_mp3,question_scene_question1_dialog_mp3,wrong_dlalog_mp3,star_game_mp3,correct_mp3,start_scene_question3_option_mp3,start_scene_question2_option_mp3,start_scene_question4_option_mp3,start_scene_question1_option_mp3,First_mp3,Second_mp3,second_mp3,first_mp3,Squirrel1_png,Squirrel2_png,Squirrel3_png,squirrel1_png,squirrel2_png,squirrel3_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect2_png"
+		},
+		{
+			"url": "textures/horn.png",
+			"type": "image",
+			"name": "horn_png"
+		},
+		{
+			"url": "textures/top_title_background.png",
+			"type": "image",
+			"name": "top_title_background_png"
+		},
+		{
+			"name": "cake_png",
+			"type": "image",
+			"url": "textures/cake.png"
+		},
+		{
+			"name": "next_question_background_png",
+			"type": "image",
+			"url": "textures/next_question_background.png"
+		},
+		{
+			"name": "mouse_png",
+			"type": "image",
+			"url": "textures/mouse.png"
+		},
+		{
+			"name": "book_png",
+			"type": "image",
+			"url": "textures/book.png"
+		},
+		{
+			"name": "radio_png",
+			"type": "image",
+			"url": "textures/radio.png"
+		},
+		{
+			"name": "mushroom_and_mouse_png",
+			"type": "image",
+			"url": "textures/mushroom_and_mouse.png"
+		},
+		{
+			"name": "guidepost_png",
+			"type": "image",
+			"url": "textures/guidepost.png"
+		},
+		{
+			"name": "whiteboard_png",
+			"type": "image",
+			"url": "textures/whiteboard.png"
+		},
+		{
+			"name": "option_background_png",
+			"type": "image",
+			"url": "textures/option_background.png"
+		},
+		{
+			"name": "bluesky_png",
+			"type": "image",
+			"url": "textures/bluesky.png"
+		},
+		{
+			"name": "mouse_and_plane_png",
+			"type": "image",
+			"url": "textures/mouse_and_plane.png"
+		},
+		{
+			"name": "flag_png",
+			"type": "image",
+			"url": "textures/flag.png"
+		},
+		{
+			"name": "rope_png",
+			"type": "image",
+			"url": "textures/rope.png"
+		},
+		{
+			"name": "exit_background_png",
+			"type": "image",
+			"url": "textures/exit_background.png"
+		},
+		{
+			"name": "start_introduction_mp3",
+			"type": "sound",
+			"url": "audios/start_introduction.mp3"
+		},
+		{
+			"name": "cock_border_png",
+			"type": "image",
+			"url": "textures/cock_border.png"
+		},
+		{
+			"name": "box_png",
+			"type": "image",
+			"url": "textures/box.png"
+		},
+		{
+			"name": "biddy_png",
+			"type": "image",
+			"url": "textures/biddy.png"
+		},
+		{
+			"name": "mouse_mother_png",
+			"type": "image",
+			"url": "textures/mouse_mother.png"
+		},
+		{
+			"name": "mouse_and_balloon_png",
+			"type": "image",
+			"url": "textures/mouse_and_balloon.png"
+		},
+		{
+			"name": "magic_lamp_png",
+			"type": "image",
+			"url": "textures/magic_lamp.png"
+		},
+		{
+			"name": "cloud_message_border_png",
+			"type": "image",
+			"url": "textures/cloud_message_border.png"
+		},
+		{
+			"name": "message_border_big_png",
+			"type": "image",
+			"url": "textures/message_border_big.png"
+		},
+		{
+			"name": "correct_png",
+			"type": "image",
+			"url": "textures/correct.png"
+		},
+		{
+			"name": "wrong_png",
+			"type": "image",
+			"url": "textures/wrong.png"
+		},
+		{
+			"name": "message_border_small_png",
+			"type": "image",
+			"url": "textures/message_border_small.png"
+		},
+		{
+			"name": "radiuAnimation_json",
+			"type": "json",
+			"url": "radiu/radiuAnimation.json"
+		},
+		{
+			"name": "radiuAnimation_png",
+			"type": "image",
+			"url": "radiu/radiuAnimation.png"
+		},
+		{
+			"name": "mouseTailAnimation_json",
+			"type": "json",
+			"url": "mouseTail/mouseTailAnimation.json"
+		},
+		{
+			"name": "mouseTailAnimation_png",
+			"type": "image",
+			"url": "mouseTail/mouseTailAnimation.png"
+		},
+		{
+			"name": "question_scene_question2_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question2_answer.mp3"
+		},
+		{
+			"name": "question_scene_question4_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question4_answer.mp3"
+		},
+		{
+			"name": "question_scene_question3_answer_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question3_answer.mp3"
+		},
+		{
+			"name": "question_scene_question3_wrong_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question3_wrong.mp3"
+		},
+		{
+			"name": "question_scene_question2_dialog_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question2_dialog.mp3"
+		},
+		{
+			"name": "question_scene_question1_dialog_mp3",
+			"type": "sound",
+			"url": "audios/question_scene_question1_dialog.mp3"
+		},
+		{
+			"name": "wrong_dlalog_mp3",
+			"type": "sound",
+			"url": "audios/wrong_dlalog.mp3"
+		},
+		{
+			"name": "star_game_mp3",
+			"type": "sound",
+			"url": "audios/star_game.mp3"
+		},
+		{
+			"name": "correct_mp3",
+			"type": "sound",
+			"url": "audios/correct.mp3"
+		},
+		{
+			"name": "start_scene_question3_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question3_option.mp3"
+		},
+		{
+			"name": "start_scene_question2_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question2_option.mp3"
+		},
+		{
+			"name": "start_scene_question4_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question4_option.mp3"
+		},
+		{
+			"name": "start_scene_question1_option_mp3",
+			"type": "sound",
+			"url": "audios/start_scene_question1_option.mp3"
+		},
+		{
+			"name": "First_mp3",
+			"type": "sound",
+			"url": "audios/First.mp3"
+		},
+		{
+			"name": "Second_mp3",
+			"type": "sound",
+			"url": "audios/Second.mp3"
+		},
+		{
+			"name": "second_mp3",
+			"type": "sound",
+			"url": "audios/second.mp3"
+		},
+		{
+			"name": "first_mp3",
+			"type": "sound",
+			"url": "audios/first.mp3"
+		},
+		{
+			"name": "Squirrel1_png",
+			"type": "image",
+			"url": "textures/Squirrel1.png"
+		},
+		{
+			"name": "Squirrel2_png",
+			"type": "image",
+			"url": "textures/Squirrel2.png"
+		},
+		{
+			"name": "Squirrel3_png",
+			"type": "image",
+			"url": "textures/Squirrel3.png"
+		},
+		{
+			"name": "squirrel1_png",
+			"type": "image",
+			"url": "textures/squirrel1.png"
+		},
+		{
+			"name": "squirrel2_png",
+			"type": "image",
+			"url": "textures/squirrel2.png"
+		},
+		{
+			"name": "squirrel3_png",
+			"type": "image",
+			"url": "textures/squirrel3.png"
+		}
+	]
+}
