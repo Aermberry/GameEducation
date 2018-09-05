@@ -46,11 +46,9 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.optionComponent && this.optionComponent.hideMark();
 		this.optionComponent = (e.target.parent as OptionComponent);
-		console.log('1234');
 		if (this.isCorrect(e.target.text)) 
 		{
 			this.optionComponent.showCorrect();
-			// this.hideWrongInfo();
 			this.showCorrectAnimation();
 			await this.playCorrectMP3();
 			await lzlib.ThreadUtility.sleep(4000);

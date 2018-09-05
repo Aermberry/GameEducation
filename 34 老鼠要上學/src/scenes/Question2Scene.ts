@@ -93,11 +93,6 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		this.correctAnimation.play(0);
 	}
 
-	private hideCorrectInfo(): void
-	{
-		// this.messageBorderSmallImage.visible = false;
-		// this.alertCorrectInfoLabel.visible = false;
-	}
 
 	private showWrongInfo(): void
 	{
