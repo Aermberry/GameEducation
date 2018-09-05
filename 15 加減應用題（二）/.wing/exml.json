@@ -1,0 +1,15 @@
+{
+  "165a7c426f6": {
+    "path": "scenes/Question1Scene.ts",
+    "class": "Question1Scene",
+    "parentPath": ""
+  },
+  "165a7d555d4": {
+    "path": "components/TopTitleComponent.ts",
+    "class": "TopTitleComponent",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}

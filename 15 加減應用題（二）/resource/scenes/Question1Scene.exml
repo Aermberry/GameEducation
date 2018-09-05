@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question1SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{xiaoFangImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bottomLineRect}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{messageBorderBigImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHightInfoLabel}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingTopLineRect}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{700}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1229}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightArrowRect}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" y="{854}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{262}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightNumberLabel}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{messageBorderSmallImage}">
+				<tween:Wait duration="3250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoFangHightInfoLabel}">
+				<tween:Wait duration="3250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoFangTopLineRect}">
+				<tween:Wait duration="3500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{474}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{974}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoFangHeightArrowBottomRect}">
+				<tween:Wait duration="4550"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object height="{0}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object height="{150}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoFangHeightLabel}">
+				<tween:Wait duration="4750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textBackground}">
+				<tween:Wait duration="8000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionTitleLabel}">
+				<tween:Wait duration="8000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoFangHeightArrowTopRect}">
+				<tween:Wait duration="8500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{851}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{411}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionMarkImage}">
+				<tween:Wait duration="8750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165a7c426f6" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1"/>
+		<e:Image id="textBackground" width="766" height="168" x="178" y="105" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="0"/>
+		<e:Label id="questionTitleLabel" text="小 芳 的 身 高 是 多 少 ？" x="287.06" y="163.15" size="50" textColor="0x000000" alpha="0"/>
+		<e:Image id="messageBorderSmallImage" width="248" height="168" x="1076" y="89" anchorOffsetX="0" anchorOffsetY="0" source="message_border_small_png" alpha="0"/>
+		<e:Image id="messageBorderBigImage" width="343" height="198" x="1433" y="89" right="194" source="message_border_big_png" alpha="0"/>
+		<e:Rect id="xiaoMingTopLineRect" width="480" height="1" x="1229.48" y="262" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		<e:Label id="xiaoMingHightInfoLabel" text="我的身高157cm。" x="1371.91" y="126.24" textColor="0x000000" size="40" alpha="0"/>
+		<e:Label id="xiaoFangHightInfoLabel" text="我比小明矮54cm。" x="1093.03" y="111.12" size="40" textColor="0x000000" anchorOffsetX="0" width="204.06" alpha="0"/>
+		<e:Image id="xiaoFangHeightLabel" width="116" height="94" x="1224.66" y="320" source="54cm_and_arrow_png" alpha="0"/>
+		<e:Rect id="xiaoFangHeightArrowBottomRect" width="1" height="150" x="1330" y="262.96" alpha="0"/>
+		<e:Image id="xiaoMingHeightArrowRect" width="20" height="592" x="1620" y="262" source="arrow_top_png" alpha="0"/>
+		<e:Image id="xiaoFangHeightArrowTopRect" width="20" height="440" x="1074.55" y="411.33" source="arrow_top_png" alpha="0"/>
+		<e:Label id="xiaoMingHeightNumberLabel" text="157cm" x="1638.7" y="445" textColor="0x000000" size="36" alpha="0"/>
+		<e:Rect id="xiaoFangTopLineRect" width="540" height="1" x="974.61" y="411.45" alpha="0"/>
+		<e:Image id="xiaoMingImage" width="268" height="588.25" x="1350.55" y="263.3" anchorOffsetX="0" anchorOffsetY="0" source="xiaoming_png" alpha="0"/>
+		<e:Image id="xiaoFangImage" width="420" height="440" x="1130" y="478" anchorOffsetX="0" anchorOffsetY="0" source="xiaofang_png" bottom="39" alpha="0"/>
+		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="592" x="1630" y="272" source="arrow_top_png" alpha="0"/>
+		<e:Image id="questionMarkImage" width="44" height="102" x="990.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
+		<e:Label id="answerLabel" text="103cm" x="953.36" y="584.27" textColor="0x000000" size="34" visible="false" alpha="0"/>
+	</e:Group>
+
+</e:Skin>
