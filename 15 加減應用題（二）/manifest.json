@@ -13,6 +13,11 @@
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js"
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/components/ButtonComponent.js",
+		"bin-debug/components/CloudAlertComponent.js",
+		"bin-debug/components/ContentFrameComponent.js",
+		"bin-debug/components/TopTitleComponent.js",
+		"bin-debug/scenes/Question1Scene.js"
 	]
 }

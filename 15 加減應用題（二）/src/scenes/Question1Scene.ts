@@ -1,4 +1,7 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
+	
+	private startAnimation: egret.tween.TweenGroup;
+	
 	public constructor() {
 		super();
 	}
@@ -12,6 +15,12 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.playStartAnimation();
+	}
+
+	private playStartAnimation(): void
+	{
+		this.startAnimation.play();
 	}
 	
 }

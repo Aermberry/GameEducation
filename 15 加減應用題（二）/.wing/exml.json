@@ -1,15 +1,25 @@
 {
-  "165a7c426f6": {
-    "path": "scenes/Question1Scene.ts",
-    "class": "Question1Scene",
-    "parentPath": ""
-  },
-  "165a7d555d4": {
-    "path": "components/TopTitleComponent.ts",
-    "class": "TopTitleComponent",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  }
+    "165a7c426f6": {
+        "path": "scenes/Question1Scene.ts",
+        "class": "Question1Scene",
+        "parentPath": ""
+    },
+    "165a7d555d4": {
+        "path": "components/TopTitleComponent.ts",
+        "class": "TopTitleComponent",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165a8d3870f": {
+        "path": "components/CloudAlertComponent.ts",
+        "class": "CloudAlertComponent",
+        "parentPath": ""
+    },
+    "165a9110d57": {
+        "path": "components/ButtonComponent.ts",
+        "class": "ButtonComponent",
+        "parentPath": ""
+    }
 }

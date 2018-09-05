@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,next_question_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,xiaofang_png,xiaoming_png,question_mark_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,next_question_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,xiaofang_png,xiaoming_png,question_mark_png,cloud_png,question_png,question2_png,like_png,fairy_png,message_border_fairy_png",
 			"name": "preload"
 		}
 	],
@@ -220,6 +220,36 @@
 			"name": "question_mark_png",
 			"type": "image",
 			"url": "textures/question_mark.png"
+		},
+		{
+			"name": "cloud_png",
+			"type": "image",
+			"url": "textures/cloud.png"
+		},
+		{
+			"name": "question_png",
+			"type": "image",
+			"url": "textures/question.png"
+		},
+		{
+			"name": "question2_png",
+			"type": "image",
+			"url": "textures/question2.png"
+		},
+		{
+			"name": "like_png",
+			"type": "image",
+			"url": "textures/like.png"
+		},
+		{
+			"name": "fairy_png",
+			"type": "image",
+			"url": "textures/fairy.png"
+		},
+		{
+			"name": "message_border_fairy_png",
+			"type": "image",
+			"url": "textures/message_border_fairy.png"
 		}
 	]
 }

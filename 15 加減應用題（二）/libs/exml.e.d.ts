@@ -1,3 +1,11 @@
+declare class ButtonComponentSkin extends eui.Skin{
+}
+declare class CloudAlertComponentSkin extends eui.Skin{
+}
+declare class ContentFrameComponentSkin extends eui.Skin{
+}
+declare class TopTitleComponentSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -49,4 +57,6 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
+}
+declare class Question1SceneSkin extends eui.Skin{
 }

@@ -99,14 +99,14 @@
 						<e:Object x="{474}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="1000">
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object x="{974}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{xiaoFangHeightArrowBottomRect}">
-				<tween:Wait duration="4550"/>
+				<tween:Wait duration="4050"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object height="{0}" alpha="{1}"/>
@@ -119,7 +119,7 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{xiaoFangHeightLabel}">
-				<tween:Wait duration="4750"/>
+				<tween:Wait duration="4250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -127,7 +127,7 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{textBackground}">
-				<tween:Wait duration="8000"/>
+				<tween:Wait duration="7500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -135,7 +135,7 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{questionTitleLabel}">
-				<tween:Wait duration="8000"/>
+				<tween:Wait duration="7500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -143,10 +143,10 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{xiaoFangHeightArrowTopRect}">
-				<tween:Wait duration="8500"/>
+				<tween:Wait duration="8000"/>
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{851}"/>
+						<e:Object y="{851}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="500">
@@ -156,7 +156,15 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{questionMarkImage}">
-				<tween:Wait duration="8750"/>
+				<tween:Wait duration="8250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{CloudAlertComponent}">
+				<tween:Wait duration="9500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -190,6 +198,10 @@
 		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="592" x="1630" y="272" source="arrow_top_png" alpha="0"/>
 		<e:Image id="questionMarkImage" width="44" height="102" x="990.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
 		<e:Label id="answerLabel" text="103cm" x="953.36" y="584.27" textColor="0x000000" size="34" visible="false" alpha="0"/>
+		<ns1:CloudAlertComponent id="CloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="1"/>
+		<ns1:ButtonComponent width="180" height="102" x="341.88" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 多"/>
+		<ns1:ButtonComponent width="180" height="102" x="588.24" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 少"/>
+		<ns1:ButtonComponent width="322" height="150" x="793" y="708" text="列式計算" color="0x080e5c"/>
 	</e:Group>
 
 </e:Skin>
