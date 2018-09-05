@@ -19,6 +19,7 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 		// mouse.addE
 		this.textLabel.text = this._text;
 		this.textLabel.textColor = this._color;
+		
 	}
 
 	private _color = 0x000000;
