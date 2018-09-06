@@ -107,14 +107,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{button}">
-				<tween:Wait duration="1250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
+
 		</tween:TweenGroup>
 		<tween:TweenGroup id="movement_4">
 			<tween:TweenItem target="{image6}">
