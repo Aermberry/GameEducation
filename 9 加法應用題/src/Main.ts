@@ -94,6 +94,7 @@ class Main extends eui.UILayer {
     }
 
     private scenes = [
+        new StartScene(),
         new Question1Scene(),
         new Question2Scene(),
         new Question3Scene(),
@@ -111,7 +112,7 @@ class Main extends eui.UILayer {
         if (egret.getOption('scene')) {
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
         } else {
-            this.addChild(new Question1Scene());
+            this.addChild(new StartScene());
         }
     }
 
