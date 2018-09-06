@@ -2,5 +2,5 @@
 <e:Skin class="ImageButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  >
 	<w:Config id="165ac58f303" ></w:Config>
 	<e:Image id="backgroundImage" left="0" right="0" top="0" bottom="0" />
-	<e:Image id="contentImage" horizontalCenter="0" verticalCenter="0" />
+	<e:Image id="contentImage" horizontalCenter="0" verticalCenter="0" source="next_normal_png" />
 </e:Skin>
