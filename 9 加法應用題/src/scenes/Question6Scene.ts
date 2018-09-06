@@ -1,8 +1,6 @@
-class Question2Scene extends eui.Component implements eui.UIComponent {
-	private motion_1: egret.tween.TweenGroup;
-	private motion_2: egret.tween.TweenGroup;
-	private motion_3: egret.tween.TweenGroup;
-	private motion_4: egret.tween.TweenGroup;
+class Question6Scene extends eui.Component implements eui.UIComponent {
+	private motion_book1: egret.tween.TweenGroup;
+	private motion_book2: egret.tween.TweenGroup;
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private examplesButton: ImageButton;
@@ -21,7 +19,6 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
-		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextButtonClick, this);
 		this.examplesButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExamplesButtonClick, this)
 		this.lastButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastButtonClick, this)
 		this.playGame();
@@ -32,7 +29,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	}
 	// 下一题按钮时间
 	private onNextButtonClick(): void {
-		Main.instance.gotoScene(new Question3Scene());
+		
 	}
 	// 列式计算按钮事件
 	private onExamplesButtonClick(): void {
@@ -40,23 +37,23 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	}
 	// 上一题按钮事件
 	private onLastButtonClick(): void {
-		Main.instance.gotoScene(new Question1Scene());
+		Main.instance.gotoScene(new Question5Scene());
 	}
 
 	private async playGame(): Promise<void> {
-		this.motion_1.play(0);
-		this.motion_2.play(0);
-		await lzlib.SoundUtility.playSound('add_2streamsound 0_mp3');
-		this.motion_3.play(0);
-		await lzlib.SoundUtility.playSound('add_2streamsound 1_mp3');
+		this.motion_book1.play(0);
+		await lzlib.SoundUtility.playSound('add_6streamsound 0_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound 1_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound 2_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound 3_mp3');
 
 
 	}
 
 	private async playExamples(): Promise<void> {
-		this.motion_4.play(0);
-		await lzlib.SoundUtility.playSound('add_2streamsound 2_mp3');
-		await lzlib.SoundUtility.playSound('add_2streamsound 3_mp3');
-		await lzlib.SoundUtility.playSound('add_2streamsound 4_mp3');
+		this.motion_book2.play(0);
+		await lzlib.SoundUtility.playSound('add_6streamsound 4_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound 5_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound 6_mp3');
 	}
 }

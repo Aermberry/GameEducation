@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <!--<img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />-->
     <div id="egret-player" 
         class="egret-player" 
         data-entry-class="Main" 
@@ -79,9 +79,9 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    <!--<div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
-    </div>
+    </div>-->
     <label style="font-family: 標楷體; font-size: 1px;" />    
 <script>
     var loadScript = function (list, callback) {
@@ -141,8 +141,8 @@
             var egretPlayer = document.getElementById('egret-player');
             var canvas = egretPlayer.childNodes[1];
             if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
+                // document.getElementById('logo').style.left = canvas.style.left;
+                // document.getElementById('copyright').style.right = canvas.style.left;
             }
         });
     });
