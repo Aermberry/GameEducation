@@ -13,7 +13,7 @@
 	<e:Label text="reading" x="242.82" y="877" size="64" textColor="0xe21f1f" fontFamily="Comic Sans MS"/>
 	<e:Label text="playing the piano" x="66.32" y="1121" size="64" textColor="0xe21f1f" fontFamily="Comic Sans MS"/>
 	<e:Label text="Music Club" x="186.32" y="1055" size="64" textColor="0xe21f1f" fontFamily="Comic Sans MS"/>
-	<e:Label text="Mary Li" x="1138" y="291.49" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff"/>
+
 	<e:Image source="true_png" x="1332.44" y="269.49"/>
 	<e:Image source="true_png" x="1332.44" y="343.49"/>
 	<e:Image source="true_png" x="1332.44" y="415.49"/>
@@ -22,15 +22,16 @@
 	<e:Image source="true_png" x="1364.44" y="879.49"/>
 	<e:Image source="true_png" x="1368.44" y="947.49"/>
 	<e:Image source="true_png" x="1380.44" y="1083.49"/>
-	<e:Label text="3A" x="1172" y="358" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff"/>
-	<e:Label text="Flat B,6/F.\nHappy Garden,Shatin" x="972.5" y="560.64" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15"/>
-	<e:Label text="4th April" x="1193.44" y="763" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF"/>
-	<e:Label text="reading" x="1141.5" y="892.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15"/>
-	<e:Label text="playing the piano" x="982.5" y="956.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15"/>
-	<e:Label text="Music Club" x="1127" y="1097.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF"/>
-	<e:Label text="9" x="1194" y="427" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF"/>
-	<e:Button id="ageButton" label="Help" x="1566" y="509"/>
-	<e:Button id="AddressButton" label="Help" x="1566" y="605"/>
-	<e:Button id="HobbyButton" label="Help" x="1566" y="936"/>
-	<e:Button id="cluubButton" label="Help" x="1566" y="1073"/>
+	<e:Label text="Mary Li" x="1138" y="291.49" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" visible="false"/>
+	<e:Label text="3A" x="1172" y="358" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" visible="false"/>
+	<e:Label text="Flat B,6/F.\nHappy Garden,Shatin" x="972.5" y="560.64" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" visible="false"/>
+	<e:Label text="4th April" x="1193.44" y="763" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" visible="false"/>
+	<e:Label text="reading" x="1141.5" y="892.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" visible="false"/>
+	<e:Label text="playing the piano" x="982.5" y="956.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" visible="false"/>
+	<e:Label text="Music Club" x="1127" y="1097.5" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" visible="false"/>
+	<e:Label text="9" x="1194" y="427" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" visible="false"/>
+	<e:Button id="ageButton" label="Help" x="1566" y="509" visible="false"/>
+	<e:Button id="AddressButton" label="Help" x="1566" y="605" visible="false"/>
+	<e:Button id="HobbyButton" label="Help" x="1566" y="936" visible="false"/>
+	<e:Button id="cluubButton" label="Help" x="1566" y="1073" visible="false"/>
 </e:Skin>

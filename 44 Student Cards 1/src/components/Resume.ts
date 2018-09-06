@@ -17,6 +17,7 @@ namespace Ui {
 			this.textLabel.size = this.fontSize;
 			this.textLabel.textColor = this.fontColor;
 			this.textLabel.text = this.text;
+			this.textLabel.fontFamily="Comic Sans MS"
 			this.background.strokeColor = this.borderColor;
 		}
 

@@ -2,7 +2,7 @@
 <e:Skin class="TableSkin" width="1000" height="1200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165a84017cd" ></w:Config>
 	<e:Rect id="background" fillColor="0xFFFFFF" top="0" left="0" right="0" bottom="0" strokeWeight="15" strokeColor="0x00cb00"/>
-		<e:Label id="textLabel" text=" Fun Primary School\n Student Card\n\n Name:_____________\n Class:_____________\n Age:______________\n\n Address:____________\n ___________________\n\n Birthday:____________\n\n Hobby:_____________\n ___________________\n\n Club:______________" left="48" right="421" top="47" bottom="67" textColor="0xe21f1f" anchorOffsetX="0" size="47" lineSpacing="20"  anchorOffsetY="0"/>
+		<e:Label id="textLabel" text=" Fun Primary School\n Student Card\n\n Name:_____________\n Class:_____________\n Age:______________\n\n Address:____________\n ___________________\n\n Birthday:____________\n\n Hobby:_____________\n ___________________\n\n Club:______________" left="48" right="355" top="47" bottom="67" textColor="0xe21f1f" anchorOffsetX="0" size="47" lineSpacing="20"  anchorOffsetY="0" fontFamily="Comic Sans MS"/>
 	<e:Image source="girl_png" x="660.64" y="15.15" anchorOffsetX="0" width="325.27" anchorOffsetY="0" height="432.21"/>
 
 </e:Skin>
