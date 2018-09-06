@@ -14,7 +14,8 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartScene": "resource/scenes/StartScene.exml",
-		"Question1Scene": "resource/scenes/Question1Scene.exml"
+		"Question1Scene": "resource/scenes/Question1Scene.exml",
+		"Question2Scene": "resource/scenes/Question2Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -32,6 +33,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
