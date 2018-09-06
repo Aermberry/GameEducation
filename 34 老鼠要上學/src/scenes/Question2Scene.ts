@@ -23,7 +23,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
-		await this.playQuestionOptionMP3();
+		this.playQuestionOptionMP3();
 		this.initTap();
 		this.playStartCockAnimation();
 	}
@@ -54,11 +54,11 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onOptionTap(e:egret.TouchEvent): Promise<void>
 	{
-		console.log('clicked');
 		this.optionComponent && this.optionComponent.hideMark();
-		this.optionComponent = (e.target.parent as OptionComponent);
-		if (this.isCorrect(e.target.text)) 
+		this.optionComponent = (e.currentTarget as OptionComponent);
+		if (this.optionGroup.getChildIndex(e.currentTarget) == 1) 
 		{
+			this.removeTap();
 			this.optionComponent.showCorrect();
 			this.hideWrongInfo();
 			this.hideCockImage();
@@ -72,20 +72,12 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 			this.optionComponent.showWrong();
 			this.stopStartCockAnimation();
 			this.showWrongInfo();
-			//同步播放音频，播放完后隐藏提示信息并且重新播放playStartCockAnimation();
-			this.removeTap();
 			await this.playWrongMP3();
 			await this.playAnwerMP3();
 			this.hideWrongInfo();
 			this.playStartCockAnimation();
-			this.initTap();
 			this.optionComponent.hideMark();
 		}
-	}
-
-	private isCorrect(text: string): boolean
-	{
-		return QuestionAnswerRepository.answer[1] === text;
 	}
 
 	private showCorrectInfo(): void

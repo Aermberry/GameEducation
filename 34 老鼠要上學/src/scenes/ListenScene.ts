@@ -14,16 +14,16 @@ class ListenScene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected async childrenCreated():Promise<void>
+	protected childrenCreated(): void
 	{
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startAnswerLabel,true);
 		super.childrenCreated();
 		this.animationStart();
-		await this.playMP3();
 		this.startAnswerLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.mouseOver, this);
 		this.startAnswerLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.mouseOut, this);
 		this.startAnswerGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartAnswerGroupTap, this);
+		this.playMP3();
 	}
 
 	private mouseOver(e: egret.TouchEvent): void
@@ -39,6 +39,11 @@ class ListenScene extends eui.Component implements  eui.UIComponent {
 	private onStartAnswerGroupTap(): void
 	{
 		Main.instance.gotoScene(new Question1Scene());
+	}
+
+	private onSkipButtonClick(): void
+	{
+		
 	}
 
 	public animationStart(): void

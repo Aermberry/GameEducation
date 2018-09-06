@@ -112,7 +112,7 @@ class Main extends eui.UILayer {
     protected createGameScene(): void {
         Main.instance = this;
         if (egret.getOption('readQuestion')) {
-            this.addChild(new Question1Scene());
+            this.addChild(new Start1Scene());
             return;
         }
         

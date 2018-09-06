@@ -27,14 +27,14 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private initTap(): void
 	{
-		this.optionGroup.$children.map((item) => {
+		this.optionGroup.$children.forEach((item) => {
 			item.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onOptionTap, this);
 		})
 	}
 
 	private removeTap(): void
 	{
-		this.optionGroup.$children.map((item) => {
+		this.optionGroup.$children.forEach((item) => {
 			item.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onOptionTap, this);
 		})
 	}
@@ -42,9 +42,10 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private async onOptionTap(e:egret.TouchEvent): Promise<void>
 	{
 		this.optionComponent && this.optionComponent.hideMark();
-		this.optionComponent = (e.target.parent as OptionComponent);
-		if (this.isCorrect(e.target.text)) 
+		this.optionComponent = (e.currentTarget as OptionComponent);
+		if (this.optionGroup.getChildIndex(e.currentTarget) == 2) 
 		{
+			this.removeTap();
 			this.optionComponent.showCorrect();
 			this.hideWrongInfo();
 			this.showCorrectInfo();
@@ -56,19 +57,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		{
 			this.optionComponent.showWrong();
 			this.showWrongInfo();
-			//同步播放音频，播放完后隐藏提示信息
-			//this.removeTap();
 			await this.playWrongMP3();
 			await this.playAnwerMP3();
 			this.hideWrongInfo();
-			//this.initTap();
 			this.optionComponent.hideMark();
 		}
-	}
-
-	private isCorrect(text: string): boolean
-	{
-		return QuestionAnswerRepository.answer[0] === text;
 	}
 
 	private showCorrectInfo(): void

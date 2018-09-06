@@ -21,7 +21,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
-		await this.playQuestionOptionMP3();
+	    this.playQuestionOptionMP3();
 		this.initTap();
 	}
 
@@ -45,9 +45,10 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private async onOptionTap(e:egret.TouchEvent): Promise<void>
 	{
 		this.optionComponent && this.optionComponent.hideMark();
-		this.optionComponent = (e.target.parent as OptionComponent);
-		if (this.isCorrect(e.target.text)) 
+		this.optionComponent = (e.currentTarget as OptionComponent);
+		if (this.optionGroup.getChildIndex(e.currentTarget) == 3) 
 		{
+			this.removeTap();
 			this.optionComponent.showCorrect();
 			this.showCorrectAnimation();
 			await this.playCorrectMP3();
@@ -58,19 +59,12 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 		{
 			this.optionComponent.showWrong();
 			this.showWrongAlertGroup();
-			this.removeTap();
 			this.playWrongAnimation();
 			await this.playWrongMP3();
 			await this.playAnwerMP3();
 			this.hideWrongAlertGroup();
-			this.initTap();
 			this.optionComponent.hideMark();
 		}
-	}
-
-	private isCorrect(text: string): boolean
-	{
-		return QuestionAnswerRepository.answer[3] === text;
 	}
 
 	private showCorrectAnimation(): void
