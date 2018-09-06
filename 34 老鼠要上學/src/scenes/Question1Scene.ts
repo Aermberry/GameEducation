@@ -21,7 +21,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
-		await this.playQuestionOptionMP3();
+		this.playQuestionOptionMP3();
 		this.initTap();
 	}
 
@@ -57,11 +57,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.optionComponent.showWrong();
 			this.showWrongInfo();
 			//同步播放音频，播放完后隐藏提示信息
-			this.removeTap();
+			//this.removeTap();
 			await this.playWrongMP3();
 			await this.playAnwerMP3();
 			this.hideWrongInfo();
-			this.initTap();
+			//this.initTap();
 			this.optionComponent.hideMark();
 		}
 	}
