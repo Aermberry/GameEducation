@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TopTitleComponentSkin" width="1920" height="125" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1658ef24b1b" ></w:Config>
+		<e:Image left="0" right="0" top="0" bottom="0" source="top_title_background_png"/>
+		<e:Label text="中 國 語 文" x="44" textColor="0x32c330" size="56" top="8" bottom="-8" verticalAlign="middle" fontFamily="標楷體"/>
+		<e:Label text="第 一 學 習 階 段" x="489" top="8" bottom="-8" size="76" verticalAlign="middle" textColor="0xff9332" fontFamily="標楷體"/>
+</e:Skin>
