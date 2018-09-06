@@ -1,8 +1,16 @@
 declare class ButtonComponentSkin extends eui.Skin{
 }
+declare class CalcComponentsSkin extends eui.Skin{
+}
 declare class CloudAlertComponentSkin extends eui.Skin{
 }
 declare class ContentFrameComponentSkin extends eui.Skin{
+}
+declare class FormulaComponentSkin extends eui.Skin{
+}
+declare class LastQuestionComponentSkin extends eui.Skin{
+}
+declare class NextQuestionComponentSkin extends eui.Skin{
 }
 declare class TopTitleComponentSkin extends eui.Skin{
 }
@@ -59,4 +67,10 @@ declare module skins{
 	}
 }
 declare class Question1SceneSkin extends eui.Skin{
+}
+declare class Question2SceneSkin extends eui.Skin{
+}
+declare class Question3SceneSkin extends eui.Skin{
+}
+declare class Question4SceneSkin extends eui.Skin{
 }

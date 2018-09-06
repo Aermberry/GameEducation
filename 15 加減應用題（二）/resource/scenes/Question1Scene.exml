@@ -163,7 +163,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{CloudAlertComponent}">
+			<tween:TweenItem target="{cloudAlertComponent}">
 				<tween:Wait duration="9500"/>
 				<tween:Set>
 					<tween:props>
@@ -171,6 +171,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{hightButtonComponent}"/>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a7c426f6" ></w:Config>
@@ -197,11 +198,15 @@
 		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="592" x="1630" y="272" source="arrow_top_png" alpha="0"/>
 		<e:Image id="questionMarkImage" width="44" height="102" x="990.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
-		<e:Label id="answerLabel" text="103cm" x="953.36" y="584.27" textColor="0x000000" size="34" visible="false" alpha="0"/>
-		<ns1:CloudAlertComponent id="CloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="1"/>
-		<ns1:ButtonComponent width="180" height="102" x="341.88" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 多"/>
-		<ns1:ButtonComponent width="180" height="102" x="588.24" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 少"/>
-		<ns1:ButtonComponent width="322" height="150" x="793" y="708" text="列式計算" color="0x080e5c"/>
+		<e:Label id="answerLabel" text="103cm" x="953.36" y="584.27" textColor="0x000000" size="34" alpha="1" visible="false"/>
+		<e:Group id="alertAndOperationGroup">
+			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<ns1:ButtonComponent id="hightButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 高" visible="false"/>
+			<ns1:ButtonComponent id="shortButtonComponent" width="180" height="102" x="509.45" y="584" anchorOffsetX="0" anchorOffsetY="0" text="較 矮" visible="false"/>
+			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
+		</e:Group>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
 	</e:Group>
 
 </e:Skin>

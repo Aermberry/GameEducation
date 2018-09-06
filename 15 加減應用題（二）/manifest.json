@@ -6,18 +6,27 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
 		"libs/modules/game/game.js",
-		"libs/modules/promise/promise.js"
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/AssetAdapter.js",
 		"bin-debug/LoadingUI.js",
+		"bin-debug/components/ContentFrameComponent.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/components/ButtonComponent.js",
+		"bin-debug/components/CalcComponents.js",
 		"bin-debug/components/CloudAlertComponent.js",
-		"bin-debug/components/ContentFrameComponent.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/components/FormulaComponent.js",
+		"bin-debug/components/LastQuestionComponent.js",
+		"bin-debug/components/NextQuestionComponent.js",
 		"bin-debug/components/TopTitleComponent.js",
-		"bin-debug/scenes/Question1Scene.js"
+		"bin-debug/scenes/Question1Scene.js",
+		"bin-debug/scenes/Question2Scene.js",
+		"bin-debug/scenes/Question3Scene.js",
+		"bin-debug/scenes/Question4Scene.js"
 	]
 }

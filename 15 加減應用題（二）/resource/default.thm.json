@@ -17,13 +17,24 @@
 		"TopTitleComponent": "resource/components/TopTitleComponent.exml",
 		"ContentFrameComponent": "resource/components/ContentFrameComponent.exml",
 		"CloudAlertComponent": "resource/components/CloudAlertComponent.exml",
-		"ButtonComponent": "resource/components/ButtonComponent.exml"
+		"ButtonComponent": "resource/components/ButtonComponent.exml",
+		"CalcComponents": "resource/components/CalcComponents.exml",
+		"FormulaComponent": "resource/components/FormulaComponent.exml",
+		"NextQuestionComponent": "resource/components/NextQuestionComponent.exml",
+		"LastQuestionComponent": "resource/components/LastQuestionComponent.exml",
+		"Question2Scene": "resource/scenes/Question2Scene.exml",
+		"Question3Scene": "resource/scenes/Question3Scene.exml",
+		"Question4Scene": "resource/scenes/Question4Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/ButtonComponent.exml",
+		"resource/components/CalcComponents.exml",
 		"resource/components/CloudAlertComponent.exml",
 		"resource/components/ContentFrameComponent.exml",
+		"resource/components/FormulaComponent.exml",
+		"resource/components/LastQuestionComponent.exml",
+		"resource/components/NextQuestionComponent.exml",
 		"resource/components/TopTitleComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
@@ -38,7 +49,10 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scenes/Question1Scene.exml"
+		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2Scene.exml",
+		"resource/scenes/Question3Scene.exml",
+		"resource/scenes/Question4Scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

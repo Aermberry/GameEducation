@@ -15,11 +15,24 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		// mouse.enable(this.stage);
-		// mouse.addE
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.textLabel,true);
+		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 		this.textLabel.text = this._text;
 		this.textLabel.textColor = this._color;
 		
+	}
+
+	private onMouseOver(e: egret.TouchEvent): void
+	{
+		this.currentState = 'over';
+	}
+
+
+	private onMouseOut(e: egret.TouchEvent): void
+	{
+		this.currentState = 'normal';
 	}
 
 	private _color = 0x000000;
