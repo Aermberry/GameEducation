@@ -19,10 +19,12 @@
 		"TextLabel": "resource/components/TextLabel.exml",
 		"Resume": "resource/components/Resume.exml",
 		"Table": "resource/components/Table.exml",
-		"Tips": "resource/components/Tips.exml"
+		"Tips": "resource/components/Tips.exml",
+		"Hobby": "resource/eui_skins/Hobby.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/Hobby.exml",
 		"resource/components/Resume.exml",
 		"resource/components/Table.exml",
 		"resource/components/TextLabel.exml",

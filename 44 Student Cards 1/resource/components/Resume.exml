@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ResumeSkin" width="826" height="1273.91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 <e:Rect id="background" fillColor="0xFFFFFF" top="0" left="0" right="0" bottom="0" strokeWeight="15" strokeColor="0xf76c36"/>
-		<e:Label id="textLabel" text=" Hi,I'm Mary Li.I'm 9\n years old.My birthday\n is on 4th April.\n\n I live at Flat B,6/F.\n Happy Garden,Shatin.I\n go to school on foot. I'm\n in 3A.\n\n I like reading and\n playing the piano. I join\n the Music Club." left="15" right="15" top="30" bottom="8" textColor="0xe21f1f" anchorOffsetX="0" size="64" lineSpacing="25"  fontFamily="Comic Sans MS"/>
 </e:Skin>
