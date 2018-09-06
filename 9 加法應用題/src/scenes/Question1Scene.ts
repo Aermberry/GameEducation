@@ -3,6 +3,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private movement_2: egret.tween.TweenGroup;
 	private movement_3: egret.tween.TweenGroup;
 	private movement_4: egret.tween.TweenGroup;
+	private exitButton: ImageButton;
+	private nextButton: ImageButton;
 
 	public constructor() {
 		super();
@@ -18,7 +20,19 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextButtonClick, this);
 		this.playGame();
+	}
+
+	private onExitButtonClick(): void
+	{
+		window.close();
+	}
+
+	private onNextButtonClick(): void
+	{
+		
 	}
 
 	private async playGame(): Promise<void>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
 	<w:Config id="1659e229649"/>
 	<w:Declarations>
 		<tween:TweenGroup id="movement_1">
@@ -189,9 +189,8 @@
 	<e:Image id="image9" x="764" y="924.91" source="result_332_png" alpha="0"/>
 	<e:Image x="276" y="36" source="header_head_png"/>
 	<e:Image x="1091" y="60.91" source="addition_png"/>
-	<e:Image x="1706" y="142" source="leave_box_png" width="192" height="110"/>
-	<e:Image x="1742.46" y="166.88" source="leave_png"/>
-	<e:Image x="1712" y="942" source="next_normal_png"/>
+	<ns1:ImageButton id="exitButton" x="1706" y="142" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
 	<e:Image x="20" y="156.79" source="number_box_png"/>
+	<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png" />
 
 </e:Skin>

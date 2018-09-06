@@ -1,27 +1,32 @@
 {
-  "1659e229649": {
-    "backgroundType": "user",
-    "backgroundX": 0,
-    "backgroundY": 0,
-    "backgroundWidth": -1,
-    "backgroundHeight": -1,
-    "useBgImage": true,
-    "useBgColor": true,
-    "backgroundAlpha": 100,
-    "backgroundColor": "#bfcbe3"
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  },
-  "165a246dcdd": {
-    "backgroundType": "user",
-    "backgroundX": 0,
-    "backgroundY": 0,
-    "backgroundWidth": -1,
-    "backgroundHeight": -1,
-    "useBgImage": true,
-    "useBgColor": true,
-    "backgroundAlpha": 100,
-    "backgroundColor": "#bfcbe5"
-  }
+    "1659e229649": {
+        "backgroundType": "user",
+        "backgroundX": 0,
+        "backgroundY": 0,
+        "backgroundWidth": -1,
+        "backgroundHeight": -1,
+        "useBgImage": true,
+        "useBgColor": true,
+        "backgroundAlpha": 100,
+        "backgroundColor": "#bfcbe3"
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165a246dcdd": {
+        "backgroundType": "user",
+        "backgroundX": 0,
+        "backgroundY": 0,
+        "backgroundWidth": -1,
+        "backgroundHeight": -1,
+        "useBgImage": true,
+        "useBgColor": true,
+        "backgroundAlpha": 100,
+        "backgroundColor": "#bfcbe5"
+    },
+    "165ac58f303": {
+        "path": "components/ImageButton.ts",
+        "class": "ImageButton",
+        "parentPath": ""
+    }
 }

@@ -14,10 +14,12 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartScene": "resource/scenes/StartScene.exml",
-		"Question1Scene": "resource/scenes/Question1Scene.exml"
+		"Question1Scene": "resource/scenes/Question1Scene.exml",
+		"ImageButton": "resource/components/ImageButton.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/ImageButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
