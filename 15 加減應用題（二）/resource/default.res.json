@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,xiaofang_png,xiaoming_png,question_mark_png,cloud_png,question_png,question2_png,like_png,fairy_png,message_border_fairy_png,calc_background_png,streamsound_0_mp3,streamsound_1_mp3,streamsound_2_mp3,streamsound_3_mp3,streamsound_4_mp3,streamsound_5_mp3,formula_question_png,formula_left_png,formula_right_png,formula_result_png,streamsound_6_mp3,streamsound_7_mp3,streamsound_8_mp3,streamsound_9_mp3,next_question_normal_png,next_question_over_png,last_question_normal_png,last_question_over_png,formula2_title_png,formula2_left_png,formula2_right_png,formula2_result_png,sprotsman_male_png,sportswomen_png,formula2_answer_png,streamsound2_0_mp3,streamsound2_1_mp3,streamsound2_2_mp3,streamsound2_3_mp3,streamsound2_4_mp3,streamsound2_5_mp3,streamsound2_6_mp3,streamsound2_7_mp3,formula2_question_png,glodfish_png,koi_png,question3_png,formula3_question_png,formula3_left_png,formula3_right_png,formula3_result_png,streamsound3_0_mp3,streamsound3_1_mp3,streamsound3_2_mp3,streamsound3_3_mp3,streamsound3_4_mp3,streamsound3_5_mp3,streamsound3_6_mp3,streamsound3_7_mp3,number_koi_png,coat_png,coat_and_sweater_png,question4_png,streamsound4_0_mp3,streamsound4_1_mp3,streamsound4_2_mp3,streamsound4_3_mp3,streamsound4_4_mp3,streamsound4_5_mp3,streamsound4_6_mp3,streamsound4_7_mp3,coat_and_sweater_no_question_png,formula4_question_png,formula4_left_png,formula4_result_png,formula4_right_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,xiaofang_png,xiaoming_png,question_mark_png,cloud_png,question_png,question2_png,like_png,fairy_png,message_border_fairy_png,calc_background_png,streamsound_0_mp3,streamsound_1_mp3,streamsound_2_mp3,streamsound_3_mp3,streamsound_4_mp3,streamsound_5_mp3,formula_question_png,formula_left_png,formula_right_png,formula_result_png,streamsound_6_mp3,streamsound_7_mp3,streamsound_8_mp3,streamsound_9_mp3,next_question_normal_png,next_question_over_png,last_question_normal_png,last_question_over_png,formula2_title_png,formula2_left_png,formula2_right_png,formula2_result_png,sprotsman_male_png,sportswomen_png,formula2_answer_png,streamsound2_0_mp3,streamsound2_1_mp3,streamsound2_2_mp3,streamsound2_3_mp3,streamsound2_4_mp3,streamsound2_5_mp3,streamsound2_6_mp3,streamsound2_7_mp3,formula2_question_png,glodfish_png,koi_png,question3_png,formula3_question_png,formula3_left_png,formula3_right_png,formula3_result_png,streamsound3_0_mp3,streamsound3_1_mp3,streamsound3_2_mp3,streamsound3_3_mp3,streamsound3_4_mp3,streamsound3_5_mp3,streamsound3_6_mp3,streamsound3_7_mp3,number_koi_png,coat_png,coat_and_sweater_png,question4_png,streamsound4_0_mp3,streamsound4_1_mp3,streamsound4_2_mp3,streamsound4_3_mp3,streamsound4_4_mp3,streamsound4_5_mp3,streamsound4_6_mp3,streamsound4_7_mp3,coat_and_sweater_no_question_png,formula4_question_png,formula4_left_png,formula4_result_png,formula4_right_png,short_sleeve_png,shortsleeve_and_longsleeve_png,question5_png,formula5_left_png,formula5_title_png,formula5_right_png,formula5_result_png,shortsleeve_and_longsleeve_answer_png,streamsound5_0_mp3,streamsound5_1_mp3,streamsound5_2_mp3,streamsound5_3_mp3,streamsound5_4_mp3,streamsound5_5_mp3,streamsound5_6_mp3,streamsound5_7_mp3",
 			"name": "preload"
 		}
 	],
@@ -580,6 +580,86 @@
 			"name": "formula4_right_png",
 			"type": "image",
 			"url": "textures/formula4_right.png"
+		},
+		{
+			"name": "short_sleeve_png",
+			"type": "image",
+			"url": "textures/short_sleeve.png"
+		},
+		{
+			"name": "shortsleeve_and_longsleeve_png",
+			"type": "image",
+			"url": "textures/shortsleeve_and_longsleeve.png"
+		},
+		{
+			"name": "question5_png",
+			"type": "image",
+			"url": "textures/question5.png"
+		},
+		{
+			"name": "formula5_left_png",
+			"type": "image",
+			"url": "textures/formula5_left.png"
+		},
+		{
+			"name": "formula5_title_png",
+			"type": "image",
+			"url": "textures/formula5_title.png"
+		},
+		{
+			"name": "formula5_right_png",
+			"type": "image",
+			"url": "textures/formula5_right.png"
+		},
+		{
+			"name": "formula5_result_png",
+			"type": "image",
+			"url": "textures/formula5_result.png"
+		},
+		{
+			"name": "shortsleeve_and_longsleeve_answer_png",
+			"type": "image",
+			"url": "textures/shortsleeve_and_longsleeve_answer.png"
+		},
+		{
+			"name": "streamsound5_0_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_0.mp3"
+		},
+		{
+			"name": "streamsound5_1_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_1.mp3"
+		},
+		{
+			"name": "streamsound5_2_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_2.mp3"
+		},
+		{
+			"name": "streamsound5_3_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_3.mp3"
+		},
+		{
+			"name": "streamsound5_4_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_4.mp3"
+		},
+		{
+			"name": "streamsound5_5_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_5.mp3"
+		},
+		{
+			"name": "streamsound5_6_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_6.mp3"
+		},
+		{
+			"name": "streamsound5_7_mp3",
+			"type": "sound",
+			"url": "audios/streamsound5_7.mp3"
 		}
 	]
 }

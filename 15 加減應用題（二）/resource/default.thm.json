@@ -24,7 +24,8 @@
 		"LastQuestionComponent": "resource/components/LastQuestionComponent.exml",
 		"Question2Scene": "resource/scenes/Question2Scene.exml",
 		"Question3Scene": "resource/scenes/Question3Scene.exml",
-		"Question4Scene": "resource/scenes/Question4Scene.exml"
+		"Question4Scene": "resource/scenes/Question4Scene.exml",
+		"Question5Scene": "resource/scenes/Question5Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -52,7 +53,8 @@
 		"resource/scenes/Question1Scene.exml",
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3Scene.exml",
-		"resource/scenes/Question4Scene.exml"
+		"resource/scenes/Question4Scene.exml",
+		"resource/scenes/Question5Scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
