@@ -2,7 +2,10 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private motion_1: egret.tween.TweenGroup;
 	private motion_2: egret.tween.TweenGroup;
 	private motion_3: egret.tween.TweenGroup;
-	private motion_4: egret.tween.TweenGroup;
+	private image37: eui.Image;
+	private image38: eui.Image;
+	private image39: eui.Image;
+	private image40: eui.Image;
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private examplesButton: ImageButton;
@@ -47,16 +50,19 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		this.motion_1.play(0);
 		this.motion_2.play(0);
 		await lzlib.SoundUtility.playSound('add_2streamsound 0_mp3');
-		this.motion_3.play(0);
-		await lzlib.SoundUtility.playSound('add_2streamsound 1_mp3');
-
-
+		this.examplesButton.visible = true;
 	}
 
 	private async playExamples(): Promise<void> {
-		this.motion_4.play(0);
+		this.examplesButton.visible = false;
+		this.motion_3.play(0);
+		await lzlib.SoundUtility.playSound('add_2streamsound 1_mp3');
+		this.image37.visible = true;
+		this.image38.visible = true;
 		await lzlib.SoundUtility.playSound('add_2streamsound 2_mp3');
+		this.image39.visible = true;
 		await lzlib.SoundUtility.playSound('add_2streamsound 3_mp3');
+		this.image40.visible = true;
 		await lzlib.SoundUtility.playSound('add_2streamsound 4_mp3');
 	}
 }

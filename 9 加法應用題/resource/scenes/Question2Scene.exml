@@ -535,6 +535,7 @@
 		</tween:TweenGroup>
 		<tween:TweenGroup id="motion_3">
 			<tween:TweenItem target="{group}">
+				<tween:Wait duration="5000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -547,6 +548,7 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{group0}">
+				<tween:Wait duration="5000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -558,66 +560,10 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{examplesButton}">
-				<tween:Wait duration="6000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-
-
-			</tween:TweenItem>
 
 
 
 
-		</tween:TweenGroup>
-		<tween:TweenGroup id="motion_4">
-			<tween:TweenItem target="{image37}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="500"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image38}">
-				<tween:Wait duration="750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image39}">
-				<tween:Wait duration="950"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image40}">
-				<tween:Wait duration="1150"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{examplesButton}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a246dcdd"/>
@@ -666,23 +612,19 @@
 	<e:Image id="image36" x="268" y="246.95" source="people_boy_b_png" alpha="0"/>
 	<e:Image width="0" height="0" x="1020" y="458" source="people_girl_png"/>
 	<e:Image id="image35" x="692" y="248" source="people_girl_g_png" alpha="0"/>
-	<e:Image id="image37" x="850" y="804" source="prople_total_png" alpha="0"/>
-	<e:Image id="image38" x="850" y="874" source="prople_tt_png" alpha="0"/>
+	<e:Image id="image37" x="850" y="804" source="prople_total_png" visible="false"/>
+	<e:Image id="image38" x="850" y="874" source="prople_tt_png" visible="false"/>
 	<e:Image id="image34" x="979.79" y="246.5" source="prople_1ab_png" alpha="0"/>
-	<e:Image id="image39" x="932" y="876" source="prople_13_png" alpha="0"/>
-	<e:Image id="image40" x="798" y="934" source="prople_35_png" alpha="0"/>
+	<e:Image id="image39" x="932" y="876" source="prople_13_png" visible="false"/>
+	<e:Image id="image40" x="798" y="934" source="prople_35_png" visible="false"/>
 	<e:Image x="290.5" y="28" source="header_head_png"/>
 	<e:Image x="1078.79" y="49.5" source="addition_png"/>
-	<e:Image x="1706" y="142" source="leave_box_png" width="192" height="110"/>
-	<e:Image x="1742.7" y="166.79" source="leave_png"/>
-	<e:Image x="1712" y="942" source="next_normal_png"/>
 	<e:Image x="20" y="157" source="number_box_png"/>
-	<e:Image x="18.18" y="940.06" source="last-normal_png"/>
 
 	<ns1:ImageButton id="exitButton" x="1706" y="142" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
 	<e:Image x="20" y="156.79" source="number_box_png"/>
 	<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png" />
-	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  alpha="0"/>
+	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  visible="false"/>
 	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
 	<e:Label text="2" x="60.88" y="169.67" textColor="0x002b58" size="120" fontFamily="DFKai-SB"/>
 </e:Skin>

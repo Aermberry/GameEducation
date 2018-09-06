@@ -62,16 +62,12 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="motion_darts2">
 			<tween:TweenItem target="{image4}">
 				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{0}" x="{981.34}" y="{638.82}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
+						<e:Object x="{972.5}" y="{664}" alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="250">
@@ -83,13 +79,7 @@
 			<tween:TweenItem target="{image5}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{1403.34}" y="{830.32}" alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
+						<e:Object x="{1587.34}" y="{817}" alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="250">
@@ -101,13 +91,7 @@
 			<tween:TweenItem target="{image6}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{1587}" y="{162.89}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
+						<e:Object x="{1587}" y="{132.03}" alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="250">
@@ -117,12 +101,7 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{image7}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="500"/>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -130,33 +109,7 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{image8}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="500"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image9}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="1000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{examplesButton}">
-				<tween:Wait duration="10000"/>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -164,53 +117,22 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="motion_darts2">
-			<tween:TweenItem target="{image10}">
+		<tween:TweenGroup id="motion_darts3">
+			<tween:TweenItem target="{image9}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="500"/>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image11}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="500"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image12}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="1000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image13}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="1500"/>
+			<tween:TweenItem target="{image14}">
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -236,26 +158,26 @@
 	<e:Image x="241" y="422" source="black_box_png"/>
 	<e:Image x="216.76" y="236.39" source="Bubble_box1_png"/>
 	<e:Image id="image" x="245.29" y="252.97" source="fraction_189_1_png"/>
-	<e:Image id="image8" x="245.36" y="311.85" source="fraction_165-1_png"/>
-	<e:Image x="981.34" y="230.85" source="Bubble_box2_png"/>
-	<e:Image id="image9" x="1116" y="279.03" source="fraction_total_png"/>
+	<e:Image id="image8" x="245.36" y="311.85" source="fraction_165-1_png" alpha="0"/>
+	<e:Image id="image14" x="981.34" y="230.85" source="Bubble_box2_png" alpha="0"/>
+	<e:Image id="image9" x="1116" y="279.03" source="fraction_total_png" alpha="0"/>
 	<e:Image id="image3" x="251.42" y="431.97" source="fraction_189_png"/>
-	<e:Image id="image7" x="1569.64" y="436" source="fraction_165_png"/>
+	<e:Image id="image7" x="1569.64" y="436" source="fraction_165_png" alpha="0"/>
 	<e:Image id="image0" x="371.69" y="455.15" source="darts2_png" alpha="0"/>
-	<e:Image id="image4" x="1246.34" y="450.89" source="darts2_png"/>
+	<e:Image id="image4" x="1246.34" y="450.89" source="darts2_png" alpha="0"/>
 	<e:Image id="image1" x="504.45" y="533.03" source="darts3_png" alpha="0"/>
 	<e:Image id="image5" x="1284.34" y="530" source="darts3_png" alpha="0"/>
 	<e:Image id="image2" x="547.76" y="398.78" source="darts1_png" alpha="0"/>
 	<e:Image id="image6" x="1403.34" y="450.89" source="darts1_png" alpha="0"/>
-	<e:Image id="image10" x="809" y="785" source="darts_fraction_png" alpha="0"/>
-	<e:Image id="image11" x="812.09" y="860.82" source="fraction_189_2_png" alpha="0"/>
-	<e:Image id="image12" x="911.79" y="860.82" source="fraction_165_2_png" alpha="0"/>
-	<e:Image id="image13" x="760.37" y="926.88" source="fraction_total_1_png" alpha="0"/>
+	<e:Image id="image10" x="809" y="785" source="darts_fraction_png" visible="false"/>
+	<e:Image id="image11" x="812.09" y="860.82" source="fraction_189_2_png" visible="false"/>
+	<e:Image id="image12" x="911.79" y="860.82" source="fraction_165_2_png" visible="false"/>
+	<e:Image id="image13" x="760.37" y="926.88" source="fraction_total_1_png" visible="false"/>
 
 	<ns1:ImageButton id="exitButton" x="1706" y="142" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
 	<e:Image x="20" y="156.79" source="number_box_png"/>
 	<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png" />
-	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  alpha="0"/>
+	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  visible="false"/>
 	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
 	<e:Label text="4" x="54.79" y="175.49" size="120" textColor="0x002b58"/>
 </e:Skin>
