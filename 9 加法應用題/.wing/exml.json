@@ -24,14 +24,9 @@
         "backgroundAlpha": 100,
         "backgroundColor": "#bfcbe5"
     },
-    "165ac55cfc8": {
-        "path": "scenes\\Question2Scene.ts",
-        "class": "Question2Scene",
-        "parentPath": ""
-    },
-    "165ac57e9b2": {
-        "path": "scenes\\Question2Scene.ts",
-        "class": "Question2Scene",
+    "165ac58f303": {
+        "path": "components/ImageButton.ts",
+        "class": "ImageButton",
         "parentPath": ""
     }
 }
