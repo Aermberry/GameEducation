@@ -34,6 +34,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDragDrop(): void {
+		this.dropGroup.removeChildren;
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
@@ -65,7 +66,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				 case 2:
 				 this.addressButton.visible=true;
 				 break;
-				 case 3:
+				 case 4:
 				 this.hobbyButton.visible=true;
 				 break;
 			 }
@@ -73,12 +74,21 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			//  if(this.confirmGroup.$children[2].visible)	this.addressButton.visible=true;
 			//  if(this.confirmGroup.$children[4].visible) this.hobbyButton.visible=true;
 			 if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible)this.clubButton.visible=true;
+			 this.confirm();
 			this.confirmAllWorldsAreCorrect();
 		}
 	}
 
+	private confirm():void{
+		if(this.confirmGroup.$children[2].visible) this.ageButton.visible=false;
+		if(this.confirmGroup.$children[3].visible)	this.addressButton.visible=false;
+		if(this.confirmGroup.$children[7].visible) this.clubButton.visible=false;
+		if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible) this.hobbyButton.visible=false;
+	}
+
 	private confirmAllWorldsAreCorrect(): void {
 		if (this.confirmGroup.$children.all(child => child.visible)) {
+			lzlib.ThreadUtility.sleep(3000);
 			Main.instance.gotoScene(new FinishScene());
 		}
 	}
