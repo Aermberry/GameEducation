@@ -51,6 +51,7 @@
 		<e:Image id="maleSportsmanImage" x="1225" y="76" source="sprotsman_male_png" alpha="0"/>
 		<e:Image id="sportswomanImage" x="1325" y="492" source="sportswomen_png" visible="false"/>
 		<e:Image id="formula2AnswerImage" x="1333" y="754" source="formula2_answer_png" visible="false"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>
 	
 </e:Skin>

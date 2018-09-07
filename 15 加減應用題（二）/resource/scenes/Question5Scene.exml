@@ -58,7 +58,6 @@
 		<e:Image id="shortSleeveImage" x="1093" y="88" alpha="0" anchorOffsetX="0" anchorOffsetY="0" source="short_sleeve_png"/>
 		<e:Image id="shortsleeveAndLongsleeve" x="1093" y="88" alpha="0" anchorOffsetX="0" anchorOffsetY="0" source="shortsleeve_and_longsleeve_png"/>
 		<e:Image id="shortsleeveAndLongsleeveAnswer" x="1093" y="88" alpha="1" anchorOffsetX="0" anchorOffsetY="0" source="shortsleeve_and_longsleeve_answer_png" visible="false"/>
-		<e:Image id="koiImage" x="969" y="488" source="koi_png" width="756" height="323" visible="false"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="question5_png"/>
 			<ns1:ButtonComponent id="expensiveButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="expensive_normal_png" overSource="expensive_over_png" visible="false"/>
@@ -66,9 +65,7 @@
 			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
 		</e:Group>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
-		<e:Image id="formula2AnswerImage" x="1333" y="754" source="formula2_answer_png" visible="false"/>
-		<e:Image id="numberKoiImage" x="1344.44" y="736.48" anchorOffsetX="0" anchorOffsetY="0" source="number_koi_png" height="62" visible="false"/>
-		<e:Label id="priceLabel" text="236元" x="1521" y="590" anchorOffsetX="0" width="124" anchorOffsetY="0" height="58" textColor="0x000000" verticalAlign="middle" textAlign="center" size="42" visible="false"/>
+		<ns1:LastQuestionComponent width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>
 	
 </e:Skin>

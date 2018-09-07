@@ -9,6 +9,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 	private nextQuestionComponent: NextQuestionComponent;
 	private cloudAlertComponent: CloudAlertComponent;
 	private formulaComponent: FormulaComponent;
+	private lastQuestionComponent: LastQuestionComponent;
 	
 	private startAnimation: egret.tween.TweenGroup;
 	
@@ -33,6 +34,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.expensiveButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExpensiveButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
+		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 	}
 
 	private async onExpensiveButtonComponentTap(e: egret.TouchEvent): Promise<void>
@@ -71,6 +73,11 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 	private onNextQuestionComponent(): void
 	{
 		Main.instance.gotoScene(new Question6Scene());
+	}
+
+	private onLastQuestionComponent(): void
+	{
+		Main.instance.gotoScene(new Question4Scene());
 	}
 
 	private playStartAnimation(): void

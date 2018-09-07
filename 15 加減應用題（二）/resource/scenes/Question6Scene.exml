@@ -114,5 +114,6 @@
 			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
 		</e:Group>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:LastQuestionComponent width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>
 </e:Skin>

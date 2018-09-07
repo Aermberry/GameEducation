@@ -19,5 +19,6 @@
 		</e:Group>
 		<e:Image x="1537" y="198" source="clothe_count_3A_png"/>
 		<e:Image id="clotheCount3BImage" x="1537" y="606" source="clothe_count_3B_png" visible="false"/>
+		<ns1:LastQuestionComponent width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>
 </e:Skin>

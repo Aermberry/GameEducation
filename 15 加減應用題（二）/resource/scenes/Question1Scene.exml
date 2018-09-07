@@ -34,14 +34,6 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{xiaoMingHightInfoLabel}">
-				<tween:Wait duration="750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
 			<tween:TweenItem target="{xiaoMingTopLineRect}">
 				<tween:Wait duration="1000"/>
 				<tween:Set>
@@ -77,14 +69,6 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{messageBorderSmallImage}">
-				<tween:Wait duration="3250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{xiaoFangHightInfoLabel}">
 				<tween:Wait duration="3250"/>
 				<tween:Set>
 					<tween:props>
@@ -173,6 +157,22 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{xiaofangDialog}">
+				<tween:Wait duration="3250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaomingDialog}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a7c426f6" ></w:Config>
@@ -184,10 +184,10 @@
 		<e:Image id="textBackground" width="766" height="168" x="178" y="105" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="0"/>
 		<e:Image id="question1StartImage" x="261" y="162" source="question1_start_png" alpha="0"/>
 		<e:Image id="messageBorderSmallImage" width="248" height="168" x="1076" y="89" anchorOffsetX="0" anchorOffsetY="0" source="message_border_small_png" alpha="0"/>
+		<e:Image id="xiaofangDialog" x="1108.55" y="108" source="xiaofang_dialog_png" alpha="0"/>
 		<e:Image id="messageBorderBigImage" width="343" height="198" x="1433" y="89" right="194" source="message_border_big_png" alpha="0"/>
+		<e:Image id="xiaomingDialog" x="1365.64" y="123.12" source="xiaoming_dialog_png" alpha="0"/>
 		<e:Rect id="xiaoMingTopLineRect" width="480" height="1" x="1229.48" y="262" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
-		<e:Label id="xiaoMingHightInfoLabel" text="我的身高157cm。" x="1371.91" y="126.24" textColor="0x000000" size="40" alpha="0"/>
-		<e:Label id="xiaoFangHightInfoLabel" text="我比小明矮54cm。" x="1093.03" y="111.12" size="40" textColor="0x000000" anchorOffsetX="0" width="204.06" alpha="0"/>
 		<e:Image id="xiaoFangHeightLabel" width="116" height="94" x="1224.66" y="320" source="54cm_and_arrow_png" alpha="0"/>
 		<e:Rect id="xiaoFangHeightArrowBottomRect" width="1" height="150" x="1330" y="262.96" alpha="0"/>
 		<e:Image id="xiaoMingHeightArrowRect" width="20" height="592" x="1620" y="262" source="arrow_top_png" alpha="0"/>
@@ -208,7 +208,6 @@
 		</e:Group>
 		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0"/>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
-		<ns1:LastQuestionComponent width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>
 
 </e:Skin>
