@@ -3,13 +3,14 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private ageButton: eui.Button;
 	private addressButton: eui.Button;
 	private mailGroup: eui.Group;
-	private hobbyButton:eui.Button;
+	private hobbyButton: eui.Button;
 	private hobbyGroup: eui.Group;
-	private clubButton:eui.Button;
-	private clubTip:Ui.Tips;
-	private dragGroup:eui.Group;
-	private dropGroup:eui.Group;
-	private confitmGroup:eui.Group;
+	private clubButton: eui.Button;
+	private clubTip: Ui.Tips;
+	private confirmGroup: eui.Group;
+	private dragGroup: eui.Group;
+	private dropGroup: eui.Group;
+	// private confitmGroup:eui.Group;
 
 	public constructor() {
 		super();
@@ -26,67 +27,76 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		// this.tipLabe.tipString="dddd"//动态文本
 		this.ageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onAgeClickHelp, this);
 		this.addressButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onAddressClickHelp, this);
-		this.hobbyButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onHobbyClickHelp,this);
-		this.clubButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onClubClickHelp,this);
+		this.hobbyButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHobbyClickHelp, this);
+		this.clubButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onClubClickHelp, this);
 		this.initDragDrop();
 		// console.log(this.dropGroup);
 	}
 
-	private initDragDrop():void{
-		for(let child of this.dragGroup.$children){
-			let drag=new lzlib.Drag();
+	private initDragDrop(): void {
+		for (let child of this.dragGroup.$children) {
+			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child,false);
+			drag.enableDrag(child, false);
 		}
 
-		for(let child of this.dropGroup.$children){
-			let drop=new lzlib.Drop();
+		for (let child of this.dropGroup.$children) {
+			let drop = new lzlib.Drop();
 			this.addChild(drop);
 			drop.enableDrop(child);
-			child.addEventListener(lzlib.LzDragEvent.DROP,this.onLabelDrop,this)
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
 		}
 	}
 
-	private onLabelDrop(e:lzlib.LzDragEvent):void {
-		let targetComponent=e.target as eui.Label;
-		let dragComponent=e.dragObject as eui.Label;
-		if(dragComponent.text==targetComponent.text){
+	private onLabelDrop(e: lzlib.LzDragEvent): void {
+		let targetComponent = e.target as eui.Label;
+		let dragComponent = e.dragObject as eui.Label;
+		if (dragComponent.text.trim() == targetComponent.text.trim()) {
 			e.preventDefault();
-			targetComponent.visible=true;
-			dragComponent.visible=false;
+			targetComponent.visible = true;
+			dragComponent.visible = false;
+			 this.confirmGroup.getChildAt(this.dropGroup.getChildIndex(targetComponent)).visible = true;
+			 
+			 if(this.confirmGroup.$children[1].visible){
+				 this.ageButton.visible=true;
+			 }
+			 if(this.confirmGroup.$children[2].visible){
+				 this.addressButton.visible=true;
+			 }
+			 if(this.confirmGroup.$children[4].visible){
+				 this.hobbyButton.visible=true;
+			 }
+			 if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible){
+				 this.clubButton.visible=true;
+			 }
 			this.confirmAllWorldsAreCorrect();
 		}
 	}
 
-	private confirmAllWorldsAreCorrect():void{
-		let list=this.dropGroup.$children;
-		list.forEach((child,idx,list)=>{
-			let index=idx;
-			if(!child.visible){
-				return;
-			}
-			else{
-				this.confitmGroup.$children[index].visible=true;
-			}
-		})
-
-		lzlib.ThreadUtility.sleep(3000);
-		Main.instance.gotoScene(new FinishScene());
-
+	private confirmAllWorldsAreCorrect(): void {
+		if (this.confirmGroup.$children.all(child => child.visible)) {
+			Main.instance.gotoScene(new FinishScene());
+		}
 	}
 
 	private loadVoice(): void {
 		lzlib.SoundUtility.playSound('02_mp3');
 	}
 
-	private onAgeClickHelp():void {
+	private onAgeClickHelp(): void {
+		this.setChildIndex(this.ageLabe, 18);
+		let index = this.getChildIndex(this.ageLabe);
 		this.ageLabe.visible = true;
 		setTimeout(() => {
-		this.ageLabe.visible=false;	
-		},6000)
+			this.ageLabe.visible = false;
+		}, 6000)
+		this.setChildIndex(this.ageLabe, index);
+
 	}
 
 	private async onAddressClickHelp(): Promise<void> {
+		this.setChildIndex(this.mailGroup, 18);
+		let index = this.getChildIndex(this.mailGroup);
 		this.mailGroup.visible = true;
 		this.mailGroup.$children[0].visible = true;
 		await lzlib.ThreadUtility.sleep(6000);
@@ -94,22 +104,29 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		this.mailGroup.$children[2].visible = true;
 		await setTimeout(() => {
 			this.mailGroup.visible = false;
-		},6000)
+		}, 6000)
+		this.setChildIndex(this.mailGroup, index);
 	}
 
-	private async onHobbyClickHelp():Promise<void> {
+	private async onHobbyClickHelp(): Promise<void> {
+		this.setChildIndex(this.hobbyGroup, 18);
+		let index = this.getChildIndex(this.hobbyGroup)
 		this.hobbyGroup.visible = true;
 		this.hobbyGroup.$children[0].visible = true;
 		await lzlib.ThreadUtility.sleep(3000);
 		this.hobbyGroup.$children[1].visible = true;
 		await setTimeout(() => {
 			this.hobbyGroup.visible = false;
-		},6000)
+		}, 6000)
+		this.setChildIndex(this.hobbyGroup, index);
 	}
 
-	private async onClubClickHelp():Promise<void> {
-		this.clubTip.visible=true;
+	private async onClubClickHelp(): Promise<void> {
+		this.setChildIndex(this.clubTip,18);
+		let index=this.getChildIndex(this.clubTip);
+		this.clubTip.visible = true;
 		await lzlib.ThreadUtility.sleep(6000);
-		this.clubTip.visible=false;
+		this.clubTip.visible = false;
+		this.setChildIndex(this.clubTip,index);
 	}
 }
