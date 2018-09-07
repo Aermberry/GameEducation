@@ -49,6 +49,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
+		// this.dropGroup.$children[0].$getTouchEnabled=false;
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
