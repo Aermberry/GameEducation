@@ -55,20 +55,23 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
-			 this.confirmGroup.getChildAt(this.dropGroup.getChildIndex(targetComponent)).visible = true;
-			 
-			 if(this.confirmGroup.$children[1].visible){
+			let index=this.dropGroup.getChildIndex(targetComponent);
+			  this.confirmGroup.getChildAt( this.dropGroup.getChildIndex(targetComponent)).visible = true;
+			 switch(index){
+				 case 1:
 				 this.ageButton.visible=true;
-			 }
-			 if(this.confirmGroup.$children[2].visible){
+				 break;
+				 case 2:
 				 this.addressButton.visible=true;
-			 }
-			 if(this.confirmGroup.$children[4].visible){
+				 break;
+				 case 3:
 				 this.hobbyButton.visible=true;
+				 break;
 			 }
-			 if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible){
-				 this.clubButton.visible=true;
-			 }
+			//  if(this.confirmGroup.$children[1].visible) this.ageButton.visible=true;
+			//  if(this.confirmGroup.$children[2].visible)	this.addressButton.visible=true;
+			//  if(this.confirmGroup.$children[4].visible) this.hobbyButton.visible=true;
+			 if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible)this.clubButton.visible=true;
 			this.confirmAllWorldsAreCorrect();
 		}
 	}
