@@ -36,7 +36,7 @@ class FormulaComponent extends eui.Component implements  eui.UIComponent {
 		this._titleImageSource = path;
 	}
 	
-	private _rightImageSource = 'formula_left_png';
+	private _rightImageSource = 'formula_right_png';
 
 	public get righttleImageSource(): string
 	{
@@ -48,7 +48,7 @@ class FormulaComponent extends eui.Component implements  eui.UIComponent {
 		this._rightImageSource = path;
 	}
 
-	private _leftImageSource = 'rightImage';
+	private _leftImageSource = 'formula_left_png';
 
 	public get leftImageSource(): string
 	{
@@ -60,7 +60,7 @@ class FormulaComponent extends eui.Component implements  eui.UIComponent {
 		this._leftImageSource = path;
 	}
 
-	private _resultImageSource = 'resultImage';
+	private _resultImageSource = 'formula_result_png';
 
 	public get resultImageSource(): string
 	{

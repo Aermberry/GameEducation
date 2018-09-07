@@ -11,7 +11,7 @@
 		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/components/FormulaComponent.js",
+		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
@@ -20,14 +20,18 @@
 		"bin-debug/components/CalcComponents.js",
 		"bin-debug/components/CloudAlertComponent.js",
 		"bin-debug/components/ContentFrameComponent.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/components/FormulaComponent.js",
 		"bin-debug/components/LastQuestionComponent.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/components/NextQuestionComponent.js",
 		"bin-debug/components/TopTitleComponent.js",
 		"bin-debug/scenes/Question1Scene.js",
 		"bin-debug/scenes/Question2Scene.js",
 		"bin-debug/scenes/Question3Scene.js",
 		"bin-debug/scenes/Question4Scene.js",
-		"bin-debug/scenes/Question5Scene.js"
+		"bin-debug/scenes/Question5Scene.js",
+		"bin-debug/scenes/Question6Scene.js",
+		"bin-debug/scenes/Question7Scene.js",
+		"bin-debug/scenes/Question8Scene.js"
 	]
 }

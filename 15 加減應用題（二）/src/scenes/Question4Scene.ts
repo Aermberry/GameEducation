@@ -70,7 +70,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextQuestionComponent(): void
 	{
-		Main.instance.gotoScene(new Question3Scene());
+		Main.instance.gotoScene(new Question5Scene());
 	}
 
 	private playStartAnimation(): void

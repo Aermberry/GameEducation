@@ -1,6 +1,6 @@
 class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	
-	private textLabel: eui.Label;
+	private buttonImage: eui.Image;
 	
 	public constructor() {
 		super();
@@ -16,46 +16,81 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this.textLabel,true);
-		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
-		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
-		this.textLabel.text = this._text;
-		this.textLabel.textColor = this._color;
-		
+		mouse.setButtonMode(this.buttonImage,true);
+		this.buttonImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.buttonImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
+		this.buttonImage.source = this.normalSource;	
 	}
+
+	// private onMouseOver(e: egret.TouchEvent): void
+	// {
+	// 	this.currentState = 'over';
+	// }
+
+
+	// private onMouseOut(e: egret.TouchEvent): void
+	// {
+	// 	this.currentState = 'normal';
+	// }
 
 	private onMouseOver(e: egret.TouchEvent): void
 	{
-		this.currentState = 'over';
+		this.buttonImage.source = this._overSource;
 	}
 
 
 	private onMouseOut(e: egret.TouchEvent): void
 	{
-		this.currentState = 'normal';
+		this.buttonImage.source = this._normalSource;
 	}
 
-	private _color = 0x000000;
+	// private _color = 0x000000;
 
-	public get color(): number
+	// public get color(): number
+	// {
+	// 	return this._color;
+	// }
+	
+	// public set color(color: number)
+	// {
+	// 	this._color = color;
+	// }
+
+	// private _text = '';
+
+	// public get text(): string
+	// {
+	// 	return this._text;
+	// }
+	
+	// public set text(text: string)
+	// {
+	// 	this._text = text;
+	// }
+
+	private _normalSource = 'hight_normal_png';
+
+	public get normalSource(): string
 	{
-		return this._color;
+		return this._normalSource;
 	}
 	
-	public set color(color: number)
+	public set normalSource(normal: string)
 	{
-		this._color = color;
+		this._normalSource = normal;
 	}
 
-	private _text = '';
 
-	public get text(): string
+	private _overSource = 'hight_over_png';
+
+	public get overSource(): string
 	{
-		return this._text;
+		return this._overSource;
 	}
 	
-	public set text(text: string)
+	public set overSource(normal: string)
 	{
-		this._text = text;
+		this._overSource = normal;
 	}
+
 }

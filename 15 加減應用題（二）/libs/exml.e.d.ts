@@ -10,6 +10,8 @@ declare class FormulaComponentSkin extends eui.Skin{
 }
 declare class LastQuestionComponentSkin extends eui.Skin{
 }
+declare class MovieClipPlayerSkin extends eui.Skin{
+}
 declare class NextQuestionComponentSkin extends eui.Skin{
 }
 declare class TopTitleComponentSkin extends eui.Skin{
@@ -75,4 +77,10 @@ declare class Question3SceneSkin extends eui.Skin{
 declare class Question4SceneSkin extends eui.Skin{
 }
 declare class Question5SceneSkin extends eui.Skin{
+}
+declare class Question6SceneSkin extends eui.Skin{
+}
+declare class Question7SceneSkin extends eui.Skin{
+}
+declare class Question8SceneSkin extends eui.Skin{
 }

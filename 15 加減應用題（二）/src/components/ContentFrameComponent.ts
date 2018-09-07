@@ -1,7 +1,7 @@
 class ContentFrameComponent extends eui.Component implements  eui.UIComponent {
 	
 	private currentlevelLabel: eui.Label;
-	private exitLabel: eui.Label;
+	private exitImage: eui.Image;
 	
 	public constructor() {
 		super();
@@ -17,20 +17,26 @@ class ContentFrameComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this.exitLabel,true);
-		this.exitLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
-		this.exitLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
+		mouse.setButtonMode(this.exitImage,true);
+		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitImageTap, this);
+		this.exitImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.exitImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 		this.currentlevelLabel.text = this._currentlevel;
 	}
 	
+	private onExitImageTap(): void
+	{
+		window.close();
+	}
+
 	private onMouseOver(e: egret.TouchEvent): void
 	{
-		(e.target as eui.Label).textColor = 0xffffff;
+		(e.target as eui.Image).source = 'exit_over_png'
 	}
 
 	private onMouseOut(e: egret.TouchEvent): void
 	{
-		(e.target as eui.Label).textColor = 0x1D3A66;
+		(e.target as eui.Image).source = 'exit_normal_png';
 	}
 
 	private _currentlevel = '1';

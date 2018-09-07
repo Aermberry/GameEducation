@@ -39,7 +39,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.cloudAlertComponent.hideAlert();
 		this.cloudAlertComponent.showCorrectAlert();
-		this.hideHightButtonComponent();
+		this.hideWrongButtonComponent();
 		await lzlib.SoundUtility.playSound('streamsound5_3_mp3');
 		await lzlib.ThreadUtility.sleep(1000);
 		this.cloudAlertComponent.hideAlert();
@@ -70,7 +70,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextQuestionComponent(): void
 	{
-		Main.instance.gotoScene(new Question3Scene());
+		Main.instance.gotoScene(new Question6Scene());
 	}
 
 	private playStartAnimation(): void
@@ -100,9 +100,9 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.shortsleeveAndLongsleeveAnswer.visible = true;	
 	}
 
-	private hideHightButtonComponent(): void
+	private hideWrongButtonComponent(): void
 	{
-		this.expensiveButtonComponent.visible = false;
+		this.cheapButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void

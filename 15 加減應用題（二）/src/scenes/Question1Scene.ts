@@ -1,5 +1,8 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
 	
+
+	private xiaoFangHeightArrowBottomRect: eui.Rect;
+
 	private questionMarkImage: eui.Image;
 	private answerLabel: eui.Label;
 	private alertAndOperationGroup: eui.Group;
@@ -60,6 +63,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onCalcComponentTap(): Promise<void>
 	{
+		console.log(this.xiaoFangHeightArrowBottomRect);
 		this.hideAlertAndOperationGroup();
 		this.formulaComponent.showTitleImage();
 		await lzlib.SoundUtility.playSound('streamsound_6_mp3');

@@ -71,5 +71,25 @@
         "path": "scenes/Question5Scene.ts",
         "class": "Question5Scene",
         "parentPath": ""
+    },
+    "165b1854b2a": {
+        "path": "scenes/Question6Scene.ts",
+        "class": "Question6Scene",
+        "parentPath": ""
+    },
+    "165b1e6e519": {
+        "path": "scenes/Question7Scene.ts",
+        "class": "Question7Scene",
+        "parentPath": ""
+    },
+    "165b28c1e12": {
+        "path": "scenes/Question8Scene.ts",
+        "class": "Question8Scene",
+        "parentPath": ""
+    },
+    "165b361f890": {
+        "path": "../resource/components/LastQuestionComponent.ts",
+        "class": "LastQuestionComponent",
+        "parentPath": ""
     }
 }
