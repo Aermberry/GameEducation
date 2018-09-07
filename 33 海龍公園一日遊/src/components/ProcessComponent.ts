@@ -15,7 +15,6 @@ class ProcessComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		console.log(123445);
 		this.trainMovieClipPlayer.x = this._currentQuestionIndex * 66;
 	}
 

@@ -4,13 +4,15 @@ declare class bottomComponentSkin extends eui.Skin{
 }
 declare class CircleButtonSkin extends eui.Skin{
 }
+declare class ConjunctionComponentSkin extends eui.Skin{
+}
+declare class ConjunctionContainerSkin extends eui.Skin{
+}
 declare class GirlSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
 }
 declare class ProcessComponentSkin extends eui.Skin{
-}
-declare class TextComponentSkin extends eui.Skin{
 }
 declare module skins{
 	class ButtonSkin extends eui.Skin{

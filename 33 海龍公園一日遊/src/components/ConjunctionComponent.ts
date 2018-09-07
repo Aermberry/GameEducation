@@ -1,4 +1,4 @@
-class TextComponent extends eui.Component implements  eui.UIComponent {
+class ConjunctionComponent extends eui.Component implements  eui.UIComponent {
 	
 	public textLabel:eui.Label;
 	

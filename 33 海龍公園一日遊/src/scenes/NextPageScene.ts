@@ -22,6 +22,6 @@ class NextPageScene extends eui.Component implements  eui.UIComponent {
 
 	private onNextPageButtonClick(): void
 	{
-		Main.instance.gotoScene(new GameScene());
+		Main.instance.gotoScene(new GameScene(0));
 	}
 }

@@ -65,7 +65,7 @@ class GamePresenter {
 			this.view.enableNextButton();
 			this.view.playMovieTrainGo();
 		} else {
-			this.view.showAllConjunctions();
+			this.view.showAllConjunctions(this.conjunctionRepo.getAll());
 			this.view.hideConjunctionsInTrain();
 			this.view.enableDropLeftConjunctionInTrain();
 			this.view.enableDropRightConjunctionInTrain();

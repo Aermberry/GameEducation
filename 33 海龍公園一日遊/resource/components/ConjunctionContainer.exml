@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ConjunctionContainerSkin" width="244" height="157" currentState="flicker" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="flicker,normal" >
+	<w:Config id="1655f9f7f8f" ></w:Config>
+	<e:Image top="0" bottom="0" left="0" right="0" source.normal="text_background_gray_png" source.flicker="text_background_alpha_png"/>
+</e:Skin>

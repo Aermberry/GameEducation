@@ -25,8 +25,8 @@
         "parentPath": ""
     },
     "1655f9f7f8f": {
-        "path": "components/TextComponent.ts",
-        "class": "TextComponent",
+        "path": "components/ConjunctionComponent.ts",
+        "class": "ConjunctionComponent",
         "parentPath": ""
     },
     "165611c77a3": {
@@ -65,6 +65,11 @@
     "16599916680": {
         "path": "repositories/SentenceRepository.ts",
         "class": "SentenceRepository",
+        "parentPath": ""
+    },
+    "165b2c10122": {
+        "path": "components/ConjunctionContainer.ts",
+        "class": "ConjunctionContainer",
         "parentPath": ""
     }
 }
