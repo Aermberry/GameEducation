@@ -1,6 +1,6 @@
 class Question6Scene extends eui.Component implements  eui.UIComponent {
 	
-	private xiaoLiHeightNumberLabel: eui.Label;
+	private xiaoli6HeightImage: eui.Image;
 	private xiaoLiHeightArrowRect: eui.Rect;
 	private alertAndOperationGroup: eui.Group;
 	private hightButtonComponent: ButtonComponent;
@@ -112,7 +112,7 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 
 	private showAnswer(): void
 	{
-		this.xiaoLiHeightNumberLabel.visible = true;
+		this.xiaoli6HeightImage.visible = true;
 		this.xiaoLiHeightArrowRect.visible = true;
 	}
 

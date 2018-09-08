@@ -60,14 +60,6 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{xiaoMingHeightNumberLabel}">
-				<tween:Wait duration="2000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
 			<tween:TweenItem target="{messageBorderSmallImage}">
 				<tween:Wait duration="3250"/>
 				<tween:Set>
@@ -173,6 +165,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightImage}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a7c426f6" ></w:Config>
@@ -191,14 +191,14 @@
 		<e:Image id="xiaoFangHeightLabel" width="116" height="94" x="1224.66" y="320" source="54cm_and_arrow_png" alpha="0"/>
 		<e:Image id="xiaoMingHeightArrowRect" width="20" height="592" x="1620" y="262" source="arrow_top_png" alpha="0"/>
 		<e:Image id="xiaoFangHeightArrowTopRect" width="20" height="440" x="1074.55" y="411.33" source="arrow_top_png" alpha="0"/>
-		<e:Label id="xiaoMingHeightNumberLabel" text="157cm" x="1638.7" y="445" textColor="0x000000" size="36" alpha="0"/>
+		<e:Image id="xiaoMingHeightImage"  x="1638.7" y="445" source="xiaoming_height_png" alpha="0"/>
 		<e:Rect id="xiaoFangTopLineRect" width="540" height="1" x="974.61" y="411.45" alpha="0"/>
 		<e:Image id="xiaoMingImage" width="268" height="588.25" x="1350.55" y="263.3" anchorOffsetX="0" anchorOffsetY="0" source="xiaoming_png" alpha="0"/>
 		<e:Image id="xiaoFangImage" width="420" height="440" x="1130" y="478" anchorOffsetX="0" anchorOffsetY="0" source="xiaofang_png" bottom="39" alpha="0"/>
 		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="592" x="1630" y="272" source="arrow_top_png" alpha="0"/>
 		<e:Image id="questionMarkImage" width="44" height="102" x="990.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
-		<e:Label id="answerLabel" text="103cm" x="953.36" y="584.27" textColor="0x000000" size="34" alpha="1" visible="false"/>
+		<e:Image id="xiaofangHeightImage" x="953.36" y="584.27" source="xiaofang_height_png" visible="false"/>
 		<e:Rect id="xiaoFangHeightArrowBottomRect" width="1" height="150" x="1330" y="262.96" alpha="0" strokeWeight="1"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>

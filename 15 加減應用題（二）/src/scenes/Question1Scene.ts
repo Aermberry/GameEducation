@@ -1,7 +1,7 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private questionMarkImage: eui.Image;
-	private answerLabel: eui.Label;
+	private xiaofangHeightImage: eui.Image;
 	private alertAndOperationGroup: eui.Group;
 	private hightButtonComponent: ButtonComponent;
 	private shortButtonComponent: ButtonComponent;
@@ -99,7 +99,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private showAnswer(): void
 	{
-		this.answerLabel.visible = true;
+		this.xiaofangHeightImage.visible = true;
 		this.questionMarkImage.alpha = 0;
 	}
 
