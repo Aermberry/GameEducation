@@ -21,6 +21,12 @@ Array.prototype.shuffle = function () {
     }
     return input;
 };
+Array.prototype.all = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length == this.length;
+};
+Array.prototype.any = function (callbackfn, thisArg) {
+    return this.filter(callbackfn, this).length > 0;
+};
 var lzlib;
 (function (lzlib) {
     /**
@@ -74,6 +80,9 @@ var lzlib;
             if (dragObject instanceof eui.Image) {
                 return this.cloneImage(dragObject);
             }
+            if (dragObject instanceof eui.Label) {
+                return this.cloneLabel(dragObject);
+            }
             if (dragObject['clone']) {
                 return dragObject['clone']();
             }
@@ -86,6 +95,19 @@ var lzlib;
             clone.width = dragObject.width * 1.2;
             clone.height = dragObject.height * 1.2;
             clone.source = dragObject.source;
+            clone.alpha = 0.8;
+            return clone;
+        };
+        Drag.prototype.cloneLabel = function (dragObject) {
+            var clone = new eui.Label();
+            clone.x = dragObject.x;
+            clone.y = dragObject.y;
+            clone.width = dragObject.width * 1.2;
+            clone.height = dragObject.height * 1.2;
+            clone.text = dragObject.text;
+            clone.textColor = dragObject.textColor;
+            clone.size = dragObject.size;
+            clone.fontFamily = dragObject.fontFamily;
             clone.alpha = 0.8;
             return clone;
         };
@@ -104,12 +126,16 @@ var lzlib;
             if (Drag.isCopy) {
                 Drag.dragingObject.parent && Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
-            if (!Drag.isAccepted && !Drag.isCopy) {
-                //没有其他对象愿意接收你，就从哪里来回到哪里去。
-                Drag.dragingObject.x = Drag.originalX;
-                Drag.dragingObject.y = Drag.originalY;
-                if (Drag.originalParent != Drag.dragingObject.parent) {
-                    Drag.originalParent.addChild(Drag.dragingObject);
+            if (!Drag.isAccepted) {
+                //not one accept it, dispatch cancel event
+                Drag.dragingObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                if (!Drag.isCopy) {
+                    //没有其他对象愿意接收你，就从哪里来回到哪里去。
+                    Drag.dragingObject.x = Drag.originalX;
+                    Drag.dragingObject.y = Drag.originalY;
+                    if (Drag.originalParent != Drag.dragingObject.parent) {
+                        Drag.originalParent.addChild(Drag.dragingObject);
+                    }
                 }
             }
             Drag.reset();
@@ -160,11 +186,15 @@ var lzlib;
             var _this = _super.call(this, type, true, true, stageX, stageY, touchPointID) || this;
             _this.data = data;
             _this.dragObject = dragObject;
+            _this.originalPoint = new egret.Point(lzlib.Drag.originalX, lzlib.Drag.originalY);
             return _this;
         }
         LzDragEvent.DRAG_OVER = 'drag_enter';
         LzDragEvent.DRAG_OUT = 'drag_out';
+        /** drop inside the target */
         LzDragEvent.DROP = 'drag_drop';
+        /** drop outside the target */
+        LzDragEvent.CANCEL = 'dran_cancel';
         return LzDragEvent;
     }(egret.TouchEvent));
     lzlib.LzDragEvent = LzDragEvent;
@@ -196,12 +226,21 @@ var lzlib;
             this.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true, 100);
         };
         Drop.prototype.disableDrop = function () {
-            this.stage.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true);
+            this.dropObject.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
         };
         Drop.prototype.onTouchEnd = function (e) {
-            if (lzlib.Drag.isDraging && this.dropObject.hitTestPoint(e.stageX, e.stageY)) {
-                lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+            if (lzlib.Drag.isDraging) {
+                if (this.isDragDropObjectIntersets()) {
+                    //drop on target
+                    lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                }
             }
+        };
+        Drop.prototype.isDragDropObjectIntersets = function () {
+            var dragingObjectGlobalPoint = lzlib.Drag.dragingObject.parent.localToGlobal(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y);
+            var dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
+            return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, lzlib.Drag.dragingObject.width, lzlib.Drag.dragingObject.height)
+                .intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height));
         };
         return Drop;
     }(egret.Sprite));
@@ -223,11 +262,16 @@ var lzlib;
     var SoundUtility = (function () {
         function SoundUtility() {
         }
-        SoundUtility.playSound = function (soundName) {
+        SoundUtility.playSound = function (soundName, stopCurrentSound) {
             var _this = this;
+            if (stopCurrentSound === void 0) { stopCurrentSound = true; }
             return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+                if (_this.currentSoundChannel && stopCurrentSound) {
+                    //默认先暂停当前的声音
+                    _this.currentSoundChannel.stop();
+                }
+                _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
+                _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
             });
         };
         return SoundUtility;

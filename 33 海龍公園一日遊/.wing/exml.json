@@ -71,5 +71,10 @@
         "path": "components/ConjunctionContainer.ts",
         "class": "ConjunctionContainer",
         "parentPath": ""
+    },
+    "165b46ec959": {
+        "path": "components/ConjunctionBackground.ts",
+        "class": "ConjunctionBackground",
+        "parentPath": ""
     }
 }

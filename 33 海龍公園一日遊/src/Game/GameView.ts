@@ -13,6 +13,8 @@ interface GameView {
     showLeftConjunction(text: string): void;
     /** 显示火车上的右连接词 */
     showRightConjunction(text: string): void;
+    /** 消除火车上的连接词 */
+    clearConjunctionsInTrain(): void;
     /** 隐藏火车上的连接词 */
     hideConjunctionsInTrain(): void;
 

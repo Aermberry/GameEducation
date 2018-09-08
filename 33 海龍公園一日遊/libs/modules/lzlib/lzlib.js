@@ -196,7 +196,7 @@ var lzlib;
             this.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true, 100);
         };
         Drop.prototype.disableDrop = function () {
-            this.dropObject.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
+            this.stage.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true);
         };
         Drop.prototype.onTouchEnd = function (e) {
             if (lzlib.Drag.isDraging && this.dropObject.hitTestPoint(e.stageX, e.stageY)) {

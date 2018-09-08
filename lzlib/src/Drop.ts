@@ -29,7 +29,7 @@ namespace lzlib {
 
 		public disableDrop(): void
 		{
-			this.dropObject.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
+			this.stage.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true);
 		}
 
 		private onTouchEnd(e: egret.TouchEvent): void

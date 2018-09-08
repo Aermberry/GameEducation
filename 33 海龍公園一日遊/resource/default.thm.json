@@ -24,15 +24,15 @@
 		"ProcessComponent": "resource/components/ProcessComponent.exml",
 		"BottomComponent": "resource/components/BottomComponent.exml",
 		"ConjunctionComponent": "resource/components/ConjunctionComponent.exml",
-		"ConjunctionContainer": "resource/components/ConjunctionContainer.exml"
+		"ConjunctionBackground": "resource/components/ConjunctionBackground.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/BackgroundComponent.exml",
 		"resource/components/BottomComponent.exml",
 		"resource/components/CircleButton.exml",
+		"resource/components/ConjunctionBackground.exml",
 		"resource/components/ConjunctionComponent.exml",
-		"resource/components/ConjunctionContainer.exml",
 		"resource/components/Girl.exml",
 		"resource/components/MovieClipPlayer.exml",
 		"resource/components/ProcessComponent.exml",

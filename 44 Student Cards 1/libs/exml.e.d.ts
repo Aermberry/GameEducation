@@ -1,18 +1,12 @@
-declare class BackgroundComponentSkin extends eui.Skin{
+declare class HobbySkin extends eui.Skin{
 }
-declare class bottomComponentSkin extends eui.Skin{
+declare class ResumeSkin extends eui.Skin{
 }
-declare class CircleButtonSkin extends eui.Skin{
+declare class TableSkin extends eui.Skin{
 }
-declare class ConjunctionBackgroundSkin extends eui.Skin{
+declare class TextLabelSkin extends eui.Skin{
 }
-declare class ConjunctionComponentSkin extends eui.Skin{
-}
-declare class GirlSkin extends eui.Skin{
-}
-declare class MovieClipPlayerSkin extends eui.Skin{
-}
-declare class ProcessComponentSkin extends eui.Skin{
+declare class TipsSkin extends eui.Skin{
 }
 declare module skins{
 	class ButtonSkin extends eui.Skin{
@@ -21,6 +15,8 @@ declare module skins{
 declare module skins{
 	class CheckBoxSkin extends eui.Skin{
 	}
+}
+declare class GameScenesSkin extends eui.Skin{
 }
 declare module skins{
 	class HScrollBarSkin extends eui.Skin{
@@ -66,11 +62,9 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
-declare class BackgroundSceneSkin extends eui.Skin{
+declare class FinishSceneSkin extends eui.Skin{
 }
-declare class GameSceneSkin extends eui.Skin{
-}
-declare class NextPageSceneSkin extends eui.Skin{
+declare class MainSceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
 }

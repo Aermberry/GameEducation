@@ -7,8 +7,8 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private currentLevelLabel: eui.Label;
 	private validateButton: CircleButton;
 	private trainTweenGroup: egret.tween.TweenGroup;
-	private leftConjunctionContainer: ConjunctionComponent;
-	private rightConjunctionContainer: ConjunctionComponent;
+	private leftConjunctionContainer: ConjunctionContainer;
+	private rightConjunctionContainer: ConjunctionContainer;
 
 	private presenter = new GamePresenter();
 	private sentenceIndex = 0;
@@ -30,41 +30,20 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 		this.nextSentenceButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onNextButtonClick, this.presenter);
 		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidationButtonClick, this.presenter);
 		
-		this.enableDrag(this.conjunctionGroup.$children.map(child => child.$children[0] as ConjunctionComponent));
+		this.initDragDrop();
 		this.presenter.loadView(this, this.sentenceIndex);
 	}
 
-	private enableDrag(arr: ConjunctionComponent[]): void
+	private initDragDrop(): void
 	{
-		for (let child of arr) {
-			let drag = new lzlib.Drag();
-			this.addChild(drag);
-			drag.enableDrag(child, false);
-		}
-
-		let drop = new lzlib.Drop();
-		this.stage.addChild(drop);
-		drop.enableDrop(this.leftConjunctionContainer);
-		this.leftConjunctionContainer.addEventListener(lzlib.LzDragEvent.DROP, this.onConjunctionComponentDrop, this);
-
-		drop = new lzlib.Drop();
-		this.stage.addChild(drop);
-		drop.enableDrop(this.rightConjunctionContainer);
-		this.rightConjunctionContainer.addEventListener(lzlib.LzDragEvent.DROP, this.onConjunctionComponentDrop, this);
-
-	}
-
-	private onConjunctionComponentDrop(e: lzlib.LzDragEvent): void {
-		e.preventDefault();
-		let dragObj = e.dragObject as ConjunctionComponent;
-		let targetObj = e.target as ConjunctionContainer;
-		targetObj.alpha = 1;
-		targetObj.addChild(dragObj);
+		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.enableDrag(index));
+		this.leftConjunctionContainer.enableDrop(this.presenter.onLeftConjunctionDrop, this.presenter);
+		this.rightConjunctionContainer.enableDrop(this.presenter.onRightConjunctionDrop, this.presenter);
 	}
 
     /** 显示所有连接词 */
     public showAllConjunctions(conjunctions: Conjunction[]): void {
-		this.conjunctionGroup.$children.forEach((child: ConjunctionComponent, index: number) => {
+		this.conjunctionGroup.$children.forEach((child: ConjunctionContainer, index: number) => {
 			child.text = conjunctions[index].text;
 		});
 	}
@@ -76,22 +55,28 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 
     /** 显示列车上的连接词占位符 */
     public showConjunctionPlaceHolderInTrain(): void {
-		
+		this.leftConjunctionContainer.visible = this.rightConjunctionContainer.visible = true;
 	}
 
     /** 隐藏列车上的连接词占位符 */
     public hideConjunctionPlaceHolderInTrain(): void {
-
+		this.leftConjunctionContainer.visible = this.rightConjunctionContainer.visible = false;
 	}
 
     /** 显示火车上的左连接词 */
     public showLeftConjunction(text: string): void {
-
+		
 	}
 
     /** 显示火车上的右连接词 */
     public showRightConjunction(text: string): void {
 
+	}
+
+    /** 消除火车上的连接词 */
+    public clearConjunctionsInTrain(): void {
+		this.leftConjunctionContainer.conjunctionComponent = null;
+		this.rightConjunctionContainer.conjunctionComponent = null;
 	}
 
     /** 隐藏火车上的连接词 */
@@ -101,22 +86,22 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 
     /** 允许用户把连接词拖到火车上的左连接词 */
     public enableDropLeftConjunctionInTrain(): void {
-
+		this.leftConjunctionContainer.enableDrop(this.presenter.onLeftConjunctionDrop, this.presenter);
 	}
 
     /** 禁止用户把连接词拖到火车上的左连接词 */
     public disableDropLeftConjunctionInTrain(): void {
-
+		this.leftConjunctionContainer.disableDrop();
 	}
 
     /** 允许用户把连接词拖到火车上的右连接词 */
     public enableDropRightConjunctionInTrain(): void {
-
+		this.rightConjunctionContainer.enableDrop(this.presenter.onRightConjunctionDrop, this.presenter);
 	}
 
     /** 禁止用户把连接词拖到火车上的右连接词 */
     public disableDropRightConjunctionInTrain(): void {
-
+		this.rightConjunctionContainer.disableDrop();
 	}
 
     public playAudioHowToPlay(): void {

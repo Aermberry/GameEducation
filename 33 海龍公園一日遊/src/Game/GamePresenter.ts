@@ -30,19 +30,19 @@ class GamePresenter {
 
 	public onLeftConjunctionDrop(conjuctionIndex: number): void {
 		this.leftConjuction = this.conjunctionRepo.get(conjuctionIndex);
-		this.view.showLeftConjunction(this.leftConjuction.text);
+		//this.view.showLeftConjunction(this.leftConjuction.text);
 		this.view.disableDropLeftConjunctionInTrain();
-		this.view.hideConjunction(conjuctionIndex);
-		this.view.hideConjunctionPlaceHolderInTrain();
+		//this.view.hideConjunction(conjuctionIndex);
+		//this.view.hideConjunctionPlaceHolderInTrain();
 		this.playSentenceWithConjunction();
 	}
 
 	public onRightConjunctionDrop(conjuctionIndex: number): void {
 		this.rightConjunction = this.conjunctionRepo.get(conjuctionIndex);
-		this.view.showRightConjunction(this.leftConjuction.text);
+		//this.view.showRightConjunction(this.rightConjunction.text);
 		this.view.disableDropRightConjunctionInTrain();
-		this.view.hideConjunction(conjuctionIndex);
-		this.view.hideConjunctionPlaceHolderInTrain();
+		//this.view.hideConjunction(conjuctionIndex);
+		//this.view.hideConjunctionPlaceHolderInTrain();
 		this.playSentenceWithConjunction();
 	}
 
@@ -66,6 +66,8 @@ class GamePresenter {
 			this.view.playMovieTrainGo();
 		} else {
 			this.view.showAllConjunctions(this.conjunctionRepo.getAll());
+			this.leftConjuction = this.rightConjunction = null;
+			this.view.clearConjunctionsInTrain();
 			this.view.hideConjunctionsInTrain();
 			this.view.enableDropLeftConjunctionInTrain();
 			this.view.enableDropRightConjunctionInTrain();
