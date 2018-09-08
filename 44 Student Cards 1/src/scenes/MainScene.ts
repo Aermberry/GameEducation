@@ -10,6 +10,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private confirmGroup: eui.Group;
 	private dragGroup: eui.Group;
 	private dropGroup: eui.Group;
+	private colorTips: eui.Group;
 	// private confitmGroup:eui.Group;
 
 	public constructor() {
@@ -57,39 +58,88 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
-			let index=this.dropGroup.getChildIndex(targetComponent);
-			  this.confirmGroup.getChildAt( this.dropGroup.getChildIndex(targetComponent)).visible = true;
-			 switch(index){
-				 case 1:
-				 this.ageButton.visible=true;
-				 break;
-				 case 2:
-				 this.addressButton.visible=true;
-				 break;
-				 case 4:
-				 this.hobbyButton.visible=true;
-				 break;
-			 }
+			let index = this.dropGroup.getChildIndex(targetComponent);
+			this.confirmGroup.getChildAt(this.dropGroup.getChildIndex(targetComponent)).visible = true;
+			switch (index) {
+				case 1:
+					this.ageButton.visible = true;
+					break;
+				case 2:
+					this.addressButton.visible = true;
+					break;
+				case 4:
+					this.hobbyButton.visible = true;
+					break;
+			}
 			//  if(this.confirmGroup.$children[1].visible) this.ageButton.visible=true;
 			//  if(this.confirmGroup.$children[2].visible)	this.addressButton.visible=true;
 			//  if(this.confirmGroup.$children[4].visible) this.hobbyButton.visible=true;
-			 if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible)this.clubButton.visible=true;
-			 this.confirm();
+			if (this.confirmGroup.$children[5].visible && this.confirmGroup.$children[6].visible) this.clubButton.visible = true;
+			this.confirm();
 			this.confirmAllWorldsAreCorrect();
+		}
+		else {
+			// let group:eui.Group;
+			// let color = this.colorTips.getChildAt(this.dropGroup.getChildIndex(targetComponent));
+			// // color.visible = true;
+			// setTimeout(()=>{ color.visible = false}, 6000);
+			// console.log(dragComponent);
+			// console.log(dragComponent.parent.$children);
+			// console.log(dragComponent.$parent.$children.indexOf("dragComponent.text"));
+			// let label: any
+			// label= dragComponent.text
+			// console.log(dragComponent.text);
+			// console.log(label);
+			// console.log(dragComponent.$parent.$children.indexOf(label));
+			// console.log(dragComponent.parent.$children[2])
+
+			if (dragComponent.text.trim() == "Mary Li") {
+				this.colorTips.$children[0].visible = true;
+				setTimeout(() => {
+				this.colorTips.$children[0].visible=false	
+				},4000)
+			}
+			if (dragComponent.text.trim() == "3A") {
+				setTimeout(() => {
+				this.colorTips.$children[1].visible = true;	
+				},4000)
+			}
+			if (dragComponent.text.trim() == "9") {
+				this.colorTips.$children[2].visible = true;
+			}
+			if (dragComponent.text.trim() == "Flat B,6/F.Happy Garden,Shatin") {
+				this.colorTips.$children[3].visible = true;
+			}
+			if (dragComponent.text.trim() == "4th April") {
+				this.colorTips.$children[4].visible = true;
+			}
+			if (dragComponent.text.trim() == "reading") {
+				this.colorTips.$children[5].visible = true;
+				this.colorTips.$children[6].visible = true;
+
+			}
+			if (dragComponent.text.trim() == "playing the piano") {
+				this.colorTips.$children[5].visible = true;
+				this.colorTips.$children[6].visible = true;
+			}
+			if (dragComponent.text.trim() == "Music Club") {
+				this.colorTips.$children[7].visible = true;
+			}
 		}
 	}
 
-	private confirm():void{
-		if(this.confirmGroup.$children[2].visible) this.ageButton.visible=false;
-		if(this.confirmGroup.$children[3].visible)	this.addressButton.visible=false;
-		if(this.confirmGroup.$children[7].visible) this.clubButton.visible=false;
-		if(this.confirmGroup.$children[5].visible&&this.confirmGroup.$children[6].visible) this.hobbyButton.visible=false;
+	private confirm(): void {
+		if (this.confirmGroup.$children[2].visible) this.ageButton.visible = false;
+		if (this.confirmGroup.$children[3].visible) this.addressButton.visible = false;
+		if (this.confirmGroup.$children[7].visible) this.clubButton.visible = false;
+		if (this.confirmGroup.$children[5].visible && this.confirmGroup.$children[6].visible) this.hobbyButton.visible = false;
 	}
 
 	private confirmAllWorldsAreCorrect(): void {
 		if (this.confirmGroup.$children.all(child => child.visible)) {
-			lzlib.ThreadUtility.sleep(3000);
-			Main.instance.gotoScene(new FinishScene());
+			setTimeout(() => {
+				Main.instance.gotoScene(new FinishScene());
+			},3000)
 		}
 	}
 
@@ -116,10 +166,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(6000);
 		this.mailGroup.$children[1].visible = true;
 		this.mailGroup.$children[2].visible = true;
-		await setTimeout(() => {
-			this.mailGroup.visible = false;
-		}, 6000)
 		this.setChildIndex(this.mailGroup, index);
+		await lzlib.ThreadUtility.sleep(6000);
+		this.mailGroup.visible = false;
 	}
 
 	private async onHobbyClickHelp(): Promise<void> {
@@ -129,18 +178,17 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		this.hobbyGroup.$children[0].visible = true;
 		await lzlib.ThreadUtility.sleep(3000);
 		this.hobbyGroup.$children[1].visible = true;
-		await setTimeout(() => {
-			this.hobbyGroup.visible = false;
-		}, 6000)
 		this.setChildIndex(this.hobbyGroup, index);
+		await lzlib.ThreadUtility.sleep(6000);
+		this.hobbyGroup.visible = false;
 	}
 
 	private async onClubClickHelp(): Promise<void> {
-		this.setChildIndex(this.clubTip,18);
-		let index=this.getChildIndex(this.clubTip);
+		this.setChildIndex(this.clubTip, 18);
+		let index = this.getChildIndex(this.clubTip);
 		this.clubTip.visible = true;
 		await lzlib.ThreadUtility.sleep(6000);
 		this.clubTip.visible = false;
-		this.setChildIndex(this.clubTip,index);
+		this.setChildIndex(this.clubTip, index);
 	}
 }
