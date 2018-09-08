@@ -32,10 +32,6 @@
 		"resource/components/Girl.exml",
 		"resource/components/MovieClipPlayer.exml",
 		"resource/components/ProgressComponent.exml",
-		"resource/scenes/BackgroundScene.exml",
-		"resource/scenes/GameScene.exml",
-		"resource/scenes/NextPageScene.exml",
-		"resource/scenes/StartScene.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -48,7 +44,11 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/BackgroundScene.exml",
+		"resource/scenes/GameScene.exml",
+		"resource/scenes/NextPageScene.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
