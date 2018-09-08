@@ -1,7 +1,4 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
-	
-
-	private xiaoFangHeightArrowBottomRect: eui.Rect;
 
 	private questionMarkImage: eui.Image;
 	private answerLabel: eui.Label;
@@ -30,7 +27,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.playStartAnimation();
 		await this.playMP3();
-		await lzlib.ThreadUtility.sleep(8000);
+		await lzlib.ThreadUtility.sleep(1000);
 		this.showButton();
 		this.hightButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.shortButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
@@ -63,7 +60,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onCalcComponentTap(): Promise<void>
 	{
-		console.log(this.xiaoFangHeightArrowBottomRect);
 		this.hideAlertAndOperationGroup();
 		this.formulaComponent.showTitleImage();
 		await lzlib.SoundUtility.playSound('streamsound_6_mp3');

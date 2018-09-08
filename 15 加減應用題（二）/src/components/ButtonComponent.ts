@@ -22,51 +22,15 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 		this.buttonImage.source = this.normalSource;	
 	}
 
-	// private onMouseOver(e: egret.TouchEvent): void
-	// {
-	// 	this.currentState = 'over';
-	// }
-
-
-	// private onMouseOut(e: egret.TouchEvent): void
-	// {
-	// 	this.currentState = 'normal';
-	// }
-
 	private onMouseOver(e: egret.TouchEvent): void
 	{
 		this.buttonImage.source = this._overSource;
 	}
 
-
 	private onMouseOut(e: egret.TouchEvent): void
 	{
 		this.buttonImage.source = this._normalSource;
 	}
-
-	// private _color = 0x000000;
-
-	// public get color(): number
-	// {
-	// 	return this._color;
-	// }
-	
-	// public set color(color: number)
-	// {
-	// 	this._color = color;
-	// }
-
-	// private _text = '';
-
-	// public get text(): string
-	// {
-	// 	return this._text;
-	// }
-	
-	// public set text(text: string)
-	// {
-	// 	this._text = text;
-	// }
 
 	private _normalSource = 'hight_normal_png';
 

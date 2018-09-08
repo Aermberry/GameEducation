@@ -1,7 +1,5 @@
 class CalcComponents extends eui.Component implements  eui.UIComponent {
 	
-	private textLabel: eui.Label;
-	
 	public constructor() {
 		super();
 	}
@@ -16,19 +14,19 @@ class CalcComponents extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this.textLabel,true);
-		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
-		this.textLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
+		mouse.setButtonMode(this,true);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}
-	
+		
 	private onMouseOver(e: egret.TouchEvent): void
 	{
-		(e.target as eui.Label).textColor = 0xffffff;
+		this.currentState = 'over';
 	}
 
 
 	private onMouseOut(e: egret.TouchEvent): void
 	{
-		(e.target as eui.Label).textColor = 0x202A76;
+		this.currentState = 'normal';
 	}
 }

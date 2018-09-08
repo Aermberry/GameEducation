@@ -29,7 +29,7 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.playStartAnimation();
 		await this.playMP3();
-		await lzlib.ThreadUtility.sleep(5000);
+		await lzlib.ThreadUtility.sleep(1000);
 		this.showButton();
 		this.hightButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.shortButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);

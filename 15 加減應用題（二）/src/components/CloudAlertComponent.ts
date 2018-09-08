@@ -2,7 +2,7 @@ class CloudAlertComponent extends eui.Component implements  eui.UIComponent {
 	
 	private titleImage: eui.Image;
 	private likeImage: eui.Image;
-	private fairyAlertGroup: eui.Group;
+	private fairyAlertMovieClipPlayer: MovieClipPlayer;
 	
 	public constructor() {
 		super();
@@ -39,13 +39,13 @@ class CloudAlertComponent extends eui.Component implements  eui.UIComponent {
 
 	public showWrongAlert(): void
 	{
-		this.fairyAlertGroup.visible = true;
+		this.fairyAlertMovieClipPlayer.visible = true;
 	}
 
 	public hideAlert(): void
 	{
 		this.likeImage.visible = false;
-		this.fairyAlertGroup.visible = false;
+		this.fairyAlertMovieClipPlayer.visible = false;
 	}
 	
 }

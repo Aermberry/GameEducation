@@ -27,7 +27,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 		this.playMP3();
 		await lzlib.ThreadUtility.sleep(14500);
 		this.showCloudAlertComponent();
-		await lzlib.ThreadUtility.sleep(5000);
+		await lzlib.ThreadUtility.sleep(1000);
 		this.showButton();
 		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);

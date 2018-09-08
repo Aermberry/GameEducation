@@ -2,7 +2,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	
 	private coatAndSweaterImage: eui.Image;
 	private coatAndSweaterNoQuestionImage: eui.Image;
-	private priceLabel: eui.Image;
+	private priceImage: eui.Image;
 	private expensiveButtonComponent: ButtonComponent;
 	private cheapButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
@@ -72,7 +72,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextQuestionComponent(): void
 	{
-		Main.instance.gotoScene(new Question5Scene());
+		Main.instance.gotoScene(new Question7Scene());
 	}
 
 	private onLastQuestionComponent(): void
@@ -104,7 +104,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private showAnswer(): void
 	{
-		this.priceLabel.visible = true;
+		this.priceImage.visible = true;
 		this.coatAndSweaterNoQuestionImage.visible = true;	
 	}
 
