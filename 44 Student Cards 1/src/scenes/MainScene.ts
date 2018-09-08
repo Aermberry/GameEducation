@@ -79,20 +79,6 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			this.confirmAllWorldsAreCorrect();
 		}
 		else {
-			// let group:eui.Group;
-			// let color = this.colorTips.getChildAt(this.dropGroup.getChildIndex(targetComponent));
-			// // color.visible = true;
-			// setTimeout(()=>{ color.visible = false}, 6000);
-			// console.log(dragComponent);
-			// console.log(dragComponent.parent.$children);
-			// console.log(dragComponent.$parent.$children.indexOf("dragComponent.text"));
-			// let label: any
-			// label= dragComponent.text
-			// console.log(dragComponent.text);
-			// console.log(label);
-			// console.log(dragComponent.$parent.$children.indexOf(label));
-			// console.log(dragComponent.parent.$children[2])
-
 			if (dragComponent.text.trim() == "Mary Li") {
 				this.colorTips.$children[0].visible = true;
 				setTimeout(() => {
@@ -125,7 +111,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 			if (dragComponent.text.trim() == "reading") {
 				this.colorTips.$children[5].visible = true;
-					this.colorTips.$children[6].visible = true;
+				this.colorTips.$children[6].visible = true;
 				setTimeout(() => {
 					this.colorTips.$children[5].visible = false;
 					this.colorTips.$children[6].visible = false;
@@ -134,7 +120,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 			if (dragComponent.text.trim() == "playing the piano") {
 				this.colorTips.$children[5].visible = true;
-					this.colorTips.$children[6].visible = true;
+				this.colorTips.$children[6].visible = true;
 				setTimeout(() => {
 					this.colorTips.$children[5].visible = false;
 					this.colorTips.$children[6].visible = false;
