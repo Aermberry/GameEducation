@@ -96,34 +96,55 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			if (dragComponent.text.trim() == "Mary Li") {
 				this.colorTips.$children[0].visible = true;
 				setTimeout(() => {
-				this.colorTips.$children[0].visible=false	
-				},4000)
+					this.colorTips.$children[0].visible = false
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "3A") {
+				this.colorTips.$children[1].visible = true;
 				setTimeout(() => {
-				this.colorTips.$children[1].visible = true;	
-				},4000)
+					this.colorTips.$children[1].visible = false;
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "9") {
 				this.colorTips.$children[2].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[2].visible = false;
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "Flat B,6/F.Happy Garden,Shatin") {
 				this.colorTips.$children[3].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[3].visible = false;
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "4th April") {
 				this.colorTips.$children[4].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[4].visible = false;
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "reading") {
 				this.colorTips.$children[5].visible = true;
-				this.colorTips.$children[6].visible = true;
+					this.colorTips.$children[6].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[5].visible = false;
+					this.colorTips.$children[6].visible = false;
+				}, 4000)
 
 			}
 			if (dragComponent.text.trim() == "playing the piano") {
 				this.colorTips.$children[5].visible = true;
-				this.colorTips.$children[6].visible = true;
+					this.colorTips.$children[6].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[5].visible = false;
+					this.colorTips.$children[6].visible = false;
+				}, 4000)
 			}
 			if (dragComponent.text.trim() == "Music Club") {
 				this.colorTips.$children[7].visible = true;
+				setTimeout(() => {
+					this.colorTips.$children[7].visible = false;
+				}, 4000)
 			}
 		}
 	}
@@ -139,7 +160,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		if (this.confirmGroup.$children.all(child => child.visible)) {
 			setTimeout(() => {
 				Main.instance.gotoScene(new FinishScene());
-			},3000)
+			}, 3000)
 		}
 	}
 
