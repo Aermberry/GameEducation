@@ -194,7 +194,7 @@ var lzlib;
         /** drop inside the target */
         LzDragEvent.DROP = 'drag_drop';
         /** drop outside the target */
-        LzDragEvent.CANCEL = 'dran_cancel';
+        LzDragEvent.DRAG_CANCEL = 'drag_cancel';
         return LzDragEvent;
     }(egret.TouchEvent));
     lzlib.LzDragEvent = LzDragEvent;
@@ -226,7 +226,7 @@ var lzlib;
             this.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true, 100);
         };
         Drop.prototype.disableDrop = function () {
-            this.dropObject.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
+            this.stage.removeEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true);
         };
         Drop.prototype.onTouchEnd = function (e) {
             if (lzlib.Drag.isDraging) {

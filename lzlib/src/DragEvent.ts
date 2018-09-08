@@ -5,7 +5,7 @@ namespace lzlib {
 		/** drop inside the target */
 		public static readonly DROP = 'drag_drop';
 		/** drop outside the target */
-		public static readonly CANCEL = 'dran_cancel';
+		public static readonly DRAG_CANCEL = 'drag_cancel';
 
 		public dragObject: egret.DisplayObject;
 		/** 该拖拉控件的原始local point */
