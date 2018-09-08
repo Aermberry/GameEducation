@@ -64,18 +64,55 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			// // 前一个的序号
 			let Index = currentIndex-1 ;
 			// console.log(currentIndex);
-			if(dragComponent.text.trim() == "Mary Li"){
-				e.preventDefault();
-				if(this.dragGroup.$children[0].visible){
-					e.preventDefault();
-				}
-				else{
-
-				}
-			}
-				else{
-					return
-				}
+			// if(dragComponent.text.trim() == "Mary Li"){
+			// 	e.preventDefault();
+			// 	if(this.dragGroup.$children[0].visible){
+			// 		e.preventDefault();
+			// 		if(this.dragGroup.$children[1].visible){
+			// 			e.preventDefault();
+			// 			if(this.dragGroup.$children[2].visible){
+			// 				e.preventDefault();
+			// 				if(this.dragGroup.$children[3].visible){
+			// 					e.preventDefault();
+			// 					if(this.dragGroup.$children[4].visible){
+			// 						e.preventDefault();
+			// 						if(this.dragGroup.$children[5].visible&&this.dragGroup.$children[6].visible){
+			// 							e.preventDefault();
+			// 							// if(this.dragGroup.$children[7].visible){
+			// 								e.preventDefault();
+				
+			// 							}
+			// 							else{
+			// 								return;
+			// 							}
+			// 						}
+			// 						else{
+			// 							return;
+			// 						}
+			// 					}
+			// 					else{
+			// 						return;
+			// 					}
+			// 				}
+			// 				else{
+			// 					return;
+			// 				}
+			// 			}
+			// 			else{
+			// 				return;
+			// 			}
+			// 		}
+			// 		else{
+			// 			return;
+			// 		}
+			// 	}
+			// 	else{
+			// 		return;
+			// 	}
+			// }
+			// 	else{
+			// 		return
+			// 	}
 			// 	if(this.getChildAt(Index).visible==false){
 			// 		this.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, false)
 			// 	}
