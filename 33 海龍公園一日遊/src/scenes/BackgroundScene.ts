@@ -3,8 +3,9 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	private coverImage: eui.Image;
 	private currentLevelLargeLabel: eui.Label;
 	private currentLevelSmallLabel: eui.Label;
-	private nextPageButton: eui.Image;
+	private nextPageButton: CircleButton;
 	private startTweenGroup: egret.tween.TweenGroup;
+	private exitButton: CircleButton;
 
 	private backgroundRepo = new BackgroundRepository();
 
@@ -20,8 +21,9 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.nextPageButton.touchEnabled = true;
+		this.nextPageButton.enabled = true;
 		this.nextPageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
+		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, window.close, this);
 		this.loadView();
 	}
 
@@ -36,8 +38,8 @@ class BackgroundScene extends eui.Component implements  eui.UIComponent {
 		this.currentLevelLargeLabel.text = this.currentLevelSmallLabel.text = `第${(LevelBiz.instance.currentLevel + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}節`;
 		this.coverImage.source = background.coverImageName;
 		this.startTweenGroup.play(0);
-		// await lzlib.SoundUtility.playSound(background.introductionAudioName);
-		this.nextPageButton.source = 'circle_page_next_png';
+		await lzlib.SoundUtility.playSound(background.introductionAudioName);
+		this.nextPageButton.enabled = true;
 	}
 	
 }

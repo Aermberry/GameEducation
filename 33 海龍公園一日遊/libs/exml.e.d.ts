@@ -1,7 +1,3 @@
-declare class BackgroundComponentSkin extends eui.Skin{
-}
-declare class bottomComponentSkin extends eui.Skin{
-}
 declare class CircleButtonSkin extends eui.Skin{
 }
 declare class ConjunctionBackgroundSkin extends eui.Skin{
@@ -12,7 +8,7 @@ declare class GirlSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
 }
-declare class ProcessComponentSkin extends eui.Skin{
+declare class ProgressComponentSkin extends eui.Skin{
 }
 declare module skins{
 	class ButtonSkin extends eui.Skin{

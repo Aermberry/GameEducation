@@ -26,6 +26,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.backgroundRect, true);
 		mouse.setButtonMode(this.titleLabel, true);
+		mouse.setButtonMode(this.iconImage, true);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onRollOver, this);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRollOut, this);
 		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
@@ -140,9 +141,16 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		}
 	}
 
+	private _enabled = true;
+
+	public get enabled(): boolean
+	{
+		return this._enabled;
+	}
+
 	public set enabled(value: boolean)
 	{
-		value = value.toString() == 'true';
+		this._enabled = value = value.toString() == 'true';
 		this.currentState = value ? 'normal' : 'disabled';
 		super.$setEnabled(value);
 	}

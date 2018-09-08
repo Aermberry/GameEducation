@@ -4,8 +4,6 @@ interface GameView {
     /** 隐藏指定的连接词 */
     hideConjunction(conjuctionIndex: number): void;
 
-    updateProgres(currentQuestionIndex: number): void;
-
     /** 显示列车上的连接词占位符 */
     blinkConjunctionBackgroundInTrain(): void;
     /** 隐藏列车上的连接词占位符 */
@@ -48,5 +46,5 @@ interface GameView {
     /** 显示当前关卡已经通过的字 */
     showCurrentLevelFinished(): void;
     openBackgroundScene(): void;
-    openGameScene(sentenceIndex: number): void;
+    openGameScene(): void;
 }

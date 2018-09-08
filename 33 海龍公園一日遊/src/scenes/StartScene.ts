@@ -1,7 +1,8 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
 
-	public displayArea:eui.Group;
-	public startButton:eui.Button;
+	private displayArea:eui.Group;
+	private startButton:eui.Button;
+	private exitButton: eui.Button;
 
 	public constructor() {
 		super();
@@ -16,7 +17,9 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
+		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, window.close, this);
 	}
 
 	private onStartButtonClick(): void

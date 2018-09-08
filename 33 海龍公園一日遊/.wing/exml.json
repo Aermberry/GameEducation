@@ -53,8 +53,8 @@
         "globalAutoLayerMarkEnable": true
     },
     "165706ed774": {
-        "path": "components/ProcessComponent.ts",
-        "class": "ProcessComponent",
+        "path": "components/ProgressComponent.ts",
+        "class": "ProgressComponent",
         "parentPath": ""
     },
     "165708e2ee3": {

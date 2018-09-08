@@ -3,20 +3,17 @@ class GamePresenter {
 	private conjunctionRepo = new ConjunctionRepository();
 	private view: GameView;
 	private sentence: Sentence;
-	private sentenceIndex = 0;
 	private leftConjuction: Conjunction;
 	private rightConjunction: Conjunction;
 
 	public constructor() {
 	}
 
-	public loadView(view: GameView, sentenceIndex: number): void {
+	public loadView(view: GameView): void {
 		this.view = view;
-		this.sentenceIndex = sentenceIndex;
-		this.sentence = this.sentenceRepo.get(LevelBiz.instance.currentLevel, sentenceIndex);
-		this.view.updateProgres(LevelBiz.instance.currentLevel * 4 + LevelBiz.instance.currentQuestionIndex);
+		this.sentence = this.sentenceRepo.get(LevelBiz.instance.currentLevel, LevelBiz.instance.currentQuestionIndex);
 		this.view.showAllConjunctions(this.conjunctionRepo.getAll());
-		if (sentenceIndex == 0) {
+		if (LevelBiz.instance.currentQuestionIndex == 0) {
 			this.view.playAudioHowToPlay();
 		}
 	}
@@ -79,14 +76,15 @@ class GamePresenter {
 	}
 
 	public async onNextButtonClick(): Promise<void> {
-		this.sentenceIndex++;
-		if (this.sentenceRepo.get(LevelBiz.instance.currentLevel, this.sentenceIndex) == null) {
+		LevelBiz.instance.currentQuestionIndex++;
+		if (this.sentenceRepo.get(LevelBiz.instance.currentLevel, LevelBiz.instance.currentQuestionIndex) == null) {
 			this.view.showCurrentLevelFinished();
 			await lzlib.ThreadUtility.sleep(1500);
 			LevelBiz.instance.currentLevel++;
+			LevelBiz.instance.currentQuestionIndex = 0;
 			this.view.openBackgroundScene();
 		} else {
-			this.view.openGameScene(this.sentenceIndex);
+			this.view.openGameScene();
 		}
 	}
 

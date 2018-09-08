@@ -60,8 +60,8 @@
 						<ns1:ConjunctionContainer width="244" height="157" x="998.44" y="121.42" text="就" />
 					</e:Group>
 					<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
-						<ns1:CircleButton id="validateButton" width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對" title="核對" titleColor="0xFFFEA6" backgroundColor="0x41962a" strokeColor="0x296419" enabled="false"/>
-						<ns1:CircleButton id="nextSentenceButton" width="147" height="147" x="270" y="57" iconSource="triangle_png" enabled="false" />
+						<ns1:CircleButton id="validateButton" width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對題目" title="核對" titleColor="0xFFFEA6" backgroundColor="0x41962a" strokeColor="0x296419" enabled="false"/>
+						<ns1:CircleButton id="nextSentenceButton" width="147" height="147" x="270" y="57" tip="下一頁" iconSource="triangle_png" enabled="false" />
 					</e:Group>
 				</e:Group>		
 			</e:Group>
@@ -96,15 +96,9 @@
 	</e:Group>
 	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
-		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
-		<e:Group width="147" height="147" x="1738" y="38" >
-				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png" visible="false"/>
-			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000" visible="false"/>
-			<ns1:CircleButton width="147" height="147" x="0" y="0" backgroundColor="0xffffff" tip="離開" title="離開" strokeColor="0x000000"/>
-				
-			</e:Group>
+		<ns1:CircleButton id="exitButton" x="1738" y="38" backgroundColor="0xffffff" tip="離開" title="離開" strokeColor="0x000000"/>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>	
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
-		<ns1:ProcessComponent id="progressComponent" width="20" height="20" x="205" y="16" />
+		<ns1:ProgressComponent id="progressComponent" width="20" height="20" x="205" y="16" />
 	</e:Group>
 </e:Skin>

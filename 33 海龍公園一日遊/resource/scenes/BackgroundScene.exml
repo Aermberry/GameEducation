@@ -33,16 +33,15 @@
 				<e:Image id="coverImage" width="1097" height="778" x="118" y="87.21" source="house_and_people_png"/>
 				<e:Group width="1446" height="164" x="117" y="884" anchorOffsetX="0" anchorOffsetY="0">
 				<e:Label id="currentLevelSmallLabel" text="第一節" x="30" y="61" anchorOffsetX="0" width="252.77" anchorOffsetY="0" height="87.58" textColor="0x000000" size="80"/>
-				<e:Image id="nextPageButton" width="164" height="162" x="1282" y="0" anchorOffsetX="0" anchorOffsetY="0" source="next_page_gray_png" touchEnabled="false"/>
+				<ns1:CircleButton id="nextPageButton" width="147" height="147" x="1282" y="0" tip="下一頁" iconSource="triangle_png" />
 				</e:Group>
 			</e:Group>
 	</e:Group>
 	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
-		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
-		<ns1:CircleButton width="147" height="147" x="1738" backgroundColor="0xffffff" tip="離開" title="離開" verticalCenter="0"/>
+		<ns1:CircleButton id="exitButton" x="1738" backgroundColor="0xffffff" tip="離開" title="離開" verticalCenter="0"/>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff" strokeWeight="1"/>
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
-		<ns1:ProcessComponent width="20" height="20" x="205" y="16"/>
+		<ns1:ProgressComponent width="20" height="20" x="205" y="16"/>
 	</e:Group>
 </e:Skin>

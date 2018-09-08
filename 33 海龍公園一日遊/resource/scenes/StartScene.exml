@@ -8,22 +8,16 @@
 			<e:Label width="1205" height="130.36" x="247" y="225" text=" 海龍公園——" textColor="0x000000" size="130" anchorOffsetY="0" fontFamily="華康娃娃体"/>
 			<e:Label width="1129.24" height="130.36" x="423.67" y="389.54" text="銜接句互動練習" textColor="0x000000" size="130" anchorOffsetY="0" anchorOffsetX="0" fontFamily="華康娃娃体"/>
 			<e:Group id="start" width="147" height="147" x="1481" y="675" >
-				<ns1:CircleButton id="startButton" width="147" height="147" x="0" y="0" backgroundColor="0x3dc824" tip="開始" title="開始" strokeColor="0x166610" titleColor="16777215"/>
+				<ns1:CircleButton id="startButton" width="147" height="147" x="0" y="0" backgroundColor="0x3dc824" tip="開始播放" title="開始" strokeColor="0x166610" titleColor="16777215"/>
 			</e:Group>
 			
 		</e:Group>
 	</e:Group>
 	<e:Group id="containerButtom" height="237" y="1205" anchorOffsetY="0" left="0" right="0">
 		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
-		<!--<e:Image width="147" height="147" x="1738" y="38" source="circle_leave_png"/>-->
-		<e:Group width="147" height="147" x="1738" y="38" >
-				<e:Image width="147" height="147" x="0" y="0" source="circle_leave_png" visible="false"/>
-			<e:Label text="離開" top="0" bottom="0" left="0" right="0" size="50" verticalAlign="middle" textAlign="center" textColor="0x000000" visible="false"/>
-			<ns1:CircleButton width="147" height="147" x="0" y="0" backgroundColor="0xffffff" tip="離開" title="離開"/>
-				
-			</e:Group>
+		<ns1:CircleButton id="exitButton" x="1738" y="38" backgroundColor="0xffffff" tip="離開" title="離開"/>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000" strokeColor="0x000000"/>
-		<ns1:ProcessComponent width="20" height="20" x="205" y="16"/>
+		<ns1:ProgressComponent width="20" height="20" x="205" y="16"/>
 	</e:Group>
 </e:Skin>

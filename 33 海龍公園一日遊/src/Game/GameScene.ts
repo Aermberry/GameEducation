@@ -4,6 +4,7 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private conjunctionGroup: eui.Group;
 	private leftGirl: Girl;
 	private rightGirl: Girl;
+	private exitButton: CircleButton;
 
 	private nextSentenceButton: CircleButton;
 	private currentLevelLabel: eui.Label;
@@ -12,14 +13,10 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private leftConjunctionContainer: ConjunctionContainer;
 	private rightConjunctionContainer: ConjunctionContainer;
 
-	private progressComponent: ProcessComponent;
-
 	private presenter = new GamePresenter();
-	private sentenceIndex = 0;
 
-	public constructor(sentenceIndex: number) {
+	public constructor() {
 		super();
-		this.sentenceIndex = sentenceIndex;
 	}
 
 	protected async partAdded(partName:string,instance:any): Promise<void>
@@ -35,8 +32,9 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 		this.rightGirl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onRightGirlImageClick, this.presenter);
 		this.nextSentenceButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onNextButtonClick, this.presenter);
 		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidationButtonClick, this.presenter);
+		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, window.close, this);
 		this.initDragDrop();
-		this.presenter.loadView(this, this.sentenceIndex);
+		this.presenter.loadView(this);
 	}
 
 	private initDragDrop(): void
@@ -168,12 +166,7 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 		Main.instance.gotoScene(new BackgroundScene());
 	}
 
-    public openGameScene(sentenceIndex: number): void {
-		Main.instance.gotoScene(new GameScene(sentenceIndex));
-	}
-
-	public updateProgres(currentQuestionIndex: number): void
-	{
-		this.progressComponent.currentQuestionIndex = currentQuestionIndex;
+    public openGameScene(): void {
+		Main.instance.gotoScene(new GameScene());
 	}
 }
