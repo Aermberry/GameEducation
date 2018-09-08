@@ -142,6 +142,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 
 	public set enabled(value: boolean)
 	{
+		value = value.toString() == 'true';
 		this.currentState = value ? 'normal' : 'disabled';
 		super.$setEnabled(value);
 	}

@@ -1,5 +1,6 @@
 class ConjunctionBackground extends eui.Component implements  eui.UIComponent {
 	private backgroundImage: eui.Image;
+	private blinkTweenGroup: egret.tween.TweenGroup;
 	
 	public constructor() {
 		super();
@@ -16,4 +17,9 @@ class ConjunctionBackground extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 	}
 	
+	public blink(): void
+	{
+		this.currentState = 'blink';
+		this.blinkTweenGroup.playLoopAsync();
+	}
 }

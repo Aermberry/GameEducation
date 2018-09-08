@@ -41,6 +41,7 @@ declare namespace lzlib {
     class LzDragEvent extends egret.TouchEvent {
         static readonly DRAG_OVER: string;
         static readonly DRAG_OUT: string;
+        static readonly DRAG_CANCEL: string;
         static readonly DROP: string;
         dragObject: egret.DisplayObject;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);

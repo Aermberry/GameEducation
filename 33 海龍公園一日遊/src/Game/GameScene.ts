@@ -2,6 +2,8 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private trainGroup: eui.Group;
 	private nextSentenceGroup: eui.Group;
 	private conjunctionGroup: eui.Group;
+	private leftGirl: Girl;
+	private rightGirl: Girl;
 
 	private nextSentenceButton: CircleButton;
 	private currentLevelLabel: eui.Label;
@@ -9,6 +11,8 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private trainTweenGroup: egret.tween.TweenGroup;
 	private leftConjunctionContainer: ConjunctionContainer;
 	private rightConjunctionContainer: ConjunctionContainer;
+
+	private progressComponent: ProcessComponent;
 
 	private presenter = new GamePresenter();
 	private sentenceIndex = 0;
@@ -27,15 +31,18 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	protected async childrenCreated():Promise<void>
 	{
 		super.childrenCreated();
+		this.leftGirl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onLeftGirlImageClick, this.presenter);
+		this.rightGirl.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onRightGirlImageClick, this.presenter);
 		this.nextSentenceButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onNextButtonClick, this.presenter);
 		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidationButtonClick, this.presenter);
-		
 		this.initDragDrop();
 		this.presenter.loadView(this, this.sentenceIndex);
 	}
 
 	private initDragDrop(): void
 	{
+		this.conjunctionGroup.$children.forEach((child, index) => child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onConjunctionTouchBegin(index), this));
+		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.DRAG_CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter));
 		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.enableDrag(index));
 		this.leftConjunctionContainer.enableDrop(this.presenter.onLeftConjunctionDrop, this.presenter);
 		this.rightConjunctionContainer.enableDrop(this.presenter.onRightConjunctionDrop, this.presenter);
@@ -44,7 +51,11 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
     /** 显示所有连接词 */
     public showAllConjunctions(conjunctions: Conjunction[]): void {
 		this.conjunctionGroup.$children.forEach((child: ConjunctionContainer, index: number) => {
-			child.text = conjunctions[index].text;
+			if (!child.text) {
+				child.text = conjunctions[index].text;
+				child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.DRAG_CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter);
+				child.enableDrag(index);
+			}
 		});
 	}
 
@@ -54,13 +65,15 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	}
 
     /** 显示列车上的连接词占位符 */
-    public showConjunctionPlaceHolderInTrain(): void {
-		this.leftConjunctionContainer.visible = this.rightConjunctionContainer.visible = true;
+    public blinkConjunctionBackgroundInTrain(): void {
+		this.leftConjunctionContainer.blinkBackground();
+		this.rightConjunctionContainer.blinkBackground();
 	}
 
     /** 隐藏列车上的连接词占位符 */
-    public hideConjunctionPlaceHolderInTrain(): void {
-		this.leftConjunctionContainer.visible = this.rightConjunctionContainer.visible = false;
+    public hideConjunctionBackgroundInTrain(): void {
+		this.leftConjunctionContainer.hideBackground();
+		this.rightConjunctionContainer.hideBackground();
 	}
 
     /** 显示火车上的左连接词 */
@@ -157,5 +170,10 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 
     public openGameScene(sentenceIndex: number): void {
 		Main.instance.gotoScene(new GameScene(sentenceIndex));
+	}
+
+	public updateProgres(currentQuestionIndex: number): void
+	{
+		this.progressComponent.currentQuestionIndex = currentQuestionIndex;
 	}
 }

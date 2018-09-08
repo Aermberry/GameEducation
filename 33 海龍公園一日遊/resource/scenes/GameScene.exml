@@ -61,7 +61,7 @@
 					</e:Group>
 					<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
 						<ns1:CircleButton id="validateButton" width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對" title="核對" titleColor="0xFFFEA6" backgroundColor="0x41962a" strokeColor="0x296419" enabled="false"/>
-						<ns1:CircleButton id="nextSentenceButton" width="147" height="147" x="270" y="57" iconSource="triangle_png" />
+						<ns1:CircleButton id="nextSentenceButton" width="147" height="147" x="270" y="57" iconSource="triangle_png" enabled="false" />
 					</e:Group>
 				</e:Group>		
 			</e:Group>
@@ -71,18 +71,18 @@
 				<e:Image width="106" height="111" x="158" source="circle_page_next_png"/>
 			</e:Group>
 			<e:Group id="trainGroup" width="1754" x="0" y="213" height="576">
+				<ns1:ConjunctionContainer id="rightConjunctionContainer" width="244" height="157" x="1078.79" y="247" backgroundVisible="false"/>
+				<ns1:ConjunctionContainer id="leftConjunctionContainer" width="244" height="157" x="432.43" y="247" backgroundVisible="false"/>
 				<e:Image width="454" height="542" x="19.58" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_head_png"/>
 
 				<e:Group width="465" height="542" x="644.12" y="0" anchorOffsetX="0" anchorOffsetY="0">
 					<e:Image width="465" height="542" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_mid_png"/>
-					<ns1:Girl id="girl1" width="204.85" height="146.42" x="101.3" y="75.25" anchorOffsetX="0" anchorOffsetY="0"/>
+					<ns1:Girl id="leftGirl" width="204.85" height="146.42" x="101.3" y="75.25" anchorOffsetX="0" anchorOffsetY="0"/>
 				</e:Group>
-				<ns1:ConjunctionContainer id="rightConjunctionContainer" width="244" height="157" x="1078.79" y="226" />
 				<e:Group width="451" height="542" x="1289.78" y="0" anchorOffsetX="0" anchorOffsetY="0">
 					<e:Image width="451" height="542" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_end_png"/>
-					<ns1:Girl id="girl2" width="210.91" height="210.26" y="75.25" x="104.33" anchorOffsetX="0" anchorOffsetY="0"/>
+					<ns1:Girl id="rightGirl" width="210.91" height="210.26" y="75.25" x="104.33" anchorOffsetX="0" anchorOffsetY="0"/>
 				</e:Group>
-				<ns1:ConjunctionContainer id="leftConjunctionContainer" width="244" height="157" x="432.43" y="216.52" />
 				<e:layout>
 					<e:BasicLayout/>
 				</e:layout>
@@ -105,6 +105,6 @@
 			</e:Group>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>	
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
-		<ns1:ProcessComponent width="20" height="20" x="205" y="16" currentQuestionIndex="2"/>
+		<ns1:ProcessComponent id="progressComponent" width="20" height="20" x="205" y="16" />
 	</e:Group>
 </e:Skin>

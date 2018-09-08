@@ -11,6 +11,7 @@ class ConjunctionContainer extends eui.Group implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.background = new ConjunctionBackground();
+		this.background.visible = this.backgroundVisible;
 		this.addChildAt(this.background, 0);
 	}
 
@@ -26,6 +27,10 @@ class ConjunctionContainer extends eui.Group implements  eui.UIComponent {
 			value.x = value.y = 0;
 			this.addChild(value);
 		}
+	}
+
+	public get text(): string {
+		return this.conjunctionComponent ? this.conjunctionComponent.text : null;
 	}
 
 	public set text(value: string)
@@ -59,5 +64,29 @@ class ConjunctionContainer extends eui.Group implements  eui.UIComponent {
 	public disableDrop(): void
 	{
 		this.drop.disableDrop();
+	}
+
+	public blinkBackground(): void
+	{
+		this.background.visible = true;
+		this.background.blink();
+	}
+
+	public hideBackground(): void
+	{
+		this.background.visible = false;
+	}
+
+	private _backgroundVisible = true;
+
+	public get backgroundVisible(): boolean
+	{
+		return this._backgroundVisible;
+	}
+
+	public set backgroundVisible(value: boolean)
+	{
+		this._backgroundVisible = value;
+		this.background && (this.background.visible = value);
 	}
 }

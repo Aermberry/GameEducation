@@ -4,10 +4,12 @@ interface GameView {
     /** 隐藏指定的连接词 */
     hideConjunction(conjuctionIndex: number): void;
 
+    updateProgres(currentQuestionIndex: number): void;
+
     /** 显示列车上的连接词占位符 */
-    showConjunctionPlaceHolderInTrain(): void;
+    blinkConjunctionBackgroundInTrain(): void;
     /** 隐藏列车上的连接词占位符 */
-    hideConjunctionPlaceHolderInTrain(): void;
+    hideConjunctionBackgroundInTrain(): void;
 
     /** 显示火车上的左连接词 */
     showLeftConjunction(text: string): void;

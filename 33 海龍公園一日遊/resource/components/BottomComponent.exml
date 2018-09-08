@@ -13,7 +13,6 @@
 			</e:Group>
 		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>	
 		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
-		<!--<ns1:processComponent width="20" height="20" x="205.91" y="16.61" currentQuestionIndex="2"/>-->
 	</e:Group>
 	<ns1:ProcessComponent width="20" height="20" x="200.39" y="21.12"/>
 	

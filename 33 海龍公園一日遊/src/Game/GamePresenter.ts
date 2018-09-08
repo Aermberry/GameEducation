@@ -14,18 +14,20 @@ class GamePresenter {
 		this.view = view;
 		this.sentenceIndex = sentenceIndex;
 		this.sentence = this.sentenceRepo.get(LevelBiz.instance.currentLevel, sentenceIndex);
+		this.view.updateProgres(LevelBiz.instance.currentLevel * 4 + LevelBiz.instance.currentQuestionIndex);
 		this.view.showAllConjunctions(this.conjunctionRepo.getAll());
 		if (sentenceIndex == 0) {
 			this.view.playAudioHowToPlay();
 		}
 	}
 
-	public onConjunctionTouchBegin(): void {
-		this.view.showConjunctionPlaceHolderInTrain();
+	public onConjunctionTouchBegin(conjunctionIndex: number): void {
+		this.view.blinkConjunctionBackgroundInTrain();
+		this.view.playAudio(this.conjunctionRepo.get(conjunctionIndex).audioName);
 	}
 
 	public onConjunctionTouchCancel(): void {
-		this.view.hideConjunctionPlaceHolderInTrain();
+		this.view.hideConjunctionBackgroundInTrain();
 	}
 
 	public onLeftConjunctionDrop(conjuctionIndex: number): void {
@@ -33,7 +35,7 @@ class GamePresenter {
 		//this.view.showLeftConjunction(this.leftConjuction.text);
 		this.view.disableDropLeftConjunctionInTrain();
 		//this.view.hideConjunction(conjuctionIndex);
-		//this.view.hideConjunctionPlaceHolderInTrain();
+		this.view.hideConjunctionBackgroundInTrain();
 		this.playSentenceWithConjunction();
 	}
 
@@ -42,7 +44,7 @@ class GamePresenter {
 		//this.view.showRightConjunction(this.rightConjunction.text);
 		this.view.disableDropRightConjunctionInTrain();
 		//this.view.hideConjunction(conjuctionIndex);
-		//this.view.hideConjunctionPlaceHolderInTrain();
+		this.view.hideConjunctionBackgroundInTrain();
 		this.playSentenceWithConjunction();
 	}
 

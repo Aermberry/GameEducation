@@ -15,7 +15,7 @@ class ProcessComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.trainMovieClipPlayer.x = this._currentQuestionIndex * 66;
+		this.trainMovieClipPlayer.x = this.currentQuestionIndex * 66;
 	}
 
 	private _currentQuestionIndex = 0;
@@ -25,9 +25,9 @@ class ProcessComponent extends eui.Component implements  eui.UIComponent {
 		return this._currentQuestionIndex;
 	}
 	
-	public set currentQuestionIndex(index:number)
+	public set currentQuestionIndex(value: number)
 	{
-		this._currentQuestionIndex = index;
+		this._currentQuestionIndex = value;
 		this.trainMovieClipPlayer && (this.trainMovieClipPlayer.x = this._currentQuestionIndex * 66)
 	}
 }
