@@ -55,7 +55,28 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
-			e.preventDefault();
+			// e.preventDefault();
+
+			// name是否显示
+			let name = this.dropGroup.$children[0].visible
+			// console.log(name);
+			// 当前选中的序号
+			let currentIndex = this.dropGroup.getChildIndex(targetComponent);
+			// // 前一个的序号
+			let Index = currentIndex-1 ;
+			// console.log(currentIndex);
+			if(name){
+				if(this.getChildAt(Index).visible==false){
+					this.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, false)
+				}
+				else{
+					// e.preventDefault();
+				}
+			}
+			else{
+				this.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, false)
+			}
+			
 			targetComponent.visible = true;
 			dragComponent.visible = false;
 			let index = this.dropGroup.getChildIndex(targetComponent);
