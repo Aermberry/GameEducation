@@ -14,5 +14,10 @@ namespace lzlib {
 				this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
 			});
 		}
+
+		public static stopCurrentSound(): void
+		{
+			this.currentSoundChannel && this.currentSoundChannel.stop();
+		}
 	}
 }

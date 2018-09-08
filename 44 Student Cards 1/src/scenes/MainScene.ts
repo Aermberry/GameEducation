@@ -74,6 +74,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			this.confirmGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			
 			if (this.confirmGroup.$children.every(child => child.visible)) {
+				lzlib.SoundUtility.stopCurrentSound();
 				Main.instance.gotoScene(new FinishScene());
 			} else {
 				this.currentQuestionIndex++;
