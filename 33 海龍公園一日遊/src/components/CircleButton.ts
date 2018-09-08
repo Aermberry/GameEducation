@@ -4,8 +4,11 @@
  */
 class CircleButton extends eui.Component implements  eui.UIComponent {
 	private backgroundRect: eui.Rect;
+	private highlightRect: eui.Rect;
 	private titleLabel: eui.Label;
 	private tipLabel: eui.Label;
+	private iconImage: eui.Image;
+	private blinkingTweenGroup: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -23,34 +26,26 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.backgroundRect, true);
 		mouse.setButtonMode(this.titleLabel, true);
+		mouse.setButtonMode(this.iconImage, true);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onRollOver, this);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRollOut, this);
 		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
 		this.titleLabel.text = this.title;
 		this.titleLabel.textColor = this.titleColor;
 		this.tipLabel.text = this.tip;
+		this.iconImage.source = this.iconSource;
 		this.backgroundRect.strokeColor = this.strokeColor;
 		this.backgroundRect.fillColor = this.backgroundColor;
-		// await lzlib.SoundUtility.playSound('');
 	}
 
 	private onRollOver(): void
 	{
-		this.currentState = 'over';
-		
-		if (this._tip == '播放/暫停') {
-			this.backgroundRect.fillColor = 15951391;
-		}
-
+		this.enabled && (this.currentState = 'over');
 	}
 
 	private onRollOut(): void
 	{
-		this.currentState = 'normal';
-		if (this._tip == '播放/暫停') {
-			this.backgroundRect.fillColor = 16777215;
-		}
-
+		this.enabled && (this.currentState = 'normal');
 	}
 
 	private onTouchBegin(): void
@@ -84,7 +79,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.tipLabel && (this.tipLabel.text = value);
 	}
 
-	private _strokeColor = 0;
+	private _strokeColor = 0x000000;
 
 	public get strokeColor(): number
 	{
@@ -97,7 +92,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.backgroundRect && (this.backgroundRect.strokeColor = value);
 	}
 
-	private _titleColor = 0;
+	private _titleColor = 0x000000;
 
 	public get titleColor(): number
 	{
@@ -110,7 +105,7 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 		this.titleLabel && (this.titleLabel.textColor = value);
 	}
 
-	private _backgroundColor = 0;
+	private _backgroundColor = 0xffffff;
 
 	public get backgroundColor(): number
 	{
@@ -121,5 +116,42 @@ class CircleButton extends eui.Component implements  eui.UIComponent {
 	{
 		this._backgroundColor = value;
 		this.backgroundRect && (this.backgroundRect.fillColor = value);
+	}
+
+	private _iconSource = '';
+
+	public get iconSource(): string
+	{
+		return this._iconSource;
+	}
+
+	public set iconSource(value: string)
+	{
+		this._iconSource = value;
+		this.iconImage && (this.iconImage.source = value);
+	}
+
+	public set highlight(value: boolean) 
+	{
+		if (value) {
+			this.blinkingTweenGroup.playLoopAsync();
+		} else {
+			this.blinkingTweenGroup.stop();
+			this.highlightRect.alpha = 0;
+		}
+	}
+
+	private _enabled = true;
+
+	public get enabled(): boolean
+	{
+		return this._enabled;
+	}
+
+	public set enabled(value: boolean)
+	{
+		this._enabled = value = value.toString() == 'true';
+		this.currentState = value ? 'normal' : 'disabled';
+		super.$setEnabled(value);
 	}
 }
