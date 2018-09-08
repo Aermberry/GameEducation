@@ -23,7 +23,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		
+		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 		this.playMP3();
 		await lzlib.ThreadUtility.sleep(14500);
 		this.showCloudAlertComponent();

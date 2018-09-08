@@ -28,7 +28,8 @@
 		"Question5Scene": "resource/scenes/Question5Scene.exml",
 		"Question6Scene": "resource/scenes/Question6Scene.exml",
 		"Question7Scene": "resource/scenes/Question7Scene.exml",
-		"Question8Scene": "resource/scenes/Question8Scene.exml"
+		"Question8Scene": "resource/scenes/Question8Scene.exml",
+		"StartScene": "resource/scenes/StartScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -61,7 +62,8 @@
 		"resource/scenes/Question5Scene.exml",
 		"resource/scenes/Question6Scene.exml",
 		"resource/scenes/Question7Scene.exml",
-		"resource/scenes/Question8Scene.exml"
+		"resource/scenes/Question8Scene.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

@@ -84,3 +84,5 @@ declare class Question7SceneSkin extends eui.Skin{
 }
 declare class Question8SceneSkin extends eui.Skin{
 }
+declare class StartSceneSkin extends eui.Skin{
+}

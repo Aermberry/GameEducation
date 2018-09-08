@@ -25,6 +25,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.playStartAnimation();
 		await this.playMP3();
 		await lzlib.ThreadUtility.sleep(1000);
@@ -32,7 +33,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.hightButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.shortButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
-		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 	}
 
 	private async onHightButtonComponentTap(e: egret.TouchEvent): Promise<void>
