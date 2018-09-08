@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,calc_background_png,calc_normal_png,calc_over_png,cheap_normal_png,cheap_over_png,exit_background_png,content_background_png,exit_normal_png,expensive_normal_png,expensive_over_png,hight_normal_png,last_question_normal_png,hight_over_png,last_question_over_png,less_normal_png,less_over_png,much_normal_png,much_over_png,next_question_normal_png,next_question_over_png,number_background_png,question_mark_png,scene_background_png,short_normal_png,short_over_png,text_background_png,title_left_png,title_right_png",
 			"name": "preload"
 		}
 	],
@@ -145,6 +145,146 @@
 			"name": "checkbox_unselect2_png",
 			"type": "image",
 			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "calc_background_png",
+			"type": "image",
+			"url": "textures/calc_background.png"
+		},
+		{
+			"name": "calc_normal_png",
+			"type": "image",
+			"url": "textures/calc_normal.png"
+		},
+		{
+			"name": "calc_over_png",
+			"type": "image",
+			"url": "textures/calc_over.png"
+		},
+		{
+			"name": "cheap_normal_png",
+			"type": "image",
+			"url": "textures/cheap_normal.png"
+		},
+		{
+			"name": "cheap_over_png",
+			"type": "image",
+			"url": "textures/cheap_over.png"
+		},
+		{
+			"name": "exit_background_png",
+			"type": "image",
+			"url": "textures/exit_background.png"
+		},
+		{
+			"name": "content_background_png",
+			"type": "image",
+			"url": "textures/content_background.png"
+		},
+		{
+			"name": "exit_normal_png",
+			"type": "image",
+			"url": "textures/exit_normal.png"
+		},
+		{
+			"name": "expensive_normal_png",
+			"type": "image",
+			"url": "textures/expensive_normal.png"
+		},
+		{
+			"name": "expensive_over_png",
+			"type": "image",
+			"url": "textures/expensive_over.png"
+		},
+		{
+			"name": "hight_normal_png",
+			"type": "image",
+			"url": "textures/hight_normal.png"
+		},
+		{
+			"name": "last_question_normal_png",
+			"type": "image",
+			"url": "textures/last_question_normal.png"
+		},
+		{
+			"name": "hight_over_png",
+			"type": "image",
+			"url": "textures/hight_over.png"
+		},
+		{
+			"name": "last_question_over_png",
+			"type": "image",
+			"url": "textures/last_question_over.png"
+		},
+		{
+			"name": "less_normal_png",
+			"type": "image",
+			"url": "textures/less_normal.png"
+		},
+		{
+			"name": "less_over_png",
+			"type": "image",
+			"url": "textures/less_over.png"
+		},
+		{
+			"name": "much_normal_png",
+			"type": "image",
+			"url": "textures/much_normal.png"
+		},
+		{
+			"name": "much_over_png",
+			"type": "image",
+			"url": "textures/much_over.png"
+		},
+		{
+			"name": "next_question_normal_png",
+			"type": "image",
+			"url": "textures/next_question_normal.png"
+		},
+		{
+			"name": "next_question_over_png",
+			"type": "image",
+			"url": "textures/next_question_over.png"
+		},
+		{
+			"name": "number_background_png",
+			"type": "image",
+			"url": "textures/number_background.png"
+		},
+		{
+			"name": "question_mark_png",
+			"type": "image",
+			"url": "textures/question_mark.png"
+		},
+		{
+			"name": "scene_background_png",
+			"type": "image",
+			"url": "textures/scene_background.png"
+		},
+		{
+			"name": "short_normal_png",
+			"type": "image",
+			"url": "textures/short_normal.png"
+		},
+		{
+			"name": "short_over_png",
+			"type": "image",
+			"url": "textures/short_over.png"
+		},
+		{
+			"name": "text_background_png",
+			"type": "image",
+			"url": "textures/text_background.png"
+		},
+		{
+			"name": "title_left_png",
+			"type": "image",
+			"url": "textures/title_left.png"
+		},
+		{
+			"name": "title_right_png",
+			"type": "image",
+			"url": "textures/title_right.png"
 		}
 	]
 }
