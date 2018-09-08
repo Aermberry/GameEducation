@@ -1,4 +1,6 @@
 class LastQuestionComponent extends eui.Component implements  eui.UIComponent {
+	private image: eui.Image;
+	
 	public constructor() {
 		super();
 	}
@@ -13,7 +15,7 @@ class LastQuestionComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this,true);
+		mouse.setButtonMode(this.image, true);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}

@@ -33,6 +33,7 @@ declare namespace lzlib {
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
         private cloneImage(dragObject);
+        private cloneLabel(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -44,7 +45,10 @@ declare namespace lzlib {
     class LzDragEvent extends egret.TouchEvent {
         static readonly DRAG_OVER: string;
         static readonly DRAG_OUT: string;
+        /** drop inside the target */
         static readonly DROP: string;
+        /** drop outside the target */
+        static readonly DRAG_CANCEL: string;
         dragObject: egret.DisplayObject;
         /** 该拖拉控件的原始local point */
         originalPoint: egret.Point;
@@ -72,6 +76,7 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
+        private isDragDropObjectIntersets();
     }
 }
 declare namespace lzlib {
@@ -86,7 +91,8 @@ declare namespace egret {
 }
 declare namespace lzlib {
     class SoundUtility {
-        static playSound(soundName: string): Promise<void>;
+        static currentSoundChannel: egret.SoundChannel;
+        static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
     }
 }
 interface String {
