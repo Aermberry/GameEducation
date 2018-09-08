@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
+	<w:Config id="165b2de45c0" ></w:Config>
+	<Ui:Options width="904.84" height="1262.42" x="960.85" y="63.43" anchorOffsetX="0" anchorOffsetY="0" skinName="OptionsSkin"/>
+	<Ui:Resume width="698.78" height="913.94" x="99.64" y="75.4" anchorOffsetX="0" anchorOffsetY="0" skinName=" ResumeSkin"/>
+</e:Skin>

@@ -13,6 +13,19 @@
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
+<<<<<<< HEAD
 		"bin-debug/ThemeAdapter.js"
+=======
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/domains/Toy.js",
+		"bin-debug/domains/ToyPosition.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Game/gameScene.js",
+		"bin-debug/Game/GameView.js",
+		"bin-debug/repositories/ToyRepository.js",
+		"bin-debug/Scenes/StartScene.js",
+		"bin-debug/Scenes/statusScene.js",
+		"bin-debug/Scenes/tipsScene.js"
+>>>>>>> Student_Cards01
 	]
 }
