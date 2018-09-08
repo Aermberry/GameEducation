@@ -1,17 +1,12 @@
 class MainScene extends eui.Component implements eui.UIComponent {
-	private ageLabe: Ui.Tips;
-	private ageButton: eui.Button;
-	private addressButton: eui.Button;
-	private mailGroup: eui.Group;
-	private hobbyButton: eui.Button;
-	private hobbyGroup: eui.Group;
-	private clubButton: eui.Button;
-	private clubTip: Ui.Tips;
 	private confirmGroup: eui.Group;
 	private dragGroup: eui.Group;
 	private dropGroup: eui.Group;
 	private colorTips: eui.Group;
-	// private confitmGroup:eui.Group;
+	private helpGroup: eui.Group;
+	private alertGroup: eui.Group;
+	
+	private currentQuestionIndex = 0; //当前问题，用户只能按顺序拖动label，逐条回答问题
 
 	public constructor() {
 		super();
@@ -21,249 +16,86 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		super.partAdded(partName, instance);
 	}
 
-
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.loadVoice();
-		// this.tipLabe.tipString="dddd"//动态文本
-		this.ageButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onAgeClickHelp, this);
-		this.addressButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onAddressClickHelp, this);
-		this.hobbyButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHobbyClickHelp, this);
-		this.clubButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onClubClickHelp, this);
+		mouse.enable(this.stage);
+		this.initHelpButton();
 		this.initDragDrop();
-		// console.log(this.dropGroup);
+		lzlib.SoundUtility.playSound('02_mp3');
+	}
+
+	private initHelpButton(): void
+	{
+		this.helpGroup.$children.forEach(child => {
+			mouse.setButtonMode(child, true);
+			child.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHelpButtonClick, this);
+		});
+	}
+
+	private async onHelpButtonClick(): Promise<void>
+	{
+		let originalChildIndex = this.getChildIndex(this.alertGroup);
+		this.setChildIndex(this.alertGroup, this.numChildren - 1);
+		this.alertGroup.getChildAt(this.currentQuestionIndex).visible = true;
+		await lzlib.ThreadUtility.sleep(3000);
+		this.alertGroup.getChildAt(this.currentQuestionIndex).visible = false;
+		this.setChildIndex(this.alertGroup, originalChildIndex);
 	}
 
 	private initDragDrop(): void {
-		this.dropGroup.removeChildren;
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, false);
+			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
+		this.initDropableLabel();
+	}
 
-		for (let child of this.dropGroup.$children) {
-			let drop = new lzlib.Drop();
-			this.addChild(drop);
-			drop.enableDrop(child);
-			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
-		}
+	private initDropableLabel(): void
+	{
+		let drop = new lzlib.Drop();
+		this.addChild(drop);
+
+		let child = this.dropGroup.getChildAt(this.currentQuestionIndex);
+		drop.enableDrop(child);
+		child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
 	}
 
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
-		// this.dropGroup.$children[0].$getTouchEnabled=false;
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
-			// e.preventDefault();
-			// name是否显示
-			// let name = this.dropGroup.$children[0].visible
-			// console.log(name);
-			// 当前选中的序号
-			let currentIndex = this.dropGroup.getChildIndex(targetComponent)+1;
-			// // 前一个的序号
-			let Index = currentIndex-1 ;
-			// console.log(currentIndex);
-			// if(dragComponent.text.trim() == "Mary Li"){
-			// 	e.preventDefault();
-			// 	if(this.dragGroup.$children[0].visible){
-			// 		e.preventDefault();
-			// 		if(this.dragGroup.$children[1].visible){
-			// 			e.preventDefault();
-			// 			if(this.dragGroup.$children[2].visible){
-			// 				e.preventDefault();
-			// 				if(this.dragGroup.$children[3].visible){
-			// 					e.preventDefault();
-			// 					if(this.dragGroup.$children[4].visible){
-			// 						e.preventDefault();
-			// 						if(this.dragGroup.$children[5].visible&&this.dragGroup.$children[6].visible){
-			// 							e.preventDefault();
-			// 							// if(this.dragGroup.$children[7].visible){
-			// 								e.preventDefault();
-				
-			// 							}
-			// 							else{
-			// 								return;
-			// 							}
-			// 						}
-			// 						else{
-			// 							return;
-			// 						}
-			// 					}
-			// 					else{
-			// 						return;
-			// 					}
-			// 				}
-			// 				else{
-			// 					return;
-			// 				}
-			// 			}
-			// 			else{
-			// 				return;
-			// 			}
-			// 		}
-			// 		else{
-			// 			return;
-			// 		}
-			// 	}
-			// 	else{
-			// 		return;
-			// 	}
-			// }
-			// 	else{
-			// 		return
-			// 	}
-			// 	if(this.getChildAt(Index).visible==false){
-			// 		this.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, false)
-			// 	}
-			// 	else{
-			// 		// e.preventDefault();
-			// 	}
-			// }
-			// else{
-			// 	this.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, false)
-			// }
-			
+			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
-			let index = this.dropGroup.getChildIndex(targetComponent);
-			this.confirmGroup.getChildAt(this.dropGroup.getChildIndex(targetComponent)).visible = true;
-			switch (index) {
-				case 1:
-					this.ageButton.visible = true;
-					break;
-				case 2:
-					this.addressButton.visible = true;
-					break;
-				case 4:
-					this.hobbyButton.visible = true;
-					break;
+			this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
+			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = false;
+			this.confirmGroup.getChildAt(this.currentQuestionIndex).visible = true;
+			
+			if (this.confirmGroup.$children.every(child => child.visible)) {
+				Main.instance.gotoScene(new FinishScene());
+			} else {
+				this.currentQuestionIndex++;
+				this.initDropableLabel();
+				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			}
-			//  if(this.confirmGroup.$children[1].visible) this.ageButton.visible=true;
-			//  if(this.confirmGroup.$children[2].visible)	this.addressButton.visible=true;
-			//  if(this.confirmGroup.$children[4].visible) this.hobbyButton.visible=true;
-			if (this.confirmGroup.$children[5].visible && this.confirmGroup.$children[6].visible) this.clubButton.visible = true;
-			this.confirm();
-			this.confirmAllWorldsAreCorrect();
 		}
 		else {
-			if (targetComponent.text.trim() == "Mary Li") {
-				this.colorTips.$children[0].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[0].visible = false
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "3A") {
-				this.colorTips.$children[1].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[1].visible = false;
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "9") {
-				this.colorTips.$children[2].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[2].visible = false;
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "Flat B,6/F.Happy Garden,Shatin") {
-				this.colorTips.$children[3].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[3].visible = false;
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "4th April") {
-				this.colorTips.$children[4].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[4].visible = false;
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "reading") {
-				this.colorTips.$children[5].visible = true;
-				this.colorTips.$children[6].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[5].visible = false;
-					this.colorTips.$children[6].visible = false;
-				}, 4000)
-
-			}
-			if (targetComponent.text.trim() == "playing the piano") {
-				this.colorTips.$children[5].visible = true;
-				this.colorTips.$children[6].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[5].visible = false;
-					this.colorTips.$children[6].visible = false;
-				}, 4000)
-			}
-			if (targetComponent.text.trim() == "Music Club") {
-				this.colorTips.$children[7].visible = true;
-				setTimeout(() => {
-					this.colorTips.$children[7].visible = false;
-				}, 4000)
-			}
+			this.showCorrectLabelToDrag();
 		}
 	}
 
-	private confirm(): void {
-		if (this.confirmGroup.$children[2].visible) this.ageButton.visible = false;
-		if (this.confirmGroup.$children[3].visible) this.addressButton.visible = false;
-		if (this.confirmGroup.$children[7].visible) this.clubButton.visible = false;
-		if (this.confirmGroup.$children[5].visible && this.confirmGroup.$children[6].visible) this.hobbyButton.visible = false;
+	private onDragCancel(e: lzlib.LzDragEvent): void 
+	{
+		this.showCorrectLabelToDrag();
 	}
 
-	private confirmAllWorldsAreCorrect(): void {
-		if (this.confirmGroup.$children.all(child => child.visible)) {
-			setTimeout(() => {
-				Main.instance.gotoScene(new FinishScene());
-			}, 3000)
-		}
-	}
-
-	private loadVoice(): void {
-		lzlib.SoundUtility.playSound('02_mp3');
-	}
-
-	private onAgeClickHelp(): void {
-		this.setChildIndex(this.ageLabe, 18);
-		let index = this.getChildIndex(this.ageLabe);
-		this.ageLabe.visible = true;
-		setTimeout(() => {
-			this.ageLabe.visible = false;
-		}, 6000)
-		this.setChildIndex(this.ageLabe, index);
-
-	}
-
-	private async onAddressClickHelp(): Promise<void> {
-		this.setChildIndex(this.mailGroup, 18);
-		let index = this.getChildIndex(this.mailGroup);
-		this.mailGroup.visible = true;
-		this.mailGroup.$children[0].visible = true;
-		await lzlib.ThreadUtility.sleep(6000);
-		this.mailGroup.$children[1].visible = true;
-		this.mailGroup.$children[2].visible = true;
-		this.setChildIndex(this.mailGroup, index);
-		await lzlib.ThreadUtility.sleep(6000);
-		this.mailGroup.visible = false;
-	}
-
-	private async onHobbyClickHelp(): Promise<void> {
-		this.setChildIndex(this.hobbyGroup, 18);
-		let index = this.getChildIndex(this.hobbyGroup)
-		this.hobbyGroup.visible = true;
-		this.hobbyGroup.$children[0].visible = true;
-		await lzlib.ThreadUtility.sleep(3000);
-		this.hobbyGroup.$children[1].visible = true;
-		this.setChildIndex(this.hobbyGroup, index);
-		await lzlib.ThreadUtility.sleep(6000);
-		this.hobbyGroup.visible = false;
-	}
-
-	private async onClubClickHelp(): Promise<void> {
-		this.setChildIndex(this.clubTip, 18);
-		let index = this.getChildIndex(this.clubTip);
-		this.clubTip.visible = true;
-		await lzlib.ThreadUtility.sleep(6000);
-		this.clubTip.visible = false;
-		this.setChildIndex(this.clubTip, index);
+	//提示用户应该拖动哪个label
+	private async showCorrectLabelToDrag(): Promise<void>
+	{
+		this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
+		await lzlib.ThreadUtility.sleep(2000);
+		this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
 	}
 }

@@ -7,28 +7,32 @@
 	<Ui:Table width="1001.82" height="1183.62" x="903.03" y="45.82" anchorOffsetX="0" anchorOffsetY="0"
 	          skinName="TableSkin" />
 	<e:Group id="colorTips">
-	<e:Rect fillColor="0xFF0000" width="375.76" height="81.82" x="144.85" y="66.09" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-	<e:Group visible="false">
-		<e:Rect fillColor="0xFF0000" width="142.43" height="81.82" x="679.09" y="597.31" anchorOffsetX="0" anchorOffsetY="0"/>
-		<e:Rect fillColor="0xFF0000" width="187.89" height="81.82" x="55.76" y="686.1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Rect fillColor="0xFF0000" width="375.76" height="81.82" x="144.85" y="66.09" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Group visible="false">
+			<e:Rect fillColor="0xFF0000" width="142.43" height="81.82" x="679.09" y="597.31" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="187.89" height="81.82" x="55.76" y="686.1" anchorOffsetX="0" anchorOffsetY="0"/>
 		</e:Group>
 
-	<e:Group visible="false">
-	<e:Rect fillColor="0xFF0000" width="184.85" height="81.82" x="521.52" y="67" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect fillColor="0xFF0000" width="300" height="81.82" x="52.73" y="164.88" anchorOffsetX="0" anchorOffsetY="0"/>
-	</e:Group>
+		<e:Group visible="false">
+			<e:Rect fillColor="0xFF0000" width="184.85" height="81.82" x="521.52" y="67" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="300" height="81.82" x="52.73" y="164.88" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
 
-<e:Group visible="false">
-	<e:Rect fillColor="0xFF0000" width="400.01" height="169.7" x="308.18" y="420.34" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect fillColor="0xFF0000" width="400.01" height="75.76" x="54.55" y="515.19" anchorOffsetX="0" anchorOffsetY="0"/>
-</e:Group>
+		<e:Group visible="false">
+			<e:Rect fillColor="0xFF0000" width="400.01" height="169.7" x="308.18" y="420.34" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="400.01" height="75.76" x="54.55" y="515.19" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
 		<e:Rect fillColor="0xFF0000" width="312.12" height="81.82" x="209.4" y="248.82" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<e:Group visible="false">
-	<e:Rect fillColor="0xFF0000" width="245.46" height="75.76" x="228.19" y="870.65" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="65.46" y="965.5" anchorOffsetX="0" anchorOffsetY="0"/>
-	</e:Group>
+			<e:Rect fillColor="0xFF0000" width="245.46" height="75.76" x="228.19" y="870.65" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="65.46" y="965.5" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+		<e:Group visible="false">
+			<e:Rect fillColor="0xFF0000" width="245.46" height="75.76" x="228.19" y="870.65" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="65.46" y="965.5" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
 
-	<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="60.31" y="1048.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="60.31" y="1048.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 	</e:Group>
 	<e:Label id="textLabel"
 	         text=" Hi,I'm Mary Li.I'm 9\n years old.My birthday\n is on 4th April.\n\n I live at Flat B,6/F.\n Happy Garden,Shatin.I\n go to school on foot. I'm\n in 3A.\n\n I like reading and\n playing the piano. I join\n the Music Club."
@@ -37,30 +41,42 @@
 	<e:Image source="girl_min_png" x="310.32" y="1256.55" />
 
 	<e:Group id="confirmGroup" anchorOffsetX="0" left="1403" width="110.57" y="278.79" anchorOffsetY="0" height="872.27">
-	<e:Image source="true_png" visible="false"/>
-	<e:Image source="true_png" y="69.7" visible="false"/>
-	<e:Image source="true_png" y="136.33" visible="false"/>
-	<e:Image source="true_png" y="269.7" x="59" visible="false"/>
-	<e:Image source="true_png" y="470.79" x="54" visible="false"/>
-	<e:Image source="true_png" y="598.03" x="39" visible="false"/>
+		<e:Image source="true_png" visible="false"/>
+		<e:Image source="true_png" y="69.7" visible="false"/>
+		<e:Image source="true_png" y="136.33" visible="false"/>
+		<e:Image source="true_png" y="269.7" x="59" visible="false"/>
+		<e:Image source="true_png" y="470.79" x="54" visible="false"/>
+		<e:Image source="true_png" y="598.03" x="39" visible="false"/>
 		<e:Image source="true_png" y="674.69" x="45.97" visible="false"/>
-	<e:Image source="true_png" y="806" x="31" visible="false"/>
-</e:Group>
-
-	<e:Button id="ageButton" label="Help" x="1566" y="509"  visible="false"/>
-	<e:Button id="addressButton" label="Help" x="1566" y="605"  visible="false"/>
-	<e:Button id="hobbyButton" label="Help" x="1566" y="936"  visible="false"/>
-	<e:Button id="clubButton" label="Help" x="1566" y="1073"  visible="false"/>
-	<Ui:Tips id="ageLabe" width="389.69" height="201.82" x="960" y="216.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="How old is Mary?" visible="false"/>
-	<e:Group id="mailGroup" width="1106.06" height="545.45" x="-2.96" y="8.85" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<Ui:Tips id="addressLabel" width="353.34" height="238.18" x="1066.1" y="846.61" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Look at the envelope" visible="false"/>
-		<e:Image source="mail_png" x="-825.18" y="-28.97" visible="false"/>
-		<e:Image source="arrows_png" x="751.96" y="424.15000000000003" rotation="317.84" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image source="true_png" y="806" x="31" visible="false"/>
 	</e:Group>
-	<Ui:Tips id="clubTip" width="507.88" height="244.24" x="1018.73" y="698" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Which club does Mary join?" visible="false"/>
-	<e:Group id="hobbyGroup" width="1806.06" height="1442.42" x="-0.3" y="-3.06" anchorOffsetY="0" anchorOffsetX="0" visible="false">
-		<Ui:Tips id="hobbyLabel" width="544.24" height="232.12" x="966.64" y="636.37" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="What does Mary like doing?" visible="false"/>
-		<Ui:Hobby id="hobbySence" width="877.56" height="1426.07" x="24.34" y="13.54" anchorOffsetX="0" anchorOffsetY="0" skinName="HobbySkin" visible="false"/>
+	<e:Group id="alertGroup">
+		<e:Group/>
+		<e:Group/>
+		<Ui:Tips id="ageLabe" width="389.69" height="201.82" x="960" y="216.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="How old is Mary?" visible="false"/>
+		<e:Group id="mailGroup" width="1106.06" height="545.45" x="-2.96" y="8.85" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<Ui:Tips id="addressLabel" width="353.34" height="238.18" x="1066.1" y="846.61" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Look at the envelope"/>
+		<e:Image source="mail_png" x="-825.18" y="-28.97"/>
+		<e:Image source="arrows_png" x="751.96" y="424" rotation="317.84" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group/>
+		<e:Group id="hobbyGroup" width="1806.06" height="1442.42" x="-0.3" y="-3.06" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+			<Ui:Tips id="hobbyLabel" width="544.24" height="232.12" x="966.64" y="636.37" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="What does Mary like doing?"/>
+			<Ui:Hobby id="hobbySence" width="877.56" height="1426.07" x="24.34" y="13.54" anchorOffsetX="0" anchorOffsetY="0" skinName="HobbySkin"/>
+		</e:Group>
+		<e:Group/>
+		<Ui:Tips id="clubTip" width="507.88" height="244.24" x="1018.73" y="698" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Which club does Mary join?" visible="false"/>
+	</e:Group>
+
+	<e:Group id="helpGroup" x="1566" y="409.09" anchorOffsetY="0" height="739">
+		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
+		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
+		<e:Button id="ageButton" label="Help" x="0" y="0"  visible="false"/>
+		<e:Button id="addressButton" label="Help" x="0" y="178.61"  visible="false"/>
+		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
+		<e:Button id="hobbyButton" label="Help" x="0" y="514.06"  visible="false"/>
+		<e:Button label="dummy" x="0" y="-10" visible="false" alpha="0"/>
+		<e:Button id="clubButton" label="Help" x="0" y="666.94"  visible="false"/>
 	</e:Group>
 	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52">
 		<e:Label text="Mary Li" x="275.85" y="75.18" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
@@ -73,17 +89,13 @@
 		<e:Label text="Music Club" x="183.32" y="1054" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 	</e:Group>
 	<e:Group id="dropGroup" x="965.12" y="242.42" anchorOffsetX="0" width="470">
-		<e:Label text="Mary Li" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" y="45.45" x="248.48" visible="false"/>
-		<e:Label text="3A" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" y="115.08" x="145.5" anchorOffsetX="0" width="276.12" textAlign="right" visible="false"/>
-		<e:Label text="9" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="182" x="105.58" anchorOffsetX="0" width="309.3" textAlign="right" visible="false"/>
-		<e:Label text="Flat B,6/F.\nHappy Garden,Shatin" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="320.94" x="5.72" visible="false"/>
-		<e:Label text="4th April" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="520.09" x="272.27" visible="false"/>
-		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="655.24" x="283.61" visible="false"/>
-		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="720.67" x="100" visible="false"/>
-		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="853.45" x="206" visible="false"/>
+		<e:Label text="Mary Li" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" y="45.45" x="151.51" anchorOffsetX="0" width="362.97" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
+		<e:Label text="3A" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" y="109.02" x="145.5" anchorOffsetX="0" width="373.09" textAlign="center" anchorOffsetY="0" height="56.09" visible="false"/>
+		<e:Label text="9" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="172.91" x="105.58" anchorOffsetX="0" width="412.33" textAlign="center" anchorOffsetY="0" height="62.15" visible="false"/>
+		<e:Label text="Flat B,6/F.\nHappy Garden,Shatin" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="320.94" x="5.72" anchorOffsetX="0" width="496.34" anchorOffsetY="0" height="105.97" visible="false"/>
+		<e:Label text="4th April" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="507.97" x="208.63" anchorOffsetX="0" width="349.49" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
+		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="655.24" x="156.34" anchorOffsetX="0" width="387.24" anchorOffsetY="0" height="43.97" visible="false"/>
+		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="720.67" x="0" anchorOffsetX="0" width="555.91" visible="false"/>
+		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="841.33" x="118.12" anchorOffsetX="0" width="397.64" anchorOffsetY="0" height="65.18" textAlign="center" visible="false"/>
 	</e:Group>
-
-
-
-
 </e:Skin>
