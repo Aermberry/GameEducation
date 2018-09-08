@@ -77,6 +77,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			 this.confirm();
 			this.confirmAllWorldsAreCorrect();
 		}
+		else{
+			
+		}
 	}
 
 	private confirm():void{
