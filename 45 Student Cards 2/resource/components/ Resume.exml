@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class=" ResumeSkin" width="826" height="1273.91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="ResumeSkin" width="826" height="1273.91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165b35321d8" ></w:Config>
 	<e:Rect id="background" fillColor="0xFFFFFF" top="0" left="0" right="0" bottom="0" strokeWeight="15" strokeColor="0xd000c0"/>
 </e:Skin>

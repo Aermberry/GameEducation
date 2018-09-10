@@ -22,8 +22,8 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/components/ Introduction.exml",
-		"resource/components/ Resume.exml",
+		"resource/components/Introduction.exml",
+		"resource/components/Resume.exml",
 		"resource/components/Options.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
