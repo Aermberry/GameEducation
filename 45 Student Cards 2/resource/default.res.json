@@ -122,39 +122,49 @@
 			"name": "track_sb_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "checkbox_select_disabled2_png",
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_disabled.png"
+			"name": "checkbox_select_disabled2_png"
 		},
 		{
-			"name": "checkbox_select_down2_png",
+			"url": "assets/CheckBox/checkbox_select_down.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_down.png"
+			"name": "checkbox_select_down2_png"
 		},
 		{
-			"name": "checkbox_select_up2_png",
+			"url": "assets/CheckBox/checkbox_select_up.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_up.png"
+			"name": "checkbox_select_up2_png"
 		},
 		{
-			"name": "checkbox_unselect2_png",
+			"url": "assets/CheckBox/checkbox_unselect.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_unselect.png"
+			"name": "checkbox_unselect2_png"
 		},
 		{
-			"name": "01_mp3",
+			"url": "audios/01.mp3",
 			"type": "sound",
-			"url": "audios/01.mp3"
+			"name": "01_mp3"
 		},
 		{
-			"name": "02_mp3",
+			"url": "audios/02.mp3",
 			"type": "sound",
-			"url": "audios/02.mp3"
+			"name": "02_mp3"
+		},
+		{
+			"url": "textures/girl.png",
+			"type": "image",
+			"name": "girl_png"
+		},
+		{
+			"url": "textures/man.png",
+			"type": "image",
+			"name": "man_png"
 		}
 	]
 }
