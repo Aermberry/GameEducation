@@ -18,12 +18,14 @@
 		"FinishScene": "resource/scenes/FinishScene.exml",
 		"Introduction": "resource/components/Introduction.exml",
 		"Resume": "resource/components/Resume.exml",
-		"Options": "resource/components/Options.exml"
+		"Options": "resource/components/Options.exml",
+		"AlterLabel": "resource/components/AlterLabel.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/ Introduction.exml",
 		"resource/components/ Resume.exml",
+		"resource/components/AlterLabel.exml",
 		"resource/components/Options.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

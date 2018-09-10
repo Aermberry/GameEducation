@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AlterLabelSkin" width="600" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165c20597f1" ></w:Config>
+	<e:Image source="line_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="textLabel" top="0" bottom="0" text="fsfsfdsfasffdf" textAlign="center" left="0" right="0" verticalAlign="middle" anchorOffsetX="0"/>	
+</e:Skin>

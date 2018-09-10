@@ -5,7 +5,33 @@
 	<Ui:Resume width="698.78" height="833.27" x="99.64" y="75.4" anchorOffsetX="0" anchorOffsetY="0" skinName="ResumeSkin"/>
 	<e:Label text="First School\nStudent card\n\n\nName:__________________\nClass:___________________\nAge:____________________\nAddress:________________\nBirthday:________________\nHobby:__________________\nClub:___________________" x="996.21" y="90.55" textColor="0x990707" anchorOffsetY="0" height="1086.11" anchorOffsetX="0" width="778.85" size="53" lineSpacing="50" fontFamily="Comic Sans MS"/>
 	<e:Label text="Hi ! Iam Ann Ho.I have a\nbrother, Mike.\nWe live in Wanchai.We go\nto shchool by bus.\nMike is 12 years old and\nI'm 9.My birthday is on\n15 June.\nI am in P.3B and Mike is in\nP.6A.\nI like swimming and Mike\nlikes playing football.I join\nthe English Club and Mike\njoins the Computer Club." x="128.48" y="105.94" anchorOffsetY="0" height="790.43" anchorOffsetX="0" width="655.43" lineSpacing="20" size="40" fontFamily="Comic Sans MS" textColor="0x525ff5"/>
+	<e:Group id="colorTips" y="92" x="112" anchorOffsetY="0" height="803" anchorOffsetX="0" width="674">
+		<e:Rect width="212" height="4" y="56" x="94" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0"/>
+		<e:Rect width="216" height="4" y="478" x="20" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0"/>
+		<e:Rect width="107" height="4" y="358" x="16" anchorOffsetX="0" fillColor="0xF00000"/>
+		<e:Rect width="345" height="4" y="172" x="27" anchorOffsetX="0" fillColor="0xF00000"/>
+		<e:Group x="5" y="310.69" anchorOffsetX="0" width="452" anchorOffsetY="0" height="108">
+		<e:Rect width="324" height="4" anchorOffsetX="0" fillColor="0xF00000" y="48" x="124"/>
+		<e:Rect width="152" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="8" y="100"/>
+		</e:Group>
+		<e:Rect width="295" height="4" y="594" x="12" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000"/>
+		<e:Group y="612" x="16" anchorOffsetY="0" height="103" anchorOffsetX="0" width="504">
+		<e:Rect width="110" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" y="42" x="396"/>
+		<e:Rect width="297" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="4" y="100"/>
+		</e:Group>
+	</e:Group>
 	<e:Image source="girl_png" x="1420.59" y="81.7" width="399.93" height="384.45" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group id="alterGroup" x="82" y="82">
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What is her name" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which class is she in" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="How old is she?" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="When is her birthday?" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What does she like doing?" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="547.27" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which club does she join?" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" fontSize="40" scaleX="1" scaleY="1"/>
+
+	</e:Group>
 
 
 <e:Group id="helpGrop">
@@ -16,7 +42,16 @@
 	<e:Button label="Help" x="1670.37" y="872.15" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08"/>
 	<e:Button label="Help" x="1670.37" y="976.15" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08"/>
 	<e:Button label="Help" x="1670.37" y="1092.15" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08"/>
+
+
+
+
+
+
+
+
 	</e:Group>
+
 
 <e:Group id="dragGroup" anchorOffsetY="-3.54" height="791" x="108.98" y="82.46" anchorOffsetX="-3.02" width="678">
 <e:Label text="English Club" size="40" fontFamily="Comic Sans MS" y="680.15" x="92" textColor="0x525ff5"/>
@@ -38,19 +73,5 @@
 		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" visible="true" textAlign="center" left="0" right="0" textColor="0x525ff5"/>
 	</e:Group>
 	
-	<e:Group y="92" x="112" anchorOffsetY="0" height="803" anchorOffsetX="0" width="674">
-	<e:Rect width="212" height="4" y="56" x="94" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0"/>
-	<e:Rect width="216" height="4" y="478" x="20" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0"/>
-	<e:Rect width="107" height="4" y="358" x="16" anchorOffsetX="0" fillColor="0xF00000"/>
-	<e:Rect width="345" height="4" y="172" x="27" anchorOffsetX="0" fillColor="0xF00000"/>
-	<e:Group x="5" y="310.69" anchorOffsetX="0" width="452" anchorOffsetY="0" height="108">
-		<e:Rect width="324" height="4" anchorOffsetX="0" fillColor="0xF00000" y="48" x="124"/>
-		<e:Rect width="152" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="8" y="100"/>
-	</e:Group>
-	<e:Rect width="295" height="4" y="594" x="12" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000"/>
-	<e:Group y="612" x="16" anchorOffsetY="0" height="103" anchorOffsetX="0" width="504">
-	<e:Rect width="110" height="4"  anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" y="42" x="396"/>
-	<e:Rect width="297" height="4"  anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="4" y="100"/>
-	</e:Group>
-	</e:Group>
+
 </e:Skin>
