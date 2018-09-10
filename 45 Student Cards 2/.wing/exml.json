@@ -23,6 +23,6 @@
     "parentPath": ""
   },
   "global": {
-    "globalAutoLayerMarkEnable": true
+    "globalAutoLayerMarkEnable": false
   }
 }
