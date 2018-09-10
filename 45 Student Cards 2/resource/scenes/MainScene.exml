@@ -22,14 +22,14 @@
 	</e:Group>
 	<e:Image source="girl_png" x="1420.59" y="81.7" width="399.93" height="384.45" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Group id="alterGroup" x="82" y="82">
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What is her name" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which class is she in" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="How old is she?" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="When is her birthday?" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What does she like doing?" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="547.27" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which club does she join?" scaleX="1" scaleY="1"/>
-		<Ui:AlterLabel width="535.15" height="129.09" x="118" y="967" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" fontSize="40" scaleX="1" scaleY="1"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="339.73" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What is her name" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="448.82" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which class is she in" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="451.84" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="How old is she?" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="551.85" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="651.85" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="When is her birthday?" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="751.85" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What does she like doing?" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="547.27" height="129.09" x="1075.58" y="854.88" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which club does she join?" scaleX="1" scaleY="1" visible="false"/>
+		<Ui:AlterLabel width="535.15" height="129.09" x="1075.58" y="963.97" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" fontSize="40" scaleX="1" scaleY="1" visible="false"/>
 
 	</e:Group>
 
@@ -64,13 +64,13 @@
 	<e:Label text="15 June" size="40" fontFamily="Comic Sans MS" x="16" y="380" textColor="0x525ff5"/>
 </e:Group>
 	<e:Group id="dropGroup" anchorOffsetX="0" x="1280" y="488" anchorOffsetY="0" height="685">
-		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" visible="true" y="612" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" visible="true" y="516" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" visible="true" y="420" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="Wanchai" size="53" fontFamily="Comic Sans MS" visible="true" y="308" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="9" size="53" fontFamily="Comic Sans MS" visible="true" y="216" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" visible="true" y="108" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
-		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" visible="true" textAlign="center" left="0" right="0" textColor="0x525ff5"/>
+		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" visible="false" y="612" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" visible="false" y="516" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" visible="false" y="420" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="Wanchai" size="53" fontFamily="Comic Sans MS" visible="false" y="308" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="9" size="53" fontFamily="Comic Sans MS" visible="false" y="216" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" visible="false" y="108" left="0" right="0" textAlign="center" textColor="0x525ff5"/>
+		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" visible="false" textAlign="center" left="0" right="0" textColor="0x525ff5"/>
 	</e:Group>
 	
 
