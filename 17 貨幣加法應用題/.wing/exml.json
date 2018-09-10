@@ -3,5 +3,18 @@
         "path": "scenes/Question1Scene.ts",
         "class": "Question1Scene",
         "parentPath": ""
+    },
+    "165c1433fe1": {
+        "path": "components/CoinComponent.ts",
+        "class": "CoinComponent",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165c2737d2f": {
+        "path": "scenes/Question2Scene.ts",
+        "class": "Question2Scene",
+        "parentPath": ""
     }
 }

@@ -1,24 +1,24 @@
-class Question1Scene extends eui.Component implements  eui.UIComponent {
+class Question2Scene extends eui.Component implements  eui.UIComponent {
 	
-	private schoolBagImage: eui.Image;
-	private waterCupImage: eui.Image;
-	private yuanAndJiao: eui.Group;
 	private priceLeftGroup: eui.Group;
 	private priceRightGroup: eui.Group;
-	private lineFormulaImage: eui.Image;
-	private tenyuanLeftCoinComponent: CoinComponent;
-	private jiaoLeftCoinComponent: CoinComponent;
-	private jiaoRightCoinComponent1: CoinComponent;
-	private jiaoRightCoinComponent2: CoinComponent;
-	private tenyuanRightCoinComponent: CoinComponent;
+	private yuanAndJiao: eui.Group;
+	private iceCreamImage: eui.Image;
+	private bananaShipImage: eui.Image;
 	private calcComponent: CalcComponents;
 	private formulaComponent: FormulaComponent;
-	private nextQuestionComponent: NextQuestionComponent;
+	private lineFormulaImage: eui.Image;
+	private tenyuanLeftCoinComponent: CoinComponent;
+	private yuanLeftCoinComponent: CoinComponent;
+	private jiaoLeftCoinComponent: CoinComponent;
+	private jiaoRightCoinComponent: CoinComponent;
+	private yuanRightCoinComponent1: CoinComponent;
+	private yuanRightCoinComponent2: CoinComponent;
+	private tenyuanRightCoinComponent: CoinComponent;
 
 	private startAnimation: egret.tween.TweenGroup;
 	private goodsMoveAnimation: egret.tween.TweenGroup;
 	private jiaoCoinMoveAnimation: egret.tween.TweenGroup;
-	private coinMoveRight: egret.tween.TweenGroup;
 	private yuanCoinMoveAnimation: egret.tween.TweenGroup;
 
 	public constructor() {
@@ -34,7 +34,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionTap, this);
 		this.playStartAnimation();
 		this.playStartMP3();
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
@@ -50,32 +49,37 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.hideGoods();
 		this.formulaComponent.showTitleImage();
 		this.formulaComponent.showLeftImage();
-		await lzlib.SoundUtility.playSound('streamsound1_2_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_2_mp3');
 		this.formulaComponent.showRightImage();
-		await lzlib.SoundUtility.playSound('streamsound1_3_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_3_mp3');
 		this.showYuanAndJiao();
-		await lzlib.SoundUtility.playSound('streamsound1_4_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_4_mp3');
 		this.showPriceLeft();
-		await lzlib.SoundUtility.playSound('streamsound1_5_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_5_mp3');
 		this.showPriceRight();
-		await lzlib.SoundUtility.playSound('streamsound1_6_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_6_mp3');
 		this.showLineFormulaImage();
 		this.jiaoCoinMoveAnimation.play(0);
-		lzlib.SoundUtility.playSound('streamsound1_7_mp3');
-		await lzlib.ThreadUtility.sleep(14000);
-		this.coinMoveRight.play(0);
-		await lzlib.SoundUtility.playSound('streamsound1_8_mp3');
+		await lzlib.SoundUtility.playSound('streamsound2_7_mp3');
 		this.yuanCoinMoveAnimation.play(0);
-		lzlib.SoundUtility.playSound('streamsound1_9_mp3');
-		await lzlib.ThreadUtility.sleep(8000);
+		await lzlib.SoundUtility.playSound('streamsound2_8_mp3');
+		lzlib.SoundUtility.playSound('streamsound2_9_mp3');
 		this.formulaComponent.showResultImage();
-		await lzlib.ThreadUtility.sleep(2000);
-		lzlib.SoundUtility.playSound('streamsound1_10_mp3');
 	}
 
-	private onNextQuestionTap(): void
+	private playStartAnimation(): void
 	{
-		Main.instance.gotoScene(new Question2Scene());
+		this.startAnimation.play(0);
+	}
+			
+	private async playStartMP3(): Promise<void>
+	{
+		await lzlib.SoundUtility.playSound('streamsound2_0_mp3');
+	}
+
+	private async playOnCalcTapMP3(): Promise<void>
+	{
+		await lzlib.SoundUtility.playSound('streamsound2_1_mp3');
 	}
 
 	private showYuanAndJiao(): void
@@ -88,14 +92,16 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.priceLeftGroup.visible = true;
 		this.tenyuanLeftCoinComponent.visible = true;
 		this.jiaoLeftCoinComponent.visible = true;
+		this.yuanLeftCoinComponent.visible = true;
 	}
 
 	private showPriceRight(): void
 	{
 		this.priceRightGroup.visible = true;
 		this.tenyuanRightCoinComponent.visible = true;
-		this.jiaoRightCoinComponent1.visible = true;
-		this.jiaoRightCoinComponent2.visible = true;
+		this.yuanRightCoinComponent1.visible = true;
+		this.yuanRightCoinComponent2.visible = true;
+		this.jiaoRightCoinComponent.visible = true;
 	}
 
 	private showLineFormulaImage(): void
@@ -105,23 +111,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private hideGoods(): void
 	{
-		this.schoolBagImage.visible = false;
-		this.waterCupImage.visible = false;
-	}
-
-	private async playStartMP3(): Promise<void>
-	{
-		await lzlib.SoundUtility.playSound('streamsound1_0_mp3');
-	}
-
-	private async playOnCalcTapMP3(): Promise<void>
-	{
-		await lzlib.SoundUtility.playSound('streamsound1_1_mp3');
-	}
-
-	private playStartAnimation(): void
-	{
-		this.startAnimation.play(0);
+		this.iceCreamImage.visible = false;
+		this.bananaShipImage.visible = false;
 	}
 	
 }

@@ -32,7 +32,7 @@
     },
     {
       "name": "promise"
-    },		
+    },
     {
 			"name": "mouse",
 			"path": "../egret-game-library-master/mouse/libsrc"

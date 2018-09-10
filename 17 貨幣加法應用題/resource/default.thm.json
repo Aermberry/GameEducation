@@ -13,13 +13,25 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"Question1Scene": "resource/scenes/Question1Scene.exml"
+		"Question1Scene": "resource/scenes/Question1Scene.exml",
+		"ButtonComponent": "resource/components/ButtonComponent.exml",
+		"CalcComponents": "resource/components/CalcComponents.exml",
+		"ContentFrameComponent": "resource/components/ContentFrameComponent.exml",
+		"LastQuestionComponent": "resource/components/LastQuestionComponent.exml",
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
+		"NextQuestionComponent": "resource/components/NextQuestionComponent.exml",
+		"TopTitleComponent": "resource/components/TopTitleComponent.exml",
+		"FormulaComponent": "resource/components/FormulaComponent.exml",
+		"CoinComponent": "resource/components/CoinComponent.exml",
+		"Question2Scene": "resource/scenes/Question2Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/ButtonComponent.exml",
 		"resource/components/CalcComponents.exml",
+		"resource/components/CoinComponent.exml",
 		"resource/components/ContentFrameComponent.exml",
+		"resource/components/FormulaComponent.exml",
 		"resource/components/LastQuestionComponent.exml",
 		"resource/components/MovieClipPlayer.exml",
 		"resource/components/NextQuestionComponent.exml",
@@ -37,7 +49,8 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scenes/Question1Scene.exml"
+		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2Scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,calc_background_png,calc_normal_png,calc_over_png,cheap_normal_png,cheap_over_png,exit_background_png,content_background_png,exit_normal_png,expensive_normal_png,expensive_over_png,hight_normal_png,last_question_normal_png,hight_over_png,last_question_over_png,less_normal_png,less_over_png,much_normal_png,much_over_png,next_question_normal_png,next_question_over_png,number_background_png,question_mark_png,scene_background_png,short_normal_png,short_over_png,text_background_png,title_left_png,title_right_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,calc_background_png,calc_normal_png,calc_over_png,cheap_normal_png,cheap_over_png,exit_background_png,content_background_png,exit_normal_png,expensive_normal_png,expensive_over_png,hight_normal_png,last_question_normal_png,hight_over_png,last_question_over_png,less_normal_png,less_over_png,much_normal_png,much_over_png,next_question_normal_png,next_question_over_png,number_background_png,question_mark_png,scene_background_png,short_normal_png,short_over_png,text_background_png,title_left_png,title_right_png,question1_start_png,school_bag_png,water_cup_png,formula1_question_png,formula1_right_png,formula1_left_png,formula1_result_png,exit_over_png,tenyuan_coin_png,jiao_coin_png,yuan_coin_png,jiao_unti_png,yuan_unti_png,line_formula_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_2_mp3,streamsound1_3_mp3,streamsound1_4_mp3,streamsound1_5_mp3,streamsound1_6_mp3,streamsound1_7_mp3,streamsound1_8_mp3,streamsound1_9_mp3,streamsound1_10_mp3,question2_start_png,ice_cream_png,banana_ship_png,formula2_question_png,formula2_left_png,formula2_right_png,formula2_result_png,streamsound2_0_mp3,streamsound2_1_mp3,streamsound2_2_mp3,streamsound2_3_mp3,streamsound2_4_mp3,streamsound2_5_mp3,streamsound2_6_mp3,streamsound2_7_mp3,streamsound2_8_mp3,streamsound2_9_mp3",
 			"name": "preload"
 		}
 	],
@@ -285,6 +285,216 @@
 			"name": "title_right_png",
 			"type": "image",
 			"url": "textures/title_right.png"
+		},
+		{
+			"name": "question1_start_png",
+			"type": "image",
+			"url": "textures/question1_start.png"
+		},
+		{
+			"name": "school_bag_png",
+			"type": "image",
+			"url": "textures/school_bag.png"
+		},
+		{
+			"name": "water_cup_png",
+			"type": "image",
+			"url": "textures/water_cup.png"
+		},
+		{
+			"name": "formula1_question_png",
+			"type": "image",
+			"url": "textures/formula1_question.png"
+		},
+		{
+			"name": "formula1_right_png",
+			"type": "image",
+			"url": "textures/formula1_right.png"
+		},
+		{
+			"name": "formula1_left_png",
+			"type": "image",
+			"url": "textures/formula1_left.png"
+		},
+		{
+			"name": "formula1_result_png",
+			"type": "image",
+			"url": "textures/formula1_result.png"
+		},
+		{
+			"name": "exit_over_png",
+			"type": "image",
+			"url": "textures/exit_over.png"
+		},
+		{
+			"name": "tenyuan_coin_png",
+			"type": "image",
+			"url": "textures/tenyuan_coin.png"
+		},
+		{
+			"name": "jiao_coin_png",
+			"type": "image",
+			"url": "textures/jiao_coin.png"
+		},
+		{
+			"name": "yuan_coin_png",
+			"type": "image",
+			"url": "textures/yuan_coin.png"
+		},
+		{
+			"name": "jiao_unti_png",
+			"type": "image",
+			"url": "textures/jiao_unti.png"
+		},
+		{
+			"name": "yuan_unti_png",
+			"type": "image",
+			"url": "textures/yuan_unti.png"
+		},
+		{
+			"name": "line_formula_png",
+			"type": "image",
+			"url": "textures/line_formula.png"
+		},
+		{
+			"name": "streamsound1_0_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_0.mp3"
+		},
+		{
+			"name": "streamsound1_1_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_1.mp3"
+		},
+		{
+			"name": "streamsound1_2_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_2.mp3"
+		},
+		{
+			"name": "streamsound1_3_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_3.mp3"
+		},
+		{
+			"name": "streamsound1_4_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_4.mp3"
+		},
+		{
+			"name": "streamsound1_5_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_5.mp3"
+		},
+		{
+			"name": "streamsound1_6_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_6.mp3"
+		},
+		{
+			"name": "streamsound1_7_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_7.mp3"
+		},
+		{
+			"name": "streamsound1_8_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_8.mp3"
+		},
+		{
+			"name": "streamsound1_9_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_9.mp3"
+		},
+		{
+			"name": "streamsound1_10_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_10.mp3"
+		},
+		{
+			"name": "question2_start_png",
+			"type": "image",
+			"url": "textures/question2_start.png"
+		},
+		{
+			"name": "ice_cream_png",
+			"type": "image",
+			"url": "textures/ice_cream.png"
+		},
+		{
+			"name": "banana_ship_png",
+			"type": "image",
+			"url": "textures/banana_ship.png"
+		},
+		{
+			"name": "formula2_question_png",
+			"type": "image",
+			"url": "textures/formula2_question.png"
+		},
+		{
+			"name": "formula2_left_png",
+			"type": "image",
+			"url": "textures/formula2_left.png"
+		},
+		{
+			"name": "formula2_right_png",
+			"type": "image",
+			"url": "textures/formula2_right.png"
+		},
+		{
+			"name": "formula2_result_png",
+			"type": "image",
+			"url": "textures/formula2_result.png"
+		},
+		{
+			"name": "streamsound2_0_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_0.mp3"
+		},
+		{
+			"name": "streamsound2_1_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_1.mp3"
+		},
+		{
+			"name": "streamsound2_2_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_2.mp3"
+		},
+		{
+			"name": "streamsound2_3_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_3.mp3"
+		},
+		{
+			"name": "streamsound2_4_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_4.mp3"
+		},
+		{
+			"name": "streamsound2_5_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_5.mp3"
+		},
+		{
+			"name": "streamsound2_6_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_6.mp3"
+		},
+		{
+			"name": "streamsound2_7_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_7.mp3"
+		},
+		{
+			"name": "streamsound2_8_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_8.mp3"
+		},
+		{
+			"name": "streamsound2_9_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_9.mp3"
 		}
 	]
 }
