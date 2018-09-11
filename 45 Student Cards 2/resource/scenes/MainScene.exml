@@ -32,7 +32,7 @@
 		<Ui:AlterLabel width="535.15" height="129.09"  anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Where does she live?" fontSize="40" scaleX="1" scaleY="1" visible="false"/>
 	</e:Group>
 
-<e:Group id="helpGrop" x="1345.45" y="469.7" anchorOffsetY="0" height="707.21">
+<e:Group id="helpGroup" x="1345.45" y="469.7" anchorOffsetY="0" height="707.21">
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="103.03" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="200" visible="false"/>
