@@ -14,10 +14,12 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"MainScene": "resource/scenes/MainScene.exml",
-		"FinishScene": "resource/scenes/FinishScene.exml"
+		"FinishScene": "resource/scenes/FinishScene.exml",
+		"TexttLabel": "resource/components/TexttLabel.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/TexttLabel.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",

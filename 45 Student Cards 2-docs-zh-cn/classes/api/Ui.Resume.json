@@ -1,0 +1,21 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Resume",
+			"memberof": "Ui.Resume",
+			"scope": "instance"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Resume",
+		"memberof": "Ui",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\45 Student Cards 2\\src\\components\\ Resume.ts",
+		"augments": [],
+		"implements": []
+	}
+}

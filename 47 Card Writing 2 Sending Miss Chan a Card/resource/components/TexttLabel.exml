@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TexttLabelSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165c7fa92b7" ></w:Config>
+	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xB5FFFF"/>
+	<e:Label id="textLabel" text="Label" left="0" right="0" top="0" bottom="0" textColor="0x38029c"/>
+</e:Skin>

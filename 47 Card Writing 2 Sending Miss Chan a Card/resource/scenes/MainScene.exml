@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="165c7e68ef8" ></w:Config>
+	<e:Label text="Mary is sending Miss Chan\na card.Help her drag the\nwords to the correct\nboxes." x="30" y="30" size="69" lineSpacing="25" textColor="0xf92a58" fontFamily="Comic Sans MS" backgroundColor="0xef0000"/>
+	<e:Group y="403.03" anchorOffsetY="0" height="1044.76" x="0">
+		<Ui:TexttLabel width="659.39" height="177.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Best wishes" horizontalCenter="0"/>
+		<Ui:TexttLabel width="659.39" height="177.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="How are you?Thank\nyou for your card.I\nam fine in U.S.A.I\nwill come back to H.K.\nin December" fontSize="45" y="238" horizontalCenter="0"/>
+<Ui:TexttLabel width="723.03" height="313.94" y="408" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" horizontalCenter="0"/>
+<Ui:TexttLabel width="577.58" height="307.88" y="648" text="25th November" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" horizontalCenter="0"/>
+<Ui:TexttLabel width="686.67" height="256.36" y="912.06" text="Deara Miss Chan." anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" horizontalCenter="0"/>
+	</e:Group>
+	
+
 </e:Skin>
