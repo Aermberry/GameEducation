@@ -1,0 +1,12 @@
+{
+    "165c7e68ef8": {
+        "path": "scenes\\MainScene.ts",
+        "class": "MainScene",
+        "parentPath": ""
+    },
+    "165c7e70c99": {
+        "path": "scenes\\FinishScene.ts",
+        "class": "FinishScene",
+        "parentPath": ""
+    }
+}
