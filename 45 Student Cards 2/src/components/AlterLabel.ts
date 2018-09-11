@@ -1,5 +1,4 @@
 namespace Ui {
-
 	export class AlterLabel extends eui.Component implements eui.UIComponent {
 		private textLabel: eui.Label;
 		public constructor() {
@@ -14,18 +13,19 @@ namespace Ui {
 		protected childrenCreated(): void {
 			super.childrenCreated();
 
-			this.textLabel.text = this.text;
-			this.textLabel.size = this.fontSize
+			this.textLabel.text=this.text;
+			this.textLabel.size = this.fontSize;
 		}
 
 		private _text: string
-		private _fontSize:number
+		private _fontSize:number=30
 
 		public set text(value: string) {
 			this._text = value;
 		}
 
 		public  get text() {
+			console.log(this._text);
 			return this._text;
 		}
 
