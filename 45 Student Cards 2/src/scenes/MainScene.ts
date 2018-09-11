@@ -21,6 +21,7 @@ class MainScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);//启用mouse检测
 		lzlib.SoundUtility.playSound('02_mp3')//加载声音资源
+		this.initHelpButton()
 	}
 
 	// 拖拽模块
