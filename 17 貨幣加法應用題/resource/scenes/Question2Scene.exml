@@ -172,23 +172,24 @@
 				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
 			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-				<e:Label text="2" x="137.22" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="2" x="243.27" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="2" x="137.22" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="2" x="243.27" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-				<e:Label text="3" x="137" y="11" textColor="0x000000" size="35"/>
-				<e:Label id="restLabel" text="1" x="218.27" y="23.06" textColor="0x000000" size="26" alpha="0"/>
-				<e:Label text="9" x="243" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="3" x="446.3" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="3" x="137" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label id="restLabel" text="1" x="218.27" y="23.06" textColor="0x000000" size="26" fontFamily="標楷體" alpha="0"/>
+				<e:Label text="9" x="243" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="3" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-				<e:Label id="baiLabel" text="6" x="137" y="11" textColor="0x000000" size="35" alpha="0"/>
-				<e:Label id="shiLabel" text="1" x="243" y="11" textColor="0x000000" size="35" alpha="0"/>
-				<e:Label id="geLabel" text="8" x="446.3" y="11" textColor="0x000000" size="35" alpha="0"/>
+				<e:Label id="baiLabel" text="6" x="137" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
+				<e:Label id="shiLabel" text="1" x="243" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
+				<e:Label id="geLabel" text="8" x="446.3" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
 			</e:Group>
 		</e:Group>
 		<ns1:CoinComponent id="tenYuanResultCoinComponent" width="68" height="68" x="1351" y="484.21" number="1" alpha="0"/>
 		<ns1:CoinComponent id="YuanResultCoinComponent" width="58" height="58" x="1426.75" y="490.27" coinSource="yuan_coin_png" alpha="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="0" y="781" bottom="0"/>
 	</e:Group>
 </e:Skin>

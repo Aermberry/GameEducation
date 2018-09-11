@@ -132,19 +132,19 @@
 				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
 			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-				<e:Label text="3" x="137.22" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="8" x="243.27" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="3" x="137.22" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="8" x="243.27" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-				<e:Label text="2" x="137" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="1" x="243" y="11" textColor="0x000000" size="35"/>
-				<e:Label text="1" x="446.3" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="2" x="137" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="1" x="243" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="1" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-				<e:Label id="baiLabel" text="5" x="137" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
-				<e:Label id="shiLabel" text="9" x="243" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
-				<e:Label id="geLabel" text="6" x="446.3" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
+				<e:Label id="baiLabel" text="5" x="137" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
+				<e:Label id="shiLabel" text="9" x="243" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
+				<e:Label id="geLabel" text="6" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
 			</e:Group>
 		</e:Group>
 		<e:Image id="xiaoxiAndTableLastImage" x="1105.49" y="142.09" source="xiaoxi_and_table_last_png"/>
@@ -179,5 +179,6 @@
 			<e:Image x="40.06" y="-11.72" source="yuan_coin_png"/>
 			<e:Image x="8.76" y="10.79" source="jiao_coin_png"/>
 		</e:Group>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="0" y="781" bottom="0"/>
 	</e:Group>
 </e:Skin>

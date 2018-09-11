@@ -9,6 +9,8 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private lineFormulaImage: eui.Image;
 	private priceLeftGroup: eui.Group;
 	private priceRightGroup: eui.Group;
+	private nextQuestionComponent: NextQuestionComponent;
+	private lastQuestionComponent: LastQuestionComponent;
 
 	private hideAnimation: egret.tween.TweenGroup;
 	private lastWeekAnimation: egret.tween.TweenGroup;
@@ -27,6 +29,8 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionTap, this);
+		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionTap, this);
 		this.playLastWeekAnimation();
 		await lzlib.SoundUtility.playSound('streamsound3_0_mp3');
 		this.playCurrentWeekAnimation();
@@ -62,6 +66,16 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.formulaComponent.showResultImage();
 		lzlib.SoundUtility.playSound('streamsound3_9_mp3');
 
+	}
+
+	private onNextQuestionTap(): void
+	{
+		Main.instance.gotoScene(new Question4Scene());
+	}
+
+	private onLastQuestionTap(): void
+	{
+		Main.instance.gotoScene(new Question2Scene());
 	}
 
 	private playLastWeekAnimation(): void
