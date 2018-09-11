@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question4SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165c6944b07" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" left="0" right="0" top="9" bottom="-9" currentlevel="3"/>
+		<e:Image width="826.06" height="219.99" x="172.4" y="99" source="text_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="187.37" y="117.21" source="question3_start_png"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:CalcComponents id="calcComponent" width="324" height="154" x="372" y="460" anchorOffsetX="0" anchorOffsetY="0" alpha="1" visible="false"/>
+		<ns1:FormulaComponent id="formulaComponent" width="549.7" height="271.52" x="199.46" y="445.27" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
+		<e:Group width="478.79" height="272" x="1123" y="387.42" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="lineFormulaImage" x="16" y="115.39" source="line_formula_png" visible="false"/>
+			<e:Group id="yuanAndJiao" width="475.76" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+				<e:Image x="230.61" y="12" source="yuan_unti_png"/>
+				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
+			</e:Group>
+			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
+				<e:Label text="3" x="137.22" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="8" x="243.27" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="35"/>
+			</e:Group>
+			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
+				<e:Label text="2" x="137" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="1" x="243" y="11" textColor="0x000000" size="35"/>
+				<e:Label text="1" x="446.3" y="11" textColor="0x000000" size="35"/>
+			</e:Group>
+			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
+				<e:Label id="baiLabel" text="5" x="137" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
+				<e:Label id="shiLabel" text="9" x="243" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
+				<e:Label id="geLabel" text="6" x="446.3" y="11" textColor="0x000000" size="35" alpha="1" visible="false"/>
+			</e:Group>
+		</e:Group>
+		<ns1:CoinComponent id="tenYuanResultCoinComponent" width="68" height="68" x="1351" y="484.21" number="1" alpha="0"/>
+		<ns1:CoinComponent id="YuanResultCoinComponent" width="58" height="58" x="1426.75" y="490.27" coinSource="yuan_coin_png" alpha="0"/>
+		<e:Image id="xiaoxiAndTableLastImage" x="1105.49" y="142.09" source="xiaoxi_and_table_last_png"/>
+		<e:Image id="xiaoxiAndTableCurrentImage" x="1123.67" y="142.09" source="xiaoxi_and_table_current_png" alpha="0"/>
+		<e:Group id="lastWeekStroedGroup" width="157.58" height="151.52" x="1474.52" y="532.37" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+			<e:Image x="-2.36" y="24.64" source="yuan_coin_png"/>
+			<e:Image x="13.7" y="43.73" source="yuan_coin_png"/>
+			<e:Image x="57.03" y="11.31" source="yuan_coin_png"/>
+			<e:Image x="13" y="12" source="jiao_coin_png"/>
+			<e:Image x="38.15" y="0.79" source="jiao_coin_png"/>
+			<e:Image x="69.7" y="39.73" source="tenyuan_coin_png"/>
+			<e:Image x="46.37" y="58.82" source="tenyuan_coin_png"/>
+			<e:Image x="83.64" y="71.85" source="tenyuan_coin_png"/>
+			<e:Image x="17.85" y="74.42" source="jiao_coin_png"/>
+		</e:Group>
+		<e:Image id="piggyNormalImage" x="1145.07" y="477.67" source="piggy_normal_png"/>
+		<e:Group id="stroed" width="157.58" height="151.52" x="1214.84" y="475.71" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+			<e:Image x="-2.36" y="24.64" source="yuan_coin_png"/>
+			<e:Image x="13.7" y="43.73" source="yuan_coin_png"/>
+			<e:Image x="57.03" y="11.31" source="yuan_coin_png"/>
+			<e:Image x="13" y="12" source="jiao_coin_png"/>
+			<e:Image x="38.15" y="0.79" source="jiao_coin_png"/>
+			<e:Image x="69.7" y="39.73" source="tenyuan_coin_png"/>
+			<e:Image x="46.37" y="58.82" source="tenyuan_coin_png"/>
+			<e:Image x="83.64" y="71.85" source="tenyuan_coin_png"/>
+			<e:Image x="17.85" y="74.42" source="jiao_coin_png"/>
+		</e:Group>
+		<e:Image id="piggyTransparentImage" x="1145.07" y="477.67" source="piggy_transparent_png" width="270" height="154" alpha="0"/>
+		<e:Group id="currentWeekStroedGroup" width="157.58" height="112.13" x="1484.52" y="545.4" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+			<e:Image x="107.88" y="-9.96" source="tenyuan_coin_png"/>
+			<e:Image x="72.73" y="18.52" source="tenyuan_coin_png"/>
+			<e:Image x="40.06" y="-11.72" source="yuan_coin_png"/>
+			<e:Image x="8.76" y="10.79" source="jiao_coin_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

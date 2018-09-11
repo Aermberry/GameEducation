@@ -16,5 +16,15 @@
         "path": "scenes/Question2Scene.ts",
         "class": "Question2Scene",
         "parentPath": ""
+    },
+    "165c61c18e6": {
+        "path": "scenes/Question3Scene.ts",
+        "class": "Question3Scene",
+        "parentPath": ""
+    },
+    "165c6944b07": {
+        "path": "scenes/Question4Scene.ts",
+        "class": "Question4Scene",
+        "parentPath": ""
     }
 }

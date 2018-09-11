@@ -15,6 +15,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private yuanRightCoinComponent1: CoinComponent;
 	private yuanRightCoinComponent2: CoinComponent;
 	private tenyuanRightCoinComponent: CoinComponent;
+	private nextQuestionComponent: NextQuestionComponent;
 
 	private startAnimation: egret.tween.TweenGroup;
 	private goodsMoveAnimation: egret.tween.TweenGroup;
@@ -34,6 +35,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionTap, this);
 		this.playStartAnimation();
 		this.playStartMP3();
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
@@ -66,6 +68,12 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		lzlib.SoundUtility.playSound('streamsound2_9_mp3');
 		this.formulaComponent.showResultImage();
 	}
+
+	private onNextQuestionTap(): void
+	{
+		Main.instance.gotoScene(new Question3Scene());
+	}
+
 
 	private playStartAnimation(): void
 	{
