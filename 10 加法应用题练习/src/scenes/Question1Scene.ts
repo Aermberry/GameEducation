@@ -19,6 +19,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private image6:eui.Image;
 	private image9:eui.Image;
 	private image10:eui.Image;
+	private repeat_img:eui.Image;
 	private total_text:eui.Label;
 	private runners_box:eui.Group;
 	private number_box:eui.Group;
@@ -50,6 +51,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.playGame();
 		this.image5.visible = false;
 		this.total_text.visible = false;
+		this.repeat_img.visible = false;
 		this.editablelabel1.visible = false;
 		this.editablelabel2.visible = false;
 		this.editablelabel3.visible = false;
@@ -117,6 +119,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.editablelabel1.visible = true;
 			this.editablelabel2.visible = true;
 			this.editablelabel3.visible = true;
+			await lzlib.SoundUtility.playSound("error_streamsound 0_mp3")
+			this.repeat_img.visible = true;
 		
 		}else{
 			this.image4.visible = false;
