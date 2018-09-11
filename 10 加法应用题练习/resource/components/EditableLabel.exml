@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EditableLabelSkin" width="70" height="95" currentState="edit" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="edit,view" >
+	<w:Declarations>
+		<tween:TweenGroup id="shinningTweenGroup">
+			<tween:TweenItem target="{bgImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="164acd60fb7" ></w:Config>
+	<e:Image id="bgImage" source="rectangle_red_png" left="0" top="0" bottom="0" right="0" visible.view="false" visible.edit="true" />
+	<e:TextInput id="userInput" left="8" top="8" right="8" bottom="8" visible.view="false" visible.edit="true" maxChars="1" />
+	<e:BitmapLabel id="resultLabel" visible.view="true" horizontalCenter="0" verticalCenter="0" font="calculation_font_fnt"  visible.edit="false" text=""/>
+</e:Skin>

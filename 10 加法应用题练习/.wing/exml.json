@@ -1,0 +1,30 @@
+{
+    "165b1c54699": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "165b2071bfb": {
+        "path": "scenes\\Question1Scene.ts",
+        "class": "Question1Scene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "165b2a53c6b": {
+        "path": "components\\ImageButton.ts",
+        "class": "ImageButton",
+        "parentPath": ""
+    },
+    "165b2c77362": {
+        "path": "components\\NumberPad.ts",
+        "class": "NumberPad",
+        "parentPath": ""
+    },
+    "165c6244f6b": {
+        "path": "components\\EditableLabel.ts",
+        "class": "EditableLabel",
+        "parentPath": ""
+    }
+}
