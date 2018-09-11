@@ -68,6 +68,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 			if (this.dropGroup.$children.every(child => child.visible)) {
 				lzlib.SoundUtility.stopCurrentSound;
+				lzlib.ThreadUtility.sleep(3000);
 				Main.instance.gotoScene(new FinishScene());
 			}
 			else {

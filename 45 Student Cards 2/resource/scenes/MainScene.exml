@@ -31,7 +31,7 @@
 		<Ui:AlterLabel width="692.73" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which club does she join?" fontSize="50" scaleX="1" scaleY="1" y="612.12" x="-69.7" visible="false"/>
 	</e:Group>
 
-<e:Group id="helpGroup" x="1687.87" y="469.7" anchorOffsetY="0" height="707.21">
+<e:Group id="helpGroup" x="1696.96" y="469.7" anchorOffsetY="0" height="707.21">
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="103.03" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="200" visible="false"/>
