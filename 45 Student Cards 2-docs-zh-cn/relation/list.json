@@ -1,0 +1,30 @@
+{
+	"api": {
+		"class": [
+			"AssetAdapter",
+			"DebugPlatform",
+			"FinishScene",
+			"LoadingUI",
+			"Main",
+			"MainScene",
+			"StartScene",
+			"ThemeAdapter",
+			"Ui.AlterLabel",
+			"Ui.Introduction",
+			"Ui.Options",
+			"Ui.Resume"
+		],
+		"interface": [
+			"Platform",
+			"Window"
+		],
+		"globalMember": [
+			"window.globalMember"
+		]
+	},
+	"other": {
+		"class": [
+			"global.Types"
+		]
+	}
+}

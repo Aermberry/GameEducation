@@ -10,15 +10,16 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected partAdded(partName:string,instance:any):void
 	{
 		super.partAdded(partName,instance);
-		this.drawLine(this.titleLabel, this);
-		this.sound=RES.getRes("01_mp3");
-		this.soundChannel=this.sound.play(0,1);
+		
 
 	}
 
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.drawLine(this.titleLabel, this);
+		this.sound=RES.getRes("01_mp3");
+		this.soundChannel=this.sound.play(0,1);
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.nextScene,this);
 	}
 

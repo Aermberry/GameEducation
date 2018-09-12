@@ -1,0 +1,72 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "StartScene",
+			"memberof": "StartScene",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "childrenCreated",
+			"memberof": "StartScene",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "drawLine",
+			"memberof": "StartScene",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "label",
+					"type": "eui.Label",
+					"description": ""
+				},
+				{
+					"name": "Sence",
+					"type": "eui.Component",
+					"description": ""
+				},
+				{
+					"name": "color",
+					"type": "number",
+					"default": "0x951602",
+					"description": ""
+				}
+			]
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "partAdded",
+			"memberof": "StartScene",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "partName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "instance",
+					"type": "any",
+					"description": ""
+				}
+			]
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StartScene",
+		"memberof": "",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\45 Student Cards 2\\src\\scenes\\StartScene.ts",
+		"augments": [],
+		"implements": []
+	}
+}

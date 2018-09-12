@@ -20,7 +20,8 @@
 		"Resume": "resource/components/Resume.exml",
 		"Table": "resource/components/Table.exml",
 		"Tips": "resource/components/Tips.exml",
-		"Hobby": "resource/eui_skins/Hobby.exml"
+		"Hobby": "resource/eui_skins/Hobby.exml",
+		"AlterLabel": "resource/eui_skins/AlterLabel.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [

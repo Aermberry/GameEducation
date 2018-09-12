@@ -74,7 +74,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.currentSoundChannel.stop();
 		}
 	}
-
 	private confirmBothSpeakersArePlayed(): void
 	{
 		this.topAnswerCheckbox.enabled 

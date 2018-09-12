@@ -2,6 +2,6 @@
 <e:Skin class="IntroductionSkin" width="1000" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165b2e21bc3" ></w:Config>
 	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xFFFFFF" strokeColor="0xCE0000" strokeWeight="10"/>
-	<e:Label id="textLabel" textColor="0x0000C9" left="50" right="30" top="40" text="textLabel" lineSpacing="25" anchorOffsetY="0" height="336"/>
-	<e:Label id="textLabel2" text="textLabel" x="36.33" y="458.25" width="938.67" anchorOffsetY="0" height="171.33" left="50" right="30" lineSpacing="25" textColor="0xfb4054"/>
+	<e:Label id="textLabel" textColor="0x0000C9" left="50" right="30" top="40" text="textLabel" lineSpacing="25" anchorOffsetY="0" height="336" fontFamily="Comic Sans MS"/>
+	<e:Label id="textLabel2" text="textLabel" x="36.33" y="458.25" width="938.67" anchorOffsetY="0" height="171.33" left="50" right="30" lineSpacing="25" textColor="0xfb4054" fontFamily="Comic Sans MS"/>
 </e:Skin>
