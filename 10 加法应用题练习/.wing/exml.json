@@ -26,5 +26,15 @@
         "path": "components\\EditableLabel.ts",
         "class": "EditableLabel",
         "parentPath": ""
+    },
+    "165cba6bd16": {
+        "path": "scenes\\Question1Scene.ts",
+        "class": "Question1Scene",
+        "parentPath": ""
+    },
+    "165cbe55a62": {
+        "path": "scenes\\Question2Scene.ts",
+        "class": "Question2Scene",
+        "parentPath": ""
     }
 }

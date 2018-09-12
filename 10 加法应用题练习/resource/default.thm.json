@@ -17,7 +17,8 @@
 		"Question1Scene": "resource/scenes/Question1Scene.exml",
 		"ImageButton": "resource/components/ImageButton.exml",
 		"NumberPad": "resource/components/NumberPad.exml",
-		"EditableLargeLabel": "resource/components/EditableLabel.exml"
+		"EditableLargeLabel": "resource/components/EditableLabel.exml",
+		"Question2Scene": "resource/scenes/Question2Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -38,6 +39,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

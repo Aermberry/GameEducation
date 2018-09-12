@@ -1,4 +1,4 @@
-class Question1Scene extends eui.Component implements  eui.UIComponent {
+class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private runners_motion1: egret.tween.TweenGroup;
 	private runners_motion2: egret.tween.TweenGroup;
@@ -8,6 +8,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private nextStepButton:ImageButton;
+	private lastButton: ImageButton;
 	private numberPad: NumberPad;
 	
 	private expressionLabel: eui.Label;
@@ -46,6 +47,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onExitButtonClick,this);
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextButtonButtonClick,this);
+		this.lastButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnLstaButtonButtonClick,this);
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextstepButtonClick,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT,this.onnNumberPadButtonClick,this)
 		this.playGame();
@@ -59,6 +61,10 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	// 下一题按钮事件
 	private onnNextButtonButtonClick (): void{
 		console.log(123)
+	}
+	// 上一题按钮事件
+	private onnLstaButtonButtonClick (): void{
+		
 	}
 	// 点击下一步事件
 	private onnNextstepButtonClick () : void{

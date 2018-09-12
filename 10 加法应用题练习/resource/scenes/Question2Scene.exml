@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+<e:Skin class="Question2SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 		<tween:TweenGroup id="runners_motion1">
 			<tween:TweenItem target="{runnerSchenlmage}">
@@ -122,28 +122,29 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165b2071bfb" ></w:Config>
-	<e:Group x="0" y="0" locked="true">
+	<e:Group x="0" y="0">
 		<e:Image x="0" y="0" source="bakcground_bg_png"/>
 		<e:Image x="136.1" y="160.01" source="background_box_png"/>
 		<e:Image x="293.15" y="30.3" source="title_top_png"/>
 		<e:Image x="1063.18" y="57.57" source="add_info_png" anchorOffsetX="0" width="527.32" anchorOffsetY="0" height="72.85"/>
 		<ns1:ImageButton id="exitButton" x="1706" y="32.91" width="192" height="110" backgroundImageSource="exit_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png"/>
-		<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png" locked="true"/>
+		<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png"/>
 		<ns1:ImageButton id="nextStepButton" x="778.73" y="690.18" normalImageSource="Nextstep_normal_png" overImageSource="Nextstep_over_png"  visible="false"/>
+		<ns1:ImageButton id="lastButton" x="16.67" y="938.97" normalImageSource="lastnormal_png" overImageSource="lastover_png"/>
 		<e:Image x="32.94" y="173.15" source="number_box_png"/>
 		<e:Label text="1" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="DFKai-SB"/>
 		<e:Image id="honeyBee2image" x="1479" y="175" source="honeybee_2_png" alpha="0"/>
 		<e:Image id="ejectBox1lmage" x="906" y="309.21" source="eject_box1_png" alpha="0"/>
 		<ns1:NumberPad id="numberPad" y="900" x="213"/>
 		<e:Image id="reflectionlmage" x="1003.25" y="360.42" source="reflection_png" alpha="0"/>
-		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="60" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" visible="false"/>
+		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="100" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" text="46465" fontFamily="DFKai-SB" visible="false"/>
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
-		<e:Label id="totalTextlmage" text="214+123" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="DFKai-SB"/>
+		<e:Label id="totalTextlmage" text="140+130" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="DFKai-SB"/>
 	</e:Group>
-	<e:Label id="text1lmage" text="两人共跑了多少米？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="DFKai-SB"/>
-	<e:Label id="text2lmage" text="陈先生跑了214米，李先生跑了123米。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="DFKai-SB" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnerslmage" text="两人共跑了：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="DFKai-SB" alpha="1"/>
-	<e:Group id="runners_box" x="927.18" y="369.75" alpha="1" locked="true">
+	<e:Label id="text1lmage" text="兩種麵包共有多少個?" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="DFKai-SB"/>
+	<e:Label id="text2lmage" text="麵包店內有漢堡包140個，香腸包130個。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="DFKai-SB" scaleX="1" scaleY="1"/>
+	<e:Label id="textRunnerslmage" text="兩種麵包共有:" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="DFKai-SB" alpha="1"/>
+	<e:Group id="runners_box" x="927.18" y="369.75" alpha="1">
 		<e:Image id="runnersTiltelmage" x="69.18" y="182.15" source="runners_tilte_png" anchorOffsetX="0" width="708.45" anchorOffsetY="0" height="311.98" alpha="0"/>
 		<e:Image id="runnersLilmage" x="169.55" y="254.58" source="runners_li_png" alpha="0"/>
 		<e:Image id="runnersRlmage" x="633.24" y="194.13" source="runners_r_png" alpha="0"/>
@@ -155,7 +156,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false"/>
-	<e:Group id="number_box" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false" locked="true">
+	<e:Group id="number_box" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="143.54" y="142" source="Two_png"/>
 		<e:Image x="243.88" y="142" source="One_png"/>
 		<e:Image x="328.4" y="142" source="Four_png"/>
