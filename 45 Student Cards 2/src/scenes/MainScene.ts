@@ -19,19 +19,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		mouse.enable(this.stage);//启用mouse检测
-		// lzlib.SoundUtility.playSound('02_mp3');
-		this.loadVoic();
-	
-	}
-
-	// 加载声音模块
-	private async loadVoic(): Promise<void> {
-		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
-			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
-				this.initHelpButton();
-		        this.initDropable();
-		})//加载声音资源
-
+		this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
+		this.initHelpButton();
+		this.initDropable();
+		lzlib.SoundUtility.playSound('02_mp3')
 	}
 
 	// 拖拽模块
@@ -107,13 +98,14 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async onHelpButtonClick(): Promise<void> {
+		let currentQuestionIndex = this.currentQuestionIndex;
 		let originalChildIndex = this.getChildIndex(this.alterGroup);//返回一个指定元素的index
 		this.setChildIndex(this.alterGroup, this.numChildren - 1);//控制alerGroup的层级在最顶层
-		this.alterGroup.getChildAt(this.currentQuestionIndex).visible = true;//根据index获取alterGroup中的指定的元素
-		this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
+		this.alterGroup.getChildAt(currentQuestionIndex).visible = true;//根据index获取alterGroup中的指定的元素
+		this.colorTips.getChildAt(currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(3000);
-		this.alterGroup.getChildAt(this.currentQuestionIndex).visible = false;
-		this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
+		this.alterGroup.getChildAt(currentQuestionIndex).visible = false;
+		this.colorTips.getChildAt(currentQuestionIndex).visible = false;
 		this.setChildIndex(this.alterGroup, originalChildIndex);//将层级调回到原来的位置
 	}
 }
