@@ -1,10 +1,8 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
 
-	private questionMarkImage: eui.Image;
-	private xiaofangHeightImage: eui.Image;
 	private alertAndOperationGroup: eui.Group;
-	private hightButtonComponent: ButtonComponent;
-	private shortButtonComponent: ButtonComponent;
+	private muchButtonComponent: ButtonComponent;
+	private lessButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
 	private cloudAlertComponent: CloudAlertComponent;
 	private formulaComponent: FormulaComponent;
@@ -27,30 +25,30 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.playStartAnimation();
-		await this.playMP3();
+		await this.playMP3AndShow();
 		await lzlib.ThreadUtility.sleep(1000);
 		this.showButton();
-		this.hightButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
-		this.shortButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
+		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
+		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
 	}
 
 	private async onHightButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound_4_mp3');
 		this.cloudAlertComponent.hideAlert();
+		this.cloudAlertComponent.showCorrectAlert();
+		this.hideButtonComponent();
+		await lzlib.SoundUtility.playSound('streamsound1_3_mp3');
+		await lzlib.ThreadUtility.sleep(1000);
+		this.cloudAlertComponent.hideAlert();
+		this.showCalcComponent();
 	}
 
 	private async onShortButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
+		this.cloudAlertComponent.showWrongAlert();
+		await lzlib.SoundUtility.playSound('streamsound1_2_mp3');
 		this.cloudAlertComponent.hideAlert();
-		this.cloudAlertComponent.showCorrectAlert();
-		this.hideHightButtonComponent();
-		await lzlib.SoundUtility.playSound('streamsound_5_mp3');
-		await lzlib.ThreadUtility.sleep(1000);
-		this.cloudAlertComponent.hideAlert();
-		this.showCalcComponent();
 	}
 
 	private onNextQuestionComponent(): void
@@ -62,14 +60,14 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.hideAlertAndOperationGroup();
 		this.formulaComponent.showTitleImage();
-		await lzlib.SoundUtility.playSound('streamsound_6_mp3');
+		await lzlib.SoundUtility.playSound('streamsound1_4_mp3');
 		this.formulaComponent.showLeftImage();
-		await lzlib.SoundUtility.playSound('streamsound_7_mp3');
+		lzlib.SoundUtility.playSound('streamsound1_5_mp3');
+		await lzlib.ThreadUtility.sleep(2000);
 		this.formulaComponent.showRightImage();
-		await lzlib.SoundUtility.playSound('streamsound_8_mp3');
+		await lzlib.ThreadUtility.sleep(1000);
 		this.formulaComponent.showResultImage();
-		await lzlib.SoundUtility.playSound('streamsound_9_mp3');
-		this.showAnswer();
+		await lzlib.SoundUtility.playSound('streamsound1_6_mp3');
 	}
 
 
@@ -78,34 +76,33 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.startAnimation.play();
 	}
 
-	private async playMP3(): Promise<void>
+	private async playMP3AndShow(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('streamsound_0_mp3');
-		await lzlib.SoundUtility.playSound('streamsound_1_mp3');
-		await lzlib.SoundUtility.playSound('streamsound_2_mp3');
-		await lzlib.SoundUtility.playSound('streamsound_3_mp3');
+		await lzlib.SoundUtility.playSound('streamsound1_0_mp3');
+		this.showCloudAlertComponent();
+		await lzlib.SoundUtility.playSound('streamsound1_1_mp3');
+		this.showButton();
 	}
 
 	private showCalcComponent(): void
 	{
 		this.calcComponent.visible = true;
 	}
+
+	private showCloudAlertComponent(): void
+	{
+		this.cloudAlertComponent.visible = true;
+	}
 	
 	private showButton(): void
 	{
-		this.hightButtonComponent.visible = true;
-		this.shortButtonComponent.visible = true;
+		this.muchButtonComponent.visible = true;
+		this.lessButtonComponent.visible = true;
 	}
 
-	private showAnswer(): void
+	private hideButtonComponent(): void
 	{
-		this.xiaofangHeightImage.visible = true;
-		this.questionMarkImage.alpha = 0;
-	}
-
-	private hideHightButtonComponent(): void
-	{
-		this.hightButtonComponent.visible = false;
+		this.lessButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void
