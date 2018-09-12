@@ -1,0 +1,20 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Platform",
+			"name": "platform",
+			"memberof": "Window",
+			"scope": "instance"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "Window",
+		"memberof": "",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\47 Card Writing 2 Sending Miss Chan a Card\\src\\Platform.ts"
+	}
+}

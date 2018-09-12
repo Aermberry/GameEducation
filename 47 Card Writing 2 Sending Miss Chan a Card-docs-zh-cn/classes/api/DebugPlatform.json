@@ -1,0 +1,30 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "getUserInfo",
+			"memberof": "DebugPlatform",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"name": "login",
+			"memberof": "DebugPlatform",
+			"scope": "instance"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DebugPlatform",
+		"memberof": "",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\47 Card Writing 2 Sending Miss Chan a Card\\src\\Platform.ts",
+		"implements": [
+			{
+				"name": "Platform"
+			}
+		]
+	}
+}

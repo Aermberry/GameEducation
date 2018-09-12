@@ -1,0 +1,51 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Main",
+			"name": "instance",
+			"memberof": "Main",
+			"scope": "static"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "Main",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createGameScene",
+			"memberof": "Main",
+			"scope": "instance",
+			"description": "创建场景界面Create scene interface"
+		},
+		{
+			"kind": "function",
+			"name": "gotoScene",
+			"memberof": "Main",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "scene",
+					"type": "eui.Component",
+					"description": ""
+				}
+			]
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Main",
+		"memberof": "",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\47 Card Writing 2 Sending Miss Chan a Card\\src\\Main.ts",
+		"description": "//////////////////////////////////////////////////////////////////////////////////////",
+		"augments": []
+	}
+}
