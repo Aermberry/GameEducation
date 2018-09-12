@@ -12,7 +12,7 @@ class EditableLargeLabel extends EditableLabel implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.resultLabel.font = 'calculation_font_fnt';
+		// this.resultLabel.font = 'calculation_font_fnt';
 		this.userInput.textDisplay.size = 65;
 	}
 	

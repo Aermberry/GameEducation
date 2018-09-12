@@ -12,7 +12,7 @@ class EditableSmallLabel extends EditableLabel implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.resultLabel.font = 'calculation_small_font_fnt';
+		// this.resultLabel.font = 'calculation_small_font_fnt';
 		this.userInput.textDisplay.size = 45;
 	}
 	
