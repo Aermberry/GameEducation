@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,question_mark_png,cloud_png,question_png,question2_png,like_png,fairy_png,message_border_fairy_png,calc_background_png,formula_question_png,formula_left_png,formula_right_png,formula_result_png,next_question_normal_png,next_question_over_png,last_question_normal_png,last_question_over_png,formula2_title_png,formula2_left_png,formula2_right_png,formula2_result_png,sprotsman_male_png,sportswomen_png,formula2_answer_png,streamsound2_0_mp3,streamsound2_1_mp3,streamsound2_2_mp3,streamsound2_3_mp3,streamsound2_4_mp3,streamsound2_5_mp3,streamsound2_6_mp3,streamsound2_7_mp3,formula2_question_png,glodfish_png,koi_png,question3_png,formula3_question_png,formula3_left_png,formula3_right_png,formula3_result_png,streamsound3_0_mp3,streamsound3_1_mp3,streamsound3_2_mp3,streamsound3_3_mp3,streamsound3_4_mp3,streamsound3_5_mp3,streamsound3_6_mp3,streamsound3_7_mp3,number_koi_png,coat_png,coat_and_sweater_png,question4_png,streamsound4_0_mp3,streamsound4_1_mp3,streamsound4_2_mp3,streamsound4_3_mp3,streamsound4_4_mp3,streamsound4_5_mp3,streamsound4_6_mp3,streamsound4_7_mp3,coat_and_sweater_no_question_png,formula4_question_png,formula4_left_png,formula4_result_png,formula4_right_png,short_sleeve_png,shortsleeve_and_longsleeve_png,question5_png,formula5_left_png,formula5_title_png,formula5_right_png,formula5_result_png,shortsleeve_and_longsleeve_answer_png,streamsound5_0_mp3,streamsound5_1_mp3,streamsound5_2_mp3,streamsound5_3_mp3,streamsound5_4_mp3,streamsound5_5_mp3,streamsound5_6_mp3,streamsound5_7_mp3,question6_start_png,question6_png,xiaoming_red_png,xiaoming_and_xiaoli_png,streamsound6_0_mp3,streamsound6_1_mp3,streamsound6_2_mp3,streamsound6_3_mp3,streamsound6_4_mp3,streamsound6_5_mp3,streamsound6_6_mp3,streamsound6_7_mp3,formula6_left_png,formula6_result_png,formula6_right_png,formula6_title_png,daming_json,daming_png,zhiqiang_json,zhiqiang_png,question7_start_png,question7_png,formula7_title_png,formula7_left_png,formula7_right_png,formula7_result_png,daming_number_jpg,zhiqiang_number_png,streamsound7_0_mp3,streamsound7_1_mp3,streamsound7_2_mp3,streamsound7_3_mp3,streamsound7_4_mp3,streamsound7_5_mp3,streamsound7_6_mp3,streamsound7_7_mp3,teacher_greenbox_png,teacher_greenbox_correct_png,clothe_count_3A_png,clothe_count_3B_png,class_png,question8_start_png,question8_png,formula8_title_png,formula8_left_png,formula8_right_png,formula8_result_png,streamsound8_0_mp3,streamsound8_1_mp3,streamsound8_2_mp3,streamsound8_4_mp3,streamsound8_3_mp3,streamsound8_5_mp3,streamsound8_6_mp3,streamsound8_7_mp3,question3_start_png,question2_start_png,question1_start_png,question4_start_png,question5_start_png,formula4_title_png,question7_mark_png,exit_normal_png,exit_over_png,short_normal_png,short_over_png,hight_over_png,hight_normal_png,much_normal_png,much_over_png,less_normal_png,less_over_png,expensive_over_png,expensive_normal_png,cheap_normal_png,cheap_over_png,xiaoming_dialog_png,xiaofang_dialog_png,fairyAnimation_json,fairyAnimation_png,calc_normal_png,calc_over_png,price_mark_png,xiaofang_height_png,xiaoming_height_png,xiaoming6_height_png,xiaoli6_height_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_light_png,grass_light_dark_png,nine_roof_png,nine_shadow_bottom_png,one_png,one_roof_png,seven_shadow_png,six_png,six_shadow_middle_png,three_png,three_roof_png,three_shadow_bottom_png,three_shadow_middle_png,two_png,eight_shadow_bottom_right_png,grass_dark_png,grass_dark_light_png,nine_png,nine_shadow_middle_png,rectangle_cyan_png,seven_png,six_roof_png,six_shadow_bottom_png,splash_bg_png,three_shadow_png,three_shadow_middle_bottom_png,add_info2_png,wlts_logo_jpg,bus_less_png,bus_much_png,xiaofang_png,xiaoming_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_2_mp3,streamsound1_3_mp3,streamsound1_4_mp3,streamsound1_5_mp3,streamsound1_6_mp3,bus_same_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,title_left_png,title_right_png,scene_background_png,content_background_png,number_background_png,exit_background_png,text_background_png,message_border_small_png,message_border_big_png,54cm_and_arrow_png,arrow_top_png,question_mark_png,cloud_png,question_png,question2_png,like_png,fairy_png,message_border_fairy_png,calc_background_png,formula_question_png,formula_left_png,formula_right_png,formula_result_png,next_question_normal_png,next_question_over_png,last_question_normal_png,last_question_over_png,formula2_title_png,formula2_left_png,formula2_right_png,formula2_result_png,formula2_answer_png,formula2_question_png,glodfish_png,koi_png,question3_png,formula3_question_png,formula3_left_png,formula3_right_png,streamsound3_0_mp3,streamsound3_1_mp3,streamsound3_2_mp3,streamsound3_3_mp3,streamsound3_4_mp3,streamsound3_5_mp3,streamsound3_6_mp3,streamsound3_7_mp3,number_koi_png,coat_png,coat_and_sweater_png,question4_png,streamsound4_0_mp3,streamsound4_1_mp3,streamsound4_2_mp3,streamsound4_3_mp3,streamsound4_4_mp3,streamsound4_5_mp3,streamsound4_6_mp3,streamsound4_7_mp3,coat_and_sweater_no_question_png,formula4_question_png,formula4_left_png,formula4_result_png,formula4_right_png,short_sleeve_png,shortsleeve_and_longsleeve_png,question5_png,formula5_left_png,formula5_title_png,formula5_right_png,formula5_result_png,shortsleeve_and_longsleeve_answer_png,streamsound5_0_mp3,streamsound5_1_mp3,streamsound5_2_mp3,streamsound5_3_mp3,streamsound5_4_mp3,streamsound5_5_mp3,streamsound5_6_mp3,streamsound5_7_mp3,question6_start_png,question6_png,streamsound6_0_mp3,streamsound6_1_mp3,streamsound6_2_mp3,streamsound6_3_mp3,streamsound6_4_mp3,streamsound6_5_mp3,streamsound6_6_mp3,streamsound6_7_mp3,formula6_left_png,formula6_result_png,formula6_right_png,formula6_title_png,daming_json,daming_png,zhiqiang_json,zhiqiang_png,question7_start_png,question7_png,formula7_title_png,formula7_left_png,formula7_right_png,formula7_result_png,daming_number_jpg,zhiqiang_number_png,streamsound7_0_mp3,streamsound7_1_mp3,streamsound7_2_mp3,streamsound7_3_mp3,streamsound7_4_mp3,streamsound7_5_mp3,streamsound7_6_mp3,streamsound7_7_mp3,teacher_greenbox_png,teacher_greenbox_correct_png,clothe_count_3A_png,clothe_count_3B_png,class_png,question8_start_png,question8_png,formula8_title_png,formula8_left_png,formula8_right_png,formula8_result_png,streamsound8_0_mp3,streamsound8_1_mp3,streamsound8_2_mp3,streamsound8_4_mp3,streamsound8_3_mp3,streamsound8_5_mp3,streamsound8_6_mp3,streamsound8_7_mp3,question3_start_png,question2_start_png,question1_start_png,question4_start_png,question5_start_png,formula4_title_png,question7_mark_png,exit_normal_png,exit_over_png,short_normal_png,short_over_png,hight_over_png,hight_normal_png,much_normal_png,much_over_png,less_normal_png,less_over_png,expensive_over_png,expensive_normal_png,cheap_normal_png,cheap_over_png,xiaoming_dialog_png,xiaofang_dialog_png,fairyAnimation_json,fairyAnimation_png,calc_normal_png,calc_over_png,price_mark_png,xiaofang_height_png,xiaoming_height_png,xiaoming6_height_png,xiaoli6_height_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_light_png,grass_light_dark_png,nine_roof_png,nine_shadow_bottom_png,one_png,one_roof_png,seven_shadow_png,six_png,six_shadow_middle_png,three_png,three_roof_png,three_shadow_bottom_png,three_shadow_middle_png,two_png,eight_shadow_bottom_right_png,grass_dark_png,grass_dark_light_png,nine_png,nine_shadow_middle_png,rectangle_cyan_png,seven_png,six_roof_png,six_shadow_bottom_png,splash_bg_png,three_shadow_png,three_shadow_middle_bottom_png,add_info2_png,wlts_logo_jpg,bus_less_png,bus_much_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_2_mp3,streamsound1_3_mp3,streamsound1_4_mp3,streamsound1_5_mp3,streamsound1_6_mp3,bus_same_png,younger_brother_and_money_png,sister_and_money_png,sister_png,sister_and_money_and_coin_png,message_border_question2_png,mark_younger_brother_and_sister_png,streamsound2_0_mp3,streamsound2_1_mp3,streamsound2_2_mp3,streamsound2_3_mp3,streamsound2_4_mp3,streamsound2_5_mp3,streamsound2_6_mp3,streamsound2_7_mp3,streamsound2_8_mp3,streamsound2_9_mp3,roast_duck_shop_png,arrow_mark_png,roast_duck_shop_and_questionmark_png,lid_png,lid_transparent_png,roast_duck_less_png,roast_duck_much_png,formula3_result_png,mark_xiaoming_png,arrow_and_120height_png,arrow_and_135height_png,arrow_and_15height_png,xiaoming_png,ziqing_png",
 			"name": "preload"
 		}
 	],
@@ -302,59 +302,9 @@
 			"url": "textures/formula2_result.png"
 		},
 		{
-			"name": "sprotsman_male_png",
-			"type": "image",
-			"url": "textures/sprotsman_male.png"
-		},
-		{
-			"name": "sportswomen_png",
-			"type": "image",
-			"url": "textures/sportswomen.png"
-		},
-		{
 			"name": "formula2_answer_png",
 			"type": "image",
 			"url": "textures/formula2_answer.png"
-		},
-		{
-			"name": "streamsound2_0_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_0.mp3"
-		},
-		{
-			"name": "streamsound2_1_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_1.mp3"
-		},
-		{
-			"name": "streamsound2_2_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_2.mp3"
-		},
-		{
-			"name": "streamsound2_3_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_3.mp3"
-		},
-		{
-			"name": "streamsound2_4_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_4.mp3"
-		},
-		{
-			"name": "streamsound2_5_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_5.mp3"
-		},
-		{
-			"name": "streamsound2_6_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_6.mp3"
-		},
-		{
-			"name": "streamsound2_7_mp3",
-			"type": "sound",
-			"url": "audios/streamsound2_7.mp3"
 		},
 		{
 			"name": "formula2_question_png",
@@ -390,11 +340,6 @@
 			"name": "formula3_right_png",
 			"type": "image",
 			"url": "textures/formula3_right.png"
-		},
-		{
-			"name": "formula3_result_png",
-			"type": "image",
-			"url": "textures/formula3_result.png"
 		},
 		{
 			"name": "streamsound3_0_mp3",
@@ -610,16 +555,6 @@
 			"name": "question6_png",
 			"type": "image",
 			"url": "textures/question6.png"
-		},
-		{
-			"name": "xiaoming_red_png",
-			"type": "image",
-			"url": "textures/xiaoming_red.png"
-		},
-		{
-			"name": "xiaoming_and_xiaoli_png",
-			"type": "image",
-			"url": "textures/xiaoming_and_xiaoli.png"
 		},
 		{
 			"name": "streamsound6_0_mp3",
@@ -1262,16 +1197,6 @@
 			"url": "textures/bus_much.png"
 		},
 		{
-			"name": "xiaofang_png",
-			"type": "image",
-			"url": "textures/xiaofang.png"
-		},
-		{
-			"name": "xiaoming_png",
-			"type": "image",
-			"url": "textures/xiaoming.png"
-		},
-		{
 			"name": "streamsound1_0_mp3",
 			"type": "sound",
 			"url": "audios/streamsound1_0.mp3"
@@ -1310,6 +1235,156 @@
 			"name": "bus_same_png",
 			"type": "image",
 			"url": "textures/bus_same.png"
+		},
+		{
+			"name": "younger_brother_and_money_png",
+			"type": "image",
+			"url": "textures/younger_brother_and_money.png"
+		},
+		{
+			"name": "sister_and_money_png",
+			"type": "image",
+			"url": "textures/sister_and_money.png"
+		},
+		{
+			"name": "sister_png",
+			"type": "image",
+			"url": "textures/sister.png"
+		},
+		{
+			"name": "sister_and_money_and_coin_png",
+			"type": "image",
+			"url": "textures/sister_and_money_and_coin.png"
+		},
+		{
+			"name": "message_border_question2_png",
+			"type": "image",
+			"url": "textures/message_border_question2.png"
+		},
+		{
+			"name": "mark_younger_brother_and_sister_png",
+			"type": "image",
+			"url": "textures/mark_younger_brother_and_sister.png"
+		},
+		{
+			"name": "streamsound2_0_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_0.mp3"
+		},
+		{
+			"name": "streamsound2_1_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_1.mp3"
+		},
+		{
+			"name": "streamsound2_2_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_2.mp3"
+		},
+		{
+			"name": "streamsound2_3_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_3.mp3"
+		},
+		{
+			"name": "streamsound2_4_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_4.mp3"
+		},
+		{
+			"name": "streamsound2_5_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_5.mp3"
+		},
+		{
+			"name": "streamsound2_6_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_6.mp3"
+		},
+		{
+			"name": "streamsound2_7_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_7.mp3"
+		},
+		{
+			"name": "streamsound2_8_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_8.mp3"
+		},
+		{
+			"name": "streamsound2_9_mp3",
+			"type": "sound",
+			"url": "audios/streamsound2_9.mp3"
+		},
+		{
+			"name": "roast_duck_shop_png",
+			"type": "image",
+			"url": "textures/roast_duck_shop.png"
+		},
+		{
+			"name": "arrow_mark_png",
+			"type": "image",
+			"url": "textures/arrow_mark.png"
+		},
+		{
+			"name": "roast_duck_shop_and_questionmark_png",
+			"type": "image",
+			"url": "textures/roast_duck_shop_and_questionmark.png"
+		},
+		{
+			"name": "lid_png",
+			"type": "image",
+			"url": "textures/lid.png"
+		},
+		{
+			"name": "lid_transparent_png",
+			"type": "image",
+			"url": "textures/lid_transparent.png"
+		},
+		{
+			"name": "roast_duck_less_png",
+			"type": "image",
+			"url": "textures/roast_duck_less.png"
+		},
+		{
+			"name": "roast_duck_much_png",
+			"type": "image",
+			"url": "textures/roast_duck_much.png"
+		},
+		{
+			"name": "formula3_result_png",
+			"type": "image",
+			"url": "textures/formula3_result.png"
+		},
+		{
+			"name": "mark_xiaoming_png",
+			"type": "image",
+			"url": "textures/mark_xiaoming.png"
+		},
+		{
+			"name": "arrow_and_120height_png",
+			"type": "image",
+			"url": "textures/arrow_and_120height.png"
+		},
+		{
+			"name": "arrow_and_135height_png",
+			"type": "image",
+			"url": "textures/arrow_and_135height.png"
+		},
+		{
+			"name": "arrow_and_15height_png",
+			"type": "image",
+			"url": "textures/arrow_and_15height.png"
+		},
+		{
+			"name": "xiaoming_png",
+			"type": "image",
+			"url": "textures/xiaoming.png"
+		},
+		{
+			"name": "ziqing_png",
+			"type": "image",
+			"url": "textures/ziqing.png"
 		}
 	]
 }

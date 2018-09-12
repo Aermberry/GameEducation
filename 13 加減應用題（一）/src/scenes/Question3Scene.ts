@@ -1,7 +1,5 @@
 class Question3Scene extends eui.Component implements  eui.UIComponent {
 		
-	private koiImage: eui.Image;
-	private numberKoiImage: eui.Image;
 	private lessButtonComponent: ButtonComponent;
 	private muchButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
@@ -12,6 +10,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private lastQuestionComponent: LastQuestionComponent;
 	
 	private startAnimation: egret.tween.TweenGroup;
+	private correctAnimation: egret.tween.TweenGroup;
 	
 	public constructor() {
 		super();
@@ -29,9 +28,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 		this.playStartAnimation();
-		await this.playMP3();
-		await lzlib.ThreadUtility.sleep(1000);
-		this.showButton();
+		await this.playMP3AndShow();
 		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLessButtonComponentTap, this);
 		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMuchButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
@@ -51,10 +48,10 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.cloudAlertComponent.hideAlert();
 		this.cloudAlertComponent.showCorrectAlert();
 		this.hideHightButtonComponent();
+		this.playCorrectAnimation();
 		await lzlib.SoundUtility.playSound('streamsound3_3_mp3');
 		await lzlib.ThreadUtility.sleep(1000);
 		this.cloudAlertComponent.hideAlert();
-		this.showGlodfishImage();
 		this.showCalcComponent();
 	}
 
@@ -88,10 +85,16 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.startAnimation.play();
 	}
 
-	private async playMP3(): Promise<void>
+	private playCorrectAnimation(): void
+	{
+		this.correctAnimation.play(0);
+	}
+
+	private async playMP3AndShow(): Promise<void>
 	{
 		await lzlib.SoundUtility.playSound('streamsound3_0_mp3');
 		await lzlib.SoundUtility.playSound('streamsound3_1_mp3');
+		this.showButton();
 	}
 		
 	private showButton(): void
@@ -105,14 +108,9 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.calcComponent.visible = true;
 	}
 
-	private showGlodfishImage(): void
-	{
-		this.koiImage.visible = true;
-	}
-
 	private showAnswer(): void
 	{
-		this.numberKoiImage.visible = true;
+		
 	}
 
 	private hideHightButtonComponent(): void
