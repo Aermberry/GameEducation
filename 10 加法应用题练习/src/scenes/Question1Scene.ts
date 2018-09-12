@@ -98,7 +98,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 0_mp3")
 			this.number_box.visible = true;
-			this.image6.visible = false;
 			this.image9.visible = false;
 			this.image10.visible = false;
 		
