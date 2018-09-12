@@ -38,13 +38,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onMuchButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
-		this.cloudAlertComponent.hideAlert();
-	}
-
-	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
-	{
 		this.cloudAlertComponent.hideAlert();
 		this.cloudAlertComponent.showCorrectAlert();
 		this.hideHightButtonComponent();
@@ -53,6 +46,13 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(1000);
 		this.cloudAlertComponent.hideAlert();
 		this.showCalcComponent();
+	}
+
+	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
+	{
+		this.cloudAlertComponent.showWrongAlert();
+		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
+		this.cloudAlertComponent.hideAlert();
 	}
 
 	private async onCalcComponentTap(): Promise<void>
@@ -115,7 +115,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 
 	private hideHightButtonComponent(): void
 	{
-		this.muchButtonComponent.visible = false;
+		this.lessButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void
