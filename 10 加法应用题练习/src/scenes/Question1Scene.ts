@@ -7,7 +7,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
-	private nextstep:ImageButton;
+	private nextStepButton:ImageButton;
 	private numberPad: NumberPad;
 	
 	private expressionLabel: eui.Label;
@@ -23,9 +23,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private runners_box:eui.Group;
 	private number_box:eui.Group;
 	private sumGroup: eui.Group;
-	private editablelabel1:EditableLargeLabel;
-	private editablelabel2:EditableLargeLabel;
-	private editablelabel3:EditableLargeLabel;
+	private editableLabelGroup: eui.Group;
 	private expression = ''; //用户输入的横式
 	private inputssion = '' //答案输入模式
 
@@ -45,14 +43,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onExitButtonClick,this);
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextButtonButtonClick,this);
-		this.nextstep.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextstepButtonClick,this);
+		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextstepButtonClick,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT,this.onnNumberPadButtonClick,this)
 		this.playGame();
 		this.image5.visible = false;
 		this.total_text.visible = false;
-		this.editablelabel1.visible = false;
-		this.editablelabel2.visible = false;
-		this.editablelabel3.visible = false;
 	}
 	// 离开按钮事件
 	private onExitButtonClick (): void{
@@ -74,19 +69,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.expression += e.char;
 		}
 		this.expressionLabel.text =  this.expression;
-		if(this.editablelabel1.visible == true){
-			if(e.char == '' && this.expression.length > 0){
-				this.expression = this.expression.substr(0, this.expression.length - 1);
-			}else{
-				this.inputssion = e.char
-			}
-		}
-		this.editablelabel1.text = this.inputssion;
-		
+
 	}
 	private async playGame(): Promise<void> {
 		this. runners_motion1.play(0);
-		this.nextstep.visible = false;
+		this.nextStepButton.visible = false;
 		this.expressionLabel.visible = false;
 		this.text_runners.visible = false;
 		await lzlib.SoundUtility.playSound("sound1_streamsound 0_mp3")
@@ -94,7 +81,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.text_runners.visible = true;
 		this. runners_motion2.play(0);
 		await lzlib.SoundUtility.playSound("think_streamsound 0_mp3")
-		this.nextstep.visible = true;
+		this.nextStepButton.visible = true;
 		this.expressionLabel.visible = true;
 	}
 	private async playExamples():Promise<void> {
@@ -106,7 +93,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.image4.visible = false;
 			this.image5.visible = false;
 			this.runners_box.visible = false;
-			this.nextstep.visible = false;
+			this.nextStepButton.visible = false;
 			this. runners_motion3.play(0);
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 0_mp3")
@@ -114,15 +101,32 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.image6.visible = false;
 			this.image9.visible = false;
 			this.image10.visible = false;
-			this.editablelabel1.visible = true;
-			this.editablelabel2.visible = true;
-			this.editablelabel3.visible = true;
 		
+			this.validateSum();
 		}else{
 			this.image4.visible = false;
 			this.image5.visible = true;
 			await lzlib.SoundUtility.playSound("retry_streamsound 0_mp3")
 			this.image5.visible = false;
 		}
+	}
+
+	private async validateSum(): Promise<void>
+	{
+		let correctArray = ['7', '3', '3'];
+
+		for (let index = 0; index < correctArray.length; index++) {
+			let correctNumber = correctArray[index];
+			let inputedNumber = '';
+			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
+			editableLabel.visible = true;
+			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				console.log('输入错误');
+			}
+			editableLabel.currentState = 'view';
+			editableLabel.text = inputedNumber;
+		}
+
+		this.image6.alpha = 1;
 	}
 }
