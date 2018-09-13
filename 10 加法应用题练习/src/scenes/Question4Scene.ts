@@ -1,6 +1,6 @@
-class Question2Scene extends eui.Component implements  eui.UIComponent {
+class Question4Scene extends eui.Component implements  eui.UIComponent {
 
-	private BakeryTweenGroup: egret.tween.TweenGroup;
+	private ParknumberTweenGroup: egret.tween.TweenGroup;
 	private beeTweenGroup: egret.tween.TweenGroup;
 	private antTweenGroup: egret.tween.TweenGroup;
 
@@ -58,11 +58,11 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	}
 	// 下一题按钮事件
 	private onnNextButtonButtonClick (): void{
-		Main.instance.gotoScene(new Question3Scene());
+		Main.instance.gotoScene(new Question5Scene());
 	}
 	// 上一题按钮事件
 	private onnlastButtonButtonClick (): void{
-		Main.instance.gotoScene(new Question1Scene());
+		Main.instance.gotoScene(new Question3Scene());
 	}
 	// 点击下一步事件
 	private onnNextstepButtonClick () : void{
@@ -79,8 +79,8 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	}
 	private async playGame(): Promise<void> {
-		this. BakeryTweenGroup.play(0);
-		await lzlib.SoundUtility.playSound("sound2_streamsound 0_mp3")
+		this. ParknumberTweenGroup.play(0);
+		await lzlib.SoundUtility.playSound("sound4_streamsound 0_mp3")
 
 		this.textRunnersLabel.alpha = 1;
 		this. beeTweenGroup.play(0);
@@ -89,7 +89,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		this.expressionLabel.visible = true;
 	}
 	private async playExamples():Promise<void> {
-		if(this.expression == "140+130" || this.expression == "130+140"){
+		if(this.expression == "256+127" || this.expression == "127+256"){
 			this.totalTextlmage.alpha = 1;
 			this.expressionLabel.visible = false;
 			this.honeyBee2image.visible = false;
@@ -117,7 +117,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private async validateSum(): Promise<void>
 	{
-		let correctArray = ['0', '7', '2'];
+		let correctArray = ['3', '8', '3'];
 
 		for (let index = 0; index < correctArray.length; index++) {
 			let correctNumber = correctArray[index];

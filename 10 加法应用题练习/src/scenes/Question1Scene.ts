@@ -1,8 +1,8 @@
 class Question1Scene extends eui.Component implements  eui.UIComponent {
 
-	private runners_motion1: egret.tween.TweenGroup;
-	private runners_motion2: egret.tween.TweenGroup;
-	private runners_motion3: egret.tween.TweenGroup;
+	private runnerTweenGroup: egret.tween.TweenGroup;
+	private beeTweenGroup: egret.tween.TweenGroup;
+	private antTweenGroup: egret.tween.TweenGroup;
 
 
 	private exitButton: ImageButton;
@@ -11,7 +11,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private numberPad: NumberPad;
 	
 	private expressionLabel: eui.Label;
-	private textRunnerslmage: eui.Label;
+	private textRunnersLabel: eui.Label;
 	private honeyBee2image:eui.Image;
 	private ejectBox1lmage:eui.Image;
 	private reflectionlmage:eui.Image;
@@ -49,16 +49,14 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextstepButtonClick,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT,this.onnNumberPadButtonClick,this)
 		this.playGame();
-		this.repeat.visible = false;
-		this.totalTextlmage.visible = false;
 	}
 	// 离开按钮事件
 	private onExitButtonClick (): void{
-		console.log(123)
+		window.close();
 	}
 	// 下一题按钮事件
 	private onnNextButtonButtonClick (): void{
-		console.log(123)
+		Main.instance.gotoScene(new Question2Scene());
 	}
 	// 点击下一步事件
 	private onnNextstepButtonClick () : void{
@@ -75,21 +73,18 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	}
 	private async playGame(): Promise<void> {
-		this. runners_motion1.play(0);
-		this.nextStepButton.visible = false;
-		this.expressionLabel.visible = false;
-		this.textRunnerslmage.visible = false;
+		this. runnerTweenGroup.play(0);
 		await lzlib.SoundUtility.playSound("sound1_streamsound 0_mp3")
 
-		this.textRunnerslmage.visible = true;
-		this. runners_motion2.play(0);
+		this.textRunnersLabel.alpha = 1;
+		this. beeTweenGroup.play(0);
 		await lzlib.SoundUtility.playSound("think_streamsound 0_mp3")
 		this.nextStepButton.visible = true;
 		this.expressionLabel.visible = true;
 	}
 	private async playExamples():Promise<void> {
 		if(this.expression == "214+123" || this.expression == "123+214"){
-			this.totalTextlmage.visible = true;
+			this.totalTextlmage.alpha = 1;
 			this.expressionLabel.visible = false;
 			this.honeyBee2image.visible = false;
 			this.ejectBox1lmage.visible = false;
@@ -97,7 +92,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.repeat.visible = false;
 			this.runners_box.visible = false;
 			this.nextStepButton.visible = false;
-			this. runners_motion3.play(0);
+			this. antTweenGroup.play(0);
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 0_mp3")
 			this.number_box.visible = true;
@@ -110,10 +105,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		}else{
 			this.reflectionlmage.visible = false;
 			this.repeat.visible = true;
-			// this.ejectBox1lmage.visible = true;
 			await lzlib.SoundUtility.playSound("retry_streamsound 0_mp3")
-			// this.repeat.visible = false;
-			// this.ejectBox1lmage.visible = false;
 		}
 	}
 

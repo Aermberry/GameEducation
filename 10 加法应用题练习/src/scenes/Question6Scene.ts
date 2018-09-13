@@ -1,12 +1,11 @@
-class Question2Scene extends eui.Component implements  eui.UIComponent {
+class Question6Scene extends eui.Component implements  eui.UIComponent {
 
-	private BakeryTweenGroup: egret.tween.TweenGroup;
+	private cardnumberTweenGroup: egret.tween.TweenGroup;
 	private beeTweenGroup: egret.tween.TweenGroup;
 	private antTweenGroup: egret.tween.TweenGroup;
 
 
 	private exitButton: ImageButton;
-	private nextButton: ImageButton;
 	private lastButton: ImageButton;
 	private nextStepButton:ImageButton;
 	private numberPad: NumberPad;
@@ -46,7 +45,6 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onExitButtonClick,this);
-		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextButtonButtonClick,this);
 		this.lastButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnlastButtonButtonClick,this);
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onnNextstepButtonClick,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT,this.onnNumberPadButtonClick,this)
@@ -56,13 +54,9 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private onExitButtonClick (): void{
 		window.close();
 	}
-	// 下一题按钮事件
-	private onnNextButtonButtonClick (): void{
-		Main.instance.gotoScene(new Question3Scene());
-	}
 	// 上一题按钮事件
 	private onnlastButtonButtonClick (): void{
-		Main.instance.gotoScene(new Question1Scene());
+		Main.instance.gotoScene(new Question5Scene());
 	}
 	// 点击下一步事件
 	private onnNextstepButtonClick () : void{
@@ -79,8 +73,8 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	}
 	private async playGame(): Promise<void> {
-		this. BakeryTweenGroup.play(0);
-		await lzlib.SoundUtility.playSound("sound2_streamsound 0_mp3")
+		this. cardnumberTweenGroup.play(0);
+		await lzlib.SoundUtility.playSound("sound6_streamsound 0_mp3")
 
 		this.textRunnersLabel.alpha = 1;
 		this. beeTweenGroup.play(0);
@@ -89,7 +83,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		this.expressionLabel.visible = true;
 	}
 	private async playExamples():Promise<void> {
-		if(this.expression == "140+130" || this.expression == "130+140"){
+		if(this.expression == "463+218" || this.expression == "218+463"){
 			this.totalTextlmage.alpha = 1;
 			this.expressionLabel.visible = false;
 			this.honeyBee2image.visible = false;
@@ -117,7 +111,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private async validateSum(): Promise<void>
 	{
-		let correctArray = ['0', '7', '2'];
+		let correctArray = ['1', '8', '6'];
 
 		for (let index = 0; index < correctArray.length; index++) {
 			let correctNumber = correctArray[index];

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,sound2_streamsound 0_mp3,sound3_streamsound 0_mp3,sound4_streamsound 0_mp3,sound5_streamsound 0_mp3,sound6_streamsound 0_mp3,think_streamsound 0_mp3,retry_streamsound 0_mp3,add_intro_streamsound 0_mp3,add_intro_streamsound 1_mp3,googd_png,title_top_png,add_info2_png,background_box_png,bakcground_bg_png,next_normal_png,next_over_png,exit_over_png,exit_box_png,exit_normal_png,number_box_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,runners_chen_png,runners_li_png,runners_r_png,runners_tilte_png,repeat_png,eject_box1_png,honeybee_1_png,honeybee_2_png,reflection_png,Nextstep_over_png,Nextstep_normal_png,sound1_streamsound 0_mp3,Black_circle_png,Ant_1_png,Ant_2_png,Ant_box_png,Ant_title_png,Seven_png,Six_png,Three_png,Two_png,Zero_png,Eight_png,Five_png,Four_png,Nine_png,One_png,Plus_png,line_png,rectangle_red_png,calculation_font_fnt,calculation_font_png,error_streamsound 0_mp3,calculation_font2_fnt,calculation_font2_png,totalmage_png,lastover_png,lastnormal_png,Bakerylamge_png,Hamburgerlmage_png,SausageBaglmage_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,sound2_streamsound 0_mp3,sound3_streamsound 0_mp3,sound4_streamsound 0_mp3,sound5_streamsound 0_mp3,sound6_streamsound 0_mp3,think_streamsound 0_mp3,retry_streamsound 0_mp3,add_intro_streamsound 0_mp3,add_intro_streamsound 1_mp3,googd_png,title_top_png,add_info2_png,background_box_png,bakcground_bg_png,next_normal_png,next_over_png,exit_over_png,exit_box_png,exit_normal_png,number_box_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,runners_chen_png,runners_li_png,runners_r_png,runners_tilte_png,repeat_png,eject_box1_png,honeybee_1_png,honeybee_2_png,reflection_png,Nextstep_over_png,Nextstep_normal_png,sound1_streamsound 0_mp3,Black_circle_png,Ant_1_png,Ant_2_png,Ant_box_png,Ant_title_png,Seven_png,Six_png,Three_png,Two_png,Zero_png,Eight_png,Five_png,Four_png,Nine_png,One_png,Plus_png,line_png,rectangle_red_png,calculation_font_fnt,calculation_font_png,error_streamsound 0_mp3,calculation_font2_fnt,calculation_font2_png,totalmage_png,lastover_png,lastnormal_png,Bakerylamge_png,Hamburgerlmage_png,SausageBaglmage_png,character_png,Onedollar_png,Onehundred_png,Tenyuan_png,Parknumber1lmage_png,Parknumber2lmage_png,problemlmage_png,Eggboxlmage_png,Eggnumberlmage_png,card1lmage_png,card2lmage_png,marklmage_png,Endoverlmage_png,Endnormallmage_png",
 			"name": "preload"
 		}
 	],
@@ -775,6 +775,76 @@
 			"name": "SausageBaglmage_png",
 			"type": "image",
 			"url": "textures/SausageBaglmage.png"
+		},
+		{
+			"name": "character_png",
+			"type": "image",
+			"url": "textures/character.png"
+		},
+		{
+			"name": "Onedollar_png",
+			"type": "image",
+			"url": "textures/Onedollar.png"
+		},
+		{
+			"name": "Onehundred_png",
+			"type": "image",
+			"url": "textures/Onehundred.png"
+		},
+		{
+			"name": "Tenyuan_png",
+			"type": "image",
+			"url": "textures/Tenyuan.png"
+		},
+		{
+			"name": "Parknumber1lmage_png",
+			"type": "image",
+			"url": "textures/Parknumber1lmage.png"
+		},
+		{
+			"name": "Parknumber2lmage_png",
+			"type": "image",
+			"url": "textures/Parknumber2lmage.png"
+		},
+		{
+			"name": "problemlmage_png",
+			"type": "image",
+			"url": "textures/problemlmage.png"
+		},
+		{
+			"name": "Eggboxlmage_png",
+			"type": "image",
+			"url": "textures/Eggboxlmage.png"
+		},
+		{
+			"name": "Eggnumberlmage_png",
+			"type": "image",
+			"url": "textures/Eggnumberlmage.png"
+		},
+		{
+			"name": "card1lmage_png",
+			"type": "image",
+			"url": "textures/card1lmage.png"
+		},
+		{
+			"name": "card2lmage_png",
+			"type": "image",
+			"url": "textures/card2lmage.png"
+		},
+		{
+			"name": "marklmage_png",
+			"type": "image",
+			"url": "textures/marklmage.png"
+		},
+		{
+			"name": "Endoverlmage_png",
+			"type": "image",
+			"url": "textures/Endoverlmage.png"
+		},
+		{
+			"name": "Endnormallmage_png",
+			"type": "image",
+			"url": "textures/Endnormallmage.png"
 		}
 	]
 }
