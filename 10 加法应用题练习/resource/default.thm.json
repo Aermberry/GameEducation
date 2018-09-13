@@ -22,12 +22,14 @@
 		"Question3Scene": "resource/scenes/Question3Scene.exml",
 		"Question4Scene": "resource/scenes/Question4Scene.exml",
 		"Question5Scene": "resource/scenes/Question5Scene.exml",
-		"Question6Scene": "resource/scenes/Question6Scene.exml"
+		"Question6Scene": "resource/scenes/Question6Scene.exml",
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/EditableLabel.exml",
 		"resource/components/ImageButton.exml",
+		"resource/components/MovieClipPlayer.exml",
 		"resource/components/NumberPad.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
