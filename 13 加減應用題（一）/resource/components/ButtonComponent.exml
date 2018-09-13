@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ButtonComponentSkin" width="180" height="102" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"   states="normal,over" >
 	<w:Config id="165a9110d57" ></w:Config>
-	<e:Image id="buttonImage" left="0" right="0" top="0" bottom="0" source="hight_normal_png"/>
+	<e:Image id="buttonImage" left="0" right="0" top="0" bottom="0" source="height_normal_png"/>
 	<!--<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x85afcf" strokeColor="0x26667c" strokeWeight="15" fillColor.over="0xa4d1f2"/>
 	<e:Label id="textLabel" text="較 多" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" size="46" textColor="0x000000" textColor.over="0xffffff"/>-->
 </e:Skin>

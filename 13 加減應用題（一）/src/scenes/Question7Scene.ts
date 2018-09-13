@@ -1,8 +1,9 @@
 class Question7Scene extends eui.Component implements  eui.UIComponent {
 	
 	private zhiqiangNumberImage: eui.Image;
-	private zhiqiangMovieClipPlayer: MovieClipPlayer;
-	private damingMovieClipPlayer: MovieClipPlayer;
+	private stickerPaperNumberImage: eui.Image;
+	private sisterAndYoungerBrotherCorrectImage: eui.Image;
+	private sisterAndYoungerBrotherAndQuestionMArkImage: eui.Image;
 	private alertAndOperationGroup: eui.Group;
 	private muchButtonComponent: ButtonComponent;
 	private lessButtonComponent: ButtonComponent;
@@ -11,8 +12,6 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 	private formulaComponent: FormulaComponent;
 	private nextQuestionComponent: NextQuestionComponent;
 	private lastQuestionComponent: LastQuestionComponent;
-
-	private startAnimation: egret.tween.TweenGroup;
 	
 	public constructor() {
 		super();
@@ -29,10 +28,7 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
-		this.playStartAnimation();
-		await this.playMP3();
-		await lzlib.ThreadUtility.sleep(1000);
-		this.showButton();
+		await this.playMP3AndShow();
 		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
@@ -42,21 +38,21 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onHightButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
+		this.cloudAlertComponent.showWrongAlert();
+		await lzlib.SoundUtility.playSound('streamsound7_2_mp3');
 		this.cloudAlertComponent.hideAlert();
-		this.cloudAlertComponent.showCorrectAlert();
-		this.hideWrongButtonComponent();
-		this.damingMovieClipPlayer.stop();
-		await lzlib.SoundUtility.playSound('streamsound7_3_mp3');
-		await lzlib.ThreadUtility.sleep(1000);
-		this.cloudAlertComponent.hideAlert();
-		this.showCalcComponent();
 	}
 
 	private async onShortButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound7_2_mp3');
 		this.cloudAlertComponent.hideAlert();
+		this.cloudAlertComponent.showCorrectAlert();
+		this.showYoungeBrotherStickerPaper();
+		this.hideWrongButtonComponent();
+		await lzlib.SoundUtility.playSound('streamsound7_3_mp3');
+		await lzlib.ThreadUtility.sleep(1000);
+		this.cloudAlertComponent.hideAlert();
+		this.showCalcComponent();
 	}
 
 	private onNextQuestionComponent(): void
@@ -72,7 +68,6 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 	private async onCalcComponentTap(): Promise<void>
 	{
 		this.hideAlertAndOperationGroup();
-		this.zhiqiangMovieClipPlayer.stop();
 		this.formulaComponent.showTitleImage();
 		await lzlib.SoundUtility.playSound('streamsound7_4_mp3');
 		this.formulaComponent.showLeftImage();
@@ -80,22 +75,16 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 		this.formulaComponent.showRightImage();
 		await lzlib.SoundUtility.playSound('streamsound7_6_mp3');
 		this.formulaComponent.showResultImage();
-		await lzlib.SoundUtility.playSound('streamsound7_7_mp3');
 		this.showAnswer();
+		await lzlib.SoundUtility.playSound('streamsound7_7_mp3');
 	}
 
-
-	private playStartAnimation(): void
-	{
-		this.startAnimation.play();
-	}
-
-
-	private async playMP3(): Promise<void>
+	private async playMP3AndShow(): Promise<void>
 	{
 		await lzlib.SoundUtility.playSound('streamsound7_0_mp3');
+		this.showCloudAlertComponent();
 		await lzlib.SoundUtility.playSound('streamsound7_1_mp3');
-
+		this.showButton();
 	}
 
 	private showCalcComponent(): void
@@ -111,12 +100,23 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 
 	private showAnswer(): void
 	{
-		this.zhiqiangNumberImage.visible = true;
+		this.stickerPaperNumberImage.visible = true;
+	}
+
+	private showCloudAlertComponent(): void
+	{
+		this.cloudAlertComponent.visible = true;
+	}
+
+	private showYoungeBrotherStickerPaper(): void
+	{
+		this.sisterAndYoungerBrotherCorrectImage.visible = true;
+		this.sisterAndYoungerBrotherAndQuestionMArkImage.visible = false;
 	}
 
 	private hideWrongButtonComponent(): void
 	{
-		this.lessButtonComponent.visible = false;
+		this.muchButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void

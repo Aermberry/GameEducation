@@ -1,9 +1,10 @@
 class Question5Scene extends eui.Component implements  eui.UIComponent {
 	
-	private shortsleeveAndLongsleeveAnswer: eui.Image;
-	private shortsleeveAndLongsleeve: eui.Image;
-	private expensiveButtonComponent: ButtonComponent;
-	private cheapButtonComponent: ButtonComponent;
+	private questionMarkImage: eui.Image;
+	private jiaPorkImage: eui.Image;
+	private jiaSoldPorkInfoImage: eui.Image;
+	private muchButtonComponent: ButtonComponent;
+	private lessButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
 	private alertAndOperationGroup: eui.Group;
 	private nextQuestionComponent: NextQuestionComponent;
@@ -32,17 +33,19 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		await this.playMP3();
 		await lzlib.ThreadUtility.sleep(1000);
 		this.showButton();
-		this.cheapButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCheapButtonComponentTap, this);
-		this.expensiveButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExpensiveButtonComponentTap, this);
+		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLessButtonComponentTap, this);
+		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMuchButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 	}
 
-	private async onExpensiveButtonComponentTap(e: egret.TouchEvent): Promise<void>
+	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
 		this.cloudAlertComponent.hideAlert();
+		this.showPork();
 		this.cloudAlertComponent.showCorrectAlert();
+		this.hideQuestionMark();
 		this.hideWrongButtonComponent();
 		await lzlib.SoundUtility.playSound('streamsound5_3_mp3');
 		await lzlib.ThreadUtility.sleep(1000);
@@ -50,7 +53,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.showCalcComponent();
 	}
 
-	private async onCheapButtonComponentTap(e: egret.TouchEvent): Promise<void>
+	private async onMuchButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
 		this.cloudAlertComponent.showWrongAlert();
 		await lzlib.SoundUtility.playSound('streamsound4_2_mp3');
@@ -95,8 +98,8 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		
 	private showButton(): void
 	{
-		this.expensiveButtonComponent.visible = true;
-		this.cheapButtonComponent.visible = true;
+		this.muchButtonComponent.visible = true;
+		this.lessButtonComponent.visible = true;
 	}
 
 	private showCalcComponent(): void
@@ -104,14 +107,24 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.calcComponent.visible = true;
 	}
 
+	private showPork(): void
+	{
+		this.jiaPorkImage.visible = true;
+	}
+
 	private showAnswer(): void
 	{
-		this.shortsleeveAndLongsleeveAnswer.visible = true;	
+		this.jiaSoldPorkInfoImage.visible = true;
+	}
+
+	private hideQuestionMark(): void
+	{
+		this.questionMarkImage.alpha = 0;
 	}
 
 	private hideWrongButtonComponent(): void
 	{
-		this.cheapButtonComponent.visible = false;
+		this.muchButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void
@@ -121,7 +134,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 
 	private hideCoatAndSweaterImage(): void
 	{
-		this.shortsleeveAndLongsleeve.visible = false;
+		
 	}
 	
 }

@@ -2,6 +2,8 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	
 	private teacherGreenboxCorrectImage: eui.Image;
 	private clotheCount3BImage: eui.Image;
+	private questionMarkImage: eui.Image;
+	private drinkLessGroup: eui.Group;
 	private alertAndOperationGroup: eui.Group;
 	private muchButtonComponent: ButtonComponent;
 	private lessButtonComponent: ButtonComponent;
@@ -24,11 +26,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
-		this.playMP3();
-		await lzlib.ThreadUtility.sleep(14500);
-		this.showCloudAlertComponent();
-		await lzlib.ThreadUtility.sleep(1000);
-		this.showButton();
+		await this.playMP3AndShow();
 		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
 		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onShortButtonComponentTap, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
@@ -37,21 +35,21 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onHightButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
+		this.cloudAlertComponent.showWrongAlert();
+		await lzlib.SoundUtility.playSound('streamsound8_2_mp3');
 		this.cloudAlertComponent.hideAlert();
+	}
+
+	private async onShortButtonComponentTap(e: egret.TouchEvent): Promise<void>
+	{
+		this.cloudAlertComponent.hideAlert();
+		this.showDrinkLessGroup();
 		this.cloudAlertComponent.showCorrectAlert();
-		this.showTeacherGreenboxCorrectImage();
 		this.hideWrongButtonComponent();
 		await lzlib.SoundUtility.playSound('streamsound8_3_mp3');
 		await lzlib.ThreadUtility.sleep(1000);
 		this.cloudAlertComponent.hideAlert();
 		this.showCalcComponent();
-	}
-
-	private async onShortButtonComponentTap(e: egret.TouchEvent): Promise<void>
-	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound8_2_mp3');
-		this.cloudAlertComponent.hideAlert();
 	}
 
 	private async onCalcComponentTap(): Promise<void>
@@ -65,7 +63,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('streamsound8_6_mp3');
 		this.formulaComponent.showResultImage();
 		await lzlib.SoundUtility.playSound('streamsound8_7_mp3');
-		this.showAnswer();
+		this.hideQuestionMarkImage();
 	}
 
 	private onLastQuestionComponent(): void
@@ -73,16 +71,23 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new Question7Scene());
 	}
 
-	private async playMP3(): Promise<void>
+	private async playMP3AndShow(): Promise<void>
 	{
 		await lzlib.SoundUtility.playSound('streamsound8_0_mp3');
+		this.showCloudAlertComponent();
 		await lzlib.SoundUtility.playSound('streamsound8_1_mp3');
+		this.showButton();
 
 	}
 
 	private showCalcComponent(): void
 	{
 		this.calcComponent.visible = true;
+	}
+
+	private showDrinkLessGroup(): void
+	{
+		this.drinkLessGroup.visible = true;
 	}
 	
 	private showButton(): void
@@ -91,24 +96,19 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 		this.lessButtonComponent.visible = true;
 	}
 
-	private showAnswer(): void
-	{
-		this.clotheCount3BImage.visible = true;
-	}
-
 	private showCloudAlertComponent(): void
 	{
 		this.cloudAlertComponent.visible = true;
 	}
 
-	private showTeacherGreenboxCorrectImage(): void
+	private hideQuestionMarkImage(): void
 	{
-		this.teacherGreenboxCorrectImage.visible = true;
+		this.questionMarkImage.visible = false;
 	}
 
 	private hideWrongButtonComponent(): void
 	{
-		this.lessButtonComponent.visible = false;
+		this.muchButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void
