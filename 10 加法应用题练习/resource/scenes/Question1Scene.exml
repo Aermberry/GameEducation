@@ -143,7 +143,7 @@
 	<e:Label id="text1label" text="两人共跑了多少米？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="DFKai-SB"/>
 	<e:Label id="text2lmage" text="陈先生跑了214米，李先生跑了123米。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="DFKai-SB" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="两人共跑了：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="DFKai-SB" alpha="0"/>
-	<e:Group id="runners_box" x="927.18" y="369.75" alpha="1">
+	<e:Group id="runnersGroup" x="927.18" y="369.75" alpha="1">
 		<e:Image id="runnersTiltelmage" x="69.18" y="182.15" source="runners_tilte_png" anchorOffsetX="0" width="708.45" anchorOffsetY="0" height="311.98" alpha="0"/>
 		<e:Image id="runnersLilmage" x="169.55" y="254.58" source="runners_li_png" alpha="0"/>
 		<e:Image id="runnersRlmage" x="633.24" y="194.13" source="runners_r_png" alpha="0"/>
@@ -155,7 +155,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false"/>
-	<e:Group id="number_box" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 
 
 

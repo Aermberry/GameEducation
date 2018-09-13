@@ -22,8 +22,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private antBoxImage:eui.Image;
 	private repeat2lmage:eui.Image;
 	private totalTextlmage:eui.Label;
-	private runners_box:eui.Group;
-	private number_box:eui.Group;
+	private runnersGroup:eui.Group;
+	private numberGroup:eui.Group;
 	private sumGroup: eui.Group;
 	private totalBoxlmage:eui.Group;
 	private editableLabelGroup: eui.Group;
@@ -90,12 +90,12 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 			this.ejectBox1lmage.visible = false;
 			this.reflectionlmage.visible = false;
 			this.repeat.visible = false;
-			this.runners_box.visible = false;
+			this.runnersGroup.visible = false;
 			this.nextStepButton.visible = false;
 			this. antTweenGroup.play(0);
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 0_mp3")
-			this.number_box.visible = true;
+			this.numberGroup.visible = true;
 			this.Ant1lmage.visible = true;
 			this.image10.visible = false;
 			this.antBoxImage.visible = false;

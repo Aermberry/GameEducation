@@ -132,7 +132,7 @@
 	<e:Label id="text1label" text="弟弟現在有閃卡多少張？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="DFKai-SB"/>
 	<e:Label id="text2label" text="弟弟原有閃卡463張，哥哥在給他218張。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="DFKai-SB" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="弟弟現有閃卡：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="DFKai-SB" alpha="0"/>
-	<e:Group id="runners_box" x="904.67" y="448.1" alpha="1" anchorOffsetX="0" width="738.33" anchorOffsetY="0" height="440.39">
+	<e:Group id="runnersGroup" x="904.67" y="448.1" alpha="1" anchorOffsetX="0" width="738.33" anchorOffsetY="0" height="440.39">
 		<e:Image id="image" x="164.69" y="33.05" source="card1lmage_png" anchorOffsetX="0" width="513.58" anchorOffsetY="0" height="399.04" alpha="0"/>
 		<e:Image id="card2lmage" x="601" y="264" source="card2lmage_png" anchorOffsetX="0" width="69.8" anchorOffsetY="0" height="31.48" alpha="0"/>
 		<e:Image id="image0" x="210.06" y="96.97" source="marklmage_png" anchorOffsetX="0" width="50.27" anchorOffsetY="0" height="68.76" alpha="0"/>
@@ -143,7 +143,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false" locked="true"/>
-	<e:Group id="number_box" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="40.36" y="242" source="Plus_png"/>
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
 		<e:BitmapLabel width="244.25" height="159.4" x="155.48" y="164" font="calculation_font_fnt" text="468218" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="70" lineSpacing="30"/>

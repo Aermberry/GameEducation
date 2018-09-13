@@ -169,7 +169,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false"/>
-	<e:Group id="number_box" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="40.36" y="242" source="Plus_png"/>
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
 		<e:BitmapLabel width="226.07" height="159.4" x="164.57" y="164" font="calculation_font_fnt" text="130140" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="70" lineSpacing="30"/>
