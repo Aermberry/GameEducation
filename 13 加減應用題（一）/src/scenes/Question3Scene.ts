@@ -38,13 +38,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onMuchButtonComponentTap(e: egret.TouchEvent): Promise<void>
 	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
-		this.cloudAlertComponent.hideAlert();
-	}
-
-	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
-	{
 		this.cloudAlertComponent.hideAlert();
 		this.cloudAlertComponent.showCorrectAlert();
 		this.hideHightButtonComponent();
@@ -53,6 +46,13 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(1000);
 		this.cloudAlertComponent.hideAlert();
 		this.showCalcComponent();
+	}
+
+	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
+	{
+		this.cloudAlertComponent.showWrongAlert();
+		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
+		this.cloudAlertComponent.hideAlert();
 	}
 
 	private async onCalcComponentTap(): Promise<void>
@@ -66,14 +66,12 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('streamsound3_6_mp3');
 		this.formulaComponent.showResultImage();
 		await lzlib.SoundUtility.playSound('streamsound3_7_mp3');
-		this.showAnswer();
 	}
 
 	private onNextQuestionComponent(): void
 	{
 		Main.instance.gotoScene(new Question4Scene());
 	}
-
 
 	private onLastQuestionComponent(): void
 	{
@@ -108,14 +106,9 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.calcComponent.visible = true;
 	}
 
-	private showAnswer(): void
-	{
-		
-	}
-
 	private hideHightButtonComponent(): void
 	{
-		this.muchButtonComponent.visible = false;
+		this.lessButtonComponent.visible = false;
 	}
 
 	private hideAlertAndOperationGroup(): void

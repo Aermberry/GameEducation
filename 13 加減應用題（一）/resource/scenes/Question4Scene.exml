@@ -14,7 +14,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image}">
+			<tween:TweenItem target="{height120image}">
 				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
@@ -99,7 +99,7 @@
 		<e:Image x="1162.76" y="760" source="mark_xiaoming_png" bottom="30"/>
 		<e:Rect id="height120LineRect" width="1" height="499" x="1095.82" y="323.15"/>
 		<e:Rect id="height120RowLineRect" width="450" height="1" x="996.37" y="321.6" strokeWeight="1"/>
-		<e:Image id="image" x="923.43" y="327.3" source="arrow_and_120height_png"/>
+		<e:Image id="height120image" x="923.43" y="327.3" source="arrow_and_120height_png" alpha="0"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="formula4_question_png"/>
 			<ns1:ButtonComponent id="shortButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="short_normal_png" overSource="short_over_png" visible="false"/>

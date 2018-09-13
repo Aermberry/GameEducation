@@ -10,7 +10,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
@@ -21,6 +20,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onSplashTweenGroupComplete(e: egret.Event): void
 	{
-		Main.instance.gotoScene(new Question1Scene());
+		Main.instance.gotoScene(new StartScene());
 	}
 }
