@@ -24,6 +24,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, false);
+			child.addEventListener(lzlib.LzDragEvent.CANCEL,this.onDragCancel,this);
 		}
 		this.initDropableLabel();
 	}
@@ -62,6 +63,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				this.swapChildren(this.dropGroup, this.maskLayerGroup);
 			})
 		}
+	}
+
+	private onDragCancel(e:lzlib.LzDragEvent):void{
+		this.showTipsLabel();
 	}
 
 	// tips模块
