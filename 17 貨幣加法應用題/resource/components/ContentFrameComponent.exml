@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ContentFrameComponentSkin" width="1885" height="890" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165a8473762" ></w:Config>
+	<e:Image height="838" y="173" bottom="0" source="content_background_png" left="108" right="117"/>
+	<e:Image width="151" height="151" x="6" y="30" anchorOffsetX="0" anchorOffsetY="0" source="number_background_png" left="0"/>
+	<e:Label id="currentlevelLabel" text="1" x="0" y="30" anchorOffsetX="0" width="152" anchorOffsetY="0" height="151" size="90" textColor="0x1d3a66" verticalAlign="middle" textAlign="center"/>
+	<e:Image width="190" height="107" x="1706" y="0" anchorOffsetX="0" anchorOffsetY="0" right="0" source="exit_background_png"/>
+	<e:Image id="exitImage" x="1730.03" y="24.03" source="exit_normal_png"/>
+</e:Skin>
