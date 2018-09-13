@@ -93,7 +93,14 @@ class Main extends eui.UILayer {
         })
     }
 
-    private scenes = [];
+    private scenes = [
+        new StartScene(),
+        new Question1Scene(),
+        new Question2Scene(),
+        new Question3Scene(),
+        new Question4Scene(),
+        new Question5Scene()
+    ];
     
     /**
      * 创建场景界面
