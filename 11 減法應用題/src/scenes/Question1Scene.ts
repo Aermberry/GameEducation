@@ -32,7 +32,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onCalcComponentTap(): Promise<void>
 	{
-		this.hideAlertAndOperationGroup();
+		this.hideCalcComponent();
 		this.formulaComponent.showTitleImage();
 		await lzlib.SoundUtility.playSound('streamsound1_2_mp3');
 		await lzlib.SoundUtility.playSound('streamsound1_3_mp3');
@@ -43,7 +43,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('streamsound1_5_mp3');
 	}
 
-	private hideAlertAndOperationGroup(): void
+	private hideCalcComponent(): void
 	{
 		this.calcComponent.visible = false;
 	}

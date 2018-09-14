@@ -2,33 +2,46 @@
 <e:Skin class="Question3SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="startAnimation">
-			<tween:TweenItem target="{arrowMarkImage}">
-				<tween:Wait duration="3000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{zhangjiRoastDuckMuchImage}">
-				<tween:Wait duration="3000"/>
-				<tween:Set/>
-				<tween:To duration="1000">
+			<tween:TweenItem target="{questionDescription1Image}">
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{roastDuckShopAndQuestionmarkImage}">
-				<tween:Wait duration="13550"/>
+			<tween:TweenItem target="{questionDescription2Image}">
+				<tween:Wait duration="3000"/>
 				<tween:Set>
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:Set>
+				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{cloudAlertComponent}">
-				<tween:Wait duration="13550"/>
+			<tween:TweenItem target="{waterImage}">
+				<tween:Wait duration="3500"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{238.97}" y="{511.09}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionImage}">
+				<tween:Wait duration="5000"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="8000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -36,34 +49,55 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="correctAnimation">
-			<tween:TweenItem target="{roastDuckShopAndQuestionmarkImage}">
+		<tween:TweenGroup id="waterFlicker">
+			<tween:TweenItem target="{waterImage}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{chenjiRoastDuckLessImage1}">
-				<tween:To duration="1000">
+				<tween:Wait duration="250"/>
+				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{chenjiRoastDuckLessImage2}">
-				<tween:To duration="1000">
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{chenjiRoastDuckLessImage3}">
-				<tween:To duration="1000">
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:To>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
@@ -72,26 +106,17 @@
 	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
 	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="3"/>
-		<e:Image id="textBackground" width="798.15" height="214.09" x="178.17" y="89" anchorOffsetX="1.17" anchorOffsetY="0" source="text_background_png" alpha="1"/>
-		<e:Image id="question3StartImage" x="209" y="102" source="question3_start_png" alpha="1"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
-		<e:Image id="roastDuckShopAndQuestionmarkImage" x="984.07" y="78.15" source="roast_duck_shop_and_questionmark_png" alpha="0"/>
-		<e:Image id="roastDuckShopImage" x="984.07" y="78.15" source="roast_duck_shop_png"/>
-		<e:Image x="1057.28" y="181.21" source="lid_transparent_png" alpha="0.3"/>
-		<e:Image x="1056.37" y="183.33" source="lid_png"/>
-		<e:Image id="zhangjiRoastDuckMuchImage" x="1368.76" y="259.73" source="roast_duck_much_png" alpha="0"/>
-		<e:Image id="chenjiRoastDuckLessImage1" x="1365.36" y="598.94" source="roast_duck_less_png" alpha="0"/>
-		<e:Image id="chenjiRoastDuckLessImage2" x="1435.97" y="657.43" source="roast_duck_less_png" alpha="0"/>
-		<e:Image id="chenjiRoastDuckLessImage3" x="1370.21" y="721.97" source="roast_duck_less_png" alpha="0"/>
-		<e:Image id="arrowMarkImage" x="1401.94" y="121" source="arrow_mark_png" alpha="0"/>
-		<e:Group id="alertAndOperationGroup">
-			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="314.12" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="question3_png"/>
-			<ns1:ButtonComponent id="muchButtonComponent" width="180" height="102" x="296.43" y="590.06" anchorOffsetX="0" anchorOffsetY="0" normalSource="much_normal_png" overSource="much_over_png" visible="false"/>
-			<ns1:ButtonComponent id="lessButtonComponent" width="180" height="102" x="509.45" y="590.06" anchorOffsetX="0" anchorOffsetY="0" normalSource="less_normal_png" overSource="less_over_png" visible="false"/>
-			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
-		</e:Group>
+		<e:Image id="textBackground" width="637.54" height="280.76" x="296.12" y="125.36" anchorOffsetX="0.94" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="258.42" x="285.6" y="458.36" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="427" y="490.97" alpha="0"/>
 		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<e:Image id="questionDescription1Image" x="342" y="166" source="question3_description1_png" alpha="0"/>
+		<e:Image id="questionDescription2Image" x="342" y="242.67" source="question3_description2_png" alpha="0"/>
+		<e:Image id="questionImage" x="342" y="321.45" source="question3_png" alpha="0"/>
+		<e:Image x="1159.46" y="111.67" source="border_white_png"/>
+		<e:Image id="waterImage" x="1268.88" y="389.88" source="border_blue_png" anchorOffsetX="0" width="202.94" anchorOffsetY="0" height="360.18" alpha="1"/>
+		<e:Image x="1257" y="190.55" source="ruler_cup_png"/>
 	</e:Group>
 	
 </e:Skin>

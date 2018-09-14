@@ -1,16 +1,12 @@
 class Question3Scene extends eui.Component implements  eui.UIComponent {
 		
-	private lessButtonComponent: ButtonComponent;
-	private muchButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
-	private alertAndOperationGroup: eui.Group;
 	private nextQuestionComponent: NextQuestionComponent;
-	private cloudAlertComponent: CloudAlertComponent;
 	private formulaComponent: FormulaComponent;
 	private lastQuestionComponent: LastQuestionComponent;
 	
 	private startAnimation: egret.tween.TweenGroup;
-	private correctAnimation: egret.tween.TweenGroup;
+	private waterFlicker: egret.tween.TweenGroup;
 	
 	public constructor() {
 		super();
@@ -28,44 +24,23 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 		this.playStartAnimation();
-		await this.playMP3AndShow();
-		this.lessButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLessButtonComponentTap, this);
-		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onMuchButtonComponentTap, this);
+		await this.playMP3();
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
-		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
-		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
-	}
-
-	private async onMuchButtonComponentTap(e: egret.TouchEvent): Promise<void>
-	{
-		this.cloudAlertComponent.hideAlert();
-		this.cloudAlertComponent.showCorrectAlert();
-		this.hideHightButtonComponent();
-		this.playCorrectAnimation();
-		await lzlib.SoundUtility.playSound('streamsound3_3_mp3');
-		await lzlib.ThreadUtility.sleep(1000);
-		this.cloudAlertComponent.hideAlert();
-		this.showCalcComponent();
-	}
-
-	private async onLessButtonComponentTap(e: egret.TouchEvent): Promise<void>
-	{
-		this.cloudAlertComponent.showWrongAlert();
-		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
-		this.cloudAlertComponent.hideAlert();
 	}
 
 	private async onCalcComponentTap(): Promise<void>
 	{
-		this.hideAlertAndOperationGroup();
+		this.hideCalcComponent();
+		await lzlib.SoundUtility.playSound('streamsound3_1_mp3');
+		await this.waterFlickerAnimation();
+		await lzlib.ThreadUtility.sleep(1750);
 		this.formulaComponent.showTitleImage();
-		await lzlib.SoundUtility.playSound('streamsound3_4_mp3');
+		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
 		this.formulaComponent.showLeftImage();
-		await lzlib.SoundUtility.playSound('streamsound3_5_mp3');
 		this.formulaComponent.showRightImage();
-		await lzlib.SoundUtility.playSound('streamsound3_6_mp3');
+		await lzlib.SoundUtility.playSound('streamsound3_3_mp3');
 		this.formulaComponent.showResultImage();
-		await lzlib.SoundUtility.playSound('streamsound3_7_mp3');
+		await lzlib.SoundUtility.playSound('streamsound3_4_mp3');
 	}
 
 	private onNextQuestionComponent(): void
@@ -78,42 +53,24 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new Question2Scene());
 	}
 
+	private async playMP3(): Promise<void>
+	{
+		await lzlib.SoundUtility.playSound('streamsound3_0_mp3');
+	}
+
 	private playStartAnimation(): void
 	{
 		this.startAnimation.play();
 	}
 
-	private playCorrectAnimation(): void
+	private waterFlickerAnimation(): void
 	{
-		this.correctAnimation.play(0);
+		this.waterFlicker.play();
 	}
-
-	private async playMP3AndShow(): Promise<void>
+	
+	private hideCalcComponent(): void
 	{
-		await lzlib.SoundUtility.playSound('streamsound3_0_mp3');
-		await lzlib.SoundUtility.playSound('streamsound3_1_mp3');
-		this.showButton();
-	}
-		
-	private showButton(): void
-	{
-		this.muchButtonComponent.visible = true;
-		this.lessButtonComponent.visible = true;
-	}
-
-	private showCalcComponent(): void
-	{
-		this.calcComponent.visible = true;
-	}
-
-	private hideHightButtonComponent(): void
-	{
-		this.lessButtonComponent.visible = false;
-	}
-
-	private hideAlertAndOperationGroup(): void
-	{
-		this.alertAndOperationGroup.visible = false;
+		this.calcComponent.visible = false;
 	}
 
 	
