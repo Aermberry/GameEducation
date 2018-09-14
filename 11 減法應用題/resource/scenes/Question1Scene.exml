@@ -45,7 +45,7 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{question1StartImage}">
-				<tween:Wait duration="4500"/>
+				<tween:Wait duration="6500"/>
 				<tween:Set/>
 				<tween:To duration="1000">
 					<tween:props>

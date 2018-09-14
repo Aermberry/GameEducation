@@ -38,7 +38,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('streamsound1_3_mp3');
 		this.formulaComponent.showLeftImage();
 		this.formulaComponent.showRightImage();
-		lzlib.SoundUtility.playSound('streamsound1_4_mp3');
+		await lzlib.SoundUtility.playSound('streamsound1_4_mp3');
 		this.formulaComponent.showResultImage();
 		await lzlib.SoundUtility.playSound('streamsound1_5_mp3');
 	}
@@ -50,8 +50,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 
 	private async playMP3(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('streamsound1_0_mp3');
-		await lzlib.ThreadUtility.sleep();
+		lzlib.SoundUtility.playSound('streamsound1_0_mp3');
+		await lzlib.ThreadUtility.sleep(6000);
 		await lzlib.SoundUtility.playSound('streamsound1_1_mp3');
 	}
 
