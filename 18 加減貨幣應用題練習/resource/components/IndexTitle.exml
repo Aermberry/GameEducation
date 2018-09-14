@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="IndexTitleSkin" width="205" height="152" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165d705ad5b" ></w:Config>
+	<e:Image source="indextitle_png"/>
+	<e:Label id="indexLabel" text="1" x="23.5" y="23" anchorOffsetX="0" width="158" anchorOffsetY="0" height="106" verticalAlign="middle" textAlign="center" size="109" textColor="0x103663"/>
+</e:Skin>

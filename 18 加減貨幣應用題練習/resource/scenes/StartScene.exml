@@ -239,6 +239,6 @@
 	<e:Image id="automobile_exhauts" x="501.53" y="968.5" source="automobile_exhauts_png" />
 	<e:Image id="add_and_substract" y="20" source="add_and_subtract_png" horizontalCenter="0" alpha="0" />
 	<e:Image id="add_info_border" y="300" source="rectangle_cyan_png" horizontalCenter="0" alpha="0" />
-	<e:Image id="add_info" y="534.85" source="add_info_png" horizontalCenter="0" scaleX="2.5" scaleY="2.5" alpha="0" />
+	<e:Image id="add_info" y="589.39" source="add_info_png" horizontalCenter="0" scaleX="2.5" scaleY="2.5" alpha="0" />
 	<e:Rect id="hiddenMask" fillColor="0xffffff" alpha="0" x="0" y="0" width="100%" height="100%" />
 </e:Skin>

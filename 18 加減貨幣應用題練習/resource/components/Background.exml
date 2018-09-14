@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BackgroundSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" xmlns:ns1="*" >
+	<w:Config id="165d6eb2857" ></w:Config>
+	<e:Image source="title_png" horizontalCenter="0" y="40.94"/>
+	<e:Image source="logo_png" y="16" x="22"/>
+	<e:Image source="title_title_png" x="1046" y="74"/>
+	<e:Image source="background_png" verticalCenter="51.5" horizontalCenter="0.5"/>
+	<Ui:IndexTitle id="indexLabel" width="204" height="152" x="18" y="184" anchorOffsetX="0" anchorOffsetY="0" skinName="IndexTitleSkin"/>
+</e:Skin>

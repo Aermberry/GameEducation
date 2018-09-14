@@ -1,72 +1,81 @@
 {
-    "165d5e4cbb8": {
-        "path": "scenes\\StarttScene.ts",
-        "class": "StarttScene",
-        "parentPath": ""
-    },
-    "165d5e5ca98": {
-        "path": "scenes\\Question1Scene.ts",
-        "class": "Question1Scene",
-        "parentPath": ""
-    },
-    "165d615c49e": {
-        "path": "scenes\\StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    },
-    "165d6168b60": {
-        "path": "scenes\\Question1Scene.ts",
-        "class": "Question1Scene",
-        "parentPath": ""
-    },
-    "165d61708f0": {
-        "path": "scenes\\Question2Scene.ts",
-        "class": "Question2Scene",
-        "parentPath": ""
-    },
-    "165d6177780": {
-        "path": "scenes\\Question3Scene.ts",
-        "class": "Question3Scene",
-        "parentPath": ""
-    },
-    "165d617cbf4": {
-        "path": "scenes\\Question4Scene.ts",
-        "class": "Question4Scene",
-        "parentPath": ""
-    },
-    "165d6180614": {
-        "path": "scenes\\Quetion5Scene.ts",
-        "class": "Quetion5Scene",
-        "parentPath": ""
-    },
-    "165d61873a1": {
-        "path": "scenes\\Question6Scene.ts",
-        "class": "Question6Scene",
-        "parentPath": ""
-    },
-    "165d618f606": {
-        "path": "scenes\\Question7Scene.ts",
-        "class": "Question7Scene",
-        "parentPath": ""
-    },
-    "165d619415c": {
-        "path": "scenes\\Question8Scene.ts",
-        "class": "Question8Scene",
-        "parentPath": ""
-    },
-    "165d6199fef": {
-        "path": "scenes\\Question9Scene.ts",
-        "class": "Question9Scene",
-        "parentPath": ""
-    },
-    "165d619ed21": {
-        "path": "scenes\\Question10Scene.ts",
-        "class": "Question10Scene",
-        "parentPath": ""
-    },
-    "165d61cb357": {
-        "path": "scenes\\StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    }
+  "165d5e4cbb8": {
+    "path": "scenes\\StarttScene.ts",
+    "class": "StarttScene",
+    "parentPath": ""
+  },
+  "165d5e5ca98": {
+    "path": "scenes\\Question1Scene.ts",
+    "class": "Question1Scene",
+    "parentPath": ""
+  },
+  "165d615c49e": {
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "165d6168b60": {
+    "path": "scenes\\Question1Scene.ts",
+    "class": "Question1Scene",
+    "parentPath": "",
+    "backgroundType": "user",
+    "backgroundColor": "#efae21"
+  },
+  "165d61708f0": {
+    "path": "scenes\\Question2Scene.ts",
+    "class": "Question2Scene",
+    "parentPath": ""
+  },
+  "165d6177780": {
+    "path": "scenes\\Question3Scene.ts",
+    "class": "Question3Scene",
+    "parentPath": ""
+  },
+  "165d617cbf4": {
+    "path": "scenes\\Question4Scene.ts",
+    "class": "Question4Scene",
+    "parentPath": ""
+  },
+  "165d6180614": {
+    "path": "scenes\\Quetion5Scene.ts",
+    "class": "Quetion5Scene",
+    "parentPath": ""
+  },
+  "165d61873a1": {
+    "path": "scenes\\Question6Scene.ts",
+    "class": "Question6Scene",
+    "parentPath": ""
+  },
+  "165d618f606": {
+    "path": "scenes\\Question7Scene.ts",
+    "class": "Question7Scene",
+    "parentPath": ""
+  },
+  "165d619415c": {
+    "path": "scenes\\Question8Scene.ts",
+    "class": "Question8Scene",
+    "parentPath": ""
+  },
+  "165d6199fef": {
+    "path": "scenes\\Question9Scene.ts",
+    "class": "Question9Scene",
+    "parentPath": ""
+  },
+  "165d619ed21": {
+    "path": "scenes\\Question10Scene.ts",
+    "class": "Question10Scene",
+    "parentPath": ""
+  },
+  "165d61cb357": {
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  },
+  "165d6eb2857": {
+    "backgroundType": "user",
+    "backgroundColor": "#fcb314"
+  }
 }

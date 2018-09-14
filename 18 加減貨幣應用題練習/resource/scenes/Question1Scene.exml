@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question1SceneSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="165d6168b60" ></w:Config>
+<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:Ui="Ui.*">
+	<w:Config id="165d6168b60"></w:Config>
+	<Ui:Background anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0"  skinName="BackgroundSkin"/>
+	<ns1:NumberPad x="212.5" y="890.85" anchorOffsetX="0" anchorOffsetY="0" />
+	<e:Label text="水彩售35元4角，木颜色售14元2角。\n小源各買一盒共付幾元幾錢？\n\n小源要付：" x="273.18" y="224.12" anchorOffsetX="0" width="970.91"
+	         anchorOffsetY="0" height="335.82" textColor="0x000000" size="59" lineSpacing="25" />
+	<e:TextInput width="596.97" height="107.27" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>

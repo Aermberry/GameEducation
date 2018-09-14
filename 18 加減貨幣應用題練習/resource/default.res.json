@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,add_info_png,shape93_png,watercolour_png,Wood color_png,shape100_png,shape140_png,shape144_png,shape146_png,shape154_png,shape155_png,shape165_png,shape166_png,shape167_png,shape168_png,shape169_png,shape172_png,shape173_png,shape174_png,shape185_png,shape186_png,shape187_png,shape189_png,shape193_png,shape194_png,shape197_png,shape198_png,shape199_png,shape200_png,shape202_png,shape204_png,shape220_png,shape221_png,shape222_png,shape224_png,shape235_png,shape237_png,shape240_png,shape241_png,shape242_png,shape243_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,0_png,subtraction00_png,subtraction01_png,dollar00_png,dollar01_png,dime00_png,dime01_png,nextQuestionButton00_png,nextQuestionButton01_png,nextStepButton00_png,nextStepButton01_png,shape4_png,shape3_png,shape11_png,shape1_png,shape2_png,shape6_png,shape8_png,shape9_png,shape10_png,background_png,title_png,title_title_png,logo_png,indextitle_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,minus_normal_png,minus_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,beer_json,beer_png",
 			"name": "preload"
 		}
 	],
@@ -150,11 +150,6 @@
 			"name": "add_and_subtract_png",
 			"type": "image",
 			"url": "textures/splash/add_and_subtract.png"
-		},
-		{
-			"name": "add_info_png",
-			"type": "image",
-			"url": "textures/splash/add_info.png"
 		},
 		{
 			"name": "automobile_exhauts_png",
@@ -350,6 +345,516 @@
 			"name": "two_png",
 			"type": "image",
 			"url": "textures/splash/two.png"
+		},
+		{
+			"name": "add_info_png",
+			"type": "image",
+			"url": "textures/splash/add_info.png"
+		},
+		{
+			"name": "shape93_png",
+			"type": "image",
+			"url": "textures/splash/shape93.png"
+		},
+		{
+			"name": "watercolour_png",
+			"type": "image",
+			"url": "textures/watercolour.png"
+		},
+		{
+			"name": "Wood color_png",
+			"type": "image",
+			"url": "textures/Wood color.png"
+		},
+		{
+			"name": "shape100_png",
+			"type": "image",
+			"url": "textures/shape100.png"
+		},
+		{
+			"name": "shape140_png",
+			"type": "image",
+			"url": "textures/shape140.png"
+		},
+		{
+			"name": "shape144_png",
+			"type": "image",
+			"url": "textures/shape144.png"
+		},
+		{
+			"name": "shape146_png",
+			"type": "image",
+			"url": "textures/shape146.png"
+		},
+		{
+			"name": "shape154_png",
+			"type": "image",
+			"url": "textures/shape154.png"
+		},
+		{
+			"name": "shape155_png",
+			"type": "image",
+			"url": "textures/shape155.png"
+		},
+		{
+			"name": "shape165_png",
+			"type": "image",
+			"url": "textures/shape165.png"
+		},
+		{
+			"name": "shape166_png",
+			"type": "image",
+			"url": "textures/shape166.png"
+		},
+		{
+			"name": "shape167_png",
+			"type": "image",
+			"url": "textures/shape167.png"
+		},
+		{
+			"name": "shape168_png",
+			"type": "image",
+			"url": "textures/shape168.png"
+		},
+		{
+			"name": "shape169_png",
+			"type": "image",
+			"url": "textures/shape169.png"
+		},
+		{
+			"name": "shape172_png",
+			"type": "image",
+			"url": "textures/shape172.png"
+		},
+		{
+			"name": "shape173_png",
+			"type": "image",
+			"url": "textures/shape173.png"
+		},
+		{
+			"name": "shape174_png",
+			"type": "image",
+			"url": "textures/shape174.png"
+		},
+		{
+			"name": "shape185_png",
+			"type": "image",
+			"url": "textures/shape185.png"
+		},
+		{
+			"name": "shape186_png",
+			"type": "image",
+			"url": "textures/shape186.png"
+		},
+		{
+			"name": "shape187_png",
+			"type": "image",
+			"url": "textures/shape187.png"
+		},
+		{
+			"name": "shape189_png",
+			"type": "image",
+			"url": "textures/shape189.png"
+		},
+		{
+			"name": "shape193_png",
+			"type": "image",
+			"url": "textures/shape193.png"
+		},
+		{
+			"name": "shape194_png",
+			"type": "image",
+			"url": "textures/shape194.png"
+		},
+		{
+			"name": "shape197_png",
+			"type": "image",
+			"url": "textures/shape197.png"
+		},
+		{
+			"name": "shape198_png",
+			"type": "image",
+			"url": "textures/shape198.png"
+		},
+		{
+			"name": "shape199_png",
+			"type": "image",
+			"url": "textures/shape199.png"
+		},
+		{
+			"name": "shape200_png",
+			"type": "image",
+			"url": "textures/shape200.png"
+		},
+		{
+			"name": "shape202_png",
+			"type": "image",
+			"url": "textures/shape202.png"
+		},
+		{
+			"name": "shape204_png",
+			"type": "image",
+			"url": "textures/shape204.png"
+		},
+		{
+			"name": "shape220_png",
+			"type": "image",
+			"url": "textures/shape220.png"
+		},
+		{
+			"name": "shape221_png",
+			"type": "image",
+			"url": "textures/shape221.png"
+		},
+		{
+			"name": "shape222_png",
+			"type": "image",
+			"url": "textures/shape222.png"
+		},
+		{
+			"name": "shape224_png",
+			"type": "image",
+			"url": "textures/shape224.png"
+		},
+		{
+			"name": "shape235_png",
+			"type": "image",
+			"url": "textures/shape235.png"
+		},
+		{
+			"name": "shape237_png",
+			"type": "image",
+			"url": "textures/shape237.png"
+		},
+		{
+			"name": "shape240_png",
+			"type": "image",
+			"url": "textures/shape240.png"
+		},
+		{
+			"name": "shape241_png",
+			"type": "image",
+			"url": "textures/shape241.png"
+		},
+		{
+			"name": "shape242_png",
+			"type": "image",
+			"url": "textures/shape242.png"
+		},
+		{
+			"name": "shape243_png",
+			"type": "image",
+			"url": "textures/shape243.png"
+		},
+		{
+			"name": "1_png",
+			"type": "image",
+			"url": "textures/1.png"
+		},
+		{
+			"name": "2_png",
+			"type": "image",
+			"url": "textures/2.png"
+		},
+		{
+			"name": "3_png",
+			"type": "image",
+			"url": "textures/3.png"
+		},
+		{
+			"name": "4_png",
+			"type": "image",
+			"url": "textures/4.png"
+		},
+		{
+			"name": "5_png",
+			"type": "image",
+			"url": "textures/5.png"
+		},
+		{
+			"name": "6_png",
+			"type": "image",
+			"url": "textures/6.png"
+		},
+		{
+			"name": "7_png",
+			"type": "image",
+			"url": "textures/7.png"
+		},
+		{
+			"name": "8_png",
+			"type": "image",
+			"url": "textures/8.png"
+		},
+		{
+			"name": "9_png",
+			"type": "image",
+			"url": "textures/9.png"
+		},
+		{
+			"name": "0_png",
+			"type": "image",
+			"url": "textures/0.png"
+		},
+		{
+			"name": "subtraction00_png",
+			"type": "image",
+			"url": "textures/subtraction00.png"
+		},
+		{
+			"name": "subtraction01_png",
+			"type": "image",
+			"url": "textures/subtraction01.png"
+		},
+		{
+			"name": "dollar00_png",
+			"type": "image",
+			"url": "textures/dollar00.png"
+		},
+		{
+			"name": "dollar01_png",
+			"type": "image",
+			"url": "textures/dollar01.png"
+		},
+		{
+			"name": "dime00_png",
+			"type": "image",
+			"url": "textures/dime00.png"
+		},
+		{
+			"name": "dime01_png",
+			"type": "image",
+			"url": "textures/dime01.png"
+		},
+		{
+			"name": "nextQuestionButton00_png",
+			"type": "image",
+			"url": "textures/nextQuestionButton00.png"
+		},
+		{
+			"name": "nextQuestionButton01_png",
+			"type": "image",
+			"url": "textures/nextQuestionButton01.png"
+		},
+		{
+			"name": "nextStepButton00_png",
+			"type": "image",
+			"url": "textures/nextStepButton00.png"
+		},
+		{
+			"name": "nextStepButton01_png",
+			"type": "image",
+			"url": "textures/nextStepButton01.png"
+		},
+		{
+			"name": "shape4_png",
+			"type": "image",
+			"url": "textures/shape4.png"
+		},
+		{
+			"name": "shape3_png",
+			"type": "image",
+			"url": "textures/shape3.png"
+		},
+		{
+			"name": "shape11_png",
+			"type": "image",
+			"url": "textures/shape11.png"
+		},
+		{
+			"name": "shape1_png",
+			"type": "image",
+			"url": "textures/shape1.png"
+		},
+		{
+			"name": "shape2_png",
+			"type": "image",
+			"url": "textures/shape2.png"
+		},
+		{
+			"name": "shape6_png",
+			"type": "image",
+			"url": "textures/shape6.png"
+		},
+		{
+			"name": "shape8_png",
+			"type": "image",
+			"url": "textures/shape8.png"
+		},
+		{
+			"name": "shape9_png",
+			"type": "image",
+			"url": "textures/shape9.png"
+		},
+		{
+			"name": "shape10_png",
+			"type": "image",
+			"url": "textures/shape10.png"
+		},
+		{
+			"name": "background_png",
+			"type": "image",
+			"url": "textures/background.png"
+		},
+		{
+			"name": "title_png",
+			"type": "image",
+			"url": "textures/title.png"
+		},
+		{
+			"name": "title_title_png",
+			"type": "image",
+			"url": "textures/title_title.png"
+		},
+		{
+			"name": "logo_png",
+			"type": "image",
+			"url": "textures/logo.png"
+		},
+		{
+			"name": "indextitle_png",
+			"type": "image",
+			"url": "textures/indextitle.png"
+		},
+		{
+			"name": "zero_selected_png",
+			"type": "image",
+			"url": "textures/zero_selected.png"
+		},
+		{
+			"name": "add_normal_png",
+			"type": "image",
+			"url": "textures/add_normal.png"
+		},
+		{
+			"name": "add_selected_png",
+			"type": "image",
+			"url": "textures/add_selected.png"
+		},
+		{
+			"name": "eight_normal_png",
+			"type": "image",
+			"url": "textures/eight_normal.png"
+		},
+		{
+			"name": "eight_selected_png",
+			"type": "image",
+			"url": "textures/eight_selected.png"
+		},
+		{
+			"name": "eraser_normal_png",
+			"type": "image",
+			"url": "textures/eraser_normal.png"
+		},
+		{
+			"name": "eraser_selected_png",
+			"type": "image",
+			"url": "textures/eraser_selected.png"
+		},
+		{
+			"name": "five_normal_png",
+			"type": "image",
+			"url": "textures/five_normal.png"
+		},
+		{
+			"name": "five_selected_png",
+			"type": "image",
+			"url": "textures/five_selected.png"
+		},
+		{
+			"name": "four_normal_png",
+			"type": "image",
+			"url": "textures/four_normal.png"
+		},
+		{
+			"name": "four_selected_png",
+			"type": "image",
+			"url": "textures/four_selected.png"
+		},
+		{
+			"name": "minus_normal_png",
+			"type": "image",
+			"url": "textures/minus_normal.png"
+		},
+		{
+			"name": "minus_selected_png",
+			"type": "image",
+			"url": "textures/minus_selected.png"
+		},
+		{
+			"name": "nine_normal_png",
+			"type": "image",
+			"url": "textures/nine_normal.png"
+		},
+		{
+			"name": "nine_selected_png",
+			"type": "image",
+			"url": "textures/nine_selected.png"
+		},
+		{
+			"name": "one_normal_png",
+			"type": "image",
+			"url": "textures/one_normal.png"
+		},
+		{
+			"name": "one_selected_png",
+			"type": "image",
+			"url": "textures/one_selected.png"
+		},
+		{
+			"name": "seven_normal_png",
+			"type": "image",
+			"url": "textures/seven_normal.png"
+		},
+		{
+			"name": "seven_selected_png",
+			"type": "image",
+			"url": "textures/seven_selected.png"
+		},
+		{
+			"name": "six_normal_png",
+			"type": "image",
+			"url": "textures/six_normal.png"
+		},
+		{
+			"name": "six_selected_png",
+			"type": "image",
+			"url": "textures/six_selected.png"
+		},
+		{
+			"name": "three_normal_png",
+			"type": "image",
+			"url": "textures/three_normal.png"
+		},
+		{
+			"name": "three_selected_png",
+			"type": "image",
+			"url": "textures/three_selected.png"
+		},
+		{
+			"name": "two_normal_png",
+			"type": "image",
+			"url": "textures/two_normal.png"
+		},
+		{
+			"name": "two_selected_png",
+			"type": "image",
+			"url": "textures/two_selected.png"
+		},
+		{
+			"name": "zero_normal_png",
+			"type": "image",
+			"url": "textures/zero_normal.png"
+		},
+		{
+			"name": "beer_json",
+			"type": "json",
+			"url": "textures/beer.json"
+		},
+		{
+			"name": "beer_png",
+			"type": "image",
+			"url": "textures/beer.png"
 		}
 	]
 }
