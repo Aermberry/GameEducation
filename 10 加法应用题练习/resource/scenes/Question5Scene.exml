@@ -121,18 +121,18 @@
 		<ns1:ImageButton id="nextStepButton" x="778.73" y="690.18" normalImageSource="Nextstep_normal_png" overImageSource="Nextstep_over_png"  visible="false"/>
 		<ns1:ImageButton id="lastButton" x="7.58" y="942" normalImageSource="lastnormal_png" overImageSource="lastover_png"/>
 		<e:Image x="32.94" y="173.15" source="number_box_png"/>
-		<e:Label text="5" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="DFKai-SB"/>
+		<e:Label text="5" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="華康楷書體"/>
 		<ns1:MovieClipPlayer id="honeyBeeMovieClip" x="1479" y="175" texture="bee_png" dataSet="bee_json" movieClipName="bee" alpha="0"/>
 		<e:Image id="ejectBox1lmage" x="906" y="309.21" source="eject_box1_png" alpha="0"/>
 		<ns1:NumberPad id="numberPad" y="900" x="213"/>
 		<e:Image id="reflectionlmage" x="1003.25" y="360.42" source="reflection_png" alpha="0"/>
-		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="110" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" fontFamily="DFKai-SB" visible="false"/>
+		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="110" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" fontFamily="華康楷書體" visible="false"/>
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
-		<e:Label id="totalTextlmage" text="548+352" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="DFKai-SB" alpha="0"/>
+		<e:Label id="totalTextlmage" text="548+352" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
-	<e:Label id="text1label" text="店內現有雞蛋多少個？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="DFKai-SB"/>
-	<e:Label id="text2label" text="店內原有雞蛋548只，今天在買入352只。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="DFKai-SB" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnersLabel" text="兩人共有：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="DFKai-SB" alpha="0"/>
+	<e:Label id="text1label" text="店內現有雞蛋多少個？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
+	<e:Label id="text2label" text="店內原有雞蛋548只，今天在買入352只。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="textRunnersLabel" text="兩人共有：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="904.67" y="448.1" alpha="1" anchorOffsetX="0" width="738.33" anchorOffsetY="0" height="440.39">
 		<e:Image id="Eggboxlmage" x="159.33" y="139.35" source="Eggboxlmage_png" alpha="0" anchorOffsetX="0" width="541.58" anchorOffsetY="0" height="302.32"/>
 		<e:Image id="Eggnumberlmage" x="231.85" y="10.14" source="Eggnumberlmage_png" alpha="0" anchorOffsetX="0" width="439.36" anchorOffsetY="0" height="128.4"/>
@@ -156,6 +156,6 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="900(個）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="DFKai-SB"/>
+		<e:Label text="900(個）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
 	</e:Group>
 </e:Skin>
