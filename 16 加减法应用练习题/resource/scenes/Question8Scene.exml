@@ -162,7 +162,7 @@
 		               lineSpacing="30" anchorOffsetX="0" />
 		<e:Image x="34" y="263" source="Plus_png" />
 	</e:Group>
-	<e:Group id="editableLabelGroup" x="1163" y="740">
+	<e:Group id="editableLabelGroup" x="1172.09" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false" />
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false" />
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false" />
