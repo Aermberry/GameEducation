@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question1SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{sisterImage}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{moneyGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="750"/>
+				<tween:Set/>
+				<tween:To duration="1750">
+					<tween:props>
+						<e:Object x="{436.36}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{moneyImage1}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{skirtImage}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="750"/>
+				<tween:Set/>
+				<tween:To duration="1750">
+					<tween:props>
+						<e:Object x="{699.64}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{question1StartImage}">
+				<tween:Wait duration="4500"/>
+				<tween:Set/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{question1StartImage1}">
+				<tween:Wait duration="1750"/>
+				<tween:Set/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="7500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165a7c426f6" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1"/>
+		<e:Image id="textBackground" width="1481.15" height="89.22" x="178" y="105" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="question1StartImage" x="1088.27" y="125.64" alpha="0" source="question1_start_png"/>
+		<e:Image id="question1StartImage0" x="200.4" y="125.64" alpha="1" source="question1_description1_png"/>
+		<e:Image id="question1StartImage1" x="612.52" y="125.64" alpha="0" source="question1_description2_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="505.82" height="240.24" x="734.09" y="597.75" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="810.12" y="581.79" alpha="0"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<e:Image id="sisterImage" x="193.46" y="223.1" source="sister_png" alpha="0"/>
+		<e:Image id="moneyImage1" x="465.49" y="250.94" source="money_png" alpha="0"/>
+		<e:Group id="moneyGroup" alpha="0">
+			<e:Image id="moneyImage2" x="726.09" y="250.94" source="money_png" alpha="1"/>
+			<e:Image id="moneyImage3" x="726.09" y="400.34" source="money_png" alpha="1"/>
+			<e:Image id="moneyImage4" x="462.46" y="400.34" source="money_png" alpha="1"/>
+		</e:Group>
+
+		<e:Image id="skirtImage" x="1172.36" y="236.03" source="skirt_png" alpha="0"/>
+		<e:Image x="1380.79" y="220.27" source="cash_register_png"/>
+	</e:Group>
+
+</e:Skin>

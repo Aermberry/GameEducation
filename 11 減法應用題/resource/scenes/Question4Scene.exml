@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question4SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{height120LineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{822}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{323}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height120image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height120RowLineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{546}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object x="{996}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloudAlertComponent}">
+				<tween:Wait duration="10000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctAnimation">
+			<tween:TweenItem target="{ziqingImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height135RowLineRect}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1737}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1237}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height15LineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object height="{0}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object height="{82}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height15ArrowLineImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165ae006327" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="4"/>
+		<e:Image id="textBackground" width="683" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="question4StartImage" x="195.06" y="99.94" source="question4_start_png" alpha="1"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="332" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
+		<e:Rect width="700" height="1" x="1011.58" y="820.67"/>
+		<e:Image x="1104" y="245.24" source="xiaoming_png" bottom="66"/>
+		<e:Image x="1162.76" y="760" source="mark_xiaoming_png" bottom="30"/>
+		<e:Rect id="height120LineRect" width="1" height="499" x="1095.82" y="323.15"/>
+		<e:Rect id="height120RowLineRect" width="450" height="1" x="996.37" y="321.6" strokeWeight="1"/>
+		<e:Image id="height120image" x="923.43" y="327.3" source="arrow_and_120height_png" alpha="0"/>
+		<e:Group id="alertAndOperationGroup">
+			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="formula4_question_png"/>
+			<ns1:ButtonComponent id="shortButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="short_normal_png" overSource="short_over_png" visible="false"/>
+			<ns1:ButtonComponent id="heightButtonComponent" width="180" height="102" x="509.45" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="height_normal_png" overSource="height_over_png" visible="false"/>
+			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
+		</e:Group>
+		<e:Image id="ziqingImage" x="1354.09" y="478" source="ziqing_png" bottom="32" alpha="0"/>
+		<e:Image id="height135ArrowImage" x="1592.64" y="240.03" source="arrow_and_135height_png" visible="false"/>
+		<e:Rect id="height135LineRect" width="1" height="580" x="1602.09" y="242.81" strokeWeight="1" visible="false"/>
+		<e:Rect id="height135RowLineRect" width="500" height="1" x="1237" y="239" alpha="0"/>
+		<e:Image id="height15ArrowLineImage" x="1168.68" y="238.82" source="arrow_and_15height_png" alpha="0"/>
+		<e:Rect id="height15LineRect" width="1" height="82" x="1308.15" y="240.2" alpha="0" strokeWeight="1"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+	</e:Group>
+</e:Skin>
