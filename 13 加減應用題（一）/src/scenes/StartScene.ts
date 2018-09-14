@@ -20,6 +20,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onSplashTweenGroupComplete(e: egret.Event): void
 	{
-		Main.instance.gotoScene(new StartScene());
+		Main.instance.gotoScene(new Question1Scene());
 	}
 }
