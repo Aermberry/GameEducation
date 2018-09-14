@@ -1,95 +1,95 @@
 {
-    "165a7c426f6": {
-        "path": "scenes/Question1Scene.ts",
-        "class": "Question1Scene",
-        "parentPath": ""
-    },
-    "165a7d555d4": {
-        "path": "components/TopTitleComponent.ts",
-        "class": "TopTitleComponent",
-        "parentPath": ""
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true
-    },
-    "165a8d3870f": {
-        "path": "components/CloudAlertComponent.ts",
-        "class": "CloudAlertComponent",
-        "parentPath": ""
-    },
-    "165a9110d57": {
-        "path": "components/ButtonComponent.ts",
-        "class": "ButtonComponent",
-        "parentPath": ""
-    },
-    "165ac5e2f43": {
-        "path": "components/calcComponent.ts",
-        "class": "calcComponent",
-        "parentPath": ""
-    },
-    "165ac5eff83": {
-        "path": "components/CalcComponents.ts",
-        "class": "CalcComponents",
-        "parentPath": ""
-    },
-    "165ac99081f": {
-        "path": "components/FormulaComponent.ts",
-        "class": "FormulaComponent",
-        "parentPath": ""
-    },
-    "165acdf9143": {
-        "path": "components/NextQuestionComponent.ts",
-        "class": "NextQuestionComponent",
-        "parentPath": ""
-    },
-    "165aceb65be": {
-        "path": "components/LastQuestionComponent.ts",
-        "class": "LastQuestionComponent",
-        "parentPath": ""
-    },
-    "165acf9770d": {
-        "path": "scenes/Question2Scene.ts",
-        "class": "Question2Scene",
-        "parentPath": ""
-    },
-    "165adb78cb4": {
-        "path": "scenes/Question3Scene.ts",
-        "class": "Question3Scene",
-        "parentPath": ""
-    },
-    "165ae006327": {
-        "path": "scenes/Question4Scene.ts",
-        "class": "Question4Scene",
-        "parentPath": ""
-    },
-    "165ae35bbb3": {
-        "path": "scenes/Question4Scene.ts",
-        "class": "Question4Scene",
-        "parentPath": ""
-    },
-    "165ae3eb086": {
-        "path": "scenes/Question5Scene.ts",
-        "class": "Question5Scene",
-        "parentPath": ""
-    },
-    "165b1854b2a": {
-        "path": "scenes/Question6Scene.ts",
-        "class": "Question6Scene",
-        "parentPath": ""
-    },
-    "165b1e6e519": {
-        "path": "scenes/Question7Scene.ts",
-        "class": "Question7Scene",
-        "parentPath": ""
-    },
-    "165b28c1e12": {
-        "path": "scenes/Question8Scene.ts",
-        "class": "Question8Scene",
-        "parentPath": ""
-    },
-    "165b361f890": {
-        "path": "../resource/components/LastQuestionComponent.ts",
-        "class": "LastQuestionComponent",
-        "parentPath": ""
-    }
+  "165a7c426f6": {
+    "path": "scenes/Question1Scene.ts",
+    "class": "Question1Scene",
+    "parentPath": ""
+  },
+  "165a7d555d4": {
+    "path": "components/TopTitleComponent.ts",
+    "class": "TopTitleComponent",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "165a8d3870f": {
+    "path": "components/CloudAlertComponent.ts",
+    "class": "CloudAlertComponent",
+    "parentPath": ""
+  },
+  "165a9110d57": {
+    "path": "components/ButtonComponent.ts",
+    "class": "ButtonComponent",
+    "parentPath": ""
+  },
+  "165ac5e2f43": {
+    "path": "components/calcComponent.ts",
+    "class": "calcComponent",
+    "parentPath": ""
+  },
+  "165ac5eff83": {
+    "path": "components/CalcComponents.ts",
+    "class": "CalcComponents",
+    "parentPath": ""
+  },
+  "165ac99081f": {
+    "path": "components/FormulaComponent.ts",
+    "class": "FormulaComponent",
+    "parentPath": ""
+  },
+  "165acdf9143": {
+    "path": "components/NextQuestionComponent.ts",
+    "class": "NextQuestionComponent",
+    "parentPath": ""
+  },
+  "165aceb65be": {
+    "path": "components/LastQuestionComponent.ts",
+    "class": "LastQuestionComponent",
+    "parentPath": ""
+  },
+  "165acf9770d": {
+    "path": "scenes/Question2Scene.ts",
+    "class": "Question2Scene",
+    "parentPath": ""
+  },
+  "165adb78cb4": {
+    "path": "scenes/Question3Scene.ts",
+    "class": "Question3Scene",
+    "parentPath": ""
+  },
+  "165ae006327": {
+    "path": "scenes/Question4Scene.ts",
+    "class": "Question4Scene",
+    "parentPath": ""
+  },
+  "165ae35bbb3": {
+    "path": "scenes/Question4Scene.ts",
+    "class": "Question4Scene",
+    "parentPath": ""
+  },
+  "165ae3eb086": {
+    "path": "scenes/Question5Scene.ts",
+    "class": "Question5Scene",
+    "parentPath": ""
+  },
+  "165b1854b2a": {
+    "path": "scenes/Question6Scene.ts",
+    "class": "Question6Scene",
+    "parentPath": ""
+  },
+  "165b1e6e519": {
+    "path": "scenes/Question7Scene.ts",
+    "class": "Question7Scene",
+    "parentPath": ""
+  },
+  "165b28c1e12": {
+    "path": "scenes/Question8Scene.ts",
+    "class": "Question8Scene",
+    "parentPath": ""
+  },
+  "165b361f890": {
+    "path": "../resource/components/LastQuestionComponent.ts",
+    "class": "LastQuestionComponent",
+    "parentPath": ""
+  }
 }

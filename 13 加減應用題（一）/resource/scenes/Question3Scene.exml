@@ -75,8 +75,6 @@
 		<e:Image id="textBackground" width="798.15" height="214.09" x="178.17" y="89" anchorOffsetX="1.17" anchorOffsetY="0" source="text_background_png" alpha="1"/>
 		<e:Image id="question3StartImage" x="209" y="102" source="question3_start_png" alpha="1"/>
 		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
-		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
-		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 		<e:Image id="roastDuckShopAndQuestionmarkImage" x="984.07" y="78.15" source="roast_duck_shop_and_questionmark_png" alpha="0"/>
 		<e:Image id="roastDuckShopImage" x="984.07" y="78.15" source="roast_duck_shop_png"/>
 		<e:Image x="1057.28" y="181.21" source="lid_transparent_png" alpha="0.3"/>
@@ -92,6 +90,8 @@
 			<ns1:ButtonComponent id="lessButtonComponent" width="180" height="102" x="509.45" y="590.06" anchorOffsetX="0" anchorOffsetY="0" normalSource="less_normal_png" overSource="less_over_png" visible="false"/>
 			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
 		</e:Group>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
 	</e:Group>
 	
 </e:Skin>

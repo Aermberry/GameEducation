@@ -1,5 +1,7 @@
 class Question4Scene extends eui.Component implements  eui.UIComponent {
 	
+	private height135ArrowImage: eui.Image;
+	private height135LineRect: eui.Image;
 	private heightButtonComponent: ButtonComponent;
 	private shortButtonComponent: ButtonComponent;
 	private calcComponent: CalcComponents;
@@ -64,8 +66,8 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 		this.formulaComponent.showRightImage();
 		await lzlib.SoundUtility.playSound('streamsound4_6_mp3');
 		this.formulaComponent.showResultImage();
-		await lzlib.SoundUtility.playSound('streamsound4_7_mp3');
 		this.showAnswer();
+		await lzlib.SoundUtility.playSound('streamsound4_7_mp3');
 	}
 
 	private onNextQuestionComponent(): void
@@ -108,6 +110,8 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private showAnswer(): void
 	{
+		this.height135LineRect.visible = true;
+		this.height135ArrowImage.visible = true;
 	}
 
 	private hideButtonComponent(): void

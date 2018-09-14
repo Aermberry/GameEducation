@@ -66,14 +66,12 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		await lzlib.SoundUtility.playSound('streamsound3_6_mp3');
 		this.formulaComponent.showResultImage();
 		await lzlib.SoundUtility.playSound('streamsound3_7_mp3');
-		this.showAnswer();
 	}
 
 	private onNextQuestionComponent(): void
 	{
 		Main.instance.gotoScene(new Question4Scene());
 	}
-
 
 	private onLastQuestionComponent(): void
 	{
@@ -106,11 +104,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private showCalcComponent(): void
 	{
 		this.calcComponent.visible = true;
-	}
-
-	private showAnswer(): void
-	{
-		
 	}
 
 	private hideHightButtonComponent(): void

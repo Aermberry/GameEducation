@@ -10,7 +10,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
 	protected childrenCreated():void
 	{
 		super.childrenCreated();

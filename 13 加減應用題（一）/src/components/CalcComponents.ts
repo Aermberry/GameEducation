@@ -1,5 +1,7 @@
 class CalcComponents extends eui.Component implements  eui.UIComponent {
 	
+	private calcImage: eui.Image;
+
 	public constructor() {
 		super();
 	}
@@ -14,7 +16,7 @@ class CalcComponents extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this,true);
+		mouse.setButtonMode(this.calcImage,true);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}
