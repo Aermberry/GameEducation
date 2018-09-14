@@ -12,7 +12,18 @@
 		"eui.ToggleSwitch": "resource/eui_skins/ToggleSwitchSkin.exml",
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
-		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
+		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
+		"StartScene": "resource/scenes/StartScene.exml",
+		"Question1Scene": "resource/eui_skins/Question1Scene.exml",
+		"Question2Scene": "resource/eui_skins/Question2Scene.exml",
+		"Question3Scene": "resource/eui_skins/Question3Scene.exml",
+		"Question4Scene": "resource/eui_skins/Question4Scene.exml",
+		"Question5Scene": "resource/eui_skins/Question5Scene.exml",
+		"Question6Scene": "resource/eui_skins/Question6Scene.exml",
+		"Question7Scene": "resource/eui_skins/Question7Scene.exml",
+		"Question8Scene": "resource/eui_skins/Question8Scene.exml",
+		"Question9Scene": "resource/eui_skins/Question9Scene.exml",
+		"Question10Scene": "resource/eui_skins/Question10Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -28,7 +39,18 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/Question10Scene.exml",
+		"resource/scenes/Question1Scene.exml",
+		"resource/scenes/Question2Scene.exml",
+		"resource/scenes/Question3Scene.exml",
+		"resource/scenes/Question4Scene.exml",
+		"resource/scenes/Question5Scene.exml",
+		"resource/scenes/Question6Scene.exml",
+		"resource/scenes/Question7Scene.exml",
+		"resource/scenes/Question8Scene.exml",
+		"resource/scenes/Question9Scene.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

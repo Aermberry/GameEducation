@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+		<w:Declarations>
+		<tween:TweenGroup id="splashTweenGroup">
+			<tween:TweenItem target="{car}">
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.9}" scaleY="{0.9}" rotation="{15.54}" x="{759.41}" y="{540}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{351.52}" x="{708}" y="{548.97}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.7}" scaleY="{0.7}" rotation="{0.84}" x="{788.11}" y="{516.26}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.6}" scaleY="{0.6}" x="{867.58}" y="{541.41}" rotation="{354.56}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.5}" scaleY="{0.5}" x="{940}" y="{571.05}" rotation="{353.7}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.4}" scaleY="{0.4}" x="{962.64}" y="{589.81}" rotation="{14.18}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.3}" scaleY="{0.3}" x="{994}" y="{636.91}" rotation="{8.94}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{5.77}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{automobile_exhauts}">
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{523.97}" y="{814.23}" scaleX="{0.9}" scaleY="{0.9}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{708}" y="{842.24}" scaleX="{0.8}" scaleY="{0.8}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.7}" scaleY="{0.7}" x="{869.4}" y="{809.83}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.6}" scaleY="{0.6}" y="{747.06}" x="{744.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.5}" scaleY="{0.5}" x="{851}" y="{736.3}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleY="{0.4}" scaleX="{0.4}" x="{888.8}" y="{707.71}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.3}" scaleY="{0.3}" x="{933.3}" y="{729.05}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{967.3}" y="{725}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{652.39}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object x="{321.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{272.58}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud2}">
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object x="{762.48}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{664.55}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud3}">
+				<tween:To duration="600">
+					<tween:props>
+						<e:Object x="{1058.27}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object x="{994}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{add_and_substract}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{1.6}" scaleY="{1.6}" y="{-80}" alpha="{0.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object y="{20}" scaleX="{1}" scaleY="{1}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{add_info_border}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-300}" alpha="{0.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object y="{300}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{add_info}">
+				<tween:Wait duration="1350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{hiddenMask}">
+				<tween:Wait duration="1750"/>
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165d61cb357"></w:Config>
+	<e:Image top="-3" left="-4" source="splash_bg_png" />
+	<e:Image x="187" y="530.5" source="cactus_png" />
+	<e:Image x="444.49" y="821.14" source="eight_shadow_top_left_png" anchorOffsetX="0" width="99.42" anchorOffsetY="0"
+	         height="112.15" rotation="271.13" />
+	<e:Image x="547.45" y="813.72" source="eight_shadow_top_left_png" anchorOffsetX="0" width="98.08" anchorOffsetY="0"
+	         height="103.03" rotation="271.13" />
+	<e:Image x="532.61" y="779.2" source="eight_shadow_top_left_png" anchorOffsetX="0" width="98.08" anchorOffsetY="0"
+	         height="103.03" rotation="90.11" />
+	<e:Image x="524.14" y="869.39" source="eight_shadow_bottom_right_png" rotation="269.8" anchorOffsetX="0" width="47.56"
+	         anchorOffsetY="0" height="128.22" />
+	<e:Image x="396.39" y="812.74" source="eight_shadow_bottom_left_png" rotation="290.54" anchorOffsetX="0" width="117.95"
+	         anchorOffsetY="0" height="57.7" />
+	<e:Image x="442.97" y="859.62" source="eight_png" rotation="270.25" anchorOffsetX="0" width="162.2" anchorOffsetY="0"
+	         height="220.88" />
+	<e:Image x="-49" y="437.5" source="four_and_cactus_png" />
+	<e:Image x="20" y="540" source="one_png" anchorOffsetX="0" anchorOffsetY="0" />
+	<e:Image x="13178" y="6159" anchorOffsetX="13158" anchorOffsetY="5605" source="one_roof_png" />
+	<e:Image x="10" y="10" source="education_and_manpower_bureau_png" alpha="0" />
+	<e:Image x="330.71" y="747.06" source="six_roof_png" />
+	<e:Image x="360.04" y="819.54" source="six_shadow_middle_png" />
+	<e:Image x="373.5" y="849.18" source="six_shadow_bottom_png" />
+	<e:Image x="357" y="768.5" source="six_png" />
+	<e:Image x="765" y="639" source="five_roof_png" />
+	<e:Image x="745" y="621" source="five_png" />
+	<e:Image x="1100.26" y="761.48" source="seven_shadow_png" rotation="332.36" />
+	<e:Image x="1096.73" y="733.13" source="seven_png" rotation="335.46" anchorOffsetX="-6.09" anchorOffsetY="15.81" />
+	<e:Image x="1226.77" y="691.35" source="three_roof_png" />
+	<e:Image x="1286.75" y="733.5" source="three_shadow_png" />
+	<e:Image x="1222.21" y="814.23" source="three_shadow_middle_png" />
+	<e:Image x="1257.6" y="844.5" source="three_shadow_middle_bottom_png" anchorOffsetX="0" width="144.17"
+	         anchorOffsetY="0" height="121.73" />
+	<e:Image x="1221.28" y="898.24" source="three_shadow_bottom_png" />
+	<e:Image x="1256.03" y="722" source="three_png" />
+	<e:Image x="1441.18" y="1017.3" source="two_png" anchorOffsetX="-0.47" anchorOffsetY="3.19" width="161.98"
+	         height="175.34" rotation="281.82" />
+	<e:Image x="1695.48" y="927.54" source="nine_roof_png" />
+	<e:Image x="1710.48" y="966.41" source="nine_shadow_middle_png" anchorOffsetX="0" width="65.1" anchorOffsetY="0"
+	         height="44.09" />
+	<e:Image x="1686.38" y="1004.97" source="nine_shadow_middle_png" anchorOffsetX="0" width="71.16" anchorOffsetY="0"
+	         height="44.09" />
+	<e:Image x="1680.48" y="1014.8" source="nine_shadow_bottom_png" />
+	<e:Image x="1679" y="948.1" source="nine_png" />
+	<e:Image id="cloud1" x="708" y="26.5" source="cloud1_png" />
+	<e:Image id="cloud2" x="1185" y="215" source="cloud2_png" />
+	<e:Image id="cloud3" x="1653.48" y="17.6" source="cloud3_png" />
+	<e:Image id="car" x="566" y="607" source="car_png" />
+	<e:Image id="automobile_exhauts" x="501.53" y="968.5" source="automobile_exhauts_png" />
+	<e:Image id="add_and_substract" y="20" source="add_and_subtract_png" horizontalCenter="0" alpha="0" />
+	<e:Image id="add_info_border" y="300" source="rectangle_cyan_png" horizontalCenter="0" alpha="0" />
+	<e:Image id="add_info" y="534.85" source="add_info_png" horizontalCenter="0" scaleX="2.5" scaleY="2.5" alpha="0" />
+	<e:Rect id="hiddenMask" fillColor="0xffffff" alpha="0" x="0" y="0" width="100%" height="100%" />
+</e:Skin>
