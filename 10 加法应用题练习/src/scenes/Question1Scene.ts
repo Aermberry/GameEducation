@@ -12,7 +12,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private expressionLabel: eui.Label;
 	private textRunnersLabel: eui.Label;
-	private honeyBee2image:eui.Image;
+	private honeyBeeMovieClip:eui.Image;
 	private ejectBox1lmage:eui.Image;
 	private reflectionlmage:eui.Image;
 	private repeat:eui.Image;
@@ -25,7 +25,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private runnersGroup:eui.Group;
 	private numberGroup:eui.Group;
 	private sumGroup: eui.Group;
-	private totalBoxlmage:eui.Group;
+	private totalBoxGroup:eui.Group;
 	private editableLabelGroup: eui.Group;
 	private expression = ''; //用户输入的横式
 	private inputssion = '' //答案输入模式
@@ -86,7 +86,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		if(this.expression == "214+123" || this.expression == "123+214"){
 			this.totalTextlmage.alpha = 1;
 			this.expressionLabel.visible = false;
-			this.honeyBee2image.visible = false;
+			this.honeyBeeMovieClip.visible = false;
 			this.ejectBox1lmage.visible = false;
 			this.reflectionlmage.visible = false;
 			this.repeat.visible = false;
@@ -131,7 +131,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		}
 
 		this.googd.visible = true;
-		this.totalBoxlmage.visible = true;
+		this.totalBoxGroup.visible = true;
 		await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 	}
 }

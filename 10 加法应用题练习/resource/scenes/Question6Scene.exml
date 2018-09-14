@@ -146,14 +146,14 @@
 	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="40.36" y="242" source="Plus_png"/>
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
-		<e:BitmapLabel width="244.25" height="159.4" x="155.48" y="164" font="calculation_font_fnt" text="468218" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="70" lineSpacing="30"/>
+		<e:BitmapLabel width="244.25" height="159.4" x="155.48" y="164" font="calculation_font_fnt" text="463218" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="70" lineSpacing="30"/>
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1163" y="740" locked="true">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false"/>
 	</e:Group>
-	<e:Group id="totalBoxlmage" x="236.73" y="525.42" visible="false">
+	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
 		<e:Label text="681(張）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="DFKai-SB"/>
 	</e:Group>

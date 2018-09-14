@@ -140,7 +140,7 @@
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false"/>
 	</e:Group>
-	<e:Group id="totalBoxlmage" x="236.73" y="525.42" locked="true" visible="false">
+	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
 		<e:Label text="383(人）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="DFKai-SB"/>
 	</e:Group>
