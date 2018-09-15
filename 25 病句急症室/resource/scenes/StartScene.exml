@@ -104,8 +104,8 @@
 <e:Image source="head_icon_png" x="1480" y="24"/>
 <e:Image source="right_headline_png" x="1610" y="24"/>
 <e:Image  source="front_desk_png" x="53" y="752"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="标楷体" size="86.4" x="28" y="25"/>
-<e:Label text=" 第一學習階段" fontFamily="标楷体" size="86.4" x="412" y="25"/>
+<e:Label text="中國語文" textColor="0x0032BE" fontFamily="華康楷書體" size="86.4" x="28" y="25"/>
+<e:Label text=" 第一學習階段" fontFamily="華康楷書體" size="86.4" x="412" y="25"/>
 <e:Image source="nurse_png" x="267" y="275" />
 
 
@@ -143,11 +143,11 @@
 <e:Group id="sixSelectGroup" x="1331" y="566" height="138" width="403"/>
 
 
-<e:Label id="firstTipLabel" text="發展中" textColor="#FF4553" size="30"  x="786" y="354" alpha="0"/>
-<e:Label id="thirdTipLabel" text="發展中" textColor="#FF4553" size="30"  x="786" y="496" alpha="0"/>
-<e:Label id="forthTipLabel" text="發展中" textColor="#FF4553" size="30"  x="1746" y="496" alpha="0"/>
-<e:Label id="fifthTipLabel" text="發展中" textColor="#FF4553" size="30"  x="786" y="616" alpha="0"/>
-<e:Label id="sixthTipLabel" text="發展中" textColor="#FF4553" size="30"   x="1746" y="640" alpha="0"/>
+<e:Label id="firstTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="354" alpha="0"/>
+<e:Label id="thirdTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="496" alpha="0"/>
+<e:Label id="forthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="1746" y="496" alpha="0"/>
+<e:Label id="fifthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="616" alpha="0"/>
+<e:Label id="sixthTipLabel" text="發展中" textColor="0xFF4553" size="30"   x="1746" y="640" alpha="0"/>
 
 <e:Image id="dialogImg" source="dialog_png" x="523" y="233" alpha="0.8"/>
 <e:Label id="dialogFirstLabel" text="小朋友，有些句子生病了" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="304"/>

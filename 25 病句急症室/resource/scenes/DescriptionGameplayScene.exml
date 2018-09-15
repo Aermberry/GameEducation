@@ -3,8 +3,8 @@
 <w:Config id="164d58fd342" ></w:Config>
 <e:Image source="description_example_frame_png"/>
 <e:Image source="description_example_bg_png" y="154"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="标楷体" size="86.4" x="28" y="25"/>
-<e:Label text=" 第一學習階段" fontFamily="标楷体" size="86.4" x="412" y="25"/>
+<e:Label text="中國語文" textColor="0x0032BE" fontFamily="華康楷書體" size="86.4" x="28" y="25"/>
+<e:Label text=" 第一學習階段" fontFamily="華康楷書體" size="86.4" x="412" y="25"/>
 <e:Image source="head_icon_png" x="1480" y="24"/>
 <e:Image source="right_headline_png" x="1610" y="24"/>
 <e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="金梅新中圓國際碼"/>
@@ -23,8 +23,8 @@
 <e:Label id="secondDialogLabel" text="它們都多了一些沒有用的東西！" size="45" x="823" y="473" textColor="#000000" fontFamily="金梅新中圓國際碼"/>
 
 <e:Image id="goldYellowDialogImg" source="gold_yellow_dialog_png" x="13" y="292" visible="false"/>
-<e:Label id="goldYellowDialogFisrstLabel" text="怎樣才可以醫治" textColor="#F3362F" x="54" y="343" size="45" fontFamily="富漢通標中楷體" visible="false"/>
-<e:Label id="goldYellowDialogSecondLabel" text="這些句子呢?" textColor="#F3362F" x="54" y="412" size="45" fontFamily="富漢通標中楷體" visible="false"/>
+<e:Label id="goldYellowDialogFisrstLabel" text="怎樣才可以醫治" textColor="0xF3362F" x="54" y="343" size="45" fontFamily="富漢通標中楷體" visible="false"/>
+<e:Label id="goldYellowDialogSecondLabel" text="這些句子呢?" textColor="0xF3362F" x="54" y="412" size="45" fontFamily="富漢通標中楷體" visible="false"/>
 
 <e:Label id="firstLineDialog" text="方法很簡單，只要將滑鼠移到句子中多餘的" x="775" y="554" fontFamily="金梅新中圓國際碼" textColor="#000000" size="43" visible="false"/>
 <e:Label id="secondLineDialog" text="字詞或短語上，按著滑鼠左鍵，把它拉到廢" x="775" y="621" fontFamily="金梅新中圓國際碼" textColor="#000000" size="43" visible="false"/>
