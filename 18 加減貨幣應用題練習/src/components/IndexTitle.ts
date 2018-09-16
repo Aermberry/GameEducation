@@ -19,6 +19,7 @@ namespace Ui {
 
 		public set index(value:string){
 			this._index=value;
+			this.indexLabel&&(this.indexLabel.text=value);
 		}
 
 		public get index():string{

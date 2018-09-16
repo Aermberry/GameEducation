@@ -197,7 +197,7 @@
 		<e:Image id="xiaoFangImage" width="420" height="440" x="1130" y="478" anchorOffsetX="0" anchorOffsetY="0" source="xiaofang_png" bottom="39" alpha="0"/>
 		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="592" x="1630" y="272" source="arrow_top_png" alpha="0"/>
-		<e:Image id="questionMarkImage" width="44" height="102" x="990.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
+		<e:Image id="questionMarkImage" width="44" height="102" x="1187.24" y="554.15" anchorOffsetX="0" anchorOffsetY="0" source="question_mark_png" alpha="0"/>
 		<e:Image id="xiaofangHeightImage" x="953.36" y="584.27" source="xiaofang_height_png" visible="false"/>
 		<e:Rect id="xiaoFangHeightArrowBottomRect" width="1" height="150" x="1330" y="262.96" alpha="0" strokeWeight="1"/>
 		<e:Group id="alertAndOperationGroup">

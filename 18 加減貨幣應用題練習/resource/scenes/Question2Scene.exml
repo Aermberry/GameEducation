@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question2SceneSkin" width="400" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="Question2SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="165d61708f0" ></w:Config>
+	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2"/>
+	
 </e:Skin>
