@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,add_info_png,shape93_png,watercolour_png,Wood color_png,shape100_png,shape140_png,shape144_png,shape146_png,shape165_png,shape166_png,shape167_png,shape168_png,shape169_png,shape187_png,shape189_png,shape193_png,shape194_png,shape197_png,shape198_png,shape199_png,shape200_png,shape202_png,shape204_png,shape220_png,shape221_png,shape222_png,shape224_png,shape235_png,shape237_png,shape240_png,shape241_png,shape242_png,shape243_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,0_png,subtraction00_png,subtraction01_png,dollar00_png,dollar01_png,dime00_png,dime01_png,nextQuestionButton00_png,nextQuestionButton01_png,nextStepButton00_png,nextStepButton01_png,shape4_png,shape3_png,shape11_png,shape1_png,shape2_png,shape6_png,shape8_png,shape9_png,shape10_png,background_png,title_png,title_title_png,logo_png,indextitle_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,minus_normal_png,minus_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,beer_json,beer_png,button_down2_png,button_up2_png,checkbox_select_disabled3_png,checkbox_select_down3_png,checkbox_select_up3_png,checkbox_unselect3_png,selected2_png,border2_png,header2_png,thumb_pb2_png,track_pb2_png,radiobutton_select_disabled2_png,radiobutton_select_down2_png,radiobutton_select_up2_png,radiobutton_unselect2_png,roundthumb2_png,track_sb2_png,thumb2_png,track2_png,tracklight2_png,handle2_png,off2_png,on2_png,streamsound 0 (1)_mp3,streamsound 0 (10)_mp3,streamsound 0 (2)_mp3,streamsound 0 (3)_mp3,streamsound 0 (4)_mp3,streamsound 0 (5)_mp3,streamsound 0 (6)_mp3,streamsound 0 (7)_mp3,streamsound 0 (8)_mp3,streamsound 0 (9)_mp3,streamsound 0_mp3,description2_json,wlts_logo_jpg,02_png,12_png,22_png,32_png,42_png,52_png,62_png,72_png,82_png,92_png,add_normal2_png,add_selected2_png,background2_png,beer2_json,beer2_png,dime002_png,dime012_png,dollar002_png,dollar012_png,eight_normal2_png,eight_selected2_png,eraser_normal2_png,eraser_selected2_png,five_normal2_png,five_selected2_png,four_normal2_png,four_selected2_png,indextitle2_png,logo2_png,minus_normal2_png,minus_selected2_png,nextQuestionButton002_png,nextQuestionButton012_png,nextStepButton002_png,nextStepButton012_png,nine_normal2_png,nine_selected2_png,one_normal2_png,one_selected2_png,seven_normal2_png,seven_selected2_png,shape12_png,shape102_png,shape1002_png,shape112_png,shape1402_png,shape1442_png,shape1462_png,shape1652_png,shape1662_png,shape1672_png,shape1682_png,shape1692_png,shape1872_png,shape1892_png,shape1932_png,shape1942_png,shape1972_png,shape1982_png,shape1992_png,shape22_png,shape2002_png,shape2022_png,shape2042_png,shape2202_png,shape2212_png,shape2222_png,shape2242_png,shape2352_png,shape2372_png,shape2402_png,shape2412_png,shape2422_png,shape2432_png,shape32_png,shape42_png,shape62_png,shape82_png,shape92_png,six_normal2_png,six_selected2_png,add_and_subtract2_png,add_info2_png,automobile_exhauts2_png,cactus2_png,car2_png,cloud12_png,cloud22_png,cloud32_png,education_and_manpower_bureau2_png,eight2_png,eight_shadow_bottom_left2_png,eight_shadow_bottom_right2_png,eight_shadow_top_left2_png,five2_png,five_roof2_png,four_and_cactus2_png,grass_dark2_png,grass_dark_light2_png,grass_light2_png,grass_light_dark2_png,nine2_png,nine_roof2_png,nine_shadow_bottom2_png,nine_shadow_middle2_png,one2_png,one_roof2_png,rectangle_cyan2_png,seven2_png,seven_shadow2_png,shape932_png,six2_png,six_roof2_png,six_shadow_bottom2_png,six_shadow_middle2_png,splash_bg2_png,three2_png,three_roof2_png,three_shadow2_png,three_shadow_bottom2_png,three_shadow_middle2_png,three_shadow_middle_bottom2_png,two2_png,subtraction002_png,subtraction012_png,three_normal2_png,three_selected2_png,title2_png,title_title2_png,two_normal2_png,two_selected2_png,watercolour2_png,Wood color2_png,zero_normal2_png,zero_selected2_png,tipsLabel_png,tips00_png,exit_png,exit_title_png,exit_over_png,PreviousQuestion01_png,previousQuestion00_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,add_info_png,shape93_png,watercolour_png,Wood color_png,shape100_png,shape140_png,shape144_png,shape146_png,shape166_png,shape167_png,shape168_png,shape169_png,shape187_png,shape189_png,shape193_png,shape194_png,shape197_png,shape199_png,shape200_png,shape204_png,shape220_png,shape221_png,shape224_png,shape235_png,shape237_png,shape240_png,shape241_png,shape242_png,shape243_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,0_png,subtraction00_png,subtraction01_png,dollar00_png,dollar01_png,dime00_png,dime01_png,nextQuestionButton00_png,nextQuestionButton01_png,nextStepButton00_png,nextStepButton01_png,shape11_png,shape2_png,shape6_png,shape8_png,shape9_png,shape10_png,background_png,title_png,title_title_png,logo_png,indextitle_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,minus_normal_png,minus_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,beer_json,beer_png,button_down2_png,button_up2_png,checkbox_select_disabled3_png,checkbox_select_down3_png,checkbox_select_up3_png,checkbox_unselect3_png,selected2_png,border2_png,header2_png,thumb_pb2_png,track_pb2_png,radiobutton_select_disabled2_png,radiobutton_select_down2_png,radiobutton_select_up2_png,radiobutton_unselect2_png,roundthumb2_png,track_sb2_png,thumb2_png,track2_png,tracklight2_png,handle2_png,off2_png,on2_png,streamsound 0 (1)_mp3,streamsound 0 (10)_mp3,streamsound 0 (2)_mp3,streamsound 0 (3)_mp3,streamsound 0 (4)_mp3,streamsound 0 (5)_mp3,streamsound 0 (6)_mp3,streamsound 0 (7)_mp3,streamsound 0 (8)_mp3,streamsound 0 (9)_mp3,streamsound 0_mp3,description2_json,wlts_logo_jpg,02_png,12_png,22_png,32_png,42_png,52_png,62_png,72_png,82_png,92_png,add_normal2_png,add_selected2_png,background2_png,beer2_json,beer2_png,dime002_png,dime012_png,dollar002_png,dollar012_png,eight_normal2_png,eight_selected2_png,eraser_normal2_png,eraser_selected2_png,five_normal2_png,five_selected2_png,four_normal2_png,four_selected2_png,indextitle2_png,logo2_png,minus_normal2_png,minus_selected2_png,nextQuestionButton002_png,nextQuestionButton012_png,nextStepButton002_png,nextStepButton012_png,nine_normal2_png,nine_selected2_png,one_normal2_png,one_selected2_png,seven_normal2_png,seven_selected2_png,shape102_png,shape1002_png,shape112_png,shape1402_png,shape1442_png,shape1462_png,shape1662_png,shape1672_png,shape1682_png,shape1692_png,shape1872_png,shape1892_png,shape1932_png,shape1942_png,shape1972_png,shape1992_png,shape22_png,shape2002_png,shape2042_png,shape2202_png,shape2212_png,shape2242_png,shape2352_png,shape2372_png,shape2402_png,shape2412_png,shape2422_png,shape2432_png,shape62_png,shape82_png,shape92_png,six_normal2_png,six_selected2_png,add_and_subtract2_png,add_info2_png,automobile_exhauts2_png,cactus2_png,car2_png,cloud12_png,cloud22_png,cloud32_png,education_and_manpower_bureau2_png,eight2_png,eight_shadow_bottom_left2_png,eight_shadow_bottom_right2_png,eight_shadow_top_left2_png,five2_png,five_roof2_png,four_and_cactus2_png,grass_dark2_png,grass_dark_light2_png,grass_light2_png,grass_light_dark2_png,nine2_png,nine_roof2_png,nine_shadow_bottom2_png,nine_shadow_middle2_png,one2_png,one_roof2_png,rectangle_cyan2_png,seven2_png,seven_shadow2_png,shape932_png,six2_png,six_roof2_png,six_shadow_bottom2_png,six_shadow_middle2_png,splash_bg2_png,three2_png,three_roof2_png,three_shadow2_png,three_shadow_bottom2_png,three_shadow_middle2_png,three_shadow_middle_bottom2_png,two2_png,subtraction002_png,subtraction012_png,three_normal2_png,three_selected2_png,title2_png,title_title2_png,two_normal2_png,two_selected2_png,watercolour2_png,Wood color2_png,zero_normal2_png,zero_selected2_png,tipsLabel_png,tips00_png,exit_png,exit_title_png,exit_over_png,PreviousQuestion01_png,previousQuestion00_png,calculation_font_fnt,calculation_font_png,calculation_small_font_fnt,calculation_small_font_png,plus_png,minus_png,GGGFont_fnt,GGGFont_png,ant_json,ant_png,scarf_png,handkerchief_png,girl_png,boyandgirl_json,boyandgirl_png,boyandmoney_json,boyandmoney_png,boySaveMoney_json,boySaveMoney_png,SaveMoney_json,SaveMoney_png,swimming_json,swimming_png,tea_json,tea_png,T-shirt_json,T-shirt_png,WatchPrice_json,WatchPrice_png",
 			"name": "preload"
 		}
 	],
@@ -387,11 +387,6 @@
 			"url": "textures/shape146.png"
 		},
 		{
-			"name": "shape165_png",
-			"type": "image",
-			"url": "textures/shape165.png"
-		},
-		{
 			"name": "shape166_png",
 			"type": "image",
 			"url": "textures/shape166.png"
@@ -437,11 +432,6 @@
 			"url": "textures/shape197.png"
 		},
 		{
-			"name": "shape198_png",
-			"type": "image",
-			"url": "textures/shape198.png"
-		},
-		{
 			"name": "shape199_png",
 			"type": "image",
 			"url": "textures/shape199.png"
@@ -450,11 +440,6 @@
 			"name": "shape200_png",
 			"type": "image",
 			"url": "textures/shape200.png"
-		},
-		{
-			"name": "shape202_png",
-			"type": "image",
-			"url": "textures/shape202.png"
 		},
 		{
 			"name": "shape204_png",
@@ -470,11 +455,6 @@
 			"name": "shape221_png",
 			"type": "image",
 			"url": "textures/shape221.png"
-		},
-		{
-			"name": "shape222_png",
-			"type": "image",
-			"url": "textures/shape222.png"
 		},
 		{
 			"name": "shape224_png",
@@ -612,24 +592,9 @@
 			"url": "textures/nextStepButton01.png"
 		},
 		{
-			"name": "shape4_png",
-			"type": "image",
-			"url": "textures/shape4.png"
-		},
-		{
-			"name": "shape3_png",
-			"type": "image",
-			"url": "textures/shape3.png"
-		},
-		{
 			"name": "shape11_png",
 			"type": "image",
 			"url": "textures/shape11.png"
-		},
-		{
-			"name": "shape1_png",
-			"type": "image",
-			"url": "textures/shape1.png"
 		},
 		{
 			"name": "shape2_png",
@@ -1207,11 +1172,6 @@
 			"url": "textures/seven_selected.png"
 		},
 		{
-			"name": "shape12_png",
-			"type": "image",
-			"url": "textures/shape1.png"
-		},
-		{
 			"name": "shape102_png",
 			"type": "image",
 			"url": "textures/shape10.png"
@@ -1240,11 +1200,6 @@
 			"name": "shape1462_png",
 			"type": "image",
 			"url": "textures/shape146.png"
-		},
-		{
-			"name": "shape1652_png",
-			"type": "image",
-			"url": "textures/shape165.png"
 		},
 		{
 			"name": "shape1662_png",
@@ -1292,11 +1247,6 @@
 			"url": "textures/shape197.png"
 		},
 		{
-			"name": "shape1982_png",
-			"type": "image",
-			"url": "textures/shape198.png"
-		},
-		{
 			"name": "shape1992_png",
 			"type": "image",
 			"url": "textures/shape199.png"
@@ -1312,11 +1262,6 @@
 			"url": "textures/shape200.png"
 		},
 		{
-			"name": "shape2022_png",
-			"type": "image",
-			"url": "textures/shape202.png"
-		},
-		{
 			"name": "shape2042_png",
 			"type": "image",
 			"url": "textures/shape204.png"
@@ -1330,11 +1275,6 @@
 			"name": "shape2212_png",
 			"type": "image",
 			"url": "textures/shape221.png"
-		},
-		{
-			"name": "shape2222_png",
-			"type": "image",
-			"url": "textures/shape222.png"
 		},
 		{
 			"name": "shape2242_png",
@@ -1370,16 +1310,6 @@
 			"name": "shape2432_png",
 			"type": "image",
 			"url": "textures/shape243.png"
-		},
-		{
-			"name": "shape32_png",
-			"type": "image",
-			"url": "textures/shape3.png"
-		},
-		{
-			"name": "shape42_png",
-			"type": "image",
-			"url": "textures/shape4.png"
 		},
 		{
 			"name": "shape62_png",
@@ -1710,6 +1640,151 @@
 			"name": "previousQuestion00_png",
 			"type": "image",
 			"url": "textures/previousQuestion00.png"
+		},
+		{
+			"name": "calculation_font_fnt",
+			"type": "font",
+			"url": "textures/calculation_font.fnt"
+		},
+		{
+			"name": "calculation_font_png",
+			"type": "image",
+			"url": "textures/calculation_font.png"
+		},
+		{
+			"name": "calculation_small_font_fnt",
+			"type": "font",
+			"url": "textures/calculation_small_font.fnt"
+		},
+		{
+			"name": "calculation_small_font_png",
+			"type": "image",
+			"url": "textures/calculation_small_font.png"
+		},
+		{
+			"name": "plus_png",
+			"type": "image",
+			"url": "textures/plus.png"
+		},
+		{
+			"name": "minus_png",
+			"type": "image",
+			"url": "textures/minus.png"
+		},
+		{
+			"name": "GGGFont_fnt",
+			"type": "font",
+			"url": "textures/GGGFont.fnt"
+		},
+		{
+			"name": "GGGFont_png",
+			"type": "image",
+			"url": "textures/GGGFont.png"
+		},
+		{
+			"name": "ant_json",
+			"type": "json",
+			"url": "textures/ant.json"
+		},
+		{
+			"name": "ant_png",
+			"type": "image",
+			"url": "textures/ant.png"
+		},
+		{
+			"name": "scarf_png",
+			"type": "image",
+			"url": "textures/scarf.png"
+		},
+		{
+			"name": "handkerchief_png",
+			"type": "image",
+			"url": "textures/handkerchief.png"
+		},
+		{
+			"name": "girl_png",
+			"type": "image",
+			"url": "textures/girl.png"
+		},
+		{
+			"name": "boyandgirl_json",
+			"type": "json",
+			"url": "textures/boyandgirl.json"
+		},
+		{
+			"name": "boyandgirl_png",
+			"type": "image",
+			"url": "textures/boyandgirl.png"
+		},
+		{
+			"name": "boyandmoney_json",
+			"type": "json",
+			"url": "textures/boyandmoney.json"
+		},
+		{
+			"name": "boyandmoney_png",
+			"type": "image",
+			"url": "textures/boyandmoney.png"
+		},
+		{
+			"name": "boySaveMoney_json",
+			"type": "json",
+			"url": "textures/boySaveMoney.json"
+		},
+		{
+			"name": "boySaveMoney_png",
+			"type": "image",
+			"url": "textures/boySaveMoney.png"
+		},
+		{
+			"name": "SaveMoney_json",
+			"type": "json",
+			"url": "textures/SaveMoney.json"
+		},
+		{
+			"name": "SaveMoney_png",
+			"type": "image",
+			"url": "textures/SaveMoney.png"
+		},
+		{
+			"name": "swimming_json",
+			"type": "json",
+			"url": "textures/swimming.json"
+		},
+		{
+			"name": "swimming_png",
+			"type": "image",
+			"url": "textures/swimming.png"
+		},
+		{
+			"name": "tea_json",
+			"type": "json",
+			"url": "textures/tea.json"
+		},
+		{
+			"name": "tea_png",
+			"type": "image",
+			"url": "textures/tea.png"
+		},
+		{
+			"name": "T-shirt_json",
+			"type": "json",
+			"url": "textures/T-shirt.json"
+		},
+		{
+			"name": "T-shirt_png",
+			"type": "image",
+			"url": "textures/T-shirt.png"
+		},
+		{
+			"name": "WatchPrice_json",
+			"type": "json",
+			"url": "textures/WatchPrice.json"
+		},
+		{
+			"name": "WatchPrice_png",
+			"type": "image",
+			"url": "textures/WatchPrice.png"
 		}
 	]
 }
