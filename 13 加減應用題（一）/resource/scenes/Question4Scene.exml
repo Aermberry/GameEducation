@@ -94,7 +94,7 @@
 		<e:Image id="textBackground" width="683" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
 		<e:Image id="question4StartImage" x="195.06" y="99.94" source="question4_start_png" alpha="1"/>
 		<ns1:FormulaComponent id="formulaComponent" width="524" height="332" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
-		<e:Rect width="700" height="1" x="1011.58" y="820.67"/>
+		<e:Rect width="700" height="1" x="1011.58" y="820.67" strokeWeight="1"/>
 		<e:Image x="1104" y="245.24" source="xiaoming_png" bottom="66"/>
 		<e:Image x="1162.76" y="760" source="mark_xiaoming_png" bottom="30"/>
 		<e:Rect id="height120LineRect" width="1" height="499" x="1095.82" y="323.15"/>
