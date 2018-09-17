@@ -1,24 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Question7SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{image}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cup375Image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="2750">
+					<tween:props>
+						<e:Object height="{0.99}" y="{614.92}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cup250Image}">
+				<tween:Wait duration="5000"/>
+				<tween:Set/>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object height="{0.97}" y="{611.88}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="9000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165b1e6e519" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
 	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
 	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="7"/>
-		<e:Image id="textBackground" width="683" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
-		<e:Image x="205" y="102" source="question7_start_png"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="268" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula7_title_png" leftImageSource="formula7_left_png" rightImageSource="formula7_right_png" resultImageSource="formula7_result_png"/>
-		<e:Image id="sisterAndYoungerBrotherAndQuestionMArkImage" x="938.58" y="77.88" source="sister_and_youngerbrother_and_stickerpaper_png"/>
-		<e:Image id="sisterAndYoungerBrotherCorrectImage" x="938.58" y="77.88" source="sister_younger_brother_correct_png" visible="false"/>
-		<e:Image id="stickerPaperNumberImage" x="1133.64" y="778.48" source="sticker_paper_number_png" visible="false"/>
-		<e:Group id="alertAndOperationGroup">
-			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="1" titleImageSource="question7_png" visible="false"/>
-			<ns1:ButtonComponent id="muchButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="much_normal_png" overSource="much_over_png" visible="false"/>
-			<ns1:ButtonComponent id="lessButtonComponent" width="180" height="102" x="509.45" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="less_normal_png" overSource="less_over_png" visible="false"/>
-			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
-		</e:Group>
+		<e:Image id="textBackground" width="1489.06" height="156.52" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="image" x="205" y="102" source="question7_start_png" alpha="0"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="240.72" x="664.39" y="634.11" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula7_title_png" leftImageSource="formula7_left_png" rightImageSource="formula7_right_png" resultImageSource="formula7_result_png"/>
+		<e:Image x="211.12" y="274.79" source="people_and_milk_png"/>
+		<e:Image x="705.5" y="363.45" source="milk_png"/>
+		<e:Image x="1005.03" y="445.24" source="250ml_png"/>
+		<e:Image id="cup375Image" x="699.06" y="414.91" source="cup_png" anchorOffsetY="0" height="206" width="136"/>
+		<e:Image id="cup250Image" x="999.06" y="490.67" source="cup_png" anchorOffsetY="0" height="128.18" width="136"/>
+		<e:Image x="711" y="575.06" source="milk_text_png"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="764.67" y="666.64" alpha="0"/>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
 		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
 	</e:Group>

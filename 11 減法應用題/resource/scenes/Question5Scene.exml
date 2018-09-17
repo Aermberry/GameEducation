@@ -1,44 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Question5SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
-		<tween:TweenGroup id="startAnimation">
-			<tween:TweenItem target="{kangPork1Image}">
-				<tween:Wait duration="2000"/>
-				<tween:Set/>
-				<tween:To duration="1000">
+		<tween:TweenGroup id="xiaowenAnimation">
+			<tween:TweenItem target="{xiaowenDialogImage}">
+				<tween:To duration="750">
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{kangPork2Image}">
-				<tween:Wait duration="2000"/>
-				<tween:Set/>
-				<tween:To duration="1000">
+			<tween:TweenItem target="{xiaowenMessageBorderImage}">
+				<tween:To duration="750">
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{kangSoldPorkInfoImage}">
-				<tween:Wait duration="2000"/>
-				<tween:Set/>
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{questionMarkImage}">
-				<tween:Wait duration="13550"/>
+			<tween:TweenItem target="{candy1Image}">
+				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{cloudAlertComponent}">
-				<tween:Wait duration="13550"/>
+			<tween:TweenItem target="{candy2Image}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy3Image}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy4Image}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy5Image}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy6Image}">
+				<tween:Wait duration="2250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy7Image}">
+				<tween:Wait duration="2500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy8Image}">
+				<tween:Wait duration="2750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy9Image}">
+				<tween:Wait duration="3000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy10Image}">
+				<tween:Wait duration="3250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy11Image}">
+				<tween:Wait duration="3500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="ziwuAnimation">
+			<tween:TweenItem target="{ziwuMessageBorderImage}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{ziwuDialogImage}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy12Image}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy13Image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy14Image}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy15Image}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy16Image}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy17Image}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="flickerAnimation">
+			<tween:TweenItem target="{messageBorderRectImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionStartImage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="3750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy7Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy8Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy9Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy10Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{candy11Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -52,10 +278,40 @@
 	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
 	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="5"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="268" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula5_title_png" leftImageSource="formula5_left_png" rightImageSource="formula5_right_png" resultImageSource="formula5_result_png"/>
-		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703"/>
+		<ns1:FormulaComponent id="formulaComponent" width="287.63" height="249.81" x="591.67" y="628.07" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula5_title_png" leftImageSource="formula5_left_png" rightImageSource="formula5_right_png" resultImageSource="formula5_result_png"/>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
 		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<e:Group y="-21.21">
+			<e:Image x="184" y="118" source="xiaowen_png"/>
+			<e:Image id="xiaowenMessageBorderImage" x="850.52" y="99.82" source="message_border5_png" scaleX="-1" alpha="0"/>
+			<e:Image id="xiaowenDialogImage" x="463" y="117.88" source="xiaowen_dialog_png" alpha="0"/>
+			<e:Image id="candy1Image" x="432.18" y="232.85" alpha="0" source="candy2_png"/>
+			<e:Image id="candy2Image" x="432.18" y="232.85" source="candy4_png" alpha="0"/>
+			<e:Image id="candy3Image" x="432.18" y="232.85" source="candy6_png" alpha="0"/>
+			<e:Image id="candy4Image" x="432.18" y="232.85" source="candy8_png" alpha="0"/>
+			<e:Image id="candy5Image" x="432.18" y="232.85" source="candy10_png" alpha="0"/>
+			<e:Image id="candy6Image" x="432.18" y="232.85" source="candy12_png" alpha="0"/>
+			<e:Image id="candy7Image" x="432.18" y="232.85" source="candy14_png" alpha="0"/>
+			<e:Image id="candy8Image" x="432.18" y="232.85" source="candy16_png" alpha="0"/>
+			<e:Image id="candy9Image" x="432.18" y="232.85" source="candy18_png" alpha="0"/>
+			<e:Image id="candy10Image" x="432.18" y="232.85" source="candy20_png" alpha="0"/>
+			<e:Image id="candy11Image" x="432.18" y="232.85" source="candy22_png" alpha="0"/>
+		</e:Group>
+		<e:Group anchorOffsetY="0" height="289.36" x="0" y="348.49">
+			<e:Image source="ziwu_png" x="184"/>
+			<e:Image id="ziwuMessageBorderImage" x="850.52" y="0" source="message_border5_png" scaleX="-1" alpha="0"/>
+			<e:Image id="ziwuDialogImage" x="460.03" source="ziwu_dialog_png" y="18.18" alpha="0"/>
+			<e:Image id="candy12Image" x="432" y="108.25" source="candy2_png" alpha="0"/>
+			<e:Image id="candy13Image" x="432" y="108.25" source="candy4_png" alpha="0"/>
+			<e:Image id="candy14Image" x="432" y="108.25" source="candy6_png" alpha="0"/>
+			<e:Image id="candy15Image" x="432" y="108.25" source="candy8_png" alpha="0"/>
+			<e:Image id="candy16Image" x="432" y="108.25" source="candy10_png" alpha="0"/>
+			<e:Image id="candy17Image" x="432" y="108.25" source="candy12_png" alpha="0"/>
+		</e:Group>
+		<e:Image id="messageBorderRectImage" x="599.61" y="538.7" source="message_border_rect_png" anchorOffsetX="0" width="754.91" anchorOffsetY="0" height="83.39" alpha="0"/>
+		<e:Image id="questionStartImage" x="654.15" y="553.85" source="question5_start_png" alpha="0"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="776.79" y="669.67" alpha="0"/>
+
 	</e:Group>
 	
 </e:Skin>

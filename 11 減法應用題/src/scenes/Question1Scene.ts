@@ -19,10 +19,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		this.playStartAnimation();
-		await this.playMP3();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionComponent, this);
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
+		this.playStartAnimation();
+		await this.playMP3();
+
 	}
 
 	private onNextQuestionComponent(): void
