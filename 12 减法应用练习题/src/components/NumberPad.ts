@@ -9,7 +9,6 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 	private eightButton: ImageButton;
 	private nineButton: ImageButton;
 	private zeroButton: ImageButton;
-	private addButton: ImageButton;
 	private minusBotton: ImageButton;
 	private eraserButton: ImageButton;
 	
@@ -41,8 +40,6 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 		this.nineButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('9'), this);
 		this.zeroButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('0'), this);
 
-		this.addButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('+'), this);
-		this.addButton.visible = this.isAddVisible;
 		this.minusBotton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('-'), this);
 		this.minusBotton.visible = this.isMinusVisible;
 		this.eraserButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown(''), this);

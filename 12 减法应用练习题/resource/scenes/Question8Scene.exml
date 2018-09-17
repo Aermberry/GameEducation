@@ -3,23 +3,17 @@
         xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 		<tween:TweenGroup id="cakeshopTweenGroup">
+			<tween:TweenItem target="{xiaoyuelmage}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 			<tween:TweenItem target="{image}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image0}">
 				<tween:Wait duration="3000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image1}">
-				<tween:Wait duration="3000"/>
+					
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -130,18 +124,17 @@
 		         backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63"
 		         alpha="1" fontFamily="華康楷書體" text="" visible="false" />
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false" />
-		<e:Label id="totalTextlmage" text="330+120" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
+		<e:Label id="totalTextlmage" text="576+285" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
 		         alpha="0" />
 	</e:Group>
-	<e:Label id="text2lmage" text="大雄喝了牛奶330毫升，他比小安少喝120毫升。\n小安喝了牛奶多少毫升？" x="273" y="209.52" size="50" textColor="0x000000"
+	<e:Label id="text2lmage" text="小月踢了毽子576次，小芬踢了285次。\n小芬比小月少踢了多少次？" x="273" y="209.52" size="50" textColor="0x000000"
 	         fontFamily="華康楷書體" scaleX="1" scaleY="1" />
-	<e:Label id="textRunnersLabel" text="小安喝了牛奶：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體"
+	<e:Label id="textRunnersLabel" text="小芬比小月少踢：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體"
 	         alpha="0" />
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0"
 	         height="465.81">
-		<e:Image id="image" x="15.55" y="120.94" source="daxionglmage_png" anchorOffsetX="0" width="296.28" anchorOffsetY="0" height="268.76" alpha="0"/>
-		<e:Image id="image0" x="384.91" y="130" source="xiaoanlmage_png" anchorOffsetX="0" width="237.66" anchorOffsetY="0" height="210.76" alpha="0"/>
-		<e:Image id="image1" x="396.94" y="230.16" source="runners_r_png" anchorOffsetX="0" width="46.72" anchorOffsetY="0" height="62.48" alpha="0"/>
+		<e:Image id="xiaoyuelmage" x="130.78" y="33.43" source="xiaoyuelmage_png" anchorOffsetX="0" width="142.73" anchorOffsetY="0" height="383.7" alpha="0"/>
+		<e:Image id="image" x="403.52" y="33.45" source="xiaofenlmage_png" anchorOffsetX="0" width="150.09" anchorOffsetY="0" height="381.7" alpha="0"/>
 
 
 
@@ -156,26 +149,20 @@
 	<e:Group id="numberGroup" width="403.03" height="369.7" x="1032.09" y="385.04" anchorOffsetX="0" anchorOffsetY="0"
 	         visible="false">
 		<e:Image x="-8.11" y="333.3" source="line_png" />
-		<e:BitmapLabel height="70" x="164" y="164" text="330" anchorOffsetX="0" width="229.03" anchorOffsetY="0"
+		<e:BitmapLabel height="70" x="148.85" y="164" text="576" anchorOffsetX="0" width="229.03" anchorOffsetY="0"
 		               font="calculation_font_fnt" letterSpacing="70" lineSpacing="30" />
-		<e:BitmapLabel width="249.91" height="80" x="164.27" y="263" text="120" font="calculation_font_fnt" letterSpacing="75"
+		<e:BitmapLabel width="249.91" height="80" x="140.03" y="263" text="285" font="calculation_font_fnt" letterSpacing="75"
 		               lineSpacing="30" anchorOffsetX="0" />
 		<e:Image x="34" y="263" source="Plus_png" />
 	</e:Group>
-	<e:Group id="editableLabelGroup" x="1163" y="740">
+	<e:Group id="editableLabelGroup" x="1153.91" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false" />
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false" />
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false" />
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png" />
-		<e:Label text="450(毫升）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
-		         width="336.07" />
-	</e:Group>
-	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0"
-	         visible="false">
-		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19" />
-		<e:Label text="小安喝了較多牛奶，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
-		         anchorOffsetX="0" width="636.36" />
+		<e:Label text="291(次）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
+		         width="336.07"  alpha="1"/>
 	</e:Group>
 </e:Skin>

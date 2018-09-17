@@ -2,53 +2,49 @@
 <e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 		<tween:TweenGroup id="cakeshopTweenGroup">
-			<tween:TweenItem target="{cakeshopimage}">
+			<tween:TweenItem target="{Fruitshoplmage}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image}">
-				<tween:To duration="1000">
+			<tween:TweenItem target="{Orangelmage}">
+				<tween:Set>
 					<tween:props>
-						<e:Object alpha="{1}" y="{122.34}" x="{179.25}" width="{159.91}" height="{70.85}"/>
+						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:To>
+				</tween:Set>
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image0}">
-				<tween:Wait duration="3000"/>
+			<tween:TweenItem target="{Orange3lamge}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{Orange2lamge}">
+				<tween:Wait duration="2000"/>
 				<tween:Set/>
-				<tween:To duration="750">
+				<tween:To duration="500">
 					<tween:props>
-						<e:Object alpha="{1}" y="{122.34}" x="{375.49}" width="{131.56}" height="{69.83}"/>
+						<e:Object alpha="{1}" width="{330.78}" height="{137.3}" y="{30.28}" x="{242.27}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image1}">
-				<tween:Wait duration="1000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image2}">
-				<tween:Wait duration="3750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image3}">
-				<tween:Wait duration="3750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
+
+
+
+
+
+
 
 
 
@@ -145,22 +141,25 @@
 		<e:Label text="1" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="華康楷書體"/>
 		<ns1:MovieClipPlayer id="honeyBeeMovieClip" x="1479" y="175" texture="bee_png" dataSet="bee_json" movieClipName="bee" alpha="0"/>
 		<e:Image id="ejectBox1lmage" x="906" y="309.21" source="eject_box1_png" alpha="0"/>
-		<ns1:NumberPad id="numberPad" y="900" x="213"/>
+		<ns1:NumberPad id="numberPad" y="900" x="237.24"/>
 		<e:Image id="reflectionlmage" x="1003.25" y="360.42" source="reflection_png" alpha="0"/>
 		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="110" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" fontFamily="DFKai-SB" text="" visible="false"/>
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
-		<e:Label id="totalTextlmage" text="550-30" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
+		<e:Label id="totalTextlmage" text="160-40" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
-	<e:Label id="text1label" text="今天賣出多少件。" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
-	<e:Label id="text2lmage" text="昨天西餅店賣出蛋糕550件，今天比昨天少賣30件。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnersLabel" text="今天賣出蛋糕：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
-	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
-		<e:Image id="cakeshopimage" source="cakeshopimage_png" x="214.92" y="251.52" alpha="0"/>
-		<e:Image id="image" x="279.24" y="364.76" source="Cakelmage_png" anchorOffsetX="0" width="98.36" anchorOffsetY="0" height="43.58" alpha="0"/>
-		<e:Image id="image0" x="302.76" y="364.76" source="Cakelmage_png" anchorOffsetX="0" width="62" anchorOffsetY="0" height="32.91" alpha="0"/>
-		<e:Image id="image1" x="39.73" y="57.82" source="box550lmage_png" alpha="0"/>
-		<e:Image id="image2" x="530.21" y="66.58" source="Today_png" alpha="0"/>
-		<e:Image id="image3" x="548.85" y="119.93" anchorOffsetX="0" width="67.85" anchorOffsetY="0" height="90.74" alpha="0" source="runners_r_png"/>
+
+	<e:Label id="text2lmage" text="水果店有橙160個，爛了40個。\n還餘下多少個" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="textRunnersLabel" text="還餘下：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
+	<e:Group id="runnersGroup" x="1002.94" y="448.54" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
+
+
+
+
+
+		<e:Image id="Fruitshoplmage" x="202.88" y="182.21" source="Fruitshop_png" alpha="0" anchorOffsetX="0" width="374.98" anchorOffsetY="0" height="251.94"/>
+		<e:Image id="Orangelmage" x="179.33" y="257.59" source="Orangelmage_png" anchorOffsetX="0" width="521.02" anchorOffsetY="0" height="176.74" alpha="0"/>
+		<e:Image id="Orange3lamge" x="200" y="287.13" source="Orange3lamge_png" alpha="0" anchorOffsetX="0" width="369.73" anchorOffsetY="0" height="157.39"/>
+		<e:Image id="Orange2lamge" x="330.15" y="326.56" source="Orange2lamge_png" anchorOffsetX="0" width="113.42" anchorOffsetY="0" height="47.08" alpha="0"/>
 
 
 
@@ -172,7 +171,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false"/>
-	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<e:Group id="numberGroup" width="403.03" height="369.7" x="1023" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 
 
 
@@ -181,9 +180,9 @@
 
 
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
-		<e:BitmapLabel height="70" x="164" y="164" text="550" anchorOffsetX="0" width="235.09" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
+		<e:BitmapLabel height="70" x="164" y="164" text="160" anchorOffsetX="0" width="235.09" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
 		<e:Image x="28.03" y="272.27" source="reduce_png"/>
-		<e:BitmapLabel width="159" height="80" x="259.06" y="263" text="30" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
+		<e:BitmapLabel width="159" height="80" x="259.06" y="263" text="40" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1163" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false"/>
@@ -192,10 +191,7 @@
 	</e:Group>
 	<e:Group id="totalBoxlmage" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="520(件）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
+		<e:Label text="120(個）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
 	</e:Group>
-	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<e:Image x="57" y="9.66" source="eject_box1_png" anchorOffsetY="0" height="217.61"/>
-		<e:Label text="今天賣出的蛋糕較少，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
-	</e:Group>
+
 </e:Skin>

@@ -27,7 +27,6 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	private sumGroup: eui.Group;
 	private totalBoxGroup:eui.Group;
 	private editableLabelGroup: eui.Group;
-	private CaketextGroup:eui.Group;
 	private expression = ''; //用户输入的横式
 	private inputssion = '' //答案输入模式
 
@@ -79,12 +78,12 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 
 		this.textRunnersLabel.alpha = 1;
 		this. beeTweenGroup.play(0);
-		await lzlib.SoundUtility.playSound("sound8_streamsound 1_mp3")
+		await lzlib.SoundUtility.playSound("think_streamsound 0_mp3")
 		this.nextStepButton.visible = true;
 		this.expressionLabel.visible = true;
 	}
 	private async playExamples():Promise<void> {
-		if(this.expression == "330+120" || this.expression == "120+330"){
+		if(this.expression == "576-285"){
 			this.totalTextlmage.alpha = 1;
 			this.expressionLabel.visible = false;
 			this.honeyBeeMovieClip.visible = false;
@@ -93,7 +92,6 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 			this.repeat.visible = false;
 			this.runnersGroup.visible = false;
 			this.nextStepButton.visible = false;
-			this.CaketextGroup.visible = false;
 			this. antTweenGroup.play(0);
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 			await lzlib.SoundUtility.playSound("add_intro_streamsound 0_mp3")
@@ -104,12 +102,8 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 			this.googd.visible = false;
 		
 			this.validateSum();
-		}else if(this.expression.indexOf('-') != -1){
-			this.CaketextGroup.visible = true;
-			this.ejectBox1lmage.visible = false;
 		}else{
 			this.reflectionlmage.visible = false;
-			this.CaketextGroup.visible = false;
 			this.ejectBox1lmage.visible = true;
 			this.repeat.visible = true;
 			await lzlib.SoundUtility.playSound("retry_streamsound 0_mp3")
@@ -118,7 +112,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 
 	private async validateSum(): Promise<void>
 	{
-		let correctArray = ['0', '5', '4'];
+		let correctArray = ['1', '9', '2'];
 
 		for (let index = 0; index < correctArray.length; index++) {
 			let correctNumber = correctArray[index];
