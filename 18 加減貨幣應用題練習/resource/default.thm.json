@@ -30,17 +30,17 @@
 		"IndexTitle": "resource/components/IndexTitle.exml",
 		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
 		"Exit": "resource/components/Exit.exml",
-		"NextQuestion": "resource/components/NextQuestion.exml",
 		"PreviousQuestion": "resource/components/PreviousQuestion.exml",
-		"nextStepButton": "resource/components/nextStepButton.exml"
+		"nextStepButton": "resource/components/nextStepButton.exml",
+		"NextQuestion": "resource/components/NextQuestion.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/IndexTitle.exml",
+		"resource/components/NextQuestion.exml",
 		"resource/components/Background.exml",
 		"resource/components/Exit.exml",
 		"resource/components/ImageButton.exml",
-		"resource/components/NextQuestion.exml",
 		"resource/components/nextStepButton.exml",
 		"resource/components/NumberPad.exml",
 		"resource/components/PreviousQuestion.exml",
