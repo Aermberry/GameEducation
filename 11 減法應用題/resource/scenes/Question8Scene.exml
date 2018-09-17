@@ -51,7 +51,7 @@
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{calcComponent}">
-				<tween:Wait duration="8250"/>
+				<tween:Wait duration="10000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>

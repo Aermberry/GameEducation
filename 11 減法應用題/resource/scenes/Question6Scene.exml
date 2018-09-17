@@ -203,6 +203,13 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi4_6Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165b1854b2a" ></w:Config>
@@ -223,8 +230,8 @@
 			<e:Image id="salmonSushi3Image" x="8" y="4" source="salmon_sushi3_png" alpha="0"/>
 			<e:Image id="salmonSushi5Image" x="8" y="4" source="salmon_sushi5_png" alpha="0"/>
 			<e:Image id="salmonSushi6Image" x="8" y="4" source="salmon_sushi6_png" alpha="0"/>
-			<e:Image id="salmonSushi4_6Image" x="8" y="4" source="salmon_sushi4_6_png" alpha="1"/>
-			<e:Image id="salmonSushi6_2Image" x="8" y="4" source="salmon_sushi6_2_png" alpha="1" />
+			<e:Image id="salmonSushi4_6Image" x="8" y="4" source="salmon_sushi4_6_png" alpha="0"/>
+			<e:Image id="salmonSushi6_2Image" x="8" y="4" source="salmon_sushi6_2_png" alpha="0" />
 		</e:Group>
 		<e:Group width="1108" height="200" x="379" y="444" anchorOffsetX="0">
 			<e:Image id="tunaSushi1Image" x="8" y="4" source="tuna_sushi1_png" alpha="0"/>
