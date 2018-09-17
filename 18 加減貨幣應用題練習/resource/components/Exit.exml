@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExitSkin" width="200" height="113" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165e541a979" ></w:Config>
+	<e:Image source="exit_png"/>
+	<e:Image id="exitImage" source="exit_title_png" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>
