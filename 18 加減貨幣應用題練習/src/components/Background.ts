@@ -13,20 +13,27 @@ namespace Ui {
 
 		protected childrenCreated(): void {
 			super.childrenCreated();
-			
 			this.indexLabel.index = this.index;
-			console.log(this.indexLabel.index);
 		}
 
 		private _index: string;
+		private _scene: eui.Component;
 
 		public set index(value) {
 			this._index = value;
 			// this.indexLabel&&(this.indexLabel.index=value);
 		}
-
 		public get index(): string {
 			return this._index;
+		}
+
+		public set scene(value:eui.Component) {
+			this._scene = value
+			
+		}
+
+		public get scene():eui.Component{
+			return this._scene
 		}
 	}
 }

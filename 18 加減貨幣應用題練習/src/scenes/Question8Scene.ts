@@ -12,6 +12,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		lzlib.SoundUtility.playSound("scene08_mp3");
 	}
 	
 }

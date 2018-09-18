@@ -1,6 +1,5 @@
 namespace ui {
 	export class nextStepButton extends eui.Component implements eui.UIComponent {
-
 		private nextStepButtonButton: eui.Image;
 		public constructor() {
 			super();

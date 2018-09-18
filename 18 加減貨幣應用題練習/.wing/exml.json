@@ -30,7 +30,8 @@
   "165d61708f0": {
     "path": "scenes\\Question2Scene.ts",
     "class": "Question2Scene",
-    "parentPath": ""
+    "parentPath": "",
+    "backgroundType": "user"
   },
   "165d6177780": {
     "path": "scenes\\Question3Scene.ts",

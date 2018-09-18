@@ -2,7 +2,7 @@
 <e:Skin class="Question2SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:Ui="Ui.*" xmlns:ui="ui.*">
 	<w:Config id="165d61708f0"></w:Config>
-	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2" />
+	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2"/>
 	<ns1:NumberPad x="212.5" y="909.03" />
 	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
 	<e:Label text="姐姐買手帕用去12元5角，買頸巾又用去41元2角。\n姐姐共用去幾元幾角？\n\n姐姐共用去：" x="273.18" y="224.12" anchorOffsetX="0" width="1276.97"
@@ -26,5 +26,5 @@
 	<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61"/>
 	<e:Image source="plus_png" x="48.48" y="127.27"/>
 	</e:Group>
-	<ns1:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
+	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
 </e:Skin>

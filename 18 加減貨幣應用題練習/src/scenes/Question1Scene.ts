@@ -1,27 +1,41 @@
-class Question1Scene extends eui.Component implements  eui.UIComponent {
+class Question1Scene extends eui.Component implements eui.UIComponent {
+	private questionLabel: eui.Label;
+	private titleLabel: eui.Label;
+	private ColorAnimation: egret.tween.TweenGroup;
+	private Beers: egret.tween.TweenGroup;
+	private worldsGroup:eui.Group;
+	private nextStepButton:ui.nextStepButton;
+	private nextQuestionButton:Ui.NextQuestion;
+
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
+		this.playBackMusic();
+		this.DisplayAnimation();
+		Base.gotoNextScene(new Question2Scene);
 	}
 
-	private movieClip(){
-		var data=RES.getRes("beer.json");
-		var txtr=RES.getRes("beer.png");
-		var mcFactory:egret.MovieClipDataFactory=new egret.MovieClipDataFactory(data,txtr);
-
-		var mc1:egret.MovieClip=new egret.MovieClip(mcFactory.generateMovieClipData("mc1"));
-		this.addChild(mc1);
-		mc1.gotoAndPlay("start",3);
+	private async DisplayAnimation(): Promise<void> {
+		await lzlib.ThreadUtility.sleep(500);
+		this.questionLabel.visible = true;
+		this.ColorAnimation.play(0);
 	}
-	
+	private async playBackMusic(): Promise<void> {
+		await lzlib.SoundUtility.playSound("scene01_mp3");
+		this.titleLabel.visible = true;
+		lzlib.ThreadUtility.sleep(1000);
+		await lzlib.SoundUtility.playSound("think_mp3");
+		await this.Beers.play(0);
+		setTimeout(()=>{this.worldsGroup.visible=true;},1000);
+		await lzlib.ThreadUtility.sleep(3000);
+		this.nextStepButton.visible=true;
+	}
 }

@@ -1,6 +1,7 @@
 namespace Ui {
 	export class NextQuestion extends eui.Component implements eui.UIComponent {
 		private nextQuestionButton: eui.Image;
+		private overLabel:eui.Image;
 		public constructor() {
 			super();
 		}
@@ -25,6 +26,5 @@ namespace Ui {
 		private onMouseOut(e: egret.TouchEvent): void {
 			this.currentState = 'normal';
 		}
-
 	}
 }
