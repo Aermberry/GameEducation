@@ -1,125 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Question5SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
-		<tween:TweenGroup id="meCoinShowAnimation">
-			<tween:TweenItem target="{coinComponent}">
-				<tween:To duration="1000">
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{tenyuanGroup}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent0}">
-				<tween:To duration="1000">
+				</tween:Set>
+				<tween:Wait duration="4750"/>
+				<tween:Set/>
+				<tween:To duration="750">
 					<tween:props>
-						<e:Object alpha="{1}" x="{206}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent1}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent2}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
+						<e:Object x="{1074.57}" y="{-9.93}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="sisterCoinShowAnimation">
-			<tween:TweenItem target="{coinComponent3}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent4}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent5}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent6}">
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
-		<tween:TweenGroup id="coinMoveAnimation">
-			<tween:TweenItem target="{coinComponent4}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{88.49}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent3}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{48.48}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{124.67}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent0}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{160.55}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent6}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{42.27}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent5}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{76.36}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent2}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{128.79}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{coinComponent1}">
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{164.54}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
-		<tween:TweenGroup id="geweiAnimation">
+		<tween:TweenGroup id="jiaoFlickerAnimation">
 			<tween:TweenItem target="{label}">
 				<tween:Set>
 					<tween:props>
@@ -170,8 +69,52 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{resultGroup}">
-				<tween:Wait duration="1000"/>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="jiaoAndRestFlickerAnimation">
+			<tween:TweenItem target="{label0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{geRestLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -179,7 +122,57 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="shiweiAnimation">
+		<tween:TweenGroup id="yuanAndRestFlickerAnimation">
+			<tween:TweenItem target="{shiRestLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{baiRestLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 			<tween:TweenItem target="{label1}">
 				<tween:Set>
 					<tween:props>
@@ -205,7 +198,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{label2}">
+			<tween:TweenItem target="{label4}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -229,44 +222,6 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{label3}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="250"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{restLabel}">
-				<tween:Wait duration="1500"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object x="{146.09}"/>
-					</tween:props>
-				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
@@ -276,44 +231,45 @@
 	
 	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
 		<ns1:ContentFrameComponent  alpha="1" left="0" right="0" top="9" bottom="-9" currentlevel="5"/>
-		<ns1:CalcComponents id="calcComponent" width="324" height="154" x="372" y="460" anchorOffsetX="0" anchorOffsetY="0" alpha="1" visible="false"/>
-		<ns1:FormulaComponent id="formulaComponent" width="452.73" height="271.52" x="199.46" y="445.27" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula5_question_png" leftImageSource="formula5_left_png" rightImageSource="formula5_right_png" resultImageSource="formula5_result_png" alpha="1"/>
-		<e:Group width="478.79" height="272" x="986.64" y="387.42" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="lineFormulaImage" x="16" y="115.39" source="line_formula_png" visible="false"/>
+		<ns1:FormulaComponent id="formulaComponent" width="473.94" height="271.52" x="196.43" y="421.03" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula5_question_png" leftImageSource="formula5_left_png" rightImageSource="formula5_right_png" resultImageSource="formula5_result_png" alpha="1"/>
+		<e:Group width="478.79" height="272" x="1183.61" y="387.42" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="lineFormulaImage" x="16" y="142.66" source="line_formula_png" visible="false"/>
 			<e:Group id="yuanAndJiao" width="475.76" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 				<e:Image x="230.61" y="12" source="yuan_unti_png"/>
 				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
 			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-				<e:Label id="label3" text="8" x="137.22" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
-				<e:Label id="label2" text="7" x="243.27" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Label id="label3" text="5" x="137.22" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Label id="label2" text="0" x="243.27" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
 				<e:Label id="label" text="0" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Rect id="baiUnderlineRect" width="6" height="50" x="158.24" y="7.91" strokeWeight="2" rotation="32.51" alpha="1" visible="false"/>
+				<e:Rect id="shiUnderlineRect" width="6" height="50" x="267.33" y="7.91" strokeWeight="2" rotation="32.51"  alpha="1" visible="false"/>
+				<e:Rect id="geUnderlineRect" width="6" height="50" x="470.36" y="7.91" strokeWeight="2" rotation="32.51" alpha="1" visible="false"/>
+				<e:Label id="baiRestLabel" text="4" x="175.94" y="1.91" textColor="0xd58689" fontFamily="標楷體"  alpha="1" visible="false"/>
+				<e:Label id="shiRestLabel" text="9" x="285.03" y="1.91" textColor="0xD58689" fontFamily="標楷體"  alpha="1" visible="false"/>
+				<e:Label id="geRestLabel" text="10" x="488.06" y="1.91" textColor="0xD58689" fontFamily="標楷體" alpha="1" visible="false"/>
 			</e:Group>
 			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-				<e:Label id="restLabel" text="1" x="218.82" y="23.12" textColor="0x000000" size="26" fontFamily="標楷體"/>
-				<e:Label id="label1" text="9" x="243" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
-				<e:Label id="label0" text="8" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Label id="label4" text="4" x="136.94" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Label id="label1" text="0" x="243" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
+				<e:Label id="label0" text="5" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-				<e:Label id="baiLabel" text="9" x="137" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
-				<e:Label id="shiLabel" text="6" x="243" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
-				<e:Label id="geLabel" text="8" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
+				<e:Label id="shiLabel" text="9" x="243" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
+				<e:Label id="geLabel" text="5" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
 			</e:Group>
 		</e:Group>
-		<e:Image x="1071.79" y="83.88" source="message_border_png" anchorOffsetY="0" height="304.57" anchorOffsetX="0" width="633.21"/>
-		<e:Image id="meAndSisterImage" x="1099.69" y="384.46" source="me_and_sister_png"/>
-		<e:Image x="1102.33" y="102.61" source="question5_start_png"/>
-		<e:Image id="meImage" x="1550.34" y="384.97" source="me_png"/>
-		<e:Group id="coinGroup" width="269.7" height="406.06" x="1275.27" y="342.18" anchorOffsetX="0" anchorOffsetY="0">
-			<ns1:CoinComponent id="coinComponent3" width="58" height="200" x="0" y="0" heightY="40" coinSource="yuan_coin_png" number="4" itemHeight="40" itemWidth="40" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent4" width="58" height="250" x="40" y="0" heightY="40" coinSource="yuan_coin_png" number="5" itemHeight="40" itemWidth="40" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent6" width="48" height="160" x="8.94" y="251.03" heightY="35" number="4" coinSource="jiao_coin_png" itemHeight="35" itemWidth="35" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent5" width="48" height="160" x="40" y="251.03" heightY="35" number="4" coinSource="jiao_coin_png" itemHeight="35" itemWidth="35" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent1" width="58" height="150" x="206.96" y="243.33" heightY="40" coinSource="yuan_coin_png" number="3" itemHeight="40" itemWidth="40" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent2" width="58" height="200" x="165.15" y="243.36" heightY="40" coinSource="yuan_coin_png" number="4" itemHeight="40" itemWidth="40" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent0" width="68" height="240" x="206" y="6" heightY="40" number="4" itemHeight="40" itemWidth="40" alpha="0"/>
-			<ns1:CoinComponent id="coinComponent" width="68" height="240" x="167.09" y="6" heightY="40" number="4" itemWidth="40" itemHeight="40" alpha="0"/>
-		</e:Group>
+		<e:Image x="175" y="108.61" source="text_background_png" anchorOffsetX="0" width="754.29" anchorOffsetY="0" height="209.66"/>
+		<e:Image x="202.09" y="123.88" source="question5_png"/>
+		<e:Image id="brotherAndToycarImage" x="1210.97" y="114.64" source="brother_and_toycar_png"/>
+		<ns1:CalcComponents id="calcComponent" width="324" height="154" x="375.03" y="460" anchorOffsetX="0" anchorOffsetY="0" alpha="1" visible="false"/>
 		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="0" y="781" bottom="0"/>
+		<e:Group id="tenyuanGroup" x="1344.27" y="317.34" anchorOffsetX="0" anchorOffsetY="0" alpha="1">
+			<e:Image id="image15" source="tenyuan_coin_png" y="100"/>
+			<e:Image source="tenyuan_coin_png" y="150"/>
+			<e:Image source="tenyuan_coin_png" y="200"/>
+			<e:Image source="tenyuan_coin_png" y="250"/>
+			<e:Image source="tenyuan_coin_png" y="300"/>
+		</e:Group>
 	</e:Group>
 </e:Skin>

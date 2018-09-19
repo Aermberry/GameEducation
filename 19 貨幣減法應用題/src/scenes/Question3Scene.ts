@@ -12,9 +12,11 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private nextQuestionComponent: NextQuestionComponent;
 	private lastQuestionComponent: LastQuestionComponent;
 
-	private hideAnimation: egret.tween.TweenGroup;
-	private lastWeekAnimation: egret.tween.TweenGroup;
-	private currentWeekAnimation: egret.tween.TweenGroup;
+	private startAnimation: egret.tween.TweenGroup;
+	private flickerCoinAnimation: egret.tween.TweenGroup;
+	private hideSisterAndBookAnimation: egret.tween.TweenGroup;
+	private jiaoFlickerAnimation: egret.tween.TweenGroup;
+	private yuanFlickerAnimation: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -31,11 +33,10 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionTap, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionTap, this);
-		this.playLastWeekAnimation();
+		this.playStartAnimation();
 		await lzlib.SoundUtility.playSound('streamsound3_0_mp3');
-		this.playCurrentWeekAnimation();
+		this.playFlickertAnimation();
 		await lzlib.SoundUtility.playSound('streamsound3_1_mp3');
-		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
 		this.showCalcComponent();
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
 		
@@ -44,27 +45,28 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private async onCalcComponentTap(e: egret.TouchEvent): Promise<void>
 	{
 		this.calcComponent.visible = false;
-		await lzlib.SoundUtility.playSound('streamsound3_3_mp3');
-		this.playHideAnimation();
+		await lzlib.SoundUtility.playSound('streamsound3_2_mp3');
+		this.PlaySisterAndBook();
 		this.formulaComponent.showTitleImage();
 		this.formulaComponent.showLeftImage();
-		await lzlib.SoundUtility.playSound('streamsound3_4_mp3');
+		await lzlib.SoundUtility.playSound('streamsound3_3_mp3');
 		this.formulaComponent.showRightImage();
-		await lzlib.SoundUtility.playSound('streamsound3_5_mp3');
+		await lzlib.SoundUtility.playSound('streamsound3_4_mp3');
 		this.showYuanAndJiao();
-		await lzlib.SoundUtility.playSound('streamsound3_6_mp3');
 		this.showPriceLeft();
 		this.showPriceRight();
 		this.showLineFormulaImage();
-		lzlib.SoundUtility.playSound('streamsound3_7_mp3');
-		await lzlib.ThreadUtility.sleep(4000);
+		await lzlib.SoundUtility.playSound('streamsound3_5_mp3');
+		this.jiaoFlickerAnimation.play();
+		await lzlib.SoundUtility.playSound('streamsound3_6_mp3');
 		this.showGeWei();
-		lzlib.SoundUtility.playSound('streamsound3_8_mp3');
-		await lzlib.ThreadUtility.sleep(6000);
+		this.yuanFlickerAnimation.play();
+		await lzlib.SoundUtility.playSound('streamsound3_7_mp3');
 		this.showShiWei();
 		this.showBaiWei();
+		lzlib.SoundUtility.playSound('streamsound3_8_mp3');
+		await lzlib.ThreadUtility.sleep(2000);
 		this.formulaComponent.showResultImage();
-		lzlib.SoundUtility.playSound('streamsound3_9_mp3');
 
 	}
 
@@ -76,21 +78,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private onLastQuestionTap(): void
 	{
 		Main.instance.gotoScene(new Question2Scene());
-	}
-
-	private playLastWeekAnimation(): void
-	{
-		this.lastWeekAnimation.play(0);
-	}
-
-	private playCurrentWeekAnimation(): void
-	{
-		this.currentWeekAnimation.play(0);
-	}
-
-	private playHideAnimation(): void
-	{
-		this.hideAnimation.play(0);
 	}
 
 	private showCalcComponent(): void
@@ -131,6 +118,21 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private showBaiWei(): void
 	{
 		this.baiLabel.visible = true;
+	}
+
+	private playStartAnimation(): void
+	{
+		this.startAnimation.play();
+	}
+
+	private playFlickertAnimation(): void
+	{
+		this.flickerCoinAnimation.play();
+	}
+
+	private PlaySisterAndBook(): void
+	{
+		this.hideSisterAndBookAnimation.play()
 	}
 	
 }

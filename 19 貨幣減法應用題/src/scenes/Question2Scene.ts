@@ -1,27 +1,28 @@
 class Question2Scene extends eui.Component implements  eui.UIComponent {
 	
+	private geLabel: eui.Label;
+	private shiLabel: eui.Label;
+	private baiLabel: eui.Label;
+	private tenyuanGroup: eui.Group;
+	private yuanGroup1: eui.Group;
+	private yuanGroup2: eui.Group;
+	private jiaoGroup1: eui.Group;
+	private jiaoGroup2: eui.Group;
+	private textBackgroundImage: eui.Image;
+	private questionStartImage: eui.Image;
 	private priceLeftGroup: eui.Group;
 	private priceRightGroup: eui.Group;
 	private yuanAndJiao: eui.Group;
-	private iceCreamImage: eui.Image;
-	private bananaShipImage: eui.Image;
 	private calcComponent: CalcComponents;
 	private formulaComponent: FormulaComponent;
 	private lineFormulaImage: eui.Image;
-	private tenyuanLeftCoinComponent: CoinComponent;
-	private yuanLeftCoinComponent: CoinComponent;
-	private jiaoLeftCoinComponent: CoinComponent;
-	private jiaoRightCoinComponent: CoinComponent;
-	private yuanRightCoinComponent1: CoinComponent;
-	private yuanRightCoinComponent2: CoinComponent;
-	private tenyuanRightCoinComponent: CoinComponent;
 	private nextQuestionComponent: NextQuestionComponent;
 	private lastQuestionComponent: LastQuestionComponent;
 
-	private startAnimation: egret.tween.TweenGroup;
-	private goodsMoveAnimation: egret.tween.TweenGroup;
-	private jiaoCoinMoveAnimation: egret.tween.TweenGroup;
-	private yuanCoinMoveAnimation: egret.tween.TweenGroup;
+	private geFlickerAnimation: egret.tween.TweenGroup;
+	private alphaJiaoAnimation: egret.tween.TweenGroup;
+	private calcYuanPartAnimation: egret.tween.TweenGroup;
+	private flickerAndShowResultAnimation: egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -33,42 +34,48 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
 		this.nextQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionTap, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionTap, this);
-		this.playStartAnimation();
-		this.playStartMP3();
+		await this.playStartMP3();
+		this.showQuestion();
+		await this.playQuestionMP3();
+		this.showCalcComponent();
 		this.calcComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCalcComponentTap, this);
 	}
 
 	private async onCalcComponentTap(e: egret.TouchEvent): Promise<void>
 	{
 		this.calcComponent.visible = false;
-		this.playOnCalcTapMP3();
-		await lzlib.ThreadUtility.sleep(4500);
-		this.goodsMoveAnimation.play(0);
-		await lzlib.ThreadUtility.sleep(7000);
-		this.hideGoods();
-		this.formulaComponent.showTitleImage();
-		this.formulaComponent.showLeftImage();
 		await lzlib.SoundUtility.playSound('streamsound2_2_mp3');
-		this.formulaComponent.showRightImage();
+		this.formulaComponent.showTitleImage();
+		await lzlib.ThreadUtility.sleep(500);
+		this.formulaComponent.showLeftImage();
 		await lzlib.SoundUtility.playSound('streamsound2_3_mp3');
-		this.showYuanAndJiao();
+		this.formulaComponent.showRightImage();
 		await lzlib.SoundUtility.playSound('streamsound2_4_mp3');
-		this.showPriceLeft();
+		this.showYuanAndJiao();
 		await lzlib.SoundUtility.playSound('streamsound2_5_mp3');
-		this.showPriceRight();
+		this.showPriceLeft();
+		this.showCoin();
 		await lzlib.SoundUtility.playSound('streamsound2_6_mp3');
-		this.showLineFormulaImage();
-		this.jiaoCoinMoveAnimation.play(0);
+		this.showPriceRight();
 		await lzlib.SoundUtility.playSound('streamsound2_7_mp3');
-		this.yuanCoinMoveAnimation.play(0);
+		this.showLineFormulaImage();
 		await lzlib.SoundUtility.playSound('streamsound2_8_mp3');
-		lzlib.SoundUtility.playSound('streamsound2_9_mp3');
+		this.geFlickerAnimation.play();
+		await lzlib.SoundUtility.playSound('streamsound2_9_mp3');
+		this.alphaJiaoAnimation.play();
+		this.showGeLabel();
+		await lzlib.SoundUtility.playSound('streamsound2_10_mp3');
+		this.calcYuanPartAnimation.play();
+		await lzlib.ThreadUtility.sleep(2500);
+		this.flickerAndShowResultAnimation.play();
+		await lzlib.SoundUtility.playSound('streamsound2_11_mp3');
 		this.formulaComponent.showResultImage();
+		await lzlib.SoundUtility.playSound('streamsound2_12_mp3');
 	}
 
 	private onNextQuestionTap(): void
@@ -81,19 +88,32 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 		Main.instance.gotoScene(new Question1Scene());
 	}
 
-	private playStartAnimation(): void
+	private async playQuestionMP3(): Promise<void>
 	{
-		this.startAnimation.play(0);
+		await lzlib.SoundUtility.playSound('streamsound2_1_mp3');
 	}
-			
+
 	private async playStartMP3(): Promise<void>
 	{
 		await lzlib.SoundUtility.playSound('streamsound2_0_mp3');
 	}
 
-	private async playOnCalcTapMP3(): Promise<void>
+	private showCoin(): void
 	{
-		await lzlib.SoundUtility.playSound('streamsound2_1_mp3');
+		this.tenyuanGroup.visible = true;
+		this.yuanGroup2.visible = true;
+		this.jiaoGroup1.visible = true;
+	}
+
+	private showQuestion(): void
+	{
+		this.textBackgroundImage.visible = true;
+		this.questionStartImage.visible = true;
+	}
+
+	private showCalcComponent(): void
+	{
+		this.calcComponent.visible = true;
 	}
 
 	private showYuanAndJiao(): void
@@ -104,29 +124,31 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	private showPriceLeft(): void
 	{
 		this.priceLeftGroup.visible = true;
-		this.tenyuanLeftCoinComponent.visible = true;
-		this.jiaoLeftCoinComponent.visible = true;
-		this.yuanLeftCoinComponent.visible = true;
 	}
 
 	private showPriceRight(): void
 	{
 		this.priceRightGroup.visible = true;
-		this.tenyuanRightCoinComponent.visible = true;
-		this.yuanRightCoinComponent1.visible = true;
-		this.yuanRightCoinComponent2.visible = true;
-		this.jiaoRightCoinComponent.visible = true;
+
 	}
 
 	private showLineFormulaImage(): void
 	{
 		this.lineFormulaImage.visible = true;
 	}
-
-	private hideGoods(): void
-	{
-		this.iceCreamImage.visible = false;
-		this.bananaShipImage.visible = false;
-	}
 	
+	private showGeLabel(): void
+	{
+		this.geLabel.visible = true;
+	}
+
+	private showShiLabel(): void
+	{
+		this.shiLabel.visible = true;
+	}
+
+	private showBaiLabel(): void
+	{
+		this.baiLabel.visible = true;
+	}
 }
