@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,add_info_png,shape93_png,watercolour_png,Wood color_png,shape100_png,shape140_png,shape144_png,shape146_png,shape166_png,shape167_png,shape168_png,shape169_png,shape187_png,shape189_png,shape193_png,shape194_png,shape197_png,shape199_png,shape200_png,shape204_png,shape220_png,shape221_png,shape224_png,shape235_png,shape237_png,shape240_png,shape241_png,shape242_png,shape243_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,0_png,subtraction00_png,subtraction01_png,dollar00_png,dollar01_png,dime00_png,dime01_png,nextQuestionButton00_png,nextQuestionButton01_png,nextStepButton00_png,nextStepButton01_png,shape11_png,shape2_png,shape6_png,shape8_png,shape9_png,shape10_png,background_png,title_png,title_title_png,logo_png,indextitle_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,minus_normal_png,minus_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,beer_json,beer_png,button_down2_png,button_up2_png,checkbox_select_disabled3_png,checkbox_select_down3_png,checkbox_select_up3_png,checkbox_unselect3_png,selected2_png,border2_png,header2_png,thumb_pb2_png,track_pb2_png,radiobutton_select_disabled2_png,radiobutton_select_down2_png,radiobutton_select_up2_png,radiobutton_unselect2_png,roundthumb2_png,track_sb2_png,thumb2_png,track2_png,tracklight2_png,handle2_png,off2_png,on2_png,description2_json,wlts_logo_jpg,02_png,12_png,22_png,32_png,42_png,52_png,62_png,72_png,82_png,92_png,add_normal2_png,add_selected2_png,background2_png,beer2_json,beer2_png,dime002_png,dime012_png,dollar002_png,dollar012_png,eight_normal2_png,eight_selected2_png,eraser_normal2_png,eraser_selected2_png,five_normal2_png,five_selected2_png,four_normal2_png,four_selected2_png,indextitle2_png,logo2_png,minus_normal2_png,minus_selected2_png,nextQuestionButton002_png,nextQuestionButton012_png,nextStepButton002_png,nextStepButton012_png,nine_normal2_png,nine_selected2_png,one_normal2_png,one_selected2_png,seven_normal2_png,seven_selected2_png,shape102_png,shape1002_png,shape112_png,shape1402_png,shape1442_png,shape1462_png,shape1662_png,shape1672_png,shape1682_png,shape1692_png,shape1872_png,shape1892_png,shape1932_png,shape1942_png,shape1972_png,shape1992_png,shape22_png,shape2002_png,shape2042_png,shape2202_png,shape2212_png,shape2242_png,shape2352_png,shape2372_png,shape2402_png,shape2412_png,shape2422_png,shape2432_png,shape62_png,shape82_png,shape92_png,six_normal2_png,six_selected2_png,add_and_subtract2_png,add_info2_png,automobile_exhauts2_png,cactus2_png,car2_png,cloud12_png,cloud22_png,cloud32_png,education_and_manpower_bureau2_png,eight2_png,eight_shadow_bottom_left2_png,eight_shadow_bottom_right2_png,eight_shadow_top_left2_png,five2_png,five_roof2_png,four_and_cactus2_png,grass_dark2_png,grass_dark_light2_png,grass_light2_png,grass_light_dark2_png,nine2_png,nine_roof2_png,nine_shadow_bottom2_png,nine_shadow_middle2_png,one2_png,one_roof2_png,rectangle_cyan2_png,seven2_png,seven_shadow2_png,shape932_png,six2_png,six_roof2_png,six_shadow_bottom2_png,six_shadow_middle2_png,splash_bg2_png,three2_png,three_roof2_png,three_shadow2_png,three_shadow_bottom2_png,three_shadow_middle2_png,three_shadow_middle_bottom2_png,two2_png,subtraction002_png,subtraction012_png,three_normal2_png,three_selected2_png,title2_png,title_title2_png,two_normal2_png,two_selected2_png,watercolour2_png,Wood color2_png,zero_normal2_png,zero_selected2_png,tipsLabel_png,tips00_png,exit_png,exit_title_png,exit_over_png,PreviousQuestion01_png,previousQuestion00_png,calculation_font_fnt,calculation_font_png,calculation_small_font_fnt,calculation_small_font_png,plus_png,minus_png,GGGFont_fnt,GGGFont_png,ant_json,ant_png,scarf_png,handkerchief_png,girl_png,boyandgirl_json,boyandgirl_png,boyandmoney_json,boyandmoney_png,boySaveMoney_json,boySaveMoney_png,SaveMoney_json,SaveMoney_png,swimming_json,swimming_png,tea_json,tea_png,T-shirt_json,T-shirt_png,WatchPrice_json,WatchPrice_png,scene01_mp3,retry_mp3,scene02_mp3,scene03_mp3,scene04_mp3,scene05_mp3,scene06_mp3,scene07_mp3,scene08_mp3,scene09_mp3,scene10_mp3,paint_json,paint_png,think_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,add_info_png,shape93_png,watercolour_png,Wood color_png,shape100_png,shape140_png,shape144_png,shape146_png,shape187_png,shape189_png,shape193_png,shape194_png,shape197_png,shape199_png,shape200_png,shape204_png,shape220_png,shape221_png,shape224_png,shape235_png,shape237_png,shape240_png,shape241_png,shape242_png,shape243_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,0_png,subtraction00_png,subtraction01_png,dollar00_png,dollar01_png,dime00_png,dime01_png,nextQuestionButton00_png,nextQuestionButton01_png,nextStepButton00_png,nextStepButton01_png,shape11_png,shape2_png,shape6_png,shape8_png,shape9_png,shape10_png,background_png,title_png,title_title_png,logo_png,indextitle_png,zero_selected_png,add_normal_png,add_selected_png,eight_normal_png,eight_selected_png,eraser_normal_png,eraser_selected_png,five_normal_png,five_selected_png,four_normal_png,four_selected_png,minus_normal_png,minus_selected_png,nine_normal_png,nine_selected_png,one_normal_png,one_selected_png,seven_normal_png,seven_selected_png,six_normal_png,six_selected_png,three_normal_png,three_selected_png,two_normal_png,two_selected_png,zero_normal_png,beer_json,beer_png,button_down2_png,button_up2_png,checkbox_select_disabled3_png,checkbox_select_down3_png,checkbox_select_up3_png,checkbox_unselect3_png,selected2_png,border2_png,header2_png,thumb_pb2_png,track_pb2_png,radiobutton_select_disabled2_png,radiobutton_select_down2_png,radiobutton_select_up2_png,radiobutton_unselect2_png,roundthumb2_png,track_sb2_png,thumb2_png,track2_png,tracklight2_png,handle2_png,off2_png,on2_png,description2_json,wlts_logo_jpg,02_png,12_png,22_png,32_png,42_png,52_png,62_png,72_png,82_png,92_png,add_normal2_png,add_selected2_png,background2_png,beer2_json,beer2_png,dime002_png,dime012_png,dollar002_png,dollar012_png,eight_normal2_png,eight_selected2_png,eraser_normal2_png,eraser_selected2_png,five_normal2_png,five_selected2_png,four_normal2_png,four_selected2_png,indextitle2_png,logo2_png,minus_normal2_png,minus_selected2_png,nextQuestionButton002_png,nextQuestionButton012_png,nextStepButton002_png,nextStepButton012_png,nine_normal2_png,nine_selected2_png,one_normal2_png,one_selected2_png,seven_normal2_png,seven_selected2_png,shape102_png,shape1002_png,shape112_png,shape1402_png,shape1442_png,shape1462_png,shape1872_png,shape1892_png,shape1932_png,shape1942_png,shape1972_png,shape1992_png,shape22_png,shape2002_png,shape2042_png,shape2202_png,shape2212_png,shape2242_png,shape2352_png,shape2372_png,shape2402_png,shape2412_png,shape2422_png,shape2432_png,shape62_png,shape82_png,shape92_png,six_normal2_png,six_selected2_png,add_and_subtract2_png,add_info2_png,automobile_exhauts2_png,cactus2_png,car2_png,cloud12_png,cloud22_png,cloud32_png,education_and_manpower_bureau2_png,eight2_png,eight_shadow_bottom_left2_png,eight_shadow_bottom_right2_png,eight_shadow_top_left2_png,five2_png,five_roof2_png,four_and_cactus2_png,grass_dark2_png,grass_dark_light2_png,grass_light2_png,grass_light_dark2_png,nine2_png,nine_roof2_png,nine_shadow_bottom2_png,nine_shadow_middle2_png,one2_png,one_roof2_png,rectangle_cyan2_png,seven2_png,seven_shadow2_png,shape932_png,six2_png,six_roof2_png,six_shadow_bottom2_png,six_shadow_middle2_png,splash_bg2_png,three2_png,three_roof2_png,three_shadow2_png,three_shadow_bottom2_png,three_shadow_middle2_png,three_shadow_middle_bottom2_png,two2_png,subtraction002_png,subtraction012_png,three_normal2_png,three_selected2_png,title2_png,title_title2_png,two_normal2_png,two_selected2_png,watercolour2_png,Wood color2_png,zero_normal2_png,zero_selected2_png,tipsLabel_png,tips00_png,exit_png,exit_title_png,exit_over_png,PreviousQuestion01_png,previousQuestion00_png,calculation_font_fnt,calculation_font_png,calculation_small_font_fnt,calculation_small_font_png,plus_png,minus_png,GGGFont_fnt,GGGFont_png,ant_json,ant_png,scarf_png,handkerchief_png,girl_png,boyandgirl_json,boyandgirl_png,boyandmoney_json,boyandmoney_png,boySaveMoney_json,boySaveMoney_png,SaveMoney_json,SaveMoney_png,swimming_json,swimming_png,tea_json,tea_png,T-shirt_json,T-shirt_png,WatchPrice_json,WatchPrice_png,scene01_mp3,retry_mp3,scene02_mp3,scene03_mp3,scene04_mp3,scene05_mp3,scene06_mp3,scene07_mp3,scene08_mp3,scene09_mp3,scene10_mp3,paint_json,paint_png,think_mp3,end_normal_png,end_over_png",
 			"name": "preload"
 		}
 	],
@@ -385,26 +385,6 @@
 			"name": "shape146_png",
 			"type": "image",
 			"url": "textures/shape146.png"
-		},
-		{
-			"name": "shape166_png",
-			"type": "image",
-			"url": "textures/shape166.png"
-		},
-		{
-			"name": "shape167_png",
-			"type": "image",
-			"url": "textures/shape167.png"
-		},
-		{
-			"name": "shape168_png",
-			"type": "image",
-			"url": "textures/shape168.png"
-		},
-		{
-			"name": "shape169_png",
-			"type": "image",
-			"url": "textures/shape169.png"
 		},
 		{
 			"name": "shape187_png",
@@ -1147,26 +1127,6 @@
 			"url": "textures/shape146.png"
 		},
 		{
-			"name": "shape1662_png",
-			"type": "image",
-			"url": "textures/shape166.png"
-		},
-		{
-			"name": "shape1672_png",
-			"type": "image",
-			"url": "textures/shape167.png"
-		},
-		{
-			"name": "shape1682_png",
-			"type": "image",
-			"url": "textures/shape168.png"
-		},
-		{
-			"name": "shape1692_png",
-			"type": "image",
-			"url": "textures/shape169.png"
-		},
-		{
 			"name": "shape1872_png",
 			"type": "image",
 			"url": "textures/shape187.png"
@@ -1800,6 +1760,16 @@
 			"name": "think_mp3",
 			"type": "sound",
 			"url": "audios/think.mp3"
+		},
+		{
+			"name": "end_normal_png",
+			"type": "image",
+			"url": "textures/end_normal.png"
+		},
+		{
+			"name": "end_over_png",
+			"type": "image",
+			"url": "textures/end_over.png"
 		}
 	]
 }

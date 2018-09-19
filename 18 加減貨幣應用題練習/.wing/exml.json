@@ -19,13 +19,7 @@
     "class": "Question1Scene",
     "parentPath": "",
     "backgroundType": "user",
-    "backgroundColor": "#efae21",
-    "guideLines": [
-      {
-        "type": "h",
-        "pos": 45.455
-      }
-    ]
+    "backgroundColor": "#e25f26"
   },
   "165d61708f0": {
     "path": "scenes\\Question2Scene.ts",
@@ -88,6 +82,11 @@
   "165e541a979": {
     "path": "components\\Exit.ts",
     "class": "Exit",
+    "parentPath": ""
+  },
+  "165ef771130": {
+    "path": "components\\End.ts",
+    "class": "End",
     "parentPath": ""
   }
 }

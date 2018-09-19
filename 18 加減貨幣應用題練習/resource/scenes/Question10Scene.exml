@@ -7,9 +7,6 @@
 	<e:Label text="媽媽買了一件襯衣售價69元5角，她付了80元。\n店員應召回幾元幾角？\n\n店員應找回：" x="273.18" y="224.12" anchorOffsetX="0" width="1276.97"
 	         anchorOffsetY="0" height="335.82" textColor="0x000000" size="59" lineSpacing="25" />
 	<e:Label text="69元5角-80元" textColor="0x000000" x="290.54" y="587.98" size="59" />
-
-
-
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0"/>
 	<ui:nextStepButton x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin"/>
 	<e:Group x="1028.05" y="402.94">
@@ -23,9 +20,11 @@
 	<e:BitmapLabel font="calculation_font_fnt" text="12" letterSpacing="50" textAlign="right" y="121" x="139.39"/>
 	<e:BitmapLabel font="calculation_font_fnt" text="5" letterSpacing="50" textAlign="right"  y="121" x="275.76"/>
 	<e:Rect width="337" height="3" y="190.91"/>
-	<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61"/>
+
 	<e:Image source="plus_png" x="48.48" y="127.27"/>
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
 	<Ui:MovieClipPlayer x="1566.67" y="657.12" dataSet="T-shirt_json" texture="T-shirt_png" movieClipName="T-shirt" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:End x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"/>
+
 </e:Skin>

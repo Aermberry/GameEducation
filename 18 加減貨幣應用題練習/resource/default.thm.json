@@ -33,13 +33,15 @@
 		"PreviousQuestion": "resource/components/PreviousQuestion.exml",
 		"nextStepButton": "resource/components/nextStepButton.exml",
 		"NextQuestion": "resource/components/NextQuestion.exml",
-		"EditableLabel": "resource/eui_skins/EditableLabel.exml"
+		"EditableLabel": "resource/components/EditableLabel.exml",
+		"End": "resource/components/End.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/IndexTitle.exml",
 		"resource/components/Background.exml",
 		"resource/components/EditableLabel.exml",
+		"resource/components/End.exml",
 		"resource/components/Exit.exml",
 		"resource/components/ImageButton.exml",
 		"resource/components/NextQuestion.exml",

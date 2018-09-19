@@ -7,9 +7,6 @@
 	<e:Label text="瑞明原有38元2角，他付了19元的游泳池入場費。\n現在瑞明還餘幾元幾角？\n\n瑞明還餘：" x="273.18" y="224.12" anchorOffsetX="0" width="1276.97"
 	         anchorOffsetY="0" height="335.82" textColor="0x000000" size="59" lineSpacing="25" />
 	<e:Label text="38元2角-19元" textColor="0x000000" x="290.54" y="587.98" size="59" />
-
-
-
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0"/>
 	<ui:nextStepButton x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin"/>
 	<e:Group x="1028.05" y="402.94">
@@ -28,4 +25,6 @@
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="swimming_json" texture="swimming_png" movieClipName="swimming" anchorOffsetX="0" anchorOffsetY="0"/>
+	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="NextQuestionSkin"/>
+	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="NextQuestionSkin"/>
 </e:Skin>

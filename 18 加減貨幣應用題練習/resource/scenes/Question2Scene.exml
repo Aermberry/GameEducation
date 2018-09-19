@@ -27,4 +27,5 @@
 	<e:Image source="plus_png" x="48.48" y="127.27"/>
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
+	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="NextQuestionSkin"/>
 </e:Skin>

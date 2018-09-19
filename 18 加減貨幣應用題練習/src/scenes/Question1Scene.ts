@@ -20,7 +20,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		this.playBackMusic();
 		this.DisplayAnimation();
-		Base.gotoNextScene(new Question2Scene);
+		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
 	}
 
 	private async DisplayAnimation(): Promise<void> {
@@ -37,5 +37,9 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		setTimeout(()=>{this.worldsGroup.visible=true;},1000);
 		await lzlib.ThreadUtility.sleep(3000);
 		this.nextStepButton.visible=true;
+	}
+
+	private onNextQuestionPage():void {
+		Base.gotoNextScene(new Question2Scene);
 	}
 }
