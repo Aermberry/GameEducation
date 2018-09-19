@@ -6,6 +6,6 @@
 	<e:Image source="background_png" verticalCenter="51.5" horizontalCenter="0.5"/>
 	<Ui:IndexTitle id="indexLabel" width="204" height="152" x="18" y="184" anchorOffsetX="0" anchorOffsetY="0" skinName="IndexTitleSkin"/>
 	<ns1:Exit width="188" height="113" x="1699" y="28.82" anchorOffsetX="0" anchorOffsetY="0"/>
-	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0"/>
+	
 
 </e:Skin>
