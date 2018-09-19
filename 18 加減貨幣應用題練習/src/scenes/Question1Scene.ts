@@ -8,6 +8,8 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private expressionLabel: eui.Label;
 	private numberPad: NumberPad;
 	private nextStepButton: ui.nextStepButton;
+	private expression='';//用户输入的模式
+	private inputssion='';//答案输入的模式
 
 	public constructor() {
 		super();
@@ -27,44 +29,25 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		this.DisplayAnimation();
 
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
-		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.onNumberPadKeyDown, this);
+		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextStep, this);
-		this.expressionLabel.text = this.expression;
 	}
 
-	private _expression: string;
-	public set expression(value: string) {
-		this._expression = value;
-	}
-
-	public get expression() {
-		return this._expression;
-	}
-
-	private onNumberPadKeyDown(e: KeyDownEvent): void {
-		if (e.char == '' && this.expression.length > 0) {
-			this._expression = this.expression.substr(0, this.expression.length - 1);
-		}
-		else {
-			this._expression += e.char;
-		}
-		console.log(this._expression);
-	}
-
+// 下一步
 	private nextStep(): void {
 
 	}
 
-
-	public openAddCalculationScene(addend: number, augend: number): void {
-
+	//数字按钮事件
+	private numberPadButtonClick(e:KeyDownEvent):void{
+		if(e.char==''&& this.expression.length>0){
+			this.expression=this.expression.substr(0,this.expression.length-1);
+		}
+		else{
+			this.expression+=e.char;
+		}
+		this.expressionLabel.text=this.expression;
 	}
-
-	public openSubtractCalculationScene(minuend: number, subtrahend: number): void {
-
-	}
-
-
 
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);

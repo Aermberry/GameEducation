@@ -29,7 +29,7 @@
 
 
 
-	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0"/>
+	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0"/>
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin" visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="402.94">
 	<e:Image source="tipsLabel_png"/>
