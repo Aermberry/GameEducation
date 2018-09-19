@@ -21,18 +21,18 @@
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="3" />
 	<ns1:NumberPad x="212.5" y="909.03" />
-	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
+
 	<e:Label id="questionLabel" text="昨天，淑敏儲蓄了22元5角，今天又儲蓄了16元5角\n淑敏共儲蓄了幾元幾角？\n\n淑敏共儲蓄了：" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1334.55" anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
 			 <e:Label id="titleLabel" text="姐姐共用去："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
 	<e:Label text="22元5角+16元5角" textColor="0x000000" x="290.54" y="587.98" size="59" />
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin"  visible="false"/>
-	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
+	<e:Group id="worldsGroup" x="1016.05" y="340.94">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
-	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
+	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="22" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
@@ -49,4 +49,6 @@
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<Ui:MovieClipPlayer x="1118" y="478" dataSet="saveMoney_json" texture="saveMoney_png" movieClipName="saveMoney"/>
+
 </e:Skin>

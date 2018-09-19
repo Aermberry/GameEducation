@@ -42,11 +42,11 @@
 	<e:BitmapLabel text="69" letterSpacing="50" textAlign="right"  y="121" x="122.94" font="GGGFont_fnt" width="123.18" anchorOffsetX="0" anchorOffsetY="0" height="59.03"/>
 <e:BitmapLabel text="-" letterSpacing="50" textAlign="right"  y="143.48" x="54.41" font="GGGFont_fnt" width="56.51" anchorOffsetX="0" anchorOffsetY="0" height="31.79"/>
 	<e:Rect width="337" height="3" y="190.91"/>
-
-
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
+	<Ui:MovieClipPlayer x="1122.61" y="460.7" dataSet="T-shirt_json" texture="T-shirt_png" movieClipName="T-shirt" anchorOffsetX="0" anchorOffsetY="0"/>
 	<Ui:End id="EndButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="EndSkin"/>
+	
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0"/>
 "/>
 </e:Skin>

@@ -21,7 +21,7 @@
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="8"/>
 	<ns1:NumberPad x="212.5" y="909.03"/>
-	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
+
 	<e:Label id="questionLabel" text="水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？" x="273.18" y="224.12" anchorOffsetX="0" width="1158.79"
 	         anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
 			 <e:Label id="titleLabel" text="兩種茶葉的售價相差："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
@@ -48,7 +48,8 @@
 
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
-	<Ui:MovieClipPlayer x="1503.03" y="696.52" dataSet="tea_json" texture="tea_png" movieClipName="tea" anchorOffsetX="0" anchorOffsetY="0"/>
+	<Ui:MovieClipPlayer x="1159.03" y="550.52" dataSet="tea_json" texture="tea_png" movieClipName="tea" anchorOffsetX="0" anchorOffsetY="0"/>
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="NextQuestionSkin"/>
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0"/>
+
 </e:Skin>

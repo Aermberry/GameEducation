@@ -21,18 +21,18 @@
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="4" />
 	<ns1:NumberPad x="212.5" y="909.03" />
-	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
+
 	<e:Label id="questionLabel" text="小明原有9元8角，媽媽再給他45元。\n小明現有幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="964.85"
 	         anchorOffsetY="0" height="157.03" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
 			 <e:Label id="titleLabel" text="小明現有："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
 	<e:Label text="9元8角+45元" textColor="0x000000" x="290.54" y="587.98" size="59" />
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin"  visible="false"/>
-	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
+	<e:Group id="worldsGroup" x="1028.05" y="334.94">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
-	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
+	<e:Group x="1075.59" y="584.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="9" letterSpacing="50" textAlign="right" x="215.15" y="45.03" />
@@ -49,4 +49,5 @@
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<Ui:MovieClipPlayer x="1084" y="372" dataSet="boySaveMoneyswf_json" texture="boySaveMoneyswf_png" movieClipName="boySaveMoneyswf"/>
 </e:Skin>

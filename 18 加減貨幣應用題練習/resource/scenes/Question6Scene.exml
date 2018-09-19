@@ -21,7 +21,7 @@
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="6" />
 	<ns1:NumberPad x="212.5" y="909.03" />
-	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
+
 	<e:Label id="questionLabel" text="哥哥原有42元6角，買原子筆用去12元5角。\n還餘幾錢幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="1155.76"
 	         anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
 			 <e:Label id="titleLabel" text="還餘："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
@@ -47,8 +47,8 @@
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
-	<Ui:MovieClipPlayer x="1566.67" y="657.12" dataSet="boyandmoney_json" texture="boyandmoney_png"
-	                    movieClipName="boyandmoney" anchorOffsetX="0" anchorOffsetY="0" />
+	<Ui:MovieClipPlayer x="956.67" y="437.12" dataSet="boyandmongey_json" texture="boyandmongey_png"
+	                    movieClipName="boyandmongey" anchorOffsetX="0" anchorOffsetY="0" />
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
