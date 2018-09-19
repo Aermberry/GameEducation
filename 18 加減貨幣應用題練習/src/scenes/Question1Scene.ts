@@ -1,15 +1,20 @@
 class Question1Scene extends eui.Component implements eui.UIComponent {
+
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
+	private expressionLabel: eui.Label;
+	private nextQuestionButton: Ui.NextQuestion;
+	private nextStepButton: ui.nextStepButton;
+
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
-	private nextQuestionButton: Ui.NextQuestion;
-	private expressionLabel: eui.Label;
+
+
 	private numberPad: NumberPad;
-	private nextStepButton: ui.nextStepButton;
-	private expression='';//用户输入的模式
-	private inputssion='';//答案输入的模式
+
+	private expression = '';//用户输入的模式
+	private inputssion = '';//答案输入的模式
 
 	public constructor() {
 		super();
@@ -33,27 +38,29 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextStep, this);
 	}
 
-// 下一步
+	// 下一步
 	private nextStep(): void {
 
 	}
 
 	//数字按钮事件
-	private numberPadButtonClick(e:KeyDownEvent):void{
-		if(e.char==''&& this.expression.length>0){
-			this.expression=this.expression.substr(0,this.expression.length-1);
+	private numberPadButtonClick(e: KeyDownEvent): void {
+		if (e.char == '' && this.expression.length > 0) {
+			this.expression = this.expression.substr(0, this.expression.length - 1);
+		} else {
+			this.expression += e.char;
 		}
-		else{
-			this.expression+=e.char;
-		}
-		this.expressionLabel.text=this.expression;
+		this.expressionLabel.text = this.expression;
 	}
 
+	// 出场动画
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
 		this.ColorAnimation.play(0);
 	}
+
+	// BGM
 	private async playBackMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound("scene01_mp3");
 		this.titleLabel.visible = true;
@@ -66,6 +73,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		this.expressionLabel.visible = true;
 	}
 
+	//下一题
 	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question2Scene);
 	}
