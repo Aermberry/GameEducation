@@ -3,7 +3,7 @@
         xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:Ui="Ui.*" xmlns:ui="ui.*" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 		<tween:TweenGroup id="ColorAnimation">
-			<tween:TweenItem target="{image0}">
+			<tween:TweenItem target="{watercolourImage}">
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{1142.16}" y="{291}" alpha="{0}" />
@@ -26,7 +26,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image}">
+			<tween:TweenItem target="{woodcolorImage}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}" y="{248}" />
@@ -81,7 +81,7 @@
 	</e:Group>
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="718.73" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
-	<e:Group x="1084.68" y="578.21" anchorOffsetY="0" height="320.64" anchorOffsetX="0" width="399.67" visible="false">
+	<e:Group id="arithmetic" x="1084.68" y="578.21" anchorOffsetY="0" height="320.64" anchorOffsetX="0" width="399.67" visible="false">
 		<e:BitmapLabel x="196.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="32" />
 		<e:BitmapLabel font="calculation_font_fnt" text="35" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
@@ -95,8 +95,8 @@
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant"
 	                    anchorOffsetX="0" anchorOffsetY="0" />
-	<e:Image id="image" source="Wood color_png" x="1408.91" y="599.81" alpha="0" />
-	<e:Image id="image0" source="watercolour_png" x="1142.16" y="685.31" alpha="0" />
+	<e:Image id="woodcolorImage" source="Wood color_png" x="1408.91" y="599.81" alpha="0" />
+	<e:Image id="watercolourImage" source="watercolour_png" x="1142.16" y="685.31" alpha="0" />
 
 	<e:Label id="expressionLabel" text=""  width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0"  anchorOffsetY="0" backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true" borderColor="0x020000" verticalAlign="middle" textAlign="left" fontFamily="方正準圓" visible="false"/>
 <ns1:NumberPad id="numberPad" x="138.5" y="909.03" />

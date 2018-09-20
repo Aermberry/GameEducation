@@ -6,15 +6,19 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private answerLabel: eui.Label;
 	private tipLabel: eui.Label;
 	private bestImage: eui.Image;
+	private woodcolorImage: eui.Image;
+	private watercolourImage: eui.Image;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
 	private numberPad: NumberPad;
-	private ant:Ui.MovieClipPlayer;
+	private ant: Ui.MovieClipPlayer;
+	private Beer: Beer;
 
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
+	private arithmetic: eui.Group;
 
 	private expression = '';//用户输入的模式
 	private inputssion = '';//答案输入的模式
@@ -63,8 +67,8 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound("scene01_mp3");
 		this.titleLabel.visible = true;
 		lzlib.ThreadUtility.sleep(1000);
-		await lzlib.SoundUtility.playSound("think_mp3");
-		await this.Beers.play(0);
+		lzlib.SoundUtility.playSound("think_mp3");
+		this.Beers.play(0);
 		setTimeout(() => { this.worldsGroup.visible = true; }, 1000);
 		await lzlib.ThreadUtility.sleep(3000);
 		this.nextStepButton.visible = true;
@@ -81,17 +85,28 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		const verification = this.expression,
 			inputssion = "35元4角+14元2角"
 		if (verification == inputssion) {
+			this.watercolourImage.visible = false;
+			this.woodcolorImage.visible = false;
+			this.nextStepButton.visible = false;
+			this.Beer.visible = false;
+			this.worldsGroup.visible = false;
+			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
+				this.ant.play();
+				lzlib.SoundUtility.playSound("scene01_mp3");
+			}).then(() => {
+				this.bestImage.visible = false;
+			}).then(() => {
+				this.arithmetic.visible = true;
+			});
 			this.answerLabel.visible = true;
 			this.bestImage.visible = true;
-			this.ant.play();
 		}
 		else {
-			if (this.worldsGroup.visible == false) this.worldsGroup.visible = true;
-			this.tipLabel.text = "想清楚，再試一次！"
-			setTimeout(() => {
+			this.worldsGroup.visible == false && (this.worldsGroup.visible = true);
+			this.tipLabel.text = "想清楚，再試一次！";
+			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
 				this.worldsGroup.visible = false
-			}, 5000);
-			lzlib.SoundUtility.playSound("think_mp3");
+			});
 		}
 	}
 }

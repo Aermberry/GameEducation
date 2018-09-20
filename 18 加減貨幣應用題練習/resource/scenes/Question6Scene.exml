@@ -35,7 +35,7 @@
 		<e:Label id="tipLabel" text="想一想，横式應該是..." anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>
 
 	</e:Group>
-	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
+	<e:Group id=" arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="42" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
@@ -48,9 +48,9 @@
 		<e:Rect width="337" height="3" y="190.91" />
 		<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61" />
 	</e:Group>
-	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
+	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
-	<Ui:MovieClipPlayer x="956.67" y="479.12" dataSet="boyandmongey_json" texture="boyandmongey_png"
+	<Ui:MovieClipPlayer id="materials" x="956.67" y="479.12" dataSet="boyandmongey_json" texture="boyandmongey_png"
 	                    movieClipName="boyandmongey" anchorOffsetX="0" anchorOffsetY="0" />
 
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
