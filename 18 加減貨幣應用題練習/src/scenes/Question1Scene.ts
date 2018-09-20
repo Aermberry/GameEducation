@@ -3,15 +3,14 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
+
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
+	private numberPad: NumberPad;
 
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
-
-
-	private numberPad: NumberPad;
 
 	private expression = '';//用户输入的模式
 	private inputssion = '';//答案输入的模式

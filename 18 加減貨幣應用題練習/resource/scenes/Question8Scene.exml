@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question8SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:Ui="Ui.*" xmlns:ui="ui.*" xmlns:tween="egret.tween.*">
-	<w:Config id="165d619415c" ></w:Config>
+<e:Skin class="Question8SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:Ui="Ui.*" xmlns:ui="ui.*" xmlns:tween="egret.tween.*">
+	<w:Config id="165d619415c"></w:Config>
 	<w:Declarations>
-		<tween:TweenGroup id="Animation">		
-		</tween:TweenGroup>
-			<tween:TweenGroup id="Beers">
+		<tween:TweenGroup id="Animation"></tween:TweenGroup>
+		<tween:TweenGroup id="Beers">
 			<tween:TweenItem target="{Beer}">
 				<tween:Set>
 					<tween:props>
-						<e:Object scaleX="{0}" scaleY="{0}" y="{185}" x="{1753}" alpha="{0}"/>
+						<e:Object scaleX="{0}" scaleY="{0}" y="{185}" x="{1753}" alpha="{0}" />
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="750" ease="sineInOut">
 					<tween:props>
-						<e:Object x="{812.98}" y="{427.76}" scaleX="{1}" scaleY="{1}" rotation="{0}" alpha="{1}"/>
+						<e:Object x="{812.98}" y="{427.76}" scaleX="{1}" scaleY="{1}" rotation="{0}" alpha="{1}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="8"/>
-	<ns1:NumberPad x="212.5" y="909.03"/>
-
-	<e:Label id="questionLabel" text="水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？" x="273.18" y="224.12" anchorOffsetX="0" width="1158.79"
-	         anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
-			 <e:Label id="titleLabel" text="兩種茶葉的售價相差："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
+	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="8" />
+	<ns1:NumberPad x="212.5" y="909.03" />
+	<e:Label id="questionLabel" text="水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？" x="273.18" y="224.12" anchorOffsetX="0"
+	         width="1158.79" anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"
+	         visible="false" />
+	<e:Label id="titleLabel" text="兩種茶葉的售價相差：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
 	<e:Label text="55元8角-30元8角" textColor="0x000000" x="290.54" y="587.98" size="59" />
-
-
-
-	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0"/>
-	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin" visible="false"/>
+	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
+	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
+	                   skinName="nextStepButtonSkin" visible="false" />
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
-	<e:Image source="tipsLabel_png"/>
-	<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0"/>
+		<e:Image source="tipsLabel_png" />
+		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
 	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
-	<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="26"/>
-	<e:BitmapLabel font="calculation_font_fnt" text="55" letterSpacing="50" textAlign="right" x="136.36" y="45.03"/>
-	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  x="275.75" y="47.03"/>
-
-	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  y="121" x="275.76"/>
-	<e:BitmapLabel text="-" letterSpacing="50" textAlign="right"  y="143.48" x="54.41" font="GGGFont_fnt" width="56.51" anchorOffsetX="0" anchorOffsetY="0" height="31.79"/>
-	<e:BitmapLabel text="30" letterSpacing="50" textAlign="right"  y="121" x="122.94" font="GGGFont_fnt" width="123.18" anchorOffsetX="0" anchorOffsetY="0" height="59.03"/>
-	<e:Rect width="337" height="3" y="190.91"/>
-	<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61"/>
-
+		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
+		               letterSpacing="26" />
+		<e:BitmapLabel font="calculation_font_fnt" text="55" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right" x="275.75" y="47.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right" y="121" x="275.76" />
+		<e:BitmapLabel text="-" letterSpacing="50" textAlign="right" y="143.48" x="54.41" font="GGGFont_fnt" width="56.51"
+		               anchorOffsetX="0" anchorOffsetY="0" height="31.79" />
+		<e:BitmapLabel text="30" letterSpacing="50" textAlign="right" y="121" x="122.94" font="GGGFont_fnt" width="123.18"
+		               anchorOffsetX="0" anchorOffsetY="0" height="59.03" />
+		<e:Rect width="337" height="3" y="190.91" />
+		<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61" />
 	</e:Group>
-	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0" anchorOffsetY="0"/>
-	<Ui:MovieClipPlayer x="1159.03" y="550.52" dataSet="tea_json" texture="tea_png" movieClipName="tea" anchorOffsetX="0" anchorOffsetY="0"/>
-	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="NextQuestionSkin"/>
-	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0"/>
-
+	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
+	                    anchorOffsetY="0" />
+	<Ui:MovieClipPlayer x="1159.03" y="550.52" dataSet="tea_json" texture="tea_png" movieClipName="tea" anchorOffsetX="0"
+	                    anchorOffsetY="0" />
+	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
+	                 skinName="NextQuestionSkin" />
+	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
+	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
+	         borderColor="0x020000" visible="false" />
+	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>

@@ -21,13 +21,14 @@
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="6" />
 	<ns1:NumberPad x="212.5" y="909.03" />
-
-	<e:Label id="questionLabel" text="哥哥原有42元6角，買原子筆用去12元5角。\n還餘幾錢幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="1155.76"
-	         anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"  visible="false"/>
-			 <e:Label id="titleLabel" text="還餘："  size="59" x="270.97" y="426.44" textColor="0x000000" visible="false"/>
+	<e:Label id="questionLabel" text="哥哥原有42元6角，買原子筆用去12元5角。\n還餘幾錢幾角？" x="273.18" y="224.12" anchorOffsetX="0"
+	         width="1155.76" anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"
+	         visible="false" />
+	<e:Label id="titleLabel" text="還餘：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
 	<e:Label text="42元6角-12元5角" textColor="0x000000" x="290.54" y="587.98" size="59" />
-	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0"  alpha="0"/>
-	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin"  visible="false"/>
+	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
+	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
+	                   skinName="nextStepButtonSkin" visible="false" />
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
@@ -51,5 +52,8 @@
 	                    movieClipName="boyandmongey" anchorOffsetX="0" anchorOffsetY="0" />
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
+	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
+	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
+	         borderColor="0x020000" visible="false" />
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>
