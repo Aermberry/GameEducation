@@ -5,6 +5,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
+	private previousQuestionButton:PreviousQuestion;
 	private numberPad: NumberPad;
 
 	private Animation: egret.tween.TweenGroup;
@@ -31,6 +32,7 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.DisplayAnimation();
 
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
+		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.previousQuestion,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 	}
 
@@ -65,6 +67,11 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextQuestionPage():void {
 		Base.gotoNextScene(new Question4Scene());
+	}
+
+	//上一题
+	private previousQuestion():void {
+		Base.gotoNextScene(new Question2Scene());
 	}
 	
 }

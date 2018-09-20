@@ -28,7 +28,7 @@
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin" visible="false" />
-	<e:Group id="worldsGroup" x="1028.05" y="336.94">
+	<e:Group id="worldsGroup" x="1028.05" y="336.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
@@ -54,5 +54,5 @@
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
 	         borderColor="0x020000" visible="false" />
-	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>

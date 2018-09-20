@@ -8,8 +8,10 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private worldsGroup: eui.Group;
 
 	private nextStepButton: ui.nextStepButton;
+	private previousQuestionButton:PreviousQuestion;
 	private nextQuestionButton: Ui.NextQuestion;
 	private numberPad: NumberPad;
+	private 
 
 	private expression = '';//用户输入的模式
 	private inputssion = '';//答案输入的模式
@@ -28,7 +30,8 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		this.playBackMusic();
 		this.DisplayAnimation();
 
-		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
+		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this);
+		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.previousQuestion,this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextStep, this);
 	}
@@ -72,6 +75,11 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	//下一题
 	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question3Scene());
+	}
+
+	//上一题
+	private previousQuestion():void {
+		Base.gotoNextScene(new Question1Scene());
 	}
 
 }

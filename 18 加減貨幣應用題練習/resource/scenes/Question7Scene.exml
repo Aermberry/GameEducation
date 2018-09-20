@@ -23,12 +23,12 @@
 	<ns1:NumberPad id="numberPad" x="212.5" y="909.03" />
 	<e:Label id="questionLabel" text="男裝手錶售99元9角，女裝手錶售88元8角。\n男裝手錶比女裝手裝手錶貴幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1143.64" anchorOffsetY="0" height="157.03" textColor="0x000000" size="59" lineSpacing="25"
-	         visible="false" />
-	<e:Label id="titleLabel" text="男裝手錶比女裝手錶貴：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
+	          visible="false"/>
+	<e:Label id="titleLabel" text="男裝手錶比女裝手錶貴：" size="59" x="270.97" y="426.44" textColor="0x000000"  visible="false"/>
 	<e:Label text="99元9角-88元8角" textColor="0x000000" x="290.54" y="587.98" size="59"  visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="877.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="420.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
@@ -55,5 +55,5 @@
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="588.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
 	         borderColor="0x020000"  visible="false"/>
-	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>

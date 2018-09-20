@@ -100,5 +100,5 @@
 	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<e:Label id="expressionLabel" text=""  width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0"  anchorOffsetY="0" backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true" borderColor="0x020000" visible="false"/>
-	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>
