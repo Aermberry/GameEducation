@@ -97,6 +97,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 				this.bestImage.visible = false;
 			}).then(() => {
 				this.arithmetic.visible = true;
+				this.validateSum();
 			});
 			this.answerLabel.visible = true;
 			this.bestImage.visible = true;
@@ -108,5 +109,31 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 				this.worldsGroup.visible = false
 			});
 		}
+	}
+
+	private async validateSum(): Promise<void>
+	{
+		let correctArray = ['0', '2', '5'];
+
+		for (let index = 0; index < correctArray.length; index++) {
+			let correctNumber = correctArray[index];
+			let inputedNumber = '';
+			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
+			editableLabel.visible = true;
+			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				console.log('输入错误');
+				this.antBoxImage.visible = true;
+				this.repeat2lmage.visible = true;
+				await lzlib.SoundUtility.playSound("error_streamsound 0_mp3")
+				this.antBoxImage.visible = false;
+				this.repeat2lmage.visible = false;
+			}
+			editableLabel.currentState = 'view';
+			editableLabel.text = inputedNumber;
+		}
+
+		this.googd.visible = true;
+		this.totalBoxlmage.visible = true;
+		await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
 	}
 }
