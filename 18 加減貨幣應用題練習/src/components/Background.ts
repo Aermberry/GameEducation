@@ -26,14 +26,5 @@ namespace Ui {
 		public get index(): string {
 			return this._index;
 		}
-
-		public set scene(value:eui.Component) {
-			this._scene = value
-			
-		}
-
-		public get scene():eui.Component{
-			return this._scene
-		}
 	}
 }
