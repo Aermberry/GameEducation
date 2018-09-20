@@ -1,14 +1,13 @@
-class Question7Scene extends eui.Component implements  eui.UIComponent {
+class Question7Scene extends eui.Component implements eui.UIComponent {
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
-	private previousQuestionButton:PreviousQuestion;
+	private previousQuestionButton: PreviousQuestion;
 	private numberPad: NumberPad;
-
-	private Animation: egret.tween.TweenGroup;
+	
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 
@@ -17,21 +16,18 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}
-
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
 		this.playBackMusic();
 		this.DisplayAnimation();
 
-		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
-		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.previousQuestion,this);
+		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
+		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.previousQuestion, this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 	}
 
@@ -45,7 +41,7 @@ class Question7Scene extends eui.Component implements  eui.UIComponent {
 		this.expressionLabel.text = this.expression;
 	}
 
-private async DisplayAnimation(): Promise<void> {
+	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
 	}
@@ -55,19 +51,21 @@ private async DisplayAnimation(): Promise<void> {
 		lzlib.ThreadUtility.sleep(1000);
 		await lzlib.SoundUtility.playSound("think_mp3");
 		await this.Beers.play(0);
-		setTimeout(()=>{this.worldsGroup.visible=true;},1000);
+		setTimeout(() => { this.worldsGroup.visible = true; }, 1000);
 		await lzlib.ThreadUtility.sleep(3000);
-		this.nextStepButton.visible=true;
-		this.expressionLabel.visible=true;
+		this.nextStepButton.visible = true;
+		this.expressionLabel.visible = true;
 	}
 
-	private onNextQuestionPage():void {
+	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question8Scene());
 	}
 
 	//上一题
-	private previousQuestion():void {
+	private previousQuestion(): void {
 		Base.gotoNextScene(new Question6Scene());
 	}
-	
+
+
+
 }

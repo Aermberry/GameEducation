@@ -8,7 +8,6 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 	private previousQuestionButton:PreviousQuestion;
 	private numberPad: NumberPad;
 
-	private Animation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 
