@@ -19,20 +19,20 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="5" />
-	<ns1:NumberPad x="212.5" y="909.03" />
+	<Ui:Background left="2" right="-2" top="2" bottom="-2" skinName="BackgroundSkin" index="5" />
+	<ns1:NumberPad id="numberPad" x="212.5" y="909.03" />
 	<e:Label id="questionLabel" text="我有78元，妹妹有8元9角。\n我和妹妹共有幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="758.79"
 	         anchorOffsetY="0" height="154" textColor="0x000000" size="59" lineSpacing="25" visible="false" />
 	<e:Label id="titleLabel" text="我和妹妹共有：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
-	<e:Label text="78元+8元9角" textColor="0x000000" x="290.54" y="587.98" size="59" />
+	<e:Label text="78元+8元9角" textColor="0x000000" x="290.54" y="587.98" size="59"  visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin" visible="false" />
-	<e:Group id="worldsGroup" x="1028.05" y="314.94">
+	<e:Group id="worldsGroup" x="1028.05" y="314.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
-	<e:Group x="1075.59" y="582.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
+	<e:Group x="1075.59" y="582.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="78" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />

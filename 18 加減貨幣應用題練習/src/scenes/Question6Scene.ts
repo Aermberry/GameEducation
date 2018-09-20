@@ -30,6 +30,7 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 		this.DisplayAnimation();
 
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
+		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 	}
 
 	//数字按钮事件

@@ -26,9 +26,12 @@ class Question10Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+
 		this.playBackMusic();
 		this.DisplayAnimation();
+
 		this.EndButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
+		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 	}
 
 	//数字按钮事件

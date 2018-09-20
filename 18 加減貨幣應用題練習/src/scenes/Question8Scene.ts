@@ -7,7 +7,6 @@ class Question8Scene extends eui.Component implements eui.UIComponent {
 	private nextStepButton: ui.nextStepButton;
 	private numberPad: NumberPad;
 
-	private Animation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 
@@ -24,8 +23,10 @@ class Question8Scene extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		
 		this.playBackMusic();
 		this.DisplayAnimation();
+
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
 	}
 
@@ -42,7 +43,6 @@ class Question8Scene extends eui.Component implements eui.UIComponent {
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
-		this.Animation.play(0);
 	}
 	private async playBackMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound("scene08_mp3");

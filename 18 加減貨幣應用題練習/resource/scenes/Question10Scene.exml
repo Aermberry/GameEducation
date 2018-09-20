@@ -20,21 +20,21 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="10" />
-	<ns1:NumberPad x="212.5" y="909.03" />
-	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:NumberPad id="numberPad" x="212.5" y="909.03" />
+	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0"  visible="false"/>
 	<e:Label id="questionLabel" text="媽媽買了一件襯衣售價69元5角，她付了80元。\n店員應召回幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1240.6" anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"
 	         visible="false" />
-	<e:Label id="titleLabel" text="店員應找囘：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
-	<e:Label text="80元-69元5角" textColor="0x000000" x="290.54" y="587.98" size="59" />
+	<e:Label id="titleLabel" text="店員應找囘：" size="59" x="270.97" y="426.44" textColor="0x000000"  visible="false"/>
+	<e:Label text="80元-69元5角" textColor="0x000000" x="290.54" y="587.98" size="59"  visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
 	</e:Group>
-	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
+	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="80" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
@@ -48,12 +48,12 @@
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
-	<Ui:MovieClipPlayer x="1122.61" y="460.7" dataSet="T-shirt_json" texture="T-shirt_png" movieClipName="T-shirt"
+	<Ui:MovieClipPlayer x="1122.61" y="510.7" dataSet="T-shirt_json" texture="T-shirt_png" movieClipName="T-shirt"
 	                    anchorOffsetX="0" anchorOffsetY="0" />
 	<Ui:End id="EndButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0" skinName="EndSkin" />
-	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
+	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="558.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
-	         borderColor="0x020000" visible="false" />
+	         borderColor="0x020000" />
 	<ns1:PreviousQuestion x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
 	"/>
 </e:Skin>
