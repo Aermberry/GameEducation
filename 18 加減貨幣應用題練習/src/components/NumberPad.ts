@@ -12,6 +12,8 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 	private addButton: ImageButton;
 	private minusButton: ImageButton;
 	private eraserButton: ImageButton;
+	private yuanButton:ImageButton;
+	private dimeButton:ImageButton;
 	
 	private $isAddVisible = true;
 	private $isMinusVisible = true;
@@ -41,6 +43,10 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 		this.nineButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('9'), this);
 		this.zeroButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('0'), this);
 
+		this.yuanButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('元'), this);
+		this.yuanButton.visible = this.isAddVisible;
+		this.dimeButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('角'), this);
+		this.dimeButton.visible = this.isAddVisible;
 		this.addButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('+'), this);
 		this.addButton.visible = this.isAddVisible;
 		this.minusButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('-'), this);

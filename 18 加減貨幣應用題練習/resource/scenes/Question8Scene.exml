@@ -32,7 +32,7 @@
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0" skinName="nextStepButtonSkin" visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
 	<e:Image source="tipsLabel_png"/>
-	<e:Label text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>
+	<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>
 	</e:Group>
 	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
 	<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="26"/>
@@ -50,12 +50,13 @@
 	<Ui:MovieClipPlayer x="1159.03" y="550.52" dataSet="tea_json" texture="tea_png" movieClipName="tea" anchorOffsetX="0" anchorOffsetY="0"/>
 
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="558.21" anchorOffsetX="0" anchorOffsetY="0"
-	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
-	         borderColor="0x020000"  visible="false"/>
+	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true"
+	         borderColor="0x020000"  fontFamily="方正準圓" visible="false"/>
 			 <ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
 <Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 <ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
+<e:Image id="bestImage" source="best_png" x="399.67" y="650.81" visible="false"/>
 
 
 </e:Skin>

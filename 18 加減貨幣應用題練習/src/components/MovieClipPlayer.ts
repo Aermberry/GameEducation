@@ -5,6 +5,9 @@
 namespace Ui {
 	export class MovieClipPlayer extends eui.Component implements eui.UIComponent {
 
+		private mcFactory:egret.MovieClipDataFactory;
+		private mc:egret.MovieClip;
+
 		public constructor() {
 			super();
 		}
@@ -14,10 +17,8 @@ namespace Ui {
 		}
 
 		protected childrenCreated(): void {
-			let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
-			let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
-			this.addChild(mc);
-			mc.play(1);
+			
+			
 		}
 
 		private _dataSet = '';
@@ -48,6 +49,13 @@ namespace Ui {
 
 		public set movieClipName(value: string) {
 			this._movieClipName = value;
+		}
+
+		public play():void{
+			let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
+			let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
+			this.addChild(mc);
+			mc.play(1);
 		}
 	}
 }

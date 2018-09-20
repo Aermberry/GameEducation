@@ -3,11 +3,14 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
-	private answerLabel:eui.Label;
+	private answerLabel: eui.Label;
+	private tipLabel: eui.Label;
+	private bestImage: eui.Image;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
 	private numberPad: NumberPad;
+	private ant:Ui.MovieClipPlayer;
 
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
@@ -73,17 +76,21 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		Base.gotoNextScene(new Question2Scene);
 	}
 
+	// 下一步
 	private verification(): void {
-
 		const verification = this.expression,
 			inputssion = "35元4角+14元2角"
-		if (verification==inputssion)
-		{
-			this.answerLabel.visible=true;
-
+		if (verification == inputssion) {
+			this.answerLabel.visible = true;
+			this.bestImage.visible = true;
+			this.ant.play();
 		}
-		else
-		{
+		else {
+			if (this.worldsGroup.visible == false) this.worldsGroup.visible = true;
+			this.tipLabel.text = "想清楚，再試一次！"
+			setTimeout(() => {
+				this.worldsGroup.visible = false
+			}, 5000);
 			lzlib.SoundUtility.playSound("think_mp3");
 		}
 	}

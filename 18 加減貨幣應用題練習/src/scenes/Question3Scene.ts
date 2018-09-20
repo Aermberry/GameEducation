@@ -1,12 +1,16 @@
-class Question3Scene extends eui.Component implements  eui.UIComponent {
+class Question3Scene extends eui.Component implements eui.UIComponent {
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
+	private tipLabel: eui.Label;
+	private bestImage:eui.Image;
+	private answerLabel: eui.Label;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
-	private previousQuestionButton:PreviousQuestion;
+	private previousQuestionButton: PreviousQuestion;
 	private numberPad: NumberPad;
+	private ant:Ui.MovieClipPlayer;
 
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
@@ -17,21 +21,19 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
-		
+
 		this.playBackMusic();
 		this.DisplayAnimation();
 
-		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionPage,this)
-		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.previousQuestion,this);
+		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
+		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.previousQuestion, this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
 	}
 
@@ -56,20 +58,38 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		lzlib.ThreadUtility.sleep(1000);
 		await lzlib.SoundUtility.playSound("think_mp3");
 		await this.Beers.play(0);
-		setTimeout(()=>{this.worldsGroup.visible=true;},1000);
+		setTimeout(() => { this.worldsGroup.visible = true; }, 1000);
 		await lzlib.ThreadUtility.sleep(3000);
-		this.nextStepButton.visible=true;
-		this.expressionLabel.visible=true;
+		this.nextStepButton.visible = true;
+		this.expressionLabel.visible = true;
 	}
 
 
-	private onNextQuestionPage():void {
+	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question4Scene());
 	}
 
 	//上一题
-	private previousQuestion():void {
+	private previousQuestion(): void {
 		Base.gotoNextScene(new Question2Scene());
 	}
-	
+
+		// 下一步
+	private verification(): void {
+		const verification = this.expression,
+			inputssion = "35元4角+14元2角"
+		if (verification == inputssion) {
+			this.answerLabel.visible = true;
+			this.bestImage.visible = true;
+			this.ant.play();
+		}
+		else {
+			if (this.worldsGroup.visible == false) this.worldsGroup.visible = true;
+			this.tipLabel.text = "想清楚，再試一次！"
+			setTimeout(() => {
+				this.worldsGroup.visible = false
+			}, 5000);
+			lzlib.SoundUtility.playSound("think_mp3");
+		}
+	}
 }
