@@ -19,6 +19,8 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
+	private editableLabelGroup:eui.Group;
+	private totalGroup:eui.Group;
 
 	private expression = '';//用户输入的模式
 	private inputssion = '';//答案输入的模式
@@ -81,7 +83,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	// 下一步
-	private verification(): void {
+	private async verification(): Promise<void> {
 		const verification = this.expression,
 			inputssion = "35元4角+14元2角"
 		if (verification == inputssion) {
@@ -90,9 +92,9 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			this.nextStepButton.visible = false;
 			this.Beer.visible = false;
 			this.worldsGroup.visible = false;
-			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
+			 lzlib.SoundUtility.playSound("retry_mp3").then(async () => {
 				this.ant.play();
-				lzlib.SoundUtility.playSound("scene01_mp3");
+			await lzlib.SoundUtility.playSound("scene01_mp3");
 			}).then(() => {
 				this.bestImage.visible = false;
 			}).then(() => {
@@ -113,7 +115,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 	private async validateSum(): Promise<void>
 	{
-		let correctArray = ['0', '2', '5'];
+		let correctArray = ['6', '9', '4'];
 
 		for (let index = 0; index < correctArray.length; index++) {
 			let correctNumber = correctArray[index];
@@ -122,18 +124,16 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			editableLabel.visible = true;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
 				console.log('输入错误');
-				this.antBoxImage.visible = true;
-				this.repeat2lmage.visible = true;
-				await lzlib.SoundUtility.playSound("error_streamsound 0_mp3")
-				this.antBoxImage.visible = false;
-				this.repeat2lmage.visible = false;
+				this.worldsGroup.visible = true;
+				await lzlib.SoundUtility.playSound("retry_mp3")
+				this.worldsGroup.visible = false;
 			}
 			editableLabel.currentState = 'view';
 			editableLabel.text = inputedNumber;
 		}
 
-		this.googd.visible = true;
-		this.totalBoxlmage.visible = true;
-		await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
+		this.bestImage.visible = true;
+		this.totalGroup.visible = true;
+		await lzlib.SoundUtility.playSound("retry_mp3")
 	}
 }

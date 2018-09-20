@@ -73,7 +73,7 @@
     "parentPath": ""
   },
   "global": {
-    "globalAutoLayerMarkEnable": false
+    "globalAutoLayerMarkEnable": true
   },
   "165d6eb2857": {
     "backgroundType": "user",
