@@ -49,7 +49,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
-		this.Animation.play(0);
 	}
 	private async playBackMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound("scene03_mp3");

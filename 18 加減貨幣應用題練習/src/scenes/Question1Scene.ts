@@ -3,6 +3,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
+	private answerLabel:eui.Label;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
@@ -34,12 +35,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
-		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextStep, this);
-	}
-
-	// 下一步
-	private nextStep(): void {
-
+		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.verification, this);
 	}
 
 	//数字按钮事件
@@ -75,5 +71,20 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	//下一题
 	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question2Scene);
+	}
+
+	private verification(): void {
+
+		const verification = this.expression,
+			inputssion = "35元4角+14元2角"
+		if (verification==inputssion)
+		{
+			this.answerLabel.visible=true;
+
+		}
+		else
+		{
+			lzlib.SoundUtility.playSound("think_mp3");
+		}
 	}
 }

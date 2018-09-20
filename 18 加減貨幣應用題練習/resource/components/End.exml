@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="EndSkin" width="200" height="99" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,over" >
+<e:Skin class="EndSkin" width="136" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,over" >
 	<w:Config id="165ef771130" ></w:Config>
 	<e:Image source="end_over_png" includeIn="over" left="0" right="0" top="0" bottom="0"/>
 	<e:Image source="end_normal_png" includeIn="normal" left="0" right="0" top="0" bottom="0"/>

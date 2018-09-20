@@ -61,11 +61,11 @@
 	</w:Declarations>
 	<w:Config id="165d61708f0"></w:Config>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2" />
-	<ns1:NumberPad id="numberPad" x="212.5" y="909.03" />
+	<ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
 	<e:Label id="questionLabel" text="姐姐買手帕用去12元5角，買頸巾又用去41元2角。\n姐姐共用去幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1319.39" anchorOffsetY="0" height="157.04" textColor="0x000000" size="59" lineSpacing="25"
-	         visible="false" />
-	<e:Label id="titleLabel" text="姐姐共用去：" size="59" x="270.97" y="426.44" textColor="0x000000" visible="false" />
+	          fontFamily="方正準圓" visible="false"/>
+	<e:Label id="titleLabel" text="姐姐共用去：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="方正準圓" visible="false"/>
 	<e:Label text="12元5角+42元2角" textColor="0x000000" x="290.54" y="587.98" size="59" visible="false" />
 	<e:Image id="WoodcolorImage" source="scarf_png" x="1331.74" y="584.75" visible="false" />
 	<e:Image id="watercolourImage" source="handkerchief_png" x="1113.78" y="574.15" visible="false" />
@@ -74,7 +74,7 @@
 	                   skinName="nextStepButtonSkin" visible="false" />
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
 		<e:Image source="tipsLabel_png" />
-		<e:Image source="tips00_png" horizontalCenter="33" verticalCenter="0" />
+		<e:Label text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>
 	</e:Group>
 	<e:Group x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
 		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
@@ -90,10 +90,10 @@
 	</e:Group>
 	<Ui:MovieClipPlayer x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
-	<Ui:NextQuestion id="nextQuestionButton" x="1713.94" y="942.36" anchorOffsetX="0" anchorOffsetY="0"
+	<Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="80" border="true"
 	         borderColor="0x020000"  visible="false"/>
-	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="943" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 </e:Skin>
