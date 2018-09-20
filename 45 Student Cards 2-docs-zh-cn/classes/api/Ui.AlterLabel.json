@@ -1,0 +1,36 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "fontSize",
+			"memberof": "Ui.AlterLabel",
+			"scope": "instance"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "text",
+			"memberof": "Ui.AlterLabel",
+			"scope": "instance"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "AlterLabel",
+			"memberof": "Ui.AlterLabel",
+			"scope": "instance"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "AlterLabel",
+		"memberof": "Ui",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\45 Student Cards 2\\src\\components\\AlterLabel.ts",
+		"augments": [],
+		"implements": []
+	}
+}

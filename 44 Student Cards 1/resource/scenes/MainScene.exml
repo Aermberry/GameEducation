@@ -69,13 +69,13 @@
 	</e:Group>
 
 	<e:Group id="helpGroup" x="1566" y="409.09" anchorOffsetY="0" height="739">
-		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
-		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
+		<e:Button label="dummy" x="0" y="-10"  alpha="0" visible="false"/>
+		<e:Button label="dummy" x="0" y="-10"  alpha="0" visible="false"/>
 		<e:Button id="ageButton" label="Help" x="0" y="0"  visible="false"/>
 		<e:Button id="addressButton" label="Help" x="0" y="178.61"  visible="false"/>
-		<e:Button label="dummy" x="0" y="-10"  visible="false" alpha="0"/>
+		<e:Button label="dummy" x="0" y="-10"  alpha="0" visible="false"/>
 		<e:Button id="hobbyButton" label="Help" x="0" y="514.06"  visible="false"/>
-		<e:Button label="dummy" x="0" y="-10" visible="false" alpha="0"/>
+		<e:Button label="dummy" x="0" y="-10" alpha="0" visible="false"/>
 		<e:Button id="clubButton" label="Help" x="0" y="666.94"  visible="false"/>
 	</e:Group>
 	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52">
