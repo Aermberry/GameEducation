@@ -18,13 +18,17 @@
 		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
 		"FinishScene": "resource/scenes/FinishScene.exml",
 		"RoleSelectScene": "resource/scenes/RoleSelectScene.exml",
-		"ButtonComponent": "resource/components/ButtonComponent.exml"
+		"ButtonComponent": "resource/components/ButtonComponent.exml",
+		"HornComponent": "resource/components/HornComponent.exml",
+		"RadioComponent": "resource/components/RadioComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/BackgroundAndTitle.exml",
 		"resource/components/ButtonComponent.exml",
+		"resource/components/HornComponent.exml",
 		"resource/components/MovieClipPlayer.exml",
+		"resource/components/RadioComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",

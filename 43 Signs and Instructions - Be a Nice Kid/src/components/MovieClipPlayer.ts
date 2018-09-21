@@ -11,10 +11,7 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 
 	protected childrenCreated():void
 	{
-		let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
-		let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
-		this.addChild(mc);
-		mc.play(-1);
+		this.createMovie();
 	}
 	
 	private _dataSet = '';
@@ -27,6 +24,7 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	public set dataSet(value: string)
 	{
 		this._dataSet = value;
+		this._texture && this._movieClipName && (this.createMovie());
 	}
 
 	private _texture = '';
@@ -39,6 +37,7 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	public set texture(value: string)
 	{
 		this._texture = value;
+		this._dataSet && this._movieClipName && (this.createMovie());
 	}
 
 	private _movieClipName = '';
@@ -51,5 +50,15 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	public set movieClipName(value: string)
 	{
 		this._movieClipName = value;
+		this._dataSet && this._texture && (this.createMovie());
+	}
+
+	private createMovie(): void
+	{
+		this.removeChildren();
+		let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
+		let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
+		this.addChild(mc);
+		mc.play(-1);
 	}
 }

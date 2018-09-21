@@ -26,5 +26,15 @@
         "path": "components/ButtonComponent.ts",
         "class": "ButtonComponent",
         "parentPath": ""
+    },
+    "165fb1d921e": {
+        "path": "components/HornComponent.ts",
+        "class": "HornComponent",
+        "parentPath": ""
+    },
+    "165fb673a4f": {
+        "path": "components/RadioComponent.ts",
+        "class": "RadioComponent",
+        "parentPath": ""
     }
 }

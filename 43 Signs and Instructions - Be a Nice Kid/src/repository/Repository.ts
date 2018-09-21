@@ -1,66 +1,66 @@
 class Repository {
 
 	public static currentBoy = '';
-	public  questions = [
+	public static questions = [
 		{
 			sentence: 'Do not eat or drink.',
 			picture: 'picture1',
-			sound: 'wave1'
+			sound: 'wave1_mp3'
 		},
 		{
 			sentence: 'Do not litter.',
 			picture: 'picture2',
-			sound: 'wave2'
+			sound: 'wave2_mp3'
 		},
 		{
 			sentence: 'Do not tear the pages.',
 			picture: 'picture3',
-			sound: 'wave3'
+			sound: 'wave3_mp3'
 		},
 		{
 			sentence: 'Keep quiet!',
 			picture: 'picture4',
-			sound: 'wave4'
+			sound: 'wave4_mp3'
 		},
 		{
 			sentence: 'Do not pick the flowers.',
 			picture: 'picture5',
-			sound: 'wave5'
+			sound: 'wave5_mp3'
 		},
 		{
 			sentence: 'Do not feed the birds.',
 			picture: 'picture6',
-			sound: 'wave6'
+			sound: 'wave6_mp3'
 		},
 		{
 			sentence: 'Raise your right hand.',
 			picture: 'picture7',
-			sound: 'wave7'
+			sound: 'wave7_mp3'
 		},
 		{
 			sentence: 'Put up your left hand.',
 			picture: 'picture8',
-			sound: 'wave8'
+			sound: 'wave8_mp3'
 		},
 		{
 			sentence: 'Shake hands with your neighbour.',
 			picture: 'picture9',
-			sound: 'wave9'
+			sound: 'wave9_mp3'
 		},
 		{
 			sentence: 'Pass your worksheets to your leader.',
 			picture: 'picture10',
-			sound: 'wave10'
+			sound: 'wave10_mp3'
 		},
 		{
 			sentence: 'Line up children!',
 			picture: 'picture11',
-			sound: 'wave11'
+			sound: 'wave11_mp3'
 		},
 		{
 			sentence: 'Do not run in the classroom!',
 			picture: 'picture12',
-			sound: 'wave12'
+			sound: 'wave12_mp3'
 		}
 		// {
 		// 	sentence: 'Speak up! I canˇt hear you.' ,

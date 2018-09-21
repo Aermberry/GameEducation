@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,island_png,title_png,background_child_png,boy1_png,boy0_png,boy2_png,boy3_png,boy4_png,streamsound 27_mp3,streamsound 31_mp3,start_normal_png,start_over_png,background_game_png,picture12_json,picture12_png,picture24_json,picture24_png,picture4_json,picture4_png,background_introduction_png,picture6_png,picture6_json,horn_normal_png,circle_png,circle_point_png,background_button_png,like_png,clock_wall_png,certificate_background_png,sound13_idel_to_over_mp3,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_7_mp3,picture1_png,picture1_json,picture2_png,picture2_json,picture3_png,picture3_json,picture5_png,picture5_json,picture7_png,picture7_json,picture8_json,picture8_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,island_png,title_png,background_child_png,boy1_png,boy0_png,boy2_png,boy3_png,boy4_png,streamsound 27_mp3,streamsound 31_mp3,start_normal_png,start_over_png,background_game_png,picture12_json,picture12_png,picture24_json,picture24_png,picture4_json,picture4_png,background_introduction_png,picture6_png,picture6_json,horn_normal_png,circle_png,circle_point_png,background_button_png,like_png,clock_wall_png,certificate_background_png,sound13_idel_to_over_mp3,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_7_mp3,picture1_png,picture1_json,picture2_png,picture2_json,picture3_png,picture3_json,picture5_png,picture5_json,picture7_png,picture7_json,picture8_json,picture8_png,wave1_mp3,wave2_mp3,wave3_mp3,wave4_mp3,wave5_mp3,wave6_mp3,wave7_mp3,wave8_mp3,wave9_mp3,wave10_mp3,wave11_mp3,wave12_mp3,cloud_png",
 			"name": "preload"
 		}
 	],
@@ -370,6 +370,71 @@
 			"name": "picture8_png",
 			"type": "image",
 			"url": "textures/movieClip/picture8.png"
+		},
+		{
+			"name": "wave1_mp3",
+			"type": "sound",
+			"url": "audios/wave1.mp3"
+		},
+		{
+			"name": "wave2_mp3",
+			"type": "sound",
+			"url": "audios/wave2.mp3"
+		},
+		{
+			"name": "wave3_mp3",
+			"type": "sound",
+			"url": "audios/wave3.mp3"
+		},
+		{
+			"name": "wave4_mp3",
+			"type": "sound",
+			"url": "audios/wave4.mp3"
+		},
+		{
+			"name": "wave5_mp3",
+			"type": "sound",
+			"url": "audios/wave5.mp3"
+		},
+		{
+			"name": "wave6_mp3",
+			"type": "sound",
+			"url": "audios/wave6.mp3"
+		},
+		{
+			"name": "wave7_mp3",
+			"type": "sound",
+			"url": "audios/wave7.mp3"
+		},
+		{
+			"name": "wave8_mp3",
+			"type": "sound",
+			"url": "audios/wave8.mp3"
+		},
+		{
+			"name": "wave9_mp3",
+			"type": "sound",
+			"url": "audios/wave9.mp3"
+		},
+		{
+			"name": "wave10_mp3",
+			"type": "sound",
+			"url": "audios/wave10.mp3"
+		},
+		{
+			"name": "wave11_mp3",
+			"type": "sound",
+			"url": "audios/wave11.mp3"
+		},
+		{
+			"name": "wave12_mp3",
+			"type": "sound",
+			"url": "audios/wave12.mp3"
+		},
+		{
+			"name": "cloud_png",
+			"type": "image",
+			"url": "textures/cloud.png"
 		}
 	]
 }
