@@ -45,7 +45,7 @@
 	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="350.94" visible="false">
 
-		<e:Image source="tipsLabel_png" />
+		<e:Image id="tipsImage" source="tipsLabel_png"  x="318" y="74" anchorOffsetX="318" anchorOffsetY="74"/>
 		<e:Label id="tipLabel" text="想一想，横式應該是..." anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true"/>
 
 	</e:Group>

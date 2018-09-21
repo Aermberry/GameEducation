@@ -8,6 +8,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private bestImage: eui.Image;
 	private scarfImage: eui.Image;
 	private handkerchiefImage: eui.Image;
+	private tipsImage:eui.Image;
 
 	private Animation: egret.tween.TweenGroup;
 	private blink:egret.tween.TweenGroup;
@@ -129,6 +130,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
 			editableLabel.visible = true;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				this.tipsImage.scaleX=-1;
 				this.tipLabel.text = "想清楚，再試一次！";
 				this.worldsGroup.visible = true;
 				await lzlib.SoundUtility.playSound("streamsound_3_mp3")

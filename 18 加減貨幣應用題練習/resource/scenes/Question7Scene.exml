@@ -44,7 +44,7 @@
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="420.94" visible="false">
-		<e:Image source="tipsLabel_png" />
+		<e:Image id="tipsImage" source="tipsLabel_png"  x="332" y="78" anchorOffsetX="332" anchorOffsetY="78"/>
 		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" bold="true"/>
 	</e:Group>
 	<e:Group id="arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
