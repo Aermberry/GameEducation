@@ -5,6 +5,7 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 	private tipLabel: eui.Label;
 	private bestImage: eui.Image;
 	private answerLabel: eui.Label;
+	private tipsImage:eui.Image;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
@@ -15,11 +16,14 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 	private materials: Ui.MovieClipPlayer;
 
 	private Beers: egret.tween.TweenGroup;
+	private blink:egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
+	private editableLabelGroup: eui.Group;
+	private totalGroup: eui.Group;
 
 	private expression = '';//用户输入的模式
-	private inputssion = '';//答案输入的模式
+
 	public constructor() {
 		super();
 	}
@@ -38,6 +42,7 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this)
 		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.previousQuestion, this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
+		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.verification, this);
 	}
 
 	//数字按钮事件
@@ -48,13 +53,17 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 			this.expression += e.char;
 		}
 		this.expressionLabel.text = this.expression;
-		console.log(this.expressionLabel.text)
 	}
 
+	// 出場動畫
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
+		await lzlib.ThreadUtility.sleep(1000);
+		this.materials.play();
 	}
+
+	// BGM
 	private async playBackMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound("scene03_mp3");
 		this.titleLabel.visible = true;
@@ -67,7 +76,7 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 		this.expressionLabel.visible = true;
 	}
 
-
+	// 下一場
 	private onNextQuestionPage(): void {
 		Base.gotoNextScene(new Question4Scene());
 	}
@@ -80,19 +89,22 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 	// 下一步
 	private verification(): void {
 		const verification = this.expression,
-			inputssion = "35元4角+14元2角"
+			inputssion = "22元5角+16元5角"
 		if (verification == inputssion) {
 			this.materials.enabled = false;
 			this.nextStepButton.visible = false;
 			this.Beer.visible = false;
 			this.worldsGroup.visible = false;
-			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
+			this.expressionLabel.visible=false;
+			this.materials.visible=false;
+			lzlib.SoundUtility.playSound("streamsound_1_mp3").then(async () => {
 				this.ant.play();
-				lzlib.SoundUtility.playSound("retry_mp3");
+				await lzlib.SoundUtility.playSound("streamsound_0_mp3");
 			}).then(() => {
 				this.bestImage.visible = false;
 			}).then(() => {
 				this.arithmetic.visible = true;
+				this.validateSum();
 			});
 			this.answerLabel.visible = true;
 			this.bestImage.visible = true;
@@ -105,4 +117,30 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 			});
 		}
 	}
+
+	private async validateSum(): Promise<void> {
+		let correctArray = ['0', '9', '3'];
+
+		for (let index = 0; index < correctArray.length; index++) {
+			let correctNumber = correctArray[index];
+			let inputedNumber = '';
+			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
+			editableLabel.visible = true;
+			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				this.tipsImage.scaleX=-1;
+				this.tipLabel.text = "想清楚，再試一次！";
+				this.worldsGroup.visible = true;
+				await lzlib.SoundUtility.playSound("streamsound_3_mp3")
+				this.worldsGroup.visible = false;
+			}
+			editableLabel.currentState = 'view';
+			editableLabel.text = inputedNumber;
+		}
+
+		this.bestImage.visible = true;
+		this.totalGroup.visible = true;
+		this.blink.playLoopAsync();
+		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
+	}
+
 }

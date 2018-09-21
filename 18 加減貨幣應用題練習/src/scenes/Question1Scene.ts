@@ -8,6 +8,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private bestImage: eui.Image;
 	private woodcolorImage: eui.Image;
 	private watercolourImage: eui.Image;
+	private tipsImage:eui.Image;
 
 	private nextQuestionButton: Ui.NextQuestion;
 	private nextStepButton: ui.nextStepButton;
@@ -17,13 +18,13 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
+	private blink: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
-	private editableLabelGroup:eui.Group;
-	private totalGroup:eui.Group;
+	private editableLabelGroup: eui.Group;
+	private totalGroup: eui.Group;
 
 	private expression = '';//用户输入的模式
-	private inputssion = '';//答案输入的模式
 
 	public constructor() {
 		super();
@@ -38,7 +39,6 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		mouse.enable(this.stage);
-
 		this.playBackMusic();
 		this.DisplayAnimation();
 
@@ -92,9 +92,10 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			this.nextStepButton.visible = false;
 			this.Beer.visible = false;
 			this.worldsGroup.visible = false;
-			 lzlib.SoundUtility.playSound("retry_mp3").then(async () => {
+			this.expressionLabel.visible = false;
+			lzlib.SoundUtility.playSound("streamsound_1_mp3").then(async () => {
 				this.ant.play();
-			await lzlib.SoundUtility.playSound("scene01_mp3");
+				await lzlib.SoundUtility.playSound("streamsound_0_mp3");
 			}).then(() => {
 				this.bestImage.visible = false;
 			}).then(() => {
@@ -113,8 +114,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		}
 	}
 
-	private async validateSum(): Promise<void>
-	{
+	private async validateSum(): Promise<void> {
 		let correctArray = ['6', '9', '4'];
 
 		for (let index = 0; index < correctArray.length; index++) {
@@ -123,9 +123,10 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
 			editableLabel.visible = true;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
-				console.log('输入错误');
+				this.tipsImage.scaleX=-1;
+				this.tipLabel.text = "想清楚，再試一次！";
 				this.worldsGroup.visible = true;
-				await lzlib.SoundUtility.playSound("retry_mp3")
+				await lzlib.SoundUtility.playSound("streamsound_3_mp3")
 				this.worldsGroup.visible = false;
 			}
 			editableLabel.currentState = 'view';
@@ -134,6 +135,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 		this.bestImage.visible = true;
 		this.totalGroup.visible = true;
-		await lzlib.SoundUtility.playSound("retry_mp3")
+		this.blink.playLoopAsync();
+		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
 	}
 }
