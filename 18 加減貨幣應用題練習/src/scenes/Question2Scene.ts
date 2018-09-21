@@ -9,11 +9,12 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private scarfImage: eui.Image;
 	private handkerchiefImage: eui.Image;
 
-
 	private Animation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
+	private editableLabelGroup:eui.Group;
+	private totalGroup:eui.Group;
 
 	private nextStepButton: ui.nextStepButton;
 	private previousQuestionButton: PreviousQuestion;
@@ -23,7 +24,6 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private Beer: Beer;
 
 	private expression = '';//用户输入的模式
-	private inputssion = '';//答案输入的模式
 
 	public constructor() {
 		super();
@@ -42,12 +42,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		this.nextQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextQuestionPage, this);
 		this.previousQuestionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.previousQuestion, this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.numberPadButtonClick, this);
-		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextStep, this);
-	}
-
-	// 下一步
-	private nextStep(): void {
-
+		this.nextStepButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.verification, this);
 	}
 
 	//数字按钮事件
@@ -94,20 +89,22 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	// 下一步
 	private verification(): void {
 		const verification = this.expression,
-			inputssion = "35元4角+14元2角"
+			inputssion = "12元5角+41元2角"
 		if (verification == inputssion) {
 			this.scarfImage.visible = false;
 			this.handkerchiefImage.visible = false;
 			this.nextStepButton.visible = false;
 			this.Beer.visible = false;
 			this.worldsGroup.visible = false;
-			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
+			this.expressionLabel.visible=false;
+			lzlib.SoundUtility.playSound("streamsound_1_mp3").then(async () => {
 				this.ant.play();
-				lzlib.SoundUtility.playSound("retry_mp3");
+			await lzlib.SoundUtility.playSound("streamsound_0_mp3");
 			}).then(() => {
 				this.bestImage.visible = false;
 			}).then(() => {
 				this.arithmetic.visible = true;
+				this.validateSum();
 			});
 			this.answerLabel.visible = true;
 			this.bestImage.visible = true;
@@ -119,6 +116,29 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 				this.worldsGroup.visible = false
 			});
 		}
+	}
+
+	private async validateSum(): Promise<void>
+	{
+		let correctArray = ['7', '4', '5'];
+
+		for (let index = 0; index < correctArray.length; index++) {
+			let correctNumber = correctArray[index];
+			let inputedNumber = '';
+			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
+			editableLabel.visible = true;
+			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				this.worldsGroup.visible = true;
+				await lzlib.SoundUtility.playSound("streamsound_3_mp3")
+				this.worldsGroup.visible = false;
+			}
+			editableLabel.currentState = 'view';
+			editableLabel.text = inputedNumber;
+		}
+
+		this.bestImage.visible = true;
+		this.totalGroup.visible = true;
+		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
 	}
 
 }

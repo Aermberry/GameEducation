@@ -122,9 +122,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			let inputedNumber = '';
 			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
 			editableLabel.visible = true;
-			editableLabel.text=inputedNumber;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
-				console.log('输入错误');
 				this.worldsGroup.visible = true;
 				await lzlib.SoundUtility.playSound("streamsound_3_mp3")
 				this.worldsGroup.visible = false;

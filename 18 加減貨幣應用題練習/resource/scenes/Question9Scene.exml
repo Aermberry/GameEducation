@@ -22,28 +22,28 @@
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="9" />
 
 	<e:Label id="questionLabel" text="瑞明原有38元2角，他付了19元的游泳池入場費。\n現在瑞明還餘幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
-	         width="1286.06" anchorOffsetY="0" height="154" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="方正準圓" visible="false"/>
-	<e:Label id="titleLabel" text="瑞明還餘：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="方正準圓" visible="false"/>
-	<e:Label text="38元2角-19元" textColor="0x000000" x="290.54" y="587.98" size="59"  visible="false"/>
+	         width="1286.06" anchorOffsetY="0" height="154" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="華康楷書體" visible="false"/>
+	<e:Label id="titleLabel" text="瑞明還餘：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
+	<e:Label id="answerLabel" text="38元2角-19元" textColor="0x000000" x="280.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="336.94" visible="false">
 		<e:Image source="tipsLabel_png" />
-		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>
+		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true"/>
 	</e:Group>
-	<e:Group id=" arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67">
-		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
+	<e:Group id="arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
+		<e:BitmapLabel x="200.6" y="-30.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
-		<e:BitmapLabel font="calculation_font_fnt" text="38" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
-		<e:BitmapLabel font="calculation_font_fnt" text="2" letterSpacing="50" textAlign="right" x="275.75" y="47.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="38" letterSpacing="50" textAlign="right" x="136.36" y="35.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="2" letterSpacing="50" textAlign="right" x="275.75" y="37.03" />
 		<e:BitmapLabel font="calculation_font_fnt" text="0" letterSpacing="50" textAlign="right" y="121" x="275.76" />
 		<e:BitmapLabel text="19" letterSpacing="50" textAlign="right" y="121" x="122.94" font="GGGFont_fnt" width="123.18"
 		               anchorOffsetX="0" anchorOffsetY="0" height="59.03" />
 		<e:BitmapLabel text="-" letterSpacing="50" textAlign="right" y="143.48" x="54.41" font="GGGFont_fnt" width="56.51"
 		               anchorOffsetX="0" anchorOffsetY="0" height="31.79" />
 		<e:Rect width="337" height="3" y="190.91" />
-		<ns1:EditableLabel skinName="EditableLabelSkin" y="206.06" x="260.61" />
+
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
@@ -52,11 +52,22 @@
 
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true"
-	         borderColor="0x020000"  fontFamily="方正準圓" visible="false"/>
+	         borderColor="0x020000"  fontFamily="華康楷書體" bold="true" textAlign="left" verticalAlign="middle" visible="false"/>
 			 <ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
 <Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 <ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
-<e:Image id="bestImage" source="best_png" x="399.67" y="650.81" visible="false"/>
+<e:Image id="bestImage" source="best_png" x="399.67" y="728.81" visible="false"/>
+<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
+		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="136" y="24" visible="false"/>
+		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="76" y="24" visible="false"/>
+		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="2" y="24" visible="false"/>
 
+
+	</e:Group>
+	<e:Group id="totalGroup" y="624" x="244" visible="false">
+	<e:Label text="= 19元2角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
+	<e:Rect width="234" y="63" height="4" x="43"/>
+	<e:Rect width="234" y="73" height="4" x="43"/>
+	</e:Group>
 </e:Skin>
