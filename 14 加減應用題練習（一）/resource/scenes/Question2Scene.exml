@@ -185,7 +185,7 @@
 	<e:Image id="antBoxImage" x="1756.91" y="333.35" source="Ant_box_png" scaleX="-1" alpha="0"/>
 	<e:Image id="image10" x="1279.12" y="384.85" source="Ant_title_png" alpha="0"/>
 	<e:Image id="repeat2lmage" x="1173.53" y="390.4" source="repeat_png" visible="false"/>
-	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="numberGroup" width="403.03" height="369.7" x="1038.15" y="385.04" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 
 
 
@@ -200,8 +200,8 @@
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1163" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false"/>
-		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false"/>
-		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false"/>
+		<ns1:EditableLargeLabel id="editablelabel2" x="103" y="0" visible="false"/>
+		<ns1:EditableLargeLabel id="editablelabel3" x="6" y="0" visible="false"/>
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>

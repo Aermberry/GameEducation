@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Question5SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+<e:Skin class="Question1SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
 	<w:Declarations>
 		<tween:TweenGroup id="cakeshopTweenGroup">
 			<tween:TweenItem target="{image}">
-				<tween:Wait duration="500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -11,45 +10,25 @@
 				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{image0}">
-				<tween:Wait duration="1000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image2}">
 				<tween:Wait duration="3000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{image1}">
-				<tween:Wait duration="4000"/>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -148,46 +127,27 @@
 		<ns1:ImageButton id="exitButton" x="1706" y="32.91" width="192" height="110" backgroundImageSource="exit_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png"/>
 		<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png"/>
 		<ns1:ImageButton id="nextStepButton" x="778.73" y="690.18" normalImageSource="Nextstep_normal_png" overImageSource="Nextstep_over_png"  visible="false"/>
-		<ns1:ImageButton id="lastButton" x="7.58" y="942" normalImageSource="lastnormal_png" overImageSource="lastover_png"/>
 		<e:Image x="32.94" y="173.15" source="number_box_png"/>
-		<e:Label text="5" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="華康楷書體"/>
+		<e:Label text="1" x="102.73" y="193.6" size="120" textColor="0x002b58" fontFamily="華康楷書體"/>
 		<ns1:MovieClipPlayer id="honeyBeeMovieClip" x="1479" y="175" texture="bee_png" dataSet="bee_json" movieClipName="bee" alpha="0"/>
-		<e:Image id="ejectBox1lmage" x="906" y="309.21" source="eject_box1_png" alpha="0" scaleY="0.81"/>
+		<e:Image id="ejectBox1lmage" x="906" y="309.21" source="eject_box1_png" alpha="0"/>
 		<ns1:NumberPad id="numberPad" y="900" x="213"/>
 		<e:Image id="reflectionlmage" x="1003.25" y="360.42" source="reflection_png" alpha="0"/>
 		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="110" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" fontFamily="華康楷書體" text="" visible="false"/>
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
-		<e:Label id="totalTextlmage" text="237-37" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
+		<e:Label id="totalTextlmage" text="40+25" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
 
-	<e:Label id="text2lmage" text="榨汁機237，比多士爐貴37元。\n多士爐售多少元？" x="273" y="209.52" size="60" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnersLabel" text="多士爐售：" x="275.91" y="357.91" textColor="0x000000" size="60" fontFamily="華康楷書體" alpha="0"/>
+	<e:Label id="text2lmage" text="巴士上層有乘客40人，下層乘客比上層多25人。\n巴士下層有乘客多少人？" x="273" y="209.52" size="52" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="textRunnersLabel" text="巴士下層有乘客：" x="275.91" y="357.91" textColor="0x000000" size="52" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
 
 
-		<e:Image id="image" x="103.19" y="26.79" source="Squeezelmage_png" anchorOffsetX="0" width="344.98" anchorOffsetY="0" height="294.67" alpha="0"/>
-		<e:Image id="image0" x="348.33" y="124.33" source="237lamge_png" alpha="0"/>
-		<e:Image id="image2" x="211.95" y="251.7" source="stovelmage_png" alpha="0"/>
-		<e:Image id="image1" x="263.85" y="339.16" source="runners_r_png" anchorOffsetX="0" width="44.48" anchorOffsetY="0" height="59.48" alpha="0"/>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<e:Image id="image" x="3.15" y="64" source="Bus1lmage_png" alpha="0" width="592.67" height="327.58"/>
+		<e:Image id="image0" x="3.15" y="64.02" source="Bus2lmage_png" alpha="0" anchorOffsetX="0" width="592.67" anchorOffsetY="0" height="327.58"/>
 
 
 
@@ -208,22 +168,21 @@
 
 
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
-		<e:BitmapLabel height="70" x="164" y="164" text="237" anchorOffsetX="0" width="229.03" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
-
-		<e:BitmapLabel width="249.91" height="80" x="255.18" y="263" text="37" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30" anchorOffsetX="0"/>
-		<e:Image x="34" y="290.27" source="reduce_png"/>
+		<e:BitmapLabel height="70" x="233.7" y="164" text="40" anchorOffsetX="0" width="162.36" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
+		<e:Image x="28.03" y="272.27" source="Plus_png"/>
+		<e:BitmapLabel width="159" height="80" x="237.84" y="263" text="25" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
 	</e:Group>
-	<e:Group id="editableLabelGroup" x="1163" y="740">
+	<e:Group id="editableLabelGroup" x="1153.85" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false"/>
 	</e:Group>
-	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
+	<e:Group id="totalBoxlmage" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="200(元）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0" width="281.52"/>
+		<e:Label text="65(人)" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" width="190"/>
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19"/>
-		<e:Label text="多士爐較便宜，應怎\n樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
+		<e:Image x="57" y="9.66" source="eject_box1_png" anchorOffsetY="0" height="217.61"/>
+		<e:Label text="巴士下層有乘客較多，應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
 	</e:Group>
 </e:Skin>
