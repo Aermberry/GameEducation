@@ -1,20 +1,26 @@
 class Question2Scene extends eui.Component implements eui.UIComponent {
+
 	private questionLabel: eui.Label;
 	private titleLabel: eui.Label;
 	private expressionLabel: eui.Label;
-	private tipLabel: eui.Label;
-	private bestImage:eui.Image;
 	private answerLabel: eui.Label;
+	private tipLabel: eui.Label;
+	private bestImage: eui.Image;
+	private scarfImage: eui.Image;
+	private handkerchiefImage: eui.Image;
+
 
 	private Animation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
+	private arithmetic: eui.Group;
 
 	private nextStepButton: ui.nextStepButton;
 	private previousQuestionButton: PreviousQuestion;
 	private nextQuestionButton: Ui.NextQuestion;
 	private numberPad: NumberPad;
-	private ant:Ui.MovieClipPlayer;
+	private ant: Ui.MovieClipPlayer;
+	private Beer: Beer;
 
 	private expression = '';//用户输入的模式
 	private inputssion = '';//答案输入的模式
@@ -85,22 +91,33 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		Base.gotoNextScene(new Question1Scene());
 	}
 
-		// 下一步
+	// 下一步
 	private verification(): void {
 		const verification = this.expression,
 			inputssion = "35元4角+14元2角"
 		if (verification == inputssion) {
+			this.scarfImage.visible = false;
+			this.handkerchiefImage.visible = false;
+			this.nextStepButton.visible = false;
+			this.Beer.visible = false;
+			this.worldsGroup.visible = false;
+			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
+				this.ant.play();
+				lzlib.SoundUtility.playSound("retry_mp3");
+			}).then(() => {
+				this.bestImage.visible = false;
+			}).then(() => {
+				this.arithmetic.visible = true;
+			});
 			this.answerLabel.visible = true;
 			this.bestImage.visible = true;
-			this.ant.play();
 		}
 		else {
-			if (this.worldsGroup.visible == false) this.worldsGroup.visible = true;
-			this.tipLabel.text = "想清楚，再試一次！"
-			setTimeout(() => {
+			this.worldsGroup.visible == false && (this.worldsGroup.visible = true);
+			this.tipLabel.text = "想清楚，再試一次！";
+			lzlib.SoundUtility.playSound("retry_mp3").then(() => {
 				this.worldsGroup.visible = false
-			}, 5000);
-			lzlib.SoundUtility.playSound("think_mp3");
+			});
 		}
 	}
 
