@@ -1,4 +1,7 @@
 class ButtonComponent extends eui.Component implements  eui.UIComponent {
+	
+	private textLabel: eui.Label;
+
 	public constructor() {
 		super();
 	}
@@ -12,8 +15,19 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.textLabel.text = this._text;
 	}
 
-	private 
+	private _text = 'OK';
+
+	public get text(): string
+	{
+		return this._text;
+	}
+
+	public set text(str: string)
+	{
+		this._text = str;
+	}
 	
 }

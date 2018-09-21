@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="FinishSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="FinishSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{clockWallImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-551.79}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object x="{548.49}" y="{360.21}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set/>
+				<tween:To duration="700">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cretificateGroup}">
+				<tween:Wait duration="800"/>
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{ButtonComponent}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="165f64470e8" ></w:Config>
 	<ns1:BackgroundAndTitle left="0" right="0" top="0" bottom="0"/>
 	<e:Image id="selectedChildImage" x="857.9" y="302.63" source="boy0_png"/>
-	<e:Image x="548.49" y="360.21" source="clock_wall_png" anchorOffsetX="0" width="833.67" anchorOffsetY="0" height="554.55"/>
-	<e:Group width="1086.82" height="801.19" x="377.2" y="249.01">
-		<e:Image x="0" y="0" source="certificate_background_png" anchorOffsetX="0" width="1086.82" anchorOffsetY="0" height="801.19" scaleX="1" scaleY="1"/>
-		<e:Label text="Congratulations!" x="325.33" y="224" textColor="0x000000" size="50"/>
-		<e:Label id="contentLabel" text="You hava helped one child!" x="238.36" y="324.91" textColor="0x000000" size="45"/>
+	<e:Image id="clockWallImage" x="548.49" y="-539.79" source="clock_wall_png" anchorOffsetX="0" width="833.67" anchorOffsetY="0" height="554.55"/>
+	<e:Group id="cretificateGroup" width="1086.82" height="801.19" x="377.2" y="249.01" alpha="0">
+		<e:Image source="certificate_background_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" alpha="1"/>
+		<e:Label text="Congratulations!" textColor="0x000000" size="50" fontFamily="Comic Sans MS" horizontalCenter="-31.409999999999968" verticalCenter="-151.59500000000003" alpha="1"/>
+		<e:Label id="contentLabel" text="You hava helped one child!" textColor="0x000000" size="45" fontFamily="Comic Sans MS" horizontalCenter="-24.909999999999968" verticalCenter="-21.095000000000027" alpha="1"/>
 	</e:Group>
-	<ns1:ButtonComponent width="220" height="65.45" x="1639" y="864" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:ButtonComponent id="ButtonComponent" width="220" height="65.45" x="1639" y="848.85" anchorOffsetX="0" anchorOffsetY="0" text="Continue" alpha="0"/>
 </e:Skin>

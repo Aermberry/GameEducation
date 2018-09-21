@@ -1,36 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="RoleSelectSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="RoleSelectSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="rollAnimation">
+			<tween:TweenItem target="{backgroundChildImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{51.39}" x="{1590.61}" y="{178.61}" alpha="{0.4}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object width="{1512}" x="{130}" y="{178.61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{needHelpGroup}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{poorCountriesGroup}">
+				<tween:Wait duration="2750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{HelpGroup}">
+				<tween:Wait duration="4750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="2250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{ChooseGroup}">
+				<tween:Wait duration="7000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="165f51bd3f2" ></w:Config>
 	<ns1:BackgroundAndTitle left="0" right="0" top="0" bottom="0"/>
-	<e:Group id="childrenGroup" visible="false">
-		<e:Image x="130" y="178.61" source="background_child_png" alpha="0.4"/>
-		<e:Image x="164.03" y="299.6" source="boy0_png"/>
-		<e:Image x="473.12" y="299.6" source="boy1_png"/>
-		<e:Image x="779.18" y="299.6" source="boy2_png"/>
-		<e:Image x="1085.24" y="299.6" source="boy3_png"/>
-		<e:Image x="1370.09" y="299.6" source="boy4_png"/>
+	<e:Image id="backgroundChildImage" x="130" y="178.61" source="background_child_png" alpha="0"/>
+	<e:Group id="childrenGroup">
+		<e:Image id="image" x="164.03" y="299.6" source="boy0_png" alpha="0"/>
+		<e:Image id="image0" x="473.12" y="299.6" source="boy1_png" alpha="0"/>
+		<e:Image id="image1" x="779.18" y="299.6" source="boy2_png" alpha="0"/>
+		<e:Image id="image2" x="1085.24" y="299.6" source="boy3_png" alpha="0"/>
+		<e:Image id="image3" x="1370.09" y="299.6" source="boy4_png" alpha="0"/>
 	</e:Group>
 
-	<e:Group width="1087.76" height="100" x="354.24" y="918.77" visible="false">
+	<e:Group id="needHelpGroup" width="1087.76" height="100" x="354.24" y="918.77" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
-		<e:Label text="Hi kids，some children need your help." x="170.24" y="30.15" textColor="0x000000" size="40"/>
+		<e:Label text="Hi kids，some children need your help." x="170.24" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Group width="1003.19" height="100" x="442.12" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+	<e:Group id="poorCountriesGroup" width="1003.19" height="100" x="442.12" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
-		<e:Label text="They are from poor countries." x="242.73" y="30.15" textColor="0x000000" size="40"/>
+		<e:Label text="They are from poor countries." x="242.73" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Group width="1073.66" height="100" x="451.21" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+	<e:Group id="HelpGroup" width="1073.66" height="100" x="451.21" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
-		<e:Label text="Help them get the things they need." x="201.35" y="27.18" textColor="0x000000" size="40"/>
+		<e:Label text="Help them get the things they need." x="201.35" y="27.18" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Group width="738.92" height="100" x="590.61" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+	<e:Group id="ChooseGroup" width="738.92" height="100" x="590.61" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
-		<e:Label text="Choose a child now." x="225.13" y="30.15" textColor="0x000000" size="40"/>
+		<e:Label text="Choose a child now." x="225.13" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Group width="1450.69" height="100" x="284.55" y="918.77" scaleX="0.86" anchorOffsetX="0">
+	<e:Group id="ListenGroup" width="1450.69" height="100" x="284.55" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="1" visible="false">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
-		<e:Label text="Listen to the instructions and click the correct pictures!" x="225.13" y="30.15" textColor="0x000000" size="40"/>
+		<e:Label text="Listen to the instructions and click the correct pictures!" x="225.13" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Image id="startImage" x="1673.12" y="745.61" source="start_normal_png"/>
+	<e:Image id="startImage" x="1673.12" y="745.61" source="start_normal_png" visible="false"/>
 	<e:Image id="selectedChildImage" x="857.9" y="302.63" source=""/>
 </e:Skin>
