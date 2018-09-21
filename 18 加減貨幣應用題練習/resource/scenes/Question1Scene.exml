@@ -87,9 +87,9 @@
 	</e:Group>
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="718.73" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
-	<e:Group id="arithmetic" x="1084.68" y="578.21" anchorOffsetY="0" height="320.64" anchorOffsetX="0" width="399.67" visible="false">
-		<e:BitmapLabel x="196.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
-		               letterSpacing="32" />
+	<e:Group id="arithmetic" x="1084.68" y="578.21" anchorOffsetY="0" height="320.64" anchorOffsetX="0" width="399.67">
+		<e:BitmapLabel x="196.6" y="-20.53" text="元角" anchorOffsetX="0" anchorOffsetY="0"
+		               letterSpacing="32"  font="GGGFont_fnt"/>
 		<e:BitmapLabel font="calculation_font_fnt" text="35" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
 		<e:BitmapLabel font="calculation_font_fnt" text="4" letterSpacing="50" textAlign="right" x="281.75" y="47.03" />
 		<e:BitmapLabel font="calculation_font_fnt" text="2" letterSpacing="50" textAlign="right" y="121" x="281.76" />
@@ -98,9 +98,9 @@
 
 	</e:Group>
 	<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="158" visible="false"/>
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="88" visible="false"/>
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="8" visible="false"/>
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="158"/>
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="88"/>
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="8"/>
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant"
 	                    anchorOffsetX="0" anchorOffsetY="0" />

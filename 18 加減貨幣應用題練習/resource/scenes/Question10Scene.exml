@@ -30,7 +30,7 @@
 	<e:Label text="80元-69元5角" textColor="0x000000" x="290.54" y="587.98" size="59" visible="false" />
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="402.94" visible="false">
 		<e:Image source="tipsLabel_png" />
 		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="方正準圓" bold="true"/>

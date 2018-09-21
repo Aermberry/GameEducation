@@ -23,7 +23,6 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private totalGroup:eui.Group;
 
 	private expression = '';//用户输入的模式
-	private inputssion = '';//答案输入的模式
 
 	public constructor() {
 		super();
@@ -92,9 +91,10 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			this.nextStepButton.visible = false;
 			this.Beer.visible = false;
 			this.worldsGroup.visible = false;
-			 lzlib.SoundUtility.playSound("retry_mp3").then(async () => {
+			this.expressionLabel.visible=false;
+			 lzlib.SoundUtility.playSound("streamsound_1_mp3").then(async () => {
 				this.ant.play();
-			await lzlib.SoundUtility.playSound("scene01_mp3");
+			await lzlib.SoundUtility.playSound("streamsound_0_mp3");
 			}).then(() => {
 				this.bestImage.visible = false;
 			}).then(() => {
@@ -122,10 +122,11 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 			let inputedNumber = '';
 			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
 			editableLabel.visible = true;
+			editableLabel.text=inputedNumber;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
 				console.log('输入错误');
 				this.worldsGroup.visible = true;
-				await lzlib.SoundUtility.playSound("retry_mp3")
+				await lzlib.SoundUtility.playSound("streamsound_3_mp3")
 				this.worldsGroup.visible = false;
 			}
 			editableLabel.currentState = 'view';
@@ -134,6 +135,6 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 		this.bestImage.visible = true;
 		this.totalGroup.visible = true;
-		await lzlib.SoundUtility.playSound("retry_mp3")
+		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
 	}
 }
