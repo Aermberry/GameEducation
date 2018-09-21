@@ -1,0 +1,30 @@
+{
+    "165f51bd3f2": {
+        "path": "scenes/RoleSelectScene.ts",
+        "class": "RoleSelectScene",
+        "parentPath": ""
+    },
+    "165f5204022": {
+        "path": "components/BackgroundAndTitle.ts",
+        "class": "BackgroundAndTitle",
+        "parentPath": ""
+    },
+    "165f5a86b49": {
+        "path": "scenes/QuestionScene.ts",
+        "class": "QuestionScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165f64470e8": {
+        "path": "scenes/FinishScene.ts",
+        "class": "FinishScene",
+        "parentPath": ""
+    },
+    "165f9abf786": {
+        "path": "components/ButtonComponent.ts",
+        "class": "ButtonComponent",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleSelectSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165f51bd3f2" ></w:Config>
+	<ns1:BackgroundAndTitle left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="childrenGroup" visible="false">
+		<e:Image x="130" y="178.61" source="background_child_png" alpha="0.4"/>
+		<e:Image x="164.03" y="299.6" source="boy0_png"/>
+		<e:Image x="473.12" y="299.6" source="boy1_png"/>
+		<e:Image x="779.18" y="299.6" source="boy2_png"/>
+		<e:Image x="1085.24" y="299.6" source="boy3_png"/>
+		<e:Image x="1370.09" y="299.6" source="boy4_png"/>
+	</e:Group>
+
+	<e:Group width="1087.76" height="100" x="354.24" y="918.77" visible="false">
+		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="Hi kids，some children need your help." x="170.24" y="30.15" textColor="0x000000" size="40"/>
+	</e:Group>
+	<e:Group width="1003.19" height="100" x="442.12" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
+		<e:Label text="They are from poor countries." x="242.73" y="30.15" textColor="0x000000" size="40"/>
+	</e:Group>
+	<e:Group width="1073.66" height="100" x="451.21" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
+		<e:Label text="Help them get the things they need." x="201.35" y="27.18" textColor="0x000000" size="40"/>
+	</e:Group>
+	<e:Group width="738.92" height="100" x="590.61" y="918.77" scaleX="0.86" anchorOffsetX="0" visible="false">
+		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
+		<e:Label text="Choose a child now." x="225.13" y="30.15" textColor="0x000000" size="40"/>
+	</e:Group>
+	<e:Group width="1450.69" height="100" x="284.55" y="918.77" scaleX="0.86" anchorOffsetX="0">
+		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
+		<e:Label text="Listen to the instructions and click the correct pictures!" x="225.13" y="30.15" textColor="0x000000" size="40"/>
+	</e:Group>
+	<e:Image id="startImage" x="1673.12" y="745.61" source="start_normal_png"/>
+	<e:Image id="selectedChildImage" x="857.9" y="302.63" source=""/>
+</e:Skin>

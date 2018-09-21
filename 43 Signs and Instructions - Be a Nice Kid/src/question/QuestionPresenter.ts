@@ -1,0 +1,4 @@
+class QuestionPresenter {
+	public constructor() {
+	}
+}
