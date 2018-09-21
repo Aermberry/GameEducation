@@ -5,7 +5,7 @@
 	<e:Image source="title_title_png" x="1073.28" y="74"/>
 	<e:Image source="background_png" verticalCenter="63.5" horizontalCenter="0"/>
 	<Ui:IndexTitle id="indexLabel" width="204" height="152" x="0" y="212.97" anchorOffsetX="0" anchorOffsetY="0" skinName="IndexTitleSkin"/>
-	<ns1:Exit width="188" height="113" x="1970.54" y="40.94" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:Exit width="188" height="113" x="1702.54" y="49.5" anchorOffsetX="0" anchorOffsetY="0"/>
 	
 
 </e:Skin>
