@@ -454,8 +454,8 @@
 			<e:Label id="geLeftLabel" text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="華康楷書體"/>
 				<e:Rect id="shiUnderlineRect" width="6" height="50" x="261.27" y="7.91" strokeWeight="2" rotation="32.51" alpha="1" visible="false"/>
 				<e:Rect id="geUnderlineRect" width="6" height="50" x="470.36" y="7.91" strokeWeight="2" rotation="32.51"  alpha="1" visible="false"/>
-				<e:Label id="shiRestLabel" text="7" x="285.03" y="1.91" textColor="0xd58689" fontFamily="華康楷書體"  alpha="1" visible="false"/>
-				<e:Label id="geRestLabel" text="15" x="494.12" y="1.91" textColor="0xD58689" fontFamily="華康楷書體"  alpha="1" visible="false"/>
+				<e:Label id="shiRestLabel" text="7" x="285.03" y="1.91" textColor="0xEC3323" fontFamily="華康楷書體"  alpha="1" visible="false"/>
+				<e:Label id="geRestLabel" text="15" x="494.12" y="1.91" textColor="0xEC3323" fontFamily="華康楷書體"  alpha="1" visible="false"/>
 			</e:Group>
 			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
 			<e:Label id="baiRightLabel" text="1" x="137" y="11" textColor="0x000000" size="46" fontFamily="華康楷書體"/>
