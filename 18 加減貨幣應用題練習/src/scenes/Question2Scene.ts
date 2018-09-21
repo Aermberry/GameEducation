@@ -10,6 +10,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private handkerchiefImage: eui.Image;
 
 	private Animation: egret.tween.TweenGroup;
+	private blink:egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
@@ -138,6 +139,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 
 		this.bestImage.visible = true;
 		this.totalGroup.visible = true;
+		this.blink.playLoopAsync();
 		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
 	}
 

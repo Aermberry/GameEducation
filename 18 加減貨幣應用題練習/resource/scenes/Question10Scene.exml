@@ -18,6 +18,20 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="blink">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="10" />
 
@@ -51,6 +65,7 @@
 	                    anchorOffsetY="0" />
 	<Ui:MovieClipPlayer id="materials" x="1122.61" y="510.7" dataSet="T-shirt_json" texture="T-shirt_png" movieClipName="T-shirt"
 	                    anchorOffsetX="0" anchorOffsetY="0" />
+						<e:Image id="image" source="mask_png" x="1749.94" y="945.36" alpha="0"/>
 	<Ui:End id="EndButton" x="1771.94" y="956.36" anchorOffsetX="0" anchorOffsetY="0" skinName="EndSkin" />
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="514.21" anchorOffsetX="0" anchorOffsetY="0"
 	         backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true"

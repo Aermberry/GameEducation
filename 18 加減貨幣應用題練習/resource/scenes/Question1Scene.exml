@@ -64,6 +64,20 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="blink">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165d6168b60"></w:Config>
 	<Ui:Background anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin"
@@ -108,6 +122,7 @@
 
 	<e:Label id="expressionLabel" text=""  width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0"  anchorOffsetY="0" backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true" borderColor="0x020000" verticalAlign="middle" textAlign="left" fontFamily="華康楷書體" bold="true" visible="false"/>
 <ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
+	<e:Image id="image" source="mask_png" x="1749.94" y="945.36" alpha="0"/>
 <Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<e:Image id="bestImage" source="best_png" x="371.67" y="724.81" visible="false"/>

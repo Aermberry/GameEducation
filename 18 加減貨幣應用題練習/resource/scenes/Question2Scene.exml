@@ -61,6 +61,20 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="blink">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165d61708f0"></w:Config>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2" />
@@ -93,6 +107,7 @@
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
 	                    anchorOffsetY="0" />
+						<e:Image id="image" source="mask_png" x="1749.94" y="945.36" alpha="0"/>
 	<Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<e:Label id="expressionLabel" text="" width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0" anchorOffsetY="0"

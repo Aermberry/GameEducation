@@ -17,6 +17,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 	private ColorAnimation: egret.tween.TweenGroup;
 	private Beers: egret.tween.TweenGroup;
+	private blink:egret.tween.TweenGroup;
 	private worldsGroup: eui.Group;
 	private arithmetic: eui.Group;
 	private editableLabelGroup:eui.Group;
@@ -133,6 +134,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 		this.bestImage.visible = true;
 		this.totalGroup.visible = true;
+		this.blink.playLoopAsync();
 		await lzlib.SoundUtility.playSound("streamsound_1_mp3")
 	}
 }
