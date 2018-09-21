@@ -1,17 +1,9 @@
 {
-    "165fb96ddee": {
-        "path": "scenes\\StatueScene.ts",
-        "class": "StatueScene",
-        "parentPath": ""
-    },
-    "165fb976fa2": {
-        "path": "scenes\\MainScene.ts",
-        "class": "MainScene",
-        "parentPath": ""
-    },
-    "165fb97bad5": {
-        "path": "scenes\\FinishScene.ts",
-        "class": "FinishScene",
-        "parentPath": ""
-    }
+  "165fb96ddee": {
+    "path": "scenes\\StatueScene.ts",
+    "class": "StatueScene",
+    "parentPath": "",
+    "backgroundType": "user",
+    "backgroundColor": "#24b7ae"
+  }
 }
