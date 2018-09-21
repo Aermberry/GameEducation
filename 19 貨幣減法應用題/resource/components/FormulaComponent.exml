@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FormulaComponentSkin" width="374" height="266" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165ac99081f" ></w:Config>
+	<e:Image id="titleImage" left="56" y="0" source="formula1_question_png" visible="false"/>
+	<e:Image id="leftImage" x="69" y="100" bottom="126" source="formula1_left_png" visible="false"/>
+	<e:Image id="rightImage" x="177" y="100" bottom="126" right="10" source="formula1_right_png" visible="false"/>
+	<e:Image id="resultImage" x="2" y="178" bottom="10" source="formula1_result_png" visible="false"/>
+</e:Skin>
