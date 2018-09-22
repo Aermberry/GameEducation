@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="165fb976fa2" ></w:Config>
-	<e:Label text="Susan cannot go to Tom's party.\nShe writes a card to Tom.Drag\nthe words to the right places in\nthe card." x="160" y="128" size="50" textColor="0x64605c"/>
+	<e:Group x="21.88" y="16.37">
+	<e:Group x="0" y="0" anchorOffsetX="0" width="752" anchorOffsetY="0" height="318" includeInLayout="false">
+	<e:Rect id="dd" width="750" height="316" x="2" y="0" fillColor="0xffffbf" anchorOffsetY="0"/>
+	<e:Label text="Susan cannot go to Tom's party.\nShe writes a card to Tom.Drag\nthe words to the right places in\nthe card." x="26" y="16" size="50" textColor="0x64605c" lineSpacing="25" background="true" backgroundColor="0xFFFFBF" wordWrap="true"/>
+	</e:Group>
+	</e:Group>
+	<e:Image source="EDB_game_48_scene2_png" x="791" y="0"/>
+
 </e:Skin>
