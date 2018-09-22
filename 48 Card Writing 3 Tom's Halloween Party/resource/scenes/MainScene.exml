@@ -8,15 +8,5 @@
 	</e:Group>
 	</e:Group>
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0"/>
-	<ns1:TextLabel x="353.49" y="382.29" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="a piano exam" fontSize="50"/>
-	<ns1:TextLabel x="53.49" y="533.81" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="Happy Halloween" fontSize="50" width="334.7"/>
-	<ns1:TextLabel x="53.49" y="697.45" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="your card" fontSize="50" width="298.34"/>
-	<ns1:TextLabel x="432.28" y="700.48" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="2:30 p.m." fontSize="50" width="292.28"/>
-	<ns1:TextLabel x="117.13" y="861.09" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="31st October" fontSize="50" width="334.7"/>
-	<ns1:TextLabel x="53.49" y="1012.6" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="Mary" fontSize="50" width="177.13"/>
-	<ns1:TextLabel x="435.31" y="1061.08" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="can come" fontSize="50" width="289.25"/>
-	<ns1:TextLabel x="53.49" y="1173.21" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="cannot come" fontSize="50" width="361.98"/>
-	<ns1:TextLabel x="371.67" y="1306.54" anchorOffsetX="0" anchorOffsetY="0" backgroundColor="0xffffff" text="Yours," fontSize="50" width="204.4"/>
-	<e:Label text="22nd October           \nDear Tom,                                       \nThank you for_____________.   \nSorry,I__________________to your  \n party.I have __________________  \non_________________________    \nat________________.                                  \nBest Wishes,   \nSuan    " x="887.86" y="185.3" anchorOffsetX="0" width="937.63" anchorOffsetY="0" height="1078.49" textColor="0x64605c" size="57" lineSpacing="50" textAlign="right"/>
 
 </e:Skin>
