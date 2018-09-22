@@ -24,7 +24,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(child, false);
-			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
+			child.addEventListener(lzlib.LzDragEvent.CANCEL,this.onDragCancel,this);
 		}
 		this.initDropableLabel();
 	}
@@ -42,16 +42,17 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let dragComponent = e.dragObject as eui.Label;
 
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
-			e.preventDefault();
+			e.preventDefault;
 			targetComponent.visible = true;
 			dragComponent.visible = false;
 
 			if (this.dropGroup.$children.every(child => child.visible)) {
+				lzlib.ThreadUtility.sleep(3000);
 				Main.instance.gotoScene(new FinishScene());
 			}
 			else {
 				this.currentQuestionIndex++;
-				this.initDropableLabel();
+				this.initDragable();
 			}
 		}
 		else {
@@ -64,19 +65,17 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		}
 	}
 
-	private onDragCancel(e: lzlib.LzDragEvent): void 
-	{
+	private onDragCancel(e:lzlib.LzDragEvent):void{
 		this.showTipsLabel();
 	}
 
 	// tips模块
 	private async showTipsLabel(): Promise<void> {
-		let currentQuestionIndex = this.currentQuestionIndex;
 		let originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
 		this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将yipsGroup层级升至最高
-		this.tipsGroup.getChildAt(currentQuestionIndex).visible = true;
+		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(2000);
-		this.tipsGroup.getChildAt(currentQuestionIndex).visible = false
+		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = false
 		this.setChildIndex(this.tipsGroup, originalChildIndex);//返回至原来的层级
 	}
 
