@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="TextLabelSkin" width="780" height="330" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="TextLabelSkin" width="365" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="166001a7405" ></w:Config>
 	<e:Rect id="backgroundRect" top="0" left="0" right="0" bottom="0" fillColor="0xf7d783"/>
-	<e:Label id="textLabel" text="Label" x="161" y="142" top="30" left="30" right="30" bottom="30"  textColor="0x64605c" lineSpacing="25" width="710" height="275"/>
+	<e:Label id="textLabel" text="a piano exam" x="161" y="142" top="30" left="30" right="30" bottom="30"  lineSpacing="25" width="710" height="275" size="50" textColor="0xd90181" textAlign="center" verticalAlign="middle"/>
 </e:Skin>
