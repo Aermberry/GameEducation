@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165fb976fa2" ></w:Config>
-	<e:Label text="Susan cannot go to Tom's party.\nShe writes a card to Tom.Drag\nthe words to the right places in\nthe card." x="162" y="128" size="50" textColor="0x64605c"/>
+	<e:Label text="Susan cannot go to Tom's party.\nShe writes a card to Tom.Drag\nthe words to the right places in\nthe card." x="160" y="128" size="50" textColor="0x64605c"/>
 </e:Skin>

@@ -1,4 +1,4 @@
-class StatueScene extends eui.Component implements  eui.UIComponent {
+class StartScene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}

@@ -9,5 +9,8 @@
   "165fb976fa2": {
     "backgroundType": "user",
     "backgroundColor": "#97e0e5"
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
   }
 }
