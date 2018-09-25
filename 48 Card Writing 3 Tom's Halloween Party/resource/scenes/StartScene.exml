@@ -8,5 +8,5 @@
 	<e:Label text="CHeers," x="1032.32" y="1084.54" textColor="0x6375e2" size="65" lineSpacing="25"/>
 	<e:Label text="Tom" x="1040.94" y="1184.54" textColor="0x6375e2" size="65"/>
 	<e:Label text="Tom is having a party.\nHe asks Susan to go.\nRead the carad." x="1357.42" y="427.73" size="56" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="409.48"/>
-	<e:Button label="Next" x="1484.4" y="1114.7" anchorOffsetX="0" width="227.28" anchorOffsetY="0" height="134.84"/>
+	<e:Button id="nextButton" label="Next" x="1484.4" y="1114.7" anchorOffsetX="0" width="227.28" anchorOffsetY="0" height="134.84"/>
 </e:Skin>
