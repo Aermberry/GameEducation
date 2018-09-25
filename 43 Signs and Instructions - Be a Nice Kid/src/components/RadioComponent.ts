@@ -1,7 +1,6 @@
 class RadioComponent extends eui.Component implements  eui.UIComponent {
 	
 	private radioImage: eui.Image;
-	private _isSelect = false;
 	
 	public constructor() {
 		super();
@@ -21,6 +20,8 @@ class RadioComponent extends eui.Component implements  eui.UIComponent {
 		this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
 		this.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
 	}
+
+	private _isSelect = false;
 
 	private onTouchTap(e: egret.TouchEvent): void
 	{
@@ -43,5 +44,17 @@ class RadioComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this._isSelect = isselect;
 		this._isSelect ? this.currentState = 'selected' : this.currentState = 'normal';
+	}
+
+	private _value = '';
+
+	public get value(): string
+	{
+		return this._value;
+	}
+
+	public set value(val: string)
+	{
+		this._value = val;
 	}
 }
