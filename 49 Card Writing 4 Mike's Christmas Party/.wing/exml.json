@@ -1,0 +1,10 @@
+{
+  "1660e75d70a": {
+    "path": "scenes\\StatueScene.ts",
+    "class": "StatueScene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}
