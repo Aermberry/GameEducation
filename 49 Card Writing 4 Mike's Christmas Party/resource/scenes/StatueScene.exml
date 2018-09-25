@@ -4,5 +4,5 @@
 	<e:Image source="EDB_game_49_2_png" x="0" y="0"/>
 	<e:Label x="549.4" y="119.09" text="                    1st December\n\nDear Mike,\n\n  I am having a christmas\n  party on 24th December\n  at 2:30 p.m. at my home.\n  Can you come?\n\n\n\n\n\n                         Regards,\n                         Charlie" anchorOffsetY="0" height="1268.48" anchorOffsetX="0" width="696.9" textColor="0xb70909" size="58" lineSpacing="25"/>
 	<Ui:TexttLabel width="592.72" height="262.44" x="1315.15" y="109.15" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Charlie is having a\nparty.He asks Mike\nto go. Read the card." backgroundColors="0x7EC7FF" fontColor="0x3800D1" fontSize="56"/>
-	<e:Button label="Next" x="1666.88" y="1221.12" anchorOffsetX="0" width="221.21" anchorOffsetY="0" height="107.58"/>
+	<e:Button id="nextButton" label="Next" x="1666.88" y="1221.12" anchorOffsetX="0" width="221.21" anchorOffsetY="0" height="107.58"/>
 </e:Skin>
