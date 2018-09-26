@@ -17,6 +17,6 @@
 	<e:Label text="can come" x="362.69" y="1064.24" anchorOffsetX="0" width="331" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
 	<e:Label text="cannot come" x="55.36" y="1185.15" anchorOffsetX="0" width="425" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
 	<e:Label text="Yours," x="480.85" y="1283.48" anchorOffsetX="0" width="237" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
-	<e:Label text="Label" x="1194" y="533"/>
+	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_______________.Sorry,I__________________to your party.I have __________________\non _________________________\nat_________________.\n                                    Best wishes,\n                                          Susan" x="948.54" y="184.51" anchorOffsetX="0" width="810.37" anchorOffsetY="0" height="1075.46" size="50" textColor="0x64605c" lineSpacing="70"/>
 
 </e:Skin>
