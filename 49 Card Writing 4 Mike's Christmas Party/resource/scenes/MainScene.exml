@@ -2,34 +2,64 @@
 <e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*">
 	<w:Config id="165c7e68ef8"></w:Config>
-	<Ui:TexttLabel width="868.48" height="380.62" x="54.54" y="18.24" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Mike can go to Charlie's party.\nHe writes a card to Tom.Drag\nthe words to the right places in\nthe card." backgroundColors="0xFFFFBF" fontColor="0x242423" fontSize="56"/>
-	<e:Group x="88.18"  y="466.97">
-	<Ui:TexttLabel width="253.34" height="98.79" x="88.18" y="27.57" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Love," backgroundColors="0x7EC7FF" textAglign="right"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="157.88" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Thank you for your card." backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="297.28" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="on 24th December" backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="436.68" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can play football." backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="195.77" height="98.79" x="88.18" y="570.02" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Mike" backgroundColors="0x7EC7FF" textAglign="right"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="700.33" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can come to your party" backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="833.66" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="at 3 p.m" backgroundColors="0x7EC7FF"/>
+	<Ui:TexttLabel width="868.48" height="380.62" x="54.54" y="18.24" anchorOffsetX="0" anchorOffsetY="0"
+	               skinName="TexttLabelSkin"
+	               text="Mike can go to Charlie's party.\nHe writes a card to Tom.Drag\nthe words to the right places in\nthe card."
+	               backgroundColors="0xFFFFBF" fontColor="0x242423" fontSize="56" />
+	<e:Rect fillColor="0xffffff" strokeColor="0xFF0000" strokeWeight="10" x="960" y="12.18" anchorOffsetX="0"
+	        width="946.09" anchorOffsetY="0" height="1423.09" ellipseHeight="10" ellipseWidth="10" />
+	<e:Image source="EDB_game_49_Main_png" x="1015.73" y="962.01" />
+	<e:Label text="                             10th December\nDear Charlie," x="1024.36" y="48.33" anchorOffsetX="0"
+	         width="846.73" anchorOffsetY="0" height="178.49" size="54" lineSpacing="60"  textColor="0x191919"/>
+	<e:Group id="dropGRoup" x="997.1" y="253.71" width="881.21" height="1150.63" anchorOffsetY="0" anchorOffsetX="0">
+		<e:Label text="Thank you for your card." x="136.5" y="68.86" anchorOffsetX="0" width="710.36" anchorOffsetY="0"
+		         height="126.97" textColor="0x293cca" size="56" border="true" textAlign="center" verticalAlign="middle" />
+		<e:Label text="  I can come to your party" x="27.41" y="247.65" anchorOffsetX="0" width="819.45" anchorOffsetY="0"
+		         height="126.97" textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle" />
+		<e:Label text="  on 24th December" x="27.41" y="415.73" anchorOffsetX="0" width="819.45" anchorOffsetY="0"
+		         height="126.97" textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle" />
+		<e:Label text="  at 3 p.m" x="27.41" y="580.84" anchorOffsetX="0" width="819.45" anchorOffsetY="0" height="126.97"
+		         textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle" />
+		<e:Label text="Love, " x="581.94" y="811.22" anchorOffsetX="0" width="264.92" anchorOffsetY="0" height="126.97"
+		         textColor="0x293cca" size="56" border="true" textAlign="right" verticalAlign="middle" />
+		<e:Label text="Mike " x="581.94" y="974.88" anchorOffsetX="0" width="264.92" anchorOffsetY="0" height="126.97"
+		         textColor="0x293cca" size="56" border="true" textAlign="right" verticalAlign="middle" />
 	</e:Group>
-	<e:Rect fillColor="0xffffff" strokeColor="0xFF0000" strokeWeight="10" x="960" y="12.18" anchorOffsetX="0" width="946.09" anchorOffsetY="0" height="1423.09" ellipseHeight="10" ellipseWidth="10"/>
-	<e:Image source="EDB_game_49_Main_png" x="1015.73" y="962.01"/>
-	<e:Label text="                             10th December\nDear Charlie," x="1024.36" y="48.33" anchorOffsetX="0" width="846.73" anchorOffsetY="0" height="178.49" textColor="0x610100" size="54" lineSpacing="60"/>
-	<e:Group  x="997.1" y="253.71" width="881.21" height="1150.63" anchorOffsetY="0" anchorOffsetX="0">
-	<e:Label text="Thank you for your card." x="136.5" y="68.86" anchorOffsetX="0" width="710.36" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="center" verticalAlign="middle"/>
-	<e:Label text="  I can come to your party" x="27.41" y="247.65" anchorOffsetX="0" width="819.45" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle"/>
-	<e:Label text="  on 24th December" x="27.41" y="415.73" anchorOffsetX="0" width="819.45" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle"/>
-	<e:Label text="  at 3 p.m" x="27.41" y="580.84" anchorOffsetX="0" width="819.45" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="left" verticalAlign="middle"/>
-	<e:Label text="Love, " x="581.94" y="811.22" anchorOffsetX="0" width="264.92" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="right" verticalAlign="middle"/>
-	<e:Label text="Mike " x="581.94" y="974.88" anchorOffsetX="0" width="264.92" anchorOffsetY="0" height="126.97" textColor="0x293cca" size="56" border="true" textAlign="right" verticalAlign="middle"/>
+	<e:Group id="answerGroup" x="997.1" y="253.71" width="881.21" height="1150.63" anchorOffsetY="0" anchorOffsetX="0">
+		<e:Group>
+		<Ui:TexttLabel width="668.48" height="98.79" x="146.83" y="80.61" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Thank you for your card." backgroundColors="0x7EC7FF"/>
+		<e:Image source="EDB_game_49_true_png" x="737.42" y="143.09" rotation="344.66"/>
+		</e:Group>
+		<e:Group x="42.14" y="253.95" width="847.28" anchorOffsetY="0" height="119.73" anchorOffsetX="0">
+		<Ui:TexttLabel width="689.7" height="98.79" x="14.87" y="5.47" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can come to your party" backgroundColors="0x7EC7FF"/>
+		<e:Image source="EDB_game_49_true_png" x="695.91" y="25.83" rotation="344.66"/>
+		</e:Group>
+		<e:Group x="50.75" y="426.9" width="829.09" height="98.79" anchorOffsetX="0" anchorOffsetY="0">
+		<Ui:TexttLabel width="689.7" height="98.79" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="on 24th December." backgroundColors="0x7EC7FF"/>
+		<e:Image source="EDB_game_49_true_png" x="684.69" y="20.84" rotation="344.66"/>
+		</e:Group>
+		<e:Group height="126.06" x="48.79" y="573.04" anchorOffsetX="0" anchorOffsetY="0">
+		<Ui:TexttLabel width="689.7" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="at 3 P.m." backgroundColors="0x7EC7FF" y="21.21"/>
+		<e:Image source="EDB_game_49_true_png" rotation="344.66" x="648.48" y="48.48"/>
+		</e:Group>
+		<e:Group height="98.79" x="590.49" y="825.31" anchorOffsetX="0" width="257.33">
+		<Ui:TexttLabel width="247.28" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Love," backgroundColors="0x7EC7FF" textAglign="right"/>
+		<e:Image source="EDB_game_49_true_png" rotation="344.66" x="148.48" y="45.45"/>
+		</e:Group>
+		<e:Group width="229.1" height="98.79" x="603.33" y="991.23">
+		<Ui:TexttLabel width="229.1" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Mike" backgroundColors="0x7EC7FF" textAglign="right"/>
+		<e:Image source="EDB_game_49_true_png" rotation="343.21" x="127" y="59.7"/>
+		</e:Group>
 	</e:Group>
-	<e:Group  x="997.1" y="253.71" width="881.21" height="1150.63" anchorOffsetY="0" anchorOffsetX="0">
-	<Ui:TexttLabel width="253.34" height="98.79" x="593.52" y="825.31" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Love," backgroundColors="0x7EC7FF" textAglign="right"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="146.83" y="80.61" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Thank you for your card." backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="48.79" y="591.22" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="on 24th December" backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="50.75" y="426.9" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can play football." backgroundColors="0x7EC7FF"/>
-	<Ui:TexttLabel width="195.77" height="98.79" x="603.33" y="991.23" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Mike" backgroundColors="0x7EC7FF" textAglign="right"/>
-	<Ui:TexttLabel width="689.7" height="98.79" x="54.26" y="260.01" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can come to your party" backgroundColors="0x7EC7FF"/>
+	<e:Group id="dragGroup" x="88.18" y="466.97">
+		<Ui:TexttLabel width="253.34" height="98.79" x="88.18" y="27.57" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Love," backgroundColors="0x7EC7FF" textAglign="right"/>
+		<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="157.88" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Thank you for your card." backgroundColors="0x7EC7FF"/>
+		<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="297.28" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="on 24th December" backgroundColors="0x7EC7FF"/>
+		<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="436.68" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can play football." backgroundColors="0x7EC7FF"/>
+		<Ui:TexttLabel width="195.77" height="98.79" x="88.18" y="570.02" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="Mike" backgroundColors="0x7EC7FF" textAglign="right"/>
+		<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="700.33" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="I can come to your party" backgroundColors="0x7EC7FF"/>
+		<Ui:TexttLabel width="689.7" height="98.79" x="88.18" y="833.66" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize="56" fontColor="0x06005D" text="at 3 p.m" backgroundColors="0x7EC7FF"/>
+	</e:Group>
 
-	</e:Group>
+
 </e:Skin>
