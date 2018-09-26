@@ -11,7 +11,15 @@
 		</e:Group>
 	</e:Group >
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0" />
-	<e:Group x="11.15" y="387.67" anchorOffsetX="0" width="766.79" anchorOffsetY="0" height="1019.18">
+	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry,I______________to your party.I have ________________\non _______________________\nat_________________.\n                                    Best wishes,                                     Susan" x="948.54" y="199.66" anchorOffsetX="0" width="810.37" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
+	<e:Group id="tipsGroup" x="931.83" y="270.1" anchorOffsetX="0" width="823.67" anchorOffsetY="0" height="813.36">
+		<e:Label text="    Tom sends Susan a card.  \nShe thanks him for the card." x="13.66" y="54.94" anchorOffsetX="0" width="803" anchorOffsetY="0" height="168.58" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" textAlign="center" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="Susan cannot go to Tom's party." x="13.66" y="244.74" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
+		<e:Label text="Susan has something to do." x="13.66" y="372.3" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
+		<e:Label text="Date" x="13.66" y="494.09" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
+		<e:Label text="Time" x="13.66" y="608.03" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
+	</e:Group>
+	<e:Group id="dragGroup" x="11.15" y="387.67" anchorOffsetX="0" width="766.79" anchorOffsetY="0" height="1019.18">
 	<e:Label text="a piano exam" x="292.97" y="2.82" anchorOffsetX="0" width="464" anchorOffsetY="0" height="108"
 	         size="71" textAlign="center" verticalAlign="middle" background="true" backgroundColor="0xffffff" textColor="0xdf005c" fontFamily="Comic Sans MS"/>
 	<e:Label text="Happy Halloween" x="26.67" y="154.03" anchorOffsetX="0" width="583" anchorOffsetY="0" height="108"
@@ -31,14 +39,13 @@
 	<e:Label text="Yours," x="480.85" y="907.72" anchorOffsetX="0" width="237" anchorOffsetY="0" height="108" size="71"
 	         textAlign="center" verticalAlign="middle" background="true" backgroundColor="0xffffff" textColor="0xdf005c" fontFamily="Comic Sans MS"/>
 			 </e:Group>
-	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry,I______________to your party.I have ________________\non _______________________\nat_________________.\n                                    Best wishes,                                     Susan"
-	         x="948.54" y="199.66" anchorOffsetX="0" width="810.37" anchorOffsetY="0" height="1275.46" size="50"
-	         textColor="0x64605c" lineSpacing="70"  fontFamily="Comic Sans MS"/>
-			 <e:Group x="931.83" y="382.22" anchorOffsetX="0" width="823.67" anchorOffsetY="0" height="701.24">
-	<e:Label text="    Tom sends Susan a card.  \nShe thanks him for the card." x="13.66" y="18.58" anchorOffsetX="0" width="803" anchorOffsetY="0" height="168.58" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" textAlign="center" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS"/>
-	<e:Label text="Susan cannot go to Tom's party." x="13.66" y="202.32" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center"/>
-	<e:Label text="Susan has something to do." x="13.66" y="329.88" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center"/>
-	<e:Label text="Date" x="13.66" y="457.73" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center"/>
-	<e:Label text="Time" x="13.66" y="583.79" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center"/>
+	<e:Group id="dropGroup" x="957.51" y="252.22" anchorOffsetX="0" width="766.79" anchorOffsetY="0" height="1019.18">
+		<e:Label text="your card" x="387.88" y="132.52" anchorOffsetX="0" width="346.36" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="cannot come" x="176.57" y="266.97" anchorOffsetX="0" width="425" anchorOffsetY="0" height="92.85" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="a piano exam" x="305.09" y="366.46" anchorOffsetX="0" width="464" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="31st October" x="149.94" y="490.6" anchorOffsetX="0" width="461.36" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="2:30 p.m" x="139.94" y="604.85" anchorOffsetX="0" width="310" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
 	</e:Group>
+
+
 </e:Skin>
