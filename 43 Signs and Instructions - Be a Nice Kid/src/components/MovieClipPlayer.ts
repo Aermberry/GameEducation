@@ -59,6 +59,11 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 		let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
 		let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
 		this.addChild(mc);
+		// // console.log((mc.parent.width-mc.width)/2);
+		// console.log(mc.parent);
+		// console.log(mc.parent.parent);
+		// console.log(mc.width);
+		
 		mc.play(-1);
 	}
 }

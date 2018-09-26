@@ -43,6 +43,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		// this.centerMovicePlayer();
 		this.giftAnimations = [this.gift1Animation, this.gift2Animation, this.gift3Animation, this.gift4Animation,this.gift5Animation, this.gift6Animation, this.gift7Animation, this.gift8Animation, this.gift9Animation];
 		this.questionPresenter.loadView(this);
 		this.continueButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onContinueClick, this);
@@ -118,7 +119,6 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 
 	public showOption(): void
 	{
-		console.log(this.options);
 		let index = 0;
 		let obj = null;
 		this.optionsGroup.$children.map((group) => {
@@ -213,12 +213,26 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	public offerGift(animation: egret.tween.TweenGroup): void
 	{
 		animation.play(-1);
-		console.log(animation);
 	}
 
 	public async playMP3(): Promise<void>
 	{
 		lzlib.SoundUtility.playSound(this.answer.sound);
+	}
+
+	public centerMovicePlayer(): void
+	{
+		this.optionsGroup.$children.map((group) => {
+			let movie = (group.$children[0] as MovieClipPlayer);
+			movie.$children[0].x = (movie.width - movie.$children[0].width) / 2
+			console.log((movie.width - movie.$children[0].width) / 2);
+			console.log(movie);
+			console.log(movie.$children[0]);
+			
+					// console.log((mc.parent.width-mc.width)/2);
+		// console.log(movie.$children[0].width);
+		// console.log(movie.width);
+		})
 	}
 
 }
