@@ -2,11 +2,11 @@
 <e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165fb96ddee" ></w:Config>
 	<e:Image source="EDB_game_48_scene1_png" x="18.18" y="20" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Label text="4th Octtober" x="923.76" y="145.15" textColor="0x6375e2" size="50"/>
-	<e:Label text="Dear Susan," x="598" y="310.38" textColor="0x6375e2" size="65"/>
-	<e:Label text="        I  am  having   a\nHalloween  party  on\n31st October at 2:30\np.m at my home.Can\nyou come?" x="661.29" y="495.08" textColor="0x6375e2" size="65" lineSpacing="35" textAlign="left" anchorOffsetY="0" height="498.34"/>
-	<e:Label text="CHeers," x="1032.32" y="1084.54" textColor="0x6375e2" size="65" lineSpacing="25"/>
-	<e:Label text="Tom" x="1040.94" y="1184.54" textColor="0x6375e2" size="65"/>
-	<e:Label text="Tom is having a party.\nHe asks Susan to go.\nRead the carad." x="1357.42" y="427.73" size="56" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="409.48"/>
+	<e:Label text="4th Octtober" x="923.76" y="145.15" textColor="0x6375e2" size="50" fontFamily="Comic Sans MS"/>
+	<e:Label text="Dear Susan," x="598" y="310.38" textColor="0x6375e2" size="65" fontFamily="Comic Sans MS"/>
+	<e:Label text="        I  am  having   a\nHalloween  party  on\n31st October at 2:30\np.m at my home.Can\nyou come?" x="661.29" y="495.08" textColor="0x6375e2" size="65" lineSpacing="35" textAlign="left" anchorOffsetY="0" height="498.34" fontFamily="Comic Sans MS"/>
+	<e:Label text="CHeers," x="1032.32" y="1084.54" textColor="0x6375e2" size="65" lineSpacing="25" fontFamily="Comic Sans MS"/>
+	<e:Label text="Tom" x="1040.94" y="1184.54" textColor="0x6375e2" size="65" fontFamily="Comic Sans MS"/>
+	<e:Label text="Tom is having a party.\nHe asks Susan to go.\nRead the carad." x="1345.3" y="427.73" size="56" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="285.24" fontFamily="Comic Sans MS"/>
 	<e:Button id="nextButton" label="Next" x="1484.4" y="1114.7" anchorOffsetX="0" width="227.28" anchorOffsetY="0" height="134.84"/>
 </e:Skin>
