@@ -24,9 +24,12 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.loadBoys();
 		await this.handleMP3AndShow();
 		this.handleMouseAndClickOnChild();
 		this.startImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartImageClick, this)
+		this.startImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onStartImageOver, this)
+		this.startImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onStartImageOut, this)
 	}
 
 	private async handleMP3AndShow(): Promise<void>
@@ -46,8 +49,19 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 		})
 	}
 
+	private loadBoys(): void
+	{
+		let index = 0;
+		this.childrenGroup.$children.map((child) => {
+			(child as eui.Image).source = BoyRepository.boys[index];
+			index++;
+		})
+	}
+
 	private onChildClick(e: egret.TouchEvent): void
 	{
+		BoyRepository.helpedBoys++;
+		BoyRepository.currentBoy = this.childrenGroup.getChildIndex(e.target);
 		let targetImage = e.target as eui.Image;
 		this.selectedChildImage.x = targetImage.x;
 		this.selectedChildImage.y = targetImage.y;
@@ -55,6 +69,16 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 		egret.Tween.get(this.selectedChildImage).to({x:857,y:302},500);
 		this.hideComponent();
 		this.showStartAndMP3();
+	}
+
+	private onStartImageOver(e: egret.TouchEvent): void
+	{
+		(e.target as eui.Image).source = 'start_over_png';
+	}
+
+	private onStartImageOut(e: egret.TouchEvent): void
+	{
+		(e.target as eui.Image).source = 'start_normal_png';
 	}
 
 	private onMouseOverChild(e: egret.TouchEvent): void
@@ -80,11 +104,12 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 		this.ChooseGroup.visible = false;
 	}
 
-	private showStartAndMP3(): void
+	private async showStartAndMP3(): Promise<void>
 	{
 		this.ListenGroup.visible = true;
 		this.startImage.visible = true;
-		lzlib.SoundUtility.playSound('streamsound1_7_mp3');
+		await lzlib.SoundUtility.playSound('streamsound1_7_mp3');
+		this.ListenGroup.visible = false;
 	}
 	
 }

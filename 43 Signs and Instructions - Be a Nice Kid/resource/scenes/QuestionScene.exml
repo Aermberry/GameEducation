@@ -29,6 +29,7 @@
 	</w:Declarations>
 	<w:Config id="165f5a86b49" ></w:Config>
 	<ns1:BackgroundAndTitle left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="selectedChildImage" x="857.9" y="302.63" source=""/>
 	<e:Group id="optionAnswerGroup" width="1202" height="1038" x="338.94" y="21.42">
 		<e:Image x="0" y="0" source="background_game_png" scaleX="1" scaleY="1"/>
 		<e:Image x="49" y="-21.18" source="background_introduction_png"/>

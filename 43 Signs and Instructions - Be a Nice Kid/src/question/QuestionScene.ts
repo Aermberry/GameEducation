@@ -1,6 +1,7 @@
 class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionView {
 	
 	private likeImage: eui.Image;
+	private selectedChildImage: eui.Image;
 	private answerHornComponent: HornComponent;
 	private optionsGroup: eui.Group;
 	private cloudAlertGroup: eui.Group;
@@ -30,7 +31,6 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	{
 		super.childrenCreated();
 		this.questionPresenter.loadView(this);
-		await this.playIntroductionMP3();
 		this.continueButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onContinueClick, this);
 		this.okButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onOkClick, this);
 	}
@@ -54,7 +54,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	public cleartRadioSelect(): void
 	{
 		this.optionsGroup.$children.map((group) => {
-			(group.$children[2] as eui.RadioButton).currentState = 'unselect';
+			(group.$children[2] as eui.RadioButton).selected = false;
 		})
 	}
 
@@ -180,9 +180,19 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 		this.answerHornComponent.soundPath = this.answer.sound;
 	}
 
+	public loadBoy(source: string): void
+	{
+		this.selectedChildImage.source = source;
+	}
+
 	public openFinishScene(): void
 	{
 		Main.instance.gotoScene(new FinishScene());
+	}
+
+	public async playMP3(): Promise<void>
+	{
+		lzlib.SoundUtility.playSound(this.answer.sound);
 	}
 
 }

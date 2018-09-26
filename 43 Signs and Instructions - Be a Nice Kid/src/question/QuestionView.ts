@@ -17,9 +17,10 @@ interface QuestionView {
 	showHornComponent(): void;
 	disableOptionSelect(): void;
 	enableOptionSelect(): void;
-	playIntroductionMP3(): Promise<void>;
+	playMP3(): Promise<void>;
 	setAnswer(question: Question): void;
 	openFinishScene(): void;
 	alertSelectWrong(): void;
 	cleartRadioSelect(): void
+	loadBoy(source: string): void;
 }
