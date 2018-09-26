@@ -105,7 +105,7 @@ class Main extends eui.UILayer {
             //允许用户跳转到指定的Scene
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
         } else {
-            this.addChild(new MainScene());
+            this.addChild(new StatueScene());
         }
     }
 

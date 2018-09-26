@@ -2,7 +2,7 @@
 <e:Skin class="StatueSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="1660e75d70a" ></w:Config>
 	<e:Image source="EDB_game_49_2_png" x="0" y="0"/>
-	<e:Label x="549.4" y="119.09" text="                    1st December\n\nDear Mike,\n\n  I am having a christmas\n  party on 24th December\n  at 2:30 p.m. at my home.\n  Can you come?\n\n\n\n\n\n                         Regards,\n                         Charlie" anchorOffsetY="0" height="1268.48" anchorOffsetX="0" width="696.9" textColor="0xb70909" size="58" lineSpacing="25"/>
-	<Ui:TexttLabel width="592.72" height="292.74" x="1320.25" y="109.15" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Charlie is having a\nparty.He asks Mike\nto go. Read the card." backgroundColors="0x7EC7FF" fontColor="0x3800D1" fontSize="56"/>
+	<e:Label x="543.34" y="119.09" text="                   1st December\n\nDear Mike,\n\n  I am having a christmas\n  party on 24th December\n  at 2:30 p.m. at my home.\n  Can you come?\n\n\n\n\n\n                          Regards,\n                          Charlie" anchorOffsetY="0" height="1226.06" anchorOffsetX="0" width="709.03" textColor="0xb70909" size="58" lineSpacing="25" fontFamily="Comic Sans MS"/>
+	<Ui:TexttLabel width="592.72" height="274.56" x="1320.25" y="109.15" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Charlie  is  having  a\nparty. He  asks  Mike\nto  go.  Read  the  card." backgroundColors="0x7EC7FF" fontColor="0x3800D1" fontSize="56" touchEnabled="false"/>
 	<e:Button id="nextButton" label="Next" x="1666.88" y="1221.12" anchorOffsetX="0" width="221.21" anchorOffsetY="0" height="107.58"/>
 </e:Skin>
