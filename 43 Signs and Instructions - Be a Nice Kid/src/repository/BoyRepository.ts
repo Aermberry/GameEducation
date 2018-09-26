@@ -8,7 +8,17 @@ class BoyRepository {
 		'boy4_png'
 	];
 
+	public cleanBoys = [
+		'boy0_clean_png',
+		'boy1_clean_png',
+		'boy2_clean_png',
+		'boy3_clean_png',
+		'boy4_clean_png'
+	];
+
 	public static helpedBoys = 0;
+
+	public static currentBoy = 0;
 
 	public helpSentence = [
 		'You have helped one child!',
@@ -17,8 +27,6 @@ class BoyRepository {
 		'You have helped four child!',
 		'You have helped five child!'
 	];
-
-	public static currentBoy = 0;
 
 	public constructor() {
 	}

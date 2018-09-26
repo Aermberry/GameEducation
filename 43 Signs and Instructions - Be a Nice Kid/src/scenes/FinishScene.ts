@@ -36,7 +36,7 @@ class FinishScene extends eui.Component implements  eui.UIComponent {
 
 	private loadContentAndBoy(): void
 	{
-		this.selectedChildImage.source = BoyRepository.boys[BoyRepository.currentBoy];
+		this.selectedChildImage.source = this.boyRepo.cleanBoys[BoyRepository.currentBoy];
 		this.contentLabel.text = this.boyRepo.helpSentence[BoyRepository.helpedBoys-1];
 	}
 

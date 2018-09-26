@@ -1,6 +1,7 @@
 interface QuestionView {
 	answer: Question;
 	options: Question[];
+	giftAnimations: egret.tween.TweenGroup[];
 	showLikeImage(): void;
 	showOptionAnswerGroup(): void;
 	showOption(arr: Question[]): void;
@@ -23,4 +24,6 @@ interface QuestionView {
 	alertSelectWrong(): void;
 	cleartRadioSelect(): void
 	loadBoy(source: string): void;
+	loadCleanBoy(source: string): void;
+	offerGift(animation: egret.tween.TweenGroup): void;
 }

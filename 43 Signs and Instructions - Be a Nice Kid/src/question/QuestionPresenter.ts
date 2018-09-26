@@ -1,8 +1,9 @@
 class QuestionPresenter {
 	
 	private questionRepo = new QuestionRepository();
+	private boyRepo = new BoyRepository();
 	private view: QuestionView;
-	private questionsLeft = 3;
+	private questionsLeft = 10;
 	private answeredQuestions: Question[] = []; //the questions have been answered
 	private options: Question[] = []; //four options to select
 	private answer: Question; //the correct answer
@@ -14,6 +15,7 @@ class QuestionPresenter {
 	{
 		this.view = view;
 		this.view.loadBoy(BoyRepository.boys[BoyRepository.currentBoy])
+		this.view.loadCleanBoy(this.boyRepo.cleanBoys[BoyRepository.currentBoy]);
 		this.showCurrentQuestion();
 	}
 
@@ -52,9 +54,8 @@ class QuestionPresenter {
 	public async onContinueButtonClick(): Promise<void>
 	{
 		this.view.hideOptionAnswerGroup();
-		
+		this.view.offerGift(this.view.giftAnimations[10-this.questionsLeft-1]); //give gift to main role
 		await lzlib.ThreadUtility.sleep(2000);
-		// await this.view.offerGift(); //give gift to main role
 		this.view.showHornComponent();
 		this.view.showOkButton();
 		this.view.showRepeatLabel();

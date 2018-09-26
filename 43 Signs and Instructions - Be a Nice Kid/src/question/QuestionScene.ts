@@ -2,6 +2,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	
 	private likeImage: eui.Image;
 	private selectedChildImage: eui.Image;
+	private boyCleanImage: eui.Image;
 	private answerHornComponent: HornComponent;
 	private optionsGroup: eui.Group;
 	private cloudAlertGroup: eui.Group;
@@ -16,6 +17,17 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	private questionPresenter = new QuestionPresenter();
 
 	private cloudAlertAnimation: egret.tween.TweenGroup;
+	private gift1Animation: egret.tween.TweenGroup;
+	private gift2Animation: egret.tween.TweenGroup;
+	private gift3Animation: egret.tween.TweenGroup;
+	private gift4Animation: egret.tween.TweenGroup;
+	private gift5Animation: egret.tween.TweenGroup;
+	private gift6Animation: egret.tween.TweenGroup;
+	private gift7Animation: egret.tween.TweenGroup;
+	private gift8Animation: egret.tween.TweenGroup;
+	private gift9Animation: egret.tween.TweenGroup;
+
+	public giftAnimations: egret.tween.TweenGroup[];
 
 	public constructor() {
 		super();
@@ -30,6 +42,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.giftAnimations = [this.gift1Animation, this.gift2Animation, this.gift3Animation, this.gift4Animation,this.gift5Animation, this.gift6Animation, this.gift7Animation, this.gift8Animation, this.gift9Animation];
 		this.questionPresenter.loadView(this);
 		this.continueButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onContinueClick, this);
 		this.okButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onOkClick, this);
@@ -185,9 +198,20 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 		this.selectedChildImage.source = source;
 	}
 
+	public loadCleanBoy(source: string): void
+	{
+		this.boyCleanImage.source = source;
+	}
+
 	public openFinishScene(): void
 	{
 		Main.instance.gotoScene(new FinishScene());
+	}
+
+	public offerGift(animation: egret.tween.TweenGroup): void
+	{
+		animation.play(-1);
+		console.log(animation);
 	}
 
 	public async playMP3(): Promise<void>
