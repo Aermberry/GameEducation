@@ -8,5 +8,15 @@
 	</e:Group>
 	</e:Group>
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0"/>
+	<e:Label text="a piano exam" x="292.97" y="445.24" anchorOffsetX="0" width="464" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="Happy Halloween" x="26.67" y="587.36" anchorOffsetX="0" width="583" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="your card" x="0" y="729.48" anchorOffsetX="0" width="310" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="2:30 p.m" x="415.7" y="726.06" anchorOffsetX="0" width="310" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="31st October" x="149.94" y="887.57" anchorOffsetX="0" width="425" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="Mary" x="30.3" y="1030.91" anchorOffsetX="0" width="198" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="can come" x="362.69" y="1064.24" anchorOffsetX="0" width="331" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="cannot come" x="55.36" y="1185.15" anchorOffsetX="0" width="425" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="Yours," x="480.85" y="1283.48" anchorOffsetX="0" width="237" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle"/>
+	<e:Label text="Label" x="1194" y="533"/>
 
 </e:Skin>
