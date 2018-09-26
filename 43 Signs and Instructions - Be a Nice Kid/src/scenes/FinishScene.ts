@@ -1,8 +1,11 @@
 class FinishScene extends eui.Component implements  eui.UIComponent {
 	
 	private contentLabel: eui.Label;
+	private printLabel: eui.Label;
+	private certificateLabel: eui.Label;
 	private selectedChildImage: eui.Image;
 	private ButtonComponent: ButtonComponent;
+	private printGroup: eui.Group;
 
 	private boyRepo = new BoyRepository();
 
@@ -21,9 +24,13 @@ class FinishScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.printLabel, true);
+		mouse.setButtonMode(this.certificateLabel, true);
 		this.loadContentAndBoy();
 		this.playStartAnimation();
 		this.ButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonComponentClick, this);
+		this.printGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPrintGroupClick, this);
 		this.isDisplayContinueButton();
 	}
 
@@ -32,6 +39,11 @@ class FinishScene extends eui.Component implements  eui.UIComponent {
 		this.boyRepo.deleteBoy(BoyRepository.currentBoy);
 		Main.instance.gotoScene(new RoleSelectScene());
 		
+	}
+
+	private onPrintGroupClick(e: egret.TouchEvent): void
+	{
+		window.print();
 	}
 
 	private loadContentAndBoy(): void

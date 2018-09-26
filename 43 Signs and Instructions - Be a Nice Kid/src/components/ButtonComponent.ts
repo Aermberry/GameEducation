@@ -15,6 +15,8 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.textLabel, true);
 		this.textLabel.text = this._text;
 	}
 

@@ -38,6 +38,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{printGroup}">
+				<tween:Wait duration="1750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165f64470e8" ></w:Config>
@@ -53,8 +61,13 @@
 	<e:Image id="clockWallImage" x="548.49" y="-539.79" source="clock_wall_png" anchorOffsetX="0" width="833.67" anchorOffsetY="0" height="554.55"/>
 	<e:Group id="cretificateGroup" width="1086.82" height="801.19" x="377.2" y="249.01" alpha="0">
 		<e:Image source="certificate_background_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" alpha="1"/>
-		<e:Label text="Congratulations!" textColor="0x000000" size="50" fontFamily="Comic Sans MS" horizontalCenter="-31.409999999999968" verticalCenter="-151.59500000000003" alpha="1"/>
-		<e:Label id="contentLabel" text="You hava helped one child!" textColor="0x000000" size="45" fontFamily="Comic Sans MS" horizontalCenter="-24.909999999999968" verticalCenter="-21.095000000000027" alpha="1"/>
+		<e:Label text="Congratulations!" textColor="0x000000" size="50" fontFamily="Comic Sans MS" horizontalCenter="-31.409999999999968" verticalCenter="-145.59500000000003" alpha="1" anchorOffsetY="0" height="62"/>
+		<e:Label id="contentLabel" text="You hava helped one children!" textColor="0x000000" size="47" fontFamily="Comic Sans MS" horizontalCenter="-24.909999999999968" verticalCenter="-21.095000000000027" alpha="1"/>
 	</e:Group>
 	<ns1:ButtonComponent id="ButtonComponent" width="220" height="65.45" x="1639" y="848.85" anchorOffsetX="0" anchorOffsetY="0" text="Continue" alpha="0"/>
+	<e:Group id="printGroup" width="288" height="124" x="1600" y="692" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+		<e:Image left="4" right="-4" top="0" bottom="0" source="background_button_png"/>
+		<e:Label id="printLabel" text="Print" y="12" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0" textAlign="center"/>
+		<e:Label id="certificateLabel" text="certificate" y="60" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0" textAlign="center"/>
+	</e:Group>
 </e:Skin>

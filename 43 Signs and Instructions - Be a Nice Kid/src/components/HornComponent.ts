@@ -17,11 +17,18 @@ class HornComponent extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.hornImage,true);
 		this.hornImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onHornImageOver, this);
+		this.hornImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onHornImageOut, this)
 	}
 
-	private onHornImageOver(): void
+	private onHornImageOver(e: egret.TouchEvent): void
 	{
 		lzlib.SoundUtility.playSound(this._soundPath);
+		this.hornImage.source = 'horn_over_png';
+	}
+
+	private onHornImageOut(e: egret.TouchEvent): void
+	{
+		this.hornImage.source = 'horn_normal_png';
 	}
 
 	private _soundPath = '';

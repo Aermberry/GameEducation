@@ -21,11 +21,11 @@ class BoyRepository {
 	public static currentBoy = 0;
 
 	public helpSentence = [
-		'You have helped one child!',
-		'You have helped tow child!',
-		'You have helped three child!',
-		'You have helped four child!',
-		'You have helped five child!'
+		'You have helped one children!',
+		'You have helped tow children!',
+		'You have helped three children!',
+		'You have helped four children!',
+		'You have helped five children!'
 	];
 
 	public constructor() {

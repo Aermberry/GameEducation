@@ -17,6 +17,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	private questionPresenter = new QuestionPresenter();
 
 	private cloudAlertAnimation: egret.tween.TweenGroup;
+	private likeAnimation: egret.tween.TweenGroup;
 	private gift1Animation: egret.tween.TweenGroup;
 	private gift2Animation: egret.tween.TweenGroup;
 	private gift3Animation: egret.tween.TweenGroup;
@@ -52,7 +53,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	{
 		this.optionsGroup.$children.map((group) => {
 			let radioButton = group.$children[2] as eui.RadioButton;
-			if(radioButton.currentState == 'upAndSelected')
+			if(radioButton.selected == true)
 			{
 				this.questionPresenter.onOptionSelect(this.optionsGroup.getChildIndex(group));
 			}
@@ -74,6 +75,7 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	public showLikeImage(): void
 	{
 		this.likeImage.visible = true;
+		this.likeAnimation.play(-1);
 	}
 
 	public showOptionAndAnswer(): void
