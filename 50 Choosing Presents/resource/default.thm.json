@@ -16,7 +16,7 @@
 		"MainScene": "resource/scenes/MainScene.exml",
 		"FinishScene": "resource/scenes/FinishScene.exml",
 		"TexttLabel": "resource/components/TexttLabel.exml",
-		"Choose1Scene": "resource/components/Choose1Scene.exml",
+		"Choose1Scene": "resource/scenes/Choose1Scene.exml",
 		"Choose2Scene": "resource/scenes/Choose2Scene.exml",
 		"Choose3Scene": "resource/scenes/Choose3Scene.exml",
 		"StatueScene": "resource/scenes/StatueScene.exml",

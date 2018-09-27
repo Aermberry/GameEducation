@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Choose1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="1661925edc2" ></w:Config>
+<e:Skin class="Choose1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1661925edc2"></w:Config>
+	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) to the blank" textColor="0xFF0099"
+	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="148" anchorOffsetX="0"
+	         width="1397" lineSpacing="50" top="0"  horizontalCenter="0"/>
+	<e:Image source="shelf_png"  verticalCenter="-108" horizontalCenter="0"/>
+	<e:Label fontFamily="Comic Sans MS"
+	         text="Mary:Look,Sam.There's a ______________.Kitty likes reading.\nwhat about buying it for her?\nSam: That's a good idea."
+	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="356"
+	         anchorOffsetX="0" width="1873" lineSpacing="50" bottom="60"  textColor="0x000000" horizontalCenter="0"/>
+			 <e:Group id="DragGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
+	<e:Label  fontFamily="Comic Sans MS" x="340" y="128" text="pen" width="202" height="100" background="true" backgroundColor="0xffffff" border="true"
+	         borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label  fontFamily="Comic Sans MS" x="1015" y="124" text="money bank" width="304" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label  fontFamily="Comic Sans MS" x="296" y="426" text="basketball" width="270" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0xffffff" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label fontFamily="Comic Sans MS"  x="1020" y="426" text="story book" width="292" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+			 </e:Group>
+			 <e:Label fontFamily="Comic Sans MS"  x="916" y="1018" text="story book" width="292" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Image source="true_png" x="1196" y="1076"/>
 </e:Skin>

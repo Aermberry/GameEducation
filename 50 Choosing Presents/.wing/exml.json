@@ -1,41 +1,29 @@
 {
-    "165c7e68ef8": {
-        "path": "scenes\\MainScene.ts",
-        "class": "MainScene",
-        "parentPath": "",
-        "backgroundType": "user"
-    },
-    "165c7fa92b7": {
-        "path": "..\\resource\\components\\TexttLabel.ts",
-        "class": "TexttLabel",
-        "parentPath": ""
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": true
-    },
-    "1661925edc2": {
-        "path": "scenes\\Choose1Scene.ts",
-        "class": "Choose1Scene",
-        "parentPath": ""
-    },
-    "166192f9124": {
-        "path": "scenes\\Choose2Scene.ts",
-        "class": "Choose2Scene",
-        "parentPath": ""
-    },
-    "16619301a84": {
-        "path": "scenes\\Choose3Scene.ts",
-        "class": "Choose3Scene",
-        "parentPath": ""
-    },
-    "16619311382": {
-        "path": "scenes\\StatueScene.ts",
-        "class": "StatueScene",
-        "parentPath": ""
-    },
-    "16619932adb": {
-        "path": "scenes\\HelpScene.ts",
-        "class": "HelpScene",
-        "parentPath": ""
-    }
+  "165c7e68ef8": {
+    "path": "scenes\\MainScene.ts",
+    "class": "MainScene",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "165c7fa92b7": {
+    "path": "..\\resource\\components\\TexttLabel.ts",
+    "class": "TexttLabel",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "1661925edc2": {
+    "path": "scenes\\Choose1Scene.ts",
+    "class": "Choose1Scene",
+    "parentPath": "",
+    "backgroundType": "user",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  }
 }
