@@ -25,5 +25,6 @@ interface QuestionView {
 	cleartRadioSelect(): void
 	loadBoy(source: string): void;
 	loadCleanBoy(source: string): void;
-	offerGift(animation: egret.tween.TweenGroup): void;
+	offerGift(giftIndex: number): void;
+	centerMovicePlayer(): void;
 }

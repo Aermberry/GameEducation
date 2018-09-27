@@ -476,22 +476,22 @@
 		<e:Label text="Listen to the instructions and click the correct pictures!" x="169.85" y="-9.06" textColor="0x000000" size="34" fontFamily="Comic Sans MS"/>
 		<e:Group id="optionsGroup">
 			<e:Group x="91.3" y="70.51" anchorOffsetX="0" width="415.48" anchorOffsetY="0" height="290.6">
-				<ns1:MovieClipPlayer dataSet="picture12_json" texture="picture12_png" movieClipName="picture12" scaleX="1" scaleY="1" anchorOffsetX="0" horizontalCenter="0" verticalCenter="0"/>
+				<ns1:MovieClipPlayer dataSet="picture12_json" texture="picture12_png" movieClipName="picture12" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
 				<ns1:HornComponent id="HornComponent" width="58" height="48" x="454.88" y="187"/>
 				<e:RadioButton id="radioButton" label="" x="460.97" y="256.36"/>
 			</e:Group>
 			<e:Group x="654.94" y="73.54" anchorOffsetX="0" width="412.12" anchorOffsetY="0" height="290.91">
-				<ns1:MovieClipPlayer dataSet="picture6_json" texture="picture6_png" movieClipName="picture6" scaleX="1" scaleY="1" verticalCenter="4.5449999999999875" horizontalCenter="-6.060000000000002"/>
+				<ns1:MovieClipPlayer dataSet="picture6_json" texture="picture6_png" movieClipName="picture6" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
 				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
 				<e:RadioButton label="" x="460.97" y="256.36"/>
 			</e:Group>
 			<e:Group x="85.24" y="449.3" anchorOffsetX="0" width="414.88" anchorOffsetY="0" height="293.94">
-				<ns1:MovieClipPlayer dataSet="picture24_json" texture="picture24_png" movieClipName="picture24" scaleX="1" scaleY="1" anchorOffsetX="0" horizontalCenter="-7.439999999999998" verticalCenter="3.030000000000001"/>
+				<ns1:MovieClipPlayer dataSet="picture24_json" texture="picture24_png" movieClipName="picture24" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
 				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
 				<e:RadioButton label="" x="460.97" y="256.36"/>
 			</e:Group>
 			<e:Group x="654.94" y="448.39" anchorOffsetX="0" width="409.09" anchorOffsetY="0" height="293.94">
-				<ns1:MovieClipPlayer dataSet="picture4_json" texture="picture4_png" movieClipName="picture4" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0"/>
+				<ns1:MovieClipPlayer dataSet="picture4_json" texture="picture4_png" movieClipName="picture4" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0"/>
 				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
 				<e:RadioButton label="" x="460.97" y="256.36"/>
 			</e:Group>

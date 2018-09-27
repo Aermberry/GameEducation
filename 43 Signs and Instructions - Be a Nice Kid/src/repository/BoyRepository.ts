@@ -16,9 +16,9 @@ class BoyRepository {
 		'boy4_clean_png'
 	];
 
-	public static helpedBoys = 0;
+	public static helpedBoys = 0; //记录当前帮助了多少个小孩
 
-	public static currentBoy = 0;
+	public static currentBoy = 0; //当前帮助的小孩
 
 	public helpSentence = [
 		'You have helped one children!',

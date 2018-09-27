@@ -43,7 +43,6 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		// this.centerMovicePlayer();
 		this.giftAnimations = [this.gift1Animation, this.gift2Animation, this.gift3Animation, this.gift4Animation,this.gift5Animation, this.gift6Animation, this.gift7Animation, this.gift8Animation, this.gift9Animation];
 		this.questionPresenter.loadView(this);
 		this.continueButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onContinueClick, this);
@@ -210,9 +209,9 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 		Main.instance.gotoScene(new FinishScene());
 	}
 
-	public offerGift(animation: egret.tween.TweenGroup): void
+	public offerGift(giftIndex: number): void
 	{
-		animation.play(-1);
+		this.giftAnimations[giftIndex].play(0);
 	}
 
 	public async playMP3(): Promise<void>
@@ -224,14 +223,13 @@ class QuestionScene extends eui.Component implements  eui.UIComponent,QuestionVi
 	{
 		this.optionsGroup.$children.map((group) => {
 			let movie = (group.$children[0] as MovieClipPlayer);
-			movie.$children[0].x = (movie.width - movie.$children[0].width) / 2
-			console.log((movie.width - movie.$children[0].width) / 2);
-			console.log(movie);
-			console.log(movie.$children[0]);
-			
-					// console.log((mc.parent.width-mc.width)/2);
-		// console.log(movie.$children[0].width);
-		// console.log(movie.width);
+			movie.$children[0].x = 0;
+			movie.$children[0].y = 0;
+			let restWidth = movie.parent.width > movie.$children[0].width ? movie.parent.width - movie.$children[0].width : 0;
+			let restHeight = movie.parent.height > movie.$children[0].height ? movie.parent.height - movie.$children[0].height : 0;
+
+			movie.$children[0].x = restWidth / 2
+			movie.$children[0].y = restHeight / 2
 		})
 	}
 

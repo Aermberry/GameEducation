@@ -1,6 +1,7 @@
 class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	
 	private textLabel: eui.Label;
+	private backgroundImage: eui.Image;
 
 	public constructor() {
 		super();
@@ -30,6 +31,19 @@ class ButtonComponent extends eui.Component implements  eui.UIComponent {
 	public set text(str: string)
 	{
 		this._text = str;
+	}
+
+	private _background = '';
+
+	public get background(): string
+	{
+		return this._background;
+	}
+
+	public set background(str: string)
+	{
+		this._background = str;
+		this.backgroundImage && (this.backgroundImage.source = str);
 	}
 	
 }

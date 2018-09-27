@@ -3,7 +3,8 @@ class QuestionPresenter {
 	private questionRepo = new QuestionRepository();
 	private boyRepo = new BoyRepository();
 	private view: QuestionView;
-	private questionsLeft = 10;
+	private currentQuestionIndex = 0;
+	private readonly maxQuestionCount = 10;
 	private answeredQuestions: Question[] = []; //the questions have been answered
 	private options: Question[] = []; //four options to select
 	private answer: Question; //the correct answer
@@ -30,6 +31,7 @@ class QuestionPresenter {
 		this.view.options = this.options;
 		this.view.playMP3();
 		this.view.showOptionAndAnswer();
+		this.view.centerMovicePlayer();
 	}
 
 	public onOptionSelect(optionIndex: number): void
@@ -42,10 +44,6 @@ class QuestionPresenter {
 			this.view.showLikeImage();
 			this.view.showAnswer(this.answer.sentence);
 			this.answeredQuestions.push(this.answer);
-			this.questionsLeft--;
-			if (this.questionsLeft == 0) { 
-				this.view.openFinishScene();
-			}
 		} else {
 			this.view.alertSelectWrong();
 		}
@@ -53,17 +51,22 @@ class QuestionPresenter {
 
 	public async onContinueButtonClick(): Promise<void>
 	{
-		this.view.hideOptionAnswerGroup();
-		this.view.offerGift(this.view.giftAnimations[10-this.questionsLeft-1]); //give gift to main role
-		await lzlib.ThreadUtility.sleep(2000);
-		this.view.showHornComponent();
-		this.view.showOkButton();
-		this.view.showRepeatLabel();
-		this.view.hideLikeImage();
-		this.view.hideAnswer();
-		this.view.enableOptionSelect();
-		
-		this.showCurrentQuestion();
+		if (this.currentQuestionIndex >= this.maxQuestionCount - 1) { 
+			this.view.openFinishScene();
+		} else {
+			this.view.hideOptionAnswerGroup();
+			this.view.offerGift(this.currentQuestionIndex); //give gift to main role
+			this.currentQuestionIndex++;
+			await lzlib.ThreadUtility.sleep(2000);
+			this.view.showHornComponent();
+			this.view.showOkButton();
+			this.view.showRepeatLabel();
+			this.view.hideLikeImage();
+			this.view.hideAnswer();
+			this.view.enableOptionSelect();
+			
+			this.showCurrentQuestion();
+		}
 	}
 
 }
