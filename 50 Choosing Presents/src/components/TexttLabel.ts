@@ -26,7 +26,7 @@ namespace Ui {
 		private _text: string = "textLabel";
 		private _fontSize: number = 30;
 		private _textAglign:string="lefet"
-		private _backgroundColor:number=0xB5FFFF;
+		private _backgroundColor:number=0xFFFFFF;
 		private _fontColor:number=0x602DA3;
 		private _verticalAlign:string="middle";
 

@@ -122,59 +122,59 @@
 			"name": "track_sb_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "checkbox_select_disabled2_png",
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_disabled.png"
+			"name": "checkbox_select_disabled2_png"
 		},
 		{
-			"name": "checkbox_select_down2_png",
+			"url": "assets/CheckBox/checkbox_select_down.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_down.png"
+			"name": "checkbox_select_down2_png"
 		},
 		{
-			"name": "checkbox_select_up2_png",
+			"url": "assets/CheckBox/checkbox_select_up.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_select_up.png"
+			"name": "checkbox_select_up2_png"
 		},
 		{
-			"name": "checkbox_unselect2_png",
+			"url": "assets/CheckBox/checkbox_unselect.png",
 			"type": "image",
-			"url": "assets/CheckBox/checkbox_unselect.png"
+			"name": "checkbox_unselect2_png"
 		},
 		{
-			"name": "basketball_png",
+			"url": "textures/basketball.png",
 			"type": "image",
-			"url": "textures/basketball.png"
+			"name": "basketball_png"
 		},
 		{
-			"name": "book_png",
+			"url": "textures/book.png",
 			"type": "image",
-			"url": "textures/book.png"
+			"name": "book_png"
 		},
 		{
-			"name": "money bank 3_png",
+			"url": "textures/money bank 3.png",
 			"type": "image",
-			"url": "textures/money bank 3.png"
+			"name": "money bank 3_png"
 		},
 		{
-			"name": "pen_png",
+			"url": "textures/pen.png",
 			"type": "image",
-			"url": "textures/pen.png"
+			"name": "pen_png"
 		},
 		{
-			"name": "shelf_png",
+			"url": "textures/shelf.png",
 			"type": "image",
-			"url": "textures/shelf.png"
+			"name": "shelf_png"
 		},
 		{
-			"name": "true_png",
+			"url": "textures/true.png",
 			"type": "image",
-			"url": "textures/true.png"
+			"name": "true_png"
 		}
 	]
 }

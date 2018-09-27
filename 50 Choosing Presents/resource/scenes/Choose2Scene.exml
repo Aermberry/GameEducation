@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Choose2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="Choose2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*">
 	<w:Config id="166192f9124" ></w:Config>
+		<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) to the blank" textColor="0xFF0099"
+	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="148" anchorOffsetX="0"
+	         width="1397" lineSpacing="50" top="0"  horizontalCenter="0"/>
+	<e:Image source="shelf_png"  verticalCenter="-108" horizontalCenter="0"/>
+	<e:Label fontFamily="Comic Sans MS"
+	         text="Sam:Well,Peter wants to have a _____________.\nAnd                                      only.Let's buy it for him.\nMary:Where is it?\nSam:"
+	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416"
+	         anchorOffsetX="0" width="1537" lineSpacing="50"  textColor="0x000000" x="24" bottom="0"/>
+			 <e:Group id="DragGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
+	<e:Label  fontFamily="Comic Sans MS" x="340" y="128" text="pen" width="202" height="100" background="true" backgroundColor="0xffffff" border="true"
+	         borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label  fontFamily="Comic Sans MS" x="1015" y="124" text="money bank" width="304" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label  fontFamily="Comic Sans MS" x="296" y="426" text="basketball" width="270" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0xffffff" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Label fontFamily="Comic Sans MS"  x="1020" y="426" text="story book" width="292" height="100" background="true" backgroundColor="0xffffff"
+	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+			 </e:Group>
+	<e:Label text="it costs fifteen dollars" x="158" y="1136" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+	<e:Label text="It's at the top of the shelf." x="164.67" y="1364" anchorOffsetX="0" width="814" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+	<e:Label text="fifteen dollars" x="395.52" y="1136" anchorOffsetX="0" width="426.85" anchorOffsetY="0" height="74" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true"/>
+	<e:Label text="at the top" x="300.18" y="1363.32" anchorOffsetX="0" width="293.52" anchorOffsetY="0" height="74" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
+
+	<Ui:TexttLabel width="604" height="148" x="1288" y="1146" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="We write with a pen." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" visible="false"/>
+	<e:Button label="Next" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0" height="110"/>
+	<e:Button label="Help" x="999.77" y="1326" anchorOffsetX="0" width="206" anchorOffsetY="0" height="104"/>
+	<e:Label fontFamily="Comic Sans MS" x="1118" y="992" text="pen" width="166" height="100" background="true" backgroundColor="0xffffff" border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
+	<e:Image source="true_png" x="1226" y="1040" rotation="354.36"/>
 </e:Skin>
