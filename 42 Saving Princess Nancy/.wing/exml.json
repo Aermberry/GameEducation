@@ -1,0 +1,25 @@
+{
+    "1661dfbbbc7": {
+        "path": "scenes/SelectTaskScene.ts",
+        "class": "SelectTaskScene",
+        "parentPath": ""
+    },
+    "1661e1ee44f": {
+        "path": "scenes/Task1IntroductionScene.ts",
+        "class": "Task1IntroductionScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "1661f6df82d": {
+        "path": "scenes/Task2IntroductionScene.ts",
+        "class": "Task2IntroductionScene",
+        "parentPath": ""
+    },
+    "1661f8c50fe": {
+        "path": "scenes/DistinguishRole1Scene.ts",
+        "class": "DistinguishRole1Scene",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DragSceneSkin" width="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  height="1440">
+	<w:Config id="1661eb18963" ></w:Config>
+	<e:Image left="0" right="0" top="3" bottom="-3" source="background_task_png"/>
+	<e:Label text="    Princess Nancy is sixteen years old. She is tall and slim. Her skin is as white as snow and lips are as red as roses. She has long wavy brown hair and big round blue eyes. Her nose turns up a little at the end." x="58.7" y="36.7" textColor="0x4c2759" size="42" multiline="true" width="1800" lineSpacing="12" fontFamily="Comic Sans MS"/>
+	<e:Label text="    The princess is gentle and friendly. Her smile is sweet and her voice is soft. She sings like a nightingale and she usually walks with little dancing steps." x="58.7" y="227.61" textColor="0x4C2759" size="42" multiline="true" width="1666.67" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Label id="gentleLabel" text="gentle" x="416.27" y="227.61" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" textColor="0x266232" fontFamily="Comic Sans MS"/>
+	<e:Label id="nightingaleLabel" text="nightingale" x="264.62" y="282.15" textColor="0x266232" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Label text="    She is wearing a crown, a pink gown, " x="58.7" y="360.94" textColor="0x4C2759" size="42" multiline="true" width="850" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Label text="She is  also wearing a necklace and a pair of earrings." x="58.7" y="421.55" textColor="0x4C2759" size="42" multiline="true" width="1019.69" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS" anchorOffsetY="0" height="48.06"/>
+	<e:Label text="a pair of glass slippers and a pair of white gloves. " x="822.33" y="357.92" textColor="0x4C2759" size="42" multiline="true" width="1089.39" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Label id="crownLabel" text="crown" x="437.48" y="360.95" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" textColor="0x266232" fontFamily="Comic Sans MS"/>
+	<e:Label id="gownLabel" text="gown" x="701.12" y="360.94" textColor="0x266232" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Label id="glovesLabel" text="gloves" x="1652.64" y="357.92" textColor="0x266232" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Comic Sans MS"/>
+	<e:Group id="princessGroup" x="375.87" y="597.45">
+		<e:Image source="face_png" anchorOffsetX="0" width="130" anchorOffsetY="0" height="145.26" y="-109.09" x="130.3"/>
+		<e:Image x="117.64" y="-57.82" source="ears_png"/>
+		<e:Image source="princess_model_png" anchorOffsetX="0" width="331.98" anchorOffsetY="0" height="809.82" y="0"/>
+	</e:Group>
+	<e:Group id="partsOfBodyGroup" x="906" y="521">
+		<e:Label text="Clothes" x="32.97" y="27" size="50" textColor="0x503115"/>
+		<e:Label text="Eye" x="-3.39" y="179.43" size="50" textColor="0x503115"/>
+		<e:Label text="Nose" x="58.12" y="298.52" size="50" textColor="0x503115"/>
+		<e:Label text="Mouth" x="-57.03" y="401.55" size="50" textColor="0x503115"/>
+		<e:Label text="Hair Style" x="-80.36" y="523.67" size="50" textColor="0x503115"/>
+		<e:Label text="Accessories" x="-133.99" y="679.12" size="50" textColor="0x503115"/>
+		<e:Group id="clothesGroup" x="263.66" y="-23.84">
+			<e:Image width="121.21" height="121.21" x="21" y="14.61" source="gown_png" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image width="100" height="172.33" x="184.64" y="-12.66" anchorOffsetX="0" anchorOffsetY="0" source="clothes_and_trousers_png"/>
+			<e:Image width="100" height="108.69" x="336.15" y="24.61" anchorOffsetX="0" anchorOffsetY="0" source="short_skirt_png"/>
+		</e:Group>
+		<e:Group id="clothesGroup0" x="131.24" y="180.09">
+			<e:Image x="21" y="14.61" anchorOffsetX="0" anchorOffsetY="0" source="eyes_blue_png" width="116.72" height="33.79"/>
+			<e:Image x="184.64" y="14.61" anchorOffsetX="0" anchorOffsetY="0" source="eyes_black_png" width="111.85" height="24.29"/>
+			<e:Image x="336.15" y="3.4" anchorOffsetX="0" anchorOffsetY="0" source="eyes_brown_png" width="105.37" height="30.94"/>
+		</e:Group>
+		<e:Group id="clothesGroup1" x="223.05" y="271.91">
+			<e:Image x="21" y="14.61" anchorOffsetX="0" anchorOffsetY="0" source="nose_png" width="48.09" height="49.35"/>
+			<e:Image x="111.91" y="20.67" anchorOffsetX="0" anchorOffsetY="0" source="nose_pointed_png" width="39.14" height="38.71"/>
+			<e:Image x="208.88" y="0.37" anchorOffsetX="0" anchorOffsetY="0" source="nose_line_png" width="16.11" height="60.55" rotation="360"/>
+		</e:Group>
+		<e:Group id="clothesGroup2" x="130.02" y="384.94" anchorOffsetX="0" width="471.15">
+			<e:Image x="8.88" y="23.7" anchorOffsetX="0" anchorOffsetY="0" source="mouth_pink_png" width="117.88" height="42.45"/>
+			<e:Image x="175.54" y="20.67" anchorOffsetX="0" anchorOffsetY="0" source="mouth_brown_png" width="128.82" height="46.39"/>
+			<e:Image x="369.49" y="24.61" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="mouth_red_png" width="110.64" height="39.84"/>
+		</e:Group>
+		<e:Group id="clothesGroup3" x="176.38" y="510.09" anchorOffsetX="0" width="471.15">
+			<e:Image x="8.88" y="-42.97" anchorOffsetX="0" anchorOffsetY="0" source="hair_wave_png"/>
+			<e:Image x="220.99" y="-45.99" anchorOffsetX="0" anchorOffsetY="0" source="hiar_straight_png"/>
+			<e:Image x="396.76" y="-32.96" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="hair_curly_png"/>
+		</e:Group>
+		<e:Group id="clothesGroup4" x="186.38" y="677.66" anchorOffsetX="0" width="471.15">
+			<e:Image x="8.88" y="-42.97" anchorOffsetX="0" anchorOffsetY="0" source="gloves_png"/>
+			<e:Image x="-190.21" y="100.36" anchorOffsetX="0" anchorOffsetY="0" source="boots_png"/>
+			<e:Image x="31.91" y="146.72" anchorOffsetX="0" anchorOffsetY="0" source="earrings_png"/>
+			<e:Image x="290.39" y="77.93" anchorOffsetX="0" anchorOffsetY="0" source="glass_slippers_png"/>
+			<e:Image x="500.39" y="90.96" anchorOffsetX="0" anchorOffsetY="0" source="necklace_png" width="220.79" height="134.33"/>
+			<e:Image x="136.15" y="8.55" anchorOffsetX="0" anchorOffsetY="0" source="glasses_png"/>
+			<e:Image x="266.46" y="-14.78" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="hat_png"/>
+			<e:Image x="179.49" y="43.71" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="crown_png" width="113.72" height="61.49"/>
+			<e:Image x="385.55" y="-35.08" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="bracelet_png"/>
+		</e:Group>
+	</e:Group>
+	
+</e:Skin>

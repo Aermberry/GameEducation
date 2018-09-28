@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Task2IntroductionSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1661f6df82d" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="forest_background_png"/>
+	<e:Label text="Task 2" x="130.09" y="94.06" size="92"/>
+	<e:Label text="You will meet some good people and bad people on" x="154.24" y="358" size="70"/>
+	<e:Label text="Your way to the castle. The fairy will tell you who" x="154.24" y="483.15" size="70"/>
+	<e:Label text="will help you and who will hurt you. Listen and" x="154.24" y="595.27" size="70"/>
+	<e:Label text="follow her instructions." x="154.24" y="705.27" size="70"/>
+	<e:Label text="Find the good people and click on them." x="154.24" y="814.36" size="70"/>
+	<e:Image x="1035.42" y="930.03" source="fairy_png"/>
+</e:Skin>

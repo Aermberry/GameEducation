@@ -1,0 +1,395 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,wall_png,king_png,king2_png,roll_paper_png,wall2_png,task_border_png,gradual_png,iron_gate_left_png,iron_gate_right_png,border_gradual_png,flower_border_png,wall_gate_png,background_task_png,princess_model_png,face_png,ears_png,gown_png,clothes_and_trousers_png,short_skirt_png,eyes_blue_png,eyes_black_png,eyes_brown_png,nose_pointed_png,nose_png,nose_line_png,mouth_red_png,mouth_pink_png,mouth_brown_png,hair_wave_png,hiar_straight_png,hair_curly_png,boots_png,earrings_png,gloves_png,glasses_png,hat_png,glass_slippers_png,necklace_png,bracelet_png,crown_png,forest_background_png,fairy_png,listen1_background_png,listen1_house_png,listen1_grass_png,princess_and_horse_png,listen1_person_straight_png,listen1_person_red_hair_png,listen1_person_hair_curly_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "checkbox_select_disabled2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name": "checkbox_select_down2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name": "checkbox_select_up2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name": "checkbox_unselect2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "wall_png",
+			"type": "image",
+			"url": "textures/wall.png"
+		},
+		{
+			"name": "king_png",
+			"type": "image",
+			"url": "textures/king.png"
+		},
+		{
+			"name": "king2_png",
+			"type": "image",
+			"url": "textures/king2.png"
+		},
+		{
+			"name": "roll_paper_png",
+			"type": "image",
+			"url": "textures/roll_paper.png"
+		},
+		{
+			"name": "wall2_png",
+			"type": "image",
+			"url": "textures/wall2.png"
+		},
+		{
+			"name": "task_border_png",
+			"type": "image",
+			"url": "textures/task_border.png"
+		},
+		{
+			"name": "gradual_png",
+			"type": "image",
+			"url": "textures/gradual.png"
+		},
+		{
+			"name": "iron_gate_left_png",
+			"type": "image",
+			"url": "textures/iron_gate_left.png"
+		},
+		{
+			"name": "iron_gate_right_png",
+			"type": "image",
+			"url": "textures/iron_gate_right.png"
+		},
+		{
+			"name": "border_gradual_png",
+			"type": "image",
+			"url": "textures/border_gradual.png"
+		},
+		{
+			"name": "flower_border_png",
+			"type": "image",
+			"url": "textures/flower_border.png"
+		},
+		{
+			"name": "wall_gate_png",
+			"type": "image",
+			"url": "textures/wall_gate.png"
+		},
+		{
+			"name": "background_task_png",
+			"type": "image",
+			"url": "textures/background_task.png"
+		},
+		{
+			"name": "princess_model_png",
+			"type": "image",
+			"url": "textures/princess_model.png"
+		},
+		{
+			"name": "face_png",
+			"type": "image",
+			"url": "textures/face.png"
+		},
+		{
+			"name": "ears_png",
+			"type": "image",
+			"url": "textures/ears.png"
+		},
+		{
+			"name": "gown_png",
+			"type": "image",
+			"url": "textures/gown.png"
+		},
+		{
+			"name": "clothes_and_trousers_png",
+			"type": "image",
+			"url": "textures/clothes_and_trousers.png"
+		},
+		{
+			"name": "short_skirt_png",
+			"type": "image",
+			"url": "textures/short_skirt.png"
+		},
+		{
+			"name": "eyes_blue_png",
+			"type": "image",
+			"url": "textures/eyes_blue.png"
+		},
+		{
+			"name": "eyes_black_png",
+			"type": "image",
+			"url": "textures/eyes_black.png"
+		},
+		{
+			"name": "eyes_brown_png",
+			"type": "image",
+			"url": "textures/eyes_brown.png"
+		},
+		{
+			"name": "nose_pointed_png",
+			"type": "image",
+			"url": "textures/nose_pointed.png"
+		},
+		{
+			"name": "nose_png",
+			"type": "image",
+			"url": "textures/nose.png"
+		},
+		{
+			"name": "nose_line_png",
+			"type": "image",
+			"url": "textures/nose_line.png"
+		},
+		{
+			"name": "mouth_red_png",
+			"type": "image",
+			"url": "textures/mouth_red.png"
+		},
+		{
+			"name": "mouth_pink_png",
+			"type": "image",
+			"url": "textures/mouth_pink.png"
+		},
+		{
+			"name": "mouth_brown_png",
+			"type": "image",
+			"url": "textures/mouth_brown.png"
+		},
+		{
+			"name": "hair_wave_png",
+			"type": "image",
+			"url": "textures/hair_wave.png"
+		},
+		{
+			"name": "hiar_straight_png",
+			"type": "image",
+			"url": "textures/hiar_straight.png"
+		},
+		{
+			"name": "hair_curly_png",
+			"type": "image",
+			"url": "textures/hair_curly.png"
+		},
+		{
+			"name": "boots_png",
+			"type": "image",
+			"url": "textures/boots.png"
+		},
+		{
+			"name": "earrings_png",
+			"type": "image",
+			"url": "textures/earrings.png"
+		},
+		{
+			"name": "gloves_png",
+			"type": "image",
+			"url": "textures/gloves.png"
+		},
+		{
+			"name": "glasses_png",
+			"type": "image",
+			"url": "textures/glasses.png"
+		},
+		{
+			"name": "hat_png",
+			"type": "image",
+			"url": "textures/hat.png"
+		},
+		{
+			"name": "glass_slippers_png",
+			"type": "image",
+			"url": "textures/glass_slippers.png"
+		},
+		{
+			"name": "necklace_png",
+			"type": "image",
+			"url": "textures/necklace.png"
+		},
+		{
+			"name": "bracelet_png",
+			"type": "image",
+			"url": "textures/bracelet.png"
+		},
+		{
+			"name": "crown_png",
+			"type": "image",
+			"url": "textures/crown.png"
+		},
+		{
+			"name": "forest_background_png",
+			"type": "image",
+			"url": "textures/forest_background.png"
+		},
+		{
+			"name": "fairy_png",
+			"type": "image",
+			"url": "textures/fairy.png"
+		},
+		{
+			"name": "listen1_background_png",
+			"type": "image",
+			"url": "textures/listen1_background.png"
+		},
+		{
+			"name": "listen1_house_png",
+			"type": "image",
+			"url": "textures/listen1_house.png"
+		},
+		{
+			"name": "listen1_grass_png",
+			"type": "image",
+			"url": "textures/listen1_grass.png"
+		},
+		{
+			"name": "princess_and_horse_png",
+			"type": "image",
+			"url": "textures/princess_and_horse.png"
+		},
+		{
+			"name": "listen1_person_straight_png",
+			"type": "image",
+			"url": "textures/listen1_person_straight.png"
+		},
+		{
+			"name": "listen1_person_red_hair_png",
+			"type": "image",
+			"url": "textures/listen1_person_red_hair.png"
+		},
+		{
+			"name": "listen1_person_hair_curly_png",
+			"type": "image",
+			"url": "textures/listen1_person_hair_curly.png"
+		}
+	]
+}
