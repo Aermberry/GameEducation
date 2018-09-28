@@ -7,5 +7,5 @@
 	<e:Image source="basketball_png" x="984" y="765"/>
 	<e:Image source="pen_png" x="600" y="1144"/>
 	<e:Image source="book_png" x="964.5" y="1090"/>
-	<e:Button label="Next" x="1499" y="1224" anchorOffsetX="0" width="278" anchorOffsetY="0" height="130"/>
+	<e:Button id="nextButton" label="Next" x="1499" y="1224" anchorOffsetX="0" width="278" anchorOffsetY="0" height="130"/>
 </e:Skin>

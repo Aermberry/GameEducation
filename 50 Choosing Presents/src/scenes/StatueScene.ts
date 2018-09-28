@@ -1,4 +1,5 @@
 class StatueScene extends eui.Component implements  eui.UIComponent {
+	private nextButton:eui.Button;
 	public constructor() {
 		super();
 	}
@@ -12,6 +13,11 @@ class StatueScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.gotoNextScene,this);
+	}
+
+	private gotoNextScene():void {
+		Main.instance.gotoScene(new Choose1Scene())		
 	}
 	
 }
