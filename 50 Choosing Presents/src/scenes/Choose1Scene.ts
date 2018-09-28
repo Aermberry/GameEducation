@@ -2,11 +2,19 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 
 	private dragGroup: eui.Group;
 	private dropGroup: eui.Group;
+	private penGroup: eui.Group;
+	private playGroup: eui.Group;
+	private bankGroup: eui.Group;
+	private tipsGroup: eui.Group;
+	private maskGroup:eui.Group;
 
-	private nextButton:eui.Button;
-	private logImage:eui.Image;
+	private nextButton: eui.Button;
+	private logImage: eui.Image;
+	private worldLabel: eui.Label;
+	private colorKeyWorldLabel: eui.Label;
 
 	private currentQuestionIndex = 0;
+	private optionText: string = "";
 
 	public constructor() {
 		super();
@@ -20,7 +28,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		this.initDragable();
-		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.gotoNextScene,this);
+		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.gotoNextScene, this);
 	}
 
 	// drag模塊
@@ -47,31 +55,53 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
-		console.log("aaaa")
+
+		this.optionText = dragComponent.text;//獲取當前對象的文本
+
+		this.nextButton.visible = true;
+		this.worldLabel.textColor = 0xFF0099;
+		this.colorKeyWorldLabel.visible = true;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
 
 			this.dropGroup.$children.every(children => children.visible) &&
-				(this.logImage.visible=true)&&(this.nextButton.visible=true);
+				(this.logImage.visible = true) && (this.nextButton.visible = true);
 		}
-		else{
+		else {
 			
+			this.showTipsLabel();
+			this.swapChildren(this.dragGroup,this.maskGroup);		
 		}
 	}
 
 	private onDragCancel(e: lzlib.LzDragEvent): void {
-		// this.showTipsLabel();
+		this.showTipsLabel();
 	}
 
-	private async showTipsLabel():Promise<void> {
-		
+	private async showTipsLabel(): Promise<void> {
+		// this.penTipsLabel.visible = true;
+		this.optionText == "pen" && (this.penGroup.visible = true);
+		this.optionText == "money bank" && (this.bankGroup.visible = true);
+		this.optionText == "basketball" && (this.playGroup.visible = true);
 	}
 
 
 
-	private gotoNextScene():void {
-		Main.instance.gotoScene(new Choose2Scene());
+	private gotoNextScene(): void {
+		if (this.dropGroup.$children.every(children => children.visible) && this.logImage.visible) {
+			Main.instance.gotoScene(new Choose2Scene());
+		}
+		else {
+			// this.penTipsLabel.visible = false;
+			this.nextButton.visible = false;
+			this.worldLabel.textColor = 0x000000;
+			this.colorKeyWorldLabel.visible = false;
+			this.swapChildren(this.dragGroup,this.maskGroup);
+			for (let children of this.tipsGroup.$children) {
+				children.visible && (children.visible = false)
+			}
+		}
 	}
 }

@@ -1,4 +1,6 @@
 class HelpScene extends eui.Component implements  eui.UIComponent {
+
+	private backButton:eui.Button;
 	public constructor() {
 		super();
 	}
@@ -12,6 +14,11 @@ class HelpScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.backButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.backToParentSatge,this);
+	}
+
+	private backToParentSatge():void {
+		this.parent.removeChild(this);
 	}
 	
 }
