@@ -21,5 +21,55 @@
         "path": "scenes/DistinguishRole1Scene.ts",
         "class": "DistinguishRole1Scene",
         "parentPath": ""
+    },
+    "16622da6591": {
+        "path": "scenes/DistinguishRole2Scene.ts",
+        "class": "DistinguishRole2Scene",
+        "parentPath": ""
+    },
+    "16622fdcac5": {
+        "path": "scenes/distinguishRole3Scene.ts",
+        "class": "distinguishRole3Scene",
+        "parentPath": ""
+    },
+    "1662311577f": {
+        "path": "../resource/scenes/DistinguishRole4Scene.ts",
+        "class": "DistinguishRole4Scene",
+        "parentPath": ""
+    },
+    "166233e5828": {
+        "path": "scenes/GoToCastleScene.ts",
+        "class": "GoToCastleScene",
+        "parentPath": ""
+    },
+    "166234e9d23": {
+        "path": "scenes/DistinguishRole5Scene.ts",
+        "class": "DistinguishRole5Scene",
+        "parentPath": ""
+    },
+    "166235fd3eb": {
+        "path": "scenes/DistinguishRole6Scene.ts",
+        "class": "DistinguishRole6Scene",
+        "parentPath": ""
+    },
+    "16623e811f6": {
+        "path": "scenes/FinishScene.ts",
+        "class": "FinishScene",
+        "parentPath": ""
+    },
+    "166241b423b": {
+        "path": "components/BootsComponent.ts",
+        "class": "BootsComponent",
+        "parentPath": ""
+    },
+    "166248e2030": {
+        "path": "components/AlertComponent.ts",
+        "class": "AlertComponent",
+        "parentPath": ""
+    },
+    "166249ac9d9": {
+        "path": "components/ListenComponent.ts",
+        "class": "ListenComponent",
+        "parentPath": ""
     }
 }

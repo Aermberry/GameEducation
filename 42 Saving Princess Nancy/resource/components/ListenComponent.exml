@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ListenComponentSkin" width="535" height="172" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166249ac9d9" ></w:Config>
+	<e:Image y="0" source="headset_png" anchorOffsetX="0" width="123.47" anchorOffsetY="0" height="171.19"/>
+	<e:Image id="titleAndFairyImage" x="126.82" y="6.89" source="listen1_normal_png" anchorOffsetX="0" width="407.61" anchorOffsetY="0" height="154.02"/>
+</e:Skin>

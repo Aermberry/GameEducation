@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GoToCastleSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166233e5828" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="blue_png"/>
+	<e:Image x="130.58" y="136.61" source="cloud_png" anchorOffsetX="0" width="535.75" anchorOffsetY="0" height="136.05"/>
+	<e:Image x="130.58" y="548.95" source="cloud_png" anchorOffsetX="0" width="893.74" anchorOffsetY="0" height="226.96"/>
+	<e:Image x="866.57" y="101.87" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image x="1539.1" y="204.63" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image x="1715.77" y="463.56" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image x="866.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="284.01" anchorOffsetY="0" height="904.06"/>
+</e:Skin>

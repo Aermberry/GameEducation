@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="distinguishRole3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16622fdcac5" ></w:Config>
+	<e:Image source="listen3_background_png" left="-148" right="-133" top="-167" bottom="-33" scaleX="1.15" scaleY="1.14"/>
+	<e:Image x="115.1" y="621.21" source="stick_png" rotation="352.8"/>
+	<e:Image x="1545.73" y="466.63" source="sword_png" anchorOffsetX="0" width="87.55" anchorOffsetY="0" height="414.36"/>
+	<e:Group id="peopleGroup">
+			<e:Image x="193.64" y="621.45" source="listen3_person1_png" anchorOffsetX="0" width="296.26" anchorOffsetY="0" height="603.33"/>
+		<e:Image x="772.43" y="615.39" source="listen3_person2_png"/>
+		<e:Image x="1315.76" y="637.27" source="listen3_person3_png" anchorOffsetX="0" width="291.12" anchorOffsetY="0" height="593.76"/>
+	</e:Group>
+	<e:Image x="1443" y="1120" source="listen2_grass_png"/>
+	<e:Image x="-533.45" y="1104" source="listen2_grass_png"/>
+	<e:Image x="46.43" y="1207" source="listen2_grass_png"/>
+	<e:Image x="721.32" y="1146.42" source="listen2_grass_png"/>
+
+</e:Skin>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Task1IntroductionSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="Task1IntroductionSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1661e1ee44f" ></w:Config>
 	<e:Image left="-250" right="11" top="0" bottom="0" source="gradual_png" anchorOffsetX="0"/>
 	<e:Image x="-400.24" y="-9.45" source="wall_gate_png"/>
@@ -8,4 +8,5 @@
 	<e:Image x="1314.12" y="52.49" source="iron_gate_right_png" anchorOffsetY="0" height="1368.6" anchorOffsetX="0" width="745.27"/>
 	<e:Image x="655.28" y="181.98" source="border_gradual_png" anchorOffsetX="0" width="573.07" anchorOffsetY="0" height="833.48" alpha="0.4"/>
 	<e:Image x="626.69" y="69.72" source="flower_border_png" rotation="360" anchorOffsetX="0" width="635.53" anchorOffsetY="0" height="961.18"/>
+	<ns1:BootsComponent width="171.51" height="213.94" x="1442" y="1027" anchorOffsetX="0" anchorOffsetY="0"/>
 </e:Skin>

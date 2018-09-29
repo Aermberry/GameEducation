@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DistinguishRole4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1662311577f" ></w:Config>
+	<e:Image left="-69" right="-97" top="-12" bottom="-21" source="birdge_png" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Image x="685.03" y="79.06" source="listen4_person3_png" anchorOffsetX="0" width="198.73" anchorOffsetY="0" height="463.9"/>
+	<e:Image x="959.53" y="39.08" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person4_png" width="170.06" height="474.17"/>
+	<e:Image x="1190.2" y="99.69" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person5_png" width="229.99" height="381.89"/>
+	<e:Image x="295.94" y="769.5" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person6_png" width="523.74" height="667.82"/>
+	<e:Image x="521.96" y="378.63" source="guardrail_png" anchorOffsetY="0" height="276.27"/>
+	<e:Image x="33.55" y="185.27" source="listen4_person1_png" anchorOffsetX="0" width="193.12" anchorOffsetY="0" height="553.93"/>
+	<e:Image x="333.22" y="245.88" source="listen4_person2_png" anchorOffsetX="0" width="219.77" anchorOffsetY="0" height="501.58"/>
+</e:Skin>

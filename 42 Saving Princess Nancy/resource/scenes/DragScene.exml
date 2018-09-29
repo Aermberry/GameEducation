@@ -61,5 +61,11 @@
 			<e:Image x="385.55" y="-35.08" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="bracelet_png"/>
 		</e:Group>
 	</e:Group>
+	<e:Group id="alertGroup" x="68" y="524">
+		<e:Image x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0.7"/>
+		<e:Image x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
+		<e:Image x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png"/>
+		<e:Label text="Try again! Read the 1st paragraph again." x="36" y="116" anchorOffsetX="0" width="290" anchorOffsetY="0" textColor="0x070707" size="42" fontFamily="Comic Sans MS"/>
+	</e:Group>
 	
 </e:Skin>

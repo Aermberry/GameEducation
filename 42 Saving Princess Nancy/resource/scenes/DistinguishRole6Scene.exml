@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DistinguishRole6SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166235fd3eb" ></w:Config>
+		<e:Image source="listen5_background2_png" anchorOffsetX="0" width="4841.96" anchorOffsetY="0" height="2601.38" y="-547.37" x="-2196.47"/>
+	<e:Image left="-1761" right="-857" top="-295" bottom="-1904" source="listen5_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

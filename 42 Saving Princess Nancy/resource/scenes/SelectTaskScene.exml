@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SelectTaskSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="SelectTaskSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1661dfbbbc7" ></w:Config>
 	<e:Image width="1106.06" height="1450.3" x="257.78" y="-3.18" anchorOffsetX="0" anchorOffsetY="0" source="wall2_png"/>
 	<e:Image left="0" right="0" top="0" bottom="0" source="wall_png"/>
@@ -10,4 +10,5 @@
 	<e:Image x="872.67" y="1030.39" source="task_border_png"/>
 	<e:Label id="task1Label" text="Task 1 Knowing Princess Nancy" x="972.72" y="912.18" textColor="0x7e512f" size="46"/>
 	<e:Label text="Task 2 Finding Princess Nancy" x="972.72" y="1054.6" textColor="0x7E512F" size="46" id="task1Label0"/>
+	<ns1:ListenComponent width="20" height="20" x="1092" y="336"/>
 </e:Skin>

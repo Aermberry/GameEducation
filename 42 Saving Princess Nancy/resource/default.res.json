@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,wall_png,king_png,king2_png,roll_paper_png,wall2_png,task_border_png,gradual_png,iron_gate_left_png,iron_gate_right_png,border_gradual_png,flower_border_png,wall_gate_png,background_task_png,princess_model_png,face_png,ears_png,gown_png,clothes_and_trousers_png,short_skirt_png,eyes_blue_png,eyes_black_png,eyes_brown_png,nose_pointed_png,nose_png,nose_line_png,mouth_red_png,mouth_pink_png,mouth_brown_png,hair_wave_png,hiar_straight_png,hair_curly_png,boots_png,earrings_png,gloves_png,glasses_png,hat_png,glass_slippers_png,necklace_png,bracelet_png,crown_png,forest_background_png,fairy_png,listen1_background_png,listen1_house_png,listen1_grass_png,princess_and_horse_png,listen1_person_straight_png,listen1_person_red_hair_png,listen1_person_hair_curly_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,wall_png,king_png,king2_png,roll_paper_png,wall2_png,task_border_png,gradual_png,iron_gate_left_png,iron_gate_right_png,border_gradual_png,flower_border_png,wall_gate_png,background_task_png,princess_model_png,face_png,ears_png,gown_png,clothes_and_trousers_png,short_skirt_png,eyes_blue_png,eyes_black_png,eyes_brown_png,nose_pointed_png,nose_png,nose_line_png,mouth_red_png,mouth_pink_png,mouth_brown_png,hair_wave_png,hiar_straight_png,hair_curly_png,boots_png,earrings_png,gloves_png,glasses_png,hat_png,glass_slippers_png,necklace_png,bracelet_png,crown_png,forest_background_png,fairy_png,listen1_background_png,listen1_house_png,listen1_grass_png,princess_and_horse_png,listen1_person_straight_png,listen1_person_red_hair_png,listen1_person_hair_curly_png,listen2_grass_png,dusk_png,sunlight_png,listen2_background_png,listen2_person3_png,listen2_person1_png,listen2_person2_png,listen2_person4_png,listen2_person5_png,listen2_person6_png,listen3_background_png,listen3_person3_png,listen3_person2_png,listen3_person1_png,sword_png,stick_png,birdge_png,listen4_person3_png,listen4_person5_png,listen4_person4_png,listen4_person6_png,listen4_person2_png,listen4_person1_png,guardrail_png,cloud_png,blue_png,princess_bird_png,listen5_background_png,listen5_background2_png,listen5_sunlight_png,listen_person2_png,listen_person1_png,listen_person3_png,listen_person4_png,princesses_and_princess_horse_png,listen7_background_png,boots_close_png,boots_open_png,cloud2_png,rect_alert_png,headset_png,listen1_normal_png,listen1_click_png,listen1_over_png",
 			"name": "preload"
 		}
 	],
@@ -390,6 +390,226 @@
 			"name": "listen1_person_hair_curly_png",
 			"type": "image",
 			"url": "textures/listen1_person_hair_curly.png"
+		},
+		{
+			"name": "listen2_grass_png",
+			"type": "image",
+			"url": "textures/listen2_grass.png"
+		},
+		{
+			"name": "dusk_png",
+			"type": "image",
+			"url": "textures/dusk.png"
+		},
+		{
+			"name": "sunlight_png",
+			"type": "image",
+			"url": "textures/sunlight.png"
+		},
+		{
+			"name": "listen2_background_png",
+			"type": "image",
+			"url": "textures/listen2_background.png"
+		},
+		{
+			"name": "listen2_person3_png",
+			"type": "image",
+			"url": "textures/listen2_person3.png"
+		},
+		{
+			"name": "listen2_person1_png",
+			"type": "image",
+			"url": "textures/listen2_person1.png"
+		},
+		{
+			"name": "listen2_person2_png",
+			"type": "image",
+			"url": "textures/listen2_person2.png"
+		},
+		{
+			"name": "listen2_person4_png",
+			"type": "image",
+			"url": "textures/listen2_person4.png"
+		},
+		{
+			"name": "listen2_person5_png",
+			"type": "image",
+			"url": "textures/listen2_person5.png"
+		},
+		{
+			"name": "listen2_person6_png",
+			"type": "image",
+			"url": "textures/listen2_person6.png"
+		},
+		{
+			"name": "listen3_background_png",
+			"type": "image",
+			"url": "textures/listen3_background.png"
+		},
+		{
+			"name": "listen3_person3_png",
+			"type": "image",
+			"url": "textures/listen3_person3.png"
+		},
+		{
+			"name": "listen3_person2_png",
+			"type": "image",
+			"url": "textures/listen3_person2.png"
+		},
+		{
+			"name": "listen3_person1_png",
+			"type": "image",
+			"url": "textures/listen3_person1.png"
+		},
+		{
+			"name": "sword_png",
+			"type": "image",
+			"url": "textures/sword.png"
+		},
+		{
+			"name": "stick_png",
+			"type": "image",
+			"url": "textures/stick.png"
+		},
+		{
+			"name": "birdge_png",
+			"type": "image",
+			"url": "textures/birdge.png"
+		},
+		{
+			"name": "listen4_person3_png",
+			"type": "image",
+			"url": "textures/listen4_person3.png"
+		},
+		{
+			"name": "listen4_person5_png",
+			"type": "image",
+			"url": "textures/listen4_person5.png"
+		},
+		{
+			"name": "listen4_person4_png",
+			"type": "image",
+			"url": "textures/listen4_person4.png"
+		},
+		{
+			"name": "listen4_person6_png",
+			"type": "image",
+			"url": "textures/listen4_person6.png"
+		},
+		{
+			"name": "listen4_person2_png",
+			"type": "image",
+			"url": "textures/listen4_person2.png"
+		},
+		{
+			"name": "listen4_person1_png",
+			"type": "image",
+			"url": "textures/listen4_person1.png"
+		},
+		{
+			"name": "guardrail_png",
+			"type": "image",
+			"url": "textures/guardrail.png"
+		},
+		{
+			"name": "cloud_png",
+			"type": "image",
+			"url": "textures/cloud.png"
+		},
+		{
+			"name": "blue_png",
+			"type": "image",
+			"url": "textures/blue.png"
+		},
+		{
+			"name": "princess_bird_png",
+			"type": "image",
+			"url": "textures/princess_bird.png"
+		},
+		{
+			"name": "listen5_background_png",
+			"type": "image",
+			"url": "textures/listen5_background.png"
+		},
+		{
+			"name": "listen5_background2_png",
+			"type": "image",
+			"url": "textures/listen5_background2.png"
+		},
+		{
+			"name": "listen5_sunlight_png",
+			"type": "image",
+			"url": "textures/listen5_sunlight.png"
+		},
+		{
+			"name": "listen_person2_png",
+			"type": "image",
+			"url": "textures/listen_person2.png"
+		},
+		{
+			"name": "listen_person1_png",
+			"type": "image",
+			"url": "textures/listen_person1.png"
+		},
+		{
+			"name": "listen_person3_png",
+			"type": "image",
+			"url": "textures/listen_person3.png"
+		},
+		{
+			"name": "listen_person4_png",
+			"type": "image",
+			"url": "textures/listen_person4.png"
+		},
+		{
+			"name": "princesses_and_princess_horse_png",
+			"type": "image",
+			"url": "textures/princesses_and_princess_horse.png"
+		},
+		{
+			"name": "listen7_background_png",
+			"type": "image",
+			"url": "textures/listen7_background.png"
+		},
+		{
+			"name": "boots_close_png",
+			"type": "image",
+			"url": "textures/boots_close.png"
+		},
+		{
+			"name": "boots_open_png",
+			"type": "image",
+			"url": "textures/boots_open.png"
+		},
+		{
+			"name": "cloud2_png",
+			"type": "image",
+			"url": "textures/cloud2.png"
+		},
+		{
+			"name": "rect_alert_png",
+			"type": "image",
+			"url": "textures/rect_alert.png"
+		},
+		{
+			"name": "headset_png",
+			"type": "image",
+			"url": "textures/headset.png"
+		},
+		{
+			"name": "listen1_normal_png",
+			"type": "image",
+			"url": "textures/listen1_normal.png"
+		},
+		{
+			"name": "listen1_click_png",
+			"type": "image",
+			"url": "textures/listen1_click.png"
+		},
+		{
+			"name": "listen1_over_png",
+			"type": "image",
+			"url": "textures/listen1_over.png"
 		}
 	]
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DistinguishRole5SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166234e9d23" ></w:Config>
+	<e:Image source="listen5_background2_png" anchorOffsetX="0" width="2269.21"/>
+	<e:Image x="212.39" y="51.88" source="listen5_sunlight_png"/>
+	<e:Image left="-447" right="-309" top="-216" bottom="-538" source="listen5_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image x="456.14" y="897.14" source="listen_person1_png" anchorOffsetX="0" width="471.22" anchorOffsetY="0" height="620.12"/>
+	<e:Image x="814.61" y="887.75" anchorOffsetX="0" anchorOffsetY="0" source="listen_person2_png" width="388.91" height="666.63"/>
+	<e:Image x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
+	<e:Image x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
+</e:Skin>

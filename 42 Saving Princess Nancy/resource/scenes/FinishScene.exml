@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16623e811f6" ></w:Config>
+	<e:Image left="0" right="-64" top="0" bottom="0" source="listen7_background_png" anchorOffsetX="0"/>
+	<e:Image id="princessesAndPrincessHorseImage" x="295.97" y="476.91" source="princesses_and_princess_horse_png" anchorOffsetX="0" width="772.12" anchorOffsetY="0" height="828.42"/>
+	<e:Image x="-427.33" y="894.15" source="listen1_grass_png" scaleX="1.05"/>
+</e:Skin>
