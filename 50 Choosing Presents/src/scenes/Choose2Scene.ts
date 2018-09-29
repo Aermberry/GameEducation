@@ -11,8 +11,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	private dropGroup: eui.Group;
 	private dragGroup: eui.Group;
 	private TipsGroup: eui.Group;
-	private bankTipsGroup: eui.Group;
-	private storybookGroup: eui.Group;
+	private maskGroup: eui.Group;
 
 
 	private currentQuestion: number = 0;
@@ -76,7 +75,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 
 		else {
 			this.onshowTips();
-			// this.swapChildren(this.dragGroup,th)
+			this.swapChildren(this.dragGroup, this.maskGroup);
 		}
 	}
 
@@ -85,29 +84,35 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async onshowTips(): Promise<void> {
+
 		this.optionText == "money bank" && (this.bankTipsWorldlabel.textColor = 0xFF0099) && (this.bankColorTipsLabe.visible = true);
-		this.optionText == "basketball" && (this.basketballTipWorldLabel.textColor = 0xFF0099) && (this.basketballTipColorLabel.visible = true)&&(this.helpButton.visible=true);
+		this.optionText == "basketball" && (this.basketballTipWorldLabel.textColor = 0xFF0099) && (this.basketballTipColorLabel.visible = true) && (this.helpButton.visible = true);
 		if (this.optionText == "story book") {
 			this.bankTipsWorldlabel.textColor = 0xFF0099;
 			this.bankColorTipsLabe.visible = true;
 			this.basketballTipWorldLabel.textColor = 0xFF0099;
 			this.basketballTipColorLabel.visible = true;
+			this.helpButton.visible = true
 		}
 	}
 
 
 
 	private gotoNextScene(): void {
-		this.dropGroup.$children.every(children => children.visible) && this.logImage.visible?Main.instance.gotoScene(new Choose2Scene()):()=>{
-			// this.nextButton.visible = false;
-			// this.worldLabel.textColor = 0x000000;
-			// this.colorKeyWorldLabel.visible = false;
-			// this.swapChildren(this.dragGroup,this.maskGroup);
-			// for (let children of this.tipsGroup.$children) {
-			// 	children.visible && (children.visible = false)
-			// }
+		const confirm = this.dropGroup.$children.every(children => children.visible) && this.logImage.visible
+		if (confirm) {
+			Main.instance.gotoScene(new Choose3Scene())
 		}
-		
+		else {
+			this.nextButton.visible = false;
+			this.basketballTipWorldLabel.textColor = 0x000000;
+			this.bankTipsWorldlabel.textColor = 0x000000;
+			this.bankColorTipsLabe.visible = false;
+			this.basketballTipColorLabel.visible = false;
+			this.helpButton.visible = false;
+			this.swapChildren(this.dragGroup, this.maskGroup);
+		}
+
 	}
 
 	private displayChildrenStage(): void {

@@ -20,5 +20,9 @@ class HelpScene extends eui.Component implements  eui.UIComponent {
 	private backToParentSatge():void {
 		this.parent.removeChild(this);
 	}
+
+	public State(state:boolean=false):void {
+		 state?this.currentState="top":this.currentState="put"
+	}
 	
 }

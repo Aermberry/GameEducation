@@ -19,7 +19,7 @@
 			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"
 			         textColor="0xffffff" backgroundColor="0xff0099" background="true"  visible="false"/>
 		</e:Group>
-		<e:Group id="storybookGroup" x="16.67" y="233" width="814" height="74">
+		<e:Group x="16.67" y="233" width="814" height="74">
 			<e:Label id="basketballTipWorldLabel" text="It's at the top of the shelf." anchorOffsetX="0" width="814" anchorOffsetY="0" textColor="0x000000"
 			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" />
 			<e:Label id="basketballTipColorLabel" text="at the top" x="135.51" y="-8" anchorOffsetX="0" width="293.52" anchorOffsetY="0" height="74" size="62"
@@ -36,6 +36,8 @@
 		         textColor="0x9900a2" horizontalCenter="0" bottom="8.760000000000005" visible="false" />
 	</e:Group>
 	<e:Image id="logImage" source="true_png" x="1332.61" y="1016.49" rotation="354.36" visible="false" />
+	<e:Group id="maskGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
+	</e:Group>
 	<e:Group id="dragGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
 		<e:Label fontFamily="Comic Sans MS" x="340" y="128" text="pen" width="202" height="100" background="true"
 		         backgroundColor="0xffffff" border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle"

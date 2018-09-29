@@ -4,12 +4,26 @@
 	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) to the blank" textColor="0xFF0099"
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="148" anchorOffsetX="0"
 	         width="1397" lineSpacing="50" top="0"  horizontalCenter="0"/>
-	<e:Image source="shelf_png"  verticalCenter="-108" horizontalCenter="0"/>
+	<e:Image source="shelf_png"  verticalCenter="-199" horizontalCenter="0"/>
 	<e:Label fontFamily="Comic Sans MS"
 	         text="Mary:                                             Let's bug one more present.\nLet's buy a ________________ for Pam.\nSam:Oh yes,she "
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416"
 	         anchorOffsetX="0" width="1889" lineSpacing="50"  textColor="0x000000" x="24" bottom="52"/>
-			 <e:Group id="DragGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
+	<e:Group id="TipsGroup" x="192" y="1032">
+		<e:Group x="0" y="0">
+		<e:Label text="Well,we have 16 dollars now." x="0" y="0" anchorOffsetX="0" width="824.88" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="16 dollars" x="393.24" y="0" anchorOffsetX="0" width="293.52" anchorOffsetY="0" height="74" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		</e:Group>
+		<e:Group x="310" y="206">
+		<e:Label text="likes collecting coins. She can put the coins in it." x="0" y="16" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="collecting" x="149.52" y="0" anchorOffsetX="0" width="276.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
+		<e:Label text="put" x="863.58" y="1" anchorOffsetX="0" width="106.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		<e:Label text="in" x="1257.58" y="1" anchorOffsetX="0" width="58.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="maskGroup" x="284" y="246.18" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
+	</e:Group>
+			 <e:Group id="dragGroup" x="284" y="246.18" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
 	<e:Label  fontFamily="Comic Sans MS" x="340" y="128" text="pen" width="202" height="100" background="true" backgroundColor="0xffffff" border="true"
 	         borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
 	<e:Label  fontFamily="Comic Sans MS" x="1015" y="124" text="money bank" width="304" height="100" background="true" backgroundColor="0xffffff"
@@ -19,17 +33,23 @@
 	<e:Label fontFamily="Comic Sans MS"  x="1020" y="426" text="story book" width="292" height="100" background="true" backgroundColor="0xffffff"
 	         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
 			 </e:Group>
-	<e:Label text="likes collecting coins. She can put the coins in it." x="502" y="1254" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
-	<e:Label text="Well,we have 16 dollars now." x="192" y="1032" anchorOffsetX="0" width="1637" anchorOffsetY="0" height="74" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
 
-	<e:Label text="collecting" x="651.52" y="1238" anchorOffsetX="0" width="276.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true"/>
-	<e:Label text="put" x="1365.58" y="1239" anchorOffsetX="0" width="106.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
-	<e:Label text="in" x="1759.58" y="1239" anchorOffsetX="0" width="58.85" anchorOffsetY="0" height="104" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
-	<e:Label text="16 dollars" x="585.24" y="1032" anchorOffsetX="0" width="293.52" anchorOffsetY="0" height="74" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
 
-	<Ui:TexttLabel width="604" height="80" x="484" y="947" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The story book costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000"/>
-	<e:Button label="Next" x="1685.77" y="1358" anchorOffsetX="0" width="184" anchorOffsetY="0" height="70"/>
-	<e:Button label="Help" x="1341.77" y="1364" anchorOffsetX="0" width="154" anchorOffsetY="0" height="66"/>
-	<e:Label fontFamily="Comic Sans MS" x="506" y="1112" text="money bank" width="280" height="100" background="true" backgroundColor="0xffffff" border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0" textColor="0x9900a2"/>
-	<e:Image source="true_png" x="730" y="1130" rotation="354.36"/>
+
+
+
+
+
+
+	<Ui:TexttLabel id="tipsComponent" width="767.64" height="128.48" x="484" y="892.46" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The story book costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" visible="false"/>
+	<e:Button id="nextButton" label="Next" x="1685.77" y="1358" anchorOffsetX="0" width="184" anchorOffsetY="0" height="70" visible="false"/>
+	<e:Button id="helpButton" label="Help" x="1341.77" y="1364" anchorOffsetX="0" width="154" anchorOffsetY="0" height="66" visible="false"/>
+
+
+	<e:Group id="dropGroup" x="374.91" y="1092.18" width="618.78" height="119.76" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label fontFamily="Comic Sans MS" text="money bank" width="292" height="100" background="true" backgroundColor="0xffffff"
+		         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0"
+		         textColor="0x9900a2"  horizontalCenter="0" verticalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Image id="logImage" source="true_png" x="766.36" y="1139.09" rotation="354.36" visible="false"/>
 </e:Skin>
