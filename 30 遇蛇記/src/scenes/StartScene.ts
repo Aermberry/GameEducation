@@ -2,7 +2,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton: eui.Image
 	private startButton2: eui.Image;
 	private exitButton: ImageButton
-	private startSoundChannel: egret.SoundChannel
+	private startSoundChannel: egret.SoundChannel;
+	private startMask: eui.Rect;
 
 	public constructor() {
 		super();
@@ -32,6 +33,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private onStartButton2Click(): void
 	{
 		this.startSoundChannel = (RES.getRes('kids_there_is_a_story_below_mp3') as egret.Sound).play(0, 1);
+		this.startMask.visible = false;
 		this.startButton2.visible = false;
 		this.startButton.visible = true;
 	}
