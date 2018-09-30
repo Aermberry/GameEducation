@@ -31,13 +31,13 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.gotoNextScene, this);
 	}
 
-	// drag模塊
+	
 	private initDragable(): void {
 
 		for (let children of this.dragGroup.$children) {
-			let drag = new lzlib.Drag();//實例化drag對象
-			this.stage.addChild(drag);//將drag對象添加到舞臺上
-			drag.enableDrag(children, false);//啓用drag功能
+			let drag = new lzlib.Drag();
+			this.stage.addChild(drag);
+			drag.enableDrag(children, false);
 			children.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);//監聽drag事件
 		}
 
@@ -45,10 +45,10 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDropableLabel(): void {
-		let drop = new lzlib.Drop();//實例化drop對象
-		this.addChild(drop);//添加drop對象到舞臺上
-		let children = this.dropGroup.getChildAt(this.currentQuestionIndex);//獲取當前的問題
-		drop.enableDrop(children);//對當前的問題啓用drop功能
+		let drop = new lzlib.Drop();
+		this.addChild(drop);
+		let children = this.dropGroup.getChildAt(this.currentQuestionIndex);
+		drop.enableDrop(children);
 		children.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
 	}
 
@@ -56,7 +56,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 
-		this.optionText = dragComponent.text;//獲取當前對象的文本
+		this.optionText = dragComponent.text;
 
 		this.nextButton.visible = true;
 		this.worldLabel.textColor = 0xFF0099;
@@ -81,7 +81,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async showTipsLabel(): Promise<void> {
-		// this.penTipsLabel.visible = true;
+		
 		this.optionText == "pen" && (this.penGroup.visible = true);
 		this.optionText == "money bank" && (this.bankGroup.visible = true);
 		this.optionText == "basketball" && (this.playGroup.visible = true);
@@ -94,7 +94,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 			Main.instance.gotoScene(new Choose2Scene());
 		}
 		else {
-			// this.penTipsLabel.visible = false;
+			
 			this.nextButton.visible = false;
 			this.worldLabel.textColor = 0x000000;
 			this.colorKeyWorldLabel.visible = false;
