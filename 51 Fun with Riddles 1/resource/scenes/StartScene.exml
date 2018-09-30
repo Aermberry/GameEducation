@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624d7e75d" ></w:Config>
-	<e:Image source="StartSceneBackground_png" horizontalCenter="-51" verticalCenter="11"/>
+	<e:Image source="StartSceneBackground_png" horizontalCenter="-47.5" verticalCenter="3"/>
+	<e:Label x="467" y="414" text="Today is the school fun fair.\n\nYou are  guessing riddles at the\n 'Riddles' both.\n\nClick the riddles and choose your\nanswers." textColor="0x9e0000" fontFamily="Comic Sans MS" size="64" lineSpacing="25"/>
+	<e:Button id="nextButton" label="Next" x="871" y="1184" anchorOffsetX="0" width="226" anchorOffsetY="0" height="100"/>
 </e:Skin>

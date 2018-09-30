@@ -12,7 +12,7 @@
     "backgroundAlpha": 100
   },
   "global": {
-    "globalAutoLayerMarkEnable": true
+    "globalAutoLayerMarkEnable": false
   },
   "1661925edc2": {
     "path": "scenes\\Choose1Scene.ts",
