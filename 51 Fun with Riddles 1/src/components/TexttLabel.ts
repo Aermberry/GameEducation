@@ -20,13 +20,11 @@ namespace Ui {
 			this.textLabel.textAlign=this.textAglign;
 			this.textLabel.textColor=this.fontColor;
 			this.textLabel.verticalAlign=this.verticalAlign;
-			this.backgroundColor.fillColor=this.backgroundColors;
 		}
 
 		private _text: string = "textLabel";
 		private _fontSize: number = 30;
 		private _textAglign:string="lefet"
-		private _backgroundColor:number=0xFFFFFF;
 		private _fontColor:number=0x602DA3;
 		private _verticalAlign:string="middle";
 
@@ -54,15 +52,6 @@ namespace Ui {
 
 		public get textAglign():string {
 			return this._textAglign;
-		}
-
-		// 设置背景颜色
-		public set backgroundColors(value:number){
-			this._backgroundColor=value;
-		}
-
-		public get backgroundColors():number{
-			return this._backgroundColor;
 		}
 
 		// 设置字体颜色

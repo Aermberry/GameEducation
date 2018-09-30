@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,finishScene_png,StartSceneBackground_png,Radio_png,StatueScene_png,Radio_04_png,Radio_05_png,Radio_06_png,Radio_07_png,Radio_01_png,Radio_02_png,Radio_03_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,finishScene_png,StartSceneBackground_png,Radio_png,StatueScene_png,Radio_04_png,Radio_05_png,Radio_06_png,Radio_07_png,Radio_01_png,Radio_02_png,Radio_03_png,Scene01_png,pig_png,Label_png,monkey_png,true_png,Scene07_png,key_png,Puzzle_png,apple_png,clickyouranswer_png,SceneQuestion_png,bigLabel_png,bottle_png,pencil_png,schoolbag_png,title01_png,title02_png,title06_png,title05_png,title03_png,title07_png,cash_png,cup_png,glasses_png,letters_png,pen_png,book_png,umbrella_png,title04_png,food_png,colorLead_png",
 			"name": "preload"
 		}
 	],
@@ -147,59 +147,214 @@
 			"name": "checkbox_unselect2_png"
 		},
 		{
-			"name": "finishScene_png",
+			"url": "textures/finishScene.png",
 			"type": "image",
-			"url": "textures/finishScene.png"
+			"name": "finishScene_png"
 		},
 		{
-			"name": "StartSceneBackground_png",
+			"url": "textures/StartSceneBackground.png",
 			"type": "image",
-			"url": "textures/StartSceneBackground.png"
+			"name": "StartSceneBackground_png"
 		},
 		{
-			"name": "Radio_png",
+			"url": "textures/Radio.png",
 			"type": "image",
-			"url": "textures/Radio.png"
+			"name": "Radio_png"
 		},
 		{
-			"name": "StatueScene_png",
+			"url": "textures/StatueScene.png",
 			"type": "image",
-			"url": "textures/StatueScene.png"
+			"name": "StatueScene_png"
 		},
 		{
-			"name": "Radio_04_png",
+			"url": "textures/Radio_04.png",
 			"type": "image",
-			"url": "textures/Radio_04.png"
+			"name": "Radio_04_png"
 		},
 		{
-			"name": "Radio_05_png",
+			"url": "textures/Radio_05.png",
 			"type": "image",
-			"url": "textures/Radio_05.png"
+			"name": "Radio_05_png"
 		},
 		{
-			"name": "Radio_06_png",
+			"url": "textures/Radio_06.png",
 			"type": "image",
-			"url": "textures/Radio_06.png"
+			"name": "Radio_06_png"
 		},
 		{
-			"name": "Radio_07_png",
+			"url": "textures/Radio_07.png",
 			"type": "image",
-			"url": "textures/Radio_07.png"
+			"name": "Radio_07_png"
 		},
 		{
-			"name": "Radio_01_png",
+			"url": "textures/Radio_01.png",
 			"type": "image",
-			"url": "textures/Radio_01.png"
+			"name": "Radio_01_png"
 		},
 		{
-			"name": "Radio_02_png",
+			"url": "textures/Radio_02.png",
 			"type": "image",
-			"url": "textures/Radio_02.png"
+			"name": "Radio_02_png"
 		},
 		{
-			"name": "Radio_03_png",
+			"url": "textures/Radio_03.png",
 			"type": "image",
-			"url": "textures/Radio_03.png"
+			"name": "Radio_03_png"
+		},
+		{
+			"url": "textures/Scene01.png",
+			"type": "image",
+			"name": "Scene01_png"
+		},
+		{
+			"url": "textures/pig.png",
+			"type": "image",
+			"name": "pig_png"
+		},
+		{
+			"url": "textures/Label.png",
+			"type": "image",
+			"name": "Label_png"
+		},
+		{
+			"url": "textures/monkey.png",
+			"type": "image",
+			"name": "monkey_png"
+		},
+		{
+			"url": "textures/true.png",
+			"type": "image",
+			"name": "true_png"
+		},
+		{
+			"url": "textures/Scene07.png",
+			"type": "image",
+			"name": "Scene07_png"
+		},
+		{
+			"url": "textures/key.png",
+			"type": "image",
+			"name": "key_png"
+		},
+		{
+			"url": "textures/Puzzle.png",
+			"type": "image",
+			"name": "Puzzle_png"
+		},
+		{
+			"url": "textures/apple.png",
+			"type": "image",
+			"name": "apple_png"
+		},
+		{
+			"url": "textures/clickyouranswer.png",
+			"type": "image",
+			"name": "clickyouranswer_png"
+		},
+		{
+			"url": "textures/SceneQuestion.png",
+			"type": "image",
+			"name": "SceneQuestion_png"
+		},
+		{
+			"url": "textures/bigLabel.png",
+			"type": "image",
+			"name": "bigLabel_png"
+		},
+		{
+			"url": "textures/bottle.png",
+			"type": "image",
+			"name": "bottle_png"
+		},
+		{
+			"url": "textures/pencil.png",
+			"type": "image",
+			"name": "pencil_png"
+		},
+		{
+			"url": "textures/schoolbag.png",
+			"type": "image",
+			"name": "schoolbag_png"
+		},
+		{
+			"url": "textures/title01.png",
+			"type": "image",
+			"name": "title01_png"
+		},
+		{
+			"url": "textures/title02.png",
+			"type": "image",
+			"name": "title02_png"
+		},
+		{
+			"url": "textures/title07.png",
+			"type": "image",
+			"name": "title07_png"
+		},
+		{
+			"url": "textures/title03.png",
+			"type": "image",
+			"name": "title03_png"
+		},
+		{
+			"url": "textures/title05.png",
+			"type": "image",
+			"name": "title05_png"
+		},
+		{
+			"url": "textures/title06.png",
+			"type": "image",
+			"name": "title06_png"
+		},
+		{
+			"url": "textures/cash.png",
+			"type": "image",
+			"name": "cash_png"
+		},
+		{
+			"url": "textures/cup.png",
+			"type": "image",
+			"name": "cup_png"
+		},
+		{
+			"url": "textures/glasses.png",
+			"type": "image",
+			"name": "glasses_png"
+		},
+		{
+			"url": "textures/letters.png",
+			"type": "image",
+			"name": "letters_png"
+		},
+		{
+			"url": "textures/pen.png",
+			"type": "image",
+			"name": "pen_png"
+		},
+		{
+			"url": "textures/book.png",
+			"type": "image",
+			"name": "book_png"
+		},
+		{
+			"url": "textures/umbrella.png",
+			"type": "image",
+			"name": "umbrella_png"
+		},
+		{
+			"url": "textures/title04.png",
+			"type": "image",
+			"name": "title04_png"
+		},
+		{
+			"url": "textures/food.png",
+			"type": "image",
+			"name": "food_png"
+		},
+		{
+			"url": "textures/colorLead.png",
+			"type": "image",
+			"name": "colorLead_png"
 		}
 	]
 }

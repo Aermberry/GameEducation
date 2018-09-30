@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Riddle3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624d9d327" ></w:Config>
+	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
+	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
+	<e:Image source="Riddle2_png" x="148.91" y="342.39"/>
+	<e:Image x="251" y="405" source="title03_png"/>
+	<e:Image x="442" y="969.49" source="letters_png"/>
+	<e:Image x="990.3" y="960.5" source="umbrella_png"/>
+	<e:Image x="1366.88" y="1024.49" source="pen_png"/>
+	<e:Group x="669.76" y="376.41">
+		<e:Image source="bigLabel_png" x="0" y="0"/>
+		<e:Label text="We        it to draw and write." x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Label text="use" x="166.74" y="94.99" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Rect width="98" height="3" x="167.22" y="158.62" anchorOffsetY="0" fillColor="0x5c2c47"/>
+	</e:Group>
+	
 </e:Skin>

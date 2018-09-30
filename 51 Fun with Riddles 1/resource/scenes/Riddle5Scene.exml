@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Riddle5SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624db040d" ></w:Config>
+	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
+	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
+	<e:Image source="title05_png" x="148.91" y="342.39"/>
+	<e:Image source="smallRiddle2_png" x="251" y="405"/>
+	<e:Image source="apple_png" x="384.42" y="969.49"/>
+	<e:Image x="833.87" y="1046" source="glasses_png"/>
+	<e:Image x="1400.21" y="1001" source="cup_png"/>
+	<e:Group x="669.76" y="376.41">
+		<e:Image source="bigLabel_png" x="0" y="0"/>
+		<e:Label text="We       it every day.We drink water,milk，orange juice,tea or coffee with it." x="48.97" y="6.47" anchorOffsetX="0" width="1034.6" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="54" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Label text="use" x="141.28" y="53.2" anchorOffsetX="0" width="102.35" anchorOffsetY="0" height="63.33" textColor="0x5C2C47" size="54" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Rect width="100" height="3" x="139.67" y="116.53" anchorOffsetY="0" fillColor="0x5c2c47"/>
+	</e:Group>
 </e:Skin>

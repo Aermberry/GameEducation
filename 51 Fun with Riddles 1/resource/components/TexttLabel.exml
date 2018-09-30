@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="TexttLabelSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
+<e:Skin class="TexttLabelSkin" width="758" height="335" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="165c7fa92b7" ></w:Config>
-	<e:Rect id="backgroundColor" top="0" left="0" right="0" bottom="0" ellipseHeight="100" ellipseWidth="100" strokeAlpha="1" strokeWeight="10" fillColor="0xffffff" strokeColor="0xffcc99"/>
-	<e:Label id="textLabel" text="We write with a pen" left="20" right="20" top="20" bottom="20" textColor="0x38029c" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS" verticalAlign="middle" size="50"/>
+	<e:Image source="Label_png" x="0" y="0"/>
+
+	<e:Label id="textLabel" text="We write with a pen" left="63" right="108" top="27" bottom="150" textColor="0x38029c" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS" verticalAlign="middle" size="50" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Image source="pig_png" x="536" y="82.93" rotation="4.2"/>
+
 </e:Skin>
