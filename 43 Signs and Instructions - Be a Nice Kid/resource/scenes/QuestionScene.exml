@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QuestionSceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="cloudAlertAnimation">
+			<tween:TweenItem target="{cloudAlertGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.93}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="700">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift1Animation">
+			<tween:TweenItem target="{shoesImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift2Animation">
+			<tween:TweenItem target="{clothesImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift3Animation">
+			<tween:TweenItem target="{trousersImage}">
+				<tween:Set/>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boyCleanImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{selectedChildImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift4Animation">
+			<tween:TweenItem target="{bookBagImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{boyCleanImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift5Animation">
+			<tween:TweenItem target="{milkAndJuiceGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{560}" x="{836}" alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{juiceImage}">
+				<tween:Wait duration="1000"/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{38.82}" height="{65.73}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{milkImage}">
+				<tween:Wait duration="1000"/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{26.94}" height="{56.07}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift6Animation">
+			<tween:TweenItem target="{foodGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{548}" x="{832}" alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{vegetableImage}">
+				<tween:Wait duration="1000"/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{47.94}" height="{58.92}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{fishImage}">
+				<tween:Wait duration="1000"/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{58.92}" height="{72.42}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{meatImage}">
+				<tween:Wait duration="1000"/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{47.45}" height="{58.32}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift7Animation">
+			<tween:TweenItem target="{stationeryGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{876}" y="{544}" alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{50.65}" height="{41.67}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{61.37}" height="{22}" x="{44.63}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{76}" height="{16.92}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift8Animation">
+			<tween:TweenItem target="{bookImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.7}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.7}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{948}" y="{528}" width="{66.97}" height="{58}" alpha="{0.7}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gift9Animation">
+			<tween:TweenItem target="{toyGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.2}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{544}" x="{908}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Wait duration="750"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{55.84}" height="{52}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Wait duration="750"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{55.39}" height="{66.55}" x="{46.61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="likeAnimation">
+			<tween:TweenItem target="{likeImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{36.26}" height="{67.07}" x="{11.06}" y="{894.91}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{-56.94}" y="{850.91}" width="{84.43}" height="{156.16}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{starImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}" width="{304}" height="{304}" x="{-51}" y="{707}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165f5a86b49" ></w:Config>
+	<ns1:BackgroundAndTitle left="0" right="0" top="0" bottom="0"/>
+	<e:Group>
+		<e:Image id="selectedChildImage" x="857.9" y="302.63" width="229" height="559" source="boy4_png"/>
+		<e:Image id="boyCleanImage" x="857.9" y="302.63" anchorOffsetY="0" source="boy0_clean_png" alpha="0" width="229" height="559"/>
+		<e:Image id="shoesImage" x="843.04" y="784" source="shoes_png" bottom="0" alpha="0"/>
+		<e:Image id="clothesImage" x="880.68" y="423.92" source="clothes_png" anchorOffsetX="0" width="185.69" anchorOffsetY="0" height="206.57" alpha="0"/>
+		<e:Image id="trousersImage" x="884" y="572" source="trousers_png" anchorOffsetY="0" height="247" alpha="0"/>
+		<e:Image id="bookBagImage" x="872" y="430" source="book_bag_png" anchorOffsetX="0" width="149" anchorOffsetY="0" height="265" alpha="0"/>
+		<e:Group id="milkAndJuiceGroup" x="760" y="440" alpha="0">
+			<e:Image id="juiceImage" x="24" anchorOffsetX="0" anchorOffsetY="0" y="14" source="juice_png" width="53" height="89.73"/>
+			<e:Image id="milkImage" x="2" source="milk_png" anchorOffsetX="0" anchorOffsetY="0" width="40.39" height="84.07"/>
+		</e:Group>
+		<e:Group id="foodGroup" x="1144" y="300" alpha="0">
+			<e:Image id="vegetableImage" anchorOffsetX="0" width="73.98" anchorOffsetY="0" height="90.92" source="vegetable_png"/>
+			<e:Image id="fishImage" anchorOffsetX="0" width="73.98" anchorOffsetY="0" height="90.92" x="46" y="34" source="fish_png" rotation="28.19"/>
+			<e:Image id="meatImage" anchorOffsetX="0" width="73.98" anchorOffsetY="0" height="90.92" x="108" y="56" rotation="28.19" source="meat_png"/>
+		</e:Group>
+		<e:Group id="stationeryGroup" width="200" height="200" x="1104" y="276" alpha="0">
+			<e:Image id="image" x="94" y="-42" source="color_pen_png" anchorOffsetX="0" width="109" anchorOffsetY="0" height="89.67"/>
+			<e:Image id="image0" source="rubber_png"/>
+			<e:Image id="image1" x="26" y="58" source="pencil_png" anchorOffsetX="0" width="120" anchorOffsetY="0" height="26.71"/>
+		</e:Group>
+		<e:Image id="bookImage" x="1060" y="348" source="book_png" alpha="0"/>
+		<e:Group id="toyGroup" x="688" y="388" alpha="0">
+			<e:Image id="image2" source="block_png" anchorOffsetX="0" width="128.87" anchorOffsetY="0" height="120" x="68"/>
+			<e:Image id="image3" anchorOffsetX="0" anchorOffsetY="0" source="bear_png" width="102" height="122.55" y="-48"/>
+		</e:Group>
+	</e:Group>
+	
+	<e:Group id="optionAnswerGroup" width="1202" height="1038" x="338.94" y="21.42">
+		<e:Image x="0" y="0" source="background_game_png" scaleX="1" scaleY="1"/>
+		<e:Image x="49" y="-21.18" source="background_introduction_png"/>
+		<e:Label text="Listen to the instructions and click the correct pictures!" x="169.85" y="-9.06" textColor="0x000000" size="34" fontFamily="Comic Sans MS"/>
+		<e:Group id="optionsGroup">
+			<e:Group x="91.3" y="70.51" anchorOffsetX="0" width="415.48" anchorOffsetY="0" height="290.6">
+				<ns1:MovieClipPlayer dataSet="picture12_json" texture="picture12_png" movieClipName="picture12" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
+				<ns1:HornComponent id="HornComponent" width="58" height="48" x="454.88" y="187"/>
+				<e:RadioButton id="radioButton" label="" x="460.97" y="256.36"/>
+			</e:Group>
+			<e:Group x="654.94" y="73.54" anchorOffsetX="0" width="412.12" anchorOffsetY="0" height="290.91">
+				<ns1:MovieClipPlayer dataSet="picture6_json" texture="picture6_png" movieClipName="picture6" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
+				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
+				<e:RadioButton label="" x="460.97" y="256.36"/>
+			</e:Group>
+			<e:Group x="85.24" y="449.3" anchorOffsetX="0" width="414.88" anchorOffsetY="0" height="293.94">
+				<ns1:MovieClipPlayer dataSet="picture24_json" texture="picture24_png" movieClipName="picture24" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
+				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
+				<e:RadioButton label="" x="460.97" y="256.36"/>
+			</e:Group>
+			<e:Group x="654.94" y="448.39" anchorOffsetX="0" width="409.09" anchorOffsetY="0" height="293.94">
+				<ns1:MovieClipPlayer dataSet="picture4_json" texture="picture4_png" movieClipName="picture4" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0"/>
+				<ns1:HornComponent width="58" height="48" x="454.88" y="187"/>
+				<e:RadioButton label="" x="460.97" y="256.36"/>
+			</e:Group>
+		</e:Group>
+		
+		<e:Group width="1051.52" height="63.64" x="88.12" y="778.94" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Label id="repeatLabel" text="Repeat question again" x="403.67" textColor="0x000000" size="34" fontFamily="Comic Sans MS" multiline="true" top="0" bottom="0" verticalAlign="middle"/>
+			<!--<e:Label id="continueLabel" text="Continue" x="896.94" y="15.09" textColor="0x000000" size="34"/>-->
+			<ns1:ButtonComponent id="okButtonComponent" width="174" height="60" x="878.82" y="3"/>
+			<ns1:ButtonComponent id="continueButtonComponent" text="Continue" width="174" height="60" x="878.82" y="3" visible="false"/>
+			<ns1:HornComponent id="answerHornComponent" width="58" height="48" x="772.88" y="9.03"/>
+		</e:Group>
+		<e:Image id="starImage" x="29" y="811" source="star_png" width="100" height="100" alpha="0"/>
+		<e:Label id="answerLabel" text="You may start doing your work" textColor="0x020202" size="50" y="906" horizontalCenter="20.5" visible="false"/>
+		<e:Image id="likeImage" x="-56.94" y="850.91" source="like_png" rotation="335.52" anchorOffsetX="0" width="84.43" anchorOffsetY="0" height="156.16" visible="false"/>
+	</e:Group>
+	<e:Group id="cloudAlertGroup" width="748" height="305" x="578" y="300" visible="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="cloud_png"/>
+		<e:Label text="Try  Again" x="238" y="108" textColor="0x000000" size="60" fontFamily="Comic Sans MS" anchorOffsetY="0" height="80"/>
+	</e:Group>
+</e:Skin>

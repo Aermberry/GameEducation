@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ButtonComponentSkin" width="174" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165f9abf786" ></w:Config>
+	<e:Image id="backgroundImage" source="background_button_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="textLabel" text="OK" textColor="0x000000" size="40" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" fontFamily="Comic Sans MS"/>
+</e:Skin>

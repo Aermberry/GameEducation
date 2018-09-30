@@ -1,0 +1,845 @@
+{
+	"resources": [
+		{
+			"name": "button_down_png",
+			"type": "image",
+			"url": "assets/Button/button_down.png"
+		},
+		{
+			"name": "button_up_png",
+			"type": "image",
+			"url": "assets/Button/button_up.png"
+		},
+		{
+			"name": "checkbox_select_disabled_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name": "checkbox_select_down_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name": "checkbox_select_up_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name": "checkbox_unselect_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "selected_png",
+			"type": "image",
+			"url": "assets/ItemRenderer/selected.png"
+		},
+		{
+			"name": "border_png",
+			"type": "image",
+			"url": "assets/Panel/border.png"
+		},
+		{
+			"name": "header_png",
+			"type": "image",
+			"url": "assets/Panel/header.png"
+		},
+		{
+			"name": "thumb_pb_png",
+			"type": "image",
+			"url": "assets/ProgressBar/thumb_pb.png"
+		},
+		{
+			"name": "track_pb_png",
+			"type": "image",
+			"url": "assets/ProgressBar/track_pb.png"
+		},
+		{
+			"name": "radiobutton_select_disabled_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_disabled.png"
+		},
+		{
+			"name": "radiobutton_select_down_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_down.png"
+		},
+		{
+			"name": "radiobutton_select_up_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_select_up.png"
+		},
+		{
+			"name": "radiobutton_unselect_png",
+			"type": "image",
+			"url": "assets/RadioButton/radiobutton_unselect.png"
+		},
+		{
+			"name": "roundthumb_png",
+			"type": "image",
+			"url": "assets/ScrollBar/roundthumb.png"
+		},
+		{
+			"name": "track_sb_png",
+			"type": "image",
+			"url": "assets/ScrollBar/track_sb.png"
+		},
+		{
+			"name": "thumb_png",
+			"type": "image",
+			"url": "assets/Slider/thumb.png"
+		},
+		{
+			"name": "track_png",
+			"type": "image",
+			"url": "assets/Slider/track.png"
+		},
+		{
+			"name": "tracklight_png",
+			"type": "image",
+			"url": "assets/Slider/tracklight.png"
+		},
+		{
+			"name": "handle_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/handle.png"
+		},
+		{
+			"name": "off_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/off.png"
+		},
+		{
+			"name": "on_png",
+			"type": "image",
+			"url": "assets/ToggleSwitch/on.png"
+		},
+		{
+			"name": "streamsound1_0_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_0.mp3"
+		},
+		{
+			"name": "streamsound1_1_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_1.mp3"
+		},
+		{
+			"name": "streamsound1_7_mp3",
+			"type": "sound",
+			"url": "audios/streamsound1_7.mp3"
+		},
+		{
+			"name": "wave20_mp3",
+			"type": "sound",
+			"url": "audios/wave20.mp3"
+		},
+		{
+			"name": "wave21_mp3",
+			"type": "sound",
+			"url": "audios/wave21.mp3"
+		},
+		{
+			"name": "wave5_mp3",
+			"type": "sound",
+			"url": "audios/wave5.mp3"
+		},
+		{
+			"name": "sound13_idel_to_over_mp3",
+			"type": "sound",
+			"url": "audios/sound13_idel_to_over.mp3"
+		},
+		{
+			"name": "streamsound 27_mp3",
+			"type": "sound",
+			"url": "audios/streamsound 27.mp3"
+		},
+		{
+			"name": "streamsound 31_mp3",
+			"type": "sound",
+			"url": "audios/streamsound 31.mp3"
+		},
+		{
+			"name": "wave1_mp3",
+			"type": "sound",
+			"url": "audios/wave1.mp3"
+		},
+		{
+			"name": "wave10_mp3",
+			"type": "sound",
+			"url": "audios/wave10.mp3"
+		},
+		{
+			"name": "wave11_mp3",
+			"type": "sound",
+			"url": "audios/wave11.mp3"
+		},
+		{
+			"name": "wave12_mp3",
+			"type": "sound",
+			"url": "audios/wave12.mp3"
+		},
+		{
+			"name": "wave13_mp3",
+			"type": "sound",
+			"url": "audios/wave13.mp3"
+		},
+		{
+			"name": "wave14_mp3",
+			"type": "sound",
+			"url": "audios/wave14.mp3"
+		},
+		{
+			"name": "wave15_mp3",
+			"type": "sound",
+			"url": "audios/wave15.mp3"
+		},
+		{
+			"name": "wave16_mp3",
+			"type": "sound",
+			"url": "audios/wave16.mp3"
+		},
+		{
+			"name": "wave17_mp3",
+			"type": "sound",
+			"url": "audios/wave17.mp3"
+		},
+		{
+			"name": "wave18_mp3",
+			"type": "sound",
+			"url": "audios/wave18.mp3"
+		},
+		{
+			"name": "wave19_mp3",
+			"type": "sound",
+			"url": "audios/wave19.mp3"
+		},
+		{
+			"name": "wave2_mp3",
+			"type": "sound",
+			"url": "audios/wave2.mp3"
+		},
+		{
+			"name": "wave22_mp3",
+			"type": "sound",
+			"url": "audios/wave22.mp3"
+		},
+		{
+			"name": "wave23_mp3",
+			"type": "sound",
+			"url": "audios/wave23.mp3"
+		},
+		{
+			"name": "wave24_mp3",
+			"type": "sound",
+			"url": "audios/wave24.mp3"
+		},
+		{
+			"name": "wave25_mp3",
+			"type": "sound",
+			"url": "audios/wave25.mp3"
+		},
+		{
+			"name": "wave26_mp3",
+			"type": "sound",
+			"url": "audios/wave26.mp3"
+		},
+		{
+			"name": "wave27_mp3",
+			"type": "sound",
+			"url": "audios/wave27.mp3"
+		},
+		{
+			"name": "wave28_mp3",
+			"type": "sound",
+			"url": "audios/wave28.mp3"
+		},
+		{
+			"name": "wave29_mp3",
+			"type": "sound",
+			"url": "audios/wave29.mp3"
+		},
+		{
+			"name": "wave3_mp3",
+			"type": "sound",
+			"url": "audios/wave3.mp3"
+		},
+		{
+			"name": "wave30_mp3",
+			"type": "sound",
+			"url": "audios/wave30.mp3"
+		},
+		{
+			"name": "wave31_mp3",
+			"type": "sound",
+			"url": "audios/wave31.mp3"
+		},
+		{
+			"name": "wave4_mp3",
+			"type": "sound",
+			"url": "audios/wave4.mp3"
+		},
+		{
+			"name": "wave6_mp3",
+			"type": "sound",
+			"url": "audios/wave6.mp3"
+		},
+		{
+			"name": "wave7_mp3",
+			"type": "sound",
+			"url": "audios/wave7.mp3"
+		},
+		{
+			"name": "wave8_mp3",
+			"type": "sound",
+			"url": "audios/wave8.mp3"
+		},
+		{
+			"name": "wave9_mp3",
+			"type": "sound",
+			"url": "audios/wave9.mp3"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "wlts_logo_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "background_button_png",
+			"type": "image",
+			"url": "textures/background_button.png"
+		},
+		{
+			"name": "background_child_png",
+			"type": "image",
+			"url": "textures/background_child.png"
+		},
+		{
+			"name": "background_game_png",
+			"type": "image",
+			"url": "textures/background_game.png"
+		},
+		{
+			"name": "background_introduction_png",
+			"type": "image",
+			"url": "textures/background_introduction.png"
+		},
+		{
+			"name": "boy0_png",
+			"type": "image",
+			"url": "textures/boy0.png"
+		},
+		{
+			"name": "boy1_png",
+			"type": "image",
+			"url": "textures/boy1.png"
+		},
+		{
+			"name": "boy2_png",
+			"type": "image",
+			"url": "textures/boy2.png"
+		},
+		{
+			"name": "boy3_png",
+			"type": "image",
+			"url": "textures/boy3.png"
+		},
+		{
+			"name": "boy4_png",
+			"type": "image",
+			"url": "textures/boy4.png"
+		},
+		{
+			"name": "certificate_background_png",
+			"type": "image",
+			"url": "textures/certificate_background.png"
+		},
+		{
+			"name": "circle_png",
+			"type": "image",
+			"url": "textures/circle.png"
+		},
+		{
+			"name": "circle_point_png",
+			"type": "image",
+			"url": "textures/circle_point.png"
+		},
+		{
+			"name": "clock_wall_png",
+			"type": "image",
+			"url": "textures/clock_wall.png"
+		},
+		{
+			"name": "cloud_png",
+			"type": "image",
+			"url": "textures/cloud.png"
+		},
+		{
+			"name": "horn_normal_png",
+			"type": "image",
+			"url": "textures/horn_normal.png"
+		},
+		{
+			"name": "island_png",
+			"type": "image",
+			"url": "textures/island.png"
+		},
+		{
+			"name": "like_png",
+			"type": "image",
+			"url": "textures/like.png"
+		},
+		{
+			"name": "picture1_json",
+			"type": "json",
+			"url": "textures/movieClip/picture1.json"
+		},
+		{
+			"name": "picture1_png",
+			"type": "image",
+			"url": "textures/movieClip/picture1.png"
+		},
+		{
+			"name": "picture10_json",
+			"type": "json",
+			"url": "textures/movieClip/picture10.json"
+		},
+		{
+			"name": "picture10_png",
+			"type": "image",
+			"url": "textures/movieClip/picture10.png"
+		},
+		{
+			"name": "picture11_json",
+			"type": "json",
+			"url": "textures/movieClip/picture11.json"
+		},
+		{
+			"name": "picture11_png",
+			"type": "image",
+			"url": "textures/movieClip/picture11.png"
+		},
+		{
+			"name": "picture12_json",
+			"type": "json",
+			"url": "textures/movieClip/picture12.json"
+		},
+		{
+			"name": "picture12_png",
+			"type": "image",
+			"url": "textures/movieClip/picture12.png"
+		},
+		{
+			"name": "picture13_json",
+			"type": "json",
+			"url": "textures/movieClip/picture13.json"
+		},
+		{
+			"name": "picture13_png",
+			"type": "image",
+			"url": "textures/movieClip/picture13.png"
+		},
+		{
+			"name": "picture14_json",
+			"type": "json",
+			"url": "textures/movieClip/picture14.json"
+		},
+		{
+			"name": "picture14_png",
+			"type": "image",
+			"url": "textures/movieClip/picture14.png"
+		},
+		{
+			"name": "picture15_json",
+			"type": "json",
+			"url": "textures/movieClip/picture15.json"
+		},
+		{
+			"name": "picture15_png",
+			"type": "image",
+			"url": "textures/movieClip/picture15.png"
+		},
+		{
+			"name": "picture16_json",
+			"type": "json",
+			"url": "textures/movieClip/picture16.json"
+		},
+		{
+			"name": "picture16_png",
+			"type": "image",
+			"url": "textures/movieClip/picture16.png"
+		},
+		{
+			"name": "picture17_json",
+			"type": "json",
+			"url": "textures/movieClip/picture17.json"
+		},
+		{
+			"name": "picture17_png",
+			"type": "image",
+			"url": "textures/movieClip/picture17.png"
+		},
+		{
+			"name": "picture18_json",
+			"type": "json",
+			"url": "textures/movieClip/picture18.json"
+		},
+		{
+			"name": "picture18_png",
+			"type": "image",
+			"url": "textures/movieClip/picture18.png"
+		},
+		{
+			"name": "picture19_json",
+			"type": "json",
+			"url": "textures/movieClip/picture19.json"
+		},
+		{
+			"name": "picture19_png",
+			"type": "image",
+			"url": "textures/movieClip/picture19.png"
+		},
+		{
+			"name": "picture2_json",
+			"type": "json",
+			"url": "textures/movieClip/picture2.json"
+		},
+		{
+			"name": "picture2_png",
+			"type": "image",
+			"url": "textures/movieClip/picture2.png"
+		},
+		{
+			"name": "picture20_json",
+			"type": "json",
+			"url": "textures/movieClip/picture20.json"
+		},
+		{
+			"name": "picture20_png",
+			"type": "image",
+			"url": "textures/movieClip/picture20.png"
+		},
+		{
+			"name": "picture21_json",
+			"type": "json",
+			"url": "textures/movieClip/picture21.json"
+		},
+		{
+			"name": "picture21_png",
+			"type": "image",
+			"url": "textures/movieClip/picture21.png"
+		},
+		{
+			"name": "picture22_json",
+			"type": "json",
+			"url": "textures/movieClip/picture22.json"
+		},
+		{
+			"name": "picture22_png",
+			"type": "image",
+			"url": "textures/movieClip/picture22.png"
+		},
+		{
+			"name": "picture23_json",
+			"type": "json",
+			"url": "textures/movieClip/picture23.json"
+		},
+		{
+			"name": "picture23_png",
+			"type": "image",
+			"url": "textures/movieClip/picture23.png"
+		},
+		{
+			"name": "picture24_json",
+			"type": "json",
+			"url": "textures/movieClip/picture24.json"
+		},
+		{
+			"name": "picture24_png",
+			"type": "image",
+			"url": "textures/movieClip/picture24.png"
+		},
+		{
+			"name": "picture25_json",
+			"type": "json",
+			"url": "textures/movieClip/picture25.json"
+		},
+		{
+			"name": "picture25_png",
+			"type": "image",
+			"url": "textures/movieClip/picture25.png"
+		},
+		{
+			"name": "picture26_json",
+			"type": "json",
+			"url": "textures/movieClip/picture26.json"
+		},
+		{
+			"name": "picture26_png",
+			"type": "image",
+			"url": "textures/movieClip/picture26.png"
+		},
+		{
+			"name": "picture27_json",
+			"type": "json",
+			"url": "textures/movieClip/picture27.json"
+		},
+		{
+			"name": "picture27_png",
+			"type": "image",
+			"url": "textures/movieClip/picture27.png"
+		},
+		{
+			"name": "picture28_json",
+			"type": "json",
+			"url": "textures/movieClip/picture28.json"
+		},
+		{
+			"name": "picture28_png",
+			"type": "image",
+			"url": "textures/movieClip/picture28.png"
+		},
+		{
+			"name": "picture29_json",
+			"type": "json",
+			"url": "textures/movieClip/picture29.json"
+		},
+		{
+			"name": "picture29_png",
+			"type": "image",
+			"url": "textures/movieClip/picture29.png"
+		},
+		{
+			"name": "picture3_json",
+			"type": "json",
+			"url": "textures/movieClip/picture3.json"
+		},
+		{
+			"name": "picture3_png",
+			"type": "image",
+			"url": "textures/movieClip/picture3.png"
+		},
+		{
+			"name": "picture30_json",
+			"type": "json",
+			"url": "textures/movieClip/picture30.json"
+		},
+		{
+			"name": "picture30_png",
+			"type": "image",
+			"url": "textures/movieClip/picture30.png"
+		},
+		{
+			"name": "picture31_json",
+			"type": "json",
+			"url": "textures/movieClip/picture31.json"
+		},
+		{
+			"name": "picture31_png",
+			"type": "image",
+			"url": "textures/movieClip/picture31.png"
+		},
+		{
+			"name": "picture4_json",
+			"type": "json",
+			"url": "textures/movieClip/picture4.json"
+		},
+		{
+			"name": "picture4_png",
+			"type": "image",
+			"url": "textures/movieClip/picture4.png"
+		},
+		{
+			"name": "picture5_json",
+			"type": "json",
+			"url": "textures/movieClip/picture5.json"
+		},
+		{
+			"name": "picture5_png",
+			"type": "image",
+			"url": "textures/movieClip/picture5.png"
+		},
+		{
+			"name": "picture6_json",
+			"type": "json",
+			"url": "textures/movieClip/picture6.json"
+		},
+		{
+			"name": "picture6_png",
+			"type": "image",
+			"url": "textures/movieClip/picture6.png"
+		},
+		{
+			"name": "picture7_json",
+			"type": "json",
+			"url": "textures/movieClip/picture7.json"
+		},
+		{
+			"name": "picture7_png",
+			"type": "image",
+			"url": "textures/movieClip/picture7.png"
+		},
+		{
+			"name": "picture8_json",
+			"type": "json",
+			"url": "textures/movieClip/picture8.json"
+		},
+		{
+			"name": "picture8_png",
+			"type": "image",
+			"url": "textures/movieClip/picture8.png"
+		},
+		{
+			"name": "picture9_json",
+			"type": "json",
+			"url": "textures/movieClip/picture9.json"
+		},
+		{
+			"name": "picture9_png",
+			"type": "image",
+			"url": "textures/movieClip/picture9.png"
+		},
+		{
+			"name": "start_normal_png",
+			"type": "image",
+			"url": "textures/start_normal.png"
+		},
+		{
+			"name": "start_over_png",
+			"type": "image",
+			"url": "textures/start_over.png"
+		},
+		{
+			"name": "title_png",
+			"type": "image",
+			"url": "textures/title.png"
+		},
+		{
+			"name": "shoes_png",
+			"type": "image",
+			"url": "textures/shoes.png"
+		},
+		{
+			"name": "clothes_png",
+			"type": "image",
+			"url": "textures/clothes.png"
+		},
+		{
+			"name": "trousers_png",
+			"type": "image",
+			"url": "textures/trousers.png"
+		},
+		{
+			"name": "boy0_clean_png",
+			"type": "image",
+			"url": "textures/boy0_clean.png"
+		},
+		{
+			"name": "book_bag_png",
+			"type": "image",
+			"url": "textures/book_bag.png"
+		},
+		{
+			"name": "juice_png",
+			"type": "image",
+			"url": "textures/juice.png"
+		},
+		{
+			"name": "milk_png",
+			"type": "image",
+			"url": "textures/milk.png"
+		},
+		{
+			"name": "fish_png",
+			"type": "image",
+			"url": "textures/fish.png"
+		},
+		{
+			"name": "meat_png",
+			"type": "image",
+			"url": "textures/meat.png"
+		},
+		{
+			"name": "vegetable_png",
+			"type": "image",
+			"url": "textures/vegetable.png"
+		},
+		{
+			"name": "color_pen_png",
+			"type": "image",
+			"url": "textures/color_pen.png"
+		},
+		{
+			"name": "rubber_png",
+			"type": "image",
+			"url": "textures/rubber.png"
+		},
+		{
+			"name": "pencil_png",
+			"type": "image",
+			"url": "textures/pencil.png"
+		},
+		{
+			"name": "book_png",
+			"type": "image",
+			"url": "textures/book.png"
+		},
+		{
+			"name": "bear_png",
+			"type": "image",
+			"url": "textures/bear.png"
+		},
+		{
+			"name": "block_png",
+			"type": "image",
+			"url": "textures/block.png"
+		},
+		{
+			"name": "boy1_clean_png",
+			"type": "image",
+			"url": "textures/boy1_clean.png"
+		},
+		{
+			"name": "boy2_clean_png",
+			"type": "image",
+			"url": "textures/boy2_clean.png"
+		},
+		{
+			"name": "boy3_clean_png",
+			"type": "image",
+			"url": "textures/boy3_clean.png"
+		},
+		{
+			"name": "boy4_clean_png",
+			"type": "image",
+			"url": "textures/boy4_clean.png"
+		},
+		{
+			"name": "star_png",
+			"type": "image",
+			"url": "textures/star.png"
+		},
+		{
+			"name": "horn_over_png",
+			"type": "image",
+			"url": "textures/horn_over.png"
+		},
+		{
+			"name": "background_button_blue_png",
+			"type": "image",
+			"url": "textures/background_button_blue.png"
+		}
+	],
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_7_mp3,wave20_mp3,wave21_mp3,wave5_mp3,sound13_idel_to_over_mp3,streamsound 27_mp3,streamsound 31_mp3,wave1_mp3,wave10_mp3,wave11_mp3,wave12_mp3,wave13_mp3,wave14_mp3,wave15_mp3,wave16_mp3,wave17_mp3,wave18_mp3,wave19_mp3,wave2_mp3,wave22_mp3,wave23_mp3,wave24_mp3,wave25_mp3,wave26_mp3,wave27_mp3,wave28_mp3,wave29_mp3,wave3_mp3,wave30_mp3,wave31_mp3,wave4_mp3,wave6_mp3,wave7_mp3,wave8_mp3,wave9_mp3,description_json,wlts_logo_jpg,background_button_png,background_child_png,background_game_png,background_introduction_png,boy0_png,boy1_png,boy2_png,boy3_png,boy4_png,certificate_background_png,circle_png,circle_point_png,clock_wall_png,cloud_png,horn_normal_png,island_png,like_png,picture1_json,picture1_png,picture10_json,picture10_png,picture11_json,picture11_png,picture12_json,picture12_png,picture13_json,picture13_png,picture14_json,picture14_png,picture15_json,picture15_png,picture16_json,picture16_png,picture17_json,picture17_png,picture18_json,picture18_png,picture19_json,picture19_png,picture2_json,picture2_png,picture20_json,picture20_png,picture21_json,picture21_png,picture22_json,picture22_png,picture23_json,picture23_png,picture24_json,picture24_png,picture25_json,picture25_png,picture26_json,picture26_png,picture27_json,picture27_png,picture28_json,picture28_png,picture29_json,picture29_png,picture3_json,picture3_png,picture30_json,picture30_png,picture31_json,picture31_png,picture4_json,picture4_png,picture5_json,picture5_png,picture6_json,picture6_png,picture7_json,picture7_png,picture8_json,picture8_png,picture9_json,picture9_png,start_normal_png,start_over_png,title_png,shoes_png,clothes_png,trousers_png,boy0_clean_png,book_bag_png,juice_png,milk_png,fish_png,meat_png,vegetable_png,color_pen_png,rubber_png,pencil_png,book_png,bear_png,block_png,boy1_clean_png,boy2_clean_png,boy3_clean_png,boy4_clean_png,star_png,horn_over_png,background_button_blue_png"
+		}
+	]
+}

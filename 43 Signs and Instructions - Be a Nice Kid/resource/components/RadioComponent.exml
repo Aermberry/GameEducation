@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RadioComponentSkin" width="38" height="38" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,selected" >
+	<w:Config id="165fb673a4f" ></w:Config>
+	<e:Image id="radioImage" left="0" right="0" top="0" bottom="0" source="circle_png" source.selected="circle_point_png"/>
+</e:Skin>
