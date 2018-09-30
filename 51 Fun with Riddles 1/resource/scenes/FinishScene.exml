@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624df64ef" ></w:Config>
-	<e:Image source="finishScene_png" y="-186.66" x="-362"/>
+	<e:Image source="StatueScene_png" horizontalCenter="-47.5" verticalCenter="3"/>
+	<e:Image source="finishScene_png" horizontalCenter="-23.5" verticalCenter="68" anchorOffsetX="0" anchorOffsetY="0"/>
 </e:Skin>

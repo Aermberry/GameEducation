@@ -22,7 +22,8 @@
         "Riddle5Scene": "resource/scenes/Riddle5Scene.exml",
         "Riddle6Scene": "resource/scenes/Riddle6Scene.exml",
         "Riddle7Scene": "resource/scenes/Riddle7Scene.exml",
-        "FinishScene": "resource/scenes/FinishScene.exml"
+        "FinishScene": "resource/scenes/FinishScene.exml",
+        "StatueScene": "resource/scenes/StatueScene.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [

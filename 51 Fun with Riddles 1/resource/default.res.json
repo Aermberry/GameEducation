@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,finishScene_png,StartSceneBackground_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,finishScene_png,StartSceneBackground_png,Radio_png,StatueScene_png,Radio_04_png,Radio_05_png,Radio_06_png,Radio_07_png,Radio_01_png,Radio_02_png,Radio_03_png",
 			"name": "preload"
 		}
 	],
@@ -155,6 +155,51 @@
 			"name": "StartSceneBackground_png",
 			"type": "image",
 			"url": "textures/StartSceneBackground.png"
+		},
+		{
+			"name": "Radio_png",
+			"type": "image",
+			"url": "textures/Radio.png"
+		},
+		{
+			"name": "StatueScene_png",
+			"type": "image",
+			"url": "textures/StatueScene.png"
+		},
+		{
+			"name": "Radio_04_png",
+			"type": "image",
+			"url": "textures/Radio_04.png"
+		},
+		{
+			"name": "Radio_05_png",
+			"type": "image",
+			"url": "textures/Radio_05.png"
+		},
+		{
+			"name": "Radio_06_png",
+			"type": "image",
+			"url": "textures/Radio_06.png"
+		},
+		{
+			"name": "Radio_07_png",
+			"type": "image",
+			"url": "textures/Radio_07.png"
+		},
+		{
+			"name": "Radio_01_png",
+			"type": "image",
+			"url": "textures/Radio_01.png"
+		},
+		{
+			"name": "Radio_02_png",
+			"type": "image",
+			"url": "textures/Radio_02.png"
+		},
+		{
+			"name": "Radio_03_png",
+			"type": "image",
+			"url": "textures/Radio_03.png"
 		}
 	]
 }
