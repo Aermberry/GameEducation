@@ -1,9 +1,8 @@
 class Plus125And53Scene extends eui.Component implements  eui.UIComponent {
-	private pauseLabel: eui.Label;
-	private pauseRect: eui.Rect;
+	private pauseButton: PauseButton;
 	private angelGroup: eui.Group;
 	private boyGroup: eui.Group;
-	private backToIndexImage: eui.Image;
+	private backToIndexButton: BackToIndexButton;
 	private mcFactory: egret.MovieClipDataFactory;
 	private tg0: egret.tween.TweenGroup;
 	private tg1: egret.tween.TweenGroup;
@@ -52,54 +51,29 @@ class Plus125And53Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this.pauseRect, true);
-		mouse.setButtonMode(this.backToIndexImage, true);
-		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);
-		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPauseLabelMouseOut, this);
-		this.pauseLabel.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);
-		this.pauseLabel.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPauseLabelMouseOut, this);
-
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-
-		this.backToIndexImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.backToIndexImage.source = 'back_to_index_mouse_over_png', this);
-		this.backToIndexImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.backToIndexImage.source = 'back_to_index_normal_png', this);
-		this.backToIndexImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new ChooseEquationScene()), this);
-
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onPauseButtonClick, this);
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('animations_json'), RES.getRes("animations_png") );
 		this.playAngelAnimation();
 		this.playBoyJumAnimation();
 		this.playCalculationAnimation();
 	}
 
-	private onPauseLabelMouseOver(e: mouse.MouseEvent): void
+	private onPauseButtonClick(): void
 	{
-		this.pauseLabel.textColor = 0xffffff;
-	}
-
-	private onPauseLabelMouseOut(e: mouse.MouseEvent): void
-	{
-		this.pauseLabel.textColor = 0x010C5A;
-	} 
-
-	private onPauseRectClick(): void
-	{
-		this.pauseLabel.text = "繼續";
+		this.pauseButton.title = "繼續";
 		this.currentTweenGroup && this.currentTweenGroup.pause();
 		this.pausedSoundPosition = this.currentSoundChannel.position;
 		this.currentSoundChannel.stop();
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onResumeRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onResumeRectClick, this);
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onResumeButtonClick, this);
 	}
 
-	private onResumeRectClick(): void
+	private onResumeButtonClick(): void
 	{
-		this.pauseLabel.text = "暫停";
+		this.pauseButton.title = "暫停";
 		this.currentTweenGroup && this.currentTweenGroup.play();
 		this.currentSoundChannel = (RES.getRes(this.currentSoundName) as egret.Sound).play(this.pausedSoundPosition, 1);
 		this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, this.currentSoundCompleteHandler, this);
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onPauseButtonClick, this);
 	}
 
 	private playAngelAnimation(): void
@@ -154,6 +128,8 @@ class Plus125And53Scene extends eui.Component implements  eui.UIComponent {
 		await this.playTweenGroupAndSound(null, 'add1_streamsound 33_mp3');
 		await this.playTweenGroupAndSound(null, 'add1_streamsound 34_mp3');
 		this.tg25.play(0);
+		this.backToIndexButton.parent.setChildIndex(this.backToIndexButton, this.backToIndexButton.parent.numChildren - 1);
+		this.backToIndexButton.enabled = true;
 	}
 
 	private playTweenGroupAndSound(tweenGroup: egret.tween.TweenGroup, soundName: string): Promise<void>
