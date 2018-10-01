@@ -3763,7 +3763,7 @@ var egret;
                     }
                     this.panelX = styles["x"] === undefined ? 0 : parseInt(styles['x']);
                     this.panelY = styles["y"] === undefined ? 0 : parseInt(styles['y']);
-                    this.fontColor = styles["textColor"] === undefined ? '#ffffff' : styles['textColor'].replace("0x", "#");
+                    this.fontColor = styles["textColor"] === undefined ? '0xffffff' : styles['textColor'].replace("0x", "#");
                     this.fontSize = styles["size"] === undefined ? 12 : parseInt(styles['size']);
                     if (egret.Capabilities.isMobile) {
                         this.fontSize -= 2;
