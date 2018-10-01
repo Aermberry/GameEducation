@@ -10,8 +10,15 @@ namespace lzlib {
 					this.currentSoundChannel.stop();
 				}
 
-				this.currentSoundChannel = (RES.getRes(soundName) as egret.Sound).play(0, 1);
-				this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
+				var sound:egret.Sound = new egret.Sound();
+				sound.once(egret.Event.COMPLETE, function loadOver(event: egret.Event) {
+					this.currentSoundChannel = sound.play(0, 1);
+					this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
+				}, this);
+				sound.once(egret.IOErrorEvent.IO_ERROR, function loadError(event: egret.IOErrorEvent) {
+					reject(event);
+				}, this);
+				sound.load("audios/" + soundName);
 			});
 		}
 

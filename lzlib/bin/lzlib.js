@@ -270,8 +270,15 @@ var lzlib;
                     //默认先暂停当前的声音
                     _this.currentSoundChannel.stop();
                 }
-                _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
-                _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
+                var sound = new egret.Sound();
+                sound.once(egret.Event.COMPLETE, function loadOver(event) {
+                    this.currentSoundChannel = sound.play(0, 1);
+                    this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
+                }, _this);
+                sound.once(egret.IOErrorEvent.IO_ERROR, function loadError(event) {
+                    reject(event);
+                }, _this);
+                sound.load("audios/" + soundName);
             });
         };
         SoundUtility.stopCurrentSound = function () {
@@ -293,13 +300,6 @@ var lzlib;
         ThreadUtility.sleep = function (ms) {
             if (ms === void 0) { ms = 0; }
             return new Promise(function (r) { return setTimeout(r, ms); });
-        };
-        ThreadUtility.playSound = function (soundName) {
-            var _this = this;
-            return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
-            });
         };
         return ThreadUtility;
     }());

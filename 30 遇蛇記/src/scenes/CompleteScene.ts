@@ -15,7 +15,7 @@ class CompleteScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
-		(RES.getRes('ye_you_completed_this_execcise_now_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound('ye_you_completed_this_execcise_now.mp3');
 	}
 
 	private onExitButtonClick(e: egret.TouchEvent): void
