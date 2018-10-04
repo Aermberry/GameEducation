@@ -31,7 +31,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onStartButton2Click(): void
 	{
-		lzlib.SoundUtility.playSound('kids_there_is_a_story_below.mp3');
+		lzlib.SoundUtility.playSound('kids_there_is_a_story_below_mp3');
 		this.startMask.visible = false;
 		this.startButton2.visible = false;
 		this.startButton.visible = true;

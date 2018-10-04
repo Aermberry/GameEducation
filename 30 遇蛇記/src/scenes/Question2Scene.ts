@@ -35,21 +35,21 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 
 	private async playGame(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('dad_heard_fangfang_crying_and_come_to_see_why.mp3');
+		await lzlib.SoundUtility.playSound('dad_heard_fangfang_crying_and_come_to_see_why_mp3');
 		this.topSpeakerButton.enabled = true;
 		this.bottomSpeakerButton.enabled = true;
 	}
 
 	private onTopSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('ask_fangfang_to_stop_crying_roughly.mp3');
+		lzlib.SoundUtility.playSound('ask_fangfang_to_stop_crying_roughly_mp3');
 		this.topSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
 
 	private onBottomSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('dont_afraid_dad_is_here.mp3');
+		lzlib.SoundUtility.playSound('dont_afraid_dad_is_here_mp3');
 		this.bottomSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
@@ -65,7 +65,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.bottomAnswerCheckbox.selected = false;
 		if (this.topAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('dad_is_comforting_fangfang_and_would_not_be_rough.mp3');
+			lzlib.SoundUtility.playSound('dad_is_comforting_fangfang_and_would_not_be_rough_mp3');
 		}
 	}
 
@@ -73,7 +73,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.topAnswerCheckbox.selected = false;
 		if (this.bottomAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page.mp3');
+			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page_mp3');
 		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;

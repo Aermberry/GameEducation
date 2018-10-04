@@ -35,21 +35,21 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private async playGame(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('dad_found_snake_is_fake.mp3');
+		await lzlib.SoundUtility.playSound('dad_found_snake_is_fake_mp3');
 		this.topSpeakerButton.enabled = true;
 		this.bottomSpeakerButton.enabled = true;
 	}
 
 	private onTopSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('what_the_fuck_who_place_a_fake_snake_herer.mp3');
+		lzlib.SoundUtility.playSound('what_the_fuck_who_place_a_fake_snake_herer_mp3');
 		this.topSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
 
 	private onBottomSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('wa_it_is_a_fake_snake_and_almost_die_of_fear_just_then.mp3');
+		lzlib.SoundUtility.playSound('wa_it_is_a_fake_snake_and_almost_die_of_fear_just_then_mp3');
 		this.bottomSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
@@ -65,7 +65,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.bottomAnswerCheckbox.selected = false;
 		if (this.topAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('fangfang_found_the_snake_is_fake_and_laugh.mp3');
+			lzlib.SoundUtility.playSound('fangfang_found_the_snake_is_fake_and_laugh_mp3');
 		}
 	}
 
@@ -73,7 +73,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.topAnswerCheckbox.selected = false;
 		if (this.bottomAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page.mp3');
+			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page_mp3');
 		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;

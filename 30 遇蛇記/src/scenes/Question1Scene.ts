@@ -36,24 +36,24 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private async playGame(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('encounter_snake.mp3');
+		await lzlib.SoundUtility.playSound('encounter_snake_mp3');
 		this.appNameLabel.parent.removeChild(this.appNameLabel);
 
-		await lzlib.SoundUtility.playSound('fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday.mp3');
+		await lzlib.SoundUtility.playSound('fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3');
 		this.topSpeakerButton.enabled = true;
 		this.bottomSpeakerButton.enabled = true;
 	}
 
 	private onTopSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('wa_a_snake.mp3');
+		lzlib.SoundUtility.playSound('wa_a_snake_mp3');
 		this.topSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
 
 	private onBottomSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		lzlib.SoundUtility.playSound('yi_a_snake_here.mp3');
+		lzlib.SoundUtility.playSound('yi_a_snake_here_mp3');
 		this.bottomSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
@@ -69,7 +69,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.bottomAnswerCheckbox.selected = false;
 		if (this.topAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page.mp3');
+			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page_mp3');
 		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;
@@ -81,7 +81,7 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.topAnswerCheckbox.selected = false;
 		if (this.bottomAnswerCheckbox.selected) {
-			lzlib.SoundUtility.playSound('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake.mp3');
+			lzlib.SoundUtility.playSound('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3');
 		}
 	}
 
