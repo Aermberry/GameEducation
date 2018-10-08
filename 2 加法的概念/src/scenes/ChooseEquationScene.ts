@@ -18,6 +18,7 @@ class ChooseEquationScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
 		mouse.setButtonMode(this.plus125And53Rect, true);
 		mouse.setButtonMode(this.plus16And27Rect, true);
 		mouse.setButtonMode(this.plus165And53Rect, true);

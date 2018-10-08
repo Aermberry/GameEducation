@@ -10,14 +10,16 @@
 		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
-		"bin-debug/repositories/WordRepository.js",
 		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/components/Cannon.js",
 		"bin-debug/components/TargetButton.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/repositories/EasyWordRepository.js",
+		"bin-debug/repositories/ProWordRepository.js",
+		"bin-debug/repositories/WordRepository.js",
 		"bin-debug/scenes/PlayingScene.js",
 		"bin-debug/scenes/ReadyToPlayScene.js",
 		"bin-debug/scenes/ResultScene.js",

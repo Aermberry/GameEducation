@@ -61,13 +61,13 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 	private onEasyImageClick(e: egret.TouchEvent): void
 	{
 		this.bgmSoundChannel.stop();
-		Main.instance.gotoScene(new ReadyToPlayScene());
+		Main.instance.gotoScene(new ReadyToPlayScene(new EasyWordRepository()));
 	}
 
 	private onProImageClick(e: egret.TouchEvent): void
 	{
 		this.bgmSoundChannel.stop();
-		Main.instance.gotoScene(new ReadyToPlayScene());
+		Main.instance.gotoScene(new ReadyToPlayScene(new ProWordRepository()));
 	}
 
 	private playSixWidgetsPopupAnimation()

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="nextStepButtonSkin" width="187" height="93" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,over" >
+	<w:Config id="165e5893493" ></w:Config>
+	<e:Image id="nextStepButtonButton" source="nextStepButton01_png" includeIn="over" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="nextStepButton00_png" includeIn="normal" left="0" right="0" top="0" bottom="0"/>
+</e:Skin>

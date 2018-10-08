@@ -19002,7 +19002,7 @@ var egret;
                 8: TextField.default_fontFamily,
                 9: "left",
                 10: "top",
-                11: "#ffffff",
+                11: "0xffffff",
                 12: "",
                 13: "",
                 14: [],
@@ -24764,7 +24764,7 @@ var egret;
     /**
      * Transfer number to color character string
      * @param value {number} color value ,such as 0xffffff
-     * @returns {string} Color character string, for example, #ffffff.
+     * @returns {string} Color character string, for example, 0xffffff.
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample egret/utils/toColorString.ts
@@ -24773,7 +24773,7 @@ var egret;
     /**
      * 转换数字为颜色字符串
      * @param value {number} 颜色值，例如 0xffffff
-     * @returns {string} 颜色字符串，例如"#ffffff"。
+     * @returns {string} 颜色字符串，例如"0xffffff"。
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample egret/utils/toColorString.ts

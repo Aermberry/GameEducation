@@ -294,13 +294,6 @@ var lzlib;
             if (ms === void 0) { ms = 0; }
             return new Promise(function (r) { return setTimeout(r, ms); });
         };
-        ThreadUtility.playSound = function (soundName) {
-            var _this = this;
-            return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
-            });
-        };
         return ThreadUtility;
     }());
     lzlib.ThreadUtility = ThreadUtility;

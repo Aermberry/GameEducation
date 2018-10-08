@@ -4,9 +4,11 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 	private goImage: eui.Image;
 	private mcFactory: egret.MovieClipDataFactory;
 	private bgmSoundChannel: egret.SoundChannel;
+	private wordRepo: WordRepository;
 
-	public constructor() {
+	public constructor(wordRepo: WordRepository) {
 		super();
+		this.wordRepo = wordRepo;
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -51,7 +53,7 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 	private onGoImageClick(e: egret.TouchEvent): void
 	{
 		this.bgmSoundChannel.stop();
-		Main.instance.gotoScene(new PlayingScene());
+		Main.instance.gotoScene(new PlayingScene(this.wordRepo));
 	}
 
 	private playGameDemoAnimation()
