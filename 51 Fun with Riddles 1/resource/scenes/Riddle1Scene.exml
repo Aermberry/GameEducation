@@ -8,33 +8,36 @@
 	<e:Image id="schoolBag"  x="1432.88" y="929.67" anchorOffsetX="0" anchorOffsetY="0" source="schoolbag_png"/>
 	<e:Group x="639.82" y="393.88">
 		<e:Image source="bigLabel_png" x="-10" y="-6"/>
-		<e:Label text="we          momey in the piggy bank" x="-11.21" y="10" anchorOffsetX="0" width="1074" anchorOffsetY="0" height="230" textColor="0x5C2C47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS"/>
-		<e:Rect width="151" height="3" x="126.33" y="155.55" anchorOffsetY="0" fillColor="0x5c2c47"/>
-		<e:Label text="keep" x="118.18" y="90.91" anchorOffsetX="0" width="167.94" anchorOffsetY="0" height="69.4" textColor="0x5c2c47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS" background="false" backgroundColor="0xed1010"/>
+		<e:Label text="we          books and pencil box in it." x="-11.21" y="10" anchorOffsetX="0" width="1074" anchorOffsetY="0" height="230" textColor="0x5C2C47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS"/>
+
+		<e:Group id="keepClickGroup" x="96.97" y="90.91">
+			<e:Rect width="151" height="3" x="8.15" y="64.64" anchorOffsetY="0" fillColor="0x5c2c47"/>
+			<e:Label text="keep" x="0" y="0" anchorOffsetX="0" width="167.94" anchorOffsetY="0" height="69.4" textColor="0x5c2c47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS" background="false" backgroundColor="0xed1010"/>
+		</e:Group>
 	</e:Group>
 	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
-	<e:Group x="882.83" y="451.35" visible="false">
+	<e:Group id="tipsGroup" x="882.83" y="451.35" visible="false">
 		<e:Group x="0" y="0">
 			<e:Image source="Label_png" x="0" y="0"/>
 			<e:Label text="We keep money in the piggy\nbank." x="41.38" y="45.77" anchorOffsetX="0" width="622.49" anchorOffsetY="0" height="133.03" textColor="0x69191c" size="48" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
-		<e:Image id="pig" source="pig_png" x="603.25" y="109.53" rotation="7.66"/>
+		<e:Image source="pig_png" x="603.25" y="109.53" rotation="7.66"/>
 	</e:Group>
 
-	<e:Group x="508.19" y="839.35">
+	<e:Group id="drinksGroup" x="508.19" y="839.35" visible="false">
 		<e:Group x="0" y="0">
 			<e:Image source="Label_png" x="0" y="0"/>
 			<e:Label text="We keep drinks in a bottle." x="41.38" y="45.77" anchorOffsetX="0" width="622.49" anchorOffsetY="0" height="133.03" textColor="0x69191c" size="48" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
-		<e:Image id="monkey" source="monkey_png" x="602.7" y="107.77" rotation="7.66"/>
+		<e:Image source="monkey_png" x="602.7" y="107.77" rotation="7.66"/>
 	</e:Group>
 
-	<e:Group x="937.41" y="765.44" visible="false">
+	<e:Group id="pencilBoxTipGroup" x="937.41" y="765.44" visible="false">
 		<e:Group x="0" y="0">
 			<e:Image source="Label_png" x="0" y="0" anchorOffsetX="0" width="721.3"/>
 			<e:Label text="We keep pencils and rubbers in a pencil box." x="41.38" y="45.77" anchorOffsetX="0" width="667.94" anchorOffsetY="0" height="133.03" textColor="0x69191c" size="48" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
-		<e:Image id="pig" source="monkey_png" x="602.7" y="107.77" rotation="7.66"/>
+		<e:Image x="602.7" y="107.77" rotation="7.66" source="monkey_png"/>
 	</e:Group>
-	<e:Image source="true_png" x="1432.88" y="1047.68" rotation="350.52" visible="false"/>
+	<e:Image id="isTrueImage" source="true_png" x="1432.88" y="1047.68" rotation="350.52" visible="false"/>
 </e:Skin>
