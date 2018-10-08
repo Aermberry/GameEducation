@@ -1,4 +1,4 @@
-class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
+class FireWordsComponent extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 	}

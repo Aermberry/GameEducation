@@ -15,16 +15,21 @@ class ListenComponent extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.titleAndFairyImage, true);
+		this.titleAndFairyImage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onBegin, this);
 		this.titleAndFairyImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 		this.titleAndFairyImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 		this.titleAndFairyImage.source = this.listenNormal[this._currentListen];
 
+	}
+
+	private onBegin(e: egret.TouchEvent): void
+	{
+		this.titleAndFairyImage.source = this.listenClick[this._currentListen];
 	}
 
 	private onMouseOver(e: egret.TouchEvent): void

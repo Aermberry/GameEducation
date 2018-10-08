@@ -3,5 +3,9 @@
 	<w:Config id="16623e811f6" ></w:Config>
 	<e:Image left="0" right="-64" top="0" bottom="0" source="listen7_background_png" anchorOffsetX="0"/>
 	<e:Image id="princessesAndPrincessHorseImage" x="295.97" y="476.91" source="princesses_and_princess_horse_png" anchorOffsetX="0" width="772.12" anchorOffsetY="0" height="828.42"/>
-	<e:Image x="-427.33" y="894.15" source="listen1_grass_png" scaleX="1.05"/>
+	<e:Image x="-427.33" y="878.15" source="listen1_grass_png" scaleX="1.05" anchorOffsetY="0" height="586" anchorOffsetX="0" width="2389.88"/>
+	<e:Group id="messageAlertGroup" x="232" y="420" visible="false">
+		<e:Image x="-176" y="-384" source="finish_message_border_png" scaleX="1" scaleY="1"/>
+		<e:Label text="Congratulations,     brave young man!    you have saved      princess Nancy!" x="145.5" y="-53" anchorOffsetX="0" width="1282" anchorOffsetY="0" height="706" textColor="0x000000" fontFamily="Comic Sans MS" size="140" lineSpacing="40"/>
+	</e:Group>
 </e:Skin>

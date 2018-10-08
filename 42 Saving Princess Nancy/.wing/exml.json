@@ -28,8 +28,8 @@
         "parentPath": ""
     },
     "16622fdcac5": {
-        "path": "scenes/distinguishRole3Scene.ts",
-        "class": "distinguishRole3Scene",
+        "path": "scenes/DistinguishRole3Scene.ts",
+        "class": "DistinguishRole3Scene",
         "parentPath": ""
     },
     "1662311577f": {
@@ -70,6 +70,16 @@
     "166249ac9d9": {
         "path": "components/ListenComponent.ts",
         "class": "ListenComponent",
+        "parentPath": ""
+    },
+    "16651acb1c0": {
+        "path": "components/GreenTextComponent.ts",
+        "class": "GreenTextComponent",
+        "parentPath": ""
+    },
+    "166523b0881": {
+        "path": "components/FireWordsComponent.ts",
+        "class": "FireWordsComponent",
         "parentPath": ""
     }
 }

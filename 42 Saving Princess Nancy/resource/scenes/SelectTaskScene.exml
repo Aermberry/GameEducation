@@ -10,5 +10,5 @@
 	<e:Image x="872.67" y="1030.39" source="task_border_png"/>
 	<e:Label id="task1Label" text="Task 1 Knowing Princess Nancy" x="972.72" y="912.18" textColor="0x7e512f" size="46"/>
 	<e:Label text="Task 2 Finding Princess Nancy" x="972.72" y="1054.6" textColor="0x7E512F" size="46" id="task1Label0"/>
-	<ns1:ListenComponent width="20" height="20" x="1092" y="336"/>
+	<ns1:AlertComponent width="808" height="552" x="1108" y="236" anchorOffsetX="0" anchorOffsetY="0" text="the lady you look for is at the top of the hill."/>
 </e:Skin>

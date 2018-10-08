@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FireWordsComponentSkin" width="240" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="166523b0881" ></w:Config>
+	<e:Image id="fireword1" left="0" right="0" top="0" bottom="0" source="firework1_png"/>
+	<e:Image id="fireword2" left="0" right="0" top="0" bottom="0" source="firework2_png"/>
+	<e:Image id="fireword3" left="0" right="0" top="0" bottom="0" source="firework3_png"/>
+	<e:Image id="fireword4" left="0" right="0" top="0" bottom="0" source="firework4_png"/>
+	<e:Image id="fireword5" left="0" right="0" top="0" bottom="0" source="firework5_png"/>
+	<e:Image id="fireword6" left="0" right="0" top="0" bottom="0" source="firework6_png"/>
+	<e:Image id="fireword7" left="0" right="0" top="0" bottom="0" source="firework7_png"/>
+	<e:Image id="fireword8" left="0" right="0" top="0" bottom="0" source="firework8_png"/>
+	<e:Image id="fireword9" left="0" right="0" top="0" bottom="0" source="firework9_png"/>
+	<e:Image id="fireword10" left="0" right="0" top="0" bottom="0" source="firework10_png"/>
+	<e:Image id="fireword11" left="0" right="0" top="0" bottom="0" source="firework11_png"/>
+	<e:Image id="fireword12" left="0" right="0" top="0" bottom="0" source="firework12_png"/>
+	<e:Image id="fireword13" left="0" right="0" top="0" bottom="0" source="firework13_png"/>
+	<e:Image id="fireword14" left="0" right="0" top="0" bottom="0" source="firework14_png"/>
+	<e:Image id="fireword15" left="0" right="0" top="0" bottom="0" source="firework15_png"/>
+	<e:Image id="fireword16" left="0" right="0" top="0" bottom="0" source="firework16_png"/>
+	<e:Image id="fireword17" left="0" right="0" top="0" bottom="0" source="firework17_png"/>
+	<e:Image id="fireword18" left="0" right="0" top="0" bottom="0" source="firework18_png"/>
+</e:Skin>
