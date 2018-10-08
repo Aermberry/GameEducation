@@ -22,4 +22,21 @@
 		<e:Image source="Label_png" x="0" y="0"/>
 		<e:Label text="Put lemon and tea together\n to make a cup of lemon tea." x="33" y="51.5" textColor="0x69191c" size="48" lineSpacing="25" fontFamily="Comic Sans MS" background="false" backgroundColor="0xb5ffff"/>
 	</e:Group>
+	<e:Group id="putTipsGroup" x="885" y="405" visible="false">
+		<e:Image source="Label_png" x="0" y="0"/>
+		<e:Label text="Put lemon and tea together\nto make a cup of lemon tea." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
+	</e:Group>
+
+	<e:Group id="appleTipsGroup" x="143" y="931" visible="false">
+		<e:Image source="Label_png" x="0" y="0"/>
+		<e:Label text="We eat apples." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
+		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+	</e:Group>
+
+	<e:Group id="keyTipsGroup" x="594" y="931" visible="false">
+		<e:Image source="Label_png" x="0" y="0"/>
+		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
+		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+	</e:Group>
+	<e:Image id="isTrue" source="true_png" x="1410.66" y="1055.59" rotation="346.24" visible="false"/>
 </e:Skin>
