@@ -1,5 +1,7 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
 	private splashTweenGroup: egret.tween.TweenGroup;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	public constructor() {
 		super();
