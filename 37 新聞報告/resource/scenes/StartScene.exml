@@ -25,6 +25,7 @@
 		<e:Image id="footprint8" x="1492" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
 		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
 	</e:Group>
+	<e:Label text="b. 111人" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77" alpha="0"/>
 	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
 	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

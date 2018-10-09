@@ -61,7 +61,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onExitButtonClick(e: egret.TouchEvent): void
 	{
-		window.location.href="about:blank";
   		window.close();
 	}
 }
