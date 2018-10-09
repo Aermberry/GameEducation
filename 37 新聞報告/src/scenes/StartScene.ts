@@ -1,5 +1,7 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton: eui.Image
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 	private exitButton: ImageButton
 	private startSoundChannel: egret.SoundChannel
 
@@ -18,13 +20,22 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.startButton2, true);
 		mouse.setButtonMode(this.exitButton, true);
-		this.startSoundChannel = (RES.getRes('sound 188_mp3') as egret.Sound).play(0, 1);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStartButtonTouchBegin, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+	}
+
+	private onStartButton2Click(): void
+	{
+		this.startSoundChannel = (RES.getRes('sound 188_mp3') as egret.Sound).play(0, 1);
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		this.startButton.visible = true;
 	}
 	
 	private onStartButtonRollOver(e: mouse.MouseEvent): void
@@ -50,6 +61,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onExitButtonClick(e: egret.TouchEvent): void
 	{
-		window.close();
+		window.location.href="about:blank";
+  		window.close();
 	}
 }
