@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,movie_clip_json,movie_clip_png,sight_word_hunter_mouse_over_png,bottle_png,select_difficulty_scene_bgm_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_kacha_mp3,sound_effect_ling_mp3,sound_effect_win_mp3,start_scene_bgm_mp3,I_mp3,a_mp3,about_mp3,act_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,are_mp3,around_mp3,as_mp3,ask_mp3,ate_mp3,away_mp3,be_mp3,because_mp3,before_mp3,best_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,brain_mp3,brown_mp3,but_mp3,buy_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,do_mp3,does_mp3,don't_mp3,done_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fall_mp3,far_mp3,fast_mp3,find_mp3,first_mp3,fly_mp3,for_mp3,found_mp3,four_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,going_mp3,good_mp3,got_mp3,green_mp3,grow_mp3,had_mp3,has_mp3,have_mp3,he_mp3,hear_mp3,heard_mp3,help_mp3,her_mp3,him_mp3,his_mp3,hold_mp3,hot_mp3,hour_mp3,how_mp3,in_mp3,into_mp3,is_mp3,it_mp3,jump_mp3,just_mp3,keep_mp3,kind_mp3,left_mp3,light_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,many_mp3,may_mp3,me_mp3,much_mp3,must_mp3,my_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,not_mp3,now_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,out_mp3,over_mp3,own_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,sad_mp3,say_mp3,see_mp3,seven_mp3,shall_mp3,she_mp3,show_mp3,sing_mp3,sit_mp3,six_mp3,sleep_mp3,small_mp3,so_mp3,some_mp3,soon_mp3,start_mp3,stop_mp3,sunny_mp3,take_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,their_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,thin_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,today_mp3,together_mp3,too_mp3,try_mp3,two_mp3,under_mp3,up_mp3,upon_mp3,us_mp3,use_mp3,very_mp3,walk_mp3,wall_mp3,want_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,wore_mp3,work_mp3,would_mp3,write_mp3,yellow_mp3,yes_mp3,you_mp3,your_mp3,gameEui_json,wlts_logo2_jpg,wlts_logo_jpg,wlts_logo3_jpg,gameEui2_json,start_png,arrow_right_png,back_png,ball_png,ball_normal_png,ball_selected_png,balloon_png,balloon_normal_png,balloon_selected_png,bird_png,bird_normal_png,bird_selected_png,cake_png,cake_normal_png,cake_selected_png,cannon_up_png,cannon_up_left_png,cannon_up_right_png,cannonball_png,castle_png,castle_normal_png,castle_selected_png,cow_png,cow_normal_png,cow_selected_png,ferris_wheel_png,ferris_wheel_normal_png,ferris_wheel_selected_png,green_column_png,horse_png,horse_normal_png,horse_selected_png,pig_png,pig_normal_png,pig_selected_png,playing_scene_bg_red_silk_png,playing_scene_bg_wood_png,rainbow_png,select_difficulty_scene_bg_png,sight_word_hunter_small_png,sight_word_park_png,smiling_yellow_head_png,snapshot_png,speaker_png,speaker_normal_png,speaker_selected_png,stars_joined_png,stars_separated_png,start_scene_bg_png,sunshine_png,tube_empty_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,movie_clip_json,movie_clip_png,sight_word_hunter_mouse_over_png,bottle_png,select_difficulty_scene_bgm_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_kacha_mp3,sound_effect_ling_mp3,sound_effect_win_mp3,start_scene_bgm_mp3,I_mp3,a_mp3,about_mp3,act_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,are_mp3,around_mp3,as_mp3,ask_mp3,ate_mp3,away_mp3,be_mp3,because_mp3,before_mp3,best_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,brain_mp3,brown_mp3,but_mp3,buy_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,do_mp3,does_mp3,don't_mp3,done_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fall_mp3,far_mp3,fast_mp3,find_mp3,first_mp3,fly_mp3,for_mp3,found_mp3,four_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,going_mp3,good_mp3,got_mp3,green_mp3,grow_mp3,had_mp3,has_mp3,have_mp3,he_mp3,hear_mp3,heard_mp3,help_mp3,her_mp3,him_mp3,his_mp3,hold_mp3,hot_mp3,hour_mp3,how_mp3,in_mp3,into_mp3,is_mp3,it_mp3,jump_mp3,just_mp3,keep_mp3,kind_mp3,left_mp3,light_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,many_mp3,may_mp3,me_mp3,much_mp3,must_mp3,my_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,not_mp3,now_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,out_mp3,over_mp3,own_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,sad_mp3,say_mp3,see_mp3,seven_mp3,shall_mp3,she_mp3,show_mp3,sing_mp3,sit_mp3,six_mp3,sleep_mp3,small_mp3,so_mp3,some_mp3,soon_mp3,start_mp3,stop_mp3,sunny_mp3,take_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,their_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,thin_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,today_mp3,together_mp3,too_mp3,try_mp3,two_mp3,under_mp3,up_mp3,upon_mp3,us_mp3,use_mp3,very_mp3,walk_mp3,wall_mp3,want_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,wore_mp3,work_mp3,would_mp3,write_mp3,yellow_mp3,yes_mp3,you_mp3,your_mp3,gameEui_json,wlts_logo2_jpg,wlts_logo_jpg,wlts_logo3_jpg,gameEui2_json,start_png,arrow_right_png,back_png,ball_png,ball_normal_png,ball_selected_png,balloon_png,balloon_normal_png,balloon_selected_png,bird_png,bird_normal_png,bird_selected_png,cake_png,cake_normal_png,cake_selected_png,cannon_up_png,cannon_up_left_png,cannon_up_right_png,cannonball_png,castle_png,castle_normal_png,castle_selected_png,cow_png,cow_normal_png,cow_selected_png,ferris_wheel_png,ferris_wheel_normal_png,ferris_wheel_selected_png,green_column_png,horse_png,horse_normal_png,horse_selected_png,pig_png,pig_normal_png,pig_selected_png,playing_scene_bg_red_silk_png,playing_scene_bg_wood_png,rainbow_png,select_difficulty_scene_bg_png,sight_word_hunter_small_png,sight_word_park_png,smiling_yellow_head_png,snapshot_png,speaker_png,speaker_normal_png,speaker_selected_png,stars_joined_png,stars_separated_png,start_scene_bg_png,sunshine_png,tube_empty_png,arrow_right2_png,back2_png,ball2_png,ball_normal2_png,ball_selected2_png,balloon2_png,balloon_normal2_png,balloon_selected2_png,bird2_png,bird_normal2_png,bird_selected2_png,cake2_png,cake_normal2_png,cake_selected2_png,cannon_up2_png,cannon_up_left2_png,cannon_up_right2_png,cannonball2_png,castle2_png,castle_normal2_png,castle_selected2_png,cow2_png,cow_normal2_png,cow_selected2_png,ferris_wheel2_png,ferris_wheel_normal2_png,ferris_wheel_selected2_png,green_column2_png,horse2_png,horse_normal2_png,horse_selected2_png,pig2_png,pig_normal2_png,pig_selected2_png,playing_scene_bg_red_silk2_png,playing_scene_bg_wood2_png,rainbow2_png,select_difficulty_scene_bg2_png,sight_word_hunter_small2_png,sight_word_park2_png,smiling_yellow_head2_png,snapshot2_png,speaker2_png,speaker_normal2_png,speaker_selected2_png,stars_joined2_png,stars_separated2_png,start_scene_bg2_png,sunshine2_png,tube_empty2_png",
 			"name": "preload"
 		}
 	],
@@ -1550,6 +1550,256 @@
 			"url": "textures/tube_empty.png",
 			"type": "image",
 			"name": "tube_empty_png"
+		},
+		{
+			"name": "arrow_right2_png",
+			"type": "image",
+			"url": "textures/arrow_right.png"
+		},
+		{
+			"name": "back2_png",
+			"type": "image",
+			"url": "textures/back.png"
+		},
+		{
+			"name": "ball2_png",
+			"type": "image",
+			"url": "textures/ball.png"
+		},
+		{
+			"name": "ball_normal2_png",
+			"type": "image",
+			"url": "textures/ball_normal.png"
+		},
+		{
+			"name": "ball_selected2_png",
+			"type": "image",
+			"url": "textures/ball_selected.png"
+		},
+		{
+			"name": "balloon2_png",
+			"type": "image",
+			"url": "textures/balloon.png"
+		},
+		{
+			"name": "balloon_normal2_png",
+			"type": "image",
+			"url": "textures/balloon_normal.png"
+		},
+		{
+			"name": "balloon_selected2_png",
+			"type": "image",
+			"url": "textures/balloon_selected.png"
+		},
+		{
+			"name": "bird2_png",
+			"type": "image",
+			"url": "textures/bird.png"
+		},
+		{
+			"name": "bird_normal2_png",
+			"type": "image",
+			"url": "textures/bird_normal.png"
+		},
+		{
+			"name": "bird_selected2_png",
+			"type": "image",
+			"url": "textures/bird_selected.png"
+		},
+		{
+			"name": "cake2_png",
+			"type": "image",
+			"url": "textures/cake.png"
+		},
+		{
+			"name": "cake_normal2_png",
+			"type": "image",
+			"url": "textures/cake_normal.png"
+		},
+		{
+			"name": "cake_selected2_png",
+			"type": "image",
+			"url": "textures/cake_selected.png"
+		},
+		{
+			"name": "cannon_up2_png",
+			"type": "image",
+			"url": "textures/cannon_up.png"
+		},
+		{
+			"name": "cannon_up_left2_png",
+			"type": "image",
+			"url": "textures/cannon_up_left.png"
+		},
+		{
+			"name": "cannon_up_right2_png",
+			"type": "image",
+			"url": "textures/cannon_up_right.png"
+		},
+		{
+			"name": "cannonball2_png",
+			"type": "image",
+			"url": "textures/cannonball.png"
+		},
+		{
+			"name": "castle2_png",
+			"type": "image",
+			"url": "textures/castle.png"
+		},
+		{
+			"name": "castle_normal2_png",
+			"type": "image",
+			"url": "textures/castle_normal.png"
+		},
+		{
+			"name": "castle_selected2_png",
+			"type": "image",
+			"url": "textures/castle_selected.png"
+		},
+		{
+			"name": "cow2_png",
+			"type": "image",
+			"url": "textures/cow.png"
+		},
+		{
+			"name": "cow_normal2_png",
+			"type": "image",
+			"url": "textures/cow_normal.png"
+		},
+		{
+			"name": "cow_selected2_png",
+			"type": "image",
+			"url": "textures/cow_selected.png"
+		},
+		{
+			"name": "ferris_wheel2_png",
+			"type": "image",
+			"url": "textures/ferris_wheel.png"
+		},
+		{
+			"name": "ferris_wheel_normal2_png",
+			"type": "image",
+			"url": "textures/ferris_wheel_normal.png"
+		},
+		{
+			"name": "ferris_wheel_selected2_png",
+			"type": "image",
+			"url": "textures/ferris_wheel_selected.png"
+		},
+		{
+			"name": "green_column2_png",
+			"type": "image",
+			"url": "textures/green_column.png"
+		},
+		{
+			"name": "horse2_png",
+			"type": "image",
+			"url": "textures/horse.png"
+		},
+		{
+			"name": "horse_normal2_png",
+			"type": "image",
+			"url": "textures/horse_normal.png"
+		},
+		{
+			"name": "horse_selected2_png",
+			"type": "image",
+			"url": "textures/horse_selected.png"
+		},
+		{
+			"name": "pig2_png",
+			"type": "image",
+			"url": "textures/pig.png"
+		},
+		{
+			"name": "pig_normal2_png",
+			"type": "image",
+			"url": "textures/pig_normal.png"
+		},
+		{
+			"name": "pig_selected2_png",
+			"type": "image",
+			"url": "textures/pig_selected.png"
+		},
+		{
+			"name": "playing_scene_bg_red_silk2_png",
+			"type": "image",
+			"url": "textures/playing_scene_bg_red_silk.png"
+		},
+		{
+			"name": "playing_scene_bg_wood2_png",
+			"type": "image",
+			"url": "textures/playing_scene_bg_wood.png"
+		},
+		{
+			"name": "rainbow2_png",
+			"type": "image",
+			"url": "textures/rainbow.png"
+		},
+		{
+			"name": "select_difficulty_scene_bg2_png",
+			"type": "image",
+			"url": "textures/select_difficulty_scene_bg.png"
+		},
+		{
+			"name": "sight_word_hunter_small2_png",
+			"type": "image",
+			"url": "textures/sight_word_hunter_small.png"
+		},
+		{
+			"name": "sight_word_park2_png",
+			"type": "image",
+			"url": "textures/sight_word_park.png"
+		},
+		{
+			"name": "smiling_yellow_head2_png",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.png"
+		},
+		{
+			"name": "snapshot2_png",
+			"type": "image",
+			"url": "textures/snapshot.png"
+		},
+		{
+			"name": "speaker2_png",
+			"type": "image",
+			"url": "textures/speaker.png"
+		},
+		{
+			"name": "speaker_normal2_png",
+			"type": "image",
+			"url": "textures/speaker_normal.png"
+		},
+		{
+			"name": "speaker_selected2_png",
+			"type": "image",
+			"url": "textures/speaker_selected.png"
+		},
+		{
+			"name": "stars_joined2_png",
+			"type": "image",
+			"url": "textures/stars_joined.png"
+		},
+		{
+			"name": "stars_separated2_png",
+			"type": "image",
+			"url": "textures/stars_separated.png"
+		},
+		{
+			"name": "start_scene_bg2_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
+		},
+		{
+			"name": "sunshine2_png",
+			"type": "image",
+			"url": "textures/sunshine.png"
+		},
+		{
+			"name": "tube_empty2_png",
+			"type": "image",
+			"url": "textures/tube_empty.png"
 		}
 	]
 }
