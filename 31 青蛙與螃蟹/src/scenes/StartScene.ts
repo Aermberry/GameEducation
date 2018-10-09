@@ -2,6 +2,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton: eui.Image
 	private exitButton: ImageButton
 	private startSoundChannel: egret.SoundChannel
+	private startMask: eui.Rect;
+	private startButton2: eui.Image;
 
 	public constructor() {
 		super();
