@@ -4,6 +4,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private startSoundChannel: egret.SoundChannel
 	private startMask: eui.Rect;
 	private startButton2: eui.Image;
+	private StartAnim:egret.tween.TweenGroup;
 
 	public constructor() {
 		super();
@@ -20,13 +21,26 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.startButton2, true);
 		mouse.setButtonMode(this.exitButton, true);
-		this.startSoundChannel = (RES.getRes('sound 124_mp3') as egret.Sound).play(0, 1);
+		
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStartButtonTouchBegin, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+	}
+
+	private async onStartButton2Click(): Promise<void> {
+		await this.StartAnim.play(0);
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		this.loadMusic();
+	}
+
+	private loadMusic():void {
+		this.startSoundChannel = (RES.getRes('sound 124_mp3') as egret.Sound).play(0, 1);
 	}
 	
 	private onStartButtonRollOver(e: mouse.MouseEvent): void
