@@ -20,6 +20,9 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private forthSelectGroup:eui.Group;
 	private fifthSelectGroup:eui.Group;
 	private sixSelectGroup:eui.Group;
+
+	private mask:eui.Rect;
+	private startButton:eui.Button;
 	
 	
 	public constructor() {
@@ -37,8 +40,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.dialogGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showSelect, this);
-
-		
 	}
 	
 	private showSelect() {

@@ -96,6 +96,16 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="StartAnim">
+			<tween:TweenItem target="{mask}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 
 	<w:Config id="164d4293be7" ></w:Config>
@@ -157,5 +167,6 @@
 <e:Label id="dialogFrothcLabel" text="你能幫忙，把生病的句子醫治好嗎？" textColor="0x000000" size="48" fontFamily="方正準圓" x="634" y="773" />
 <e:Label id="dialogFifthcLabel" text="請到102號病房去吧！" textColor="0x000000" size="48" fontFamily="方正準圓" x="634" y="927" />
 <e:Group id="dialogGroup" x="523" y="233" height="820" width="1069"/>
-<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"/>
+<e:Rect id="mask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
