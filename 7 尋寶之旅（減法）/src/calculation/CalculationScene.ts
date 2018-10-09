@@ -86,7 +86,11 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		mouse.setButtonMode(this.restartImage, true);
 		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.startCalulation, this.presenter);
 		mouse.setButtonMode(this.exitImage, true);
-		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, () => window.close(), this);
+		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitImageClick , this);
+	}
+
+	private onExitImageClick(): void {
+		window.close();
 	}
 
 	private initAngelGroup(): void
