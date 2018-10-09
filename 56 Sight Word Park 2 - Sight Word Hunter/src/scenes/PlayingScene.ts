@@ -74,8 +74,8 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private initSpeakerButton()
 	{
-		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.speakerImage.source = 'speaker_selected_svg', this);
-		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.speakerImage.source = 'speaker_normal_svg', this);
+		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.speakerImage.source = 'speaker_selected_png', this);
+		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.speakerImage.source = 'speaker_normal_png', this);
 		this.speakerImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.speakCurrentWord(), this);
 	}
 
@@ -194,7 +194,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private createCannonball(): eui.Image
 	{
-		let cannonball = new eui.Image('cannonball_svg')
+		let cannonball = new eui.Image('cannonball_png')
 		cannonball.scaleY = cannonball.scaleX = 0.7;
 		cannonball.x = this.width / 2;
 		cannonball.y = this.height;
