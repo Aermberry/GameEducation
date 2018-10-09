@@ -372,354 +372,354 @@
 			"name": "all_is_done_png"
 		},
 		{
-			"name": "senior_selected_png",
+			"url": "textures/senior_selected.png",
 			"type": "image",
-			"url": "textures/senior_selected.png"
+			"name": "senior_selected_png"
 		},
 		{
-			"name": "senior_normal_png",
+			"url": "textures/senior_normal.png",
 			"type": "image",
-			"url": "textures/senior_normal.png"
+			"name": "senior_normal_png"
 		},
 		{
-			"name": "junior_normal_png",
+			"url": "textures/junior_normal.png",
 			"type": "image",
-			"url": "textures/junior_normal.png"
+			"name": "junior_normal_png"
 		},
 		{
-			"name": "junior_selected_png",
+			"url": "textures/junior_selected.png",
 			"type": "image",
-			"url": "textures/junior_selected.png"
+			"name": "junior_selected_png"
 		},
 		{
-			"name": "medium_normal_png",
+			"url": "textures/medium_normal.png",
 			"type": "image",
-			"url": "textures/medium_normal.png"
+			"name": "medium_normal_png"
 		},
 		{
-			"name": "medium_selected_png",
+			"url": "textures/medium_selected.png",
 			"type": "image",
-			"url": "textures/medium_selected.png"
+			"name": "medium_selected_png"
 		},
 		{
-			"name": "box_closed_png",
+			"url": "textures/box_closed.png",
 			"type": "image",
-			"url": "textures/box_closed.png"
+			"name": "box_closed_png"
 		},
 		{
-			"name": "box_open_png",
+			"url": "textures/box_open.png",
 			"type": "image",
-			"url": "textures/box_open.png"
+			"name": "box_open_png"
 		},
 		{
-			"name": "strawberry_png",
+			"url": "textures/strawberry.png",
 			"type": "image",
-			"url": "textures/strawberry.png"
+			"name": "strawberry_png"
 		},
 		{
-			"name": "one_normal_png",
+			"url": "textures/one_normal.png",
 			"type": "image",
-			"url": "textures/one_normal.png"
+			"name": "one_normal_png"
 		},
 		{
-			"name": "one_selected_png",
+			"url": "textures/one_selected.png",
 			"type": "image",
-			"url": "textures/one_selected.png"
+			"name": "one_selected_png"
 		},
 		{
-			"name": "two_normal_png",
+			"url": "textures/two_normal.png",
 			"type": "image",
-			"url": "textures/two_normal.png"
+			"name": "two_normal_png"
 		},
 		{
-			"name": "two_selected_png",
+			"url": "textures/two_selected.png",
 			"type": "image",
-			"url": "textures/two_selected.png"
+			"name": "two_selected_png"
 		},
 		{
-			"name": "three_normal_png",
+			"url": "textures/three_normal.png",
 			"type": "image",
-			"url": "textures/three_normal.png"
+			"name": "three_normal_png"
 		},
 		{
-			"name": "three_selected_png",
+			"url": "textures/three_selected.png",
 			"type": "image",
-			"url": "textures/three_selected.png"
+			"name": "three_selected_png"
 		},
 		{
-			"name": "four_normal_png",
+			"url": "textures/four_normal.png",
 			"type": "image",
-			"url": "textures/four_normal.png"
+			"name": "four_normal_png"
 		},
 		{
-			"name": "four_selected_png",
+			"url": "textures/four_selected.png",
 			"type": "image",
-			"url": "textures/four_selected.png"
+			"name": "four_selected_png"
 		},
 		{
-			"name": "five_normal_png",
+			"url": "textures/five_normal.png",
 			"type": "image",
-			"url": "textures/five_normal.png"
+			"name": "five_normal_png"
 		},
 		{
-			"name": "five_selected_png",
+			"url": "textures/five_selected.png",
 			"type": "image",
-			"url": "textures/five_selected.png"
+			"name": "five_selected_png"
 		},
 		{
-			"name": "six_normal_png",
+			"url": "textures/six_normal.png",
 			"type": "image",
-			"url": "textures/six_normal.png"
+			"name": "six_normal_png"
 		},
 		{
-			"name": "six_selected_png",
+			"url": "textures/six_selected.png",
 			"type": "image",
-			"url": "textures/six_selected.png"
+			"name": "six_selected_png"
 		},
 		{
-			"name": "seven_normal_png",
+			"url": "textures/seven_normal.png",
 			"type": "image",
-			"url": "textures/seven_normal.png"
+			"name": "seven_normal_png"
 		},
 		{
-			"name": "seven_selected_png",
+			"url": "textures/seven_selected.png",
 			"type": "image",
-			"url": "textures/seven_selected.png"
+			"name": "seven_selected_png"
 		},
 		{
-			"name": "eight_normal_png",
+			"url": "textures/eight_normal.png",
 			"type": "image",
-			"url": "textures/eight_normal.png"
+			"name": "eight_normal_png"
 		},
 		{
-			"name": "eight_selected_png",
+			"url": "textures/eight_selected.png",
 			"type": "image",
-			"url": "textures/eight_selected.png"
+			"name": "eight_selected_png"
 		},
 		{
-			"name": "nine_normal_png",
+			"url": "textures/nine_normal.png",
 			"type": "image",
-			"url": "textures/nine_normal.png"
+			"name": "nine_normal_png"
 		},
 		{
-			"name": "nine_selected_png",
+			"url": "textures/nine_selected.png",
 			"type": "image",
-			"url": "textures/nine_selected.png"
+			"name": "nine_selected_png"
 		},
 		{
-			"name": "zero_normal_png",
+			"url": "textures/zero_normal.png",
 			"type": "image",
-			"url": "textures/zero_normal.png"
+			"name": "zero_normal_png"
 		},
 		{
-			"name": "zero_selected_png",
+			"url": "textures/zero_selected.png",
 			"type": "image",
-			"url": "textures/zero_selected.png"
+			"name": "zero_selected_png"
 		},
 		{
-			"name": "eraser_selected_png",
+			"url": "textures/eraser_selected.png",
 			"type": "image",
-			"url": "textures/eraser_selected.png"
+			"name": "eraser_selected_png"
 		},
 		{
-			"name": "eraser_normal_png",
+			"url": "textures/eraser_normal.png",
 			"type": "image",
-			"url": "textures/eraser_normal.png"
+			"name": "eraser_normal_png"
 		},
 		{
-			"name": "restart_normal_png",
+			"url": "textures/restart_normal.png",
 			"type": "image",
-			"url": "textures/restart_normal.png"
+			"name": "restart_normal_png"
 		},
 		{
-			"name": "restart_selected_png",
+			"url": "textures/restart_selected.png",
 			"type": "image",
-			"url": "textures/restart_selected.png"
+			"name": "restart_selected_png"
 		},
 		{
-			"name": "exit_normal_png",
+			"url": "textures/exit_normal.png",
 			"type": "image",
-			"url": "textures/exit_normal.png"
+			"name": "exit_normal_png"
 		},
 		{
-			"name": "exit_selected_png",
+			"url": "textures/exit_selected.png",
 			"type": "image",
-			"url": "textures/exit_selected.png"
+			"name": "exit_selected_png"
 		},
 		{
-			"name": "tick_png",
+			"url": "textures/tick.png",
 			"type": "image",
-			"url": "textures/tick.png"
+			"name": "tick_png"
 		},
 		{
-			"name": "dispoint_png",
+			"url": "textures/dispoint.png",
 			"type": "image",
-			"url": "textures/dispoint.png"
+			"name": "dispoint_png"
 		},
 		{
-			"name": "yes_normal_png",
+			"url": "textures/yes_normal.png",
 			"type": "image",
-			"url": "textures/yes_normal.png"
+			"name": "yes_normal_png"
 		},
 		{
-			"name": "yes_selected_png",
+			"url": "textures/yes_selected.png",
 			"type": "image",
-			"url": "textures/yes_selected.png"
+			"name": "yes_selected_png"
 		},
 		{
-			"name": "no_normal_png",
+			"url": "textures/no_normal.png",
 			"type": "image",
-			"url": "textures/no_normal.png"
+			"name": "no_normal_png"
 		},
 		{
-			"name": "no_selected_png",
+			"url": "textures/no_selected.png",
 			"type": "image",
-			"url": "textures/no_selected.png"
+			"name": "no_selected_png"
 		},
 		{
-			"name": "congratulation_png",
+			"url": "textures/congratulation.png",
 			"type": "image",
-			"url": "textures/congratulation.png"
+			"name": "congratulation_png"
 		},
 		{
-			"name": "next_degree_selected_png",
+			"url": "textures/next_degree_selected.png",
 			"type": "image",
-			"url": "textures/next_degree_selected.png"
+			"name": "next_degree_selected_png"
 		},
 		{
-			"name": "next_degree_normal_png",
+			"url": "textures/next_degree_normal.png",
 			"type": "image",
-			"url": "textures/next_degree_normal.png"
+			"name": "next_degree_normal_png"
 		},
 		{
-			"name": "next_question_normal_png",
+			"url": "textures/next_question_normal.png",
 			"type": "image",
-			"url": "textures/next_question_normal.png"
+			"name": "next_question_normal_png"
 		},
 		{
-			"name": "next_question_selected_png",
+			"url": "textures/next_question_selected.png",
 			"type": "image",
-			"url": "textures/next_question_selected.png"
+			"name": "next_question_selected_png"
 		},
 		{
-			"name": "think_carefully_and_try_again_png",
+			"url": "textures/think_carefully_and_try_again.png",
 			"type": "image",
-			"url": "textures/think_carefully_and_try_again.png"
+			"name": "think_carefully_and_try_again_png"
 		},
 		{
-			"name": "try_again_png",
+			"url": "textures/try_again.png",
 			"type": "image",
-			"url": "textures/try_again.png"
+			"name": "try_again_png"
 		},
 		{
-			"name": "strawberry_down_json",
+			"url": "textures/strawberry_down.json",
 			"type": "json",
-			"url": "textures/strawberry_down.json"
+			"name": "strawberry_down_json"
 		},
 		{
-			"name": "strawberry_down_png",
+			"url": "textures/strawberry_down.png",
 			"type": "image",
-			"url": "textures/strawberry_down.png"
+			"name": "strawberry_down_png"
 		},
 		{
-			"name": "strawberry_up_json",
+			"url": "textures/strawberry_up.json",
 			"type": "json",
-			"url": "textures/strawberry_up.json"
+			"name": "strawberry_up_json"
 		},
 		{
-			"name": "strawberry_up_png",
+			"url": "textures/strawberry_up.png",
 			"type": "image",
-			"url": "textures/strawberry_up.png"
+			"name": "strawberry_up_png"
 		},
 		{
-			"name": "boy_jump_json",
+			"url": "textures/boy_jump.json",
 			"type": "json",
-			"url": "textures/boy_jump.json"
+			"name": "boy_jump_json"
 		},
 		{
-			"name": "boy_jump_png",
+			"url": "textures/boy_jump.png",
 			"type": "image",
-			"url": "textures/boy_jump.png"
+			"name": "boy_jump_png"
 		},
 		{
-			"name": "calculation_font_fnt",
+			"url": "textures/calculation_font.fnt",
 			"type": "font",
-			"url": "textures/calculation_font.fnt"
+			"name": "calculation_font_fnt"
 		},
 		{
-			"name": "calculation_font_png",
+			"url": "textures/calculation_font.png",
 			"type": "image",
-			"url": "textures/calculation_font.png"
+			"name": "calculation_font_png"
 		},
 		{
-			"name": "angel_json",
+			"url": "textures/angel.json",
 			"type": "json",
-			"url": "textures/angel.json"
+			"name": "angel_json"
 		},
 		{
-			"name": "angel_png",
+			"url": "textures/angel.png",
 			"type": "image",
-			"url": "textures/angel.png"
+			"name": "angel_png"
 		},
 		{
-			"name": "dialog_up_png",
+			"url": "textures/dialog_up.png",
 			"type": "image",
-			"url": "textures/dialog_up.png"
+			"name": "dialog_up_png"
 		},
 		{
-			"name": "rectangle_red_png",
+			"url": "textures/rectangle_red.png",
 			"type": "image",
-			"url": "textures/rectangle_red.png"
+			"name": "rectangle_red_png"
 		},
 		{
-			"name": "calculation_small_font_png",
+			"url": "textures/calculation_small_font.png",
 			"type": "image",
-			"url": "textures/calculation_small_font.png"
+			"name": "calculation_small_font_png"
 		},
 		{
-			"name": "calculation_small_font_fnt",
+			"url": "textures/calculation_small_font.fnt",
 			"type": "font",
-			"url": "textures/calculation_small_font.fnt"
+			"name": "calculation_small_font_fnt"
 		},
 		{
-			"name": "select_degree_mp3",
+			"url": "audios/select_degree.mp3",
 			"type": "sound",
-			"url": "audios/select_degree.mp3"
+			"name": "select_degree_mp3"
 		},
 		{
-			"name": "congratulation_mp3",
+			"url": "audios/congratulation.mp3",
 			"type": "sound",
-			"url": "audios/congratulation.mp3"
+			"name": "congratulation_mp3"
 		},
 		{
-			"name": "you_can_upgrade_now_mp3",
+			"url": "audios/you_can_upgrade_now.mp3",
 			"type": "sound",
-			"url": "audios/you_can_upgrade_now.mp3"
+			"name": "you_can_upgrade_now_mp3"
 		},
 		{
-			"name": "minus_tour_png",
+			"url": "textures/minus_tour.png",
 			"type": "image",
-			"url": "textures/minus_tour.png"
+			"name": "minus_tour_png"
 		},
 		{
-			"name": "minus_expression_png",
+			"url": "textures/minus_expression.png",
 			"type": "image",
-			"url": "textures/minus_expression.png"
+			"name": "minus_expression_png"
 		},
 		{
-			"name": "red_line_png",
+			"url": "textures/red_line.png",
 			"type": "image",
-			"url": "textures/red_line.png"
+			"name": "red_line_png"
 		},
 		{
-			"name": "start_png",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "start_png"
 		},
 		{
-			"name": "gameEui_json",
+			"url": "gameEui.json",
 			"type": "json",
-			"url": "gameEui.json"
+			"name": "gameEui_json"
 		}
 	]
 }
