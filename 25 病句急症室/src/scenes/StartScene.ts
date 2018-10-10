@@ -37,6 +37,7 @@ class StartScene extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
     mouse.enable(this.stage);
     mouse.setButtonMode(this.startButton, true);
+    this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
     this.dialogGroup.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
       this.showSelect,
@@ -44,11 +45,11 @@ class StartScene extends eui.Component implements eui.UIComponent {
     );
   }
 
-	private async onStartButtonClick() {
-		this.StartAnim.playOnceAsync();
-    this.startButton.visible = false;
-    this.startMask.visible = false;
-  }
+  private async onStartButtonClick(): Promise<void> {
+    this.StartAnim.playOnceAsync();
+		this.startMask.visible = false;
+		this.startButton.visible = false;
+	}
 
   private showSelect() {
     this.dialogImg.visible = false;
