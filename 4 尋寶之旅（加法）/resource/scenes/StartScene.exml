@@ -248,5 +248,6 @@
 	<e:Image id="juniorImage" x="390" y="700" source="junior_normal_png" alpha="0"/>
 	<e:Image id="mediumImage" y="700" source="medium_normal_png" horizontalCenter="0" alpha="0"/>
 	<e:Image id="seniorImage" x="1250" y="700" source="senior_normal_png" alpha="0"/>
-	
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
