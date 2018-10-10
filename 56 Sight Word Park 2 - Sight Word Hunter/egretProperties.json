@@ -1,6 +1,6 @@
 {
-	"engineVersion": "5.2.10",
-	"compilerVersion": "5.2.10",
+	"engineVersion": "5.2.5",
+	"compilerVersion": "5.2.5",
 	"template": {},
 	"target": {
 		"current": "web"
@@ -36,6 +36,10 @@
 		{
 			"name": "mouse",
 			"path": "../egret-game-library-master/mouse/libsrc"
+		},
+		{
+			"name":"lzlib",
+			"path": "../lzlib"
 		}
 	]
 }
