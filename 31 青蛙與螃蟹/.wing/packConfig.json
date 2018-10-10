@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\31 青蛙與螃蟹\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}

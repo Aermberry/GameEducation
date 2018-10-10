@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="StartAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="163a0afaec0" ></w:Config>
 	<e:Group left="0" top="0" bottom="232" right="0">
 		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
@@ -27,4 +39,6 @@
 		<e:Image id="footprint10" x="1530" y="40" source="footprint_png" rotation="90" alpha="0.3"/>
 		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
 	</e:Group>
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" fillAlpha="0.9"/>
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
