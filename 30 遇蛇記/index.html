@@ -166,18 +166,15 @@
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
