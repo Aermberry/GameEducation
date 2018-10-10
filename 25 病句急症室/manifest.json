@@ -11,8 +11,8 @@
 		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/LoadingUI.js",
 		"bin-debug/gameLevelScenes/Level04Scene.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -22,7 +22,7 @@
 		"bin-debug/gameLevelScenes/Level01Scene.js",
 		"bin-debug/gameLevelScenes/Level02Scene.js",
 		"bin-debug/gameLevelScenes/Level03Scene.js",
-		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/gameLevelScenes/Level05Scene.js",
 		"bin-debug/gameLevelScenes/Level06Scene.js",
 		"bin-debug/gameLevelScenes/Level07Scene.js",
