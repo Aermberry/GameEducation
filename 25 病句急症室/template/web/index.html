@@ -27,9 +27,10 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+
         @font-face {
             font-family:"方正準圓";
             src: url("resource/fonts/方正準圓.woff2") format('woff2'),
@@ -60,6 +61,7 @@
                  url("resource/fonts/富漢通標中楷體.woff") format('woff'),
                  url("resource/fonts/富漢通標中楷體.ttf") format('truetype');
         }
+       
         @media screen and (max-device-width:641px) and (max-device-height:823px){
            #logo {
                height: 25px;
@@ -102,7 +104,7 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'>
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
         2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
@@ -111,7 +113,7 @@
     <label style="font-family: 華康楷書體; color: transparent;"> 第一學習階段中國語文中國語文第一學習階段中國語文 第一學習階段</label>
     <label style="font-family: 金梅新中圓國際碼; color: transparent;">句子多了些沒有用的東西，除了會給\r人不通順的感覺之外，有時還會令人\r錯誤理解句子的意思呢！箱」。我們現在開始吧——物箱内便可。若需要幫忙，請按一按「提示字詞或短語上，按著滑鼠左鍵，把它拉到廢方法很簡單，只要將滑鼠移到句子中多餘的它們都多了一些沒有用的東西！小朋友，很多句子生病了，(多了些什麽？)(多了些什麽？)手術完成了，謝謝你們幫忙。以後我們造句時小心一點，就不會再讓句子生病！再試一次離開</label>
     <label style="font-family: 富漢通標中楷體; color: transparent;">這些句子呢?怎樣才可以醫治</label>
-
+    
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -167,29 +169,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
