@@ -1,4 +1,4 @@
 .wing/
-.bin-debug/
-.libs/
+bin-debug/
+libs/
 .vscode/
