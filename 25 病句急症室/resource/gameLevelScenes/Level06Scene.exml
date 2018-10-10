@@ -285,8 +285,8 @@
 	<e:Image source="6_5_png" x="750" y="770"/>
 	<e:Image source="6_6_png" x="847" y="767.5"/>
 	<e:Image source="6_7_png" x="948" y="765"/>
-	<e:Image source="6_8_png" x="1173.36" y="754.03"/>	
-	<e:Image source="6_9_png" x="1036.36" y="750"/>
+	<e:Image source="6_9_png" x="1173.36" y="754.03"/>	
+	<e:Image source="6_8_png" x="1036.36" y="750"/>
 	<e:Image source="6_10_png" x="1305.36" y="773.5"/>
 </e:Group>
 	<e:ToggleButton id="cueButton" label="" x="1269" y="239">
