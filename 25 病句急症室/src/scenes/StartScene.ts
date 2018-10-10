@@ -21,7 +21,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private fifthSelectGroup:eui.Group;
 	private sixSelectGroup:eui.Group;
 
-	private mask:eui.Rect;
+	private startMask:eui.Rect;
 	private startButton:eui.Button;
 	
 	
@@ -39,6 +39,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.startButton,true);
 		this.dialogGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showSelect, this);
 	}
 	
