@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\3 數粒小玩意（加加減減）\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}
