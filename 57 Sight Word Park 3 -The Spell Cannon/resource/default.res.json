@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png,smoke_4_png,smoke_5_png,smoke_6_png,smoke_7_png,smoke_8_png,smoke_9_png,door_png,castle_bottom_png,arrow_right_svg,smiling_yellow_head_svg,pum_mp3,kacha_mp3,diao_mp3,congratulation_mp3,a_mp3,about_mp3,add_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,app_mp3,appoint_mp3,around_mp3,as_mp3,ate_mp3,away_mp3,bath_mp3,because_mp3,bee_mp3,before_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,brain_mp3,brown_mp3,but_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,does_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fair_mp3,fall (2)_mp3,fall_mp3,far_mp3,fast_mp3,film_mp3,film(2)_mp3,fine_mp3,first_mp3,five 2_mp3,five 3_mp3,five_mp3,fly_mp3,form_mp3,found_mp3,four_mp3,four(2)_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,god_mp3,going_mp3,goo_mp3,good_mp3,green_mp3,grow_mp3,guilt_mp3,gun_mp3,had_mp3,has_mp3,have_mp3,he_mp3,hear_mp3,heard_mp3,help_mp3,her_mp3,him_mp3,his_mp3,hold_mp3,hot_mp3,hour_mp3,how_mp3,i_mp3,in_mp3,into_mp3,is (2)_mp3,is_mp3,is(3)_mp3,it_mp3,jump_mp3,just_mp3,keep_mp3,kind_mp3,lab_mp3,left_mp3,light_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,male_mp3,many_mp3,may_mp3,me_mp3,mime_mp3,much_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,no(2)_mp3,not_mp3,nut_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,our_mp3,out_mp3,over_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,say_mp3,see_mp3,seven_mp3,shall_mp3,she_mp3,show_mp3,sick_mp3,sing_mp3,sit_mp3,sleep_mp3,small_mp3,so_mp3,some_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_ling_mp3,sound_effect_kacha_mp3,sound_effect_win_mp3,start_mp3,stop_mp3,take_mp3,sunny_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,thin_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,together_mp3,too_mp3,topday_mp3,try_mp3,two_mp3,under_mp3,up_mp3,us_mp3,use_mp3,very_mp3,walk_mp3,want (2)_mp3,want_mp3,war_mp3,warm_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,work_mp3,would_mp3,write_mp3,yellow_mp3,yet_mp3,your_mp3,said_mp3,left_sign_normal_png,left_sign_selected_png,middle_sign_normal_png,middle_sign_selected_png,right_sign_normal_png,right_sign_selected_png,launched_boom_0_json,launched_boom_0_png,launched_boom_1_json,launched_boom_1_png,launched_boom_2_json,launched_boom_2_png,start_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,red_boom_png,select_difficult_bg_png,start_game_hover_png,start_game_normal_png,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png,smoke_4_png,smoke_5_png,smoke_6_png,smoke_7_png,smoke_8_png,smoke_9_png,door_png,castle_bottom_png,pum_mp3,kacha_mp3,diao_mp3,congratulation_mp3,a_mp3,about_mp3,add_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,app_mp3,appoint_mp3,around_mp3,as_mp3,ate_mp3,away_mp3,bath_mp3,because_mp3,bee_mp3,before_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,brain_mp3,brown_mp3,but_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,does_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fair_mp3,fall (2)_mp3,fall_mp3,far_mp3,fast_mp3,film_mp3,film(2)_mp3,fine_mp3,first_mp3,five 2_mp3,five 3_mp3,five_mp3,fly_mp3,form_mp3,found_mp3,four_mp3,four(2)_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,god_mp3,going_mp3,goo_mp3,good_mp3,green_mp3,grow_mp3,guilt_mp3,gun_mp3,had_mp3,has_mp3,have_mp3,he_mp3,hear_mp3,heard_mp3,help_mp3,her_mp3,him_mp3,his_mp3,hold_mp3,hot_mp3,hour_mp3,how_mp3,i_mp3,in_mp3,into_mp3,is (2)_mp3,is_mp3,is(3)_mp3,it_mp3,jump_mp3,just_mp3,keep_mp3,kind_mp3,lab_mp3,left_mp3,light_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,male_mp3,many_mp3,may_mp3,me_mp3,mime_mp3,much_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,no(2)_mp3,not_mp3,nut_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,our_mp3,out_mp3,over_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,say_mp3,see_mp3,seven_mp3,shall_mp3,she_mp3,show_mp3,sick_mp3,sing_mp3,sit_mp3,sleep_mp3,small_mp3,so_mp3,some_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_ling_mp3,sound_effect_kacha_mp3,sound_effect_win_mp3,start_mp3,stop_mp3,take_mp3,sunny_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,thin_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,together_mp3,too_mp3,topday_mp3,try_mp3,two_mp3,under_mp3,up_mp3,us_mp3,use_mp3,very_mp3,walk_mp3,want (2)_mp3,want_mp3,war_mp3,warm_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,work_mp3,would_mp3,write_mp3,yellow_mp3,yet_mp3,your_mp3,said_mp3,left_sign_normal_png,left_sign_selected_png,middle_sign_normal_png,middle_sign_selected_png,right_sign_normal_png,right_sign_selected_png,launched_boom_0_json,launched_boom_0_png,launched_boom_1_json,launched_boom_1_png,launched_boom_2_json,launched_boom_2_png,start_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png",
 			"name": "preload"
 		}
 	],
@@ -52,11 +52,6 @@
 			"url": "textures/movie_clip.png"
 		},
 		{
-			"name": "rainbow_svg",
-			"type": "image",
-			"url": "textures/rainbow.svg"
-		},
-		{
 			"name": "red_boom_png",
 			"type": "image",
 			"url": "textures/red_boom.png"
@@ -67,11 +62,6 @@
 			"url": "textures/select_difficult_bg.png"
 		},
 		{
-			"name": "sight_word_park_svg",
-			"type": "image",
-			"url": "textures/sight_word_park.svg"
-		},
-		{
 			"name": "start_game_hover_png",
 			"type": "image",
 			"url": "textures/start_game_hover.png"
@@ -80,11 +70,6 @@
 			"name": "start_game_normal_png",
 			"type": "image",
 			"url": "textures/start_game_normal.png"
-		},
-		{
-			"name": "start_scene_bg_svg",
-			"type": "image",
-			"url": "textures/start_scene_bg.svg"
 		},
 		{
 			"name": "easy_go_scene_json",
@@ -405,16 +390,6 @@
 			"name": "castle_bottom_png",
 			"type": "image",
 			"url": "textures/castle_bottom.png"
-		},
-		{
-			"name": "arrow_right_svg",
-			"type": "image",
-			"url": "textures/arrow_right.svg"
-		},
-		{
-			"name": "smiling_yellow_head_svg",
-			"type": "image",
-			"url": "textures/smiling_yellow_head.svg"
 		},
 		{
 			"name": "pum_mp3",
@@ -1625,6 +1600,31 @@
 			"name": "start_png",
 			"type": "image",
 			"url": "textures/start.png"
+		},
+		{
+			"name": "arrow_right_png",
+			"type": "image",
+			"url": "textures/arrow_right.png"
+		},
+		{
+			"name": "rainbow_png",
+			"type": "image",
+			"url": "textures/rainbow.png"
+		},
+		{
+			"name": "sight_word_park_png",
+			"type": "image",
+			"url": "textures/sight_word_park.png"
+		},
+		{
+			"name": "smiling_yellow_head_png",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.png"
+		},
+		{
+			"name": "start_scene_bg_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
 		}
 	]
 }
