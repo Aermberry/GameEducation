@@ -4,6 +4,8 @@ class CalculationPresenter {
 	public maxQuestionCount = 10;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
+	private answerSum: SumAndCarry;
+	private questionIndex: number;
 
 	public constructor() {
 	}
@@ -16,14 +18,14 @@ class CalculationPresenter {
 		this.carryNeed = await this.view.confirmCarryNeedAsync();
 		this.view.correctAnswerCount = 0;
 		for (let questionIndex = 0; questionIndex < this.maxQuestionCount; questionIndex++) {
-			this.view.questionIndex = questionIndex + 1;
+			this.questionIndex = questionIndex + 1;
 			let pair = this.numberGenerator.generate();
 			let addend = this.view.addend = pair[0];
 			let augend = this.view.augend = pair[1];
 
-			let answerSum = await this.getAnswerSumAndCarryAsync();
+			this.answerSum = await this.getAnswerSumAndCarryAsync();
 			let correctSum = this.getCorrectSumAndCarry(addend, augend);
-			if (answerSum.equals(correctSum, this.carryNeed)) {
+			if (this.answerSum.equals(correctSum, this.carryNeed)) {
 				this.correctAnswerCount++;
 				this.view.correctAnswerCount = this.correctAnswerCount;
 				this.view.alertAnswerCorrect();
@@ -31,21 +33,30 @@ class CalculationPresenter {
 			} else {
 				this.view.alertAnswerWrong();
 			}
+			this.view.enableFinishImage();
+		}
 
+	}
+
+	//当点击完成按钮时
+	public async onInputFinish(): Promise<void>
+	{		
+			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
-			await this.showCorrectSumAndCarry(correctSum);
+			await this.showCorrectSumAndCarry(this.answerSum);
 			
 			await this.view.nextQuestionButtonClickAsync();
+			this.view.questionIndex = this.questionIndex;
+			this.view.disableFinishImage();
+			this.view.showFinishImage();
 			this.view.closeBox();
 			this.view.hideNextQuestionButton();
 			this.view.hideCorrectGroup();
 			this.view.hideAnswerStatus();
 			this.view.clearUserInput();
-		}
-
-		this.view.openRankingScene();
 	}
+
 
 	/**
 	 * 获取用户输入的和、进位

@@ -62,7 +62,7 @@
 		</e:Group>
 		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
 	</e:Group>
-	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="-2" top="0" bottom="-5" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Image horizontalCenter="-2" y="205" source="add_expression_png"/>
@@ -89,5 +89,6 @@
 	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
 	<ns1:ImageButton id="nextQuestionButton" y="725" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="15" visible="false"/>
 	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
+	<e:Image id="finishImage" x="1342" y="735.91" source="finish_normal_png" anchorOffsetX="0" width="181.64" anchorOffsetY="0" height="86.82" touchEnabled="false"/>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>

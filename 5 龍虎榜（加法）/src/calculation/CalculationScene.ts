@@ -24,6 +24,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private boxClosedImage: eui.Image;
 	private boxOpenTweenGroup: egret.tween.TweenGroup;
 	private strawberryImage: eui.Image;
+	private finishImage: eui.Image;
 
 	private numberPad: NumberPad;
 
@@ -43,7 +44,26 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.finishImage, true);
+		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onFinishOver, this);
+		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onFinishOut, this);
+		this.finishImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onFinishClick, this);
 		this.presenter.loadView(this);
+	}
+
+	private onFinishClick(e: egret.TouchEvent): void
+	{
+		this.presenter.onInputFinish();
+	}
+
+	private onFinishOver(e: egret.TouchEvent): void
+	{
+		(e.target as eui.Image).source = 'finish_over_png';
+	}
+
+	private onFinishOut(e: egret.TouchEvent): void
+	{
+		(e.target as eui.Image).source = 'finish_normal_png';
 	}
 
 	public set questionIndex(value: number)
@@ -199,6 +219,26 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.correctGroup.visible = true;
 	}
 
+	public showFinishImage(): void
+	{
+		this.finishImage.visible = true;
+	}
+
+	public hideFinishImage(): void
+	{
+		this.finishImage.visible = false;
+	}
+
+	public enableFinishImage(): void
+	{
+		this.finishImage.touchEnabled = true;
+	}
+
+	public disableFinishImage(): void
+	{
+		this.finishImage.touchEnabled = false;
+	}
+
 	public hideCorrectGroup(): void
 	{
 		this.correctGroup.visible = false;
@@ -227,8 +267,4 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.correctSumGroup.$children.forEach(x => (x as EditableLabel).text = '');
 	}
 
-	public openRankingScene(): void
-	{
-		Main.instance.gotoScene(new RankingScene());
-	}
 }

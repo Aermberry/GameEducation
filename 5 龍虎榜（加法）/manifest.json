@@ -12,7 +12,7 @@
 	],
 	"game": [
 		"bin-debug/components/EditableLabel.js",
-		"bin-debug/scenes/StartScene.js",
+		"bin-debug/calculation/CalculationPresenter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -21,7 +21,7 @@
 		"bin-debug/biz/MediumNumberGenerator.js",
 		"bin-debug/biz/SeniorNumberGenerator.js",
 		"bin-debug/biz/UserCompleteAnswerError.js",
-		"bin-debug/calculation/CalculationPresenter.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/calculation/CalculationScene.js",
 		"bin-debug/calculation/ICalculationView.js",
 		"bin-debug/AssetAdapter.js",
@@ -30,7 +30,6 @@
 		"bin-debug/components/ImageButton.js",
 		"bin-debug/components/NumberPad.js",
 		"bin-debug/domains/SumAndCarry.js",
-		"bin-debug/scenes/RankingScene.js",
-		"bin-debug/LoadingUI.js"
+		"bin-debug/scenes/StartScene.js"
 	]
 }
