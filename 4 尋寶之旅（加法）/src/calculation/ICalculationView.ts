@@ -52,6 +52,7 @@ interface ICalculationView {
 	hideNextQuestionButton(): void;
 	/** 等待用户点击“下一题" */
 	nextQuestionButtonClickAsync(): Promise<void>;
+	boyshowhie(): void;
 
 	openBox(): void;
 	closeBox(): void;

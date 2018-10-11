@@ -63,6 +63,7 @@ class CalculationPresenter {
 				this.view.hideNextQuestionButton();
 				this.view.closeBox();
 				this.view.clearUserInput();
+				this.view.boyshowhie();
 			}
 		}
 

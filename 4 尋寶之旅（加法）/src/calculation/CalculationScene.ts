@@ -77,10 +77,16 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private initRestartExitButton(): void
 	{
 		mouse.setButtonMode(this.restartImage, true);
-		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.startCalulation, this.presenter);
+		// this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.startCalulation, this.presenter);
+		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestartImageClick , this);
 		mouse.setButtonMode(this.exitImage, true);
 		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, () => window.close(), this);
 	}
+
+	private onRestartImageClick(): void {
+		Main.instance.gotoScene(new StartScene());
+	}
+
 
 	private initAngelGroup(): void
 	{
@@ -243,7 +249,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	}
 	/** 显示用户“是否进位”选择错误的提示 */
 	public showNeedCarryError(): void
-	{
+	{	
 		this.bottomDialogGroup.visible = true;
 		this.bottomDialogBodyLabel.text = '如果個位數相加大於或等於10，就應進1至十位';
 	}
@@ -305,9 +311,17 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		});
 	}
 
+	public boyshowhie(): void
+	{
+		this.boyImage.visible = true;
+		this.boyMovie.visible = false;
+	};
+
 	public openBox(): void
 	{
 		this.boxOpenTweenGroup.play(0);
+		this.boyImage.visible = false;
+		this.boyMovie.visible = true;
 		
 	}
 	public closeBox(): void
