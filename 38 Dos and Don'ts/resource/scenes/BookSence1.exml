@@ -37,24 +37,24 @@
 	<e:Image id="studentsImg" source="students_png" x="303" y="493.5"/>	
 	</e:Group>
  
-	<e:Group id="dialogGroup" visible="false">
+	<e:Group id="dialogGroup">
 	<e:Image source="blue_frame_png"  x="825.5" y="-2.4"/>
 
 	<e:Image id="teacherHeadImg" source="teacher_head_normal_png" x="980.97" y="27.27"/>	
 	<e:Image id="teacherTouchImg" source="pink_circle_png" x="980.97" y="27.27"/>
 
 	<e:Image id="pinkFrameImg" source="pink_frame_png" x="560" y="640"/>
-	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="586" y="709.5" textColor="0x000000" size="50"/>
-	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="588.5" y="769.5" textColor="0x000000" size="50"/>
-	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="159.27" size="70" textColor="0x000000"/>
-	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="300" size="70" textColor="0x000000"/>
+	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="597" y="714.5" textColor="0x000000" size="49"/>
+	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="597.5" y="769.5" textColor="0x000000" size="49"/>
+	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="174.42" size="68" textColor="0x000000"/>
+	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="984" y="257.57" size="68" textColor="0x000000"/>
 	
 	
 
 
 	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105">
 		<e:Image source="fork_icon_png" x="0" y="0" scaleX="1" scaleY="1"/>
-		<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="2.5000000000002274" y="22.499999999999773" scaleX="1" scaleY="1"/>
+		<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" top="0" bottom="0" left="-12" right="-17" anchorOffsetX="0"/>
 	</e:Group>
 	
 	</e:Group>
@@ -65,8 +65,8 @@
 	<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/> 	
 	</e:Group>
     
-	<e:Group id="grayCanvasGroup" horizontalCenter="0" verticalCenter="0">
-	<e:Image id="image" source="gray_canvas_png"  verticalCenter="0" horizontalCenter="0" alpha="0.8" />
+	<e:Group id="grayCanvasGroup" horizontalCenter="0" verticalCenter="0" visible="false">
+	<e:Image id="image" source="gray_canvas_png"  verticalCenter="-1" horizontalCenter="0" alpha="0.8" />
 	<e:Label id="label" text="She is in the classroom now." fontFamily="ComicSansMS3" horizontalCenter="0" verticalCenter="0" size="100"/>
 	</e:Group>
 	

@@ -21,10 +21,10 @@
 		<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
 	</e:Group>
 
-    <e:Group id="teacherDialogGroup" visible="false" >	
+    <e:Group id="teacherDialogGroup"  visible="false">	
 	    <e:Image source="blue_frame_png" x="875.5" y="43"/>
-		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1065" y="212"/>
-		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1087" y="320"/>	    	
+		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1065" y="230.18"/>
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1087" y="304.85"/>	    	
    </e:Group>
 
     

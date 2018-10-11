@@ -32,10 +32,10 @@
 		<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/> 	
 	</e:Group>
     
-	<e:Group id="teacherDialogGroup" visible="false" >
+	<e:Group id="teacherDialogGroup"  visible="false">
      	<e:Image source="left_blue_frame_png" x="368" y="98"/>		
-		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="447" y="230"/>	
-		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="448" y="308"/>	
+		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="447" y="248.18"/>	
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="448" y="323.15"/>	
    </e:Group>
 
 	<e:Image id="teacherUnhappyImg" source="teacher_head_unhappy_png" x="415" y="112" visible="false"/>
