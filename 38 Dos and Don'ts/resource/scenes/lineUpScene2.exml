@@ -14,8 +14,11 @@
   
    
 
-   	<e:Image id="forkIconImg" source="fork_icon_png" x="1706" y="1152.5" alpha="0.3"/>
-	<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="1708.5" y="1175"/>
+
+	<e:Group id="exitLogo" x="1706" y="1152.5" visible="false">
+		<e:Image id="forkIconImg" source="fork_icon_png" x="0" y="0" alpha="0.3"/>
+		<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="2.5" y="22.5"/>
+	</e:Group>
 	<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
 
 
@@ -34,11 +37,24 @@
     
 	<e:Group id="teacherDialogGroup"  visible="false">
      	<e:Image source="left_blue_frame_png" x="368" y="98"/>		
-		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="447" y="248.18"/>	
-		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="448" y="323.15"/>	
+		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="447" y="278.48"/>	
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="448" y="338.3"/>	
    </e:Group>
 
-	<e:Image id="teacherUnhappyImg" source="teacher_head_unhappy_png" x="415" y="112" visible="false"/>
-	<e:Image id="teacherTouchImg" source="blue_circle_png" x="415" y="112" visible="false"/>
+	<e:Image id="teacherUnhappyImg" source="teacher_head_unhappy_png" x="415" y="124.12" visible="false"/>
+	<e:Image id="teacherTouchImg" source="blue_circle_png" x="415" y="124.12" visible="false"/>
+	
+	<e:Group id="fram_exitTips" x="0" y="0" visible="false">
+		<e:Image id="MaskImage" source="gray_canvas_png" x="0" y="0" alpha="0.8"/>
+		<e:Group x="497" y="451">
+			<e:Image x="0" y="0" source="fram_exitTips_png"/>
+			<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="68" fontFamily="ComicSansMS3" bold="true" horizontalCenter="0"/>
+			<e:Group y="195.49" x="211">
+			<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
+			<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+
 
 </e:Skin>
