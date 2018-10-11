@@ -74,7 +74,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	private async nextDialog(): Promise<void> {
 		this.currentSoundChannl.stop();
 		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0, 1);
-		this.firstLabel.text = "Yes,you can.";
+		this.firstLabel.text = "Yes, you can.";
 		this.secondLabel.text = "You can ride your bicycle here.";
 		await ThreadUtility.sleep(11200);
 		this.nextGroup.visible = true;
