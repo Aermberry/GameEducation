@@ -6,6 +6,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton2: eui.Image;
 	private startMask: eui.Rect;
 
+	private currentSoundChannel: egret.SoundChannel;
+
 	public constructor() {
 		super();
 	}
@@ -41,11 +43,13 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		
 	}
 
-	private onStartButton2Click(): void
+	private async onStartButton2Click(): Promise<void>
 	{
-		this.splashTweenGroup.play(0);
+		// this.splashTweenGroup.play(0);
 		this.startMask.visible = false;
 		this.startButton2.visible = false;
+		await this.splashTweenGroup.playOnceAsync();
+		this.currentSoundChannel = (RES.getRes('select_degree_mp3') as egret.Sound).play(0, 1);
 	}
 
 	private onJuniorImageClick(): void
