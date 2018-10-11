@@ -391,6 +391,13 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.boyImage.visible = false;
 		this.boyMovie.visible = true;
 	}
+
+	public boyshowhie():void
+	{
+		this.boyImage.visible = true;
+		this.boyMovie.visible = false;
+	}
+
 	public closeBox(): void
 	{
 		this.boxOpenImage.alpha = 0;
