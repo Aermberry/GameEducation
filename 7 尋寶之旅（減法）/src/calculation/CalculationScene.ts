@@ -388,7 +388,8 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public openBox(): void
 	{
 		this.boxOpenTweenGroup.play(0);
-		
+		this.boyImage.visible = false;
+		this.boyMovie.visible = true;
 	}
 	public closeBox(): void
 	{
