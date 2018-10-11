@@ -48,6 +48,11 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		// this.splashTweenGroup.play(0);
 		this.startMask.visible = false;
 		this.startButton2.visible = false;
+		this.playSplash();
+	}
+
+	private async playSplash(): Promise<void>
+	{
 		await this.splashTweenGroup.playOnceAsync();
 		this.currentSoundChannel = (RES.getRes('select_degree_mp3') as egret.Sound).play(0, 1);
 	}
