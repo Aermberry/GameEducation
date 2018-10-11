@@ -4,7 +4,7 @@
 	<e:Group left="0" top="0" bottom="232" right="0">
 		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
 		<e:Rect top="70" left="85" right="85" bottom="70" fillColor="0xffffff"/>
-		<e:Image id="startButton" y="960" anchorOffsetY="90" horizontalCenter="0" source="start_button_normal_png" />
+		<e:Image id="startButton" y="996.36" anchorOffsetY="117.27" horizontalCenter="-3" source="start_button_normal_png"  anchorOffsetX="0" width="156.36" height="156.36"/>
 		<e:Label text="以下是一個有關電視新聞報道的活動。你要留意問題，然後細心聆聽該段新聞報道，再回答相關的問題。\r\r\r準備好了就按綠色按鈕開始吧。" textColor="0x000000" left="360" right="360" top="262" size="70" fontFamily="标楷体"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
