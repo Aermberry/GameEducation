@@ -59,7 +59,7 @@ class Level08Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		if ((e.data as number) == 2) {
+		if ((e.data as number) == 3) {
             e.preventDefault();
 			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);

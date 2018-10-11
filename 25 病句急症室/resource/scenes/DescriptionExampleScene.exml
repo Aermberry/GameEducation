@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="DescriptionExampleSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 <w:Config id="164d58fd342" ></w:Config>
-<e:Image source="description_example_frame_png"/>
-<e:Image source="description_example_bg_png" y="154"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="标楷体" size="86.4" x="28" y="25"/>
-<e:Label text=" 第一學習階段" fontFamily="标楷体" size="86.4" x="412" y="25"/>
-<e:Image source="head_icon_png" x="1480" y="24"/>
-<e:Image source="right_headline_png" x="1610" y="24"/>
-<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="金梅新中圓國際碼"/>
-<e:Image id="cueBoxImg" source="cue_box_png" x="1269" y="239"/>
-<e:Image source="doctor_png" x="0" y="341"/>
+<e:Image source="description_example_frame_png" locked="true"/>
+<e:Image source="description_example_bg_png" y="154" locked="true"/>
+<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" locked="true"/>
+<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" locked="true"/>
+<e:Image source="head_icon_png" x="1480" y="24" locked="true"/>
+<e:Image source="right_headline_png" x="1610" y="24" locked="true"/>
+<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體" locked="true"/>
+<e:Image id="cueBoxImg" source="cue_box_png" x="1269" y="239" locked="true"/>
+<e:Image source="doctor_png" x="0" y="341" locked="true"/>
 
-<e:Label id="descriptionLabel" text="句子多了些沒有用的東西，除了會給\r人不通順的感覺之外，有時還會令人\r錯誤理解句子的意思呢！" fontFamily="金梅新中圓國際碼" size="40" textColor="#000000" x="820" y="588" lineSpacing="25"/>
+<e:Label id="descriptionLabel" text="句子多了些沒有用的東西，除了會給\r人不通順的感覺之外，有時還會令人\r錯誤理解句子的意思呢！" fontFamily="華康標楷體" size="40" textColor="#000000" x="820" y="588" lineSpacing="25" locked="true"/>
 
-<e:Image source="trash_can_png" x="1372" y="966"/>
-<e:Image source="trash_can_cover_png" x="1372" y="901"/>
+<e:Image source="trash_can_png" x="1372" y="966" locked="true"/>
+<e:Image source="trash_can_cover_png" x="1372" y="901" locked="true"/>
 
-<e:Button id="startButton" x="1663" y="777"  label="下頁">
+<e:Button id="startButton" x="1663" y="777"  label="下頁" locked="true">
 	<e:skinName>
 		<e:Skin states="up,down,disabled">
 		<e:Image width="100%" height="100%" source="blue_btn_png"/>
@@ -25,5 +25,5 @@
 	</e:skinName>
 </e:Button>
 
-<ns1:ExitButton id="exitBtn" skinName="ExitTargetBTn" x="1762" y="1130" visible="false"/>
+<ns1:ExitButton id="exitBtn" skinName="ExitTargetBTn" x="1762" y="1130" visible="false" locked="true"/>
 </e:Skin>
