@@ -83,7 +83,8 @@
     <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/en/other/important_notices.html">Important Notices</a> | <a href="http://wlts.edb.hkedcity.net/en/other/privacy_policy.html"
         style="margin-right: 30px;">Privacy Policy</a>Last revision date: 29 July 2018)
     </div>
-    <label style="font-family: Kristen_ITC; color: transparent;" />
+    <label style="font-family: Kristen_ITC; color: transparent;">The Spelling Cannon1. Look at the words  carefully.2. Click (the green horn icon)   to listen to the word.Good job!2. Choose the word which is   splet correctly3. Click (the green horn icon)    to listen to the word.theSpellCannondescriptionOneTextdescriptionTwoText</label>
+    <label style="font-family: Hoffmanhand; color: transparent;">Ready!Go!!Good job! Youhave conquereda city!Play again!Exit</label>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -128,7 +129,7 @@
              * }
              **/
             egret.runEgret({
-                renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                renderMode: "canvas", audioType: 0, calculateCanvasScaleFactor: function (context) {
                     var backingStore = context.backingStorePixelRatio ||
                         context.webkitBackingStorePixelRatio ||
                         context.mozBackingStorePixelRatio ||
