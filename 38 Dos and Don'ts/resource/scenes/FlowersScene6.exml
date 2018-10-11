@@ -18,11 +18,15 @@
 		<e:Label id="firstLabel" text="......" size="45" textColor="0x000000" fontFamily="ComicSansMS3"  x="813" y="903"/>
 		<e:Label id="secondLabel" text="  " size="45" textColor="0x000000" fontFamily="ComicSansMS3"  x="813" y="1013.07"/>		
 		<e:Image id="orangeCircleImg" source="flower_normal_circle _png" x="1092.5" y="772"/>
-		<e:Image id="workerHeaderImg" source="flower_worker_normal_png" x="1113" y="787.4"/>		
+		<e:Image id="workerHeaderImg" source="flower_worker_normal_png" x="1113" y="787.4"/>
+		<e:Group x="1706" y="1152.5000000000002" scaleX="1" scaleY="1">
+			<e:Image id="forkIconImg" source="green_hover_png" x="0" y="0"/>
+			<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="2.5" y="22.5"/>
+		</e:Group>		
 	</e:Group>
 
-		<e:Image id="forkIconImg" source="green_hover_png" x="1706" y="1152.5"/>
-		<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="1708.5" y="1175"/>
+
+
 		<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105" locked="true"/>
   
   <e:Group id="nextGroup" visible="false">
@@ -30,7 +34,16 @@
 	   <e:Label id="nextLabel" text="Next" textColor="0x000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
 	   <e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
   </e:Group>
-	
 	<e:Group id="workerTouchEventGroup" x="1092.5" y="772" width="131" height="131"/>
-				
+	<e:Group id="fram_exitTips" x="0" y="0" visible="false">
+		<e:Image id="MaskImage" source="gray_canvas_png" x="0" y="0" alpha="0.8"/>
+		<e:Group x="497" y="451">
+			<e:Image x="0" y="0" source="fram_exitTips_png"/>
+			<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="68" fontFamily="ComicSansMS3" bold="true" horizontalCenter="0"/>
+			<e:Group y="195.49" x="211">
+			<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
+			<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>				
 </e:Skin>
