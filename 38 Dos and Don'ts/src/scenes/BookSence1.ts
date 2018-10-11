@@ -12,6 +12,7 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	private teacher2Label:eui.Label;
 	private teacherHeadImg:eui.Image;
 
+	private exitGroup:eui.Group;
 	private nextBtnGroup:eui.Group;
 
 	public constructor() {
@@ -29,6 +30,7 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
         mouse.enable(this.stage);
 		this.playAnimation();
+		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>window.close(),this);
 	}
 
 	private async playAnimation():Promise<void>

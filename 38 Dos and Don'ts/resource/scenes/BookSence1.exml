@@ -44,21 +44,24 @@
 	<e:Image id="teacherTouchImg" source="pink_circle_png" x="980.97" y="27.27"/>
 
 	<e:Image id="pinkFrameImg" source="pink_frame_png" x="560" y="640"/>
-	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="586" y="709.5" textColor="#000000" size="50"/>
-	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="588.5" y="769.5" textColor="#000000" size="50"/>
-	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="159.27" size="70" textColor="#000000"/>
-	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="300" size="70" textColor="#000000"/>
+	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="586" y="709.5" textColor="0x000000" size="50"/>
+	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="588.5" y="769.5" textColor="0x000000" size="50"/>
+	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="159.27" size="70" textColor="0x000000"/>
+	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="300" size="70" textColor="0x000000"/>
 	
 	
-	<e:Image source="fork_icon_png" x="1706" y="1152.5"/>
-	<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
-	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
+
+
+	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105">
+		<e:Image source="fork_icon_png" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="2.5000000000002274" y="22.499999999999773" scaleX="1" scaleY="1"/>
+	</e:Group>
 	
 	</e:Group>
 
 	<e:Group id="nextGroup" visible="false">
 	<e:Image  source="next_noraml_png" x="1653.5" y="970"/>
-	<e:Label text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+	<e:Label text="Next" textColor="0x000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
 	<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/> 	
 	</e:Group>
     

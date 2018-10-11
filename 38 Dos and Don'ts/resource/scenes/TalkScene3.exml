@@ -9,22 +9,22 @@
 	</e:Group>
     
 	<e:Image id="forkIconImg" source="fork_icon_png" x="1706" y="1152.5" alpha="0.3"/>
-	<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
+	<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="1708.5" y="1175"/>
 	<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
     
 	<e:Image source="pink_right_frame_png" x="519" y="326"/>
-	<e:Label id="amyDialogLbel" text="Can we talk now?" textColor="#000000" fontFamily="ComicSansMS3" size="50" x="555" y="410"/>
+	<e:Label id="amyDialogLbel" text="Can we talk now?" textColor="0x000000" fontFamily="ComicSansMS3" size="50" x="555" y="410"/>
   
    <e:Group id="nextGroup" visible="false">
 		<e:Image  source="next_noraml_png" x="1653.5" y="970"/>
-		<e:Label id="nextLabel" text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+		<e:Label id="nextLabel" text="Next" textColor="0x000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
 		<e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
 	</e:Group>
 
     <e:Group id="teacherDialogGroup" visible="false" >	
 	    <e:Image source="blue_frame_png" x="875.5" y="43"/>
-		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="#000000" x="1065" y="212"/>
-		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="#000000" x="1087" y="320"/>	    	
+		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1065" y="212"/>
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1087" y="320"/>	    	
    </e:Group>
 
     
