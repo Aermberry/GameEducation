@@ -1,0 +1,32 @@
+{"mc":{
+	"zhiqiang":{
+		"frameRate":24,
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"6B47EF1C",
+			"x":10,
+			"y":0,
+			"duration":2
+			},
+			{
+			"res":"C4FEB546",
+			"x":0,
+			"y":36,
+			"duration":2
+			},
+			{
+			"res":"6B47EF1C",
+			"x":10,
+			"y":0,
+			"duration":2
+			}
+			]
+}},
+	"res":{
+		"6B47EF1C":{"x":0,"y":0,"w":325,"h":608},
+		"C4FEB546":{"x":325,"y":0,"w":344,"h":537}
+	}}

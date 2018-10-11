@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene24Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165836d3dd9" ></w:Config>
+	<e:Label text="Well done,children!\nDid you enjoy the game?\nIt's great fun.\nBye!" y="188" textAlign="center" size="87" lineSpacing="40" textColor="0xec3596" horizontalCenter="13.5" fontFamily="Comic Sans MS" anchorOffsetY="0" height="504.36"/>
+</e:Skin>

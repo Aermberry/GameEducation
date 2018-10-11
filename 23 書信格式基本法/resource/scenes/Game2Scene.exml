@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Game2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*"  >
+	<w:Declarations>
+		<tween:TweenGroup id="nextQuestionAnimation">
+			<tween:TweenItem target="{lackLabel}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lackNameGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctLabel}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctNameGroup}">
+				<tween:Wait duration="1050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="nextLevelAnimation">
+			<tween:TweenItem target="{correctLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{correctNameGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1657a5554c2" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+	<e:Label id="lackLabel" text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80" fontFamily="華康楷書體"/>
+	<e:Label id="correctLabel" text="請選出正確的上款：" x="184" y="45" textColor="0xF40000" size="80" fontFamily="華康楷書體" alpha="0"/>
+	<e:Group width="1570" height="1306" x="26" y="125">
+		<e:Image left="0" right="0" top="0" bottom="0" source="background_clock_png"/>
+		<!--<ns1:ContentComponent width="1008" height="1068" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到妳的來信，十分掛念，妳的身體好嗎？" text="妳到日本工作已有三個多月，我和妹妹都十分掛念妳。妹妹會在壹月十日舉行的學校開放日中表演，她希望妳能回來欣賞，妳可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用妳和媽媽擔心。當妳回來時，我們壹定給妳壹張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>-->
+		<ns1:ContentComponent id="contentComponent" width="940" height="1088" x="74" y="59" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan=" "/>
+		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="234" y="785.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<ns1:AlertElderComponent id="alertElderComponent" width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:Label text="妳 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>
+			<e:Image width="480" height="290" x="16" y="76" source="box_and_paper_png"/>
+		</e:Group>
+		
+	</e:Group>
+	<e:Group id="correctNameGroup" width="270" height="1306" x="1625" y="125" alpha="0">
+		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="媽 媽" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="陳 老 師" fillColor="0x999999"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="爸 爸" fillColor="0x999999"/>
+	</e:Group>
+	<e:Group id="lackNameGroup" width="270" height="1306" x="1625" y="125">
+		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="上款" fillColor="0x6efd31"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="下款" fillColor="0xfb0d1c"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="正文" fillColor="0xfc9725"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="600" text="日期" fillColor="0xcb6cfa"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝頌語" fillColor="0x376bfc"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
+	</e:Group>
+	<ns1:NextLevelComponent id="nextLevelComponent" width="266" height="89" x="1628" y="1300" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+</e:Skin>

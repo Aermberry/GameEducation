@@ -1,3 +1,7 @@
+declare class BackToIndexButtonSkin extends eui.Skin{
+}
+declare class PauseButtonSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}

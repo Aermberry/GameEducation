@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165b2df3f1d" ></w:Config>
+	<e:Rect width="1463.63" height="1198.18"  x="228.18" y="120.91" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xfffcfc" strokeWeight="10" strokeColor="0xf2041e" ellipseHeight="100" ellipseWidth="100"/>
+	<e:Label text="Well Done !" x="641" y="1125.88" textColor="0x262626" size="124" fontFamily="Comic Sans MS"/>
+	<e:Image source="man_png" x="569" y="199.88"/>
+</e:Skin>

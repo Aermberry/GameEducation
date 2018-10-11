@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HobbySkin" width="826" height="1426" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165adc44d95" ></w:Config>
+	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xFFFF7D"/>
+	<e:Image source="basketball_png" x="326" y="555.8"/>
+	<e:Image source="circle_500x500_png" x="24.49" y="22.3"/>
+	<e:Image source="piano_png" x="66.94" y="24.24"/>
+	<e:Image source="reading_png" x="63" y="986.28"/>
+	<e:Image source="sing_png" x="526" y="161.28"/>
+	<e:Image source="circle_380x380_png" x="23.94" y="997.37"/>
+</e:Skin>

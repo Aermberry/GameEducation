@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene11Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="display">
+			<tween:TweenItem target="{group00}"/>
+			<tween:TweenItem target="{group01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="5500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="9800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group03}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="15800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup/>
+	</w:Declarations>
+	<w:Config id="1657f7c429b"></w:Config>
+	<e:Group id="group00" left="0" right="0" y="224">
+		<e:Label id="kenLabel" text="Ken" y="87.88" size="80" lineSpacing="80" textAlign="center" left="596" right="1189"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" height="105" anchorOffsetX="0" anchorOffsetY="87.88"/>
+		<e:Label text="asks" y="252.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" height="105"/>
+		<e:Label id="KingLabel" text="King" y="90.91" size="80" lineSpacing="80" textAlign="center" left="944" right="820"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" anchorOffsetY="90.91" height="105" anchorOffsetX="3.03"/>
+		<e:Label id="KongLabel" text="Kong " y="90.91" size="80" lineSpacing="80" textAlign="center" left="1125" right="595"
+		         textColor="0xc26ff7"  fontFamily="Comic Sans MS" anchorOffsetY="90.91" height="105" anchorOffsetX="-3.03"/>
+		<e:layout>
+			<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="group01" left="0" right="0" y="376">
+	<e:Label text="To give a hand." y="392.06" size="80"
+	         lineSpacing="80" textAlign="center" left="684" right="683" textColor="0xC26FF7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="101.21"/>
+		<e:layout>
+		<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="group02" left="0" right="0" y="548">
+	<e:Label id="KingLabel0" text="King" y="433.33" size="80"
+	         lineSpacing="80" textAlign="center" left="603" right="1161" textColor="0xC26FF7"  fontFamily="Comic Sans MS" height="105" anchorOffsetX="-12.12" anchorOffsetY="433.33"/>
+		<e:Label id="konglabel0" text="Kong" y="421.21" size="80" lineSpacing="80" textAlign="center" left="784" right="960" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105" anchorOffsetY="421.21" anchorOffsetX="0"/>
+		<e:Label text="begs" y="528.06" size="80" lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105"/>
+		<e:Label id="kenLabel0" text="Ken" y="418.18" size="80" lineSpacing="80" textAlign="center" left="1183" right="602" textColor="0xC26FF7" fontFamily="Comic Sans MS" height="105" anchorOffsetX="3.03" anchorOffsetY="418.18"/>
+		<e:layout>
+		<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle" paddingTop="0"/>
+		</e:layout>
+	</e:Group>
+	
+	<e:Button id="nextButton" label="Next" x="1476" y="895.88" anchorOffsetX="0" width="200.61" anchorOffsetY="0" height="91.15"  visible="false"/>
+	
+	<e:Label id="headerLabel" text="Click the words in red and listen." y="87.64" textColor="0x509780" size="92" left="0" right="0"
+	         textAlign="center"  fontFamily="Comic Sans MS" visible="false"/>
+	<e:Label id="group03" text="To shake his hand." y="704.06" size="80"
+	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="98.18"/>
+</e:Skin>

@@ -1,0 +1,33 @@
+{
+    "165b2de45c0": {
+        "path": "scenes\\MainScene.ts",
+        "class": "MainScene",
+        "parentPath": ""
+    },
+    "165b2df3f1d": {
+        "backgroundType": "null",
+        "useBgImage": true,
+        "useBgColor": false
+    },
+    "165b2dec6be": {
+        "backgroundType": "user"
+    },
+    "165b35321d8": {
+        "path": "components\\ Resume.ts",
+        "class": " Resume",
+        "parentPath": ""
+    },
+    "165b3540360": {
+        "path": "components\\Options.ts",
+        "class": "Options",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165c20597f1": {
+        "path": "..\\resource\\components\\AlterLabel.ts",
+        "class": "AlterLabel",
+        "parentPath": ""
+    }
+}

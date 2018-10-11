@@ -95,14 +95,31 @@ class Main extends eui.UILayer {
         })
     }
 
-    private textfield: egret.TextField;
+    private scenes = [
+        new StartScene(),
+        new Level01Scene(),
+        new Level02Scene(),
+        new Level03Scene(),
+        new Level04Scene(),
+        new Level05Scene(),
+        new Level06Scene(),
+        new Level07Scene(),
+        new Level08Scene(),
+        new Level09Scene(),
+        new Level10Scene()
+    ];
+    
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new StartScene());
+        if (egret.getOption('scene')) {
+            this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
+        } else {
+            this.addChild(new StartScene());
+        }
     }
 
     public static instance: Main

@@ -7,7 +7,7 @@ class ResultScene extends eui.Component implements  eui.UIComponent {
 	private contentGroupShowTweenGroup: egret.tween.TweenGroup;
 	private playingScene: PlayingScene;
 
-	private medals = ['ball_svg', 'balloon_svg', 'bird_svg', 'bottle_png', 'cake_svg', 'castle_svg', 'cow_svg', 'ferris_wheel_svg', 'horse_svg', 'pig_svg'];
+	private medals = ['ball_png', 'balloon_png', 'bird_png', 'bottle_png', 'cake_png', 'castle_png', 'cow_png', 'ferris_wheel_png', 'horse_png', 'pig_png'];
 
 	public constructor(playingScene: PlayingScene) {
 		super();

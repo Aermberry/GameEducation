@@ -16,6 +16,7 @@
 		"libs/lib.es5.d.ts",
 		"libs/lib.es2015.promise.d.ts",
 		"src/ArrayExtension.ts",
+		"src/Cloneable.ts",
 		"src/Drag.ts",
 		"src/DragEvent.ts",
 		"src/Drop.ts",

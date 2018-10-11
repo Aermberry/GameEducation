@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question2SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{questionDescription2Image}">
+				<tween:Wait duration="500"/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{balloon1Image}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{balloon2Image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{balloon3Image}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{balloon4Image}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{messageBorderRectImage}">
+				<tween:Wait duration="4750"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{question2Image}">
+				<tween:Wait duration="4750"/>
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="5300"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165acf9770d" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="2"/>
+		<e:Image id="textBackgroundImage" width="766" height="164.36" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1" visible="false"/>
+		<e:Image id="question2StartImage" x="348.64" y="143.33" alpha="1" source="question2_start_png" visible="false"/>
+		<ns1:FormulaComponent id="formulaComponent" width="493.7" height="249.33" x="297.72" y="543.21" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula2_question_png" leftImageSource="formula2_left_png" rightImageSource="formula2_right_png" resultImageSource="formula2_result_png"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<e:Image id="balloon1Image" x="1092.73" y="90.39" source="balloon_most_png"/>
+		<e:Image id="balloon2Image" x="1160.2" y="78.27" source="balloon_more_png"/>
+		<e:Image id="balloon3Image" x="1301.83" y="69.18" source="balloon_less_png" rotation="7.06"/>
+		<e:Image id="balloon4Image" x="1096.61" y="120.3" source="balloon_less_png" rotation="346.1"/>
+		<e:Image id="balloon5Image" x="1216.25" y="78.27" source="balloon_least_png"/>
+		<e:Image x="914.31" y="423.39" source="clown_png"/>
+		<e:Image x="590.3" y="205.61" source="message_border2_png" anchorOffsetX="0" width="484.24" anchorOffsetY="0" height="218.57"/>
+		<e:Image x="635.85" y="235.55" source="question2_description1_png"/>
+		<e:Image id="questionDescription2Image" x="635.85" y="318.28" source="question2_description2_png" alpha="0"/>
+		<e:Image id="messageBorderRectImage" x="299.37" y="427.09" source="message_border_rect_png" anchorOffsetX="0" width="500.87" anchorOffsetY="0" height="80.36" alpha="0"/>
+		<e:Image id="question2Image" x="338.15" y="442.03" source="question2_png" alpha="0"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="440.43" y="596.94" alpha="0"/>
+	</e:Group>
+	
+</e:Skin>

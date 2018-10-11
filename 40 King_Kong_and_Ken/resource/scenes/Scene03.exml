@@ -1,16 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Scene03Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="Scene03Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="diplayTweenGroup">
+			<tween:TweenItem target="{textLabel00}"/>
+			<tween:TweenItem target="{textLabel01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="5350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabel02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="9400"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{textLabel03}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="14450"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="16545bc6d4e" ></w:Config>
-	<e:Group width="824.24" anchorOffsetX="0" right="0" top="0" bottom="224" anchorOffsetY="0">
-		<e:Label text="Ken asks King Kong" x="1300" y="381.00000000000006" scaleX="1" scaleY="1" textColor="0x5d20f5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="bottom"/>
-		<e:Label text="   To give a hand" x="275.24" y="225.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="bottom" anchorOffsetX="0" width="718.7" textAlign="center"/>
-		<e:Label text="King Kong begs Ken" x="285.24" y="235.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="bottom" anchorOffsetX="0" width="718.7" textAlign="left"/>
-		<e:Label text="     To shake his hand" x="295.24" y="245.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="bottom" anchorOffsetX="0" width="718.7" textAlign="center"/>
-		<e:layout>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group width="824.24" anchorOffsetX="0" right="0" top="0" bottom="224" anchorOffsetY="0" x="1095.76" y="0" scaleX="1" scaleY="1">
+			<e:Label id="textLabel00" text="Ken asks King Kong" x="1300" y="381.00000000000006" scaleX="1" scaleY="1" textColor="0x5d20f5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel01" text="   To give a hand" x="275.24" y="225.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel02" text="King Kong begs Ken" x="285.24" y="235.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="left" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel03" text="     To shake his hand" x="295.24" y="245.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
+			<e:layout>
 			<e:VerticalLayout/>
-		</e:layout>
+			</e:layout>
+		</e:Group>
+		<ns1:MovieClipPlayer width="384" height="307" x="97.6" y="205.36000000000004" anchorOffsetX="0" anchorOffsetY="0" dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.6" scaleY="0.6"/>
+		<e:Button id="btnNext" label="Next" x="1558" y="923.73" scaleX="1" scaleY="1" width="188.7" height="120.54" visible="false"/>
 	</e:Group>
-	<ns1:MovieClipPlayer width="384" height="307" x="97.6" y="205.36" anchorOffsetX="0" anchorOffsetY="0"
-	                     dataSet="Meets_json" texture="Meets_png" movieClipName="Meets" scaleX="0.6" scaleY="0.6" />
-	<e:Button label="Next" x="1556.76" y="951"/>
 </e:Skin>
