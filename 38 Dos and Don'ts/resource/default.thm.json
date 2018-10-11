@@ -33,10 +33,10 @@
 		"resource/scenes/BookSence1.exml",
 		"resource/scenes/FlowersScene6.exml",
 		"resource/scenes/LeaveAndEnterScene4.exml",
+		"resource/scenes/lineUpScene2.exml",
 		"resource/scenes/PhotoSCene5.exml",
 		"resource/scenes/ResultScene.exml",
 		"resource/scenes/StartScene.exml",
-		"resource/scenes/TalkScene3.exml",
-		"resource/scenes/lineUpScene2.exml"
+		"resource/scenes/TalkScene3.exml"
 	]
 }
