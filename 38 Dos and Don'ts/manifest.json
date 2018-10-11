@@ -7,8 +7,7 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/eui/eui.js",
 		"libs/modules/promise/promise.js",
-		"libs/modules/mouse/mouse.js",
-		"libs/modules/lzlib/lzlib.js"
+		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
 		"bin-debug/LoadingUI.js",

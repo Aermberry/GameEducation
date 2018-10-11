@@ -33,7 +33,7 @@
 
 	<e:Group id="classRoomGroup">
 	<e:Image id="blackBoard" source="black_board_png"/>	
-	<e:Image id="teacherImg" source="teacher_normal_png" x="360.8" y="-124.4"/>
+	<e:Image id="teacherImg" source="teacher_normal_png" x="360.8" y="69.53"/>
 	<e:Image id="studentsImg" source="students_png" x="303" y="493.5"/>	
 	</e:Group>
  
@@ -50,9 +50,12 @@
 	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="300" size="70" textColor="#000000"/>
 	
 	
-	<e:Image source="fork_icon_png" x="1706" y="1152.5"/>
-	<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
-	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
+
+
+	<e:Group  id="exitGroup" x="1706" y="1152.5" height="105" width="105">
+		<e:Image source="fork_icon_png" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="2.5000000000002274" y="22.499999999999773" scaleX="1" scaleY="1"/>
+	</e:Group>
 	
 	</e:Group>
 
@@ -65,6 +68,15 @@
 	<e:Group id="grayCanvasGroup" horizontalCenter="0" verticalCenter="0">
 	<e:Image id="image" source="gray_canvas_png"  verticalCenter="0" horizontalCenter="0" alpha="0.8" />
 	<e:Label id="label" text="She is in the classroom now." fontFamily="ComicSansMS3" horizontalCenter="0" verticalCenter="0" size="100"/>
+	</e:Group>
+
+	<e:Group id="fram_exitTips" x="497" y="451" visible="false">
+		<e:Image source="frame_exitTips_png" x="0" y="0"/>
+		<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="70" fontFamily="ComicSansMS3" bold="true" x="62"/>
+		<e:Group y="213.67" x="211">
+			<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
+			<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
+		</e:Group>
 	</e:Group>
 	
 </e:Skin>

@@ -11,8 +11,13 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	private teacher1Label:eui.Label;
 	private teacher2Label:eui.Label;
 	private teacherHeadImg:eui.Image;
-
+	private image:eui.Image;
+	private Label_true:eui.Label;
+	private Label_false:eui.Label;
+	
 	private nextBtnGroup:eui.Group;
+	private exitGroup:eui.Group;
+	private fram_exitTips:eui.Group;
 
 	public constructor() {
 		super();
@@ -39,6 +44,22 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	   this.grayCanvasGroup.visible = false;
 	   this.dialogGroup.visible = true;
 	   this.classRoomBook();
+
+	   this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.showExitTips,this);
+	   this.Label_true.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeCurrentWindow,this);
+		this.Label_false.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeExitTipsFrame,this);
+	}
+
+	private showExitTips():void {
+		this.fram_exitTips.visible=true;
+	}
+
+	private closeCurrentWindow(){
+		window.close();
+	}
+
+	private closeExitTipsFrame(){
+		this.fram_exitTips.visible=false;
 	}
 
 	private async classRoomBook():Promise<void>
