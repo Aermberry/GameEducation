@@ -230,6 +230,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.topDialogTitleLabel.text = '要進位嗎？';
 		this.yesButton.visible = true;
 		this.noButton.visible = true;
+		this.angelGroup.visible = true;
 	}
 
 	/** 隐藏是否需要进位的对话框 */
@@ -239,6 +240,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.topDialogTitleLabel.visible = false;
 		this.yesButton.visible = false;
 		this.noButton.visible = false;
+		this.angelGroup.visible = false;
 	}
 
 	/** 获取用户是否需要进位的选择 */
