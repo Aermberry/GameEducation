@@ -10,15 +10,15 @@
 		"libs/modules/mouse/mouse.js"
 	],
 	"game": [
+		"bin-debug/LoadingUI.js",
 		"bin-debug/scenes/HearScene.js",
-		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/scenes/DescriptionScene.js",
 		"bin-debug/scenes/EnterHouseScene.js",
 		"bin-debug/scenes/FeelScene.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/scenes/InsideHouseScene.js",
 		"bin-debug/scenes/MoonRiseScene.js",
 		"bin-debug/scenes/QuestionScene.js",
