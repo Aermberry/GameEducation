@@ -12,14 +12,17 @@
 		<ns1:Girl x="629" y="160" id="girl" />
 		<e:RadioButton id="topCheckBox" name="0" label="" x="263" y="527" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Image id="topCheckBoxImage" x="480" y="549.5" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
+		<e:Image id="topCheckBoxImage" x="555.75" y="549.5" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
 		<e:RadioButton id="middleCheckBox" name="1" label="" x="265" y="762" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Image id="middleCheckBoxImage" x="480" y="784.5" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
+		<e:Image id="middleCheckBoxImage" x="555.76" y="784.5" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
 		<e:RadioButton id="bottomCheckBox" name="2" label="" x="265" y="1000" anchorOffsetX="0" width="45" anchorOffsetY="0" height="45" enabled="true">
 		</e:RadioButton>
-		<e:Image id="bottomCheckBoxImage" x="480" y="1023" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
+		<e:Image id="bottomCheckBoxImage" x="555.76" y="1023" source="sunny_png" anchorOffsetX="102" anchorOffsetY="102"/>
 		<ns1:ImageButton id="replayButton" source="speaker_png" tipSource="replay_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1625" y="600"/>
+		<e:Label text="A ." x="342.15" y="524.15" textColor="0x000000" size="60"/>
+		<e:Label text="B ." x="342.03" y="757.91" textColor="0x000000" size="60"/>
+		<e:Label text="C ." x="339.06" y="999.91" textColor="0x000000" size="60"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
 		<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffcf88"/>
