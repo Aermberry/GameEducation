@@ -28,7 +28,7 @@ class DescriptionScene extends eui.Component implements eui.UIComponent{
         this.smallflowerGroup.addChild(this.flowerMovieClip);
         this.flowerMovieClip.play(-1);
 
-        this.smallskeletonFactory = new egret.MovieClipDataFactory( RES.getRes('small_skeleton_json') , RES.getRes('small_skeleton_png'));
+        this.smallskeletonFactory = new egret.MovieClipDataFactory( RES.getRes('small_skeleton_movie_json') , RES.getRes('small_skeleton_movie_png'));
         this.smallskeletonMovieClip = new egret.MovieClip(this.smallskeletonFactory.generateMovieClipData('small_skeleton_movie'));
         this.smallskeletonGroup.addChild(this.smallskeletonMovieClip);
         this.smallskeletonMovieClip.play(-1);
