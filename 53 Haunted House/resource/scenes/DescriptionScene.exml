@@ -25,11 +25,14 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 <e:Image id="description_scene_bg" source="description_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
-<e:Image id="InvertedBat" source="inverted_bat_png" y="17" x="415" locked="true" width="294" height="163"/>
+<e:Image id="InvertedBat" source="inverted_bat_png" y="17" x="415" width="294" height="163" locked="true"/>
 
-<e:Image id="DescriptionExitButton" source="description_exit_button_png" y="1155" x="1978" alpha="0"/>	
-<e:Label id="ExitButtonText" text="Exit" size="60" y="1177" x="1997" alpha="0"/>
-<e:Image source="description_text_png" horizontalCenter="0" verticalCenter="0"/>
-<e:Group id="smallflowerGroup" x="320" y="984" height="340" width="265"/>
-<e:Group  id="smallskeletonGroup" x="1916" y="459" height="492" width="348"/>
+	
+	<e:Group x="1978" y="1155">
+		<e:Image id="DescriptionExitButton" source="description_exit_button_png" y="0" x="0" alpha="0"/>
+		<e:Label id="ExitButtonText" text="Exit" size="60" y="22" x="19" alpha="0"/>
+	</e:Group>
+<e:Image source="description_text_png" horizontalCenter="1" verticalCenter="-51.5" locked="true"/>
+<e:Group id="smallflowerGroup" x="332.12" y="871.88" height="197.57" width="152.87" anchorOffsetX="0" anchorOffsetY="0"/>
+<e:Group  id="smallskeletonGroup" x="1867.52" y="240.82" height="492" width="348"/>
 </e:Skin>

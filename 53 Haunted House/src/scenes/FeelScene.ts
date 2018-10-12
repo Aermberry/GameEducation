@@ -40,13 +40,13 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.boyandGirlColdFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_cold_json'), RES.getRes('boygirl_cold_png'));
 
         //boyandgirlExcited
-        this.boyandgirlExcitedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelCold, this);
+        this.boyandgirlExcitedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelExcited, this);
         this.boyandgirlExcitedGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, this.switchToBoygilrExcitedImage, this);
         this.boyandgirlExcitedGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, this.switchToBoygirlExcitedMovie, this);
         this.boyandGirlExcitedFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_excited_json'), RES.getRes('boygirl_excited_png'));
 
         //boyandgirlHorrified
-        this.boyandgirlHorrifiedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelExcited, this);
+        this.boyandgirlHorrifiedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelHorrified, this);
         this.boyandgirlHorrifiedGroup.addEventListener(mouse.MouseEvent.ROLL_OUT,this.switchToBoyandgirlHorrifiedImage, this);
         this.boyandgirlHorrifiedGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, this.switchToBoyandGirlHorrifiedMovie,this);
         this.boyandGirlHorrifiedFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_horrified_json'), RES.getRes('boygirl_horrified_png'));
