@@ -79,7 +79,7 @@ class BirdScene7 extends eui.Component implements eui.UIComponent {
 		this.currentSoundChannl = (RES.getRes('can_not_feed_mp3') as egret.Sound).play(0, 1);
 		this.firstLabel.text = "No,you can't.";
 		this.secondLabel.text = "You can't feed";
-		this.thirdLabel.text = "the birds here";
+		this.thirdLabel.text = "the birds here.";
 		await ThreadUtility.sleep(6200);
 		this.nextGroup.visible = true;
 		this.nextBtnGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.nextLabel.textColor = 0, this);
