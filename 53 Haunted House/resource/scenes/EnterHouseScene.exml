@@ -409,17 +409,17 @@
 <e:Image id="forth_tree" source="forth_tree_png" y="-117.8" x="1641.2" width="448.5" height="895.5" locked="true"/>
 <e:Image id="fifth_tree" source="fifth_tree_png"  x="2344.5" y="-80.2" width="429.5" height="742" skewY="180" locked="true"/>
 
-<e:Image id="platform" source="platform_png" y="146.5" x="0" alpha="0"/>
+<e:Image id="platform" source="platform_png" y="146.5" x="0" alpha="0" locked="true"/>
 <e:Image id="first_flash" source="first_falsh_png" alpha="0" locked="true"/>
 
-<e:Image id="platform_door" source="platform_door_png"  x="988" y="878" locked="true"/>
+<e:Image id="platform_door" source="platform_door_png"  x="988" y="878" alpha="1" locked="true"/>
 <e:Image id="cart" source="cart_png" x="988" y="424.5" height="485" width="646" alpha="0"  locked="true"/>
 <e:Image id="boyandgirl_positive" source="boyandgirl_positive_png" alpha="0" locked="true"/>
-<e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="125.5" width="543" height="514.4" alpha="1"/>
+<e:Image id="boyandgirl_negative" source="boyandgirl_negative_png" x="1025" y="125.5" width="543" height="514.4" alpha="1" locked="true"/>
 <e:Image id="conversation_window" source="conversation_window_png" alpha="0" x="587.5" y="721" locked="true"/>
-<e:Label id="conversation_first" text="Nick and Monica are at the Haunted" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
-<e:Label id="conversation_second" text="House now.  They quickly jump into" alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
-<e:Label id="conversation_third" text="the last car of the train." alpha="0" textColor="#000000" size="73" bold="true" locked="true"/>
+<e:Label id="conversation_first" text="Nick and Monica are at the Haunted" alpha="0" textColor="#000000" size="73" bold="true"/>
+<e:Label id="conversation_second" text="House now.  They quickly jump into" alpha="0" textColor="#000000" size="73" bold="true"/>
+<e:Label id="conversation_third" text="the last car of the train." alpha="0" textColor="#000000" size="73" bold="true"/>
 <e:Image id="button" source="button_png" x="1841.5" y="1094"  alpha="0"/>
 
 </e:Skin>
