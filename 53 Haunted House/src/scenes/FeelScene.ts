@@ -18,7 +18,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
     private boyandGirlHorrifiedFactory:egret.MovieClipDataFactory;
     private boyandGirlHorrifiedMovieClip:egret.MovieClip;
 
-    private currentSoundChannel:egret.SoundChannel
+    private currentSoundChannel:egret.SoundChannel;
     
 
     public constructor(){
@@ -98,6 +98,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'cold.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+         this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_cold_mp3') as egret.Sound).play(0,1);                               
         this.nextScene();
     }
@@ -106,6 +107,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'excited.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_excited_mp3') as egret.Sound).play(0,1);                           
         this.nextScene();  
     }
@@ -114,6 +116,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'horrified.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_horrified_mp3') as egret.Sound).play(0,1);                                   
         this.nextScene();
     }
@@ -137,6 +140,10 @@ class FeelScene extends eui.Component implements eui.UIComponent{
     private stopSoundToNextScene():void{
         this.stopCurrentSoundChannel();
         Main.instance.gotoScene(new HearScene);
+    }
+
+    private isNextSceneButtonDisplap():void{
+        this.nextSceneButton.visible==false&&(this.nextSceneButton.visible=true);
     }
 
 }
