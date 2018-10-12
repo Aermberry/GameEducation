@@ -6,8 +6,8 @@
 		<e:Image source="tree_png" x="438" y="-357.58"/>
 		<e:Image source="amy_leave_png" x="224.24" y="572.42"/>
         <e:Image source="flower_amy_frame_png" x="635.35" y="347"/>
-		<e:Label text="Can I pick" size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="777.5" y="411.12"/>
-		<e:Label text="the flowers?" size="45" textColor="0x000000" fontFamily="ComicSansMS3"  x="760.5" y="493.5"/>		
+		<e:Label text="Can I pick" size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="735.5" y="414.12" anchorOffsetX="0" width="230"/>
+		<e:Label text="the flowers?" size="45" textColor="0x000000" fontFamily="ComicSansMS3"  x="727.5" y="485.5" anchorOffsetX="0" width="278"/>		
 		<e:Image id="firstWorkerImg" source="worker_bird_first_png" x="1539" y="157.4"/>
 	</e:Group>
 	
