@@ -60,7 +60,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 		this.currentSoundChannl = (RES.getRes('bicycle_amy_mp3') as egret.Sound).play(0, 1);
 		await ThreadUtility.sleep(2000);
 		this.nextDialogGroup.visible = true;
-		this.initWorkerTouchEvent();
+		await this.initWorkerTouchEvent();
 	}
 
 	private initWorkerTouchEvent(): void {
@@ -73,7 +73,9 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 
 	private async nextDialog(): Promise<void> {
 		this.currentSoundChannl.stop();
-		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0, 1);
+		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0,1);
+		lzlib.SoundUtility.playSound('bicycle_worker_mp3');
+		console.log(1)
 		this.firstLabel.text = "Yes, you can.";
 		this.secondLabel.text = "You can ride your bicycle here.";
 		await ThreadUtility.sleep(11200);
@@ -110,7 +112,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	}
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl != null) {
+		if (this.currentSoundChannl) {
 			this.currentSoundChannl.stop();
 		}
 	}
