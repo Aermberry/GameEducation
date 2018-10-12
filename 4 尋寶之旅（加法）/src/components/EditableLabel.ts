@@ -27,7 +27,7 @@ class EditableLabel extends eui.Component implements  eui.UIComponent {
 		this.userInput.addEventListener(egret.Event.CHANGE, this.onUserInputChange, this);
 		this.resultLabel.text = this.text;
 		// lzlib.TweenGroupUtility.playAnimation(this.shinningTweenGroup);
-		// this.shinningTweenGroup.play();
+		this.shinningTweenGroup.playLoopAsync();
 	}
 
 	private onUserInputChange(): void

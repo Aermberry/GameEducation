@@ -84,8 +84,8 @@
 	</e:Group>
 	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
 	<e:Group id="bottomDialogGroup" width="560" height="260" x="1225" y="640" visible="false">
-		<e:Image id="bottomDialogImage" x="0" y="243" source="dialog_up_png" scaleY="-1"/>
-		<e:Label id="bottomDialogBodyLabel" text="如果個位數相加大於或等於10，就應進1至十位" textColor="0x000000" wordWrap="true" left="10" top="10" right="10" bottom="10" verticalAlign="middle" textAlign="left" fontFamily="標楷體"/>
+		<e:Image id="bottomDialogImage" x="0" y="221.79" source="dialog_up_png" scaleY="-1" anchorOffsetY="0" height="281.79"/>
+		<e:Label id="bottomDialogBodyLabel" text="如果個位數相加大於或等於10，就應進1至十位" textColor="0x000000" wordWrap="true" left="10" top="10" right="10" bottom="37" verticalAlign="middle" textAlign="left" fontFamily="標楷體" anchorOffsetY="0" size="38"/>
 	</e:Group>
 	<ns1:ImageButton id="nextQuestionButton" y="725" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="15" visible="false"/>
 	<e:Group id="restartGroup" top="185" right="10" width="240" height="115">
