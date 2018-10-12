@@ -15,6 +15,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	private workerHeaderImg: eui.Image;
 
 	private exitGroup: eui.Group;
+	private exitLogo: eui.Group;
 	private forkIconImg: eui.Image;
 
 	private fram_exitTips: eui.Group;
@@ -36,7 +37,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 
 		this.playSound();
-		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showExitTips, this);
+		this.exitLogo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showExitTips, this);
 		this.exitGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.forkIconImg.alpha = 0.3, this);
 		this.exitGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.forkIconImg.alpha = 1, this);
 		this.Label_true.addEventListener(egret.TouchEvent.TOUCH_TAP, this.closeCurrentWindow, this);
@@ -73,17 +74,17 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 
 	private async nextDialog(): Promise<void> {
 		this.currentSoundChannl.stop();
-		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0,1);
+		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0, 1);
 		lzlib.SoundUtility.playSound('bicycle_worker_mp3');
-		console.log(1)
 		this.firstLabel.text = "Yes, you can.";
 		this.secondLabel.text = "You can ride your bicycle here.";
-		await ThreadUtility.sleep(11200);
 		this.nextGroup.visible = true;
-		this.stopSoundChannel();
 		this.nextBtnGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.nextLabel.textColor = 0, this);
 		this.nextBtnGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.nextLabel.textColor = 16766720, this);
-		this.nextBtnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, () => Main.instance.gotoScene(new ResultScene()), this);
+		this.nextBtnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+			Main.instance.gotoScene(new ResultScene());
+			this.stopSoundChannel();
+		}, this);
 
 	}
 
