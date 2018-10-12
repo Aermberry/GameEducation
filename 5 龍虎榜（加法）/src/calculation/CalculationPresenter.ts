@@ -4,7 +4,7 @@ class CalculationPresenter {
 	public maxQuestionCount = 10;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
-	private answerSum: SumAndCarry;
+	private correctSum: SumAndCarry;
 	private questionIndex: number;
 
 	public constructor() {
@@ -23,9 +23,9 @@ class CalculationPresenter {
 			let addend = this.view.addend = pair[0];
 			let augend = this.view.augend = pair[1];
 
-			this.answerSum = await this.getAnswerSumAndCarryAsync();
-			let correctSum = this.getCorrectSumAndCarry(addend, augend);
-			if (this.answerSum.equals(correctSum, this.carryNeed)) {
+			let answerSum = await this.getAnswerSumAndCarryAsync();
+			this.correctSum = this.getCorrectSumAndCarry(addend, augend);
+			if (answerSum.equals(this.correctSum, this.carryNeed)) {
 				this.correctAnswerCount++;
 				this.view.correctAnswerCount = this.correctAnswerCount;
 				this.view.alertAnswerCorrect();
@@ -34,6 +34,16 @@ class CalculationPresenter {
 				this.view.alertAnswerWrong();
 			}
 			this.view.enableFinishImage();
+
+			await this.view.nextQuestionButtonClickAsync();
+			this.view.questionIndex = this.questionIndex;
+			this.view.disableFinishImage();
+			this.view.showFinishImage();
+			this.view.closeBox();
+			this.view.hideNextQuestionButton();
+			this.view.hideCorrectGroup();
+			this.view.hideAnswerStatus();
+			this.view.clearUserInput();
 		}
 
 	}
@@ -44,17 +54,7 @@ class CalculationPresenter {
 			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
-			await this.showCorrectSumAndCarry(this.answerSum);
-			
-			await this.view.nextQuestionButtonClickAsync();
-			this.view.questionIndex = this.questionIndex;
-			this.view.disableFinishImage();
-			this.view.showFinishImage();
-			this.view.closeBox();
-			this.view.hideNextQuestionButton();
-			this.view.hideCorrectGroup();
-			this.view.hideAnswerStatus();
-			this.view.clearUserInput();
+			await this.showCorrectSumAndCarry(this.correctSum);
 	}
 
 
