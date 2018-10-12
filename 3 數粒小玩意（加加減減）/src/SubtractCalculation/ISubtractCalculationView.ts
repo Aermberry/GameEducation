@@ -1,6 +1,7 @@
 interface ISubtractCalculationView {
 	minuend: number;
 	subtrahend: number;
+	showAlertImage(): Promise<void>
 	hideStartButton(): void;
 	showRestartButton(): void;
 	/** highlight操作数，包括expressionGroup和demoGroup里的操作数 */

@@ -34,6 +34,8 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 	private thinkCarefullyLabel: eui.Label;
 
 	private presenter: SubtractCalculationPresenter;
+
+	private alertBackgroundImage: eui.Image;
 	
 	public constructor(minuend: number, subtrahend: number) {
 		super();
@@ -226,5 +228,12 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 		this.boyMovie.y = 0;
 		this.boyGroup.addChild(this.boyMovie);
 		this.boyMovie.play(-1);
+	}
+
+	public async showAlertImage(): Promise<void>
+	{
+		this.alertBackgroundImage.visible = true;
+		await lzlib.ThreadUtility.sleep(1500);
+		this.alertBackgroundImage.visible = false;
 	}
 }

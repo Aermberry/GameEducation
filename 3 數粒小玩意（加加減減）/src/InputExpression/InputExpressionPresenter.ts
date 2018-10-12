@@ -21,14 +21,40 @@ class InputExpressionPresenter {
 		this.view.expression = this.expression;
 	}
 
-	public onSubmitButtonClick(): void
+	public async onSubmitButtonClick(): Promise<void>
 	{
+
+		if (typeof this.expression == "undefined" || this.expression == null || this.expression == "")
+		{
+			//應彈出"請按指示輸入橫式"
+			this.view.showEmptyImage();
+			await lzlib.ThreadUtility.sleep(1500);
+			this.view.hideEmptyImage();
+			return;
+		}
+
 		if (this.expression.indexOf('+') >= 0) {
 			let operands = this.expression.split('+');
+			this.view.stopIntroductionMP3();
 			this.view.openAddCalculationScene(parseInt(operands[0], 10), parseInt(operands[1], 10));
 		} else {
 			let operands = this.expression.split('-');
-			this.view.openSubtractCalculationScene(parseInt(operands[0], 10), parseInt(operands[1], 10));
+			let leftNumber = parseInt(operands[0], 10);
+			let rightNumber = parseInt(operands[1], 10);
+
+			if (leftNumber < rightNumber)
+			{
+				//弹出"不夠減，再試一次"
+				this.view.showNotEnoughImage();
+				await lzlib.ThreadUtility.sleep(1500);
+				this.view.hideNotEnoughImage();
+
+				return;
+			}
+			
+			this.view.stopIntroductionMP3();
+			this.view.openSubtractCalculationScene(leftNumber, rightNumber);
+
 		}
 	}
 }

@@ -41,7 +41,18 @@ class SubtractCalculationPresenter {
 			}
 			await this.calculateDifferenceBit(minuend[position], subtrahend[position], position);
 			this.view.changeDifferenceToViewMode(position);
+
+			let answerLength = result.toString().length;
+			
+			if (position == answerLength - 1 )
+			{
+				//應彈出 問用戶重新開始還是繼續
+				this.view.showAlertImage();
+			} 
+
 		}
+
+
 
 		this.view.startCongratulation();
 	}

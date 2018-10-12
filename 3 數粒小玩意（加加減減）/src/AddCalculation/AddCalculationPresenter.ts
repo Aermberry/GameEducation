@@ -37,9 +37,18 @@ class AddCalculationPresenter {
 				if (correctSum > 10) {
 					this.view.setCarry(1, position);
 					await this.view.mergeCarry(position);
+					
 				}
 			}
 
+			let answerSum = (this.addend + this.augend).toString();
+
+			if (position == answerSum.length - 1 )
+			{
+				//應彈出 問用戶重新開始還是繼續
+				this.view.showAlertImage();
+			} 			
+		
 			this.view.normalizeOperand(position);
 			carry = this.getDigitAtPosition(correctSum, 1);
 		}
