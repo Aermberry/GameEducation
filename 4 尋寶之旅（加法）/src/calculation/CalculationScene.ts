@@ -50,6 +50,8 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private degree: Degree;
 	private presenter = new CalculationPresenter();
 
+	private carryError = ['如果個位數相加大於或等於10，就應進 1 至十位', '如果十位數連進位相加大於或等於10，就應進 1 至百位', '如果百位數連進位相加大於或等於10，就應進 1 至千位'];
+
 	public constructor(degree: Degree) {
 		super();
 		this.degree = degree;
@@ -248,10 +250,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		});
 	}
 	/** 显示用户“是否进位”选择错误的提示 */
-	public showNeedCarryError(): void
+	public showNeedCarryError(position: number): void
 	{	
 		this.bottomDialogGroup.visible = true;
-		this.bottomDialogBodyLabel.text = '如果個位數相加大於或等於10，就應進1至十位';
+		this.bottomDialogBodyLabel.text = this.carryError[position];
 	}
 
 	/** 隐藏用户“是否进位”选择错误的提示 */
