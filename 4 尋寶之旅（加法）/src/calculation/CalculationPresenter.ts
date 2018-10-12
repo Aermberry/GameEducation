@@ -47,7 +47,7 @@ class CalculationPresenter {
 				if (position < this.getMaxNumberLength(addend, augend) - 1) {
 					//最后一位不需要确认进位
 					this.view.changeCarryToEditMode(position);
-					if (await this.confirmCarryNeed(correctSum)) {
+					if (await this.confirmCarryNeed(correctSum, position)) {
 						await this.calculateCarry(correctSum, position);
 					}
 					this.view.changeCarryToViewMode(position);
@@ -109,12 +109,12 @@ class CalculationPresenter {
 	/**
 	 * 确认是否需要进位
 	 */
-	private async confirmCarryNeed(correctSum: number): Promise<boolean>
+	private async confirmCarryNeed(correctSum: number, position: number): Promise<boolean>
 	{
 		this.view.showNeedCarryDialog();
 		while(await this.view.confirmNeedCarryAsync() != (correctSum >= 10)) {
 			this.view.showAngle();
-			this.view.showNeedCarryError();
+			this.view.showNeedCarryError(position);
 		}
 		this.view.hideAngel();
 		this.view.hideNeedCarryDialog();
@@ -130,7 +130,7 @@ class CalculationPresenter {
 		let candidateCarry = await this.view.getCarryAsync(position);
 		while (candidateCarry != this.getDigitAtPosition(correctSum, 1).toString()) {
 			this.view.showAngle();
-			this.view.showNeedCarryError();
+			this.view.showNeedCarryError(position);
 			this.view.changeCarryStatusToWrong(position);
 			candidateCarry = await this.view.getCarryAsync(position);
 		}
