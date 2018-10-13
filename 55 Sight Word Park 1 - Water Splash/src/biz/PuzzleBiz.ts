@@ -7,7 +7,7 @@ class PuzzleBiz {
 
 	public generate(words: string[], dimension: number): string[][]
 	{
-		return this.populate(words.map(word => word.split('')), dimension);
+		return wordfind.newPuzzle(words, { width: dimension, height: dimension, preferOverlap: 0, orientations: ['horizontal', 'vertical', 'diagonal'] });
 	}
 
 	/** 填充空白 */
