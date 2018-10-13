@@ -1,11 +1,5 @@
-interface Math {
-    randomMinMax(min: number, max: number): number;
-}
 interface Array<T> {
-    /** 混洗 */
     shuffle(): void;
-    all(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
-    any(callbackfn: (value: T, index: number, array: T[]) => any, thisArg?: any): boolean;
 }
 declare namespace lzlib {
     /**
@@ -21,8 +15,8 @@ declare namespace lzlib {
         static dataTransfer: any;
         static isCopy: boolean;
         static originalParent: egret.DisplayObjectContainer;
-        static originalX: number;
-        static originalY: number;
+        private static originalX;
+        private static originalY;
         private dragObject;
         private isCopy;
         private dataTransfer;
@@ -32,8 +26,6 @@ declare namespace lzlib {
         enableDrag(dragObject: egret.DisplayObject, isCopy?: boolean, dataTransfer?: any): void;
         private onTouchBegin(e);
         private cloneDragObject(dragObject);
-        private cloneImage(dragObject);
-        private cloneLabel(dragObject);
         private onTouchMove(e);
         private onTouchEnd(e);
         private static init(dragingObject, isCopy, dataTransfer);
@@ -45,13 +37,8 @@ declare namespace lzlib {
     class LzDragEvent extends egret.TouchEvent {
         static readonly DRAG_OVER: string;
         static readonly DRAG_OUT: string;
-        /** drop inside the target */
         static readonly DROP: string;
-        /** drop outside the target */
-        static readonly CANCEL: string;
         dragObject: egret.DisplayObject;
-        /** 该拖拉控件的原始local point */
-        originalPoint: egret.Point;
         constructor(type: string, dragObject: egret.DisplayObject, data: any, stageX: number, stageY: number, touchPointID?: number);
     }
 }
@@ -76,13 +63,10 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
-        private isDragDropObjectIntersets();
     }
 }
-declare namespace lzlib {
-    interface Cloneable {
-        clone(): object;
-    }
+interface Math {
+    randomMinMax(min: number, max: number): number;
 }
 declare namespace egret {
     interface MovieClip {
@@ -91,9 +75,7 @@ declare namespace egret {
 }
 declare namespace lzlib {
     class SoundUtility {
-        static currentSoundChannel: egret.SoundChannel;
-        static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
-        static stopCurrentSound(): void;
+        static playSound(soundName: string): Promise<void>;
     }
 }
 interface String {
@@ -102,6 +84,7 @@ interface String {
 declare namespace lzlib {
     class ThreadUtility {
         static sleep(ms?: number): Promise<{}>;
+        static playSound(soundName: string): Promise<void>;
     }
 }
 declare namespace egret.tween {
