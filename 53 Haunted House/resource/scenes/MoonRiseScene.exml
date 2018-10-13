@@ -74,32 +74,21 @@
 		<tween:TweenItem target="{moon}">
 			<tween:Set>
 				<tween:props>
-					<e:Object y="{640}" x="{1502}"/>
+					<e:Object x="{1367.5}" y="{314.48}"/>
 				</tween:props>
 			</tween:Set>
-			<tween:To duration="1000">
+			<tween:To duration="4000">
 				<tween:props>
-					<e:Object y="{521.5}" x="{1440}"/>
+					<e:Object y="{44}" x="{1060}"/>
 				</tween:props>
 			</tween:To>
 
-			<tween:To duration="1000">
-				<tween:props>
-					<e:Object y="{359}" x="{1387}"/>
-				</tween:props>
-			</tween:To>
 
-			<tween:To duration="1000">
-				<tween:props>
-					<e:Object y="{146.5}" x="{1305}"/>
-				</tween:props>
-			</tween:To>
 
-			<tween:To duration="1000">
-				<tween:props>
-					<e:Object y="{-14}" x="{1208}"/>
-				</tween:props>
-			</tween:To>
+
+
+
+
 
 
 			
@@ -111,15 +100,16 @@
 
 
 
-<e:Image id="moon_rise_bg"  source="moon_rise_bg_png" x="0" y="0" verticalCenter="0" horizontalCenter="0" locked="true"/>
-<e:Image id="moon" source="moon_png" x="1367.5" y="666" locked="true"/>
-<e:Image id="head_cloud" source="head_could_png" x="134" locked="true"/>
-<e:Image id="middle_cloud" source="middle_cloud_png" y="542" x="330" locked="true"/>
+<e:Image id="moon_rise_bg"  source="moon_rise_bg_png" x="0" y="0" verticalCenter="-7" horizontalCenter="0"/>
+	<e:Image source="floor_png" x="296.36" y="874.62"/>
+<e:Image id="moon" source="moon_png" x="1367.5" y="314.48"/>
+<e:Image id="head_cloud" source="head_could_png" x="134"/>
+<e:Image id="middle_cloud" source="middle_cloud_png" y="578.36" x="387.58"/>
 
-<e:Image id="first_tree" source="first_tree_png" x="-81" y="240" locked="true"/>
-<e:Image id="third_tree" source="third_tree_png" x="673" y="432" locked="true"/>
-<e:Image id="second_tree" source="second_tree_png" y="121" x="297" locked="true"/>
+<e:Image id="first_tree" source="first_tree_png" x="185.69" y="246.07" locked="true"/>
+<e:Image id="third_tree" source="third_tree_png" x="727.74" y="295.63" anchorOffsetX="0" width="518.51" anchorOffsetY="0" height="924.91" rotation="360"/>
+<e:Image id="second_tree" source="second_tree_png" y="130.11" x="403.06" locked="true"/>
 
-<e:Image id="forth_tree" source="third_tree_png" y="432" x="1387" locked="true"/>
-<e:Image id="fifth_tree" source="second_tree_png"  x="2411" y="121" skewY="180" locked="true"/>
+<e:Image id="forth_tree" source="third_tree_png" y="262.52" x="1440.23" anchorOffsetX="0" width="546.26" anchorOffsetY="0" height="814.91" locked="true"/>
+<e:Image id="fifth_tree" source="second_tree_png"  x="2415.73" y="58" skewY="180" anchorOffsetX="0" width="811.46"/>
 </e:Skin>
