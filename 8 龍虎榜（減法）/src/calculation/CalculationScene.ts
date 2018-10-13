@@ -17,6 +17,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private correctSubtrahendLabel: eui.Label;
 	private correctMinuendGroup: eui.Group;
 	private correctDifferenceGroup: eui.Group;
+	private finishTips_Group:eui.Group;
 
 	private boyGroup: eui.Group;
 	private boyImage: eui.Image;
@@ -31,6 +32,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private topDialogTitleLabel: eui.Label;
 	private yesButton: ImageButton;
 	private noButton: ImageButton;
+	private finishButton:ImageButton;
 
 	private angelGroup: eui.Group;
 	private angelFactory:egret.MovieClipDataFactory;
@@ -65,6 +67,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.initAngelGroup();
+		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
 			"deleteMinuend20Movie": this.answerDeleteMinuend20Movie,
 			"deleteMinuend10Movie": this.answerDeleteMinuend10Movie,
@@ -180,6 +183,8 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	/** 获取用户输入的新被减数 */
 	public async getNewMinuendAsync(position: number, borrowTime: number): Promise<number>
 	{
+
+		this.finishTips_Group.visible=false;
 		let char = await this.numberPad.getCharAsync();
 		(this.questionGroup.getChildByName(`newMinuend${position}${borrowTime}Label`) as EditableLabel).text = char;
 		return parseInt(char, 10);
@@ -275,6 +280,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	{
 		this.answerStatusImage.visible = true;
 		this.answerStatusImage.source = 'dispoint_png';
+	}
+
+	public onChangeFinshButtonTexutre():void{
+		this.finishButton.mouseOverSource="finish_selected_png"
 	}
 
 	public hideAnswerStatus(): void
