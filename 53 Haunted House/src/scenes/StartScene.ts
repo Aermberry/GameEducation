@@ -38,6 +38,6 @@ class StartScene extends eui.Component implements eui.UIComponent {
         await ThreadUtility.sleep(2000);
         this.batTweenGroup.stop();
         this.bgmSoundChannel.stop();
-        Main.instance.gotoScene(new MoonRiseScene());
+        Main.instance.gotoScene(new SeeScene());
     }
 }
