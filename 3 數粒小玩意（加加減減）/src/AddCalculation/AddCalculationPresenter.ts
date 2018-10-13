@@ -34,7 +34,7 @@ class AddCalculationPresenter {
 			if (position < this.getMaxNumberLength(this.addend, this.augend) - 1) {
 				//最后一位不需要确认进位
 				await this.confirmCarryNeed(correctSum)
-				if (correctSum > 10) {
+				if (correctSum >= 10) {
 					this.view.setCarry(1, position);
 					await this.view.mergeCarry(position);
 					

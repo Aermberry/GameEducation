@@ -27,7 +27,7 @@ class InputExpressionScene extends eui.Component implements  eui.UIComponent, II
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		this.channel = (RES.getRes('introduction_mp3') as egret.Sound).play();
+		
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => window.close(), this);
 		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.presenter.onNumberPadKeyDown, this.presenter);
 		this.submitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onSubmitButtonClick, this.presenter);
@@ -38,6 +38,7 @@ class InputExpressionScene extends eui.Component implements  eui.UIComponent, II
 
 	private onStartButton2Click(): void
 	{
+		this.channel = (RES.getRes('introduction_mp3') as egret.Sound).play(1,1);
 		this.startMask.visible = false;
 		this.startButton2.visible = false;
 		this.presenter.loadView(this);
