@@ -59,8 +59,10 @@ class Bar extends eui.Component implements  eui.UIComponent {
 	/** 把当前数粒移动到目标数粒旁边 */
 	public async moveTo(destination: IParticleComponent): Promise<void>
 	{
-		this.x = destination.x + 50;
-		this.y = destination.y;
+		// this.x = destination.x + 50;
+		// this.y = destination.y;
+		let tw = egret.Tween.get(this);
+		tw.to({x:destination.x + 50, y:destination.y}, 800);
 	}
 
 	/** 合并被加数 */

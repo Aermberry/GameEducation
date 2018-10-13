@@ -62,9 +62,15 @@ class Chunk extends eui.Component implements  eui.UIComponent {
 	/** 把当前数粒移动到目标数粒旁边 */
 	public async moveTo(destination: IParticleComponent): Promise<void>
 	{
-		destination.x = 125;
-		this.x = 530;
-		this.y = destination.y;
+		 
+		let twDestination = egret.Tween.get(destination);
+		twDestination.to({x:125}, 300);
+		let tw = egret.Tween.get(this);
+		tw.to({x: 530, y: destination.y}, 600);
+		//destination.x = 125;
+		// this.x = 530;
+		// this.y = destination.y;
+
 	}
 
 	/** 合并被加数 */

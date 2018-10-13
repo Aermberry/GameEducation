@@ -60,8 +60,12 @@ class Block extends eui.Component implements  eui.UIComponent {
 	/** 把当前数粒移动到目标数粒旁边 */
 	public async moveTo(destination: IParticleComponent): Promise<void>
 	{
-		this.x = destination.x + (destination.$children.length - destination.digit) * this.spacing - 5 - this.width;
-		this.y = destination.y;
+		// this.x = destination.x + (destination.$children.length - destination.digit) * this.spacing - 5 - this.width;
+		// this.y = destination.y;
+		let x = destination.x + (destination.$children.length - destination.digit) * this.spacing - 5 - this.width;
+		let y = destination.y;
+		let tw = egret.Tween.get(this);
+		tw.to({x:x, y:y}, 600);
 	}
 
 	/** 合并被加数 */
