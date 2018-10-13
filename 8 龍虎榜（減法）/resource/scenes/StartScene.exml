@@ -10,43 +10,43 @@
 						<e:Object scaleX="{0.9}" scaleY="{0.9}" rotation="{15.54}" x="{759.41}" y="{540}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{351.52}" x="{708}" y="{548.97}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.7}" scaleY="{0.7}" rotation="{0.84}" x="{788.11}" y="{516.26}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.6}" scaleY="{0.6}" x="{867.58}" y="{541.41}" rotation="{354.56}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.5}" scaleY="{0.5}" x="{940}" y="{571.05}" rotation="{353.7}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.4}" scaleY="{0.4}" x="{962.64}" y="{589.81}" rotation="{14.18}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.3}" scaleY="{0.3}" x="{994}" y="{636.91}" rotation="{8.94}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="300" />
 				<tween:Set>
 					<tween:props>
 						<e:Object rotation="{5.77}" alpha="{0}" />
@@ -60,43 +60,43 @@
 						<e:Object x="{523.97}" y="{814.23}" scaleX="{0.9}" scaleY="{0.9}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{708}" y="{842.24}" scaleX="{0.8}" scaleY="{0.8}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.7}" scaleY="{0.7}" x="{869.4}" y="{809.83}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.6}" scaleY="{0.6}" y="{747.06}" x="{744.2}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.5}" scaleY="{0.5}" x="{851}" y="{736.3}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleY="{0.4}" scaleX="{0.4}" x="{888.8}" y="{707.71}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{0.3}" scaleY="{0.3}" x="{933.3}" y="{729.05}" />
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="100" />
+				<tween:Wait duration="300" />
 				<tween:Set>
 					<tween:props>
 						<e:Object x="{967.3}" y="{725}" alpha="{0}" />
@@ -109,69 +109,69 @@
 						<e:Object x="{652.39}" />
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="600">
+				<tween:To duration="800">
 					<tween:props>
 						<e:Object x="{321.5}" />
 					</tween:props>
 				</tween:To>
-				<tween:To duration="200">
+				<tween:To duration="400">
 					<tween:props>
 						<e:Object x="{272.58}" alpha="{0}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{cloud2}">
-				<tween:To duration="600">
+				<tween:To duration="800">
 					<tween:props>
 						<e:Object x="{762.48}" />
 					</tween:props>
 				</tween:To>
-				<tween:To duration="200">
+				<tween:To duration="400">
 					<tween:props>
 						<e:Object x="{664.55}" alpha="{0}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{cloud3}">
-				<tween:To duration="600">
+				<tween:To duration="800">
 					<tween:props>
 						<e:Object x="{1058.27}" />
 					</tween:props>
 				</tween:To>
-				<tween:To duration="200">
+				<tween:To duration="400">
 					<tween:props>
 						<e:Object x="{994}" alpha="{0}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{add_and_substract}">
-				<tween:Wait duration="1000" />
+				<tween:Wait duration="1200" />
 				<tween:Set>
 					<tween:props>
 						<e:Object scaleX="{1.6}" scaleY="{1.6}" y="{-80}" alpha="{0.2}" />
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="100">
+				<tween:To duration="300">
 					<tween:props>
 						<e:Object y="{20}" scaleX="{1}" scaleY="{1}" alpha="{1}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{add_info_border}">
-				<tween:Wait duration="1250" />
+				<tween:Wait duration="1450" />
 				<tween:Set>
 					<tween:props>
 						<e:Object y="{-300}" alpha="{0.2}" />
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="100">
+				<tween:To duration="800">
 					<tween:props>
 						<e:Object y="{300}" alpha="{1}" />
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{addTour}">
-				<tween:Wait duration="1500" />
+				<tween:Wait duration="2000" />
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}" />
