@@ -216,7 +216,7 @@
 	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false"/>
 	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
 	<e:Image x="1353.77" y="515.61" source="Finish_tips_png" anchorOffsetY="0"/>
-	<e:Label text="計萬後，\n請「按完成」。" x="1384.82" y="517.79" anchorOffsetX="0" width="367.94" anchorOffsetY="0" height="148.18" textColor="0x000000" textAlign="center" verticalAlign="middle" size="41" fontFamily="華康標楷體" lineSpacing="20" bold="true"/>
+	<e:Label text="計完後，\n請「按完成」。" x="1384.82" y="517.79" anchorOffsetX="0" width="367.94" anchorOffsetY="0" height="148.18" textColor="0x000000" textAlign="center" verticalAlign="middle" size="41" fontFamily="華康標楷體" lineSpacing="20" bold="true"/>
 	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false"/>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>
