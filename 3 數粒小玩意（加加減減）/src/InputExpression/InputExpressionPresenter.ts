@@ -41,6 +41,13 @@ class InputExpressionPresenter {
 			let operands = this.expression.split('-');
 			let leftNumber = parseInt(operands[0], 10);
 			let rightNumber = parseInt(operands[1], 10);
+			if (operands[0] == '' || operands[1] == '')
+			{
+				this.view.showEmptyImage();
+				await lzlib.ThreadUtility.sleep(1500);
+				this.view.hideEmptyImage();
+				return;
+			}
 
 			if (leftNumber < rightNumber)
 			{

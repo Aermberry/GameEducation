@@ -128,7 +128,6 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 	/** 设置进位 */
 	public setCarry(carry: number, position: number): void
 	{
-		console.log(carry,position);
 		(this.carryGroup.getChildAt(position) as EditableLabel).text = carry.toString();
 	}
 
