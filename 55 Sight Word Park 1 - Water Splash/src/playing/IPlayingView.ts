@@ -16,4 +16,5 @@ interface IPlayingView {
 	playGoodJobMovie(): void;
 	playReadyGoMovie(): void;
 	playCompleteAnimation(): Promise<void>;
+	tipsanswer(answerIndex:number ,words: string[]): void;
 }

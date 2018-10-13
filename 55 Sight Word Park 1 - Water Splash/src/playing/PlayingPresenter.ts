@@ -37,6 +37,11 @@ class PlayingPresenter {
 		}
 	}
 
+	public onHintsBtnImgClick():void
+	{
+		this.view.tipsanswer(this.correctWordCount, this.words);
+	}
+
 	public onResetButtonClick(): void
 	{
 		this.view.deselectChars();
