@@ -34,7 +34,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private async playSplashMovie(): Promise<void>
 	{
 		await this.splashTweenGroup.playOnceAsync();
-		await lzlib.ThreadUtility.sleep(2000);
+		await lzlib.ThreadUtility.sleep(4000);
 		Main.instance.gotoScene(new CalculationScene());
 	}
 }
