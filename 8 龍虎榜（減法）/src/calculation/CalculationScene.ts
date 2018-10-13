@@ -320,9 +320,4 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 			}
 		}
 	}
-
-	public openRankingScene(): void
-	{
-		Main.instance.gotoScene(new RankingScene());
-	}
 }

@@ -54,7 +54,6 @@ class CalculationPresenter {
 			this.view.hideCorrectMinuendDeleteMovies();
 			this.view.clearUserInput();
 		}
-		this.view.openRankingScene();
 	}
 
 	/**

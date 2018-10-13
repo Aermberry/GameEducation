@@ -177,12 +177,13 @@
 		<e:Image id="answerUnitRedLineImage" x="448.5" source="red_line_png" bottom="315" width="0" height="0"/>
 		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
 	</e:Group>
-	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240" visible="false">
+	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240">
 		<e:Image id="topDialogImage" x="0" y="0" source="dialog_up_png"/>
-		<e:Label id="topDialogTitleLabel" text="要退位嗎？" y="25" textColor="0x000000" size="45" horizontalCenter="0" fontFamily="標楷體"/>
+		<e:Label id="topDialogTitleLabel" text="要退位嗎？" y="25" textColor="0x000000" size="45" horizontalCenter="0" fontFamily="華康標楷體" bold="true"/>
 		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
 		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png"/>
 	</e:Group>
+	<ns1:ImageButton id="finishButton" x="1327.91" y="706.45" mouseOverSource="no_selected_png" source="finish_normal_png"/>
 	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Rect strokeWeight="10" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="-1" right="1" top="0" bottom="0"/>
 		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
@@ -214,5 +215,7 @@
 	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
 	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false"/>
 	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
+	<e:Image x="1353.77" y="515.61" source="Finish_tips_png" anchorOffsetY="0"/>
+	<e:Label text="計萬後，\n請「按完成」。" x="1384.82" y="517.79" anchorOffsetX="0" width="367.94" anchorOffsetY="0" height="148.18" textColor="0x000000" textAlign="center" verticalAlign="middle" size="41" fontFamily="華康標楷體" lineSpacing="20" bold="true"/>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>
