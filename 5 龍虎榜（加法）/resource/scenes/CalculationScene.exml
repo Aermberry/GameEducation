@@ -45,7 +45,7 @@
 		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="-2" bottom="2"/>
 		<e:Group width="97" height="75" y="25" x="40">
 			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
-			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675"/>
+			<e:Label id="questionIndexLabel" text="1" horizontalCenter="0" verticalCenter="0" size="45" textColor="0x296675" fontFamily="mongolian"/>
 		</e:Group>
 		<e:Image horizontalCenter="0" y="275" source="add_expression_png"/>
 		<e:BitmapLabel id="questionAddendLabel" width="246" height="62" y="125" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" right="175" textAlign="right"/>
