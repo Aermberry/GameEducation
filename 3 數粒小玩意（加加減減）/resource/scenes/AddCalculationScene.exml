@@ -25,7 +25,7 @@
 		</e:Group>
 
 		<e:Group id="augendGroup">
-			<ns1:Bar id="augendBar" color='green' currentState="separated" x="1434" y="452"/>
+			<ns1:Bar id="augendBar" color='green' currentState="separated" x="1434" y="418.67"/>
 			<ns1:Block id="augendBlock" color='green' currentState="separated" x="1035" y="500"/>
 			<ns1:Chunk id="augendChunk" color='green' currentState="separated" x="327" y="412"/>
 		</e:Group>
