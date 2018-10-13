@@ -162,14 +162,17 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public confirmBorrowNeedAsync(): Promise<boolean>
 	{
 		this.topDialogGroup.visible = true;
+		this.angelGroup.visible=true;
 		return new Promise<boolean>(resolve => {
 			this.yesButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(true);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 			this.noButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(false);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 		});
 	}
