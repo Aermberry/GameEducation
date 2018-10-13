@@ -34,7 +34,18 @@ class InputExpressionPresenter {
 		}
 
 		if (this.expression.indexOf('+') >= 0) {
+			
 			let operands = this.expression.split('+');
+
+			if (operands[0] == '' || operands[1] == '')
+			{
+				this.view.showEmptyImage();
+				await lzlib.ThreadUtility.sleep(1500);
+				this.view.hideEmptyImage();
+				return;
+			}
+
+			
 			this.view.stopIntroductionMP3();
 			this.view.openAddCalculationScene(parseInt(operands[0], 10), parseInt(operands[1], 10));
 		} else {
