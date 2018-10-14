@@ -261,10 +261,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	/** 清除用户的输入 */
 	public clearUserInput(): void
 	{
-		this.answerCarryGroup.$children.forEach(x => (x as EditableLabel).text = '');
-		this.answerSumGroup.$children.forEach(x => (x as EditableLabel).text = '');
-		this.correctCarryGroup.$children.forEach(x => (x as EditableLabel).text = '');
-		this.correctSumGroup.$children.forEach(x => (x as EditableLabel).text = '');
+		this.answerCarryGroup.$children.forEach(x => (x as EditableLabel).clear() );
+		this.answerSumGroup.$children.forEach(x => (x as EditableLabel).clear() );
+		this.correctCarryGroup.$children.forEach(x => (x as EditableLabel).clear() );
+		this.correctSumGroup.$children.forEach(x => (x as EditableLabel).clear() );
 	}
 
 }

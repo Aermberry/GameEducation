@@ -6,6 +6,7 @@ class CalculationPresenter {
 	private carryNeed = false;
 	private correctSum: SumAndCarry;
 	private questionIndex: number;
+	private questionPairs: number[][] = null;
 
 	public constructor() {
 	}
@@ -14,38 +15,57 @@ class CalculationPresenter {
 	{
 		this.view = view;
 		this.numberGenerator = new MediumNumberGenerator();
+		this.questionPairs = this.range(0, this.maxQuestionCount).map(() => this.numberGenerator.generate(), this);
 		await this.view.getNameAsync();
 		this.carryNeed = await this.view.confirmCarryNeedAsync();
 		this.view.correctAnswerCount = 0;
-		for (let questionIndex = 0; questionIndex < this.maxQuestionCount; questionIndex++) {
-			this.questionIndex = questionIndex + 1;
-			let pair = this.numberGenerator.generate();
-			let addend = this.view.addend = pair[0];
-			let augend = this.view.augend = pair[1];
+		for (this.questionIndex = 0; this.questionIndex < this.maxQuestionCount; this.questionIndex++) {
+			try {
+				this.view.questionIndex = this.questionIndex + 1;
+				let pair = this.questionPairs[this.questionIndex];
+				let addend = this.view.addend = pair[0];
+				let augend = this.view.augend = pair[1];
 
-			let answerSum = await this.getAnswerSumAndCarryAsync();
-			this.correctSum = this.getCorrectSumAndCarry(addend, augend);
-			if (answerSum.equals(this.correctSum, this.carryNeed)) {
-				this.correctAnswerCount++;
-				this.view.correctAnswerCount = this.correctAnswerCount;
-				this.view.alertAnswerCorrect();
-				this.view.openBox();
-			} else {
-				this.view.alertAnswerWrong();
+				let answerSum = await this.getAnswerSumAndCarryAsync();
+				this.correctSum = this.getCorrectSumAndCarry(addend, augend);
+				if (answerSum.equals(this.correctSum, this.carryNeed)) {
+					this.correctAnswerCount++;
+					this.view.correctAnswerCount = this.correctAnswerCount;
+					this.view.alertAnswerCorrect();
+					this.view.openBox();
+				} else {
+					this.view.alertAnswerWrong();
+				}
+				this.view.enableFinishImage();
+
+				await this.view.nextQuestionButtonClickAsync();
+				this.view.disableFinishImage();
+				this.view.showFinishImage();
+				this.view.closeBox();
+				this.view.hideNextQuestionButton();
+				this.view.hideCorrectGroup();
+				this.view.hideAnswerStatus();
+				this.view.clearUserInput();
+			} catch (ex) {
+				if (ex.message == EraseError.message) {
+					//重新做该题
+					this.view.clearUserInput();
+					this.questionIndex--;
+				} else {
+					throw ex;
+				}
 			}
-			this.view.enableFinishImage();
-
-			await this.view.nextQuestionButtonClickAsync();
-			this.view.questionIndex = this.questionIndex;
-			this.view.disableFinishImage();
-			this.view.showFinishImage();
-			this.view.closeBox();
-			this.view.hideNextQuestionButton();
-			this.view.hideCorrectGroup();
-			this.view.hideAnswerStatus();
-			this.view.clearUserInput();
 		}
 
+	}
+
+	range(start: number, count: number): number[] 
+	{
+		var ans = [];
+		for (let i = 0; i <= count; i++) {
+			ans.push(start + i);
+		}
+		return ans;
 	}
 
 	//当点击完成按钮时
@@ -65,24 +85,20 @@ class CalculationPresenter {
 	{
 		let sumArray = [];
 		let carryArray = [];
-		try {
-			for (let position = 0; position < 4; position++) {
-				this.view.changeAnswerSumToEditMode(position);
-				sumArray[position] = await this.view.getSumAsync(position);
-				this.view.changeAnswerSumToViewMode(position);
+		for (let position = 0; position < 4; position++) {
+			this.view.changeAnswerSumToEditMode(position);
+			sumArray[position] = await this.view.getSumAsync(position);
+			this.view.changeAnswerSumToViewMode(position);
 
-				if (position == 3 && sumArray[position] == 0) {
-					this.view.setAnswerSum('', position);
-				}
-
-				if (this.carryNeed && position < 2) {
-					this.view.changeAnswerCarryToEditMode(position);
-					carryArray[position] = await this.view.getCarryAsync(position);
-					this.view.changeAnswerCarryToViewMode(position);
-				}
+			if (position == 3 && sumArray[position] == 0) {
+				this.view.setAnswerSum('', position);
 			}
-		} catch (ex) {
-			return new SumAndCarry(parseInt(sumArray.reverse().join(''), 10), parseInt(carryArray.reverse().join(''), 10));
+
+			if (this.carryNeed && position < 2) {
+				this.view.changeAnswerCarryToEditMode(position);
+				carryArray[position] = await this.view.getCarryAsync(position);
+				this.view.changeAnswerCarryToViewMode(position);
+			}
 		}
 
 		return new SumAndCarry(parseInt(sumArray.reverse().join(''), 10), parseInt(carryArray.reverse().join(''), 10));

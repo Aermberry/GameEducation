@@ -58,4 +58,10 @@ class EditableLabel extends eui.Component implements  eui.UIComponent {
 			this.userInput.once(egret.Event.CHANGE, () => resolve(parseInt(this.userInput.text.trim(), 10)), this);
 		});
 	}
+
+	public clear(): void
+	{
+		this.text = '';
+		this.currentState = 'view';
+	}
 }
