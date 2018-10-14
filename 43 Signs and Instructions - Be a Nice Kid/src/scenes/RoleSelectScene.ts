@@ -7,6 +7,8 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 	private startImage: eui.Image;
 	private selectedChildImage: eui.Image;
 	private backgroundChildImage: eui.Image;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	private rollAnimation: egret.tween.TweenGroup;
 	
@@ -25,11 +27,18 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.loadBoys();
-		await this.handleMP3AndShow();
-		this.handleMouseAndClickOnChild();
 		this.startImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartImageClick, this)
 		this.startImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onStartImageOver, this)
 		this.startImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onStartImageOut, this)
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+	}
+
+	private async onStartButton2Click(): Promise<void>
+	{
+		this.startButton2.visible = false;
+		this.startMask.visible = false;;
+		await this.handleMP3AndShow();
+		this.handleMouseAndClickOnChild();
 	}
 
 	private async handleMP3AndShow(): Promise<void>
