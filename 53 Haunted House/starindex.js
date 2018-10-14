@@ -7150,7 +7150,7 @@ p.nominalBounds = new cjs.Rectangle(-10,-10,20,20);
 
 
 // stage content:
-(lib.HauntedHouseSplash = function(mode,startPosition,loop) {
+(lib.starindex = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
