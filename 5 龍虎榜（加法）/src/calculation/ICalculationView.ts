@@ -46,11 +46,14 @@ interface ICalculationView {
 	alertAnswerWrong(): void;
 	hideAnswerStatus(): void;
 	showCorrectGroup(): void;
+	showFinishImage(): void
 	hideCorrectGroup(): void;
+	hideFinishImage(): void
+	enableFinishImage(): void
+	disableFinishImage(): void
 	openBox(): void;
 	closeBox(): void;
 
 	/** 清除用户的输入 */
 	clearUserInput(): void;
-	openRankingScene(): void;
 }
