@@ -120,16 +120,20 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 		await lzlib.ThreadUtility.sleep(2000);
 	}*/
 
-	/** 合并进位 */
-	/*public async mergeCarry(position: number): Promise<void>
+	/** 借位 */
+	public async borrowOneFrom(position: number): Promise<void>
 	{
-		if (position == 1) {
-			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.addendGroup.getChildAt(position) as IParticleComponent));
-		} else {
-			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.augendGroup.getChildAt(position) as IParticleComponent));
-		}
-		await lzlib.ThreadUtility.sleep(2000);
-	}*/
+		let borrow = (this.minuendGroup.getChildAt(position) as IParticleComponent).borrowOne();
+		borrow.moveToLeftOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		borrow.currentState = 'separated';
+		await lzlib.ThreadUtility.sleep(1000);
+		
+		borrow.moveToLeftOf(this.subtrahendGroup.getChildAt(position - 1) as IParticleComponent);
+		(this.minuendGroup.getChildAt(position - 1) as IParticleComponent).moveToRightOf(this.subtrahendGroup.getChildAt(position - 1) as IParticleComponent);
+		(this.minuendGroup.getChildAt(position - 1) as IParticleComponent).toTranslucent();
+		(this.subtrahendGroup.getChildAt(position - 1) as IParticleComponent).toTranslucent();
+		await lzlib.ThreadUtility.sleep(1000);
+	}
 
 	/** 设置新被减数 */
 	public setNewMinuend(minuend: number, position: number, borrowTime: number): void
@@ -215,10 +219,13 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 	}
 	
 	/** 显示通关动画 */
-	public startCongratulation(): void
+	public async startCongratulation(): Promise<void>
 	{
 		this.boyImage.visible = false;
 		this.playBoyMovie();
+		this.alertBackgroundImage.visible = true;
+		await lzlib.ThreadUtility.sleep(1500);
+		this.alertBackgroundImage.visible = false;
 	}
 	
 	private playBoyMovie(): void
@@ -228,12 +235,5 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 		this.boyMovie.y = 0;
 		this.boyGroup.addChild(this.boyMovie);
 		this.boyMovie.play(-1);
-	}
-
-	public async showAlertImage(): Promise<void>
-	{
-		this.alertBackgroundImage.visible = true;
-		await lzlib.ThreadUtility.sleep(1500);
-		this.alertBackgroundImage.visible = false;
 	}
 }

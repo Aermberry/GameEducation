@@ -1,7 +1,6 @@
 interface ISubtractCalculationView {
 	minuend: number;
 	subtrahend: number;
-	showAlertImage(): Promise<void>
 	hideStartButton(): void;
 	showRestartButton(): void;
 	/** highlight操作数，包括expressionGroup和demoGroup里的操作数 */
@@ -12,8 +11,8 @@ interface ISubtractCalculationView {
 	//moveAddendToAugend(position: number): Promise<void>;
 	/** 合并被加数和加数 */
 	//mergeAddendAndAugend(position: number): Promise<void>;
-	/** 合并进位 */
-	//mergeCarry(position: number): Promise<void>\
+	/** 借位 */
+	borrowOneFrom(position: number): Promise<void>;
 	/** 令差的指定位进入编辑模式 */
 	changeDifferenceToEditMode(position: number): void;
 	/** 令差的指定位进入只读模式 */

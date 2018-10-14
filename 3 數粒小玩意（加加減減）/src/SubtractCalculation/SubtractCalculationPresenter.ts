@@ -28,31 +28,21 @@ class SubtractCalculationPresenter {
 		this.borrowTimes = [0, 0, 0];
 		
 		for	(let position = 0; position < result.toString().length; position++) {
+			this.view.highlightOperand(position);
 			let correctDifference = minuend[position] - subtrahend[position];
-			this.view.changeDifferenceToEditMode(position);
 			if (position < minuend.length - 1) {
 				//最后一位不需要确认退位
 				if (await this.confirmBorrowNeed(correctDifference)) {
-					await this.borrowOneFrom(minuend, position + 1);
+					let borrowedComponent = await this.borrowOneFrom(minuend, position + 1);
+					borrowedComponent.play
 					minuend[position] += 10;
 					this.view.playMinuendDeleteMovie(position, this.borrowTimes[position]);
 					this.view.setNewMinuend(minuend[position], position, this.borrowTimes[position]);
 				}
 			}
 			await this.calculateDifferenceBit(minuend[position], subtrahend[position], position);
-			this.view.changeDifferenceToViewMode(position);
-
-			let answerLength = result.toString().length;
-			
-			if (position == answerLength - 1 )
-			{
-				//應彈出 問用戶重新開始還是繼續
-				this.view.showAlertImage();
-			} 
-
+			this.view.normalizeOperand(position);
 		}
-
-
 
 		this.view.startCongratulation();
 	}
@@ -98,6 +88,7 @@ class SubtractCalculationPresenter {
 			this.borrowTimes[position]++;
 		}
 		minuend[position]--;
+		await this.view.borrowOneFrom(position);
 		await this.confirmNewMinuend(minuend[position], position);
 		this.borrowTimes[position]++;
 	}
