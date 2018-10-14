@@ -9,20 +9,4 @@ class PuzzleBiz {
 	{
 		return wordfind.newPuzzle(words, { width: dimension, height: dimension, preferOverlap: 0, orientations: ['horizontal', 'vertical', 'diagonal'] });
 	}
-
-	/** 填充空白 */
-	private populate(puzzle: string[][], dimension: number): string[][]
-	{
-		while (puzzle.length < dimension) {
-			puzzle.push([]);
-		}
-
-		for (let row of puzzle) {
-			while (row.length < dimension) {
-				row.push(this.chars[Math.randomMinMax(0, this.chars.length - 1)]);
-			}
-		}
-
-		return puzzle;
-	}
 }
