@@ -83,26 +83,26 @@ class Plus16And27Scene extends eui.Component implements  eui.UIComponent {
 	
 	private async playCalculationAnimation(): Promise<void>
 	{
-		await this.playTweenGroupAndSound(this.tg0, 'add2_streamsound 0_mp3');
-		await this.playTweenGroupAndSound(this.tg1, 'add2_streamsound 1_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 2_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 3_mp3');
-		await this.playTweenGroupAndSound(this.tg2, 'add2_streamsound 4_mp3');
-		await this.playTweenGroupAndSound(this.tg3, 'add2_streamsound 5_mp3');
-		await this.playTweenGroupAndSound(this.tg4, 'add2_streamsound 6_mp3');
-		await this.playTweenGroupAndSound(this.tg5, 'add2_streamsound 7_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 8_mp3');
-		await this.playTweenGroupAndSound(this.tg6, 'add2_streamsound 9_mp3');
-		await this.playTweenGroupAndSound(this.tg7, 'add2_streamsound 10_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 11_mp3');
-		await this.playTweenGroupAndSound(this.tg8, 'add2_streamsound 12_mp3');
-		await this.playTweenGroupAndSound(this.tg9, 'add2_streamsound 13_mp3');
-		await this.playTweenGroupAndSound(this.tg10, 'add2_streamsound 14_mp3');
-		await this.playTweenGroupAndSound(this.tg11, 'add2_streamsound 15_mp3');
-		await this.playTweenGroupAndSound(this.tg12, 'add2_streamsound 16_mp3');
-		await this.playTweenGroupAndSound(this.tg13, 'add2_streamsound 17_mp3');
-		await this.playTweenGroupAndSound(this.tg14, 'add2_streamsound 18_mp3');
-		await this.playTweenGroupAndSound(this.tg15, 'add2_streamsound 19_mp3');
+		await this.playTweenGroupAndSound(this.tg0, 'add2_streamsound_0_mp3');
+		await this.playTweenGroupAndSound(this.tg1, 'add2_streamsound_1_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_2_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_3_mp3');
+		await this.playTweenGroupAndSound(this.tg2, 'add2_streamsound_4_mp3');
+		await this.playTweenGroupAndSound(this.tg3, 'add2_streamsound_5_mp3');
+		await this.playTweenGroupAndSound(this.tg4, 'add2_streamsound_6_mp3');
+		await this.playTweenGroupAndSound(this.tg5, 'add2_streamsound_7_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_8_mp3');
+		await this.playTweenGroupAndSound(this.tg6, 'add2_streamsound_9_mp3');
+		await this.playTweenGroupAndSound(this.tg7, 'add2_streamsound_10_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_11_mp3');
+		await this.playTweenGroupAndSound(this.tg8, 'add2_streamsound_12_mp3');
+		await this.playTweenGroupAndSound(this.tg9, 'add2_streamsound_13_mp3');
+		await this.playTweenGroupAndSound(this.tg10, 'add2_streamsound_14_mp3');
+		await this.playTweenGroupAndSound(this.tg11, 'add2_streamsound_15_mp3');
+		await this.playTweenGroupAndSound(this.tg12, 'add2_streamsound_16_mp3');
+		await this.playTweenGroupAndSound(this.tg13, 'add2_streamsound_17_mp3');
+		await this.playTweenGroupAndSound(this.tg14, 'add2_streamsound_18_mp3');
+		await this.playTweenGroupAndSound(this.tg15, 'add2_streamsound_19_mp3');
 		this.tg16.play();
 		this.backToIndexButton.parent.setChildIndex(this.backToIndexButton, this.backToIndexButton.parent.numChildren - 1);
 		this.backToIndexButton.enabled = true;

@@ -94,6 +94,7 @@ class HearScene extends eui.Component implements eui.UIComponent{
          this.scrollText.text = ' a girl crying.';
          this.switchFont();
          this.stopCurrentSoundChannel();
+         this.isNextSceneButtonDisplap();
          this.currentSoundChannel = (RES.getRes('hear_cry_mp3') as egret.Sound).play(0,1);              
          this.nextScene(); 
     }
@@ -102,6 +103,7 @@ class HearScene extends eui.Component implements eui.UIComponent{
          this.scrollText.text = ' people talking.';
          this.switchFont();
          this.stopCurrentSoundChannel();
+         this.isNextSceneButtonDisplap();
          this.currentSoundChannel = (RES.getRes('hear_talk_mp3') as egret.Sound).play(0,1);                       
          this.nextScene(); 
     }
@@ -110,6 +112,7 @@ class HearScene extends eui.Component implements eui.UIComponent{
          this.scrollText.text=' the door open.';
          this.switchFont();
          this.stopCurrentSoundChannel();
+         this.isNextSceneButtonDisplap();
          this.currentSoundChannel = (RES.getRes('hear_door_open_mp3') as egret.Sound).play(0,1);                       
          this.nextScene();  
     }
@@ -132,6 +135,10 @@ class HearScene extends eui.Component implements eui.UIComponent{
     private stopSoundToNextScene():void{
         this.stopCurrentSoundChannel();
         Main.instance.gotoScene(new SmellScene);
+    }
+
+      private isNextSceneButtonDisplap():void{
+        this.nextSceneButton.visible==false&&(this.nextSceneButton.visible=true);
     }
 
 }

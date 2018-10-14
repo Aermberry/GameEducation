@@ -3234,7 +3234,6 @@ declare namespace egret {
          * @default <code>BitmapFillMode.SCALE</code>
          *
          * @version Egret 2.4
-         * @version eui 1.0
          * @platform Web
          * @language en_US
          */
@@ -3246,7 +3245,6 @@ declare namespace egret {
          * @default <code>BitmapFillMode.SCALE</code>
          *
          * @version Egret 2.4
-         * @version eui 1.0
          * @platform Web
          * @language zh_CN
          */
@@ -3617,6 +3615,8 @@ declare namespace egret_native {
     function nrGlobalToLocal(id: number, globalX: number, globalY: number): string;
     function nrGetTextFieldWidth(id: number): number;
     function nrGetTextFieldHeight(id: number): number;
+    function nrGetTextWidth(id: number): number;
+    function nrGetTextHeight(id: number): number;
     function nrResize(width: number, height: number): void;
     function nrSetCanvasScaleFactor(factor: number, scalex: number, scaley: number): void;
     function nrUpdate(): void;
@@ -13323,14 +13323,14 @@ declare namespace egret {
         readShort(): number;
         /**
          * Read unsigned bytes from the byte stream.
-         * @return A 32-bit unsigned integer ranging from 0 to 255
+         * @return A unsigned integer ranging from 0 to 255
          * @version Egret 2.4
          * @platform Web,Native
          * @language en_US
          */
         /**
          * 从字节流中读取无符号的字节
-         * @return 介于 0 和 255 之间的 32 位无符号整数
+         * @return 介于 0 和 255 之间的无符号整数
          * @version Egret 2.4
          * @platform Web,Native
          * @language zh_CN
@@ -14847,7 +14847,7 @@ declare namespace egret {
     /**
      * Transfer number to color character string
      * @param value {number} color value ,such as 0xffffff
-     * @returns {string} Color character string, for example, 0xffffff.
+     * @returns {string} Color character string, for example, #ffffff.
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample egret/utils/toColorString.ts
@@ -14856,7 +14856,7 @@ declare namespace egret {
     /**
      * 转换数字为颜色字符串
      * @param value {number} 颜色值，例如 0xffffff
-     * @returns {string} 颜色字符串，例如"0xffffff"。
+     * @returns {string} 颜色字符串，例如"#ffffff"。
      * @version Egret 2.4
      * @platform Web,Native
      * @includeExample egret/utils/toColorString.ts
