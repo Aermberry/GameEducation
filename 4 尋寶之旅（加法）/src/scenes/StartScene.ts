@@ -3,6 +3,10 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private juniorImage: eui.Image;
 	private mediumImage: eui.Image;
 	private seniorImage: eui.Image;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
+
+	private currentSoundChannel: egret.SoundChannel;
 
 	public constructor() {
 		super();
@@ -20,6 +24,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		
 		mouse.setButtonMode(this.juniorImage, true);
+		mouse.setButtonMode(this.startButton2, true);
 		this.juniorImage.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.juniorImage.source = 'junior_selected_png', this);
 		this.juniorImage.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.juniorImage.source = 'junior_normal_png', this);
 		this.juniorImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJuniorImageClick, this);
@@ -34,21 +39,45 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		this.seniorImage.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.seniorImage.source = 'senior_normal_png', this);
 		this.seniorImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSeniorImageClick, this);
 
-		this.splashTweenGroup.play(0);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+		
+	}
+
+	private async onStartButton2Click(): Promise<void>
+	{
+		// this.splashTweenGroup.play(0);
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		this.playSplash();
+	}
+
+	private async playSplash(): Promise<void>
+	{
+		await this.splashTweenGroup.playOnceAsync();
+		this.currentSoundChannel = (RES.getRes('select_degree_mp3') as egret.Sound).play(0, 1);
 	}
 
 	private onJuniorImageClick(): void
-	{
+	{	
+		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new CalculationScene(Degree.junior));
 	}
 
 	private onMediumImageClick(): void
-	{
+	{	
+		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new CalculationScene(Degree.medium));
 	}
 
 	private onSeniorImageClick(): void
-	{
+	{	
+		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new CalculationScene(Degree.senior));
 	}
+
+	private stopCurrentSoundChannel(): void
+	{
+		this.currentSoundChannel && this.currentSoundChannel.stop();
+	}
+
 }
