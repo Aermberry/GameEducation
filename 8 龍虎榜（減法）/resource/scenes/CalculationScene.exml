@@ -150,11 +150,11 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0" />
-	<e:Image source="minus_tour_png" x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73"/>
+	<e:Image source="add_and_subtract_more_png" y="30" horizontalCenter="0"  locked="true"/>
+	<e:Image source="minus_tour_png" x="1050" y="60"  anchorOffsetX="0" width="522" anchorOffsetY="0" height="73" locked="true"/>
 	
-	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75"/>
-	<e:Group id="questionGroup" width="660" height="585" y="240" horizontalCenter="0">
+	<e:Rect top="180" bottom="30" left="125" right="125" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1"  ellipseWidth="75" locked="true"/>
+	<e:Group id="questionGroup" width="660" height="585" y="240" horizontalCenter="0" locked="true">
 		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="-1" right="1" top="0" bottom="0"/>
 		<e:Group width="97" height="75" y="25" x="40">
 			<e:Rect strokeWeight="5" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="25" left="0" right="0" bottom="0" top="0"/>
@@ -177,14 +177,14 @@
 		<e:Image id="answerUnitRedLineImage" x="448.5" source="red_line_png" bottom="315" width="0" height="0"/>
 		<e:Image id="answerStatusImage" x="566" y="418" source="tick_png" visible="false"/>
 	</e:Group>
-	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240" visible="false">
+	<e:Group id="topDialogGroup" width="560" height="260" x="1170" y="240" visible="false" locked="true">
 		<e:Image id="topDialogImage" x="0" y="0" source="dialog_up_png"/>
 		<e:Label id="topDialogTitleLabel" text="要退位嗎？" y="25" textColor="0x000000" size="45" horizontalCenter="0" fontFamily="華康標楷體" bold="true"/>
 		<ns1:ImageButton id="yesButton" x="70" y="120" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
 		<ns1:ImageButton id="noButton" x="320" y="120" source="no_normal_png" mouseOverSource="no_selected_png"/>
 	</e:Group>
-	<ns1:ImageButton id="finishButton" x="1327.91" y="706.45" mouseOverSource="no_selected_png" source="finish_normal_png"/>
-	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+	<ns1:ImageButton id="finishButton" x="1327.91" y="706.45" mouseOverSource="no_selected_png" source="finish_normal_png" locked="true"/>
+	<e:Group id="correctGroup" width="430" right="185" top="265" height="440" anchorOffsetX="0" anchorOffsetY="0" visible="false" locked="true">
 		<e:Rect strokeWeight="10" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="-1" right="1" top="0" bottom="0"/>
 		<e:Rect strokeWeight="2" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="5" left="144" right="130" top="-58" bottom="423" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Image y="275" source="minus_expression_png" x="20"/>
@@ -205,20 +205,28 @@
 		<e:BitmapLabel id="correctSubtrahendLabel" width="246" height="62" y="250" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="65" textAlign="right" x="130"/>
 		<e:Image x="165" y="-47" source="correct_answer_png"/>
 	</e:Group>
-	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454"/>
-	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454"/>
-	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0"/>
+	<e:Image id="boxClosedImage" source="box_closed_png" bottom="255" x="454" locked="true"/>
+	<e:Image id="boxOpenImage" source="box_open_png" alpha="0" bottom="255" x="454" locked="true"/>
+	<e:Image id="strawberryImage" x="490" y="680" source="strawberry_png" alpha="0" locked="true"/>
 
-	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="boyGroup" width="338" height="532" bottom="215" left="185" anchorOffsetX="0" anchorOffsetY="0" locked="true">
 		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
 	</e:Group>
-	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0" />
-	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false"/>
-	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40"/>
+	<ns1:NumberPad id="numberPad" y="840" horizontalCenter="0"  locked="true"/>
+	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false" locked="true"/>
+	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40" locked="true"/>
 
-	<e:Group id="finishTipsGroup" x="1353.77" y="515.61" visible="false">
+	<e:Group id="finishTipsGroup" x="1353.77" y="515.61" visible="false" locked="true">
 		<e:Image x="0" y="0" source="Finish_tips_png" anchorOffsetY="0"/>
 		<e:Label text="計完後，\n請「按完成」。" x="31.05" y="2.18" anchorOffsetX="0" width="367.94" anchorOffsetY="0" height="148.18" textColor="0x000000" textAlign="center" verticalAlign="middle" size="41" fontFamily="華康標楷體" lineSpacing="20" bold="true"/>
+	</e:Group>
+	<e:Group id="angelGroup" width="248" height="175" x="1275" y="535" visible="false" locked="true"/>
+	<e:Group id="confirmInputBorrowDialogGroup" bottom="0" left="0" top="0" right="0">
+		<e:Rect fillColor="0xffffff" left="0" top="0" bottom="0" right="0" alpha="0.9"/>
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" anchorOffsetX="0" anchorOffsetY="0" width="977" height="495" scaleX="1" scaleY="1" x="472" y="283"/>
+		<e:Label text="要輸入退位嗎？" y="385" textColor="0x426273" size="80" x="680"/>
+		<ns1:ImageButton id="yesButton2" x="680" y="585" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
+		<ns1:ImageButton id="noButton2" x="1061" y="585" source="no_normal_png" mouseOverSource="no_selected_png"/>
 	</e:Group>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>

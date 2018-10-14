@@ -34,6 +34,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private finishButton:ImageButton;
 	private finishTipsGroup: eui.Group;
 
+	private angelGroup: eui.Group;
+	private angelFactory:egret.MovieClipDataFactory;
+    private angelMovie:egret.MovieClip;
+
 	private answerDeleteMinuend20Movie: egret.tween.TweenGroup;
 	private answerDeleteMinuend10Movie: egret.tween.TweenGroup;
 	private answerDeleteMinuend11Movie: egret.tween.TweenGroup;
@@ -45,6 +49,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private correctDeleteMinuend11Movie: egret.tween.TweenGroup;
 	private correctDeleteMinuend00Movie: egret.tween.TweenGroup;
 	private correctDeleteMinuendMovies = {};
+
+	private confirmInputBorrowDialogGroup: eui.Group;
+	private yesButton2: ImageButton;
+	private noButton2: ImageButton;
 
 	private presenter = new CalculationPresenter();
 
@@ -62,6 +70,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.initAngelGroup();
 		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
 			"deleteMinuend20Movie": this.answerDeleteMinuend20Movie,
@@ -80,15 +89,34 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.presenter.loadView(this);
 	}
 
+	private initAngelGroup(): void
+	{
+		this.angelFactory = new egret.MovieClipDataFactory(RES.getRes('angel_json'), RES.getRes('angel_png'));
+		this.angelMovie = new egret.MovieClip(this.angelFactory.generateMovieClipData('angel'));
+		this.angelGroup.addChild(this.angelMovie);
+		this.angelMovie.play(-1);
+	}
+
 	public getNameAsync(): Promise<string>
 	{
 		return new Promise<string>(resolve => resolve(''));
 	}
 
-	/** 向用户确认是否需要输入退位 */
+	/** 向用户确认是是否要输入退位，在游戏一开始的时候出现。
+	 * 如果用户选择是，在做题的每一步系统都会咨问用户是否要退位。
+	 * 如果用户选择否，系统就不会再问用户是否要退位 */
 	public confirmInputBorrowNeedAsync(): Promise<boolean>
 	{
-		return new Promise<boolean>(resolve => resolve(true));
+		return new Promise<boolean>(resolve => {
+			this.yesButton2.once(egret.TouchEvent.TOUCH_TAP, () => {
+				this.confirmInputBorrowDialogGroup.visible = false;
+				resolve(true);
+			}, this);
+			this.noButton2.once(egret.TouchEvent.TOUCH_TAP, () => {
+				this.confirmInputBorrowDialogGroup.visible = false;
+				resolve(false);
+			}, this);
+		});
 	}
 
 	public set questionIndex(value: number)
@@ -152,14 +180,17 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public confirmBorrowNeedAsync(): Promise<boolean>
 	{
 		this.topDialogGroup.visible = true;
+		this.angelGroup.visible=true;
 		return new Promise<boolean>(resolve => {
 			this.yesButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(true);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 			this.noButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(false);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 		});
 	}
@@ -222,6 +253,16 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 				child.width = child.height = 0;
 			}
 		}
+	}
+
+	public showAngle(): void
+	{
+		this.angelGroup.visible = true;
+	}
+
+	public hideAngel(): void
+	{
+		this.angelGroup.visible = false;
 	}
 
 	public showNextQuestionButton(): void

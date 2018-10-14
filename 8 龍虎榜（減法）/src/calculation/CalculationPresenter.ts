@@ -78,7 +78,7 @@ class CalculationPresenter {
 		let borrowTimes = [0, 0, 0]; //被减数每一位的已退位次数
 
 		for (let position = 0; position < 3; position++) {
-			if (position < 2 && await this.view.confirmBorrowNeedAsync()) {
+			if (this.borrowNeed && position < 2 && await this.view.confirmBorrowNeedAsync()) {
 				let higherPosition = position + 1;
 				this.view.playAnswerMinuendDeleteMovie(higherPosition, borrowTimes[higherPosition]);
 				this.view.changeAnswerNewMinuendToEditMode(higherPosition, borrowTimes[higherPosition]);
