@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SmellSceneSKin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="SmellSceneSKin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 <e:Image id="smell_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
 <e:Image id="smell_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 <e:Label id="SmellSceneText" text="They smell" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>

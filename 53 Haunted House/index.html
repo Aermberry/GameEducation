@@ -32,8 +32,7 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
-
-		@font-face {
+       @font-face {
             font-family:"Westwood";
             src: url("resource/fonts/Westwood.woff2") format('woff2'),
                  url('resource/fonts/Westwood.woff') format('woff'),
@@ -41,7 +40,6 @@
             font-weight: normal;
             font-style: normal;
         }
-        
         @media screen and (max-device-width:641px) and (max-device-height:823px){
            #logo {
                height: 25px;
@@ -66,8 +64,7 @@
                top: 59px;
            }
         } 
-
-         #animation_container {
+        #animation_container {
             position:absolute;
             margin:auto;
             left:0;right:0;
@@ -94,6 +91,7 @@
     <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/en/other/important_notices.html">Important Notices</a> | <a href="http://wlts.edb.hkedcity.net/en/other/privacy_policy.html"
         style="margin-right: 30px;">Privacy Policy</a>Last revision date: 29 July 2018)
     </div>
+   
     <!--Animate CC div模块-->
     <div style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1000px;  display: none;">
@@ -148,7 +146,7 @@
              * }
              **/
             egret.runEgret({
-                renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                renderMode: "canvas", audioType: 0, calculateCanvasScaleFactor: function (context) {
                     var backingStore = context.backingStorePixelRatio ||
                         context.webkitBackingStorePixelRatio ||
                         context.mozBackingStorePixelRatio ||
@@ -164,7 +162,8 @@
     });
     xhr.send(null);
 
-// Animate CC 动画js开始
+
+    // Animate CC 动画js开始
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function init() {
 	canvas = document.getElementById("canvas");
@@ -252,7 +251,6 @@ function continueEgretGame() {
      anim_container.style.display = "none";
       HauntedHouse.QuestionScene.instance.onStartQuestion()
 }
-
 </script>
 <script>
     function alignHeaderFooter() {
@@ -266,4 +264,5 @@ function continueEgretGame() {
     window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
+
 </html>
