@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,math143Less21Rectbg_png,minus_info_png,gameEui_json,start_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,math143Less21Rectbg_png,minus_info_png,gameEui_json,start_png,bar_png,particle_png,block_png,chunk_png,calculation_font_fnt,calculation_font_png,title_png,GGGFont_png,GGGFont_fnt",
 			"name": "preload"
 		}
 	],
@@ -337,24 +337,74 @@
 			"name": "eight_shadow_bottom_left_png"
 		},
 		{
-			"name": "math143Less21Rectbg_png",
+			"url": "textures/math143Less21Rectbg.png",
 			"type": "image",
-			"url": "textures/math143Less21Rectbg.png"
+			"name": "math143Less21Rectbg_png"
 		},
 		{
-			"name": "minus_info_png",
+			"url": "textures/splash/minus_info.png",
 			"type": "image",
-			"url": "textures/splash/minus_info.png"
+			"name": "minus_info_png"
 		},
 		{
-			"name": "gameEui_json",
+			"url": "gameEui.json",
 			"type": "json",
-			"url": "gameEui.json"
+			"name": "gameEui_json"
 		},
 		{
-			"name": "start_png",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "start_png"
+		},
+		{
+			"url": "textures/bar.png",
+			"type": "image",
+			"name": "bar_png"
+		},
+		{
+			"url": "textures/particle.png",
+			"type": "image",
+			"name": "particle_png"
+		},
+		{
+			"url": "textures/block.png",
+			"type": "image",
+			"name": "block_png"
+		},
+		{
+			"url": "textures/chunk.png",
+			"type": "image",
+			"name": "chunk_png"
+		},
+		{
+			"url": "textures/calculation_font.fnt",
+			"type": "font",
+			"name": "calculation_font_fnt"
+		},
+		{
+			"url": "textures/calculation_font.png",
+			"type": "image",
+			"name": "calculation_font_png"
+		},
+		{
+			"url": "textures/title.png",
+			"type": "image",
+			"name": "title_png"
+		},
+		{
+			"url": "textures/Bg.png",
+			"type": "image",
+			"name": "Bg_png"
+		},
+		{
+			"url": "textures/GGGFont.png",
+			"type": "image",
+			"name": "GGGFont_png"
+		},
+		{
+			"url": "textures/GGGFont.fnt",
+			"type": "font",
+			"name": "GGGFont_fnt"
 		}
 	]
 }
