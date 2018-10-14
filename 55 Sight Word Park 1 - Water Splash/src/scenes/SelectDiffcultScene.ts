@@ -1,8 +1,10 @@
 class SelectDiffcultScene extends eui.Component implements  eui.UIComponent {
-    private backGroup:eui.Group;
-	private easyGroup:eui.Group;
-	private proGroup:eui.Group;
+    private back_Image:eui.Group;
+	private EasyModel_Group:eui.Group;
+	private proModel_Group:eui.Group;
 	private currentSoundChannel:egret.SoundChannel;
+	private MovieClip:MovieClipPlayer;
+	private exampleMovieClip_Group:eui.Group;
 
 
 	public constructor() {
@@ -18,17 +20,15 @@ class SelectDiffcultScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		mouse.setButtonMode(this.backGroup, true);
-		mouse.setButtonMode(this.easyGroup, true);
-		mouse.setButtonMode(this.proGroup, true);		
+		mouse.setButtonMode(this.back_Image, true);
+		mouse.setButtonMode(this.EasyModel_Group, true);
+		mouse.setButtonMode(this.proModel_Group, true);		
         
 		this.currentSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play(0,1);
-		this.backGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
+		this.back_Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 
-		this.easyGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goEasyGameScene, this);
-		this.proGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goProGameScene, this);	
-			
-		
+		this.EasyModel_Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goEasyGameScene, this);
+		this.proModel_Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goProGameScene, this);	
 	}
 
 	private goEasyGameScene():void
@@ -56,6 +56,4 @@ class SelectDiffcultScene extends eui.Component implements  eui.UIComponent {
           this.currentSoundChannel.stop();
 		}
 	}
-	
-	
 }

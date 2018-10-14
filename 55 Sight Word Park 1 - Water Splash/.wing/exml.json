@@ -36,5 +36,10 @@
         "path": "scenes/ResultScene.ts",
         "class": "ResultScene",
         "parentPath": ""
+    },
+    "1667043c473": {
+        "path": "components\\MovieClipPlayer.ts",
+        "class": "MovieClipPlayer",
+        "parentPath": ""
     }
 }
