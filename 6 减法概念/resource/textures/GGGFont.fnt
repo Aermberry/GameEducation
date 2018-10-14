@@ -1,0 +1,15 @@
+{"file":"GGGFont.png","frames":{
+"1":{"x":81,"y":160,"w":19,"h":53,"offX":0,"offY":0,"sourceW":20,"sourceH":53},
+"2":{"x":73,"y":107,"w":28,"h":53,"offX":0,"offY":0,"sourceW":28,"sourceH":53},
+"3":{"x":45,"y":55,"w":28,"h":54,"offX":0,"offY":0,"sourceW":28,"sourceH":56},
+"4":{"x":89,"y":0,"w":30,"h":53,"offX":0,"offY":0,"sourceW":30,"sourceH":53},
+"5":{"x":0,"y":142,"w":27,"h":53,"offX":0,"offY":0,"sourceW":28,"sourceH":53},
+"6":{"x":101,"y":107,"w":27,"h":54,"offX":0,"offY":0,"sourceW":28,"sourceH":56},
+"7":{"x":0,"y":89,"w":28,"h":53,"offX":0,"offY":0,"sourceW":28,"sourceH":53},
+"8":{"x":89,"y":53,"w":28,"h":54,"offX":0,"offY":0,"sourceW":30,"sourceH":56},
+"9":{"x":28,"y":109,"w":27,"h":54,"offX":0,"offY":0,"sourceW":28,"sourceH":56},
+"0":{"x":55,"y":160,"w":26,"h":54,"offX":0,"offY":0,"sourceW":28,"sourceH":56},
+"角":{"x":51,"y":0,"w":38,"h":55,"offX":0,"offY":0,"sourceW":38,"sourceH":56},
+"+":{"x":0,"y":44,"w":45,"h":45,"offX":0,"offY":0,"sourceW":45,"sourceH":45},
+"-":{"x":0,"y":195,"w":40,"h":7,"offX":0,"offY":0,"sourceW":40,"sourceH":8},
+"元":{"x":0,"y":0,"w":51,"h":44,"offX":0,"offY":0,"sourceW":51,"sourceH":45}}}

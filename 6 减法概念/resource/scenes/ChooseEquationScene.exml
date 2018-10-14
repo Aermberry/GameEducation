@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ChooseEquationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<e:Image source="math143Less21Rectbg_png"/>
-	<e:Rect id="math143Less21Rect" width="279" height="222" x="195" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
-	<e:Rect id="math134Less115Rect" width="279" height="222" x="509" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
-	<e:Rect id="math315Less123Rect" width="279" height="222" x="823" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
-	<e:Rect id="math321Less125Rect" width="279" height="222" x="1132" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
-	<e:Rect id="math203Less24Rect" width="279" height="222" x="1441" y="737" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+<e:Skin class="ChooseEquationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Rect top="0" left="0" right="0" bottom="0"  fillColor="0xbecae1"/>
+	<e:Image source="Bg_png" x="130.35" y="193.99"/>
+
+
+
+
+
+	<e:Group x="195" y="746.12">
+		<e:Rect id="math143Less21Rect" width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+		<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="115.19" letterSpacing="10" left="132" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8"/>
+		<e:BitmapLabel width="259.85" height="60.6" font="GGGFont_fnt" text="143   21" anchorOffsetY="0" anchorOffsetX="0" y="91.82" letterSpacing="10" left="40" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="10"/>
+		<e:Rect id="math134Less115Rect" width="279" height="222" x="314" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+		<e:Group x="363.62" y="53.31">
+			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="143" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="115" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+			<e:Rect width="184" height="5" y="114.9" x="0"/>
+		</e:Group>
+		
+		<e:Rect id="math315Less123Rect" width="279" height="222" x="628" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+		<e:Group x="681.79" y="53.31">
+			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="315" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="123" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+			<e:Rect width="184" height="5" y="114.9" x="0"/>
+		</e:Group>
+		<e:Rect id="math321Less125Rect" width="279" height="222" x="937" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+		<e:Group x="984.18" y="52.67">
+			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="321" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="125" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+			<e:Rect width="184" height="5" y="114.9" x="0"/>
+		</e:Group>
+		<e:Rect id="math203Less24Rect" width="279" height="222" x="1246" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+		<e:Group x="1300.26" y="52.03">
+			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="203" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="24" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="right" scaleX="0.8" scaleY="0.8" x="71.78" lineSpacing="20"/>
+			<e:Rect width="184" height="5" y="114.9" x="0"/>
+		</e:Group>
+
+
+	</e:Group>
+
+
+
+
+
+
+
+
+	<e:Group x="644.11" y="236.68">
+		<e:Label text="使用數粒解釋減法的概念。" x="3.35" y="0" textColor="0x000000" size="54" fontFamily="華康標楷體" anchorOffsetX="0" width="670.94" bold="true"/>
+		<e:Rect width="631" x="0" y="63.42" anchorOffsetY="0" height="2.33"/>
+	</e:Group>
+
+
+	<e:Group x="557.14" y="643.16">
+		<e:Label text="在算式上按一按，觀看運算過程。" x="0.87" y="0" textColor="0x000000" size="54" fontFamily="華康標楷體" anchorOffsetX="0" width="833.06" bold="true"/>
+		<e:Rect width="803" x="0" y="63.88" anchorOffsetY="0" height="2.33"/>
+	</e:Group>
+
+
+
+	<e:Group x="222.31" y="301.21">
+		<e:Image source="block_png" x="592.97" y="36.71"/>
+		<e:Image source="bar_png" x="1058.12" y="60.97"/>
+		<e:Image x="1318.73" y="148.85" source="particle_png"/>
+		<e:Image source="chunk_png" x="0" y="0"/>
+		<e:Label text="代表" textColor="0x000000" y="129.35" x="826.69" anchorOffsetX="0" width="94" anchorOffsetY="0" height="62" size="40" bold="true" verticalAlign="middle" textAlign="left" fontFamily="華康標楷體"/>
+		<e:Label text="代表" textColor="0x000000" y="129.25" x="1110.8" anchorOffsetX="0" width="94" anchorOffsetY="0" height="62" size="40" bold="true" verticalAlign="middle" textAlign="left" fontFamily="華康標楷體"/>
+		<e:Label text="代表" textColor="0x000000" y="128.25" x="1368.3" anchorOffsetX="0" width="94" anchorOffsetY="0" height="62" size="40" bold="true" verticalAlign="middle" textAlign="left" fontFamily="華康標楷體"/>
+		<e:BitmapLabel width="125" height="59" x="421.69" y="137.5" text="1000" anchorOffsetX="0" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="5" scaleY="0.8"/>
+		<e:BitmapLabel width="89" height="59" x="929.8" y="137.65" text="100" anchorOffsetX="0" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="5" scaleY="0.8"/>
+		<e:BitmapLabel width="55" height="59" x="1207.8" y="139.4" text="10" anchorOffsetX="0" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="5" scaleY="0.8"/>
+		<e:BitmapLabel width="21" height="59" x="1457.8" y="136.65" text="1" anchorOffsetX="0" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="5" scaleY="0.8"/>
+		<e:Label text="代表" textColor="0x000000" y="128.18" x="330.34999999999997" anchorOffsetX="0" width="94" anchorOffsetY="0" height="62" size="40" bold="true" verticalAlign="middle" textAlign="left" fontFamily="華康標楷體" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image source="title_png" x="282" y="33.31"/>
 </e:Skin>
