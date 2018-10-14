@@ -16,6 +16,9 @@ class FirstLevelStartScene extends eui.Component implements eui.UIComponent{
         private closeImg:eui.Image;
         private buleProgressBar: eui.Image;
     
+        private startButton2: eui.Image;
+        private startMask: eui.Rect;
+
         private playSoundFirstTweenGroup:egret.tween.TweenGroup;
          
         public constructor(){
@@ -34,11 +37,18 @@ class FirstLevelStartScene extends eui.Component implements eui.UIComponent{
             mouse.enable(this.stage);
             mouse.setButtonMode(this.exitGroup, true);
             mouse.setButtonMode(this.soundGroup, true);
-            this.currentSoundChannel = (RES.getRes('first_level_bgm_mp3') as egret.Sound).play(0,1);              
+            this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);  
             this.initExitGroup();
             this.initSoudGroup();
             
         }
+
+        private onStartButton2Click(): void
+	    {
+            this.currentSoundChannel = (RES.getRes('first_level_bgm_mp3') as egret.Sound).play(0,1);  
+            this.startMask.visible = false;
+            this.startButton2.visible = false;
+	    }
 
         private initExitGroup() {
             this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>window.close(), this);

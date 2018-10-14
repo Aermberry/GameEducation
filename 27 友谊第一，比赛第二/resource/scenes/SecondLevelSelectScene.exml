@@ -12,96 +12,88 @@
 	</e:Group>
 </e:Group>
 
-<e:Group id="answerGroup" touchThrough="true">
-	<e:Image x="1050" y="66" source="small_yellow_frame_png" locked="true"/>
-	
-	<e:Image id="placeBtnImg" x="1938" y="264" source="place_png" locked="true"/>
-	<e:Group id="placeGroup" touchThrough="true">
-		<e:Image id="firstPlace" x="1139" y="161" source="first_place_png" locked="true"/>
-		<e:Image id="secondPlace" x="1531" y="161" source="second_place_png"  locked="true"/>
-		<e:Image id="thirdPlace" name="" x="1139" y="419" source="third_place_png"  locked="true"/>
-		<e:Image id="forthPlace" x="1531" y="419" source="forth_place_png"  locked="true"/>
-		<e:Image id="fifithPlace" x="1139" y="676" source="fifth_place_png"  locked="true"/>
-		<e:Image id="sixthPlace" x="1531" y="676" source="sixth_place_png" locked="true"/>
+
+
+<e:Group id="toolbarGroup" touchThrough="true">
+	<e:Image id="exitBtn" source="btn_png" x="435" y="1056" />
+	<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="0x000000" bold="true"/>
+	<e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0"/>
+
+	<e:Image id="confirmFrame" source="confirm_button_png" x="1526" y="1056"/>
+	<e:Label id="confirmLabel" text="確定" fontFamily="huakangchaoheiti" x="1537.5" y="1104" size="60" bold="true"/>
+	<e:Group id="confirmGroup" x="1526" y="1056" width="156" height="156"/>
+
+	<e:Image id="correctImg" source="orange_btn_png" x="1739" y="1056" alpha="0.5"/>
+	<e:Group id="correctGroup" x="1739" y="1056" height="161" width="161" touchEnabled="false" alpha="0.2">
+		<e:Label id="correctLabel" x="19" y="50.5" text="改正" bold="true" fontFamily="huakangchaoheiti" size="60"/>
 	</e:Group>
 
-	<e:Image id="personBtnImg" x="1938" y="449" source="person_png" locked="true"/>
-	<e:Group id="personGroup" touchThrough="true" visible="false">
+	<e:Image id="replayBtn" source="btn_png" x="1953" y="1056" alpha="0.5"/>
+	<e:Group id="replayGroup" x="1953" y="1056" height="161"  width="161" touchEnabled="false" alpha="0.2">
+		<e:Label id="replayLabel" x="27.16" y="30.81" fontFamily="huakangchaoheiti" bold="true" size="50" text="重新開始" textColor="0x009900" anchorOffsetY="0" height="99.39" anchorOffsetX="0" width="106.67"/>
+	</e:Group>
+</e:Group>
+	<e:Group id="answerGroup" touchThrough="true">
+		<e:Image x="1050" y="66" source="small_yellow_frame_png" locked="true"/>
+		<e:Image id="placeBtnImg" x="1938" y="264" source="place_png" locked="true"/>
+		<e:Group id="placeGroup" touchThrough="true">
+		<e:Image id="firstPlace" x="1139" y="161" source="first_place_png" locked="true"/>
+		<e:Image id="secondPlace" x="1531" y="161" source="second_place_png" locked="true"/>
+		<e:Image id="thirdPlace" name="" x="1139" y="419" source="third_place_png" locked="true"/>
+		<e:Image id="forthPlace" x="1531" y="419" source="forth_place_png" locked="true"/>
+		<e:Image id="fifithPlace" x="1139" y="676" source="fifth_place_png" locked="true"/>
+		<e:Image id="sixthPlace" x="1531" y="676" source="sixth_place_png" locked="true"/>
+		</e:Group>
+		<e:Image id="personBtnImg" x="1938" y="449" source="person_png" locked="true"/>
+		<e:Group id="personGroup" touchThrough="true" visible="false">
 		<e:Image id="foxImg" source="fox_png" width="122" height="169" x="1190" y="171" locked="true"/>
-		<e:Image id="penguinImg" source="penguin_png"  width="136" height="165" x="1445" y="171" locked="true"/>
+		<e:Image id="penguinImg" source="penguin_png" width="136" height="165" x="1445" y="171" locked="true"/>
 		<e:Image id="catImg" source="cat_png" width="120" height="165" x="1716" y="171" locked="true"/>
-
 		<e:Image id="hippoImg" source="hippo_png" width="122" height="202" x="1190" y="428" locked="true"/>
 		<e:Image id="kolalaImg" source="kolala_png" width="148" height="160" x="1439" y="450" locked="true"/>
 		<e:Image id="squirrelImg" source="squirrel_png" width="149" height="157" x="1704" y="450" locked="true"/>
-		
 		<e:Image id="frogImg" source="frog_png" width="122" height="143" x="1190" y="733" locked="true"/>
 		<e:Image id="dogImg" source="dog_png" width="139" height="185" x="1445" y="702" locked="true"/>
 		<e:Image id="pigImg" source="pig_png" width="116" height="164" x="1716" y="728" locked="true"/>
-	</e:Group>
-
-	<e:Image id="thingBtnImg" x="1939" y="635" source="thing_png" locked="true"/>
-	<e:Group id="thingGroup" touchThrough="true" visible="false">
+		</e:Group>
+		<e:Image id="thingBtnImg" x="1939" y="635" source="thing_png" locked="true"/>
+		<e:Group id="thingGroup" touchThrough="true" visible="false">
 		<e:Image id="pineConeImg" source="pine_cone_png" x="1525" y="216" locked="true"/>
 		<e:Image id="basketballImg" source="basketball_png" x="1515" y="481" locked="true"/>
 		<e:Image id="soccerImg" source="soccer_png" x="1515" y="756" locked="true"/>
+		</e:Group>
 	</e:Group>
-</e:Group>
-
-<e:Group id="resultGroup" touchThrough="true" visible="false">
-	<e:Group>
+	<e:Group id="resultGroup" touchThrough="true" visible="false">
+		<e:Group>
 		<e:Label text="情節一" x="1136" y="352.5" textColor="0x000000" size="60"/>
 		<e:Label text="地點" x="1468" y="297" size="45" textColor="0x7477d8"/>
 		<e:Label text="人物" x="1468" y="360" textColor="0x7477D8" size="45"/>
-		<e:Label text="事件" x="1468" y="418.5" textColor="0x7477D8" size="45"/>
+		<e:Label text="物件" x="1468" y="418.5" textColor="0x7477D8" size="45"/>
 		<e:Image x="1600" y="290" source="square_frame_png"/>
 		<e:Image name="placeResult" x="1603" y="278" source="yes_png"/>
 		<e:Image x="1600" y="352" source="square_frame_png"/>
 		<e:Image name="personResult" x="1603" y="340" source="yes_png"/>
 		<e:Image x="1600" y="412" source="square_frame_png"/>
 		<e:Image name="thingResult" x="1603" y="400" source="yes_png"/>
-	</e:Group>
-
-	<e:Group>
+		</e:Group>
+		<e:Group>
 		<e:Label text="情節二" x="1136" y="654.5" textColor="0x000000" size="60"/>
 		<e:Label text="地點" x="1468" y="604.5" size="45" textColor="0x7477d8"/>
 		<e:Label text="人物" x="1466" y="659" textColor="0x7477D8" size="45"/>
-		<e:Label text="事件" x="1468" y="714" textColor="0x7477D8" size="45"/>
+		<e:Label text="物件" x="1468" y="714" textColor="0x7477D8" size="45"/>
 		<e:Image x="1596" y="658" source="square_frame_png"/>
 		<e:Image x="1596" y="602" source="square_frame_png"/>
 		<e:Image name="placeResult" x="1603" y="588" source="yes_png"/>
 		<e:Image name="personResult" x="1603" y="642" source="yes_png"/>
 		<e:Image x="1596" y="710" source="square_frame_png"/>
 		<e:Image name="thingResult" x="1603" y="696" source="yes_png"/>
+		</e:Group>
+		<e:Image id="headSoundFrame" source="btn_png" x="1829" y="309"/>
+		<e:Image id="headSoundImg" source="sound_png" x="1855.5" y="341.5"/>
+		<e:Group id="headSoundGroup" x="1829" y="309" width="161" height="161"/>
+		<e:Image id="bottomSoundFrame" source="btn_png" x="1829" y="604"/>
+		<e:Image id="bottomSoundImg" source="sound_png" x="1855.5" y="636.5"/>
+		<e:Group id="bottomSoundGroup" x="1829" y="604" width="161" height="161"/>
 	</e:Group>
-
-	<e:Image id="headSoundFrame" source="btn_png" x="1829" y="309" locked="true"/>
-	<e:Image id="headSoundImg" source="sound_png" x="1855.5" y="341.5"/>
-	<e:Group id="headSoundGroup" x="1829" y="309" width="161" height="161"/>
-
-	<e:Image id="bottomSoundFrame" source="btn_png" x="1829" y="604" locked="true"/>
-	<e:Image id="bottomSoundImg" source="sound_png" x="1855.5" y="636.5"/>
-	<e:Group id="bottomSoundGroup" x="1829" y="604" width="161" height="161"/>
-</e:Group>
-
-<e:Group id="toolbarGroup" touchThrough="true">
-	<e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
-	<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="#000000" bold="true" locked="true"/>
-	<e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0" locked="true"/>
-
-	<e:Image id="confirmFrame" source="confirm_button_png" x="1526" y="1056" locked="true"/>
-	<e:Label id="confirmLabel" text="確定" fontFamily="huakangchaoheiti" x="1537.5" y="1104" size="60" bold="true" locked="true"/>
-	<e:Group id="confirmGroup" x="1526" y="1056" width="156" height="156"/>
-
-	<e:Image id="correctImg" source="orange_btn_png" x="1739" y="1056" locked="true" alpha="0.5"/>
-	<e:Group id="correctGroup" x="1739" y="1056" height="161" width="161">
-		<e:Label id="correctLabel" x="19" y="50.5" text="改正" bold="true" fontFamily="huakangchaoheiti" size="60"/>
-	</e:Group>
-
-	<e:Image id="replayBtn" source="btn_png" x="1953" y="1056" alpha="0.5" locked="true"/>
-	<e:Group id="replayGroup" x="1953" y="1056" height="161"  width="161">
-		<e:Label id="replayLabel" x="27.16" y="30.81" fontFamily="huakangchaoheiti" bold="true" size="50" text="重新開始" textColor="#009900" anchorOffsetY="0" height="99.39" anchorOffsetX="0" width="106.67"/>
-	</e:Group>
-</e:Group>
 
 </e:Skin>

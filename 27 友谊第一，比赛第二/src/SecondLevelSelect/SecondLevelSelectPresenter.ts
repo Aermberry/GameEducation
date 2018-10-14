@@ -157,9 +157,23 @@ class SecondLevelSelectPresenter {
 
 	public onSubmitClick(): void
 	{
-		this.view.hideAnswerView();
+		// this.view.enableButton();
+		// this.view.hideAnswerView();
+		// let compareResults = this.candidateScenes.map((scene, index) => scene.compare(this.correctScenes[index]));
+		// this.view.showSceneCompareResult(compareResults);
+		// compareResults.filter(x => !x.isAllEqual).length > 0 ? this.view.playWrongAudio(): this.view.playCorrectAudio();
+		this.view.disableConfirmGroup();
+		this.view.enableButton();
 		let compareResults = this.candidateScenes.map((scene, index) => scene.compare(this.correctScenes[index]));
-		this.view.showSceneCompareResult(compareResults);
+		//判断compareResults里是否有正确的，如有显示答案
+		for (let index = 0; index < compareResults.length; index++){
+			if(compareResults[index].isPersonEqual || compareResults[index].isPlaceEqual || compareResults[index].isThingEqual)
+			{
+				this.view.hideAnswerView();
+				this.view.showSceneCompareResult(compareResults);
+			}
+		}
+		
 		compareResults.filter(x => !x.isAllEqual).length > 0 ? this.view.playWrongAudio(): this.view.playCorrectAudio();
 	}
 
@@ -167,5 +181,18 @@ class SecondLevelSelectPresenter {
 	{
 		this.view.hideSceneCompareResult();
 		this.view.showAnswerView();
+		this.view.enableConfirmGroup();
+	}
+
+	public onHeadSoundClick(): void
+	{
+		this.view.playFirstCompitionSound();
+		console.log('horn1');
+	}
+
+	public onButtomSoundClick(): void
+	{
+		this.view.playSecondCompitionSound()
+		console.log('horn2');
 	}
 }

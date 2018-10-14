@@ -44,7 +44,7 @@
     <e:Image id="bgImg" source="bg_png" locked="true"/>
     <e:Image id="frame" source="yellow_frame_png" x="422" y="66" locked="true"/>
     <e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
-    <e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangcuheiti" textColor="#000000" bold="true" locked="true"/>
+    <e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangcuheiti" textColor="0x000000" bold="true" locked="true"/>
     <e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0" locked="true"/>
     <e:Image id="confirmFrame" source="confirm_button_png" x="1526" y="1056" locked="true"/>
     <e:Label id="confirmLabel" text="確定" fontFamily="huakangcuheiti" x="1537.5" y="1104" size="60" bold="true" locked="true"/>
@@ -58,7 +58,7 @@
     <e:Image id="continueImg" source="continue_normal_png" x="2013" y="1090" alpha="0.5" locked="true"/>
     <e:Group id="continueGroup" x="1953" y="1056"  height="156" width="156" locked="true"/>
     <e:Image id="personBtn" source="btn_png" x="1925" y="266" locked="true" />
-    <e:Label text='人物' size="60" x="1944" y="319.5" textColor="#FF9604" bold="true" fontFamily="huakangcuheiti" locked="true"/>
+    <e:Label text='人物' size="60" x="1944" y="319.5" textColor="0xFF9604" bold="true" fontFamily="huakangcuheiti" locked="true"/>
     <e:Group id="pesrsonGroup" x="1925" y="266" height="161" width="161"/>
 
     <e:Image id="foxImg" x="678" y="136" source="fox_png" locked="true"/>
@@ -90,7 +90,6 @@
     <e:Image id="EigthCircleImg" source="red_circle_png" x="1060" y="708" alpha="0"/>
     <e:Image id="NinthCircleImg" source="red_circle_png"  x="1469" y="708" locked="true" alpha="0"/>
 
-    
 
 </e:Skin>
 

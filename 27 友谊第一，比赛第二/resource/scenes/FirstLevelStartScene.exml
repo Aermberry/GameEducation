@@ -41,16 +41,16 @@
 	</w:Declarations>
 
 <e:Image id="bgImg" source="bg_png" locked="true"/>
-<e:Label id="firstTitleLabel" text="友誼第一" textColor="#FF9901" fontFamily="huakangchaoheiti" size="129" x="1155" y="83"/>
-<e:Label id="secondTitleLabel" text="比賽第二" textColor="#FF9901" fontFamily="huakangchaoheiti" size="129" x="1510" y="251"/>
+<e:Label id="firstTitleLabel" text="友誼第一" textColor="0xFF9901" fontFamily="huakangchaoheiti" size="129" x="1155" y="83"/>
+<e:Label id="secondTitleLabel" text="比賽第二" textColor="0xFF9901" fontFamily="huakangchaoheiti" size="129" x="1510" y="251"/>
 <e:Image id="sportHallImg" source="sports_hall_png" locked="true"/>
 <e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
-<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="#000000" bold="true" locked="true"/>
+<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="0x000000" bold="true" locked="true"/>
 <e:Group id="exitGroup" x="445" y="1056" height="161" width="161" locked="true"/>
 
 <e:Image id="soundBtn" source="btn_png" x="1953" y="1056" locked="true"/>
 <e:Image id="soundImg" source="sound_png" x="1970" y="1090" locked="true"/>
-<e:Group id="soundGroup" x="1953" y="1056" height="161" width="161" anchorOffsetY="0" locked="true"/>
+<e:Group id="soundGroup" x="1953" y="1056" height="161" width="161" anchorOffsetY="0"/>
 
 <e:Image id="yellowFrame" source="rectangular _frame_png" x="868" y="520" alpha="0"/>
 <e:Image id="squareFrame" source="square_frame_png" x="1624" y="531" alpha="0"/>
@@ -60,4 +60,7 @@
 
 <e:Image id="whiteProgress" source="white_progress _bar_png" x="981" y="645" alpha="0"/>
 <e:Image id="buleProgressBar" source="blue_progress _bar_png" x="991" y="656" alpha="0"/>
+
+    <e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

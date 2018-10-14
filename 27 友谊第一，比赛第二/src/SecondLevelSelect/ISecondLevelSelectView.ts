@@ -27,4 +27,11 @@ interface ISecondLevelSelectView
 
     playWrongAudio(): void;
     playCorrectAudio(): void;
+
+    enableButton(): void;
+    disableConfirmGroup(): void;
+    enableConfirmGroup(): void;
+
+    playFirstCompitionSound(): void;
+    playSecondCompitionSound(): void;
 }

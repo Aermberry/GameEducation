@@ -57,6 +57,8 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	private videoTap1Group: eui.Group;
 	private videoTap2Group: eui.Group;
 
+	private confirmFrame: eui.Image;
+
 	private presenter = new SecondLevelSelectPresenter();
 
 	public constructor() {
@@ -87,11 +89,19 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.initRightBtn();
 		this.initExitBtn();
 		this.initConfirmBtn();
+		this.initCorrectBtn();
 		this.initReplayBtn();
 		this.initVideoTapGroup();
 		this.initStageDrop();
+		this.initHornSound();
 
 		this.presenter.loadView(this);
+	}
+
+	private initHornSound(): void
+	{
+		this.headSoundGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onHeadSoundClick, this.presenter);
+		this.bottomSoundGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onButtomSoundClick, this.presenter);
 	}
 
 	private initPlaceGroup(): void
@@ -174,11 +184,11 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.confirmGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onSubmitClick, this.presenter);
 	}
 
-	private playFirstCompitionSound() {
+	public playFirstCompitionSound() {
 		this.stopCurrentSoundChannel();
 		this.currentSoundChannel = (RES.getRes('first_compition_mp3')as egret.Sound ).play(0,1);
 	}
-	private playSecondCompitionSound() {
+	public playSecondCompitionSound() {
 		this.stopCurrentSoundChannel();
 		this.currentSoundChannel = (RES.getRes('second_compition_mp3')as egret.Sound ).play(0,1);
 	}
@@ -383,4 +393,25 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		this.playAudio('sound 17 (ex1_part2_correct.mp3)_mp3');
 	}
+
+	public disableConfirmGroup(): void
+	{
+		this.confirmGroup.touchEnabled = false;
+		this.confirmFrame.alpha = 0.4;
+	}
+
+	public enableConfirmGroup(): void
+	{
+		this.confirmGroup.touchEnabled = true;
+		this.confirmFrame.alpha = 1;
+	}
+
+	public enableButton(): void
+	{
+		this.correctGroup.touchEnabled = true;
+		this.correctGroup.alpha = 1;
+		this.replayGroup.touchEnabled = true;
+		this.replayGroup.alpha = 1;
+	}
+
 }

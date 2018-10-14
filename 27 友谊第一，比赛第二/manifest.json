@@ -31,6 +31,10 @@
 		"bin-debug/SecondLevelSelect/PlaceFormatter.js",
 		"bin-debug/SecondLevelSelect/SecondLevelSelectPresenter.js",
 		"bin-debug/SecondLevelSelect/SecondLevelSelectScene.js",
-		"bin-debug/SecondLevelSelect/ThingFormatter.js"
+		"bin-debug/SecondLevelSelect/ThingFormatter.js",
+		"bin-debug/utility/Drag.js",
+		"bin-debug/utility/DragEvent.js",
+		"bin-debug/utility/Drop.js",
+		"bin-debug/utility/ThreadUtility.js"
 	]
 }

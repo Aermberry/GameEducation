@@ -67,17 +67,19 @@ class Main extends eui.UILayer {
 
     }
 
-    private async loadResource() {
+	private async loadResource() {
+        const loadingView = new LoadingUI();
         try {
-            const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
-            this.stage.removeChild(loadingView);
         }
         catch (e) {
             console.error(e);
+        }
+        finally {
+            this.stage.removeChild(loadingView);
         }
     }
 
@@ -100,7 +102,7 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new FirstLevelStartScene());
+        this.addChild(new SecondLevelStartScene());
     }
 
     public static instance: Main
