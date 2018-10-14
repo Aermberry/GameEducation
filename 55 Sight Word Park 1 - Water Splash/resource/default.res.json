@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg,start_png",
+			"keys": "description_json,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,arrow_right_svg,start_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png",
 			"name": "preload"
 		}
 	],
@@ -32,11 +32,6 @@
 			"name": "right_drop_down_box_png"
 		},
 		{
-			"url": "textures/sight_word_park.svg",
-			"type": "image",
-			"name": "sight_word_park_svg"
-		},
-		{
 			"url": "textures/start_game_hover.png",
 			"type": "image",
 			"name": "start_game_hover_png"
@@ -45,11 +40,6 @@
 			"url": "textures/start_game_normal.png",
 			"type": "image",
 			"name": "start_game_normal_png"
-		},
-		{
-			"url": "textures/start_scene_bg.svg",
-			"type": "image",
-			"name": "start_scene_bg_svg"
 		},
 		{
 			"url": "textures/false_drop_down_box.json",
@@ -197,11 +187,6 @@
 			"url": "audios/congratulation.mp3"
 		},
 		{
-			"name": "smiling_yellow_head_svg",
-			"type": "image",
-			"url": "textures/smiling_yellow_head.svg"
-		},
-		{
 			"name": "arrow_right_svg",
 			"type": "image",
 			"url": "textures/arrow_right.svg"
@@ -210,6 +195,21 @@
 			"name": "start_png",
 			"type": "image",
 			"url": "textures/start.png"
+		},
+		{
+			"name": "sight_word_park_png",
+			"type": "image",
+			"url": "textures/sight_word_park.png"
+		},
+		{
+			"name": "smiling_yellow_head_png",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.png"
+		},
+		{
+			"name": "start_scene_bg_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
 		}
 	]
 }
