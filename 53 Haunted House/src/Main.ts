@@ -102,9 +102,11 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new StartScene());
+        this.addChild(new HauntedHouse.QuestionScene());
     }
-
+    public static jsCallEgret(): void {
+         console.log("jsCallEgret");
+    }
     public static instance: Main
 
     public gotoScene(scene: eui.Component)

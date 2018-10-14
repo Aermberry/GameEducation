@@ -1,31 +1,31 @@
 {
-    "skins": {
-        "StartScene": "resource/scenes/StartScene.exml",
-        "QuestionScene": "resource/scenes/QuestionScene.exml",
-        "SeeScene": "resource/scenes/SeeScene.exml",
-        "FeelScene": "resource/scenes/FeelScene.exml",
-        "HearScene": "resource/scenes/HearScene.exml",
-        "SmellScene": "resource/scenes/SmellScene.exml",
-        "DescriptionScene": "resource/scenes/DescriptionScene.exml"
-    },
-    "autoGenerateExmlsList": true,
-    "exml": [
-        "resource/scenes/StartScene.exml",
-        "resource/scenes/QuestionScene.exml",
-        "resource/scenes/SeeScene.exml",
-        "resource/scenes/FeelScene.exml",
-        "resource/scenes/HearScene.exml",
-        "resource/scenes/SmellScene.exml",
-        "resource/scenes/DescriptionScene.exml"
-    ],
-    "path": "resource/default.thm.json",
-    "exmls": [
-        "resource/scenes/DescriptionScene.exml",
-        "resource/scenes/FeelScene.exml",
-        "resource/scenes/HearScene.exml",
-        "resource/scenes/QuestionScene.exml",
-        "resource/scenes/SeeScene.exml",
-        "resource/scenes/SmellScene.exml",
-        "resource/scenes/StartScene.exml"
-    ]
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"HauntedHouse.QuestionScene": "resource/scenes/QuestionScene.exml",
+		"SeeScene": "resource/scenes/SeeScene.exml",
+		"FeelScene": "resource/scenes/FeelScene.exml",
+		"HearScene": "resource/scenes/HearScene.exml",
+		"SmellScene": "resource/scenes/SmellScene.exml",
+		"DescriptionScene": "resource/scenes/DescriptionScene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exml": [
+		"resource/scenes/StartScene.exml",
+		"resource/scenes/QuestionScene.exml",
+		"resource/scenes/SeeScene.exml",
+		"resource/scenes/FeelScene.exml",
+		"resource/scenes/HearScene.exml",
+		"resource/scenes/SmellScene.exml",
+		"resource/scenes/DescriptionScene.exml"
+	],
+	"path": "resource/default.thm.json",
+	"exmls": [
+		"resource/scenes/DescriptionScene.exml",
+		"resource/scenes/FeelScene.exml",
+		"resource/scenes/HearScene.exml",
+		"resource/scenes/QuestionScene.exml",
+		"resource/scenes/SeeScene.exml",
+		"resource/scenes/SmellScene.exml",
+		"resource/scenes/StartScene.exml"
+	]
 }
