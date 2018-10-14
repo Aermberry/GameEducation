@@ -17,7 +17,6 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private correctSubtrahendLabel: eui.Label;
 	private correctMinuendGroup: eui.Group;
 	private correctDifferenceGroup: eui.Group;
-	private finishTips_Group:eui.Group;
 
 	private boyGroup: eui.Group;
 	private boyImage: eui.Image;
@@ -33,10 +32,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private yesButton: ImageButton;
 	private noButton: ImageButton;
 	private finishButton:ImageButton;
-
-	private angelGroup: eui.Group;
-	private angelFactory:egret.MovieClipDataFactory;
-    private angelMovie:egret.MovieClip;
+	private finishTipsGroup: eui.Group;
 
 	private answerDeleteMinuend20Movie: egret.tween.TweenGroup;
 	private answerDeleteMinuend10Movie: egret.tween.TweenGroup;
@@ -66,7 +62,6 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		this.initAngelGroup();
 		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
 			"deleteMinuend20Movie": this.answerDeleteMinuend20Movie,
@@ -83,14 +78,6 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		};
 
 		this.presenter.loadView(this);
-	}
-
-	private initAngelGroup(): void
-	{
-		this.angelFactory = new egret.MovieClipDataFactory(RES.getRes('angel_json'), RES.getRes('angel_png'));
-		this.angelMovie = new egret.MovieClip(this.angelFactory.generateMovieClipData('angel'));
-		this.angelGroup.addChild(this.angelMovie);
-		this.angelMovie.play(-1);
 	}
 
 	public getNameAsync(): Promise<string>
@@ -165,17 +152,14 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public confirmBorrowNeedAsync(): Promise<boolean>
 	{
 		this.topDialogGroup.visible = true;
-		this.angelGroup.visible=true;
 		return new Promise<boolean>(resolve => {
 			this.yesButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(true);
 				this.topDialogGroup.visible = false;
-				this.angelGroup.visible=false;
 			}, this);
 			this.noButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(false);
 				this.topDialogGroup.visible = false;
-				this.angelGroup.visible=false;
 			}, this);
 		});
 	}
@@ -183,8 +167,6 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	/** 获取用户输入的新被减数 */
 	public async getNewMinuendAsync(position: number, borrowTime: number): Promise<number>
 	{
-
-		this.finishTips_Group.visible=false;
 		let char = await this.numberPad.getCharAsync();
 		(this.questionGroup.getChildByName(`newMinuend${position}${borrowTime}Label`) as EditableLabel).text = char;
 		return parseInt(char, 10);
@@ -240,16 +222,6 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 				child.width = child.height = 0;
 			}
 		}
-	}
-
-	public showAngle(): void
-	{
-		this.angelGroup.visible = true;
-	}
-
-	public hideAngel(): void
-	{
-		this.angelGroup.visible = false;
 	}
 
 	public showNextQuestionButton(): void
@@ -313,22 +285,36 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.strawberryImage.alpha = 0;
 	}
 
+	/** 显示完成按钮的提示 */
+	public async alertFinishTips(): Promise<void>
+	{
+		this.finishTipsGroup.visible = true;
+		await lzlib.ThreadUtility.sleep(3000);
+		this.finishTipsGroup.visible = false;
+	}
+
+	/** 等待用户点击"完成按钮" */
+	public confirmFinishButtonClick(): Promise<void>
+	{
+		return new Promise<void>(resolver => {
+			this.finishButton.once(egret.TouchEvent.TOUCH_TAP, resolver, this);
+		});
+	}
+
 	/** 清除用户的输入 */
 	public clearUserInput(): void
 	{
 		for (let index = 0; index < this.questionGroup.numChildren; index++) {
 			let child = this.questionGroup.getChildAt(index);
 			if (child instanceof EditableLabel) {
-				(child as EditableLabel).currentState = 'view';
-				(child as EditableLabel).text = '';
+				(child as EditableLabel).clear();
 			}
 		}
 
 		for (let index = 0; index < this.correctGroup.numChildren; index++) {
 			let child = this.correctGroup.getChildAt(index);
 			if (child instanceof EditableLabel) {
-				(child as EditableLabel).currentState = 'view';
-				(child as EditableLabel).text = '';
+				(child as EditableLabel).clear();
 			}
 		}
 	}

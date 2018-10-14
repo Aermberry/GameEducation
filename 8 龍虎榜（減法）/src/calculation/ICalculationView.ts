@@ -31,6 +31,10 @@ interface ICalculationView {
 	playAnswerMinuendDeleteMovie(position: number, borrowTime: number): void;
 	/** 隐藏被减数被删除的动画 */
 	hideAnswerMinuendDeleteMovies(): void;
+	/** 显示完成按钮的提示 */
+	alertFinishTips(): Promise<void>;
+	/** 等待用户点击"完成按钮" */
+	confirmFinishButtonClick(): Promise<void>;
 
 	/** 设置指定位的差 */
 	setCorrectDifference(sum: string, position: number): void;
