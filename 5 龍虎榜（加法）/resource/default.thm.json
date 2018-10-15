@@ -16,8 +16,7 @@
 		"StartScene": "resource/scenes/StartScene.exml",
 		"CalculationScene": "resource/scenes/CalculationScene.exml",
 		"EditableLabel": "resource/components/EditableLabel.exml",
-		"NumberPad": "resource/components/NumberPad.exml",
-		"RankingScene": "resource/scenes/RankingScene.exml"
+		"NumberPad": "resource/components/NumberPad.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -37,7 +36,6 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/CalculationScene.exml",
-		"resource/scenes/RankingScene.exml",
 		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
