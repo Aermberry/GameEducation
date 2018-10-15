@@ -504,9 +504,6 @@ var RES;
                     }
                     _this.next();
                 }).catch(function (error) {
-                    if (!error) {
-                        throw r.name + " load fail";
-                    }
                     if (!error.__resource_manager_error__) {
                         throw error;
                     }
@@ -1003,15 +1000,15 @@ var RES;
         processor_1.SheetProcessor = {
             onLoadStart: function (host, resource) {
                 return __awaiter(this, void 0, void 0, function () {
-                    var data, r, imageName, texture, frames, spriteSheet, subkey, config, texture, str, list;
+                    var data, imageName, r, texture, frames, spriteSheet, subkey, config, texture, str, list;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0: return [4 /*yield*/, host.load(resource, "json")];
                             case 1:
                                 data = _a.sent();
-                                r = host.resourceConfig.getResource(RES.nameSelector(data.file));
+                                imageName = getRelativePath(resource.url, data.file);
+                                r = host.resourceConfig.getResource(data.file);
                                 if (!r) {
-                                    imageName = getRelativePath(resource.url, data.file);
                                     r = { name: imageName, url: imageName, type: 'image', root: resource.root };
                                 }
                                 return [4 /*yield*/, host.load(r)];
@@ -1041,6 +1038,7 @@ var RES;
                     return data.getTexture(subkey);
                 }
                 else {
+                    console.error("missing resource : " + key + "#" + subkey);
                     return null;
                 }
             },
@@ -1075,7 +1073,7 @@ var RES;
         processor_1.FontProcessor = {
             onLoadStart: function (host, resource) {
                 return __awaiter(this, void 0, void 0, function () {
-                    var data, config, imageName, r, texture, font;
+                    var data, config, imageFileName, r, texture, font;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0: return [4 /*yield*/, host.load(resource, 'text')];
@@ -1087,15 +1085,16 @@ var RES;
                                 catch (e) {
                                     config = data;
                                 }
-                                if (typeof config === 'string') {
-                                    imageName = fontGetTexturePath(resource.url, config);
-                                }
-                                else {
-                                    imageName = getRelativePath(resource.url, config.file);
-                                }
-                                r = host.resourceConfig.getResource(RES.nameSelector(imageName));
+                                imageFileName = resource.name.replace("fnt", "png");
+                                r = host.resourceConfig.getResource(imageFileName);
                                 if (!r) {
-                                    r = { name: imageName, url: imageName, type: 'image', root: resource.root };
+                                    if (typeof config === 'string') {
+                                        imageFileName = fontGetTexturePath(resource.url, config);
+                                    }
+                                    else {
+                                        imageFileName = getRelativePath(resource.url, config.file);
+                                    }
+                                    r = { name: imageFileName, url: imageFileName, type: 'image', root: resource.root };
                                 }
                                 return [4 /*yield*/, host.load(r)];
                             case 2:
@@ -2056,9 +2055,6 @@ var RES;
 //////////////////////////////////////////////////////////////////////////////////////
 var RES;
 (function (RES) {
-    RES.nameSelector = function (url) {
-        return RES.path.basename(url).split(".").join("_");
-    };
     /**
      * Conduct mapping injection with class definition as the value.
      * @param type Injection type.
@@ -2586,7 +2582,6 @@ var RES;
             }
         };
         Resource.prototype.getResAsync = function (key, compFunc, thisObject) {
-            var _this = this;
             var paramKey = key;
             var _a = RES.config.getResourceWithSubkey(key, true), r = _a.r, subkey = _a.subkey;
             return RES.queue.loadResource(r).then(function (value) {
@@ -2599,9 +2594,6 @@ var RES;
                     compFunc.call(thisObject, value, paramKey);
                 }
                 return value;
-            }, function (error) {
-                RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.ITEM_LOAD_ERROR, "", r);
-                return Promise.reject(error);
             });
         };
         /**
@@ -2613,7 +2605,6 @@ var RES;
          * @param type {string}
          */
         Resource.prototype.getResByUrl = function (url, compFunc, thisObject, type) {
-            var _this = this;
             if (type === void 0) { type = ""; }
             var r = RES.config.getResource(url);
             if (!r) {
@@ -2634,9 +2625,6 @@ var RES;
                     compFunc.call(thisObject, value, r.url);
                 }
                 return value;
-            }, function (error) {
-                RES.ResourceEvent.dispatchResourceEvent(_this, RES.ResourceEvent.ITEM_LOAD_ERROR, "", r);
-                return Promise.reject(error);
             });
         };
         /**
