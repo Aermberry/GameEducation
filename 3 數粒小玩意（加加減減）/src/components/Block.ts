@@ -131,4 +131,31 @@ class Block extends eui.Component implements  eui.UIComponent {
 			visibleChildren[index].visible = false;
 		}
 	}
+
+	/** 借位 */
+	public borrowOne(): IParticleComponent
+	{
+		this.reduce(1);
+		return new Bar();
+	}
+
+	/** 移动到目标的左边 */
+	public async moveToLeftOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x + target.width - 213, y: target.y - 80}, 800);
+	}
+	
+	/** 移动到目标的右边 */
+	public async moveToRightOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x + target.width - 213, y: target.y - 80}, 800);
+	}
+	
+	/** 变成半透明 */
+	public translucent(): void
+	{
+		this.alpha = 0.7;
+	}
 }

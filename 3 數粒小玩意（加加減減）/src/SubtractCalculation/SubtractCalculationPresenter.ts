@@ -33,13 +33,17 @@ class SubtractCalculationPresenter {
 			if (position < minuend.length - 1) {
 				//最后一位不需要确认退位
 				if (await this.confirmBorrowNeed(correctDifference)) {
-					let borrowedComponent = await this.borrowOneFrom(minuend, position + 1);
-					borrowedComponent.play
+					let borrowedComponent = this.view.borrowOneFromMinuend(position + 1);
+					await this.borrowOneFrom(minuend, position + 1);
 					minuend[position] += 10;
 					this.view.playMinuendDeleteMovie(position, this.borrowTimes[position]);
 					this.view.setNewMinuend(minuend[position], position, this.borrowTimes[position]);
+					this.view.moveAmountOfBorrowToMinuend(borrowedComponent, position, correctDifference);
+					this.view.moveBorrowToLeftOfSubstrahend(borrowedComponent, position);
 				}
 			}
+			await this.view.moveMinuendToRightOfSubstrahend(position);
+			this.view.translucientMinuendAndSubstrahend(position);
 			await this.calculateDifferenceBit(minuend[position], subtrahend[position], position);
 			this.view.normalizeOperand(position);
 		}
@@ -88,7 +92,6 @@ class SubtractCalculationPresenter {
 			this.borrowTimes[position]++;
 		}
 		minuend[position]--;
-		await this.view.borrowOneFrom(position);
 		await this.confirmNewMinuend(minuend[position], position);
 		this.borrowTimes[position]++;
 	}

@@ -117,4 +117,30 @@ class Bar extends eui.Component implements  eui.UIComponent {
 		this.digit -= value;
 		this.updateParticleVisibility();
 	}
+
+	/** 借位 */
+	public borrowOne(): IParticleComponent
+	{
+		throw new Error('不可有人问bar借位');
+	}
+
+	/** 移动到目标的左边 */
+	public async moveToLeftOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x - 50, y: target.y - 35}, 800);
+	}
+	
+	/** 移动到目标的右边 */
+	public async moveToRightOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x + 50, y: target.y - 35}, 800);
+	}
+	
+	/** 变成半透明 */
+	public translucent(): void
+	{
+		this.alpha = 0.7;
+	}
 }

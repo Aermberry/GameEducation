@@ -66,4 +66,28 @@ class Particle extends eui.Component implements  eui.UIComponent, IParticleCompo
 	{
 
 	}
+
+	/** 借位 */
+	public borrowOne(): IParticleComponent
+	{
+		throw new Error('Impossible to run here');
+	}
+
+	/** 移动到目标的左边 */
+	public moveToLeftOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+	/** 移动到目标的右边 */
+	public moveToRightOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+	/** 变成半透明 */
+	public translucent(): void
+	{
+		this.alpha = 0.7;
+	}
 }
