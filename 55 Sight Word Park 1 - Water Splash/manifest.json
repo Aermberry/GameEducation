@@ -12,8 +12,13 @@
 		"libs/modules/wordfind/wordfind.js"
 	],
 	"game": [
+<<<<<<< HEAD
 		"bin-debug/components/RedLineLabel.js",
 		"bin-debug/AssetAdapter.js",
+=======
+		"bin-debug/LoadingUI.js",
+		"bin-debug/components/RedLineLabel.js",
+>>>>>>> f0a379c94a922cbddcbd034d731d95c4cef25f12
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -22,7 +27,11 @@
 		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/components/Puzzle.js",
 		"bin-debug/components/PuzzleCell.js",
+<<<<<<< HEAD
 		"bin-debug/LoadingUI.js",
+=======
+		"bin-debug/AssetAdapter.js",
+>>>>>>> f0a379c94a922cbddcbd034d731d95c4cef25f12
 		"bin-debug/domains/Difficulty.js",
 		"bin-debug/playing/IPlayingView.js",
 		"bin-debug/playing/PlayingPresenter.js",
