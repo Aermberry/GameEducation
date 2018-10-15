@@ -1,29 +1,5 @@
 declare class ImageButtonSkin extends eui.Skin{
 }
-declare class CompleteSceneSkin extends eui.Skin{
-}
-declare class Question1AnswerSceneSkin extends eui.Skin{
-}
-declare class Question1SceneSkin extends eui.Skin{
-}
-declare class Question2AnswerSceneSkin extends eui.Skin{
-}
-declare class Question2SceneSkin extends eui.Skin{
-}
-declare class Question3AnswerSceneSkin extends eui.Skin{
-}
-declare class Question3SceneSkin extends eui.Skin{
-}
-declare class Question4AnswerSceneSkin extends eui.Skin{
-}
-declare class Question4SceneSkin extends eui.Skin{
-}
-declare class Question5AnswerSceneSkin extends eui.Skin{
-}
-declare class Question5SceneSkin extends eui.Skin{
-}
-declare class StartSceneSkin extends eui.Skin{
-}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -75,4 +51,28 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
+}
+declare class CompleteSceneSkin extends eui.Skin{
+}
+declare class Question1AnswerSceneSkin extends eui.Skin{
+}
+declare class Question1SceneSkin extends eui.Skin{
+}
+declare class Question2AnswerSceneSkin extends eui.Skin{
+}
+declare class Question2SceneSkin extends eui.Skin{
+}
+declare class Question3AnswerSceneSkin extends eui.Skin{
+}
+declare class Question3SceneSkin extends eui.Skin{
+}
+declare class Question4AnswerSceneSkin extends eui.Skin{
+}
+declare class Question4SceneSkin extends eui.Skin{
+}
+declare class Question5AnswerSceneSkin extends eui.Skin{
+}
+declare class Question5SceneSkin extends eui.Skin{
+}
+declare class StartSceneSkin extends eui.Skin{
 }
