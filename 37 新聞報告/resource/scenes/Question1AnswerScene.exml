@@ -8,16 +8,17 @@
 		<ns1:ImageButton id="nextSceneButton" x="1550" y="930" tipSource="next_button_tip_png" source="next_button_normal_png" enabled="false"/>
 		<e:Image y="130" source="rectangle_blue_png" horizontalCenter="0"/>
 		<e:Image x="500" y="200" source="triangle_red_png"/>
-		<e:Label text="衛生署證實一種高度傳染的病毒已由中央醫院傳播到哪裡？" y="150" background="true" backgroundColor="0xffffff" fontFamily="标楷体" size="77" left="600" right="270" height="250" textColor="0x050505"/>
+		<e:Label text="衛生署證實一種高度傳染的病毒已由中央醫院傳播到哪裏？" y="150" background="true" backgroundColor="0xffffff" fontFamily="标楷体" size="77" left="600" right="270" height="250" textColor="0x050505"/>
 		<e:RadioButton id="topCheckBox" label="" x="265" y="500" anchorOffsetX="0" width="45" height="45" anchorOffsetY="0" enabled="false">
 		</e:RadioButton>
-		<e:Label text="a. 天神邨" x="420" y="484" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label id="selectA" text="A. 天神邨" x="420" y="484" fontFamily="新细明体" size="77"  backgroundColor="0x000000" textColor="0x000000"/>
 		<e:RadioButton id="middleCheckBox" label="" x="265" y="660" anchorOffsetX="0" width="45" height="45" anchorOffsetY="0" enabled="false">
 		</e:RadioButton>
-		<e:Label text="b. 板橋邨" x="420" y="643" textColor="0x000000" fontFamily="新细明体" size="77"/>
+
+		<e:Label text="B. 板橋邨" x="420" y="643" fontFamily="新细明体" background="true" size="77" backgroundColor="0xffffff" textColor="0x000000"/>
 		<e:RadioButton id="bottomCheckBox" label="" x="265" y="820" anchorOffsetX="0" width="45" height="45" anchorOffsetY="0" enabled="false">
 		</e:RadioButton>
-		<e:Label text="c. 板藍邨" x="420" y="804" textColor="0x000000" fontFamily="新细明体" size="77"/>
+		<e:Label text="C. 板藍邨" x="420" y="804" fontFamily="新细明体" size="77" backgroundColor="0xffffff" textColor="0x000000"/>
 		<e:Image x="240" y="185" source="question_png"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
