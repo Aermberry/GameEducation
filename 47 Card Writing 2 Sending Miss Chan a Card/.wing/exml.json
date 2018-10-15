@@ -1,0 +1,16 @@
+{
+  "165c7e68ef8": {
+    "path": "scenes\\MainScene.ts",
+    "class": "MainScene",
+    "parentPath": "",
+    "backgroundType": "user"
+  },
+  "165c7fa92b7": {
+    "path": "..\\resource\\components\\TexttLabel.ts",
+    "class": "TexttLabel",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}

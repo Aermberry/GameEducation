@@ -2,15 +2,18 @@
 <e:Skin class="Scene00Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="165405c5d66" ></w:Config>
 	<e:Group left="0" right="0" top="0" bottom="0">
-		<e:Image scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group height="478.79" left="0" right="0" top="0" anchorOffsetY="0" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Label id="textLabel" text="Hi children ! This is a poem about a man and a gorilla.\nThey both love music so they become friends." textColor="0xb70570" top="0" left="0" right="4" height="240.28" size="73" verticalAlign="middle" anchorOffsetY="0" anchorOffsetX="0" textAlign="center" width="1916" lineSpacing="25" fontFamily="Comic Sans MS"/>
+
+		</e:Group>
+		<e:Group height="684.85" y="391" anchorOffsetY="0" left="0" right="0" x="0" scaleX="1" scaleY="1">
+			<ns1:MovieClipPlayer anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.6" scaleY="0.6" rotation="359.59" bottom="505.85" horizontalCenter="-429.5"/>
+		</e:Group>
+
 	</e:Group>
-	<e:Group height="478.79" left="0" right="0" top="0" anchorOffsetY="0">
-		<e:Label text="Hi children ! This is a poem about a man and a gorilla." textColor="0xb70570" top="0" left="0" right="4" height="240.28" size="73" verticalAlign="middle" anchorOffsetY="0" anchorOffsetX="0" textAlign="center" width="1916"/>
-		<e:Label text="They both love music so they become friends." textColor="0xB70570" top="177" left="0" right="4" height="903.91" size="73" verticalAlign="top" anchorOffsetY="-12.21" anchorOffsetX="0" textAlign="center" width="1916" x="10" y="10"/>
-	</e:Group>
-	<e:Group height="684.85" y="391" anchorOffsetY="0" left="0" right="0">
-		<ns1:MovieClipPlayer width="1911.88" height="1298.71" anchorOffsetX="0" anchorOffsetY="0" dataSet="band_json" texture="band_png" movieClipName="band" scaleX="0.6" scaleY="0.6" rotation="359.59" horizontalCenter="0.5" bottom="-4.149999999999977"/>
-	</e:Group>
+	<e:Button id="nextButton" label="Next" x="1571.58" y="932.37" anchorOffsetX="0" width="232.42" anchorOffsetY="0" height="103.27" visible="false"/>
+
+
 
 
 </e:Skin>

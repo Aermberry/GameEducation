@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BiscuitProgressBarSkin" width="1212.12" height="275.76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165467fb6d2" ></w:Config>
+	<ns1:BiscuitComponent id="biscuit1" x="14.73" y="51" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:BiscuitComponent id="biscuit2" x="195.2" y="33" anchorOffsetX="0" anchorOffsetY="0" rotation="20"/>
+	<ns1:BiscuitComponent id="biscuit3" x="315.64" y="55" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:BiscuitComponent id="biscuit4" x="496.11" y="37" anchorOffsetX="0" anchorOffsetY="0" rotation="20"/>
+	<ns1:BiscuitComponent id="biscuit5" x="616.55" y="72" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:BiscuitComponent id="biscuit6" x="797.02" y="82" anchorOffsetX="0" anchorOffsetY="0" rotation="20"/>
+	<ns1:BiscuitComponent id="biscuit7" x="917.46" y="76" anchorOffsetX="0" anchorOffsetY="0" />
+	<ns1:BiscuitComponent id="biscuit8" x="1097.93" y="36" anchorOffsetX="0" anchorOffsetY="0" rotation="20"/>
+</e:Skin>

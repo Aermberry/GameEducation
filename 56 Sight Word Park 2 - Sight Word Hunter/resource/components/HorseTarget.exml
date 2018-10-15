@@ -2,14 +2,14 @@
 <e:Skin class="HorseTarget" states="up,down,disabled,selected,hitting" minHeight="50" minWidth="100" currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
     <e:Image width="77%" width.selected="85%" height.up="82%" height.hitting="82%" height.selected="85%" height.down="50"
              bottom="0" horizontalCenter="0"
-             source="horse_normal_svg"
-             source.selected="horse_selected_svg" />
+             source="horse_normal_png"
+             source.selected="horse_selected_png" />
     <e:Label id="labelDisplay" left="8" right="8"
              size="40" text="box" fontFamily="Kristen-ITC"
              textColor="0x00000" textAlign="center" verticalCenter="20" 
              visible.down="false"/>
-    <e:Image id="hitImage" source="stars_joined_svg" horizontalCenter="0" bottom="0" width="80%" height="80%" visible="false" visible.hitting="true"/>
-    <e:Image id="sunshineImage" source="sunshine_svg" horizontalCenter="0" verticalCenter="0" scaleX="0" scaleY="0" />
+    <e:Image id="hitImage" source="stars_joined_png" horizontalCenter="0" bottom="0" width="80%" height="80%" visible="false" visible.hitting="true"/>
+    <e:Image id="sunshineImage" source="sunshine_png" horizontalCenter="0" verticalCenter="0" scaleX="0" scaleY="0" />
 
 	<w:Config id="163ec7848e1" ></w:Config>
 </e:Skin>

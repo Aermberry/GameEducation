@@ -10,7 +10,6 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private topSpeakerButtonPlayed = false; //用户是否已经播放顶部答案
 	private bottomSpeakerButtonPlayed = false; //用户是否已经播放底部答案
 
-	private currentSoundChannel: egret.SoundChannel;
 	private isCompleted = false;
 
 	public constructor() {
@@ -32,47 +31,31 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 		
-		(RES.getRes('encounter_snake_mp3') as egret.Sound)
-		.play(0, 1)
-		.once(egret.Event.SOUND_COMPLETE, this.onEncounterSnakeMp3PlayComplete, this);
+		this.playGame();
 	}
 	
-	private onEncounterSnakeMp3PlayComplete(e: egret.Event): void
+	private async playGame(): Promise<void>
 	{
+		await lzlib.SoundUtility.playSound('encounter_snake_mp3');
 		this.appNameLabel.parent.removeChild(this.appNameLabel);
 
-		(RES.getRes('fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3') as egret.Sound)
-		.play(0, 1)
-		.once(egret.Event.SOUND_COMPLETE, this.onPlayQuestionComplete, this);
-	}
-
-	private onPlayQuestionComplete(e: egret.Event): void
-	{
+		await lzlib.SoundUtility.playSound('fangfang_and_her_dad_encounter_a_snake_when_they_are_walking_someday_mp3');
 		this.topSpeakerButton.enabled = true;
 		this.bottomSpeakerButton.enabled = true;
 	}
 
 	private onTopSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('wa_a_snake_mp3') as egret.Sound).play(0, 1)
+		lzlib.SoundUtility.playSound('wa_a_snake_mp3');
 		this.topSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
 
 	private onBottomSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('yi_a_snake_here_mp3') as egret.Sound).play(0, 1)
+		lzlib.SoundUtility.playSound('yi_a_snake_here_mp3');
 		this.bottomSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
-	}
-
-	private stopCurrentSoundChannel(): void
-	{
-		if (this.currentSoundChannel != null) {
-			this.currentSoundChannel.stop();
-		}
 	}
 
 	private confirmBothSpeakersArePlayed(): void
@@ -85,10 +68,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private onTopAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.bottomAnswerCheckbox.selected = false;
-		this.stopCurrentSoundChannel();
 		if (this.topAnswerCheckbox.selected) {
-			this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
-				.play(0, 1);
+			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page_mp3');
 		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;
@@ -99,16 +80,13 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private onBottomAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.topAnswerCheckbox.selected = false;
-		this.stopCurrentSoundChannel();
 		if (this.bottomAnswerCheckbox.selected) {
-			this.currentSoundChannel = (RES.getRes('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3') as egret.Sound)
-				.play(0, 1);
+			lzlib.SoundUtility.playSound('fangfang_would_not_so_calm_because_she_yell_when_she_see_the_snake_mp3');
 		}
 	}
 
 	private onNextPageButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new Question2Scene());
 	}
 

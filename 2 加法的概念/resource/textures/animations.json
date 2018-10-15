@@ -1,6 +1,6 @@
 {"mc":{
 	"angel":{
-		"frameRate":24,
+		"frameRate":12,
 		"events":[
 			
 			],
@@ -20,7 +20,7 @@
 			}
 			]
 },"jump":{
-		"frameRate":24,
+		"frameRate":12,
 		"events":[
 			
 			],

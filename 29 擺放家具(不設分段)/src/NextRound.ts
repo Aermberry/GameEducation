@@ -1,0 +1,3 @@
+interface NextRound {
+	play(): void;
+}

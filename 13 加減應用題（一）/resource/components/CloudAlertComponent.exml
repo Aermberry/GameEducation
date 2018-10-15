@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CloudAlertComponentSkin" width="762" height="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165a8d3870f" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="cloud_png"/>
+	<e:Image id="titleImage"  alpha="1" horizontalCenter="1" top="78" source="question_png"/>
+	<e:Image id="likeImage" width="375" height="375" x="600" y="0" source="like_png" visible="false"/>
+	<!--<e:Group id="fairyAlertGroup" width="258" height="344.67" x="604.67" y="13.33" right="-10" anchorOffsetY="0" visible="false">
+		<e:Image source="fairy_png"  bottom="0"/>
+		<e:Image width="410.66" height="149.33" x="-44.66" y="24.31" anchorOffsetX="0" anchorOffsetY="0" source="message_border_fairy_png"/>
+		<e:Label text="想清楚，再試一次！" x="-22.33" y="63.64" anchorOffsetX="0" width="378" anchorOffsetY="0" height="48.67" size="44" textColor="0x000000"/>
+	</e:Group>-->
+	<ns1:MovieClipPlayer id="fairyAlertMovieClipPlayer" width="258" height="344.67" x="604.67" y="13.33" right="-10" anchorOffsetY="0" dataSet="fairyAnimation_json" texture="fairyAnimation_png" movieClipName="fairy" visible="false"/>
+	
+</e:Skin>

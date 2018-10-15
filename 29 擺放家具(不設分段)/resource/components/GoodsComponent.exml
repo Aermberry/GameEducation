@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GoodsComponentSkin" currentState="gray" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,wrong,gray" >
+	<w:Config id="1654b6b7685" ></w:Config>
+	<e:Image id="circleImage" source="circle_pink_png" top="0" left="0" bottom="0" right="0" visible="false" visible.wrong="true" alpha.gray="0.4" />
+	<e:Image id="goodsImage" source="furniture_lamp_desk_png" verticalCenter="0" horizontalCenter="0" alpha.gray="0.4"/>
+</e:Skin>

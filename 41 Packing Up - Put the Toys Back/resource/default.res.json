@@ -1,0 +1,320 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png,bicycle_behind_desk2_png,in2_png,near2_png,on2_png,robot_in_box2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,man_girl2_png,owl2_png,robot2_png,room2_png,text022_png,under2_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/bicycle.png",
+			"type": "image",
+			"name": "bicycle_png"
+		},
+		{
+			"url": "textures/books.png",
+			"type": "image",
+			"name": "books_png"
+		},
+		{
+			"url": "textures/bus.png",
+			"type": "image",
+			"name": "bus_png"
+		},
+		{
+			"url": "textures/clock.png",
+			"type": "image",
+			"name": "clock_png"
+		},
+		{
+			"url": "textures/flower.png",
+			"type": "image",
+			"name": "flower_png"
+		},
+		{
+			"url": "textures/man_girl.png",
+			"type": "image",
+			"name": "man_girl_png"
+		},
+		{
+			"url": "textures/owl.png",
+			"type": "image",
+			"name": "owl_png"
+		},
+		{
+			"url": "textures/robot.png",
+			"type": "image",
+			"name": "robot_png"
+		},
+		{
+			"url": "textures/room.png",
+			"type": "image",
+			"name": "room_png"
+		},
+		{
+			"url": "textures/under.png",
+			"type": "image",
+			"name": "under_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg2_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon2_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg3_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon3_png"
+		},
+		{
+			"url": "textures/text02.png",
+			"type": "image",
+			"name": "text02_png"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "textures/near.png",
+			"type": "image",
+			"name": "near_png"
+		},
+		{
+			"url": "textures/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "textures/in.png",
+			"type": "image",
+			"name": "in_png"
+		},
+		{
+			"name": "behind_png",
+			"type": "image",
+			"url": "textures/behind.png"
+		},
+		{
+			"name": "robot_in_box_png",
+			"type": "image",
+			"url": "textures/robot_in_box.png"
+		},
+		{
+			"name": "bicycle_behind_desk_png",
+			"type": "image",
+			"url": "textures/bicycle_behind_desk.png"
+		},
+		{
+			"name": "bicycle_behind_desk2_png",
+			"type": "image",
+			"url": "textures/bicycle_behind_desk.png"
+		},
+		{
+			"name": "in2_png",
+			"type": "image",
+			"url": "textures/in.png"
+		},
+		{
+			"name": "near2_png",
+			"type": "image",
+			"url": "textures/near.png"
+		},
+		{
+			"name": "on2_png",
+			"type": "image",
+			"url": "textures/on.png"
+		},
+		{
+			"name": "robot_in_box2_png",
+			"type": "image",
+			"url": "textures/robot_in_box.png"
+		},
+		{
+			"name": "behind2_png",
+			"type": "image",
+			"url": "textures/behind.png"
+		},
+		{
+			"name": "bicycle2_png",
+			"type": "image",
+			"url": "textures/bicycle.png"
+		},
+		{
+			"name": "books2_png",
+			"type": "image",
+			"url": "textures/books.png"
+		},
+		{
+			"name": "bus2_png",
+			"type": "image",
+			"url": "textures/bus.png"
+		},
+		{
+			"name": "clock2_png",
+			"type": "image",
+			"url": "textures/clock.png"
+		},
+		{
+			"name": "flower2_png",
+			"type": "image",
+			"url": "textures/flower.png"
+		},
+		{
+			"name": "man_girl2_png",
+			"type": "image",
+			"url": "textures/man_girl.png"
+		},
+		{
+			"name": "owl2_png",
+			"type": "image",
+			"url": "textures/owl.png"
+		},
+		{
+			"name": "robot2_png",
+			"type": "image",
+			"url": "textures/robot.png"
+		},
+		{
+			"name": "room2_png",
+			"type": "image",
+			"url": "textures/room.png"
+		},
+		{
+			"name": "text022_png",
+			"type": "image",
+			"url": "textures/text02.png"
+		},
+		{
+			"name": "under2_png",
+			"type": "image",
+			"url": "textures/under.png"
+		}
+	]
+}
