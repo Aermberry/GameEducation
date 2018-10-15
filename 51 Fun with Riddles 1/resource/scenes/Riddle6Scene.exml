@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Riddle6SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="16624dd5d65" ></w:Config>
-	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
-	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
-	<e:Image x="148.91" y="342.39" source="title06_png"/>
-	<e:Image source="smallRiddle2_png" x="251" y="405"/>
-	<e:Image x="432.41" y="1012.5" source="bottle_png"/>
-	<e:Image x="897.5" y="973" source="umbrella_png"/>
-	<e:Image x="1366.88" y="965" source="cash_png"/>
+<e:Skin class="Riddle6SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16624dd5d65"></w:Config>
+	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true" />
+	<e:Image source="clickyouranswer_png" x="268" y="759.39" />
+	<e:Image x="148.91" y="342.39" source="title06_png" />
+	<e:Image source="smallRiddle2_png" x="251" y="405" />
+	<e:Group id="goodsGroup" x="432.41" y="965">
+		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
+		<e:Image id="bottle" x="0" y="47.5" source="bottle_png" />
+		<e:Image id="umbrella" x="465.09" y="8" source="umbrella_png" />
+		<e:Image id="cash" x="934.47" y="0" source="cash_png" />
+	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0"/>
-		<e:Label text="We        it on sunny and rainy days.It can be long or short." x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Label text="use" x="164.72" y="26.56" anchorOffsetX="0" width="116.43" anchorOffsetY="0" height="114.85" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Rect width="105" height="3" x="168.76" y="116.16" anchorOffsetY="0" fillColor="0x5c2c47"/>
-	</e:Group>
-	<e:Group id="putTipsGroup" x="885" y="405" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="Put lemon and tea together\nto make a cup of lemon tea." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
-	</e:Group>
+		<e:Image source="bigLabel_png" x="0" y="0" />
+		<e:Label text="We        it on sunny and rainy days.It can be long or short." x="45.66" y="8.8" anchorOffsetX="0"
+		         width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle"
+		         textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
-	<e:Group id="appleTipsGroup" x="143" y="931" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="We eat apples." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
-		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+		<e:Group id="useGroup" x="164.72" y="26.56">
+			<e:Label text="use" x="0" y="0" anchorOffsetX="0" width="116.43" anchorOffsetY="0" height="114.85" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
+			<e:Rect width="105" height="3" x="4.04" y="89.6" anchorOffsetY="0" fillColor="0x5c2c47"/>
+		</e:Group>
 	</e:Group>
-
-	<e:Group id="keyTipsGroup" x="594" y="931" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
-		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+	<e:Group id="useTipsGroup" x="885" y="405" visible="false">
+		<e:Image source="Label_png" x="0" y="0" />
+		<e:Label text="We use knives to cut cakes." x="12.12" y="15.11" width="668.28"
+		         height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0"
+		         anchorOffsetY="0" lineSpacing="25" />
 	</e:Group>
-	<e:Image id="isTrue" source="true_png" x="1410.66" y="1055.59" rotation="346.24" visible="false"/>
+	<e:Group id="bottleTipsGroup" x="143" y="931" visible="false">
+		<e:Image source="Label_png" x="103.03" y="0"  scale9Grid="86,48,519,111" anchorOffsetX="0" width="587.97"/>
+		<e:Label text="We keep drinks in a\nbottle" x="163.63" y="18.14" width="453.13" height="181.73" textColor="0x66002e" size="48"
+		         textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
+		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
+	</e:Group>
+	<e:Group id="moneyTipsGroup" x="954.61" y="931" anchorOffsetX="0" width="829.97" visible="false">
+		<e:Image source="Label_png" x="12.12" y="0"  scale9Grid="86,57,519,92" anchorOffsetX="0" width="769.79"/>
+		<e:Label text="We use money to buy things." x="27.27" y="15.11" width="668.28" height="181.73" textColor="0x66002e"
+		         size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
+		<e:Image source="monkey_png" x="614.79" y="56.21" rotation="7.66" />
+	</e:Group>
+	<e:Image id="isTrueImage" source="true_png" x="1410.66" y="1055.59" rotation="346.24"  visible="false"/>
 </e:Skin>

@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Riddle7SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="16624ddbf55" ></w:Config>
-	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
-	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
-	<e:Image x="148.91" y="342.39" source="title07_png"/>
-	<e:Image source="smallRiddle2_png" x="251" y="405"/>
-	<e:Image x="442" y="969.49" source="book_png"/>
-	<e:Image source="key_png" x="876" y="1036"/>
-	<e:Image source="Puzzle_png" x="1279" y="964"/>
+<e:Skin class="Riddle7SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16624ddbf55"></w:Config>
+	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true" />
+	<e:Image source="clickyouranswer_png" x="268" y="759.39" />
+	<e:Image x="148.91" y="342.39" source="title07_png" />
+	<e:Image source="smallRiddle2_png" x="251" y="405" />
+	<e:Group id="goodsGroup" x="442" y="964">
+		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
+		<e:Image x="0" y="5.49" source="book_png" />
+		<e:Image source="key_png" x="434" y="72" />
+		<e:Image source="Puzzle_png" x="837" y="0" />
+	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0"/>
-		<e:Label text="We like to         it.There are manybeautiful pictures." x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Label text="read" x="367.16" y="34.71" anchorOffsetX="0" width="157.33" anchorOffsetY="0" height="96.67" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Rect width="151" height="3" x="371.72" y="118.53" anchorOffsetY="0" fillColor="0x5c2c47"/>
+		<e:Image source="bigLabel_png" x="0" y="0" />
+		<e:Label text="We like to         it.There are manybeautiful pictures." x="45.66" y="8.8" anchorOffsetX="0"
+		         width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle"
+		         textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
+		<e:Label text="read" x="367.16" y="34.71" anchorOffsetX="0" width="157.33" anchorOffsetY="0" height="96.67"
+		         textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25"
+		         fontFamily="Comic Sans MS" />
+		<e:Rect width="151" height="3" x="371.72" y="118.53" anchorOffsetY="0" fillColor="0x5c2c47" />
 	</e:Group>
 	<e:Group id="putTipsGroup" x="885" y="405" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="Put lemon and tea together\nto make a cup of lemon tea." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
+		<e:Image source="Label_png" x="0" y="0" />
+		<e:Label text="Put lemon and tea together\nto make a cup of lemon tea." x="12.12" y="15.11" width="668.28"
+		         height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0"
+		         anchorOffsetY="0" lineSpacing="25" />
 	</e:Group>
-
 	<e:Group id="appleTipsGroup" x="143" y="931" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="We eat apples." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
-		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+		<e:Image source="Label_png" x="0" y="0" />
+		<e:Label text="We eat apples." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48"
+		         textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
+		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
 	</e:Group>
-
 	<e:Group id="keyTipsGroup" x="594" y="931" visible="false">
-		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
-		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
+		<e:Image source="Label_png" x="0" y="0" />
+		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e"
+		         size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
+		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
 	</e:Group>
-	<e:Image id="isTrue" source="true_png" x="1410.66" y="1055.59" rotation="346.24" visible="false"/>
+	<e:Image id="isTrue" source="true_png" x="1410.66" y="1055.59" rotation="346.24" visible="false" />
 </e:Skin>

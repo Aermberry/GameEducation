@@ -5,18 +5,23 @@
 	<e:Image source="clickyouranswer_png" x="268" y="759.39"/>
 	<e:Image x="148.91" y="342.39" source="title04_png"/>
 	<e:Image source="smallRiddle2_png" x="251" y="405"/>
-	<e:Image x="369.27" y="969.49" source="schoolbag_png"/>
-	<e:Image x="894.29" y="926" source="food_png"/>
-	<e:Image x="1436.58" y="964" source="colorLead_png"/>
+
+
+	<e:Group id="goodsGroup" x="369.27" y="926">
+	<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
+		<e:Image id="bag" x="0" y="43.49" source="schoolbag_png"/>
+		<e:Image id="food" x="525.02" y="0" source="food_png"/>
+		<e:Image id="colorPen" x="1067.31" y="38" source="colorLead_png"/>
+	</e:Group>
 	<e:Group x="669.76" y="376.41">
 		<e:Image source="bigLabel_png" x="0" y="0"/>
 		<e:Label text="We         it when we go shopping.We         money and keys in it." x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Group x="162.6" y="52.55">
+		<e:Group id="takeGroup" x="162.6" y="52.55">
 			<e:Rect width="142" height="3" x="0" y="62.62" anchorOffsetY="0" fillColor="0x5c2c47"/>
 			<e:Label text="take" x="4.61" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
-		<e:Group x="166.24" y="140.01">
-			<e:Label text="keep" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Group id="keepGroup" x="166.24" y="140.01">
+			<e:Label text="keep" x="0" y="-3.03" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
 			<e:Rect width="136" height="3" x="0.33" y="67.95" anchorOffsetY="0" fillColor="0x5C2C47"/>
 		</e:Group>
 	</e:Group>
@@ -25,21 +30,21 @@
 		<e:Label text="We must take an unmbrella in\nrainy days." x="33.33" y="15.11" width="647.07" height="181.73" textColor="0x66002e" size="48" textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
 	</e:Group>
 
-	<e:Group id="keepTipsGroup" x="885" y="405">
+	<e:Group id="keepTipsGroup" x="885" y="405" visible="false">
 		<e:Image source="Label_png" x="0" y="0"/>
 		<e:Label text="We keep money in the piggy\nbank." x="33.33" y="15.11" width="647.07" height="181.73" textColor="0x66002e" size="48" textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
 	</e:Group>
 
-	<e:Group id="appleTipsGroup" x="143" y="931" visible="false">
+	<e:Group id="foodTipsGroup" x="573.3" y="931" visible="false">
 		<e:Image source="Label_png" x="0" y="0"/>
-		<e:Label text="We eat apples." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
+		<e:Label text="We eat chicken legs." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
 		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
 	</e:Group>
 
-	<e:Group id="keyTipsGroup" x="594" y="931" visible="false">
+	<e:Group id="colorPenTipsGroup" x="1060.67" y="931" visible="false">
 		<e:Image source="Label_png" x="0" y="0"/>
 		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e" size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25"/>
 		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66"/>
 	</e:Group>
-	<e:Image id="isTrue" source="true_png" x="1410.66" y="1055.59" rotation="346.24" visible="false"/>
+	<e:Image id="isTrueImage" source="true_png" x="325.81" y="1055.59" rotation="346.24" visible="false"/>
 </e:Skin>
