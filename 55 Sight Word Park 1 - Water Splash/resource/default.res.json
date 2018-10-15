@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,arrow_right_svg,start_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png",
+			"keys": "description_json,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,arrow_right_svg,start_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,sight_word_park2_png,smiling_yellow_head2_png,start2_png,start_scene_bg2_png,Anim_json,Anim_png,Bg_cloudy_png,img_example_png,select_fire_png,sight_word_park_svg,smiling_yellow_head_svg,start_scene_bg_svg",
 			"name": "preload"
 		}
 	],
@@ -210,6 +210,66 @@
 			"name": "start_scene_bg_png",
 			"type": "image",
 			"url": "textures/start_scene_bg.png"
+		},
+		{
+			"name": "sight_word_park2_png",
+			"type": "image",
+			"url": "textures/sight_word_park.png"
+		},
+		{
+			"name": "smiling_yellow_head2_png",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.png"
+		},
+		{
+			"name": "start2_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start_scene_bg2_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
+		},
+		{
+			"name": "Anim_json",
+			"type": "json",
+			"url": "textures/Anim.json"
+		},
+		{
+			"name": "Anim_png",
+			"type": "image",
+			"url": "textures/Anim.png"
+		},
+		{
+			"name": "Bg_cloudy_png",
+			"type": "image",
+			"url": "textures/Bg_cloudy.png"
+		},
+		{
+			"name": "img_example_png",
+			"type": "image",
+			"url": "textures/img_example.png"
+		},
+		{
+			"name": "select_fire_png",
+			"type": "image",
+			"url": "textures/select_fire.png"
+		},
+		{
+			"name": "sight_word_park_svg",
+			"type": "image",
+			"url": "textures/sight_word_park.svg"
+		},
+		{
+			"name": "smiling_yellow_head_svg",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.svg"
+		},
+		{
+			"name": "start_scene_bg_svg",
+			"type": "image",
+			"url": "textures/start_scene_bg.svg"
 		}
 	]
 }
