@@ -47,10 +47,15 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     object: eui.Group | eui.Image | eui.Button
   ): Promise<void> {
     object.visible = true;
-    this.preventClick(this.drinksTipsGroup,this.pencilBoxTipGroup,this.isTrueImage,this.goodsGroup,this.transparentBlock);
+    this.preventClick(
+      this.drinksTipsGroup,
+      this.pencilBoxTipGroup,
+      this.isTrueImage,
+      this.goodsGroup,
+      this.transparentBlock
+    );
     await lzlib.ThreadUtility.sleep(5000);
     object.visible = false;
-
   }
 
   public isTrue(btn: eui.Image | eui.Button, object: eui.Image) {
@@ -73,18 +78,20 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     Main.instance.gotoScene(scene);
   }
 
-  
-  private preventClick(tips01Group:eui.Group,tips02Group:eui.Group,tips03:eui.Image,optionGroup:eui.Group,transparentBlock:eui.Rect): void {
-
-    if (tips01Group.visible || tips02Group.visible||tips03.visible) {
-      const originIndex = this.goodsGroup.getChildIndex(this.transparentBlock);
-      const currentIndex = this.goodsGroup.$children.length - 1;
-      this.goodsGroup.setChildIndex(this.transparentBlock, currentIndex);
-      console.log(this.goodsGroup.getChildIndex(this.transparentBlock));
+  private preventClick(
+    tips01Group: eui.Group,
+    tips02Group: eui.Group,
+    tips03: eui.Image,
+    optionGroup: eui.Group,
+    transparentBlock: eui.Rect
+  ): void {
+    if (tips01Group.visible || tips02Group.visible || tips03.visible) {
+      const originIndex = optionGroup.getChildIndex(transparentBlock);
+      const currentIndex = optionGroup.$children.length - 1;
+      optionGroup.setChildIndex(transparentBlock, currentIndex);
       setTimeout(() => {
-        this.goodsGroup.setChildIndex(this.transparentBlock, originIndex);
-        console.log(this.goodsGroup.getChildIndex(this.transparentBlock));
-      },5000)
+        optionGroup.setChildIndex(transparentBlock, originIndex);
+      }, 5000);
     }
   }
 }
