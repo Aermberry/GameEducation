@@ -2,12 +2,15 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private botton: eui.Image;
   private pencilBox: eui.Image;
   private schoolBag: eui.Image;
-  private isTrueImage:eui.Image;
+  private isTrueImage: eui.Image;
+
+  private transparentBlock: eui.Rect;
 
   private keepClickGroup: eui.Group;
   private tipsGroup: eui.Group;
-  private drinksGroup: eui.Group;
+  private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
+  private goodsGroup: eui.Group;
 
   public constructor() {
     super();
@@ -20,10 +23,68 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   protected childrenCreated(): void {
     super.childrenCreated();
 
-    let riddle1 = new Base();
-    riddle1.addshowTipsLabel(this.keepClickGroup, this.tipsGroup);
-    riddle1.addshowTipsLabel(this.botton, this.drinksGroup);
-    riddle1.addshowTipsLabel(this.pencilBox, this.pencilBoxTipGroup);
-    riddle1.isTrue(this.schoolBag,this.isTrueImage);
+    // let riddle1 = new Base();
+    this.addshowTipsLabel(this.keepClickGroup, this.tipsGroup);
+    this.addshowTipsLabel(this.botton, this.drinksTipsGroup);
+    this.addshowTipsLabel(this.pencilBox, this.pencilBoxTipGroup);
+    this.isTrue(this.schoolBag, this.isTrueImage);
+  }
+
+  public addshowTipsLabel(
+    object: eui.Group | eui.Image | eui.Button,
+    object2: eui.Group | eui.Image | eui.Button
+  ): void {
+    object.addEventListener(
+      egret.TouchEvent.TOUCH_TAP,
+      () => {
+        this.showTipsLabel(object2);
+      },
+      this
+    );
+  }
+
+  public async showTipsLabel(
+    object: eui.Group | eui.Image | eui.Button
+  ): Promise<void> {
+    object.visible = true;
+    this.preventClick(this.drinksTipsGroup,this.pencilBoxTipGroup,this.isTrueImage,this.goodsGroup,this.transparentBlock);
+    await lzlib.ThreadUtility.sleep(5000);
+    object.visible = false;
+
+  }
+
+  public isTrue(btn: eui.Image | eui.Button, object: eui.Image) {
+    btn.addEventListener(
+      egret.TouchEvent.TOUCH_TAP,
+      () => {
+        this.isvisible(object);
+      },
+      this
+    );
+  }
+
+  public async isvisible(object: eui.Image): Promise<void> {
+    object.visible = true;
+    await lzlib.ThreadUtility.sleep(1000);
+    object.visible && this.gotoNextScene(new StatueScene());
+  }
+
+  public gotoNextScene(scene: eui.Component) {
+    Main.instance.gotoScene(scene);
+  }
+
+  
+  private preventClick(tips01Group:eui.Group,tips02Group:eui.Group,tips03:eui.Image,optionGroup:eui.Group,transparentBlock:eui.Rect): void {
+
+    if (tips01Group.visible || tips02Group.visible||tips03.visible) {
+      const originIndex = this.goodsGroup.getChildIndex(this.transparentBlock);
+      const currentIndex = this.goodsGroup.$children.length - 1;
+      this.goodsGroup.setChildIndex(this.transparentBlock, currentIndex);
+      console.log(this.goodsGroup.getChildIndex(this.transparentBlock));
+      setTimeout(() => {
+        this.goodsGroup.setChildIndex(this.transparentBlock, originIndex);
+        console.log(this.goodsGroup.getChildIndex(this.transparentBlock));
+      },5000)
+    }
   }
 }

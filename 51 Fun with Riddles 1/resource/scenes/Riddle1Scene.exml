@@ -3,9 +3,15 @@
 	<w:Config id="16624d86904" ></w:Config>
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
 	<e:Image x="251" y="405" anchorOffsetX="0" anchorOffsetY="0" source="title01_png"/>
-	<e:Image id="botton"  x="443.18" y="1040.88" anchorOffsetX="0" anchorOffsetY="0" source="bottle_png"/>
-	<e:Image id="pencilBox" x="880.24" y="1065.12" anchorOffsetX="0" anchorOffsetY="0" source="pencil_png"/>
-	<e:Image id="schoolBag"  x="1432.88" y="929.67" anchorOffsetX="0" anchorOffsetY="0" source="schoolbag_png"/>
+
+
+
+	<e:Group id="goodsGroup" x="419" y="898">
+		<e:Rect id="transparentBlock" x="0" y="0" width="1338" height="376" alpha="0"/>
+		<e:Image id="botton" x="24.18" y="142.88" anchorOffsetX="0" anchorOffsetY="0" source="bottle_png"/>
+		<e:Image id="pencilBox" x="461.24" y="167.12" anchorOffsetX="0" anchorOffsetY="0" source="pencil_png"/>
+		<e:Image id="schoolBag" x="1013.88" y="31.67" anchorOffsetX="0" anchorOffsetY="0" source="schoolbag_png"/>
+	</e:Group>
 	<e:Group x="639.82" y="393.88">
 		<e:Image source="bigLabel_png" x="-10" y="-6"/>
 		<e:Label text="we          books and pencil box in it." x="-11.21" y="10" anchorOffsetX="0" width="1074" anchorOffsetY="0" height="230" textColor="0x5C2C47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS"/>
@@ -24,7 +30,7 @@
 		<e:Image source="pig_png" x="603.25" y="109.53" rotation="7.66"/>
 	</e:Group>
 
-	<e:Group id="drinksGroup" x="508.19" y="839.35" visible="false">
+	<e:Group id="drinksTipsGroup" x="508.19" y="839.35" visible="false">
 		<e:Group x="0" y="0">
 			<e:Image source="Label_png" x="0" y="0"/>
 			<e:Label text="We keep drinks in a bottle." x="41.38" y="45.77" anchorOffsetX="0" width="622.49" anchorOffsetY="0" height="133.03" textColor="0x69191c" size="48" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
