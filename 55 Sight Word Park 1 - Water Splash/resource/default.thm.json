@@ -7,7 +7,8 @@
 		"PlayingScene": "resource/scenes/PlayingScene.exml",
 		"PuzzleCell": "resource/components/PuzzleCell.exml",
 		"RedLineLabel": "resource/components/RedLineLabel.exml",
-		"ResultScene": "resource/scenes/ResultScene.exml"
+		"ResultScene": "resource/scenes/ResultScene.exml",
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
@@ -15,6 +16,7 @@
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
+		"resource/components/MovieClipPlayer.exml",
 		"resource/components/Puzzle.exml",
 		"resource/components/PuzzleCell.exml",
 		"resource/components/RedLineLabel.exml",

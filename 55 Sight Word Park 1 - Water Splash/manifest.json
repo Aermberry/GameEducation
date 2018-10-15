@@ -19,6 +19,7 @@
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/biz/PuzzleBiz.js",
 		"bin-debug/biz/WordBiz.js",
+		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/components/Puzzle.js",
 		"bin-debug/components/PuzzleCell.js",
 		"bin-debug/AssetAdapter.js",
