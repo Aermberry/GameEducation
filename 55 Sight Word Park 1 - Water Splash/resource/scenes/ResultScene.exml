@@ -17,9 +17,9 @@
 		<e:Label fontFamily="Hoffmanhand" text="Good job! You" bold="true" size="180" textColor="0x000000" y="409" horizontalCenter="0.5" />
 		<e:Label fontFamily="Hoffmanhand" text="won the game！" bold="true" size="180" textColor="0x000000" y="619" horizontalCenter="1" />
 		
-		<e:Image id="playAgainImage" source="arrow_right_svg" x="715.9" y="980" scaleX="0.7" scaleY="0.7"  visible="false"/>
+		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7"  visible="false"/>
 		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again!" textColor="0x000000" size="80" bold="true" x="915" y="980" />
-		<e:Image id="exitImage" source="arrow_right_svg" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
+		<e:Image id="exitImage" source="arrow_right_png" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
 		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="0x000000" size="80" bold="true" x="915" y="1100" />
 	</e:Group>
 
