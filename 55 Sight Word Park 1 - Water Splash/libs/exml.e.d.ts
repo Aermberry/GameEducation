@@ -1,3 +1,5 @@
+declare class MovieClipPlayerSkin extends eui.Skin{
+}
 declare class PuzzleSkin extends eui.Skin{
 }
 declare class PuzzleCellSkin extends eui.Skin{
