@@ -1,0 +1,39 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
+	],
+	"game": [
+		"bin-debug/filln_topic/FillinView.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/components/ImageButton.js",
+		"bin-debug/components/numberlmageButton.js",
+		"bin-debug/domains/Fillin.js",
+		"bin-debug/domains/Pronunciation.js",
+		"bin-debug/domains/Sort.js",
+		"bin-debug/filln_topic/FillinPresenter.js",
+		"bin-debug/filln_topic/FillinTopicScene.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/pronumciation_topic/PronunciationTopicScene.js",
+		"bin-debug/pronumciation_topic/PronunciationView.js",
+		"bin-debug/pronumciation_topic/PronuncicationPresenter.js",
+		"bin-debug/repositories/FillinRepository.js",
+		"bin-debug/repositories/PronunciationRepository.js",
+		"bin-debug/repositories/SortRepository.js",
+		"bin-debug/scenes/SelectTopicScene.js",
+		"bin-debug/scenes/StartScene.js",
+		"bin-debug/sort_topic/SortPresenter.js",
+		"bin-debug/sort_topic/SortTopicScene.js",
+		"bin-debug/sort_topic/SortView.js"
+	]
+}
