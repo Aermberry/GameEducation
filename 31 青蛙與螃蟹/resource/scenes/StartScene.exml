@@ -17,7 +17,7 @@
 		<e:Rect left="0" top="0" bottom="0" right="0" strokeColor="0x000000" fillColor="0xb55a00"/>
 		<e:Rect top="70" left="85" right="85" bottom="70" fillColor="0xffffff"/>
 		<e:Image id="startButton" y="960" anchorOffsetY="90" horizontalCenter="0" source="start_button_normal_png" />
-		<e:Label text="小朋友，以下你會聽到一個故事，你要留意一下故事中的角色，講說話的時候是甚麼心情和應該用甚麼語氣。\r\r好了，現在就按綠色按鈕開始吧。" textColor="0x000000" left="375" right="375" top="262" size="77" fontFamily="标楷体"/>
+		<e:Label text="小朋友，以下你會聽到一個故事，你要留意一下故事中的角色，講說話的時候是甚麼心情和應該用甚麼語氣。\r\r好了，現在就按綠色按鈕開始吧。" textColor="0x000000" left="375" right="375" top="262" size="77" fontFamily="華康標楷體"/>
 	</e:Group>
 	<e:Group top="1208" left="0" right="0" bottom="0" >
 		<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffcf88"/>
