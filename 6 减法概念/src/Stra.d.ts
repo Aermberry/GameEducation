@@ -1,0 +1,1 @@
+declare function initOne(): void;

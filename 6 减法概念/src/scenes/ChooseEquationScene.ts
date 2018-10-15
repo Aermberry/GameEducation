@@ -1,5 +1,5 @@
 class ChooseEquationScene extends eui.Component implements  eui.UIComponent {
-    private math143Less21Rect:eui.Rect;
+    private math143Less21Rect:eui.Group;
 	private math134Less115Rect:eui.Rect;
 	private math315Less123Rect:eui.Rect;
 	private math321Less125Rect:eui.Rect;
@@ -29,9 +29,8 @@ class ChooseEquationScene extends eui.Component implements  eui.UIComponent {
 		//this.math321Less125Rect.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>window.location.href = 'Asub4/index.html', this);
 		//this.math203Less24Rect.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>window.location.href = 'Asub5/index.html', this);
 	}
-	
 	private onMath143Less21RectClick():void
 	{	
-		init();
+		initOne();
 	}
 }
