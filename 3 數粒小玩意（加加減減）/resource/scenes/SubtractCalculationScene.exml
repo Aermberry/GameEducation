@@ -76,14 +76,14 @@
 		</e:Group>
 		<e:Group id="minuendGroup">
 			<ns1:Bar id="minuendBar" color='red' currentState="separated" x="1479.45" y="46"/>
-			<ns1:Block id="minuendBlock" color='red' currentState="separated" x="759.95" y="95"/>
+			<ns1:Block id="minuendBlock" color='red' currentState="separated" x="720" y="95"/>
 			<ns1:Chunk id="minuendChunk" color='red' currentState="separated" x="241.65" y="20"/>
 		</e:Group>
 
 		<e:Group id="subtrahendGroup">
 			<ns1:Bar id="subtrahendBar" color='green' currentState="separated" x="1476.42" y="452"/>
-			<ns1:Block id="subtrahendBlock" color='green' currentState="separated" x="768.33" y="500"/>
-			<ns1:Chunk id="subtrahendChunk" color='green' currentState="separated" x="241.65" y="412"/>
+			<ns1:Block id="subtrahendBlock" color='green' currentState="separated" x="720" y="500"/>
+			<ns1:Chunk id="subtrahendChunk" color='green' currentState="separated" x="50" y="412"/>
 		</e:Group>
 		<ns1:ImageButton id="startButton" source="start_normal_png" mouseOverSource="start_selected_png" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
