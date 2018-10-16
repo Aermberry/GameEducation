@@ -186,6 +186,9 @@
 
 
     // 动画开始
+    // 防止点击多次重复执行
+    var fals = true;
+    // 第一个
     function initOne() {
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
@@ -196,7 +199,10 @@
         script.onload = script.onreadystatechange = function() {
             if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
             console.log('动态JS加载完成');
-            init();
+            if(fals == true){
+                fals = false;
+                init();
+            }
             script.onload = script.onreadystatechange = null;
             }
         };
@@ -293,7 +299,10 @@
         script.onload = script.onreadystatechange = function() {
             if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
             console.log('动态JS加载完成');
-            init();
+            if(fals == true){
+                fals = false;
+                init();
+            }
             script.onload = script.onreadystatechange = null;
             }
         };
@@ -390,7 +399,10 @@
          script.onload = script.onreadystatechange = function() {
             if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
             console.log('动态JS加载完成');
-            init();
+            if(fals == true){
+                fals = false;
+                init();
+            }
             script.onload = script.onreadystatechange = null;
             }
         };
@@ -486,7 +498,10 @@
         script.onload = script.onreadystatechange = function() {
             if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
             console.log('动态JS加载完成');
-            init();
+           if(fals == true){
+                fals = false;
+                init();
+            }
             script.onload = script.onreadystatechange = null;
             }
         };
@@ -582,8 +597,12 @@
         script.onload = script.onreadystatechange = function() {
             if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
             console.log('动态JS加载完成');
-            init();
+            if(fals == true){
+                fals = false;
+                init();
+            }
             script.onload = script.onreadystatechange = null;
+
             }
         };
         script.type = 'text/javascript';
@@ -670,6 +689,7 @@
 
     // 播放完成返回目录
     function backToChooseEquationScene() {
+        fals = true;
         var script = document.getElementById("script");
          if(script != null) {
             script.parentNode.removeChild(script);
