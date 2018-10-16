@@ -1,4 +1,8 @@
 namespace lzlib {
+    interface Cloneable {
+		clone(): object;
+    }
+    
     /**
      * 使用方法
      *  let drag = new Drag();
@@ -13,8 +17,8 @@ namespace lzlib {
         public static isCopy: boolean = false;
         public static originalParent: egret.DisplayObjectContainer = null;
 
-        private static originalX = 0;
-        private  static originalY = 0;
+        public static originalX = 0;
+        public static originalY = 0;
 
         private dragObject:egret.DisplayObject;
         private isCopy: boolean = false;
@@ -47,7 +51,7 @@ namespace lzlib {
         }
     
         private onTouchBegin(e:egret.TouchEvent) {
-            Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject as eui.Image) : this.dragObject, this.isCopy, this.dataTransfer);
+            Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
 
             let globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
             Drag.dragingObject.x = globalPoint.x;
@@ -63,7 +67,21 @@ namespace lzlib {
             this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
         }
 
-        private cloneDragObject(dragObject: eui.Image): egret.DisplayObject
+        private cloneDragObject(dragObject: egret.DisplayObject): egret.DisplayObject
+        {
+            if (dragObject instanceof eui.Image) {
+                return this.cloneImage(dragObject as eui.Image);
+            }
+            if (dragObject instanceof eui.Label) {
+                return this.cloneLabel(dragObject as eui.Label);
+            }
+            if (dragObject['clone']) {
+                return dragObject['clone']() as egret.DisplayObject;
+            }
+            throw new Error('not supported dragObject Type');
+        }
+
+        private cloneImage(dragObject: eui.Image): egret.DisplayObject
         {
             let clone = new eui.Image();
             clone.x = dragObject.x;
@@ -71,6 +89,21 @@ namespace lzlib {
             clone.width = dragObject.width * 1.2;
             clone.height = dragObject.height * 1.2;
             clone.source = dragObject.source;
+            clone.alpha = 0.8;
+            return clone;
+        }
+
+        private cloneLabel(dragObject: eui.Label): egret.DisplayObject
+        {
+            let clone = new eui.Label();
+            clone.x = dragObject.x;
+            clone.y = dragObject.y;
+            clone.width = dragObject.width * 1.2;
+            clone.height = dragObject.height * 1.2;
+            clone.text = dragObject.text;
+            clone.textColor = dragObject.textColor;
+            clone.size = dragObject.size;
+            clone.fontFamily = dragObject.fontFamily;
             clone.alpha = 0.8;
             return clone;
         }
@@ -93,12 +126,18 @@ namespace lzlib {
                 Drag.dragingObject.parent && Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
 
-            if (!Drag.isAccepted && !Drag.isCopy) {
-                //没有其他对象愿意接收你，就从哪里来回到哪里去。
-                Drag.dragingObject.x = Drag.originalX;
-                Drag.dragingObject.y = Drag.originalY;
-                if (Drag.originalParent != Drag.dragingObject.parent) {
-                    Drag.originalParent.addChild(Drag.dragingObject);
+            if (!Drag.isAccepted) {
+                //not one accept it, dispatch cancel event
+                Drag.dragingObject.dispatchEvent(
+                    new LzDragEvent(LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+                    
+                if (!Drag.isCopy) {
+                    //没有其他对象愿意接收你，就从哪里来回到哪里去。
+                    Drag.dragingObject.x = Drag.originalX;
+                    Drag.dragingObject.y = Drag.originalY;
+                    if (Drag.originalParent != Drag.dragingObject.parent) {
+                        Drag.originalParent.addChild(Drag.dragingObject);
+                    }
                 }
             }
             Drag.reset();

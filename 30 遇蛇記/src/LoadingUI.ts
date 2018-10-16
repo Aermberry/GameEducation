@@ -91,6 +91,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
     }
 
     public onProgress(current: number, total: number): void {
+        console.log(`loading resource, current ${current}, total ${total}`);
         this.downloadedPercentageLabel.text = Math.floor(current / total * 100).toString();
         this.progressBar.width = this.progressBarWidth * current / total;
     }

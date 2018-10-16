@@ -1,47 +1,57 @@
 {
-  "1640c3a80c2": {
-    "path": "scenes/StartScene.ts",
-    "class": "StartScene",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true,
-    "globalRulerEnable": false
-  },
-  "164125dcecd": {
-    "path": "scenes/ChooseEquationScene.ts",
-    "class": "ChooseEquationScene",
-    "parentPath": ""
-  },
-  "16412674b60": {
-    "path": "scenes/Plus125And53.ts",
-    "class": "Plus125And53",
-    "parentPath": ""
-  },
-  "164126c4907": {
-    "path": "scenes/Plus125And53Scene.ts",
-    "class": "Plus125And53Scene",
-    "parentPath": ""
-  },
-  "164126dba31": {
-    "path": "scenes/Plus16And27Scene.ts",
-    "class": "Plus16And27Scene",
-    "parentPath": "",
-    "guideLinesEnabled": false
-  },
-  "164126e45ec": {
-    "path": "scenes/Plus165And53Scene.ts",
-    "class": "Plus165And53Scene",
-    "parentPath": ""
-  },
-  "164126ef817": {
-    "path": "scenes/Plus175And168Scene.ts",
-    "class": "Plus175And168Scene",
-    "parentPath": ""
-  },
-  "164126f8527": {
-    "path": "scenes/Plus134And168Scene.ts",
-    "class": "Plus134And168Scene",
-    "parentPath": ""
-  }
+    "1640c3a80c2": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true,
+        "globalRulerEnable": false
+    },
+    "164125dcecd": {
+        "path": "scenes/ChooseEquationScene.ts",
+        "class": "ChooseEquationScene",
+        "parentPath": ""
+    },
+    "16412674b60": {
+        "path": "scenes/Plus125And53.ts",
+        "class": "Plus125And53",
+        "parentPath": ""
+    },
+    "164126c4907": {
+        "path": "scenes/Plus125And53Scene.ts",
+        "class": "Plus125And53Scene",
+        "parentPath": ""
+    },
+    "164126dba31": {
+        "path": "scenes/Plus16And27Scene.ts",
+        "class": "Plus16And27Scene",
+        "parentPath": "",
+        "guideLinesEnabled": false
+    },
+    "164126e45ec": {
+        "path": "scenes/Plus165And53Scene.ts",
+        "class": "Plus165And53Scene",
+        "parentPath": ""
+    },
+    "164126ef817": {
+        "path": "scenes/Plus175And168Scene.ts",
+        "class": "Plus175And168Scene",
+        "parentPath": ""
+    },
+    "164126f8527": {
+        "path": "scenes/Plus134And168Scene.ts",
+        "class": "Plus134And168Scene",
+        "parentPath": ""
+    },
+    "166287d186c": {
+        "path": "components/PauseButton.ts",
+        "class": "PauseButton",
+        "parentPath": ""
+    },
+    "1662896cbea": {
+        "path": "components/BackToIndexButton.ts",
+        "class": "BackToIndexButton",
+        "parentPath": ""
+    }
 }

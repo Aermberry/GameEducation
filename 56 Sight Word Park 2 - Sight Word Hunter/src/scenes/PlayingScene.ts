@@ -12,7 +12,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private tipTweenGroup: egret.tween.TweenGroup;
 	private readyTweenGroup: egret.tween.TweenGroup;
 
-	private readonly secondsInTotalGame = 180;
+	private readonly secondsInTotalGame = 120;
 	private secondsLeftInTotal = 0; //本游戏还剩多少秒
 
 	private readonly secondsPerRound = 20; //一轮的总秒数
@@ -24,12 +24,14 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private passedCurrentRound = false; //用户是否答对题目，通过本轮游戏？
 	private stoppedFire = false; //用户答对题目，暂时停火，等下一轮再开火
 
-	private allWords = new WordRepository().getAll(); //词库中的所有单词
+	private allWords: string[] = []; //词库中的所有单词
 	private desktopWords = []; //从词库中选到桌子上的单词，用于解决桌面上出现重复词的问题
 	private spokenWord = 'a'; //语音播报出来的单词，需要用户选中该单词才能进入下一关。
+	private wordRepo: WordRepository;
 
-	public constructor() {
+	public constructor(wordRepo: WordRepository) {
 		super();
+		this.wordRepo = wordRepo;
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -72,8 +74,8 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private initSpeakerButton()
 	{
-		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.speakerImage.source = 'speaker_selected_svg', this);
-		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.speakerImage.source = 'speaker_normal_svg', this);
+		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.speakerImage.source = 'speaker_selected_png', this);
+		this.speakerImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.speakerImage.source = 'speaker_normal_png', this);
 		this.speakerImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.speakCurrentWord(), this);
 	}
 
@@ -113,6 +115,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	public startGame(): void
 	{
+		this.allWords = this.wordRepo.getAll();
 		this.readyTweenGroup.play(0);
 	}
 
@@ -120,11 +123,12 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		this.desktopWords = [];
 		for (let target of this.targets) {
 			target.reset();
-			let candidate = this.getRandomWord();
-			if (this.desktopWords.indexOf(candidate) < 0) {
-				this.desktopWords.push(candidate);
-				target.setLabel(candidate);
-			}
+			let candidate = '';
+			do {
+				candidate = this.getRandomWord();
+			} while (this.desktopWords.indexOf(candidate) >= 0);
+			this.desktopWords.push(candidate);
+			target.setLabel(candidate);
 		}
 		this.spokenWord = this.desktopWords[Math.randomMinMax(0, this.targets.length - 1)];
 		this.speakCurrentWord();
@@ -152,6 +156,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		if (this.spokenWord == target.label) {
 			this.stoppedFire = true;
 			this.playTipAnimation("Good job!");
+			this.disableAllTargets();
 			await ThreadUtility.sleep(2000);
 			this.passedCurrentRound = true;
 		} else {
@@ -189,7 +194,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private createCannonball(): eui.Image
 	{
-		let cannonball = new eui.Image('cannonball_svg')
+		let cannonball = new eui.Image('cannonball_png')
 		cannonball.scaleY = cannonball.scaleX = 0.7;
 		cannonball.x = this.width / 2;
 		cannonball.y = this.height;
@@ -221,6 +226,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		//本轮时间到，进入下一轮
 		if (this.secondsLeftInRound <= 0) {
 			console.log('时间到，进入下一轮');
+			this.disableAllTargets();
 			//用户在本轮游戏时间内没有答对问题，跳过本轮，进入下一题。
 			this.playTipAnimation('Next Question!');
 			this.startNewRound();
@@ -237,12 +243,14 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	/**
 	 * 开始新一轮游戏
 	**/	
-	private startNewRound(): void
+	private async startNewRound(): Promise<void>
 	{
 		this.hurryIsAlerting = false;
 		this.resetTargetWords();
 		this.secondsLeftInRound = this.secondsPerRound;
 		this.stoppedFire = false;
+		await ThreadUtility.sleep(2000);
+		this.enableAllTargets();
 	}
 
 	private showTimeLeftInTotal(): void
@@ -265,5 +273,15 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private showResultScene()
 	{
 		this.addChild(new ResultScene(this));
+	}
+
+	private enableAllTargets(): void
+	{
+		this.targets.forEach(x => x.enabled = true);
+	}
+
+	private disableAllTargets(): void
+	{
+		this.targets.forEach(x => x.enabled = false);
 	}
 }

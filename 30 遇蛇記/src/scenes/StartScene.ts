@@ -1,7 +1,8 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton: eui.Image
-	private exitButton: ImageButton
-	private startSoundChannel: egret.SoundChannel
+	private startButton2: eui.Image;
+	private exitButton: ImageButton;
+	private startMask: eui.Rect;
 
 	public constructor() {
 		super();
@@ -18,13 +19,22 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startButton, true);
+		mouse.setButtonMode(this.startButton2, true);
 		mouse.setButtonMode(this.exitButton, true);
-		this.startSoundChannel = (RES.getRes('kids_there_is_a_story_below_mp3') as egret.Sound).play(0, 1);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStartButtonTouchBegin, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+	}
+
+	private onStartButton2Click(): void
+	{
+		lzlib.SoundUtility.playSound('kids_there_is_a_story_below_mp3');
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		this.startButton.visible = true;
 	}
 	
 	private onStartButtonRollOver(e: mouse.MouseEvent): void
@@ -44,7 +54,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onStartButtonClick(e: egret.TouchEvent): void
 	{
-		this.startSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new Question1Scene());
 	}
 

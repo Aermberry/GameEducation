@@ -1,9 +1,0 @@
-{
-    "useClip": true,
-    "maxImageWidth": 2048,
-    "maxImageHeight": 2048,
-    "defaultResPath": "d:\\EDB WLTS\\WLTS\\25 病句急症室\\resource\\default.res.json",
-    "packGroups": {
-        "preload": true
-    }
-}

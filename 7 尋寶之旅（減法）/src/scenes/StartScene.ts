@@ -3,6 +3,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private juniorImage: eui.Image;
 	private mediumImage: eui.Image;
 	private seniorImage: eui.Image;
+	private startButton: eui.Image;
+	private startMask: eui.Rect;
 
 	private currentSoundChannel: egret.SoundChannel;
 
@@ -22,6 +24,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		
 		mouse.setButtonMode(this.juniorImage, true);
+		mouse.setButtonMode(this.startButton, true);
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
 		this.juniorImage.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.juniorImage.source = 'junior_selected_png', this);
 		this.juniorImage.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.juniorImage.source = 'junior_normal_png', this);
 		this.juniorImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJuniorImageClick, this);
@@ -36,6 +40,12 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		this.seniorImage.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.seniorImage.source = 'senior_normal_png', this);
 		this.seniorImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSeniorImageClick, this);
 
+	}
+
+	private onStartButtonClick(): void
+	{
+		this.startButton.visible = false;
+		this.startMask.visible = false;
 		this.playSplash();
 	}
 

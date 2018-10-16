@@ -6,13 +6,25 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
 		"libs/modules/game/game.js",
-		"libs/modules/promise/promise.js"
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
+		"bin-debug/components/BiscuitProgressBar.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
+		"bin-debug/NextRound.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js"
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/components/BiscuitComponent.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/components/CircleButton.js",
+		"bin-debug/components/GoodsComponent.js",
+		"bin-debug/components/MovieClipPlayer.js",
+		"bin-debug/Main/MainPresenter.js",
+		"bin-debug/Main/MainScene.js",
+		"bin-debug/Main/MainView.js",
+		"bin-debug/Main/RoundPresenter.js"
 	]
 }

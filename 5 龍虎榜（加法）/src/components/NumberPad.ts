@@ -44,8 +44,8 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 
 	public async getCharAsync(): Promise<string>
 	{
-		return new Promise<string>(resolve => {
-			this.once(KeyDownEvent.EVENT, (e: KeyDownEvent) => resolve(e.char), this);
+		return new Promise<string>((resolve, reject) => {
+			this.once(KeyDownEvent.EVENT, (e: KeyDownEvent) => e.char == '' ? reject(new EraseError()) : resolve(e.char), this);
 		});
 	}
 }
