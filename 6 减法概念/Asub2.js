@@ -45915,7 +45915,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		
 		function onBackToIndexButtonClick()
 		{
-			backToChooseEquationScene();
+			if (this.backToIndexButton.visible) {
+				this.backToIndexButton.visible = false;
+				backToChooseEquationScene();
+			}
 		}
 	}
 
@@ -46275,7 +46278,7 @@ lib.properties = {
 	color: "#BFCBE3",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asub2_atlas_.png?1539678941943", id:"Asub2_atlas_"}
+		{src:"images/Asub2_atlas_.png?1539684751975", id:"Asub2_atlas_"}
 	],
 	preloads: []
 };

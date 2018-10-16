@@ -46339,7 +46339,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		
 		function onBackToIndexButtonClick()
 		{
-			backToChooseEquationScene();
+			if (this.backToIndexButton.visible) {
+				this.backToIndexButton.visible = false;
+				backToChooseEquationScene();
+			}
 		}
 	}
 
@@ -46661,7 +46664,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/title.png?1539678451604", id:"title"}
+		{src:"images/title.png?1539684278680", id:"title"}
 	],
 	preloads: []
 };
