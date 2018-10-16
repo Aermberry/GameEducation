@@ -41,5 +41,5 @@
 		         size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
 		<e:Image source="monkey_png" x="614.79" y="56.21" rotation="7.66" />
 	</e:Group>
-	<e:Image id="isTrueImage" source="true_png" x="1410.66" y="1055.59" rotation="346.24"  visible="false"/>
+	<e:Image id="isTrueImage" source="true_png" x="783.39" y="1055.59" rotation="346.24"  visible="false"/>
 </e:Skin>
