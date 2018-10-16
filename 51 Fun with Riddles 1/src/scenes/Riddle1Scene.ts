@@ -23,7 +23,6 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   protected childrenCreated(): void {
     super.childrenCreated();
 
-    // let riddle1 = new Base();
     this.addshowTipsLabel(this.keepClickGroup, this.tipsGroup);
     this.addshowTipsLabel(this.botton, this.drinksTipsGroup);
     this.addshowTipsLabel(this.pencilBox, this.pencilBoxTipGroup);
