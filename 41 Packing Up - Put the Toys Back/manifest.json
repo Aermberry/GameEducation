@@ -1,0 +1,31 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+<<<<<<< HEAD
+		"bin-debug/ThemeAdapter.js"
+=======
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/domains/Toy.js",
+		"bin-debug/domains/ToyPosition.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Game/gameScene.js",
+		"bin-debug/Game/GameView.js",
+		"bin-debug/repositories/ToyRepository.js",
+		"bin-debug/Scenes/StartScene.js",
+		"bin-debug/Scenes/statusScene.js",
+		"bin-debug/Scenes/tipsScene.js"
+>>>>>>> Student_Cards01
+	]
+}

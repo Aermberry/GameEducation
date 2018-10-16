@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question6SceneSkin" width="1920" height="1060" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
+<w:Declarations>
+		<tween:TweenGroup id="motion_book1">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Wait duration="3000"/>
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Wait duration="4000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image4}">
+				<tween:Wait duration="5000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image5}">
+				<tween:Wait duration="6000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image6}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165a246dcdd"/>
+	<e:Image x="127.5" y="188" source="rectangle_blue_large_png"/>
+	<e:Image x="290.5" y="28" source="header_head_png"/>
+	<e:Image x="1078.79" y="49.5" source="addition_png"/>
+	<e:Image x="20" y="157" source="number_box_png"/>
+	<e:Image x="18.18" y="940.06" source="last-normal_png"/>
+	<e:Image x="226" y="231" source="Book_top_png"/>
+	<e:Image x="272.79" y="248.64" source="Book_435_png"/>
+	<e:Image id="image6" x="857.21" y="245.64" source="Book_265_png" alpha="0"/>
+	<e:Image id="image7" x="273.21" y="309.49" source="Book_total_png" visible="false"/>
+	<e:Image x="476" y="424" source="Bookshelf_1_png"/>
+	<e:Image id="image" x="926" y="424" source="Bookshelf_2_png" alpha="0"/>
+	<e:Image id="image0" x="926" y="424" source="Bookshelf_3_png" alpha="0"/>
+	<e:Image id="image1" x="926" y="424" source="Bookshelf_4_png" alpha="0"/>
+	<e:Image id="image2" x="926" y="424" source="Bookshelf_5_png" alpha="0"/>
+	<e:Image id="image3" x="926" y="424" source="Bookshelf_6_png" alpha="0"/>
+	<e:Image id="image4" x="926" y="424" source="Bookshelf_7_png" alpha="0"/>
+	<e:Image id="image5" x="926" y="424" source="Bookshelf_8_png" alpha="0"/>
+	<e:Image id="image8" x="795" y="777" source="totoal_title_png" visible="false"/>
+	<e:Image id="image9" x="794" y="851" source="Book_435_1_png" visible="false"/>
+	<e:Image id="image10" x="915" y="851" source="Book_265_2_png" visible="false"/>
+	<e:Image id="image11" x="727.55" y="917.91" source="Book_total700_png" visible="false"/>
+
+	<ns1:ImageButton id="exitButton" x="1706" y="930" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
+	<e:Image x="20" y="156.79" source="number_box_png"/>
+	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  visible="false"/>
+	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
+	<e:Label text="6" x="60.88" y="178.7" fontFamily="DFKai-SB" textColor="0x002b58" anchorOffsetX="0" anchorOffsetY="0" size="120"/>
+</e:Skin>

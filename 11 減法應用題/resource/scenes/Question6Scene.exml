@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question6SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{description1Image}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi1Image}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi2Image}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi3Image}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi5Image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi6Image}">
+				<tween:Wait duration="1250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi6_2Image}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{tunaSushi1Image}">
+				<tween:Wait duration="2750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{tunaSushi2Image}">
+				<tween:Wait duration="3000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{tunaSushi3Image}">
+				<tween:Wait duration="3250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{tunaSushi4_6Image}">
+				<tween:Wait duration="3500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{description2Image}">
+				<tween:Wait duration="2500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{question}">
+				<tween:Wait duration="7000"/>
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="10500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="flickerAnimation">
+			<tween:TweenItem target="{salmonSushi6_2Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi5Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi6Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{salmonSushi4_6Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165b1854b2a" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="6"/>
+		<e:Image id="textBackground" width="1470.6" height="152" x="178" y="85" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="description1Image" x="210.21" y="96.06" source="question6_description1_png" alpha="0"/>
+		<e:Image id="description2Image" x="714.21" y="96.06" source="question6_description2_png" alpha="0"/>
+		<e:Image id="question" x="210.21" y="166.06" source="question6_png" alpha="0"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<e:Group width="1432" height="200" x="189" y="238" anchorOffsetX="0">
+			<e:Image id="salmonSushi1Image" x="8" y="4" source="salmon_sushi1_png" alpha="0"/>
+			<e:Image id="salmonSushi2Image" x="8" y="4" source="salmon_sushi2_png" alpha="0"/>
+			<e:Image id="salmonSushi3Image" x="8" y="4" source="salmon_sushi3_png" alpha="0"/>
+			<e:Image id="salmonSushi5Image" x="8" y="4" source="salmon_sushi5_png" alpha="0"/>
+			<e:Image id="salmonSushi6Image" x="8" y="4" source="salmon_sushi6_png" alpha="0"/>
+			<e:Image id="salmonSushi4_6Image" x="8" y="4" source="salmon_sushi4_6_png" alpha="0"/>
+			<e:Image id="salmonSushi6_2Image" x="8" y="4" source="salmon_sushi6_2_png" alpha="0" />
+		</e:Group>
+		<e:Group width="1108" height="200" x="379" y="444" anchorOffsetX="0">
+			<e:Image id="tunaSushi1Image" x="8" y="4" source="tuna_sushi1_png" alpha="0"/>
+			<e:Image id="tunaSushi2Image" x="8" y="4" source="tuna_sushi2_png" alpha="0"/>
+			<e:Image id="tunaSushi3Image" x="8" y="4" source="tuna_sushi3_png" alpha="0"/>
+			<e:Image id="tunaSushi4_6Image" x="8" y="4" source="tuna_sushi4_6_png" alpha="0"/>
+		</e:Group>
+		<e:Group id="formularGroup" width="200" height="200" x="637" y="638">
+			<e:Image id="titleImage" x="16" y="16" source="formula6_title_png" visible="false"/>
+			<e:Image id="leftImage" x="16" y="96" source="formula6_left_png" visible="false"/>
+			<e:Image id="rightImage" x="88" y="96" source="formula6_right_png" visible="false"/>
+			<e:Image id="resultImage" x="-66" y="158" source="formula6_result_png" visible="false"/>
+		</e:Group>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="766" y="671" alpha="0"/>	
+	</e:Group>
+</e:Skin>

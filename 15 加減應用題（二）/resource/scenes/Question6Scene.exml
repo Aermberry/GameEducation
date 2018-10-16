@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question6SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{xiaoMingTopLineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{400}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{974}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightArrowTopRect}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{845}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object y="{375}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloudAlertComponent}">
+				<tween:Wait duration="10000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoming6HeightImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="correctAnimation">
+			<tween:TweenItem target="{xiaoMingAndXiaoliImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoLiTopLineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{800}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1229}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightArrowBottomRect}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{120}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{xiaoMingHeightLabel}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165b1854b2a" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="6"/>
+		<e:Image id="textBackground" width="570" height="220" x="178" y="85" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image x="189" y="98" source="question6_start_png"/>
+		<e:Rect id="xiaoLiTopLineRect" width="480" height="1" x="1229.48" y="255.92" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		<e:Image id="xiaoMingHeightLabel" x="1227.66" y="285" source="54cm_and_arrow_png" alpha="0" anchorOffsetY="0"/>
+		<e:Rect id="xiaoMingHeightArrowBottomRect" width="1" height="120" x="1330" y="255.96" alpha="0" strokeWeight="1"/>
+		<e:Image id="xiaoLiHeightArrowRect" width="20" height="592" x="1616" y="262" source="arrow_top_png" alpha="1" visible="false"/>
+		<e:Image id="xiaoMingHeightArrowTopRect" width="20" height="470" x="1062.55" y="375.33" source="arrow_top_png" alpha="0"/>
+		<e:Image id="xiaoli6HeightImage" x="1638.7" y="445" source="xiaoli6_height_png" visible="false"/>
+		<e:Rect id="xiaoMingTopLineRect" width="540" height="1" x="974.61" y="374.49" alpha="0" strokeWeight="1"/>
+		<e:Image id="xiaoMingImage" x="1090" y="478" anchorOffsetX="0" anchorOffsetY="0" bottom="39" alpha="1" source="xiaoming_red_png"/>
+		<e:Image id="xiaoMingAndXiaoliImage" x="1092" y="488" anchorOffsetX="0" anchorOffsetY="0" bottom="39" alpha="0" source="xiaoming_and_xiaoli_png"/>
+		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="1"/>
+		<e:Image id="xiaoming6HeightImage" x="953.36" y="584.27" source="xiaoming6_height_png" alpha="0"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula6_title_png" leftImageSource="formula6_left_png" rightImageSource="formula6_right_png" resultImageSource="formula6_result_png"/>
+		<e:Group id="alertAndOperationGroup">
+			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="question6_png"/>
+			<ns1:ButtonComponent id="hightButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0"  normalSource="hight_normal_png" overSource="hight_over_png"  visible="false"/>
+			<ns1:ButtonComponent id="shortButtonComponent" width="180" height="102" x="509.45" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="short_normal_png" overSource="short_over_png" visible="false"/>
+			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
+		</e:Group>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>	
+	</e:Group>
+</e:Skin>

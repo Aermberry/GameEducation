@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Game1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165796e00c3" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+	<e:Label text="請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格" size="80" textColor="0xf70612" y="38" horizontalCenter="-0.5" fontFamily="華康楷書體"/>
+	<e:Group width="1570" height="1306" x="26" y="125">
+		<e:Image left="0" right="0" top="0" bottom="0" source="paper_png"/>
+		<ns1:ContentComponent id="contentComponent" width="1388" height="1008" x="119" y="69" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:AlertGame1Component width="775" height="204" x="86" y="1015" anchorOffsetX="0" anchorOffsetY="0" message="下款是發信人的署名，壹般寫於日期之前。" visible="false"/>
+	</e:Group>
+	<e:Group id="nameGroup" width="270" height="1306" x="1625" y="125">
+		<ns1:LabelComponents width="270" height="95" x="0" y="43" text="上款"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="230" text="下款" fillColor="0xfd9b9c"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="398" text="正文" fillColor="0xfb1367"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="570" text="日期" fillColor="0xfb3cc8"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="743" text="祝頌語" fillColor="0x1fca3e"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="920" text="問候語" fillColor="0x1b9bfc"/>
+		<ns1:NextLevelComponent id="nextLevelComponent" width="266" height="89" x="12" y="1128"/>
+	</e:Group>
+</e:Skin>

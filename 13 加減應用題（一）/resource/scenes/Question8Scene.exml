@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question8SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="165b28c1e12" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="8"/>
+		<e:Image id="textBackground" width="804.21" height="214.45" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image x="201" y="102" source="question8_start_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="268" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula8_title_png" leftImageSource="formula8_left_png" rightImageSource="formula8_right_png" resultImageSource="formula8_result_png"/>
+		<e:Group id="drinkLessGroup" visible="false">
+			<e:Image x="1163" y="491.24" source="drink_less_png"/>
+			<e:Image x="1559.51" y="632.73" source="yesterday_png"/>
+			<e:Image id="questionMarkImage" x="1590.09" y="708.18" source="question_mark_png" anchorOffsetX="0" width="25.52" anchorOffsetY="0" height="57.43"/>
+		</e:Group>
+		<e:Image x="1060.06" y="87.3" source="drink_much_png"/>
+		<e:Image x="1541.33" y="230" source="today_png"/>
+		<e:Group id="alertAndOperationGroup">
+			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="354.73" anchorOffsetX="0" anchorOffsetY="0" alpha="1" titleImageSource="question8_png" visible="false"/>
+			<ns1:ButtonComponent id="muchButtonComponent" width="180" height="102" x="296.43" y="649.82" anchorOffsetX="0" anchorOffsetY="0" normalSource="much_normal_png" overSource="much_over_png" visible="false"/>
+			<ns1:ButtonComponent id="lessButtonComponent" width="180" height="102" x="509.45" y="649.82" anchorOffsetX="0" anchorOffsetY="0" normalSource="less_normal_png" overSource="less_over_png" visible="false"/>
+			<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="703" visible="false"/>
+		</e:Group>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+	</e:Group>
+</e:Skin>

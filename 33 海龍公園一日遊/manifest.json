@@ -1,0 +1,41 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/mouse/mouse.js",
+		"libs/modules/lzlib/lzlib.js"
+	],
+	"game": [
+		"bin-debug/LoadingUI.js",
+		"bin-debug/domains/Background.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/biz/LevelBiz.js",
+		"bin-debug/components/CircleButton.js",
+		"bin-debug/components/ConjunctionBackground.js",
+		"bin-debug/components/ConjunctionComponent.js",
+		"bin-debug/components/ConjunctionContainer.js",
+		"bin-debug/components/Girl.js",
+		"bin-debug/components/MovieClipPlayer.js",
+		"bin-debug/components/ProgressComponent.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/domains/Clause.js",
+		"bin-debug/domains/Conjunction.js",
+		"bin-debug/domains/Sentence.js",
+		"bin-debug/Game/GamePresenter.js",
+		"bin-debug/Game/GameScene.js",
+		"bin-debug/Game/GameView.js",
+		"bin-debug/repositories/BackgroundRepository.js",
+		"bin-debug/repositories/ConjunctionRepository.js",
+		"bin-debug/repositories/SentenceRepository.js",
+		"bin-debug/scenes/BackgroundScene.js",
+		"bin-debug/scenes/NextPageScene.js",
+		"bin-debug/scenes/StartScene.js"
+	]
+}

@@ -1,0 +1,260 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,start_title_png,wlts_logo_jpg,start_letter_png,background_clock_png,bubble_png,paper_png,pen_start_png,pen_alert_png,elder_alert_png,rectangle_gradual_png,rectangle_gray_png,box_and_paper_png,star_border_png,paper_and_pen_png,rectangle_gray_noradius_png,bell_border_png,paper_alert_png,SantaClaus_alert_png,horn_and_prize_png,boy_alert_png,moon_and_star_png,wlts_logo2_jpg",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "checkbox_select_disabled2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name": "checkbox_select_down2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name": "checkbox_select_up2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name": "checkbox_unselect2_png",
+			"type": "image",
+			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "start_title_png",
+			"type": "image",
+			"url": "textures/start_title.png"
+		},
+		{
+			"name": "wlts_logo_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "start_letter_png",
+			"type": "image",
+			"url": "textures/start_letter.png"
+		},
+		{
+			"name": "background_clock_png",
+			"type": "image",
+			"url": "textures/background_clock.png"
+		},
+		{
+			"name": "bubble_png",
+			"type": "image",
+			"url": "textures/bubble.png"
+		},
+		{
+			"name": "paper_png",
+			"type": "image",
+			"url": "textures/paper.png"
+		},
+		{
+			"name": "pen_start_png",
+			"type": "image",
+			"url": "textures/pen_start.png"
+		},
+		{
+			"name": "pen_alert_png",
+			"type": "image",
+			"url": "textures/pen_alert.png"
+		},
+		{
+			"name": "elder_alert_png",
+			"type": "image",
+			"url": "textures/elder_alert.png"
+		},
+		{
+			"name": "rectangle_gradual_png",
+			"type": "image",
+			"url": "textures/rectangle_gradual.png"
+		},
+		{
+			"name": "rectangle_gray_png",
+			"type": "image",
+			"url": "textures/rectangle_gray.png"
+		},
+		{
+			"name": "box_and_paper_png",
+			"type": "image",
+			"url": "textures/box_and_paper.png"
+		},
+		{
+			"name": "star_border_png",
+			"type": "image",
+			"url": "textures/star_border.png"
+		},
+		{
+			"name": "paper_and_pen_png",
+			"type": "image",
+			"url": "textures/paper_and_pen.png"
+		},
+		{
+			"name": "rectangle_gray_noradius_png",
+			"type": "image",
+			"url": "textures/rectangle_gray_noradius.png"
+		},
+		{
+			"name": "bell_border_png",
+			"type": "image",
+			"url": "textures/bell_border.png"
+		},
+		{
+			"name": "paper_alert_png",
+			"type": "image",
+			"url": "textures/paper_alert.png"
+		},
+		{
+			"name": "SantaClaus_alert_png",
+			"type": "image",
+			"url": "textures/SantaClaus_alert.png"
+		},
+		{
+			"name": "horn_and_prize_png",
+			"type": "image",
+			"url": "textures/horn_and_prize.png"
+		},
+		{
+			"name": "boy_alert_png",
+			"type": "image",
+			"url": "textures/boy_alert.png"
+		},
+		{
+			"name": "moon_and_star_png",
+			"type": "image",
+			"url": "textures/moon_and_star.png"
+		},
+		{
+			"name": "wlts_logo2_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+    "1655bc40f38": {
+        "path": "scenes/mainScene.ts",
+        "class": "mainScene",
+        "parentPath": ""
+    },
+    "1655f48fcdf": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "1655f527028": {
+        "path": "scenes/BackgroundScene.ts",
+        "class": "BackgroundScene",
+        "parentPath": ""
+    },
+    "1655f64624c": {
+        "path": "scenes/Game1Scene.ts",
+        "class": "Game1Scene",
+        "parentPath": ""
+    },
+    "1655f78f107": {
+        "path": "scenes/GameScene.ts",
+        "class": "GameScene",
+        "parentPath": ""
+    },
+    "1655f9f7f8f": {
+        "path": "components/ConjunctionComponent.ts",
+        "class": "ConjunctionComponent",
+        "parentPath": ""
+    },
+    "165611c77a3": {
+        "path": "components/backgroundComponent.ts",
+        "class": "backgroundComponent",
+        "parentPath": ""
+    },
+    "1656475dc63": {
+        "path": "components/NextPageComponent.ts",
+        "class": "NextPageComponent",
+        "parentPath": ""
+    },
+    "165647755ff": {
+        "path": "components/NextPageComponent.ts",
+        "class": "NextPageComponent",
+        "parentPath": ""
+    },
+    "16564e5ca1f": {
+        "path": "components/NextPageComponent.ts",
+        "class": "NextPageComponent",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "165706ed774": {
+        "path": "components/ProgressComponent.ts",
+        "class": "ProgressComponent",
+        "parentPath": ""
+    },
+    "165708e2ee3": {
+        "path": "components/BottomComponent.ts",
+        "class": "BottomComponent",
+        "parentPath": ""
+    },
+    "16599916680": {
+        "path": "repositories/SentenceRepository.ts",
+        "class": "SentenceRepository",
+        "parentPath": ""
+    },
+    "165b2c10122": {
+        "path": "components/ConjunctionContainer.ts",
+        "class": "ConjunctionContainer",
+        "parentPath": ""
+    },
+    "165b46ec959": {
+        "path": "components/ConjunctionBackground.ts",
+        "class": "ConjunctionBackground",
+        "parentPath": ""
+    }
+}

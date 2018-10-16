@@ -1,0 +1,685 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wlts_logo_jpg,sound 100_mp3,sound 102_mp3,sound 104_mp3,sound 106_mp3,sound 108_mp3,sound 110_mp3,sound 112_mp3,sound 114_mp3,sound 116_mp3,sound 118_mp3,sound 120_mp3,sound 122_mp3,sound 124_mp3,sound 126_mp3,sound 128_mp3,sound 130_mp3,sound 132_mp3,sound 134_mp3,sound 136_mp3,sound 138_mp3,sound 140_mp3,sound 142_mp3,sound 144_mp3,sound 146_mp3,sound 148_mp3,sound 150_mp3,sound 152_mp3,sound 154_mp3,sound 156_mp3,sound 170_mp3,sound 172_mp3,sound 174_mp3,sound 176_mp3,sound 178_mp3,sound 180_mp3,sound 182_mp3,sound 184_mp3,sound 186_mp3,sound 188_mp3,sound 190_mp3,sound 192_mp3,sound 194_mp3,sound 196_mp3,sound 198_mp3,sound 200_mp3,sound 202_mp3,sound 204_mp3,sound 206_mp3,sound 208_mp3,sound 212_mp3,sound 217_mp3,sound 219_mp3,sound 221_mp3,sound 223_mp3,sound 241_mp3,sound 402_mp3,sound 80_mp3,sound 82_mp3,sound 84_mp3,sound 86_mp3,sound 88_mp3,sound 90_mp3,sound 92_mp3,sound 94_mp3,sound 96_mp3,sound 98_mp3,sound1_park_s1_mp3,background_gray_deep_png,border_left_up_gray_png,border_rect_yellow_png,border_right_down_grap_deep_png,border_right_down_gray_png,circle_page_next_png,dinner_png,Dolphin_png,finish_png,girl_png,house_and_people_png,house_png,people_png,process_border_png,roller_coaster_png,shape330_png,text_area_background_png,text_background_png,trail_end_png,trail_head_png,trail_mid_png,train_animation_json,train_animation_png,triangle_png,windmill_png,cur_step_border_png,sound_step_introduce_mp3,sound1_park_s2_mp3,camera_and_food_png,sound1_park_s3_mp3,sound1_park_s4_mp3,sound1_park_s5_mp3,girl_smile_png,text_background_alpha_png,text_background_gray_png,but_mp3,because_mp3,if_mp3,although_mp3,so_mp3,then_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
+		},
+		{
+			"url": "audios/sound 100.mp3",
+			"type": "sound",
+			"name": "sound 100_mp3"
+		},
+		{
+			"url": "audios/sound 102.mp3",
+			"type": "sound",
+			"name": "sound 102_mp3"
+		},
+		{
+			"url": "audios/sound 104.mp3",
+			"type": "sound",
+			"name": "sound 104_mp3"
+		},
+		{
+			"url": "audios/sound 106.mp3",
+			"type": "sound",
+			"name": "sound 106_mp3"
+		},
+		{
+			"url": "audios/sound 108.mp3",
+			"type": "sound",
+			"name": "sound 108_mp3"
+		},
+		{
+			"url": "audios/sound 110.mp3",
+			"type": "sound",
+			"name": "sound 110_mp3"
+		},
+		{
+			"url": "audios/sound 112.mp3",
+			"type": "sound",
+			"name": "sound 112_mp3"
+		},
+		{
+			"url": "audios/sound 114.mp3",
+			"type": "sound",
+			"name": "sound 114_mp3"
+		},
+		{
+			"url": "audios/sound 116.mp3",
+			"type": "sound",
+			"name": "sound 116_mp3"
+		},
+		{
+			"url": "audios/sound 118.mp3",
+			"type": "sound",
+			"name": "sound 118_mp3"
+		},
+		{
+			"url": "audios/sound 120.mp3",
+			"type": "sound",
+			"name": "sound 120_mp3"
+		},
+		{
+			"url": "audios/sound 122.mp3",
+			"type": "sound",
+			"name": "sound 122_mp3"
+		},
+		{
+			"url": "audios/sound 124.mp3",
+			"type": "sound",
+			"name": "sound 124_mp3"
+		},
+		{
+			"url": "audios/sound 126.mp3",
+			"type": "sound",
+			"name": "sound 126_mp3"
+		},
+		{
+			"url": "audios/sound 128.mp3",
+			"type": "sound",
+			"name": "sound 128_mp3"
+		},
+		{
+			"url": "audios/sound 130.mp3",
+			"type": "sound",
+			"name": "sound 130_mp3"
+		},
+		{
+			"url": "audios/sound 132.mp3",
+			"type": "sound",
+			"name": "sound 132_mp3"
+		},
+		{
+			"url": "audios/sound 134.mp3",
+			"type": "sound",
+			"name": "sound 134_mp3"
+		},
+		{
+			"url": "audios/sound 136.mp3",
+			"type": "sound",
+			"name": "sound 136_mp3"
+		},
+		{
+			"url": "audios/sound 138.mp3",
+			"type": "sound",
+			"name": "sound 138_mp3"
+		},
+		{
+			"url": "audios/sound 140.mp3",
+			"type": "sound",
+			"name": "sound 140_mp3"
+		},
+		{
+			"url": "audios/sound 142.mp3",
+			"type": "sound",
+			"name": "sound 142_mp3"
+		},
+		{
+			"url": "audios/sound 144.mp3",
+			"type": "sound",
+			"name": "sound 144_mp3"
+		},
+		{
+			"url": "audios/sound 146.mp3",
+			"type": "sound",
+			"name": "sound 146_mp3"
+		},
+		{
+			"url": "audios/sound 148.mp3",
+			"type": "sound",
+			"name": "sound 148_mp3"
+		},
+		{
+			"url": "audios/sound 150.mp3",
+			"type": "sound",
+			"name": "sound 150_mp3"
+		},
+		{
+			"url": "audios/sound 152.mp3",
+			"type": "sound",
+			"name": "sound 152_mp3"
+		},
+		{
+			"url": "audios/sound 154.mp3",
+			"type": "sound",
+			"name": "sound 154_mp3"
+		},
+		{
+			"url": "audios/sound 156.mp3",
+			"type": "sound",
+			"name": "sound 156_mp3"
+		},
+		{
+			"url": "audios/sound 170.mp3",
+			"type": "sound",
+			"name": "sound 170_mp3"
+		},
+		{
+			"url": "audios/sound 172.mp3",
+			"type": "sound",
+			"name": "sound 172_mp3"
+		},
+		{
+			"url": "audios/sound 174.mp3",
+			"type": "sound",
+			"name": "sound 174_mp3"
+		},
+		{
+			"url": "audios/sound 176.mp3",
+			"type": "sound",
+			"name": "sound 176_mp3"
+		},
+		{
+			"url": "audios/sound 178.mp3",
+			"type": "sound",
+			"name": "sound 178_mp3"
+		},
+		{
+			"url": "audios/sound 180.mp3",
+			"type": "sound",
+			"name": "sound 180_mp3"
+		},
+		{
+			"url": "audios/sound 182.mp3",
+			"type": "sound",
+			"name": "sound 182_mp3"
+		},
+		{
+			"url": "audios/sound 184.mp3",
+			"type": "sound",
+			"name": "sound 184_mp3"
+		},
+		{
+			"url": "audios/sound 186.mp3",
+			"type": "sound",
+			"name": "sound 186_mp3"
+		},
+		{
+			"url": "audios/sound 188.mp3",
+			"type": "sound",
+			"name": "sound 188_mp3"
+		},
+		{
+			"url": "audios/sound 190.mp3",
+			"type": "sound",
+			"name": "sound 190_mp3"
+		},
+		{
+			"url": "audios/sound 192.mp3",
+			"type": "sound",
+			"name": "sound 192_mp3"
+		},
+		{
+			"url": "audios/sound 194.mp3",
+			"type": "sound",
+			"name": "sound 194_mp3"
+		},
+		{
+			"url": "audios/sound 196.mp3",
+			"type": "sound",
+			"name": "sound 196_mp3"
+		},
+		{
+			"url": "audios/sound 198.mp3",
+			"type": "sound",
+			"name": "sound 198_mp3"
+		},
+		{
+			"url": "audios/sound 200.mp3",
+			"type": "sound",
+			"name": "sound 200_mp3"
+		},
+		{
+			"url": "audios/sound 202.mp3",
+			"type": "sound",
+			"name": "sound 202_mp3"
+		},
+		{
+			"url": "audios/sound 204.mp3",
+			"type": "sound",
+			"name": "sound 204_mp3"
+		},
+		{
+			"url": "audios/sound 206.mp3",
+			"type": "sound",
+			"name": "sound 206_mp3"
+		},
+		{
+			"url": "audios/sound 208.mp3",
+			"type": "sound",
+			"name": "sound 208_mp3"
+		},
+		{
+			"url": "audios/sound 212.mp3",
+			"type": "sound",
+			"name": "sound 212_mp3"
+		},
+		{
+			"url": "audios/sound 217.mp3",
+			"type": "sound",
+			"name": "sound 217_mp3"
+		},
+		{
+			"url": "audios/sound 219.mp3",
+			"type": "sound",
+			"name": "sound 219_mp3"
+		},
+		{
+			"url": "audios/sound 221.mp3",
+			"type": "sound",
+			"name": "sound 221_mp3"
+		},
+		{
+			"url": "audios/sound 223.mp3",
+			"type": "sound",
+			"name": "sound 223_mp3"
+		},
+		{
+			"url": "audios/sound 241.mp3",
+			"type": "sound",
+			"name": "sound 241_mp3"
+		},
+		{
+			"url": "audios/sound 402.mp3",
+			"type": "sound",
+			"name": "sound 402_mp3"
+		},
+		{
+			"url": "audios/sound 80.mp3",
+			"type": "sound",
+			"name": "sound 80_mp3"
+		},
+		{
+			"url": "audios/sound 82.mp3",
+			"type": "sound",
+			"name": "sound 82_mp3"
+		},
+		{
+			"url": "audios/sound 84.mp3",
+			"type": "sound",
+			"name": "sound 84_mp3"
+		},
+		{
+			"url": "audios/sound 86.mp3",
+			"type": "sound",
+			"name": "sound 86_mp3"
+		},
+		{
+			"url": "audios/sound 88.mp3",
+			"type": "sound",
+			"name": "sound 88_mp3"
+		},
+		{
+			"url": "audios/sound 90.mp3",
+			"type": "sound",
+			"name": "sound 90_mp3"
+		},
+		{
+			"url": "audios/sound 92.mp3",
+			"type": "sound",
+			"name": "sound 92_mp3"
+		},
+		{
+			"url": "audios/sound 94.mp3",
+			"type": "sound",
+			"name": "sound 94_mp3"
+		},
+		{
+			"url": "audios/sound 96.mp3",
+			"type": "sound",
+			"name": "sound 96_mp3"
+		},
+		{
+			"url": "audios/sound 98.mp3",
+			"type": "sound",
+			"name": "sound 98_mp3"
+		},
+		{
+			"url": "audios/sound1_park_s1.mp3",
+			"type": "sound",
+			"name": "sound1_park_s1_mp3"
+		},
+		{
+			"url": "textures/Dolphin.png",
+			"type": "image",
+			"name": "Dolphin_png"
+		},
+		{
+			"url": "textures/background_gray_deep.png",
+			"type": "image",
+			"name": "background_gray_deep_png"
+		},
+		{
+			"url": "textures/border_left_up_gray.png",
+			"type": "image",
+			"name": "border_left_up_gray_png"
+		},
+		{
+			"url": "textures/border_rect_yellow.png",
+			"type": "image",
+			"name": "border_rect_yellow_png"
+		},
+		{
+			"url": "textures/border_right_down_grap_deep.png",
+			"type": "image",
+			"name": "border_right_down_grap_deep_png"
+		},
+		{
+			"url": "textures/border_right_down_gray.png",
+			"type": "image",
+			"name": "border_right_down_gray_png"
+		},
+		{
+			"url": "textures/circle_page_next.png",
+			"type": "image",
+			"name": "circle_page_next_png"
+		},
+		{
+			"url": "textures/dinner.png",
+			"type": "image",
+			"name": "dinner_png"
+		},
+		{
+			"url": "textures/finish.png",
+			"type": "image",
+			"name": "finish_png"
+		},
+		{
+			"url": "textures/girl.png",
+			"type": "image",
+			"name": "girl_png"
+		},
+		{
+			"url": "textures/house.png",
+			"type": "image",
+			"name": "house_png"
+		},
+		{
+			"url": "textures/house_and_people.png",
+			"type": "image",
+			"name": "house_and_people_png"
+		},
+		{
+			"url": "textures/people.png",
+			"type": "image",
+			"name": "people_png"
+		},
+		{
+			"url": "textures/process_border.png",
+			"type": "image",
+			"name": "process_border_png"
+		},
+		{
+			"url": "textures/roller_coaster.png",
+			"type": "image",
+			"name": "roller_coaster_png"
+		},
+		{
+			"url": "textures/shape330.png",
+			"type": "image",
+			"name": "shape330_png"
+		},
+		{
+			"url": "textures/text_area_background.png",
+			"type": "image",
+			"name": "text_area_background_png"
+		},
+		{
+			"url": "textures/text_background.png",
+			"type": "image",
+			"name": "text_background_png"
+		},
+		{
+			"url": "textures/trail_end.png",
+			"type": "image",
+			"name": "trail_end_png"
+		},
+		{
+			"url": "textures/trail_head.png",
+			"type": "image",
+			"name": "trail_head_png"
+		},
+		{
+			"url": "textures/trail_mid.png",
+			"type": "image",
+			"name": "trail_mid_png"
+		},
+		{
+			"url": "textures/triangle.png",
+			"type": "image",
+			"name": "triangle_png"
+		},
+		{
+			"url": "textures/windmill.png",
+			"type": "image",
+			"name": "windmill_png"
+		},
+		{
+			"url": "textures/train/train_animation.png",
+			"type": "image",
+			"name": "train_animation_png"
+		},
+		{
+			"url": "textures/train/train_animation.json",
+			"type": "json",
+			"name": "train_animation_json"
+		},
+		{
+			"name": "cur_step_border_png",
+			"type": "image",
+			"url": "textures/cur_step_border.png"
+		},
+		{
+			"name": "sound_step_introduce_mp3",
+			"type": "sound",
+			"url": "audios/sound_step_introduce.mp3"
+		},
+		{
+			"name": "sound1_park_s2_mp3",
+			"type": "sound",
+			"url": "audios/sound1_park_s2.mp3"
+		},
+		{
+			"name": "camera_and_food_png",
+			"type": "image",
+			"url": "textures/camera_and_food.png"
+		},
+		{
+			"name": "sound1_park_s3_mp3",
+			"type": "sound",
+			"url": "audios/sound1_park_s3.mp3"
+		},
+		{
+			"name": "sound1_park_s4_mp3",
+			"type": "sound",
+			"url": "audios/sound1_park_s4.mp3"
+		},
+		{
+			"name": "sound1_park_s5_mp3",
+			"type": "sound",
+			"url": "audios/sound1_park_s5.mp3"
+		},
+		{
+			"name": "girl_smile_png",
+			"type": "image",
+			"url": "textures/girl_smile.png"
+		},
+		{
+			"name": "text_background_alpha_png",
+			"type": "image",
+			"url": "textures/text_background_alpha.png"
+		},
+		{
+			"name": "text_background_gray_png",
+			"type": "image",
+			"url": "textures/text_background_gray.png"
+		},
+		{
+			"name": "but_mp3",
+			"type": "sound",
+			"url": "audios/but.mp3"
+		},
+		{
+			"name": "because_mp3",
+			"type": "sound",
+			"url": "audios/because.mp3"
+		},
+		{
+			"name": "if_mp3",
+			"type": "sound",
+			"url": "audios/if.mp3"
+		},
+		{
+			"name": "although_mp3",
+			"type": "sound",
+			"url": "audios/although.mp3"
+		},
+		{
+			"name": "so_mp3",
+			"type": "sound",
+			"url": "audios/so.mp3"
+		},
+		{
+			"name": "then_mp3",
+			"type": "sound",
+			"url": "audios/then.mp3"
+		}
+	]
+}

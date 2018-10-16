@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="trainTweenGroup">
+			<tween:TweenItem target="{trainGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{-1900}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{nextSentenceGroup}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{conjunctionGroup}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="textAnswerLabel">
+			<tween:TweenItem target="{leftConjunctionContainer}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rightConjunctionContainer}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1655f78f107" ></w:Config>
+	<e:Group width="1920" height="1205" x="0" y="0">
+		<e:Rect bottom="0" top="0" left="0" right="0" fillColor="0xb35a16"/>
+		<e:Group width="1754" height="1077" verticalCenter="0" horizontalCenter="0">
+			<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xffffff"/>
+			<e:Group height="348.48" y="725" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0">
+				<e:Image left="0" right="0" top="0" bottom="0" source="text_area_background_png"/>
+				<e:Group height="284.85" y="64" anchorOffsetY="0" left="0" right="0">
+					<e:Group id="conjunctionGroup" width="1233" x="0" anchorOffsetX="0" top="0" bottom="-0.14999999999997726">
+						<ns1:ConjunctionContainer width="244" height="157" x="5.61" y="-3.09" text="因為" />
+						<ns1:ConjunctionContainer width="244" height="157" x="411.88" y="0" text="所以" />
+						<ns1:ConjunctionContainer width="244" height="157" x="205.04" y="122.36" text="雖然" />
+						<ns1:ConjunctionContainer width="244" height="157" x="607.68" y="122.36" text="但是" />
+						<ns1:ConjunctionContainer width="244" height="157" x="807.53" y="-3.09" text="如果" />
+						<ns1:ConjunctionContainer width="244" height="157" x="998.44" y="121.42" text="就" />
+					</e:Group>
+					<e:Group width="509.09" height="278.79" x="1241" y="6" anchorOffsetX="0" anchorOffsetY="0">
+						<ns1:CircleButton id="validateButton" width="147.27" height="147.27" x="56" y="57" anchorOffsetX="0" anchorOffsetY="0" tip="核對題目" title="核對" titleColor="0xFFFEA6" backgroundColor="0x41962a" strokeColor="0x296419" enabled="false"/>
+						<ns1:CircleButton id="nextSentenceButton" width="147" height="147" x="270" y="57" tip="下一頁" iconSource="triangle_png" enabled="false" />
+					</e:Group>
+				</e:Group>		
+			</e:Group>
+			<e:Group id="nextSentenceGroup" x="520" y="372" alpha="0">
+				<e:Label text="請按" x="0" size="74" textColor="0x000000" verticalCenter="0"/>
+				<e:Label text="請按" x="269" size="74" textColor="0x000000" verticalCenter="0"/>
+				<e:Image width="106" height="111" x="158" source="circle_page_next_png"/>
+			</e:Group>
+			<e:Group id="trainGroup" width="1754" x="0" y="213" height="576">
+				<ns1:ConjunctionContainer id="rightConjunctionContainer" width="244" height="157" x="1078.79" y="247" backgroundVisible="false"/>
+				<ns1:ConjunctionContainer id="leftConjunctionContainer" width="244" height="157" x="432.43" y="247" backgroundVisible="false"/>
+				<e:Image width="454" height="542" x="19.58" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_head_png"/>
+
+				<e:Group width="465" height="542" x="644.12" y="0" anchorOffsetX="0" anchorOffsetY="0">
+					<e:Image width="465" height="542" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_mid_png"/>
+					<ns1:Girl id="leftGirl" width="204.85" height="146.42" x="101.3" y="75.25" anchorOffsetX="0" anchorOffsetY="0"/>
+				</e:Group>
+				<e:Group width="451" height="542" x="1289.78" y="0" anchorOffsetX="0" anchorOffsetY="0">
+					<e:Image width="451" height="542" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="trail_end_png"/>
+					<ns1:Girl id="rightGirl" width="210.91" height="210.26" y="75.25" x="104.33" anchorOffsetX="0" anchorOffsetY="0"/>
+				</e:Group>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="currentLevelLabel" text="第一節完" size="150" textColor="0x000000" textAlign="center" verticalAlign="middle" backgroundColor="0xffffff" background="true" left="0" right="0" bottom="0" top="0" visible="false"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+			
+		</e:Group>
+	</e:Group>
+	<e:Group height="237" y="1205" anchorOffsetY="0" left="0" right="0">
+		<e:Rect top="0" bottom="0" left="0" right="0" fillColor="0xf8d08b"/>
+		<ns1:CircleButton id="exitButton" x="1738" y="38" backgroundColor="0xffffff" tip="離開" title="離開" strokeColor="0x000000"/>
+		<e:Rect width="156" height="156" x="26" y="39" fillColor="0xffffff"/>	
+		<e:Label text="現時進度" x="26" y="39" width="156" height="156" multiline="true" textAlign="center" verticalAlign="middle" size="61" fontFamily="華康娃娃体" textColor="0x000000"/>
+		<ns1:ProgressComponent id="progressComponent" width="20" height="20" x="205" y="16" />
+	</e:Group>
+</e:Skin>

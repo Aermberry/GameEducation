@@ -1,0 +1,95 @@
+
+<e:Skin class="Scene07Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="diplay">
+			<tween:TweenItem target="{group00}">
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="5900"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="11800"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group03}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="16050"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1655b2a4d69"  x="-606" scaleX="1" scaleY="1"></w:Config>
+	<e:Group id="group00" left="0" right="0">
+	<e:Label text="'Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+	<e:Label id="pongLabel" text="Pong," size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="-149" height="121.39" anchorOffsetX="0"/>
+		<e:Label text="Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+		<e:Label id="pongLabel0" text="Pong" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="-149" height="121.39"/>
+		<e:Label text="!'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingTop="202"/>
+		</e:layout>
+		</e:Group>
+
+		<e:Group id="group01" left="0" right="0">
+		<e:Label text="King" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+			<e:Label id="KongLabel" text="Kong" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="112.3"/>
+				<e:Label text="is" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+					<e:Label id="strongLabel" text="strong" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="112.3"/>
+					<e:Label text="." size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingLeft="0" paddingTop="368" gap="22"/>
+			</e:layout>
+		</e:Group>
+	
+	<e:Group id="group02" left="0" right="0">
+<e:Label text="Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label id="DongLabel" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="137.52" textColor="0x5d20f5"/>
+<e:Label text=",Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label id="DongLabel0" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="137.52" textColor="0x5d20f5"/>
+<e:Label text=".'" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingTop="532"/>
+		</e:layout>
+		</e:Group>
+	
+	<e:Group id="group03" left="0" right="0">
+	<e:Label id="kongLebel" text="Kong" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="112.3"/>
+	<e:Label text="hits" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+	<e:Label text="the" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+	<e:Label id="gongLabel" text="gong" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="112.3"/>
+	<e:Label text="." size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" paddingTop="704" horizontalAlign="center" gap="21"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="headerLabel" text="Click on the words in red and listen." fontFamily="Comic Sans MS" textColor="0x37a80a" size="88" horizontalCenter="0" y="56" visible="false"/>
+<e:Button id="nextButton" label="Next" x="1476" y="902" anchorOffsetX="0" width="249.1" anchorOffsetY="0" height="109.33" visible="false"/>
+</e:Skin>

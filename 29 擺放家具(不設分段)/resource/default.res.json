@@ -1,0 +1,360 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,rect_white_floor_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle_horn_click_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_border_blue_png,horn_animation_json,horn_animation_png,panel_bottom_png,title_blue_png,speaker_png,panel_green_png,dog_movie_png,dog_movie_json,circle_pink_png,sound 1 (oSound1)_mp3,sound 10 (completeSoundRaw)_mp3,sound 11 (oSound3)_mp3,sound 12 (oSound4)_mp3,sound 13 (oSound6)_mp3,sound 14 (oSound7)_mp3,sound 2 (oSound0)_mp3,sound 3 (oSound2)_mp3,sound 4 (instructionSoundRaw)_mp3,sound 5 (guideSound2Raw)_mp3,sound 6 (guideSound1Raw)_mp3,sound 7 (guideSound0Raw)_mp3,sound 8 (oSound5)_mp3,sound 9 (contentSoundRaw)_mp3",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "textures/alert_border_blue.png",
+			"type": "image",
+			"name": "alert_border_blue_png"
+		},
+		{
+			"url": "textures/bar-row-blue.png",
+			"type": "image",
+			"name": "bar-row-blue_png"
+		},
+		{
+			"url": "textures/bar-row-gray.png",
+			"type": "image",
+			"name": "bar-row-gray_png"
+		},
+		{
+			"url": "textures/biscuit.png",
+			"type": "image",
+			"name": "biscuit_png"
+		},
+		{
+			"url": "textures/circle_horn_click.png",
+			"type": "image",
+			"name": "circle_horn_click_png"
+		},
+		{
+			"url": "textures/floor_red.png",
+			"type": "image",
+			"name": "floor_red_png"
+		},
+		{
+			"url": "textures/furniture_door_white.png",
+			"type": "image",
+			"name": "furniture_door_white_png"
+		},
+		{
+			"url": "textures/furniture_hanger_coat.png",
+			"type": "image",
+			"name": "furniture_hanger_coat_png"
+		},
+		{
+			"url": "textures/furniture_lamp_desk.png",
+			"type": "image",
+			"name": "furniture_lamp_desk_png"
+		},
+		{
+			"url": "textures/furniture_stool.png",
+			"type": "image",
+			"name": "furniture_stool_png"
+		},
+		{
+			"url": "textures/furniture_table.png",
+			"type": "image",
+			"name": "furniture_table_png"
+		},
+		{
+			"url": "textures/furniture_wardrobe.png",
+			"type": "image",
+			"name": "furniture_wardrobe_png"
+		},
+		{
+			"url": "textures/goods_bear.png",
+			"type": "image",
+			"name": "goods_bear_png"
+		},
+		{
+			"url": "textures/goods_bird_and_birdcage.png",
+			"type": "image",
+			"name": "goods_bird_and_birdcage_png"
+		},
+		{
+			"url": "textures/goods_book.png",
+			"type": "image",
+			"name": "goods_book_png"
+		},
+		{
+			"url": "textures/goods_cat.png",
+			"type": "image",
+			"name": "goods_cat_png"
+		},
+		{
+			"url": "textures/goods_dog.png",
+			"type": "image",
+			"name": "goods_dog_png"
+		},
+		{
+			"url": "textures/goods_pot_umbrella.png",
+			"type": "image",
+			"name": "goods_pot_umbrella_png"
+		},
+		{
+			"url": "textures/rect_white_floor.png",
+			"type": "image",
+			"name": "rect_white_floor_png"
+		},
+		{
+			"url": "textures/wall_left.png",
+			"type": "image",
+			"name": "wall_left_png"
+		},
+		{
+			"url": "textures/wall_window.png",
+			"type": "image",
+			"name": "wall_window_png"
+		},
+		{
+			"url": "textures/horn/horn_animation.json",
+			"type": "json",
+			"name": "horn_animation_json"
+		},
+		{
+			"url": "textures/horn/horn_animation.png",
+			"type": "image",
+			"name": "horn_animation_png"
+		},
+		{
+			"url": "textures/panel_bottom.png",
+			"type": "image",
+			"name": "panel_bottom_png"
+		},
+		{
+			"url": "textures/title_blue.png",
+			"type": "image",
+			"name": "title_blue_png"
+		},
+		{
+			"url": "textures/speaker.png",
+			"type": "image",
+			"name": "speaker_png"
+		},
+		{
+			"url": "textures/panel_green.png",
+			"type": "image",
+			"name": "panel_green_png"
+		},
+		{
+			"url": "textures/dog_movie/dog_movie.png",
+			"type": "image",
+			"name": "dog_movie_png"
+		},
+		{
+			"url": "textures/dog_movie/dog_movie.json",
+			"type": "json",
+			"name": "dog_movie_json"
+		},
+		{
+			"url": "textures/circle_pink.png",
+			"type": "image",
+			"name": "circle_pink_png"
+		},
+		{
+			"url": "audios/sound 1 (oSound1).mp3",
+			"type": "sound",
+			"name": "sound 1 (oSound1)_mp3"
+		},
+		{
+			"url": "audios/sound 10 (completeSoundRaw).mp3",
+			"type": "sound",
+			"name": "sound 10 (completeSoundRaw)_mp3"
+		},
+		{
+			"url": "audios/sound 11 (oSound3).mp3",
+			"type": "sound",
+			"name": "sound 11 (oSound3)_mp3"
+		},
+		{
+			"url": "audios/sound 12 (oSound4).mp3",
+			"type": "sound",
+			"name": "sound 12 (oSound4)_mp3"
+		},
+		{
+			"url": "audios/sound 13 (oSound6).mp3",
+			"type": "sound",
+			"name": "sound 13 (oSound6)_mp3"
+		},
+		{
+			"url": "audios/sound 14 (oSound7).mp3",
+			"type": "sound",
+			"name": "sound 14 (oSound7)_mp3"
+		},
+		{
+			"url": "audios/sound 2 (oSound0).mp3",
+			"type": "sound",
+			"name": "sound 2 (oSound0)_mp3"
+		},
+		{
+			"url": "audios/sound 3 (oSound2).mp3",
+			"type": "sound",
+			"name": "sound 3 (oSound2)_mp3"
+		},
+		{
+			"url": "audios/sound 4 (instructionSoundRaw).mp3",
+			"type": "sound",
+			"name": "sound 4 (instructionSoundRaw)_mp3"
+		},
+		{
+			"url": "audios/sound 5 (guideSound2Raw).mp3",
+			"type": "sound",
+			"name": "sound 5 (guideSound2Raw)_mp3"
+		},
+		{
+			"url": "audios/sound 6 (guideSound1Raw).mp3",
+			"type": "sound",
+			"name": "sound 6 (guideSound1Raw)_mp3"
+		},
+		{
+			"url": "audios/sound 7 (guideSound0Raw).mp3",
+			"type": "sound",
+			"name": "sound 7 (guideSound0Raw)_mp3"
+		},
+		{
+			"url": "audios/sound 8 (oSound5).mp3",
+			"type": "sound",
+			"name": "sound 8 (oSound5)_mp3"
+		},
+		{
+			"url": "audios/sound 9 (contentSoundRaw).mp3",
+			"type": "sound",
+			"name": "sound 9 (contentSoundRaw)_mp3"
+		}
+	]
+}

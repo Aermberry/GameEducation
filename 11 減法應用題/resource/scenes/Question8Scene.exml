@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question8SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{description1Image}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{tableImage}">
+				<tween:Wait duration="1000"/>
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{description2Image}">
+				<tween:Wait duration="2750"/>
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{chairImage}">
+				<tween:Wait duration="3750"/>
+				<tween:Set/>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionImage}">
+				<tween:Wait duration="5500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="10000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165b28c1e12" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="8"/>
+		<e:Image id="textBackground" width="1495.12" height="93.24" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="description1Image" x="201" y="108.06" source="question8_description1_png" alpha="0"/>
+		<e:Image id="description2Image" x="561.6" y="108.06" source="question8_description2_png" alpha="0"/>
+		<e:Image id="questionImage" x="925.24" y="108.06" source="question8_png" alpha="0"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="268" x="818.94" y="570.48" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula8_title_png" leftImageSource="formula8_left_png" rightImageSource="formula8_right_png" resultImageSource="formula8_result_png"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="798" y="603" alpha="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<e:Image id="tableImage" x="219.97" y="223.49" source="table_png" alpha="0"/>
+		<e:Image id="chairImage" x="1189.67" y="223.49" source="chair_png" alpha="0"/>
+	</e:Group>
+</e:Skin>

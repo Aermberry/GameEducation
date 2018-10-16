@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene15Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1657fe5a0eb" ></w:Config>
+	<e:Label text="Correct!" x="1087.5" y="370" textColor="0xec3596" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="89.09"/>
+	<e:Label text="king" x="1165" y="574" size="80" textColor="0xee6f2e" fontFamily="Comic Sans MS" anchorOffsetY="0" height="107.27"/>
+	<e:Image source="Maxking_png" x="502" y="199"/>
+	<e:Button id="nextButton" label="Next" x="1558" y="902" anchorOffsetX="0" width="188.48" anchorOffsetY="0" height="91.15" visible="false"/>
+</e:Skin>

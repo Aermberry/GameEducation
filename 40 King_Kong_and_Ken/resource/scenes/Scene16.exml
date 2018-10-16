@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Scene16Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1657fee5225" ></w:Config>
+	<e:Image id="potImage" source="boil_png" x="560" y="370.5"/>
+	<e:Label text="Click the pot and listen to the sound." y="123.5" textColor="0xec3596" size="81" textAlign="center" left="0" right="0" fontFamily="Comic Sans MS" anchorOffsetY="0" height="123.42"/>
+	<e:Button id="nextButton" label="Next" x="1545" y="908" anchorOffsetX="0" width="259.7" anchorOffsetY="0" height="106.3" visible="false"/>
+</e:Skin>
