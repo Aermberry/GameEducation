@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExitTargetBTn" states="hover, normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="exit_btn_png" includeIn="normal"/>
+    <e:Image source="exit_btn_png" includeIn="hover" x="-11" y="-11"/>    
+    <e:Label size="56" text="離開" fontFamily="方正標楷體" textColor="#0791F4" bold="true"   x.hover="0" y.hover="9.5" x.normal="11.5" y.normal="20.5"/>
+</e:Skin>

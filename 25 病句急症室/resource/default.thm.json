@@ -1,0 +1,41 @@
+{
+	"skins": {
+		"StartScene": "resource/scenes/StartScene.exml",
+		"DescriptionExampleScene": "resource/scenes/DescriptionExampleScene.exml",
+		"DescriptionGameplayScene": "resource/scenes/DescriptionGameplayScene.exml",
+		"PlayGameScene": "resource/scenes/PlayGameScene.exml",
+		"ResultScene": "resource/scenes/ResultScene.exml",
+		"Level01Scene": "resource/gameLevelScenes/Level01Scene.exml",
+		"Level02Scene": "resource/gameLevelScenes/Level02Scene.exml",
+		"Level03Scene": "resource/gameLevelScenes/Level03Scene.exml",
+		"Level04Scene": "resource/gameLevelScenes/Level04Scene.exml",
+		"Level05Scene": "resource/gameLevelScenes/Level05Scene.exml",
+		"Level06Scene": "resource/gameLevelScenes/Level06Scene.exml",
+		"Level07Scene": "resource/gameLevelScenes/Level07Scene.exml",
+		"Level08Scene": "resource/gameLevelScenes/Level08Scene.exml",
+		"Level09Scene": "resource/gameLevelScenes/Level09Scene.exml",
+		"Level10Scene": "resource/gameLevelScenes/Level10Scene.exml"
+	},
+	"autoGenerateExmlsList": true,
+	"exmls": [
+		"resource/components/BeginTargetButton.exml",
+		"resource/components/ExitTargetBTn.exml",
+		"resource/components/NoTargetBtn.exml",
+		"resource/components/YesTargetBtn.exml",
+		"resource/gameLevelScenes/Level01Scene.exml",
+		"resource/gameLevelScenes/Level02Scene.exml",
+		"resource/gameLevelScenes/Level03Scene.exml",
+		"resource/gameLevelScenes/Level04Scene.exml",
+		"resource/gameLevelScenes/Level05Scene.exml",
+		"resource/gameLevelScenes/Level06Scene.exml",
+		"resource/gameLevelScenes/Level07Scene.exml",
+		"resource/gameLevelScenes/Level08Scene.exml",
+		"resource/gameLevelScenes/Level09Scene.exml",
+		"resource/gameLevelScenes/Level10Scene.exml",
+		"resource/scenes/DescriptionExampleScene.exml",
+		"resource/scenes/DescriptionGameplayScene.exml",
+		"resource/scenes/ResultScene.exml",
+		"resource/scenes/StartScene.exml"
+	],
+	"path": "resource/default.thm.json"
+}
