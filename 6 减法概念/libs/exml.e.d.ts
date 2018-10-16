@@ -1,7 +1,3 @@
-declare class ChooseEquationSceneSkin extends eui.Skin{
-}
-declare class StartSceneSkin extends eui.Skin{
-}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -53,4 +49,8 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
+}
+declare class ChooseEquationSceneSkin extends eui.Skin{
+}
+declare class StartSceneSkin extends eui.Skin{
 }

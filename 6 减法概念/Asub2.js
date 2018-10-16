@@ -45865,7 +45865,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 			 
 		function loadHandler(event)
 		{
-			
+			this.addEventListener("tick", onTick.bind(this));
 		}
 		
 		this.pauseButton.addEventListener("click", onPauseButtonClick.bind(this));
@@ -45888,8 +45888,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 			this.resumeButton.visible = false;
 		}
 		
-		this.addEventListener("tick", onTick.bind(this));
-		
 		function onTick()
 		{
 			playBackgroundMusic.call(this);
@@ -45911,7 +45909,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		
 		function onBackToIndexButtonClick()
 		{
-			window.location.href = '../index.html';
+			backToChooseEquationScene();
 		}
 	}
 
@@ -46271,7 +46269,7 @@ lib.properties = {
 	color: "#BFCBE3",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asub2_atlas_.png?1539339644013", id:"Asub2_atlas_"}
+		{src:"images/Asub2_atlas_.png?1539589559711", id:"Asub2_atlas_"}
 	],
 	preloads: []
 };
