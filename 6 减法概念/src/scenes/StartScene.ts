@@ -1,10 +1,14 @@
-class StartScene extends eui.Component implements  eui.UIComponent {
+module StartScenes{
+ export class StartScene extends eui.Component implements  eui.UIComponent {
 	private splashTweenGroup: egret.tween.TweenGroup;
 	private startButton2: eui.Image;
 	private startMask: eui.Rect;
 
+	private static instance: StartScene;
+
 	public constructor() {
 		super();
+		StartScene.instance = this;
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -22,6 +26,11 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		
 	}
 
+	public SplashTweenGroupComplete(): void {
+		Main.instance.gotoScene(new ChooseEquationScene());
+	}
+
+
 	private onStartButton2Click(): void
 	{
 		this.splashTweenGroup.play(0);
@@ -34,4 +43,5 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		Main.instance.gotoScene(new ChooseEquationScene());
 	}
+}
 }

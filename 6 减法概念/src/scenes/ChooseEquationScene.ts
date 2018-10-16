@@ -1,9 +1,9 @@
 class ChooseEquationScene extends eui.Component implements  eui.UIComponent {
     private math143Less21Rect:eui.Group;
-	private math134Less115Rect:eui.Rect;
-	private math315Less123Rect:eui.Rect;
-	private math321Less125Rect:eui.Rect;
-	private math203Less24Rect:eui.Rect;
+	private math134Less115Rect:eui.Group;
+	private math315Less123Rect:eui.Group;
+	private math321Less125Rect:eui.Group;
+	private math203Less24Rect:eui.Group;
 
 	public constructor() {
 		super();

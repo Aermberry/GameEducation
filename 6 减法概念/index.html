@@ -203,6 +203,7 @@
 
         script.type = 'text/javascript';
         script.src = 'Asub1.js';
+        script.id = "script";
         head.appendChild(script);
         var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
@@ -298,6 +299,7 @@
         };
         script.type = 'text/javascript';
         script.src = 'Asub2.js';
+        script.id = 'script';
         head.appendChild(script);
         var canvas, stage, exportRoot2, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
@@ -394,6 +396,7 @@
         };
         script.type = 'text/javascript';
         script.src = 'Asub3.js';
+        script.id = 'script';
         head.appendChild(script);
         var canvas, stage, exportRoot3, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
@@ -489,6 +492,7 @@
         };
         script.type = 'text/javascript';
         script.src = 'Asub4.js';
+        script.id = 'script';
         head.appendChild(script);
         var canvas, stage, exportRoot4, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
@@ -584,6 +588,7 @@
         };
         script.type = 'text/javascript';
         script.src = 'Asub5.js';
+        script.id = 'script';
         head.appendChild(script);
         var canvas, stage, exportRoot5, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
@@ -665,7 +670,23 @@
 
     // 播放完成返回目录
     function backToChooseEquationScene() {
-        console.log("播放完成，返回目录")
+        var script = document.getElementById("script");
+         if(script != null) {
+            script.parentNode.removeChild(script);
+        }
+
+        var anim_container = document.getElementById("animation_container");
+        var anim_container2 = document.getElementById("animation_container_tow");
+        var anim_container3 = document.getElementById("animation_container_Three");
+        var anim_container4 = document.getElementById("animation_container_Four");
+        var anim_container5 = document.getElementById("animation_container_Five");
+        
+        anim_container.style.display = 'none';
+        anim_container2.style.display = 'none';
+        anim_container3.style.display = 'none';
+        anim_container4.style.display = 'none';
+        anim_container5.style.display = 'none';
+
     }
 </script>
 <script>

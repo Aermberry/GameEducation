@@ -46285,7 +46285,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		}
 		createjs.Sound.on("fileload", loadHandler, this);
 			 
-		createjs.Sound.registerSounds(sounds, 'sounds/');
+		var isLoaded = createjs.Sound.registerSounds(sounds, 'sounds/');
+		console.log('is sound loaded: ' + isLoaded);
+		if (isLoaded[0] === true) {
+			//已经加载完成音频文件，开始直接播放
+			createjs.Sound.off("fileload", loadHandler, this);
+			this.addEventListener("tick", onTick.bind(this));
+		}
 			 
 		function loadHandler(event)
 		{
@@ -46655,7 +46661,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/title.png?1539589172079", id:"title"}
+		{src:"images/title.png?1539678451604", id:"title"}
 	],
 	preloads: []
 };

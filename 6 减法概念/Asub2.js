@@ -45861,7 +45861,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		}
 		createjs.Sound.on("fileload", loadHandler, this);
 			 
-		createjs.Sound.registerSounds(sounds, 'sounds_2/');
+		var isLoaded = createjs.Sound.registerSounds(sounds, 'sounds_2/');
+		console.log('is sound loaded: ' + isLoaded);
+		if (isLoaded[0] === true) {
+			//已经加载完成音频文件，开始直接播放
+			createjs.Sound.off("fileload", loadHandler, this);
+			this.addEventListener("tick", onTick.bind(this));
+		}
 			 
 		function loadHandler(event)
 		{
@@ -46269,7 +46275,7 @@ lib.properties = {
 	color: "#BFCBE3",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asub2_atlas_.png?1539589559711", id:"Asub2_atlas_"}
+		{src:"images/Asub2_atlas_.png?1539678941943", id:"Asub2_atlas_"}
 	],
 	preloads: []
 };

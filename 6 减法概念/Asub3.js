@@ -46446,11 +46446,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		}
 		createjs.Sound.on("fileload", loadHandler, this);
 			 
-		createjs.Sound.registerSounds(sounds, 'sounds_3/');
+		var isLoaded = createjs.Sound.registerSounds(sounds, 'sounds_3/');
+		console.log('is sound loaded: ' + isLoaded);
+		if (isLoaded[0] === true) {
+			//已经加载完成音频文件，开始直接播放
+			createjs.Sound.off("fileload", loadHandler, this);
+			this.addEventListener("tick", onTick.bind(this));
+		}
 			 
 		function loadHandler(event)
 		{
-			
+			this.addEventListener("tick", onTick.bind(this));
 		}
 		
 		this.pauseButton.addEventListener("click", onPauseButtonClick.bind(this));
@@ -46473,8 +46479,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 			this.resumeButton.visible = false;
 		}
 		
-		this.addEventListener("tick", onTick.bind(this));
-		
 		function onTick()
 		{
 			playBackgroundMusic.call(this);
@@ -46496,7 +46500,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{str
 		
 		function onBackToIndexButtonClick()
 		{
-			window.location.href = '../index.html';
+			backToChooseEquationScene();
 		}
 	}
 
@@ -46831,7 +46835,7 @@ lib.properties = {
 	color: "#BFCBE3",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/title.png?1539322862948", id:"title"}
+		{src:"images/title.png?1539679046131", id:"title"}
 	],
 	preloads: []
 };
