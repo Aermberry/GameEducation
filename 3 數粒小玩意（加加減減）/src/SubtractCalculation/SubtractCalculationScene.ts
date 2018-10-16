@@ -109,35 +109,60 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 	}
 
 	/** 把借位移动到被减数的左边 */
-	public moveBorrowToLeftOfMinuend(borrow: IParticleComponent, position: number): Promise<void>
+	public async moveBorrowToLeftOfMinuend(borrow: IParticleComponent, position: number): Promise<void>
 	{
-		return borrow.moveToLeftOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		borrow.moveToLeftOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把借位移动到减数的后边 */
+	public async moveBorrowToBehideOfMinuend(borrow: IParticleComponent, position: number): Promise<void>
+	{
+		borrow.moveToBehideOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
 	}
 
 	/** 从借位移动指定数字到被减数 */
-	public moveAmountOfBorrowToMinuend(borrow: IParticleComponent, position: number, amount: number): void
+	public async moveAmountOfBorrowToMinuend(borrow: IParticleComponent, position: number, amount: number): Promise<void>
 	{
 		borrow.digit -= amount;
 		(this.minuendGroup.getChildAt(position) as IParticleComponent).digit += amount;
+		await lzlib.ThreadUtility.sleep(1000);
 	}
 	
 	/** 把借位移动到减数的左边 */
-	public moveBorrowToLeftOfSubstrahend(borrow: IParticleComponent, position: number): void
+	public async moveBorrowToLeftOfSubstrahend(borrow: IParticleComponent, position: number): Promise<void>
 	{
 		borrow.moveToLeftOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
 	}
 	
 	/** 把被减数移动到减数的右边 */
-	public moveMinuendToRightOfSubstrahend(position: number): Promise<void>
+	public async moveMinuendToRightOfSubstrahend(position: number): Promise<void>
 	{
-		return (this.minuendGroup.getChildAt(position) as IParticleComponent).moveToRightOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).moveToRightOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把被减数移动到减数的后边 */
+	public async moveMinuendToBehideOfSubstrahend(position: number): Promise<void>
+	{
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).moveToBehideOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+
+	/** 令借位的状态变成Separated */
+	public async setBorrowStateToSeparated(borrow: IParticleComponent): Promise<void>
+	{
+		borrow.currentState = 'separated';
+		await lzlib.ThreadUtility.sleep(1000);
 	}
 	
 	/** 令被减数和减数变成半透明 */
-	public translucientMinuendAndSubstrahend(position: number): void
+	public translucientMinuendAndSubstrahend(position: number, tranlucientAmount: number): void
 	{
-		(this.minuendGroup.getChildAt(position) as IParticleComponent).translucent();
-		(this.subtrahendGroup.getChildAt(position) as IParticleComponent).translucent();
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).translucent(tranlucientAmount);
+		(this.subtrahendGroup.getChildAt(position) as IParticleComponent).translucent(tranlucientAmount);
 	}
 
 	/** 设置新被减数 */

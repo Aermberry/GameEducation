@@ -37,7 +37,6 @@ class AddCalculationPresenter {
 				if (correctSum >= 10) {
 					this.view.setCarry(1, position);
 					await this.view.mergeCarry(position);
-					
 				}
 			}
 

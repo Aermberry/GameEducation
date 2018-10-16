@@ -1,6 +1,6 @@
 class InputExpressionPresenter {
 	private view: IInputExpressionView;
-	private expression = '712-568'; //用户输入的横式
+	private expression = ''; //用户输入的横式
 
 	public constructor() 
 	{

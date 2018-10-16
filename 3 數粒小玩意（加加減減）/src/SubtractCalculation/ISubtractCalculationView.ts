@@ -12,13 +12,19 @@ interface ISubtractCalculationView {
 	/** 把借位移动到被减数的左边 */
 	moveBorrowToLeftOfMinuend(borrow: IParticleComponent, position: number): Promise<void>;
 	/** 从借位移动指定数字到被减数 */
-	moveAmountOfBorrowToMinuend(borrow: IParticleComponent, position: number, amount: number): void;
+	moveAmountOfBorrowToMinuend(borrow: IParticleComponent, position: number, amount: number): Promise<void>;
 	/** 把借位移动到减数的左边 */
-	moveBorrowToLeftOfSubstrahend(borrow: IParticleComponent, position: number): void;
+	moveBorrowToLeftOfSubstrahend(borrow: IParticleComponent, position: number): Promise<void>;
+	/** 把借位移动到减数的后面 */
+	moveBorrowToBehideOfMinuend(borrow: IParticleComponent, position: number): Promise<void>;
 	/** 把被减数移动到减数的右边 */
 	moveMinuendToRightOfSubstrahend(position: number): Promise<void>;
+	/** 把被减数移动到减数的后面 */
+	moveMinuendToBehideOfSubstrahend(position: number): Promise<void>;
+	/** 令借位的状态变成Separated */
+	setBorrowStateToSeparated(borrow: IParticleComponent): Promise<void>;
 	/** 令被减数和减数变成半透明 */
-	translucientMinuendAndSubstrahend(position: number): void;
+	translucientMinuendAndSubstrahend(position: number, tranlucientAmount: number): void;
 	/** 令差的指定位进入编辑模式 */
 	changeDifferenceToEditMode(position: number): void;
 	/** 令差的指定位进入只读模式 */
