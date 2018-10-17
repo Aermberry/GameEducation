@@ -4,6 +4,7 @@ class CalculationPresenter {
 	public maxQuestionCount = 10;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
+	private answerSum: SumAndCarry;
 	private correctSum: SumAndCarry;
 	private questionIndex: number;
 	private questionPairs: number[][] = null;
@@ -26,16 +27,16 @@ class CalculationPresenter {
 				let addend = this.view.addend = pair[0];
 				let augend = this.view.augend = pair[1];
 
-				let answerSum = await this.getAnswerSumAndCarryAsync();
+				this.answerSum = await this.getAnswerSumAndCarryAsync();
 				this.correctSum = this.getCorrectSumAndCarry(addend, augend);
-				if (answerSum.equals(this.correctSum, this.carryNeed)) {
-					this.correctAnswerCount++;
-					this.view.correctAnswerCount = this.correctAnswerCount;
-					this.view.alertAnswerCorrect();
-					this.view.openBox();
-				} else {
-					this.view.alertAnswerWrong();
-				}
+				// if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
+				// 	this.correctAnswerCount++;
+				// 	this.view.correctAnswerCount = this.correctAnswerCount;
+				// 	this.view.alertAnswerCorrect();
+				// 	this.view.openBox();
+				// } else {
+				// 	this.view.alertAnswerWrong();
+				// }
 				this.view.enableFinishImage();
 
 				await this.view.nextQuestionButtonClickAsync();
@@ -71,6 +72,14 @@ class CalculationPresenter {
 	//当点击完成按钮时
 	public async onInputFinish(): Promise<void>
 	{		
+			if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
+				this.correctAnswerCount++;
+				this.view.correctAnswerCount = this.correctAnswerCount;
+				this.view.alertAnswerCorrect();
+				this.view.openBox();
+			} else {
+				this.view.alertAnswerWrong();
+			}
 			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
