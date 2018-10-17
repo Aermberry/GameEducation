@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,GameResult_png,bag_png,bottle_png,cake_png,colorPen_png,doll_png,present_png,GameStart_png,gameEui_json,GameScene_png",
 			"name": "preload"
 		}
 	],
@@ -145,6 +145,56 @@
 			"name": "checkbox_unselect2_png",
 			"type": "image",
 			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "GameResult_png",
+			"type": "image",
+			"url": "texture/GameResult.png"
+		},
+		{
+			"name": "bag_png",
+			"type": "image",
+			"url": "texture/bag.png"
+		},
+		{
+			"name": "bottle_png",
+			"type": "image",
+			"url": "texture/bottle.png"
+		},
+		{
+			"name": "cake_png",
+			"type": "image",
+			"url": "texture/cake.png"
+		},
+		{
+			"name": "colorPen_png",
+			"type": "image",
+			"url": "texture/colorPen.png"
+		},
+		{
+			"name": "doll_png",
+			"type": "image",
+			"url": "texture/doll.png"
+		},
+		{
+			"name": "present_png",
+			"type": "image",
+			"url": "texture/present.png"
+		},
+		{
+			"name": "GameStart_png",
+			"type": "image",
+			"url": "texture/GameStart.png"
+		},
+		{
+			"name": "gameEui_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "GameScene_png",
+			"type": "image",
+			"url": "texture/GameScene.png"
 		}
 	]
 }

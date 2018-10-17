@@ -1,0 +1,35 @@
+{
+    "16680011f0c": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "16680b527df": {
+        "path": "scenes\\Game02Scene.ts",
+        "class": "Game02Scene",
+        "parentPath": ""
+    },
+    "16680b75e19": {
+        "path": "scenes\\Game03Scene.ts",
+        "class": "Game03Scene",
+        "parentPath": ""
+    },
+    "16680b83b53": {
+        "path": "scenes\\Games04Scene.ts",
+        "class": "Games04Scene",
+        "parentPath": ""
+    },
+    "16680b8b9dc": {
+        "path": "scenes\\Game05Scene.ts",
+        "class": "Game05Scene",
+        "parentPath": ""
+    },
+    "16680d83c8e": {
+        "path": "..\\resource\\scenes\\ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
+    }
+}

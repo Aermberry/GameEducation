@@ -12,7 +12,14 @@
 		"eui.ToggleSwitch": "resource/eui_skins/ToggleSwitchSkin.exml",
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
-		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
+		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
+		"StartScene": "resource/scenes/StartScene.exml",
+		"Game01Scene": "resource/scenes/Game01Scene.exml",
+		"Game02Scene": "resource/scenes/Game02Scene.exml",
+		"Game03Scene": "resource/scenes/Game03Scene.exml",
+		"Game04Scene": "resource/scenes/Game04Scene.exml",
+		"Game05Scene": "resource/scenes/Game05Scene.exml",
+		"ResultScene": "resource/scenes/ResultScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -28,7 +35,14 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scenes/Game01Scene.exml",
+		"resource/scenes/Game02Scene.exml",
+		"resource/scenes/Game03Scene.exml",
+		"resource/scenes/Game04Scene.exml",
+		"resource/scenes/Game05Scene.exml",
+		"resource/scenes/ResultScene.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

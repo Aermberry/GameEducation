@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16680d83c8e" ></w:Config>
+	<e:Image source="GameResult_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Label text="Good.\nYou've finished the\nriddles." x="975.15" y="759.4" size="80" lineSpacing="40" fontFamily="KristenITCRegular"/>
+</e:Skin>
