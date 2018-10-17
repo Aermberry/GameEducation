@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="DistinguishRole1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="DistinguishRole1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="princeAndHorseMove">
+			<tween:TweenItem target="{princessAndHorseImage}">
+				<tween:To duration="5000">
+					<tween:props>
+						<e:Object x="{66.36}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1661f8c50fe" ></w:Config>
 	<e:Image left="0" right="-170" top="-127" bottom="0" source="listen1_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Image x="1266.06" y="425.6" source="listen1_house_png" anchorOffsetX="0" width="637.6" anchorOffsetY="0" height="634.34"/>
-	<e:Image id="princessAndHorseImage" x="-81.64" y="672.42" source="princess_and_horse_png"/>
+	<e:Image id="princessAndHorseImage" x="-449.64" y="672.42" source="princess_and_horse_png"/>
 	<e:Group>
-		<e:Image id="person1" x="749.51" y="475.58" source="listen1_person_straight_png" anchorOffsetX="0" width="320.62" anchorOffsetY="0" height="664.86"/>
-	<e:Image id="person2" x="1173.74" y="461.96" source="listen1_person_red_hair_png" anchorOffsetX="0" width="288.89" anchorOffsetY="0" height="841.64"/>
-	<e:Image id="person3" x="1552.63" y="455.9" source="listen1_person_hair_curly_png" anchorOffsetX="0" width="348" anchorOffsetY="0" height="804.48"/>
+		<e:Image id="person1" x="873.51" y="561.35" source="listen1_person_straight_png" anchorOffsetX="0" width="296.62" anchorOffsetY="0" height="615.09"/>
+	<e:Image id="person2" x="1245.74" y="555.19" source="listen1_person_red_hair_png" anchorOffsetX="0" width="256.89" anchorOffsetY="0" height="748.41"/>
+	<e:Image id="person3" x="1552.63" y="528.68" source="listen1_person_hair_curly_png" anchorOffsetX="0" width="316.52" anchorOffsetY="0" height="731.7"/>
 		<ns1:ListenComponent width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="0"/>
 	</e:Group>
 	

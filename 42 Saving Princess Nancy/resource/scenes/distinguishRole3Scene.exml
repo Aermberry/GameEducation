@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="DistinguishRole3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="DistinguishRole3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="correctAnimation">
+			<tween:TweenItem target="{alertComponent}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{stickImage}">
+				<tween:Wait duration="1550"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="950">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="16622fdcac5" ></w:Config>
 	<e:Image source="listen3_background_png" left="-148" right="-133" top="-167" bottom="-33" scaleX="1.15" scaleY="1.14"/>
 	<e:Image x="115.1" y="621.21" source="stick_png" rotation="352.8"/>
 	<e:Image x="1545.73" y="466.63" source="sword_png" anchorOffsetX="0" width="87.55" anchorOffsetY="0" height="414.36"/>
-	<ns1:AlertComponent width="702" height="276" x="46.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="Congratulations!                You can get the stick to kill the fire-breathing dragon" isDisplayClose="false"/>
-	<e:Image x="407.77" y="215.1" source="stick_png" rotation="333.11" anchorOffsetX="0" width="353.08" anchorOffsetY="0" height="598.78"/>
+	<ns1:AlertComponent id="alertComponent" width="702" height="276" x="46.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="Congratulations!                You can get the stick to kill the fire-breathing dragon" isDisplayClose="false"/>
+	<e:Image id="stickImage" x="407.77" y="215.1" source="stick_png" rotation="333.11" anchorOffsetX="0" width="353.08" anchorOffsetY="0" height="598.78"/>
 	<e:Group id="peopleGroup">
 			<e:Image x="193.64" y="621.45" source="listen3_person1_png" anchorOffsetX="0" width="296.26" anchorOffsetY="0" height="603.33"/>
 		<e:Image x="772.43" y="615.39" source="listen3_person2_png"/>
