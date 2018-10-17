@@ -8,5 +8,6 @@
 	<e:Image x="814.61" y="887.75" anchorOffsetX="0" anchorOffsetY="0" source="listen_person2_png" width="388.91" height="666.63"/>
 	<e:Image x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
 	<e:Image x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
-	<ns1:ListenComponent width="332" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
+	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
+	<e:Image width="20" height="20" x="1156" y="1080"/>
 </e:Skin>
