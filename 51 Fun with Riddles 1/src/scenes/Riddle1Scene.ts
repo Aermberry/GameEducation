@@ -75,6 +75,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
 
   public gotoNextScene(scene: eui.Component) {
     Main.instance.gotoScene(scene);
+    StatueScene.i=+1
   }
 
   private preventClick(

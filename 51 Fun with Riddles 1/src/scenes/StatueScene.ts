@@ -7,6 +7,7 @@ class StatueScene extends eui.Component implements eui.UIComponent {
   private Riddle05: eui.Button;
   private Riddle06: eui.Button;
 	private Riddle07: eui.Button;
+  public static i:number=0;
 	
   public constructor() {
     super();
@@ -26,5 +27,12 @@ class StatueScene extends eui.Component implements eui.UIComponent {
 		statue.onClickNextScene(this.Riddle05, new Riddle5Scene());
 		statue.onClickNextScene(this.Riddle06, new Riddle6Scene());
 		statue.onClickNextScene(this.Riddle07, new Riddle7Scene());
+    this.ss();
 	}
+
+  private ss():void {
+    let self=this
+    let aa=StatueScene.i
+    console.log(aa);
+  }
 }

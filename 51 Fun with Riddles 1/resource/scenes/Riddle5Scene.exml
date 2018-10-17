@@ -5,7 +5,7 @@
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true" />
 	<e:Image source="clickyouranswer_png" x="268" y="759.39" />
 	<e:Image source="title05_png" x="148.91" y="342.39" />
-	<e:Image source="smallRiddle2_png" x="251" y="405" />
+
 	<e:Group id="goodsGroup" x="384.42" y="969.49">
 		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
 		<e:Image id="apple" source="apple_png" x="0" y="0" />
