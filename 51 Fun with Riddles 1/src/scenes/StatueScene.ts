@@ -29,12 +29,9 @@ class StatueScene extends eui.Component implements eui.UIComponent {
 		statue.onClickNextScene(this.Riddle05, new Riddle5Scene());
 		statue.onClickNextScene(this.Riddle06, new Riddle6Scene());
 		statue.onClickNextScene(this.Riddle07, new Riddle7Scene());
-    this.ss();
 	}
 
-  private ss():void {
-    let self=this.ridd01;
-    let aa=self.istrur();
-    console.log(aa);
+  private resultScene():void{
+    Main.instance.gotoScene(new FinishScene());
   }
 }

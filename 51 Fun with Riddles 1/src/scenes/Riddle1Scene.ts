@@ -10,7 +10,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
   private goodsGroup: eui.Group;
-  private status:string;
+  private status: string;
 
   public constructor() {
     super();
@@ -42,18 +42,6 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     );
   }
 
-  public istrur():string {
-    if(this.isTrueImage.visible){
-      this.status="noramal"
-    }
-    else
-    {
-      this.status="hkll"
-    }
-
-    return this.status;
-  }
-
   public async showTipsLabel(
     object: eui.Group | eui.Image | eui.Button
   ): Promise<void> {
@@ -79,8 +67,6 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     );
   }
 
-
-
   public async isvisible(object: eui.Image): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
@@ -89,7 +75,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
 
   public gotoNextScene(scene: eui.Component) {
     Main.instance.gotoScene(scene);
-    StatueScene.i=+1
+    StatueScene.i = +1
   }
 
   private preventClick(
