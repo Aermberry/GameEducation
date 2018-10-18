@@ -8,7 +8,8 @@
 		"libs/modules/eui/eui.js",
 		"libs/modules/promise/promise.js",
 		"libs/modules/mouse/mouse.js",
-		"libs/modules/lzlib/lzlib.js"
+		"libs/modules/lzlib/lzlib.js",
+		"libs/modules/wordfind/wordfind.js"
 	],
 	"game": [
 		"bin-debug/components/RedLineLabel.js",
@@ -18,6 +19,7 @@
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/biz/PuzzleBiz.js",
 		"bin-debug/biz/WordBiz.js",
+		"bin-debug/components/MovieClipPlayer.js",
 		"bin-debug/components/Puzzle.js",
 		"bin-debug/components/PuzzleCell.js",
 		"bin-debug/LoadingUI.js",

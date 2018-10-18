@@ -1,0 +1,5 @@
+{
+	"name": "wordfind",
+	"compilerVersion": "5.2.10",
+    "typings": "typings/wordfind.d.ts"
+}

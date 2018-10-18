@@ -102,7 +102,6 @@ interface String {
 declare namespace lzlib {
     class ThreadUtility {
         static sleep(ms?: number): Promise<{}>;
-        static playSound(soundName: string): Promise<void>;
     }
 }
 declare namespace egret.tween {
