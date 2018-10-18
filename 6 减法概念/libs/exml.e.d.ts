@@ -52,5 +52,7 @@ declare module skins{
 }
 declare class ChooseEquationSceneSkin extends eui.Skin{
 }
-declare class StartSceneSkin extends eui.Skin{
+declare module StartScenes{
+	class StartSceneSkin extends eui.Skin{
+	}
 }
