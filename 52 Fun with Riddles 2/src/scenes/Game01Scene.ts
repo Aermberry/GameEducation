@@ -1,4 +1,12 @@
 class Game01Scene extends eui.Component implements eui.UIComponent, GameView {
+
+	private tipsLineGroup:eui.Group;
+	private tipsDocumentGroup:eui.Group;
+
+	private nextButton:eui.Button;
+
+	private correctTipsLabel:eui.Label;
+
 	public constructor() {
 		super();
 	}

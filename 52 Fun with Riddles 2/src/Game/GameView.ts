@@ -1,7 +1,7 @@
 interface GameView {
 
   // 跳轉頁面
-  gotoNextScene(): void
+  gotoNextScene(scene:eui.Component): void
   // Drag功能
   initDrag(): void
   // Drop功能

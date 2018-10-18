@@ -19,13 +19,15 @@
 	</e:Group>
 	<e:Group x="544.45" y="481.09">
 		<e:Label text="We use them to\ndraw and colour\npictures." x="52.46" y="21.21" anchorOffsetX="0" width="725.51" anchorOffsetY="0" height="463.33" size="60" lineSpacing="25" fontFamily="KristenITCRegular"/>
-		<e:Rect width="482.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="171.51" x="48.48" anchorOffsetX="0"/>
-		<e:Rect width="254.73" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="257.51" x="45.46" anchorOffsetX="0"/>
+		<e:Group id="tipsLineGroup" x="45.46" y="171.51" visible="false">
+			<e:Rect width="482.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="0" x="3.02" anchorOffsetX="0"/>
+			<e:Rect width="254.73" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="86" x="0" anchorOffsetX="0"/>
+		</e:Group>
 	</e:Group>
-	<e:Group x="721.04" y="805.32" anchorOffsetY="0" height="206.51">
+	<e:Group id="tipsDocumentGroup" x="721.04" y="805.32" anchorOffsetY="0" height="206.51" visible="false">
 		<e:Rect width="630.31" height="206.05" anchorOffsetX="0" anchorOffsetY="0" x="0" y="1.48" fillColor="0xffffbf" strokeColor="0x650060" strokeWeight="20"/>
 		<e:Label text="Read this again." fontFamily="KristenITCRegular" textColor="0xCE0400" size="72" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
-	<e:Label text="Correct !" fontFamily="KristenITCRegular" textColor="0xCE0400" size="90" x="1439.59" y="611.85"/>
-	<e:Button label="Next" x="1654.28" y="1265.79" anchorOffsetX="0" width="223.63" anchorOffsetY="0" height="107.21"/>
+	<e:Label id="correctTipsLabel" text="Correct !" fontFamily="KristenITCRegular" textColor="0xCE0400" size="90" x="1439.59" y="611.85"/>
+	<e:Button id="nextButton" label="Next" x="1654.28" y="1265.79" anchorOffsetX="0" width="223.63" anchorOffsetY="0" height="107.21" visible="false"/>
 </e:Skin>

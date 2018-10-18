@@ -3,5 +3,5 @@
 	<w:Config id="16680011f0c" ></w:Config>
 	<e:Image source="GameStart_png" top="71" left="100" right="100" bottom="149"/>
 	<e:Label text="Miss Chan gives you\nsome riddles.\nTry to guess them." x="887.28" y="563.33" size="80" lineSpacing="30" fontFamily="KristenITCRegular"/>
-	<e:Button label="Next" x="1664.98" y="1267.27" anchorOffsetX="0" width="215.15" anchorOffsetY="0" height="107.58"/>
+	<e:Button id="nextSceneButton" label="Next" x="1664.98" y="1267.27" anchorOffsetX="0" width="215.15" anchorOffsetY="0" height="107.58"/>
 </e:Skin>
