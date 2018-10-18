@@ -7,25 +7,32 @@
 	</e:Group>
 	<e:Image source="GameScene_png"  y="284.85" x="30.3"/>
 	<e:Rect width="1900" height="10" fillColor="0xB30000" anchorOffsetY="0" y="1047.06" ellipseHeight="30" ellipseWidth="30" horizontalCenter="0"/>
-	<e:Image source="doll_png" x="341.03" y="1084.85"/>
-	<e:Image source="bottle_png" x="590.84" y="1090.24"/>
-	<e:Image source="cake_png" x="756.76" y="1228.09"/>
-	<e:Image source="present_png" x="1021.21" y="1078.79"/>
-		<e:Group x="1314.98" y="50.79" anchorOffsetY="0" height="494.4" anchorOffsetX="0" width="573.45">
+	<e:Rect id="Mask"  width="981.27" height="341" x="303.55" y="1072.79" alpha="0" anchorOffsetX="0"/>
+	<e:Group id="DragGroup" x="341.03" y="1078.79">
+		<e:Image source="doll_png" x="0" y="6.06"/>
+		<e:Image source="cake_png" x="415.73" y="149.3"/>
+		<e:Image source="present_png" x="680.18" y="0"/>
+	</e:Group>
+		<e:Group id="DropGroup" x="1314.98" y="50.79" anchorOffsetY="0" height="494.4" anchorOffsetX="0" width="573.45">
 		<e:Rect width="563.64" height="487.87" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0" fillColor="0xffffbf" strokeColor="0x650060" strokeWeight="20" ellipseHeight="150" ellipseWidth="150"/>
-			<e:Image horizontalCenter="0" verticalCenter="0" source="cake_png"/>
+			<e:Image id="dropImage" horizontalCenter="0" verticalCenter="0" source="cake_png" visible="false"/>
 	</e:Group>
 	<e:Group x="544.45" y="481.09">
 		<e:Label text="We cut it into\npieces and eat it\non birthday." x="52.46" y="21.21" anchorOffsetX="0" width="725.51" anchorOffsetY="0" height="463.33" size="60" lineSpacing="25" fontFamily="KristenITCRegular"/>
-		<e:Rect width="317.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="80.6" x="148.48" anchorOffsetX="0"/>
-		<e:Rect width="188.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="166.36" x="46.36" anchorOffsetX="0"/>
-		<e:Rect width="167.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="164.24" x="371.51" anchorOffsetX="0"/>
-		<e:Rect width="365.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="249.08" x="44.24" anchorOffsetX="0"/>
+
+
+
+		<e:Group id="tipsLineGroup" x="44.24" y="80.6" visible="false">
+			<e:Rect width="317.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="0" x="104.24" anchorOffsetX="0"/>
+			<e:Rect width="188.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="85.76" x="2.12" anchorOffsetX="0"/>
+			<e:Rect width="167.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="83.64" x="327.27" anchorOffsetX="0"/>
+			<e:Rect width="365.6" height="13" fillColor="0xFF0092" anchorOffsetY="0" y="168.48" x="0" anchorOffsetX="0"/>
+		</e:Group>
 	</e:Group>
-	<e:Group x="721.04" y="805.32" anchorOffsetY="0" height="209.54">
+	<e:Group id="tipsDocumentGroup" x="721.04" y="805.32" anchorOffsetY="0" height="209.54" visible="false">
 		<e:Rect width="630.31" height="206.05" anchorOffsetX="0" anchorOffsetY="0" x="0" y="1.48" fillColor="0xffffbf" strokeColor="0x650060" strokeWeight="20"/>
 		<e:Label text="Read this again." fontFamily="KristenITCRegular" textColor="0xCE0400" size="72" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
-	<e:Label text="Correct !" fontFamily="KristenITCRegular" textColor="0xCE0400" size="90" x="1439.59" y="611.85"/>
-	<e:Button label="Next" x="1654.28" y="1265.79" anchorOffsetX="0" width="223.63" anchorOffsetY="0" height="107.21"/>
+	<e:Label id="correctTipsLabel" text="Correct !" fontFamily="KristenITCRegular" textColor="0xCE0400" size="90" x="1439.59" y="611.85" visible="false"/>
+	<e:Button id="nextButton" label="Next" x="1654.28" y="1265.79" anchorOffsetX="0" width="223.63" anchorOffsetY="0" height="107.21" visible="false"/>
 </e:Skin>

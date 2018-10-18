@@ -32,9 +32,14 @@
     },
     {
       "name": "promise"
-    },{
-      "name":"lzlib",
-      "path":"../lzlib"
-    }
+    },
+    {
+			"name": "mouse",
+			"path": "../egret-game-library-master/mouse/libsrc"
+		},
+		{
+			"name": "lzlib",
+			"path": "../lzlib"
+		}
   ]
 }

@@ -7,9 +7,11 @@ interface GameView {
   // Drop功能
   initDropable(): void
   // Drop配對功能
-  onLabelDrop(): void
+  onLabelDrop(e:lzlib.LzDragEvent): void
   // Drop不配對功能
   onDragCancel(): void
   // 顯示提示
-  showTIpslabel(): void
+  showTIpsLabel(): void
+  //關閉提示
+  closeTipsLabel():void
 }
