@@ -18,6 +18,7 @@ class StatueScene extends eui.Component implements eui.UIComponent {
 	
   public constructor() {
     super();
+    this.rid01=new Riddle1Scene();
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -30,11 +31,11 @@ class StatueScene extends eui.Component implements eui.UIComponent {
     
 		statue.onClickNextScene(this.Riddle01, this.rid01);
     statue.onClickNextScene(this.Riddle02, this.rid02);
-    statue.onClickNextScene(this.Riddle03, this.rid03);
-    statue.onClickNextScene(this.Riddle04, this.rid04);
-    statue.onClickNextScene(this.Riddle05, this.rid05);
-    statue.onClickNextScene(this.Riddle06, this.rid06);
-    statue.onClickNextScene(this.Riddle07, this.rid07);
+    // statue.onClickNextScene(this.Riddle03, this.rid03);
+    // statue.onClickNextScene(this.Riddle04, this.rid04);
+    // statue.onClickNextScene(this.Riddle05, this.rid05);
+    // statue.onClickNextScene(this.Riddle06, this.rid06);
+    // statue.onClickNextScene(this.Riddle07, this.rid07);
 	}
 
   private resultScene():void{
