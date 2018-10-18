@@ -103,6 +103,7 @@ class SeeScene extends eui.Component implements eui.UIComponent{
     private seeBat(e:egret.Event):void{
         this.scrollText.text = 'bats.';
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('see_bat_mp3') as egret.Sound).play(0,1);
         this.switchFont();
         this.nextScene();
@@ -111,6 +112,7 @@ class SeeScene extends eui.Component implements eui.UIComponent{
     private seeSkeleton(e:egret.Event):void{
         this.scrollText.text = 'a skeleton.';
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('see_skeleton_mp3') as egret.Sound).play(0,1);              
         this.switchFont();
         this.nextScene();
@@ -119,6 +121,7 @@ class SeeScene extends eui.Component implements eui.UIComponent{
     private seeSpiders(e:egret.Event):void{
         this.scrollText.text = 'spiders.';
         this.stopCurrentSoundChannel();   
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('see_spider_mp3') as egret.Sound).play(0,1);                           
         this.switchFont(); 
         this.nextScene();
@@ -149,5 +152,10 @@ class SeeScene extends eui.Component implements eui.UIComponent{
         this.stopCurrentSoundChannel();
         Main.instance.gotoScene(new FeelScene);
     }
+
+      private isNextSceneButtonDisplap(): void {
+        this.nextSceneButton.visible == false && (this.nextSceneButton.visible = true);
+    }
+
 
 }

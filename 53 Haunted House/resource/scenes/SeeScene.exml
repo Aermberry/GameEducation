@@ -39,7 +39,7 @@
 <e:Image id="see_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 <e:Label id="SeeSceneText" text="They see" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
 <e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
-<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true" visible="false"/>
 <e:Image id="invertedBat" source="inverted_bat_png" x="406" y="60" locked="true"/>
 
 <e:Group id="batGroup" height="300" width="520" x="406" y="60"/>

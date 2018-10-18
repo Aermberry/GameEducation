@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,gameEui_json,pink_bg_png,banner_png,school_png,pink_banner_png,banner_text_png,amy_png,teacher_head_normal_png,fork_icon_png,next_noraml_png,next_touch_png,teacher_normal_png,students_png,blue_frame_png,pink_frame_png,gray_canvas_png,black_board_png,fork_green_png,teacher_line_up_png,left_blue_frame_png,teacher_head_unhappy_png,student1_png,student2_png,student3_png,student4_png,line_up_bg_png,teacher_head_hover_png,blue_circle_png,green_circle_png,teacher_head_bb_png,talk_bg_png,talk_student_png,teacher_talk_png,pink_right_frame_png,amy_leave_png,leave_school_png,park_left_png,park_rigtht_png,board_png,worker_hover_png,worker_normal_png,light_png,pink_bottom_frame_png,purple_frame_png,door_png,tree_png,sky_png,amy_go_shcool_mp3,can_they_play_here_mp3,can_we_talk_now_mp3,enter_park_mp3,in_class_room_mp3,leave_school_mp3,line_up_mp3,listen_me_mp3,put_book_mp3,vo_books_mp3,purple_circle_png,purple_bottom_png,sound 4 (VO_FLOWERS)_mp3,flowers_mp3,amy_flowers_mp3,green_normal_png,green_hover_png,bird_woker_png,bird_work_hands_png,purple_dialog_frame_png,cage_png,pink_circle_png,worker_bird_first_png,trunk_png,bird_foot_png,tree_left_png,amy_feed_png,bird_png,can_i_feed_mp3,can_not_feed_mp3,worker_bicycle_png,amy_bicycle_png,blue_sky_png,left_cloud_png,right_cloud_png,road_png,light_red_hover_png,light_red_normal_png,tip_board_png,oragne_hover_png,orange_normal_png,bicycle_amy_frame_png,bicycle_worker_frame_png,bicycle_png,bicycle_amy_mp3,bicycle_worker_mp3,result_frame_png,result_amy_png,result_bg_png,photo_cloud_png,photo_worker_png,photo_amy_png,photo_worker_frame_png,photo_amy_mp3,photo_worker_mp3,flower_amy_frame_png,flowe_png,flower_worker_frame_png,flower_normal_circle _png,flower_hover_png,flower_worker_png,flower_worker_normal_png,flower_worker_hover_png,flower_worker_mp3,flower_amy_mp3,start_png,fram_exitTips_png,shadow_png",
+			"keys": "description_json,wlts_logo_jpg,gameEui_json,pink_bg_png,banner_png,school_png,pink_banner_png,banner_text_png,amy_png,teacher_head_normal_png,fork_icon_png,next_noraml_png,next_touch_png,teacher_normal_png,students_png,blue_frame_png,pink_frame_png,gray_canvas_png,black_board_png,fork_green_png,teacher_line_up_png,left_blue_frame_png,teacher_head_unhappy_png,student1_png,student2_png,student3_png,student4_png,line_up_bg_png,teacher_head_hover_png,blue_circle_png,green_circle_png,teacher_head_bb_png,talk_bg_png,talk_student_png,teacher_talk_png,pink_right_frame_png,amy_leave_png,leave_school_png,park_left_png,park_rigtht_png,board_png,worker_hover_png,worker_normal_png,light_png,pink_bottom_frame_png,purple_frame_png,door_png,tree_png,sky_png,amy_go_shcool_mp3,can_they_play_here_mp3,can_we_talk_now_mp3,enter_park_mp3,in_class_room_mp3,leave_school_mp3,line_up_mp3,listen_me_mp3,put_book_mp3,vo_books_mp3,purple_circle_png,purple_bottom_png,sound 4 (VO_FLOWERS)_mp3,flowers_mp3,amy_flowers_mp3,green_normal_png,green_hover_png,bird_woker_png,bird_work_hands_png,purple_dialog_frame_png,cage_png,pink_circle_png,worker_bird_first_png,trunk_png,bird_foot_png,tree_left_png,amy_feed_png,bird_png,can_i_feed_mp3,can_not_feed_mp3,worker_bicycle_png,amy_bicycle_png,blue_sky_png,left_cloud_png,right_cloud_png,road_png,light_red_hover_png,light_red_normal_png,tip_board_png,oragne_hover_png,orange_normal_png,bicycle_amy_frame_png,bicycle_worker_frame_png,bicycle_png,bicycle_amy_mp3,bicycle_worker_mp3,result_frame_png,result_amy_png,result_bg_png,photo_cloud_png,photo_worker_png,photo_amy_png,photo_worker_frame_png,photo_amy_mp3,photo_worker_mp3,flower_amy_frame_png,flowe_png,flower_worker_frame_png,flower_normal_circle _png,flower_hover_png,flower_worker_png,flower_worker_normal_png,flower_worker_hover_png,flower_worker_mp3,flower_amy_mp3,wlts_logo2_jpg",
 			"name": "preload"
 		}
 	],
@@ -10,6 +10,11 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
+		},
+		{
+			"url": "images/wlts_logo.jpg",
+			"type": "image",
+			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "gameEui.json",
@@ -572,19 +577,9 @@
 			"url": "audios/flower_amy.mp3"
 		},
 		{
-			"name": "start_png",
+			"name": "wlts_logo2_jpg",
 			"type": "image",
-			"url": "textures/start.png"
-		},
-		{
-			"name": "fram_exitTips_png",
-			"type": "image",
-			"url": "textures/fram_exitTips.png"
-		},
-		{
-			"name": "shadow_png",
-			"type": "image",
-			"url": "textures/shadow.png"
+			"url": "images/wlts_logo.jpg"
 		}
 	]
 }

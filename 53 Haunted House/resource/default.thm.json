@@ -1,10 +1,7 @@
 {
 	"skins": {
 		"StartScene": "resource/scenes/StartScene.exml",
-		"MoonRiseScene": "resource/scenes/MoonRiseScene.exml",
-		"EnterHouseScene": "resource/scenes/EnterHouseScene.exml",
-		"InsideHouseScene": "resource/scenes/InsideHouseScene.exml",
-		"QuestionScene": "resource/scenes/QuestionScene.exml",
+		"HauntedHouse.QuestionScene": "resource/scenes/QuestionScene.exml",
 		"SeeScene": "resource/scenes/SeeScene.exml",
 		"FeelScene": "resource/scenes/FeelScene.exml",
 		"HearScene": "resource/scenes/HearScene.exml",
@@ -14,9 +11,6 @@
 	"autoGenerateExmlsList": true,
 	"exml": [
 		"resource/scenes/StartScene.exml",
-		"resource/scenes/MoonRiseScene.exml",
-		"resource/scenes/EnterHouseScene.exml",
-		"resource/scenes/InsideHouseScene.exml",
 		"resource/scenes/QuestionScene.exml",
 		"resource/scenes/SeeScene.exml",
 		"resource/scenes/FeelScene.exml",
@@ -27,11 +21,8 @@
 	"path": "resource/default.thm.json",
 	"exmls": [
 		"resource/scenes/DescriptionScene.exml",
-		"resource/scenes/EnterHouseScene.exml",
 		"resource/scenes/FeelScene.exml",
 		"resource/scenes/HearScene.exml",
-		"resource/scenes/InsideHouseScene.exml",
-		"resource/scenes/MoonRiseScene.exml",
 		"resource/scenes/QuestionScene.exml",
 		"resource/scenes/SeeScene.exml",
 		"resource/scenes/SmellScene.exml",

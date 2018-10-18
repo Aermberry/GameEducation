@@ -31,10 +31,21 @@
 			</tween:Set>
 		</tween:TweenItem>
 	</tween:TweenGroup>
+	<tween:TweenGroup id="loadingAnim">
+		<tween:TweenItem target="{startMask}">
+			<tween:Set/>
+			<tween:To duration="750">
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
+			</tween:To>
+		</tween:TweenItem>
+	</tween:TweenGroup>
 </w:Declarations>
 <e:Image id="start_scene_bg"  source="start_scene_bg_png" width="1920" height="1280" y="0" x="0" verticalCenter="0" horizontalCenter="0"/>
-<e:Label id="hauntedHouseLable" fontFamily="Westwood" size="244"  textColor="#FFFF00" text="Haunted House" horizontalCenter="0" verticalCenter="-128"/>
+<e:Label id="hauntedHouseLable" fontFamily="Westwood" size="244"  textColor="0xFFFF00" text="Haunted House" horizontalCenter="0" verticalCenter="-128"/>
 <e:Image id="batClosure"  source="bat_closure_png" x="1412" y="897" alpha="0"/>
 <e:Image id="batSpread"  source="bat_spread_png" x="1192" y="927"/>
-
+<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" visible="false"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
 </e:Skin>
