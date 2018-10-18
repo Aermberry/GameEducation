@@ -9,37 +9,53 @@
 
 
 	<e:Group x="195" y="746.12">
-		<e:Rect id="math143Less21Rect" width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
-		<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="115.19" letterSpacing="10" left="132" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8"/>
-		<e:BitmapLabel width="259.85" height="60.6" font="GGGFont_fnt" text="143   21" anchorOffsetY="0" anchorOffsetX="0" y="91.82" letterSpacing="10" left="40" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="10"/>
-		<e:Rect id="math134Less115Rect" width="279" height="222" x="314" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
-		<e:Group x="363.62" y="53.31">
-			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="143" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="115" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
-			<e:Rect width="184" height="5" y="114.9" x="0"/>
+
+
+		<e:Group id="math143Less21Rect" x="0" y="0">
+			<e:Rect width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="115.19" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="132"/>
+			<e:BitmapLabel width="259.85" height="60.6" font="GGGFont_fnt" text="143   21" anchorOffsetY="0" anchorOffsetX="0" y="91.82" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="40"/>
+		</e:Group>
+
+		<e:Group id="math134Less115Rect" x="314" y="0">
+			<e:Rect width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+			<e:Group x="49.62" y="53.31">
+				<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="134" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="115" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+				<e:Rect width="184" height="5" y="114.9" x="0"/>
+			</e:Group>
 		</e:Group>
 		
-		<e:Rect id="math315Less123Rect" width="279" height="222" x="628" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
-		<e:Group x="681.79" y="53.31">
-			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="315" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="123" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
-			<e:Rect width="184" height="5" y="114.9" x="0"/>
+
+		<e:Group id="math315Less123Rect" x="628" y="0">
+			<e:Rect width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+			<e:Group x="53.79" y="53.31">
+				<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="315" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="123" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+				<e:Rect width="184" height="5" y="114.9" x="0"/>
+			</e:Group>
 		</e:Group>
-		<e:Rect id="math321Less125Rect" width="279" height="222" x="937" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
-		<e:Group x="984.18" y="52.67">
-			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="321" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="125" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
-			<e:Rect width="184" height="5" y="114.9" x="0"/>
+
+		<e:Group id="math321Less125Rect" x="937" y="0">
+			<e:Rect width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+			<e:Group x="47.18" y="52.67">
+				<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="321" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="125" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="left" scaleX="0.8" scaleY="0.8" x="73.3" lineSpacing="20"/>
+				<e:Rect width="184" height="5" y="114.9" x="0"/>
+			</e:Group>
 		</e:Group>
-		<e:Rect id="math203Less24Rect" width="279" height="222" x="1246" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
-		<e:Group x="1300.26" y="52.03">
-			<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="203" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
-			<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="24" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="right" scaleX="0.8" scaleY="0.8" x="71.78" lineSpacing="20"/>
-			<e:Rect width="184" height="5" y="114.9" x="0"/>
+
+		<e:Group id="math203Less24Rect" x="1246" y="0">
+			<e:Rect width="279" height="222" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeColor="0x106479" fillColor="0xfdfdcc" strokeAlpha="1" strokeWeight="8" ellipseHeight="20" ellipseWidth="20"/>
+			<e:Group x="54.26" y="52.03">
+				<e:BitmapLabel font="GGGFont_fnt" text="-" anchorOffsetY="0" anchorOffsetX="0" y="83.1" letterSpacing="10" verticalAlign="middle" textAlign="center" scaleX="0.8" scaleY="0.8" x="28.3"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="203" anchorOffsetY="0" anchorOffsetX="0" y="0" letterSpacing="12" textAlign="left" scaleX="0.8" scaleY="0.8" x="75.3" lineSpacing="20"/>
+				<e:BitmapLabel width="119.7" height="62.5" font="GGGFont_fnt" text="24" anchorOffsetY="0" anchorOffsetX="0" y="64.65" letterSpacing="19" textAlign="right" scaleX="0.8" scaleY="0.8" x="71.78" lineSpacing="20"/>
+				<e:Rect width="184" height="5" y="114.9" x="0"/>
+			</e:Group>
 		</e:Group>
 
 
