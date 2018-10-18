@@ -7,8 +7,14 @@ class StatueScene extends eui.Component implements eui.UIComponent {
   private Riddle05: eui.Button;
   private Riddle06: eui.Button;
 	private Riddle07: eui.Button;
-  public static i:number=0;
-  private ridd01:Riddle1Scene
+
+  private rid01:Riddle1Scene
+  private rid02:Riddle2Scene
+  private rid03:Riddle3Scene
+  private rid04:Riddle4Scene
+  private rid05:Riddle5Scene
+  private rid06:Riddle6Scene
+  private rid07:Riddle7Scene
 	
   public constructor() {
     super();
@@ -21,14 +27,14 @@ class StatueScene extends eui.Component implements eui.UIComponent {
   protected childrenCreated(): void {
 		super.childrenCreated();
 		let statue=new Base();
-    this.ridd01=new Riddle1Scene();
-		statue.onClickNextScene(this.Riddle01, this.ridd01);
-		statue.onClickNextScene(this.Riddle02, new Riddle2Scene());
-		statue.onClickNextScene(this.Riddle03, new Riddle3Scene());
-		statue.onClickNextScene(this.Riddle04, new Riddle4Scene());
-		statue.onClickNextScene(this.Riddle05, new Riddle5Scene());
-		statue.onClickNextScene(this.Riddle06, new Riddle6Scene());
-		statue.onClickNextScene(this.Riddle07, new Riddle7Scene());
+    
+		statue.onClickNextScene(this.Riddle01, this.rid01);
+    statue.onClickNextScene(this.Riddle02, this.rid02);
+    statue.onClickNextScene(this.Riddle03, this.rid03);
+    statue.onClickNextScene(this.Riddle04, this.rid04);
+    statue.onClickNextScene(this.Riddle05, this.rid05);
+    statue.onClickNextScene(this.Riddle06, this.rid06);
+    statue.onClickNextScene(this.Riddle07, this.rid07);
 	}
 
   private resultScene():void{
