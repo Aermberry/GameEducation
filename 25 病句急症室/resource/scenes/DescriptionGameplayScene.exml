@@ -22,6 +22,7 @@
 <e:Label id="firstDialogLabel" text="小朋友，很多句子生病了，" size="45" x="823" y="409" textColor="#000000" fontFamily="金梅新中圓國際碼"/>
 <e:Label id="secondDialogLabel" text="它們都多了一些沒有用的東西！" size="45" x="823" y="473" textColor="#000000" fontFamily="金梅新中圓國際碼"/>
 
+<<<<<<< HEAD
 <e:Image id="goldYellowDialogImg" source="gold_yellow_dialog_png" x="13" y="292" visible="false"/>
 <e:Label id="goldYellowDialogFisrstLabel" text="怎樣才可以醫治" textColor="0xF3362F" x="54" y="343" size="45" fontFamily="富漢通標中楷體" visible="false"/>
 <e:Label id="goldYellowDialogSecondLabel" text="這些句子呢?" textColor="0xF3362F" x="54" y="412" size="45" fontFamily="富漢通標中楷體" visible="false"/>
@@ -30,6 +31,16 @@
 <e:Label id="secondLineDialog" text="字詞或短語上，按著滑鼠左鍵，把它拉到廢" x="775" y="621" fontFamily="金梅新中圓國際碼" textColor="#000000" size="43" visible="false"/>
 <e:Label id="thirdLineDialog" text="物箱内便可。若需要幫忙，請按一按「提示" x="775" y="689" fontFamily="金梅新中圓國際碼" textColor="#000000" size="43" visible="false"/>
 <e:Label id="forthLineDialog" text="箱」。我們現在開始吧——" x="775" y="753" fontFamily="金梅新中圓國際碼" textColor="#000000" size="43" visible="false"/>
+=======
+<e:Image id="goldYellowDialogImg" source="gold_yellow_dialog_png" x="13" y="292" visible="false" locked="true"/>
+<e:Label id="goldYellowDialogFisrstLabel" text="怎樣才可以醫治" textColor="#F3362F" x="54" y="343" size="45" fontFamily="華康標楷體" visible="false"/>
+<e:Label id="goldYellowDialogSecondLabel" text="這些句子呢?" textColor="#F3362F" x="54" y="412" size="45" fontFamily="華康標楷體" locked="true" visible="false"/>
+
+<e:Label id="firstLineDialog" text="方法很簡單，只要將滑鼠移到句子中多餘的" x="775" y="554" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
+<e:Label id="secondLineDialog" text="字詞或短語上，按著滑鼠左鍵，把它拉到廢" x="775" y="621" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
+<e:Label id="thirdLineDialog" text="物箱内便可。若需要幫忙，請按一按「提示" x="775" y="689" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
+<e:Label id="forthLineDialog" text="箱」。我們現在開始吧——" x="775" y="753" fontFamily="華康標楷體" textColor="#000000" size="43" visible="false" locked="true"/>
+>>>>>>> 6464ebc0dc8978e9a3b20428444f0d4ecf4458a9
 
 
 <ns1:BeginButton id="beginBtn" skinName="BeginTargetButton" x="1505" y="735" visible="false"/>

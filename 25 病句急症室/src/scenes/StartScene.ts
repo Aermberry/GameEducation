@@ -49,6 +49,7 @@ class StartScene extends eui.Component implements eui.UIComponent {
     this.StartAnim.playOnceAsync();
 		this.startMask.visible = false;
 		this.startButton.visible = false;
+    init();
 	}
 
   private showSelect() {
