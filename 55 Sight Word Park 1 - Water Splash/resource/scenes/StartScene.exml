@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<e:Image id="bg" source="start_scene_bg_svg"  horizontalCenter="-327.5" verticalCenter="317.5"/>
-	<e:Image id="rainbowImage" source="rainbow_svg" x="1920" y="85" height="295"/>
-	<e:Image id="sightWordParkImage" source="sight_word_park_svg"  y="85" width="1520" height="350" horizontalCenter="0" visible="false"/>
+<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="loadingAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="bg" source="start_scene_bg_png"  horizontalCenter="-327.5" verticalCenter="317.5"/>
+	<e:Image id="rainbowImage" source="rainbow_png" x="1920" y="85" height="295"/>
+	<e:Image id="sightWordParkImage" source="sight_word_park_png"  y="85" width="1520" height="350" horizontalCenter="0" visible="false"/>
 	<e:Image id="startGameBtn" source="start_game_normal_png" x="140" y="655"/>
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

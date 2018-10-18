@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "164d4293be7": {
         "path": "scenes\\StartScene.ts",
         "class": "StartScene",
@@ -42,4 +43,44 @@
         "class": "MovieClipPlayer",
         "parentPath": ""
     }
+=======
+  "164d4293be7": {
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "164ef120242": {
+    "path": "scenes\\SelectDiffcultScene.ts",
+    "class": "SelectDiffcultScene",
+    "parentPath": ""
+  },
+  "164ef1a7b85": {
+    "path": "scenes\\StudentSelectScene.ts",
+    "class": "StudentSelectScene",
+    "parentPath": ""
+  },
+  "164ef3ce84c": {
+    "path": "components\\EasyGameScene.ts",
+    "class": "EasyGameScene",
+    "parentPath": ""
+  },
+  "164f0ba22de": {
+    "path": "components/Puzzle.ts",
+    "class": "Puzzle",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  },
+  "164f2db9707": {
+    "path": "components/RedLineLabel.ts",
+    "class": "RedLineLabel",
+    "parentPath": ""
+  },
+  "164f327644e": {
+    "path": "scenes/ResultScene.ts",
+    "class": "ResultScene",
+    "parentPath": ""
+  }
+>>>>>>> 885de47cf0367aca4e9d2248315257efbc855d7e
 }

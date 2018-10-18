@@ -10,6 +10,11 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 	private radioTweenGroup: egret.tween.TweenGroup;
 
 	private currentSoundChannel: egret.SoundChannel;
+
+	private startMask: eui.Rect;
+    private startButton2: eui.Button;
+    private loadingAnim:egret.tween.TweenGroup
+
 	private weathers = [
 		new Weather('sound 11 (wQ16.mp3)_mp3', '20'),
 		new Weather('sound 9 (wQ17.mp3)_mp3', '20'),
@@ -35,6 +40,8 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startButton, true);
 		mouse.setButtonMode(this.exitButton, true);
+		mouse.setButtonMode(this.startButton2,true);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButton2Click,this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartButtonRollOver, this);
 		this.startButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartButtonRollOut, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStartButtonTouchBegin, this);
@@ -42,8 +49,16 @@ class Question1Scene extends eui.Component implements  eui.UIComponent {
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 
-		this.startScene();
+		
 	}
+
+	private async onStartButton2Click():Promise<void>{
+		await this.loadingAnim.play(0);
+		this.startButton2.visible=false;
+		this.startMask.visible=false;
+		await this.startScene();
+	}
+
 
 	private async startScene(): Promise<void>
 	{

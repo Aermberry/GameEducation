@@ -8,7 +8,8 @@
 		"libs/modules/eui/eui.js",
 		"libs/modules/promise/promise.js",
 		"libs/modules/mouse/mouse.js",
-		"libs/modules/lzlib/lzlib.js"
+		"libs/modules/lzlib/lzlib.js",
+		"libs/modules/wordfind/wordfind.js"
 	],
 	"game": [
 		"bin-debug/AssetAdapter.js",

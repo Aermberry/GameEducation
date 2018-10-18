@@ -13,13 +13,13 @@
 		<e:Label text="pictures here?" size="45" textColor="#000000" fontFamily="ComicSansMS3" x="453.7" y="1081"/>	
 	</e:Group>
 
-	<e:Group id="nextDialogGroup" visible="true">
-		<e:Image source="photo_worker_frame_png" x="1182.2" y="42.4"/>
-	    <e:Label id="secondLabel" text=" " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1299.2" y="169.4"/>
-		<e:Label id="firstLabel" text=" ....... " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1299.2" y="103.5"/>
+	<e:Group id="nextDialogGroup" visible="false">
+		<e:Image source="photo_worker_frame_png" x="1054.92" y="27.25"/>
+	    <e:Label id="secondLabel" text=" " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1165.87" y="187.58"/>
+		<e:Label id="firstLabel" text=" ....... " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1165.87" y="115.62"/>
 		<e:Image source="light_png" x="1532.2" y="647"/>
-		<e:Image id="orangeCircleImg" source="orange_normal_png" x="1521.2" y="38.5" />
-  		<e:Image id="workerHeaderImg" source="worker_normal_png" x="1532.2" y="48.5"/>
+		<e:Image id="orangeCircleImg" source="orange_normal_png" x="1451.5" y="53.65" />
+  		<e:Image id="workerHeaderImg" source="worker_normal_png" x="1462.5" y="63.65"/>
 	</e:Group>
 	
 
@@ -33,6 +33,6 @@
 	   <e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
   </e:Group>
 
-  <e:Group id="workerTouchEventGroup" x="1521" y="38.5" width="132" height="132"/>
+  <e:Group id="workerTouchEventGroup" x="1462.15" y="62.97" width="132" height="132"/>
     
 </e:Skin>

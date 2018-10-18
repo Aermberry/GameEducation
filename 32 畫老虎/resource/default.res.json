@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,complete_scene_bg_png,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,question1_png,question2_png,question3_png,question4_png,speaker_png,radiobutton_select_down_png,sound 9 (comic3_s1.mp3)_mp3,sound 8 (comic3_s2.mp3)_mp3,sound 77_mp3,sound 75_mp3,sound 73_mp3,sound 71_mp3,sound 7 (comic3_s3.mp3)_mp3,sound 69_mp3,sound 67_mp3,sound 65_mp3,sound 63_mp3,sound 60_mp3,sound 6 (comic3_s4.mp3)_mp3,sound 5 (comic3_w1.mp3)_mp3,sound 4 (comic3_w2.mp3)_mp3,sound 3 (comic3_w3.mp3)_mp3,sound 2 (comic3_w4.mp3)_mp3,sound 146_mp3,sound 127_mp3,sound 124_mp3,sound 1 (inst_correct.mp3)_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,complete_scene_bg_png,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,question1_png,question2_png,question3_png,question4_png,speaker_png,radiobutton_select_down_png,sound 9 (comic3_s1.mp3)_mp3,sound 8 (comic3_s2.mp3)_mp3,sound 77_mp3,sound 75_mp3,sound 73_mp3,sound 71_mp3,sound 7 (comic3_s3.mp3)_mp3,sound 69_mp3,sound 67_mp3,sound 65_mp3,sound 63_mp3,sound 60_mp3,sound 6 (comic3_s4.mp3)_mp3,sound 5 (comic3_w1.mp3)_mp3,sound 4 (comic3_w2.mp3)_mp3,sound 3 (comic3_w3.mp3)_mp3,sound 2 (comic3_w4.mp3)_mp3,sound 146_mp3,sound 127_mp3,sound 124_mp3,sound 1 (inst_correct.mp3)_mp3,gameEui_json,start_png",
 			"name": "preload"
 		}
 	],
@@ -120,11 +120,6 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "images/wlts_logo.jpg",
-			"type": "image",
-			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "textures/complete_scene_bg.png",
@@ -315,6 +310,16 @@
 			"url": "audios/sound 9 (comic3_s1.mp3).mp3",
 			"type": "sound",
 			"name": "sound 9 (comic3_s1.mp3)_mp3"
+		},
+		{
+			"name": "gameEui_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
 		}
 	]
 }

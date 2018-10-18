@@ -49,18 +49,12 @@ class Level10Scene extends eui.Component implements  eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.addChild(drag);
 			drag.enableDrag(child, false, index);
-			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
 
 		let drop = new lzlib.Drop();
 		this.stage.addChild(drop);
 		drop.enableDrop(this.trashGroup);
 		this.trashGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
-	}
-
-	private onDragCancel(e: lzlib.LzDragEvent): void
-	{
-		this.doctorAngryTweenGroup.playOnceAsync();
 	}
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
