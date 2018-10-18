@@ -1,425 +1,1570 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,wlts_logo_jpg,start_scene_bgm_mp3,select_difficulty_scene_bgm_mp3,black_boom_png,movie_clip_json,movie_clip_png,rainbow_svg,red_boom_png,select_difficult_bg_png,sight_word_park_svg,start_game_hover_png,start_game_normal_png,start_scene_bg_svg,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png,smoke_4_png,smoke_5_png,smoke_6_png,smoke_7_png,smoke_8_png,smoke_9_png,door_png,castle_bottom_png,arrow_right_svg,smiling_yellow_head_svg,pum_mp3,kacha_mp3,diao_mp3,congratulation_mp3,a_mp3,about_mp3,add_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,app_mp3,appoint_mp3,around_mp3,as_mp3,ate_mp3,away_mp3,bath_mp3,because_mp3,bee_mp3,before_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,brain_mp3,brown_mp3,but_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,does_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fair_mp3,fall (2)_mp3,fall_mp3,far_mp3,fast_mp3,film_mp3,film(2)_mp3,fine_mp3,first_mp3,five 2_mp3,five 3_mp3,five_mp3,fly_mp3,form_mp3,found_mp3,four_mp3,four(2)_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,god_mp3,going_mp3,goo_mp3,good_mp3,green_mp3,grow_mp3,guilt_mp3,gun_mp3,had_mp3,has_mp3,have_mp3,he_mp3,hear_mp3,heard_mp3,help_mp3,her_mp3,him_mp3,his_mp3,hold_mp3,hot_mp3,hour_mp3,how_mp3,i_mp3,in_mp3,into_mp3,is (2)_mp3,is_mp3,is(3)_mp3,it_mp3,jump_mp3,just_mp3,keep_mp3,kind_mp3,lab_mp3,left_mp3,light_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,male_mp3,many_mp3,may_mp3,me_mp3,mime_mp3,much_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,no(2)_mp3,not_mp3,nut_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,our_mp3,out_mp3,over_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,say_mp3,see_mp3,seven_mp3,shall_mp3,she_mp3,show_mp3,sick_mp3,sing_mp3,sit_mp3,sleep_mp3,small_mp3,so_mp3,some_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_ling_mp3,sound_effect_kacha_mp3,sound_effect_win_mp3,start_mp3,stop_mp3,take_mp3,sunny_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,thin_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,together_mp3,too_mp3,topday_mp3,try_mp3,two_mp3,under_mp3,up_mp3,us_mp3,use_mp3,very_mp3,walk_mp3,want (2)_mp3,want_mp3,war_mp3,warm_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,work_mp3,would_mp3,write_mp3,yellow_mp3,yet_mp3,your_mp3,said_mp3,left_sign_normal_png,left_sign_selected_png,middle_sign_normal_png,middle_sign_selected_png,right_sign_normal_png,right_sign_selected_png,launched_boom_0_json,launched_boom_0_png,launched_boom_1_json,launched_boom_1_png,launched_boom_2_json,launched_boom_2_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,black_boom_png,movie_clip_json,movie_clip_png,red_boom_png,select_difficult_bg_png,start_game_hover_png,start_game_normal_png,easy_go_scene_json,easy_go_scene_png,easy_star_hover_png,easy_star_normal_png,pro_star_normal_png,pro_star_hover_png,pro_go_scene_json,pro_go_scene_png,white_canvas_png,back_btn_png,white_canvas_picture_png,red_stage_png,house_image_png,white_cloud_png,play_game_bg_png,boom_png,fort_png,people_normal_png,people_hover_png,true_json,true_png,false_json,false_png,launched_boom_png,star_explosion_json,star_explosion_png,false_drop_down_box_png,false_drop_down_box_json,right_drop_down_box_json,right_drop_down_box_png,hover_boom_png,blood_strip_20_png,blood_strip_19_png,blood_strip_18_png,blood_strip_17_png,blood_strip_16_png,blood_strip_15_png,blood_strip_14_png,blood_strip_13_png,blood_strip_12_png,blood_strip_11_png,blood_strip_10_png,blood_strip_9_png,blood_strip_8_png,blood_strip_7_png,blood_strip_6_png,blood_strip_5_png,blood_strip_4_png,blood_strip_3_png,blood_strip_2_png,blood_strip_1_png,blood_strip_0_png,smoke_1_png,smoke_2_png,hole_png,smoke_3_png,smoke_4_png,smoke_5_png,smoke_6_png,smoke_7_png,smoke_8_png,smoke_9_png,door_png,castle_bottom_png,left_sign_normal_png,left_sign_selected_png,middle_sign_normal_png,middle_sign_selected_png,right_sign_normal_png,right_sign_selected_png,launched_boom_0_json,launched_boom_0_png,launched_boom_1_json,launched_boom_1_png,launched_boom_2_json,launched_boom_2_png,start_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,hot_mp3,hour_mp3,how_mp3,i_mp3,in_mp3,into_mp3,it_mp3,jump_mp3,congratulation_mp3,select_difficulty_scene_bgm_mp3,sound_effect_dindum_mp3,sound_effect_jiu_mp3,sound_effect_kacha_mp3,sound_effect_ling_mp3,sound_effect_win_mp3,start_scene_bgm_mp3,a_mp3,about_mp3,act_mp3,after_mp3,again_mp3,all_mp3,always_mp3,am_mp3,an_mp3,and_mp3,any_mp3,are_mp3,around_mp3,as_mp3,ask_mp3,ate_mp3,away_mp3,bath_mp3,because_mp3,beef_mp3,been_mp3,before_mp3,better_mp3,big_mp3,black_mp3,blue_mp3,both_mp3,bring_mp3,brown_mp3,bus_mp3,but_mp3,buy_mp3,call_mp3,came_mp3,can_mp3,carry_mp3,clean_mp3,cold_mp3,come_mp3,could_mp3,cut_mp3,did_mp3,dirt_mp3,do_mp3,does_mp3,dog_mp3,done_mp3,dont_mp3,down_mp3,draw_mp3,drink_mp3,eat_mp3,eight_mp3,every_mp3,fact_mp3,fall_mp3,far_mp3,find_mp3,first_mp3,five_mp3,fly_mp3,fold_mp3,for_mp3,found_mp3,four_mp3,from_mp3,gave_mp3,get_mp3,give_mp3,go_mp3,goal_mp3,going_mp3,good_mp3,got_mp3,green_mp3,grow_mp3,had_mp3,has_mp3,have_mp3,he_mp3,help_mp3,her_mp3,here_mp3,him_mp3,his_mp3,hold_mp3,hurt_mp3,I_mp3,if_mp3,its_mp3,jug_mp3,keep_mp3,kind_mp3,laugh_mp3,let_mp3,life_mp3,like_mp3,little_mp3,live_mp3,long_mp3,look_mp3,made_mp3,make_mp3,many_mp3,mark_mp3,may_mp3,me_mp3,much_mp3,my_mp3,myself_mp3,never_mp3,new_mp3,no_mp3,not_mp3,now_mp3,of_mp3,off_mp3,old_mp3,on_mp3,one_mp3,only_mp3,open_mp3,or_mp3,out_mp3,over_mp3,own_mp3,pick_mp3,play_mp3,please_mp3,pretty_mp3,pull_mp3,put_mp3,ran_mp3,read_mp3,red_mp3,ride_mp3,right_mp3,round_mp3,run_mp3,sad_mp3,saw_mp3,say_mp3,see_mp3,seven_mp3,she_mp3,shell_mp3,show_mp3,sing_mp3,sleep_mp3,small_mp3,so_mp3,soon_mp3,sum_mp3,sunny_mp3,take_mp3,tell_mp3,ten_mp3,thank_mp3,that_mp3,the_mp3,them_mp3,then_mp3,there_mp3,these_mp3,they_mp3,think_mp3,this_mp3,though_mp3,three_mp3,to_mp3,today_mp3,together_mp3,too_mp3,try_mp3,two_mp3,under_mp3,up_mp3,upon_mp3,very_mp3,walk_mp3,was_mp3,wash_mp3,we_mp3,well_mp3,went_mp3,were_mp3,what_mp3,when_mp3,where_mp3,which_mp3,white_mp3,who_mp3,why_mp3,will_mp3,wish_mp3,with_mp3,wood_mp3,wore_mp3,work_mp3,yellow_mp3,yes_mp3,you_mp3,your_mp3,pum_mp3,diao_mp3",
 			"name": "preload"
 		}
 	],
 	"resources": [
 		{
-			"name": "bg_jpg",
+			"url": "assets/bg.jpg",
 			"type": "image",
-			"url": "assets/bg.jpg"
+			"name": "bg_jpg"
 		},
 		{
-			"name": "egret_icon_png",
+			"url": "assets/egret_icon.png",
 			"type": "image",
-			"url": "assets/egret_icon.png"
+			"name": "egret_icon_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "gameEui_json",
+			"url": "gameEui.json",
 			"type": "json",
-			"url": "gameEui.json"
+			"name": "gameEui_json"
 		},
 		{
-			"name": "wlts_logo_jpg",
+			"url": "textures/black_boom.png",
 			"type": "image",
-			"url": "images/wlts_logo.jpg"
+			"name": "black_boom_png"
 		},
 		{
-			"name": "start_scene_bgm_mp3",
+			"url": "textures/movie_clip.json",
+			"type": "json",
+			"name": "movie_clip_json"
+		},
+		{
+			"url": "textures/movie_clip.png",
+			"type": "image",
+			"name": "movie_clip_png"
+		},
+		{
+			"url": "textures/red_boom.png",
+			"type": "image",
+			"name": "red_boom_png"
+		},
+		{
+			"url": "textures/select_difficult_bg.png",
+			"type": "image",
+			"name": "select_difficult_bg_png"
+		},
+		{
+			"url": "textures/start_game_hover.png",
+			"type": "image",
+			"name": "start_game_hover_png"
+		},
+		{
+			"url": "textures/start_game_normal.png",
+			"type": "image",
+			"name": "start_game_normal_png"
+		},
+		{
+			"url": "textures/easy_go_scene.json",
+			"type": "json",
+			"name": "easy_go_scene_json"
+		},
+		{
+			"url": "textures/easy_go_scene.png",
+			"type": "image",
+			"name": "easy_go_scene_png"
+		},
+		{
+			"url": "textures/easy_star_hover.png",
+			"type": "image",
+			"name": "easy_star_hover_png"
+		},
+		{
+			"url": "textures/easy_star_normal.png",
+			"type": "image",
+			"name": "easy_star_normal_png"
+		},
+		{
+			"url": "textures/pro_star_normal.png",
+			"type": "image",
+			"name": "pro_star_normal_png"
+		},
+		{
+			"url": "textures/pro_star_hover.png",
+			"type": "image",
+			"name": "pro_star_hover_png"
+		},
+		{
+			"url": "textures/pro_go_scene.json",
+			"type": "json",
+			"name": "pro_go_scene_json"
+		},
+		{
+			"url": "textures/pro_go_scene.png",
+			"type": "image",
+			"name": "pro_go_scene_png"
+		},
+		{
+			"url": "textures/white_canvas.png",
+			"type": "image",
+			"name": "white_canvas_png"
+		},
+		{
+			"url": "textures/back_btn.png",
+			"type": "image",
+			"name": "back_btn_png"
+		},
+		{
+			"url": "textures/white_canvas_picture.png",
+			"type": "image",
+			"name": "white_canvas_picture_png"
+		},
+		{
+			"url": "textures/red_stage.png",
+			"type": "image",
+			"name": "red_stage_png"
+		},
+		{
+			"url": "textures/house_image.png",
+			"type": "image",
+			"name": "house_image_png"
+		},
+		{
+			"url": "textures/white_cloud.png",
+			"type": "image",
+			"name": "white_cloud_png"
+		},
+		{
+			"url": "textures/play_game_bg.png",
+			"type": "image",
+			"name": "play_game_bg_png"
+		},
+		{
+			"url": "textures/boom.png",
+			"type": "image",
+			"name": "boom_png"
+		},
+		{
+			"url": "textures/fort.png",
+			"type": "image",
+			"name": "fort_png"
+		},
+		{
+			"url": "textures/people_normal.png",
+			"type": "image",
+			"name": "people_normal_png"
+		},
+		{
+			"url": "textures/people_hover.png",
+			"type": "image",
+			"name": "people_hover_png"
+		},
+		{
+			"url": "textures/true.json",
+			"type": "json",
+			"name": "true_json"
+		},
+		{
+			"url": "textures/true.png",
+			"type": "image",
+			"name": "true_png"
+		},
+		{
+			"url": "textures/false.json",
+			"type": "json",
+			"name": "false_json"
+		},
+		{
+			"url": "textures/false.png",
+			"type": "image",
+			"name": "false_png"
+		},
+		{
+			"url": "textures/launched_boom.png",
+			"type": "image",
+			"name": "launched_boom_png"
+		},
+		{
+			"url": "textures/star_explosion.json",
+			"type": "json",
+			"name": "star_explosion_json"
+		},
+		{
+			"url": "textures/star_explosion.png",
+			"type": "image",
+			"name": "star_explosion_png"
+		},
+		{
+			"url": "textures/false_drop_down_box.png",
+			"type": "image",
+			"name": "false_drop_down_box_png"
+		},
+		{
+			"url": "textures/false_drop_down_box.json",
+			"type": "json",
+			"name": "false_drop_down_box_json"
+		},
+		{
+			"url": "textures/right_drop_down_box.json",
+			"type": "json",
+			"name": "right_drop_down_box_json"
+		},
+		{
+			"url": "textures/right_drop_down_box.png",
+			"type": "image",
+			"name": "right_drop_down_box_png"
+		},
+		{
+			"url": "textures/hover_boom.png",
+			"type": "image",
+			"name": "hover_boom_png"
+		},
+		{
+			"url": "textures/blood_strip_20.png",
+			"type": "image",
+			"name": "blood_strip_20_png"
+		},
+		{
+			"url": "textures/blood_strip_19.png",
+			"type": "image",
+			"name": "blood_strip_19_png"
+		},
+		{
+			"url": "textures/blood_strip_18.png",
+			"type": "image",
+			"name": "blood_strip_18_png"
+		},
+		{
+			"url": "textures/blood_strip_17.png",
+			"type": "image",
+			"name": "blood_strip_17_png"
+		},
+		{
+			"url": "textures/blood_strip_16.png",
+			"type": "image",
+			"name": "blood_strip_16_png"
+		},
+		{
+			"url": "textures/blood_strip_15.png",
+			"type": "image",
+			"name": "blood_strip_15_png"
+		},
+		{
+			"url": "textures/blood_strip_14.png",
+			"type": "image",
+			"name": "blood_strip_14_png"
+		},
+		{
+			"url": "textures/blood_strip_13.png",
+			"type": "image",
+			"name": "blood_strip_13_png"
+		},
+		{
+			"url": "textures/blood_strip_12.png",
+			"type": "image",
+			"name": "blood_strip_12_png"
+		},
+		{
+			"url": "textures/blood_strip_11.png",
+			"type": "image",
+			"name": "blood_strip_11_png"
+		},
+		{
+			"url": "textures/blood_strip_10.png",
+			"type": "image",
+			"name": "blood_strip_10_png"
+		},
+		{
+			"url": "textures/blood_strip_9.png",
+			"type": "image",
+			"name": "blood_strip_9_png"
+		},
+		{
+			"url": "textures/blood_strip_8.png",
+			"type": "image",
+			"name": "blood_strip_8_png"
+		},
+		{
+			"url": "textures/blood_strip_7.png",
+			"type": "image",
+			"name": "blood_strip_7_png"
+		},
+		{
+			"url": "textures/blood_strip_6.png",
+			"type": "image",
+			"name": "blood_strip_6_png"
+		},
+		{
+			"url": "textures/blood_strip_5.png",
+			"type": "image",
+			"name": "blood_strip_5_png"
+		},
+		{
+			"url": "textures/blood_strip_4.png",
+			"type": "image",
+			"name": "blood_strip_4_png"
+		},
+		{
+			"url": "textures/blood_strip_3.png",
+			"type": "image",
+			"name": "blood_strip_3_png"
+		},
+		{
+			"url": "textures/blood_strip_2.png",
+			"type": "image",
+			"name": "blood_strip_2_png"
+		},
+		{
+			"url": "textures/blood_strip_1.png",
+			"type": "image",
+			"name": "blood_strip_1_png"
+		},
+		{
+			"url": "textures/blood_strip_0.png",
+			"type": "image",
+			"name": "blood_strip_0_png"
+		},
+		{
+			"url": "textures/smoke_1.png",
+			"type": "image",
+			"name": "smoke_1_png"
+		},
+		{
+			"url": "textures/smoke_2.png",
+			"type": "image",
+			"name": "smoke_2_png"
+		},
+		{
+			"url": "textures/hole.png",
+			"type": "image",
+			"name": "hole_png"
+		},
+		{
+			"url": "textures/smoke_3.png",
+			"type": "image",
+			"name": "smoke_3_png"
+		},
+		{
+			"url": "textures/smoke_4.png",
+			"type": "image",
+			"name": "smoke_4_png"
+		},
+		{
+			"url": "textures/smoke_5.png",
+			"type": "image",
+			"name": "smoke_5_png"
+		},
+		{
+			"url": "textures/smoke_6.png",
+			"type": "image",
+			"name": "smoke_6_png"
+		},
+		{
+			"url": "textures/smoke_7.png",
+			"type": "image",
+			"name": "smoke_7_png"
+		},
+		{
+			"url": "textures/smoke_8.png",
+			"type": "image",
+			"name": "smoke_8_png"
+		},
+		{
+			"url": "textures/smoke_9.png",
+			"type": "image",
+			"name": "smoke_9_png"
+		},
+		{
+			"url": "textures/door.png",
+			"type": "image",
+			"name": "door_png"
+		},
+		{
+			"url": "textures/castle_bottom.png",
+			"type": "image",
+			"name": "castle_bottom_png"
+		},
+		{
+			"url": "textures/left_sign_normal.png",
+			"type": "image",
+			"name": "left_sign_normal_png"
+		},
+		{
+			"url": "textures/left_sign_selected.png",
+			"type": "image",
+			"name": "left_sign_selected_png"
+		},
+		{
+			"url": "textures/middle_sign_normal.png",
+			"type": "image",
+			"name": "middle_sign_normal_png"
+		},
+		{
+			"url": "textures/middle_sign_selected.png",
+			"type": "image",
+			"name": "middle_sign_selected_png"
+		},
+		{
+			"url": "textures/right_sign_normal.png",
+			"type": "image",
+			"name": "right_sign_normal_png"
+		},
+		{
+			"url": "textures/right_sign_selected.png",
+			"type": "image",
+			"name": "right_sign_selected_png"
+		},
+		{
+			"url": "textures/launched_boom_0.json",
+			"type": "json",
+			"name": "launched_boom_0_json"
+		},
+		{
+			"url": "textures/launched_boom_0.png",
+			"type": "image",
+			"name": "launched_boom_0_png"
+		},
+		{
+			"url": "textures/launched_boom_1.json",
+			"type": "json",
+			"name": "launched_boom_1_json"
+		},
+		{
+			"url": "textures/launched_boom_1.png",
+			"type": "image",
+			"name": "launched_boom_1_png"
+		},
+		{
+			"url": "textures/launched_boom_2.json",
+			"type": "json",
+			"name": "launched_boom_2_json"
+		},
+		{
+			"url": "textures/launched_boom_2.png",
+			"type": "image",
+			"name": "launched_boom_2_png"
+		},
+		{
+			"url": "textures/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "textures/arrow_right.png",
+			"type": "image",
+			"name": "arrow_right_png"
+		},
+		{
+			"url": "textures/rainbow.png",
+			"type": "image",
+			"name": "rainbow_png"
+		},
+		{
+			"url": "textures/sight_word_park.png",
+			"type": "image",
+			"name": "sight_word_park_png"
+		},
+		{
+			"url": "textures/smiling_yellow_head.png",
+			"type": "image",
+			"name": "smiling_yellow_head_png"
+		},
+		{
+			"url": "textures/start_scene_bg.png",
+			"type": "image",
+			"name": "start_scene_bg_png"
+		},
+		{
+			"url": "audios/questions/hot.mp3",
 			"type": "sound",
-			"url": "audios/start_scene_bgm.mp3"
+			"name": "hot_mp3"
 		},
 		{
-			"name": "select_difficulty_scene_bgm_mp3",
+			"url": "audios/questions/hour.mp3",
 			"type": "sound",
-			"url": "audios/select_difficulty_scene_bgm.mp3"
+			"name": "hour_mp3"
 		},
 		{
-			"name": "black_boom_png",
-			"type": "image",
-			"url": "textures/black_boom.png"
+			"url": "audios/questions/how.mp3",
+			"type": "sound",
+			"name": "how_mp3"
 		},
 		{
-			"name": "movie_clip_json",
-			"type": "json",
-			"url": "textures/movie_clip.json"
+			"url": "audios/questions/i.mp3",
+			"type": "sound",
+			"name": "i_mp3"
 		},
 		{
-			"name": "movie_clip_png",
-			"type": "image",
-			"url": "textures/movie_clip.png"
+			"url": "audios/questions/in.mp3",
+			"type": "sound",
+			"name": "in_mp3"
 		},
 		{
-			"name": "rainbow_svg",
-			"type": "image",
-			"url": "textures/rainbow.svg"
+			"url": "audios/questions/into.mp3",
+			"type": "sound",
+			"name": "into_mp3"
 		},
 		{
-			"name": "red_boom_png",
-			"type": "image",
-			"url": "textures/red_boom.png"
+			"url": "audios/questions/it.mp3",
+			"type": "sound",
+			"name": "it_mp3"
 		},
 		{
-			"name": "select_difficult_bg_png",
-			"type": "image",
-			"url": "textures/select_difficult_bg.png"
+			"url": "audios/questions/jump.mp3",
+			"type": "sound",
+			"name": "jump_mp3"
 		},
 		{
-			"name": "sight_word_park_svg",
-			"type": "image",
-			"url": "textures/sight_word_park.svg"
+			"url": "audios/congratulation.mp3",
+			"type": "sound",
+			"name": "congratulation_mp3"
 		},
 		{
-			"name": "start_game_hover_png",
-			"type": "image",
-			"url": "textures/start_game_hover.png"
+			"url": "audios/select_difficulty_scene_bgm.mp3",
+			"type": "sound",
+			"name": "select_difficulty_scene_bgm_mp3"
 		},
 		{
-			"name": "start_game_normal_png",
-			"type": "image",
-			"url": "textures/start_game_normal.png"
+			"url": "audios/sound_effect_dindum.mp3",
+			"type": "sound",
+			"name": "sound_effect_dindum_mp3"
 		},
 		{
-			"name": "start_scene_bg_svg",
-			"type": "image",
-			"url": "textures/start_scene_bg.svg"
+			"url": "audios/sound_effect_jiu.mp3",
+			"type": "sound",
+			"name": "sound_effect_jiu_mp3"
 		},
 		{
-			"name": "easy_go_scene_json",
-			"type": "json",
-			"url": "textures/easy_go_scene.json"
+			"url": "audios/sound_effect_kacha.mp3",
+			"type": "sound",
+			"name": "sound_effect_kacha_mp3"
 		},
 		{
-			"name": "easy_go_scene_png",
-			"type": "image",
-			"url": "textures/easy_go_scene.png"
+			"url": "audios/sound_effect_ling.mp3",
+			"type": "sound",
+			"name": "sound_effect_ling_mp3"
 		},
 		{
-			"name": "easy_star_hover_png",
-			"type": "image",
-			"url": "textures/easy_star_hover.png"
+			"url": "audios/sound_effect_win.mp3",
+			"type": "sound",
+			"name": "sound_effect_win_mp3"
 		},
 		{
-			"name": "easy_star_normal_png",
-			"type": "image",
-			"url": "textures/easy_star_normal.png"
+			"url": "audios/start_scene_bgm.mp3",
+			"type": "sound",
+			"name": "start_scene_bgm_mp3"
 		},
 		{
-			"name": "pro_star_normal_png",
-			"type": "image",
-			"url": "textures/pro_star_normal.png"
+			"url": "audios/questions/a.mp3",
+			"type": "sound",
+			"name": "a_mp3"
 		},
 		{
-			"name": "pro_star_hover_png",
-			"type": "image",
-			"url": "textures/pro_star_hover.png"
+			"url": "audios/questions/about.mp3",
+			"type": "sound",
+			"name": "about_mp3"
 		},
 		{
-			"name": "pro_go_scene_json",
-			"type": "json",
-			"url": "textures/pro_go_scene.json"
+			"url": "audios/questions/act.mp3",
+			"type": "sound",
+			"name": "act_mp3"
 		},
 		{
-			"name": "pro_go_scene_png",
-			"type": "image",
-			"url": "textures/pro_go_scene.png"
+			"url": "audios/questions/after.mp3",
+			"type": "sound",
+			"name": "after_mp3"
 		},
 		{
-			"name": "white_canvas_png",
-			"type": "image",
-			"url": "textures/white_canvas.png"
+			"url": "audios/questions/again.mp3",
+			"type": "sound",
+			"name": "again_mp3"
 		},
 		{
-			"name": "back_btn_png",
-			"type": "image",
-			"url": "textures/back_btn.png"
+			"url": "audios/questions/all.mp3",
+			"type": "sound",
+			"name": "all_mp3"
 		},
 		{
-			"name": "white_canvas_picture_png",
-			"type": "image",
-			"url": "textures/white_canvas_picture.png"
+			"url": "audios/questions/always.mp3",
+			"type": "sound",
+			"name": "always_mp3"
 		},
 		{
-			"name": "red_stage_png",
-			"type": "image",
-			"url": "textures/red_stage.png"
+			"url": "audios/questions/am.mp3",
+			"type": "sound",
+			"name": "am_mp3"
 		},
 		{
-			"name": "house_image_png",
-			"type": "image",
-			"url": "textures/house_image.png"
+			"url": "audios/questions/an.mp3",
+			"type": "sound",
+			"name": "an_mp3"
 		},
 		{
-			"name": "white_cloud_png",
-			"type": "image",
-			"url": "textures/white_cloud.png"
+			"url": "audios/questions/and.mp3",
+			"type": "sound",
+			"name": "and_mp3"
 		},
 		{
-			"name": "play_game_bg_png",
-			"type": "image",
-			"url": "textures/play_game_bg.png"
+			"url": "audios/questions/any.mp3",
+			"type": "sound",
+			"name": "any_mp3"
 		},
 		{
-			"name": "boom_png",
-			"type": "image",
-			"url": "textures/boom.png"
+			"url": "audios/questions/are.mp3",
+			"type": "sound",
+			"name": "are_mp3"
 		},
 		{
-			"name": "fort_png",
-			"type": "image",
-			"url": "textures/fort.png"
+			"url": "audios/questions/around.mp3",
+			"type": "sound",
+			"name": "around_mp3"
 		},
 		{
-			"name": "people_normal_png",
-			"type": "image",
-			"url": "textures/people_normal.png"
+			"url": "audios/questions/as.mp3",
+			"type": "sound",
+			"name": "as_mp3"
 		},
 		{
-			"name": "people_hover_png",
-			"type": "image",
-			"url": "textures/people_hover.png"
+			"url": "audios/questions/ask.mp3",
+			"type": "sound",
+			"name": "ask_mp3"
 		},
 		{
-			"name": "true_json",
-			"type": "json",
-			"url": "textures/true.json"
+			"url": "audios/questions/ate.mp3",
+			"type": "sound",
+			"name": "ate_mp3"
 		},
 		{
-			"name": "true_png",
-			"type": "image",
-			"url": "textures/true.png"
+			"url": "audios/questions/away.mp3",
+			"type": "sound",
+			"name": "away_mp3"
 		},
 		{
-			"name": "false_json",
-			"type": "json",
-			"url": "textures/false.json"
+			"url": "audios/questions/bath.mp3",
+			"type": "sound",
+			"name": "bath_mp3"
 		},
 		{
-			"name": "false_png",
-			"type": "image",
-			"url": "textures/false.png"
+			"url": "audios/questions/because.mp3",
+			"type": "sound",
+			"name": "because_mp3"
 		},
 		{
-			"name": "launched_boom_png",
-			"type": "image",
-			"url": "textures/launched_boom.png"
+			"url": "audios/questions/beef.mp3",
+			"type": "sound",
+			"name": "beef_mp3"
 		},
 		{
-			"name": "star_explosion_json",
-			"type": "json",
-			"url": "textures/star_explosion.json"
+			"url": "audios/questions/been.mp3",
+			"type": "sound",
+			"name": "been_mp3"
 		},
 		{
-			"name": "star_explosion_png",
-			"type": "image",
-			"url": "textures/star_explosion.png"
+			"url": "audios/questions/before.mp3",
+			"type": "sound",
+			"name": "before_mp3"
 		},
 		{
-			"name": "false_drop_down_box_png",
-			"type": "image",
-			"url": "textures/false_drop_down_box.png"
+			"url": "audios/questions/better.mp3",
+			"type": "sound",
+			"name": "better_mp3"
 		},
 		{
-			"name": "false_drop_down_box_json",
-			"type": "json",
-			"url": "textures/false_drop_down_box.json"
+			"url": "audios/questions/big.mp3",
+			"type": "sound",
+			"name": "big_mp3"
 		},
 		{
-			"name": "right_drop_down_box_json",
-			"type": "json",
-			"url": "textures/right_drop_down_box.json"
+			"url": "audios/questions/black.mp3",
+			"type": "sound",
+			"name": "black_mp3"
 		},
 		{
-			"name": "right_drop_down_box_png",
-			"type": "image",
-			"url": "textures/right_drop_down_box.png"
+			"url": "audios/questions/blue.mp3",
+			"type": "sound",
+			"name": "blue_mp3"
 		},
 		{
-			"name": "hover_boom_png",
-			"type": "image",
-			"url": "textures/hover_boom.png"
+			"url": "audios/questions/both.mp3",
+			"type": "sound",
+			"name": "both_mp3"
 		},
 		{
-			"name": "blood_strip_20_png",
-			"type": "image",
-			"url": "textures/blood_strip_20.png"
+			"url": "audios/questions/bring.mp3",
+			"type": "sound",
+			"name": "bring_mp3"
 		},
 		{
-			"name": "blood_strip_19_png",
-			"type": "image",
-			"url": "textures/blood_strip_19.png"
+			"url": "audios/questions/brown.mp3",
+			"type": "sound",
+			"name": "brown_mp3"
 		},
 		{
-			"name": "blood_strip_18_png",
-			"type": "image",
-			"url": "textures/blood_strip_18.png"
+			"url": "audios/questions/bus.mp3",
+			"type": "sound",
+			"name": "bus_mp3"
 		},
 		{
-			"name": "blood_strip_17_png",
-			"type": "image",
-			"url": "textures/blood_strip_17.png"
+			"url": "audios/questions/but.mp3",
+			"type": "sound",
+			"name": "but_mp3"
 		},
 		{
-			"name": "blood_strip_16_png",
-			"type": "image",
-			"url": "textures/blood_strip_16.png"
+			"url": "audios/questions/buy.mp3",
+			"type": "sound",
+			"name": "buy_mp3"
 		},
 		{
-			"name": "blood_strip_15_png",
-			"type": "image",
-			"url": "textures/blood_strip_15.png"
+			"url": "audios/questions/call.mp3",
+			"type": "sound",
+			"name": "call_mp3"
 		},
 		{
-			"name": "blood_strip_14_png",
-			"type": "image",
-			"url": "textures/blood_strip_14.png"
+			"url": "audios/questions/came.mp3",
+			"type": "sound",
+			"name": "came_mp3"
 		},
 		{
-			"name": "blood_strip_13_png",
-			"type": "image",
-			"url": "textures/blood_strip_13.png"
+			"url": "audios/questions/can.mp3",
+			"type": "sound",
+			"name": "can_mp3"
 		},
 		{
-			"name": "blood_strip_12_png",
-			"type": "image",
-			"url": "textures/blood_strip_12.png"
+			"url": "audios/questions/carry.mp3",
+			"type": "sound",
+			"name": "carry_mp3"
 		},
 		{
-			"name": "blood_strip_11_png",
-			"type": "image",
-			"url": "textures/blood_strip_11.png"
+			"url": "audios/questions/clean.mp3",
+			"type": "sound",
+			"name": "clean_mp3"
 		},
 		{
-			"name": "blood_strip_10_png",
-			"type": "image",
-			"url": "textures/blood_strip_10.png"
+			"url": "audios/questions/cold.mp3",
+			"type": "sound",
+			"name": "cold_mp3"
 		},
 		{
-			"name": "blood_strip_9_png",
-			"type": "image",
-			"url": "textures/blood_strip_9.png"
+			"url": "audios/questions/come.mp3",
+			"type": "sound",
+			"name": "come_mp3"
 		},
 		{
-			"name": "blood_strip_8_png",
-			"type": "image",
-			"url": "textures/blood_strip_8.png"
+			"url": "audios/questions/could.mp3",
+			"type": "sound",
+			"name": "could_mp3"
 		},
 		{
-			"name": "blood_strip_7_png",
-			"type": "image",
-			"url": "textures/blood_strip_7.png"
+			"url": "audios/questions/cut.mp3",
+			"type": "sound",
+			"name": "cut_mp3"
 		},
 		{
-			"name": "blood_strip_6_png",
-			"type": "image",
-			"url": "textures/blood_strip_6.png"
+			"url": "audios/questions/did.mp3",
+			"type": "sound",
+			"name": "did_mp3"
 		},
 		{
-			"name": "blood_strip_5_png",
-			"type": "image",
-			"url": "textures/blood_strip_5.png"
+			"url": "audios/questions/dirt.mp3",
+			"type": "sound",
+			"name": "dirt_mp3"
 		},
 		{
-			"name": "blood_strip_4_png",
-			"type": "image",
-			"url": "textures/blood_strip_4.png"
+			"url": "audios/questions/do.mp3",
+			"type": "sound",
+			"name": "do_mp3"
 		},
 		{
-			"name": "blood_strip_3_png",
-			"type": "image",
-			"url": "textures/blood_strip_3.png"
+			"url": "audios/questions/does.mp3",
+			"type": "sound",
+			"name": "does_mp3"
 		},
 		{
-			"name": "blood_strip_2_png",
-			"type": "image",
-			"url": "textures/blood_strip_2.png"
+			"url": "audios/questions/dog.mp3",
+			"type": "sound",
+			"name": "dog_mp3"
 		},
 		{
-			"name": "blood_strip_1_png",
-			"type": "image",
-			"url": "textures/blood_strip_1.png"
+			"url": "audios/questions/done.mp3",
+			"type": "sound",
+			"name": "done_mp3"
 		},
 		{
-			"name": "blood_strip_0_png",
-			"type": "image",
-			"url": "textures/blood_strip_0.png"
+			"url": "audios/questions/dont.mp3",
+			"type": "sound",
+			"name": "dont_mp3"
 		},
 		{
-			"name": "smoke_1_png",
-			"type": "image",
-			"url": "textures/smoke_1.png"
+			"url": "audios/questions/down.mp3",
+			"type": "sound",
+			"name": "down_mp3"
 		},
 		{
-			"name": "smoke_2_png",
-			"type": "image",
-			"url": "textures/smoke_2.png"
+			"url": "audios/questions/draw.mp3",
+			"type": "sound",
+			"name": "draw_mp3"
 		},
 		{
-			"name": "hole_png",
-			"type": "image",
-			"url": "textures/hole.png"
+			"url": "audios/questions/drink.mp3",
+			"type": "sound",
+			"name": "drink_mp3"
 		},
 		{
-			"name": "smoke_3_png",
-			"type": "image",
-			"url": "textures/smoke_3.png"
+			"url": "audios/questions/eat.mp3",
+			"type": "sound",
+			"name": "eat_mp3"
 		},
 		{
-			"name": "smoke_4_png",
-			"type": "image",
-			"url": "textures/smoke_4.png"
+			"url": "audios/questions/eight.mp3",
+			"type": "sound",
+			"name": "eight_mp3"
 		},
 		{
-			"name": "smoke_5_png",
-			"type": "image",
-			"url": "textures/smoke_5.png"
+			"url": "audios/questions/every.mp3",
+			"type": "sound",
+			"name": "every_mp3"
 		},
 		{
-			"name": "smoke_6_png",
-			"type": "image",
-			"url": "textures/smoke_6.png"
+			"url": "audios/questions/fact.mp3",
+			"type": "sound",
+			"name": "fact_mp3"
 		},
 		{
-			"name": "smoke_7_png",
-			"type": "image",
-			"url": "textures/smoke_7.png"
+			"url": "audios/questions/fall.mp3",
+			"type": "sound",
+			"name": "fall_mp3"
 		},
 		{
-			"name": "smoke_8_png",
-			"type": "image",
-			"url": "textures/smoke_8.png"
+			"url": "audios/questions/far.mp3",
+			"type": "sound",
+			"name": "far_mp3"
 		},
 		{
-			"name": "smoke_9_png",
-			"type": "image",
-			"url": "textures/smoke_9.png"
+			"url": "audios/questions/find.mp3",
+			"type": "sound",
+			"name": "find_mp3"
 		},
 		{
-			"name": "door_png",
-			"type": "image",
-			"url": "textures/door.png"
+			"url": "audios/questions/first.mp3",
+			"type": "sound",
+			"name": "first_mp3"
 		},
 		{
-			"name": "castle_bottom_png",
-			"type": "image",
-			"url": "textures/castle_bottom.png"
+			"url": "audios/questions/five.mp3",
+			"type": "sound",
+			"name": "five_mp3"
 		},
 		{
-			"name": "arrow_right_svg",
-			"type": "image",
-			"url": "textures/arrow_right.svg"
+			"url": "audios/questions/fly.mp3",
+			"type": "sound",
+			"name": "fly_mp3"
 		},
 		{
-			"name": "smiling_yellow_head_svg",
-			"type": "image",
-			"url": "textures/smiling_yellow_head.svg"
+			"url": "audios/questions/fold.mp3",
+			"type": "sound",
+			"name": "fold_mp3"
+		},
+		{
+			"url": "audios/questions/for.mp3",
+			"type": "sound",
+			"name": "for_mp3"
+		},
+		{
+			"url": "audios/questions/found.mp3",
+			"type": "sound",
+			"name": "found_mp3"
+		},
+		{
+			"url": "audios/questions/four.mp3",
+			"type": "sound",
+			"name": "four_mp3"
+		},
+		{
+			"url": "audios/questions/from.mp3",
+			"type": "sound",
+			"name": "from_mp3"
+		},
+		{
+			"url": "audios/questions/gave.mp3",
+			"type": "sound",
+			"name": "gave_mp3"
+		},
+		{
+			"url": "audios/questions/get.mp3",
+			"type": "sound",
+			"name": "get_mp3"
+		},
+		{
+			"url": "audios/questions/give.mp3",
+			"type": "sound",
+			"name": "give_mp3"
+		},
+		{
+			"url": "audios/questions/go.mp3",
+			"type": "sound",
+			"name": "go_mp3"
+		},
+		{
+			"url": "audios/questions/goal.mp3",
+			"type": "sound",
+			"name": "goal_mp3"
+		},
+		{
+			"url": "audios/questions/going.mp3",
+			"type": "sound",
+			"name": "going_mp3"
+		},
+		{
+			"url": "audios/questions/good.mp3",
+			"type": "sound",
+			"name": "good_mp3"
+		},
+		{
+			"url": "audios/questions/got.mp3",
+			"type": "sound",
+			"name": "got_mp3"
+		},
+		{
+			"url": "audios/questions/green.mp3",
+			"type": "sound",
+			"name": "green_mp3"
+		},
+		{
+			"url": "audios/questions/grow.mp3",
+			"type": "sound",
+			"name": "grow_mp3"
+		},
+		{
+			"url": "audios/questions/had.mp3",
+			"type": "sound",
+			"name": "had_mp3"
+		},
+		{
+			"url": "audios/questions/has.mp3",
+			"type": "sound",
+			"name": "has_mp3"
+		},
+		{
+			"url": "audios/questions/have.mp3",
+			"type": "sound",
+			"name": "have_mp3"
+		},
+		{
+			"url": "audios/questions/he.mp3",
+			"type": "sound",
+			"name": "he_mp3"
+		},
+		{
+			"url": "audios/questions/help.mp3",
+			"type": "sound",
+			"name": "help_mp3"
+		},
+		{
+			"url": "audios/questions/her.mp3",
+			"type": "sound",
+			"name": "her_mp3"
+		},
+		{
+			"url": "audios/questions/here.mp3",
+			"type": "sound",
+			"name": "here_mp3"
+		},
+		{
+			"url": "audios/questions/him.mp3",
+			"type": "sound",
+			"name": "him_mp3"
+		},
+		{
+			"url": "audios/questions/his.mp3",
+			"type": "sound",
+			"name": "his_mp3"
+		},
+		{
+			"url": "audios/questions/hold.mp3",
+			"type": "sound",
+			"name": "hold_mp3"
+		},
+		{
+			"url": "audios/questions/hurt.mp3",
+			"type": "sound",
+			"name": "hurt_mp3"
+		},
+		{
+			"url": "audios/questions/I.mp3",
+			"type": "sound",
+			"name": "I_mp3"
+		},
+		{
+			"url": "audios/questions/if.mp3",
+			"type": "sound",
+			"name": "if_mp3"
+		},
+		{
+			"url": "audios/questions/its.mp3",
+			"type": "sound",
+			"name": "its_mp3"
+		},
+		{
+			"url": "audios/questions/jug.mp3",
+			"type": "sound",
+			"name": "jug_mp3"
+		},
+		{
+			"url": "audios/questions/keep.mp3",
+			"type": "sound",
+			"name": "keep_mp3"
+		},
+		{
+			"url": "audios/questions/kind.mp3",
+			"type": "sound",
+			"name": "kind_mp3"
+		},
+		{
+			"url": "audios/questions/laugh.mp3",
+			"type": "sound",
+			"name": "laugh_mp3"
+		},
+		{
+			"url": "audios/questions/let.mp3",
+			"type": "sound",
+			"name": "let_mp3"
+		},
+		{
+			"url": "audios/questions/life.mp3",
+			"type": "sound",
+			"name": "life_mp3"
+		},
+		{
+			"url": "audios/questions/like.mp3",
+			"type": "sound",
+			"name": "like_mp3"
+		},
+		{
+			"url": "audios/questions/little.mp3",
+			"type": "sound",
+			"name": "little_mp3"
+		},
+		{
+			"url": "audios/questions/live.mp3",
+			"type": "sound",
+			"name": "live_mp3"
+		},
+		{
+			"url": "audios/questions/long.mp3",
+			"type": "sound",
+			"name": "long_mp3"
+		},
+		{
+			"url": "audios/questions/look.mp3",
+			"type": "sound",
+			"name": "look_mp3"
+		},
+		{
+			"url": "audios/questions/made.mp3",
+			"type": "sound",
+			"name": "made_mp3"
+		},
+		{
+			"url": "audios/questions/make.mp3",
+			"type": "sound",
+			"name": "make_mp3"
+		},
+		{
+			"url": "audios/questions/many.mp3",
+			"type": "sound",
+			"name": "many_mp3"
+		},
+		{
+			"url": "audios/questions/mark.mp3",
+			"type": "sound",
+			"name": "mark_mp3"
+		},
+		{
+			"url": "audios/questions/may.mp3",
+			"type": "sound",
+			"name": "may_mp3"
+		},
+		{
+			"url": "audios/questions/me.mp3",
+			"type": "sound",
+			"name": "me_mp3"
+		},
+		{
+			"url": "audios/questions/much.mp3",
+			"type": "sound",
+			"name": "much_mp3"
+		},
+		{
+			"url": "audios/questions/my.mp3",
+			"type": "sound",
+			"name": "my_mp3"
+		},
+		{
+			"url": "audios/questions/myself.mp3",
+			"type": "sound",
+			"name": "myself_mp3"
+		},
+		{
+			"url": "audios/questions/never.mp3",
+			"type": "sound",
+			"name": "never_mp3"
+		},
+		{
+			"url": "audios/questions/new.mp3",
+			"type": "sound",
+			"name": "new_mp3"
+		},
+		{
+			"url": "audios/questions/no.mp3",
+			"type": "sound",
+			"name": "no_mp3"
+		},
+		{
+			"url": "audios/questions/not.mp3",
+			"type": "sound",
+			"name": "not_mp3"
+		},
+		{
+			"url": "audios/questions/now.mp3",
+			"type": "sound",
+			"name": "now_mp3"
+		},
+		{
+			"url": "audios/questions/of.mp3",
+			"type": "sound",
+			"name": "of_mp3"
+		},
+		{
+			"url": "audios/questions/off.mp3",
+			"type": "sound",
+			"name": "off_mp3"
+		},
+		{
+			"url": "audios/questions/old.mp3",
+			"type": "sound",
+			"name": "old_mp3"
+		},
+		{
+			"url": "audios/questions/on.mp3",
+			"type": "sound",
+			"name": "on_mp3"
+		},
+		{
+			"url": "audios/questions/one.mp3",
+			"type": "sound",
+			"name": "one_mp3"
+		},
+		{
+			"url": "audios/questions/only.mp3",
+			"type": "sound",
+			"name": "only_mp3"
+		},
+		{
+			"url": "audios/questions/open.mp3",
+			"type": "sound",
+			"name": "open_mp3"
+		},
+		{
+			"url": "audios/questions/or.mp3",
+			"type": "sound",
+			"name": "or_mp3"
+		},
+		{
+			"url": "audios/questions/out.mp3",
+			"type": "sound",
+			"name": "out_mp3"
+		},
+		{
+			"url": "audios/questions/over.mp3",
+			"type": "sound",
+			"name": "over_mp3"
+		},
+		{
+			"url": "audios/questions/own.mp3",
+			"type": "sound",
+			"name": "own_mp3"
+		},
+		{
+			"url": "audios/questions/pick.mp3",
+			"type": "sound",
+			"name": "pick_mp3"
+		},
+		{
+			"url": "audios/questions/play.mp3",
+			"type": "sound",
+			"name": "play_mp3"
+		},
+		{
+			"url": "audios/questions/please.mp3",
+			"type": "sound",
+			"name": "please_mp3"
+		},
+		{
+			"url": "audios/questions/pretty.mp3",
+			"type": "sound",
+			"name": "pretty_mp3"
+		},
+		{
+			"url": "audios/questions/pull.mp3",
+			"type": "sound",
+			"name": "pull_mp3"
+		},
+		{
+			"url": "audios/questions/put.mp3",
+			"type": "sound",
+			"name": "put_mp3"
+		},
+		{
+			"url": "audios/questions/ran.mp3",
+			"type": "sound",
+			"name": "ran_mp3"
+		},
+		{
+			"url": "audios/questions/read.mp3",
+			"type": "sound",
+			"name": "read_mp3"
+		},
+		{
+			"url": "audios/questions/red.mp3",
+			"type": "sound",
+			"name": "red_mp3"
+		},
+		{
+			"url": "audios/questions/ride.mp3",
+			"type": "sound",
+			"name": "ride_mp3"
+		},
+		{
+			"url": "audios/questions/right.mp3",
+			"type": "sound",
+			"name": "right_mp3"
+		},
+		{
+			"url": "audios/questions/round.mp3",
+			"type": "sound",
+			"name": "round_mp3"
+		},
+		{
+			"url": "audios/questions/run.mp3",
+			"type": "sound",
+			"name": "run_mp3"
+		},
+		{
+			"url": "audios/questions/sad.mp3",
+			"type": "sound",
+			"name": "sad_mp3"
+		},
+		{
+			"url": "audios/questions/saw.mp3",
+			"type": "sound",
+			"name": "saw_mp3"
+		},
+		{
+			"url": "audios/questions/say.mp3",
+			"type": "sound",
+			"name": "say_mp3"
+		},
+		{
+			"url": "audios/questions/see.mp3",
+			"type": "sound",
+			"name": "see_mp3"
+		},
+		{
+			"url": "audios/questions/seven.mp3",
+			"type": "sound",
+			"name": "seven_mp3"
+		},
+		{
+			"url": "audios/questions/she.mp3",
+			"type": "sound",
+			"name": "she_mp3"
+		},
+		{
+			"url": "audios/questions/shell.mp3",
+			"type": "sound",
+			"name": "shell_mp3"
+		},
+		{
+			"url": "audios/questions/show.mp3",
+			"type": "sound",
+			"name": "show_mp3"
+		},
+		{
+			"url": "audios/questions/sing.mp3",
+			"type": "sound",
+			"name": "sing_mp3"
+		},
+		{
+			"url": "audios/questions/sleep.mp3",
+			"type": "sound",
+			"name": "sleep_mp3"
+		},
+		{
+			"url": "audios/questions/small.mp3",
+			"type": "sound",
+			"name": "small_mp3"
+		},
+		{
+			"url": "audios/questions/so.mp3",
+			"type": "sound",
+			"name": "so_mp3"
+		},
+		{
+			"url": "audios/questions/soon.mp3",
+			"type": "sound",
+			"name": "soon_mp3"
+		},
+		{
+			"url": "audios/questions/sum.mp3",
+			"type": "sound",
+			"name": "sum_mp3"
+		},
+		{
+			"url": "audios/questions/sunny.mp3",
+			"type": "sound",
+			"name": "sunny_mp3"
+		},
+		{
+			"url": "audios/questions/take.mp3",
+			"type": "sound",
+			"name": "take_mp3"
+		},
+		{
+			"url": "audios/questions/tell.mp3",
+			"type": "sound",
+			"name": "tell_mp3"
+		},
+		{
+			"url": "audios/questions/ten.mp3",
+			"type": "sound",
+			"name": "ten_mp3"
+		},
+		{
+			"url": "audios/questions/thank.mp3",
+			"type": "sound",
+			"name": "thank_mp3"
+		},
+		{
+			"url": "audios/questions/that.mp3",
+			"type": "sound",
+			"name": "that_mp3"
+		},
+		{
+			"url": "audios/questions/the.mp3",
+			"type": "sound",
+			"name": "the_mp3"
+		},
+		{
+			"url": "audios/questions/them.mp3",
+			"type": "sound",
+			"name": "them_mp3"
+		},
+		{
+			"url": "audios/questions/then.mp3",
+			"type": "sound",
+			"name": "then_mp3"
+		},
+		{
+			"url": "audios/questions/there.mp3",
+			"type": "sound",
+			"name": "there_mp3"
+		},
+		{
+			"url": "audios/questions/these.mp3",
+			"type": "sound",
+			"name": "these_mp3"
+		},
+		{
+			"url": "audios/questions/they.mp3",
+			"type": "sound",
+			"name": "they_mp3"
+		},
+		{
+			"url": "audios/questions/think.mp3",
+			"type": "sound",
+			"name": "think_mp3"
+		},
+		{
+			"url": "audios/questions/this.mp3",
+			"type": "sound",
+			"name": "this_mp3"
+		},
+		{
+			"url": "audios/questions/though.mp3",
+			"type": "sound",
+			"name": "though_mp3"
+		},
+		{
+			"url": "audios/questions/three.mp3",
+			"type": "sound",
+			"name": "three_mp3"
+		},
+		{
+			"url": "audios/questions/to.mp3",
+			"type": "sound",
+			"name": "to_mp3"
+		},
+		{
+			"url": "audios/questions/today.mp3",
+			"type": "sound",
+			"name": "today_mp3"
+		},
+		{
+			"url": "audios/questions/together.mp3",
+			"type": "sound",
+			"name": "together_mp3"
+		},
+		{
+			"url": "audios/questions/too.mp3",
+			"type": "sound",
+			"name": "too_mp3"
+		},
+		{
+			"url": "audios/questions/try.mp3",
+			"type": "sound",
+			"name": "try_mp3"
+		},
+		{
+			"url": "audios/questions/two.mp3",
+			"type": "sound",
+			"name": "two_mp3"
+		},
+		{
+			"url": "audios/questions/under.mp3",
+			"type": "sound",
+			"name": "under_mp3"
+		},
+		{
+			"url": "audios/questions/up.mp3",
+			"type": "sound",
+			"name": "up_mp3"
+		},
+		{
+			"url": "audios/questions/upon.mp3",
+			"type": "sound",
+			"name": "upon_mp3"
+		},
+		{
+			"url": "audios/questions/very.mp3",
+			"type": "sound",
+			"name": "very_mp3"
+		},
+		{
+			"url": "audios/questions/walk.mp3",
+			"type": "sound",
+			"name": "walk_mp3"
+		},
+		{
+			"url": "audios/questions/was.mp3",
+			"type": "sound",
+			"name": "was_mp3"
+		},
+		{
+			"url": "audios/questions/wash.mp3",
+			"type": "sound",
+			"name": "wash_mp3"
+		},
+		{
+			"url": "audios/questions/we.mp3",
+			"type": "sound",
+			"name": "we_mp3"
+		},
+		{
+			"url": "audios/questions/well.mp3",
+			"type": "sound",
+			"name": "well_mp3"
+		},
+		{
+			"url": "audios/questions/went.mp3",
+			"type": "sound",
+			"name": "went_mp3"
+		},
+		{
+			"url": "audios/questions/were.mp3",
+			"type": "sound",
+			"name": "were_mp3"
+		},
+		{
+			"url": "audios/questions/what.mp3",
+			"type": "sound",
+			"name": "what_mp3"
+		},
+		{
+			"url": "audios/questions/when.mp3",
+			"type": "sound",
+			"name": "when_mp3"
+		},
+		{
+			"url": "audios/questions/where.mp3",
+			"type": "sound",
+			"name": "where_mp3"
+		},
+		{
+			"url": "audios/questions/which.mp3",
+			"type": "sound",
+			"name": "which_mp3"
+		},
+		{
+			"url": "audios/questions/white.mp3",
+			"type": "sound",
+			"name": "white_mp3"
+		},
+		{
+			"url": "audios/questions/who.mp3",
+			"type": "sound",
+			"name": "who_mp3"
+		},
+		{
+			"url": "audios/questions/why.mp3",
+			"type": "sound",
+			"name": "why_mp3"
+		},
+		{
+			"url": "audios/questions/will.mp3",
+			"type": "sound",
+			"name": "will_mp3"
+		},
+		{
+			"url": "audios/questions/wish.mp3",
+			"type": "sound",
+			"name": "wish_mp3"
+		},
+		{
+			"url": "audios/questions/with.mp3",
+			"type": "sound",
+			"name": "with_mp3"
+		},
+		{
+			"url": "audios/questions/wood.mp3",
+			"type": "sound",
+			"name": "wood_mp3"
+		},
+		{
+			"url": "audios/questions/wore.mp3",
+			"type": "sound",
+			"name": "wore_mp3"
+		},
+		{
+			"url": "audios/questions/work.mp3",
+			"type": "sound",
+			"name": "work_mp3"
+		},
+		{
+			"url": "audios/questions/yellow.mp3",
+			"type": "sound",
+			"name": "yellow_mp3"
+		},
+		{
+			"url": "audios/questions/yes.mp3",
+			"type": "sound",
+			"name": "yes_mp3"
+		},
+		{
+			"url": "audios/questions/you.mp3",
+			"type": "sound",
+			"name": "you_mp3"
+		},
+		{
+			"url": "audios/questions/your.mp3",
+			"type": "sound",
+			"name": "your_mp3"
 		},
 		{
 			"name": "pum_mp3",
@@ -427,1204 +1572,9 @@
 			"url": "audios/pum.mp3"
 		},
 		{
-			"name": "kacha_mp3",
-			"type": "sound",
-			"url": "audios/kacha.mp3"
-		},
-		{
 			"name": "diao_mp3",
 			"type": "sound",
 			"url": "audios/diao.mp3"
-		},
-		{
-			"name": "congratulation_mp3",
-			"type": "sound",
-			"url": "audios/congratulation.mp3"
-		},
-		{
-			"name": "a_mp3",
-			"type": "sound",
-			"url": "audios/a.mp3"
-		},
-		{
-			"name": "about_mp3",
-			"type": "sound",
-			"url": "audios/about.mp3"
-		},
-		{
-			"name": "add_mp3",
-			"type": "sound",
-			"url": "audios/add.mp3"
-		},
-		{
-			"name": "after_mp3",
-			"type": "sound",
-			"url": "audios/after.mp3"
-		},
-		{
-			"name": "again_mp3",
-			"type": "sound",
-			"url": "audios/again.mp3"
-		},
-		{
-			"name": "all_mp3",
-			"type": "sound",
-			"url": "audios/all.mp3"
-		},
-		{
-			"name": "always_mp3",
-			"type": "sound",
-			"url": "audios/always.mp3"
-		},
-		{
-			"name": "am_mp3",
-			"type": "sound",
-			"url": "audios/am.mp3"
-		},
-		{
-			"name": "an_mp3",
-			"type": "sound",
-			"url": "audios/an.mp3"
-		},
-		{
-			"name": "and_mp3",
-			"type": "sound",
-			"url": "audios/and.mp3"
-		},
-		{
-			"name": "any_mp3",
-			"type": "sound",
-			"url": "audios/any.mp3"
-		},
-		{
-			"name": "app_mp3",
-			"type": "sound",
-			"url": "audios/app.mp3"
-		},
-		{
-			"name": "appoint_mp3",
-			"type": "sound",
-			"url": "audios/appoint.mp3"
-		},
-		{
-			"name": "around_mp3",
-			"type": "sound",
-			"url": "audios/around.mp3"
-		},
-		{
-			"name": "as_mp3",
-			"type": "sound",
-			"url": "audios/as.mp3"
-		},
-		{
-			"name": "ate_mp3",
-			"type": "sound",
-			"url": "audios/ate.mp3"
-		},
-		{
-			"name": "away_mp3",
-			"type": "sound",
-			"url": "audios/away.mp3"
-		},
-		{
-			"name": "bath_mp3",
-			"type": "sound",
-			"url": "audios/bath.mp3"
-		},
-		{
-			"name": "because_mp3",
-			"type": "sound",
-			"url": "audios/because.mp3"
-		},
-		{
-			"name": "bee_mp3",
-			"type": "sound",
-			"url": "audios/bee.mp3"
-		},
-		{
-			"name": "before_mp3",
-			"type": "sound",
-			"url": "audios/before.mp3"
-		},
-		{
-			"name": "better_mp3",
-			"type": "sound",
-			"url": "audios/better.mp3"
-		},
-		{
-			"name": "big_mp3",
-			"type": "sound",
-			"url": "audios/big.mp3"
-		},
-		{
-			"name": "black_mp3",
-			"type": "sound",
-			"url": "audios/black.mp3"
-		},
-		{
-			"name": "blue_mp3",
-			"type": "sound",
-			"url": "audios/blue.mp3"
-		},
-		{
-			"name": "both_mp3",
-			"type": "sound",
-			"url": "audios/both.mp3"
-		},
-		{
-			"name": "brain_mp3",
-			"type": "sound",
-			"url": "audios/brain.mp3"
-		},
-		{
-			"name": "brown_mp3",
-			"type": "sound",
-			"url": "audios/brown.mp3"
-		},
-		{
-			"name": "but_mp3",
-			"type": "sound",
-			"url": "audios/but.mp3"
-		},
-		{
-			"name": "call_mp3",
-			"type": "sound",
-			"url": "audios/call.mp3"
-		},
-		{
-			"name": "came_mp3",
-			"type": "sound",
-			"url": "audios/came.mp3"
-		},
-		{
-			"name": "can_mp3",
-			"type": "sound",
-			"url": "audios/can.mp3"
-		},
-		{
-			"name": "carry_mp3",
-			"type": "sound",
-			"url": "audios/carry.mp3"
-		},
-		{
-			"name": "clean_mp3",
-			"type": "sound",
-			"url": "audios/clean.mp3"
-		},
-		{
-			"name": "cold_mp3",
-			"type": "sound",
-			"url": "audios/cold.mp3"
-		},
-		{
-			"name": "come_mp3",
-			"type": "sound",
-			"url": "audios/come.mp3"
-		},
-		{
-			"name": "could_mp3",
-			"type": "sound",
-			"url": "audios/could.mp3"
-		},
-		{
-			"name": "cut_mp3",
-			"type": "sound",
-			"url": "audios/cut.mp3"
-		},
-		{
-			"name": "did_mp3",
-			"type": "sound",
-			"url": "audios/did.mp3"
-		},
-		{
-			"name": "does_mp3",
-			"type": "sound",
-			"url": "audios/does.mp3"
-		},
-		{
-			"name": "down_mp3",
-			"type": "sound",
-			"url": "audios/down.mp3"
-		},
-		{
-			"name": "draw_mp3",
-			"type": "sound",
-			"url": "audios/draw.mp3"
-		},
-		{
-			"name": "drink_mp3",
-			"type": "sound",
-			"url": "audios/drink.mp3"
-		},
-		{
-			"name": "eat_mp3",
-			"type": "sound",
-			"url": "audios/eat.mp3"
-		},
-		{
-			"name": "eight_mp3",
-			"type": "sound",
-			"url": "audios/eight.mp3"
-		},
-		{
-			"name": "every_mp3",
-			"type": "sound",
-			"url": "audios/every.mp3"
-		},
-		{
-			"name": "fair_mp3",
-			"type": "sound",
-			"url": "audios/fair.mp3"
-		},
-		{
-			"name": "fall (2)_mp3",
-			"type": "sound",
-			"url": "audios/fall (2).mp3"
-		},
-		{
-			"name": "fall_mp3",
-			"type": "sound",
-			"url": "audios/fall.mp3"
-		},
-		{
-			"name": "far_mp3",
-			"type": "sound",
-			"url": "audios/far.mp3"
-		},
-		{
-			"name": "fast_mp3",
-			"type": "sound",
-			"url": "audios/fast.mp3"
-		},
-		{
-			"name": "film_mp3",
-			"type": "sound",
-			"url": "audios/film.mp3"
-		},
-		{
-			"name": "film(2)_mp3",
-			"type": "sound",
-			"url": "audios/film(2).mp3"
-		},
-		{
-			"name": "fine_mp3",
-			"type": "sound",
-			"url": "audios/fine.mp3"
-		},
-		{
-			"name": "first_mp3",
-			"type": "sound",
-			"url": "audios/first.mp3"
-		},
-		{
-			"name": "five 2_mp3",
-			"type": "sound",
-			"url": "audios/five 2.mp3"
-		},
-		{
-			"name": "five 3_mp3",
-			"type": "sound",
-			"url": "audios/five 3.mp3"
-		},
-		{
-			"name": "five_mp3",
-			"type": "sound",
-			"url": "audios/five.mp3"
-		},
-		{
-			"name": "fly_mp3",
-			"type": "sound",
-			"url": "audios/fly.mp3"
-		},
-		{
-			"name": "form_mp3",
-			"type": "sound",
-			"url": "audios/form.mp3"
-		},
-		{
-			"name": "found_mp3",
-			"type": "sound",
-			"url": "audios/found.mp3"
-		},
-		{
-			"name": "four_mp3",
-			"type": "sound",
-			"url": "audios/four.mp3"
-		},
-		{
-			"name": "four(2)_mp3",
-			"type": "sound",
-			"url": "audios/four(2).mp3"
-		},
-		{
-			"name": "from_mp3",
-			"type": "sound",
-			"url": "audios/from.mp3"
-		},
-		{
-			"name": "gave_mp3",
-			"type": "sound",
-			"url": "audios/gave.mp3"
-		},
-		{
-			"name": "get_mp3",
-			"type": "sound",
-			"url": "audios/get.mp3"
-		},
-		{
-			"name": "give_mp3",
-			"type": "sound",
-			"url": "audios/give.mp3"
-		},
-		{
-			"name": "go_mp3",
-			"type": "sound",
-			"url": "audios/go.mp3"
-		},
-		{
-			"name": "goal_mp3",
-			"type": "sound",
-			"url": "audios/goal.mp3"
-		},
-		{
-			"name": "god_mp3",
-			"type": "sound",
-			"url": "audios/god.mp3"
-		},
-		{
-			"name": "going_mp3",
-			"type": "sound",
-			"url": "audios/going.mp3"
-		},
-		{
-			"name": "goo_mp3",
-			"type": "sound",
-			"url": "audios/goo.mp3"
-		},
-		{
-			"name": "good_mp3",
-			"type": "sound",
-			"url": "audios/good.mp3"
-		},
-		{
-			"name": "green_mp3",
-			"type": "sound",
-			"url": "audios/green.mp3"
-		},
-		{
-			"name": "grow_mp3",
-			"type": "sound",
-			"url": "audios/grow.mp3"
-		},
-		{
-			"name": "guilt_mp3",
-			"type": "sound",
-			"url": "audios/guilt.mp3"
-		},
-		{
-			"name": "gun_mp3",
-			"type": "sound",
-			"url": "audios/gun.mp3"
-		},
-		{
-			"name": "had_mp3",
-			"type": "sound",
-			"url": "audios/had.mp3"
-		},
-		{
-			"name": "has_mp3",
-			"type": "sound",
-			"url": "audios/has.mp3"
-		},
-		{
-			"name": "have_mp3",
-			"type": "sound",
-			"url": "audios/have.mp3"
-		},
-		{
-			"name": "he_mp3",
-			"type": "sound",
-			"url": "audios/he.mp3"
-		},
-		{
-			"name": "hear_mp3",
-			"type": "sound",
-			"url": "audios/hear.mp3"
-		},
-		{
-			"name": "heard_mp3",
-			"type": "sound",
-			"url": "audios/heard.mp3"
-		},
-		{
-			"name": "help_mp3",
-			"type": "sound",
-			"url": "audios/help.mp3"
-		},
-		{
-			"name": "her_mp3",
-			"type": "sound",
-			"url": "audios/her.mp3"
-		},
-		{
-			"name": "him_mp3",
-			"type": "sound",
-			"url": "audios/him.mp3"
-		},
-		{
-			"name": "his_mp3",
-			"type": "sound",
-			"url": "audios/his.mp3"
-		},
-		{
-			"name": "hold_mp3",
-			"type": "sound",
-			"url": "audios/hold.mp3"
-		},
-		{
-			"name": "hot_mp3",
-			"type": "sound",
-			"url": "audios/hot.mp3"
-		},
-		{
-			"name": "hour_mp3",
-			"type": "sound",
-			"url": "audios/hour.mp3"
-		},
-		{
-			"name": "how_mp3",
-			"type": "sound",
-			"url": "audios/how.mp3"
-		},
-		{
-			"name": "i_mp3",
-			"type": "sound",
-			"url": "audios/i.mp3"
-		},
-		{
-			"name": "in_mp3",
-			"type": "sound",
-			"url": "audios/in.mp3"
-		},
-		{
-			"name": "into_mp3",
-			"type": "sound",
-			"url": "audios/into.mp3"
-		},
-		{
-			"name": "is (2)_mp3",
-			"type": "sound",
-			"url": "audios/is (2).mp3"
-		},
-		{
-			"name": "is_mp3",
-			"type": "sound",
-			"url": "audios/is.mp3"
-		},
-		{
-			"name": "is(3)_mp3",
-			"type": "sound",
-			"url": "audios/is(3).mp3"
-		},
-		{
-			"name": "it_mp3",
-			"type": "sound",
-			"url": "audios/it.mp3"
-		},
-		{
-			"name": "jump_mp3",
-			"type": "sound",
-			"url": "audios/jump.mp3"
-		},
-		{
-			"name": "just_mp3",
-			"type": "sound",
-			"url": "audios/just.mp3"
-		},
-		{
-			"name": "keep_mp3",
-			"type": "sound",
-			"url": "audios/keep.mp3"
-		},
-		{
-			"name": "kind_mp3",
-			"type": "sound",
-			"url": "audios/kind.mp3"
-		},
-		{
-			"name": "lab_mp3",
-			"type": "sound",
-			"url": "audios/lab.mp3"
-		},
-		{
-			"name": "left_mp3",
-			"type": "sound",
-			"url": "audios/left.mp3"
-		},
-		{
-			"name": "light_mp3",
-			"type": "sound",
-			"url": "audios/light.mp3"
-		},
-		{
-			"name": "like_mp3",
-			"type": "sound",
-			"url": "audios/like.mp3"
-		},
-		{
-			"name": "little_mp3",
-			"type": "sound",
-			"url": "audios/little.mp3"
-		},
-		{
-			"name": "live_mp3",
-			"type": "sound",
-			"url": "audios/live.mp3"
-		},
-		{
-			"name": "long_mp3",
-			"type": "sound",
-			"url": "audios/long.mp3"
-		},
-		{
-			"name": "look_mp3",
-			"type": "sound",
-			"url": "audios/look.mp3"
-		},
-		{
-			"name": "made_mp3",
-			"type": "sound",
-			"url": "audios/made.mp3"
-		},
-		{
-			"name": "make_mp3",
-			"type": "sound",
-			"url": "audios/make.mp3"
-		},
-		{
-			"name": "male_mp3",
-			"type": "sound",
-			"url": "audios/male.mp3"
-		},
-		{
-			"name": "many_mp3",
-			"type": "sound",
-			"url": "audios/many.mp3"
-		},
-		{
-			"name": "may_mp3",
-			"type": "sound",
-			"url": "audios/may.mp3"
-		},
-		{
-			"name": "me_mp3",
-			"type": "sound",
-			"url": "audios/me.mp3"
-		},
-		{
-			"name": "mime_mp3",
-			"type": "sound",
-			"url": "audios/mime.mp3"
-		},
-		{
-			"name": "much_mp3",
-			"type": "sound",
-			"url": "audios/much.mp3"
-		},
-		{
-			"name": "myself_mp3",
-			"type": "sound",
-			"url": "audios/myself.mp3"
-		},
-		{
-			"name": "never_mp3",
-			"type": "sound",
-			"url": "audios/never.mp3"
-		},
-		{
-			"name": "new_mp3",
-			"type": "sound",
-			"url": "audios/new.mp3"
-		},
-		{
-			"name": "no_mp3",
-			"type": "sound",
-			"url": "audios/no.mp3"
-		},
-		{
-			"name": "no(2)_mp3",
-			"type": "sound",
-			"url": "audios/no(2).mp3"
-		},
-		{
-			"name": "not_mp3",
-			"type": "sound",
-			"url": "audios/not.mp3"
-		},
-		{
-			"name": "nut_mp3",
-			"type": "sound",
-			"url": "audios/nut.mp3"
-		},
-		{
-			"name": "of_mp3",
-			"type": "sound",
-			"url": "audios/of.mp3"
-		},
-		{
-			"name": "off_mp3",
-			"type": "sound",
-			"url": "audios/off.mp3"
-		},
-		{
-			"name": "old_mp3",
-			"type": "sound",
-			"url": "audios/old.mp3"
-		},
-		{
-			"name": "on_mp3",
-			"type": "sound",
-			"url": "audios/on.mp3"
-		},
-		{
-			"name": "one_mp3",
-			"type": "sound",
-			"url": "audios/one.mp3"
-		},
-		{
-			"name": "only_mp3",
-			"type": "sound",
-			"url": "audios/only.mp3"
-		},
-		{
-			"name": "open_mp3",
-			"type": "sound",
-			"url": "audios/open.mp3"
-		},
-		{
-			"name": "or_mp3",
-			"type": "sound",
-			"url": "audios/or.mp3"
-		},
-		{
-			"name": "our_mp3",
-			"type": "sound",
-			"url": "audios/our.mp3"
-		},
-		{
-			"name": "out_mp3",
-			"type": "sound",
-			"url": "audios/out.mp3"
-		},
-		{
-			"name": "over_mp3",
-			"type": "sound",
-			"url": "audios/over.mp3"
-		},
-		{
-			"name": "pick_mp3",
-			"type": "sound",
-			"url": "audios/pick.mp3"
-		},
-		{
-			"name": "play_mp3",
-			"type": "sound",
-			"url": "audios/play.mp3"
-		},
-		{
-			"name": "please_mp3",
-			"type": "sound",
-			"url": "audios/please.mp3"
-		},
-		{
-			"name": "pretty_mp3",
-			"type": "sound",
-			"url": "audios/pretty.mp3"
-		},
-		{
-			"name": "pull_mp3",
-			"type": "sound",
-			"url": "audios/pull.mp3"
-		},
-		{
-			"name": "put_mp3",
-			"type": "sound",
-			"url": "audios/put.mp3"
-		},
-		{
-			"name": "ran_mp3",
-			"type": "sound",
-			"url": "audios/ran.mp3"
-		},
-		{
-			"name": "read_mp3",
-			"type": "sound",
-			"url": "audios/read.mp3"
-		},
-		{
-			"name": "red_mp3",
-			"type": "sound",
-			"url": "audios/red.mp3"
-		},
-		{
-			"name": "ride_mp3",
-			"type": "sound",
-			"url": "audios/ride.mp3"
-		},
-		{
-			"name": "right_mp3",
-			"type": "sound",
-			"url": "audios/right.mp3"
-		},
-		{
-			"name": "round_mp3",
-			"type": "sound",
-			"url": "audios/round.mp3"
-		},
-		{
-			"name": "run_mp3",
-			"type": "sound",
-			"url": "audios/run.mp3"
-		},
-		{
-			"name": "say_mp3",
-			"type": "sound",
-			"url": "audios/say.mp3"
-		},
-		{
-			"name": "see_mp3",
-			"type": "sound",
-			"url": "audios/see.mp3"
-		},
-		{
-			"name": "seven_mp3",
-			"type": "sound",
-			"url": "audios/seven.mp3"
-		},
-		{
-			"name": "shall_mp3",
-			"type": "sound",
-			"url": "audios/shall.mp3"
-		},
-		{
-			"name": "she_mp3",
-			"type": "sound",
-			"url": "audios/she.mp3"
-		},
-		{
-			"name": "show_mp3",
-			"type": "sound",
-			"url": "audios/show.mp3"
-		},
-		{
-			"name": "sick_mp3",
-			"type": "sound",
-			"url": "audios/sick.mp3"
-		},
-		{
-			"name": "sing_mp3",
-			"type": "sound",
-			"url": "audios/sing.mp3"
-		},
-		{
-			"name": "sit_mp3",
-			"type": "sound",
-			"url": "audios/sit.mp3"
-		},
-		{
-			"name": "sleep_mp3",
-			"type": "sound",
-			"url": "audios/sleep.mp3"
-		},
-		{
-			"name": "small_mp3",
-			"type": "sound",
-			"url": "audios/small.mp3"
-		},
-		{
-			"name": "so_mp3",
-			"type": "sound",
-			"url": "audios/so.mp3"
-		},
-		{
-			"name": "some_mp3",
-			"type": "sound",
-			"url": "audios/some.mp3"
-		},
-		{
-			"name": "sound_effect_dindum_mp3",
-			"type": "sound",
-			"url": "audios/sound_effect_dindum.mp3"
-		},
-		{
-			"name": "sound_effect_jiu_mp3",
-			"type": "sound",
-			"url": "audios/sound_effect_jiu.mp3"
-		},
-		{
-			"name": "sound_effect_ling_mp3",
-			"type": "sound",
-			"url": "audios/sound_effect_ling.mp3"
-		},
-		{
-			"name": "sound_effect_kacha_mp3",
-			"type": "sound",
-			"url": "audios/sound_effect_kacha.mp3"
-		},
-		{
-			"name": "sound_effect_win_mp3",
-			"type": "sound",
-			"url": "audios/sound_effect_win.mp3"
-		},
-		{
-			"name": "start_mp3",
-			"type": "sound",
-			"url": "audios/start.mp3"
-		},
-		{
-			"name": "stop_mp3",
-			"type": "sound",
-			"url": "audios/stop.mp3"
-		},
-		{
-			"name": "take_mp3",
-			"type": "sound",
-			"url": "audios/take.mp3"
-		},
-		{
-			"name": "sunny_mp3",
-			"type": "sound",
-			"url": "audios/sunny.mp3"
-		},
-		{
-			"name": "tell_mp3",
-			"type": "sound",
-			"url": "audios/tell.mp3"
-		},
-		{
-			"name": "ten_mp3",
-			"type": "sound",
-			"url": "audios/ten.mp3"
-		},
-		{
-			"name": "thank_mp3",
-			"type": "sound",
-			"url": "audios/thank.mp3"
-		},
-		{
-			"name": "that_mp3",
-			"type": "sound",
-			"url": "audios/that.mp3"
-		},
-		{
-			"name": "the_mp3",
-			"type": "sound",
-			"url": "audios/the.mp3"
-		},
-		{
-			"name": "them_mp3",
-			"type": "sound",
-			"url": "audios/them.mp3"
-		},
-		{
-			"name": "then_mp3",
-			"type": "sound",
-			"url": "audios/then.mp3"
-		},
-		{
-			"name": "there_mp3",
-			"type": "sound",
-			"url": "audios/there.mp3"
-		},
-		{
-			"name": "these_mp3",
-			"type": "sound",
-			"url": "audios/these.mp3"
-		},
-		{
-			"name": "they_mp3",
-			"type": "sound",
-			"url": "audios/they.mp3"
-		},
-		{
-			"name": "thin_mp3",
-			"type": "sound",
-			"url": "audios/thin.mp3"
-		},
-		{
-			"name": "think_mp3",
-			"type": "sound",
-			"url": "audios/think.mp3"
-		},
-		{
-			"name": "this_mp3",
-			"type": "sound",
-			"url": "audios/this.mp3"
-		},
-		{
-			"name": "though_mp3",
-			"type": "sound",
-			"url": "audios/though.mp3"
-		},
-		{
-			"name": "three_mp3",
-			"type": "sound",
-			"url": "audios/three.mp3"
-		},
-		{
-			"name": "to_mp3",
-			"type": "sound",
-			"url": "audios/to.mp3"
-		},
-		{
-			"name": "together_mp3",
-			"type": "sound",
-			"url": "audios/together.mp3"
-		},
-		{
-			"name": "too_mp3",
-			"type": "sound",
-			"url": "audios/too.mp3"
-		},
-		{
-			"name": "topday_mp3",
-			"type": "sound",
-			"url": "audios/topday.mp3"
-		},
-		{
-			"name": "try_mp3",
-			"type": "sound",
-			"url": "audios/try.mp3"
-		},
-		{
-			"name": "two_mp3",
-			"type": "sound",
-			"url": "audios/two.mp3"
-		},
-		{
-			"name": "under_mp3",
-			"type": "sound",
-			"url": "audios/under.mp3"
-		},
-		{
-			"name": "up_mp3",
-			"type": "sound",
-			"url": "audios/up.mp3"
-		},
-		{
-			"name": "us_mp3",
-			"type": "sound",
-			"url": "audios/us.mp3"
-		},
-		{
-			"name": "use_mp3",
-			"type": "sound",
-			"url": "audios/use.mp3"
-		},
-		{
-			"name": "very_mp3",
-			"type": "sound",
-			"url": "audios/very.mp3"
-		},
-		{
-			"name": "walk_mp3",
-			"type": "sound",
-			"url": "audios/walk.mp3"
-		},
-		{
-			"name": "want (2)_mp3",
-			"type": "sound",
-			"url": "audios/want (2).mp3"
-		},
-		{
-			"name": "want_mp3",
-			"type": "sound",
-			"url": "audios/want.mp3"
-		},
-		{
-			"name": "war_mp3",
-			"type": "sound",
-			"url": "audios/war.mp3"
-		},
-		{
-			"name": "warm_mp3",
-			"type": "sound",
-			"url": "audios/warm.mp3"
-		},
-		{
-			"name": "was_mp3",
-			"type": "sound",
-			"url": "audios/was.mp3"
-		},
-		{
-			"name": "wash_mp3",
-			"type": "sound",
-			"url": "audios/wash.mp3"
-		},
-		{
-			"name": "we_mp3",
-			"type": "sound",
-			"url": "audios/we.mp3"
-		},
-		{
-			"name": "well_mp3",
-			"type": "sound",
-			"url": "audios/well.mp3"
-		},
-		{
-			"name": "went_mp3",
-			"type": "sound",
-			"url": "audios/went.mp3"
-		},
-		{
-			"name": "were_mp3",
-			"type": "sound",
-			"url": "audios/were.mp3"
-		},
-		{
-			"name": "what_mp3",
-			"type": "sound",
-			"url": "audios/what.mp3"
-		},
-		{
-			"name": "when_mp3",
-			"type": "sound",
-			"url": "audios/when.mp3"
-		},
-		{
-			"name": "where_mp3",
-			"type": "sound",
-			"url": "audios/where.mp3"
-		},
-		{
-			"name": "which_mp3",
-			"type": "sound",
-			"url": "audios/which.mp3"
-		},
-		{
-			"name": "white_mp3",
-			"type": "sound",
-			"url": "audios/white.mp3"
-		},
-		{
-			"name": "who_mp3",
-			"type": "sound",
-			"url": "audios/who.mp3"
-		},
-		{
-			"name": "why_mp3",
-			"type": "sound",
-			"url": "audios/why.mp3"
-		},
-		{
-			"name": "will_mp3",
-			"type": "sound",
-			"url": "audios/will.mp3"
-		},
-		{
-			"name": "wish_mp3",
-			"type": "sound",
-			"url": "audios/wish.mp3"
-		},
-		{
-			"name": "with_mp3",
-			"type": "sound",
-			"url": "audios/with.mp3"
-		},
-		{
-			"name": "work_mp3",
-			"type": "sound",
-			"url": "audios/work.mp3"
-		},
-		{
-			"name": "would_mp3",
-			"type": "sound",
-			"url": "audios/would.mp3"
-		},
-		{
-			"name": "write_mp3",
-			"type": "sound",
-			"url": "audios/write.mp3"
-		},
-		{
-			"name": "yellow_mp3",
-			"type": "sound",
-			"url": "audios/yellow.mp3"
-		},
-		{
-			"name": "yet_mp3",
-			"type": "sound",
-			"url": "audios/yet.mp3"
-		},
-		{
-			"name": "your_mp3",
-			"type": "sound",
-			"url": "audios/your.mp3"
-		},
-		{
-			"name": "said_mp3",
-			"type": "sound",
-			"url": "audios/said.mp3"
-		},
-		{
-			"name": "left_sign_normal_png",
-			"type": "image",
-			"url": "textures/left_sign_normal.png"
-		},
-		{
-			"name": "left_sign_selected_png",
-			"type": "image",
-			"url": "textures/left_sign_selected.png"
-		},
-		{
-			"name": "middle_sign_normal_png",
-			"type": "image",
-			"url": "textures/middle_sign_normal.png"
-		},
-		{
-			"name": "middle_sign_selected_png",
-			"type": "image",
-			"url": "textures/middle_sign_selected.png"
-		},
-		{
-			"name": "right_sign_normal_png",
-			"type": "image",
-			"url": "textures/right_sign_normal.png"
-		},
-		{
-			"name": "right_sign_selected_png",
-			"type": "image",
-			"url": "textures/right_sign_selected.png"
-		},
-		{
-			"name": "launched_boom_0_json",
-			"type": "json",
-			"url": "textures/launched_boom_0.json"
-		},
-		{
-			"name": "launched_boom_0_png",
-			"type": "image",
-			"url": "textures/launched_boom_0.png"
-		},
-		{
-			"name": "launched_boom_1_json",
-			"type": "json",
-			"url": "textures/launched_boom_1.json"
-		},
-		{
-			"name": "launched_boom_1_png",
-			"type": "image",
-			"url": "textures/launched_boom_1.png"
-		},
-		{
-			"name": "launched_boom_2_json",
-			"type": "json",
-			"url": "textures/launched_boom_2.json"
-		},
-		{
-			"name": "launched_boom_2_png",
-			"type": "image",
-			"url": "textures/launched_boom_2.png"
 		}
 	]
 }

@@ -32,7 +32,6 @@
 		"bin-debug/repositories/WordRepository.js",
 		"bin-debug/scenes/EasyGoScene.js",
 		"bin-debug/scenes/IPlayingScene.js",
-		"bin-debug/scenes/PlayProGameScene.js",
 		"bin-debug/scenes/ProGoScene.js",
 		"bin-debug/scenes/ResultScene.js",
 		"bin-debug/scenes/SelectDifficultScene.js",
