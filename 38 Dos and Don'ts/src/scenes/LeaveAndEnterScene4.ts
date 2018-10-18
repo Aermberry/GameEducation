@@ -34,7 +34,7 @@ class LeaveAndEnterScene4 extends eui.Component implements  eui.UIComponent {
 	private async enterPark():Promise<void>
 	{
 		this.currentSoundChannl = (RES.getRes('enter_park_mp3') as egret.Sound).play(0,1);
-        await ThreadUtility.sleep(1500);
+        await ThreadUtility.sleep(5000);
 		Main.instance.gotoScene(new PhotoSCene5());
 	}
 	

@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\38 Dos and Don'ts\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}

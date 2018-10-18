@@ -20,6 +20,16 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="loadingAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="164d4293be7" ></w:Config>
 
@@ -34,7 +44,9 @@
    <e:Group id="schoolGroup" verticalCenter="0" horizontalCenter="0" alpha="0">
 	<e:Image id="schoolImg" source="school_png"  verticalCenter="0" horizontalCenter="0" locked="true"/>
 	<e:Image id="amyImg" source="amy_png"  x="1470" y="463"/>
-	<e:Label id="goSchoolText" text="Amy is going to school." size="63" horizontalCenter="0" y="1100" textColor="#000000" fontFamily="ComicSansMS3"/>
+	<e:Label id="goSchoolText" text="Amy is going to school." size="63" horizontalCenter="0.5" y="1100" textColor="0x000000" fontFamily="ComicSansMS3" anchorOffsetY="0" height="143"/>
    </e:Group>
+   <e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 	
 </e:Skin>

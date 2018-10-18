@@ -9,30 +9,44 @@
 		<e:Image source="photo_amy_png" x="133.33" y="733.5"/>
 		<e:Image source="photo_worker_png" x="1066.2" y="250"/>
 		<e:Image source="pink_bottom_frame_png" x="350.7" y="908.5"/>
-		<e:Label text="Can I take " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="471.5" y="994"/>		
-		<e:Label text="pictures here?" size="45" textColor="#000000" fontFamily="ComicSansMS3" x="453.7" y="1081"/>	
+		<e:Label text="Can I take " size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="471.5" y="1005"/>		
+		<e:Label text="pictures here?" size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="435.52" y="1074" anchorOffsetX="0" width="310" anchorOffsetY="0" height="54"/>	
 	</e:Group>
 
-	<e:Group id="nextDialogGroup" visible="false">
-		<e:Image source="photo_worker_frame_png" x="1054.92" y="27.25"/>
-	    <e:Label id="secondLabel" text=" " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1165.87" y="187.58"/>
-		<e:Label id="firstLabel" text=" ....... " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="1165.87" y="115.62"/>
+	<e:Group id="nextDialogGroup">
+		<e:Image source="photo_worker_frame_png" x="1062.43" y="15.17"/>
+	    <e:Label id="secondLabel" text=" " size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="1165.87" y="166.37"/>
+		<e:Label id="firstLabel" text=" ....... " size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="1165.87" y="100.47"/>
 		<e:Image source="light_png" x="1532.2" y="647"/>
-		<e:Image id="orangeCircleImg" source="orange_normal_png" x="1451.5" y="53.65" />
-  		<e:Image id="workerHeaderImg" source="worker_normal_png" x="1462.5" y="63.65"/>
+		<e:Image id="orangeCircleImg" source="orange_normal_png" x="1484.84" y="38.5" />
+  		<e:Image id="workerHeaderImg" source="worker_normal_png" x="1495.84" y="48.5"/>
+		<e:Group x="1706" y="1152.5">
+			<e:Image id="forkIconImg" source="green_hover_png" x="0" y="0"/>
+			<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" x="2.5" y="22.5"/>
+		</e:Group>
 	</e:Group>
 	
 
-		<e:Image id="forkIconImg" source="green_hover_png" x="1706" y="1152.5"/>
-		<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
+
+
 		<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105" locked="true"/>
   
   <e:Group id="nextGroup" visible="false">
 	   <e:Image  source="next_noraml_png" x="1653.5" y="970"/>
-	   <e:Label id="nextLabel" text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
+	   <e:Label id="nextLabel" text="Next" textColor="0x000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
 	   <e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
   </e:Group>
 
-  <e:Group id="workerTouchEventGroup" x="1462.15" y="62.97" width="132" height="132"/>
-    
+  <e:Group id="workerTouchEventGroup" x="1521" y="38.5" width="132" height="132"/>
+    	<e:Group id="fram_exitTips" x="0" y="0" visible="false">
+		<e:Image id="MaskImage" source="gray_canvas_png" x="0" y="0" alpha="0.8"/>
+		<e:Group x="497" y="451">
+			<e:Image x="0" y="0" source="fram_exitTips_png"/>
+			<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="68" fontFamily="ComicSansMS3" bold="true" horizontalCenter="0"/>
+			<e:Group y="195.49" x="211">
+			<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
+			<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
 </e:Skin>
