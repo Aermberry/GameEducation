@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,bg_png,btn_png,sound_png,pig_png,cat_png,dog_png,fox_png,frog_png,hippo_png,penguin_png,squirrel_png,yellow_frame_png,red_circle_png,confirm_button_png,continue_normal_png,continue_hover_png,sound_hover_png,sound 4 (scene_throw.mp3)_mp3,sound 5 (scene_stadium.mp3)_mp3,sound 6 (scene_seats.mp3)_mp3,sound 8 (scene_pool.mp3)_mp3,sound 9 (scene_ballcourt.mp3)_mp3,sound 10 (prop_pine.mp3)_mp3,sound 11 (prop_football.mp3)_mp3,sound 12 (prop_basketball.mp3)_mp3,sound 13 (ex1_part2_miss_scene.mp3)_mp3,sound 14 (ex1_part2_miss_prop.mp3)_mp3,sound 15 (ex1_part2_miss_actor.mp3)_mp3,sound 16 (ex1_part2_incorrect.mp3)_mp3,sound 17 (ex1_part2_correct.mp3)_mp3,first_level_bgm_mp3,fitst_level_description_mp3,sports_hall_png,close_png,rectangular _frame_png,square_frame_png,blue_progress _bar_png,white_progress _bar_png,squirrel_mp3,pig_mp3,penguin_mp3,hippo_mp3,frog_mp3,fox_mp3,dog_mp3,cat_mp3,kolala_mp3,kolala_png,correct_mp3,incorrect_mp3,first_select_bgm_mp3,second_level_mp3,second_level_description_mp3,small_yellow_frame_png,video_tape_png,first_place_png,third_place_png,forth_place_png,fifth_place_png,sixth_place_png,second_place_png,orange_btn_png,soccer_png,basketball_png,pine_cone_png,yes_png,no_png,checkbox_png,first_compition_mp3,second_compition_mp3,place_png,person_png,thing_png,second_select_bgm_mp3,first_place_mp3,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,start_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,gameEui_json,bg_png,btn_png,sound_png,pig_png,cat_png,dog_png,fox_png,frog_png,hippo_png,penguin_png,squirrel_png,yellow_frame_png,red_circle_png,confirm_button_png,continue_normal_png,continue_hover_png,sound_hover_png,sound 4 (scene_throw.mp3)_mp3,sound 5 (scene_stadium.mp3)_mp3,sound 6 (scene_seats.mp3)_mp3,sound 8 (scene_pool.mp3)_mp3,sound 9 (scene_ballcourt.mp3)_mp3,sound 10 (prop_pine.mp3)_mp3,sound 11 (prop_football.mp3)_mp3,sound 12 (prop_basketball.mp3)_mp3,sound 13 (ex1_part2_miss_scene.mp3)_mp3,sound 14 (ex1_part2_miss_prop.mp3)_mp3,sound 15 (ex1_part2_miss_actor.mp3)_mp3,sound 16 (ex1_part2_incorrect.mp3)_mp3,sound 17 (ex1_part2_correct.mp3)_mp3,first_level_bgm_mp3,fitst_level_description_mp3,sports_hall_png,close_png,rectangular _frame_png,square_frame_png,blue_progress _bar_png,white_progress _bar_png,squirrel_mp3,pig_mp3,penguin_mp3,hippo_mp3,frog_mp3,fox_mp3,dog_mp3,cat_mp3,kolala_mp3,kolala_png,correct_mp3,incorrect_mp3,first_select_bgm_mp3,second_level_mp3,second_level_description_mp3,small_yellow_frame_png,video_tape_png,first_place_png,third_place_png,forth_place_png,fifth_place_png,sixth_place_png,second_place_png,orange_btn_png,soccer_png,basketball_png,pine_cone_png,yes_png,no_png,checkbox_png,first_compition_mp3,second_compition_mp3,place_png,person_png,thing_png,second_select_bgm_mp3,first_place_mp3,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,start_png,green_light_png",
 			"name": "preload"
 		}
 	],
@@ -425,6 +425,11 @@
 			"name": "start_png",
 			"type": "image",
 			"url": "textures/start.png"
+		},
+		{
+			"name": "green_light_png",
+			"type": "image",
+			"url": "textures/green_light.png"
 		}
 	]
 }

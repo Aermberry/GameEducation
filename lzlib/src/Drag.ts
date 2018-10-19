@@ -51,6 +51,7 @@ namespace lzlib {
         }
     
         private onTouchBegin(e:egret.TouchEvent) {
+            console.log('start drag isCopy: ' + this.isCopy);
             Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
 
             let globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
@@ -127,6 +128,7 @@ namespace lzlib {
             }
 
             if (!Drag.isAccepted) {
+                console.log('not one accept it, dispatch cancel event');
                 //not one accept it, dispatch cancel event
                 Drag.dragingObject.dispatchEvent(
                     new LzDragEvent(LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));

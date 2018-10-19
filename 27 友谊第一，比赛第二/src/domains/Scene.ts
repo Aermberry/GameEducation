@@ -37,4 +37,9 @@ class Scene {
 		result.isThingEqual = this.thing == other.thing;
 		return result;
 	}
+
+	public isEmpty(): boolean
+	{
+		return this.place == null && this.persons.length == 0 && this.thing == null;
+	}
 }

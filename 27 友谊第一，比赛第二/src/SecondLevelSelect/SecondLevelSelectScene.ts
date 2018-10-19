@@ -1,5 +1,8 @@
 class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, ISecondLevelSelectView {
 	private answerGroup: eui.Group;
+	private backgroundGroup: eui.Group;
+	private placeBtnHightlightRect: eui.Rect;
+	private highlightPlaceButtonMovie: egret.tween.TweenGroup;
 
 	//初始化右邊顯示的圖片，人物跟物件默認隱藏，顯示地點
 	private placeBtnImg:eui.Image;
@@ -83,16 +86,13 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		mouse.setButtonMode(this.replayGroup, true);
 		mouse.setButtonMode(this.correctGroup, true);
 	    this.currentSoundChannel = (RES.getRes('second_select_bgm_mp3') as egret.Sound).play(0,1);	
-		this.initPlaceGroup();
-		this.initPersonGroup();
-		this.initThingGroup();
 		this.initRightBtn();
 		this.initExitBtn();
 		this.initConfirmBtn();
 		this.initCorrectBtn();
 		this.initReplayBtn();
 		this.initVideoTapGroup();
-		this.initStageDrop();
+		this.initBackgroundGroupDrop();
 		this.initHornSound();
 
 		this.presenter.loadView(this);
@@ -104,37 +104,37 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.bottomSoundGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onButtomSoundClick, this.presenter);
 	}
 
-	private initPlaceGroup(): void
+	public set places(values: Place[])
 	{
-		for (let index = 0; index < this.placeGroup.numChildren; index++) {
+		values.forEach((place, index) => {
 			let child = this.placeGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, true, new DragData(DragType.place, index));
-			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPlaceMouseDown(index), this);
-		}
+			drag.enableDrag(child, true, new DragData(DragType.place, place));
+			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPlaceMouseDown(place), this);
+		}, this);
 	}
 
-	private initPersonGroup(): void
+	public set persons(values: Person[])
 	{
-		for (let index = 0; index < this.personGroup.numChildren; index++) {
+		values.forEach((person, index) => {
 			let child = this.personGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, true, new DragData(DragType.person, index));
-			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPersonMouseDown(index), this);
-		}
+			drag.enableDrag(this.personGroup.getChildAt(index), true, new DragData(DragType.person, person));
+			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onPersonMouseDown(person), this);
+		}, this);
 	}
 
-	private initThingGroup(): void
+	public set things(values: Thing[])
 	{
-		for (let index = 0; index < this.thingGroup.numChildren; index++) {
+		values.forEach((thing, index) => {
 			let child = this.thingGroup.getChildAt(index);
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, true, new DragData(DragType.thing, index));
-			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onThingMouseDown(index), this);
-		}
+			drag.enableDrag(child, true, new DragData(DragType.thing, thing));
+			child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onThingMouseDown(thing), this);
+		}, this);
 	}
 
 	private initRightBtn() {
@@ -149,14 +149,17 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 			let drop = new lzlib.Drop();
 			this.addChild(drop);
 			drop.enableDrop(child);
-			child.addEventListener(lzlib.LzDragEvent.DROP, this.onSceneDrop, this);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onDropIntoVedioTape, this);
 		}
 	}
 
-	private onSceneDrop(e: lzlib.LzDragEvent): void
+	private onDropIntoVedioTape(e: lzlib.LzDragEvent): void
 	{
-		this.presenter.onSceneDrop(e.data as DragData, new egret.Point(e.localX, e.localY), this.videoTapGroup.getChildIndex((e.target as eui.Group))) ;
+		console.log('drop in tape');
 		e.preventDefault();
+		console.log('e.dragObject.parent is null ? ' + (e.dragObject.parent));
+		e.dragObject.parent && e.dragObject.parent.removeChild(e.dragObject);
+		this.presenter.onDropIntoVideoTape(e.data as DragData, new egret.Point(e.localX, e.localY), this.videoTapGroup.getChildIndex((e.target as eui.Group))) ;
 	}
 
 	private showPlaceImg() {
@@ -219,22 +222,19 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.presenter.onCorrectButtonClick();
 	}
 
-	private initStageDrop(): void
+	private initBackgroundGroupDrop(): void
 	{
-		let drop = new lzlib.Drop();
-		this.stage.addChild(drop);
-		drop.enableDrop(this.stage);
-		this.stage.addEventListener(lzlib.LzDragEvent.DROP, this.onStageDrop, this);
+		this.backgroundGroup.$children.forEach(child => {
+			let drop = new lzlib.Drop();
+			this.stage.addChild(drop);
+			drop.enableDrop(child);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onBackgroundGroupDrop, this);
+		});
 	}
 
-	private onStageDrop(e: lzlib.LzDragEvent): void
+	private onBackgroundGroupDrop(e: lzlib.LzDragEvent): void
 	{
-		if (this.videoTapGroup.$children.filter( child => child.hitTestPoint(e.stageX, e.stageY)).length > 0) {
-			//用户拖动到tap里，stage不用处理
-			return;
-		}
-
-		this.presenter.onStageDrop(e.data as DragData);
+		this.presenter.onDropOutOfVideoTape(e.data as DragData);
 		e.dragObject.parent != null && e.dragObject.parent.removeChild(e.dragObject);
 		e.preventDefault();
 	}
@@ -290,11 +290,11 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		background.name = 'background';
 		background.source = PlaceFormatter.getImageSource(place);
 		background.left = background.right = background.top = background.bottom = 0;
-		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(background);
+		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChildAt(background, 1);
 		
 		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
-		drag.enableDrag(background, false, new DragData(DragType.place, 0, sceneIndex));
+		drag.enableDrag(background, false, new DragData(DragType.place, place, sceneIndex));
 	}
 
     /** 删除场景的背景图片 */
@@ -316,7 +316,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		image.scaleY = 0.5;
 		image.name = person.toString();
 		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(image);
-
+		
 		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
 		drag.enableDrag(image, false, new DragData(DragType.person, person, sceneIndex));
@@ -336,14 +336,14 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		image.source = ThingFormatter.getImageSource(thing);
 		image.x = dropPoint.x;
 		image.y = dropPoint.y;
-		image.scaleX = 0.5;
-		image.scaleY = 0.5;
+		image.scaleX = 0.8;
+		image.scaleY = 0.8;
 		image.name = thing.toString();
 		(this.videoTapGroup.getChildAt(sceneIndex) as eui.Group).addChild(image);
 
 		let drag = new lzlib.Drag();
 		this.stage.addChild(drag);
-		drag.enableDrag(image, false, new DragData(DragType.person, thing, sceneIndex));
+		drag.enableDrag(image, false, new DragData(DragType.thing, thing, sceneIndex));
 	}
 
     /** 删除运动 */
@@ -414,4 +414,15 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.replayGroup.alpha = 1;
 	}
 
+    public highlightPlaceButton(): void
+	{
+		this.placeBtnHightlightRect.visible = true;
+		this.highlightPlaceButtonMovie.playLoopAsync();
+	}
+
+	public normalizePlaceButton(): void
+	{
+		this.highlightPlaceButtonMovie.stop();
+		this.placeBtnHightlightRect.visible = false;
+	}
 }

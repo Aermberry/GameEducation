@@ -1,12 +1,12 @@
 class DragData {
-	public constructor(type: DragType, dataId: number, sourceSceneId: number = -1) 
+	public constructor(type: DragType, data: number, sourceSceneId: number = -1) 
 	{
 		this.type = type;
-		this.dataId = dataId;
+		this.data = data;
 		this.sourceSceneId = sourceSceneId;
 	}
 
 	public type: DragType = null;
-	public dataId = -1;
+	public data = -1;
 	public sourceSceneId = -1;
 }

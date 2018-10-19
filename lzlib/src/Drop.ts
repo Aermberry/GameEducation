@@ -36,15 +36,20 @@ namespace lzlib {
 		{
 			if (Drag.isDraging) {
 				if (this.isDragDropObjectIntersets()) {
+					console.log('drop on target, 查询用户是否接受drag object');
 					//drop on target
 					Drag.isAccepted = !this.dropObject.dispatchEvent(
 						new LzDragEvent(LzDragEvent.DROP, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
+					console.log('用户是否接受drag object? ' + Drag.isAccepted);
 				}
 			}
 		}
 
 		private isDragDropObjectIntersets(): boolean {
-			let dragingObjectGlobalPoint = Drag.dragingObject.parent.localToGlobal(Drag.dragingObject.x, Drag.dragingObject.y);
+			//Drag.dragingObject.parent == null表示Drag.dragingObject是全局坐标
+			let dragingObjectGlobalPoint = Drag.dragingObject.parent 
+			? Drag.dragingObject.parent.localToGlobal(Drag.dragingObject.x, Drag.dragingObject.y) 
+			: new egret.Point(Drag.dragingObject.x, Drag.dragingObject.y);
 			let dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
 			return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, Drag.dragingObject.width, Drag.dragingObject.height)
 			.intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height))

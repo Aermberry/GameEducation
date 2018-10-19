@@ -1,5 +1,9 @@
 interface ISecondLevelSelectView 
 {
+	places: Place[];
+	persons: Person[];
+	things: Thing[];
+
     playAudio(audioName: string): void;
 
     /** 设置场景的背景图片 */
@@ -34,4 +38,7 @@ interface ISecondLevelSelectView
 
     playFirstCompitionSound(): void;
     playSecondCompitionSound(): void;
+
+    highlightPlaceButton(): void;
+    normalizePlaceButton(): void;
 }
