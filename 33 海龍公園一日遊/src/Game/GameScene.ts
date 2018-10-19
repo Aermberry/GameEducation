@@ -40,7 +40,7 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 	private initDragDrop(): void
 	{
 		this.conjunctionGroup.$children.forEach((child, index) => child.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => this.presenter.onConjunctionTouchBegin(index), this));
-		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.DRAG_CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter));
+		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter));
 		this.conjunctionGroup.$children.map(child => child as ConjunctionContainer).forEach((child, index) => child.enableDrag(index));
 		this.leftConjunctionContainer.enableDrop(this.presenter.onLeftConjunctionDrop, this.presenter);
 		this.rightConjunctionContainer.enableDrop(this.presenter.onRightConjunctionDrop, this.presenter);
@@ -51,7 +51,7 @@ class GameScene extends eui.Component implements  eui.UIComponent, GameView {
 		this.conjunctionGroup.$children.forEach((child: ConjunctionContainer, index: number) => {
 			if (!child.text) {
 				child.text = conjunctions[index].text;
-				child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.DRAG_CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter);
+				child.conjunctionComponent.addEventListener(lzlib.LzDragEvent.CANCEL, this.presenter.onConjunctionTouchCancel, this.presenter);
 				child.enableDrag(index);
 			}
 		});
