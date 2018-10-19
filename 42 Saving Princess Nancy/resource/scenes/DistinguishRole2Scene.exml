@@ -6,18 +6,25 @@
 	<e:Image x="1257.54" y="12.61" source="sunlight_png" anchorOffsetY="0" height="514.12"/>
 	<e:Image left="-136" right="-179" top="397" bottom="0" source="listen2_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Image x="1128.64" y="1040.4" source="listen2_grass_png" anchorOffsetY="0" height="198.34" anchorOffsetX="0" width="254.79"/>
-	<e:Image id="person1Image" x="548.11" y="163.73" source="listen2_person1_png" anchorOffsetX="0" width="223.33" anchorOffsetY="0" height="547.15"/>
-	<e:Image x="859.88" y="67.14" anchorOffsetX="0" anchorOffsetY="0" id="person1Image0" source="listen2_person2_png" width="204.66" height="616.64"/>
-	<e:Image x="1127.61" y="163.02" anchorOffsetX="0" anchorOffsetY="0" id="person1Image1" width="201.9" height="608.33" source="listen2_person3_png"/>
+	<e:Image id="person1Image" name="person1Image" x="548.11" y="163.73" source="listen2_person1_png" anchorOffsetX="0" width="223.33" anchorOffsetY="0" height="547.15"/>
+	<e:Image id="person2Image" name="person2Image" x="859.88" y="67.14" anchorOffsetX="0" anchorOffsetY="0" source="listen2_person2_png" width="204.66" height="616.64"/>
+	<e:Image id="person3Image" name="person3Image" x="1127.61" y="163.02" anchorOffsetX="0" anchorOffsetY="0" width="201.9" height="608.33" source="listen2_person3_png"/>
 	<e:Image x="-777.28" y="541.8" source="listen1_grass_png" anchorOffsetX="0" width="2929.37" anchorOffsetY="0" height="524.31"/>
-	<e:Image x="1378.17" y="695.76" anchorOffsetX="0" anchorOffsetY="0" id="person1Image2" width="202.58" height="610.39" source="listen2_person4_png"/>
+	<e:Image id="person4Image" name="person4Image" x="1378.17" y="695.76" anchorOffsetX="0" anchorOffsetY="0" width="202.58" height="610.39" source="listen2_person4_png"/>
 	<e:Image x="-357.88" y="759.39" source="listen2_grass_png" anchorOffsetY="0" height="557.17" anchorOffsetX="0" width="715.76"/>
 	<e:Image x="687.4" y="970.51" source="listen2_grass_png" anchorOffsetY="0" height="134.93" anchorOffsetX="0" width="173.33"/>
-	<e:Image x="913.46" y="652.53" anchorOffsetX="0" anchorOffsetY="0" id="person1Image3" width="269.25" height="811.26" source="listen2_person5_png"/>
+	<e:Image id="person5Image" name="person5Image" x="913.46" y="652.53" anchorOffsetX="0" anchorOffsetY="0" width="269.25" height="811.26" source="listen2_person5_png"/>
 	<e:Image x="-190.31" y="951.57" source="listen2_grass_png" anchorOffsetY="0" height="557.17" anchorOffsetX="0" width="715.76"/>
 	<e:Image x="1574.69" y="848.8" source="listen2_grass_png" anchorOffsetY="0" height="653.88"/>
 	<e:Image x="772.09" y="1031.3" source="listen2_grass_png" anchorOffsetY="0" height="415.89" anchorOffsetX="0" width="534.25"/>
 	<e:Image x="507.27" y="1147.86" source="listen2_grass_png" anchorOffsetY="0" height="318.92" anchorOffsetX="0" width="409.69"/>
-	<e:Image x="357.88" y="732.93" anchorOffsetX="0" anchorOffsetY="0" id="person1Image4" width="319.78" height="963.49" source="listen2_person6_png"/>
+	<e:Image id="person6Image" name="person6Image" x="357.88" y="732.93" anchorOffsetX="0" anchorOffsetY="0" width="319.78" height="963.49" source="listen2_person6_png"/>
 	<ns1:ListenComponent width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="1"/>
+	<ns1:AlertComponent id="person5AlertComponent" width="512" height="248" x="1132" y="592" anchorOffsetX="0" anchorOffsetY="0" text="The lady you look for is at the top of the hill." visible="false"/>
+	<ns1:AlertComponent id="person2AlertComponent" width="512" height="248" x="1070" y="174" anchorOffsetX="0" anchorOffsetY="0" text="Correct! Your energy will be increased." visible="false"/>
+	<ns1:AlertComponent id="person4AlertComponent" width="512" height="248" x="1384" y="424" anchorOffsetX="0" anchorOffsetY="0" text="The lady you look for is at the top of the hill." visible="false"/>
+	<ns1:AlertComponent id="person3AlertComponent" width="512" height="248" x="1346" y="298" anchorOffsetX="0" anchorOffsetY="0" text="i don't wear glasses." visible="false"/>
+	<ns1:AlertComponent id="person6AlertComponent" width="512" height="248" x="165.66" y="511.39" anchorOffsetX="0" anchorOffsetY="0" text="i am not at the top of the hill." visible="false"/>
+	<ns1:AlertComponent id="person1AlertComponent" width="512" height="248" x="39.66" y="233.39" anchorOffsetX="0" anchorOffsetY="0" text="i don't wear earrings." visible="false"/>
+	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
 </e:Skin>

@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="BootsComponentSkin" width="200" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+<e:Skin class="BootsComponentSkin" width="200" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*" >
 	<w:Declarations>
-		<tween:TweenGroup id="walkAnimation">
-			<tween:TweenItem target="{bootsCloseImage}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{bootsOpenImage}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="750"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="166241b423b" ></w:Config>
-	<e:Image id="bootsCloseImage" source="boots_close_png" left="0" right="0" top="0" bottom="0"/>
-	<e:Image id="bootsOpenImage" left="0" right="0" top="0" bottom="0" source="boots_open_png" alpha="0"/>
 	<e:Label id="textLabel" text="Home" x="171" size="50" fontFamily="Staccato" textColor="0x000000" right="-130" verticalCenter="0"/>
+	<ns1:MovieClipPlayer dataSet="boots_json" texture="boots_png" movieClipName="boots" left="0" right="0" top="0" bottom="0" />
 </e:Skin>

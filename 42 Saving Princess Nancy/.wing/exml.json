@@ -81,5 +81,15 @@
         "path": "components/FireWordsComponent.ts",
         "class": "FireWordsComponent",
         "parentPath": ""
+    },
+    "166850ee57f": {
+        "path": "components/CloudComponent.ts",
+        "class": "CloudComponent",
+        "parentPath": ""
+    },
+    "16685121697": {
+        "path": "components/CloudComponent.ts",
+        "class": "CloudComponent",
+        "parentPath": ""
     }
 }

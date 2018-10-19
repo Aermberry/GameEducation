@@ -10,4 +10,7 @@
 	<e:Image x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
 	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
 	<e:Image width="20" height="20" x="1156" y="1080"/>
+	<ns1:MovieClipPlayer x="1284" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
+	<ns1:MovieClipPlayer x="980" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
+	<ns1:MovieClipPlayer x="510" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
 </e:Skin>

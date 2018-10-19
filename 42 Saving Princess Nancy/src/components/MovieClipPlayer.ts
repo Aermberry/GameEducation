@@ -1,5 +1,7 @@
 class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	
+	private mc:egret.MovieClip;
+
 	public constructor() {
 		super();
 	}
@@ -12,9 +14,18 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
-		let mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
-		this.addChild(mc);
-		mc.play(-1);
+		this.mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
+		this.addChild(this.mc);
+	}
+
+	public play(): void
+	{
+		this.mc.play(0);
+	}
+
+	public stop(): void
+	{
+		this.mc.stop();
 	}
 	
 	private _dataSet = '';
