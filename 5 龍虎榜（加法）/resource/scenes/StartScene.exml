@@ -221,5 +221,6 @@
 	<e:Image id="add_info_border" y="300" source="rectangle_cyan_png" horizontalCenter="0" alpha="0"/>
 	<e:Rect id="hiddenMask" fillColor="0xffffff" alpha="0" x="0" y="0" width="100%" height="100%"/>
 	<e:Image id="addTour" y="579.5" source="add_tour_png" horizontalCenter="21" alpha="0" scaleX="1.5" scaleY="1.5"/>
-	
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,description_example_frame_png,description_example_bg_png,doctor_png,trash_can_png,trash_can_cover_png,cue_box_png,blue_frame_dialog_png,blue_btn_png,exit_btn_png,exit_btn_touch_png,cue_box_bgm_mp3,doctor_say_json,doctor_say_png,blue_dialog_png,doctor_no_head_png,gold_yellow_dialog_png,doctor_smell_head_png,level_doctor_no_head_png,bed_png,green_frame_dialog_png,red_circle_frame_png,trash_can_open_png,cue_box_open_png,green_blue_frame_png,arrow_png,manyarrows_png,doctor_normal_png,doctor_angry_png,doctor_blink_png,blue_frame_png,exit_blue_btn_png,exit_purple_btn_png,doctor_desk_png,orange_frame_png,orange_dialog_frame_png,blue_again_png,green_exit_png,class_png,when_png,comma_png,period_png,keep_out_png,listen_png,very_png,first_our_png,second_our_png,green_frame_png,return-btn_png,doctor_tip_png,2_10_png,2_1_png,2_2_png,2_3_png,2_4_png,2_5_png,2_6_png,2_7_png,2_8_png,2_9_png,3_8_png,3_1_png,3_2_png,3_3_png,3_4_png,3_5_png,3_6_png,3_7_png,4_6_png,4_1_png,4_2_png,4_3_png,4_4_png,4_5_png,5_11_png,5_1_png,5_2_png,5_3_png,5_4_png,5_5_png,5_6_png,5_7_png,5_8_png,5_9_png,5_10_png,6_10_png,6_1_png,6_2_png,6_3_png,6_4_png,6_5_png,6_6_png,6_7_png,6_8_png,6_9_png,7_10_png,7_1_png,7_2_png,7_3_png,7_4_png,7_5_png,7_6_png,7_7_png,7_8_png,7_9_png,8_11_png,8_1_png,8_2_png,8_3_png,8_4_png,8_5_png,8_6_png,8_7_png,8_8_png,8_9_png,8_10_png,9_8_png,9_1_png,9_2_png,9_3_png,9_4_png,9_5_png,9_6_png,9_7_png,10_8_png,10_1_png,10_2_png,10_3_png,10_4_png,10_5_png,10_6_png,10_7_png,sound 77 (over to down )_mp3,sound 78_mp3",
+			"keys": "bg_jpg,egret_icon_png,description_json,description_example_frame_png,description_example_bg_png,doctor_png,trash_can_png,trash_can_cover_png,cue_box_png,blue_frame_dialog_png,blue_btn_png,exit_btn_png,exit_btn_touch_png,cue_box_bgm_mp3,doctor_say_json,doctor_say_png,blue_dialog_png,doctor_no_head_png,gold_yellow_dialog_png,doctor_smell_head_png,level_doctor_no_head_png,bed_png,green_frame_dialog_png,red_circle_frame_png,trash_can_open_png,cue_box_open_png,green_blue_frame_png,arrow_png,manyarrows_png,doctor_normal_png,doctor_angry_png,doctor_blink_png,blue_frame_png,exit_blue_btn_png,exit_purple_btn_png,doctor_desk_png,orange_frame_png,orange_dialog_frame_png,blue_again_png,green_exit_png,class_png,when_png,comma_png,period_png,keep_out_png,listen_png,very_png,first_our_png,second_our_png,green_frame_png,return-btn_png,doctor_tip_png,2_10_png,2_1_png,2_2_png,2_3_png,2_4_png,2_5_png,2_6_png,2_7_png,2_8_png,2_9_png,3_8_png,3_1_png,3_2_png,3_3_png,3_4_png,3_5_png,3_6_png,3_7_png,4_6_png,4_1_png,4_2_png,4_3_png,4_4_png,4_5_png,5_11_png,5_1_png,5_2_png,5_3_png,5_4_png,5_5_png,5_6_png,5_7_png,5_8_png,5_9_png,5_10_png,6_10_png,6_1_png,6_2_png,6_3_png,6_4_png,6_5_png,6_6_png,6_7_png,6_8_png,6_9_png,7_10_png,7_1_png,7_2_png,7_3_png,7_4_png,7_5_png,7_6_png,7_7_png,7_8_png,7_9_png,8_11_png,8_1_png,8_2_png,8_3_png,8_4_png,8_5_png,8_6_png,8_7_png,8_8_png,8_9_png,8_10_png,9_8_png,9_1_png,9_2_png,9_3_png,9_4_png,9_5_png,9_6_png,9_7_png,10_8_png,10_1_png,10_2_png,10_3_png,10_4_png,10_5_png,10_6_png,10_7_png,sound 77 (over to down )_mp3,sound 78_mp3,start_png,start2_png,start3_png,start4_png",
 			"name": "preload"
 		}
 	],
@@ -65,11 +65,6 @@
 			"url": "textures/start_scene_bg.png",
 			"type": "image",
 			"name": "start_scene_bg_png"
-		},
-		{
-			"url": "images/wlts_logo.jpg",
-			"type": "image",
-			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "gameEui.json",
@@ -740,6 +735,26 @@
 			"url": "audios/sound 78.mp3",
 			"type": "sound",
 			"name": "sound 78_mp3"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start2_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start3_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start4_png",
+			"type": "image",
+			"url": "textures/start.png"
 		}
 	]
 }

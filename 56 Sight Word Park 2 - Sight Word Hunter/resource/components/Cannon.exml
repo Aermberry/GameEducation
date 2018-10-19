@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CannonSkin" width="240" height="150" currentState="center" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="left,center,right" >
-	<e:Image source="cannon_up_left_svg" visible="false" visible.left="true" bottom="0" scaleX="0.7" scaleY="0.7" />
-	<e:Image source="cannon_up_svg" visible="false" visible.center="true" bottom="0" horizontalCenter="0" scaleX="0.7" scaleY="0.7" />
-	<e:Image source="cannon_up_right_svg" visible="false" visible.right="true" bottom="0" right="0" scaleX="0.7" scaleY="0.7" />
+	<e:Image source="cannon_up_left_png" visible="false" visible.left="true" bottom="0" scaleX="0.7" scaleY="0.7" />
+	<e:Image source="cannon_up_png" visible="false" visible.center="true" bottom="0" horizontalCenter="0" scaleX="0.7" scaleY="0.7" />
+	<e:Image source="cannon_up_right_png" visible="false" visible.right="true" bottom="0" right="0" scaleX="0.7" scaleY="0.7" />
 	<w:Config id="163f119cb20" ></w:Config>
 </e:Skin>

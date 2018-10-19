@@ -8,8 +8,8 @@
              size="40" text="box" fontFamily="Kristen-ITC"
              textColor="0x00000" textAlign="center" verticalCenter="30" 
              visible.down="false"/>
-    <e:Image id="hitImage" source="stars_joined_svg" horizontalCenter="0" bottom="0" width="80%" height="80%" visible="false" visible.hitting="true"/>
-    <e:Image id="sunshineImage" source="sunshine_svg" horizontalCenter="0" verticalCenter="0" scaleX="0" scaleY="0" />
+    <e:Image id="hitImage" source="stars_joined_png" horizontalCenter="0" bottom="0" width="80%" height="80%" visible="false" visible.hitting="true"/>
+    <e:Image id="sunshineImage" source="sunshine_png" horizontalCenter="0" verticalCenter="0" scaleX="0" scaleY="0" />
 
 	<w:Config id="163ec7848e1" ></w:Config>
 </e:Skin>

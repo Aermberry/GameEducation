@@ -42,12 +42,12 @@ class ReadyToPlayScene extends eui.Component implements  eui.UIComponent {
 	
 	private onGoImageMouseOver(e: egret.Event): void
 	{
-		(e.target as eui.Image).source = 'stars_separated_svg';
+		(e.target as eui.Image).source = 'stars_separated_png';
 	}
 	
 	private onGoImageMouseOut(e: egret.Event): void
 	{
-		(e.target as eui.Image).source = 'stars_joined_svg';
+		(e.target as eui.Image).source = 'stars_joined_png';
 	}
 
 	private onGoImageClick(e: egret.TouchEvent): void

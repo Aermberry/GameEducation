@@ -13,16 +13,16 @@
 	</w:Declarations>
 	<e:Rect fillColor="0xffffff" alpha="0.4" x="0" y="0" width="100%" height="100%" />
 	<e:Group id="contentGroup" x="0" y="1280" width="100%" height="100%">
-		<e:Image id="yelloHeadImage" source="smiling_yellow_head_svg" horizontalCenter="0" y="30" width="1250" height="1500" />
+		<e:Image id="yelloHeadImage" source="smiling_yellow_head_png" horizontalCenter="0" y="30" width="1250" height="1500" />
 		<e:Label fontFamily="Hoffmanhand" text="Congratulations!" bold="true" size="120" textColor="#000000" y="205" horizontalCenter="0" />
 		<e:Label fontFamily="Hoffmanhand" text="You’ve answered" bold="true" size="120" textColor="#000000" y="335" horizontalCenter="0" />
 		<e:Label fontFamily="Hoffmanhand" text="questions correctly!" bold="true" size="120" textColor="#000000" y="460" horizontalCenter="120" />
 		<e:Label fontFamily="Hoffmanhand" text="Here’s your prize!" bold="true" size="120" textColor="#000000" y="585" horizontalCenter="40" />
 		
-		<e:Image id="medalImage" source="pig_svg" horizontalCenter="0" y="735" scaleX="0.7" scaleY="0.7" />
-		<e:Image id="playAgainImage" source="arrow_right_svg" x="715.9" y="980" scaleX="0.7" scaleY="0.7" visible="false" />
+		<e:Image id="medalImage" source="pig_png" horizontalCenter="0" y="735" scaleX="0.7" scaleY="0.7" />
+		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7" visible="false" />
 		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again!" textColor="#000000" size="80" bold="true" x="915" y="980" />
-		<e:Image id="exitImage" source="arrow_right_svg" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
+		<e:Image id="exitImage" source="arrow_right_png" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
 		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="#000000" size="80" bold="true" x="915" y="1100" />
 	</e:Group>
 
