@@ -16,10 +16,10 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 	private alertComponents: any;
 
 	private audios = {
-		person1: 'listening4_bald_mp3',
+		person1: 'listening4_bridge_mp3',
+		person2: 'listening4_bridge_mp3',
 		person3: 'listening4_bald_mp3',
-		person4: 'listening4_bridge_mp3',
-		person5: 'listening4_bridge_mp3',
+		person5: 'listening4_bald_mp3',
 		person6: 'listening4_bridge_mp3',
 	};
 
@@ -43,15 +43,15 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.alertComponents = {
 					person1: this.person1AlertComponent,
+					person2: this.person2AlertComponent,
 					person3: this.person3AlertComponent,
-					person4: this.person4AlertComponent,
 					person5: this.person5AlertComponent,
 					person6: this.person6AlertComponent,
 		};
-		this.person2Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCorrectClick, this);
+		this.person2Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person1Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person3Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
-		this.person4Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
+		this.person4Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCorrectClick, this);
 		this.person5Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person6Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 	}
