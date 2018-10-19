@@ -20,41 +20,52 @@ class CalculationPresenter {
 		await this.view.getNameAsync();
 		this.borrowNeed = await this.view.confirmInputBorrowNeedAsync();
 		this.view.correctAnswerCount = 0;
+		this.view.alertFinishTips();
 		let expressions = this.expressionRepo.getAll();
 		expressions.shuffle();
 		for (let questionIndex = 0; questionIndex < expressions.length; questionIndex++) {
-			this.view.questionIndex = questionIndex + 1;
-			let expression = expressions[questionIndex];
-			this.view.minuend = expression.minuend;
-			let minuend = this.splitNumber(expression.minuend);
-			this.view.subtrahend = expression.subtrahend;
-			let subtrahend = this.splitNumber(expression.subtrahend);
-			
-			let answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
-			let correctDifference = this.getCorrectDifferenceAndNewMinuend(expression.minuend, expression.subtrahend);
-			if (answerDifferrence.equals(correctDifference, this.borrowNeed)) {
-				this.correctAnswerCount++;
-				this.view.correctAnswerCount = this.correctAnswerCount;
-				this.view.alertAnswerCorrect();
-				this.view.openBox();
-			} else {
-				this.view.alertAnswerWrong();
-			}
+			try {
+				this.view.questionIndex = questionIndex + 1;
+				let expression = expressions[questionIndex];
+				this.view.minuend = expression.minuend;
+				let minuend = this.splitNumber(expression.minuend);
+				this.view.subtrahend = expression.subtrahend;
+				let subtrahend = this.splitNumber(expression.subtrahend);
+				
+				let answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
+				let correctDifference = this.getCorrectDifferenceAndNewMinuend(expression.minuend, expression.subtrahend);
+				await this.view.confirmFinishButtonClick();
+				if (answerDifferrence.equals(correctDifference, this.borrowNeed)) {
+					this.correctAnswerCount++;
+					this.view.correctAnswerCount = this.correctAnswerCount;
+					this.view.alertAnswerCorrect();
+					this.view.openBox();
+				} else {
+					this.view.alertAnswerWrong();
+				}
 
-			this.view.showNextQuestionButton();
-			this.view.showCorrectGroup();
-			await this.showCorrectDifferenceAndNewMinuend(correctDifference);
-			
-			await this.view.nextQuestionButtonClickAsync();
-			this.view.closeBox();
-			this.view.hideNextQuestionButton();
-			this.view.hideCorrectGroup();
-			this.view.hideAnswerStatus();
-			this.view.hideAnswerMinuendDeleteMovies();
-			this.view.hideCorrectMinuendDeleteMovies();
-			this.view.clearUserInput();
+				this.view.showNextQuestionButton();
+				this.view.showCorrectGroup();
+				await this.showCorrectDifferenceAndNewMinuend(correctDifference);
+				
+				await this.view.nextQuestionButtonClickAsync();
+				this.view.closeBox();
+				this.view.hideNextQuestionButton();
+				this.view.hideCorrectGroup();
+				this.view.hideAnswerStatus();
+				this.view.hideAnswerMinuendDeleteMovies();
+				this.view.hideCorrectMinuendDeleteMovies();
+				this.view.clearUserInput();
+			} catch (ex) {
+				if (ex.message == EraseError.message) {
+					//重新做该题
+					this.view.clearUserInput();
+					questionIndex--;
+				} else {
+					throw ex;
+				}
+			}
 		}
-		this.view.openRankingScene();
 	}
 
 	/**
@@ -65,30 +76,27 @@ class CalculationPresenter {
 		let differenceArray = [];
 		let newMinuendArray = [[], [], []];
 		let borrowTimes = [0, 0, 0]; //被减数每一位的已退位次数
-		try {
-			for (let position = 0; position < 3; position++) {
-				if (position < 2 && await this.view.confirmBorrowNeedAsync()) {
-					let higherPosition = position + 1;
-					this.view.playAnswerMinuendDeleteMovie(higherPosition, borrowTimes[higherPosition]);
-					this.view.changeAnswerNewMinuendToEditMode(higherPosition, borrowTimes[higherPosition]);
-					newMinuendArray[higherPosition].push(await this.view.getNewMinuendAsync(higherPosition, borrowTimes[higherPosition]));
-					this.view.changeAnswerNewMinuendToViewMode(higherPosition, borrowTimes[higherPosition]);
-					borrowTimes[higherPosition]++;
 
-					this.view.playAnswerMinuendDeleteMovie(position, borrowTimes[position]);
-					this.view.setAnswerNewMinuend((this.getDigitAtPosition(minuend, position) + 10 - borrowTimes[position]).toString(), position, borrowTimes[position])
-					newMinuendArray[position].push((this.getDigitAtPosition(minuend, position) + 10));
-				}
-				this.view.changeAnswerDifferenceToEditMode(position);
-				differenceArray[position] = await this.view.getDifferenceAsync(position);
-				this.view.changeAnswerDifferenceToViewMode(position);
+		for (let position = 0; position < 3; position++) {
+			if (this.borrowNeed && position < 2 && await this.view.confirmBorrowNeedAsync()) {
+				let higherPosition = position + 1;
+				this.view.playAnswerMinuendDeleteMovie(higherPosition, borrowTimes[higherPosition]);
+				this.view.changeAnswerNewMinuendToEditMode(higherPosition, borrowTimes[higherPosition]);
+				newMinuendArray[higherPosition].push(await this.view.getNewMinuendAsync(higherPosition, borrowTimes[higherPosition]));
+				this.view.changeAnswerNewMinuendToViewMode(higherPosition, borrowTimes[higherPosition]);
+				borrowTimes[higherPosition]++;
 
-				if (position == 2 && differenceArray[position] == 0) {
-					this.view.setAnswerDifference('', position);
-				}
+				this.view.playAnswerMinuendDeleteMovie(position, borrowTimes[position]);
+				this.view.setAnswerNewMinuend((this.getDigitAtPosition(minuend, position) + 10 - borrowTimes[position]).toString(), position, borrowTimes[position])
+				newMinuendArray[position].push((this.getDigitAtPosition(minuend, position) + 10));
 			}
-		} catch (ex) {
-			return new DifferenceAndNewMinuend(parseInt(differenceArray.reverse().join(''), 10), newMinuendArray);
+			this.view.changeAnswerDifferenceToEditMode(position);
+			differenceArray[position] = await this.view.getDifferenceAsync(position);
+			this.view.changeAnswerDifferenceToViewMode(position);
+
+			if (position == 2 && differenceArray[position] == 0) {
+				this.view.setAnswerDifference('', position);
+			}
 		}
 
 		return new DifferenceAndNewMinuend(parseInt(differenceArray.reverse().join(''), 10), newMinuendArray);
