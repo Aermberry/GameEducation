@@ -41,11 +41,11 @@
 	</w:Declarations>
 
 <e:Image id="bgImg" source="bg_png" locked="true"/>
-<e:Label id="firstTitleLabel" text="友誼第一" textColor="0xFF9901" fontFamily="huakangchaoheiti" size="129" x="1155" y="83"/>
-<e:Label id="secondTitleLabel" text="比賽第二" textColor="0xFF9901" fontFamily="huakangchaoheiti" size="129" x="1510" y="251"/>
+<e:Label id="firstTitleLabel" text="友誼第一" textColor="0xFF9901" fontFamily="華康超黑體" size="129" x="1155" y="83"/>
+<e:Label id="secondTitleLabel" text="比賽第二" textColor="0xFF9901" fontFamily="華康超黑體" size="129" x="1510" y="251"/>
 <e:Image id="sportHallImg" source="sports_hall_png" locked="true"/>
 <e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
-<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="0x000000" bold="true" locked="true"/>
+<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="華康超黑體" textColor="0x000000" bold="true" locked="true"/>
 <e:Group id="exitGroup" x="445" y="1056" height="161" width="161" locked="true"/>
 
 <e:Image id="soundBtn" source="btn_png" x="1953" y="1056" locked="true"/>

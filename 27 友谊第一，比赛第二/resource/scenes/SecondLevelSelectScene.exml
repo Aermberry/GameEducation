@@ -45,21 +45,21 @@
 
 	<e:Group id="toolbarGroup" touchThrough="true" locked="true">
 		<e:Image id="exitBtn" source="btn_png" x="435" y="1056" />
-		<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="huakangchaoheiti" textColor="0x000000" bold="true"/>
+		<e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="華康超黑體" textColor="0x000000" bold="true"/>
 		<e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0"/>
 
 		<e:Image id="confirmFrame" source="confirm_button_png" x="1526" y="1056"/>
-		<e:Label id="confirmLabel" text="確定" fontFamily="huakangchaoheiti" x="1537.5" y="1104" size="60" bold="true"/>
+		<e:Label id="confirmLabel" text="確定" fontFamily="華康超黑體" x="1537.5" y="1104" size="60" bold="true"/>
 		<e:Group id="confirmGroup" x="1526" y="1056" width="156" height="156"/>
 
 		<e:Image id="correctImg" source="orange_btn_png" x="1739" y="1056" alpha="0.5"/>
 		<e:Group id="correctGroup" x="1739" y="1056" height="161" width="161" touchEnabled="false" alpha="0.2">
-			<e:Label id="correctLabel" x="19" y="50.5" text="改正" bold="true" fontFamily="huakangchaoheiti" size="60"/>
+			<e:Label id="correctLabel" x="19" y="50.5" text="改正" bold="true" fontFamily="華康超黑體" size="60"/>
 		</e:Group>
 
 		<e:Image id="replayBtn" source="btn_png" x="1953" y="1056" alpha="0.5"/>
 		<e:Group id="replayGroup" x="1953" y="1056" height="161"  width="161" touchEnabled="false" alpha="0.2">
-			<e:Label id="replayLabel" x="27.16" y="30.81" fontFamily="huakangchaoheiti" bold="true" size="50" text="重新開始" textColor="0x009900" anchorOffsetY="0" height="99.39" anchorOffsetX="0" width="106.67"/>
+			<e:Label id="replayLabel" x="27.16" y="30.81" fontFamily="華康超黑體" bold="true" size="50" text="重新開始" textColor="0x009900" anchorOffsetY="0" height="99.39" anchorOffsetX="0" width="106.67"/>
 		</e:Group>
 	</e:Group>
 		<e:Group id="answerGroup" touchThrough="true">
