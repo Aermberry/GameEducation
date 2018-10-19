@@ -34,7 +34,7 @@ interface ICalculationView {
 	/** 获取用户是否需要进位的选择 */
 	confirmNeedCarryAsync(): Promise<boolean>;
 	/** 显示用户“是否进位”选择错误的提示 */
-	showNeedCarryError(): void;
+	showNeedCarryError(position: number): void;
 	/** 隐藏用户“是否进位”选择错误的提示 */
 	hideNeedCarryError(): void;
 
@@ -52,6 +52,7 @@ interface ICalculationView {
 	hideNextQuestionButton(): void;
 	/** 等待用户点击“下一题" */
 	nextQuestionButtonClickAsync(): Promise<void>;
+	boyshowhie(): void;
 
 	openBox(): void;
 	closeBox(): void;
