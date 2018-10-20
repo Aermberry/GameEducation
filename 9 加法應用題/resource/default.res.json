@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,wlts_logo_jpg,add_2streamsound 0_mp3,add_2streamsound 1_mp3,add_2streamsound 2_mp3,add_2streamsound 3_mp3,add_2streamsound 4_mp3,add_1streamsound 0_mp3,add_1streamsound 1_mp3,add_1streamsound 2_mp3,add_1streamsound 3_mp3,add_1streamsound 4_mp3,add_1streamsound 5_mp3,add_1streamsound 6_mp3,add_3streamsound 0_mp3,add_3streamsound 1_mp3,add_3streamsound 2_mp3,add_3streamsound 3_mp3,add_3streamsound 4_mp3,add_4streamsound 0_mp3,add_4streamsound 1_mp3,add_4streamsound 2_mp3,add_4streamsound 3_mp3,add_4streamsound 4_mp3,add_4streamsound 5_mp3,add_4streamsound 6_mp3,add_6streamsound 0_mp3,add_6streamsound 1_mp3,add_6streamsound 2_mp3,add_6streamsound 3_mp3,add_6streamsound 4_mp3,add_6streamsound 5_mp3,add_6streamsound 6_mp3,add_5streamsound 0_mp3,add_5streamsound 1_mp3,add_5streamsound 2_mp3,add_5streamsound 3_mp3,add_5streamsound 4_mp3,add_5streamsound 5_mp3,add_5streamsound 6_mp3,rectangle_blue_large_png,girl_png,boy_png,wave_count1_png,wave_count2_png,wave_count3_png,wave_count3_bg_png,wave_2_png,wave_1_png,result_124_png,result_208_png,result_332_png,result_zg_png,leave_box_png,next_normal_png,next_over_png,number_box_png,addition_png,header_head_png,prople_35_png,prople_total_png,tilte_bg_2_png,boy_1_png,girl_1_png,prople_13_png,people_boy_b_png,people_girl_g_png,prople_1ab_png,prople_tt_png,last-normal_png,last-over_png,frame_figure_png,card_88_png,card_88_2_png,card_105_png,card_total_2_png,card_total_png,card_tsk_png,card_dk_png,card_105_s_png,card_193_png,boy_darts_png,Bubble_box1_png,Bubble_box2_png,darts_circular_png,darts1_png,darts2_png,darts3_png,fraction_165_png,fraction_165_2_png,fraction_165-1_png,fraction_189_png,fraction_189_1_png,fraction_189_2_png,fraction_total_png,fraction_total_1_png,black_box_png,darts_fraction_png,yellow_frame_png,brackets_png,milk_png,milk_80_png,milk_240_png,milk_box_png,milk_cup_png,milk_cup_1_png,milk_total_png,milliliter_1_png,milliliter_2_png,milliliter_3_png,milliliter_4_png,milliliter_5_png,milliliter_6_png,totoal_title_png,Book_265_png,Book_265_2_png,Book_435_png,Book_435_1_png,Book_top_png,Book_total_png,Bookshelf_1_png,Bookshelf_2_png,Bookshelf_3_png,Bookshelf_4_png,Bookshelf_5_png,Bookshelf_6_png,Bookshelf_7_png,Bookshelf_8_png,Book_total700_png,button_over_png,button_normal_png,button_normal2_png,button_over2_png,exit_over_png,exit_normal_png,exit_over2_png,exit_normal2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,eight_shadow_bottom_left_png,eight_shadow_bottom_right_png,eight_shadow_top_left_png,five_png,five_roof_png,four_and_cactus_png,grass_dark_png,grass_dark_light_png,grass_light_png,grass_light_dark_png,nine_png,nine_roof_png,nine_shadow_bottom_png,nine_shadow_middle_png,one_png,one_roof_png,rectangle_cyan_png,seven_png,seven_shadow_png,six_png,six_roof_png,six_shadow_bottom_png,six_shadow_middle_png,splash_bg_png,three_png,three_roof_png,three_shadow_png,three_shadow_bottom_png,three_shadow_middle_png,three_shadow_middle_bottom_png,two_png,wlts_logo_jpg,rectangle_blue_large_png,girl_png,boy_png,wave_count1_png,wave_count2_png,wave_count3_png,wave_count3_bg_png,wave_2_png,wave_1_png,result_124_png,result_208_png,result_332_png,result_zg_png,leave_box_png,next_normal_png,next_over_png,number_box_png,addition_png,header_head_png,prople_35_png,prople_total_png,tilte_bg_2_png,boy_1_png,girl_1_png,prople_13_png,people_boy_b_png,people_girl_g_png,prople_1ab_png,prople_tt_png,last-normal_png,last-over_png,frame_figure_png,card_88_png,card_88_2_png,card_105_png,card_total_2_png,card_total_png,card_tsk_png,card_dk_png,card_105_s_png,card_193_png,boy_darts_png,Bubble_box1_png,Bubble_box2_png,darts_circular_png,darts1_png,darts2_png,darts3_png,fraction_165_png,fraction_165_2_png,fraction_165-1_png,fraction_189_png,fraction_189_1_png,fraction_189_2_png,fraction_total_png,fraction_total_1_png,black_box_png,darts_fraction_png,yellow_frame_png,brackets_png,milk_png,milk_80_png,milk_240_png,milk_box_png,milk_cup_png,milk_cup_1_png,milk_total_png,milliliter_1_png,milliliter_2_png,milliliter_3_png,milliliter_4_png,milliliter_5_png,milliliter_6_png,totoal_title_png,Book_265_png,Book_265_2_png,Book_435_png,Book_435_1_png,Book_top_png,Book_total_png,Bookshelf_1_png,Bookshelf_2_png,Bookshelf_3_png,Bookshelf_4_png,Bookshelf_5_png,Bookshelf_6_png,Bookshelf_7_png,Bookshelf_8_png,Book_total700_png,button_over_png,button_normal_png,button_normal2_png,button_over2_png,exit_over_png,exit_normal_png,exit_over2_png,exit_normal2_png,start_png,gameEui_json,add_1streamsound_1_mp3,add_1streamsound_3_mp3,add_1streamsound_5_mp3,add_1streamsound_6_mp3,add_1streamsound_4_mp3,add_1streamsound_2_mp3,add_2streamsound_0_mp3,add_2streamsound_1_mp3,add_2streamsound_2_mp3,add_2streamsound_3_mp3,add_2streamsound_4_mp3,add_3streamsound_0_mp3,add_3streamsound_1_mp3,add_3streamsound_2_mp3,add_3streamsound_3_mp3,add_3streamsound_4_mp3,add_4streamsound_0_mp3,add_4streamsound_1_mp3,add_4streamsound_2_mp3,add_4streamsound_3_mp3,add_4streamsound_4_mp3,add_4streamsound_5_mp3,add_4streamsound_6_mp3,add_5streamsound_0_mp3,add_5streamsound_1_mp3,add_5streamsound_2_mp3,add_5streamsound_3_mp3,add_5streamsound_4_mp3,add_5streamsound_5_mp3,add_5streamsound_6_mp3,add_6streamsound_0_mp3,add_6streamsound_1_mp3,add_6streamsound_2_mp3,add_6streamsound_3_mp3,add_6streamsound_4_mp3,add_6streamsound_5_mp3,add_6streamsound_6_mp3,add_1streamsound_0_mp3",
 			"name": "preload"
 		}
 	],
@@ -355,196 +355,6 @@
 			"url": "images/wlts_logo.jpg",
 			"type": "image",
 			"name": "wlts_logo_jpg"
-		},
-		{
-			"url": "audios/add2/add_2streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_2streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add2/add_2streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_2streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add2/add_2streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_2streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add2/add_2streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_2streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add2/add_2streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_2streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 5.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 5_mp3"
-		},
-		{
-			"url": "audios/add1/add_1streamsound 6.mp3",
-			"type": "sound",
-			"name": "add_1streamsound 6_mp3"
-		},
-		{
-			"url": "audios/add3/add_3streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_3streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add3/add_3streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_3streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add3/add_3streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_3streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add3/add_3streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_3streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add3/add_3streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_3streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 5.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 5_mp3"
-		},
-		{
-			"url": "audios/add4/add_4streamsound 6.mp3",
-			"type": "sound",
-			"name": "add_4streamsound 6_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 5.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 5_mp3"
-		},
-		{
-			"url": "audios/add6/add_6streamsound 6.mp3",
-			"type": "sound",
-			"name": "add_6streamsound 6_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 0.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 0_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 1.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 1_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 2.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 2_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 3.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 3_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 4.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 4_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 5.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 5_mp3"
-		},
-		{
-			"url": "audios/add5/add_5streamsound 6.mp3",
-			"type": "sound",
-			"name": "add_5streamsound 6_mp3"
 		},
 		{
 			"url": "textures/rectangle_blue_large.png",
@@ -1030,6 +840,206 @@
 			"name": "exit_normal2_png",
 			"type": "image",
 			"url": "textures/exit_normal.png"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "gameEui_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "add_1streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_1.mp3"
+		},
+		{
+			"name": "add_1streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_3.mp3"
+		},
+		{
+			"name": "add_1streamsound_5_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_5.mp3"
+		},
+		{
+			"name": "add_1streamsound_6_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_6.mp3"
+		},
+		{
+			"name": "add_1streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_4.mp3"
+		},
+		{
+			"name": "add_1streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_2.mp3"
+		},
+		{
+			"name": "add_2streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add2/add_2streamsound_0.mp3"
+		},
+		{
+			"name": "add_2streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add2/add_2streamsound_1.mp3"
+		},
+		{
+			"name": "add_2streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add2/add_2streamsound_2.mp3"
+		},
+		{
+			"name": "add_2streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add2/add_2streamsound_3.mp3"
+		},
+		{
+			"name": "add_2streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add2/add_2streamsound_4.mp3"
+		},
+		{
+			"name": "add_3streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add3/add_3streamsound_0.mp3"
+		},
+		{
+			"name": "add_3streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add3/add_3streamsound_1.mp3"
+		},
+		{
+			"name": "add_3streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add3/add_3streamsound_2.mp3"
+		},
+		{
+			"name": "add_3streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add3/add_3streamsound_3.mp3"
+		},
+		{
+			"name": "add_3streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add3/add_3streamsound_4.mp3"
+		},
+		{
+			"name": "add_4streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_0.mp3"
+		},
+		{
+			"name": "add_4streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_1.mp3"
+		},
+		{
+			"name": "add_4streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_2.mp3"
+		},
+		{
+			"name": "add_4streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_3.mp3"
+		},
+		{
+			"name": "add_4streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_4.mp3"
+		},
+		{
+			"name": "add_4streamsound_5_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_5.mp3"
+		},
+		{
+			"name": "add_4streamsound_6_mp3",
+			"type": "sound",
+			"url": "audios/add4/add_4streamsound_6.mp3"
+		},
+		{
+			"name": "add_5streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_0.mp3"
+		},
+		{
+			"name": "add_5streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_1.mp3"
+		},
+		{
+			"name": "add_5streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_2.mp3"
+		},
+		{
+			"name": "add_5streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_3.mp3"
+		},
+		{
+			"name": "add_5streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_4.mp3"
+		},
+		{
+			"name": "add_5streamsound_5_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_5.mp3"
+		},
+		{
+			"name": "add_5streamsound_6_mp3",
+			"type": "sound",
+			"url": "audios/add5/add_5streamsound_6.mp3"
+		},
+		{
+			"name": "add_6streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_0.mp3"
+		},
+		{
+			"name": "add_6streamsound_1_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_1.mp3"
+		},
+		{
+			"name": "add_6streamsound_2_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_2.mp3"
+		},
+		{
+			"name": "add_6streamsound_3_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_3.mp3"
+		},
+		{
+			"name": "add_6streamsound_4_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_4.mp3"
+		},
+		{
+			"name": "add_6streamsound_5_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_5.mp3"
+		},
+		{
+			"name": "add_6streamsound_6_mp3",
+			"type": "sound",
+			"url": "audios/add6/add_6streamsound_6.mp3"
+		},
+		{
+			"name": "add_1streamsound_0_mp3",
+			"type": "sound",
+			"url": "audios/add1/add_1streamsound_0.mp3"
 		}
 	]
 }

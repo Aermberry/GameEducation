@@ -565,10 +565,43 @@
 
 
 		</tween:TweenGroup>
+		<tween:TweenGroup id="motion_4">
+			<tween:TweenItem target="{image41}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image42}">
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image43}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image44}">
+				<tween:Wait duration="1500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a246dcdd"/>
 	<e:Image x="127.5" y="188" source="rectangle_blue_large_png" locked="true"/>
-	<e:Group id="group" x="368" y="366" alpha="1">
+	<e:Group id="group" x="368" y="366" alpha="1" locked="true">
 		<e:Image id="image8" x="182" y="0" source="boy_1_png"/>
 		<e:Image id="image7" x="212" y="30" source="boy_1_png"/>
 		<e:Image id="image6" x="242" y="60" source="boy_1_png"/>
@@ -592,7 +625,7 @@
 		<e:Image id="image20" x="68" y="260" source="boy_1_png"/>
 		<e:Image id="image19" x="102" y="274" source="boy_1_png"/>
 	</e:Group>
-	<e:Group id="group0" x="1184.79" y="345.76" alpha="1">
+	<e:Group id="group0" x="1184.79" y="345.76" alpha="1" locked="true">
 		<e:Image id="image30" x="0" y="0" source="girl_1_png"/>
 		<e:Image id="image29" x="30" y="30" source="girl_1_png"/>
 		<e:Image id="image28" x="60" y="60" source="girl_1_png"/>
@@ -627,4 +660,8 @@
 	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  visible="false"/>
 	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
 	<e:Label text="2" x="60.88" y="169.67" textColor="0x002b58" size="120" fontFamily="DFKai-SB"/>
+	<e:Image id="image41" x="858.03" y="806.15" source="prople_total_png" alpha="0"/>
+	<e:Image id="image42" x="857.33" y="878.7" source="prople_tt_png" alpha="0"/>
+	<e:Image id="image43" x="936.7" y="878.88" source="prople_13_png" alpha="0"/>
+	<e:Image id="image44" x="806.19" y="935.94" source="prople_35_png" alpha="0"/>
 </e:Skin>

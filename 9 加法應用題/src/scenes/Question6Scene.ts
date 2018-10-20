@@ -42,18 +42,20 @@ class Question6Scene extends eui.Component implements eui.UIComponent {
 
 	private async playGame(): Promise<void> {
 		this.motion_book1.play(0);
-		await lzlib.SoundUtility.playSound('add_6streamsound 0_mp3');
-		await lzlib.SoundUtility.playSound('add_6streamsound 1_mp3');
-		await lzlib.SoundUtility.playSound('add_6streamsound 2_mp3');
-		await lzlib.SoundUtility.playSound('add_6streamsound 3_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_0_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_1_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_2_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_3_mp3');
+		this.examplesButton.visible = true;
 
 
 	}
 
 	private async playExamples(): Promise<void> {
+		this.examplesButton.visible = false;
 		this.motion_book2.play(0);
-		await lzlib.SoundUtility.playSound('add_6streamsound 4_mp3');
-		await lzlib.SoundUtility.playSound('add_6streamsound 5_mp3');
-		await lzlib.SoundUtility.playSound('add_6streamsound 6_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_4_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_5_mp3');
+		await lzlib.SoundUtility.playSound('add_6streamsound_6_mp3');
 	}
 }

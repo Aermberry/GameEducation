@@ -33,6 +33,8 @@ class Main extends eui.UILayer {
     protected createChildren(): void {
         super.createChildren();
 
+        Main.instance = this
+
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
         })
@@ -60,7 +62,7 @@ class Main extends eui.UILayer {
     private async runGame() {
         await this.loadResource()
         this.createGameScene();
-        const result = await RES.getResAsync("description_json");
+        const result = await RES.getResAsync("description_json")
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
@@ -68,16 +70,18 @@ class Main extends eui.UILayer {
     }
 
     private async loadResource() {
+        const loadingView = new LoadingUI();
         try {
-            const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
-            this.stage.removeChild(loadingView);
         }
         catch (e) {
             console.error(e);
+        }
+        finally {
+            this.stage.removeChild(loadingView);
         }
     }
 
@@ -93,21 +97,19 @@ class Main extends eui.UILayer {
         })
     }
 
-    private textfield: egret.TextField;
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
-        Main.instance = this;
-        this.addChild(new Question4Scene());
+        this.addChild(new Question1Scene())
     }
 
     public static instance: Main
 
     public gotoScene(scene: eui.Component)
     {
-        this.removeChildren();
+        this.removeChildren()
         this.addChild(scene);
     }
 }

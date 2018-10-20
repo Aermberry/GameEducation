@@ -188,6 +188,13 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{image8}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="165a246dcdd"/>
@@ -195,7 +202,7 @@
 	<e:Image x="290.5" y="28" source="header_head_png"/>
 	<e:Image x="1078.79" y="49.5" source="addition_png"/>
 	<e:Image x="20" y="157" source="number_box_png"/>
-	<e:Image x="18.18" y="940.06" source="last-normal_png"/>
+	<e:Image x="18.18" y="940.06" source="last-normal_png" visible="false"/>
 	<e:Image x="226" y="231" source="Book_top_png"/>
 	<e:Image x="272.79" y="248.64" source="Book_435_png"/>
 	<e:Image id="image6" x="857.21" y="245.64" source="Book_265_png"/>
@@ -215,7 +222,7 @@
 
 	<ns1:ImageButton id="exitButton" x="1706" y="930" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
 	<e:Image x="20" y="156.79" source="number_box_png"/>
-	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  alpha="0"/>
+	<ns1:ImageButton id="examplesButton" x="800" y="793" normalImageSource="button_normal_png" overImageSource="button_over_png"  alpha="1" visible="false"/>
 	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
 	<e:Label text="6" x="60.88" y="178.7" fontFamily="DFKai-SB" textColor="0x002b58" anchorOffsetX="0" width="69.55" anchorOffsetY="0" height="90.61" size="120"/>
 </e:Skin>

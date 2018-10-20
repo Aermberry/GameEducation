@@ -230,7 +230,7 @@
 	<e:Image x="1742.7" y="166.79" source="leave_png"/>
 	<e:Image x="1712" y="942" source="next_normal_png"/>
 	<e:Image x="20" y="157" source="number_box_png"/>
-	<e:Image x="18.18" y="940.06" source="last-normal_png"/>
+	<e:Image x="18.18" y="940.06" source="last-normal_png" visible="false"/>
 	<e:Image x="866" y="412" source="boy_darts_png"/>
 	<e:Image x="390" y="412" source="darts_circular_png"/>
 	<e:Image x="241" y="422" source="black_box_png"/>
