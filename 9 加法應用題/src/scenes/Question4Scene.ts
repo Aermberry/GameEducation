@@ -34,6 +34,7 @@ class Question4Scene extends eui.Component implements eui.UIComponent {
 	}
 	// 列式计算按钮事件
 	private onExamplesButtonClick(): void {
+		
 		this.playExamples();
 	}
 	// 上一题按钮事件
@@ -47,12 +48,13 @@ class Question4Scene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound('add_4streamsound 1_mp3');
 		await lzlib.SoundUtility.playSound('add_4streamsound 2_mp3');
 		await lzlib.SoundUtility.playSound('add_4streamsound 3_mp3');
-
+		this.examplesButton.visible =true;
 
 	}
 
 	private async playExamples(): Promise<void> {
-		this.motion_darts1.play(0);
+		this.examplesButton.visible = false;
+		this.motion_darts2.play(0);
 		await lzlib.SoundUtility.playSound('add_4streamsound 4_mp3');
 		await lzlib.SoundUtility.playSound('add_4streamsound 5_mp3');
 		await lzlib.SoundUtility.playSound('add_4streamsound 6_mp3');
