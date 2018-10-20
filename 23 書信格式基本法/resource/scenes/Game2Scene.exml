@@ -67,7 +67,7 @@
 	<e:Group width="1570" height="1306" x="26" y="125">
 		<e:Image left="0" right="0" top="0" bottom="0" source="background_clock_png"/>
 		<!--<ns1:ContentComponent width="1008" height="1068" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到妳的來信，十分掛念，妳的身體好嗎？" text="妳到日本工作已有三個多月，我和妹妹都十分掛念妳。妹妹會在壹月十日舉行的學校開放日中表演，她希望妳能回來欣賞，妳可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用妳和媽媽擔心。當妳回來時，我們壹定給妳壹張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>-->
-		<ns1:ContentComponent id="contentComponent" width="940" height="1088" x="74" y="59" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan=" "/>
+		<ns1:ContentComponent id="contentComponent" width="940" height="1088" x="74" y="59" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan=" " text="你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心，當你回來時，我們一定給你一張滿意的成績表。" greet="很久没有收到你的來信，十分掛念，你的身體好嗎？" xiakuan="兒健" date="十一月二十日"/>
 		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="234" y="785.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<ns1:AlertElderComponent id="alertElderComponent" width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0" visible="false">

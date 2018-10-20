@@ -55,7 +55,21 @@
 			<tween:TweenItem target="{group}">
 				<tween:Set>
 					<tween:props>
-						<e:Object y="{668}"/>
+						<e:Object y="{864.97}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1007.12}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{1092}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
