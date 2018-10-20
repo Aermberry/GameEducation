@@ -101,7 +101,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	}
 
-	private _text = '蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。';
+	private _text = '知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。';
 
 	public get text(): string
 	{

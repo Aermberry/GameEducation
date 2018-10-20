@@ -68,7 +68,6 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 
 	public showAlertInfo(info: string): void
 	{
-		console.log('showAlertInfo');
 		this.alertGame2Component.text = info;
 		this.alertGame2Component.visible = true;
 	}
@@ -128,7 +127,7 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 
 	public showCorrectOfPart(): void
 	{
-		this.contentComponent.xiakuan = this.game4Repository.correctOfPart;
+		this.contentComponent.xiakuan = '侄\r健仁';
 		this.contentComponent.$children[this.game4Repository.index].visible = true;
 	}
 

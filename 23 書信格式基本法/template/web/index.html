@@ -27,14 +27,15 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
         @font-face {
             font-family:"華康楷書體";
-            src: url("resource/fonts/華康楷書體.woff2") format("woff2"),
-                url("resource/fonts/華康楷書體.woff") format("woff");
-        }
+            src: url("resource/fonts/華康楷書體.woff2") format('woff2'),
+                 url('resource/fonts/華康楷書體.woff') format('woff'),
+                url("resource/fonts/華康楷書體.ttf") format("truetype");
+        } 
         @media screen and (max-device-width:641px) and (max-device-height:823px){
            #logo {
                height: 25px;
@@ -63,7 +64,7 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
     <div id="egret-player" 
         class="egret-player" 
         data-entry-class="Main" 
@@ -77,10 +78,11 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
+        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: 華康楷書體; font-size: 1px;" />    
+    <label style="font-family: 華康楷書體; color: transparent;">在書信的內容中，[媽媽]和[妳]是同時出現，因此，[妳]是不可能是媽媽。下款是發信人的署名，壹般寫於日期之前。正文是寫信最主要的部分，內容是發信人希望收信人知道的事情。下款是發信人的署名，一般寫於日期之前。問候語是向對方表示問候或昔年，壹般寫於書信的首段。日期是寫信人發信的日子。祝頌語是發信人對收信人的祝頌，壹般寫於書信的末段。上款是對收信人的稱謂。上款爸爸在書信的內容中，[媽媽]和[你]是同時出現，因此，[你]是不可能是媽媽。對老師的自稱不會是[兒]，而是[學生]。祝頌語生活愉快從書信的日期來看，並不是聖誕節的日子，因此，用[聖誕節快樂]作為祝頌語不合適。在書信的內容中，並沒有提及是舅父的生日，因此，用[祝生日快樂]作為祝頌語並不合適。下款侄健仁一般寫信給長輩的書信，在名字的前面都要寫上自稱。[甥]是用於對舅父、舅母、姨母、阿姨、姨夫的自稱。這便是小雄：很久沒有見面了，你好嗎？知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。祝身體健康伯父八月十日上款下一题請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格請找出書信欠缺的部分：請選出正確的上款：開始</label>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -136,29 +138,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
