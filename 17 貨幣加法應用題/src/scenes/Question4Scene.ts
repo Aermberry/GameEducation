@@ -86,9 +86,9 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private async startRun(): Promise<void>
 	{
 		lzlib.SoundUtility.playSound('streamsound4_0_mp3');
-		await lzlib.ThreadUtility.sleep(4000);
+		await this.sleep(4000);
 		this.showCoin();
-		await lzlib.ThreadUtility.sleep(4000);
+		await this.sleep(4000);
 		this.showQuestion();
 		await lzlib.SoundUtility.playSound('streamsound4_1_mp3');
 		this.showCalcComponent();	
@@ -148,6 +148,13 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private hideCalcGroup(): void
 	{
 		this.coinGroup.visible = false;
+	}
+	private sleep(ms = 0): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+			setTimeout(function(){
+			}, ms)
+		});
 	}
 	
 }
