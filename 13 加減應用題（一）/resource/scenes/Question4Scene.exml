@@ -93,13 +93,13 @@
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="4"/>
 		<e:Image id="textBackground" width="683" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
 		<e:Image id="question4StartImage" x="195.06" y="99.94" source="question4_start_png" alpha="1"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="332" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
-		<e:Rect width="700" height="1" x="1011.58" y="820.67"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="270.55" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
+		<e:Rect width="700" height="1" x="1011.58" y="820.67" strokeWeight="1"/>
 		<e:Image x="1104" y="245.24" source="xiaoming_png" bottom="66"/>
 		<e:Image x="1162.76" y="760" source="mark_xiaoming_png" bottom="30"/>
-		<e:Rect id="height120LineRect" width="1" height="499" x="1095.82" y="323.15"/>
+		<e:Rect id="height120LineRect" width="2" height="499" x="1095.82" y="323.15" strokeWeight="2"/>
 		<e:Rect id="height120RowLineRect" width="450" height="1" x="996.37" y="321.6" strokeWeight="1"/>
-		<e:Image id="height120image" x="923.43" y="327.3" source="arrow_and_120height_png" alpha="0"/>
+		<e:Image id="height120image" x="925.94" y="324.27" source="arrow_and_120height_png" alpha="0" anchorOffsetX="0" width="181.49" anchorOffsetY="0" height="218.97"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="formula4_question_png"/>
 			<ns1:ButtonComponent id="shortButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0" normalSource="short_normal_png" overSource="short_over_png" visible="false"/>
@@ -109,7 +109,7 @@
 		<e:Image id="ziqingImage" x="1354.09" y="478" source="ziqing_png" bottom="32" alpha="0"/>
 		<e:Image id="height135ArrowImage" x="1592.64" y="240.03" source="arrow_and_135height_png" visible="false"/>
 		<e:Rect id="height135LineRect" width="1" height="580" x="1602.09" y="242.81" strokeWeight="1" visible="false"/>
-		<e:Rect id="height135RowLineRect" width="500" height="1" x="1237" y="239" alpha="0"/>
+		<e:Rect id="height135RowLineRect" width="500" height="1" x="1237" y="239" alpha="0" strokeWeight="1"/>
 		<e:Image id="height15ArrowLineImage" x="1168.68" y="238.82" source="arrow_and_15height_png" alpha="0"/>
 		<e:Rect id="height15LineRect" width="1" height="82" x="1308.15" y="240.2" alpha="0" strokeWeight="1"/>
 		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>

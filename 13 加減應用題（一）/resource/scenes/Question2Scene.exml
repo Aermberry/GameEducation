@@ -40,7 +40,7 @@
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="2"/>
 		<e:Image id="textBackgroundImage" width="766" height="164.36" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1" visible="false"/>
 		<e:Image id="question2StartImage" x="348.64" y="143.33" alpha="1" source="question2_start_png" visible="false"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula2_question_png" leftImageSource="formula2_left_png" rightImageSource="formula2_right_png" resultImageSource="formula2_result_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="270.55" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula2_question_png" leftImageSource="formula2_left_png" rightImageSource="formula2_right_png" resultImageSource="formula2_result_png"/>
 		<e:Image id="messageBorderBrotherImage" x="1035.7" y="86.88" source="message_border_question2_png"/>
 		<e:Image x="1075.43" y="136.18" source="younger_brother_and_money_png"/>
 		<e:Image id="messageBorderSisterImage" x="1062.97" y="484.75" source="message_border_question2_png" alpha="1" visible="false"/>
