@@ -2,7 +2,7 @@
  * @Author: mikey.zhaopeng 
  * @Date: 2018-09-30 11:16:20 
  * @Last Modified by: Salmonberry
- * @Last Modified time: 2018-10-18 17:58:07
+ * @Last Modified time: 2018-10-22 17:15:51
  */
 
 class Base implements BaseModel {
@@ -33,11 +33,11 @@ class Base implements BaseModel {
     object.visible = false;
   }
 
-  public onClickNextScene(btn: eui.Image | eui.Button, Scene: eui.Component) {
+  public onClickNextScene(btn: eui.Image | eui.Button, Scene1: eui.Component,Scene2:eui.Component) {
     btn.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
-      function() {
-        Main.instance.gotoScene(Scene);
+      ()=>{
+        Scene2.addChild(Scene1);
       },
       this
     );

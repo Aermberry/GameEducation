@@ -10,7 +10,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
   private goodsGroup: eui.Group;
-  private status: string;
+  public isdisplay:number=0;
 
   public constructor() {
     super();
@@ -27,6 +27,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     this.addshowTipsLabel(this.botton, this.drinksTipsGroup);
     this.addshowTipsLabel(this.pencilBox, this.pencilBoxTipGroup);
     this.isTrue(this.schoolBag, this.isTrueImage);
+    console.log(this.isdisplay);
   }
 
   public addshowTipsLabel(
@@ -61,21 +62,27 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     btn.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
       () => {
-        this.isvisible(object);
+        this.isvisible(object,this.callback);
       },
       this
     );
   }
 
-  public async isvisible(object: eui.Image): Promise<void> {
+  public async isvisible(object: eui.Image,callback): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-    object.visible && this.gotoNextScene(new StatueScene());
+     callback();
+    console.log(this.isdisplay)
+    // object.visible && this.gotoNextScene(new StatueScene());
+    await object.visible && this.parent.removeChild(this);
   }
+
+   callback():string{
+     return "a"
+   }
 
   public gotoNextScene(scene: eui.Component) {
     Main.instance.gotoScene(scene);
-    
   }
 
   private preventClick(
