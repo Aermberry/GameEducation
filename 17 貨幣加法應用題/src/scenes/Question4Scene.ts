@@ -20,6 +20,8 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private geweiAnimation: egret.tween.TweenGroup;
 	private shiweiAnimation: egret.tween.TweenGroup;
 	private priceRightAnimation: egret.tween.TweenGroup;
+
+	private isResolve = true;
 	
 	public constructor() {
 		super();
@@ -75,6 +77,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextQuestionTap(): void
 	{
+		this.isResolve = false;
 		Main.instance.gotoScene(new Question5Scene());
 	}
 
@@ -152,7 +155,11 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private sleep(ms = 0): Promise<void>
 	{
 		return new Promise<void>((resolve, reject)=> {
-			setTimeout(function(){
+			setTimeout(() => {
+				if(this.isResolve)
+				{
+					resolve();
+				}
 			}, ms)
 		});
 	}
