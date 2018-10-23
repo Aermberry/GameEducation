@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,rect_white_floor_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle_horn_click_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_border_blue_png,horn_animation_json,horn_animation_png,sound 9 (contentSoundRaw2)_mp3,sound 8 (oSound5)_mp3,sound 7 (guideSound0Raw)_mp3,sound 6 (guideSound1Raw)_mp3,sound 5 (guideSound2Raw)_mp3,sound 4 (instructionSoundRaw)_mp3,sound 3 (oSound2)_mp3,sound 2 (oSound0)_mp3,sound 16 (oSound7)_mp3,sound 15 (oSound6)_mp3,sound 14 (oSound4)_mp3,sound 13 (oSound3)_mp3,sound 12 (completeSoundRaw)_mp3,sound 11 (contentSoundRaw0)_mp3,sound 10 (contentSoundRaw1)_mp3,sound 1 (oSound1)_mp3,panel_bottom_png,title_blue_png,speaker_png,panel_green_png,dog_movie_png,dog_movie_json,circle_pink_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,wall_window_png,wall_left_png,rect_white_floor_png,goods_pot_umbrella_png,goods_dog_png,goods_cat_png,goods_book_png,goods_bird_and_birdcage_png,goods_bear_png,furniture_wardrobe_png,furniture_table_png,furniture_stool_png,furniture_lamp_desk_png,furniture_hanger_coat_png,furniture_door_white_png,floor_red_png,circle_horn_click_png,biscuit_png,bar-row-gray_png,bar-row-blue_png,alert_border_blue_png,horn_animation_json,horn_animation_png,sound 9 (contentSoundRaw2)_mp3,sound 8 (oSound5)_mp3,sound 7 (guideSound0Raw)_mp3,sound 6 (guideSound1Raw)_mp3,sound 5 (guideSound2Raw)_mp3,sound 4 (instructionSoundRaw)_mp3,sound 3 (oSound2)_mp3,sound 2 (oSound0)_mp3,sound 16 (oSound7)_mp3,sound 15 (oSound6)_mp3,sound 14 (oSound4)_mp3,sound 13 (oSound3)_mp3,sound 12 (completeSoundRaw)_mp3,sound 11 (contentSoundRaw0)_mp3,sound 10 (contentSoundRaw1)_mp3,sound 1 (oSound1)_mp3,panel_bottom_png,title_blue_png,speaker_png,panel_green_png,dog_movie_png,dog_movie_json,circle_pink_png,alert_border_green_png",
 			"name": "preload"
 		}
 	],
@@ -365,6 +365,11 @@
 			"url": "textures/circle_pink.png",
 			"type": "image",
 			"name": "circle_pink_png"
+		},
+		{
+			"url": "textures/alert_border_green.png",
+			"type": "image",
+			"name": "alert_border_green_png"
 		}
 	]
 }

@@ -52,6 +52,7 @@ class RoundPresenter {
 
 		this.view.disableGoods(this.goods);
 		if (this.isLastRound) {
+			this.view.showCorrectGroup();
 			this.view.toastGamePassedMessage();
 			this.view.showGamePassedPanel();
 			this.view.playGamePassedAudio();

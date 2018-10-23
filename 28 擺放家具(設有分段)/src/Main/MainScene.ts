@@ -21,6 +21,8 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	private actionLeftButton: CircleButton;
 	private actionRightButton: CircleButton;
 
+	private correctGroup: eui.Group;
+
 	private currentSoundChannel: egret.SoundChannel;
 
 	private presenter = new MainPresenter();
@@ -279,5 +281,11 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public reopenMyself(): void
 	{
 		Main.instance.gotoScene(new MainScene());
+	}
+
+	public showCorrectGroup(): void
+	{
+		this.toastGroup.visible = false;
+		this.correctGroup.visible = true;
 	}
 }
