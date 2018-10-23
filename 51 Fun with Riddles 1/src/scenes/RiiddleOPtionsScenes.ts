@@ -1,4 +1,4 @@
-class StatueScene extends eui.Component implements eui.UIComponent {
+class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
 
   private Riddle01: eui.Button;
   private Riddle02: eui.Button;
@@ -15,6 +15,8 @@ class StatueScene extends eui.Component implements eui.UIComponent {
   private rid05: Riddle5Scene
   private rid06: Riddle6Scene
   private rid07: Riddle7Scene
+
+  private account:boolean=false;
 
   public constructor() {
     super();
@@ -42,7 +44,13 @@ class StatueScene extends eui.Component implements eui.UIComponent {
     statue.onClickNextScene(this.Riddle05, this.rid05,this);
     statue.onClickNextScene(this.Riddle06, this.rid06,this);
     statue.onClickNextScene(this.Riddle07, this.rid07,this);
-    let aa=this.rid01.callback()
-    console.log(aa);
+    console.log(this.account);
+    this.receiveResult();
+    console.log(this.rid01)
+  }
+
+  private async receiveResult():Promise<void>{
+   this.account=await this.rid01.resultCallback()
+   console.log(this.account);
   }
 }

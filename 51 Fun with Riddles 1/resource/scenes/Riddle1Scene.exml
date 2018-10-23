@@ -45,5 +45,5 @@
 		</e:Group>
 		<e:Image x="602.7" y="107.77" rotation="7.66" source="monkey_png"/>
 	</e:Group>
-	<e:Image id="isTrueImage" source="true_png" x="1432.88" y="1047.68" rotation="350.52" visible="false"/>
+	<e:Image id="isTrueImage" source="true_png" x="1432.88" y="1047.68" rotation="350.52" alpha="1" visible="false"/>
 </e:Skin>

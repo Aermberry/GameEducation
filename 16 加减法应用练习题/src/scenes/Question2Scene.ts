@@ -132,6 +132,7 @@ class Question2Scene extends eui.Component implements  eui.UIComponent {
 			let editableLabel = this.editableLabelGroup.getChildAt(index) as EditableLabel;
 			editableLabel.visible = true;
 			while ((inputedNumber = await this.numberPad.getCharAsync()) != correctNumber) {
+				console.log(inputedNumber);
 				console.log('输入错误');
 				this.antBoxImage.visible = true;
 				this.repeat2lmage.visible = true;

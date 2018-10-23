@@ -2,7 +2,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private botton: eui.Image;
   private pencilBox: eui.Image;
   private schoolBag: eui.Image;
-  private isTrueImage: eui.Image;
+  public isTrueImage: eui.Image;
   private transparentBlock: eui.Rect;
 
   private keepClickGroup: eui.Group;
@@ -10,7 +10,6 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
   private goodsGroup: eui.Group;
-  public isdisplay:number=0;
 
   public constructor() {
     super();
@@ -27,7 +26,6 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     this.addshowTipsLabel(this.botton, this.drinksTipsGroup);
     this.addshowTipsLabel(this.pencilBox, this.pencilBoxTipGroup);
     this.isTrue(this.schoolBag, this.isTrueImage);
-    console.log(this.isdisplay);
   }
 
   public addshowTipsLabel(
@@ -62,24 +60,26 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     btn.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
       () => {
-        this.isvisible(object,this.callback);
+        this.isvisible(object, this.resultCallback);
       },
       this
     );
   }
 
-  public async isvisible(object: eui.Image,callback): Promise<void> {
+  public async isvisible(object: eui.Image, callback): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-     callback();
-    console.log(this.isdisplay)
+    await callback();
     // object.visible && this.gotoNextScene(new StatueScene());
     await object.visible && this.parent.removeChild(this);
   }
 
-   callback():string{
-     return "a"
-   }
+  public async resultCallback(): Promise<boolean> {
+    return new Promise<boolean>(resolve => {
+      // if (this.isTrueImage.visible)
+        resolve(true);
+    })
+  }
 
   public gotoNextScene(scene: eui.Component) {
     Main.instance.gotoScene(scene);

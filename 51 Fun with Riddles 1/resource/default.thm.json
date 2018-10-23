@@ -15,7 +15,7 @@
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"TexttLabel": "resource/components/TexttLabel.exml",
 		"StartScene": "resource/scenes/StartScene.exml",
-		"StatueScene": "resource/scenes/StatueScene.exml",
+		"RiiddleOPtionsScenes": "resource/scenes/RiiddleOPtionsScenes.exml",
 		"Riddle1Scene": "resource/scenes/Riddle1Scene.exml",
 		"Riddle2Scene": "resource/scenes/Riddle2Scene.exml",
 		"Riddle3Scene": "resource/scenes/Riddle3Scene.exml",
@@ -49,8 +49,8 @@
 		"resource/scenes/Riddle5Scene.exml",
 		"resource/scenes/Riddle6Scene.exml",
 		"resource/scenes/Riddle7Scene.exml",
-		"resource/scenes/StartScene.exml",
-		"resource/scenes/StatueScene.exml"
+		"resource/scenes/RiiddleOPtionsScenes.exml",
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
