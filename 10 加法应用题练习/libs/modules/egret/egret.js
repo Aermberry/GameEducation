@@ -3481,11 +3481,7 @@ var egret;
          * @language zh_CN
          */
         Event.create = function (EventClass, type, bubbles, cancelable) {
-            var eventPool;
-            var hasEventPool = EventClass.hasOwnProperty("eventPool");
-            if (hasEventPool) {
-                eventPool = EventClass.eventPool;
-            }
+            var eventPool = EventClass.eventPool;
             if (!eventPool) {
                 eventPool = EventClass.eventPool = [];
             }
@@ -5666,26 +5662,12 @@ var egret;
             configurable: true
         });
         Bitmap.prototype.$setFillMode = function (value) {
-            var self = this;
-            if (value == self.$fillMode) {
+            if (value == this.$fillMode) {
                 return false;
             }
-            self.$fillMode = value;
+            this.$fillMode = value;
             if (egret.nativeRender) {
-                self.$nativeDisplayObject.setBitmapFillMode(self.$fillMode);
-            }
-            else {
-                self.$renderDirty = true;
-                var p = self.$parent;
-                if (p && !p.$cacheDirty) {
-                    p.$cacheDirty = true;
-                    p.$cacheDirtyUp();
-                }
-                var maskedObject = self.$maskedObject;
-                if (maskedObject && !maskedObject.$cacheDirty) {
-                    maskedObject.$cacheDirty = true;
-                    maskedObject.$cacheDirtyUp();
-                }
+                this.$nativeDisplayObject.setBitmapFillMode(this.$fillMode);
             }
             return true;
         };
@@ -13674,20 +13656,18 @@ var egret;
                         stageHeight = screenHeight;
                         break;
                 }
-                if (egret.Capabilities.runtimeType != egret.RuntimeType.WXGAME) {
-                    //宽高不是2的整数倍会导致图片绘制出现问题
-                    if (stageWidth % 2 != 0) {
-                        stageWidth += 1;
-                    }
-                    if (stageHeight % 2 != 0) {
-                        stageHeight += 1;
-                    }
-                    if (displayWidth % 2 != 0) {
-                        displayWidth += 1;
-                    }
-                    if (displayHeight % 2 != 0) {
-                        displayHeight += 1;
-                    }
+                //宽高不是2的整数倍会导致图片绘制出现问题
+                if (stageWidth % 2 != 0) {
+                    stageWidth += 1;
+                }
+                if (stageHeight % 2 != 0) {
+                    stageHeight += 1;
+                }
+                if (displayWidth % 2 != 0) {
+                    displayWidth += 1;
+                }
+                if (displayHeight % 2 != 0) {
+                    displayHeight += 1;
                 }
                 return {
                     stageWidth: stageWidth,
@@ -15867,34 +15847,32 @@ var egret;
                 }
                 return drawCalls;
             }
+            var maskRenderNode = mask.$getRenderNode();
             //遮罩是单纯的填充图形,且alpha为1,性能优化
-            if (mask) {
-                var maskRenderNode = mask.$getRenderNode();
-                if ((!mask.$children || mask.$children.length == 0) &&
-                    maskRenderNode && maskRenderNode.type == 3 /* GraphicsNode */ &&
-                    maskRenderNode.drawData.length == 1 &&
-                    maskRenderNode.drawData[0].type == 1 /* Fill */ &&
-                    maskRenderNode.drawData[0].fillAlpha == 1) {
-                    this.renderingMask = true;
-                    context.save();
-                    var maskMatrix = egret.Matrix.create();
-                    maskMatrix.copyFrom(mask.$getConcatenatedMatrix());
-                    mask.$getConcatenatedMatrixAt(displayObject, maskMatrix);
-                    context.transform(maskMatrix.a, maskMatrix.b, maskMatrix.c, maskMatrix.d, maskMatrix.tx, maskMatrix.ty);
-                    var calls = this.drawDisplayObject(mask, context, offsetX, offsetY);
-                    this.renderingMask = false;
-                    maskMatrix.$invertInto(maskMatrix);
-                    context.transform(maskMatrix.a, maskMatrix.b, maskMatrix.c, maskMatrix.d, maskMatrix.tx, maskMatrix.ty);
-                    egret.Matrix.release(maskMatrix);
-                    if (scrollRect) {
-                        context.beginPath();
-                        context.rect(scrollRect.x + offsetX, scrollRect.y + offsetY, scrollRect.width, scrollRect.height);
-                        context.clip();
-                    }
-                    calls += this.drawDisplayObject(displayObject, context, offsetX, offsetY);
-                    context.restore();
-                    return calls;
+            if (mask && (!mask.$children || mask.$children.length == 0) &&
+                maskRenderNode && maskRenderNode.type == 3 /* GraphicsNode */ &&
+                maskRenderNode.drawData.length == 1 &&
+                maskRenderNode.drawData[0].type == 1 /* Fill */ &&
+                maskRenderNode.drawData[0].fillAlpha == 1) {
+                this.renderingMask = true;
+                context.save();
+                var maskMatrix = egret.Matrix.create();
+                maskMatrix.copyFrom(mask.$getConcatenatedMatrix());
+                mask.$getConcatenatedMatrixAt(displayObject, maskMatrix);
+                context.transform(maskMatrix.a, maskMatrix.b, maskMatrix.c, maskMatrix.d, maskMatrix.tx, maskMatrix.ty);
+                var calls = this.drawDisplayObject(mask, context, offsetX, offsetY);
+                this.renderingMask = false;
+                maskMatrix.$invertInto(maskMatrix);
+                context.transform(maskMatrix.a, maskMatrix.b, maskMatrix.c, maskMatrix.d, maskMatrix.tx, maskMatrix.ty);
+                egret.Matrix.release(maskMatrix);
+                if (scrollRect) {
+                    context.beginPath();
+                    context.rect(scrollRect.x + offsetX, scrollRect.y + offsetY, scrollRect.width, scrollRect.height);
+                    context.clip();
                 }
+                calls += this.drawDisplayObject(displayObject, context, offsetX, offsetY);
+                context.restore();
+                return calls;
             }
             //todo 若显示对象是容器，同时子项有混合模式，则需要先绘制背景到displayBuffer并清除背景区域
             //绘制显示对象自身，若有scrollRect，应用clip
@@ -15903,9 +15881,6 @@ var egret;
             var displayBoundsY = displayBounds.y;
             var displayBoundsWidth = displayBounds.width;
             var displayBoundsHeight = displayBounds.height;
-            if (displayBoundsWidth <= 0 || displayBoundsHeight <= 0) {
-                return drawCalls;
-            }
             var displayBuffer = this.createRenderBuffer(displayBoundsWidth, displayBoundsHeight);
             var displayContext = displayBuffer.context;
             if (!displayContext) {
@@ -15915,7 +15890,6 @@ var egret;
             drawCalls += this.drawDisplayObject(displayObject, displayContext, -displayBoundsX, -displayBoundsY);
             //绘制遮罩
             if (mask) {
-                var maskRenderNode = mask.$getRenderNode();
                 var maskMatrix = egret.Matrix.create();
                 maskMatrix.copyFrom(mask.$getConcatenatedMatrix());
                 mask.$getConcatenatedMatrixAt(displayObject, maskMatrix);
@@ -17044,7 +17018,7 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
-        Capabilities.engineVersion = "5.2.7";
+        Capabilities.engineVersion = "5.2.5";
         /***
          * current render mode.
          * @type {string}
@@ -18013,11 +17987,6 @@ var egret;
             var textLines = this.$getTextLines();
             var length = textLines.length;
             if (length == 0) {
-                if (egret.nativeRender && self.$font) {
-                    self.$nativeDisplayObject.setDataToBitmapNode(self.$nativeDisplayObject.id, self.$font.$texture, []);
-                    self.$nativeDisplayObject.setWidth(0);
-                    self.$nativeDisplayObject.setHeight(0);
-                }
                 return;
             }
             var drawArr = [];
