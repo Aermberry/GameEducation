@@ -10,7 +10,7 @@
     "parentPath": ""
   },
   "global": {
-    "globalAutoLayerMarkEnable": true
+    "globalAutoLayerMarkEnable": false
   },
   "165b2a53c6b": {
     "path": "components\\ImageButton.ts",

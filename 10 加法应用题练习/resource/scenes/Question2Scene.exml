@@ -154,8 +154,8 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
 		<e:Label id="totalTextlmage" text="130+140" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
-	<e:Label id="text1label" text="兩種麵包共有多少個？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
-	<e:Label id="text2label" text="麵包店內有漢堡包140個，香腸包130個。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="text1label" text="兩種麵包共有多少隻？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
+	<e:Label id="text2label" text="麵包店內有漢堡包140隻，香腸包130隻。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="兩種麵包共有：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="927.18" y="369.75" alpha="1">
 		<e:Image id="runnersRlmage" x="633.24" y="194.13" source="runners_r_png" alpha="0"/>
@@ -181,6 +181,6 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="270(個）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
+		<e:Label text="270(隻）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
 	</e:Group>
 </e:Skin>
