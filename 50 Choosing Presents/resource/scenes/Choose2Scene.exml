@@ -42,7 +42,7 @@
 		<e:Label fontFamily="Comic Sans MS" x="340" y="128" text="pen" width="202" height="100" background="true"
 		         backgroundColor="0xffffff" border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle"
 		         size="50" anchorOffsetX="0" textColor="0x9900a2" />
-		<e:Label fontFamily="Comic Sans MS" x="1015" y="124" text="money bank" width="304" height="100" background="true"
+		<e:Label fontFamily="Comic Sans MS" x="1015" y="124" text="piggy bank" width="304" height="100" background="true"
 		         backgroundColor="0xffffff" border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle"
 		         size="50" anchorOffsetX="0" textColor="0x9900a2" />
 		<e:Label fontFamily="Comic Sans MS" x="296" y="426" text="basketball" width="270" height="100" background="true"
