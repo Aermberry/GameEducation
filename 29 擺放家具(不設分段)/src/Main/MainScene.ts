@@ -21,7 +21,12 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	private actionLeftButton: CircleButton;
 	private actionRightButton: CircleButton;
 
+	private correctGroup: eui.Group;
+
 	private currentSoundChannel: egret.SoundChannel;
+
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	private presenter = new MainPresenter();
 
@@ -44,7 +49,14 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		this.instructionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onInstructionButtonClick, this.presenter);
 		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidateButtonClick, this.presenter);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+	}
+
+	private onStartButton2Click(): void
+	{
 		this.presenter.loadView(this, this.goodsGroup.$children.map(child => child as GoodsComponent));
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
 	}
 
 	private initGoodsDragDrop(): void
@@ -279,5 +291,11 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	public reopenMyself(): void
 	{
 		Main.instance.gotoScene(new MainScene());
+	}
+
+	public showCorrectGroup(): void
+	{
+		this.toastGroup.visible = false;
+		this.correctGroup.visible = true;
 	}
 }
