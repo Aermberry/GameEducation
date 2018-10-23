@@ -59,6 +59,7 @@ class RoundPresenter {
 			this.view.playGamePassedMovie();
 		} else {
 			this.view.toastNextRoundMessage();
+			// this.view.enableInstructionButton();
 			this.view.openNextRoundPanel();
 		}
 	}
