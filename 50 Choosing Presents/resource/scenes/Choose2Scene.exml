@@ -15,16 +15,16 @@
 			<e:Label id="bankTipsWorldlabel" text="it costs fifteen dollars" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74"
 			         textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle"
 			         textAlign="left"  x="-6.06"/>
-			<e:Label id="bankColorTipsLabe" text="fifteen dollars" x="230.52" y="0" anchorOffsetX="0" width="426.85" anchorOffsetY="0" height="74"
-			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"
+			<e:Label id="bankColorTipsLabe" text="fifteen dollars" x="224.46" y="3.03" anchorOffsetX="0" width="426.85" anchorOffsetY="0" height="74"
+			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center"
 			         textColor="0xffffff" backgroundColor="0xff0099" background="true"  visible="false"/>
 		</e:Group>
 		<e:Group x="16.67" y="233" width="814" height="74">
 			<e:Label id="basketballTipWorldLabel" text="It's at the top of the shelf." anchorOffsetX="0" width="814" anchorOffsetY="0" textColor="0x000000"
 			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" />
-			<e:Label id="basketballTipColorLabel" text="at the top" x="135.51" y="-8" anchorOffsetX="0" width="293.52" anchorOffsetY="0" height="74" size="62"
-			         fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xFFFFFF"
-			         backgroundColor="0xFF0099" background="true"  visible="false"/>
+			<e:Label id="basketballTipColorLabel" text="at the top " x="132.48" y="-4.97" anchorOffsetX="0" width="293" anchorOffsetY="0" height="74" size="62"
+			         fontFamily="Comic Sans MS" lineSpacing="50" textAlign="center" textColor="0xFFFFFF"
+			         backgroundColor="0xFF0099" background="true"  verticalAlign="middle" visible="false"/>
 		</e:Group>
 	</e:Group>
 	<e:Button id="nextButton" label="Next" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0"
@@ -33,9 +33,9 @@
 	<e:Group id="dropGroup" x="965.82" y="974" width="540" height="119.76" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Label fontFamily="Comic Sans MS" text="pen" width="292" height="100" background="true" backgroundColor="0xffffff"
 		         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0"
-		         textColor="0x9900a2" horizontalCenter="0" bottom="8.760000000000005" visible="false" />
+		         textColor="0x9900a2" horizontalCenter="0" bottom="8.760000000000005"  visible="false"/>
 	</e:Group>
-	<e:Image id="logImage" source="true_png" x="1332.61" y="1016.49" rotation="354.36" visible="false" />
+	<e:Image id="logImage" source="true_png" x="1332.61" y="1016.49" rotation="354.36"  visible="false"/>
 	<e:Group id="maskGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
 	</e:Group>
 	<e:Group id="dragGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">

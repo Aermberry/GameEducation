@@ -39,7 +39,7 @@
 	<Ui:TexttLabel width="604" height="186" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="   We keep momey in a\n   momeny bank." fontSize="50" verticalAlign="middle" fontColor="0x000000" textAglign="left"/>
 	<e:Label text="keep" x="143.85" y="16.3" anchorOffsetX="0" width="120.67" anchorOffsetY="0" height="84" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
-	<e:Group id="playGroup" width="604" height="148">
+	<e:Group id="playGroup" width="604" height="148" visible="false">
 	<Ui:TexttLabel anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="We play basketball." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" width="604" height="148"/>
 	<e:Label text="play" x="165.06" y="24.3" anchorOffsetX="0" width="100" anchorOffsetY="0" height="84" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
