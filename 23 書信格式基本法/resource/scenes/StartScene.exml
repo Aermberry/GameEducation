@@ -86,4 +86,6 @@
 	<e:Image id="startLetter" width="499" height="426.85" x="837.43" y="997" source="start_letter_png" alpha="0" anchorOffsetX="-0.57" anchorOffsetY="-1.15"/>
 	<e:Image id="penStart" width="602" height="755" x="1300" y="646" source="pen_start_png"/>
 	<e:Label id="startLabel" text="開始" x="1133" y="1162" size="140" textColor="0xfa3a99" alpha="0" fontFamily="華康楷書體"/>
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
