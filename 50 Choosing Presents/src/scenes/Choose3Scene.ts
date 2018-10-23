@@ -92,7 +92,7 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 					children.visible = true;
 				})
 			}
-			if (this.currentText == "story book") {
+			if (this.currentText == "storybook") {
 				this.TipsGroup.$children.forEach((children, index) => {
 					(children.$children[0] as eui.Label).textColor = 0xFF0099;
 					children.$children.forEach(element => {

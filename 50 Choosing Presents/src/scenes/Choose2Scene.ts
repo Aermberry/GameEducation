@@ -85,9 +85,9 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 
 	private async onshowTips(): Promise<void> {
 
-		this.optionText == "money bank" && (this.bankTipsWorldlabel.textColor = 0xFF0099) && (this.bankColorTipsLabe.visible = true);
+		this.optionText == "piggy bank" && (this.bankTipsWorldlabel.textColor = 0xFF0099) && (this.bankColorTipsLabe.visible = true);
 		this.optionText == "basketball" && (this.basketballTipWorldLabel.textColor = 0xFF0099) && (this.basketballTipColorLabel.visible = true) && (this.helpButton.visible = true);
-		if (this.optionText == "story book") {
+		if (this.optionText == "storybook") {
 			this.bankTipsWorldlabel.textColor = 0xFF0099;
 			this.bankColorTipsLabe.visible = true;
 			this.basketballTipWorldLabel.textColor = 0xFF0099;

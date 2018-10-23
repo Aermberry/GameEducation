@@ -83,7 +83,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	private async showTipsLabel(): Promise<void> {
 		
 		this.optionText == "pen" && (this.penGroup.visible = true);
-		this.optionText == "money bank" && (this.bankGroup.visible = true);
+		this.optionText == "piggy bank" && (this.bankGroup.visible = true);
 		this.optionText == "basketball" && (this.playGroup.visible = true);
 	}
 
