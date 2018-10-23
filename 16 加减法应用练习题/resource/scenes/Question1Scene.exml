@@ -196,6 +196,6 @@
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="57" y="9.66" source="eject_box1_png" anchorOffsetY="0" height="217.61"/>
-		<e:Label text="今天賣出的蛋糕較少，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
+		<e:Label text="今天賣出的蛋糕較少，應怎樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
 	</e:Group>
 </e:Skin>
