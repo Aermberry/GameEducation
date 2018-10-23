@@ -86,7 +86,9 @@ declare namespace egret {
 }
 declare namespace lzlib {
     class SoundUtility {
-        static playSound(soundName: string): Promise<void>;
+        static currentSoundChannel: egret.SoundChannel;
+        static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
+        static stopCurrentSound(): void;
     }
 }
 interface String {

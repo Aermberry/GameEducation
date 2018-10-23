@@ -3,7 +3,6 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	private movement_2: egret.tween.TweenGroup;
 	private movement_3: egret.tween.TweenGroup;
 	private movement_4: egret.tween.TweenGroup;
-	private currentSoundChannel:egret.SoundChannel;
 	//SoundChannel
 
 	private exitButton: ImageButton;
@@ -35,7 +34,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	}
 	// 下一题按钮时间
 	private onNextButtonClick(): void {
-		Main.instance.gotoScene(new Question3Scene());
+		Main.instance.gotoScene(new Question2Scene());
 	}
 	// 列式计算按钮事件
 	private onExamplesButtonClick(): void {
@@ -53,18 +52,13 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound('add_1streamsound_2_mp3');
 		await lzlib.SoundUtility.playSound('add_1streamsound_3_mp3');
 		this.examplesButton.visible = true;
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 	private async playExamples():Promise<void> {
 		this.movement_4.play(0);
 		await lzlib.SoundUtility.playSound('add_1streamsound_4_mp3');
 		await lzlib.SoundUtility.playSound('add_1streamsound_5_mp3');
 		await lzlib.SoundUtility.playSound('add_1streamsound_6_mp3');
+		lzlib.SoundUtility.stopCurrentSound();
 	}
-	private stopCurrentSoundChannel(): void
-	{
-		if (this.currentSoundChannel != null) {
-			this.currentSoundChannel.stop();
-		}
-	}
-
 }

@@ -230,12 +230,20 @@ var lzlib;
     var SoundUtility = (function () {
         function SoundUtility() {
         }
-        SoundUtility.playSound = function (soundName) {
+        SoundUtility.playSound = function (soundName, stopCurrentSound) {
             var _this = this;
+            if (stopCurrentSound === void 0) { stopCurrentSound = true; }
             return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
+                if (_this.currentSoundChannel && stopCurrentSound) {
+                    //默认先暂停当前的声音
+                    _this.currentSoundChannel.stop();
+                }
+                _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
+                _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
             });
+        };
+        SoundUtility.stopCurrentSound = function () {
+            this.currentSoundChannel && this.currentSoundChannel.stop();
         };
         return SoundUtility;
     }());

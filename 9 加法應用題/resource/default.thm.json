@@ -24,7 +24,6 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/components/ImageButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -38,6 +37,7 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/components/ImageButton.exml",
 		"resource/scenes/Question1Scene.exml",
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3Scene.exml",
