@@ -77,9 +77,9 @@
 		
 	</e:Group>
 	<e:Group id="correctNameGroup" width="270" height="1306" x="1625" y="125" alpha="0">
-		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="媽 媽" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="陳 老 師" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="爸 爸" fillColor="0x999999"/>
+		<ns1:LabelComponents width="302" height="95" x="-16" y="72" text="媽 媽" fillColor="0x999999"/>
+		<ns1:LabelComponents width="302" height="95" x="-16" y="260" text="陳 老 師" fillColor="0x999999" anchorOffsetX="0"/>
+		<ns1:LabelComponents width="302" height="95" x="-16" y="428" text="爸 爸" fillColor="0x999999"/>
 	</e:Group>
 	<e:Group id="lackNameGroup" width="270" height="1306" x="1625" y="125">
 		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="上款" fillColor="0x6efd31"/>
