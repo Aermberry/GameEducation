@@ -1,6 +1,13 @@
 class Scene00 extends eui.Component implements eui.UIComponent {
+	
 	private textLabel: eui.Label;
+
 	private nextButton: eui.Button;
+	private startMask: eui.Rect;
+    private startButton: eui.Button;
+
+    private loadingAnim:egret.tween.TweenGroup
+
 	public constructor() {
 		super();
 	}
@@ -12,9 +19,18 @@ class Scene00 extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,
 			this.onNextSceneClick, this);
-		this.playBackgroundMusic();
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
+	}
+
+	private  async onStartButtonClick(): Promise<void>{
+		await this.loadingAnim.play(0);
+		this.startMask.visible = false;
+		this.startButton.visible = false;
+		await lzlib.ThreadUtility.sleep(2000)
+		await this.playBackgroundMusic();
 	}
 
 	private async playBackgroundMusic(): Promise<void> {
