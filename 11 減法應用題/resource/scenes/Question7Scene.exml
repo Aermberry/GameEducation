@@ -14,7 +14,7 @@
 				<tween:Set/>
 				<tween:To duration="2750">
 					<tween:props>
-						<e:Object height="{0.99}" y="{614.92}"/>
+						<e:Object y="{614.92}" height="{0}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
