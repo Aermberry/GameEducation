@@ -48,9 +48,9 @@
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Group width="824.24" anchorOffsetX="0" right="0" top="0" bottom="224" anchorOffsetY="0" x="1095.76" y="0" scaleX="1" scaleY="1">
 			<e:Label id="textLabel00" text="Ken asks King Kong" x="1300" y="381.00000000000006" scaleX="1" scaleY="1" textColor="0x5d20f5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" fontFamily="Comic Sans MS"/>
-			<e:Label id="textLabel01" text="   To give a hand" x="275.24" y="225.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel01" text="   To give a hand." x="275.24" y="225.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
 			<e:Label id="textLabel02" text="King Kong begs Ken" x="285.24" y="235.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="left" fontFamily="Comic Sans MS"/>
-			<e:Label id="textLabel03" text="     To shake his hand" x="295.24" y="245.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
+			<e:Label id="textLabel03" text="     To shake his hand." x="295.24" y="245.32" scaleX="1" scaleY="1" textColor="0x5D20F5" size="69" anchorOffsetY="0" height="205.36" verticalAlign="middle" anchorOffsetX="0" width="718.7" textAlign="center" fontFamily="Comic Sans MS"/>
 			<e:layout>
 			<e:VerticalLayout/>
 			</e:layout>

@@ -1,4 +1,5 @@
 class Scene09 extends eui.Component implements  eui.UIComponent {
+	
 	private nextButton:eui.Button;
 
 	private dragGroup: eui.Group;

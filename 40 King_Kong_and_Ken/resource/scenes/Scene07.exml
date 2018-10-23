@@ -50,7 +50,7 @@
 	<e:Group id="group00" left="0" right="0">
 	<e:Label text="'Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 	<e:Label id="pongLabel" text="Pong," size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="-149" height="121.39" anchorOffsetX="0"/>
-		<e:Label text="Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+		<e:Label text=" Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 		<e:Label id="pongLabel0" text="Pong" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="-149" height="121.39"/>
 		<e:Label text="!'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 		<e:layout>
@@ -72,7 +72,7 @@
 	<e:Group id="group02" left="0" right="0">
 <e:Label text="Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label id="DongLabel" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="137.52" textColor="0x5d20f5"/>
-<e:Label text=",Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label text=" , Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label id="DongLabel0" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="-150" height="137.52" textColor="0x5d20f5"/>
 <e:Label text=".'" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 		<e:layout>
