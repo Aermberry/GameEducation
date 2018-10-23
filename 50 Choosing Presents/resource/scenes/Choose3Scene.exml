@@ -41,7 +41,7 @@
 
 
 
-	<Ui:TexttLabel id="tipsComponent" width="767.64" height="128.48" x="484" y="892.46" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The story book costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" visible="false"/>
+	<Ui:TexttLabel id="tipsComponent" width="767.64" height="128.48" x="484" y="892.46" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The storybook costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000"/>
 	<e:Button id="nextButton" label="Next" x="1685.77" y="1358" anchorOffsetX="0" width="184" anchorOffsetY="0" height="70" visible="false"/>
 	<e:Button id="helpButton" label="Help" x="1341.77" y="1364" anchorOffsetX="0" width="154" anchorOffsetY="0" height="66" visible="false"/>
 
