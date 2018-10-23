@@ -12,7 +12,7 @@
 	],
 	"game": [
 		"bin-debug/components/EditableLabel.js",
-		"bin-debug/components/imageButtonNumber.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -20,8 +20,9 @@
 		"bin-debug/components/EditableLargeLabel.js",
 		"bin-debug/components/EditableSmallLabel.js",
 		"bin-debug/components/ImageButton.js",
-		"bin-debug/LoadingUI.js",
-		"bin-debug/components/MovieClipPlayer.js",
+		"bin-debug/components/imageButtonNumber.js",
+		"bin-debug/scenes/StartScene.js",
+		"bin-debug/components/Nextbgnoall.js",
 		"bin-debug/components/NumberPad.js",
 		"bin-debug/scenes/Question1Scene.js",
 		"bin-debug/scenes/Question2Scene.js",
@@ -29,6 +30,6 @@
 		"bin-debug/scenes/Question4Scene.js",
 		"bin-debug/scenes/Question5Scene.js",
 		"bin-debug/scenes/Question6Scene.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/components/MovieClipPlayer.js"
 	]
 }

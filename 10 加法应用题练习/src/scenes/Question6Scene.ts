@@ -9,6 +9,7 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 	private lastButton: ImageButton;
 	private nextStepButton:ImageButton;
 	private numberPad: NumberPad;
+	private nextbgnoall: Nextbgnoall;
 	
 	private expressionLabel: eui.Label;
 	private textRunnersLabel: eui.Label;
@@ -133,5 +134,6 @@ class Question6Scene extends eui.Component implements  eui.UIComponent {
 		this.googd.visible = true;
 		this.totalBoxGroup.visible = true;
 		await lzlib.SoundUtility.playSound("add_intro_streamsound 1_mp3")
+		this.nextbgnoall.visible = true;
 	}
 }

@@ -103,6 +103,7 @@
 		<e:Image x="136.1" y="160.01" source="background_box_png"/>
 		<e:Image x="293.15" y="30.3" source="title_top_png"/>
 		<e:Image x="1063.18" y="57.57" source="add_info_png" anchorOffsetX="0" width="527.32" anchorOffsetY="0" height="72.85"/>
+		<ns1:Nextbgnoall id="nextbgnoall" width="20" height="20" x="1605.6" y="827.67"  visible="false"/>
 		<ns1:ImageButton id="exitButton" x="1706" y="32.91" width="192" height="110" backgroundImageSource="exit_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png"/>
 		<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png"/>
 		<ns1:ImageButton id="nextStepButton" x="778.73" y="690.18" normalImageSource="Nextstep_normal_png" overImageSource="Nextstep_over_png"  visible="false"/>
