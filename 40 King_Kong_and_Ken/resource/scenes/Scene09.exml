@@ -12,10 +12,11 @@
 		<e:Label id="longSourceLabel" text="long" x="663.24" y="690.91" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="110.3" anchorOffsetX="0" width="217" textAlign="center"/>
 		<e:Label id="kongSourceLabel" text="Kong" x="731" y="840" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="101.21" anchorOffsetX="0" width="225"/>
 	</e:Group>
+
 	<e:Group id="dropGroup" anchorOffsetX="0" width="528" x="1200" y="0">
-		<e:Label id="gongDestLabel" text="gong" x="127.06" y="238.03" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="71.21" anchorOffsetX="0" width="126" anchorOffsetY="0" textAlign="center" verticalAlign="top" background="false" backgroundColor="0xd50bea"/>
-		<e:Label id="songDestLabel" text="song" x="383.15" y="416.97" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="65.27" anchorOffsetX="0" width="129" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0xc40707"/>
-		<e:Label id="longDestLabel" text="long" x="106.18" y="424.67" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="63.33" anchorOffsetX="0" width="140" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0x02dbcd"/>
-		<e:Label id="kongDestLabel" text="Kong" x="390" y="219.79" fontFamily="Comic Sans MS" size="52" textColor="0x5C1AC3" height="73.21" anchorOffsetX="0" width="138" anchorOffsetY="0" verticalAlign="middle" textAlign="center" backgroundColor="0x0ddbbc" background="false"/>
+		<e:Label id="gongDestLabel" text="" x="127.06" y="238.03" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="71.21" anchorOffsetX="0" width="126" anchorOffsetY="0" textAlign="center" verticalAlign="top" background="false" backgroundColor="0xd50bea" visible="false"/>
+		<e:Label id="songDestLabel" text="" x="383.15" y="416.97" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="65.27" anchorOffsetX="0" width="129" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0xc40707" visible="false"/>
+		<e:Label id="longDestLabel" text="" x="106.18" y="424.67" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="63.33" anchorOffsetX="0" width="140" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0x02dbcd" visible="false"/>
+		<e:Label id="kongDestLabel" text="" x="390" y="219.79" fontFamily="Comic Sans MS" size="52" textColor="0x5C1AC3" height="73.21" anchorOffsetX="0" width="138" anchorOffsetY="0" verticalAlign="middle" textAlign="center" backgroundColor="0x0ddbbc" background="false" visible="false"/>
 	</e:Group>
 </e:Skin>

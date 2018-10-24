@@ -5,8 +5,6 @@ class Scene09 extends eui.Component implements eui.UIComponent {
 	private dragGroup: eui.Group;
 	private dropGroup: eui.Group;
 
-	private stash: string[] = ["gong", "song", "long", "Kong"];
-
 	public constructor() {
 		super();
 	}
@@ -41,18 +39,16 @@ class Scene09 extends eui.Component implements eui.UIComponent {
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
-		this.stash.push(dragComponent.text)
-		for (let child of this.stash) {
-			if (dragComponent.text == child) {
-				return
-			}
-			else {
-				e.preventDefault();
-				targetComponent.text = dragComponent.text;
-				targetComponent.visible = true;
-				dragComponent.visible = false;
-				this.confirmAllWordsAreCorrect();
-			}
+
+		if (!targetComponent.text) {
+			e.preventDefault();
+			targetComponent.text = dragComponent.text;
+			targetComponent.visible = true;
+			dragComponent.visible = false;
+			this.confirmAllWordsAreCorrect();
+		}
+		else {
+			return;
 		}
 	}
 

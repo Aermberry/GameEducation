@@ -230,15 +230,17 @@ var lzlib;
         };
         Drop.prototype.onTouchEnd = function (e) {
             if (lzlib.Drag.isDraging) {
-                if (this.isDragDropObjectIntersets(e.stageX, e.stageY)) {
+                if (this.isDragDropObjectIntersets()) {
                     //drop on target
                     lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
                 }
             }
         };
-        Drop.prototype.isDragDropObjectIntersets = function (mouseStageX, mouseStageY) {
+        Drop.prototype.isDragDropObjectIntersets = function () {
+            var dragingObjectGlobalPoint = lzlib.Drag.dragingObject.parent.localToGlobal(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y);
             var dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
-            return new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height).contains(mouseStageX, mouseStageY);
+            return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, lzlib.Drag.dragingObject.width, lzlib.Drag.dragingObject.height)
+                .intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height));
         };
         return Drop;
     }(egret.Sprite));
