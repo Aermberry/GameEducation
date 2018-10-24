@@ -33,10 +33,10 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/Scenes/game_scene.exml",
-		"resource/Scenes/start_scene.exml",
-		"resource/Scenes/status_scene.exml",
-		"resource/Scenes/tips_scene.exml"
+		"resource/scenes/game_scene.exml",
+		"resource/scenes/start_scene.exml",
+		"resource/scenes/status_scene.exml",
+		"resource/scenes/tips_scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
