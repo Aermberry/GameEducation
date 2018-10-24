@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\28 擺放家具(設有分段)\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}
