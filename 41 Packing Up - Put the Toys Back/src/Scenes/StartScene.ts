@@ -1,15 +1,19 @@
-class StartScene extends eui.Component implements eui.UIComponent {
-	private startButton: eui.Button;
+class startScene extends eui.Component implements  eui.UIComponent {
+	
+	private startButton:eui.Button;
+
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName: string, instance: any): void {
-		super.partAdded(partName, instance);
+	protected partAdded(partName:string,instance:any):void
+	{
+		super.partAdded(partName,instance);
 	}
 
 
-	protected childrenCreated(): void {
+	protected childrenCreated():void
+	{
 		super.childrenCreated();
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onnextBtnClick, this);
 		this.startGame();
@@ -22,6 +26,8 @@ class StartScene extends eui.Component implements eui.UIComponent {
 
 	// 點擊進入游戲場景
 	private onnextBtnClick(): void {
-		Main.instance.gotoScene(new GameScene());
+		Main.instance.gotoScene(new gameScene());
 	}
+
+	
 }

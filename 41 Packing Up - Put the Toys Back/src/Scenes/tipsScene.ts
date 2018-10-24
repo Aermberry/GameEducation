@@ -1,4 +1,4 @@
-class TipsScene extends eui.Component implements eui.UIComponent {
+class tipsScene extends eui.Component implements eui.UIComponent {
 	private tipsImage: eui.Image;
 	private helpLabel: eui.Label;
 	private backButton: eui.Button;

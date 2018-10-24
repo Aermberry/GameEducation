@@ -1,4 +1,4 @@
-class GameScene extends eui.Component implements eui.UIComponent, GameView {
+class gameScene extends eui.Component implements eui.UIComponent, GameView {
 	private plantImage: eui.Image;
 	private plantRect: eui.Rect;
 
@@ -62,7 +62,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 
 	private async onDropCancel(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(1000);
-		this.addChild(new StatusScene(false, this.toysImage));
+		this.addChild(new statusScene(false, this.toysImage));
 	}
 
 	private async onPlantDrop(e: lzlib.LzDragEvent): Promise<void> {
@@ -73,7 +73,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -85,7 +85,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -97,7 +97,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -109,7 +109,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -121,7 +121,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -133,7 +133,7 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new StatusScene(false, this.toysImage));
+			this.addChild(new statusScene(false, this.toysImage));
 		}
 	}
 
@@ -169,11 +169,11 @@ class GameScene extends eui.Component implements eui.UIComponent, GameView {
 	}
 
 	public openStatusScene(isCorrect: boolean): void {
-		this.addChild(new StatusScene(isCorrect, this.toysImage));
+		this.addChild(new statusScene(isCorrect, this.toysImage));
 	}
 
 	public openTipScene(position: ToyPosition): void {
-		this.addChild(new TipsScene(position, this.toysImage));
+		this.addChild(new tipsScene(position, this.toysImage));
 	}
 
 

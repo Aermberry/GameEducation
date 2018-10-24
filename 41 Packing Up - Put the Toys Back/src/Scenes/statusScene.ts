@@ -1,4 +1,4 @@
-class StatusScene extends eui.Component implements eui.UIComponent {
+class statusScene extends eui.Component implements eui.UIComponent {
 	private tipsLabel: eui.Label;
 	private isCorrect = false; //用户的选择是否正确
 	private toyImage: eui.Image;

@@ -22,8 +22,8 @@
 		"bin-debug/Game/GameScene.js",
 		"bin-debug/Game/GameView.js",
 		"bin-debug/repositories/ToyRepository.js",
-		"bin-debug/Scenes/StartScene.js",
-		"bin-debug/Scenes/StatusScene.js",
-		"bin-debug/Scenes/TipsScene.js"
+		"bin-debug/Scenes/startScene.js",
+		"bin-debug/Scenes/statusScene.js",
+		"bin-debug/Scenes/tipsScene.js"
 	]
 }
