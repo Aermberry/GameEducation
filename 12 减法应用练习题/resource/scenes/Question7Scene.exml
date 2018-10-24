@@ -164,11 +164,11 @@
 		<e:Image id="reflectionlmage" x="1003.25" y="360.42" source="reflection_png" alpha="0"/>
 		<e:Label id="expressionLabel" width="950" height="120" x="282.51" y="431.94" textColor="0x000000" size="110" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true" scaleX="0.49" scaleY="0.63" alpha="1" fontFamily="華康楷書體" text="" visible="false"/>
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
-		<e:Label id="totalTextlmage" text="650-424" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
+		<e:Label id="totalTextlmage" text="650-424" x="284.7" y="436.85" size="58" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
 
 	<e:Label id="text2lmage" text=" 學校開放日，上午有650人參觀，下午有424人。\n下午的參觀人數比上午的少幾人？" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnersLabel" text="下午的參觀人數比上午少：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0" anchorOffsetX="0" width="456.06" anchorOffsetY="0" height="68.18"/>
+	<e:Label id="textRunnersLabel" text="下午的參觀人數比上午少：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0" anchorOffsetX="0" width="600" anchorOffsetY="0" height="68.18"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
 		<e:Image id="image" x="230.66" y="36.93" source="Holiday2lmage_png" anchorOffsetX="0" width="412.76" anchorOffsetY="0" height="209.68" alpha="0"/>
 		<e:Image id="image0" x="-2.79" y="93.67" source="people_png" anchorOffsetX="0" width="294.82" anchorOffsetY="0" height="176.14" alpha="0"/>
@@ -226,7 +226,7 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" anchorOffsetX="0" width="444.66" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png" anchorOffsetX="0" width="293.15" anchorOffsetY="0" height="71.18"/>
-		<e:Label text="226(人)" x="56.42" y="0" textColor="0x000000" size="58" fontFamily="華康楷書體" scaleY="1.26" scaleX="1.21"/>
+		<e:Label text="226(人)" x="62.48" y="9.09" textColor="0x000000" size="58" fontFamily="華康楷書體"/>
 	</e:Group>
 
 </e:Skin>

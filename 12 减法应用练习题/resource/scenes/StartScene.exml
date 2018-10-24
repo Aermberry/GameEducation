@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="splashTweenGroup">
 			<tween:TweenItem target="{car}">
@@ -230,5 +230,7 @@
 	<e:Image id="add_info_border" y="300" source="rectangle_cyan_png" horizontalCenter="0" alpha="0"/>
 	<e:Image id="add_info" y="565.15" source="add_info_png" horizontalCenter="0" scaleX="2.5" scaleY="2.5" width="400" height="55" alpha="0"/>
 	<e:Rect id="hiddenMask" fillColor="0xffffff" alpha="0" x="0" y="0" width="100%" height="100%"/>
-	
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
+
 </e:Skin>
