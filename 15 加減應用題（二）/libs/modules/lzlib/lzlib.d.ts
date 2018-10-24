@@ -48,7 +48,7 @@ declare namespace lzlib {
         /** drop inside the target */
         static readonly DROP: string;
         /** drop outside the target */
-        static readonly CANCEL: string;
+        static readonly DRAG_CANCEL: string;
         dragObject: egret.DisplayObject;
         /** 该拖拉控件的原始local point */
         originalPoint: egret.Point;
@@ -93,7 +93,6 @@ declare namespace lzlib {
     class SoundUtility {
         static currentSoundChannel: egret.SoundChannel;
         static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
-        static stopCurrentSound(): void;
     }
 }
 interface String {

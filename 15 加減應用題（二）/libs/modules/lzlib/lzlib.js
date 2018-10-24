@@ -194,7 +194,7 @@ var lzlib;
         /** drop inside the target */
         LzDragEvent.DROP = 'drag_drop';
         /** drop outside the target */
-        LzDragEvent.CANCEL = 'drag_cancel';
+        LzDragEvent.DRAG_CANCEL = 'drag_cancel';
         return LzDragEvent;
     }(egret.TouchEvent));
     lzlib.LzDragEvent = LzDragEvent;
@@ -273,9 +273,6 @@ var lzlib;
                 _this.currentSoundChannel = RES.getRes(soundName).play(0, 1);
                 _this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, _this);
             });
-        };
-        SoundUtility.stopCurrentSound = function () {
-            this.currentSoundChannel && this.currentSoundChannel.stop();
         };
         return SoundUtility;
     }());
