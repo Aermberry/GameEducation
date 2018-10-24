@@ -36,6 +36,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 
 
 
@@ -162,6 +170,7 @@
 		<e:Image id="Englishlmage" x="430.85" y="236.12" source="Englishlmage_png" alpha="0"/>
 		<e:Image id="yeshulmage" x="357.33" y="79" source="yeshulmage_png" anchorOffsetY="0" height="327.34" scaleY="1.13" scaleX="0.95" alpha="0"/>
 		<e:Image id="image2runners" x="324.6" y="300.43" source="runners_r_png" anchorOffsetX="0" width="70.88" anchorOffsetY="0" height="95.85" alpha="0"/>
+		<e:Label id="label" text=" English \n Dictionary" x="439" y="242.4" textColor="0xf40404" alpha="0"/>
 
 
 
