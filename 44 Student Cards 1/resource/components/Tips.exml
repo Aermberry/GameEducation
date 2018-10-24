@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipsSkin"  minHeight="300" minWidth="300" currentState="edit" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165a8b151de" ></w:Config>
+	<e:Rect ellipseHeight="80" ellipseWidth="80" fillColor="0xFF0000"  width="800" height="300" top="0" left="0" right="0" bottom="0"/>
+	<e:Label id="tipLabe" text="tipLabel" anchorOffsetX="0" width="752.66" anchorOffsetY="0" height="245.99" textAlign="left" verticalAlign="middle" size="58" fontFamily="Comic Sans MS" verticalCenter="0" horizontalCenter="-1" top="10" left="21" right="23" bottom="10" lineSpacing="25" wordWrap="true"/>
+	<!--<e:Label text="How old is Mary?" x="193.5" y="194.33" size="58" fontFamily="Comic Sans MS"/>-->
+	<!--<e:Label text="Look at the envelope" x="381" y="267" fontFamily="Comic Sans MS"/>-->
+	<!--<e:Label text="What does Mary like doing?" x="377" y="103" fontFamily="Comic Sans MS"/>-->
+	<!--<e:Label text="Which club does Mary join?" x="219" y="61" fontFamily="Comic Sans MS"/>-->
+
+</e:Skin>

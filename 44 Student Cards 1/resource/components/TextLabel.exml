@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TextLabelSkin" width="800" height="449" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165a2806f1e" ></w:Config>
+	<e:Rect id="backgroundColor" top="0" left="0" right="0" bottom="0" fillColor="0xB5FFFF"/>
+	<e:Label id="textLabel" text="sss" left="21" right="20" top="32" bottom="31" textColor="0xd80a0a" size="91" verticalAlign="justify" anchorOffsetY="0" lineSpacing="10" anchorOffsetX="0" fontFamily=" Comic Sans MS"/>
+</e:Skin>

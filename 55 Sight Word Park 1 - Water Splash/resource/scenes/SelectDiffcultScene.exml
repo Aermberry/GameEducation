@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SelectDiffcultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="SelectDiffcultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
 	<w:Config id="164ef120242" ></w:Config>
-	<e:Image source="select_diffcult_bg_png"/>
-	<e:Group id="backGroup"  x="1738" y="38" height="221" width="129"/>
-	<e:Group id="easyGroup" x="678" y="832" width="231" height="205"/>
-	<e:Group id="proGroup" x="1011" y="832" width="231" height="205"/>
+	<e:Image source="Bg_cloudy_png" top="0" left="0" right="0" bottom="0"/>
+	<e:Image id="back_Image" source="back_png" x="1754.45" y="42.42"/>
+	<e:Rect width="635.51" height="428.79" top="371" left="424" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.85" scaleY="0.92"/>
+	<e:Image source="img_example_png" x="346.78" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33" visible="false"/>
+	<e:Label text="Water Splash!" y="257.09" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="0.5"/>
+	<e:Label text="Look at the words on the word list.\nCan you find them in the puzzle?" y="378.3" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="357.5"/>
+	<e:Label text="1.Click each letter of the word\n   and click(the ''Shoot'' icon) to\n   choose." y="493.45" anchorOffsetX="0" width="549.76" anchorOffsetY="0" height="133.03" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="309"/>
+	<e:Label text="2.Click ''Show/Hide Words'' to turn\n   the word list on/off." y="635.86" anchorOffsetX="0" width="607.34" anchorOffsetY="0" height="90.6" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="337.5"/>
+	<e:Label text="3.Can't find a word? Click ''hints''\n    for help." y="738.89" anchorOffsetX="0" width="599.03" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="333.5"/>
+	<e:Group id="EasyModel_Group" x="678" y="864">
+		<e:Image source="select_fire_png" x="0" y="0"/>
+		<e:Label text="Easy" x="70" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true"/>
+	</e:Group>
+	<e:Group id="proModel_Group" x="1022" y="862">
+		<e:Image source="select_fire_png" x="0" y="0"/>
+		<e:Label text="Pro" x="82" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true"/>
+	</e:Group>
+	<e:Group id="exampleMovieClip_Group" x="428.6" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33" scaleX="0.87"/>
+	<ns1:MovieClipPlayer x="433.96" y="381.12" anchorOffsetX="0" anchorOffsetY="0" dataSet="Anim_json" texture="Anim_png" movieClipName="Anim" scaleX="1.3" scaleY="1.3"/>
 </e:Skin>

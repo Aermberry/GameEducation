@@ -15,19 +15,19 @@
 		<e:Group id="demoHighlightGroup" x="10" y="10">
 			<e:Rect width="152" height="748" x="1400" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 			<e:Rect width="628" height="748" x="783" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-			<e:Rect width="486" height="746" x="315" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="998.12" height="746" x="102.88" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 			<e:Rect width="476" height="394" x="18" y="372" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		</e:Group>
 		<e:Group id="addendGroup">
 			<ns1:Bar id="addendBar" color='red' currentState="separated" x="1434" y="46"/>
-			<ns1:Block id="addendBlock" color='red' currentState="separated" x="966" y="95"/>
-			<ns1:Chunk id="addendChunk" color='red' currentState="separated" x="378" y="20"/>
+			<ns1:Block id="addendBlock" color='red' currentState="separated" x="720" y="95"/>
+			<ns1:Chunk id="addendChunk" color='red' currentState="separated" x="210" y="20"/>
 		</e:Group>
 
 		<e:Group id="augendGroup">
-			<ns1:Bar id="augendBar" color='green' currentState="separated" x="1434" y="452"/>
-			<ns1:Block id="augendBlock" color='green' currentState="separated" x="1035" y="500"/>
-			<ns1:Chunk id="augendChunk" color='green' currentState="separated" x="327" y="412"/>
+			<ns1:Bar id="augendBar" color='green' currentState="separated" x="1434" y="418.67"/>
+			<ns1:Block id="augendBlock" color='green' currentState="separated" x="720" y="500"/>
+			<ns1:Chunk id="augendChunk" color='green' currentState="separated" x="50" y="412"/>
 		</e:Group>
 		<ns1:ImageButton id="startButton" source="start_normal_png" mouseOverSource="start_selected_png" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
@@ -74,5 +74,6 @@
 		<e:Label text="想清楚，再試一次！" textColor="0x000000" size="50" horizontalCenter="0" fontFamily="標楷體" verticalCenter="0"/>
 	</e:Group>
 	<ns1:NumberPad id="numberPad" isAddVisible="false" isMinusVisible="false" isEraserVisible="false"  y="172.5" x="625.5" visible="false"/>
+	<e:Image id="alertBackgroundImage" x="856.05" y="368.39" source="alert_background_png" anchorOffsetX="0" width="528.42" anchorOffsetY="0" height="243.07" visible="false"/>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>

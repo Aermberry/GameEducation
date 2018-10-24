@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="Plus125And53SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+<e:Skin class="Plus125And53SceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*" >
 	<w:Declarations>
 		<tween:TweenGroup id="tg0">
 			<tween:TweenItem target="{add}">
@@ -648,7 +648,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{backToIndexImage}">
+			<tween:TweenItem target="{backToIndexButton}">
 				<tween:Wait duration="250"/>
 				<tween:Set>
 					<tween:props>
@@ -663,14 +663,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{pauseLabel}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-			</tween:TweenItem>
-			<tween:TweenItem target="{pauseRect}">
+			<tween:TweenItem target="{pauseButton}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -679,14 +672,13 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<e:Rect x="0" y="0" width="100%" height="100%" fillColor="#C1CBE1" />
+	<e:Rect x="0" y="0" width="100%" height="100%" fillColor="0xC1CBE1" />
 	<e:Image x="10" y="10" source="education_and_manpower_bureau_png" alpha="0"/>
 	<e:Image source="add_and_subtract_more_png" horizontalCenter="0" y="30" />
-	<e:Image source="add_info_png"  x="1138" y="44"/>
+	<e:Image source="add_info_png"  x="1138" y="53.09"/>
 	<e:Image id="image0" source="rectangle_cyan_large_png"  horizontalCenter="0" y="180"/>
 	<e:Image id="image" source="rectangle_cyan_medium_png"  y="215" left="20"/>
-	<e:Image id="pauseRect" source="rectangle_blue_small_png"  y="210" right="20"/>
-	<e:Label id="pauseLabel" text="暫停" x="1727.5" y="236" textColor="0x010c5a" bold="true" size="60" fontFamily="Helvetica"/>
+	<ns1:PauseButton id="pauseButton" y="210" right="20" />
 	<e:Image id="circleForTheUnit" x="1417.5" y="256" source="circle_for_the_unit_png" alpha="0"/>
 	<e:Image id="circleForDecade" x="854" y="248" source="circle_for_decade_png" alpha="0"/>
 	<e:Image id="ellipseLargeLandscape" x="434" y="261.5" alpha="0" source="ellipse_large_landscape_png"/>
@@ -728,6 +720,6 @@
 	<e:Image id="lineBlackThinBottom" x="138" y="402" source="line_black_thin_png" anchorOffsetX="0" width="130.94" anchorOffsetY="0" height="1.11" rotation="0" alpha="0"/>
 	<e:Rect id="resultMask" width="146" height="82" x="133.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xD2EBF3" bottom="650" alpha="0"/>
 	<e:Image id="allIsDoneImage" y="243" source="all_is_done_png" horizontalCenter="1" alpha="0"/>
-	<e:Image id="backToIndexImage" y="494" source="back_to_index_normal_png" horizontalCenter="0" alpha="0"/>
+	<ns1:BackToIndexButton id="backToIndexButton" y="494" horizontalCenter="0" alpha="0" enabled="false" />
 	<w:Config id="164126c4907" ></w:Config>
 </e:Skin>

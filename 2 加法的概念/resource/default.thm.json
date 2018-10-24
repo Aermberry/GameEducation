@@ -19,10 +19,14 @@
 		"Plus16And27Scene": "resource/scenes/Plus16And27Scene.exml",
 		"Plus165And53Scene": "resource/scenes/Plus165And53Scene.exml",
 		"Plus175And168Scene": "resource/scenes/Plus175And168Scene.exml",
-		"Plus134And168Scene": "resource/scenes/Plus134And168Scene.exml"
+		"Plus134And168Scene": "resource/scenes/Plus134And168Scene.exml",
+		"PauseButton": "resource/components/PauseButton.exml",
+		"BackToIndexButton": "resource/components/BackToIndexButton.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/BackToIndexButton.exml",
+		"resource/components/PauseButton.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,wlts_logo_jpg,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,speaker_png,radiobutton_select_down_png,correct_png,wrong_png,news_json,news_png,green_circle_dark_border_png,rectangle_blue_png,triangle_red_png,question_png,table_png,triangle_red_light_png,girl_png,sunny_png,thunderstorm_png,cloudy_png,radio_png,wave_left_1_png,wave_left_2_png,wave_right_1_png,wave_right_2_png,rectangle_red_png,rectangle_yellow_png,rectangle_pink_png,sound 1 (wreport2.mp3)_mp3,sound 2 (wreport1.mp3)_mp3,sound 3 (wreport0.mp3)_mp3,sound 4 (wQ23.mp3)_mp3,sound 5 (wQ22.mp3)_mp3,sound 6 (wQ20.mp3)_mp3,sound 7 (wQ19.mp3)_mp3,sound 8 (wQ18.mp3)_mp3,sound 9 (wQ17.mp3)_mp3,sound 10 (wQ16-22_tail.mp3)_mp3,sound 11 (wQ16.mp3)_mp3,sound 12 (wQ14.mp3)_mp3,sound 13 (wQ13.mp3)_mp3,sound 14 (wQ12.mp3)_mp3,sound 15 (wQ11.mp3)_mp3,sound 16 (wQ10.mp3)_mp3,sound 17 (wQ09.mp3)_mp3,sound 18 (wQ08.mp3)_mp3,sound 19 (wQ07.mp3)_mp3,sound 20 (wQ06.mp3)_mp3,sound 21 (wQ05.mp3)_mp3,sound 22 (wQ04.mp3)_mp3,sound 23 (wQ03.mp3)_mp3,sound 24 (wQ02.mp3)_mp3,sound 25 (wQ01-14_tail.mp3)_mp3,sound 26 (wQ01.mp3)_mp3,sound 27 (w_to_next.mp3)_mp3,sound 28 (w_inst_intro.mp3)_mp3,sound 232_mp3,wrong_answer_mp3,you_are_correct_mp3,replay_png,rectangle_gray_png,spissatus_png,rainy_png,shower_png,girl_smile_png,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,exit_button_normal_png,exit_button_tip_png,next_button_normal_png,next_button_tip_png,start_button_mouse_down_png,start_button_mouse_over_png,start_button_normal_png,start_button_tip_png,start_scene_bg_png,footprint_png,speaker_png,radiobutton_select_down_png,correct_png,wrong_png,news_json,news_png,green_circle_dark_border_png,rectangle_blue_png,triangle_red_png,question_png,table_png,triangle_red_light_png,girl_png,sunny_png,thunderstorm_png,cloudy_png,radio_png,wave_left_1_png,wave_left_2_png,wave_right_1_png,wave_right_2_png,rectangle_red_png,rectangle_yellow_png,rectangle_pink_png,sound 1 (wreport2.mp3)_mp3,sound 2 (wreport1.mp3)_mp3,sound 3 (wreport0.mp3)_mp3,sound 4 (wQ23.mp3)_mp3,sound 5 (wQ22.mp3)_mp3,sound 6 (wQ20.mp3)_mp3,sound 7 (wQ19.mp3)_mp3,sound 8 (wQ18.mp3)_mp3,sound 9 (wQ17.mp3)_mp3,sound 10 (wQ16-22_tail.mp3)_mp3,sound 11 (wQ16.mp3)_mp3,sound 12 (wQ14.mp3)_mp3,sound 13 (wQ13.mp3)_mp3,sound 14 (wQ12.mp3)_mp3,sound 15 (wQ11.mp3)_mp3,sound 16 (wQ10.mp3)_mp3,sound 17 (wQ09.mp3)_mp3,sound 18 (wQ08.mp3)_mp3,sound 19 (wQ07.mp3)_mp3,sound 20 (wQ06.mp3)_mp3,sound 21 (wQ05.mp3)_mp3,sound 22 (wQ04.mp3)_mp3,sound 23 (wQ03.mp3)_mp3,sound 24 (wQ02.mp3)_mp3,sound 25 (wQ01-14_tail.mp3)_mp3,sound 26 (wQ01.mp3)_mp3,sound 27 (w_to_next.mp3)_mp3,sound 28 (w_inst_intro.mp3)_mp3,sound 232_mp3,wrong_answer_mp3,you_are_correct_mp3,replay_png,rectangle_gray_png,spissatus_png,rainy_png,shower_png,girl_smile_png,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,start_png",
 			"name": "preload"
 		}
 	],
@@ -120,11 +120,6 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "images/wlts_logo.jpg",
-			"type": "image",
-			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "textures/exit_button_normal.png",
@@ -500,6 +495,11 @@
 			"name": "checkbox_unselect2_png",
 			"type": "image",
 			"url": "assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
 		}
 	]
 }

@@ -5,6 +5,10 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 	private KingLabel: eui.Label;
 	private KongLabel: eui.Label;
 	private KingLabel0: eui.Label;
+	private konglabel0: eui.Label;
+	private kenLabel0: eui.Label;
+	private arry: eui.Label[];
+	private headerLabel:eui.Label;
 
 	public constructor() {
 		super();
@@ -21,30 +25,25 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 		// this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextScene, this);
 		Base.onAsyncPlayBlackgroundMusic('27a_mp3');
 		this.display.play(0);
-		this.changColor(this.kenLabel);
-		this.changColor(this.KingLabel);
+		this.arry = [this.kenLabel, this.KingLabel, this.KongLabel, this.KingLabel0, this.konglabel0, this.kenLabel0];
+		this.changColor(this.arry);
 		Base.onClickNextScene(this.nextButton, new Scene12())
 		// this.nextButton.visible=true;
 	}
 
-	private onNextScene(): void {
-		Main.instance.gotoScene(new Scene12());
-	}
-
-	private async changColor(element: eui.Label): Promise<void> {
-		// var shap:egret.Shape
+	private async changColor(arry: eui.Label[]): Promise<void> {
 		await lzlib.ThreadUtility.sleep(20000);
-		element.textColor = 0xd92e20;
-		let shp: egret.Shape = new egret.Shape();
-		shp.graphics.lineStyle(2, 0xd92e20);
-		shp.graphics.moveTo(200, 400);
-		shp.graphics.lineTo(200, 420);
-		shp.graphics.endFill();
+		for (let i = 0; i < arry.length; i++) {
+			await lzlib.ThreadUtility.sleep(2000);
+			console.log(arry[i]);
+			Base.changColor(arry[i]);
+			await lzlib.ThreadUtility.sleep(2000);
+			await Base.ruling(this, arry[i]);
+		}
+		await lzlib.ThreadUtility.sleep(1000);
+		this.headerLabel.visible=true;
+		await lzlib.SoundUtility.playSound('27b_mp3');
+		this.nextButton.visible=true;
+
 	}
-
-	// private onPlayBlackgroundMusic():void{
-	// 	lzlib.SoundUtility.playSound('27a_mp3')
-	// 	this.nextButton.visible=true;
-	// }
-
 }

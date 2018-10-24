@@ -46,8 +46,6 @@ declare module skins{
 	class ScrollerSkin extends eui.Skin{
 	}
 }
-declare class SubtractCalculationSceneSkin extends eui.Skin{
-}
 declare module skins{
 	class TextInputSkin extends eui.Skin{
 	}
@@ -71,4 +69,6 @@ declare class CalculationSceneSkin extends eui.Skin{
 declare class InputExpressionSceneSkin extends eui.Skin{
 }
 declare class RankingSceneSkin extends eui.Skin{
+}
+declare class SubtractCalculationSceneSkin extends eui.Skin{
 }

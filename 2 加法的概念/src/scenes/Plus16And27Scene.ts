@@ -1,9 +1,8 @@
 class Plus16And27Scene extends eui.Component implements  eui.UIComponent {
-	private pauseLabel: eui.Label;
-	private pauseRect: eui.Rect;
+	private pauseButton: PauseButton;
 	private angelGroup: eui.Group;
 	private boyGroup: eui.Group;
-	private backToIndexImage: eui.Image;
+	private backToIndexButton: BackToIndexButton;
 	private mcFactory: egret.MovieClipDataFactory;
 	private tg0: egret.tween.TweenGroup;
 	private tg1: egret.tween.TweenGroup;
@@ -43,54 +42,29 @@ class Plus16And27Scene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		mouse.setButtonMode(this.pauseRect, true);
-		mouse.setButtonMode(this.backToIndexImage, true);
-		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);
-		this.pauseRect.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPauseLabelMouseOut, this);
-		this.pauseLabel.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onPauseLabelMouseOver, this);
-		this.pauseLabel.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onPauseLabelMouseOut, this);
-
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-
-		this.backToIndexImage.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.backToIndexImage.source = 'back_to_index_mouse_over_png', this);
-		this.backToIndexImage.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.backToIndexImage.source = 'back_to_index_normal_png', this);
-		this.backToIndexImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new ChooseEquationScene()), this);
-
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onPauseButtonClick, this);
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('animations_json'), RES.getRes("animations_png") );
 		this.playAngelAnimation();
 		this.playBoyJumAnimation();
 		this.playCalculationAnimation();
 	}
 
-	private onPauseLabelMouseOver(e: mouse.MouseEvent): void
+	private onPauseButtonClick(): void
 	{
-		this.pauseLabel.textColor = 0xffffff;
-	}
-
-	private onPauseLabelMouseOut(e: mouse.MouseEvent): void
-	{
-		this.pauseLabel.textColor = 0x010C5A;
-	} 
-
-	private onPauseRectClick(): void
-	{
-		this.pauseLabel.text = "繼續";
+		this.pauseButton.title = "繼續";
 		this.currentTweenGroup && this.currentTweenGroup.pause();
 		this.pausedSoundPosition = this.currentSoundChannel.position;
 		this.currentSoundChannel.stop();
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onResumeRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onResumeRectClick, this);
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onResumeButtonClick, this);
 	}
 
-	private onResumeRectClick(): void
+	private onResumeButtonClick(): void
 	{
-		this.pauseLabel.text = "暫停";
+		this.pauseButton.title = "暫停";
 		this.currentTweenGroup && this.currentTweenGroup.play();
 		this.currentSoundChannel = (RES.getRes(this.currentSoundName) as egret.Sound).play(this.pausedSoundPosition, 1);
 		this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, this.currentSoundCompleteHandler, this);
-		this.pauseRect.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
-		this.pauseLabel.once(egret.TouchEvent.TOUCH_TAP, this.onPauseRectClick, this);
+		this.pauseButton.once(egret.TouchEvent.TOUCH_TAP, this.onPauseButtonClick, this);
 	}
 
 	private playAngelAnimation(): void
@@ -109,27 +83,29 @@ class Plus16And27Scene extends eui.Component implements  eui.UIComponent {
 	
 	private async playCalculationAnimation(): Promise<void>
 	{
-		await this.playTweenGroupAndSound(this.tg0, 'add2_streamsound 0_mp3');
-		await this.playTweenGroupAndSound(this.tg1, 'add2_streamsound 1_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 2_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 3_mp3');
-		await this.playTweenGroupAndSound(this.tg2, 'add2_streamsound 4_mp3');
-		await this.playTweenGroupAndSound(this.tg3, 'add2_streamsound 5_mp3');
-		await this.playTweenGroupAndSound(this.tg4, 'add2_streamsound 6_mp3');
-		await this.playTweenGroupAndSound(this.tg5, 'add2_streamsound 7_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 8_mp3');
-		await this.playTweenGroupAndSound(this.tg6, 'add2_streamsound 9_mp3');
-		await this.playTweenGroupAndSound(this.tg7, 'add2_streamsound 10_mp3');
-		await this.playTweenGroupAndSound(null, 'add2_streamsound 11_mp3');
-		await this.playTweenGroupAndSound(this.tg8, 'add2_streamsound 12_mp3');
-		await this.playTweenGroupAndSound(this.tg9, 'add2_streamsound 13_mp3');
-		await this.playTweenGroupAndSound(this.tg10, 'add2_streamsound 14_mp3');
-		await this.playTweenGroupAndSound(this.tg11, 'add2_streamsound 15_mp3');
-		await this.playTweenGroupAndSound(this.tg12, 'add2_streamsound 16_mp3');
-		await this.playTweenGroupAndSound(this.tg13, 'add2_streamsound 17_mp3');
-		await this.playTweenGroupAndSound(this.tg14, 'add2_streamsound 18_mp3');
-		await this.playTweenGroupAndSound(this.tg15, 'add2_streamsound 19_mp3');
+		await this.playTweenGroupAndSound(this.tg0, 'add2_streamsound_0_mp3');
+		await this.playTweenGroupAndSound(this.tg1, 'add2_streamsound_1_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_2_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_3_mp3');
+		await this.playTweenGroupAndSound(this.tg2, 'add2_streamsound_4_mp3');
+		await this.playTweenGroupAndSound(this.tg3, 'add2_streamsound_5_mp3');
+		await this.playTweenGroupAndSound(this.tg4, 'add2_streamsound_6_mp3');
+		await this.playTweenGroupAndSound(this.tg5, 'add2_streamsound_7_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_8_mp3');
+		await this.playTweenGroupAndSound(this.tg6, 'add2_streamsound_9_mp3');
+		await this.playTweenGroupAndSound(this.tg7, 'add2_streamsound_10_mp3');
+		await this.playTweenGroupAndSound(null, 'add2_streamsound_11_mp3');
+		await this.playTweenGroupAndSound(this.tg8, 'add2_streamsound_12_mp3');
+		await this.playTweenGroupAndSound(this.tg9, 'add2_streamsound_13_mp3');
+		await this.playTweenGroupAndSound(this.tg10, 'add2_streamsound_14_mp3');
+		await this.playTweenGroupAndSound(this.tg11, 'add2_streamsound_15_mp3');
+		await this.playTweenGroupAndSound(this.tg12, 'add2_streamsound_16_mp3');
+		await this.playTweenGroupAndSound(this.tg13, 'add2_streamsound_17_mp3');
+		await this.playTweenGroupAndSound(this.tg14, 'add2_streamsound_18_mp3');
+		await this.playTweenGroupAndSound(this.tg15, 'add2_streamsound_19_mp3');
 		this.tg16.play();
+		this.backToIndexButton.parent.setChildIndex(this.backToIndexButton, this.backToIndexButton.parent.numChildren - 1);
+		this.backToIndexButton.enabled = true;
 	}
 
 	private playTweenGroupAndSound(tweenGroup: egret.tween.TweenGroup, soundName: string): Promise<void>

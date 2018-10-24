@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LastQuestionComponentSkin" width="202" height="98" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,over" >
+	<w:Config id="165b361f890" ></w:Config>
+	<e:Image id="nextQuestionImage" left="0" right="0" top="0" bottom="0" source="last_question_normal_png" source.over="last_question_over_png"/>
+</e:Skin>

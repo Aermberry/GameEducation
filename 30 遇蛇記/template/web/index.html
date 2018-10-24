@@ -44,6 +44,13 @@
             font-weight: normal;
             font-style: normal;
         }
+        @font-face {
+            font-family:"華康超黑體";
+            src: url("resource/fonts/華康超黑體.woff2") format('woff2'),
+                 url('resource/fonts/華康超黑體.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         @media screen and (max-device-width:641px) and (max-device-height:823px){
            #logo {
                height: 25px;
@@ -92,6 +99,7 @@
     </div>
     <label style="font-family: 华康娃娃体; font-size: 1px;" />
     <label style="font-family: 标楷体; font-size: 1px;" />
+    <label style="font-family: 華康超黑體; font-size: 1px;" />
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -158,18 +166,15 @@
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 

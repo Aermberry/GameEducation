@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Question4SceneSkin" width="1920" height="1058" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{questionDescription1Image}">
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height134RowLineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{550}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{996}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height134LineRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{822}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{308}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow134Image}">
+				<tween:Wait duration="1000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height134cmimage}">
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionDescription1Image0}">
+				<tween:Wait duration="4000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height148LineRect}">
+				<tween:Wait duration="4000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{819}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{209}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow148Image}">
+				<tween:Wait duration="4750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionImage}">
+				<tween:Wait duration="6750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height14LineRect}">
+				<tween:Wait duration="7000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object height="{0}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object height="{100}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{questionMarkAndArrowImage}">
+				<tween:Wait duration="7500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{calcComponent}">
+				<tween:Wait duration="9750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height148RowLineRect}">
+				<tween:Wait duration="4500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1737}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{1237}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{height148cmImage}">
+				<tween:Wait duration="4350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="165ae006327" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scene_background_png"/>
+	<ns1:TopTitleComponent width="1363" height="134" x="100" y="33" left="275" top="26"/>
+	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
+		<ns1:ContentFrameComponent  alpha="1" currentlevel="4"/>
+		<e:Image id="textBackground" width="683" height="253.48" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
+		<e:Image id="questionDescription1Image" x="204.15" y="106" alpha="0" source="question4_description1_png"/>
+		<e:Image x="204.15" y="182.66" alpha="0" id="questionDescription1Image0" source="question4_description2_png"/>
+		<e:Image id="questionImage" x="204.15" y="264.47" alpha="0" source="question4_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="253.21" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
+		<e:Rect width="700" height="1" x="1011.58" y="820.67" strokeWeight="1"/>
+		<e:Rect id="height134LineRect" width="1" height="514" x="1095.82" y="308"/>
+		<e:Rect id="height134RowLineRect" width="450" height="1" x="996.37" y="306.45" strokeWeight="1"/>
+		<e:Image id="height134cmimage" x="947.67" y="503.06" alpha="0" source="134cm_png"/>
+		<e:Image x="1104" y="245.24" bottom="66" source="xiaoan_and_xiaoli_png"/>
+		<e:Image id="ziqingImage" x="1354.09" y="478" source="ziqing_png" bottom="32" alpha="0"/>
+		<e:Image id="height148cmImage" x="1607.79" y="455.18" source="148cm_png" alpha="0"/>
+		<e:Rect id="height148LineRect" width="1" height="610" x="1589.97" y="209.48" strokeWeight="1" alpha="0"/>
+		<e:Rect id="height148RowLineRect" width="500" height="1" x="1237" y="205.67" alpha="0" strokeWeight="1"/>
+		<e:Rect id="height14LineRect" width="1" height="100" x="1308.15" y="206.87" alpha="0" strokeWeight="1"/>
+		<ns1:NextQuestionComponent id="nextQuestionComponent" width="202" height="98" x="1688" y="730" bottom="0"/>
+		<ns1:LastQuestionComponent id="lastQuestionComponent" width="202" height="98" x="1257" y="699" left="0" bottom="0"/>
+		<ns1:CalcComponents id="calcComponent" width="322" height="150" x="326" y="428.06" alpha="0"/>
+		<e:Image id="arrow134Image" x="1087.3" y="304.91" source="arrow_png" alpha="0"/>
+		<e:Image id="arrow148Image" x="1581.27" y="205.82" source="arrow_png" alpha="0"/>
+		<e:Image id="questionMarkAndArrowImage" x="1274.85" y="208.09" source="question_mark_and_arrow_png" alpha="0"/>
+		<e:Image id="answerImage" x="1153.76" y="239.03" source="14cm_png" visible="false"/>
+		<e:Image id="arrow14Image" x="1299.09" y="205.33" source="arrow_png" visible="false"/>
+	</e:Group>
+</e:Skin>

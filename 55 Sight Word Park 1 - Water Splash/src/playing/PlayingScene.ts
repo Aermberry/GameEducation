@@ -12,6 +12,9 @@ class PlayingScene extends eui.Component implements  eui.UIComponent, IPlayingVi
 	private readyGoTweenGroup: egret.tween.TweenGroup;
 	private goodJobTweenGroup: egret.tween.TweenGroup;
 	private completeGameTweenGroup: egret.tween.TweenGroup;
+	private tipsTweenGroup:egret.tween.TweenGroup;
+
+	private tipsText:eui.Label;
 
 	private states = 0; //用户点击hideWordImg的次数
 	
@@ -53,13 +56,14 @@ class PlayingScene extends eui.Component implements  eui.UIComponent, IPlayingVi
         this.shootBtnImg.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.shootBtnImg.source="confirm_normal_png", this);
         this.shootBtnImg.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.shootBtnImg.source="confirm_hover_png", this);
 		this.shootBtnImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onShootButtonClick, this.presenter);
+		this.hintsBtnImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onHintsBtnImgClick,this.presenter);
     }
 
 	private initBackBtn():void
 	{
 		this.backImg.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new SelectDiffcultScene()), this);
 	}
-	
+
 	private initHideWordSBtn():void
 	{
 		this.hideWordImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.hideWordTouchEvent, this);
@@ -79,10 +83,18 @@ class PlayingScene extends eui.Component implements  eui.UIComponent, IPlayingVi
 	   }
 	   if(this.states == 0){
 			this.hideWordImg.source = "hide_word_png"
+			this.wordGroup.visible = true;
 		}else if(this.states == 1){
 			this.hideWordImg.source = "show_word_png"
+			this.wordGroup.visible = false;
 		}
 	}
+
+	public tipsanswer(answerIndex:number,words: string[]): void
+	{
+		this.tipsText.text = "HINT:" + words[answerIndex];
+		this.tipsTweenGroup.play(0);
+	};
 
 	public onRestartButtonClick(): void
 	{

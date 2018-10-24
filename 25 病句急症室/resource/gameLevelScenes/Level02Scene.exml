@@ -258,11 +258,11 @@
 <w:Config id="164d58fd342" ></w:Config>
 <e:Image source="description_example_frame_png" locked="true"/>
 <e:Image source="description_example_bg_png" y="154" locked="true"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="标楷体" size="86.4" x="28" y="25" locked="true"/>
-<e:Label text=" 第一學習階段" fontFamily="标楷体" size="86.4" x="412" y="25" locked="true"/>
+<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" locked="true"/>
+<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" locked="true"/>
 <e:Image source="head_icon_png" x="1480" y="24" locked="true"/>
 <e:Image source="right_headline_png" x="1610" y="24" locked="true"/>
-<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="金梅新中圓國際碼" locked="true"/>
+<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體" locked="true"/>
 
 
 
@@ -272,22 +272,23 @@
 <e:Image id="doctorAngryImg" source="doctor_angry_png" x="392" y="341" alpha="0"/>
 <e:Image id="doctorBlinkImg" source="doctor_blink_png" x="392" y="341" alpha="1" visible="false"/>
 <e:Image id="docotrorTipImg" source="doctor_tip_png" x="713" y="433" alpha="0"/>
-<e:Label id="doctorTipLabel" text="請再試一次！" size="43" textColor="#000000" fontFamily="金梅新中圓國際碼" x="830.46" y="476.61" alpha="0"/>
+<e:Label id="doctorTipLabel" text="請再試一次！" size="43" textColor="#000000" fontFamily="華康標楷體" x="830.46" y="476.61" alpha="0"/>
 
 
 <e:Image source="bed_png" x="3" y="824"/>
 
-<e:Group id="wordGroup">
-	<e:Image source="2_1_png" x="75" y="742.03"/>
+<e:Group id="wordGroup" x="-33.33">
+	<e:Image source="2_1_png" x="75" y="742.03" visible="false"/>
 	<e:Image source="2_2_png" x="177" y="749.03"/>
 	<e:Image source="2_3_png" x="321.5" y="744.53"/>
 	<e:Image source="2_4_png" x="516.5" y="661.53"/>
 	<e:Image source="2_5_png" x="966.5" y="668.03"/>
-	<e:Image source="2_6_png" x="1021" y="723.03"/>
-	<e:Image source="2_7_png" x="1155" y="742.03"/>
-	<e:Image source="2_8_png" x="1291" y="749.03"/>
-	<e:Image source="2_9_png" x="1426" y="782"/>
-	<e:Image source="2_10_png" x="1505.24" y="762"/>
+	<e:Image source="2_6_png" x="1099.78" y="723.03"/>
+	<e:Image source="2_7_png" x="1230.76" y="742.03"/>
+	<e:Image source="2_8_png" x="1375.85" y="749.03"/>
+	<e:Image source="2_9_png" x="1526" y="782"/>
+	<e:Image source="2_10_png" x="1599.18" y="762"/>
+	<e:Image source="2_1_png" x="1014.39" y="723.84"/>
 </e:Group>
 	<e:ToggleButton id="cueButton" label="" x="1269" y="239">
 		<e:skinName>
@@ -299,9 +300,9 @@
 	</e:ToggleButton>
 	<e:Group id="cueGroup" visible="false">
 		<e:Image id="greenFrame" source="green_frame_png" x="866.07" y="303"/>
-		<e:Label id="firstTipLabel" x="899.18" text="那個故事很令人「感動」，還需要\r「感到」感動嗎？" fontFamily="标楷体" size="55" textColor="#284997" y="460.6" lineSpacing="20"/>
+		<e:Label id="firstTipLabel" x="899.18" text="那個故事很令人「感動」，還需要\r「感到」感動嗎？" fontFamily="華康標楷體" size="55" textColor="#284997" y="460.6" lineSpacing="20"/>
 		<e:Image id="returnBtnImg" source="return-btn_png" x="1545.04" y="573"/>
-		<e:Label id="returnLabel" text="返回" textColor="#000000" size="43" fontFamily="标楷体" x="1564.54" y="585"/>
+		<e:Label id="returnLabel" text="返回" textColor="#000000" size="43" fontFamily="華康標楷體" x="1564.54" y="585"/>
 		<e:Group id="returnGroup" x="1545.04" y="573" width="123" height="78"/>
 	</e:Group>
 	<e:Image id="trashWordImage" source="2_6_png" x="1324" y="828" alpha="0"/>
@@ -315,13 +316,13 @@
 
 <ns1:ExitButton id="exitBtn" skinName="ExitTargetBTn" x="1762" y="1130" locked="true" visible="false"/>
 <e:Image id="blueFrame" source="blue_frame_png" x="1384" y="933" visible="false"/>
-<e:Label  id="exitTipLabel" text="你確定要離開嗎？" fontFamily="金梅新中圓國際碼" size="50" x="1444" y="982"  textColor="#000000" locked="true" visible="false"/>
+<e:Label  id="exitTipLabel" text="你確定要離開嗎？" fontFamily="華康標楷體" size="50" x="1444" y="982"  textColor="#000000" locked="true" visible="false"/>
 <ns1:YesOrNoButton id="yes" skinName="YesTargetBtn" x="1555" y="1072"  locked="true" visible="false"/>
 <ns1:YesOrNoButton id="no" skinName="NoTargetBtn" x="1666" y="1072"  locked="true" visible="false"/>
 
 <e:Group id="correctGroup" width="1044" height="101" visible="false">
     <e:Image source="green_blue_frame_png" x="309" y="733" width="1200"/>
-	<e:Label text="我聽了那士兵捨身救人的故事，十分感動呢！" textColor="#000000" fontFamily="金梅新中圓國際碼" x="359" y="758.5" size="50"/>	
+	<e:Label text="聽了那士兵捨身救人的故事，我十分感動呢！" textColor="#000000" fontFamily="華康標楷體" x="359" y="758.5" size="50"/>	
 </e:Group>
 	<e:Image id="arrowImage" x="1339.12" y="490.48" source="arrow_png" alpha="0"/>
 	<e:Image id="manyArrowsImage" x="1338.97" y="447.55" source="manyarrows_png" alpha="0"/>

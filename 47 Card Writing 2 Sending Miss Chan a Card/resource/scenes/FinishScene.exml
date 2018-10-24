@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165c7e70c99" ></w:Config>
+	<e:Label text="Well done!" textAlign="center" verticalAlign="top" size="213" top="418" bottom="0" horizontalCenter="0" fontFamily="Comic Sans MS" textColor="0xff0091"/>
+</e:Skin>

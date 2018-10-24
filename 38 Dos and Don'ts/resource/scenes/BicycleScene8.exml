@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="BicycleScene8Skin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="164f599abda" ></w:Config>
+<e:Skin class="BicycleScene8Skin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="164f599abda"></w:Config>
 	<e:Group id="firstDialogGroup">
-		<e:Image source="blue_sky_png" x="157.5" y="0" locked="true"/>	
-		<e:Image source="road_png" x="0" y="220" locked="true"/>
-		<e:Image source="left_cloud_png" y="-62" locked="true"/>
-		<e:Image source="right_cloud_png" x="561.07" y="469" locked="true"/>
-		<e:Image source="bicycle_png"  y="860" x="183.47"/>	
-		<e:Image source="amy_bicycle_png" x="354.9" y="753"/>
-		<e:Image source="worker_bicycle_png" x="1180.21" y="282" locked="true"/>
-		<e:Image source="tip_board_png" x="1465.46" y="371.5" locked="true"/>
-		<e:Image source="bicycle_amy_frame_png" x="515" y="640"/>
-	    <e:Label text="Can I ride my bicycle here？" size="40" textColor="#000000" fontFamily="ComicSansMS3" x="572" y="699"/>
-		<e:Image source="light_png" x="1384" y="270"/>	
+		<e:Image source="blue_sky_png" x="157.5" y="0" locked="true" />
+		<e:Image source="road_png" x="0" y="220" locked="true" />
+		<e:Image source="left_cloud_png" y="-62" locked="true" />
+		<e:Image source="right_cloud_png" x="561.07" y="469" locked="true" />
+		<e:Image source="bicycle_png" y="860" x="183.47" />
+		<e:Image source="amy_bicycle_png" x="354.9" y="753" />
+		<e:Image source="worker_bicycle_png" x="1180.21" y="282" locked="true" />
+		<e:Image source="tip_board_png" x="1465.46" y="371.5" locked="true" />
+		<e:Image source="bicycle_amy_frame_png" x="515" y="640" />
+		<e:Label text="Can I ride my bicycle here?" size="40" textColor="0x000000" fontFamily="ComicSansMS3" x="556.85" y="702.03" />
+		<e:Image source="light_png" x="1384" y="270" />
 	</e:Group>
-
 	<e:Group id="nextDialogGroup" visible="false">
-		<e:Image source="bicycle_worker_frame_png" x="515" y="45" locked="true"/>
-	    <e:Label id="firstLabel" text="......" size="45" textColor="#000000" fontFamily="ComicSansMS3" x="682.5" y="148.5"/>
-	    <e:Label id="secondLabel" text="   " size="45" textColor="#000000" fontFamily="ComicSansMS3" x="682" y="220"/>
-		<e:Image id="orangeCircleImg" source="orange_normal_png" x="960" y="49"/>
-  		<e:Image id="workerHeaderImg" source="worker_normal_png" x="971" y="60"/>
+		<e:Image source="bicycle_worker_frame_png" x="515" y="45" locked="true" />
+		<e:Label id="firstLabel" text="......" size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="682.5" y="148.5" />
+		<e:Label id="secondLabel" text="   " size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="682" y="220" />
+		<e:Image id="orangeCircleImg" source="orange_normal_png" x="960" y="91.42" />
+		<e:Image id="workerHeaderImg" source="worker_normal_png" x="971" y="105.45" />
+		<e:Group id="exitGroup" x="1518.12" y="1119.16" height="105" width="105"/>
+		<e:Group id="exitLogo" x="1509.03" y="1128.26" scaleX="1" scaleY="1" anchorOffsetX="0" width="127.33">
+			<e:Image id="forkIconImg" source="light_red_normal_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="0xFF9BFF" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+
 	</e:Group>
-	
-		<e:Image id="forkIconImg" source="light_red_normal_png" x="1706" y="1152.5"/>
-		<e:Label id="exitLabel" text="Exit" fontFamily="ComicSansMS3" size="60" textColor="#FF9BFF" x="1708.5" y="1175"/>
-		<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105" locked="true"/>
-  
-  <e:Group id="nextGroup" visible="false">
-	   <e:Image  source="next_noraml_png" x="1653.5" y="970"/>
-	   <e:Label id="nextLabel" text="Next" textColor="#000000" fontFamily="ComicSansMS3" size="60"  x="1694" y="1001"/>
-	   <e:Group id="nextBtnGroup" x="1653.5" y="970" height="111" width="210"/>		
-  </e:Group>
-
-  	   <e:Group id="workerTouchEventGroup" x="960" y="49" width="132" height="132" />
-  
-  
 
 
+
+
+
+	<e:Group id="nextGroup" x="1459.56" y="954.84" visible="false">
+		<e:Image source="next_noraml_png" x="0" y="0"/>
+		<e:Label id="nextLabel" text="Next" textColor="0x000000" fontFamily="ComicSansMS3" size="60" x="46.56" y="21.91"/>
+		<e:Group id="nextBtnGroup" x="0" y="0" height="111" width="210"/>
+	</e:Group>
+	<e:Group id="workerTouchEventGroup" x="960" y="89.93" width="132" height="132" />
+	<e:Group id="fram_exitTips" x="0" y="0" visible="false">
+		<e:Image id="MaskImage" source="gray_canvas_png" x="0" y="0" alpha="0.8" />
+		<e:Group x="497" y="451">
+			<e:Image x="0" y="0" source="fram_exitTips_png" />
+			<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="68" fontFamily="ComicSansMS3"
+			         bold="true" horizontalCenter="0" />
+			<e:Group y="195.49" x="211">
+				<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0"
+				         bold="true" />
+				<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63"
+				         bold="true" />
+			</e:Group>
+		</e:Group>
+	</e:Group>
 </e:Skin>

@@ -19,11 +19,11 @@
 		"RankingScene": "resource/scenes/RankingScene.exml",
 		"InputExpressionScene": "resource/scenes/InputExpressionScene.exml",
 		"AddCalculationScene": "resource/scenes/AddCalculationScene.exml",
+		"SubtractCalculationScene": "resource/scenes/SubtractCalculationScene.exml",
 		"Particle": "resource/components/Particle.exml",
 		"Bar": "resource/components/Bar.exml",
 		"Block": "resource/components/Block.exml",
-		"Chunk": "resource/components/Chunk.exml",
-		"SubtractCalculationScene": "resource/eui_skins/SubtractCalculationScene.exml"
+		"Chunk": "resource/components/Chunk.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -42,7 +42,6 @@
 		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
-		"resource/eui_skins/SubtractCalculationScene.exml",
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
@@ -50,7 +49,8 @@
 		"resource/scenes/AddCalculationScene.exml",
 		"resource/scenes/CalculationScene.exml",
 		"resource/scenes/InputExpressionScene.exml",
-		"resource/scenes/RankingScene.exml"
+		"resource/scenes/RankingScene.exml",
+		"resource/scenes/SubtractCalculationScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

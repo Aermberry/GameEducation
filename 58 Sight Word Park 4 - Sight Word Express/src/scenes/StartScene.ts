@@ -5,6 +5,8 @@ class StartScene extends eui.Component implements eui.UIComponent{
     private rainbowImage:eui.Image;
     private mcFactory:egret.MovieClipDataFactory;
     private startSceneBgmSound:egret.SoundChannel;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
     public constructor(){
         super();
@@ -19,10 +21,17 @@ class StartScene extends eui.Component implements eui.UIComponent{
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startGameBtn,true);
+		mouse.setButtonMode(this.startButton2, true);
 		this.startGameBtn.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartGameBtnMouseOver, this);
 		this.startGameBtn.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartGameBtnMouseOut, this);
 		this.startGameBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextScene, this);
-			
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+
+	}
+
+	private onStartButton2Click(): void
+	{
+					
 		this.startSceneBgmSound = (RES.getRes('start_scene_bgm_mp3') as egret.Sound).play(0, -1);
 
 		this.mcFactory = new egret.MovieClipDataFactory( RES.getRes('movie_clip_json'), RES.getRes("movie_clip_png") );
@@ -31,6 +40,9 @@ class StartScene extends eui.Component implements eui.UIComponent{
 			.call(() => this.sightWordParkImage.visible = true, this)
 			.wait(500)
 			.call(this.showChooseAGameToPlay, this);
+			
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
 	}
 
 	private showChooseAGameToPlay(): void

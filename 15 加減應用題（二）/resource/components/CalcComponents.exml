@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CalcComponentsSkin" width="320" height="152" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"   states="normal,over" >
+	<w:Config id="165ac5eff83" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="calc_normal_png" source.over="calc_over_png"/>
+	<e:Label id="textLabel" text="列式計算" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" size="62" textColor="0x202a76" bold="true" visible="false"/>
+</e:Skin>

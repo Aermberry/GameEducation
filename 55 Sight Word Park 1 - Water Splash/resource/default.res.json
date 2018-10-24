@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg",
+			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg,wlts_logo2_jpg,start_png,start_scene_bg_png,sight_word_park_png,select_fire_png,Bg_cloudy_png,img_example_png",
 			"name": "preload"
 		}
 	],
@@ -210,6 +210,41 @@
 			"name": "arrow_right_svg",
 			"type": "image",
 			"url": "textures/arrow_right.svg"
+		},
+		{
+			"name": "wlts_logo2_jpg",
+			"type": "image",
+			"url": "images/wlts_logo.jpg"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start_scene_bg_png",
+			"type": "image",
+			"url": "textures/start_scene_bg.png"
+		},
+		{
+			"name": "sight_word_park_png",
+			"type": "image",
+			"url": "textures/sight_word_park.png"
+		},
+		{
+			"name": "select_fire_png",
+			"type": "image",
+			"url": "textures/select_fire.png"
+		},
+		{
+			"name": "Bg_cloudy_png",
+			"type": "image",
+			"url": "textures/Bg_cloudy.png"
+		},
+		{
+			"name": "img_example_png",
+			"type": "image",
+			"url": "textures/img_example.png"
 		}
 	]
 }

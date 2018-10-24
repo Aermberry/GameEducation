@@ -3,7 +3,7 @@
 <e:Image id="smell_answer_scene_bg" source="select_answer_scene_bg_png" verticalCenter="0" horizontalCenter="0"/>
 <e:Image id="smell_scene_window" source="other_scene_window_png" y="906" x="433" locked="true"/>
 <e:Label id="SmellSceneText" text="They smell" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
-<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true" visible="false"/>
 <e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000" size="74.5"/>
 <e:Image id="flowerMushroom" source="flower_mushroom_png" y="168" x="541" locked="true"/>
 <e:Image id="pointedPaper" source="pointed_paper_png" x="880" y="598" locked="true"/>

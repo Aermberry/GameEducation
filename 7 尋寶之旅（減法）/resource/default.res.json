@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,animations_json,animations_png,boy_worry_png,boy_smile_png,all_is_done_png,senior_selected_png,senior_normal_png,junior_normal_png,junior_selected_png,medium_normal_png,medium_selected_png,box_closed_png,box_open_png,strawberry_png,one_normal_png,one_selected_png,two_normal_png,two_selected_png,three_normal_png,three_selected_png,four_normal_png,four_selected_png,five_normal_png,five_selected_png,six_normal_png,six_selected_png,seven_normal_png,seven_selected_png,eight_normal_png,eight_selected_png,nine_normal_png,nine_selected_png,zero_normal_png,zero_selected_png,eraser_selected_png,eraser_normal_png,restart_normal_png,restart_selected_png,exit_normal_png,exit_selected_png,tick_png,dispoint_png,yes_normal_png,yes_selected_png,no_normal_png,no_selected_png,congratulation_png,next_degree_selected_png,next_degree_normal_png,next_question_normal_png,next_question_selected_png,think_carefully_and_try_again_png,try_again_png,strawberry_down_json,strawberry_down_png,strawberry_up_json,strawberry_up_png,boy_jump_json,boy_jump_png,calculation_font_fnt,calculation_font_png,angel_json,angel_png,dialog_up_png,rectangle_red_png,calculation_small_font_png,calculation_small_font_fnt,select_degree_mp3,congratulation_mp3,you_can_upgrade_now_mp3,minus_tour_png,minus_expression_png,red_line_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,add_info_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,add_and_subtract_more_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,animations_json,animations_png,boy_worry_png,boy_smile_png,all_is_done_png,senior_selected_png,senior_normal_png,junior_normal_png,junior_selected_png,medium_normal_png,medium_selected_png,box_closed_png,box_open_png,strawberry_png,one_normal_png,one_selected_png,two_normal_png,two_selected_png,three_normal_png,three_selected_png,four_normal_png,four_selected_png,five_normal_png,five_selected_png,six_normal_png,six_selected_png,seven_normal_png,seven_selected_png,eight_normal_png,eight_selected_png,nine_normal_png,nine_selected_png,zero_normal_png,zero_selected_png,eraser_selected_png,eraser_normal_png,restart_normal_png,restart_selected_png,exit_normal_png,exit_selected_png,tick_png,dispoint_png,yes_normal_png,yes_selected_png,no_normal_png,no_selected_png,congratulation_png,next_degree_selected_png,next_degree_normal_png,next_question_normal_png,next_question_selected_png,think_carefully_and_try_again_png,try_again_png,strawberry_down_json,strawberry_down_png,strawberry_up_json,strawberry_up_png,boy_jump_json,boy_jump_png,calculation_font_fnt,calculation_font_png,angel_json,angel_png,dialog_up_png,rectangle_red_png,calculation_small_font_png,calculation_small_font_fnt,select_degree_mp3,congratulation_mp3,you_can_upgrade_now_mp3,minus_tour_png,minus_expression_png,red_line_png,start_png,gameEui_json,gameEui2_json,start2_png",
 			"name": "preload"
 		}
 	],
@@ -372,344 +372,364 @@
 			"name": "all_is_done_png"
 		},
 		{
-			"name": "senior_selected_png",
+			"url": "textures/senior_selected.png",
 			"type": "image",
-			"url": "textures/senior_selected.png"
+			"name": "senior_selected_png"
 		},
 		{
-			"name": "senior_normal_png",
+			"url": "textures/senior_normal.png",
 			"type": "image",
-			"url": "textures/senior_normal.png"
+			"name": "senior_normal_png"
 		},
 		{
-			"name": "junior_normal_png",
+			"url": "textures/junior_normal.png",
 			"type": "image",
-			"url": "textures/junior_normal.png"
+			"name": "junior_normal_png"
 		},
 		{
-			"name": "junior_selected_png",
+			"url": "textures/junior_selected.png",
 			"type": "image",
-			"url": "textures/junior_selected.png"
+			"name": "junior_selected_png"
 		},
 		{
-			"name": "medium_normal_png",
+			"url": "textures/medium_normal.png",
 			"type": "image",
-			"url": "textures/medium_normal.png"
+			"name": "medium_normal_png"
 		},
 		{
-			"name": "medium_selected_png",
+			"url": "textures/medium_selected.png",
 			"type": "image",
-			"url": "textures/medium_selected.png"
+			"name": "medium_selected_png"
 		},
 		{
-			"name": "box_closed_png",
+			"url": "textures/box_closed.png",
 			"type": "image",
-			"url": "textures/box_closed.png"
+			"name": "box_closed_png"
 		},
 		{
-			"name": "box_open_png",
+			"url": "textures/box_open.png",
 			"type": "image",
-			"url": "textures/box_open.png"
+			"name": "box_open_png"
 		},
 		{
-			"name": "strawberry_png",
+			"url": "textures/strawberry.png",
 			"type": "image",
-			"url": "textures/strawberry.png"
+			"name": "strawberry_png"
 		},
 		{
-			"name": "one_normal_png",
+			"url": "textures/one_normal.png",
 			"type": "image",
-			"url": "textures/one_normal.png"
+			"name": "one_normal_png"
 		},
 		{
-			"name": "one_selected_png",
+			"url": "textures/one_selected.png",
 			"type": "image",
-			"url": "textures/one_selected.png"
+			"name": "one_selected_png"
 		},
 		{
-			"name": "two_normal_png",
+			"url": "textures/two_normal.png",
 			"type": "image",
-			"url": "textures/two_normal.png"
+			"name": "two_normal_png"
 		},
 		{
-			"name": "two_selected_png",
+			"url": "textures/two_selected.png",
 			"type": "image",
-			"url": "textures/two_selected.png"
+			"name": "two_selected_png"
 		},
 		{
-			"name": "three_normal_png",
+			"url": "textures/three_normal.png",
 			"type": "image",
-			"url": "textures/three_normal.png"
+			"name": "three_normal_png"
 		},
 		{
-			"name": "three_selected_png",
+			"url": "textures/three_selected.png",
 			"type": "image",
-			"url": "textures/three_selected.png"
+			"name": "three_selected_png"
 		},
 		{
-			"name": "four_normal_png",
+			"url": "textures/four_normal.png",
 			"type": "image",
-			"url": "textures/four_normal.png"
+			"name": "four_normal_png"
 		},
 		{
-			"name": "four_selected_png",
+			"url": "textures/four_selected.png",
 			"type": "image",
-			"url": "textures/four_selected.png"
+			"name": "four_selected_png"
 		},
 		{
-			"name": "five_normal_png",
+			"url": "textures/five_normal.png",
 			"type": "image",
-			"url": "textures/five_normal.png"
+			"name": "five_normal_png"
 		},
 		{
-			"name": "five_selected_png",
+			"url": "textures/five_selected.png",
 			"type": "image",
-			"url": "textures/five_selected.png"
+			"name": "five_selected_png"
 		},
 		{
-			"name": "six_normal_png",
+			"url": "textures/six_normal.png",
 			"type": "image",
-			"url": "textures/six_normal.png"
+			"name": "six_normal_png"
 		},
 		{
-			"name": "six_selected_png",
+			"url": "textures/six_selected.png",
 			"type": "image",
-			"url": "textures/six_selected.png"
+			"name": "six_selected_png"
 		},
 		{
-			"name": "seven_normal_png",
+			"url": "textures/seven_normal.png",
 			"type": "image",
-			"url": "textures/seven_normal.png"
+			"name": "seven_normal_png"
 		},
 		{
-			"name": "seven_selected_png",
+			"url": "textures/seven_selected.png",
 			"type": "image",
-			"url": "textures/seven_selected.png"
+			"name": "seven_selected_png"
 		},
 		{
-			"name": "eight_normal_png",
+			"url": "textures/eight_normal.png",
 			"type": "image",
-			"url": "textures/eight_normal.png"
+			"name": "eight_normal_png"
 		},
 		{
-			"name": "eight_selected_png",
+			"url": "textures/eight_selected.png",
 			"type": "image",
-			"url": "textures/eight_selected.png"
+			"name": "eight_selected_png"
 		},
 		{
-			"name": "nine_normal_png",
+			"url": "textures/nine_normal.png",
 			"type": "image",
-			"url": "textures/nine_normal.png"
+			"name": "nine_normal_png"
 		},
 		{
-			"name": "nine_selected_png",
+			"url": "textures/nine_selected.png",
 			"type": "image",
-			"url": "textures/nine_selected.png"
+			"name": "nine_selected_png"
 		},
 		{
-			"name": "zero_normal_png",
+			"url": "textures/zero_normal.png",
 			"type": "image",
-			"url": "textures/zero_normal.png"
+			"name": "zero_normal_png"
 		},
 		{
-			"name": "zero_selected_png",
+			"url": "textures/zero_selected.png",
 			"type": "image",
-			"url": "textures/zero_selected.png"
+			"name": "zero_selected_png"
 		},
 		{
-			"name": "eraser_selected_png",
+			"url": "textures/eraser_selected.png",
 			"type": "image",
-			"url": "textures/eraser_selected.png"
+			"name": "eraser_selected_png"
 		},
 		{
-			"name": "eraser_normal_png",
+			"url": "textures/eraser_normal.png",
 			"type": "image",
-			"url": "textures/eraser_normal.png"
+			"name": "eraser_normal_png"
 		},
 		{
-			"name": "restart_normal_png",
+			"url": "textures/restart_normal.png",
 			"type": "image",
-			"url": "textures/restart_normal.png"
+			"name": "restart_normal_png"
 		},
 		{
-			"name": "restart_selected_png",
+			"url": "textures/restart_selected.png",
 			"type": "image",
-			"url": "textures/restart_selected.png"
+			"name": "restart_selected_png"
 		},
 		{
-			"name": "exit_normal_png",
+			"url": "textures/exit_normal.png",
 			"type": "image",
-			"url": "textures/exit_normal.png"
+			"name": "exit_normal_png"
 		},
 		{
-			"name": "exit_selected_png",
+			"url": "textures/exit_selected.png",
 			"type": "image",
-			"url": "textures/exit_selected.png"
+			"name": "exit_selected_png"
 		},
 		{
-			"name": "tick_png",
+			"url": "textures/tick.png",
 			"type": "image",
-			"url": "textures/tick.png"
+			"name": "tick_png"
 		},
 		{
-			"name": "dispoint_png",
+			"url": "textures/dispoint.png",
 			"type": "image",
-			"url": "textures/dispoint.png"
+			"name": "dispoint_png"
 		},
 		{
-			"name": "yes_normal_png",
+			"url": "textures/yes_normal.png",
 			"type": "image",
-			"url": "textures/yes_normal.png"
+			"name": "yes_normal_png"
 		},
 		{
-			"name": "yes_selected_png",
+			"url": "textures/yes_selected.png",
 			"type": "image",
-			"url": "textures/yes_selected.png"
+			"name": "yes_selected_png"
 		},
 		{
-			"name": "no_normal_png",
+			"url": "textures/no_normal.png",
 			"type": "image",
-			"url": "textures/no_normal.png"
+			"name": "no_normal_png"
 		},
 		{
-			"name": "no_selected_png",
+			"url": "textures/no_selected.png",
 			"type": "image",
-			"url": "textures/no_selected.png"
+			"name": "no_selected_png"
 		},
 		{
-			"name": "congratulation_png",
+			"url": "textures/congratulation.png",
 			"type": "image",
-			"url": "textures/congratulation.png"
+			"name": "congratulation_png"
 		},
 		{
-			"name": "next_degree_selected_png",
+			"url": "textures/next_degree_selected.png",
 			"type": "image",
-			"url": "textures/next_degree_selected.png"
+			"name": "next_degree_selected_png"
 		},
 		{
-			"name": "next_degree_normal_png",
+			"url": "textures/next_degree_normal.png",
 			"type": "image",
-			"url": "textures/next_degree_normal.png"
+			"name": "next_degree_normal_png"
 		},
 		{
-			"name": "next_question_normal_png",
+			"url": "textures/next_question_normal.png",
 			"type": "image",
-			"url": "textures/next_question_normal.png"
+			"name": "next_question_normal_png"
 		},
 		{
-			"name": "next_question_selected_png",
+			"url": "textures/next_question_selected.png",
 			"type": "image",
-			"url": "textures/next_question_selected.png"
+			"name": "next_question_selected_png"
 		},
 		{
-			"name": "think_carefully_and_try_again_png",
+			"url": "textures/think_carefully_and_try_again.png",
 			"type": "image",
-			"url": "textures/think_carefully_and_try_again.png"
+			"name": "think_carefully_and_try_again_png"
 		},
 		{
-			"name": "try_again_png",
+			"url": "textures/try_again.png",
 			"type": "image",
-			"url": "textures/try_again.png"
+			"name": "try_again_png"
 		},
 		{
-			"name": "strawberry_down_json",
+			"url": "textures/strawberry_down.json",
 			"type": "json",
-			"url": "textures/strawberry_down.json"
+			"name": "strawberry_down_json"
 		},
 		{
-			"name": "strawberry_down_png",
+			"url": "textures/strawberry_down.png",
 			"type": "image",
-			"url": "textures/strawberry_down.png"
+			"name": "strawberry_down_png"
 		},
 		{
-			"name": "strawberry_up_json",
+			"url": "textures/strawberry_up.json",
 			"type": "json",
-			"url": "textures/strawberry_up.json"
+			"name": "strawberry_up_json"
 		},
 		{
-			"name": "strawberry_up_png",
+			"url": "textures/strawberry_up.png",
 			"type": "image",
-			"url": "textures/strawberry_up.png"
+			"name": "strawberry_up_png"
 		},
 		{
-			"name": "boy_jump_json",
+			"url": "textures/boy_jump.json",
 			"type": "json",
-			"url": "textures/boy_jump.json"
+			"name": "boy_jump_json"
 		},
 		{
-			"name": "boy_jump_png",
+			"url": "textures/boy_jump.png",
 			"type": "image",
-			"url": "textures/boy_jump.png"
+			"name": "boy_jump_png"
 		},
 		{
-			"name": "calculation_font_fnt",
+			"url": "textures/calculation_font.fnt",
 			"type": "font",
-			"url": "textures/calculation_font.fnt"
+			"name": "calculation_font_fnt"
 		},
 		{
-			"name": "calculation_font_png",
+			"url": "textures/calculation_font.png",
 			"type": "image",
-			"url": "textures/calculation_font.png"
+			"name": "calculation_font_png"
 		},
 		{
-			"name": "angel_json",
+			"url": "textures/angel.json",
 			"type": "json",
-			"url": "textures/angel.json"
+			"name": "angel_json"
 		},
 		{
-			"name": "angel_png",
+			"url": "textures/angel.png",
 			"type": "image",
-			"url": "textures/angel.png"
+			"name": "angel_png"
 		},
 		{
-			"name": "dialog_up_png",
+			"url": "textures/dialog_up.png",
 			"type": "image",
-			"url": "textures/dialog_up.png"
+			"name": "dialog_up_png"
 		},
 		{
-			"name": "rectangle_red_png",
+			"url": "textures/rectangle_red.png",
 			"type": "image",
-			"url": "textures/rectangle_red.png"
+			"name": "rectangle_red_png"
 		},
 		{
-			"name": "calculation_small_font_png",
+			"url": "textures/calculation_small_font.png",
 			"type": "image",
-			"url": "textures/calculation_small_font.png"
+			"name": "calculation_small_font_png"
 		},
 		{
-			"name": "calculation_small_font_fnt",
+			"url": "textures/calculation_small_font.fnt",
 			"type": "font",
-			"url": "textures/calculation_small_font.fnt"
+			"name": "calculation_small_font_fnt"
 		},
 		{
-			"name": "select_degree_mp3",
+			"url": "audios/select_degree.mp3",
 			"type": "sound",
-			"url": "audios/select_degree.mp3"
+			"name": "select_degree_mp3"
 		},
 		{
-			"name": "congratulation_mp3",
+			"url": "audios/congratulation.mp3",
 			"type": "sound",
-			"url": "audios/congratulation.mp3"
+			"name": "congratulation_mp3"
 		},
 		{
-			"name": "you_can_upgrade_now_mp3",
+			"url": "audios/you_can_upgrade_now.mp3",
 			"type": "sound",
-			"url": "audios/you_can_upgrade_now.mp3"
+			"name": "you_can_upgrade_now_mp3"
 		},
 		{
-			"name": "minus_tour_png",
+			"url": "textures/minus_tour.png",
 			"type": "image",
-			"url": "textures/minus_tour.png"
+			"name": "minus_tour_png"
 		},
 		{
-			"name": "minus_expression_png",
+			"url": "textures/minus_expression.png",
 			"type": "image",
-			"url": "textures/minus_expression.png"
+			"name": "minus_expression_png"
 		},
 		{
-			"name": "red_line_png",
+			"url": "textures/red_line.png",
 			"type": "image",
-			"url": "textures/red_line.png"
+			"name": "red_line_png"
+		},
+		{
+			"url": "textures/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"name": "gameEui2_json",
+			"type": "json",
+			"url": "gameEui.json"
+		},
+		{
+			"name": "start2_png",
+			"type": "image",
+			"url": "textures/start.png"
 		}
 	]
 }

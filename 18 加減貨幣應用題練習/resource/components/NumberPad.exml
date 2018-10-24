@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NumberPadSkin" width="1652" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="164c37cff9c" ></w:Config>
+
+	<e:Rect left="14" top="0" right="38" bottom="0" ellipseWidth="50" strokeColor="0x3e9190" strokeWeight="15" fillColor="0x9bfcfd" anchorOffsetX="0"/>
+	<ns1:ImageButton id="oneButton" x="40" verticalCenter="0" source="one_normal_png" mouseOverSource="one_selected_png"/>
+	<ns1:ImageButton id="twoButton" x="145" verticalCenter="0" source="two_normal_png" mouseOverSource="two_selected_png"/>
+	<ns1:ImageButton id="threeButton" x="250" verticalCenter="0" source="three_normal_png" mouseOverSource="three_selected_png"/>
+	<ns1:ImageButton id="fourButton" x="355" verticalCenter="0" source="four_normal_png" mouseOverSource="four_selected_png"/>
+	<ns1:ImageButton id="fiveButton" x="460" verticalCenter="0" source="five_normal_png" mouseOverSource="five_selected_png"/>
+	<ns1:ImageButton id="sixButton" x="570" verticalCenter="0" source="six_normal_png" mouseOverSource="six_selected_png"/>
+	<ns1:ImageButton id="sevenButton" x="675" verticalCenter="0" source="seven_normal_png" mouseOverSource="seven_selected_png"/>
+	<ns1:ImageButton id="eightButton" x="780" verticalCenter="0" source="eight_normal_png" mouseOverSource="eight_selected_png"/>
+	<ns1:ImageButton id="nineButton" x="885" verticalCenter="0" source="nine_normal_png" mouseOverSource="nine_selected_png"/>
+	<ns1:ImageButton id="zeroButton" x="990" verticalCenter="0" source="zero_normal_png" mouseOverSource="zero_selected_png"/>
+
+	<ns1:ImageButton id="yuanButton" x="1096" verticalCenter="1" source="yuan_normal_png" mouseOverSource="yuan_over_png"/>
+	<ns1:ImageButton id="dimeButton" x="1196" verticalCenter="0.5" source="dime_normal_png" mouseOverSource="dime_over_png"/>
+	<ns1:ImageButton id="addButton" x="1302.5" source="add_normal_png" mouseOverSource="add_selected_png" y="34"/>
+	<ns1:ImageButton id="minusButton" x="1404.5" source="minus_normal_png" mouseOverSource="minus_selected_png" y="38"/>
+	<ns1:ImageButton id="eraserButton" x="1500" source="eraser_normal_png" mouseOverSource="eraser_selected_png" y="34"/>
+</e:Skin>

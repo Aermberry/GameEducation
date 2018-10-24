@@ -1,0 +1,47 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FinishScene",
+			"memberof": "FinishScene",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "childrenCreated",
+			"memberof": "FinishScene",
+			"scope": "instance"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "partAdded",
+			"memberof": "FinishScene",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "partName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "instance",
+					"type": "any",
+					"description": ""
+				}
+			]
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FinishScene",
+		"memberof": "",
+		"filename": "C:\\Users\\lzxxkj-PC\\Documents\\EDB Flash to HTML5 Game\\WLTS\\45 Student Cards 2\\src\\scenes\\FinishScene.ts",
+		"augments": [],
+		"implements": []
+	}
+}

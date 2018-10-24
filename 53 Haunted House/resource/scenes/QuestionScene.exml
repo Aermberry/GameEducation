@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="QuestionSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+<e:Skin class="HauntedHouse.QuestionSceneSkin" width="2560" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="textTweenGroup">
 			<tween:TweenItem target="{see}">
@@ -135,4 +135,6 @@
 <e:Label id="feel" text="How do they feel?" x="1400" y="330" size="90" bold="true"/>
 <e:Label id="hear" text="What do they hear?" x="320" y="606" size="90" bold="true"/>
 <e:Label id="smell" text="What do they smell?" x="1300" y="883" size="90" bold="true"/>
+<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

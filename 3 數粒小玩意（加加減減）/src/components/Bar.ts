@@ -59,15 +59,17 @@ class Bar extends eui.Component implements  eui.UIComponent {
 	/** 把当前数粒移动到目标数粒旁边 */
 	public async moveTo(destination: IParticleComponent): Promise<void>
 	{
-		this.x = destination.x + 50;
-		this.y = destination.y;
+		// this.x = destination.x + 50;
+		// this.y = destination.y;
+		let tw = egret.Tween.get(this);
+		tw.to({x:destination.x + 50, y:destination.y}, 800);
 	}
 
 	/** 合并被加数 */
 	public async mergeAddend(addend: IParticleComponent): Promise<void>
 	{
 		let mergedCount = Math.min(this.numChildren - this.digit, addend.digit);
-		this.copyColor(addend.getChildren(mergedCount), this.digit);
+		this.copyColor(addend.getCededChildren(mergedCount), this.digit);
 		this.digit += mergedCount;
 
 		this.updateParticleVisibility();
@@ -75,11 +77,11 @@ class Bar extends eui.Component implements  eui.UIComponent {
 			this.currentState = 'joined';
 		}
 
-		addend.reduce(mergedCount);
+		addend.digit -= mergedCount;
 	}
 
 	/** 复制指定数量的children */
-	public getChildren(count: number): IParticleComponent[]
+	public getCededChildren(count: number): IParticleComponent[]
 	{
 		return this.visibleChildren.filter((child, index) => index >= this.digit - count).map(child => child as IParticleComponent);
 	}
@@ -109,10 +111,36 @@ class Bar extends eui.Component implements  eui.UIComponent {
 		return;
 	}
 
-	/** 减少数字 */
-	public reduce(value: number): void
+	/** 借位 */
+	public borrowOne(): IParticleComponent
 	{
-		this.digit -= value;
-		this.updateParticleVisibility();
+		throw new Error('不可有人问bar借位');
 	}
+
+	/** 移动到目标的左边 */
+	public async moveToLeftOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x - 50, y: target.y - 35}, 800);
+	}
+	
+	/** 移动到目标的右边 */
+	public async moveToRightOf(target: IParticleComponent): Promise<void>
+	{
+		let tw = egret.Tween.get(this);
+		tw.to({x: target.x + 50, y: target.y - 35}, 800);
+	}
+	
+	/** 移动到目标的后边 */
+	public async moveToBehideOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+ 	/** 变成半透明 */
+ 	public translucent(tranlucientAmount: number): void
+ 	{
+		this.visibleChildren.filter((child, index) => index < tranlucientAmount).forEach(child => child.alpha = 0.2);
+ 	}
+
 }

@@ -141,7 +141,7 @@
 		<e:Label id="totalTextlmage" text="108-71" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
 
-	<e:Label id="text2lmage" text=" 果汁糖有108粒，可樂糖有71粒。\n果汁糖比可樂糖多幾粒？" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="text2lmage" text="果汁糖有108粒，可樂糖有71粒。\n果汁糖比可樂糖多幾粒？" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="果汁糖比可樂糖多：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0" anchorOffsetX="0" width="456.06" anchorOffsetY="0" height="68.18"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
 
@@ -188,7 +188,7 @@
 		<e:Image x="28.03" y="272.27" source="reduce_png"/>
 		<e:BitmapLabel width="246.88" height="80" x="253" y="259.97" text="71" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30" anchorOffsetX="0"/>
 	</e:Group>
-	<e:Group id="editableLabelGroup" x="1169.06" y="740">
+	<e:Group id="editableLabelGroup" x="1172.06" y="740">
 		<ns1:EditableLargeLabel id="editablelabel1" x="200" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel2" x="100" y="0" visible="false"/>
 		<ns1:EditableLargeLabel id="editablelabel3" x="0" y="0" visible="false"/>

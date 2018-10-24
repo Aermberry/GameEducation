@@ -187,5 +187,9 @@
 		<e:Label id="expressionLabel" width="950" height="120" x="75" y="185" textColor="0x000000" size="60" backgroundColor="0xffffff" background="true" verticalAlign="middle" border="true"/>
 		<ns1:ImageButton id="submitButton" x="1132" y="193" source="submit_normal_png" mouseOverSource="submit_selected_png" />
 	</e:Group>
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="notEnoughImage" x="557.15" y="306.03" source="not_enough_png" visible="false"/>
+	<e:Image id="emptyImage" x="557.15" y="306.03" source="empty_png" visible="false"/>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>

@@ -9,7 +9,6 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private topSpeakerButtonPlayed = false; //用户是否已经播放顶部答案
 	private bottomSpeakerButtonPlayed = false; //用户是否已经播放底部答案
 
-	private currentSoundChannel: egret.SoundChannel;
 	private isCompleted = false;
 
 	public constructor() {
@@ -31,38 +30,28 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
 
-		(RES.getRes('fangfang_see_dad_is_nearby_and_she_is_not_so_afraid_mp3') as egret.Sound)
-		.play(0, 1)
-		.once(egret.Event.SOUND_COMPLETE, this.onPlayQuestionComplete, this);
+		this.playGame();
 	}
 
-	private onPlayQuestionComplete(e: egret.Event): void
+	private async playGame(): Promise<void>
 	{
+		await lzlib.SoundUtility.playSound('fangfang_see_dad_is_nearby_and_she_is_not_so_afraid_mp3');
 		this.topSpeakerButton.enabled = true;
 		this.bottomSpeakerButton.enabled = true;
 	}
 
 	private onTopSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('yi_why_there_is_a_price_on_its_neck_mp3') as egret.Sound).play(0, 1)
+		lzlib.SoundUtility.playSound('yi_why_there_is_a_price_on_its_neck_mp3');
 		this.topSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
 	}
 
 	private onBottomSpeakerButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
-		this.currentSoundChannel = (RES.getRes('the_snake_is_lying_motionless_with_price_on_its_neck_mp3') as egret.Sound).play(0, 1)
+		lzlib.SoundUtility.playSound('the_snake_is_lying_motionless_with_price_on_its_neck_mp3');
 		this.bottomSpeakerButtonPlayed = true
 		this.confirmBothSpeakersArePlayed()
-	}
-
-	private stopCurrentSoundChannel(): void
-	{
-		if (this.currentSoundChannel != null) {
-			this.currentSoundChannel.stop();
-		}
 	}
 
 	private confirmBothSpeakersArePlayed(): void
@@ -75,10 +64,8 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private onTopAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.bottomAnswerCheckbox.selected = false;
-		this.stopCurrentSoundChannel();
 		if (this.topAnswerCheckbox.selected) {
-			this.currentSoundChannel = (RES.getRes('you_are_right_and_go_to_next_page_mp3') as egret.Sound)
-			.play(0, 1);
+			lzlib.SoundUtility.playSound('you_are_right_and_go_to_next_page_mp3');
 		}
 		this.topAnswerCheckbox.enabled = false;
 		this.bottomAnswerCheckbox.enabled = false;
@@ -89,16 +76,13 @@ class Question3Scene extends eui.Component implements  eui.UIComponent {
 	private onBottomAnswerCheckboxClick(e: egret.TouchEvent): void
 	{
 		this.topAnswerCheckbox.selected = false;
-		this.stopCurrentSoundChannel();
 		if (this.bottomAnswerCheckbox.selected) {
-			this.currentSoundChannel = (RES.getRes('dad_feel_strange_and_would_not_be_certain_mp3') as egret.Sound)
-			.play(0, 1);
+			lzlib.SoundUtility.playSound('dad_feel_strange_and_would_not_be_certain_mp3');
 		}
 	}
 
 	private onNextPageButtonClick(e: egret.TouchEvent): void
 	{
-		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new Question4Scene());
 	}
 

@@ -1,38 +1,47 @@
-class DescriptionScene extends eui.Component implements eui.UIComponent{
+class DescriptionScene extends eui.Component implements eui.UIComponent {
 
-    private ExitButtonText:eui.Label;
-    private DescriptionExitButton:eui.Image;
-    private exitButtonTweenGroup:egret.tween.TweenGroup;
-    private bgmSoundChanel:egret.SoundChannel;
+    private ExitButtonText: eui.Label;
+    private DescriptionExitButton: eui.Image;
+    private exitButtonTweenGroup: egret.tween.TweenGroup;
+    private bgmSoundChanel: egret.SoundChannel;
 
-    private flowerMovieClip:egret.MovieClip;
-    private flowerFactory:egret.MovieClipDataFactory;
-    private smallflowerGroup:eui.Group;
+    private flowerMovieClip: egret.MovieClip;
+    private flowerFactory: egret.MovieClipDataFactory;
+    private smallflowerGroup: eui.Group;
+    private ExitGroup: eui.Group;
 
-    private smallskeletonMovieClip:egret.MovieClip;
-    private smallskeletonFactory:egret.MovieClipDataFactory;
-    private smallskeletonGroup:eui.Group;
+    private smallskeletonMovieClip: egret.MovieClip;
+    private smallskeletonFactory: egret.MovieClipDataFactory;
+    private smallskeletonGroup: eui.Group;
 
-    public constructor(){
+    public constructor() {
         super();
     }
 
-    protected childrenCreated():void
-    {   
+    protected childrenCreated(): void {
         super.childrenCreated();
-        this.bgmSoundChanel = RES.getRes('description_bgm_mp3').play(0,1);
-        this.exitButtonTweenGroup.play(0);
 
-        this.flowerFactory = new egret.MovieClipDataFactory( RES.getRes('small_flower_movie_json') , RES.getRes('small_flower_movie_png'));
-        this.flowerMovieClip = new egret.MovieClip(this.flowerFactory.generateMovieClipData('small_flower_movie'));
-        this.smallflowerGroup.addChild(this.flowerMovieClip);
-        this.flowerMovieClip.play(-1);
-
-        this.smallskeletonFactory = new egret.MovieClipDataFactory( RES.getRes('small_skeleton_json') , RES.getRes('small_skeleton_png'));
-        this.smallskeletonMovieClip = new egret.MovieClip(this.smallskeletonFactory.generateMovieClipData('small_skeleton_movie'));
-        this.smallskeletonGroup.addChild(this.smallskeletonMovieClip);
-        this.smallskeletonMovieClip.play(-1);
+        this.loadVoice();
+        this.ExitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.exitWindow, this);
+        this.loadAnim('small_flower_movie_json', 'small_flower_movie_png', 'small_flower_movie', this.smallflowerGroup);
+        this.loadAnim('small_skeleton_movie_json', 'small_skeleton_movie_png', 'small_skeleton_movie', this.smallskeletonGroup);
     }
-    
-    
+
+    private async loadVoice(): Promise<void> {
+        await lzlib.SoundUtility.playSound("description_bgm_mp3");
+        this.ExitGroup.visible = true;
+    }
+
+    private loadAnim(An_josn: string, An_png, An_name: string, group: eui.Group, num: number = -1): void {
+        let Factory: egret.MovieClipDataFactory = new egret.MovieClipDataFactory(RES.getRes(An_josn), RES.getRes(An_png));
+        let MovieClip: egret.MovieClip = new egret.MovieClip(Factory.generateMovieClipData(An_name));
+        group.addChild(MovieClip);
+        MovieClip.play(num);
+    }
+
+    private exitWindow(): void {
+        window.close();
+    }
+
+
 }
