@@ -1,5 +1,5 @@
 class startScene extends eui.Component implements  eui.UIComponent {
-	
+
 	private startButton:eui.Button;
 
 	public constructor() {
@@ -10,7 +10,6 @@ class startScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.partAdded(partName,instance);
 	}
-
 
 	protected childrenCreated():void
 	{
@@ -28,6 +27,5 @@ class startScene extends eui.Component implements  eui.UIComponent {
 	private onnextBtnClick(): void {
 		Main.instance.gotoScene(new gameScene());
 	}
-
 	
 }
