@@ -1,30 +1,29 @@
-class Scene09 extends eui.Component implements  eui.UIComponent {
-	
-	private nextButton:eui.Button;
+class Scene09 extends eui.Component implements eui.UIComponent {
+
+	private nextButton: eui.Button;
 
 	private dragGroup: eui.Group;
 	private dropGroup: eui.Group;
+
+	private stash: string[] = ["gong", "song", "long", "Kong"];
 
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
 		lzlib.SoundUtility.playSound('10_startgame_b_mp3');
 		this.initDragDrop();
-		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextScene,this);
+		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextScene, this);
 	}
 
-	private initDragDrop(): void
-	{
+	private initDragDrop(): void {
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
@@ -39,21 +38,26 @@ class Scene09 extends eui.Component implements  eui.UIComponent {
 		}
 	}
 
-	private onLabelDrop(e: lzlib.LzDragEvent): void
-	{
+	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
-		if (dragComponent.text == targetComponent.text) {
-			e.preventDefault();
-			targetComponent.visible = true;
-			dragComponent.visible = false;
-			this.confirmAllWordsAreCorrect();
+		this.stash.push(dragComponent.text)
+		for (let child of this.stash) {
+			if (dragComponent.text == child) {
+				return
+			}
+			else {
+				e.preventDefault();
+				targetComponent.text = dragComponent.text;
+				targetComponent.visible = true;
+				dragComponent.visible = false;
+				this.confirmAllWordsAreCorrect();
+			}
 		}
 	}
 
 	//当所有单词被正常拖进树时，显示next button
-	private confirmAllWordsAreCorrect(): void
-	{
+	private confirmAllWordsAreCorrect(): void {
 		for (let child of this.dropGroup.$children) {
 			if (!child.visible) {
 				return;
@@ -63,13 +67,13 @@ class Scene09 extends eui.Component implements  eui.UIComponent {
 		this.nextButton.visible = true;
 	}
 
-	private onNextScene():void{
+	private onNextScene(): void {
 		Main.instance.gotoScene(new Scene10());
 	}
 
-	 private async onBlackgroundMusic():Promise<void> {
+	private async onBlackgroundMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('10_startgame_b_mp3');
-		this.nextButton.visible=true;
+		this.nextButton.visible = true;
 	}
-	
+
 }

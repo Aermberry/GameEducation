@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene09Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657f5a921c" ></w:Config>
-	<e:Label text="Which words end with &quot;ong&quot;?\nDrag the right words to\n the tree" x="464" y="52" size="69" left="61" lineSpacing="30" textColor="0xbc2865" fontFamily="Comic Sans MS"/>
+	<e:Label text="Which words end with &quot;ong&quot;?\nDrag the right words to\n the tree" x="464" y="52" size="69" left="61" lineSpacing="30" textColor="0xbc2865" fontFamily="Comic Sans MS" anchorOffsetX="0" width="1005"/>
 	<e:Label text="Ken hears the gong.\nHe writes a song.\nAnd not for long.\nHe meets King Kong." x="4" y="390" textColor="0x5c1ac3" size="80" lineSpacing="70" textAlign="center" fontFamily="Comic Sans MS" anchorOffsetY="0" height="590.61" anchorOffsetX="0" width="1090"/>
 	<e:Image source="filltree_png" x="1230" y="136"/>
 	<e:Button id="nextButton" label="Next" x="1613.37" y="938.42" anchorOffsetX="0" width="217.27" anchorOffsetY="0" height="91.15" visible="false"/>
 	<e:Image source="speaker_png" x="1484.85" y="689"/>
 	<e:Group id="dragGroup">
-		<e:Label id="gongSourceLabel" text="gong" x="687" y="390" fontFamily="Comic Sans MS" size="80" textColor="0x5c1ac3"  anchorOffsetY="0" height="107.27" anchorOffsetX="0" width="255"/>
-		<e:Label id="songSourceLabel" text="song" x="655" y="540" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="107.27" anchorOffsetX="0" width="242"/>
-		<e:Label id="longSourceLabel" text="long" x="627.24" y="690.91" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="110.3" anchorOffsetX="0" width="217" textAlign="center"/>
-		<e:Label id="kongSourceLabel" text="Kong" x="701" y="840" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="101.21" anchorOffsetX="0" width="225"/>
+		<e:Label id="gongSourceLabel" text="gong" x="727" y="390" fontFamily="Comic Sans MS" size="80" textColor="0x5c1ac3"  anchorOffsetY="0" height="107.27" anchorOffsetX="0" width="255"/>
+		<e:Label id="songSourceLabel" text="song" x="683" y="540" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="107.27" anchorOffsetX="0" width="242"/>
+		<e:Label id="longSourceLabel" text="long" x="663.24" y="690.91" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="110.3" anchorOffsetX="0" width="217" textAlign="center"/>
+		<e:Label id="kongSourceLabel" text="Kong" x="731" y="840" fontFamily="Comic Sans MS" size="80" textColor="0x5C1AC3"  anchorOffsetY="0" height="101.21" anchorOffsetX="0" width="225"/>
 	</e:Group>
 	<e:Group id="dropGroup" anchorOffsetX="0" width="528" x="1200" y="0">
-		<e:Label id="gongDestLabel" text="gong" x="137.06" y="242.03" fontFamily="Comic Sans MS" size="70" textColor="0x5C1AC3" height="91.21" anchorOffsetX="0" width="208" visible="false"/>
-		<e:Label id="songDestLabel" text="song" x="373.15" y="406.97" fontFamily="Comic Sans MS" size="70" textColor="0x5C1AC3" height="97.27" anchorOffsetX="0" width="193" visible="false"/>
-		<e:Label id="longDestLabel" text="long" x="130.18" y="408.18" fontFamily="Comic Sans MS" size="70" textColor="0x5C1AC3" height="103.33" anchorOffsetX="0" width="172" visible="false"/>
-		<e:Label id="kongDestLabel" text="Kong" x="373.15" y="245.06" fontFamily="Comic Sans MS" size="70" textColor="0x5C1AC3" height="91.21" anchorOffsetX="0" width="220" visible="false"/>
+		<e:Label id="gongDestLabel" text="gong" x="127.06" y="238.03" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="71.21" anchorOffsetX="0" width="126" anchorOffsetY="0" textAlign="center" verticalAlign="top" background="false" backgroundColor="0xd50bea"/>
+		<e:Label id="songDestLabel" text="song" x="383.15" y="416.97" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="65.27" anchorOffsetX="0" width="129" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0xc40707"/>
+		<e:Label id="longDestLabel" text="long" x="106.18" y="424.67" fontFamily="Comic Sans MS" size="50" textColor="0x5C1AC3" height="63.33" anchorOffsetX="0" width="140" anchorOffsetY="0" verticalAlign="middle" textAlign="center" background="false" backgroundColor="0x02dbcd"/>
+		<e:Label id="kongDestLabel" text="Kong" x="390" y="219.79" fontFamily="Comic Sans MS" size="52" textColor="0x5C1AC3" height="73.21" anchorOffsetX="0" width="138" anchorOffsetY="0" verticalAlign="middle" textAlign="center" backgroundColor="0x0ddbbc" background="false"/>
 	</e:Group>
 </e:Skin>
