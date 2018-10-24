@@ -8,5 +8,5 @@
 	<e:Image id="voiceImage00" source="speaker_png" x="380" y="858.73"/>
 	<e:Image id="voiceImage01" source="speaker_png" x="955" y="858.73"/>
 	<e:Image id="voiceImage02" source="speaker_png" x="1547" y="858.73"/>
-	<e:Image source="speaker_png" x="1033" y="80.5"/>
+
 </e:Skin>
