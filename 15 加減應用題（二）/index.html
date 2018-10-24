@@ -27,12 +27,8 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
-        }
-        @font-face {
-            font-family:"方正凖圓";
-            src: url("resource/fonts/方正凖圓.ttf");
         }
         @media screen and (max-device-width:641px) and (max-device-height:823px){
            #logo {
@@ -62,7 +58,7 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
     <div id="egret-player" 
         class="egret-player" 
         data-entry-class="Main" 
@@ -76,10 +72,13 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
+        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: 方正凖圓; font-size: 1px;" />    
+    <label style="font-family: 華康娃娃體; color: transparent;">遇蛇記現時\r進度成功完成了！</label>
+    <label style="font-family: 标楷体; color: transparent;">小朋友，以下你會聽到一個故事，你要留意一下故事中的角色，講說話的時候是甚麼心情和應該用甚麼語氣。\r\r好了，現在就按綠色按鈕開始吧。</label>
+    <label style="font-family: 華康超黑體; color: transparent;">離開</label>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -135,29 +134,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
