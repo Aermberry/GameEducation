@@ -92,7 +92,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent, IPlayingVi
 
 	public tipsanswer(answerIndex:number,words: string[]): void
 	{
-		this.tipsText.text = "HANT:" + words[answerIndex];
+		this.tipsText.text = "HINT:" + words[answerIndex];
 		this.tipsTweenGroup.play(0);
 	};
 

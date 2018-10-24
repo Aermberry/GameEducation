@@ -28,8 +28,8 @@ class SubtractCalculationPresenter {
 		this.borrowTimes = [0, 0, 0];
 		
 		for	(let position = 0; position < result.toString().length; position++) {
+			this.view.highlightOperand(position);
 			let correctDifference = minuend[position] - subtrahend[position];
-			this.view.changeDifferenceToEditMode(position);
 			if (position < minuend.length - 1) {
 				//最后一位不需要确认退位
 				if (await this.confirmBorrowNeed(correctDifference)) {
@@ -37,13 +37,46 @@ class SubtractCalculationPresenter {
 					minuend[position] += 10;
 					this.view.playMinuendDeleteMovie(position, this.borrowTimes[position]);
 					this.view.setNewMinuend(minuend[position], position, this.borrowTimes[position]);
+					await this.moveBorrow(position, correctDifference);
 				}
 			}
+			await this.moveMinuend(position);
+			this.view.translucientMinuendAndSubstrahend(position, subtrahend[position]);
 			await this.calculateDifferenceBit(minuend[position], subtrahend[position], position);
-			this.view.changeDifferenceToViewMode(position);
+			this.view.normalizeOperand(position);
 		}
 
 		this.view.startCongratulation();
+	}
+
+	/**
+	 * 移动借位的位置
+	 */
+	private async moveBorrow(position: number, correctDifference: number): Promise<void>
+	{
+		let borrowedComponent = this.view.borrowOneFromMinuend(position + 1);
+		if (position == 0) {
+			await this.view.moveBorrowToLeftOfMinuend(borrowedComponent, position);
+			await this.view.setBorrowStateToSeparated(borrowedComponent);
+			await this.view.moveAmountOfBorrowToMinuend(borrowedComponent, position, Math.abs(correctDifference));
+			await this.view.moveBorrowToLeftOfSubstrahend(borrowedComponent, position);
+		} else {
+			await this.view.moveBorrowToBehideOfMinuend(borrowedComponent, position);
+			await this.view.setBorrowStateToSeparated(borrowedComponent);
+			await this.view.moveAmountOfBorrowToMinuend(borrowedComponent, position, borrowedComponent.digit);
+		}
+	}
+
+	/**
+	 * 移动被减数的位置
+	 */
+	private async moveMinuend(position: number): Promise<void>
+	{
+		if (position == 0) {
+			await this.view.moveMinuendToRightOfSubstrahend(position);
+		} else {
+			await this.view.moveMinuendToBehideOfSubstrahend(position);
+		}
 	}
 
 	/**

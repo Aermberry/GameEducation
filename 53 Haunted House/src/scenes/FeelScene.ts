@@ -18,7 +18,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
     private boyandGirlHorrifiedFactory:egret.MovieClipDataFactory;
     private boyandGirlHorrifiedMovieClip:egret.MovieClip;
 
-    private currentSoundChannel:egret.SoundChannel
+    private currentSoundChannel:egret.SoundChannel;
     
 
     public constructor(){
@@ -40,13 +40,13 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.boyandGirlColdFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_cold_json'), RES.getRes('boygirl_cold_png'));
 
         //boyandgirlExcited
-        this.boyandgirlExcitedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelCold, this);
+        this.boyandgirlExcitedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelExcited, this);
         this.boyandgirlExcitedGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, this.switchToBoygilrExcitedImage, this);
         this.boyandgirlExcitedGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, this.switchToBoygirlExcitedMovie, this);
         this.boyandGirlExcitedFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_excited_json'), RES.getRes('boygirl_excited_png'));
 
         //boyandgirlHorrified
-        this.boyandgirlHorrifiedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelExcited, this);
+        this.boyandgirlHorrifiedGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.feelHorrified, this);
         this.boyandgirlHorrifiedGroup.addEventListener(mouse.MouseEvent.ROLL_OUT,this.switchToBoyandgirlHorrifiedImage, this);
         this.boyandgirlHorrifiedGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, this.switchToBoyandGirlHorrifiedMovie,this);
         this.boyandGirlHorrifiedFactory = new egret.MovieClipDataFactory( RES.getRes('boygirl_horrified_json'), RES.getRes('boygirl_horrified_png'));
@@ -98,6 +98,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'cold.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+         this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_cold_mp3') as egret.Sound).play(0,1);                               
         this.nextScene();
     }
@@ -106,6 +107,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'excited.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_excited_mp3') as egret.Sound).play(0,1);                           
         this.nextScene();  
     }
@@ -114,6 +116,7 @@ class FeelScene extends eui.Component implements eui.UIComponent{
         this.scrollText.text = 'horrified.';
         this.switchFont();
         this.stopCurrentSoundChannel();
+        this.isNextSceneButtonDisplap();
         this.currentSoundChannel = (RES.getRes('feel_horrified_mp3') as egret.Sound).play(0,1);                                   
         this.nextScene();
     }
@@ -137,6 +140,10 @@ class FeelScene extends eui.Component implements eui.UIComponent{
     private stopSoundToNextScene():void{
         this.stopCurrentSoundChannel();
         Main.instance.gotoScene(new HearScene);
+    }
+
+    private isNextSceneButtonDisplap():void{
+        this.nextSceneButton.visible==false&&(this.nextSceneButton.visible=true);
     }
 
 }

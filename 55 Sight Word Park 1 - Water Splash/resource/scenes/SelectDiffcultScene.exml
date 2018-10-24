@@ -3,7 +3,7 @@
 	<w:Config id="164ef120242" ></w:Config>
 	<e:Image source="Bg_cloudy_png" top="0" left="0" right="0" bottom="0"/>
 	<e:Image id="back_Image" source="back_png" x="1754.45" y="42.42"/>
-	<e:Rect width="635.51" height="428.79" top="371" left="327" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Rect width="635.51" height="428.79" top="371" left="424" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.85" scaleY="0.92"/>
 	<e:Image source="img_example_png" x="346.78" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33" visible="false"/>
 	<e:Label text="Water Splash!" y="257.09" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="0.5"/>
 	<e:Label text="Look at the words on the word list.\nCan you find them in the puzzle?" y="378.3" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="357.5"/>
@@ -18,6 +18,6 @@
 		<e:Image source="select_fire_png" x="0" y="0"/>
 		<e:Label text="Pro" x="82" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true"/>
 	</e:Group>
-	<e:Group id="exampleMovieClip_Group" x="346.78" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33"/>
-	<ns1:MovieClipPlayer x="333.97" y="378.09" anchorOffsetX="0" anchorOffsetY="0" dataSet="Anim_json" texture="Anim_png" movieClipName="Anim" scaleX="1.3" scaleY="1.3"/>
+	<e:Group id="exampleMovieClip_Group" x="428.6" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33" scaleX="0.87"/>
+	<ns1:MovieClipPlayer x="433.96" y="381.12" anchorOffsetX="0" anchorOffsetY="0" dataSet="Anim_json" texture="Anim_png" movieClipName="Anim" scaleX="1.3" scaleY="1.3"/>
 </e:Skin>

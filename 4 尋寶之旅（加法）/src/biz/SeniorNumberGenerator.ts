@@ -22,7 +22,7 @@ class SeniorNumberGenerator implements INumberGenerator {
 	private generateDigitPair(): number[]
 	{
 		let addend = Math.randomMinMax(0, 9);
-		let augend = Math.randomMinMax(10 - addend, 9);
+		let augend = Math.randomMinMax(10 - addend - 1, 9);
 		return [addend, augend];
 	}
 }

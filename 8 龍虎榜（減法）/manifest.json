@@ -26,12 +26,12 @@
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/components/EditableLargeLabel.js",
 		"bin-debug/components/EditableSmallLabel.js",
+		"bin-debug/components/EraseError.js",
 		"bin-debug/components/ImageButton.js",
 		"bin-debug/components/NumberPad.js",
 		"bin-debug/domains/Degree.js",
 		"bin-debug/domains/DifferenceAndNewMinuend.js",
 		"bin-debug/domains/Expression.js",
-		"bin-debug/scenes/RankingScene.js",
 		"bin-debug/scenes/StartScene.js"
 	]
 }

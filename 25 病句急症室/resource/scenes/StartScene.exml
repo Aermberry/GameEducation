@@ -96,65 +96,77 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="StartAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 
 	<w:Config id="164d4293be7" ></w:Config>
-<e:Image source="start_scene_bg_png"/>
-<e:Image source="headline-bg_png" verticalCenter="-551" horizontalCenter="0"/>
-<e:Image source="head_icon_png" x="1480" y="24"/>
-<e:Image source="right_headline_png" x="1610" y="24"/>
-<e:Image  source="front_desk_png" x="53" y="752"/>
-<e:Label text="中國語文" textColor="0x0032BE" fontFamily="華康楷書體" size="86.4" x="28" y="25"/>
-<e:Label text=" 第一學習階段" fontFamily="華康楷書體" size="86.4" x="412" y="25"/>
-<e:Image source="nurse_png" x="267" y="275" />
+<e:Image source="start_scene_bg_png" locked="true"/>
+<e:Image source="headline-bg_png" verticalCenter="-551" horizontalCenter="0" visible="false" locked="true"/>
 
 
-<e:Image id="firstSelectImg" source="left_arrow_btn_png" x="924" y="291"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="304"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36"  x="1022" y="372"/>
-<e:Group id="firstSelectGroup" x="924" y="291" height="138" width="403"/>
+<e:Image  source="front_desk_png" x="53" y="752" locked="true"/>
+<e:Label text="中國語文" textColor="0x0032BE" fontFamily="标楷体" size="86.4" x="28" y="25" visible="false" locked="true"/>
+<e:Label text=" 第一學習階段" fontFamily="标楷体" size="86.4" x="412" y="25" visible="false" locked="true"/>
+<e:Image source="nurse_png" x="267" y="275"  locked="true"/>
 
-<e:Image id="secondSelectImg" source="right_arrow_btn_png" x="1331" y="291"/>
-<e:Label text="102" textColor="#000000" fontFamily="方正準圓" size="36"  x="1586" y="308"/>
-<e:Label text="多了些什麽?" textColor="#000000" fontFamily="方正準圓" size="36"  x="1427" y="372"/>
-<e:Group  id="secondSelectGroup" x="1331" y="291" height="138" width="403"/>
+
+<e:Image id="firstSelectImg" source="left_arrow_btn_png" x="924" y="291" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1021" y="304" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1022" y="372" locked="true"/>
+<e:Group id="firstSelectGroup" x="924" y="291" height="138" width="403" locked="true"/>
+
+<e:Image id="secondSelectImg" source="right_arrow_btn_png" x="1331" y="291" locked="true"/>
+<e:Label text="102" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1586" y="308" locked="true"/>
+<e:Label text="多了些什麽?" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1427" y="372" locked="true"/>
+<e:Group  id="secondSelectGroup" x="1331" y="291" height="138" width="403" locked="true"/>
 
 <e:Image id="thirdSelectImg" source="left_arrow_btn_png" x="924" y="429" locked="true"  />
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="447"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="504"/>
-<e:Group id="thirdSelectGroup" x="924" y="429" height="138" width="403"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1021" y="447" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1021" y="504" locked="true"/>
+<e:Group id="thirdSelectGroup" x="924" y="429" height="138" width="403" locked="true"/>
 
 
 <e:Image id="forthSelectImg" source="right_arrow_btn_png" x="1331" y="429" locked="true"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="446"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1485" y="504"/>
-<e:Group id="forthSelectGroup" x="1331" y="429" height="138" width="403"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1586" y="446" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1485" y="504" locked="true"/>
+<e:Group id="forthSelectGroup" x="1331" y="429" height="138" width="403" locked="true"/>
 
 
 <e:Image id="fifthSelectImg" source="left_arrow_btn_png" x="924" y="566" locked="true"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1021" y="580"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1019" y="640"/>
-<e:Group id="fifthSelectGroup" x="924" y="566" height="138" width="403"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1021" y="580" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1019" y="640" locked="true"/>
+<e:Group id="fifthSelectGroup" x="924" y="566" height="138" width="403" locked="true"/>
 
 
-<e:Image id="sixSelectImg" source="right_arrow_btn_png" x="1331" y="566"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1586" y="580"/>
-<e:Label text="" textColor="#000000" fontFamily="方正準圓" size="36" x="1445" y="640"/>
-<e:Group id="sixSelectGroup" x="1331" y="566" height="138" width="403"/>
+<e:Image id="sixSelectImg" source="right_arrow_btn_png" x="1331" y="566" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1586" y="580" locked="true"/>
+<e:Label text="" textColor="0x000000" fontFamily="華康標楷體" size="36" x="1445" y="640" locked="true"/>
+<e:Group id="sixSelectGroup" x="1331" y="566" height="138" width="403" locked="true"/>
 
 
-<e:Label id="firstTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="354" alpha="0"/>
-<e:Label id="thirdTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="496" alpha="0"/>
-<e:Label id="forthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="1746" y="496" alpha="0"/>
-<e:Label id="fifthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="616" alpha="0"/>
-<e:Label id="sixthTipLabel" text="發展中" textColor="0xFF4553" size="30"   x="1746" y="640" alpha="0"/>
+<e:Label id="firstTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="354" alpha="0" locked="true"/>
+<e:Label id="thirdTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="496" alpha="0" locked="true"/>
+<e:Label id="forthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="1746" y="496" alpha="0" locked="true"/>
+<e:Label id="fifthTipLabel" text="發展中" textColor="0xFF4553" size="30"  x="786" y="616" alpha="0" locked="true"/>
+<e:Label id="sixthTipLabel" text="發展中" textColor="0xFF4553" size="30"   x="1746" y="640" alpha="0" locked="true"/>
 
-<e:Image id="dialogImg" source="dialog_png" x="523" y="233" alpha="0.8"/>
-<e:Label id="dialogFirstLabel" text="小朋友，有些句子生病了" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="304"/>
-<e:Label id="dialogSecondLineOnecLabel" text="所謂句子生病，是指句子出了毛病，而常見" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="460"   anchorOffsetY="0" height="287.39"/>
-<e:Label id="dialogSecondLineThreecLabel" text="的毛病有三類：1)錯用了詞語；2)結構混" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="540" />
-<e:Label id="dialogSecondLineTwocLabel" text="亂；3)意思含糊不清，甚至前後矛盾。" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="614"/>
-<e:Label id="dialogFrothcLabel" text="你能幫忙，把生病的句子醫治好嗎？" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="773" />
-<e:Label id="dialogFifthcLabel" text="請到102號病房去吧！" textColor="#000000" size="48" fontFamily="方正準圓" x="634" y="927" />
-<e:Group id="dialogGroup" x="523" y="233" height="820" width="1069"/>
+<e:Image id="dialogImg" source="dialog_png" x="523" y="233" alpha="0.8" locked="true"/>
+<e:Label id="dialogFirstLabel" text="小朋友，有些句子生病了" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="304" locked="true"/>
+<e:Label id="dialogSecondLineOnecLabel" text="所謂句子生病，是指句子出了毛病，而常見" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="460"   anchorOffsetY="0" height="287.39" locked="true"/>
+<e:Label id="dialogSecondLineThreecLabel" text="的毛病有三類：1)錯用了詞語；2)結構混" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="540"  locked="true"/>
+<e:Label id="dialogSecondLineTwocLabel" text="亂；3)意思含糊不清，甚至前後矛盾。" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="614" locked="true"/>
+<e:Label id="dialogFrothcLabel" text="你能幫忙，把生病的句子醫治好嗎？" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="773"  locked="true"/>
+<e:Label id="dialogFifthcLabel" text="請到102號病房去吧！" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="927"  locked="true"/>
+<e:Group id="dialogGroup" x="523" y="233" height="820" width="1069" locked="true"/>
+<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" locked="true"/>
+<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" locked="true"/>
 </e:Skin>

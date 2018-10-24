@@ -5,7 +5,9 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 	private currentSoundChannl:egret.SoundChannel;
 
 	private exitGroup:eui.Group;
+	private exitLogo:eui.Group;
 	private forkIconImg:eui.Image;
+	private exitLabel:eui.Label;
 
 	private nextGroup:eui.Group;
 	private nextLabel:eui.Label;
@@ -14,6 +16,11 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
     private teacherDialogGroup:eui.Group;
 	private firstLabel:eui.Label;
 	private secondLabel:eui.Label;
+
+	private MaskImage:eui.Image;
+	private fram_exitTips:eui.Group;
+	private Label_true:eui.Label;
+	private Label_false:eui.Label;
 
 	
 	
@@ -35,19 +42,35 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 		mouse.setButtonMode(this.nextBtnGroup, true);
 		
         this.playSound();
-		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>window.close(), this);
+		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.showExitTips, this);
 		this.exitGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.forkIconImg.alpha = 0.3, this);
 		this.exitGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.forkIconImg.alpha = 1, this);
+		 this.Label_true.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeCurrentWindow,this);
+		this.Label_false.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeExitTipsFrame,this);
 		
 	}
+	private showExitTips():void {
+		this.fram_exitTips.visible=true;
+	}
+
+	private closeCurrentWindow(){
+		window.close();
+	}
+
+	private closeExitTipsFrame(){
+		this.fram_exitTips.visible=false;
+	}
+
 
 	private async playSound():Promise<void>
 	{
         this.currentSoundChannl = (RES.getRes('can_they_play_here_mp3') as egret.Sound).play(0,1);
 		await ThreadUtility.sleep(1000);	
-		this.teacherDialogGroup.visible = true;
+		this.teacherDialogGroup.visible = true
+		this.exitLogo.visible=true;
 		this.teacherUnhappyImg.visible = true;
 		this.teacherTouchImg.visible = true;
+
 		this.initTeacherTouchEvent();
 	}
 

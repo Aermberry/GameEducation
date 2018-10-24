@@ -34,6 +34,8 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 	private thinkCarefullyLabel: eui.Label;
 
 	private presenter: SubtractCalculationPresenter;
+
+	private alertBackgroundImage: eui.Image;
 	
 	public constructor(minuend: number, subtrahend: number) {
 		super();
@@ -100,34 +102,68 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 		this.expressionHighlightGroup.getChildAt(position).visible = this.demoHighlightGroup.getChildAt(position).visible = false;
 	}
 
-	/** 把被加数移动到加数旁边 */
-	/*public async moveAddendToAugend(position: number): Promise<void>
+	/** 借位 */
+	public borrowOneFromMinuend(position: number): IParticleComponent
 	{
-		(this.addendGroup.getChildAt(position) as IParticleComponent).moveTo((this.augendGroup.getChildAt(position) as IParticleComponent));
-		await lzlib.ThreadUtility.sleep(2000);
-	}*/
+		return (this.minuendGroup.getChildAt(position) as IParticleComponent).borrowOne();
+	}
 
-	/** 合并被加数和加数 */
-	/*public async mergeAddendAndAugend(position: number): Promise<void>
+	/** 把借位移动到被减数的左边 */
+	public async moveBorrowToLeftOfMinuend(borrow: IParticleComponent, position: number): Promise<void>
 	{
-		if (position == 1) {
-			(this.addendGroup.getChildAt(position) as IParticleComponent).mergeAddend((this.augendGroup.getChildAt(position) as IParticleComponent))
-		} else {
-			(this.augendGroup.getChildAt(position) as IParticleComponent).mergeAddend((this.addendGroup.getChildAt(position) as IParticleComponent))
-		}
-		await lzlib.ThreadUtility.sleep(2000);
-	}*/
+		borrow.moveToLeftOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把借位移动到减数的后边 */
+	public async moveBorrowToBehideOfMinuend(borrow: IParticleComponent, position: number): Promise<void>
+	{
+		borrow.moveToBehideOf(this.minuendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
 
-	/** 合并进位 */
-	/*public async mergeCarry(position: number): Promise<void>
+	/** 从借位移动指定数字到被减数 */
+	public async moveAmountOfBorrowToMinuend(borrow: IParticleComponent, position: number, amount: number): Promise<void>
 	{
-		if (position == 1) {
-			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.addendGroup.getChildAt(position) as IParticleComponent));
-		} else {
-			(this.augendGroup.getChildAt(position + 1) as IParticleComponent).mergeCarry((this.augendGroup.getChildAt(position) as IParticleComponent));
-		}
-		await lzlib.ThreadUtility.sleep(2000);
-	}*/
+		borrow.digit -= amount;
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).digit += amount;
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把借位移动到减数的左边 */
+	public async moveBorrowToLeftOfSubstrahend(borrow: IParticleComponent, position: number): Promise<void>
+	{
+		borrow.moveToLeftOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把被减数移动到减数的右边 */
+	public async moveMinuendToRightOfSubstrahend(position: number): Promise<void>
+	{
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).moveToRightOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 把被减数移动到减数的后边 */
+	public async moveMinuendToBehideOfSubstrahend(position: number): Promise<void>
+	{
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).moveToBehideOf(this.subtrahendGroup.getChildAt(position) as IParticleComponent);
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+
+	/** 令借位的状态变成Separated */
+	public async setBorrowStateToSeparated(borrow: IParticleComponent): Promise<void>
+	{
+		borrow.currentState = 'separated';
+		await lzlib.ThreadUtility.sleep(1000);
+	}
+	
+	/** 令被减数和减数变成半透明 */
+	public translucientMinuendAndSubstrahend(position: number, tranlucientAmount: number): void
+	{
+		(this.minuendGroup.getChildAt(position) as IParticleComponent).translucent(tranlucientAmount);
+		(this.subtrahendGroup.getChildAt(position) as IParticleComponent).translucent(tranlucientAmount);
+	}
 
 	/** 设置新被减数 */
 	public setNewMinuend(minuend: number, position: number, borrowTime: number): void
@@ -213,10 +249,13 @@ class SubtractCalculationScene extends eui.Component implements  eui.UIComponent
 	}
 	
 	/** 显示通关动画 */
-	public startCongratulation(): void
+	public async startCongratulation(): Promise<void>
 	{
 		this.boyImage.visible = false;
 		this.playBoyMovie();
+		this.alertBackgroundImage.visible = true;
+		await lzlib.ThreadUtility.sleep(1500);
+		this.alertBackgroundImage.visible = false;
 	}
 	
 	private playBoyMovie(): void

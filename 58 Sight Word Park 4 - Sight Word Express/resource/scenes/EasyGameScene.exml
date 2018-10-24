@@ -221,6 +221,6 @@
 			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
 		</e:Group>
 	</e:Group>
+	<e:Group id="dropDownBoxGroup" x="1130" y="-400" height="491.67" width="848" anchorOffsetY="0"/>
 
-	<e:Group id="dropDownBoxGroup" x="1130" y="-400" height="688" width="848"/>
 </e:Skin>

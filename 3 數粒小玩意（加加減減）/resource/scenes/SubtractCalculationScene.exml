@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SubtractCalculationSceneSkin" width="1920" height="1061" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		
+		<tween:TweenGroup id="deleteMinuend20Movie">
+			<tween:TweenItem target="{hundredRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="deleteMinuend10Movie">
+			<tween:TweenItem target="{decade0RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="deleteMinuend11Movie">
+			<tween:TweenItem target="{decade1RedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="deleteMinuend00Movie">
+			<tween:TweenItem target="{unitRedLineImage}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{0}" height="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object width="{45}" height="{61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image y="30" horizontalCenter="0"  source="add_and_subtract_more_png"/>
+	<e:Image source="minus_tour_png" x="960" y="55"  anchorOffsetX="0" anchorOffsetY="0" width="635" height="82"/>
+
+	<e:Group id="restartGroup" top="47" right="25" width="214" height="79" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect top="0" right="0" bottom="2" left="0" strokeWeight="5" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:ImageButton id="restartButton" source="restart_normal_png" mouseOverSource="restart_selected_png" verticalCenter="0"  scaleX="0.6" scaleY="0.6" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="demoGroup" top="235" bottom="20" left="275" right="53">
+		<e:Rect top="0" bottom="0" left="0" strokeWeight="15" strokeColor="#296675" fillColor="0xCBEBF1" ellipseWidth="75" y="0" scaleX="1" scaleY="1" right="0"/>
+		<e:Group id="demoHighlightGroup" x="10" y="10">
+			<e:Rect width="152" height="748" x="1400" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="628" height="748" x="783" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="758.73" height="746" x="257.42" y="20" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="476" height="394" x="18" y="372" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		</e:Group>
+		<e:Group id="minuendGroup">
+			<ns1:Bar id="minuendBar" color='red' currentState="separated" x="1479.45" y="46"/>
+			<ns1:Block id="minuendBlock" color='red' currentState="separated" x="720" y="95"/>
+			<ns1:Chunk id="minuendChunk" color='red' currentState="separated" x="241.65" y="20"/>
+		</e:Group>
+
+		<e:Group id="subtrahendGroup">
+			<ns1:Bar id="subtrahendBar" color='green' currentState="separated" x="1476.42" y="452"/>
+			<ns1:Block id="subtrahendBlock" color='green' currentState="separated" x="720" y="500"/>
+			<ns1:Chunk id="subtrahendChunk" color='green' currentState="separated" x="50" y="412"/>
+		</e:Group>
+		<ns1:ImageButton id="startButton" source="start_normal_png" mouseOverSource="start_selected_png" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+
+	<e:Group id="exitGroup" top="145" right="25" width="145" height="76" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Rect top="0" right="0" bottom="4" left="0" strokeWeight="5" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:ImageButton id="exitButton" source="exit_normal_png" mouseOverSource="exit_selected_png" horizontalCenter="0" verticalCenter="0"  scaleX="0.6" scaleY="0.6"/>
+	</e:Group>
+	
+	<e:Group id="expressionGroup" width="550" height="425" y="180" x="60">
+		<e:Rect strokeWeight="15" strokeColor="0x296675" fillColor="0xCBEBF1" ellipseWidth="50" left="0" right="0" top="0" bottom="0"/>
+		<e:Group id="expressionHighlightGroup">
+			<e:Rect width="102" height="382" x="374" y="22" fillColor="0xc5bef2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="382" x="264" y="22" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="382" x="150" y="22" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+			<e:Rect width="102" height="120" x="34" y="284" fillColor="0xC5BEF2" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		</e:Group>
+		<e:Image id="minusExpression" horizontalCenter="0" y="268" source="minus_expression_png"/>
+		<e:BitmapLabel id="minuendLabel" width="276" height="62" y="137" text="345" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="85" right="95" textAlign="right"/>
+		<e:BitmapLabel id="subtrahendLabel" width="290" height="62" y="232" text="585" font="calculation_font_fnt" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="85" right="95" textAlign="right"/>
+		<e:Group id="newMinuendGroup">
+			<e:Group id="unitNewMinuendGroup">
+				<ns1:EditableSmallLabel id="unit0NewMinuendLabel" currentState="view" y="55" x="414"/>
+			</e:Group>
+			<e:Group id="decadeNewMinuendGroup">
+				<ns1:EditableSmallLabel id="decade0NewMinuendLabel" currentState="view" y="55" x="300"/>
+				<ns1:EditableSmallLabel id="decade1NewMinuendLabel" currentState="view" y="-7" x="298"/>
+			</e:Group>
+			<e:Group id="hundredNewMinuendGroup">
+				<ns1:EditableSmallLabel id="hundred0NewMinuendLabel0" currentState="view" y="55" x="190"/>
+			</e:Group>
+		</e:Group>
+
+		<e:Image id="hundredRedLineImage" source="red_line_png" bottom="230" x="192" width="0" height="0" />
+		<e:Image id="decade0RedLineImage" x="304" source="red_line_png" bottom="230" width="0" height="0" />
+		<e:Image id="decade1RedLineImage" x="304" source="red_line_png" bottom="288" width="0" height="0" />
+		<e:Image id="unitRedLineImage" x="416.5" source="red_line_png" bottom="232" width="0" height="0" />
+
+		<e:Group id="differenceGroup">
+			<ns1:EditableLargeLabel id="unitLabel" name="difference0Label" x="399" y="290" width="80" height="120" currentState="view" text="" anchorOffsetX="0"/>
+			<ns1:EditableLargeLabel id="decadeLabel" name="difference1Label" x="286" y="290" width="80" height="120" currentState="view" text=""/>
+			<ns1:EditableLargeLabel id="hundredLabel" name="difference2Label" x="169" y="290" width="80" height="120" currentState="view" text=""/>
+		</e:Group>
+		
+	</e:Group>
+	<e:Group id="confirmDialogGroup" width="560" height="300" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" strokeColor="0x3e9190" strokeWeight="15"  ellipseWidth="50" fillColor="0x9fded7"/>
+		<e:Label text="要退位嗎？" y="45" textColor="0x000000" size="50" horizontalCenter="0.5" fontFamily="標楷體"/>
+		<ns1:ImageButton id="yesButton" x="70" y="134" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
+		<ns1:ImageButton id="noButton" x="320" y="134" source="no_normal_png" mouseOverSource="no_selected_png"/>
+	</e:Group>
+	<e:Group id="boyGroup" width="338" height="532" bottom="30" left="30" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="boyImage" source="boy_worry_png" bottom="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="thinkCarefullyGroup" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image source="yellow_rectangle_png"/>
+		<e:Label id="thinkCarefullyLabel" text="想清楚，再試一次！" textColor="0x000000" size="50" horizontalCenter="0" fontFamily="標楷體" verticalCenter="0"/>
+	</e:Group>
+	<ns1:NumberPad id="numberPad" isAddVisible="false" isMinusVisible="false" isEraserVisible="false"  y="172.5" x="625.5" visible="false"/>
+	<e:Image id="alertBackgroundImage" x="856.05" y="368.39" source="alert_background_png" anchorOffsetX="0" width="528.42" anchorOffsetY="0" height="243.07" visible="false"/>
+	<w:Config id="164a26657c5" ></w:Config>
+</e:Skin>

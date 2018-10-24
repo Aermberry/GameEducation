@@ -1,6 +1,7 @@
 interface IAddCalculationView {
 	addend: number;
 	augend: number;
+	showAlertImage(): Promise<void>;
 	hideStartButton(): void;
 	showRestartButton(): void;
 	/** highlight操作数，包括expressionGroup和demoGroup里的操作数 */

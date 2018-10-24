@@ -148,7 +148,7 @@ class PlayProGameScene extends eui.Component implements eui.UIComponent, IPlayPr
     private onLeftSignMouseOver(): void
     {
         this.leftSignImage.source = 'left_sign_selected_png';
-        (RES.getRes('kacha_mp3') as egret.Sound).play(0, 1);
+        (RES.getRes('sound_effect_kacha_mp3') as egret.Sound).play(0, 1);
     }
     
     private onLeftSignMouseOut(): void
@@ -164,7 +164,7 @@ class PlayProGameScene extends eui.Component implements eui.UIComponent, IPlayPr
     private onMiddleSignMouseOver(): void
     {
         this.middleSignImage.source = 'middle_sign_selected_png';
-        (RES.getRes('kacha_mp3') as egret.Sound).play(0, 1);
+        (RES.getRes('sound_effect_kacha_mp3') as egret.Sound).play(0, 1);
     }
 
     private onMiddleSignMouseOut(): void
@@ -180,7 +180,7 @@ class PlayProGameScene extends eui.Component implements eui.UIComponent, IPlayPr
     private onRightSignMouseOver(): void
     {
         this.rightSignImage.source = 'right_sign_selected_png';
-        (RES.getRes('kacha_mp3') as egret.Sound).play(0, 1);
+        (RES.getRes('sound_effect_kacha_mp3') as egret.Sound).play(0, 1);
     }
 
     private onRightSignMouseOut(): void

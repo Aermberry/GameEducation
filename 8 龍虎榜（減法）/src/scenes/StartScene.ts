@@ -2,9 +2,9 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private splashTweenGroup: egret.tween.TweenGroup;
 
 	private currentSoundChannel: egret.SoundChannel;
-
-	private startButton2: eui.Image;
 	private startMask: eui.Rect;
+    private startButton: eui.Button;
+    private loadingAnim:egret.tween.TweenGroup
 
 	public constructor() {
 		super();
@@ -20,20 +20,21 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
+		
 	}
 
-	private onStartButton2Click(): void
-	{
+	private async onStartButtonClick(): Promise<void> {
+		await this.loadingAnim.play(0);
 		this.startMask.visible = false;
-		this.startButton2.visible = false;
+		this.startButton.visible = false;
 		this.playSplashMovie();
 	}
 
 	private async playSplashMovie(): Promise<void>
 	{
 		await this.splashTweenGroup.playOnceAsync();
-		await lzlib.ThreadUtility.sleep(2000);
+		await lzlib.ThreadUtility.sleep(3500);
 		Main.instance.gotoScene(new CalculationScene());
 	}
 }

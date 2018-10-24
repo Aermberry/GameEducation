@@ -56,7 +56,5 @@ declare module skins{
 }
 declare class CalculationSceneSkin extends eui.Skin{
 }
-declare class RankingSceneSkin extends eui.Skin{
-}
 declare class StartSceneSkin extends eui.Skin{
 }

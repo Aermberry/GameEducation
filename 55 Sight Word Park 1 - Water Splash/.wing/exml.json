@@ -25,7 +25,7 @@
     "parentPath": ""
   },
   "global": {
-    "globalAutoLayerMarkEnable": false
+    "globalAutoLayerMarkEnable": true
   },
   "164f2db9707": {
     "path": "components/RedLineLabel.ts",

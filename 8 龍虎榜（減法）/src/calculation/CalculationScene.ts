@@ -31,6 +31,8 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private topDialogTitleLabel: eui.Label;
 	private yesButton: ImageButton;
 	private noButton: ImageButton;
+	private finishButton:ImageButton;
+	private finishTipsGroup: eui.Group;
 
 	private angelGroup: eui.Group;
 	private angelFactory:egret.MovieClipDataFactory;
@@ -47,6 +49,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private correctDeleteMinuend11Movie: egret.tween.TweenGroup;
 	private correctDeleteMinuend00Movie: egret.tween.TweenGroup;
 	private correctDeleteMinuendMovies = {};
+
+	private confirmInputBorrowDialogGroup: eui.Group;
+	private yesButton2: ImageButton;
+	private noButton2: ImageButton;
 
 	private presenter = new CalculationPresenter();
 
@@ -65,6 +71,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.initAngelGroup();
+		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
 			"deleteMinuend20Movie": this.answerDeleteMinuend20Movie,
 			"deleteMinuend10Movie": this.answerDeleteMinuend10Movie,
@@ -95,10 +102,21 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		return new Promise<string>(resolve => resolve(''));
 	}
 
-	/** 向用户确认是否需要输入退位 */
+	/** 向用户确认是是否要输入退位，在游戏一开始的时候出现。
+	 * 如果用户选择是，在做题的每一步系统都会咨问用户是否要退位。
+	 * 如果用户选择否，系统就不会再问用户是否要退位 */
 	public confirmInputBorrowNeedAsync(): Promise<boolean>
 	{
-		return new Promise<boolean>(resolve => resolve(true));
+		return new Promise<boolean>(resolve => {
+			this.yesButton2.once(egret.TouchEvent.TOUCH_TAP, () => {
+				this.confirmInputBorrowDialogGroup.visible = false;
+				resolve(true);
+			}, this);
+			this.noButton2.once(egret.TouchEvent.TOUCH_TAP, () => {
+				this.confirmInputBorrowDialogGroup.visible = false;
+				resolve(false);
+			}, this);
+		});
 	}
 
 	public set questionIndex(value: number)
@@ -162,14 +180,17 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public confirmBorrowNeedAsync(): Promise<boolean>
 	{
 		this.topDialogGroup.visible = true;
+		this.angelGroup.visible=true;
 		return new Promise<boolean>(resolve => {
 			this.yesButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(true);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 			this.noButton.once(egret.TouchEvent.TOUCH_TAP, () => {
 				resolve(false);
 				this.topDialogGroup.visible = false;
+				this.angelGroup.visible=false;
 			}, this);
 		});
 	}
@@ -274,6 +295,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.answerStatusImage.source = 'dispoint_png';
 	}
 
+	public onChangeFinshButtonTexutre():void{
+		this.finishButton.mouseOverSource="finish_selected_png"
+	}
+
 	public hideAnswerStatus(): void
 	{
 		this.answerStatusImage.visible = false;
@@ -301,28 +326,37 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.strawberryImage.alpha = 0;
 	}
 
+	/** 显示完成按钮的提示 */
+	public async alertFinishTips(): Promise<void>
+	{
+		this.finishTipsGroup.visible = true;
+		await lzlib.ThreadUtility.sleep(3000);
+		this.finishTipsGroup.visible = false;
+	}
+
+	/** 等待用户点击"完成按钮" */
+	public confirmFinishButtonClick(): Promise<void>
+	{
+		return new Promise<void>(resolver => {
+			this.finishButton.once(egret.TouchEvent.TOUCH_TAP, resolver, this);
+		});
+	}
+
 	/** 清除用户的输入 */
 	public clearUserInput(): void
 	{
 		for (let index = 0; index < this.questionGroup.numChildren; index++) {
 			let child = this.questionGroup.getChildAt(index);
 			if (child instanceof EditableLabel) {
-				(child as EditableLabel).currentState = 'view';
-				(child as EditableLabel).text = '';
+				(child as EditableLabel).clear();
 			}
 		}
 
 		for (let index = 0; index < this.correctGroup.numChildren; index++) {
 			let child = this.correctGroup.getChildAt(index);
 			if (child instanceof EditableLabel) {
-				(child as EditableLabel).currentState = 'view';
-				(child as EditableLabel).text = '';
+				(child as EditableLabel).clear();
 			}
 		}
-	}
-
-	public openRankingScene(): void
-	{
-		Main.instance.gotoScene(new RankingScene());
 	}
 }
