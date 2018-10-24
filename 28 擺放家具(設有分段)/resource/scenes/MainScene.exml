@@ -83,4 +83,7 @@
 		<ns1:CircleButton id="actionLeftButton" x="610" y="213.59" />
 		<ns1:CircleButton id="actionRightButton" x="1267.01" y="213.59" />
 	</e:Group>
+
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
