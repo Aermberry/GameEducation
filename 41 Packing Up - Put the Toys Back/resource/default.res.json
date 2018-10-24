@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png,bicycle_behind_desk2_png,in2_png,near2_png,on2_png,robot_in_box2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,man_girl2_png,owl2_png,robot2_png,room2_png,text022_png,under2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bicycle_png,books_png,bus_png,clock_png,flower_png,man_girl_png,owl_png,robot_png,room_png,under_png,bg2_jpg,egret_icon2_png,bg3_jpg,egret_icon3_png,text02_png,wlts_logo_jpg,near_png,on_png,in_png,behind_png,robot_in_box_png,bicycle_behind_desk_png,bicycle_behind_desk2_png,in2_png,near2_png,on2_png,robot_in_box2_png,behind2_png,bicycle2_png,books2_png,bus2_png,clock2_png,flower2_png,man_girl2_png,owl2_png,robot2_png,room2_png,text022_png,under2_png,start_png",
 			"name": "preload"
 		}
 	],
@@ -315,6 +315,11 @@
 			"name": "under2_png",
 			"type": "image",
 			"url": "textures/under.png"
+		},
+		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
 		}
 	]
 }
