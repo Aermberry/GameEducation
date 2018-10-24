@@ -290,7 +290,8 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	
 	public reopenMyself(): void
 	{
-		Main.instance.gotoScene(new MainScene());
+		// Main.instance.gotoScene(new MainScene());
+		window.location.reload();
 	}
 
 	public showCorrectGroup(): void
