@@ -46,9 +46,9 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.calcComponent.visible = false;
 		lzlib.SoundUtility.playSound('streamsound4_2_mp3');
-		await lzlib.ThreadUtility.sleep(8000);
+		await this.sleep(8000);
 		this.coinMoveAnimation.play(0);
-		await lzlib.ThreadUtility.sleep(7000);
+		await this.sleep(7000);
 		this.hideCalcGroup();
 		this.formulaComponent.showTitleImage();
 		this.formulaComponent.showLeftImage();
@@ -83,6 +83,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 
 	private onLastQuestionTap(): void
 	{
+		this.isResolve = false;
 		Main.instance.gotoScene(new Question3Scene());
 	}
 
@@ -152,6 +153,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.coinGroup.visible = false;
 	}
+
 	private sleep(ms = 0): Promise<void>
 	{
 		return new Promise<void>((resolve, reject)=> {
