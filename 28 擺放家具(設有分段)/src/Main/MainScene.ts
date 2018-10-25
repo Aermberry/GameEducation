@@ -226,14 +226,16 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	
 	public playSomeGoodsNotInRoomAudio(): void 
 	{
-		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play(0, 1);
+		// this.stopCurrentSound();
+		// this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound('sound 6 (guideSound1Raw)_mp3');
 	}
 	
 	public playNotAllGoodsInCorrectPlayAudio(): void 
 	{
-		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
+		// this.stopCurrentSound();
+		// this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound('sound 5 (guideSound2Raw)_mp3');
 		this.actionGroup.visible = true;
 	}
 
@@ -249,6 +251,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 
 	public closeContinuePanel(): void
 	{
+		console.log('continue');
 		this.actionGroup.visible = false;
 		this.actionLeftButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onContinueButtonClick, this.presenter);
 		this.actionRightButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);

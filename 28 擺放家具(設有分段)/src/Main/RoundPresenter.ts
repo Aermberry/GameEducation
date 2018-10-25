@@ -76,6 +76,7 @@ class RoundPresenter {
 
 	public onContinueButtonClick(): void
 	{
+		this.view.enableInstructionButton();
 		this.view.closeContinuePanel();
 	}
 }
