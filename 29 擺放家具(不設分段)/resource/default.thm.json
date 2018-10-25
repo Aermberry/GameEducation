@@ -22,6 +22,11 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/BiscuitComponent.exml",
+		"resource/components/BiscuitProgressBar.exml",
+		"resource/components/CircleButton.exml",
+		"resource/components/GoodsComponent.exml",
+		"resource/components/MovieClipPlayer.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -35,11 +40,6 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/components/BiscuitComponent.exml",
-		"resource/components/BiscuitProgressBar.exml",
-		"resource/components/CircleButton.exml",
-		"resource/components/GoodsComponent.exml",
-		"resource/components/MovieClipPlayer.exml",
 		"resource/scenes/MainScene.exml"
 	],
 	"path": "resource/default.thm.json"
