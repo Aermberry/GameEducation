@@ -61,6 +61,10 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	private videoTap2Group: eui.Group;
 
 	private confirmFrame: eui.Image;
+	private progressGroup: eui.Group;
+	private buleProgressBar: eui.Image;
+	private progressBackgroundRect: eui.Rect;
+	private closeImg: eui.Image;
 
 	private presenter = new SecondLevelSelectPresenter();
 
@@ -94,7 +98,7 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.initVideoTapGroup();
 		this.initBackgroundGroupDrop();
 		this.initHornSound();
-
+		this.closeImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onProgressCloseClick, this.presenter);
 		this.presenter.loadView(this);
 	}
 
@@ -424,5 +428,25 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		this.highlightPlaceButtonMovie.stop();
 		this.placeBtnHightlightRect.visible = false;
+	}
+
+	public async showProgressBar(index: number): Promise<void>
+	{
+		this.progressBackgroundRect.visible = true;
+		this.progressGroup.visible = true;
+		this.buleProgressBar.alpha =1;
+        for (let second = 0; second < index; second++) {
+            this.buleProgressBar.width = second / index * 575;
+            await lzlib.ThreadUtility.sleep(1000);
+        }
+		this.progressGroup.visible = false;
+		this.progressBackgroundRect.visible = false;
+	}
+
+	public closeProgressBar(): void
+	{
+		this.stopCurrentSoundChannel();
+		this.progressGroup.visible = false;
+		this.progressBackgroundRect.visible = false;
 	}
 }

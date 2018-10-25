@@ -205,12 +205,17 @@ class SecondLevelSelectPresenter {
 	public onHeadSoundClick(): void
 	{
 		this.view.playFirstCompitionSound();
-		console.log('horn1');
+		this.view.showProgressBar(80);
 	}
 
 	public onButtomSoundClick(): void
 	{
 		this.view.playSecondCompitionSound()
-		console.log('horn2');
+		this.view.showProgressBar(80);
+	}
+
+	public onProgressCloseClick(): void
+	{
+		this.view.closeProgressBar();
 	}
 }

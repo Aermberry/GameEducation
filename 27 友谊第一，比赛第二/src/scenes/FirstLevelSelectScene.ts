@@ -67,6 +67,7 @@ class FirstLevelSelectScene extends eui.Component implements  eui.UIComponent {
 		mouse.setButtonMode(this.confirmGroup,true);
 		mouse.setButtonMode(this.exitGroup,true);
 		
+		this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, window.close, this);
 		this.currentSoundChannel = (RES.getRes('first_select_bgm_mp3') as egret.Sound).play(0,1);
 		
 		this.initAnimalsTouchEvent();

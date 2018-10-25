@@ -43,9 +43,9 @@
 	
     <e:Image id="bgImg" source="bg_png" locked="true"/>
     <e:Image id="frame" source="yellow_frame_png" x="422" y="66" locked="true"/>
-    <e:Image id="exitBtn" source="btn_png" x="435" y="1056"  locked="true"/>
-    <e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="華康超黑體" textColor="0x000000" bold="true" locked="true"/>
-    <e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0" locked="true"/>
+    <e:Image id="exitBtn" source="btn_png" x="435" y="1056" />
+    <e:Label id="exitLabel" text="離開" size="60" x="455" y="1100" fontFamily="華康超黑體" textColor="0x000000" bold="true"/>
+    <e:Group id="exitGroup" x="433" y="1056" height="161" width="164" anchorOffsetX="0"/>
     <e:Image id="confirmFrame" source="confirm_button_png" x="1526" y="1056" locked="true"/>
     <e:Label id="confirmLabel" text="確定" fontFamily="華康超黑體" x="1537.5" y="1104" size="60" bold="true" locked="true"/>
     <e:Group id="confirmGroup" x="1526" y="1056" width="156" height="156"/>

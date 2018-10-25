@@ -22,6 +22,48 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="highlightPersonButtonMovie">
+			<tween:TweenItem target="{personBtnHightlightRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="highlightThingButtonMovie">
+			<tween:TweenItem target="{thingBtnHightlightRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="164cb89aa1f" ></w:Config>
 	<e:Group id="backgroundGroup" right="0" left="0" bottom="0" top="0">
@@ -29,6 +71,7 @@
 		<e:Rect width="484.84" height="1274.55" fillAlpha="0" anchorOffsetX="0" x="0" bottom="0"/>
 		<e:Rect width="2554.54" height="444.24" fillAlpha="0" anchorOffsetX="0" bottom="0" anchorOffsetY="0" right="0"/>
 		<e:Rect width="2554.54" height="223.03" fillAlpha="0" anchorOffsetX="0" y="0" anchorOffsetY="0" right="0"/>
+		
 	</e:Group>
 	<e:Image source="bg_png" locked="true"/>
 	<e:Image x="422" y="80" source="video_tape_png" locked="true"/>
@@ -74,7 +117,8 @@
 			<e:Image id="fifithPlace" x="1139" y="676" source="fifth_place_png" locked="true"/>
 			<e:Image id="sixthPlace" x="1531" y="676" source="sixth_place_png" locked="true"/>
 		</e:Group>
-		<e:Image id="personBtnImg" x="1938" y="449" source="person_png" locked="true"/>
+			<e:Rect id="personBtnHightlightRect" x="1938" y="449" width="150" height="150" fillColor="0xFF0000" ellipseWidth="150" alpha="0"/>
+		<e:Image id="personBtnImg" x="1938" y="449" source="person_png"/>
 		<e:Group id="personGroup" touchThrough="true" visible="false">
 			<e:Image id="foxImg" source="fox_png" width="122" height="169" x="1190" y="171" locked="true"/>
 			<e:Image id="penguinImg" source="penguin_png" width="136" height="165" x="1445" y="171" locked="true"/>
@@ -86,7 +130,8 @@
 			<e:Image id="dogImg" source="dog_png" width="139" height="185" x="1445" y="702" locked="true"/>
 			<e:Image id="pigImg" source="pig_png" width="116" height="164" x="1716" y="728" locked="true"/>
 		</e:Group>
-		<e:Image id="thingBtnImg" x="1939" y="635" source="thing_png" locked="true"/>
+			<e:Rect id="thingBtnHightlightRect" x="1939" y="635" width="150" height="150" fillColor="0xFF0000" ellipseWidth="150" alpha="0"/>
+		<e:Image id="thingBtnImg" x="1939" y="635" source="thing_png"/>
 		<e:Group id="thingGroup" touchThrough="true" visible="false">
 			<e:Image id="pineConeImg" source="pine_cone_png" x="1525" y="216" locked="true"/>
 			<e:Image id="basketballImg" source="basketball_png" x="1515" y="481" locked="true"/>
@@ -124,5 +169,13 @@
 			<e:Image id="bottomSoundFrame" source="btn_png" x="1829" y="604"/>
 			<e:Image id="bottomSoundImg" source="sound_png" x="1855.5" y="636.5"/>
 			<e:Group id="bottomSoundGroup" x="1829" y="604" width="161" height="161"/>
+		</e:Group>
+	<e:Rect id="progressBackgroundRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.6" visible="false"/>
+		<e:Group id="progressGroup" x="868" y="520" visible="false">
+			<e:Image id="yellowFrame" source="rectangular _frame_png" x="0" alpha="1"/>
+			<e:Image id="closeImg" source="close_png" x="772" y="19" alpha="1"/>
+			<e:Label id="PlayText" text="播放中" alpha="1" x="28" y="16"/>
+			<e:Image id="whiteProgress" source="white_progress _bar_png" alpha="1" y="116" x="132"/>
+			<e:Image id="buleProgressBar" source="blue_progress _bar_png" x="144" y="126" alpha="1"/>
 		</e:Group>
 </e:Skin>

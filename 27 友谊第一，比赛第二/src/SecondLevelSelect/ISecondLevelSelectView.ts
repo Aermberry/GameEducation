@@ -41,4 +41,6 @@ interface ISecondLevelSelectView
 
     highlightPlaceButton(): void;
     normalizePlaceButton(): void;
+    showProgressBar(index: number): Promise<void>;
+    closeProgressBar(): void;
 }
