@@ -76,7 +76,7 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
-        private isDragDropObjectIntersets();
+        private isDragDropObjectIntersets(mouseStageX, mouseStageY);
     }
 }
 declare namespace lzlib {
