@@ -1,42 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*">
+        xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" xmlns:tween="egret.tween.*" >
 	<w:Config id="165c7e68ef8"></w:Config>
-	<e:Label text="Mary is sending Miss Chan\na card.Help her drag the\nwords to the correct\nboxes." x="30" y="30"
-	         size="69" lineSpacing="25" textColor="0xf92a58" fontFamily="Comic Sans MS" backgroundColor="0xef0000" />
+	<w:Declarations>
+		<tween:TweenGroup id="loadingAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 
+	<e:Label text="Mary is sending Miss Chan\na card. Help her drag the\nwords to the correct\nboxes." x="30" y="30"
+	         size="69" lineSpacing="25" textColor="0xf92a58" fontFamily="Comic Sans MS" backgroundColor="0xef0000" />
 	<e:Image source="资源 1_png" x="868.97" y="109.69" />
 	<e:Group id="tipsGroup" y="233.33" x="977.28" anchorOffsetY="0" height="1035.33" anchorOffsetX="0" width="779.33">
-		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0"
-		               skinName="TexttLabelSkin" backgroundColors="0xFF0091" text="Date" textAglign="center" fontSize="50"
-		               fontColor="0xFFFDFF"  x="133.35" y="3.04" visible="false"/>
-		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0"
-		               skinName="TexttLabelSkin" backgroundColors="0xFF0091" text="Who reads the card?" textAglign="center" fontSize="50"
-		               fontColor="0xFFFDFF"  x="43.96" y="121.2" visible="false"/>
-		<Ui:TexttLabel width="595.77" height="547.27" anchorOffsetX="0" anchorOffsetY="0"
-		               skinName="TexttLabelSkin" backgroundColors="0xFF0091" text="What do you tell her in the card?" textAglign="center" fontSize="50"
-		               fontColor="0xFFFDFF"  x="146.98" y="246.96" visible="false"/>
-		<Ui:TexttLabel width="674.56" height="101.82" anchorOffsetX="0" anchorOffsetY="0"
-		               skinName="TexttLabelSkin" backgroundColors="0xFF0091" text="How do you end the card?" textAglign="center" fontSize="50"
-		               fontColor="0xFFFDFF"  x="66.69" y="813.62" visible="false"/>
-		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0"
-		               skinName="TexttLabelSkin" backgroundColors="0xFF0091" text="" textAglign="center" fontSize="50"
-		               fontColor="0xFFFDFF"  x="145.47" y="930.27" visible="false"/>
+		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               backgroundColors="0xFF0091" text="Date" textAglign="center" fontSize="50" fontColor="0xFFFDFF"
+		               x="133.35" y="3.04" visible="false" />
+		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               backgroundColors="0xFF0091" text="Who reads the card?" textAglign="center" fontSize="50"
+		               fontColor="0xFFFDFF" x="43.96" y="121.2" visible="false" />
+		<Ui:TexttLabel width="595.77" height="547.27" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               backgroundColors="0xFF0091" text="What does Mary tell Miss Chan in the card?" textAglign="center"
+		               fontSize="50" fontColor="0xFFFDFF" x="146.98" y="246.96"  visible="false"/>
+		<Ui:TexttLabel width="674.56" height="101.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               backgroundColors="0xFF0091" text="How do you end the card?" textAglign="center" fontSize="50"
+		               fontColor="0xFFFDFF" x="66.69" y="813.62" visible="false" />
+		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               backgroundColors="0xFF0091" textAglign="center" fontSize="50" fontColor="0xFFFDFF" x="145.47"
+		               y="930.27" visible="false" />
 	</e:Group>
-	<e:Group id="maskLayerGroup" x="84.85" y="463.64" anchorOffsetX="0" anchorOffsetY="0" height="969" width="641.21"/>
+	<e:Group id="maskLayerGroup" x="84.85" y="463.64" anchorOffsetX="0" anchorOffsetY="0" height="969" width="641.21" />
 	<e:Group id="dragGroup" y="460.61" anchorOffsetY="0" height="969" x="81.82">
-		<Ui:TexttLabel width="641.21" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Best wishes," fontSize=" 50" y="0" x="1.45" textAglign="right"/>
-		<Ui:TexttLabel width="641.21" height="392.74" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="How are you? Thank\nyou for your card. I\nam fine in U.S.A.I\nwill come back to H.K.\nin December" y="153.06" fontSize=" 50" textAglign="center" left="0" right="0"/>
-		<Ui:TexttLabel width="641.21" height="98.79" y="583.49" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="0" right="0"/>
-		<Ui:TexttLabel width="641.21" height="89.7" y="730.72" text="25th November" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="0" right="0"/>
-		<Ui:TexttLabel width="641.21" height="92.72" y="848.45" text="Deara Miss Chan." anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="0" right="0"/>
+		<Ui:TexttLabel width="641.21" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               text="Best wishes," fontSize=" 50" y="0" x="1.45" textAglign="right" />
+		<Ui:TexttLabel width="641.21" height="392.74" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               text="How are you? Thank\nyou for your card. I\nam fine in U.S.A. I\nwill come back to H.K.\nin December."
+		               y="153.06" fontSize=" 50" textAglign="center" left="0" right="0" />
+		<Ui:TexttLabel width="641.21" height="98.79" y="583.49" text="Mary" anchorOffsetX="0" anchorOffsetY="0"
+		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="0" right="0" />
+		<Ui:TexttLabel width="641.21" height="89.7" y="730.72" text="25th November" anchorOffsetX="0" anchorOffsetY="0"
+		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="0" right="0" />
+		<Ui:TexttLabel width="641.21" height="92.72" y="848.45" text="Dear Miss Chan," anchorOffsetX="0" anchorOffsetY="0"
+		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="0" right="0" />
 	</e:Group>
-	
 	<e:Group id="dropGroup" y="206.06" anchorOffsetY="0" height="1093.24" x="975.76" anchorOffsetX="0" width="782.39">
-		<Ui:TexttLabel height="87.7" y="36.83" text="25th November" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="145" right="61.389999999999986" visible="false"/>
-		<Ui:TexttLabel height="90.22" y="153.88" text="Deara Miss Chan." anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="57" right="154.39" visible="false"/>
-		<Ui:TexttLabel height="530.24" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="How are you? Thank\nyou for your card. I\nam fine in U.S.A.I\nwill come back to H.K.\nin December" y="278.76" fontSize=" 50" textAglign="center" left="155" right="51.389999999999986" visible="false"/>
-		<Ui:TexttLabel width="573.21" height="90.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="Best wishes," fontSize=" 50" y="845.09" x="156.87" textAglign="right" visible="false"/>
-		<Ui:TexttLabel height="92.24" y="965.81" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="159" right="50.389999999999986" verticalAlign="top" visible="false"/>
+		<Ui:TexttLabel height="87.7" y="36.83" text="25th November" anchorOffsetX="0" anchorOffsetY="0"
+		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="right" left="145" right="61.389999999999986"
+		               visible="false" />
+		<Ui:TexttLabel height="90.22" y="153.88" text="Deara Miss Chan." anchorOffsetX="0" anchorOffsetY="0"
+		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="57" right="154.39" visible="false" />
+		<Ui:TexttLabel height="530.24" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               text="How are you? Thank\nyou for your card. I\nam fine in U.S.A.I\nwill come back to H.K.\nin December"
+		               y="278.76" fontSize=" 50" textAglign="center" left="155" right="51.389999999999986" visible="false" />
+		<Ui:TexttLabel width="573.21" height="90.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               text="Best wishes," fontSize=" 50" y="845.09" x="156.87" textAglign="right" visible="false" />
+		<Ui:TexttLabel height="92.24" y="965.81" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		               fontSize="50" textAglign="right" left="159" right="50.389999999999986" verticalAlign="top"
+		               visible="false" />
 	</e:Group>
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" />
 </e:Skin>
