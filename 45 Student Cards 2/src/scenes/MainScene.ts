@@ -18,30 +18,24 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		mouse.enable(this.stage);//启用mouse检测
-		// lzlib.SoundUtility.playSound('02_mp3');
+		mouse.enable(this.stage);
 		this.loadVoic();
 	
 	}
-
-	// 加载声音模块
 	private async loadVoic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 				this.initHelpButton();
 		        this.initDropable();
-		})//加载声音资源
+		})
 
 	}
 
-	// 拖拽模块
-
-	// 拖动模块
 	private initDropable(): void {
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, false);
+			drag.enableDrag(child, true);
 			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
 		this.initDropableLabel();
