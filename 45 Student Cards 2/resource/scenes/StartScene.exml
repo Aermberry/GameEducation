@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
-	<w:Config id="165b2dec6be" ></w:Config>
-	<e:Label id="titleLabel" text="Part 3" x="818.45" y="214.75" anchorOffsetX="0" width="283.09" anchorOffsetY="103.03" height="102.73" textAlign="center" size="84" textColor="0x951602" fontFamily="Comic Sans MS"/>
-	<Ui:Introduction width="1023.03" height="638.18" x="448.48" y="335.76" anchorOffsetX="0" anchorOffsetY="0" text="Ann Ho is gong to study in a\nnew school\nShe has to fill in a student card.\nCan you help her ?" skinName="IntroductionSkin" fontSize="60" text2="Drag the words to the correct\nspaces" fontSize2="60"/>
-	<e:Button id="nextButton" label="Next" x="1500" y="1176" anchorOffsetX="0" width="224.24" anchorOffsetY="0" height="98.48"/>
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" xmlns:tween="egret.tween.*">
+	<w:Config id="165b2dec6be"></w:Config>
+	<w:Declarations>
+	<tween:TweenGroup id="loadingAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Label id="titleLabel" text="Part 3" x="818.45" y="214.75" anchorOffsetX="0" width="283.09" anchorOffsetY="103.03"
+	         height="102.73" textAlign="center" size="84" textColor="0x951602" fontFamily="Comic Sans MS" />
+	<Ui:Introduction width="1023.03" height="638.18" x="448.48" y="335.76" anchorOffsetX="0" anchorOffsetY="0"
+	                 text="Ann Ho is gong to study in a\nnew school\nShe has to fill in a student card.\nCan you help her ?"
+	                 skinName="IntroductionSkin" fontSize="60" text2="Drag the words to the correct\nspaces" fontSize2="60" />
+	<e:Button id="nextButton" label="Next" x="1500" y="1176" anchorOffsetX="0" width="224.24" anchorOffsetY="0"
+	          height="98.48" />
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" />
 </e:Skin>
