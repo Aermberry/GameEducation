@@ -182,7 +182,7 @@
 
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
 		<e:BitmapLabel height="70" x="164" y="164" text="550" anchorOffsetX="0" width="235.09" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
-		<e:Image x="28.03" y="272.27" source="reduce_png"/>
+		<e:Image x="28.03" y="278.27" source="reduce_png" width="60"/>
 		<e:BitmapLabel width="159" height="80" x="259.06" y="263" text="30" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1163" y="740">

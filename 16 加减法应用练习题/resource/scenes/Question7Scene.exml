@@ -151,7 +151,7 @@
 		<e:Label id="totalTextlmage" text="850+110" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
 		         alpha="0" />
 	</e:Group>
-	<e:Label id="text2lmage" text="水族館內淡水魚850條，比鹹水魚少110條。\n水族館內有鹹水魚多少條？" x="273" y="209.52" size="50" textColor="0x000000"
+	<e:Label id="text2lmage" text="水族館內淡水魚850條，比鹹水魚少110條。\n水族館有鹹水魚多少條？" x="273" y="209.52" size="50" textColor="0x000000"
 	         fontFamily="華康楷書體" scaleX="1" scaleY="1" />
 	<e:Label id="textRunnersLabel" text="水族館有鹹水魚：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體"
 	         alpha="0" />

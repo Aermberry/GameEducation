@@ -133,6 +133,8 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false" />
 		<e:Label id="totalTextlmage" text="215+120" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
 		         alpha="0" />
+		<e:Rect width="90" height="4" x="281" y="255"/>
+		<e:Rect width="90" height="4" x="278" y="308"/>
 	</e:Group>
 	<e:Label id="text2lmage" text="小明有215元，比小嫦少120元。\n小嫦有多少元？" x="273" y="209.52" size="50" textColor="0x000000"
 	         fontFamily="華康楷書體" scaleX="1" scaleY="1" />
