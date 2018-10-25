@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"declaration": true,
+		"outFile": "bin/lzlib.js"
+	},
+	"files": [
+		"libs/egret.d.ts",
+		"libs/eui.d.ts",
+		"libs/game.d.ts",
+		"libs/lib.dom.d.ts",
+		"libs/tween.d.ts",
+		"libs/res.d.ts",
+		"libs/lib.es5.d.ts",
+		"libs/lib.es2015.promise.d.ts",
+		"src/ArrayExtension.ts",
+		"src/Cloneable.ts",
+		"src/Drag.ts",
+		"src/DragEvent.ts",
+		"src/Drop.ts",
+		"src/MathExtension.ts",
+		"src/MovieClipExtension.ts",
+		"src/SoundExtension.ts",
+		"src/StringExtension.ts",
+		"src/ThreadUtility.ts",
+		"src/TweenGroupExtension.ts"
+	]
+}

@@ -20,6 +20,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 	private helpButton: eui.Button;
 	private toysImage: eui.Image;
 	private toyNameLabel: eui.Label;
+	private rect:eui.Rect;
 
 	private presenter = new GamePresenter();
 
@@ -34,9 +35,10 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		this.presenter.loadView(this);
 		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onHelpButtonClick, this.presenter);
 		this.initDragDrop();
-		this.presenter.loadView(this);
+
 	}
 
 	private initDragDrop(): void {

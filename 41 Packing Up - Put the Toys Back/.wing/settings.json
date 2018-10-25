@@ -5,5 +5,5 @@
 	},
 	"files.autoSave": "afterDelay",
 	"editor.formatOnSave": true,
-	"eslint.autoFixOnSave": true
+	"eslint.autoFixOnSave": true,"editor.fontSize": 18
 }
