@@ -216,6 +216,12 @@ class SecondLevelSelectPresenter {
 				{
 					this.view.hideAnswerView();
 					this.view.showSceneCompareResult(compareResults);
+					
+					//第二節遊戲，只要曾拖放過圖，約一分鐘，系統會自動跳回第一關
+					lzlib.ThreadUtility.sleep(60000).then(() => {
+						this.view.stopCurrentSoundChannel();
+						Main.instance.gotoScene(new FirstLevelSelectScene());
+					});
 				}
 			}
 			
