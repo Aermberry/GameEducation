@@ -23,8 +23,8 @@ class InputExpressionPresenter {
 
 	public async onSubmitButtonClick(): Promise<void>
 	{
-
-		if (typeof this.expression == "undefined" || this.expression == null || this.expression == "")
+		let pattern = /^([0-9]{1,3})(\+|\-)([0-9]{1,3})$/;
+		if (pattern.test(this.expression) == false)
 		{
 			//應彈出"請按指示輸入橫式"
 			this.view.showEmptyImage();
@@ -36,29 +36,15 @@ class InputExpressionPresenter {
 		if (this.expression.indexOf('+') >= 0) {
 			
 			let operands = this.expression.split('+');
-
-			if (operands[0] == '' || operands[1] == '')
-			{
-				this.view.showEmptyImage();
-				await lzlib.ThreadUtility.sleep(1500);
-				this.view.hideEmptyImage();
-				return;
-			}
-
 			
 			this.view.stopIntroductionMP3();
 			this.view.openAddCalculationScene(parseInt(operands[0], 10), parseInt(operands[1], 10));
-		} else {
+		} 
+
+		else {
 			let operands = this.expression.split('-');
 			let leftNumber = parseInt(operands[0], 10);
 			let rightNumber = parseInt(operands[1], 10);
-			if (operands[0] == '' || operands[1] == '')
-			{
-				this.view.showEmptyImage();
-				await lzlib.ThreadUtility.sleep(1500);
-				this.view.hideEmptyImage();
-				return;
-			}
 
 			if (leftNumber < rightNumber)
 			{
@@ -66,7 +52,6 @@ class InputExpressionPresenter {
 				this.view.showNotEnoughImage();
 				await lzlib.ThreadUtility.sleep(1500);
 				this.view.hideNotEnoughImage();
-
 				return;
 			}
 			
