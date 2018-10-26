@@ -70,6 +70,9 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	private progressBackgroundRect: eui.Rect;
 	private closeImg: eui.Image;
 
+	//是否继续进度条循环；
+	private isContinue = true;
+
 	private presenter = new SecondLevelSelectPresenter();
 
 	public constructor() {
@@ -460,12 +463,17 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 
 	public async showProgressBar(index: number): Promise<void>
 	{
+		this.isContinue = true;
 		this.progressBackgroundRect.visible = true;
 		this.progressGroup.visible = true;
 		this.buleProgressBar.alpha =1;
         for (let second = 0; second < index; second++) {
             this.buleProgressBar.width = second / index * 575;
             await lzlib.ThreadUtility.sleep(1000);
+			if(!this.isContinue)
+			{
+				return;
+			}
         }
 		this.progressGroup.visible = false;
 		this.progressBackgroundRect.visible = false;
@@ -476,5 +484,6 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 		this.stopCurrentSoundChannel();
 		this.progressGroup.visible = false;
 		this.progressBackgroundRect.visible = false;
+		this.isContinue = false;
 	}
 }
