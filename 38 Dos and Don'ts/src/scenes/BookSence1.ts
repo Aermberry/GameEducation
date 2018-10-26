@@ -79,7 +79,7 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 
 	private async nextDialog():Promise<void>
 	{  
-	   this.teacher1Label.text = 'Yes,you can.you can put'
+	   this.teacher1Label.text = 'Yes, you can. you can put'
 	   this.teacher2Label.text= "away your books now.";
 	   
 	   
