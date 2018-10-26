@@ -38,6 +38,21 @@ class Scene {
 		return result;
 	}
 
+	public isEmptyPersons(): boolean
+	{
+		return this.persons.length == 0;
+	}
+
+	public isEmptyPlace(): boolean
+	{
+		return this.place == null;
+	}
+
+	public isEmptyThing(): boolean
+	{
+		return this.thing == null;
+	}
+
 	public isEmpty(): boolean
 	{
 		return this.place == null && this.persons.length == 0 && this.thing == null;

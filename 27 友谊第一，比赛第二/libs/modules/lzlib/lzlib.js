@@ -64,7 +64,6 @@ var lzlib;
             this.dataTransfer = dataTransfer;
         };
         Drag.prototype.onTouchBegin = function (e) {
-            console.log('start drag isCopy: ' + this.isCopy);
             Drag.init(this.isCopy ? this.cloneDragObject(this.dragObject) : this.dragObject, this.isCopy, this.dataTransfer);
             var globalPoint = this.dragObject.parent.localToGlobal(this.dragObject.x, this.dragObject.y); //这是正在拖动的对象的全局坐标
             Drag.dragingObject.x = globalPoint.x;
@@ -128,7 +127,6 @@ var lzlib;
                 Drag.dragingObject.parent && Drag.dragingObject.parent.removeChild(Drag.dragingObject);
             }
             if (!Drag.isAccepted) {
-                console.log('not one accept it, dispatch cancel event');
                 //not one accept it, dispatch cancel event
                 Drag.dragingObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.CANCEL, Drag.dragingObject, Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
                 if (!Drag.isCopy) {
@@ -232,22 +230,15 @@ var lzlib;
         };
         Drop.prototype.onTouchEnd = function (e) {
             if (lzlib.Drag.isDraging) {
-                if (this.isDragDropObjectIntersets()) {
-                    console.log('drop on target, 查询用户是否接受drag object');
+                if (this.isDragDropObjectIntersets(e.stageX, e.stageY)) {
                     //drop on target
                     lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
-                    console.log('用户是否接受drag object? ' + lzlib.Drag.isAccepted);
                 }
             }
         };
-        Drop.prototype.isDragDropObjectIntersets = function () {
-            //Drag.dragingObject.parent == null表示Drag.dragingObject是全局坐标
-            var dragingObjectGlobalPoint = lzlib.Drag.dragingObject.parent
-                ? lzlib.Drag.dragingObject.parent.localToGlobal(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y)
-                : new egret.Point(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y);
+        Drop.prototype.isDragDropObjectIntersets = function (mouseStageX, mouseStageY) {
             var dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
-            return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, lzlib.Drag.dragingObject.width, lzlib.Drag.dragingObject.height)
-                .intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height));
+            return new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height).contains(mouseStageX, mouseStageY);
         };
         return Drop;
     }(egret.Sprite));

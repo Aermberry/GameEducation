@@ -117,7 +117,7 @@
 			<e:Image id="fifithPlace" x="1139" y="676" source="fifth_place_png" locked="true"/>
 			<e:Image id="sixthPlace" x="1531" y="676" source="sixth_place_png" locked="true"/>
 		</e:Group>
-			<e:Rect id="personBtnHightlightRect" x="1938" y="449" width="150" height="150" fillColor="0xFF0000" ellipseWidth="150" alpha="0"/>
+			<e:Rect id="personBtnHightlightRect" x="1938" y="449" width="150" height="150" ellipseWidth="150" alpha="0" fillColor="0xf4c307"/>
 		<e:Image id="personBtnImg" x="1938" y="449" source="person_png"/>
 		<e:Group id="personGroup" touchThrough="true" visible="false">
 			<e:Image id="foxImg" source="fox_png" width="122" height="169" x="1190" y="171" locked="true"/>
@@ -130,7 +130,7 @@
 			<e:Image id="dogImg" source="dog_png" width="139" height="185" x="1445" y="702" locked="true"/>
 			<e:Image id="pigImg" source="pig_png" width="116" height="164" x="1716" y="728" locked="true"/>
 		</e:Group>
-			<e:Rect id="thingBtnHightlightRect" x="1939" y="635" width="150" height="150" fillColor="0xFF0000" ellipseWidth="150" alpha="0"/>
+			<e:Rect id="thingBtnHightlightRect" x="1939" y="635" width="150" height="150" fillColor="0xaaaaed" ellipseWidth="150" alpha="0"/>
 		<e:Image id="thingBtnImg" x="1939" y="635" source="thing_png"/>
 		<e:Group id="thingGroup" touchThrough="true" visible="false">
 			<e:Image id="pineConeImg" source="pine_cone_png" x="1525" y="216" locked="true"/>

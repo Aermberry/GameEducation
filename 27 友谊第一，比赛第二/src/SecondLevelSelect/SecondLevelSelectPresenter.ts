@@ -174,10 +174,42 @@ class SecondLevelSelectPresenter {
 
 	public onSubmitClick(): void
 	{
-		if (this.candidateScenes.all(scene => scene.isEmpty())) {
+		console.log(this.candidateScenes);
+		// if (this.candidateScenes.all(scene => scene.isEmpty())) {
+		// 	this.view.highlightPlaceButton();
+		// 	this.view.playWrongAudio();
+		// } 
+		if(this.candidateScenes[0].isEmptyPlace() || this.candidateScenes[1].isEmptyPlace())
+		{
+			//为空，闪烁地点icon；	
+			console.log('闪烁地点icon；');
 			this.view.highlightPlaceButton();
 			this.view.playWrongAudio();
-		} else {
+			lzlib.ThreadUtility.sleep(6000).then(() => {
+				this.view.normalizePlaceButton();
+			});
+
+		}else if(this.candidateScenes[0].isEmptyPersons() || this.candidateScenes[1].isEmptyPersons())
+		{
+			//为空，闪烁人物icon；	
+			console.log('闪烁人物icon；');
+			this.view.highlightPersonButton();
+			this.view.playWrongAudio();
+			lzlib.ThreadUtility.sleep(6000).then(() => {
+				this.view.normalizePersonButton();
+			});
+
+		}else if(this.candidateScenes[0].isEmptyThing())
+		{
+			//为空，闪烁物件icon；	
+			console.log('闪烁物件icon；');
+			this.view.highlightThingButton();
+			this.view.playWrongAudio();
+			lzlib.ThreadUtility.sleep(6000).then(() => {
+				this.view.normalizeThingButton();
+			});
+
+		}else {
 			this.view.normalizePlaceButton();
 			this.view.disableConfirmGroup();
 			this.view.enableButton();

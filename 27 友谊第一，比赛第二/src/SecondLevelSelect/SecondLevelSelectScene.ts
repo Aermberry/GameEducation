@@ -2,7 +2,11 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	private answerGroup: eui.Group;
 	private backgroundGroup: eui.Group;
 	private placeBtnHightlightRect: eui.Rect;
+	private personBtnHightlightRect: eui.Rect;
+	private thingBtnHightlightRect: eui.Rect;
 	private highlightPlaceButtonMovie: egret.tween.TweenGroup;
+	private highlightPersonButtonMovie: egret.tween.TweenGroup;
+	private highlightThingButtonMovie: egret.tween.TweenGroup;
 
 	//初始化右邊顯示的圖片，人物跟物件默認隱藏，顯示地點
 	private placeBtnImg:eui.Image;
@@ -428,6 +432,30 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 	{
 		this.highlightPlaceButtonMovie.stop();
 		this.placeBtnHightlightRect.visible = false;
+	}
+
+	public highlightPersonButton(): void
+	{
+		this.personBtnHightlightRect.visible = true;
+		this.highlightPersonButtonMovie.playLoopAsync();
+	}
+
+	public normalizePersonButton(): void
+	{
+		this.highlightPersonButtonMovie.stop();
+		this.personBtnHightlightRect.visible = false;
+	}
+
+	public highlightThingButton(): void
+	{
+		this.thingBtnHightlightRect.visible = true;
+		this.highlightThingButtonMovie.playLoopAsync();
+	}
+
+	public normalizeThingButton(): void
+	{
+		this.highlightThingButtonMovie.stop();
+		this.thingBtnHightlightRect.visible = false;
 	}
 
 	public async showProgressBar(index: number): Promise<void>
