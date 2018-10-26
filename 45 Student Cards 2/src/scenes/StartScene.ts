@@ -32,7 +32,6 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		await this.loadingAnim.play(0);
 		this.startMask.visible = false;
 		this.startButton.visible = false;
-		await lzlib.ThreadUtility.sleep(2000)
 		this.drawLine(this.titleLabel, this);
 		this.sound = RES.getRes("01_mp3");
 		this.soundChannel = this.sound.play(0, 1);
