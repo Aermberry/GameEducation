@@ -11,7 +11,7 @@
 		<e:Label text="Click the picture with the correct word." x="1000" y="390" fontFamily="Kristen-ITC" size="44" />
 		<e:Label text="3. " x="920" y="490" fontFamily="Kristen-ITC" size="40" />
 		<e:Label text="Press          to listen to the word \nagain." x="1000" y="490" fontFamily="Kristen-ITC" size="44" />
-		<e:Image source="speaker_png" x="1130" y="465" width="100" height="100" />
+		<e:Image source="speaker_png" x="1104" y="469" width="88" height="88"  anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Label text="4. " x="920" y="615" fontFamily="Kristen-ITC" size="40" />
 		<e:Label text="Answer as many questions as \npossible in 2 minutes." x="1000" y="615" fontFamily="Kristen-ITC" size="44" />
 	
