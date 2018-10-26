@@ -35,7 +35,7 @@
 				<ns1:GoodsComponent id="hangerCostImage" x="17" y="554.73" source="furniture_hanger_coat_png" audioName="sound 2 (oSound0)_mp3" targetRectX="105" targetRectY="665" enabled="false" currentState="gray"/>
 				<ns1:GoodsComponent id="godImage" x="591" y="265" source="goods_dog_png" audioName="sound 8 (oSound5)_mp3" targetRectX="690" targetRectY="615" enabled="false" currentState="gray"/>
 				<ns1:GoodsComponent id="birdAndBirdcageImage" x="302" y="277" source="goods_bird_and_birdcage_png" audioName="sound 12 (oSound4)_mp3" targetRectX="70" targetRectY="535" enabled="false" currentState="gray"/>
-				<ns1:GoodsComponent id="catImage" x="17" y="277" source="goods_cat_png" audioName="sound 13 (oSound3)_mp3" targetRectX="340" targetRectY="830" targetRectWidth="200" enabled="false" currentState="gray" />
+				<ns1:GoodsComponent id="catImage" x="17" y="277" source="goods_cat_png" audioName="sound 11 (oSound3)_mp3" targetRectX="340" targetRectY="830" targetRectWidth="200" enabled="false" currentState="gray" />
 				<ns1:GoodsComponent id="bearImage" x="591" y="15" source="goods_bear_png" audioName="sound 14 (oSound7)_mp3" targetRectX="485" targetRectY="515" enabled="false" currentState="gray"/>
 				<ns1:GoodsComponent id="bookImage" x="305.5" y="15" source="goods_book_png" audioName="sound 13 (oSound6)_mp3" targetRectX="255" targetRectY="635" targetRectWidth="363" targetRectHeight="157" enabled="false" currentState="gray"/>
 			</e:Group>
