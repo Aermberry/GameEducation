@@ -62,8 +62,6 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		shp.graphics.lineTo(x1, y0);
 		shp.graphics.endFill();
 		Sence.addChild(shp);
-		var tw=egret.Tween.get(shp);
-		tw.to({x:150,y:100},1000,egret.Ease.sineIn);
 	}
 
 }
