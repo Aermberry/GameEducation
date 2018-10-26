@@ -12,7 +12,7 @@
 
 <e:Image source="doctor_no_head_png" x="0" y="341" locked="true"/>
 <e:Group id="doctorGroup" x="391" y="380"  locked="true"/>
-<e:Image id="doctorSmellImgae" source="doctor_smell_head_png" x="391" y="380" visible="false" locked="true"/>
+<e:Image id="doctorSmellImgae" source="doctor_smell_head_png" x="391" y="380" locked="true" visible="false"/>
 
 
 <e:Image source="trash_can_png" x="1372" y="966" locked="true"/>
@@ -22,16 +22,16 @@
 <e:Label id="firstDialogLabel" text="小朋友，很多句子生病了，" size="45" x="823" y="409" textColor="#000000" fontFamily="華康標楷體" locked="true"/>
 <e:Label id="secondDialogLabel" text="它們都多了一些沒有用的東西！" size="45" x="823" y="473" textColor="#000000" fontFamily="華康標楷體" locked="true"/>
 
-<e:Image id="goldYellowDialogImg" source="gold_yellow_dialog_png" x="13" y="292" visible="false" locked="true"/>
+<e:Image id="goldYellowDialogImg" source="gold_yellow_dialog_png" x="13" y="292" locked="true" visible="false"/>
 <e:Label id="goldYellowDialogFisrstLabel" text="怎樣才可以醫治" textColor="#F3362F" x="54" y="343" size="45" fontFamily="華康標楷體" visible="false"/>
 <e:Label id="goldYellowDialogSecondLabel" text="這些句子呢?" textColor="#F3362F" x="54" y="412" size="45" fontFamily="華康標楷體" locked="true" visible="false"/>
 
 <e:Label id="firstLineDialog" text="方法很簡單，只要將滑鼠移到句子中多餘的" x="775" y="554" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
 <e:Label id="secondLineDialog" text="字詞或短語上，按著滑鼠左鍵，把它拉到廢" x="775" y="621" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
-<e:Label id="thirdLineDialog" text="物箱内便可。若需要幫忙，請按一按「提示" x="775" y="689" fontFamily="華康標楷體" textColor="#000000" size="43" locked="true" visible="false"/>
-<e:Label id="forthLineDialog" text="箱」。我們現在開始吧——" x="775" y="753" fontFamily="華康標楷體" textColor="#000000" size="43" visible="false" locked="true"/>
+<e:Label id="thirdLineDialog" text="物箱内便可。若需要幫忙，請按一按「提示" x="775" y="689" fontFamily="華康標楷體" textColor="#000000" size="43" visible="false"/>
+<e:Label id="forthLineDialog" text="箱」。我們現在開始吧！" x="775" y="753" fontFamily="華康標楷體" textColor="#000000" size="43" visible="false" locked="true"/>
 
 
-<ns1:BeginButton id="beginBtn" skinName="BeginTargetButton" x="1505" y="735" visible="false" locked="true"/>
-<ns1:ExitButton id="eixtBtn" x="1762" y="1130" skinName="ExitTargetBTn" visible="false" locked="true"/>
+<ns1:BeginButton id="beginBtn" skinName="BeginTargetButton" x="1505" y="735" locked="true" visible="false"/>
+<ns1:ExitButton id="eixtBtn" x="1762" y="1130" skinName="ExitTargetBTn" locked="true" visible="false"/>
 </e:Skin>

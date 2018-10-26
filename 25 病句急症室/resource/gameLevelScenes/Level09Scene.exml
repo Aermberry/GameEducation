@@ -262,7 +262,7 @@
 <e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" locked="true"/>
 <e:Image source="head_icon_png" x="1480" y="24" locked="true"/>
 <e:Image source="right_headline_png" x="1610" y="24" locked="true"/>
-<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體" locked="true"/>
+<e:Label text="(多了些什麼？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體" locked="true"/>
 
 
 

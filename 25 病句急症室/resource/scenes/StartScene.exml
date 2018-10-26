@@ -160,7 +160,7 @@
 <e:Label id="sixthTipLabel" text="發展中" textColor="0xFF4553" size="30"   x="1746" y="640" alpha="0" locked="true"/>
 
 <e:Image id="dialogImg" source="dialog_png" x="523" y="233" alpha="0.8" locked="true"/>
-<e:Label id="dialogFirstLabel" text="小朋友，有些句子生病了" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="304" locked="true"/>
+<e:Label id="dialogFirstLabel" text="小朋友，有些句子生病了。" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="304" locked="true"/>
 <e:Label id="dialogSecondLineOnecLabel" text="所謂句子生病，是指句子出了毛病，而常見" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="460"   anchorOffsetY="0" height="287.39" locked="true"/>
 <e:Label id="dialogSecondLineThreecLabel" text="的毛病有三類：1)錯用了詞語；2)結構混" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="540"  locked="true"/>
 <e:Label id="dialogSecondLineTwocLabel" text="亂；3)意思含糊不清，甚至前後矛盾。" textColor="0x000000" size="48" fontFamily="華康標楷體" x="634" y="614" locked="true"/>
