@@ -4,11 +4,10 @@
 	<e:Image source="Bg_cloudy_png" left="0" right="0" top="0" bottom="0"/>
 	<e:Image id="back_Image" source="back_png" x="1754.45" y="42.42"/>
 	<e:Image source="img_example_png" x="668" y="263.42" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33"/>
-	<e:Group id="StudenModel_Group" x="860" y="1012">
+	<e:Group id="StudenModel_Group" x="832" y="984">
 		<e:Image source="select_fire_png" x="0" y="0"/>
-		<e:Label text="Student" x="19.88" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true"/>
+		<e:Label text="Enter" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true" verticalAlign="middle" textAlign="center" left="0" right="0"/>
 	</e:Group>
-	<e:Label text="Water Splash!" y="699.51" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="0.5"/>
-	<e:Label text="Find the hidden words in the word puzzles
-	to win the prizes!" y="814.66" anchorOffsetX="0" width="1310.36" anchorOffsetY="0" height="160.31" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="65" lineSpacing="25" horizontalCenter="0"/>
+	<e:Label text="Water Splash!" y="711.51" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="20.5"/>
+	<e:Label text="Find the hidden words in the word puzzles\nto win the prizes!" y="826.66" anchorOffsetX="0" width="1622.36" anchorOffsetY="0" height="288.31" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="55" lineSpacing="25" horizontalCenter="0"/>
 </e:Skin>
