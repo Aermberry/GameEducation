@@ -46,7 +46,7 @@
 		<e:Image id="footprint8" x="1294" y="40" source="footprint_png" rotation="90" alpha="0.3" />
 		<e:Image id="footprint10" x="1530" y="40" source="footprint_png" rotation="90" alpha="0.3" />
 		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75"
-		                 anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110" />
+		                 anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="85" />
 	</e:Group>
 	<e:Rect id="StartMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"  fillAlpha="0.9"/>
 	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0" />
