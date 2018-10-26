@@ -11,8 +11,8 @@
 		"libs/modules/lzlib/lzlib.js"
 	],
 	"game": [
-		"bin-debug/LoadingUI.js",
 		"bin-debug/PlayEasyGame/PlayEasyGameScene.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -24,7 +24,7 @@
 		"bin-debug/components/TargetButton.js",
 		"bin-debug/PlayEasyGame/IPlayEasyGameView.js",
 		"bin-debug/PlayEasyGame/PlayEasyGamePresenter.js",
-		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
 		"bin-debug/PlayProGame/IPlayProGameView.js",
 		"bin-debug/PlayProGame/PlayProGamePresenter.js",
 		"bin-debug/PlayProGame/PlayProGameScene.js",
