@@ -9,8 +9,8 @@
 		<e:Image source="photo_amy_png" x="133.33" y="733.5"/>
 		<e:Image source="photo_worker_png" x="1066.2" y="250"/>
 		<e:Image source="pink_bottom_frame_png" x="350.7" y="908.5"/>
-		<e:Label text="Can I take " size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="471.5" y="1005"/>		
-		<e:Label text="pictures here?" size="45" textColor="0x000000" fontFamily="ComicSansMS3" x="435.52" y="1074" anchorOffsetX="0" width="310" anchorOffsetY="0" height="54"/>	
+		<e:Label text="Can I take " size="50" textColor="0x000000" fontFamily="ComicSansMS3" x="471.5" y="1005"/>		
+		<e:Label text="pictures here?" size="50" textColor="0x000000" fontFamily="ComicSansMS3" x="435.52" y="1074" anchorOffsetX="0" width="310" anchorOffsetY="0" height="54"/>	
 	</e:Group>
 
 	<e:Group id="nextDialogGroup">
