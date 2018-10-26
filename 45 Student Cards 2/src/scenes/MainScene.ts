@@ -35,7 +35,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
-			drag.enableDrag(child, true);
+			drag.enableDrag(child, false);
 			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
 		this.initDropableLabel();
@@ -73,18 +73,15 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		}
 		else {
 			this.showCorrectLabelToDrag();
+			this.initDropable()
 		}
 	}
 
-	private onDragCancel(e: lzlib.LzDragEvent): void {
+	private  onDragCancel(e: lzlib.LzDragEvent): void {
 		this.showCorrectLabelToDrag();
 	}
 
 	//提示用户应该拖动哪个label
-
-	private onDragCanel(e: lzlib.LzDragEvent): void {
-		this.showCorrectLabelToDrag();
-	}
 
 	private async showCorrectLabelToDrag(): Promise<void> {
 		this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
