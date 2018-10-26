@@ -126,7 +126,7 @@
 
 <e:Image id="secondSelectImg" source="right_arrow_btn_png" x="1331" y="291" locked="true"/>
 <e:Label text="102" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1586" y="308" locked="true"/>
-<e:Label text="多了些什麽?" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1427" y="372" locked="true"/>
+<e:Label text="多了些什麼?" textColor="0x000000" fontFamily="華康標楷體" size="36"  x="1427" y="372" locked="true"/>
 <e:Group  id="secondSelectGroup" x="1331" y="291" height="138" width="403" locked="true"/>
 
 <e:Image id="thirdSelectImg" source="left_arrow_btn_png" x="924" y="429" locked="true"  />

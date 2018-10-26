@@ -256,12 +256,12 @@
 	</w:Declarations>
 
 <w:Config id="164d58fd342" ></w:Config>
-<e:Image source="description_example_frame_png" locked="true"/>
+<e:Image source="description_example_frame_png" visible="false"/>
 <e:Image source="description_example_bg_png" y="154" locked="true"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" locked="true"/>
-<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" locked="true"/>
-<e:Image source="head_icon_png" x="1480" y="24" locked="true"/>
-<e:Image source="right_headline_png" x="1610" y="24" locked="true"/>
+<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" locked="true" visible="false"/>
+<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" locked="true" visible="false"/>
+<e:Image source="head_icon_png" x="1480" y="24" locked="true" visible="false"/>
+<e:Image source="right_headline_png" x="1610" y="24" locked="true" visible="false"/>
 <e:Label text="(多了些什麼？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體" locked="true"/>
 
 
@@ -319,7 +319,9 @@
 <ns1:YesOrNoButton id="no" skinName="NoTargetBtn" x="1666" y="1072"  locked="true" visible="false"/>
 
 <e:Group id="correctGroup" width="1044" height="101" visible="false">
-    <e:Image source="green_blue_frame_png" x="309" y="733" />	
+    <e:Image source="green_blue_frame_png" x="309" y="733" />
+	<e:Rect width="190" height="4" x="627" y="808"/>
+	<e:Rect width="150" height="4" x="418" y="807" strokeColor="0x000000"/>	
 	<e:Label text="吐魯番是戈壁沙漠上一顆明珠。" textColor="#000000" fontFamily="華康標楷體" x="419" y="758.5" size="50"/>
 </e:Group>
 	<e:Image id="arrowImage" x="1339.12" y="490.48" source="arrow_png" alpha="0"/>
