@@ -4,7 +4,7 @@ class Base {
 
 	// 画线
 
-	public drawLine(label:eui.Label,Sence:eui.Component,color:number=0x951602): void{
+	public drawLine(label:eui.Label,Sence:eui.Component,color:number=0x890011): void{
 		let x0=label.x;
 		let y0=label.y;	
 		let x1=x0+label.width;
