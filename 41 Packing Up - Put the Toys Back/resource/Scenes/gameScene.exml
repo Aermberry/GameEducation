@@ -7,9 +7,9 @@
 	<e:Button id="helpButton" anchorOffsetX="0" width="148" anchorOffsetY="0" height="66" x="845.5" y="1234.77"
 	          label="help"  visible="false"/>
 
-	<e:Label id="toyNameLabel" text="Plant" x="1114.27" y="1087.22" textColor="0xee0000" anchorOffsetX="0"
-	         anchorOffsetY="0" size="85" fontFamily="Comic Sans MS" height="139.55"  visible="false"/>
-	<e:Image id="toysImage" source="flower_png" x="865.5" y="1087.22" anchorOffsetX="0" anchorOffsetY="0"  visible="false"/>
+	<e:Label id="toyNameLabel" text="" x="1114.27" y="1087.22" textColor="0xee0000" anchorOffsetX="0"
+	         anchorOffsetY="0" size="85" fontFamily="Comic Sans MS" height="139.55" />
+	<e:Image id="toysImage" x="865.5" y="1087.22" anchorOffsetX="0" anchorOffsetY="0"  source=""/>
 	<e:Image id="plantImage" source="flower_png" x="1382" y="278" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"
 	          visible="false"/>
 	<e:Rect id="plantRect" fillAlpha="0" width="403.03" height="127.27" x="1354.85" y="299.61" anchorOffsetY="0" />
