@@ -15,8 +15,11 @@
 	</e:Group>
 	<e:Group id="exitGroup" x="1706" y="1152.5" height="105" width="105"/>
     
-	<e:Image source="pink_right_frame_png" x="519" y="326"/>
-	<e:Label id="amyDialogLbel" text="Can we talk now?" textColor="0x000000" fontFamily="ComicSansMS3" size="50" x="565" y="429" anchorOffsetX="0" width="360"/>
+
+	<e:Group x="525.06" y="386.6">
+		<e:Image source="pink_right_frame_png" x="0" y="0" anchorOffsetX="0" width="553.13" anchorOffsetY="0" height="332.39"/>
+		<e:Label id="amyDialogLbel" text="Can we talk now?" textColor="0x000000" fontFamily="ComicSansMS3" size="50" x="81" y="116.95" anchorOffsetX="0" width="432.73" anchorOffsetY="0" height="98.48"/>
+	</e:Group>
   
    <e:Group id="nextGroup" visible="false">
 		<e:Image  source="next_noraml_png" x="1653.5" y="970"/>
