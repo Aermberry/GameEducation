@@ -35,7 +35,7 @@
 		<e:Rect fillColor="0xFF0000" width="506.07" height="75.76" x="60.31" y="1048.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 	</e:Group>
 	<e:Label id="textLabel"
-	         text=" Hi,I'm Mary Li.I'm 9\n years old.My birthday\n is on 4th April.\n\n I live at Flat B,6/F.\n Happy Garden,Shatin.I\n go to school on foot. I'm\n in 3A.\n\n I like reading and\n playing the piano. I join\n the Music Club."
+	         text=" Hi, I'm Mary Li. I'm 9\n years old.My birthday\n is on 4th April.\n\n I live at Flat B,6/F,\n Happy Garden, Shatin. I\n go to school on foot. I'm\n in 3A.\n\n I like reading and\n playing the piano. I join\n the Music Club."
 	         left="43" right="1078" top="75" bottom="204" anchorOffsetX="0" size="64" lineSpacing="25"
 	         fontFamily="Comic Sans MS" anchorOffsetY="0" textColor="0x178af1" />
 	<e:Image source="girl_min_png" x="310.32" y="1256.55" />
@@ -79,10 +79,10 @@
 		<e:Button id="clubButton" label="Help" x="0" y="666.94"  visible="false"/>
 	</e:Group>
 	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52">
-		<e:Label text="Mary Li" x="275.85" y="75.18" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
+		<e:Label text="Mary Li" x="294.03" y="75.18" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
 		<e:Label text="3A" x="132.32" y="698" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
 		<e:Label text="9" x="645.82" y="74.72" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
-		<e:Label text="           Flat B,6/F.\nHappy Garden,Shatin" x="20.06" y="430.43" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS" lineSpacing="25" anchorOffsetX="0" width="714.85" anchorOffsetY="0" height="160.18" textAlign="center" />
+		<e:Label text="           Flat B,6/F.\n Happy Garden, Shatin" x="20.06" y="430.43" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS" lineSpacing="25" anchorOffsetX="0" width="714.85" anchorOffsetY="0" height="160.18" textAlign="center" />
 		<e:Label text="4th April" x="216.32" y="253.49" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 		<e:Label text="reading" x="240.82" y="876" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 		<e:Label text="playing the piano" x="62.32" y="965" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
