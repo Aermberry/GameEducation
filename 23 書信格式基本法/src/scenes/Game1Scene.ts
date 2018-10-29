@@ -3,6 +3,14 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 	private nameGroup: eui.Group;
 	private nextLevelComponent: eui.Group;
 	private contentComponent: ContentComponent;
+	private shangKuanLabel: LabelComponents;
+	private textLabel: LabelComponents;
+	private xiaKuanLabel: LabelComponents;
+	private dateLabel: LabelComponents;
+	private blessLabel: LabelComponents;
+	private greetLabel: LabelComponents;
+
+	private labelComponents: any;
 
 	public constructor() {
 		super();
@@ -17,6 +25,14 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.labelComponents = {
+			shangkuan: this.shangKuanLabel,
+			xiakuan: this.xiaKuanLabel,
+			text: this.textLabel,
+			date: this.dateLabel,
+			bless: this.blessLabel,
+			greet: this.greetLabel
+		};
 		this.enableDrag();
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
 		this.contentComponent.game1Scene = this;
@@ -39,12 +55,9 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 		}
 	}
 
-	public removeNameChildrent(curLabel: number): void
+	public removeNameChildrent(curLabel: string): void
 	{	
-		// console.log(curLabel);
-		// this.nameGroup.removeChildAt(curLabel);
+		(this.labelComponents[curLabel] as LabelComponents).visible = false;
 	}
-
-
 	
 }

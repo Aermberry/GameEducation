@@ -112,7 +112,7 @@
 		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
 		<e:Label id="dateLabel" text="十一月二十日" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="華康楷書體"/>
 	</e:Group>
-		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="234" y="873.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="250" y="873.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<ns1:AlertElderComponent id="alertElderComponent" width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 			<e:Label text="你 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>

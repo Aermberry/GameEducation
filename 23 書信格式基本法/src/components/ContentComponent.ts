@@ -268,35 +268,35 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	private onShangKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'上款');
+		this.handleStringDrop(e,'上款','shangkuan');
 	}
 
 	private onGreetLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'問候語');
+		this.handleStringDrop(e,'問候語','greet');
 	}
 
 	private onBodyLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'正文');
+		this.handleStringDrop(e,'正文','text');
 	}
 
 	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'祝願語');
+		this.handleStringDrop(e,'祝願語','bless');
 	}
 
 	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'下款');
+		this.handleStringDrop(e,'下款','xiakuan');
 	}
 
 	private onDateLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'日期');
+		this.handleStringDrop(e,'日期','date');
 	}
 
-	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string)
+	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string,curLabelName: string)
 	{
 		console.log(e);
 		let dragObject = e.dragObject as LabelComponents;
@@ -309,7 +309,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			targetObject.text = dropStr;
 			this.finishNum++;
 	
-			this.game1Scene.removeNameChildrent(e.data);
+			this.game1Scene.removeNameChildrent(curLabelName);
 			
 
 		}
