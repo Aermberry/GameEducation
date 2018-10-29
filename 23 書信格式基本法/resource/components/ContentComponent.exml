@@ -150,7 +150,7 @@
 	</e:Group>-->
 	<e:Group y="213" left="0" right="0">
 		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
-		<e:Label id="textLabel" text="知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
+		<e:Label id="textLabel" text="       知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
 		<ns1:LabelComponents id="textLabelComponent" width="270" height="95" x="136" y="280"/>
 	</e:Group>
 	<e:Group id="group" y="597.7" left="0" right="0">

@@ -5,7 +5,7 @@
 	<e:Label text="請 將 書 信 各 部 分 的 名 稱 拖 放 到 適 當 的 空 格" size="80" textColor="0xf70612" y="38" horizontalCenter="-0.5" fontFamily="華康楷書體"/>
 	<e:Group width="1570" height="1306" x="26" y="125">
 		<e:Image left="0" right="0" top="0" bottom="0" source="paper_png"/>
-		<ns1:ContentComponent id="contentComponent" width="1388" height="1008" x="119" y="69" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:ContentComponent id="contentComponent" width="1412" height="1008" x="119" y="69" anchorOffsetX="0" anchorOffsetY="0"/>
 		<ns1:AlertGame1Component width="775" height="204" x="86" y="1015" anchorOffsetX="0" anchorOffsetY="0" message="下款是發信人的署名，一般書於日期之前。" visible="false"/>
 	</e:Group>
 	<e:Group id="nameGroup" width="270" height="1306" x="1625" y="125">

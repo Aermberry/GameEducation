@@ -96,7 +96,7 @@
 	</e:Group>-->
 	<e:Group y="229" anchorOffsetX="0" x="28">
 		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
-		<e:Label id="textLabel" text="你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心。當你回來時，我們一定給你一張滿意的成績表。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" fontFamily="華康楷書體" textAlign="left" width="1000" verticalCenter="0"/>
+		<e:Label id="textLabel" text="      你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心。當你回來時，我們一定給你一張滿意的成績表。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" fontFamily="華康楷書體" textAlign="left" width="1000" verticalCenter="0"/>
 	</e:Group>
 	<e:Group id="group" y="873.7" x="28" anchorOffsetY="0" height="172" anchorOffsetX="0" width="258">
 		<e:Rect id="blessRect" left="0" right="-8" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" anchorOffsetX="0" visible="false"/>
