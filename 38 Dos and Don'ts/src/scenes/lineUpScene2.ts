@@ -87,7 +87,7 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 	{   
 		this.currentSoundChannl.stop();		
         this.currentSoundChannl = (RES.getRes('line_up_mp3') as egret.Sound).play(0,1);
-		this.firstLabel.text = "No,they can't.";
+		this.firstLabel.text = "No, they can't.";
 		this.secondLabel.text = "They must line up now.";	
 		await ThreadUtility.sleep(3500);
         this.nextGroup.visible = true;

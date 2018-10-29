@@ -44,8 +44,8 @@
 	<e:Image id="teacherTouchImg" source="pink_circle_png" x="980.97" y="27.27"/>
 
 	<e:Image id="pinkFrameImg" source="pink_frame_png" x="560" y="640"/>
-	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="590.58" y="715.58" textColor="0x000000" size="48" verticalAlign="middle" textAlign="center"/>
-	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="594.6" y="771.02" textColor="0x000000" size="48"/>
+	<e:Label text="Can we put away" fontFamily="ComicSansMS3" x="590.58" y="715.58" textColor="0x000000" size="50" verticalAlign="middle" textAlign="center"/>
+	<e:Label text="our books now?" fontFamily="ComicSansMS3" x="598.6" y="775.02" textColor="0x000000" size="50"/>
 	<e:Label id="teacher1Label" text="......" fontFamily="ComicSansMS3" x="980.97" y="180.48" size="68" textColor="0x000000"/>
 	<e:Label id="teacher2Label" text="  " fontFamily="ComicSansMS3" x="980.97" y="266.67" size="68" textColor="0x000000"/>
 		<e:Group id="exitLogo" x="1737" y="1138">
