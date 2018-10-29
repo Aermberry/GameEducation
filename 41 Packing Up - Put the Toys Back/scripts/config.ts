@@ -40,7 +40,7 @@ const config: ResourceManagerConfig = {
                     new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
                     new UglifyPlugin([{
                         sources: [
-                             "libs/modules/egret/egret.min.js",
+                            "libs/modules/egret/egret.min.js",
                             "libs/modules/egret/egret.web.min.js",
                             "libs/modules/eui/eui.min.js",
                             "libs/modules/assetsmanager/assetsmanager.min.js",

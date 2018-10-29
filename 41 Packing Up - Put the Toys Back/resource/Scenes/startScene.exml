@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="startSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="166a555da8b" ></w:Config>
-    <e:Label text="Sara's room is untidy. Father tells her where to\nput the toys.Please help her by dragging the\npictures to right places." textAlign="left" verticalAlign="top" y="68" size="78" horizontalCenter="0" lineSpacing="25" fontFamily="Comic Sans MS" textColor="0xc11f1f" anchorOffsetY="0" height="396"/>
-<e:Image source="man_girl_png" x="632" y="560"/>
-<e:Button id="startButton" label="start" x="1590" y="1329" anchorOffsetX="0" width="154" anchorOffsetY="0" height="106" visible="false"/>
+<e:Skin class="startSceneSkin" width="1920" height="1500" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+    <w:Config id="166a555da8b"></w:Config>
+    <w:Declarations>
+    <tween:TweenGroup id="loadingAnim">
+			<tween:TweenItem target="{startMask}">
+				<tween:Set/>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+    <e:Label text="Sara's room is untidy. Father tells her where to\nput the toys.Please help her by dragging the\npictures to right places."
+             textAlign="left" verticalAlign="top" y="68" size="78" horizontalCenter="0" lineSpacing="25"
+             fontFamily="Comic Sans MS" textColor="0xc11f1f" anchorOffsetY="0" height="396" />
+    <e:Image source="man_girl_png" x="632" y="560" />
+    <e:Button id="startButton" label="start" x="1590" y="1329" anchorOffsetX="0" width="154" anchorOffsetY="0"
+              height="106" visible="false" />
+    <e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+    <e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0" />
 </e:Skin>

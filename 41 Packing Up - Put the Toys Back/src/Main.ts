@@ -67,7 +67,7 @@ class Main extends eui.UILayer {
 
     }
 
-   private async loadResource() {
+    private async loadResource() {
         const loadingView = new LoadingUI();
         try {
             this.stage.addChild(loadingView);
@@ -107,8 +107,7 @@ class Main extends eui.UILayer {
 
     public static instance: Main
 
-    public gotoScene(scene: eui.Component)
-    {
+    public gotoScene(scene: eui.Component) {
         this.removeChildren();
         this.addChild(scene);
     }
