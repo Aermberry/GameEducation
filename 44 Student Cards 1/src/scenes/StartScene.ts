@@ -3,6 +3,10 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private nextButton:eui.Button;
 	private sound:egret.Sound;
 	private soundChannel:egret.SoundChannel;
+
+	private startMask: eui.Rect;
+    private startButton: eui.Button;
+    private loadingAnim:egret.tween.TweenGroup
 	public constructor() {
 		super();
 	}
@@ -16,6 +20,13 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
+	}
+
+	private  async onStartButtonClick(): Promise<void>{
+		await this.loadingAnim.play(0);
+		this.startMask.visible = false;
+		this.startButton.visible = false;
 		let underLine=new Base();
 		underLine.drawLine(this.titleLabel, this);//画线
 		this.sound = RES.getRes("01_mp3");//加载音频

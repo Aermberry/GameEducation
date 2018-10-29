@@ -7,19 +7,19 @@
 	<Ui:Table width="1001.82" height="1183.62" x="903.03" y="45.82" anchorOffsetX="0" anchorOffsetY="0"
 	          skinName="TableSkin" />
 	<e:Group id="colorTips">
-		<e:Rect fillColor="0xFF0000" width="375.76" height="81.82" x="144.85" y="66.09" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Rect fillColor="0xFF0000" width="387.76" height="81.82" x="155.91" y="66.09" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<e:Group visible="false">
-			<e:Rect fillColor="0xFF0000" width="142.43" height="81.82" x="679.09" y="597.31" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="142.43" height="81.82" x="660.91" y="597.31" anchorOffsetX="0" anchorOffsetY="0"/>
 			<e:Rect fillColor="0xFF0000" width="187.89" height="81.82" x="55.76" y="686.1" anchorOffsetX="0" anchorOffsetY="0"/>
 		</e:Group>
 
-		<e:Group visible="false">
-			<e:Rect fillColor="0xFF0000" width="184.85" height="81.82" x="521.52" y="67" anchorOffsetX="0" anchorOffsetY="0"/>
-			<e:Rect fillColor="0xFF0000" width="300" height="81.82" x="52.73" y="164.88" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group anchorOffsetX="0" width="743.36" visible="false">
+			<e:Rect fillColor="0xFF0000" width="192.42" height="81.82" x="544.25" y="67" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="300" height="81.82" x="46.67" y="164.88" anchorOffsetX="0" anchorOffsetY="0"/>
 		</e:Group>
 
 		<e:Group visible="false">
-			<e:Rect fillColor="0xFF0000" width="400.01" height="169.7" x="308.18" y="420.34" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Rect fillColor="0xFF0000" width="422.75" height="169.7" x="308.18" y="420.34" anchorOffsetX="0" anchorOffsetY="0"/>
 			<e:Rect fillColor="0xFF0000" width="400.01" height="75.76" x="54.55" y="515.19" anchorOffsetX="0" anchorOffsetY="0"/>
 		</e:Group>
 		<e:Rect fillColor="0xFF0000" width="312.12" height="81.82" x="209.4" y="248.82" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
@@ -81,8 +81,8 @@
 	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52">
 		<e:Label text="Mary Li" x="294.03" y="75.18" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
 		<e:Label text="3A" x="132.32" y="698" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
-		<e:Label text="9" x="645.82" y="74.72" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
-		<e:Label text="           Flat B,6/F.\n Happy Garden, Shatin" x="20.06" y="430.43" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS" lineSpacing="25" anchorOffsetX="0" width="714.85" anchorOffsetY="0" height="160.18" textAlign="center" />
+		<e:Label text="9" x="685.21" y="74.72" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
+		<e:Label text="          Flat B,6/F,\n Happy Garden, Shatin." x="29.37" y="430.43" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS" lineSpacing="25" anchorOffsetX="0" width="714.85" anchorOffsetY="0" height="160.18" textAlign="center" />
 		<e:Label text="4th April" x="216.32" y="253.49" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 		<e:Label text="reading" x="240.82" y="876" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 		<e:Label text="playing the piano" x="62.32" y="965" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
@@ -92,10 +92,10 @@
 		<e:Label text="Mary Li" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" y="45.45" x="151.51" anchorOffsetX="0" width="362.97" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
 		<e:Label text="3A" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" y="109.02" x="145.5" anchorOffsetX="0" width="373.09" textAlign="center" anchorOffsetY="0" height="56.09" visible="false"/>
 		<e:Label text="9" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="172.91" x="105.58" anchorOffsetX="0" width="412.33" textAlign="center" anchorOffsetY="0" height="62.15" visible="false"/>
-		<e:Label text="Flat B,6/F.\nHappy Garden,Shatin" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="320.94" x="5.72" anchorOffsetX="0" width="496.34" anchorOffsetY="0" height="105.97" visible="false"/>
+		<e:Label text="Flat B,6/F,\n Happy Garden, Shatin." fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="right" lineSpacing="15" y="320.94" x="5.72" anchorOffsetX="0" width="496.34" anchorOffsetY="0" height="105.97" visible="false"/>
 		<e:Label text="4th April" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="507.97" x="208.63" anchorOffsetX="0" width="349.49" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
-		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="655.24" x="156.34" anchorOffsetX="0" width="387.24" anchorOffsetY="0" height="43.97" visible="false"/>
-		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="720.67" x="0" anchorOffsetX="0" width="555.91" visible="false"/>
+		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="655.24" x="156.34" anchorOffsetX="0" width="387.24" anchorOffsetY="0" height="63.97" visible="false"/>
+		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="720.67" x="0" anchorOffsetX="0" width="555.91" anchorOffsetY="0" height="69" visible="false"/>
 		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="841.33" x="118.12" anchorOffsetX="0" width="397.64" anchorOffsetY="0" height="65.18" textAlign="center" visible="false"/>
 	</e:Group>
 </e:Skin>

@@ -62,7 +62,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
 	}
 
-	private onLabelDrop(e: lzlib.LzDragEvent): void {
+	private async onLabelDrop(e: lzlib.LzDragEvent): Promise<void> {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
@@ -74,7 +74,8 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			this.confirmGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			
 			if (this.confirmGroup.$children.every(child => child.visible)) {
-				lzlib.SoundUtility.stopCurrentSound();
+				await lzlib.SoundUtility.stopCurrentSound();
+				await lzlib.ThreadUtility.sleep(2000)
 				Main.instance.gotoScene(new FinishScene());
 			} else {
 				this.currentQuestionIndex++;
