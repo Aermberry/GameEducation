@@ -132,6 +132,8 @@
 		<e:Image id="footprint3" x="946" y="14" source="footprint_png"/>
 		<e:Image id="footprint4" x="1464" y="28" source="footprint_png" alpha="0.3"/>
 		<e:Image id="footprint5" x="1205" y="14" source="footprint_png" alpha="0.3"/>
-		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="85"/>
+		<ns1:ImageButton id="exitButtonzzz" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110" visible="false"/>
+		<e:Image id="exitButton" x="1714.24" y="47" source="exit_button_normal_png"/>
+		<e:Image id="exit" x="1712.49" y="-8.21" source="exit_button_tip_png" visible="false"/>
 	</e:Group>
 </e:Skin>
