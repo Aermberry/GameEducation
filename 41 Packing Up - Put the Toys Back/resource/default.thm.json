@@ -13,9 +13,9 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"gameScene": "resource/scenes/gameScene.exml",
-		"tipsScene": "resource/scenes/tipsScene.exml",
-		"statusScene": "resource/scenes/statusScene.exml",
+		"gameScene": "resource/Scenes/gameScene.exml",
+		"tipsScene": "resource/Scenes/tipsScene.exml",
+		"statusScene": "resource/Scenes/statusScene.exml",
 		"startScene": "resource/Scenes/startScene.exml"
 	},
 	"autoGenerateExmlsList": true,
