@@ -36,7 +36,9 @@
 		<e:Image id="footprint4" x="925" y="38" source="footprint_png" rotation="90"/>
 		<e:Image id="footprint6" x="1214" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
 		<e:Image id="footprint8" x="1492" y="38" source="footprint_png" rotation="90" alpha="0.3"/>
-		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
+		<ns1:ImageButton id="exitButtonzzz" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110" visible="false"/>
+		<e:Image id="exitButton" x="1690" y="47" source="exit_button_normal_png"/>
+		<e:Image id="exit" x="1712.49" y="-8.21" source="exit_button_tip_png" visible="false"/>
 	</e:Group>
 	<e:Group id="resultGroup" width="930" height="300" y="445" horizontalCenter="0" visible="false">
 		<e:Rect left="0" top="0" right="0" bottom="0" fillColor="0xffffff" strokeColor="0x63cafa" strokeWeight="10" ellipseWidth="50"/>
