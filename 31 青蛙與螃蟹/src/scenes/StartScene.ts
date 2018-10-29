@@ -1,10 +1,12 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
 	private startButton: eui.Image
-	private exitButton: ImageButton
 	private startSoundChannel: egret.SoundChannel
 	private startMask: eui.Rect;
 	private startButton2: eui.Image;
 	private StartAnim:egret.tween.TweenGroup;
+	private exitButton: eui.Image;
+	private exit:eui.Image;
+
 
 	public constructor() {
 		super();
@@ -30,7 +32,21 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStartButtonTouchBegin, this);
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+		this.exitButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver, this)
+		this.exitButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut, this)
+
 	}
+
+	private onRollOver():void {
+		this.exit.visible = true;
+		this.exitButton.scaleX = this.exitButton.scaleY = 1.1;
+	}
+
+	private onRollOut(): void{
+		this.exit.visible = false;
+		this.exitButton.scaleX = this.exitButton.scaleY = 1;
+	}
+
 
 	private async onStartButton2Click(): Promise<void> {
 		await this.StartAnim.play(0);
