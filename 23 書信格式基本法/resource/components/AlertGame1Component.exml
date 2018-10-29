@@ -2,5 +2,5 @@
 <e:Skin class="AlertGame1ComponentSkin" width="775" height="224" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657a3de143" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" strokeColor="0xfb0d1c" fillColor="0xfb0d1c"/>
-	<e:Label id="alertMessageLabel" text="下款是發信人的署名，壹般寫於日期之前。" size="50" textColor="0x000000" width="700" height="123" x="35" y="44" lineSpacing="18" fontFamily="華康楷書體"/>
+	<e:Label id="alertMessageLabel" text="下款是發信人的署名，一般書於日期之前。" size="50" textColor="0x000000" width="700" height="123" x="35" y="44" lineSpacing="18" fontFamily="華康楷書體"/>
 </e:Skin>

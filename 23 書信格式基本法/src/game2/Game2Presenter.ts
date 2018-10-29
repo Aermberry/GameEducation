@@ -12,6 +12,7 @@ class Game2Presenter {
 
 	public async onLackLabelComponentTap(text: string): Promise<void>
 	{
+		this.view.hideRect();
 		if(UtilString.trim(text,'g') == this.game2Repo.lackOfPart){
 			//选择正确
 			this.view.hideRect();

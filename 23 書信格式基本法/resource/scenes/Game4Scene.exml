@@ -67,6 +67,27 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="correctDownAnimation">
+			<tween:TweenItem target="{xiaKuanGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{dateGroup}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{932}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1657f2072ee" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
@@ -74,9 +95,37 @@
 	<e:Label id="correctLabel" text="請選出正確的下款：" x="184" y="45" textColor="0xF40000" size="80" alpha="0"/>
 	<e:Group width="1570" height="1234" x="36" y="176" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="bell_border_png"/>
-		<ns1:ContentComponent id="contentComponent" width="1256" height="976" x="308" y="44" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" xiakuan=" " shangkuan="伯父：" greet="很久没有和你痛心，你生活好嗎？" text="今年的聖誕節，爸爸答應帶我到美國探望妳們壹家，我真的十分開心。記得妳告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望妳時，妳壹定要帶我去那裏玩啊！" bless="身體健康" date="十一月二十日"/>
-		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="528" y="584" anchorOffsetX="0" anchorOffsetY="0" source="paper_alert_png" visible="false"/>
-		<ns1:AlertSantaClausComponent id="alertSantaClausComponent" width="1212" height="841" x="248" y="200" visible="false"/>
+		<ns1:ContentComponent id="contentComponent" width="1256" height="976" x="308" y="44" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" xiakuan=" " shangkuan="伯父：" greet="很久没有和你痛心，你生活好嗎？" text="今年的聖誕節，爸爸答應帶我到美國探望你們一家，我真的十分開心。記得你告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望你時，你一定要帶我去那裏玩啊！" bless="身體健康" date="十一月二十日" visible="false"/>
+			<e:Group id="shangKuanGroup" width="170" x="320" y="64" anchorOffsetX="0" anchorOffsetY="0" height="60">
+		<e:Rect id="shangKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="shangKuanLabel" text="伯父：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="華康楷書體" left="14"/>
+	</e:Group>
+	<e:Group width="850" x="320" y="152" anchorOffsetY="0" height="78">
+		<e:Rect id="greetRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeWeight="4" strokeColor="0xfc0000" visible="false"/>
+		<e:Label id="greetLabel" text="很久没有和你通信，你生活好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="華康楷書體" top="14" left="14"/>
+	</e:Group>
+	<!--<e:Group height="393" y="248" left="0" right="0">
+		<e:Label text="蜘道你茬遊詠比塞中得到第二名，我替你憾到高興。我蕒了一幅詠鏡送給你，希望你能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球一個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
+		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
+	</e:Group>-->
+	<e:Group y="249" anchorOffsetX="0" x="320" width="1222" anchorOffsetY="0" height="364">
+		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="textLabel" text="今年的聖誕節，爸爸答應帶我到美國探望你們一家，我真的十分開心。記得你告訴我迪士尼樂園有很多好玩的機動遊戲，今次我來探望你時，你一定要帶我去那裏玩啊！" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" fontFamily="華康楷書體" textAlign="left" width="1000" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="blessGroup" y="641.7" x="320" anchorOffsetX="0" width="254" anchorOffsetY="0" height="164">
+		<e:Rect id="blessRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="blessLabel" text="身體安康" x="14" y="100" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Label text="祝" x="127.27" y="8" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+	</e:Group>
+	<e:Group id="xiaKuanGroup" y="751" anchorOffsetX="0" right="427" width="244" anchorOffsetY="0" height="116" alpha="0">
+		<e:Rect id="xiaKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="xiaKuanLabel1" text="侄" top="0" bottom="60" verticalAlign="middle" size="44" textColor="0x000000" fontFamily="華康楷書體" x="16"/>
+		<e:Label id="xiaKuanLabel2" text="健仁" x="76" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="華康楷書體" y="56"/>
+	</e:Group>
+	<e:Group id="dateGroup" y="804" anchorOffsetX="0" right="118" width="340">
+		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="dateLabel" text="十一月二十日" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="華康楷書體"/>
+	</e:Group>
 	</e:Group>
 		<e:Group id="correctNameGroup" width="224" height="1234" x="1652" y="176" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
 		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="健仁" fillColor="0x999999"/>
@@ -88,12 +137,14 @@
 		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="下款" fillColor="0x6bcdfe"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="正文" fillColor="0xfc9725"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="600" text="日期" fillColor="0xcb6cfa"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝頌語" fillColor="0x376bfc"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝願語" fillColor="0x376bfc"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
 	</e:Group>
 	<e:Group id="correctGroup" width="494" height="484" x="1400" y="40" visible="false">
 		<e:Image left="0" right="0" top="0" bottom="0" source="moon_and_star_png"/>
 		<e:Label text="你答對了！" x="136" y="112" anchorOffsetX="0" width="362" anchorOffsetY="0" height="226" textColor="0xe53030" size="66" verticalAlign="middle"/>
 	</e:Group>
+	<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="592" y="800" anchorOffsetX="0" anchorOffsetY="0" source="paper_alert_png" visible="false"/>
+	<ns1:AlertSantaClausComponent id="alertSantaClausComponent" width="1212" height="841" x="248" y="200" visible="false"/>
 	<ns1:NextLevelComponent id="exitCompoent" width="266" height="89" y="1284" alpha="0" anchorOffsetX="0" anchorOffsetY="0" x="1648" text="離 開"/>
 </e:Skin>

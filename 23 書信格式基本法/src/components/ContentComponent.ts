@@ -31,6 +31,8 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	//当前拖拽完成的个数；
 	private finishNum:number;
 
+	public game1Scene: Game1Scene;
+
 	public constructor() {
 		super();
 		this.finishNum = 0;
@@ -194,7 +196,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public RectHandle(text: string): void
 	{
 		console.log(text);
-		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝頌語':this.showBlessRect};
+		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝願語':this.showBlessRect};
 		obj[text].apply(this);
 	}
 
@@ -281,7 +283,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'祝頌語');
+		this.handleStringDrop(e,'祝願語');
 	}
 
 	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
@@ -296,6 +298,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string)
 	{
+		console.log(e);
 		let dragObject = e.dragObject as LabelComponents;
 		let targetObject = e.target as LabelComponents;
 		if(dragObject.text !== dropStr)
@@ -305,6 +308,10 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			this.alertGame1Component && (this.alertGame1Component.visible = false);
 			targetObject.text = dropStr;
 			this.finishNum++;
+	
+			this.game1Scene.removeNameChildrent(e.data);
+			
+
 		}
 	}
 

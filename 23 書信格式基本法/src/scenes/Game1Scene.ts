@@ -19,6 +19,7 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		this.enableDrag();
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
+		this.contentComponent.game1Scene = this;
 	}
 
 	private enableDrag(): void
@@ -37,5 +38,13 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 			Main.instant.gotoScene(new Game2Scene())	
 		}
 	}
+
+	public removeNameChildrent(curLabel: number): void
+	{	
+		// console.log(curLabel);
+		// this.nameGroup.removeChildAt(curLabel);
+	}
+
+
 	
 }
