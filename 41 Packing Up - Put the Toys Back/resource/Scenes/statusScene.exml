@@ -8,5 +8,5 @@
 	<e:Label id="tipsLabel" text="Please listen again ! " x="266.56" y="185.8" textColor="0xee0000" size="99"
 	         fontFamily="Comic Sans MS" anchorOffsetY="0" height="408.09" verticalAlign="middle" anchorOffsetX="0"
 	         width="928.94" />
-	<e:Label text="That's a good try !" x="276.56" y="365.5" textColor="0xEE0000" size="99" visible="false" />
+
 </e:Skin>

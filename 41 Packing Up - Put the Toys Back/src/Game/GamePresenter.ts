@@ -18,10 +18,15 @@ class GamePresenter {
 
 		this.view.putToyInDragPosition(this.currentToy.imageName);
 		this.view.currentToyName = this.currentToy.name;
+		this.view.currentToyVoice = this.currentToy.audioName;
 	}
 
 	private get currentToy(): Toy {
 		return this.allToys[this.currentTopIndex];
+	}
+
+	public get currentAudioName(): string {
+		return this.currentToy.audioName
 	}
 
 	public async onDropCorrectly(): Promise<void> {
@@ -31,12 +36,16 @@ class GamePresenter {
 			this.view.currentToyName = this.currentToy.name;
 			this.view.playAudio(this.currentToy.audioName);
 		} else {
+
 			await lzlib.ThreadUtility.sleep(2000);
 			this.view.openStatusScene(true);
+
+
 		}
 	}
 
-	public onDropWrong(): void {
+	public async onDropWrong(): Promise<void> {
+
 		this.view.openStatusScene(false);
 	}
 

@@ -4,8 +4,7 @@
 	<w:Declarations></w:Declarations>
 	<w:Config id="16564b2e611"></w:Config>
 	<e:Image source="room_png" x="38.5" y="50" scaleX="1" scaleY="1" />
-	<e:Button id="helpButton" anchorOffsetX="0" width="148" anchorOffsetY="0" height="66" x="845.5" y="1234.77"
-	          label="help"  visible="false"/>
+
 
 	<e:Label id="toyNameLabel" text="" x="1114.27" y="1087.22" textColor="0xee0000" anchorOffsetX="0"
 	         anchorOffsetY="0" size="85" fontFamily="Comic Sans MS" height="139.55" />
@@ -28,4 +27,5 @@
 	<e:Image id="booksImage" source="books_png" x="960" y="130"  visible="false"/>
 	<e:Rect id="booksRect" fillAlpha="0" width="536.36" height="121.21" x="663.79" y="130" anchorOffsetX="0"
 	        anchorOffsetY="0" />
+	<e:Button id="helpButton" anchorOffsetX="0" width="148" anchorOffsetY="0" height="66" x="845.5" y="1234.77" label="help" visible="false"/>
 </e:Skin>

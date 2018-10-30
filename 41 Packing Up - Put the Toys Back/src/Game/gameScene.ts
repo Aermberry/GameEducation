@@ -20,7 +20,8 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 	private helpButton: eui.Button;
 	private toysImage: eui.Image;
 	private toyNameLabel: eui.Label;
-	private rect:eui.Rect;
+	private ToyVoice: string;
+	private rect: eui.Rect;
 
 	private presenter = new GamePresenter();
 
@@ -64,7 +65,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 
 	private async onDropCancel(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(1000);
-		this.addChild(new statusScene(false, this.toysImage));
+		this.presenter.onDropWrong()
 	}
 
 	private async onPlantDrop(e: lzlib.LzDragEvent): Promise<void> {
@@ -75,7 +76,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			this.presenter.onDropWrong();
 		}
 	}
 
@@ -87,7 +88,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			this.presenter.onDropWrong()
 		}
 	}
 
@@ -99,7 +100,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			this.presenter.onDropWrong()
 		}
 	}
 
@@ -111,7 +112,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			this.presenter.onDropWrong()
 		}
 	}
 
@@ -120,10 +121,12 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			e.preventDefault();
 			this.bikeImage.visible = true;
 			e.dragObject.visible = false;
+			this.helpButton.visible = false;
+			this.toyNameLabel.visible = false;
 			this.presenter.onDropCorrectly();
 		} else {
-			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			lzlib.ThreadUtility.sleep(1000);
+			this.presenter.onDropWrong()
 		}
 	}
 
@@ -135,7 +138,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.presenter.onDropCorrectly();
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
-			this.addChild(new statusScene(false, this.toysImage));
+			this.presenter.onDropWrong()
 		}
 	}
 
@@ -152,7 +155,11 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 	}
 
 	public playAudio(audioName: string): void {
+		if (audioName == '') return;
 		lzlib.SoundUtility.playSound(audioName);
+
+		return
+
 	}
 
 	public showHelpButton(): void {
@@ -164,14 +171,32 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 		this.toysImage.x = 865;
 		this.toysImage.y = 1079;
 		this.toysImage.source = imageName;
+
+		const currentToyImage = this.toysImage;
+		const currentToyImageX = currentToyImage.x;
+		const currentToyImageY = currentToyImage.y;
+		const currentToyImageWidth = currentToyImage.width;
+		const currentToyImageHeight = currentToyImage.height;
+		const constant = 10;
+
+
+		this.helpButton.y = currentToyImageY + currentToyImageHeight + constant;
+		this.helpButton.x = currentToyImageX + currentToyImageWidth / 2 - this.helpButton.width / 2
+
+		this.toyNameLabel.x = currentToyImageX + currentToyImageWidth + constant + 50;
+		this.toyNameLabel.y = currentToyImageY + currentToyImageHeight / 2 - this.toyNameLabel.height / 2
 	}
 
 	public set currentToyName(value: string) {
 		this.toyNameLabel.text = value;
 	}
 
+	public set currentToyVoice(value: string) {
+		this.ToyVoice = value;
+	}
+
 	public openStatusScene(isCorrect: boolean): void {
-		this.addChild(new statusScene(isCorrect, this.toysImage));
+		this.addChild(new statusScene(isCorrect, this.toysImage, this.presenter.currentAudioName));
 	}
 
 	public openTipScene(position: ToyPosition): void {
