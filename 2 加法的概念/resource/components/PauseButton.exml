@@ -2,5 +2,5 @@
 <e:Skin class="PauseButtonSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="166287d186c" ></w:Config>
 	<e:Image id="bgImage" source="rectangle_blue_small_png" />
-	<e:Label id="titleLabel" text="暫停" verticalCenter="0" horizontalCenter="0" textColor="0x010c5a" bold="true" size="60" fontFamily="Helvetica"/>
+	<e:Label id="titleLabel" text="暫停" verticalCenter="0" horizontalCenter="0" textColor="0x010c5a" size="60" fontFamily="DFKai-SB" bold="true"/>
 </e:Skin>
