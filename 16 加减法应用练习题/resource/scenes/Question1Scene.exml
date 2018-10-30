@@ -151,7 +151,7 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
 		<e:Label id="totalTextlmage" text="550-30" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
-	<e:Label id="text1label" text="今天賣出多少件。" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
+	<e:Label id="text1label" text="今天賣出多少件？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Label id="text2lmage" text="昨天西餅店賣出蛋糕550件，今天比昨天少賣30件。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="今天賣出蛋糕：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
