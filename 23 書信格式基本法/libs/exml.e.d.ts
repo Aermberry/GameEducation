@@ -1,3 +1,17 @@
+declare class AlertElderComponentSkin extends eui.Skin{
+}
+declare class AlertGame1ComponentSkin extends eui.Skin{
+}
+declare class AlertGame2ComponentSkin extends eui.Skin{
+}
+declare class AlertSantaClausComponentSkin extends eui.Skin{
+}
+declare class ContentComponentSkin extends eui.Skin{
+}
+declare class LabelComponentsSkin extends eui.Skin{
+}
+declare class NextLevelComponentSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -49,20 +63,6 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
-}
-declare class AlertElderComponentSkin extends eui.Skin{
-}
-declare class AlertGame1ComponentSkin extends eui.Skin{
-}
-declare class AlertGame2ComponentSkin extends eui.Skin{
-}
-declare class AlertSantaClausComponentSkin extends eui.Skin{
-}
-declare class ContentComponentSkin extends eui.Skin{
-}
-declare class LabelComponentsSkin extends eui.Skin{
-}
-declare class NextLevelComponentSkin extends eui.Skin{
 }
 declare class Game1SceneSkin extends eui.Skin{
 }
