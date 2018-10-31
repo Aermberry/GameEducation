@@ -49,6 +49,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onFinishOut, this);
 		this.finishImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onFinishClick, this);
 		this.presenter.loadView(this);
+		this.numberPad.calcPresenter = this.presenter;
 	}
 
 	private onFinishClick(e: egret.TouchEvent): void

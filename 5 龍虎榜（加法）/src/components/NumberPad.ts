@@ -10,6 +10,7 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 	private nineButton: ImageButton;
 	private zeroButton: ImageButton;
 	private eraserButton: ImageButton;
+	public calcPresenter: CalculationPresenter;
 
 	public constructor() {
 		super();
@@ -40,6 +41,10 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 	private onKeyDown(char: string): void
 	{
 		this.dispatchEvent(new KeyDownEvent(char));
+		if(char == '')
+		{
+			this.calcPresenter.isClear = true;
+		}
 	}
 
 	public async getCharAsync(): Promise<string>
