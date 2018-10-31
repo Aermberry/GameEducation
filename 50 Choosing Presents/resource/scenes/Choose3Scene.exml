@@ -12,13 +12,13 @@
 	<e:Group id="TipsGroup" x="155.64" y="1022.91">
 		<e:Group x="3.03" y="12.12">
 		<e:Label text="Well,  we have sixteen dollars now." x="28.12" y="-10" anchorOffsetX="0" width="939.67" anchorOffsetY="0" height="74" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="sixteen dollars" x="412.16" y="-6" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1"/>
+		<e:Label text="sixteen dollars" x="412.16" y="-6" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1" visible="false"/>
 		</e:Group>
 		<e:Group x="306.97" y="199.94">
 		<e:Label text="likes collecting coins. She can put the coins in it." x="-9.09" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="collecting" x="128.31" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true"/>
-		<e:Label text="put" x="786.33" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
-		<e:Label text="in" x="1146.98" y="2.52" anchorOffsetX="0" width="52.79" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true"/>
+		<e:Label text="collecting" x="128.31" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
+		<e:Label text="put" x="786.33" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		<e:Label text="in" x="1146.98" y="2.52" anchorOffsetX="0" width="52.79" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
 		</e:Group>
 	</e:Group>
 	<e:Group id="maskGroup" x="284" y="246.18" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
