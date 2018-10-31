@@ -5,11 +5,11 @@
 	<e:Image id="back_Image" source="back_png" x="1754.45" y="42.42"/>
 	<e:Rect width="635.51" height="428.79" top="371" left="424" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.85" scaleY="0.92"/>
 	<e:Image source="img_example_png" x="346.78" y="369.48" anchorOffsetX="0" width="617.33" anchorOffsetY="0" height="421.33" visible="false"/>
-	<e:Label text="Water Splash!" y="257.09" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="0.5"/>
-	<e:Label text="Look at the words on the word list.\nCan you find them in the puzzle?" y="378.3" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="357.5"/>
-	<e:Label text="1.Click each letter of the word\n   and click(the ''Shoot'' icon) to\n   choose." y="493.45" anchorOffsetX="0" width="549.76" anchorOffsetY="0" height="133.03" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="309"/>
+	<e:Label text="Water Splash" y="257.09" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="0.5"/>
+	<e:Label text="Look at the words on the word list.\nCan you find them in the word puzzle?" y="378.3" anchorOffsetX="0" width="801.28" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="434.5"/>
+	<e:Label text="1.Click each letter of the word.\n   Then, click the &quot;Shoot&quot; icon) to\n   choose." y="493.45" anchorOffsetX="0" width="655.82" anchorOffsetY="0" height="133.03" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="362"/>
 	<e:Label text="2.Click ''Show/Hide Words'' to turn\n   the word list on/off." y="635.86" anchorOffsetX="0" width="607.34" anchorOffsetY="0" height="90.6" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="337.5"/>
-	<e:Label text="3.Can't find a word? Click ''hints''\n    for help." y="738.89" anchorOffsetX="0" width="599.03" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="333.5"/>
+	<e:Label text="3.Can't find a word? Click ''Hints''    for help." y="738.89" anchorOffsetX="0" width="599.03" anchorOffsetY="0" height="96.67" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="left" size="43" horizontalCenter="333.5"/>
 	<e:Group id="EasyModel_Group" x="678" y="864">
 		<e:Image source="select_fire_png" x="0" y="0"/>
 		<e:Label text="Easy" x="70" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true"/>
