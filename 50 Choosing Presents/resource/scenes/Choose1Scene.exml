@@ -30,19 +30,19 @@
 	<e:Label id="worldLabel" text="Kitty likes reading." anchorOffsetX="0" width="560" anchorOffsetY="0" height="86" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" x="0"/>
 	<e:Label id="colorKeyWorldLabel" text="read    " x="308.94" y="0" anchorOffsetX="0" width="132" anchorOffsetY="0" height="86" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" backgroundColor="0xff0099" background="true" textColor="0xffffff" alpha="1" visible="false"/>
 	</e:Group>
-	<e:Group id="tipsGroup" x="1288" y="1106.6" width="604" height="186">
+	<e:Group id="tipsGroup" x="921.33" y="1106.6" width="970.67" height="186" touchThrough="true" anchorOffsetX="0">
 	<e:Group id="penGroup" width="604" height="148" y="54.55" visible="false">
 	<Ui:TexttLabel width="604" height="148" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="We write with a pen." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000"/>
 	<e:Label text="write" anchorOffsetX="0" width="133" anchorOffsetY="0" height="68" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" textColor="0xFFFFFF" alpha="1" scaleX="1" scaleY="1" x="154.06" y="38.97"/>
 	</e:Group>
-	<e:Group id="bankGroup" width="604" height="186" y="42.42" visible="false">
-	<Ui:TexttLabel width="604" height="125" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="   We keep momey in a\n   momeny bank." fontSize="50" verticalAlign="middle" fontColor="0x000000" textAglign="left"/>
-	<e:Label text="keep" x="146.86" y="8.74" anchorOffsetX="0" width="120.67" anchorOffsetY="0" height="80.97" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
+	<e:Group id="bankGroup" width="604" height="186" y="42.42" x="-3.03" visible="false">
+	<Ui:TexttLabel width="604" height="225" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="   We keep  money in a\n    piggy bank." fontSize="50" verticalAlign="middle" fontColor="0x000000" textAglign="left"/>
+	<e:Label text="keep" x="149.89" y="32.98" anchorOffsetX="0" width="120.67" anchorOffsetY="0" height="80.97" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
 	<e:Group id="playGroup" width="604" height="148" visible="false">
 	<Ui:TexttLabel anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="We play basketball." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" width="604" height="148"/>
 	<e:Label text="play" x="165.06" y="24.3" anchorOffsetX="0" width="100" anchorOffsetY="0" height="84" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
 	</e:Group>
-	<e:Button id="nextButton" label="Next" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0" height="110" visible="false"/>
+	<e:Button id="nextButton" label="Next" x="1569.77" y="1310.97" anchorOffsetX="0" width="246" anchorOffsetY="0" height="110" visible="false"/>
 </e:Skin>

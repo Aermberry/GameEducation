@@ -7,11 +7,11 @@
 	         width="1478.82" lineSpacing="50" top="0" horizontalCenter="41.5" />
 	<e:Image source="shelf_png" verticalCenter="-108" horizontalCenter="0" />
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Sam:Well, Peter wants to have a _____________.\nAnd                                            only. Let's buy it for him.\nMary: Where is it?\nSam:"
+	         text="Sam: Well, Peter wants to have a ___________.\n                                                    only.Let's buy it for him.\nMary: Where is it?\nSam:"
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416" anchorOffsetX="0"
 	         width="1537" lineSpacing="50" textColor="0x000000" x="24" bottom="0" />
 	<e:Group id="TipsGroup" x="158" y="1136" anchorOffsetX="0" width="830" anchorOffsetY="0" height="306">
-		<e:Group id="bankTipsGroup" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74">
+		<e:Group id="bankTipsGroup" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74" x="9.09">
 			<e:Label id="bankTipsWorldlabel" text="it costs fifteen dollars" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74"
 			         textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle"
 			         textAlign="left"  x="-6.06"/>
