@@ -110,6 +110,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.busImage.visible = true;
 			e.dragObject.visible = false;
 			this.presenter.onDropCorrectly();
+			
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
 			this.presenter.onDropWrong()
@@ -123,7 +124,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			e.dragObject.visible = false;
 			this.helpButton.visible = false;
 			this.toyNameLabel.visible = false;
-			this.presenter.onDropCorrectly();
+			this.openStatusScene(true);
 		} else {
 			lzlib.ThreadUtility.sleep(1000);
 			this.presenter.onDropWrong()
