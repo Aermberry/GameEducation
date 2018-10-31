@@ -117,19 +117,19 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="163eaae5ac4" ></w:Config>
-	<e:Image source="playing_scene_bg_wood_svg" horizontalCenter="31" verticalCenter="0" width="2040" height="1360"/>
+	<e:Image source="playing_scene_bg_wood_png" horizontalCenter="31" verticalCenter="0" width="2040" height="1360"/>
 
 	<ns1:Cannon id="cannon" horizontalCenter="0" bottom="-150" currentState="right" />
-	<e:Image source="playing_scene_bg_red_silk_svg" horizontalCenter="0" width="4544" height="1723" y="-249"/>
+	<e:Image source="playing_scene_bg_red_silk_png" horizontalCenter="0" width="4544" height="1723" y="-249"/>
 
 	<e:Label id="readyLabel" fontFamily="Hoffmanhand" size="600" textColor="0x89281C" text="Ready" anchorOffsetY="300" x="300" y="-300" />
 	<e:Label id="goLabel" fontFamily="Hoffmanhand" size="600" textColor="0x89281C" text="Go!!" anchorOffsetY="300" x="600" y="-300" />
 
-	<e:Image id="speakerImage" source="speaker_normal_svg" x="1575" y="90" width="285" height="285" />
-	<e:Image id="backImage" source="back_svg" x="1748" y="1050" width="140" height="228" />
-	<e:Image source="tube_empty_svg" x="140" y="300" width="110" height="685" />
-	<e:Image id="timeLeftInRoundImage" source="green_column_svg" x="154" width="80" height="658" bottom="308"/>
-	<e:Image source="sight_word_hunter_small_svg" x="25" y="130" width="380" height="268" />
+	<e:Image id="speakerImage" source="speaker_normal_png" x="1575" y="90" width="285" height="285" />
+	<e:Image id="backImage" source="back_png" x="1748" y="1050" width="140" height="228" />
+	<e:Image source="tube_empty_png" x="140" y="300" width="110" height="685" />
+	<e:Image id="timeLeftInRoundImage" source="green_column_png" x="154" width="80" height="658" bottom="308"/>
+	<e:Image source="sight_word_hunter_small_png" x="25" y="130" width="380" height="268" />
 
 	<ns1:TargetButton skinName="BirdTarget" x="607" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="0" cannonballExitY="640" leftOrRight="left" />
 	<ns1:TargetButton skinName="BottleTarget" x="927" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="850" cannonballExitY="1280" leftOrRight="center" />
