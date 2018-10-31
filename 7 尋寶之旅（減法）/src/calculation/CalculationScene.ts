@@ -6,6 +6,9 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private degreeImage: eui.Image;
 	private nextQuestionButton: ImageButton;
 
+	private nextImage: eui.Image;
+	private nextPass: eui.Group;
+
 	private questionIndexLabel: eui.Label;
 	private minuendLabel: eui.Label;
 	private subtrahendLabel: eui.Label;
@@ -79,6 +82,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.presenter.view = this;
 		this.presenter.degree = this.degree;
 		this.presenter.startCalulation();
+		this.nextImage.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut, this);
+		this.nextImage.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver, this);
+		this.nextPass.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextPassClick, this);
+		
 	}
 
 	private initRestartExitButton(): void
@@ -88,6 +95,28 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestartImageClick , this);
 		mouse.setButtonMode(this.exitImage, true);
 		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitImageClick , this);
+	}
+
+	private onNextPassClick(): void {
+		// Main.instance.gotoScene(new CalculationScene(Degree.medium));
+		switch (this.degree) {
+			case Degree.junior:
+			Main.instance.gotoScene(new CalculationScene(Degree.medium));
+			break;
+
+			case Degree.medium:
+			Main.instance.gotoScene(new CalculationScene(Degree.senior));
+			break;
+
+		}
+	}
+ 
+	private onRollOver(): void {
+		this.nextImage.source = "next_degree_selected_png";
+	}
+	
+	private onRollOut(): void {
+		this.nextImage.source = "next_degree_normal_png";
 	}
 
 	private onExitImageClick(): void {
@@ -128,7 +157,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	}
 
 	private formatDegree(): void
-	{
+	{	
 		switch (this.degree) {
 			case Degree.junior:
 			this.degreeImage.source = 'junior_normal_png';
@@ -426,11 +455,24 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	/** 显示通关动画 */
 	public startCongratulation(): void
 	{
-		this.boyImage.visible = false;
-		this.boyMovie.visible = true;
-		this.strawberryUpMovie.visible = true;
-		this.strawberryDownMovie.visible = true;
-		this.congratulationImage.visible = true;
+
+		if(this.degree ==  Degree.senior){
+			this.boyImage.visible = false;
+			this.boyMovie.visible = true;
+			this.strawberryUpMovie.visible = true;
+			this.strawberryDownMovie.visible = true;
+			this.congratulationImage.visible = true;
+			this.nextPass.visible = false;
+		}else{
+			this.boyImage.visible = false;
+			this.boyMovie.visible = true;
+			// this.strawberryUpMovie.visible = true;
+			// this.strawberryDownMovie.visible = true;
+			// this.congratulationImage.visible = true;
+			this.nextPass.visible = true;
+			this.boxOpenTweenGroup.play(0);
+			this.angelGroup.visible = false;
+		}
 	}
 
 	/** 关闭通关动画 */
