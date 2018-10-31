@@ -2,12 +2,12 @@
 <e:Skin class="Choose2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*">
 	<w:Config id="166192f9124"></w:Config>
-	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) to the blank" textColor="0xFF0099"
+	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) to the blanks." textColor="0xFF0099"
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="148" anchorOffsetX="0"
-	         width="1397" lineSpacing="50" top="0" horizontalCenter="0" />
+	         width="1478.82" lineSpacing="50" top="0" horizontalCenter="41.5" />
 	<e:Image source="shelf_png" verticalCenter="-108" horizontalCenter="0" />
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Sam:Well,Peter wants to have a _____________.\nAnd                                            only.Let's buy it for him.\nMary:Where is it?\nSam:"
+	         text="Sam:Well, Peter wants to have a _____________.\nAnd                                            only. Let's buy it for him.\nMary: Where is it?\nSam:"
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416" anchorOffsetX="0"
 	         width="1537" lineSpacing="50" textColor="0x000000" x="24" bottom="0" />
 	<e:Group id="TipsGroup" x="158" y="1136" anchorOffsetX="0" width="830" anchorOffsetY="0" height="306">
