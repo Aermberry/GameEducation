@@ -46,6 +46,7 @@ class CalculationPresenter {
 				// } else {
 				// 	this.view.alertAnswerWrong();
 				// }
+				this.view.showFInishTip();
 				this.view.enableFinishImage();
 
 				await this.view.nextQuestionButtonClickAsync();
@@ -90,6 +91,7 @@ class CalculationPresenter {
 				this.view.alertAnswerWrong();
 			}
 			clearInterval(this.timer);
+			this.view.hideFInishTip();
 			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
