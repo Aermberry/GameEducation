@@ -28,6 +28,9 @@ class CalculationPresenter {
 				let pair = this.questionPairs[this.questionIndex];
 				let addend = this.view.addend = pair[0];
 				let augend = this.view.augend = pair[1];
+				
+				this.questionIndex == 0 && (this.view.showFInishTip());
+				
 				this.timer = setInterval(async () => {
 					if(this.isClear)
 					{
@@ -46,7 +49,6 @@ class CalculationPresenter {
 				// } else {
 				// 	this.view.alertAnswerWrong();
 				// }
-				this.view.showFInishTip();
 				this.view.enableFinishImage();
 
 				await this.view.nextQuestionButtonClickAsync();
@@ -91,7 +93,7 @@ class CalculationPresenter {
 				this.view.alertAnswerWrong();
 			}
 			clearInterval(this.timer);
-			this.view.hideFInishTip();
+			// this.view.hideFInishTip();
 			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
