@@ -219,7 +219,8 @@ class SecondLevelSelectScene extends eui.Component implements  eui.UIComponent, 
 
 	private goFirstStartScene() {
 		this.stopCurrentSoundChannel();
-		Main.instance.gotoScene(new FirstLevelStartScene());
+		// Main.instance.gotoScene(new FirstLevelStartScene());
+		window.location.reload();
 	}
 
 	//初始化correctBtn
