@@ -26,13 +26,21 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+        #none {
+             -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
         @font-face {
             font-family:"華康楷書體";
             src: url("resource/fonts/華康楷書體.woff2") format('woff2'),
-                 url('resource/fonts/華康楷書體.woff') format('woff');
+                 url("resource/fonts/華康楷書體.woff") format('woff'),
+                 url('resource/fonts/華康楷書體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -64,15 +72,27 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
-<div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
-    data-content-width="1920" data-content-height="1061" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
-    data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
-</div>
-<div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/en/other/important_notices.html">Important Notices</a> | <a href="http://wlts.edb.hkedcity.net/en/other/privacy_policy.html"
-    style="margin-right: 30px;">Privacy Policy</a>Last revision date: 29 July 2018)
-</div>
-<label style="font-family:華康楷書體; font-size: 1px;" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
+    <div id="egret-player" 
+        class="egret-player" 
+        data-entry-class="Main" 
+        data-orientation="auto" 
+        data-scale-mode="showAll" 
+        data-frame-rate="30"
+        data-content-width="1920" 
+        data-content-height="1061" 
+        data-multi-fingered="2" 
+        data-show-fps="false" 
+        data-show-log="false"
+        data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
+        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+        style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
+    </div>
+    <div id="none">
+        <label style="font-family: 華康楷書體; color: transparent;">媽媽買了一件襯衣售價69元5角，她付了80元。\n店員應召回幾元幾角？店員應找囘：80元-69元5角1234567890.= 10元5角"水彩售35元4角，木颜色售14元2角。\n小源各買一盒共付幾元幾錢？小源要付35元4角+14元2角49元6角想一想，横式應該是...姐姐買手帕用去12元5角，買頸巾又用去41元2角。\n姐姐共用去幾元幾角？姐姐共用去：12元5角+42元2角54元7角昨天，淑敏儲蓄了22元5角，今天又儲蓄了16元5角\n淑敏共儲蓄了幾元幾角？\n\n淑敏共儲蓄了：淑敏共儲蓄了：22元5角+16元5角39元小明原有9元8角，媽媽再給他45元。\n小明現有幾元幾角？小明現有：9元8角+45元= 54元8角我有78元，妹妹有8元9角。\n我和妹妹共有幾元幾角？我和妹妹共有：= 86元9角哥哥原有42元6角，買原子筆用去12元5角。\n還餘幾錢幾角？還餘：= 30元1角男裝手錶售99元9角，女裝手錶售88元8角。\n男裝手錶比女裝手裝手錶貴幾元幾角？男裝手錶比女裝手錶貴：水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？兩種茶葉的售價相差：=  25元瑞明原有38元2角，他付了19元的游泳池入場費。\n現在瑞明還餘幾元幾角？瑞明還餘：= 19元2角想清楚，再試一次！</label>
+    </div>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -128,29 +148,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
