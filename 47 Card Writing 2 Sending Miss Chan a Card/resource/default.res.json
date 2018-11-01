@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,资源 1_png,start_png,gameEui_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,start_png,gameEui_json,BG_png",
 			"name": "preload"
 		}
 	],
@@ -147,11 +147,6 @@
 			"url": "assets/CheckBox/checkbox_unselect.png"
 		},
 		{
-			"name": "资源 1_png",
-			"type": "image",
-			"url": "textures/资源 1.png"
-		},
-		{
 			"name": "start_png",
 			"type": "image",
 			"url": "textures/start.png"
@@ -160,6 +155,11 @@
 			"name": "gameEui_json",
 			"type": "json",
 			"url": "gameEui.json"
+		},
+		{
+			"name": "BG_png",
+			"type": "image",
+			"url": "textures/BG.png"
 		}
 	]
 }

@@ -17,7 +17,7 @@
 
 	<e:Label text="Mary is sending Miss Chan\na card. Help her drag the\nwords to the correct\nboxes." x="30" y="30"
 	         size="69" lineSpacing="25" textColor="0xf92a58" fontFamily="Comic Sans MS" backgroundColor="0xef0000" />
-	<e:Image source="资源 1_png" x="868.97" y="109.69" />
+	<e:Image x="868.97" y="109.69"  source="BG_png"/>
 	<e:Group id="tipsGroup" y="233.33" x="977.28" anchorOffsetY="0" height="1035.33" anchorOffsetX="0" width="779.33">
 		<Ui:TexttLabel width="595.77" height="101.82" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               backgroundColors="0xFF0091" text="Date" textAglign="center" fontSize="50" fontColor="0xFFFDFF"
@@ -57,7 +57,7 @@
 		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="57" right="154.39"  visible="false"/>
 		<Ui:TexttLabel height="536.3" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               text="      How are you? Thank\nyou for your card. I am\nfine in the U.S.A. I will\ncome back to H.K. in\nDecember."
-		               y="275.73" fontSize=" 50" textAglign="left" left="113" right="30.389999999999986"  visible="false"/>
+		               y="275.73" fontSize=" 50" textAglign="left" left="95" right="48.389999999999986"  visible="false"/>
 		<Ui:TexttLabel width="573.21" height="90.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               text="Best wishes," fontSize=" 50" y="845.09" x="156.87" textAglign="right"  visible="false"/>
 		<Ui:TexttLabel height="92.24" y="965.81" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
