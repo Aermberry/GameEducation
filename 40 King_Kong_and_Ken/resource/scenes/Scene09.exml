@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene09Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657f5a921c" ></w:Config>
-	<e:Label text="Which words end with &quot;ong&quot;?\nDrag the right words to\n the tree" x="464" y="52" size="69" left="61" lineSpacing="30" textColor="0xbc2865" fontFamily="Comic Sans MS" anchorOffsetX="0" width="1005"/>
+	<e:Label text="Which words end with &quot;Ong&quot;?\nDrag the right words to\n the tree." x="464" y="52" size="69" left="61" lineSpacing="30" textColor="0xbc2865" fontFamily="Comic Sans MS" anchorOffsetX="0" width="1005"/>
 	<e:Label text="Ken hears the gong.\nHe writes a song.\nAnd not for long.\nHe meets King Kong." x="4" y="390" textColor="0x5c1ac3" size="80" lineSpacing="70" textAlign="center" fontFamily="Comic Sans MS" anchorOffsetY="0" height="590.61" anchorOffsetX="0" width="1090"/>
 	<e:Image source="filltree_png" x="1230" y="136"/>
 	<e:Button id="nextButton" label="Next" x="1613.37" y="938.42" anchorOffsetX="0" width="217.27" anchorOffsetY="0" height="91.15" visible="false"/>

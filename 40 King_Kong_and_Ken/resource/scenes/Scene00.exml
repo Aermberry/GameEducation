@@ -17,7 +17,7 @@
 	<e:Group left="0" right="0" top="0" bottom="0">
 		<e:Group height="478.79" left="0" right="0" top="0" anchorOffsetY="0" x="0" y="0" scaleX="1" scaleY="1">
 			<e:Label id="textLabel"
-			         text="Hi children ! This is a poem about a man and a gorilla.\nThey both love music so they become friends."
+			         text="Hi, children. This is a poem about a man and a gorilla.\nThey both love music so they become friends."
 			         textColor="0xb70570" top="0" left="0" right="4" height="240.28" size="73" verticalAlign="middle"
 			         anchorOffsetY="0" anchorOffsetX="0" textAlign="center" width="1916" lineSpacing="25"
 			         fontFamily="Comic Sans MS" />
@@ -28,7 +28,7 @@
 		</e:Group>
 	</e:Group>
 	<e:Button id="nextButton" label="Next" x="1571.58" y="932.37" anchorOffsetX="0" width="232.42" anchorOffsetY="0"
-	          height="103.27" visible="false" />
+	          height="103.27"  visible="false"/>
 	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" alpha="0.9" strokeColor="0xffffff" fillColor="0xffffff" />
 	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="-57.5" />
 </e:Skin>

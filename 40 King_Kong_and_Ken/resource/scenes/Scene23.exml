@@ -2,7 +2,7 @@
 <e:Skin class="Scene23Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1658368e7f2" ></w:Config>
 	<e:Image source="dog_png" x="538" y="248"/>
-	<e:Label text="Correct!" x="1005.5" y="370" textColor="0xec3596" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="104.24"/>
-	<e:Label text="Dog" x="1074.5" y="574" textColor="0xec333d" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="110.3"/>
+	<e:Label text="Correct." x="1005.5" y="370" textColor="0xec3596" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="104.24"/>
+	<e:Label text="dog" x="1074.5" y="574" textColor="0xec333d" size="80" fontFamily="Comic Sans MS" anchorOffsetY="0" height="110.3"/>
 	<e:Button id="nextButton" label="Next" x="1627.64" y="889.82" anchorOffsetX="0" width="176.36" anchorOffsetY="0" height="94.18"/>
 </e:Skin>
