@@ -75,7 +75,7 @@ class Question10Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onNextQuestionPage(): void {
-		Base.gotoNextScene(new Question2Scene());
+		window.close();
 	}
 
 	//上一题
