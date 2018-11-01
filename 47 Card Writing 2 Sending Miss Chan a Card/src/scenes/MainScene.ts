@@ -9,6 +9,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private loadingAnim: egret.tween.TweenGroup
 
 	private currentQuestionIndex = 0;
+	private originalChildIndex: number;
 	public constructor() {
 		super();
 	}
@@ -58,6 +59,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			targetComponent.visible = true;
 			dragComponent.visible = false;
 
+			this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = false
+			this.setChildIndex(this.tipsGroup, this.originalChildIndex);
+
+
 			if (this.dropGroup.$children.every(child => child.visible)) {
 				lzlib.ThreadUtility.sleep(3000);
 				Main.instance.gotoScene(new FinishScene());
@@ -71,9 +76,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			this.showTipsLabel();
 
 			this.swapChildren(this.dropGroup, this.maskLayerGroup);
-			lzlib.ThreadUtility.sleep(2000).then(() => {
-				this.swapChildren(this.dropGroup, this.maskLayerGroup);
-			})
+			// lzlib.ThreadUtility.sleep(2000).then(() => {
+			// 	this.swapChildren(this.dropGroup, this.maskLayerGroup);
+			// })
 		}
 	}
 
@@ -82,12 +87,12 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async showTipsLabel(): Promise<void> {
-		let originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
+		this.originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
 		this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将yipsGroup层级升至最高
 		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(2000);
 		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = false
-		this.setChildIndex(this.tipsGroup, originalChildIndex);//返回至原来的层级
+		this.setChildIndex(this.tipsGroup, this.originalChildIndex);//返回至原来的层级
 	}
 
 }

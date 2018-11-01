@@ -35,7 +35,7 @@
 		               backgroundColors="0xFF0091" textAglign="center" fontSize="50" fontColor="0xFFFDFF" x="145.47"
 		               y="930.27" text="Who sends the card?" visible="false"/>
 	</e:Group>
-	<e:Group id="maskLayerGroup" x="84.85" y="463.64" anchorOffsetX="0" anchorOffsetY="0" height="969" width="641.21" />
+	<e:Group id="maskLayerGroup" x="987.88" y="200.01" anchorOffsetX="0" anchorOffsetY="0" height="1096.27" width="765.45"  touchEnabled="false" touchThrough="false"/>
 	<e:Group id="dragGroup" y="460.61" anchorOffsetY="0" height="969" x="81.82">
 		<Ui:TexttLabel width="641.21" height="98.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               text="Best wishes," fontSize=" 50" y="0" x="1.45" textAglign="right" />
