@@ -55,15 +55,15 @@
 		                visible="false"/>
 		<Ui:TexttLabel height="90.22" y="153.88" text="Dear Miss Chan," anchorOffsetX="0" anchorOffsetY="0"
 		               skinName="TexttLabelSkin" fontSize=" 50" textAglign="left" left="57" right="154.39"  visible="false"/>
-		<Ui:TexttLabel height="530.24" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
+		<Ui:TexttLabel height="536.3" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               text="      How are you? Thank\nyou for your card. I am\nfine in the U.S.A. I will\ncome back to H.K. in\nDecember."
-		               y="278.76" fontSize=" 50" textAglign="left" left="155" right="51.389999999999986"  visible="false"/>
+		               y="275.73" fontSize=" 50" textAglign="left" left="113" right="30.389999999999986"  visible="false"/>
 		<Ui:TexttLabel width="573.21" height="90.79" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               text="Best wishes," fontSize=" 50" y="845.09" x="156.87" textAglign="right"  visible="false"/>
 		<Ui:TexttLabel height="92.24" y="965.81" text="Mary" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin"
 		               fontSize="50" textAglign="right" left="159" right="50.389999999999986" verticalAlign="top"
 		                visible="false"/>
 	</e:Group>
-	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"  visible="false"/>
-	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"  visible="false"/>
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" />
 </e:Skin>
