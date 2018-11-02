@@ -83,10 +83,8 @@
 	<Ui:Background anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin"
 	               index="1" />
 
-	<e:Label id="questionLabel" text="水彩售35元4角，木颜色售14元2角。\n小源各買一盒共付幾元幾錢？" x="273.18" y="224.12" anchorOffsetX="0"
-	         width="970.91" anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"
-	          fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="titleLabel" text="小源要付：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
+
+
 	<e:Label id="answerLabel" text="35元4角+14元2角" textColor="0x000000" x="290.54" y="536.47" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
 	<e:Label text="= 49元6角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
@@ -126,5 +124,13 @@
 <Ui:NextQuestion id="nextQuestionButton" x="1765.94" y="960.36" anchorOffsetX="0" anchorOffsetY="0"
 	                 skinName="NextQuestionSkin" />
 	<e:Image id="bestImage" source="best_png" x="371.67" y="724.81" visible="false"/>
+	<e:Group id="questionGroup" x="273.18" y="224.12" visible="false">
+		<e:Label text="水彩售35元4角，木颜色售14元2角。\n小源各買一盒共付幾元幾錢？" x="0" y="0" anchorOffsetX="0" width="970.91" anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25" fontFamily="華康楷書體"/>
+		<e:Rect width="110" height="2" x="8.7" y="145.88"/>
+	</e:Group>
+	<e:Group id="titleLabel" x="270.97" y="426.44" visible="false">
+		<e:Label text="小源要付：" size="59" x="0" y="0" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Rect width="110" height="2" x="10.73" y="61.59"/>
+	</e:Group>
 
 </e:Skin>

@@ -1,7 +1,7 @@
 class Question1Scene extends eui.Component implements eui.UIComponent {
 
-	private questionLabel: eui.Label;
-	private titleLabel: eui.Label;
+	private questionGroup: eui.Group;
+	private titleLabel: eui.Group;
 	private expressionLabel: eui.Label;
 	private answerLabel: eui.Label;
 	private tipLabel: eui.Label;
@@ -60,7 +60,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	// 出场动画
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
-		this.questionLabel.visible = true;
+		this.questionGroup.visible = true;
 		this.ColorAnimation.play(0);
 	}
 
@@ -85,8 +85,9 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 	// 下一步
 	private async verification(): Promise<void> {
 		const verification = this.expression,
-			inputssion = "35元4角+14元2角"
-		if (verification == inputssion) {
+			inputssion = "35元4角+14元2角",
+			inputssiontwo = "14元2角＋35元4角"
+		if (verification == inputssion || verification == inputssiontwo) {
 			this.watercolourImage.visible = false;
 			this.woodcolorImage.visible = false;
 			this.nextStepButton.visible = false;
