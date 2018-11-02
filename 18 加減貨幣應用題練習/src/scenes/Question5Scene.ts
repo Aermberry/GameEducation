@@ -83,7 +83,7 @@ class Question5Scene extends eui.Component implements eui.UIComponent {
 
 	// 下一步
 	private verification(): void {
-		const verification = this.expression,
+		const verification = StringUtility.trim(this.expression),
 			inputssion = "78元+8元9角",
 			inputssiontwo = "8元9角+78元"
 		if (verification == inputssion || verification == inputssiontwo) {

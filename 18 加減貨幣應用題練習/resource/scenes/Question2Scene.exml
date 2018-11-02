@@ -83,7 +83,7 @@
 	         width="1319.39" anchorOffsetY="0" height="157.04" textColor="0x000000" size="59" lineSpacing="25"
 	          fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="姐姐共用去：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="12元5角+42元2角" textColor="0x000000" x="274.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="12元5角 + 42元2角" textColor="0x000000" x="274.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<e:Image id="scarfImage" source="scarf_png" x="1331.74" y="584.75"  alpha="0"/>
 	<e:Image id="handkerchiefImage" source="handkerchief_png" x="1113.78" y="574.15"  alpha="0"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />

@@ -84,7 +84,7 @@ class Question1Scene extends eui.Component implements eui.UIComponent {
 
 	// 下一步
 	private async verification(): Promise<void> {
-		const verification = this.expression,
+		const verification = StringUtility.trim(this.expression),
 			inputssion = "35元4角+14元2角",
 			inputssiontwo = "14元2角＋35元4角"
 		if (verification == inputssion || verification == inputssiontwo) {

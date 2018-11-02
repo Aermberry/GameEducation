@@ -38,10 +38,10 @@
 	<e:Label id="questionLabel" text="小明原有9元8角，媽媽再給他45元。\n小明現有幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="964.85"
 	         anchorOffsetY="0" height="157.03" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="小明現有：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="9元8角+45元" textColor="0x000000" x="278.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="9元8角 + 45元" textColor="0x000000" x="278.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="334.94" visible="false">
 		<e:Image id="tipsImage" source="tipsLabel_png"  x="318" y="78" anchorOffsetX="318" anchorOffsetY="78"/>
 		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true"/>
@@ -73,10 +73,10 @@
 	                 skinName="NextQuestionSkin" />
 <ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 <e:Image id="bestImage" source="best_png" x="399.67" y="726.81" visible="false"/>
-<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220" visible="false">
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="193.58"/>
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="76"/>
-		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="-4"/>
+<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="193.58" visible="false"/>
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="76" visible="false"/>
+		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="-4" visible="false"/>
 	</e:Group>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
 	<e:Label text="= 54元8角" fontFamily="華康楷書體" size="59" textColor="0x000000"/>

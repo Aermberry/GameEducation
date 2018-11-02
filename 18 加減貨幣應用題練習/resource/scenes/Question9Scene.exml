@@ -41,7 +41,7 @@
 	<e:Rect id="titleUnderlineRect1" width="120" height="2" x="274.37" y="294.92" visible="false"/>
 	<e:Rect id="titleUnderlineRect2" width="120" height="2" x="390.43" y="377.65" visible="false"/>
 	<e:Rect id="answerUnderlineRect" width="120" height="2" x="270.13" y="496.74" visible="false"/>
-	<e:Label id="answerLabel" text="38元2角–19元" textColor="0x000000" x="280.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="38元2角 – 19元" textColor="0x000000" x="280.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
