@@ -6,15 +6,15 @@
 	         width="1424" lineSpacing="50" top="0"  horizontalCenter="14"/>
 	<e:Image source="shelf_png"  verticalCenter="-199" horizontalCenter="0"/>
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Mary:                                                                  Let's bug one more present.\nLet's buy a ________________ for Pam.\nSam:Oh yes, she "
+	         text="Mary:                                                        Let's bug one more present.\nLet's buy a ________________ for Pam.\nSam:Oh yes, she "
 	         size="58" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416"
-	         anchorOffsetX="0" width="1916.27" lineSpacing="50"  textColor="0x000000" x="5.82" bottom="61"/>
-	<e:Group id="TipsGroup" x="155.64" y="1022.91">
-		<e:Group x="3.03" y="12.12">
+	         anchorOffsetX="0" width="1913.24" lineSpacing="50"  textColor="0x000000" x="5.82" bottom="61"/>
+	<e:Group id="TipsGroup" x="155.64" y="968.36" anchorOffsetY="0" height="408.82">
+		<e:Group x="3.03" y="69.69">
 		<e:Label text="Well,  we have sixteen dollars now." x="28.12" y="-10" anchorOffsetX="0" width="939.67" anchorOffsetY="0" height="74" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
 		<e:Label text="sixteen dollars" x="412.16" y="-6" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1" visible="false"/>
 		</e:Group>
-		<e:Group x="306.97" y="199.94">
+		<e:Group x="300.91" y="257.52">
 		<e:Label text="likes collecting coins. She can put the coins in it." x="-9.09" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
 		<e:Label text="collecting" x="128.31" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
 		<e:Label text="put" x="786.33" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>

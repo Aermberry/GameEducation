@@ -63,6 +63,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 			e.preventDefault();
 			targetCompent.visible = true;
 			dragCompent.visible = false;
+			this.nextButton.visible=true
 			if (this.dropGroup.$children.every(children => children.visible) && (this.logImage.visible = true)) {
 				this.TipsGroup.$children.forEach((children, index) => {
 					(children.$children[0] as eui.Label).textColor = 0xFF0099;
