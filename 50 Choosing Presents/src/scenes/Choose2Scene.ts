@@ -7,6 +7,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	private bankColorTipsLabe: eui.Label;
 	private basketballTipWorldLabel: eui.Label;
 	private basketballTipColorLabel: eui.Label;
+	private storybook:eui.Label;
 
 	private dropGroup: eui.Group;
 	private dragGroup: eui.Group;
@@ -59,7 +60,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 		let dragCompent = e.dragObject as eui.Label;
 
 		this.optionText = dragCompent.text;
-		if (dragCompent.text.trim() == "pen") {
+		if (dragCompent.text.trim() === "pen") {
 			e.preventDefault();
 			targetCompent.visible = true;
 			dragCompent.visible = false;
@@ -73,6 +74,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 		}
 
 		else {
+			this.storybook.visible=true
 			this.onshowTips();
 			console.log("drop")
 			this.swapChildren(this.dragGroup, this.maskGroup);

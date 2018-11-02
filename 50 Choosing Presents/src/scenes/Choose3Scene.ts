@@ -8,6 +8,7 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 	private nextButton: eui.Label;
 	private logImage: eui.Image;
 	private helpButton: eui.Button;
+	private storybook:eui.Label;
 
 	private tipsComponent: Ui.TexttLabel;
 
@@ -70,6 +71,7 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 			}
 		}
 		else {
+			this.storybook.visible=true;
 			this.showTipsLabel();
 			this.swapChildren(this.dragGroup, this.maskGroup);
 		}
