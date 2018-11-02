@@ -38,7 +38,7 @@
 	<e:Label id="questionLabel" text="水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？" x="273.18" y="224.12" anchorOffsetX="0" width="1158.79"
 	         anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="華康楷書體" visible="false"/>
 			 <e:Label id="titleLabel" text="兩種茶葉的售價相差："  size="59" x="270.97" y="426.44" textColor="0x000000" fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="55元8角-30元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="55元8角–30元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 
 
 
@@ -49,14 +49,14 @@
 	<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true"/>
 	</e:Group>
 	<e:Group id="arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
-	<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="26"/>
+	<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元   角" anchorOffsetX="0" anchorOffsetY="0" letterSpacing="26"/>
 	<e:BitmapLabel font="calculation_font_fnt" text="55" letterSpacing="50" textAlign="right" x="136.36" y="45.03"/>
-	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  x="275.75" y="47.03"/>
+	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  x="340" y="47.03"/>
 
-	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  y="121" x="275.76"/>
+	<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right"  y="121" x="340"/>
 	<e:BitmapLabel text="-" letterSpacing="50" textAlign="right"  y="143.48" x="54.41" font="GGGFont_fnt" width="56.51" anchorOffsetX="0" anchorOffsetY="0" height="31.79"/>
 	<e:BitmapLabel text="30" letterSpacing="50" textAlign="right"  y="121" x="122.94" font="GGGFont_fnt" width="123.18" anchorOffsetX="0" anchorOffsetY="0" height="59.03"/>
-	<e:Rect width="337" height="3" y="190.91"/>
+	<e:Rect width="337" height="3" y="190.91" x="57.58"/>
 
 
 	</e:Group>
@@ -73,7 +73,7 @@
 <ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 <e:Image id="bestImage" source="best_png" x="399.67" y="726.81" visible="false"/>
 <e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
-		<ns1:EditableLabel width="62" height="92" anchorOffsetX="0" anchorOffsetY="0" x="138" y="26" visible="false"/>
+		<ns1:EditableLabel width="62" height="92" anchorOffsetX="0" anchorOffsetY="0" x="198.61" y="26" visible="false"/>
 		<ns1:EditableLabel width="62" height="92" anchorOffsetX="0" anchorOffsetY="0" x="78" y="26" visible="false"/>
 		<ns1:EditableLabel width="62" height="92" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26" visible="false"/>
 	</e:Group>

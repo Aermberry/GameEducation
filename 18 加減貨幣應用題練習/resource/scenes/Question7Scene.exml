@@ -39,25 +39,25 @@
 	         width="1143.64" anchorOffsetY="0" height="157.03" textColor="0x000000" size="59" lineSpacing="25"
 	          fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="男裝手錶比女裝手錶貴：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="99元9角-88元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="99元9角–88元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="877.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="420.94" visible="false">
 		<e:Image id="tipsImage" source="tipsLabel_png"  x="332" y="78" anchorOffsetX="332" anchorOffsetY="78"/>
-		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" bold="true"/>
+		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" fontFamily="華康楷書體" textAlign="center" textColor="0x000000" size="45" y="6.5" bold="true"/>
 	</e:Group>
 	<e:Group id="arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
-		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
+		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元   角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="99" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
-		<e:BitmapLabel font="calculation_font_fnt" text="9" letterSpacing="50" textAlign="right" x="275.75" y="47.03" />
-		<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right" y="121" x="275.76" />
+		<e:BitmapLabel font="calculation_font_fnt" text="9" letterSpacing="50" textAlign="right" x="340" y="47.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="8" letterSpacing="50" textAlign="right" y="121" x="340" />
 		<e:BitmapLabel text="88" letterSpacing="50" textAlign="right" y="121" x="122.94" font="GGGFont_fnt" width="123.18"
 		               anchorOffsetX="0" anchorOffsetY="0" height="59.03" />
 		<e:BitmapLabel text="-" letterSpacing="50" textAlign="right" y="143.48" x="54.41" font="GGGFont_fnt" width="56.51"
 		               anchorOffsetX="0" anchorOffsetY="0" height="31.79" />
-		<e:Rect width="337" height="3" y="190.91" />
+		<e:Rect width="337" height="3" y="190.91"  x="54.55"/>
 
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
@@ -75,7 +75,7 @@
 <ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 <e:Image id="bestImage" source="best_png" x="387.67" y="738.81" visible="false"/>
 <e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
-		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="136" y="24" visible="false"/>
+		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="193.58" y="24" visible="false"/>
 		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="74" y="24" visible="false"/>
 		<ns1:EditableLabel width="62" height="93" anchorOffsetX="0" anchorOffsetY="0" x="-6" y="24" visible="false"/>
 	</e:Group>

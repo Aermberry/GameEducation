@@ -49,13 +49,13 @@
 		         textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true" />
 	</e:Group>
 	<e:Group id="arithmetic" x="1075.59" y="614.57" anchorOffsetY="0" height="250.64" anchorOffsetX="0" width="303.67" visible="false">
-		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元角" anchorOffsetX="0" anchorOffsetY="0"
+		<e:BitmapLabel x="200.6" y="-20.53" font="GGGFont_fnt" text="元   角" anchorOffsetX="0" anchorOffsetY="0"
 		               letterSpacing="26" />
 		<e:BitmapLabel font="calculation_font_fnt" text="22" letterSpacing="50" textAlign="right" x="136.36" y="45.03" />
-		<e:BitmapLabel font="calculation_font_fnt" text="5" letterSpacing="50" textAlign="right" x="275.75" y="47.03" />
+		<e:BitmapLabel font="calculation_font_fnt" text="5" letterSpacing="50" textAlign="right" x="340" y="47.03" />
 		<e:BitmapLabel text="+16" letterSpacing="50" textAlign="right" y="121" x="41.12" font="GGGFont_fnt" width="205" />
-		<e:BitmapLabel font="calculation_font_fnt" text="5" letterSpacing="50" textAlign="right" y="121" x="275.76" />
-		<e:Rect width="337" height="3" y="190.91" />
+		<e:BitmapLabel font="calculation_font_fnt" text="5" letterSpacing="50" textAlign="right" y="121" x="340" />
+		<e:Rect width="337" height="3" y="190.91"  x="36.36"/>
 
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant" anchorOffsetX="0"
@@ -71,10 +71,10 @@
 	                 skinName="NextQuestionSkin" />
 	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 	<e:Image id="bestImage" source="best_png" x="375.67" y="726.81" visible="false"/>
-	<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="140" y="26" visible="false"/>
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="74" y="26" visible="false"/>
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26" visible="false"/>
+	<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220" visible="false">
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="194.54" y="26"/>
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="74" y="26"/>
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26"/>
 
 
 	</e:Group>

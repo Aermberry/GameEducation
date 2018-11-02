@@ -22,6 +22,10 @@ class Question9Scene extends eui.Component implements eui.UIComponent {
 	private editableLabelGroup: eui.Group;
 	private totalGroup: eui.Group;
 
+	private answerUnderlineRect: eui.Rect;
+	private titleUnderlineRect1: eui.Rect;
+	private titleUnderlineRect2: eui.Rect;
+
 	private expression = '';//用户输入的模式
 
 	public constructor() {
@@ -58,11 +62,14 @@ class Question9Scene extends eui.Component implements eui.UIComponent {
 	private async DisplayAnimation(): Promise<void> {
 		await lzlib.ThreadUtility.sleep(500);
 		this.questionLabel.visible = true;
+		this.titleUnderlineRect1.visible = true;
+		this.titleUnderlineRect2.visible = true;
 		await lzlib.ThreadUtility.sleep(1000);
 		this.materials.play();
 	}
 	private async playBackMusic(): Promise<void> {
 		await lzlib.SoundUtility.playSound("scene09_mp3");
+		this.answerUnderlineRect.visible = true;
 		this.titleLabel.visible = true;
 		lzlib.ThreadUtility.sleep(1000);
 		await lzlib.SoundUtility.playSound("think_mp3");
