@@ -80,19 +80,31 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onDragCancel(e: lzlib.LzDragEvent): void {
-		this.onshowTips()
+		// this.nextButton.visible = true;
+		this.onshowTips();
 	}
 
 	private async onshowTips(): Promise<void> {
+		if (this.optionText == "piggy bank" || "") {
+			this.nextButton.visible=true;
+			this.bankTipsWorldlabel.textColor = 0xFF0099;
+			this.bankColorTipsLabe.visible = true
+		}
 
-		this.optionText == "piggy bank" && (this.bankTipsWorldlabel.textColor = 0xFF0099) && (this.bankColorTipsLabe.visible = true);
-		this.optionText == "basketball" && (this.basketballTipWorldLabel.textColor = 0xFF0099) && (this.basketballTipColorLabel.visible = true) && (this.helpButton.visible = true);
-		if (this.optionText == "storybook") {
+		if (this.optionText == "basketball" || "") {
+			this.nextButton.visible=true;
+			this.basketballTipWorldLabel.textColor = 0xFF0099;
+			this.basketballTipColorLabel.visible = true;
+			this.helpButton.visible = true
+		}
+
+		if (this.optionText == "storybook" || "") {
+			this.nextButton.visible=true;
 			this.bankTipsWorldlabel.textColor = 0xFF0099;
 			this.bankColorTipsLabe.visible = true;
 			this.basketballTipWorldLabel.textColor = 0xFF0099;
 			this.basketballTipColorLabel.visible = true;
-			this.helpButton.visible = true
+			this.helpButton.visible = true;
 		}
 	}
 
