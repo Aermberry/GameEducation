@@ -297,7 +297,7 @@
 	</e:ToggleButton>
 	<e:Group id="cueGroup" visible="false">
 		<e:Image id="greenFrame" source="green_frame_png" x="866.07" y="303"/>
-		<e:Label id="firstTipLabel" x="893.12" text="應該參加社區活動的是青少年，還是\r青少年階段？" fontFamily="華康標楷體" size="50" textColor="#284997" y="460.6" lineSpacing="20"/>
+		<e:Label id="firstTipLabel" x="893.12" text="參加社區活動的應該是青少年人，還是\n青少年階段？" fontFamily="華康標楷體" size="50" textColor="#284997" y="460.6" lineSpacing="20"/>
 		<e:Image id="returnBtnImg" source="return-btn_png" x="1545.04" y="573"/>
 		<e:Label id="returnLabel" text="返回" textColor="#000000" size="43" fontFamily="華康標楷體" x="1564.54" y="585"/>
 		<e:Group id="returnGroup" x="1545.04" y="573" width="123" height="78"/>

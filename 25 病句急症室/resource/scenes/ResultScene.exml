@@ -132,10 +132,10 @@
 <e:Image source="doctor_desk_png" x="0" y="341" locked="true"/>
 
 <e:Image id="blueAgainImg" source="blue_again_png" x="886" y="659"  locked="true"/>
-<e:Label id="againLabel" x="904" y="674" size="36" fontFamily="華康標楷體" textColor="#000000" text="再試一次"  locked="true"/>
+<e:Label id="againLabel" x="922.18" y="677.03" size="36" fontFamily="華康標楷體" textColor="#000000" text="再試一次"  locked="true"/>
 <e:Group id="againGroup" x="886" y="659" width="228" height="74" locked="true"/>
 <e:Image id="greenExitImg" source="green_exit_png" x="1152" y="659"  locked="true"/>
-<e:Label id="eixtLabel" x="1167" y="674" size="36" fontFamily="華康標楷體" textColor="#000000" text="離開" locked="true"/>
+<e:Label id="eixtLabel" x="1176.09" y="677.03" size="36" fontFamily="華康標楷體" textColor="#000000" text="離開" locked="true"/>
 <e:Group id="exitGroup" x="1152" y="659" height="74" width="123" locked="true"/>
 
 
