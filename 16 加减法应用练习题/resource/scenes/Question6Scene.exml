@@ -189,5 +189,6 @@
 		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19" />
 		<e:Label text="小嫦有較多錢。應怎\n樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
 		         anchorOffsetX="0" width="636.36" />
+		<e:Rect width="110" height="4" x="118.18" y="94.15"/>
 	</e:Group>
 </e:Skin>

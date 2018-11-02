@@ -179,5 +179,6 @@
 		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19" />
 		<e:Label text="小安喝了較多牛奶。\n應怎樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
 		         anchorOffsetX="0" width="636.36" />
+		<e:Rect width="110" height="4" x="117.76" y="94.06"/>
 	</e:Group>
 </e:Skin>

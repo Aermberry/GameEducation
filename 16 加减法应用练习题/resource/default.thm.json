@@ -29,10 +29,6 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
-		"resource/components/EditableLabel.exml",
-		"resource/components/ImageButton.exml",
-		"resource/components/MovieClipPlayer.exml",
-		"resource/components/NumberPad.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -54,7 +50,11 @@
 		"resource/scenes/Question6Scene.exml",
 		"resource/scenes/Question7Scene.exml",
 		"resource/scenes/Question8Scene.exml",
-		"resource/scenes/StartScene.exml"
+		"resource/scenes/StartScene.exml",
+		"resource/components/EditableLabel.exml",
+		"resource/components/ImageButton.exml",
+		"resource/components/MovieClipPlayer.exml",
+		"resource/components/NumberPad.exml"
 	],
 	"path": "resource/default.thm.json"
 }
