@@ -42,6 +42,10 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/components/EditableLabel.exml",
+		"resource/components/ImageButton.exml",
+		"resource/components/MovieClipPlayer.exml",
+		"resource/components/NumberPad.exml",
 		"resource/scenes/Question1Scene.exml",
 		"resource/scenes/Question2Scene.exml",
 		"resource/scenes/Question3Scene.exml",
@@ -50,11 +54,7 @@
 		"resource/scenes/Question6Scene.exml",
 		"resource/scenes/Question7Scene.exml",
 		"resource/scenes/Question8Scene.exml",
-		"resource/scenes/StartScene.exml",
-		"resource/components/EditableLabel.exml",
-		"resource/components/ImageButton.exml",
-		"resource/components/MovieClipPlayer.exml",
-		"resource/components/NumberPad.exml"
+		"resource/scenes/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
