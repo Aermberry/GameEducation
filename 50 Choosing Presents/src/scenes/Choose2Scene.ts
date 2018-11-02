@@ -59,7 +59,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 		let dragCompent = e.dragObject as eui.Label;
 
 		this.optionText = dragCompent.text;
-		if (dragCompent.text.trim() == targetCompent.text.trim()) {
+		if (dragCompent.text.trim() == "pen") {
 			e.preventDefault();
 			targetCompent.visible = true;
 			dragCompent.visible = false;
