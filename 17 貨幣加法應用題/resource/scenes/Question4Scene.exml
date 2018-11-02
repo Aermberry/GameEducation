@@ -274,25 +274,25 @@
 		<ns1:CalcComponents id="calcComponent" width="324" height="154" x="372" y="460" anchorOffsetX="0" anchorOffsetY="0" alpha="1" visible="false"/>
 		<ns1:FormulaComponent id="formulaComponent" width="480" height="271.52" x="199.46" y="445.27" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_question_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png" alpha="1"/>
 		<e:Group width="478.79" height="272" x="986.64" y="387.42" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="lineFormulaImage" x="16" y="115.39" source="line_formula_png" visible="false"/>
+			<e:Image id="lineFormulaImage" x="16" y="124.48" source="line_formula_png" visible="false"/>
 			<e:Group id="yuanAndJiao" width="475.76" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 				<e:Image x="230.61" y="12" source="yuan_unti_png"/>
 				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
 			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-				<e:Label id="label3" text="2" x="137.22" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label id="label4" text="0" x="243.27" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label id="label2" text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label id="label3" text="2" x="137.22" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label id="label4" text="0" x="243.27" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label id="label2" text="5" x="446.3" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
 			</e:Group>
-			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-				<e:Label id="label" text="3" x="137" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label id="label0" text="0" x="243" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label id="label1" text="0" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+			<e:Group id="priceRightGroup" y="116.54" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
+				<e:Label id="label" text="3" x="137" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label id="label0" text="0" x="243" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label id="label1" text="0" x="446.3" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-				<e:Label id="baiLabel" text="5" x="137" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
-				<e:Label id="shiLabel" text="0" x="243" y="11" textColor="0x000000" size="46" alpha="1" visible="false" fontFamily="標楷體"/>
-				<e:Label id="geLabel" text="5" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
+				<e:Label id="baiLabel" text="5" x="137" y="11" textColor="0x000000" size="50" alpha="1" visible="false" fontFamily="標楷體"/>
+				<e:Label id="shiLabel" text="0" x="243" y="11" textColor="0x000000" size="50" alpha="1" visible="false" fontFamily="標楷體"/>
+				<e:Label id="geLabel" text="5" x="446.3" y="11" textColor="0x000000" size="50" alpha="1" fontFamily="標楷體" visible="false"/>
 			</e:Group>
 		</e:Group>
 		<e:Image x="1193" y="83.88" source="message_border_png" anchorOffsetY="0" height="283.36"/>
