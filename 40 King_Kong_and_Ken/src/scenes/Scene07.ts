@@ -45,7 +45,6 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 		this.headerLabel.visible=true;
 		await lzlib.SoundUtility.playSound('08_startgame1b_mp3');
 		this.nextButton.visible=true;
-
 	}
 
 }
