@@ -47,7 +47,7 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1655b2a4d69"  x="-606" scaleX="1" scaleY="1"></w:Config>
-	<e:Group id="group00" left="0" right="0">
+	<e:Group id="group00" left="0" right="0" touchThrough="true">
 	<e:Label text="'Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 	<e:Label id="pongLabel" text="Pong," size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39" anchorOffsetX="0"/>
 		<e:Label text=" Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
@@ -58,7 +58,7 @@
 		</e:layout>
 		</e:Group>
 
-		<e:Group id="group01" left="0" right="0">
+		<e:Group id="group01" left="0" right="0" touchThrough="true">
 		<e:Label text="King" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
 			<e:Label id="KongLabel" text="Kong" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
 				<e:Label text="is" size="82" textAlign="center" y="364.55" lineSpacing="80" textColor="0x5D20F5" x="593" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
@@ -69,7 +69,7 @@
 			</e:layout>
 		</e:Group>
 	
-	<e:Group id="group02" left="0" right="0">
+	<e:Group id="group02" left="0" right="0" touchThrough="true">
 <e:Label text="Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label id="DongLabel" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label text=" , Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
@@ -80,7 +80,7 @@
 		</e:layout>
 		</e:Group>
 	
-	<e:Group id="group03" left="0" right="0">
+	<e:Group id="group03" left="0" right="0" touchThrough="true">
 	<e:Label id="kongLebel" text="Kong" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
 	<e:Label text="hits" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
 	<e:Label text="the" size="82" textAlign="center" y="737.81" lineSpacing="80" textColor="0x5D20F5" x="620" fontFamily="Comic Sans MS" anchorOffsetY="0" height="112.3"/>
@@ -98,7 +98,7 @@
 
 
 
-	<e:Group id="redLineGroup" x="580" y="280">
+	<e:Group id="redLineGroup" x="580" y="280" touchThrough="true">
 		<e:Rect width="188" height="8" fillColor="0xd92e20" y="0" x="155" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 		<e:Rect width="180" height="8" fillColor="0xd92e20" y="2" x="601" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 		<e:Rect width="197" height="8" fillColor="0xd92e20" y="166" x="181" ellipseHeight="50" ellipseWidth="50" visible="false"/>
