@@ -42,7 +42,6 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
 			drag.enableDrag(children, false);
-			children.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
 		this.initDropable();
 	}
@@ -60,7 +59,6 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 		let dragCompent = e.dragObject as eui.Label;
 
 		this.optionText = dragCompent.text;
-		this.nextButton.visible = true;
 		if (dragCompent.text.trim() == targetCompent.text.trim()) {
 			e.preventDefault();
 			targetCompent.visible = true;
@@ -75,36 +73,33 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 
 		else {
 			this.onshowTips();
+			console.log("drop")
 			this.swapChildren(this.dragGroup, this.maskGroup);
 		}
 	}
 
-	private onDragCancel(e: lzlib.LzDragEvent): void {
-		// this.nextButton.visible = true;
-		this.onshowTips();
-	}
-
 	private async onshowTips(): Promise<void> {
-		if (this.optionText == "piggy bank" || "") {
-			this.nextButton.visible=true;
-			this.bankTipsWorldlabel.textColor = 0xFF0099;
+
+		if (this.optionText == "piggy bank") {
+			this.bankTipsWorldlabel.textColor = 0xFF0099
 			this.bankColorTipsLabe.visible = true
+			this.nextButton.visible=true
 		}
 
-		if (this.optionText == "basketball" || "") {
-			this.nextButton.visible=true;
-			this.basketballTipWorldLabel.textColor = 0xFF0099;
-			this.basketballTipColorLabel.visible = true;
+		if (this.optionText == "basketball") {
+			this.basketballTipWorldLabel.textColor = 0xFF0099
+			this.basketballTipColorLabel.visible = true
 			this.helpButton.visible = true
+			this.nextButton.visible=true
 		}
 
-		if (this.optionText == "storybook" || "") {
-			this.nextButton.visible=true;
+		if (this.optionText == "storybook") {
 			this.bankTipsWorldlabel.textColor = 0xFF0099;
 			this.bankColorTipsLabe.visible = true;
 			this.basketballTipWorldLabel.textColor = 0xFF0099;
 			this.basketballTipColorLabel.visible = true;
-			this.helpButton.visible = true;
+			this.helpButton.visible = true
+			this.nextButton.visible=true
 		}
 	}
 
