@@ -37,9 +37,9 @@
 
 	<e:TextInput id="TexrInput" width="509.09" height="80" x="274" y="578.13" anchorOffsetX="0" anchorOffsetY="0"
 	             visible="false" />
-	<e:Label id="questionLabel" text="媽媽買了一件襯衣售價69元5角，她付了80元。\n店員應召回幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
+	<e:Label id="questionLabel" text="媽媽買了一件襯衣售價69元5角，她付了80元。店員應找回幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1240.6" anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"
-	          fontFamily="華康楷書體" visible="false"/>
+	          fontFamily="華康楷書體"/>
 	<e:Label id="titleLabel" text="店員應找回：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="answerLabel" text="80元 – 69元5角" textColor="0x000000" x="278.54" y="525.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />

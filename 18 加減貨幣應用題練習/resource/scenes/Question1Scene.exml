@@ -22,7 +22,7 @@
 				</tween:To>
 				<tween:To duration="850">
 					<tween:props>
-						<e:Object alpha="{1}" x="{1142.16}" y="{685.31}" />
+						<e:Object alpha="{1}" y="{685.31}"  x="{1120.95}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -45,7 +45,7 @@
 				</tween:To>
 				<tween:To duration="1000">
 					<tween:props>
-						<e:Object x="{1408.91}" y="{599.81}" alpha="{1}" />
+						<e:Object y="{599.81}" alpha="{1}"  x="{1454.36}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -115,8 +115,8 @@
 	</e:Group>
 	<Ui:MovieClipPlayer id="ant" x="1260.61" y="514.7" dataSet="ant_json" texture="ant_png" movieClipName="ant"
 	                    anchorOffsetX="0" anchorOffsetY="0" />
-	<e:Image id="woodcolorImage" source="Wood color_png" x="1408.91" y="599.81" alpha="0" />
-	<e:Image id="watercolourImage" source="watercolour_png" x="1142.16" y="685.31" alpha="0" />
+	<e:Image id="woodcolorImage" source="Wood color_png" x="1408.91" y="599.81" alpha="0"  anchorOffsetX="0" width="222.64" anchorOffsetY="0" height="190.36"/>
+	<e:Image id="watercolourImage" source="watercolour_png" x="1039.73" y="685.31" alpha="0"  anchorOffsetX="0" width="302.43" anchorOffsetY="0" height="107.36"/>
 
 	<e:Label id="expressionLabel" text=""  width="518" height="86" x="274.58" y="508.21" anchorOffsetX="0"  anchorOffsetY="0" backgroundColor="0xffffff" background="true" textColor="0x0f0101" size="52" border="true" borderColor="0x020000" verticalAlign="middle" textAlign="left" fontFamily="華康楷書體" bold="true" visible="false"/>
 <ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
