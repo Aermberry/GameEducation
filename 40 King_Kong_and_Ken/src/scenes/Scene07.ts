@@ -39,9 +39,9 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 
 	private async changRedColor(...restOfName: eui.Label[]): Promise<void> {
 		for (var i = 0; i < restOfName.length; i++) {
-			await lzlib.ThreadUtility.sleep(500);
+			// await lzlib.ThreadUtility.sleep(200);
 			restOfName[i].textColor = 0xd92e20;
-			restOfName[i].addEventListener(egret.TouchEvent.TOUCH_TAP, this.clickVoice.bind(this, this.voiceList[i]), this);//
+			restOfName[i].addEventListener(egret.TouchEvent.TOUCH_TAP, this.clickVoice.bind(this, this.voiceList[i]), this);
 			(this.redLineGroup.$children[i] as eui.Label).visible = true;
 		}
 
