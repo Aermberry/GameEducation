@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene13Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657fb63f1a" ></w:Config>
-	<e:Label x="82" y="82" textColor="0xd54b96" size="80" lineSpacing="30" text="Which word begins with &quot;K&quot; ? \nClick on the correct picture" fontFamily="Comic Sans MS" anchorOffsetY="0" height="226.36"/>
+	<e:Label x="82" y="82" textColor="0xd54b96" size="80" lineSpacing="30" text="Which word begins with 'k'?\nClick on the correct picture." fontFamily="Comic Sans MS" anchorOffsetY="0" height="226.36" anchorOffsetX="0" width="1056"/>
 	<e:Image id="voiceImage00" source="speaker_png" x="1172" y="66"/>
 	<e:Image id="optionImage00" source="girl_png" x="246" y="438"/>
 	<e:Image id="optionImage01" source="king_png" x="881.61" y="341.41"/>

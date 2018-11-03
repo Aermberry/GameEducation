@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene19Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1658346ce26" ></w:Config>
-	<e:Label text="Correct!" x="1066" y="359.5" textColor="0xec3596" size="101" fontFamily="Comic Sans MS" anchorOffsetY="0" height="143.42"/>
-	<e:Label text="Pen" x="1156" y="574" textColor="0xec333d" size="101" fontFamily="Comic Sans MS" anchorOffsetY="0" height="122.21"/>
+	<e:Label text="Correct." x="1066" y="359.5" textColor="0xec3596" size="101" fontFamily="Comic Sans MS" anchorOffsetY="0" height="143.42"/>
+	<e:Label text="pen" x="1156" y="574" textColor="0xec333d" size="101" fontFamily="Comic Sans MS" anchorOffsetY="0" height="122.21"/>
 	<e:Button id="nextButton" label="Next" x="1475.94" y="871.64" anchorOffsetX="0" width="246.06" anchorOffsetY="0" height="112.36" visible="false"/>
 	<e:Image source="MaxPen_png" x="302" y="314"/>
 </e:Skin>

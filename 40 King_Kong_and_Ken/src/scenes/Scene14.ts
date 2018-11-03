@@ -16,7 +16,7 @@ class Scene14 extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		Base.onPlayBlackgroundMusic('35_mp3');
 		this.BackButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onBack,this);
-		Base.onClickVoice(this.kiteImage,'40_mp3');
+		Base.onClickVoice(this.kiteImage,'31_mp3');
 	}
 
 	private onBack():void {

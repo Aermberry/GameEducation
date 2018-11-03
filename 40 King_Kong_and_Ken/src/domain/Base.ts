@@ -43,14 +43,12 @@ class Base {
         let y0=element0.y+2*height;
         let x1=x0+width
         console.log("x0:"+x0);
-        console.log("y0:"+y0)
+        console.log("y0:"+y0);
         console.log("瞄點x:"+element0.$anchorOffsetX)
         console.log("瞄點y:"+element0.$anchorOffsetY)
         shp.graphics.moveTo(x0,y0);
         shp.graphics.endFill();
         Scene.addChild(shp);
-        var tw=egret.Tween.get(shp);
-        tw.to({function: shp.graphics.lineTo(x1,y0)},5000,egret.Ease.backInOut);
     }
 
 }
