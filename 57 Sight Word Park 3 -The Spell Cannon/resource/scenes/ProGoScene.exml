@@ -9,8 +9,8 @@
 <e:Label id="theSpellingCannon" text="The Spelling Cannon" fontFamily="Kristen_ITC" size="60" x="722" y="228" textColor="#000000"/>
 <e:Label id="firstPointText" text="1.Read the words" fontFamily="Kristen_ITC" size="44" x="1043" y="390" textColor="#000000"/>
 <e:Label id="secondPointText" text="   carefully." fontFamily="Kristen_ITC" size="44" x="1055" y="445" textColor="#000000"/>
-<e:Label id="thirdPointText" text="2. Choose the word which is" fontFamily="Kristen_ITC" size="44" x="1043" y="515" textColor="#000000"/>
-<e:Label id="forthPointText" text="   spelt correctly" fontFamily="Kristen_ITC" size="44" x="1043" y="575" textColor="#000000"/>	
-<e:Label id="fifthPointText" text="3. Click the green horn icon" fontFamily="Kristen_ITC" size="44" x="1043" y="650" textColor="#000000"/>	
-<e:Label id="sxithPointText" text="    to listen to the word." fontFamily="Kristen_ITC" size="44" x="1043" y="700" textColor="#000000"/>		
+<e:Label id="thirdPointText" text="2. Click the green horn icon" fontFamily="Kristen_ITC" size="44" x="1043" y="515" textColor="#000000"/>
+<e:Label id="forthPointText" text="    listen to the words. " fontFamily="Kristen_ITC" size="44" x="1043" y="575" textColor="#000000"/>	
+<e:Label id="fifthPointText" text="3. Choose the correct answers " fontFamily="Kristen_ITC" size="44" x="1043" y="650" textColor="#000000"/>	
+<e:Label id="sxithPointText" text="    to defeat the enemy. " fontFamily="Kristen_ITC" size="44" x="1043" y="700" textColor="#000000"/>		
 </e:Skin>
