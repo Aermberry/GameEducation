@@ -41,9 +41,7 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 		for (var i = 0; i < restOfName.length; i++) {
 			await lzlib.ThreadUtility.sleep(500);
 			restOfName[i].textColor = 0xd92e20;
-			restOfName[i].addEventListener(egret.TouchEvent.TOUCH_TAP,()=> this.clickVoice(this.voiceList[i]), this);
-			console.log(this.voiceList[i]);
-			await lzlib.ThreadUtility.sleep(500);
+			restOfName[i].addEventListener(egret.TouchEvent.TOUCH_TAP, this.clickVoice.bind(this, this.voiceList[i]), this);//
 			(this.redLineGroup.$children[i] as eui.Label).visible = true;
 		}
 
@@ -58,10 +56,9 @@ class Scene07 extends eui.Component implements eui.UIComponent {
 	}
 
 	private clickVoice(voice: string): void {
-		// lzlib.SoundUtility.playSound(voice);
-		console.log(voice);
-		let sound:egret.Sound=RES.getRes(voice);
-		sound.play(0,1);
+		let current = voice;
+		var sound: egret.Sound = RES.getRes(current);
+		sound.play(0, 1);
 	}
 
 }
