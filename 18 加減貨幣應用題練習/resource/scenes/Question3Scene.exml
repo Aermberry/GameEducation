@@ -71,10 +71,10 @@
 	                 skinName="NextQuestionSkin" />
 	<ns1:PreviousQuestion id="previousQuestionButton" x="6.48" y="957" anchorOffsetX="0" anchorOffsetY="0" />
 	<e:Image id="bestImage" source="best_png" x="375.67" y="726.81" visible="false"/>
-	<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220" visible="false">
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="194.54" y="26"/>
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="74" y="26"/>
-		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26"/>
+	<e:Group id="editableLabelGroup" y="788" x="1200" anchorOffsetX="0" width="220">
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="194.54" y="26" visible="false"/>
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="74" y="26" visible="false"/>
+		<ns1:EditableLabel width="62" height="85" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26" visible="false"/>
 
 
 	</e:Group>
