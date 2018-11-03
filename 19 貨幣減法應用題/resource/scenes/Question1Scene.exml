@@ -443,29 +443,29 @@
 			<e:Image y="315" source="jiao_coin_png"/>
 		</e:Group>
 		<e:Group width="478.79" height="272" x="1123" y="545" anchorOffsetX="0" anchorOffsetY="0" alpha="1">
-			<e:Image id="lineFormulaImage" x="16" y="136.6" source="line_formula_png" visible="false"/>
+			<e:Image id="lineFormulaImage" x="16" y="145.69" source="line_formula_png" visible="false"/>
 			<e:Group id="yuanAndJiao" width="475.76" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 			<e:Image x="230.61" y="12" source="yuan_unti_png"/>
 			<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
-			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-			<e:Label id="baiLeftLabel" text="5" x="137.22" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-			<e:Label id="shiLeftLabel" text="8" x="243.27" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-			<e:Label id="geLeftLabel" text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Rect id="shiUnderlineRect" width="6" height="50" x="261.27" y="7.91" strokeWeight="2" rotation="32.51" alpha="1" visible="false"/>
+			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0">
+			<e:Label id="baiLeftLabel" text="5" x="137.22" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
+			<e:Label id="shiLeftLabel" text="8" x="243.27" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
+			<e:Label id="geLeftLabel" text="5" x="446.3" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
+				<e:Rect id="shiUnderlineRect" width="6" height="50" x="267.33" y="7.91" strokeWeight="2" rotation="32.51" alpha="1" visible="false"/>
 				<e:Rect id="geUnderlineRect" width="6" height="50" x="470.36" y="7.91" strokeWeight="2" rotation="32.51"  alpha="1" visible="false"/>
-				<e:Label id="shiRestLabel" text="7" x="285.03" y="1.91" textColor="0xd58689" fontFamily="標楷體"  alpha="1" visible="false"/>
-				<e:Label id="geRestLabel" text="15" x="494.12" y="1.91" textColor="0xD58689" fontFamily="標楷體"  alpha="1" visible="false"/>
+				<e:Label id="shiRestLabel" text="7" x="285.03" y="1.91" fontFamily="標楷體"  alpha="1" textColor="0xff1924" size="40" visible="false"/>
+				<e:Label id="geRestLabel" text="15" x="494.12" y="1.91" fontFamily="標楷體"  alpha="1" textColor="0xff1924" size="40" visible="false"/>
 			</e:Group>
-			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-			<e:Label id="baiRightLabel" text="1" x="137" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-			<e:Label id="shiRightLabel" text="2" x="243" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-			<e:Label id="geRightLabel" text="9" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+			<e:Group id="priceRightGroup" y="116.54" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
+			<e:Label id="baiRightLabel" text="1" x="137" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
+			<e:Label id="shiRightLabel" text="2" x="243" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
+			<e:Label id="geRightLabel" text="9" x="446.3" y="11" textColor="0x000000" size="52" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-			<e:Label id="baiLabel" text="4" x="137" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
-			<e:Label id="shiLabel" text="5" x="243" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
-			<e:Label id="geLabel" text="6" x="446.3" y="11" textColor="0x000000" size="46" alpha="1" fontFamily="標楷體" visible="false"/>
+			<e:Label id="baiLabel" text="4" x="137" y="11" textColor="0x000000" size="52" alpha="1" fontFamily="標楷體" visible="false"/>
+			<e:Label id="shiLabel" text="5" x="243" y="11" textColor="0x000000" size="52" alpha="1" fontFamily="標楷體" visible="false"/>
+			<e:Label id="geLabel" text="6" x="446.3" y="11" textColor="0x000000" size="52" alpha="1" fontFamily="標楷體" visible="false"/>
 			</e:Group>
 		</e:Group>
 	</e:Group>

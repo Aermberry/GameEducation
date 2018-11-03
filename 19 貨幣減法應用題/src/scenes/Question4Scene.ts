@@ -45,7 +45,7 @@ class Question4Scene extends eui.Component implements  eui.UIComponent {
 	private async onCalcComponentTap(e: egret.TouchEvent): Promise<void>
 	{
 		this.calcComponent.visible = false;
-		lzlib.SoundUtility.playSound('streamsound4_2_mp3');
+		await lzlib.SoundUtility.playSound('streamsound4_2_mp3');
 		this.hideCoinAndBrother();
 		this.formulaComponent.showTitleImage();
 		this.formulaComponent.showLeftImage();
