@@ -48,11 +48,11 @@
 	</w:Declarations>
 	<w:Config id="1655b2a4d69"  x="-606" scaleX="1" scaleY="1"></w:Config>
 	<e:Group id="group00" left="0" right="0" touchThrough="true">
-	<e:Label text="'Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+	<e:Label text="&quot;Ping－" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 	<e:Label id="pongLabel" text="Pong," size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39" anchorOffsetX="0"/>
-		<e:Label text=" Ping-'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+		<e:Label text=" Ping－" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 		<e:Label id="pongLabel0" text="Pong" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
-		<e:Label text="!'" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
+		<e:Label text="!&quot;" size="82" textAlign="center" y="176.3" lineSpacing="80" textColor="0x5d20f5" x="509" fontFamily="Comic Sans MS" anchorOffsetY="0" height="121.39"/>
 		<e:layout>
 			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingTop="202"/>
 		</e:layout>
@@ -70,11 +70,11 @@
 		</e:Group>
 	
 	<e:Group id="group02" left="0" right="0" touchThrough="true">
-<e:Label text="Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label text="Ding－" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label id="DongLabel" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
-<e:Label text=" , Ding-" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label text=" , Ding－" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 <e:Label id="DongLabel0" text="Dong" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
-<e:Label text=".'" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
+<e:Label text=".&quot;" y="524.94" size="86" textAlign="center" x="517" fontFamily="Comic Sans MS" anchorOffsetY="0" height="137.52" textColor="0x5d20f5"/>
 		<e:layout>
 			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingTop="532"/>
 		</e:layout>
@@ -99,12 +99,12 @@
 
 
 	<e:Group id="redLineGroup" x="580" y="280" touchThrough="true">
-		<e:Rect width="188" height="8" fillColor="0xd92e20" y="0" x="155" ellipseHeight="50" ellipseWidth="50" visible="false"/>
-		<e:Rect width="180" height="8" fillColor="0xd92e20" y="2" x="601" ellipseHeight="50" ellipseWidth="50" visible="false"/>
-		<e:Rect width="197" height="8" fillColor="0xd92e20" y="166" x="181" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="188" height="8" fillColor="0xd92e20" y="0" x="167" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="180" height="8" fillColor="0xd92e20" y="2" x="641" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="197" height="8" fillColor="0xd92e20" y="170" x="185" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 		<e:Rect width="270" height="8" fillColor="0xd92e20" y="164" x="469" ellipseHeight="50" ellipseWidth="50" visible="false"/>
-		<e:Rect width="213" height="8" fillColor="0xd92e20" y="334" x="122" ellipseHeight="50" ellipseWidth="50" visible="false"/>
-		<e:Rect width="209" height="8" fillColor="0xd92e20" y="334" x="606" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="213" height="8" fillColor="0xd92e20" y="334" x="110" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="209" height="8" fillColor="0xd92e20" y="334" x="660" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 		<e:Rect width="201" height="8" fillColor="0xd92e20" y="502" x="0" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 		<e:Rect width="201" height="8" fillColor="0xD92E20" y="504" x="530" ellipseHeight="50" ellipseWidth="50" visible="false"/>
 	</e:Group>
