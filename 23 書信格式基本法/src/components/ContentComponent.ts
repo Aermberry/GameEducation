@@ -41,6 +41,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			'祝願語': {x:0,y:743},
 			'問候語': {x:0,y:920},
 		};
+		
 
 	public constructor() {
 		super();
