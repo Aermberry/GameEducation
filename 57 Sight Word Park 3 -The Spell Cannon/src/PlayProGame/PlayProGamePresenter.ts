@@ -1,11 +1,10 @@
 class PlayProGamePresenter {
 	private wordBiz = new WordBiz();
-    private letterBiz = new LetterBiz();
-    private correctWord = ''; //正确的单词，用户要选中正确的字母，才能发射炮弹
+	private letterBiz = new LetterBiz();
+	private correctWord = ''; //正确的单词，用户要选中正确的字母，才能发射炮弹
 	public view: IPlayProGameView;
 
-	public constructor() 
-	{
+	public constructor() {
 	}
 
 	/**
@@ -15,48 +14,51 @@ class PlayProGamePresenter {
 		4. 当用户从bomb list选出x，系统提示选择正确并发炮，城堡血量-1；；当用户从bomb list选择其他字母，系统提示选择错，不发炮，城堡血量不减，用户继续从bomb list选择字母。
 		5. 当城堡血量=0时，系统提示用户通关。
 	 */
-	public async playGame(): Promise<void>
-	{
+	public async playGame(): Promise<void> {
 		this.view.castleBlood = 20;
 		this.view.enableAllBombs();
 		this.initCastleWordAndBombs();
 	}
 
-	private initCastleWordAndBombs(): void
-	{
+	private initCastleWordAndBombs(): void {
 		this.correctWord = this.wordBiz.random();
 		let castleWords = [this.correctWord];
-		if (this.correctWord.length >= 5) {
-			castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
-			castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
-		} else if(this.correctWord.length>=3) {
-			castleWords.push(this.getInterpolatedWord(this.correctWord));
-			castleWords.push(this.getInterpolatedWord(this.correctWord));
+
+		if (this.correctWord.length > 2) {
+			if (this.correctWord.length >= 5) {
+				castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
+				console.log(">=5:" + castleWords)
+				castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
+			} else {
+				castleWords.push(this.getInterpolatedWord(this.correctWord));
+				castleWords.push(this.getInterpolatedWord(this.correctWord));
+				console.log("correctWord:" + this.correctWord)
+				console.log(">=3,<5:" + castleWords)
+			}
+			castleWords.shuffle();
+			this.view.castleWords = castleWords;
 		}
 		else{
-			return
+
+			this.initCastleWordAndBombs();
 		}
-		castleWords.shuffle();
-		this.view.castleWords = castleWords;
+
 	}
 
 	/** 输入一个单词，混洗后返回一个新单词 */
-	private shuffleString(str: string): string
-	{
+	private shuffleString(str: string): string {
 		let result = str.split('');
 		result.shuffle();
 		return result.join('');
 	}
 
-	private getInterpolatedWord(str: string): string
-	{
+	private getInterpolatedWord(str: string): string {
 		let char = this.letterBiz.randomLetter();
 		let insertIndex = Math.randomMinMax(0, str.length - 1);
 		return str.slice(0, insertIndex) + char + str.slice(insertIndex);
 	}
 
-	public async onBombSelected(selectedBomb: string, bombIndex: number): Promise<void>
-	{
+	public async onBombSelected(selectedBomb: string, bombIndex: number): Promise<void> {
 		this.view.disableAllBombs();
 		if (this.correctWord == selectedBomb) {
 			this.view.playCorrectAnimation();
@@ -74,8 +76,7 @@ class PlayProGamePresenter {
 		this.view.enableAllBombs();
 	}
 
-	public onSpeakerClick(): void
-	{
+	public onSpeakerClick(): void {
 		this.view.playCastleWord(this.correctWord);
 	}
 }
