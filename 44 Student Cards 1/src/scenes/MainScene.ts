@@ -65,6 +65,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private async onLabelDrop(e: lzlib.LzDragEvent): Promise<void> {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
+
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
 			e.preventDefault();
 			targetComponent.visible = true;

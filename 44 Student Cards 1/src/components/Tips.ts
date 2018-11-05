@@ -22,7 +22,6 @@ namespace Ui {
 		public set tipString(value: string) {
 			this._tipString = value;
 		 let a= (this.tipLabe && (this.tipLabe.text = this.tipString));
-			console.log(a)
 		}
 		public get tipString(): string {
 			return this._tipString;
