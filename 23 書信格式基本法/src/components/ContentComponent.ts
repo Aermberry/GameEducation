@@ -34,12 +34,12 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public game1Scene: Game1Scene;
 
 	private labelPoint ={
-			上款: {x:0,y:43},
-			下款: {x:0,y:230},
-			正文: {x:0,y:398},
-			日期: {x:0,y:570},
-			祝願語: {x:0,y:743},
-			問候語: {x:0,y:920},
+			'上款': {x:0,y:43},
+			'下款': {x:0,y:230},
+			'正文': {x:0,y:398},
+			'日期': {x:0,y:570},
+			'祝願語': {x:0,y:743},
+			'問候語': {x:0,y:920},
 		};
 
 	public constructor() {
