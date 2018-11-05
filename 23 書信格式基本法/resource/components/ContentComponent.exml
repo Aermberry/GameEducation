@@ -145,18 +145,18 @@
 		<ns1:LabelComponents id="greetLabelComponent" width="270" x="809" top="0" bottom="0"/>
 	</e:Group>
 	<!--<e:Group height="393" y="248" left="0" right="0">
-		<e:Label text="蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
+		<e:Label text="蜘道你茬遊詠比塞中得到第二名，我替你憾到高興。我蕒了一幅詠鏡送給你，希望你能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球一個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
 		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
 	</e:Group>-->
 	<e:Group y="213" left="0" right="0">
 		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
-		<e:Label id="textLabel" text="知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
+		<e:Label id="textLabel" text="       知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
 		<ns1:LabelComponents id="textLabelComponent" width="270" height="95" x="136" y="280"/>
 	</e:Group>
 	<e:Group id="group" y="597.7" left="0" right="0">
 		<e:Rect id="blessRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
-		<e:Label id="blessLabel" text="身體健康" x="52" y="100" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
-		<e:Label text="祝" x="165.27" y="8" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Label id="blessLabel" text="身體健康" x="14" y="100" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Label text="祝" x="127.27" y="8" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
 		<ns1:LabelComponents id="blessLabelComponent" width="270" height="95" x="312" y="76"/>
 	</e:Group>
 	<e:Group id="group0" y="815" anchorOffsetX="0" right="287" width="497.3">

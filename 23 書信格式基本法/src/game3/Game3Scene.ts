@@ -3,14 +3,27 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	private correctNameGroup: eui.Group;
 	private lackNameGroup: eui.Group;
 	private alertGame2Component: AlertElderComponent;
-	private nextQuestionAnimation: egret.tween.TweenGroup;
-	private nextLevelAnimation: egret.tween.TweenGroup;
 	private correctGroup: eui.Group;
 	private nextLevelComponent: NextLevelComponent;
 	private alertGroup: eui.Group;
 	private alertInfoLabel: eui.Label;
 	private hideAlertGroup: eui.Group;
-	private contentComponent:ContentComponent;
+	private blessGroup: eui.Group;
+	// private contentComponent:ContentComponent;
+
+	private shangKuanRect: eui.Rect;
+	private greetRect: eui.Rect;
+	private textRect: eui.Rect;
+	private blessRect: eui.Rect;
+	private xiaKuanRect: eui.Rect;
+	private dateRect: eui.Rect;
+
+	private nextQuestionAnimation: egret.tween.TweenGroup;
+	private nextLevelAnimation: egret.tween.TweenGroup;
+	private contentDownAnimation: egret.tween.TweenGroup;
+
+	private borderRects: any;
+	private currentBorderRect: eui.Rect;
 
 	private presenter:Game3Presenter;
 
@@ -31,7 +44,10 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	{
 		super.childrenCreated();
 		this.initTap();
-		this.contentComponent.playGame3Start();
+		// this.contentComponent.playGame3Start();
+		this.borderRects = {
+			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝願語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
+		};
 		this.hideAlertGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHideAlertGroupTap, this);
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextLevelComponentTap, this);
 		this.presenter.loadView(this);
@@ -97,6 +113,11 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	{
 		this.nextLevelAnimation.play(0);
 	}
+
+	public showContentDownAnimation(): void
+	{
+		this.contentDownAnimation.play(0);
+	}
 	
 	public hideCorrectGroup(): void
 	{
@@ -114,10 +135,48 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 		this.alertInfoLabel.text = this.game3Repository.alertInfo[info];
 	}
 
+	// public showCorrectOfPart(): void
+	// {
+	// 	this.contentComponent.bless = this.game3Repository.correctOfPart;
+	// 	this.contentComponent.$children[this.game3Repository.index].visible = true;
+	// }
+
+	// public playGame3CorrectAnimation(): void
+	// {
+	// 	this.contentComponent.playGame3End();
+	// }
+
+	// public hideRect(): void
+	// {
+	// 	this.contentComponent.hideRect();
+	// }
+
+	// public showPartBorder(string: string): void
+	// {
+	// 	this.contentComponent.RectHandle(string);
+		
+	// }
+
 	public showCorrectOfPart(): void
 	{
-		this.contentComponent.bless = this.game3Repository.correctOfPart;
-		this.contentComponent.$children[this.game3Repository.index].visible = true;
+		this.blessGroup.visible = true;
+	}
+
+	public playGame3CorrectAnimation(): void
+	{
+		// this.contentComponent.playGame3End();
+	}
+
+	public hideRect(): void
+	{
+		this.currentBorderRect && (this.currentBorderRect.visible = false);
+	}
+
+	public showPartBorder(string: string): void
+	{
+		this.currentBorderRect = (this.borderRects[string] as eui.Rect);
+		this.currentBorderRect.visible = true;
+		
 	}
 
 	public showWrongInfo(string: string): void
@@ -126,19 +185,5 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 		this.alertGame2Component.visible = true;
 	}
 
-	public playGame3CorrectAnimation(): void
-	{
-		this.contentComponent.playGame3End();
-	}
 
-	public hideRect(): void
-	{
-		this.contentComponent.hideRect();
-	}
-
-	public showPartBorder(string: string): void
-	{
-		this.contentComponent.RectHandle(string);
-		
-	}
 }

@@ -59,34 +59,78 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="shangKuanAnimationce">
+			<tween:TweenItem target="{shangKuanGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1657a5554c2" ></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 	<e:Label id="lackLabel" text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80" fontFamily="華康楷書體"/>
 	<e:Label id="correctLabel" text="請選出正確的上款：" x="184" y="45" textColor="0xF40000" size="80" fontFamily="華康楷書體" alpha="0"/>
-	<e:Group width="1570" height="1306" x="26" y="125">
+	<e:Group width="1570" height="1306" x="46" y="125">
 		<e:Image left="0" right="0" top="0" bottom="0" source="background_clock_png"/>
-		<!--<ns1:ContentComponent width="1008" height="1068" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到妳的來信，十分掛念，妳的身體好嗎？" text="妳到日本工作已有三個多月，我和妹妹都十分掛念妳。妹妹會在壹月十日舉行的學校開放日中表演，她希望妳能回來欣賞，妳可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用妳和媽媽擔心。當妳回來時，我們壹定給妳壹張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>-->
-		<ns1:ContentComponent id="contentComponent" width="940" height="1088" x="74" y="59" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan=" " text="你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心，當你回來時，我們一定給你一張滿意的成績表。" greet="很久没有收到你的來信，十分掛念，你的身體好嗎？" xiakuan="兒健" date="十一月二十日"/>
-		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="234" y="785.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<!--<ns1:ContentComponent width="1008" height="1068" x="46" y="51" anchorOffsetX="0" anchorOffsetY="0" shangkuan=" " greet="很久沒有收到你的來信，十分掛念，你的身體好嗎？" text="你到日本工作已有三個多月，我和妹妹都十分掛念你。妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力溫習，不用你和媽媽擔心。當你回來時，我們一定給你一張滿意的成績表。" date="十一月二十日" xiakuan="兒健" isDisplayLabel="false"/>-->
+		<ns1:ContentComponent id="contentComponent" width="940" height="1088" x="74" y="59" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan=" " text="你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心，當你回來時，我們一定給你一張滿意的成績表。" greet="很久没有收到你的來信，十分掛念，你的身體好嗎？" xiakuan="兒健" date="十一月二十日" visible="false"/>
+			<e:Group id="shangKuanGroup" width="170" x="28" y="32" anchorOffsetX="0" anchorOffsetY="0" height="60" visible="false">
+		<e:Rect id="shangKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="shangKuanLabel" text="爸爸：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="華康楷書體" left="14"/>
+	</e:Group>
+	<e:Group width="1300" x="112" y="116" anchorOffsetY="0" height="78">
+		<e:Rect id="greetRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeWeight="4" strokeColor="0xfc0000" visible="false"/>
+		<e:Label id="greetLabel" text="很久没有收到你的來信，十分掛念，你的身體好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="華康楷書體" top="14" left="14"/>
+	</e:Group>
+	<!--<e:Group height="393" y="248" left="0" right="0">
+		<e:Label text="蜘道你茬遊詠比塞中得到第二名，我替你憾到高興。我蕒了一幅詠鏡送給你，希望你能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球一個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
+		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
+	</e:Group>-->
+	<e:Group y="229" anchorOffsetX="0" x="28">
+		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="textLabel" text="      你到日本工作已有三個多月，我和妹妹都十分掛念你，妹妹會在一月十日舉行的學校開放日中表演，她希望你能回來欣賞，你可以安排嗎？我和妹妹下星期便要考試了。我們會努力温習，不用你和媽媽擔心。當你回來時，我們一定給你一張滿意的成績表。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" fontFamily="華康楷書體" textAlign="left" width="1000" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="group" y="873.7" x="28" anchorOffsetY="0" height="172" anchorOffsetX="0" width="258">
+		<e:Rect id="blessRect" left="0" right="-8" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" anchorOffsetX="0" visible="false"/>
+		<e:Label id="blessLabel" text="身體健康" x="14" y="100" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+		<e:Label text="祝" x="127.27" y="12" size="56" textColor="0x000000" fontFamily="華康楷書體"/>
+	</e:Group>
+	<e:Group id="group0" y="995" anchorOffsetX="0" right="831" width="200" anchorOffsetY="0" height="112">
+		<e:Rect id="xiaKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="xiaKuanLabel1" text="兒" top="4" bottom="52" verticalAlign="middle" size="44" textColor="0x000000" fontFamily="華康楷書體" x="8"/>
+		<e:Label id="xiaKuanLabel2" text="健" x="60" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="華康楷書體" y="48"/>
+	</e:Group>
+	<e:Group id="group1" y="1140" anchorOffsetX="0" right="558" width="350">
+		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="dateLabel" text="十一月二十日" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="華康楷書體"/>
+	</e:Group>
+		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="250" y="873.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<ns1:AlertElderComponent id="alertElderComponent" width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-			<e:Label text="妳 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>
+		<e:Group id="correctGroup" width="589" height="367" x="150" y="938" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:Label text="你 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>
 			<e:Image width="480" height="290" x="16" y="76" source="box_and_paper_png"/>
 		</e:Group>
 		
 	</e:Group>
-	<e:Group id="correctNameGroup" width="270" height="1306" x="1625" y="125" alpha="0">
-		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="媽 媽" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="陳 老 師" fillColor="0x999999"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="爸 爸" fillColor="0x999999"/>
+	<e:Group id="correctNameGroup" width="270" height="1306" x="1641" y="125" alpha="0">
+		<ns1:LabelComponents width="302" height="95" x="-16" y="72" text="媽 媽" fillColor="0x999999"/>
+		<ns1:LabelComponents width="302" height="95" x="-16" y="260" text="陳 老 師" fillColor="0x999999" anchorOffsetX="0"/>
+		<ns1:LabelComponents width="302" height="95" x="-16" y="428" text="爸 爸" fillColor="0x999999"/>
 	</e:Group>
-	<e:Group id="lackNameGroup" width="270" height="1306" x="1625" y="125">
+	<e:Group id="lackNameGroup" width="270" height="1306" x="1641" y="125">
 		<ns1:LabelComponents width="270" height="95" x="0" y="72" text="上款" fillColor="0x6efd31"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="260" text="下款" fillColor="0xfb0d1c"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="428" text="正文" fillColor="0xfc9725"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="600" text="日期" fillColor="0xcb6cfa"/>
-		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝頌語" fillColor="0x376bfc"/>
+		<ns1:LabelComponents width="270" height="95" x="0" y="773" text="祝願語" fillColor="0x376bfc"/>
 		<ns1:LabelComponents width="270" height="95" x="0" y="950" text="問候語" fillColor="0xfd9b9c"/>
 	</e:Group>
 	<ns1:NextLevelComponent id="nextLevelComponent" width="266" height="89" x="1628" y="1300" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>

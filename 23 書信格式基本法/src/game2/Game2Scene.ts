@@ -3,12 +3,25 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 	private lackNameGroup: eui.Group;
 	private correctNameGroup: eui.Group;
 	private correctGroup: eui.Group;
+	private shangKuanGroup: eui.Group;
 	private alertGame2Component: AlertGame2Component;
 	private alertElderComponent: AlertElderComponent;
 	private nextQuestionAnimation: egret.tween.TweenGroup;
 	private nextLevelAnimation: egret.tween.TweenGroup;
-	private contentComponent: ContentComponent;
+	private shangKuanAnimationce: egret.tween.TweenGroup;
+	// private contentComponent: ContentComponent;
 	private nextLevelComponent: NextLevelComponent;
+
+	private shangKuanRect: eui.Rect;
+	private greetRect: eui.Rect;
+	private textRect: eui.Rect;
+	private blessRect: eui.Rect;
+	private xiaKuanRect: eui.Rect;
+	private dateRect: eui.Rect;
+
+	private borderRects: any;
+
+	private currentBorderRect: eui.Rect;
 
 	private presenter = new Game2Presenter();
 
@@ -27,8 +40,11 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 	{
 		super.childrenCreated();
 		this.initTap();
+		this.borderRects = {
+			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝願語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
+		};
 		this.alertElderComponent.game2Scene = this;
-		this.contentComponent.playGame2Start();
+		// this.contentComponent.playGame2Start();
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onNextQuestionTap,this);
 		this.presenter.loadView(this);
 	}
@@ -122,22 +138,39 @@ class Game2Scene extends eui.Component implements  eui.UIComponent,Game2View{
 		this.nextLevelComponent.visible = true;
 	}
 
+	// public showCorrectOfPart(): void
+	// {
+	// 	this.contentComponent.shangkuan = this.game2Repository.correctOfPart + ' :';
+	// 	this.contentComponent.$children[this.game2Repository.index].visible = true;
+	
+	// }
+
+	// public hideRect(): void
+	// {
+	// 	this.contentComponent.hideRect();
+	// }
+
+	// public showPartBorder(string: string): void
+	// {
+	// 	this.contentComponent.RectHandle(string);
+		
+	// }
+
 	public showCorrectOfPart(): void
 	{
-		this.contentComponent.shangkuan = this.game2Repository.correctOfPart + ' :';
-		this.contentComponent.$children[this.game2Repository.index].visible = true;
-	
+		this.shangKuanGroup.visible = true;
+		this.shangKuanAnimationce.play();
 	}
 
 	public hideRect(): void
 	{
-		this.contentComponent.hideRect();
+		this.currentBorderRect && (this.currentBorderRect.visible = false);
 	}
 
 	public showPartBorder(string: string): void
 	{
-		this.contentComponent.RectHandle(string);
-		
+		this.currentBorderRect = (this.borderRects[string] as eui.Rect);
+		this.currentBorderRect.visible = true;
 	}
 
 }
