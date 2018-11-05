@@ -27,19 +27,15 @@ class PlayProGamePresenter {
 		if (this.correctWord.length > 2) {
 			if (this.correctWord.length >= 5) {
 				castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
-				console.log(">=5:" + castleWords)
 				castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
 			} else {
 				castleWords.push(this.getInterpolatedWord(this.correctWord));
 				castleWords.push(this.getInterpolatedWord(this.correctWord));
-				console.log("correctWord:" + this.correctWord)
-				console.log(">=3,<5:" + castleWords)
 			}
 			castleWords.shuffle();
 			this.view.castleWords = castleWords;
 		}
 		else{
-
 			this.initCastleWordAndBombs();
 		}
 
