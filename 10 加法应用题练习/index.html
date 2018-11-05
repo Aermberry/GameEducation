@@ -30,6 +30,13 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+        #none{
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+
+        }
         @font-face {
             font-family:"華康楷書體";
             src: url("resource/fonts/華康楷書體.woff2") format('woff2'),
@@ -67,24 +74,16 @@
 
 <body>
     <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
-    <div id="egret-player" 
-        class="egret-player" 
-        data-entry-class="Main" 
-        data-orientation="auto" 
-        data-scale-mode="showAll" 
-        data-frame-rate="30"
-        data-content-width="1920" 
-        data-content-height="1280" 
-        data-multi-fingered="2" 
-        data-show-fps="false" 
-        data-show-log="false"
-        data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
-    </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
-        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
-        style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
-    </div>
+<div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
+    data-content-width="1920" data-content-height="1280" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
+    data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+<div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
+</div>
+<div id="none">
     <label style="font-family: 華康楷書體; color: transparent;">陳先生跑了214米，李先生跑了123米。兩人共跑了多少米？214+123兩人共跑了：麵包店內有漢堡包140隻，香腸包130隻。兩種麵包共有多少隻？兩種麵包共有：270(隻）小强有208元，小達有124元。兩人共有多少元？兩人共有：332(元）海浪公園裏有遊人256人，後來在有遊人127人。公園裏現有多少人？公園裏現有：383(人）店內原有雞蛋548只，今天再買入352只。店內現有雞蛋多少隻？店內現有雞蛋：900(隻）弟弟原有閃卡463張，哥哥在給他218張。弟弟現在有閃卡多少張？弟弟現有閃卡：681(張）</label>
+</div>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -154,7 +153,7 @@
             document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
+    window.addEventListener("resize", function () { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
