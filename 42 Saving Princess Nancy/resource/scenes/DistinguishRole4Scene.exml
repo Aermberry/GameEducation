@@ -226,6 +226,12 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{electricBackground2Image}">
 				<tween:Wait duration="50"/>
@@ -234,12 +240,24 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{electricBackground3Image}">
 				<tween:Wait duration="100"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -251,6 +269,12 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{electricBackground5Image}">
 				<tween:Wait duration="50"/>
@@ -259,12 +283,24 @@
 						<e:Object alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
 			</tween:TweenItem>
 			<tween:TweenItem target="{electricBackground6Image}">
 				<tween:Wait duration="100"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
@@ -287,20 +323,51 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="stick1DownAnimation">
+			<tween:TweenItem target="{stickImage}">
+				<tween:To duration="1750">
+					<tween:props>
+						<e:Object y="{1817}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="stick2DownAnimation">
+			<tween:TweenItem target="{stick2Image}">
+				<tween:To duration="1750">
+					<tween:props>
+						<e:Object y="{1855}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="finishAnimation">
+			<tween:TweenItem target="{maskRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object alpha="{0.9}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1662311577f" ></w:Config>
 	<e:Image left="-69" right="-97" top="-12" bottom="-21" source="birdge_png" anchorOffsetY="0" anchorOffsetX="0"/>
 	<e:Image id="person3Image" name="person3" x="685.03" y="79.06" source="listen4_person3_png" anchorOffsetX="0" width="198.73" anchorOffsetY="0" height="463.9"/>
+	<e:Image id="birdImage" x="956" y="164" source="bird_png" anchorOffsetX="0" width="180.9" anchorOffsetY="0" height="321.1" alpha="1" visible="false"/>
 	<e:Image id="person4Image" name="person4" x="959.53" y="39.08" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person4_png" width="170.06" height="474.17"/>
-	<e:Image id="birdImage" x="956" y="164" source="bird_png" anchorOffsetX="0" width="180.9" anchorOffsetY="0" height="321.1" alpha="0"/>
 	<e:Image id="person5Image" name="person5" x="1190.2" y="99.69" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person5_png" width="229.99" height="381.89"/>
 	<e:Image id="wolfNormal1Image" x="1180" y="108" source="wolf_normal_png" anchorOffsetX="0" width="223.65" anchorOffsetY="0" height="367.49" alpha="1" visible="false"/>
-	<e:Group visible="false">
+	<e:Group id="wolf2Group" visible="false">
 		<e:Image id="electricBackground4Image" x="1144" y="100" source="electric_background1_png" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94"/>
 		<e:Image id="electricBackground5Image" x="1144" y="100" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background2_png" alpha="0"/>
 		<e:Image id="electricBackground6Image" x="1144" y="100" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background3_png" alpha="0"/>
 		<e:Image id="wolfElectric1Image" x="1144" y="124" anchorOffsetX="0" anchorOffsetY="0" source="wolf_electric_png" width="300.29" height="342" alpha="1"/>
-		<ns1:MovieClipPlayer x="1240" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="410.65" rotation="336.35" anchorOffsetY="0"/>
 			<e:Image id="stickElectricBackground4Image" x="1188" y="407.37" source="stick_electric_background1_png" rotation="336.11" anchorOffsetY="0" height="481.94" visible="false"/>
 		<e:Image id="stickElectricBackground5Image" x="744" y="499.37" rotation="336.11" source="stick_electric_background2_png" alpha="0" visible="false"/>
 		<e:Image id="stickElectricBackground6Image" x="744" y="499.37" rotation="336.11" source="stick_electric_background3_png" alpha="0" visible="false"/>
@@ -308,7 +375,7 @@
 	</e:Group>
 	<e:Image id="wolfNormal2Image" x="670" y="118" source="wolf_normal_png" anchorOffsetX="0" width="223.65" anchorOffsetY="0" height="367.49" alpha="1" visible="false"/>
 
-	<e:Group visible="false">
+	<e:Group id="wolf1Group" visible="false">
 		<e:Image id="electricBackground1Image" x="636" y="112" source="electric_background1_png" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94"/>
 		<e:Image id="electricBackground2Image" x="636" y="112" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background2_png" alpha="0"/>
 		<e:Image id="electricBackground3Image" x="636" y="112" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background3_png" alpha="0"/>
@@ -316,7 +383,6 @@
 			<!--<e:Image id="stickElectricBackground1Image" x="744" y="499.37" source="stick_electric_background1_png" rotation="336.11"/>
 		<e:Image id="stickElectricBackground2Image" x="744" y="499.37" rotation="336.11" source="stick_electric_background2_png" alpha="0" visible="false"/>
 		<e:Image id="stickElectricBackground3Image" x="744" y="499.37" rotation="336.11" source="stick_electric_background3_png" alpha="0" visible="false"/>-->
-		<ns1:MovieClipPlayer x="728" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="508" rotation="336.35"/>
 	</e:Group>
 
 	<e:Image id="person6Image" name="person6" x="295.94" y="769.5" anchorOffsetX="0" anchorOffsetY="0" source="listen4_person6_png" width="523.74" height="667.82"/>
@@ -324,6 +390,8 @@
 	<e:Image id="person1Image" name="person1" x="33.55" y="185.27" source="listen4_person1_png" anchorOffsetX="0" width="193.12" anchorOffsetY="0" height="553.93"/>
 	<e:Image id="person2Image" name="person2" x="333.22" y="245.88" source="listen4_person2_png" anchorOffsetX="0" width="219.77" anchorOffsetY="0" height="501.58"/>
 	<ns1:ListenComponent width="332" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="3"/>
+	<ns1:MovieClipPlayer id="stickElectric1Movie" x="728" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="508" rotation="336.35" visible="false"/>
+	<ns1:MovieClipPlayer id="stickElectric2Movie" x="1240" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="410.65" rotation="336.35" anchorOffsetY="0" visible="false"/>
 	<e:Image id="stickImage" x="621" y="1817" source="stick_png" anchorOffsetX="0" width="482.37" anchorOffsetY="0" height="818.04" rotation="315"/>
 	<!--<e:Group id="person3Group" x="737.22" y="-51.42">
 		<e:Image id="image" x="-32" y="275.5" source="cloud2_png" anchorOffsetX="0" width="106.78" anchorOffsetY="0" height="101.02" alpha="0"/>
@@ -346,8 +414,9 @@
 	<ns1:MovieClipPlayer id="person5MovieClipPlayer" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" x="771.36" y="-105.65" visible="false"/>
 	<ns1:AlertComponent id="person6AlertComponent" width="664" height="304" x="848" y="768" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the birdge." visible="false"/>
 	<ns1:AlertComponent id="person1AlertComponent" width="664" height="304" x="250" y="262" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the birdge." visible="false"/>
-	<ns1:AlertComponent id="person2AlertComponent" width="664" height="304" x="556" y="284" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the birdge." visible="false"/>
+	<ns1:AlertComponent id="person2AlertComponent" width="664" height="304" x="284" y="96" anchorOffsetX="0" anchorOffsetY="0" text="Well done! I will change into a bird and take you to the castle." visible="false"/>
 	<ns1:AlertComponent id="person4AlertComponent" width="733.89" height="360" x="194" y="82" anchorOffsetX="0" anchorOffsetY="0" text="Well done! I will change into a bird and take you to the castle." visible="false"/>
 	<ns1:AlertComponent id="person5AlertComponent" width="404" height="184.96" x="1402" y="170" anchorOffsetX="0" anchorOffsetY="0" text="i'm not bald." visible="false"/>
 	<ns1:AlertComponent id="person3AlertComponent" width="404" height="184.96" x="262" y="170" anchorOffsetX="0" anchorOffsetY="0" text="i'm not bald." visible="false"/>
+	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" visible="false"/>
 </e:Skin>

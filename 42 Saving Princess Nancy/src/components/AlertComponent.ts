@@ -26,6 +26,7 @@ class AlertComponent extends eui.Component implements  eui.UIComponent {
 	private onCloseClick(e: egret.TouchEvent): void
 	{
 		this.visible = false;
+		this.dispatchEvent(new AlertEvent());
 	}
 
 	public showAlert(): void
@@ -60,4 +61,12 @@ class AlertComponent extends eui.Component implements  eui.UIComponent {
 		
 	// }
 	
+}
+
+class AlertEvent extends egret.TouchEvent{
+	public static readonly ALERT_CLOSR = 'alert_close';
+	public constructor() 
+	{
+		super(AlertEvent.ALERT_CLOSR);
+	}
 }

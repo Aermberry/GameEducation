@@ -7,5 +7,5 @@
 	<e:Image x="866.57" y="101.87" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
 	<e:Image x="1539.1" y="204.63" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
 	<e:Image x="1715.77" y="463.56" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
-	<e:Image x="866.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="284.01" anchorOffsetY="0" height="904.06"/>
+	<e:Image x="874.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="247.57" anchorOffsetY="0" height="788.06"/>
 </e:Skin>

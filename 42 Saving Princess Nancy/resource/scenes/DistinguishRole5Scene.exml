@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="DistinguishRole5SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="DistinguishRole5SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="finishAnimation">
+			<tween:TweenItem target="{image}">
+				<tween:To duration="1500">
+					<tween:props>
+						<e:Object x="{-156.25}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="166234e9d23" ></w:Config>
 	<e:Image source="listen5_background2_png" anchorOffsetX="0" width="2269.21"/>
 	<e:Image x="212.39" y="51.88" source="listen5_sunlight_png"/>
@@ -9,8 +20,13 @@
 	<e:Image x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
 	<e:Image x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
 	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
-	<e:Image width="20" height="20" x="1156" y="1080"/>
-	<ns1:MovieClipPlayer x="1284" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
-	<ns1:MovieClipPlayer x="980" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
-	<ns1:MovieClipPlayer x="510" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5"/>
+	<ns1:MovieClipPlayer x="1284" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:MovieClipPlayer x="980" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:MovieClipPlayer x="510" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:AlertComponent id="person4AlertComponent" width="636" height="292" x="1048" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have large eyes." visible="false"/>
+	<ns1:AlertComponent id="person3AlertComponent" width="636" height="292" x="856" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I will help you to save Princess Nancy." visible="false"/>
+	<ns1:AlertComponent id="person2AlertComponent" width="636" height="292" x="336" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have freckles." visible="false"/>
+	<ns1:AlertComponent id="person1AlertComponent" width="636" height="292" x="36" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have small mouth." visible="false"/>
+	<e:Image id="image" x="-956.25" y="817.57" source="princess_and_horse_png" anchorOffsetX="0" width="932.07" anchorOffsetY="0" height="803"/>
+	<ns1:BootsComponent width="171" height="213" x="1576" y="1196"/>
 </e:Skin>
