@@ -29,9 +29,12 @@ class PlayProGamePresenter {
 		if (this.correctWord.length >= 5) {
 			castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
 			castleWords.push(this.shuffleString(this.shuffleString(this.correctWord)));
-		} else {
+		} else if(this.correctWord.length>=3) {
 			castleWords.push(this.getInterpolatedWord(this.correctWord));
 			castleWords.push(this.getInterpolatedWord(this.correctWord));
+		}
+		else{
+			return
 		}
 		castleWords.shuffle();
 		this.view.castleWords = castleWords;
@@ -47,8 +50,10 @@ class PlayProGamePresenter {
 
 	private getInterpolatedWord(str: string): string
 	{
-		let char = this.letterBiz.randomLetter();
-		let insertIndex = Math.randomMinMax(0, str.length - 1);
+		let char = this.letterBiz.randomLetter();//從字母表中隨機產生一個字符
+		let insertIndex = Math.randomMinMax(0, str.length - 1);//從最大值到最小值的範圍裏產生一個隨機數
+
+		// 從零開始截取到隨機數部分，拼接字符隨機字符char+以index為起點截取剩餘的部分
 		return str.slice(0, insertIndex) + char + str.slice(insertIndex);
 	}
 
