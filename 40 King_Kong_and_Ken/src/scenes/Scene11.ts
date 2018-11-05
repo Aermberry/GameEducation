@@ -10,7 +10,7 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 	private arry: eui.Label[];
 	private headerLabel:eui.Label;
 	private redLineGroup:eui.Group;
-	private voiceList:string[]=["","33_mp3","","33_mp3","",""]
+	private voiceList:string[]=["ken_mp3","king_mp3","kong_mp3","king_mp3","kong_mp3","ken_mp3"]
 
 	public constructor() {
 		super();
