@@ -1,6 +1,7 @@
 class BootsComponent extends eui.Component implements  eui.UIComponent {
 	
 	private textLabel: eui.Label;
+	private boots: MovieClipPlayer;
 	
 	public constructor() {
 		super();
@@ -16,6 +17,7 @@ class BootsComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.textLabel.text = this._text;
+		this.boots.playLoop();
 
 	}
 

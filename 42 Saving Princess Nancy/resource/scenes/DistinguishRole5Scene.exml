@@ -10,23 +10,86 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="dragonElectricAnimation">
+			<tween:TweenItem target="{dragonBackground1Image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{dragonBackground2Image}">
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{dragonBackground3Image}">
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="166234e9d23" ></w:Config>
 	<e:Image source="listen5_background2_png" anchorOffsetX="0" width="2269.21"/>
 	<e:Image x="212.39" y="51.88" source="listen5_sunlight_png"/>
 	<e:Image left="-447" right="-309" top="-216" bottom="-538" source="listen5_background_png" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Image x="456.14" y="897.14" source="listen_person1_png" anchorOffsetX="0" width="471.22" anchorOffsetY="0" height="620.12"/>
-	<e:Image x="814.61" y="887.75" anchorOffsetX="0" anchorOffsetY="0" source="listen_person2_png" width="388.91" height="666.63"/>
-	<e:Image x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
-	<e:Image x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
+	<e:Image id="person1Image" name="person1" x="456.14" y="897.14" source="listen_person1_png" anchorOffsetX="0" width="471.22" anchorOffsetY="0" height="620.12"/>
+	<e:Image id="person2Image" name="person2" x="814.61" y="887.75" anchorOffsetX="0" anchorOffsetY="0" source="listen_person2_png" width="388.91" height="666.63"/>
+	<e:Image id="person3Image" name="person3" x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
+	<e:Image id="person4Image" name="person4" x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
 	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
-	<ns1:MovieClipPlayer x="1284" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
-	<ns1:MovieClipPlayer x="980" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
-	<ns1:MovieClipPlayer x="510" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:MovieClipPlayer id="person4Movie" x="1200" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:MovieClipPlayer id="person2Movie" x="456" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
+	<ns1:MovieClipPlayer id="person1Movie" x="34" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
 	<ns1:AlertComponent id="person4AlertComponent" width="636" height="292" x="1048" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have large eyes." visible="false"/>
 	<ns1:AlertComponent id="person3AlertComponent" width="636" height="292" x="856" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I will help you to save Princess Nancy." visible="false"/>
 	<ns1:AlertComponent id="person2AlertComponent" width="636" height="292" x="336" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have freckles." visible="false"/>
 	<ns1:AlertComponent id="person1AlertComponent" width="636" height="292" x="36" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have small mouth." visible="false"/>
 	<e:Image id="image" x="-956.25" y="817.57" source="princess_and_horse_png" anchorOffsetX="0" width="932.07" anchorOffsetY="0" height="803"/>
-	<ns1:BootsComponent width="171" height="213" x="1576" y="1196"/>
+	<ns1:BootsComponent width="171" height="213" x="1576" y="1196" visible="false"/>
+	<e:Group id="dragonGroup" x="1487.02" y="916" anchorOffsetX="0" width="523.9" anchorOffsetY="0" height="597" visible="false">
+		<ns1:MovieClipPlayer id="dragonMovie" dataSet="dragon_json" texture="dragon_png" movieClipName="dragon" width="331.27" height="334.4" rotation="0" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Image id="dragonBackground1Image" x="4" y="-26.72" source="dragon_background1_png" anchorOffsetX="0" width="566.33" anchorOffsetY="0" height="698.85" visible="false"/>
+		<e:Image id="dragonBackground2Image" x="4" y="-26.72" anchorOffsetX="0" width="565.33" anchorOffsetY="0" height="698.85" source="dragon_background2_png" visible="false"/>
+		<e:Image id="dragonBackground3Image" x="4" y="-26.72" anchorOffsetX="0" width="565.33" anchorOffsetY="0" height="698.85" source="dragon_background3_png" visible="false"/>
+		<e:Image id="dragonElectricImage" x="30" y="19.28" anchorOffsetX="0" anchorOffsetY="0" source="dragon_electric_png" width="517.82" height="485.67" visible="false"/>
+	</e:Group>
+	<e:Group visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="800.33" y="873.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
+	<e:Group x="-776" visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie0" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="800.33" y="873.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
+	<e:Group x="-1144" visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie1" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="800.33" y="873.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
+
 </e:Skin>
