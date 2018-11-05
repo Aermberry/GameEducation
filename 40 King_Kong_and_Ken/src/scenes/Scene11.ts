@@ -9,6 +9,8 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 	private kenLabel0: eui.Label;
 	private arry: eui.Label[];
 	private headerLabel:eui.Label;
+	private redLineGroup:eui.Group;
+	private voiceList:string[]=["","33_mp3","","33_mp3","",""]
 
 	public constructor() {
 		super();
@@ -21,29 +23,35 @@ class Scene11 extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		// this.onPlayBlackgroundMusic();
-		// this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextScene, this);
-		Base.onAsyncPlayBlackgroundMusic('27a_mp3');
+
+		Base.onAsyncPlayBlackgroundMusic('27a_mp3').then(() => {
+			this.changRedColor(this.kenLabel, this.KingLabel, this.KongLabel, this.KingLabel0, this.konglabel0, this.kenLabel0)
+		});
 		this.display.play(0);
-		this.arry = [this.kenLabel, this.KingLabel, this.KongLabel, this.KingLabel0, this.konglabel0, this.kenLabel0];
-		this.changColor(this.arry);
 		Base.onClickNextScene(this.nextButton, new Scene12())
-		// this.nextButton.visible=true;
 	}
 
-	private async changColor(arry: eui.Label[]): Promise<void> {
-		await lzlib.ThreadUtility.sleep(20000);
-		for (let i = 0; i < arry.length; i++) {
-			await lzlib.ThreadUtility.sleep(2000);
-			console.log(arry[i]);
-			Base.changColor(arry[i]);
-			await lzlib.ThreadUtility.sleep(2000);
-			await Base.ruling(this, arry[i]);
+	private async changRedColor(...restOfName: eui.Label[]): Promise<void> {
+		for (var i = 0; i < restOfName.length; i++) {
+			
+			restOfName[i].textColor = 0xd92e20;
+			restOfName[i].addEventListener(egret.TouchEvent.TOUCH_TAP, this.clickVoice.bind(this, this.voiceList[i]), this);
+			(this.redLineGroup.$children[i] as eui.Label).visible = true;
 		}
-		await lzlib.ThreadUtility.sleep(1000);
-		this.headerLabel.visible=true;
-		await lzlib.SoundUtility.playSound('27b_mp3');
-		this.nextButton.visible=true;
 
+		this.playSound("27b_mp3")
+
+	}
+
+	private async playSound(sound: string): Promise<void> {
+		this.headerLabel.visible = true;
+		await lzlib.SoundUtility.playSound(sound);
+		this.nextButton.visible = true;
+	}
+
+	private clickVoice(voice: string): void {
+		let current = voice;
+		var sound: egret.Sound = RES.getRes(current);
+		sound.play(0, 1);
 	}
 }
