@@ -30,9 +30,7 @@ class GamePresenter {
 	}
 
 	public async onDropCorrectly(): Promise<void> {
-		++this.currentTopIndex;
-	
-
+		this.currentTopIndex++;
 		if (this.currentTopIndex < this.allToys.length) {
 			this.view.putToyInDragPosition(this.currentToy.imageName);
 			this.view.currentToyName = this.currentToy.name;

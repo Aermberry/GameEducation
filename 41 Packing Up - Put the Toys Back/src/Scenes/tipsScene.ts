@@ -24,13 +24,7 @@ class tipsScene extends eui.Component implements eui.UIComponent {
 			this.toyImage.visible = true;
 			this.parent.removeChild(this);
 		}, this);
-		this.BgVoice();
 	}
-
-	private BgVoice():void {
-		lzlib.SoundUtility.playSound("");
-	}
-
 
 	private showTip(): void {
 		this.tipsImage.source = this.position.toString() + '_png';
