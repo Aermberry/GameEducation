@@ -8,8 +8,12 @@
 <e:Group id="easyMovieGroup" x="442" y="371" height="384" width="574" />
 <e:Image id="boomBtn" source="black_boom_png" x="885" y="774"/>
 <e:Label id="theSpellingCannon" text="The Spelling Cannon" fontFamily="Kristen_ITC" size="60" x="722" y="228" textColor="#000000"/>
-<e:Label id="firstPointText" text="1. Look at the words" fontFamily="Kristen_ITC" size="44" x="1043" y="450" textColor="#000000"/>
-<e:Label id="secondPointText" text="  carefully." fontFamily="Kristen_ITC" size="44" x="1055" y="505" textColor="#000000"/>
-<e:Label id="thirdPointText" text="2. Click the green horn icon" fontFamily="Kristen_ITC" size="44" x="1043" y="575" textColor="#000000"/>
-<e:Label id="forthPointText" text="   to listen to the word." fontFamily="Kristen_ITC" size="44" x="1050" y="630" textColor="#000000"/>	
+
+
+
+	<e:Group x="1040.91" y="422.73" anchorOffsetY="0" height="299.33" anchorOffsetX="0" width="594.55">
+		<e:Label id="firstPointText" text="1. Read the words carefully." fontFamily="Kristen_ITC" size="44" x="2.09" y="0" textColor="#000000"/>
+		<e:Label id="thirdPointText" text="2. Click the green horn icon to\nlisten to the words." fontFamily="Kristen_ITC" size="44" x="2.09" y="70" textColor="#000000" lineSpacing="10"/>
+		<e:Label id="forthPointText" text="3. Choose the correct answers\nto defeat the enemy." fontFamily="Kristen_ITC" size="44" x="0" y="186.07" textColor="#000000" lineSpacing="10"/>
+	</e:Group>	
 </e:Skin>
