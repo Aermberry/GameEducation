@@ -83,6 +83,7 @@ class Main extends eui.UILayer {
         }
     }
 
+
     private loadTheme() {
         return new Promise((resolve, reject) => {
             // load skin theme configuration file, you can manually modify the file. And replace the default skin.

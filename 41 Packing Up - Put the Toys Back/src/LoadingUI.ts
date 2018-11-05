@@ -27,25 +27,70 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
+
 class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
+    private strokeWeight = 15;
+    private progressBarWidth = 500;
+    private progressBarHeight = 50;
+
+    private downloadingLabel: egret.TextField;
+    private progressBar: eui.Rect;
+    private downloadedPercentageLabel: egret.TextField;
 
     public constructor() {
         super();
         this.createView();
     }
 
-    private textField: egret.TextField;
-
     private createView(): void {
-        this.textField = new egret.TextField();
-        this.addChild(this.textField);
-        this.textField.y = 300;
-        this.textField.width = 480;
-        this.textField.height = 100;
-        this.textField.textAlign = "center";
+        this.createDownloadingLabel();
+        this.createProgressBar();
+        this.createDownloadedPercentageLabel();
+    }
+
+    private createDownloadingLabel(): void {
+        this.downloadingLabel = new egret.TextField();
+        this.addChild(this.downloadingLabel);
+        this.downloadingLabel.x = 700;
+        this.downloadingLabel.y = 300;
+        this.downloadingLabel.width = 480;
+        this.downloadingLabel.height = 100;
+        this.downloadingLabel.textAlign = "center";
+        this.downloadingLabel.textColor = 0x000000;
+        this.downloadingLabel.size = 48;
+        this.downloadingLabel.text = "Loading...";
+    }
+
+    private createProgressBar(): void {
+        var border = new eui.Rect(this.progressBarWidth + this.strokeWeight * 2, this.progressBarHeight + this.strokeWeight * 2, 0x999999);
+        border.strokeColor = 0xCCCCCC;
+        border.strokeWeight = this.strokeWeight;
+        border.x = 700;
+        border.y = 400;
+        this.addChild(border);
+
+        this.progressBar = new eui.Rect(0, this.progressBarHeight, 0x5398F5);
+        this.progressBar.x = 700 + this.strokeWeight;
+        this.progressBar.y = 400 + this.strokeWeight;
+        this.addChild(this.progressBar);
+    }
+
+    private createDownloadedPercentageLabel(): void {
+        this.downloadedPercentageLabel = new egret.TextField();
+        this.addChild(this.downloadedPercentageLabel);
+        this.downloadedPercentageLabel.x = this.progressBar.x;
+        this.downloadedPercentageLabel.y = this.progressBar.y;
+        this.downloadedPercentageLabel.width = this.progressBarWidth;
+        this.downloadedPercentageLabel.height = this.progressBarHeight;
+        this.downloadedPercentageLabel.textAlign = "center";
+        this.downloadedPercentageLabel.verticalAlign = 'center';
+        this.downloadedPercentageLabel.textColor = 0x000000;
+        this.downloadedPercentageLabel.size = 48;
     }
 
     public onProgress(current: number, total: number): void {
-        this.textField.text = `Loading...${current}/${total}`;
+        this.downloadedPercentageLabel.text = Math.floor(current / total * 100).toString();
+        this.progressBar.width = this.progressBarWidth * current / total;
     }
 }
+
