@@ -59,5 +59,10 @@ class Game1Scene extends eui.Component implements  eui.UIComponent {
 	{	
 		(this.labelComponents[curLabel] as LabelComponents).visible = false;
 	}
+
+	public addNameGroupChildrent(labelComponents: LabelComponents): void
+	{
+		this.nameGroup.addChild(labelComponents);
+	}
 	
 }

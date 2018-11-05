@@ -114,7 +114,7 @@
 	</e:Group>
 		<ns1:AlertGame2Component id="alertGame2Component" width="496" height="424" x="250" y="873.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 		<ns1:AlertElderComponent id="alertElderComponent" width="1058" height="830" x="206" y="155" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-		<e:Group id="correctGroup" width="589" height="367" x="86" y="830" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Group id="correctGroup" width="589" height="367" x="150" y="938" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 			<e:Label text="你 答 對 了 !" y="4" size="62" textColor="0xf21023" left="0" right="0" textAlign="right"/>
 			<e:Image width="480" height="290" x="16" y="76" source="box_and_paper_png"/>
 		</e:Group>
