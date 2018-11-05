@@ -137,12 +137,12 @@
 	<e:Group width="741.33" x="0" y="0" anchorOffsetX="0">
 		<e:Rect id="shangKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
 		<e:Label id="shangKuanLabel" text="小雄：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="華康楷書體" left="14"/>
-		<ns1:LabelComponents id="shangKuanLabelComponent" width="270" height="95" x="288.91" y="0"/>
+		<ns1:LabelComponents id="shangKuanLabelComponent" width="270" height="95" x="225.27" y="0"/>
 	</e:Group>
 	<e:Group width="1079" x="100" y="108">
 		<e:Rect id="greetRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeWeight="4" strokeColor="0xfc0000" visible="false"/>
 		<e:Label id="greetLabel" text="很久沒有見面了，你好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="華康楷書體" top="14" left="14"/>
-		<ns1:LabelComponents id="greetLabelComponent" width="270" x="809" top="0" bottom="0"/>
+		<ns1:LabelComponents id="greetLabelComponent" width="270" x="751.43" top="0" bottom="0"/>
 	</e:Group>
 	<!--<e:Group height="393" y="248" left="0" right="0">
 		<e:Label text="蜘道你茬遊詠比塞中得到第二名，我替你憾到高興。我蕒了一幅詠鏡送給你，希望你能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球一個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
@@ -151,7 +151,7 @@
 	<e:Group y="213" left="0" right="0">
 		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
 		<e:Label id="textLabel" text="       知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" y="0" fontFamily="華康楷書體" textAlign="left" top="14" bottom="10"/>
-		<ns1:LabelComponents id="textLabelComponent" width="270" height="95" x="136" y="280"/>
+		<ns1:LabelComponents id="textLabelComponent" width="270" height="95" x="229.94" y="280"/>
 	</e:Group>
 	<e:Group id="group" y="597.7" left="0" right="0">
 		<e:Rect id="blessRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
