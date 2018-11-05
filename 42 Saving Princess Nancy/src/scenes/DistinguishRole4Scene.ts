@@ -50,10 +50,20 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 		};
 		this.person2Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person1Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
-		this.person3Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
+		this.person3Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPerson3Click, this);
 		this.person4Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCorrectClick, this);
-		this.person5Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
+		this.person5Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPerson5Click, this);
 		this.person6Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
+	}
+
+	private onPerson3Click(e: egret.TouchEvent): void
+	{
+		
+	}
+
+	private onPerson5Click(e: egret.TouchEvent): void
+	{
+
 	}
 
 	private onCorrectClick(): void
