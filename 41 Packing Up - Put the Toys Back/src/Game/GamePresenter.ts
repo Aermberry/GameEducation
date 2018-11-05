@@ -2,7 +2,7 @@ class GamePresenter {
 	private toyRepo = new ToyRepository();
 	private view: GameView;
 	private allToys: Toy[];
-	private currentTopIndex = -1;
+	private currentTopIndex = 0;
 
 	public constructor() {
 	}
@@ -30,7 +30,7 @@ class GamePresenter {
 	}
 
 	public async onDropCorrectly(): Promise<void> {
-		// ++this.currentTopIndex;
+		++this.currentTopIndex;
 	
 
 		if (this.currentTopIndex < this.allToys.length) {
