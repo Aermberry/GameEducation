@@ -111,7 +111,7 @@ class Main extends eui.UILayer {
         if (egret.getOption('scene')) {
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
         } else {
-            this.addChild(new Game1Scene());
+            this.addChild(new StartScene());
         }
     }
 
