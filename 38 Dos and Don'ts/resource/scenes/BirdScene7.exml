@@ -45,9 +45,9 @@
 	</e:Group>
 	<e:Group id="amyGroup">
 		<e:Image source="amy_feed_png" x="257" y="578" />
-		<e:Image source="pink_bottom_frame_png" x="605" y="796" />
-		<e:Label text="Can I feed" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="723.83" y="895.5" />
-		<e:Label text=" the birds here?" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="640" y="945.5" />
+		<e:Image source="pink_bottom_frame_png" x="605" y="796"  anchorOffsetX="0" width="480.42" anchorOffsetY="0" height="341.45"/>
+		<e:Label text="Can I feed" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="675.35" y="919.74" />
+		<e:Label text=" the birds here?" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="658.18" y="981.86" />
 	</e:Group>
 
 
