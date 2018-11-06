@@ -53,7 +53,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 
-		if (dragComponent.text.trim() == targetComponent.text.trim()) {
+			console.log(dragComponent.text.replace(/\s+/g,""))
+			console.log(targetComponent.text.replace(/\s+/g,""))
+		if (dragComponent.text.replace(/\s+/g,"") == targetComponent.text.replace(/\s+/g,"")) {
+		
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;

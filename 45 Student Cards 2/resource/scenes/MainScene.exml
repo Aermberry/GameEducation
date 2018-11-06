@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="MainSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="165b2de45c0" ></w:Config>
-	<Ui:Options width="904.84" height="1210.3" x="960.85" y="63.43" anchorOffsetX="0" anchorOffsetY="0" skinName="OptionsSkin"/>
-	<Ui:Resume width="826.78" height="1111.27" x="99.64" y="75.4" anchorOffsetX="0" anchorOffsetY="0" skinName="ResumeSkin"/>
-	<e:Label text="First School\nStudent card\n\n\nName:__________________\nClass:___________________\nAge:____________________\nAddress:________________\nBirthday:________________\nHobby:__________________\nClub:___________________" x="996.21" y="90.55" textColor="0x990707" anchorOffsetY="0" height="1086.11" anchorOffsetX="0" width="778.85" size="53" lineSpacing="50" fontFamily="Comic Sans MS"/>
-	<e:Label text="Hi! I am Ann Ho. I have a\nbrother, Mike.\nWe live in Wanchai. We go\nto shchool by bus.\nMike is 12 years old and\nI'm 9. My birthday is on\n 15 June.\nI am in P.3B and Mike is in\nP.6A.\nI like swimming and Mike\nlikes playing football. I join\nthe English Club and Mike\njoins the Computer Club." x="130" y="106.39" anchorOffsetY="0" height="1070.43" anchorOffsetX="0" width="812.43" lineSpacing="20" size="61" fontFamily="Comic Sans MS" textColor="0x525ff5"/>
+	<Ui:Options width="932.11" height="1246.66" x="960.85" y="63.43" anchorOffsetX="0" anchorOffsetY="0" skinName="OptionsSkin"/>
+	<Ui:Resume width="892.08" height="1175.75" x="36" y="63.28" anchorOffsetX="0" anchorOffsetY="0" skinName="ResumeSkin"/>
+	<e:Label text="Hi! I am Ann Ho. I have a\nbrother, Mike.\nWe live in Flat C, 9/F, Lucky Court, Wanchai. We go\nto School by bus.\nMike is 12 years old and\nI'm 9. My birthday is on\n15 June.\nI am in P.3B and Mike is in\nP.6A.\nI like swimming and Mike\nlikes playing football. I join\nthe English Club and Mike\njoins the Computer Club." x="87.58" y="88.21" anchorOffsetY="0" height="1127.33" anchorOffsetX="0" width="847.06" lineSpacing="20" size="61" fontFamily="Comic Sans MS" textColor="0x525ff5"/>
+	<e:Label text="Sunshine Primary School\nStudent card\n\n\nName:_____________________\nClass:_____________________\nAge:______________________\nAddress:___________________\n               __________________\nBirthday:__________________\nHobby:____________________\nClub:______________________" x="996.21" y="90.55" textColor="0x990707" anchorOffsetY="0" height="1361.87" anchorOffsetX="0" width="1072.79" size="53" lineSpacing="50" fontFamily="Comic Sans MS"/>
+
 	<e:Group id="colorTips" y="92" x="112" anchorOffsetY="0" height="803" anchorOffsetX="0" width="674">
-		<e:Rect width="375" height="4" y="74.18" x="116.27" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0" visible="false"/>
-		<e:Rect width="339" height="4" y="638.61" x="20.03" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0" visible="false"/>
-		<e:Rect width="172" height="4" y="479.21" x="16" anchorOffsetX="0" fillColor="0xF00000" visible="false"/>
-		<e:Rect width="543" height="4" y="238.67" x="27" anchorOffsetX="0" fillColor="0xF00000" visible="false"/>
-		<e:Group x="47.43" y="459.17" anchorOffsetX="0" width="452" anchorOffsetY="0" height="108" visible="false">
-		<e:Rect width="511" height="4" anchorOffsetX="0" fillColor="0xF00000" y="20.73" x="124"/>
-		<e:Rect width="237" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="-9" y="100"/>
+		<e:Rect width="375" height="4" y="59.03" x="70.82" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0" visible="false"/>
+		<e:Rect width="339" height="4" y="708.3" x="-22.39" anchorOffsetX="0" fillColor="0xF00000" anchorOffsetY="0" visible="false"/>
+		<e:Rect width="172" height="4" y="542.84" x="-26.42" anchorOffsetX="0" fillColor="0xF00000" visible="false"/>
+		<e:Group x="-23.57" y="226.55" visible="false">
+			<e:Rect width="801" height="4" y="0" x="8" anchorOffsetX="0" fillColor="0xF00000"/>
+			<e:Rect width="451" height="4" y="74.82" x="0" anchorOffsetX="0" fillColor="0xF00000"/>
 		</e:Group>
-		<e:Rect width="449" height="4" y="800.06" x="12" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" visible="false"/>
-		<e:Group y="808.98" x="16" anchorOffsetY="0" height="169.66" anchorOffsetX="0" width="764.61" visible="false">
+		<e:Group x="38.33" y="528.87" anchorOffsetX="0" width="452" anchorOffsetY="0" height="108" visible="false">
+		<e:Rect width="511" height="4" anchorOffsetX="0" fillColor="0xF00000" y="20.73" x="124"/>
+		<e:Rect width="237" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="-64" y="100"/>
+		</e:Group>
+		<e:Rect width="449" height="4" y="869.76" x="-27.39" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" visible="false"/>
+		<e:Group y="875.65" x="-26.42" anchorOffsetY="0" height="169.66" anchorOffsetX="0" width="764.61" visible="false">
 		<e:Rect width="170" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" y="75.33" x="614.18"/>
 		<e:Rect width="454" height="4" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xF00000" x="4" y="154"/>
 		</e:Group>
 	</e:Group>
-	<e:Image source="girl_png" x="1420.59" y="81.7" width="399.93" height="384.45" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image source="girl_png" x="1501.11" y="158.09" width="305.98" height="317.79" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Group id="alterGroup" x="1200.19" y="430.48" anchorOffsetY="0" height="745.15">
 		<Ui:AlterLabel width="535.15" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What is her name?" fontSize="50" scaleX="1" scaleY="1" visible="false"/>
 		<Ui:AlterLabel width="535.15" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which class is she in?" fontSize="50" scaleX="1" scaleY="1" y="103.03" visible="false"/>
@@ -31,44 +35,48 @@
 		<Ui:AlterLabel width="692.73" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which club does she join?" fontSize="50" scaleX="1" scaleY="1" y="612.12" x="-69.7" visible="false"/>
 	</e:Group>
 
-<e:Group id="helpGroup" x="1696.96" y="469.7" anchorOffsetY="0" height="707.21">
+<e:Group id="helpGroup" x="1700.03" y="468.18" anchorOffsetY="0" height="819.33" anchorOffsetX="0" width="158.09" touchThrough="true">
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="103.03" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="200" visible="false"/>
 	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="303.03" visible="false"/>
-	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="409.09" visible="false"/>
-	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="512.12" visible="false"/>
-	<e:Button label="Help"  anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="612.12" visible="false"/>
+	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="513.64" visible="false"/>
+	<e:Button label="Help" anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="615.15" visible="false"/>
+	<e:Button label="Help"  anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="725.76" x="-1.53" visible="false"/>
 	</e:Group>
 
 <e:Group id="dragGroup" anchorOffsetY="-3.54" height="791" x="108.98" y="82.46" anchorOffsetX="-3.02" width="678">
-	<e:Label text="Ann Ho" size="61" fontFamily="Comic Sans MS" y="21.94" x="262" textColor="0x525ff5"/>
-	<e:Label text="P.3B" size="61" fontFamily="Comic Sans MS" y="587.04" x="233.5" textColor="0x525ff5"/>
-	<e:Label text="9" size="61" fontFamily="Comic Sans MS" y="425.5" x="139.65" textColor="0x525ff5"/>
-	<e:Label text="Wanchai" size="61" fontFamily="Comic Sans MS" anchorOffsetX="0" width="244" x="316.15" y="183.93" anchorOffsetY="0" height="69" textColor="0x525ff5"/>
+	<e:Label text="Ann Ho" size="61" fontFamily="Comic Sans MS" y="1.73" x="221.51" textColor="0x525ff5"/>
+	<e:Label text="P.3B" size="61" fontFamily="Comic Sans MS" y="650.66" x="191.07" textColor="0x525ff5"/>
+	<e:Label text="9" size="61" fontFamily="Comic Sans MS" y="486.61" x="97.08" textColor="0x525ff5"/>
 
 
 
 
 
 
-	<e:Label text="15 June" size="61" fontFamily="Comic Sans MS" x="37.21" y="506" textColor="0x525ff5"/>
-	<e:Label text="swimming" textColor="0x525FF5" size="61" fontFamily="Comic Sans MS" y="748.58" x="187" anchorOffsetY="0" height="85"/>
-	<e:Label text="English Club" size="61" fontFamily="Comic Sans MS" y="912.15" x="131" textColor="0x525ff5" anchorOffsetY="0" height="85"/>
+
+
+	<e:Label text="15 June" size="61" fontFamily="Comic Sans MS" x="-22.94" y="568" textColor="0x525ff5"/>
+	<e:Label text="swimming" textColor="0x525FF5" size="61" fontFamily="Comic Sans MS" y="812.21" x="144.57" anchorOffsetY="0" height="85"/>
+	<e:Label text="English Club" size="61" fontFamily="Comic Sans MS" y="975.78" x="91.61" textColor="0x525ff5" anchorOffsetY="0" height="85" anchorOffsetX="0" width="450.12"/>
+	<e:Label text="                 Flat C, 9/F, Lucky\n Court, Wanchai" size="61" fontFamily="Comic Sans MS" anchorOffsetX="0" width="897.47" x="-40.1" y="162.91" anchorOffsetY="0" height="172.02" lineSpacing="20" textColor="0x525ff5"/>
+
 </e:Group>
 
-	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="685" width="630.34">
-		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" textAlign="center" left="0" right="0.34000000000003183" textColor="0x525ff5" verticalAlign="bottom" anchorOffsetY="0" height="96.94" y="-28.79" visible="false"/>
-		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" y="73.15" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.43" verticalAlign="bottom" visible="false"/>
-		<e:Label text="9" size="53" fontFamily="Comic Sans MS" y="176.61" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="bottom" visible="false"/>
+	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="815.3" width="630.34">
+		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" textAlign="center" left="0" right="0.34000000000003183" textColor="0x525ff5" verticalAlign="middle" anchorOffsetY="0" height="96.94" y="-4.55" visible="false"/>
+		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" y="97.39" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.43" verticalAlign="middle" visible="false"/>
+		<e:Label text="9" size="53" fontFamily="Comic Sans MS" y="200.85" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" visible="false"/>
 
 
 
-		<e:Label text="Wanchai" size="53" fontFamily="Comic Sans MS" y="282.24" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" verticalAlign="bottom" visible="false"/>
-		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" y="383.64" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="bottom" visible="false"/>
+		<e:Label text="Flat C, 9/F, \nLucky Court, Wanchai" size="53" fontFamily="Comic Sans MS" y="294.34" left="139" right="-72.65999999999997" textAlign="left" textColor="0x525ff5" anchorOffsetY="0" height="209.05" verticalAlign="middle" anchorOffsetX="0" lineSpacing="55" visible="false"/>
+		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" y="507.88" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" visible="false"/>
 
-		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" y="484.18" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" verticalAlign="bottom" visible="false"/>
-		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" y="587.76" left="0" right="-4.659999999999968" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" anchorOffsetX="0" verticalAlign="bottom" visible="false"/>
+		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" y="605.39" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="106.03" verticalAlign="middle" visible="false"/>
+		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" y="715.03" left="0" right="-4.659999999999968" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" anchorOffsetX="0" verticalAlign="middle" visible="false"/>
 
 	</e:Group>
+
 </e:Skin>
