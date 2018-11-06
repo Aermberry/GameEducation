@@ -14,7 +14,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-    <e:Label text="Sara's room is untidy. Father tells her where to\nput the toys.Please help her by dragging the\npictures to right places."
+    <e:Label text="Sara's room is untidy. Father tells her where to\nput the toys. Please help her by dragging the\npictures to right places."
              textAlign="left" verticalAlign="top" y="68" size="78" horizontalCenter="0" lineSpacing="25"
              fontFamily="Comic Sans MS" textColor="0xc11f1f" anchorOffsetY="0" height="396" />
     <e:Image source="man_girl_png" x="632" y="560" />
