@@ -76,7 +76,7 @@ class ProQuestionRepository {
 			new Question('Turn on the ____.','light',['light','laugh','keep']),
 			new Question('Mary has ____ hair.','long',['long','hurt','bring']),
 			new Question('I have too ____ food.','much',['much','never','start']),
-			new Question('I make the paper plane ____.','myself',['myself','pick','together']),
+			new Question('I made the paper plane ____.','myself',['myself','pick','together']),
 			new Question('I ____ throw rubbish on the road.','never',['never','fall','seven']),
 			new Question('Bats ____ come out at night.','only',['only','full','hold']),
 			new Question('Use your ____ pencil.','own',['own','hurt','far']),

@@ -58,7 +58,7 @@ class EasyQuestionRepository {
 			new Question('Dad ____ home at 6 o’clock yesterday.','came',['came','that','black']),
 			new Question('He ____ his homework.','did',['did','brown','but']),
 			new Question('____ you like swimming?','Do',['Do','There','Yes']),
-			new Question('I ____ an ice cream everyday.','eat',['eat','did','into']),
+			new Question('I ____ an ice cream every day.','eat',['eat','did','into']),
 			new Question('There are ____ birds on the tree.','four',['four','ate','now']),
 			new Question('I ____ a teddy bear on my birthday.','get',['get','this','well']),
 			new Question('You did a ____ job!','good',['good','like','she']),
