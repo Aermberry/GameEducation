@@ -16,7 +16,7 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 		let mcFactory = new egret.MovieClipDataFactory(RES.getRes(this.dataSet), RES.getRes(this.texture));
 		this.mc = new egret.MovieClip(mcFactory.generateMovieClipData(this.movieClipName));
 		this.addChild(this.mc);
-		this.mc.play(0);
+		this._isPlay == true ? this.mc.play(-1) : this.mc.play(0);
 	}
 
 	public playLoop(): void
@@ -68,5 +68,17 @@ class MovieClipPlayer extends eui.Component implements  eui.UIComponent {
 	public set movieClipName(value: string)
 	{
 		this._movieClipName = value;
+	}
+
+	private _isPlay = false;
+
+	public get isLoopPlay(): boolean
+	{
+		return this._isPlay;
+	}
+
+	public set isLoopPlay(value: boolean)
+	{
+		this._isPlay = value;
 	}
 }
