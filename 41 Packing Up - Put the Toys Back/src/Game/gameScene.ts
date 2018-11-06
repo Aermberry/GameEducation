@@ -46,7 +46,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 		let drag = new lzlib.Drag();
 		this.addChild(drag);
 		drag.enableDrag(this.toysImage, false);
-		this.toysImage.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDropCancel, this);
+		// this.toysImage.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDropCancel, this);
 
 		this.initDrop(this.plantRect, this.onPlantDrop);
 		this.initDrop(this.booksRect, this.onBooksDrop);
@@ -63,10 +63,10 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 		dropTarget.addEventListener(lzlib.LzDragEvent.DROP, dropFunction, this);
 	}
 
-	private async onDropCancel(): Promise<void> {
-		await lzlib.ThreadUtility.sleep(1000);
-		this.presenter.onDropWrong()
-	}
+	// private async onDropCancel(): Promise<void> {
+	// 	// await lzlib.ThreadUtility.sleep(1000);
+	// 	this.presenter.onDropWrong()
+	// }
 
 	private async onPlantDrop(e: lzlib.LzDragEvent): Promise<void> {
 		if ((e.dragObject as eui.Image).source == this.plantImage.source) {
@@ -110,7 +110,7 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 			this.busImage.visible = true;
 			e.dragObject.visible = false;
 			this.presenter.onDropCorrectly();
-			
+
 		} else {
 			await lzlib.ThreadUtility.sleep(1000);
 			this.presenter.onDropWrong()
@@ -197,7 +197,9 @@ class gameScene extends eui.Component implements eui.UIComponent, GameView {
 	}
 
 	public openStatusScene(isCorrect: boolean): void {
-		this.addChild(new statusScene(isCorrect, this.toysImage, this.presenter.currentAudioName));
+		this.toysImage.visible = false
+		let statusScenes = new statusScene(isCorrect, this.presenter.currentAudioName,this)
+		this.addChild(statusScenes);
 	}
 
 	public openTipScene(position: ToyPosition): void {
