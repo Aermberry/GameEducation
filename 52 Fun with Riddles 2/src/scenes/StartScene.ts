@@ -21,9 +21,11 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.startLoading,this);
 	}
 
-	private startLoading():void {
-		this.StartLoading.play(0);
+	private async startLoading():Promise<void> {
+		 this.StartLoading.play(0);
 		this.startButton.visible=false;
+		await lzlib.ThreadUtility.sleep(1000);
+ 		this.maskLayer.visible=false;
 	}
 
 	private gotoNextScene(): void {

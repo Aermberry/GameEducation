@@ -4,7 +4,7 @@
 		<tween:TweenGroup id="StartLoading">
 			<tween:TweenItem target="{maskLayer}">
 				<tween:Set/>
-				<tween:To duration="1000">
+				<tween:To duration="1000" ease="quartOut">
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
