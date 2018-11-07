@@ -200,6 +200,7 @@
 	<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" y="-500"/>
 
 	<e:Image  id="birdImg" source="bird_normal_png" x="1314" y="381" visible="false"/>
+	<e:Image id="smokeImg" source="smoke_png" x="224.97" y="500" visible="false"/>
 
 	
 
@@ -208,18 +209,18 @@
 	<e:Label id="goodJobTip" x="830" y="527" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC" anchorOffsetX="0" width="662.74" anchorOffsetY="0" height="162.3"/>
     
 	<e:Label id="sentenceLabel" text=""  size="50"  verticalCenter="275" horizontalCenter="286" anchorOffsetX="0" width="1076" textAlign="center" textColor="0xffffff"/>
-	<e:Image id="driverImg" source="driver_png"  x="418.06" y="792.67" height="100" visible="false"/>
-	<e:Image id="smokeImg" source="smoke_png" x="224.97" y="500" locked="true" visible="false"/>
+	<e:Image id="driverImg" source="driver_png"  x="418.06" y="792.67" height="100"/>
+
 	<e:Label id="cargoLeftLabel" text="20：trains Left" x="422" y="527" textColor="0x000000" size="45"/>
 	<e:Group id="cargoGroup">
 		<e:Group id="cargoGroup0" width="312" height="260" x="625" y="55" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+			<e:Label name="label" y="188" size="45"  x="174.7" anchorOffsetX="0" width="200" textAlign="center" touchEnabled="false"/>
 		</e:Group>
 		<e:Group id="cargoGroup1" width="312" height="280" x="950" y="55" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+			<e:Label name="label" y="188" size="45"  x="174.7" anchorOffsetX="0" width="200" textAlign="center" touchEnabled="false"/>
 		</e:Group>
 		<e:Group id="cargoGroup2" width="312" height="210" x="1280" y="55" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Label name="label" y="188" size="45"  x="205" anchorOffsetX="0" width="146" textAlign="center" touchEnabled="false"/>
+			<e:Label name="label" y="188" size="45"  x="174.7" anchorOffsetX="0" width="200" textAlign="center" touchEnabled="false"/>
 		</e:Group>
 	</e:Group>
 	<e:Group id="dropDownBoxGroup" x="1130" y="-460.61" height="491.67" width="848" anchorOffsetY="0"/>

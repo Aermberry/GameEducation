@@ -11,6 +11,7 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	private driverImg:eui.Image;
 	private smokeImg:eui.Image;
 	private cargoLeftLabel: eui.Label;
+	private greenLightImg:eui.Image;
 
 	private trainEnterTweenGroup:egret.tween.TweenGroup;
 	private trainAwayTweenGroup:egret.tween.TweenGroup;
@@ -165,7 +166,9 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	/** 播放货物掉下的动画 */
 	private async playCargoDropdownMovie(cargoIndex: number): Promise<void>
 	{
+		this.greenLightImg.visible = true;
         (RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
         await this.getCargoDropMovie(cargoIndex).playAsync();
+		this.greenLightImg.visible = false;
 	}
 }

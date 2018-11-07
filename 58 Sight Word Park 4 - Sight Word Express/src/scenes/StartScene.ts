@@ -7,6 +7,8 @@ class StartScene extends eui.Component implements eui.UIComponent{
     private startSceneBgmSound:egret.SoundChannel;
 	private startButton2: eui.Image;
 	private startMask: eui.Rect;
+	private overImage:eui.Image;
+	private startGameBtn2:eui.Group;
 
     public constructor(){
         super();
@@ -22,9 +24,9 @@ class StartScene extends eui.Component implements eui.UIComponent{
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.startGameBtn,true);
 		mouse.setButtonMode(this.startButton2, true);
-		this.startGameBtn.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartGameBtnMouseOver, this);
-		this.startGameBtn.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartGameBtnMouseOut, this);
-		this.startGameBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextScene, this);
+		this.startGameBtn2.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onStartGameBtnMouseOver, this);
+		this.startGameBtn2.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onStartGameBtnMouseOut, this);
+		this.startGameBtn2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextScene, this);
 		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
 
 	}
@@ -56,12 +58,14 @@ class StartScene extends eui.Component implements eui.UIComponent{
 	
 	private onStartGameBtnMouseOver(e: mouse.MouseEvent): void
 	{
-		this.startGameBtn.source = "start_game_hover_png";
+		this.overImage.visible = true;
+		console.log(1)
 	}
 
 	private onStartGameBtnMouseOut(e: mouse.MouseEvent): void
 	{
-		this.startGameBtn.source = "start_game_normal_png";
+		this.overImage.visible = false;
+		console.log(2)
 	}
 
 	private nextScene(e: egret.TouchEvent): void
