@@ -2,6 +2,6 @@
 <e:Skin class="AlertComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="166248e2030" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="rect_alert_png"/>
-	<e:Label id="contentLabel" text="Label" verticalCenter="0" textColor="0x000000" fontFamily="Comic Sans MS" size="40" left="28" right="70" textAlign="center" multiline="true" lineSpacing="18"/>
+	<e:Label id="contentLabel" text="Label" verticalCenter="0" textColor="0x000000" fontFamily="Calg421n" size="40" left="28" right="70" textAlign="center" multiline="true" lineSpacing="18"/>
 	<e:Image id="closeImage" x="339" y="18" source="close_png" anchorOffsetX="0" width="44" anchorOffsetY="0" height="44" right="28"/>
 </e:Skin>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="GreenTextComponentSkin" width="74" height="31" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,over" >
 	<w:Config id="16651acb1c0" ></w:Config>
-	<e:Label id="textLabel" text="Label" left="0" right="321" top="0" bottom="266" textColor="0x266232" fontFamily="Comic Sans MS" anchorOffsetX="0" anchorOffsetY="0" textColor.over="0x044ec9"/>
+	<e:Label id="textLabel" text="Label" left="0" right="321" top="0" bottom="266" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" anchorOffsetY="0" textColor.over="0x044ec9"/>
 </e:Skin>
