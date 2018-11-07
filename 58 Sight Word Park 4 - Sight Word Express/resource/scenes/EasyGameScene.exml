@@ -129,6 +129,18 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{sentenceLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object x="{708}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="trainAwayTweenGroup">
 			<tween:TweenItem target="{smokeImg}">
@@ -152,6 +164,18 @@
 				<tween:To duration="500">
 					<tween:props>
 						<e:Object x="{-1920}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{sentenceLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" x="{708}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object alpha="{1}" x="{-995.03}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -208,7 +232,7 @@
 	<e:Image id="greenLightImg" source="green_light_png"  x="190.97" y="570"  visible="false"/>
 	<e:Label id="goodJobTip" x="830" y="527" size="132" text="Good job!" textColor="0x000000" alpha="0" fontFamily="Kristen_ITC" anchorOffsetX="0" width="662.74" anchorOffsetY="0" height="162.3"/>
     
-	<e:Label id="sentenceLabel" text=""  size="50"  verticalCenter="275" horizontalCenter="286" anchorOffsetX="0" width="1076" textAlign="center" textColor="0xffffff"/>
+	<e:Label id="sentenceLabel" text=""  size="50"  anchorOffsetX="0" width="1076" textAlign="center" textColor="0xffffff" x="1892.85" y="915"/>
 	<e:Image id="driverImg" source="driver_png"  x="418.06" y="792.67" height="100"/>
 
 	<e:Label id="cargoLeftLabel" text="20：trains Left" x="422" y="527" textColor="0x000000" size="45"/>

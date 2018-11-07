@@ -90,9 +90,9 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.cargoLeftLabel.text =  this.cargoLeft.toString() + "：trains Left ";
 		this.resetCargoMovie();
-		await this.trainEnterTweenGroup.playOnceAsync();
 		this.currentQuestion = this.questionBiz.random();
 		this.sentenceLabel.text = this.currentQuestion.sentence;
+		await this.trainEnterTweenGroup.playOnceAsync();
 		this.currentQuestion.options.shuffle();
 		
 		for (let index = 0; index < this.currentQuestion.options.length; index++) {
