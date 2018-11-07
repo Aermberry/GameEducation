@@ -64,7 +64,7 @@
 
 </e:Group>
 
-	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="815.3" width="630.34">
+	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="815.3" width="630.34" touchThrough="true">
 		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" textAlign="center" left="0" right="0.34000000000003183" textColor="0x525ff5" verticalAlign="middle" anchorOffsetY="0" height="96.94" y="-4.55" visible="false"/>
 		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" y="97.39" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.43" verticalAlign="middle" visible="false"/>
 		<e:Label text="9" size="53" fontFamily="Comic Sans MS" y="200.85" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" visible="false"/>
