@@ -20,13 +20,13 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.loadVoic();
-	
+
 	}
 	private async loadVoic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
-				this.initHelpButton();
-		        this.initDropable();
+			this.initHelpButton();
+			this.initDropable();
 		})
 
 	}
@@ -53,10 +53,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 
-			console.log(dragComponent.text.replace(/\s+/g,""))
-			console.log(targetComponent.text.replace(/\s+/g,""))
-		if (dragComponent.text.replace(/\s+/g,"") == targetComponent.text.replace(/\s+/g,"")) {
-		
+	
+		console.log("index:" + this.currentQuestionIndex)
+		if (dragComponent.text.replace(/\s+/g, "") === targetComponent.text.replace(/\s+/g, "")) {
+			console.log("index==:" + this.currentQuestionIndex)
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
@@ -70,17 +70,19 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 			else {
 				this.currentQuestionIndex++;
+				console.log("index:"+this.currentQuestionIndex)
 				this.initDropable();
 				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			}
 		}
 		else {
+			console.log("!=:"+this.currentQuestionIndex)
 			this.showCorrectLabelToDrag();
 			this.initDropable()
 		}
 	}
 
-	private  onDragCancel(e: lzlib.LzDragEvent): void {
+	private onDragCancel(e: lzlib.LzDragEvent): void {
 		this.showCorrectLabelToDrag();
 	}
 
@@ -101,7 +103,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async onHelpButtonClick(): Promise<void> {
-		let currentindex=this.currentQuestionIndex;
+		let currentindex = this.currentQuestionIndex;
 		let originalChildIndex = this.getChildIndex(this.alterGroup);//返回一个指定元素的index
 		this.setChildIndex(this.alterGroup, this.numChildren - 1);//控制alerGroup的层级在最顶层
 		this.alterGroup.getChildAt(currentindex).visible = true;//根据index获取alterGroup中的指定的元素

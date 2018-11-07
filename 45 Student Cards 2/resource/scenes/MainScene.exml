@@ -45,7 +45,7 @@
 	<e:Button label="Help"  anchorOffsetX="0" width="148.15" anchorOffsetY="0" height="85.08" y="725.76" x="-1.53" visible="false"/>
 	</e:Group>
 
-<e:Group id="dragGroup" anchorOffsetY="-3.54" height="791" x="108.98" y="82.46" anchorOffsetX="-3.02" width="678">
+<e:Group id="dragGroup" anchorOffsetY="-5.27" height="1178.87" x="108.26" y="80.73" anchorOffsetX="-3.74" width="838.61">
 	<e:Label text="Ann Ho" size="61" fontFamily="Comic Sans MS" y="1.73" x="221.51" textColor="0x525ff5"/>
 	<e:Label text="P.3B" size="61" fontFamily="Comic Sans MS" y="650.66" x="191.07" textColor="0x525ff5"/>
 	<e:Label text="9" size="61" fontFamily="Comic Sans MS" y="486.61" x="97.08" textColor="0x525ff5"/>
