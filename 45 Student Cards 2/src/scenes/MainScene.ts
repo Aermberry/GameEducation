@@ -20,7 +20,6 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		this.loadVoic();
-
 	}
 	private async loadVoic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
@@ -28,7 +27,6 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			this.initHelpButton();
 			this.initDropable();
 		})
-
 	}
 
 	private initDropable(): void {
@@ -53,10 +51,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 
-	
-		console.log("index:" + this.currentQuestionIndex)
+		console.log("onLabelDrop:" + this.currentQuestionIndex)
 		if (dragComponent.text.replace(/\s+/g, "") === targetComponent.text.replace(/\s+/g, "")) {
-			console.log("index==:" + this.currentQuestionIndex)
+			console.log("==:" + this.currentQuestionIndex)
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
@@ -70,13 +67,13 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 			else {
 				this.currentQuestionIndex++;
-				console.log("index:"+this.currentQuestionIndex)
+				console.log("+++:"+this.currentQuestionIndex)
 				this.initDropable();
 				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			}
 		}
 		else {
-			console.log("!=:"+this.currentQuestionIndex)
+			console.log("show==:"+this.currentQuestionIndex)
 			this.showCorrectLabelToDrag();
 			this.initDropable()
 		}
