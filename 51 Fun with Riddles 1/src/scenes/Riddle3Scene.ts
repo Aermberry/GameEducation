@@ -1,4 +1,4 @@
-class Riddle3Scene extends eui.Component implements  eui.UIComponent {
+class Riddle3Scene extends eui.Component implements eui.UIComponent {
 	private letters: eui.Image;
 	private umbrella: eui.Image;
 	private pencil: eui.Image;
@@ -10,9 +10,11 @@ class Riddle3Scene extends eui.Component implements  eui.UIComponent {
 	private umbrellaTipsGroup: eui.Group;
 	private useTipsGroup: eui.Group;
 	private goodsGroup: eui.Group;
+	private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
 
-	public constructor() {
+	public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
 		super();
+		this.RiiddleOPtionsScenes = RiiddleOPtionsScenes
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -70,8 +72,13 @@ class Riddle3Scene extends eui.Component implements  eui.UIComponent {
 	public async isvisible(object: eui.Image): Promise<void> {
 		object.visible = true;
 		await lzlib.ThreadUtility.sleep(1000);
-		object.visible && this.gotoNextScene(new StatueScene());
+		this.RiiddleOPtionsScenes.isCorrect();
+		await object.visible && this.parent.removeChild(this);
 	}
+
+	 public isPast(): void {
+    this.isTrueImage.visible && this.parent.removeChild(this);
+  }
 
 	public gotoNextScene(scene: eui.Component) {
 		Main.instance.gotoScene(scene);

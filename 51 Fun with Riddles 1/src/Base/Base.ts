@@ -2,7 +2,7 @@
  * @Author: mikey.zhaopeng 
  * @Date: 2018-09-30 11:16:20 
  * @Last Modified by: Salmonberry
- * @Last Modified time: 2018-10-22 17:15:51
+ * @Last Modified time: 2018-11-07 17:01:59
  */
 
 class Base implements BaseModel {
@@ -56,7 +56,7 @@ class Base implements BaseModel {
   public async isvisible(object: eui.Image):Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-    object.visible && this.gotoNextScene(new StatueScene());
+    object.visible && this.gotoNextScene(new RiiddleOPtionsScenes());
   }
 
   public addEvet(btn: eui.Image | eui.Button, callback) {

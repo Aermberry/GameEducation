@@ -1,4 +1,4 @@
-class Riddle5Scene extends eui.Component implements  eui.UIComponent {
+class Riddle5Scene extends eui.Component implements eui.UIComponent {
 	private apple: eui.Image;
 	private glasses: eui.Image;
 	private cup: eui.Image;
@@ -11,18 +11,19 @@ class Riddle5Scene extends eui.Component implements  eui.UIComponent {
 	private useTipsGroup: eui.Group;
 	private goodsGroup: eui.Group;
 
-	public constructor() {
+	private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
+
+	public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
 		super();
+		this.RiiddleOPtionsScenes = RiiddleOPtionsScenes;
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
 
 		this.addshowTipsLabel(this.useGroup, this.useTipsGroup);
@@ -72,7 +73,12 @@ class Riddle5Scene extends eui.Component implements  eui.UIComponent {
 	public async isvisible(object: eui.Image): Promise<void> {
 		object.visible = true;
 		await lzlib.ThreadUtility.sleep(1000);
-		object.visible && this.gotoNextScene(new StatueScene());
+		this.RiiddleOPtionsScenes.isCorrect();
+		await object.visible && this.parent.removeChild(this);
+	}
+
+	public isPast(): void {
+		this.isTrueImage.visible && this.parent.removeChild(this);
 	}
 
 	public gotoNextScene(scene: eui.Component) {
@@ -95,5 +101,5 @@ class Riddle5Scene extends eui.Component implements  eui.UIComponent {
 			}, 5000);
 		}
 	}
-	
+
 }

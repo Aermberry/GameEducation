@@ -9,11 +9,14 @@ class Riddle7Scene extends eui.Component implements eui.UIComponent {
   private bookTipsGroup: eui.Group;
   private puzzleTipsGroup: eui.Group;
   private readTipsGroup: eui.Group;
-	private keyTipsGroup:eui.Group;
+  private keyTipsGroup: eui.Group;
   private goodsGroup: eui.Group;
 
-  public constructor() {
+  private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
+
+  public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
     super();
+    this.RiiddleOPtionsScenes = RiiddleOPtionsScenes;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -24,7 +27,7 @@ class Riddle7Scene extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
 
     this.addshowTipsLabel(this.readGroup, this.readTipsGroup);
-		this.addshowTipsLabel(this.key, this.keyTipsGroup);
+    this.addshowTipsLabel(this.key, this.keyTipsGroup);
     this.addshowTipsLabel(this.puzzle, this.puzzleTipsGroup);
     this.isTrue(this.book, this.isTrueImage);
   }
@@ -70,7 +73,12 @@ class Riddle7Scene extends eui.Component implements eui.UIComponent {
   public async isvisible(object: eui.Image): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-    object.visible && this.gotoNextScene(new StatueScene());
+    this.RiiddleOPtionsScenes.isCorrect();
+    await object.visible && this.parent.removeChild(this);
+  }
+
+  public isPast(): void {
+    this.isTrueImage.visible && this.parent.removeChild(this);
   }
 
   public gotoNextScene(scene: eui.Component) {

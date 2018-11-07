@@ -10,11 +10,13 @@ class Riddle4Scene extends eui.Component implements eui.UIComponent {
   private colorPenTipsGroup: eui.Group;
   private foodTipsGroup: eui.Group;
   private takeTipsGroup: eui.Group;
-  private keepTipsGroup:eui.Group;
+  private keepTipsGroup: eui.Group;
   private goodsGroup: eui.Group;
+  private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
 
-  public constructor() {
+  public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
     super();
+    this.RiiddleOPtionsScenes = RiiddleOPtionsScenes;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -72,7 +74,12 @@ class Riddle4Scene extends eui.Component implements eui.UIComponent {
   public async isvisible(object: eui.Image): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-    object.visible && this.gotoNextScene(new StatueScene());
+    this.RiiddleOPtionsScenes.isCorrect();
+    await object.visible && this.parent.removeChild(this);
+  }
+
+  public isPast(): void {
+    this.isTrueImage.visible && this.parent.removeChild(this);
   }
 
   public gotoNextScene(scene: eui.Component) {

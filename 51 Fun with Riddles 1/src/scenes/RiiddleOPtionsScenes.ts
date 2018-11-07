@@ -1,12 +1,12 @@
 class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
 
-  private Riddle01: eui.Button;
-  private Riddle02: eui.Button;
-  private Riddle03: eui.Button;
-  private Riddle04: eui.Button;
-  private Riddle05: eui.Button;
-  private Riddle06: eui.Button;
-  private Riddle07: eui.Button;
+  public Riddle01: eui.Button;
+  public Riddle02: eui.Button;
+  public Riddle03: eui.Button;
+  public Riddle04: eui.Button;
+  public Riddle05: eui.Button;
+  public Riddle06: eui.Button;
+  public Riddle07: eui.Button;
 
   private rid01: Riddle1Scene
   private rid02: Riddle2Scene
@@ -16,17 +16,17 @@ class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
   private rid06: Riddle6Scene
   private rid07: Riddle7Scene
 
-  private account:boolean=false;
+  private account: number = 0;
 
   public constructor() {
     super();
-    this.rid01 = new Riddle1Scene();
-    this.rid02 = new Riddle2Scene();
-    this.rid03 = new Riddle3Scene();
-    this.rid04 = new Riddle4Scene();
-    this.rid05 = new Riddle5Scene();
-    this.rid06 = new Riddle6Scene();
-    this.rid07 = new Riddle7Scene();
+    this.rid01 = new Riddle1Scene(this);
+    this.rid02 = new Riddle2Scene(this);
+    this.rid03 = new Riddle3Scene(this);
+    this.rid04 = new Riddle4Scene(this);
+    this.rid05 = new Riddle5Scene(this);
+    this.rid06 = new Riddle6Scene(this);
+    this.rid07 = new Riddle7Scene(this);
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -37,20 +37,30 @@ class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
     let statue = new Base();
 
-    statue.onClickNextScene(this.Riddle01, this.rid01,this);
-    statue.onClickNextScene(this.Riddle02, this.rid02,this);
-    statue.onClickNextScene(this.Riddle03, this.rid03,this);
-    statue.onClickNextScene(this.Riddle04, this.rid04,this);
-    statue.onClickNextScene(this.Riddle05, this.rid05,this);
-    statue.onClickNextScene(this.Riddle06, this.rid06,this);
-    statue.onClickNextScene(this.Riddle07, this.rid07,this);
-    console.log(this.account);
-    this.receiveResult();
-    console.log(this.rid01)
+    statue.onClickNextScene(this.Riddle01, this.rid01, this);
+    statue.onClickNextScene(this.Riddle02, this.rid02, this);
+    statue.onClickNextScene(this.Riddle03, this.rid03, this);
+    statue.onClickNextScene(this.Riddle04, this.rid04, this);
+    statue.onClickNextScene(this.Riddle05, this.rid05, this);
+    statue.onClickNextScene(this.Riddle06, this.rid06, this);
+    statue.onClickNextScene(this.Riddle07, this.rid07, this);
+    this.Riddle01.enabled = false
   }
 
-  private async receiveResult():Promise<void>{
-   this.account=await this.rid01.resultCallback()
-   console.log(this.account);
+  public isCorrect(): void {
+    this.account++;
+    console.log(this.account);
+    this.succeful();
+  }
+
+  private get result(): number {
+    return this.account;
+  }
+
+  private succeful(): void {
+    let result = this.result;
+    if (this.result == 7) {
+      Main.instance.gotoScene(new FinishScene());
+    }
   }
 }

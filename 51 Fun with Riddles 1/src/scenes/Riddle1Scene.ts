@@ -10,9 +10,11 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
   private goodsGroup: eui.Group;
+  private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
 
-  public constructor() {
+  public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
     super();
+    this.RiiddleOPtionsScenes = RiiddleOPtionsScenes;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -60,29 +62,21 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
     btn.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
       () => {
-        this.isvisible(object, this.resultCallback);
+        this.isvisible(object);
       },
       this
     );
   }
 
-  public async isvisible(object: eui.Image, callback): Promise<void> {
+  public async isvisible(object: eui.Image): Promise<void> {
     object.visible = true;
     await lzlib.ThreadUtility.sleep(1000);
-    await callback();
-    // object.visible && this.gotoNextScene(new StatueScene());
+    this.RiiddleOPtionsScenes.isCorrect();
     await object.visible && this.parent.removeChild(this);
   }
 
-  public async resultCallback(): Promise<boolean> {
-    return new Promise<boolean>(resolve => {
-      // if (this.isTrueImage.visible)
-        resolve(true);
-    })
-  }
-
-  public gotoNextScene(scene: eui.Component) {
-    Main.instance.gotoScene(scene);
+  private isPast(object: eui.Image): void {
+    object.visible && this.parent.removeChild(this);
   }
 
   private preventClick(
