@@ -2,7 +2,7 @@
  * @Author: mikey.zhaopeng 
  * @Date: 2018-09-30 11:16:20 
  * @Last Modified by: Salmonberry
- * @Last Modified time: 2018-11-07 17:01:59
+ * @Last Modified time: 2018-11-07 17:36:41
  */
 
 class Base implements BaseModel {
@@ -36,7 +36,7 @@ class Base implements BaseModel {
   public onClickNextScene(btn: eui.Image | eui.Button, Scene1: eui.Component,Scene2:eui.Component) {
     btn.addEventListener(
       egret.TouchEvent.TOUCH_TAP,
-      ()=>{
+      ( )=>{
         Scene2.addChild(Scene1);
       },
       this
@@ -63,4 +63,7 @@ class Base implements BaseModel {
     btn.addEventListener(egret.TouchEvent.TOUCH_TAP, callback, this);
     callback();
   }
+
+
+  
 }

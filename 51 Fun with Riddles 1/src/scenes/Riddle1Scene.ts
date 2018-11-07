@@ -10,6 +10,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
   private drinksTipsGroup: eui.Group;
   private pencilBoxTipGroup: eui.Group;
   private goodsGroup: eui.Group;
+  
   private RiiddleOPtionsScenes: RiiddleOPtionsScenes;
 
   public constructor(RiiddleOPtionsScenes: RiiddleOPtionsScenes) {
