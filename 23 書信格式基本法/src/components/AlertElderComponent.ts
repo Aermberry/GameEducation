@@ -27,7 +27,7 @@ class AlertElderComponent extends eui.Component implements  eui.UIComponent {
 		this.game2Scene.showCorrectNameGroup();
 	}
 
-	private _text = '在書信的內容中，「媽媽」和[你]是同時出現，因此，「你」是不可能是媽媽。';
+	private _text = '在寫信的內容中，「媽媽」和[你]是同時出現，因此，「你」是不可能是媽媽。';
 
 	public get text(): string
 	{

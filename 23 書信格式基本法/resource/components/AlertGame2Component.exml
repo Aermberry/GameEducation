@@ -3,5 +3,5 @@
 	<w:Config id="1657e02f857" ></w:Config>
 	<e:Image left="0" right="0" height="153"  anchorOffsetX="564" y="-1.33" anchorOffsetY="-1.33" source="bubble_png"/>
 	<e:Image id="alertImage" x="97" y="160" anchorOffsetX="0" anchorOffsetY="0" source="pen_alert_png"/>
-	<e:Label id="alertLabel" text="alertLabel" left="0" right="0" multiline="true" textAlign="center" size="54" textColor="0xfa0915" height="153" verticalAlign="middle" fontFamily="華康楷書體"/>
+	<e:Label id="alertLabel" text="alertLabel" left="0" right="0" multiline="true" textAlign="center" size="54" textColor="0xfa0915" height="153" verticalAlign="middle" fontFamily="華康楷寫體"/>
 </e:Skin>

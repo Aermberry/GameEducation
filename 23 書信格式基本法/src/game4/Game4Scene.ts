@@ -44,7 +44,7 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 		this.initTap();
 		// this.contentComponent.playGame4Start();
 		this.borderRects = {
-			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝願語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
+			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝頌語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
 		};
 		this.exitCompoent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitCompoentTap, this);
 		this.alertSantaClausComponent.game4Scene = this;
@@ -180,6 +180,14 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	{
 		this.currentBorderRect = (this.borderRects[string] as eui.Rect);
 		this.currentBorderRect.visible = true;
+	}
+
+	public disableButton(): void
+	{
+		this.correctNameGroup.$children.map((label)=>{
+			console.log(label);
+			(label as LabelComponents).enabled = false;
+		})
 	}
 	
 }

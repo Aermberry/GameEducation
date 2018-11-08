@@ -31,6 +31,7 @@ class Game2Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game2Repo.correctOfPart){
 			//选择正确
+			this.view.disableButton();
 			this.view.showCorrectOfPart();
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();

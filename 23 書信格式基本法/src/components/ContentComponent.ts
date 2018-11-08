@@ -38,7 +38,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			'下款': {x:0,y:230},
 			'正文': {x:0,y:398},
 			'日期': {x:0,y:570},
-			'祝願語': {x:0,y:743},
+			'祝頌語': {x:0,y:743},
 			'問候語': {x:0,y:920},
 		};
 		
@@ -206,7 +206,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	public RectHandle(text: string): void
 	{
 		console.log(text);
-		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝願語':this.showBlessRect};
+		let	obj = {'上款':this.showShangKuanRect,'下款':this.showXiaKuanRect,'問候語':this.showGreetRect,'正文':this.showTextRect,'日期':this.showDateRect,'祝頌語':this.showBlessRect};
 		obj[text].apply(this);
 	}
 
@@ -298,7 +298,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'祝願語','bless');
+		this.handleStringDrop(e,'祝頌語','bless');
 	}
 
 	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void

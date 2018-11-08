@@ -33,6 +33,7 @@ class Game3Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game3Repository.correctOfPart){
 			//选择正确
+			this.view.disableButton();
 			this.view.showCorrectOfPart();
 			this.view.showContentDownAnimation();
 			this.view.playGame3CorrectAnimation();

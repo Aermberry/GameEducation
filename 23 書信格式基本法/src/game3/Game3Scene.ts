@@ -46,7 +46,7 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 		this.initTap();
 		// this.contentComponent.playGame3Start();
 		this.borderRects = {
-			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝願語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
+			'上款':this.shangKuanRect,'問候語':this.greetRect,'正文':this.textRect,'祝頌語':this.blessRect,'下款':this.xiaKuanRect,'日期':this.dateRect
 		};
 		this.hideAlertGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHideAlertGroupTap, this);
 		this.nextLevelComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextLevelComponentTap, this);
@@ -185,5 +185,10 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 		this.alertGame2Component.visible = true;
 	}
 
-
+	public disableButton(): void
+	{
+		this.correctNameGroup.$children.map((label)=>{
+			(label as eui.Group).touchEnabled = false;
+		})
+	}
 }

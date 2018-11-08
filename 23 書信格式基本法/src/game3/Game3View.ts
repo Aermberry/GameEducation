@@ -14,4 +14,5 @@ interface Game3View {
 	hideCorrectGroup(): void;
 	playGame3CorrectAnimation(): void;
 	showContentDownAnimation(): void;
+	disableButton(): void;
 }
