@@ -185,7 +185,6 @@ class Game4Scene extends eui.Component implements  eui.UIComponent,Game4View {
 	public disableButton(): void
 	{
 		this.correctNameGroup.$children.map((label)=>{
-			console.log(label);
 			(label as LabelComponents).enabled = false;
 		})
 	}

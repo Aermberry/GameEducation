@@ -137,17 +137,17 @@
 		<e:Group width="200" height="140" x="424" y="2" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="生活愉快" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" anchorOffsetY="0" bottom="6" top="0"/>
+			<e:Label name="touchLabel" text="生活愉快" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" anchorOffsetY="0" bottom="6" top="0"/>
 		</e:Group>
 		<e:Group width="200" height="140" x="1608" y="26" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="聖誕快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
+			<e:Label name="touchLabel" text="聖誕快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
 		</e:Group>
 		<e:Group width="200" height="140" x="32" y="2" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="生日快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
+			<e:Label name="touchLabel" text="生日快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
 		</e:Group>
 		<e:layout>
 		<e:HorizontalLayout horizontalAlign="justify" gap="170"/>

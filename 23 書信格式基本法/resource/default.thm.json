@@ -35,6 +35,11 @@
 		"resource/components/ContentComponent.exml",
 		"resource/components/LabelComponents.exml",
 		"resource/components/NextLevelComponent.exml",
+		"resource/scenes/Game1Scene.exml",
+		"resource/scenes/Game2Scene.exml",
+		"resource/scenes/Game3Scene.exml",
+		"resource/scenes/Game4Scene.exml",
+		"resource/scenes/StartScene.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -47,12 +52,7 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scenes/Game1Scene.exml",
-		"resource/scenes/Game2Scene.exml",
-		"resource/scenes/Game3Scene.exml",
-		"resource/scenes/Game4Scene.exml",
-		"resource/scenes/StartScene.exml"
+		"resource/eui_skins/VSliderSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }

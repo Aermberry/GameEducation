@@ -188,7 +188,7 @@ class Game3Scene extends eui.Component implements  eui.UIComponent,Game3View {
 	public disableButton(): void
 	{
 		this.correctNameGroup.$children.map((label)=>{
-			(label as eui.Group).touchEnabled = false;
+			(label as eui.Group).touchChildren = false;
 		})
 	}
 }
