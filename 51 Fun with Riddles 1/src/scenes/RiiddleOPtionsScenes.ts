@@ -17,6 +17,8 @@ class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
   private rid07: Riddle7Scene
 
   private account: number = 0;
+  public accounts: number[] = [];
+
 
   public constructor() {
     super();
@@ -27,6 +29,7 @@ class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
     this.rid05 = new Riddle5Scene(this);
     this.rid06 = new Riddle6Scene(this);
     this.rid07 = new Riddle7Scene(this);
+
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -47,20 +50,31 @@ class RiiddleOPtionsScenes extends eui.Component implements eui.UIComponent {
     this.Riddle01.enabled = false
   }
 
-  public isCorrect(): void {
-    this.account++;
-    console.log(this.account);
-    this.succeful();
+  public isCorrect(result: string): void {
+
+    let plant = library[result];
+
+    let istrue = this.accounts.indexOf(plant);
+    // console.log(`istrue:${istrue}`)
+
+    if (istrue == -1) {
+      this.accounts.push(plant);
+      this.account++;
+      // console.log(`數組：${this.accounts}\n長度：${this.accounts.length}`)
+      this.succeful();
+    }
   }
 
   private get result(): number {
-    return this.account;
+    return this.accounts.length;
   }
 
   private succeful(): void {
     let result = this.result;
+    // console.log(`result：${result}`)
     if (this.result == 7) {
       Main.instance.gotoScene(new FinishScene());
     }
   }
+
 }

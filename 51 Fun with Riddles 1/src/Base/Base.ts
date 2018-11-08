@@ -2,7 +2,7 @@
  * @Author: mikey.zhaopeng 
  * @Date: 2018-09-30 11:16:20 
  * @Last Modified by: Salmonberry
- * @Last Modified time: 2018-11-07 17:36:41
+ * @Last Modified time: 2018-11-08 12:00:26
  */
 
 class Base implements BaseModel {
@@ -38,6 +38,7 @@ class Base implements BaseModel {
       egret.TouchEvent.TOUCH_TAP,
       ( )=>{
         Scene2.addChild(Scene1);
+        // Main.instance.gotoScene(Scene1);
       },
       this
     );

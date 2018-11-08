@@ -73,16 +73,16 @@ class Riddle5Scene extends eui.Component implements eui.UIComponent {
 	public async isvisible(object: eui.Image): Promise<void> {
 		object.visible = true;
 		await lzlib.ThreadUtility.sleep(1000);
-		this.RiiddleOPtionsScenes.isCorrect();
-		await object.visible && this.parent.removeChild(this);
+		this.RiiddleOPtionsScenes.isCorrect("5");
+		if (object.visible) {
+			object.visible = false;
+			await this.parent.removeChild(this);
+		}
+		// await object.visible && this.goHome();
 	}
 
-	public isPast(): void {
-		this.isTrueImage.visible && this.parent.removeChild(this);
-	}
-
-	public gotoNextScene(scene: eui.Component) {
-		Main.instance.gotoScene(scene);
+	public goHome() {
+		Main.instance.gotoScene(new RiiddleOPtionsScenes());
 	}
 
 	private preventClick(
