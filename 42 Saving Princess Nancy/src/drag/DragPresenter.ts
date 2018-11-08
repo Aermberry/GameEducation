@@ -21,7 +21,6 @@ class DragPresenter {
 			//显示拖拽正确部分 show part for correct 
 			this.view.showCorrectPart(dragName);
 			//隐藏右边拖拽完成的部分 hide correct part in right
-			console.log(dragImage);
 			this.view.hideDrapPart(dragImage);
 			// this.view.isIncludeDrap(dragImage);
 			//弹出信息 alert info
@@ -53,9 +52,4 @@ class DragPresenter {
 		this.audioRepo.stopMP3();
 		this.view.hideOverText();
 	}
-	// public onGreenTextOver(name: string): void
-	// {
-	// 	this.audioRepo.playMP3(name);
-	// 	this.view.showText(name);
-	// }
 }

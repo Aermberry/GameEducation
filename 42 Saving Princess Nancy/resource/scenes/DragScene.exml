@@ -95,14 +95,14 @@
 			<e:Image name="hairCurly" x="396.76" y="-32.96" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="hair_curly_png"/>
 		</e:Group>
 		<e:Group id="otherGroup" x="186.38" y="677.66" anchorOffsetX="0" width="471.15">
-			<e:Image name="gloves" x="8.88" y="-42.97" anchorOffsetX="0" anchorOffsetY="0" source="gloves_png"/>
+			<e:Image id="glovesImage" name="gloves" x="8.88" y="-42.97" anchorOffsetX="0" anchorOffsetY="0" source="gloves_png"/>
 			<e:Image name="boots" x="-190.21" y="100.36" anchorOffsetX="0" anchorOffsetY="0" source="boots_png"/>
-			<e:Image name="earrings" x="31.91" y="146.72" anchorOffsetX="0" anchorOffsetY="0" source="earrings_png"/>
-			<e:Image name="glassSlippers" x="290.39" y="77.93" anchorOffsetX="0" anchorOffsetY="0" source="glass_slippers_png"/>
-			<e:Image name="necklace" x="500.39" y="90.96" anchorOffsetX="0" anchorOffsetY="0" source="necklace_png" width="220.79" height="134.33"/>
+			<e:Image id="earringsImage" name="earrings" x="31.91" y="146.72" anchorOffsetX="0" anchorOffsetY="0" source="earrings_png"/>
+			<e:Image id="glassSlippersImage" name="glassSlippers" x="290.39" y="77.93" anchorOffsetX="0" anchorOffsetY="0" source="glass_slippers_png"/>
+			<e:Image id="necklace" name="necklace" x="500.39" y="90.96" anchorOffsetX="0" anchorOffsetY="0" source="necklace_png" width="220.79" height="134.33"/>
 			<e:Image name="glasses" x="136.15" y="8.55" anchorOffsetX="0" anchorOffsetY="0" source="glasses_png"/>
 			<e:Image name="hat" x="266.46" y="-14.78" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="hat_png"/>
-			<e:Image name="crown" x="179.49" y="43.71" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="crown_png" width="113.72" height="61.49"/>
+			<e:Image id="crown" name="crown" x="179.49" y="43.71" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="crown_png" width="113.72" height="61.49"/>
 			<e:Image name="bracelet" x="385.55" y="-35.08" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="bracelet_png"/>
 		</e:Group>
 	</e:Group>

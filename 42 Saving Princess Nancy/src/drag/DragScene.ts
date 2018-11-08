@@ -19,7 +19,13 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private crownGroup: eui.Group;
 	private glovesGroup: eui.Group;
 	private gownGroup: eui.Group;
+	private crown: eui.Image;//皇冠图片
+	private glassSlippersImage: eui.Image;
+	private necklace: eui.Image;
+	private earringsImage: eui.Image;
+	private glovesImage: eui.Image;
 
+	private partsOfBody: any;
 	private mouseOverTexts: any;
 	private curShowText: eui.Group;
 
@@ -46,6 +52,18 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 			'gentle': this.gentleGroup,
 			'gloves': this.glovesGroup,
 			'nightingale': this.nightingaleGroup
+		};
+		this.partsOfBody = {
+			'clothes1': this.clothesGroup,
+			'eyesBlue': this.eyesGroup,
+			'nosePointed': this.noseGroup,
+			'mouthRed': this.mouthGroup,
+			'hairWave': this.hairGroup,
+			'crown': this.crown,
+			'glassSlippers': this.glassSlippersImage,
+			'necklace': this.necklace,
+			'earrings': this.earringsImage,
+			'gloves': this.glovesImage
 		};
 		this.initDrap();
 		this.initDrop();
@@ -132,7 +150,8 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	public hideDrapPart(dragObj: eui.Image): void
 	{
-		console.log(dragObj.parent.name);
+		console.log(this.partsOfBody[dragObj.name]);
+		(this.partsOfBody[dragObj.name] as egret.DisplayObject).visible = false;
 	}
 
 	public showCorrectPart(name: string): void
@@ -151,19 +170,20 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 		this.curShowText.visible = false;
 	}
 
-	public isIncludeDrap(drapObj: eui.Image): void
-	{
-		this.partsOfBodyGroup.$children.map((child) => {
-			if(child instanceof eui.Group){
-				child.$children.map((childImg) => {
-					console.log(childImg.name);
-					console.log(drapObj.name);
-					console.log(childImg);
-					childImg.name == drapObj.name && console.log(child);
+	// public isIncludeDrap(drapObj: eui.Image): void
+	// {
+	// 	this.partsOfBodyGroup.$children.map((child) => {
+	// 		if(child instanceof eui.Group){
+	// 			child.$children.map((childImg) => {
+	// 				// console.log(childImg.name);
+	// 				// console.log(drapObj.name);
+	// 				// console.log(childImg);
+	// 				// childImg.name == drapObj.name && console.log(child);
+	// 				this
 					
-				})
-			}
-		})
-	}
+	// 			})
+	// 		}
+	// 	})
+	// }
 	
 }
