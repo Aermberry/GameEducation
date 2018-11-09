@@ -1,12 +1,13 @@
 class DragPresenter {
 
+	private isCorrect = false;
 	private currectIndex = 0;//表示当前拖拽正确的数目； droping correct number currect 
 	private mixCount = 10;//拖拽完成；drop finish
 	private view: DragView;
 	private audioRepo = new DragAudioRepository();
 	private alertInfoRepo = new AlertInfoRepository();
 	private currectRD = new CurrectRD();
-	
+
 
 	public constructor() {
 	}
@@ -16,13 +17,14 @@ class DragPresenter {
 		this.view = view;
 	}
 
-	public onDrop(e: lzlib.LzDragEvent): void
+	public async onDrop(e: lzlib.LzDragEvent): Promise<void>
 	{
 		let dragImage = (e.dragObject as eui.Image);
 		let dragName = dragImage.name
 		if(dragName == e.target.$name){
 			//拖拽正确 drop correct
 			console.log('drop correct');
+			this.isCorrect = true;
 			this.currectIndex++;
 			//显示拖拽正确部分 show part for correct 
 			this.view.showCorrectPart(dragName);
@@ -33,15 +35,25 @@ class DragPresenter {
 			decorationInfo.playMP3();
 			this.view.alertCorrectInfo(decorationInfo.alertInfo);
 			this.currectIndex == this.mixCount && this.dropFinish();
+			await lzlib.ThreadUtility.sleep(600);
+			this.isCorrect = false;
 
 		}else{
-			//拖拽失败 drop failure
-			console.log('drop failure');
-			//闪烁拖拽部位的对应文字  flicker text 
-			let curRD = this.currectRD.getCurrectRD(dragName);
-			this.view.textFlicker(curRD);
-			//弹出信息 alert info
-			this.view.alertWrongtInfo(this.currectRD.getTextRD());
+
+			await lzlib.ThreadUtility.sleep(500);
+			if(this.isCorrect)
+			{
+				return;
+			}else{
+				//拖拽失败 drop failure
+				console.log('drop failure');
+				//闪烁拖拽部位的对应文字  flicker text 
+				let curRD = this.currectRD.getCurrectRD(dragName);
+				this.view.textFlicker(curRD);
+				//弹出信息 alert info
+				this.view.alertWrongtInfo(this.currectRD.getTextRD());
+			}
+			
 		}
 	}
 	
