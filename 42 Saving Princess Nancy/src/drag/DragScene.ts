@@ -24,10 +24,33 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private necklace: eui.Image;
 	private earringsImage: eui.Image;
 	private glovesImage: eui.Image;
+	private hatImage: eui.Image;
+	private glassesImage: eui.Image;
+	private braceletImage: eui.Image;
+	private bootsImage: eui.Image;
+	private bodyPartMaskRect: eui.Rect;
+
+	//文字闪烁Label
+	private description1Label: eui.Label;
+	private description2Label: eui.Label;
+	private description3Label: eui.Label;
+	private description4Label: eui.Label;
+	private description5Label: eui.Label;
+	private descriptionRD = [];
+
+	private alertGroup: eui.Group;
+	private alertTetxLabel: eui.Label;//拖拽后的提示信息标签
+	private alertMovie: MovieClipPlayer;
 
 	private partsOfBody: any;
 	private mouseOverTexts: any;
 	private curShowText: eui.Group;
+	private bootsComponent: BootsComponent;
+
+	private finishAnimationGroup: eui.Group;
+	private drapFinishAnimation: egret.tween.TweenGroup;
+	private bodyPartMaskRectAnimation: egret.tween.TweenGroup;
+	private alertTextAnimation: egret.tween.TweenGroup;
 
 	private presenter = new DragPresenter();
 
@@ -45,6 +68,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	{
 		super.childrenCreated();
 		// await this.playStartMP3();
+		// await this.playBodyPartMaskAnimation();
 		mouse.enable(this.stage);
 		this.mouseOverTexts = {
 			'gown': this.gownGroup,
@@ -59,12 +83,14 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 			'nosePointed': this.noseGroup,
 			'mouthRed': this.mouthGroup,
 			'hairWave': this.hairGroup,
-			'crown': this.crown,
-			'glassSlippers': this.glassSlippersImage,
+			'crown': [this.crown,this.glassesImage,this.hatImage],
+			'glassSlippers': [this.glassSlippersImage,this.bootsImage],
 			'necklace': this.necklace,
 			'earrings': this.earringsImage,
-			'gloves': this.glovesImage
+			'gloves': [this.glovesImage,this.braceletImage]
 		};
+		this.descriptionRD = [new TextFlicker([this.description1Label,this.description2Label]),new TextFlicker([this.description3Label,this.description4Label,this.description5Label])];
+		this.bootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, () => Main.instance.gotoScene(new Task2IntroductionScene()), this);
 		this.initDrap();
 		this.initDrop();
 		this.initMouse();
@@ -135,23 +161,42 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 		this.nightingaleLabel.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.presenter.onMouseOut, this.presenter);
 	}
 
-	public isCorrect(name: string): void
+	public async alertCorrectInfo(text: string): Promise<void>
 	{
+		this.alertTetxLabel.text = text;
+		this.alertGroup.visible = true;
+		this.alertMovie.play();
+		await lzlib.ThreadUtility.sleep(500);
+		await this.alertTextAnimation.playOnceAsync();
+		this.alertGroup.visible = false;
 	}
 
-	public showText(name: string): void
-	{}
+	public async alertWrongtInfo(text: string): Promise<void>
+	{
+		this.alertTetxLabel.text = text;
+		this.alertGroup.visible = true;
+		this.alertMovie.play();
+		await lzlib.ThreadUtility.sleep(500);
+		await this.alertTextAnimation.playOnceAsync();
+		this.alertGroup.visible = false;
+	}
 
-	public alertCorrectInfo(name: string): void
-	{}
-
-	public textFlicker(name: string): void
-	{}
+	public textFlicker(curRD: number): void
+	{
+		let textFlicker = this.descriptionRD[curRD];
+		textFlicker.flicker();
+	}
 
 	public hideDrapPart(dragObj: eui.Image): void
 	{
-		console.log(this.partsOfBody[dragObj.name]);
-		(this.partsOfBody[dragObj.name] as egret.DisplayObject).visible = false;
+		let part = this.partsOfBody[dragObj.name];
+		if(Array.isArray(part))
+		{
+			part.map((element) => {(element as egret.DisplayObject).visible = false});
+		}else{
+			(this.partsOfBody[dragObj.name] as egret.DisplayObject).visible = false;
+		}
+		
 	}
 
 	public showCorrectPart(name: string): void
@@ -170,20 +215,20 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 		this.curShowText.visible = false;
 	}
 
-	// public isIncludeDrap(drapObj: eui.Image): void
-	// {
-	// 	this.partsOfBodyGroup.$children.map((child) => {
-	// 		if(child instanceof eui.Group){
-	// 			child.$children.map((childImg) => {
-	// 				// console.log(childImg.name);
-	// 				// console.log(drapObj.name);
-	// 				// console.log(childImg);
-	// 				// childImg.name == drapObj.name && console.log(child);
-	// 				this
-					
-	// 			})
-	// 		}
-	// 	})
-	// }
-	
+	public async playBodyPartMaskAnimation(): Promise<void>
+	{
+		await this.bodyPartMaskRectAnimation.playOnceAsync();
+		this.bodyPartMaskRect.visible = false;
+	}
+
+	public playFinishAnimation(): void
+	{
+		this.finishAnimationGroup.visible = true;
+		this.drapFinishAnimation.play(0);
+	} 
+
+	public playFinishMP3(): void
+	{
+		lzlib.SoundUtility.playSound('drap_finish_mp3');
+	}
 }
