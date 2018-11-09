@@ -7,8 +7,9 @@ interface DragView {
 	hideDrapPart(dragObj: eui.Image): void;
 	showCorrectPart(dragName: string): void;
 	// isIncludeDrap(drapObj: eui.Image): void;
-	showOverText(labelName: string): void
+	showOverText(labelName: string): void;
 	hideOverText(): void;
 	playFinishAnimation(): void;
 	playFinishMP3(): void;
+	AlertReTry(): Promise<void>;
 }

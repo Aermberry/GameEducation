@@ -194,7 +194,7 @@
 			<e:Image id="braceletImage" name="bracelet" x="385.55" y="-35.08" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="bracelet_png"/>
 		</e:Group>
 	</e:Group>
-	<e:Group id="alertGroup" x="68" y="524">
+	<e:Group id="alertGroup" x="68" y="524" visible="false">
 		<!--<e:Image x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0.7"/>
 		<e:Image x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
 		<e:Image x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png"/>-->
@@ -212,6 +212,10 @@
 		<e:Rect id="necklaceRect" name="necklace" x="131.29" y="12.21" anchorOffsetX="0" anchorOffsetY="0" width="136" height="96.84" alpha="0"/>
 		<e:Rect id="gloveRect" name="gloves" x="105.39" y="175.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" height="260" rotation="31.32" width="57.42"/>
 		<e:Rect id="feetRect" name="glassSlippers" x="109.91" y="713.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" width="180" height="92"/>
+	</e:Group>
+	<e:Group id="headAndBodyGroup" x="375.87" y="633.45">
+		<e:Rect id="headRect" name="gloves" x="133.39" y="-112.84" anchorOffsetX="0" anchorOffsetY="0" alpha="0" height="124" width="137.42"/>
+		<e:Rect id="bodyRect" name="glassSlippers" x="9.91" y="57.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" width="308" height="748"/>
 	</e:Group>
 	<e:Group id="gentleGroup" x="292" y="0" visible="false">
 		<e:Image x="40" y="0" source="message_border_dragscene_png" anchorOffsetX="0" width="385" anchorOffsetY="0" height="231"/>

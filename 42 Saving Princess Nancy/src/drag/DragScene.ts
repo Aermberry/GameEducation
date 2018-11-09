@@ -29,6 +29,8 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private braceletImage: eui.Image;
 	private bootsImage: eui.Image;
 	private bodyPartMaskRect: eui.Rect;
+	private headRect: eui.Rect;
+	private bodyRect: eui.Rect;
 
 	//文字闪烁Label
 	private description1Label: eui.Label;
@@ -110,6 +112,8 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 			drop.enableDrop(child);
 			child.addEventListener(lzlib.LzDragEvent.DROP, this.presenter.onDrop, this.presenter);
 		})
+		// this.headRect.addEventListener(lzlib.LzDragEvent.DROP, this.presenter.onHeadDrop, this.presenter);
+		// this.bodyRect.addEventListener(lzlib.LzDragEvent.DROP, this.presenter.onBodyDrop, this.presenter);
 	}
 
 	private initDrap(): void
@@ -164,21 +168,29 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	public async alertCorrectInfo(text: string): Promise<void>
 	{
 		this.alertTetxLabel.text = text;
-		this.alertGroup.visible = true;
-		this.alertMovie.play();
-		await lzlib.ThreadUtility.sleep(500);
-		await this.alertTextAnimation.playOnceAsync();
-		this.alertGroup.visible = false;
+		this.playAlertMovie();
 	}
 
 	public async alertWrongtInfo(text: string): Promise<void>
 	{
 		this.alertTetxLabel.text = text;
+		this.playAlertMovie();
+	}
+
+	public async AlertReTry(): Promise<void>
+	{
+		console.log('reTry');
+		this.alertTetxLabel.text = 'Try again!';
+		this.playAlertMovie();
+	}
+
+	private async playAlertMovie(): Promise<void>
+	{
 		this.alertGroup.visible = true;
 		this.alertMovie.play();
 		await lzlib.ThreadUtility.sleep(500);
 		await this.alertTextAnimation.playOnceAsync();
-		this.alertGroup.visible = false;
+		// this.alertGroup.visible = false;
 	}
 
 	public textFlicker(curRD: number): void

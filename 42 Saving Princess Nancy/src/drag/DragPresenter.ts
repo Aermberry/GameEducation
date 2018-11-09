@@ -7,7 +7,7 @@ class DragPresenter {
 	private audioRepo = new DragAudioRepository();
 	private alertInfoRepo = new AlertInfoRepository();
 	private currectRD = new CurrectRD();
-
+	private headBodyRepo = new HeadBodyRepository();
 
 	public constructor() {
 	}
@@ -32,8 +32,8 @@ class DragPresenter {
 			this.view.hideDrapPart(dragImage);
 			//弹出信息 alert info
 			let decorationInfo = this.alertInfoRepo.getInfo(dragName);
-			decorationInfo.playMP3();
 			this.view.alertCorrectInfo(decorationInfo.alertInfo);
+			await decorationInfo.playMP3();
 			this.currectIndex == this.mixCount && this.dropFinish();
 			await lzlib.ThreadUtility.sleep(600);
 			this.isCorrect = false;
@@ -49,6 +49,7 @@ class DragPresenter {
 				console.log('drop failure');
 				//闪烁拖拽部位的对应文字  flicker text 
 				let curRD = this.currectRD.getCurrectRD(dragName);
+				// curRD == undefined ? this.view.AlertReTry() : this.view.textFlicker(curRD);
 				this.view.textFlicker(curRD);
 				//弹出信息 alert info
 				this.view.alertWrongtInfo(this.currectRD.getTextRD());
@@ -57,6 +58,11 @@ class DragPresenter {
 		}
 	}
 	
+	public onDropCancel(): void
+	{
+		console.log('drop cancel');
+	}
+
 	public onMouseOver(e: egret.TouchEvent): void
 	{
 		let textLabel = e.target as eui.Label;
@@ -74,9 +80,27 @@ class DragPresenter {
 		this.view.hideOverText();
 	}
 
-	private dropFinish(): void
+	public onHeadDrop(e: lzlib.LzDragEvent): void
 	{
+		if(!this.headBodyRepo.isInHead(e.dragObject.name)){
+			//弹出信息
+			this.view.AlertReTry();
+		}
+	}
+
+	public onBodyDrop(e: lzlib.LzDragEvent): void
+	{
+		if(!this.headBodyRepo.isInBody(e.dragObject.name)){
+			//弹出信息
+			this.view.AlertReTry();
+		}
+	}
+
+	private async dropFinish(): Promise<void>
+	{
+		await lzlib.ThreadUtility.sleep(5000);
 		this.view.playFinishAnimation();
 		this.view.playFinishMP3();
 	}
+	
 }
