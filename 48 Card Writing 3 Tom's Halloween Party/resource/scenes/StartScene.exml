@@ -9,4 +9,6 @@
 	<e:Label text="Tom" x="1040.94" y="1184.54" textColor="0x6375e2" size="65" fontFamily="Comic Sans MS"/>
 	<e:Label text="Tom is having a party.\nHe asks Susan to go.\nRead the carad." x="1345.3" y="427.73" size="56" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="285.24" fontFamily="Comic Sans MS"/>
 	<e:Button id="nextButton" label="Next" x="1484.4" y="1114.7" anchorOffsetX="0" width="227.28" anchorOffsetY="0" height="134.84"/>
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
