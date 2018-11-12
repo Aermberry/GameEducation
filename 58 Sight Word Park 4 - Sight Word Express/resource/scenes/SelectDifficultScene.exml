@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="SelectDifficultSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="164e8c20850" ></w:Config>
-	<e:Image source="select_diffcult_bg_png"/>
+	<e:Image source="select_diffcult_bg_png" visible="false"/>
+	<e:Image x="-610.86" y="-565.85" source="start_imgs_png" anchorOffsetX="0" width="3010.43" anchorOffsetY="0" height="2023.86"/>
+	<e:Rect width="1920" height="1280" x="0" y="0" fillColor="0xffffff" fillAlpha="0.5"/>
+	<e:Image x="561.24" y="101.42" source="scene_bg_png" anchorOffsetX="0" width="651.82" anchorOffsetY="0" height="434.55"/>
 	<e:Group id="backGroup" x="1737" y="41" height="217" width="127"/>
-	<e:Group id="easyGroup" x="593" y="853" height="175" width="240"/>
-	<e:Group id="proGroup" x="1089" y="853" height="175" width="243"/>
+	<e:Group id="easyGroup" x="593" y="853" height="175" width="240">
+		<e:Image x="1.3" y="1.58" source="go_to_png"/>
+		<e:Label text="Easy" x="61.36" y="56.06" size="60" fontFamily="Kristen_ITC"/>
+	</e:Group>
+	<e:Group id="proGroup" x="1089" y="853" height="175" width="243">
+		<e:Image x="1.3" y="1.58" source="go_to_png"/>
+		<e:Label text="Pro" x="61.36" y="56.06" size="60" fontFamily="Kristen_ITC"/>
+	</e:Group>
+	<e:Label text="Sight Word Express" x="579.27" y="548.42" textColor="0x000000" size="80" fontFamily="Kristen_ITC"/>
+	<e:Label text="Choose the cargoes with the correct words to \ncomplete the sentences." x="418.54" y="679" size="50" textColor="0x000000" fontFamily="Kristen_ITC"/>
 </e:Skin>

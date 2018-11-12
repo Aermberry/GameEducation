@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,arrow_right_png,sight_word_park_png,start_scene_bg_png,rainbow_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,start_png,start2_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,start3_png,movie_clip_json,movie_clip_png,start_imgs_png,scene_bg_png,go_to_png,shape68_png,shape42_png,bird_tow_png",
 			"name": "preload"
 		}
 	],
@@ -40,11 +40,6 @@
 			"url": "textures/movie_clip.json",
 			"type": "json",
 			"name": "movie_clip_json"
-		},
-		{
-			"url": "images/wlts_logo.jpg",
-			"type": "image",
-			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "textures/false_drop_down_box.json",
@@ -197,9 +192,24 @@
 			"url": "audios/congratulation.mp3"
 		},
 		{
+			"name": "start_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start2_png",
+			"type": "image",
+			"url": "textures/start.png"
+		},
+		{
 			"name": "arrow_right_png",
 			"type": "image",
 			"url": "textures/arrow_right.png"
+		},
+		{
+			"name": "rainbow_png",
+			"type": "image",
+			"url": "textures/rainbow.png"
 		},
 		{
 			"name": "sight_word_park_png",
@@ -207,14 +217,49 @@
 			"url": "textures/sight_word_park.png"
 		},
 		{
+			"name": "smiling_yellow_head_png",
+			"type": "image",
+			"url": "textures/smiling_yellow_head.png"
+		},
+		{
 			"name": "start_scene_bg_png",
 			"type": "image",
 			"url": "textures/start_scene_bg.png"
 		},
 		{
-			"name": "rainbow_png",
+			"name": "start3_png",
 			"type": "image",
-			"url": "textures/rainbow.png"
+			"url": "textures/start.png"
+		},
+		{
+			"name": "start_imgs_png",
+			"type": "image",
+			"url": "textures/start_imgs.png"
+		},
+		{
+			"name": "scene_bg_png",
+			"type": "image",
+			"url": "textures/scene_bg.png"
+		},
+		{
+			"name": "go_to_png",
+			"type": "image",
+			"url": "textures/go_to.png"
+		},
+		{
+			"name": "shape68_png",
+			"type": "image",
+			"url": "textures/shape68.png"
+		},
+		{
+			"name": "shape42_png",
+			"type": "image",
+			"url": "textures/shape42.png"
+		},
+		{
+			"name": "bird_tow_png",
+			"type": "image",
+			"url": "textures/bird_tow.png"
 		}
 	]
 }

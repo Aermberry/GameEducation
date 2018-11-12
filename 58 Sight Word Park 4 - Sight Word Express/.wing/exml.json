@@ -1,37 +1,40 @@
 {
-    "164d4293be7": {
-        "path": "scenes\\StartScene.ts",
-        "class": "StartScene",
-        "parentPath": ""
-    },
-    "164e8c20850": {
-        "path": "scenes\\SelectDifficultScene.ts",
-        "class": "SelectDifficultScene",
-        "parentPath": ""
-    },
-    "164ea0ee801": {
-        "path": "scenes\\EasyGoScene.ts",
-        "class": "EasyGoScene",
-        "parentPath": ""
-    },
-    "164ea0f5024": {
-        "path": "scenes\\ProGoScene.ts",
-        "class": "ProGoScene",
-        "parentPath": ""
-    },
-    "164ea1d66e7": {
-        "path": "scenes\\ProGoScene.ts",
-        "class": "ProGoScene",
-        "parentPath": ""
-    },
-    "164ea200f36": {
-        "path": "scenes\\EasyGameScene.ts",
-        "class": "EasyGameScene",
-        "parentPath": ""
-    },
-    "164ec34f878": {
-        "path": "scenes/ResultScene.ts",
-        "class": "ResultScene",
-        "parentPath": ""
-    }
+  "164d4293be7": {
+    "path": "scenes\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": ""
+  },
+  "164e8c20850": {
+    "path": "scenes\\SelectDifficultScene.ts",
+    "class": "SelectDifficultScene",
+    "parentPath": ""
+  },
+  "164ea0ee801": {
+    "path": "scenes\\EasyGoScene.ts",
+    "class": "EasyGoScene",
+    "parentPath": ""
+  },
+  "164ea0f5024": {
+    "path": "scenes\\ProGoScene.ts",
+    "class": "ProGoScene",
+    "parentPath": ""
+  },
+  "164ea1d66e7": {
+    "path": "scenes\\ProGoScene.ts",
+    "class": "ProGoScene",
+    "parentPath": ""
+  },
+  "164ea200f36": {
+    "path": "scenes\\EasyGameScene.ts",
+    "class": "EasyGameScene",
+    "parentPath": ""
+  },
+  "164ec34f878": {
+    "path": "scenes/ResultScene.ts",
+    "class": "ResultScene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
 }

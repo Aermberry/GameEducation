@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="EasyGoSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="164ea0ee801" ></w:Config>
-	<e:Image source="go_bg_png"/>
-	<e:Group  id="playGameGroup" x="862" y="842" height="213" width="295"/>
-	<e:Group id="backGroup" x="1740" y="41" width="127" height="218"/>
+	<e:Image x="-610.86" y="-565.85" source="start_imgs_png" anchorOffsetX="0" width="3010.43" anchorOffsetY="0" height="2023.86"/>
+	<e:Rect width="1920" height="1280" x="0" y="0" fillColor="0xffffff" fillAlpha="0.5"/>
+	<e:Image source="go_bg_png" visible="false"/>
+	<e:Group  id="playGameGroup" x="862" y="842" height="213" width="295">
+		<e:Image x="19.6" y="15.39" source="go_to_png"/>
+		<e:Label text="Go" x="86.06" y="60.94" size="80" fontFamily="Kristen_ITC"/>
+	</e:Group>
+	<e:Group id="backGroup" x="1740" y="41" width="127" height="218">
+		<e:Image x="-0.42" y="-1.85" source="back_png"/>
+	</e:Group>
+	<e:Image x="394.57" y="346.88" source="scene_bg_png" anchorOffsetX="0" width="651.82" anchorOffsetY="0" height="434.55"/>
+	<e:Label text="Sight Word Express" x="612.6" y="196.91" textColor="0x000000" size="80" fontFamily="Kristen_ITC"/>
+	<e:Label text="1.  Read the sentences \ncarefully." x="1072.7" y="391" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
+	<e:Label text="2. Click the words on the \ncorrect cargoes. " x="1072.55" y="509" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
+	<e:Label text="3. Click the bird icon      to \nlisten to the words. " x="1072.61" y="636" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
+	<e:Image x="1490.43" y="629.88" source="bird_tow_png" anchorOffsetX="0" width="46.91" anchorOffsetY="0" height="51.33"/>
 </e:Skin>

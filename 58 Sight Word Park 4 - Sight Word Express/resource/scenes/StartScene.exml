@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<e:Image id="bg" source="start_scene_bg_png"  horizontalCenter="-327.5" verticalCenter="317.5"/>
+	<e:Image id="bg" source="start_scene_bg_png"  horizontalCenter="-188" verticalCenter="123.5" anchorOffsetX="0" width="2896.25" anchorOffsetY="0" height="1763.33"/>
 	<e:Image id="rainbowImage" source="rainbow_png" x="1920" y="85" height="295"/>
 	<e:Image id="sightWordParkImage" source="sight_word_park_png"  y="85" width="1520" height="350" horizontalCenter="0" visible="false"/>
-	<e:Image id="startGameBtn" source="start_game_normal_png" x="921" y="640"/>
+	<e:Image id="startGameBtn111" source="start_game_normal_png" x="921" y="640" visible="false"/>
+	<e:Group id="startGameBtn" x="1048" y="703">
+		<e:Image id="overImage" source="shape42_png" width="380" height="600" y="-36.36" x="-3.03" visible="false"/>
+		<e:Image x="27.72" y="257.88" source="river_bg_png" anchorOffsetX="0" width="315.5" anchorOffsetY="0" height="198.83"/>
+		<e:Image x="0" y="0" source="shape68_png"/>
+		<e:Image x="27.6" y="4.29" source="sight_word_express_png" anchorOffsetX="0" width="334.91" anchorOffsetY="0" height="144.83"/>
+		<e:Image x="58.27" y="336.94" source="train_png" anchorOffsetX="0" width="410.78" anchorOffsetY="0" height="72.32" scaleX="0.6"/>
+		<e:Image x="66.76" y="317.72" source="smoke_png" anchorOffsetX="0" width="111.15" anchorOffsetY="0" height="31.37"/>
+		<e:Image x="118.45" y="275.97" source="box_png" anchorOffsetX="0" width="50" anchorOffsetY="0" height="40"/>
+		<e:Image width="50" height="40" x="176" y="275.88" source="box_png"/>
+		<e:Image width="50" height="40" x="240.09" y="278.58" source="box_png"/>
+	</e:Group>
+	<e:Group id="startGameBtn2" width="366.67" height="524.25" x="1048.48" y="702.96" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
 	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>
