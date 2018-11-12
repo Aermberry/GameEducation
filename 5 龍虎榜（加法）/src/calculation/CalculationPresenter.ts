@@ -4,9 +4,12 @@ class CalculationPresenter {
 	public maxQuestionCount = 10;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
+	private answerSum: SumAndCarry;
 	private correctSum: SumAndCarry;
 	private questionIndex: number;
 	private questionPairs: number[][] = null;
+	public isClear = false;
+	private timer = null;
 
 	public constructor() {
 	}
@@ -25,17 +28,27 @@ class CalculationPresenter {
 				let pair = this.questionPairs[this.questionIndex];
 				let addend = this.view.addend = pair[0];
 				let augend = this.view.augend = pair[1];
-
-				let answerSum = await this.getAnswerSumAndCarryAsync();
+				
+				this.questionIndex == 0 && (this.view.showFInishTip());
+				
+				this.timer = setInterval(async () => {
+					if(this.isClear)
+					{
+						this.isClear = false;
+						this.view.clearUserInput();
+						this.answerSum = await this.getAnswerSumAndCarryAsync();	
+					}
+				},100)
+				this.answerSum = await this.getAnswerSumAndCarryAsync();
 				this.correctSum = this.getCorrectSumAndCarry(addend, augend);
-				if (answerSum.equals(this.correctSum, this.carryNeed)) {
-					this.correctAnswerCount++;
-					this.view.correctAnswerCount = this.correctAnswerCount;
-					this.view.alertAnswerCorrect();
-					this.view.openBox();
-				} else {
-					this.view.alertAnswerWrong();
-				}
+				// if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
+				// 	this.correctAnswerCount++;
+				// 	this.view.correctAnswerCount = this.correctAnswerCount;
+				// 	this.view.alertAnswerCorrect();
+				// 	this.view.openBox();
+				// } else {
+				// 	this.view.alertAnswerWrong();
+				// }
 				this.view.enableFinishImage();
 
 				await this.view.nextQuestionButtonClickAsync();
@@ -71,6 +84,16 @@ class CalculationPresenter {
 	//当点击完成按钮时
 	public async onInputFinish(): Promise<void>
 	{		
+			if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
+				this.correctAnswerCount++;
+				this.view.correctAnswerCount = this.correctAnswerCount;
+				this.view.alertAnswerCorrect();
+				this.view.openBox();
+			} else {
+				this.view.alertAnswerWrong();
+			}
+			clearInterval(this.timer);
+			// this.view.hideFInishTip();
 			this.view.hideFinishImage();
 			this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();

@@ -25,6 +25,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private boxOpenTweenGroup: egret.tween.TweenGroup;
 	private strawberryImage: eui.Image;
 	private finishImage: eui.Image;
+	private finishGroup: eui.Group;
 
 	private numberPad: NumberPad;
 
@@ -49,6 +50,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onFinishOut, this);
 		this.finishImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onFinishClick, this);
 		this.presenter.loadView(this);
+		this.numberPad.calcPresenter = this.presenter;
 	}
 
 	private onFinishClick(e: egret.TouchEvent): void
@@ -265,6 +267,18 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.answerSumGroup.$children.forEach(x => (x as EditableLabel).clear() );
 		this.correctCarryGroup.$children.forEach(x => (x as EditableLabel).clear() );
 		this.correctSumGroup.$children.forEach(x => (x as EditableLabel).clear() );
+	}
+
+	public async showFInishTip(): Promise<void>
+	{
+		this.finishGroup.visible = true;
+		await lzlib.ThreadUtility.sleep(3000);
+		this.finishGroup.visible = false;
+	}
+
+	public hideFInishTip(): void
+	{
+		this.finishGroup.visible = false;
 	}
 
 }
