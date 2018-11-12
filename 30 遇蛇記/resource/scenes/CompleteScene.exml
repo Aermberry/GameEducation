@@ -24,6 +24,8 @@
 		<e:Image id="footprint6" x="1058" y="40" source="footprint_png" rotation="90" />
 		<e:Image id="footprint8" x="1294" y="40" source="footprint_png" rotation="90" />
 		<e:Image id="footprint10" x="1530" y="40" source="footprint_png" rotation="90" />
-		<ns1:ImageButton id="exitButton" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110"/>
+		<ns1:ImageButton id="exitButtonzzz" source="exit_button_normal_png" tipSource="exit_button_tip_png" anchorOffsetX="75" anchorOffsetY="75" scaleX="1" scaleY="1" x="1815" y="110" visible="false"/>
+		<e:Image id="exitButton" x="1690" y="47" source="exit_button_normal_png"/>
+		<e:Image id="exit" x="1712.49" y="-8.21" source="exit_button_tip_png" visible="false"/>
 	</e:Group>
 </e:Skin>
