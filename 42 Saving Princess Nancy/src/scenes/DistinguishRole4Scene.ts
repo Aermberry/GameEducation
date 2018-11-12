@@ -73,15 +73,16 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 		this.person6Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person3AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onPerson3AlertClose, this);
 		this.person5AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onPerson5AlertClose, this);
+		
 	}
 
 	private async onCorrectClick(): Promise<void>
 	{
 		this.hideCurrentAlert();
 		lzlib.SoundUtility.stopCurrentSound();
-		this.person2AlertComponent.visible = true;
+		this.person4AlertComponent.visible = true;
 		await lzlib.SoundUtility.playSound('listening4_correct_mp3');
-		this.person2AlertComponent.visible = false;
+		this.person4AlertComponent.visible = false;
 		this.person4MovieClipPlayer.visible = true;
 		this.person4MovieClipPlayer.play();
 		await lzlib.ThreadUtility.sleep(1000);

@@ -3,6 +3,6 @@
 	<w:Declarations>
 	</w:Declarations>
 	<w:Config id="166241b423b" ></w:Config>
-	<e:Label id="textLabel" text="Home" x="171" size="50" fontFamily="Staccato" textColor="0x000000" right="-130" verticalCenter="0"/>
+	<e:Label id="textLabel" text="Home" x="171" size="50" fontFamily="BrushScript" textColor="0x000000" right="-105" verticalCenter="-38"/>
 	<ns1:MovieClipPlayer id="boots" dataSet="boots_json" texture="boots_button_png" movieClipName="boots" left="0" right="0" top="0" bottom="0" />
 </e:Skin>

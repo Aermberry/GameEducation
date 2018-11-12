@@ -1,11 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="GoToCastleSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="GoToCastleSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{princessBirdImage}">
+				<tween:To duration="14000">
+					<tween:props>
+						<e:Object width="{709.55}" height="{2020.28}" x="{607.33}" y="{-220.73}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud1Image}">
+				<tween:To duration="7000">
+					<tween:props>
+						<e:Object x="{1940.58}" width="{1075.86}" height="{344.72}" y="{318.61}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud2Image}">
+				<tween:To duration="6500">
+					<tween:props>
+						<e:Object x="{1953.57}" width="{1458.54}" height="{471.63}" y="{691.63}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud3Image}">
+				<tween:To duration="5250">
+					<tween:props>
+						<e:Object x="{1933.14}" width="{980.6}" height="{326.79}" y="{-22.42}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud4Image}">
+				<tween:To duration="4500">
+					<tween:props>
+						<e:Object x="{1959.66}" width="{1066.3}" height="{270.79}" y="{301.52}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud5Image}">
+				<tween:To duration="3300">
+					<tween:props>
+						<e:Object x="{1955.46}" width="{1000.68}" height="{254.12}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud6Image}">
+				<tween:To duration="2250">
+					<tween:props>
+						<e:Object x="{1955.99}" width="{967.86}" height="{245.79}" y="{310.58}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud7Image}">
+				<tween:Wait duration="2750"/>
+				<tween:Set/>
+				<tween:To duration="7000">
+					<tween:props>
+						<e:Object x="{1933.93}" width="{1492.01}" height="{478.05}" y="{186.95}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud8Image}">
+				<tween:Wait duration="3500"/>
+				<tween:Set/>
+				<tween:To duration="7000">
+					<tween:props>
+						<e:Object x="{1946.9}" width="{2180.14}" height="{704.96}" y="{626.63}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud9Image}">
+				<tween:Wait duration="7750"/>
+				<tween:Set/>
+				<tween:To duration="6250">
+					<tween:props>
+						<e:Object width="{1080.62}" height="{360.12}" x="{1451.49}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud10Image}">
+				<tween:Wait duration="10250"/>
+				<tween:Set/>
+				<tween:To duration="3750">
+					<tween:props>
+						<e:Object x="{586.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{cloud11Image}">
+				<tween:Wait duration="12750"/>
+				<tween:Set/>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object x="{-651.42}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{maskRect}">
+				<tween:To duration="7000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="166233e5828" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="blue_png"/>
-	<e:Image x="130.58" y="136.61" source="cloud_png" anchorOffsetX="0" width="535.75" anchorOffsetY="0" height="136.05"/>
-	<e:Image x="130.58" y="548.95" source="cloud_png" anchorOffsetX="0" width="893.74" anchorOffsetY="0" height="226.96"/>
-	<e:Image x="866.57" y="101.87" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
-	<e:Image x="1539.1" y="204.63" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
-	<e:Image x="1715.77" y="463.56" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
-	<e:Image x="874.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="247.57" anchorOffsetY="0" height="788.06"/>
+	<e:Image id="cloud1Image" x="-409.42" y="368.61" source="cloud_png" anchorOffsetX="0" width="711.75" anchorOffsetY="0" height="228.05"/>
+	<e:Image id="cloud7Image" x="-1157.74" y="286.95" source="cloud_png" anchorOffsetX="0" width="1127.89" anchorOffsetY="0" height="361.38"/>
+	<e:Image id="cloud2Image" x="-621.42" y="724.95" source="cloud_png" anchorOffsetX="0" width="1097.74" anchorOffsetY="0" height="354.96"/>
+	<e:Image id="cloud8Image" x="-1669.75" y="734.95" source="cloud_png" anchorOffsetX="0" width="1613.17" anchorOffsetY="0" height="521.63"/>
+	<e:Image id="cloud11Image" x="-1409.75" y="744.95" source="cloud_png" anchorOffsetX="0" width="1371.5" anchorOffsetY="0" height="443.49"/>
+	<e:Image id="cloud3Image" x="149.83" y="19.23" source="cloud_png" anchorOffsetX="0" width="680.53" anchorOffsetY="0" height="226.79"/>
+	<e:Image id="cloud9Image" x="-706.84" y="20.9" source="cloud_png" anchorOffsetX="0" width="680.53" anchorOffsetY="0" height="226.79"/>
+	<e:Image id="cloud10Image" x="-721.83" y="380.9" source="cloud_png" anchorOffsetX="0" width="680.53" anchorOffsetY="0" height="226.79"/>
+	<e:Image id="cloud4Image" x="476.32" y="359.85" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image id="cloud5Image" x="1122.14" y="283.22" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image id="cloud6Image" x="956" y="377.24" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image id="princessBirdImage" x="874.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="247.57" anchorOffsetY="0" height="788.06"/>
+	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 </e:Skin>

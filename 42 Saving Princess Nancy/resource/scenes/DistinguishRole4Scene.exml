@@ -412,9 +412,9 @@
 	<ns1:MovieClipPlayer id="person3MovieClipPlayer" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" x="221.36" y="-145.65" visible="false"/>
 	<ns1:MovieClipPlayer id="person4MovieClipPlayer" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" x="513.04" y="-125.65" visible="false"/>
 	<ns1:MovieClipPlayer id="person5MovieClipPlayer" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" x="771.36" y="-105.65" visible="false"/>
-	<ns1:AlertComponent id="person6AlertComponent" width="664" height="304" x="848" y="768" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the birdge." visible="false"/>
-	<ns1:AlertComponent id="person1AlertComponent" width="664" height="304" x="250" y="262" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the birdge." visible="false"/>
-	<ns1:AlertComponent id="person2AlertComponent" width="664" height="304" x="284" y="96" anchorOffsetX="0" anchorOffsetY="0" text="Well done! I will change into a bird and take you to the castle." visible="false"/>
+	<ns1:AlertComponent id="person6AlertComponent" width="664" height="304" x="848" y="768" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the bridge." visible="false"/>
+	<ns1:AlertComponent id="person1AlertComponent" width="838.74" height="384" x="603" y="526.96" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the bridge." visible="false"/>
+	<ns1:AlertComponent id="person2AlertComponent" width="664" height="304" x="595.89" y="388.94" anchorOffsetX="0" anchorOffsetY="0" text="The person you look for is on the bridge." visible="false"/>
 	<ns1:AlertComponent id="person4AlertComponent" width="733.89" height="360" x="194" y="82" anchorOffsetX="0" anchorOffsetY="0" text="Well done! I will change into a bird and take you to the castle." visible="false"/>
 	<ns1:AlertComponent id="person5AlertComponent" width="404" height="184.96" x="1402" y="170" anchorOffsetX="0" anchorOffsetY="0" text="i'm not bald." visible="false"/>
 	<ns1:AlertComponent id="person3AlertComponent" width="404" height="184.96" x="262" y="170" anchorOffsetX="0" anchorOffsetY="0" text="i'm not bald." visible="false"/>
