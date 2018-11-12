@@ -67,7 +67,7 @@ class Main extends eui.UILayer {
 
     }
 
-    private async loadResource() {
+   private async loadResource() {
         const loadingView = new LoadingUI();
         try {
             this.stage.addChild(loadingView);
@@ -108,7 +108,7 @@ class Main extends eui.UILayer {
             //允许用户跳转到指定的Scene
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
         } else {
-            this.addChild(new RiiddleOPtionsScenes());
+            this.addChild(new StartScene());
         }
     }
 
