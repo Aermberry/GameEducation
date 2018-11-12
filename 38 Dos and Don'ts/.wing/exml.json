@@ -32,7 +32,8 @@
   "164f4ac6409": {
     "path": "scenes\\PhotoSCene5.ts",
     "class": "PhotoSCene5",
-    "parentPath": ""
+    "parentPath": "",
+    "guideLinesEnabled": true
   },
   "164f4b7f127": {
     "path": "..\\resource\\scenes\\Flowers.ts",

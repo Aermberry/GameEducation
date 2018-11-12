@@ -12,7 +12,7 @@
 		<e:Image source="worker_bicycle_png" x="1180.21" y="282" locked="true" />
 		<e:Image source="tip_board_png" x="1465.46" y="371.5" locked="true" />
 		<e:Image source="bicycle_amy_frame_png" x="515" y="640" />
-		<e:Label text="Can I ride my bicycle here?" size="40" textColor="0x000000" fontFamily="ComicSansMS3" x="556.85" y="702.03" />
+		<e:Label text="Can I ride my bicycle here?" size="40" textColor="0x000000" fontFamily="ComicSansMS3" x="556.85" y="702.03"  anchorOffsetX="0" width="592.48" anchorOffsetY="0" height="79.39"/>
 		<e:Image source="light_png" x="1384" y="270" />
 	</e:Group>
 	<e:Group id="nextDialogGroup" visible="false">

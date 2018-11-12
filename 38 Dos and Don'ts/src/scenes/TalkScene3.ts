@@ -78,7 +78,7 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 	private async nextDialog(): Promise<void> {
 		this.currentSoundChannl.stop();
 		this.currentSoundChannl = (RES.getRes('listen_me_mp3') as egret.Sound).play(0, 1);
-		this.firstLabel.text = "No,you can't.";
+		this.firstLabel.text = "No, you can't.";
 		this.secondLabel.text = "You must listen to me.";
 		await ThreadUtility.sleep(4200);
 		this.nextGroup.visible = true;

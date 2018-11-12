@@ -58,7 +58,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
         this.downloadingLabel.textAlign = "center";
         this.downloadingLabel.textColor = 0x000000;
         this.downloadingLabel.size = 48;
-        this.downloadingLabel.text = "下載中";
+        this.downloadingLabel.text = "loading";
     }
 
     private createProgressBar(): void

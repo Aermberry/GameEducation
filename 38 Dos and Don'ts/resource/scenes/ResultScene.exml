@@ -8,6 +8,6 @@
 	<e:Image source="light_red_normal_png" x="1577.48" y="459.76"/>
 	
 	<e:Label text="Exit" fontFamily="ComicSansMS3" size="45" textColor="0xFF3200" x="1585.98" y="483.26"/>
-	<e:Label text="I had a good day, bye bye!" x="751" y="342" textColor="0x000000" size="40" width="486" anchorOffsetX="0" anchorOffsetY="0" fontFamily="ComicSansMS3"/>
+	<e:Label text="I had a good day, bye bye!" x="751" y="342" textColor="0x000000" size="40" width="486" anchorOffsetX="0" anchorOffsetY="0" fontFamily="ComicSansMS3" height="57"/>
 	<e:Group id="ExitGroup" x="1577.5" y="459.7" height="90" width="90"/>
 </e:Skin>

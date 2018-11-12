@@ -77,7 +77,7 @@ class BirdScene7 extends eui.Component implements eui.UIComponent {
 	private async nextDialog(): Promise<void> {
 		this.currentSoundChannl.stop();
 		this.currentSoundChannl = (RES.getRes('can_not_feed_mp3') as egret.Sound).play(0, 1);
-		this.firstLabel.text = "No,you can't.";
+		this.firstLabel.text = "No, you can't.";
 		this.secondLabel.text = "You can't feed";
 		this.thirdLabel.text = "the birds here.";
 		await ThreadUtility.sleep(6200);
