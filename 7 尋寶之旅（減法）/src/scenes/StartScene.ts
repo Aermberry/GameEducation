@@ -69,6 +69,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onSeniorImageClick(): void
 	{
+		this.stopCurrentSoundChannel();
 		Main.instance.gotoScene(new CalculationScene(Degree.senior));
 	}
 
