@@ -6,7 +6,8 @@ class Question3AnswerScene extends eui.Component implements  eui.UIComponent {
 	private resultImage: eui.Image;
 	private resultLabel: eui.Label;
 	private nextSceneButton: ImageButton;
-	private exitButton: ImageButton;
+	private exitButton: eui.Image;
+	private exit:eui.Image;
 	private startButtonTipLabel: eui.Label;
 
 	private currentSoundChannel: egret.SoundChannel;
@@ -29,7 +30,19 @@ class Question3AnswerScene extends eui.Component implements  eui.UIComponent {
 		this.bottomCheckBox.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBottomCheckBoxClick, this);
 		this.nextSceneButton.once(egret.TouchEvent.TOUCH_TAP, this.onNextPageButtonClick, this);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitButtonClick, this);
+		this.exitButton.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onRollOver, this)
+		this.exitButton.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onRollOut, this)
 		this.playQuestionSound();
+	}
+
+	private onRollOver():void {
+		this.exit.visible = true;
+		this.exitButton.scaleX = this.exitButton.scaleY = 1.1;
+	}
+
+	private onRollOut(): void{
+		this.exit.visible = false;
+		this.exitButton.scaleX = this.exitButton.scaleY = 1;
 	}
 
 	private async playQuestionSound(): Promise<void>
