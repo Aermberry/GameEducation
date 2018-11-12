@@ -106,7 +106,7 @@ class Main extends eui.UILayer {
         if (egret.getOption('scene')) {
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]); //允许用户跳转到指定场景
         } else {
-            this.addChild(new StartScene());
+            this.addChild(new startScene());
         }
     }
 
