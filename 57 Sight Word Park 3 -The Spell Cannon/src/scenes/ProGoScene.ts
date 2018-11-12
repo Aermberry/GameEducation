@@ -17,8 +17,8 @@ class ProGoScene extends eui.Component implements eui.UIComponent{
 
         this.bgmSoundChannel = RES.getRes('select_difficulty_scene_bgm_mp3').play(0,-1);
 
-        mouse.enable(this.stage);
-        mouse.setButtonMode(this.boomBtn,true);
+        mouse.enable(this.stage);//啓動鼠標手勢變化
+        mouse.setButtonMode(this.boomBtn,true);//對boomBtn啓用手勢變化
         this.boomBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goEnterProGameScene, this);
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.boomBtn.source='black_boom_png', this);
         this.boomBtn.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.boomBtn.source='red_boom_png', this);
