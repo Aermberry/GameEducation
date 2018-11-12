@@ -30,6 +30,13 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+         #none {
+             -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
         @font-face {
             font-family:"华康粗黑体";
             src: url("resource/fonts/华康粗黑体.woff2") format('woff2'),
@@ -110,11 +117,13 @@
     style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
 </div>
 
+<div id="none">
 <label style="font-family: 華康娃娃体;  color: transparent;">現時進度成功完成了</label>
 <label style="font-family: 華康標楷體;  color: transparent;">請按下一頁按鈕繼續請按下一頁按鈕繼續請按下一頁按鈕繼續</label>
 <label style="font-family: 华康中圆体;  color: transparent;">天氣報告一好請按綠色按鈕第三節準備好有關天氣報告問題天氣報告二</label>
 <label style="font-family: 华康粗黑体;  color: transparent;">不太正確輸入氣溫度確認輸入</label>
 <label style="font-family: 新细明体;  color: transparent;">A. 短暫時間有陽光B. 顯著轉涼C. 多雲</label>
+</div>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;

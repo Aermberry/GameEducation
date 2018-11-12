@@ -30,14 +30,13 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
-		@font-face {
-            font-family:"华康超黑体";
-            src: url("resource/fonts/华康超黑体.woff2") format('woff2'),
-                 url('resource/fonts/华康超黑体.woff') format('woff'),
-                 url('resource/fonts/华康超黑体.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
+         #none {
+             -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
         }
+
         @font-face {
             font-family:"华康粗黑体";
             src: url("resource/fonts/华康粗黑体.woff2") format('woff2'),
@@ -65,18 +64,9 @@
 
          @font-face {
             font-family:"新细明体";
-            src: url("resource/fonts/新細明體.woff2") format('woff2'),
-                 url('resource/fonts/新細明體.woff') format('woff'),
-                 url('resource/fonts/新細明體.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-         @font-face {
-            font-family:"華康中黑體";
-            src: url("resource/fonts/華康中黑體.woff2") format('woff2'),
-                 url('resource/fonts/華康中黑體.woff') format('woff'),
-                 url('resource/fonts/華康中黑體.ttf') format('truetype');
+            src: url("resource/fonts/新细明体.woff2") format('woff2'),
+                 url('resource/fonts/新细明体.woff') format('woff'),
+                 url('resource/fonts/新细明体.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -86,15 +76,6 @@
             src: url("resource/fonts/華康標楷體.woff2") format('woff2'),
                  url("resource/fonts/華康標楷體.woff") format('woff'),
                  url('resource/fonts/華康標楷體.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-         @font-face {
-            font-family:"華康少女体";
-            src: url("resource/fonts/華康少女體.woff2") format('woff2'),
-                 url('resource/fonts/華康少女體.woff') format('woff'),
-                 url('resource/fonts/華康少女體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -136,14 +117,13 @@
     style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
 </div>
 
-<label style="font-family: 華康娃娃体;  color: transparent;">現時\r進度現時\r進度現時\r進度現時\r進度現時\r進度成功完成了！現時\r進度現時\r進度現時\r進度</label>
-<label style="font-family: 華康標楷體;  color: transparent;">請按&quot;下一頁&quot;按鈕繼續請按&quot;下一頁&quot;按鈕繼續請按&quot;下一頁&quot;按鈕繼續</label>
-<label style="font-family: 华康中圆体;  color: transparent;">天氣報告\r第一節\r\r準備好，請按綠色按鈕天氣報告\r第三節\r\r準備好，請按綠色按鈕有關天氣報告問題天氣報告\r第二節\r\r準備好，請按綠色按鈕有關天氣報告問題有關天氣報告問題天氣報告\r第一節\r\r準備好，請按綠色按鈕</label>
-<label style="font-family: 华康粗黑体;  color: transparent;">不太正確不太正確輸入氣溫：度確認輸入不太正確</label>
+<div id="none">
+<label style="font-family: 華康娃娃体;  color: transparent;">現時進度成功完成了</label>
+<label style="font-family: 華康標楷體;  color: transparent;">請按下一頁按鈕繼續請按下一頁按鈕繼續請按下一頁按鈕繼續</label>
+<label style="font-family: 华康中圆体;  color: transparent;">天氣報告一好請按綠色按鈕第三節準備好有關天氣報告問題天氣報告二</label>
+<label style="font-family: 华康粗黑体;  color: transparent;">不太正確輸入氣溫度確認輸入</label>
 <label style="font-family: 新细明体;  color: transparent;">A. 短暫時間有陽光B. 顯著轉涼C. 多雲</label>
-<label style="font-family: 華康中黑體;  color: transparent;"></label>
-<label style="font-family: 华康超黑体;  color: transparent;"></label>
-<label style="font-family: 華康少女体;  color: transparent;"></label>
+</div>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
