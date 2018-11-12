@@ -29,7 +29,8 @@ class SubtractCalculationPresenter {
 		
 		for	(let position = 0; position < result.toString().length; position++) {
 			this.view.highlightOperand(position);
-			let correctDifference = minuend[position] - subtrahend[position];
+			// let correctDifference = minuend[position] - subtrahend[position];
+			let correctDifference = minuend[position] - subtrahend[position] ? minuend[position] - subtrahend[position] : parseInt(result.toString()[0],10);
 			if (position < minuend.length - 1) {
 				//最后一位不需要确认退位
 				if (await this.confirmBorrowNeed(correctDifference)) {
@@ -84,6 +85,7 @@ class SubtractCalculationPresenter {
 	 */
 	private async calculateDifferenceBit(minuend: number, subtrahend: number, position: number): Promise<void>
 	{
+		subtrahend = subtrahend ? subtrahend : 0;
 		let correctDifference = minuend - subtrahend;
 		this.view.changeDifferenceToEditMode(position);
 		var candidateDifference = await this.view.getDifferenceAsync(position);
