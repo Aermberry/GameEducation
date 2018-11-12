@@ -27,4 +27,5 @@
 	<ns1:AlertComponent id="person6AlertComponent" width="512" height="248" x="165.66" y="511.39" anchorOffsetX="0" anchorOffsetY="0" text="i am not at the top of the hill." visible="false"/>
 	<ns1:AlertComponent id="person1AlertComponent" width="512" height="248" x="39.66" y="233.39" anchorOffsetX="0" anchorOffsetY="0" text="i don't wear earrings." visible="false"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
+	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>

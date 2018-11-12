@@ -29,5 +29,6 @@
 	</e:Group>
 	<ns1:AlertComponent id="person3AlertComponent" width="576" height="284" x="1268" y="228" anchorOffsetX="0" anchorOffsetY="0" text="My hair is curly, not straight." visible="false"/>
 	<ns1:AlertComponent id="person2AlertComponent" width="576" height="284" x="924" y="228" anchorOffsetX="0" anchorOffsetY="0" text="My hair is wavy, not straight." visible="false"/>
-	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
+	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195" />
+	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>

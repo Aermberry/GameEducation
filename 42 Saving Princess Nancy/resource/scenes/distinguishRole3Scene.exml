@@ -48,4 +48,5 @@
 	<e:Image x="721.32" y="1146.42" source="listen2_grass_png"/>
 	<ns1:ListenComponent width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="2"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
+	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>

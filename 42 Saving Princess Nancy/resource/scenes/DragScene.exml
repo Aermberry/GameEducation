@@ -247,4 +247,5 @@
 		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="300" x="120"  alpha="0"/>
 	</e:Group>
 	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666" visible="false"/>
+	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Home"/>
 </e:Skin>

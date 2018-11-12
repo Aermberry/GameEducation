@@ -92,4 +92,5 @@
 	</e:Group>
 	<ns1:MovieClipPlayer id="princessMovie" width="20" height="20" x="888" y="860" dataSet="princess_json" texture="princess_png" movieClipName="pricess" visible="false"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1576" y="1196" visible="false"/>
+	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>
