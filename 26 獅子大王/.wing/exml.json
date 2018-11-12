@@ -1,0 +1,12 @@
+{
+    "167071c13eb": {
+        "path": "scenes\\startScene.ts",
+        "class": "startScene",
+        "parentPath": ""
+    },
+    "167071e3aa4": {
+        "path": "scenes\\optionsScene.ts",
+        "class": "optionsScene",
+        "parentPath": ""
+    }
+}
