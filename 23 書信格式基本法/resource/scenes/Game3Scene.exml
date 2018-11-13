@@ -60,15 +60,74 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="contentDownAnimation">
+			<tween:TweenItem target="{group0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{815}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group1}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{912}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{blessGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1657e658e52" ></w:Config>
 	<e:Rect left="0" right="0" top="4" bottom="-4" fillColor="0xffffff"/>
-	<e:Label id="lackLabel" text="請找出書信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
+	<e:Label id="lackLabel" text="請找出寫信欠缺的部分：" x="184" y="45" textColor="0xf40000" size="80"/>
 	<e:Label id="correctLabel" text="請選出正確的祝賀語：" x="184" y="45" textColor="0xF40000" size="80" alpha="0"/>
 	<e:Group height="1142" y="136" left="0" right="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="star_border_png"/>
-		<ns1:ContentComponent id="contentComponent" width="1550" height="877" x="212" y="131" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan="舅父：" greet="很久沒有寫信給妳了，妳好嗎？" text="上星期，我們壹家到太空館參觀，那兒有很多有關宇宙天文的展品。我們參觀了天象庭、太空科學展覽庭及全天域電影放映室等，使我們認識了許多宇宙天文的知識。我們壹家還拍了不少照片，下次見面時，壹定帶給妳看。" xiakuan="甥康兒" date="十月十日" bless=" "/>
-		<ns1:AlertGame2Component id="alertGame2Component" width="500" height="456" x="464" y="664" anchorOffsetX="0" anchorOffsetY="0" source="paper_and_pen_png" visible="false"/>
+		<ns1:ContentComponent id="contentComponent" width="1550" height="877" x="212" y="131" anchorOffsetX="0" anchorOffsetY="0" isDisplayLabel="false" shangkuan="舅父：" greet="很久沒有寫信給你了，你好嗎？" text="上星期，我們一家到太空館參觀，那兒有很多有關宇宙天文的展品。我們參觀了天象廳、太空科學展覽廳及全天域電影放映室等，使我們認識了許多宇宙天文的知識。我們一家還拍了不少照片，下次見面時，一定帶給你看。" xiakuan="甥      \n康兒" date="十月十日" bless=" " visible="false"/>
+		<e:Group id="shangKuanGroup" width="170" x="208" y="156" anchorOffsetX="0" anchorOffsetY="0" height="60">
+		<e:Rect id="shangKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="shangKuanLabel" text="舅父：" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textAlign="center" textColor="0x000000" fontFamily="華康楷寫體" left="14"/>
+	</e:Group>
+	<e:Group width="890" x="208" y="232" anchorOffsetY="0" height="78">
+		<e:Rect id="greetRect" top="0" bottom="0" fillColor="0xffffff" strokeWeight="4" strokeColor="0xfc0000" width="800" x="108" visible="false"/>
+		<e:Label id="greetLabel" text="        很久沒有寫信給你了，你好嗎？" x="0" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" fontFamily="華康楷寫體" top="14" left="14"/>
+	</e:Group>
+	<!--<e:Group height="393" y="248" left="0" right="0">
+		<e:Label text="蜘道你茬遊詠比塞中得到第二名，我替你憾到高興。我蕒了一幅詠鏡送給你，希望你能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球一個更高遠的木標。" left="0" right="0" multiline="true" size="56" lineSpacing="46" textColor="0x000000" y="0"/>
+		<ns1:LabelComponents width="270" height="107" x="136" y="280"/>
+	</e:Group>-->
+	<e:Group y="337" anchorOffsetX="0" x="208" width="1514" anchorOffsetY="0" height="360">
+		<e:Rect id="textRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="textLabel" text="        上星期，我們一家到太空館參觀，那兒有很多有關宇宙天文的展品。我們參觀了天象廳、太空科學展覽廳及全天域電影放映室等，使我們認識了許多宇宙天文的知識。我們一家還拍了不少照片，下次見面時，一定帶給你看。" verticalAlign="middle" size="56" textColor="0x000000" multiline="true" left="14" right="0" lineSpacing="40" fontFamily="華康楷寫體" textAlign="left" width="1000" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="blessGroup" y="717.7" x="208" anchorOffsetX="0" width="254" anchorOffsetY="0" height="164" visible="false">
+		<e:Rect id="blessRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="blessLabel" text="生活愉快" x="14" y="100" size="56" textColor="0x000000" fontFamily="華康楷寫體"/>
+		<e:Label text="祝" x="127.27" y="8" size="56" textColor="0x000000" fontFamily="華康楷寫體"/>
+	</e:Group>
+	<e:Group id="group0" y="711" anchorOffsetX="0" right="419" width="200" anchorOffsetY="0" height="112">
+		<e:Rect id="xiaKuanRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="xiaKuanLabel1" text="甥" top="-8" bottom="48" verticalAlign="middle" size="44" textColor="0x000000" fontFamily="華康楷寫體" x="8"/>
+		<e:Label id="xiaKuanLabel2" text="康兒" x="52" verticalAlign="middle" size="56" textColor="0x000000" fontFamily="華康楷寫體" y="44"/>
+	</e:Group>
+	<e:Group id="group1" y="832" anchorOffsetX="0" right="202" width="250">
+		<e:Rect id="dateRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" strokeColor="0xff0000" strokeWeight="4" visible="false"/>
+		<e:Label id="dateLabel" text="十月十日" x="0" size="56" top="0" bottom="0" verticalAlign="middle" textColor="0x000000" fontFamily="華康楷寫體"/>
+	</e:Group>
+		
+		<ns1:AlertGame2Component id="alertGame2Component" width="500" height="456" x="556" y="724" anchorOffsetX="0" anchorOffsetY="0" source="paper_and_pen_png" visible="false"/>
 		<e:Group id="correctGroup" width="750" height="314" x="550" y="636" visible="false">
 			<e:Image left="0" right="0" top="0" bottom="0" source="horn_and_prize_png"/>
 			<e:Label text="你答對了！" x="102" y="112" anchorOffsetX="0" width="354" anchorOffsetY="0" height="118" textColor="0xe53030" size="66" verticalAlign="middle"/>
@@ -78,17 +137,17 @@
 		<e:Group width="200" height="140" x="424" y="2" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="生活愉快" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" anchorOffsetY="0" bottom="6" top="0"/>
+			<e:Label name="touchLabel" text="生活愉快" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" anchorOffsetY="0" bottom="6" top="0"/>
 		</e:Group>
 		<e:Group width="200" height="140" x="1608" y="26" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="聖誕快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
+			<e:Label name="touchLabel" text="聖誕快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
 		</e:Group>
 		<e:Group width="200" height="140" x="32" y="2" anchorOffsetY="0">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_noradius_png"/>
 			<e:Label text="祝" y="16" left="0" right="0" size="50" textAlign="center" textColor="0x000000"/>
-			<e:Label text="生日快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
+			<e:Label name="touchLabel" text="生日快樂" left="0" right="0" textAlign="center" textColor="0x000000" size="50" verticalAlign="bottom" top="0" bottom="6"/>
 		</e:Group>
 		<e:layout>
 		<e:HorizontalLayout horizontalAlign="justify" gap="170"/>
@@ -108,7 +167,7 @@
 	<ns1:NextLevelComponent id="nextLevelComponent" width="266" height="89" x="1600" y="1312" visible="false"/>
 	<e:Group id="alertGroup" width="1293" height="1036" x="220" y="148" visible="false">
 		<e:Image left="0" right="0" top="0" bottom="0" source="boy_alert_png"/>
-		<e:Label id="alertInfoLabel" text="從書信的日期來看，並不是聖誕節的日子，因此，用[聖誕節快樂]作為祝頌語不合適。" x="304" y="528" anchorOffsetX="0" width="882" anchorOffsetY="0" height="394" textColor="0xdb2e2e" size="66" lineSpacing="40"/>
+		<e:Label id="alertInfoLabel" text="從寫信的日期來看，並不是聖誕節的日子，因此，用[聖誕節快樂]作為祝頌語不適合。" x="304" y="528" anchorOffsetX="0" width="882" anchorOffsetY="0" height="394" textColor="0xdb2e2e" size="66" lineSpacing="40"/>
 		<e:Group id="hideAlertGroup" width="188" height="93" x="1000" y="880" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image left="0" right="0" top="0" bottom="0" source="rectangle_gray_png"/>
 		<e:Label text="關閉" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center" size="40" textColor="0xc40f1a"/>

@@ -13,7 +13,7 @@ class Game3Presenter {
 
 	public async onLackLabelComponentTap(text: string)
 	{
-		console.log(UtilString.trim(text,'g'));
+		this.view.hideRect();
 		if(UtilString.trim(text,'g') == this.game3Repository.lackOfPart){
 			//选择正确
 			this.view.hideRect();
@@ -33,7 +33,9 @@ class Game3Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game3Repository.correctOfPart){
 			//选择正确
+			this.view.disableButton();
 			this.view.showCorrectOfPart();
+			this.view.showContentDownAnimation();
 			this.view.playGame3CorrectAnimation();
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();

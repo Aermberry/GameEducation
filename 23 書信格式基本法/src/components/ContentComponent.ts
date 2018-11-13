@@ -31,6 +31,18 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 	//当前拖拽完成的个数；
 	private finishNum:number;
 
+	public game1Scene: Game1Scene;
+
+	private labelPoint ={
+			'上款': {x:0,y:43},
+			'下款': {x:0,y:230},
+			'正文': {x:0,y:398},
+			'日期': {x:0,y:570},
+			'祝頌語': {x:0,y:743},
+			'問候語': {x:0,y:920},
+		};
+		
+
 	public constructor() {
 		super();
 		this.finishNum = 0;
@@ -101,7 +113,7 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 
 	}
 
-	private _text = '蜘道妳茬遊詠比塞中得到第二名，我替妳憾到高興。我蕒了壹幅詠鏡送給妳，希望妳能好好利用這幅詠鏡，女裏煉習，不要瞞促眼前的成果，要追球壹個更高遠的木標。';
+	private _text = '       知道你在游泳比賽中得到第二名，我替你感到高興。我買了一副泳鏡送給你，希望你能好好利用這副泳鏡，努力練習，不要滿足眼前的成果，要追求一個更高遠的目標。';
 
 	public get text(): string
 	{
@@ -262,39 +274,57 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 		this.addChild(drop);
 		drop.enableDrop(this.dateLabelComponent);
 		this.dateLabelComponent.addEventListener(lzlib.LzDragEvent.DROP, this.onDateLabelComponentDrop, this);
+
+		drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(this);
+		this.addEventListener(lzlib.LzDragEvent.DROP, this.onStageDrop, this);
 	}
 
 	private onShangKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'上款');
+		this.handleStringDrop(e,'上款','shangkuan');
 	}
 
 	private onGreetLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'問候語');
+		this.handleStringDrop(e,'問候語','greet');
 	}
 
 	private onBodyLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'正文');
+		this.handleStringDrop(e,'正文','text');
 	}
 
 	private onBlessLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'祝頌語');
+		this.handleStringDrop(e,'祝頌語','bless');
 	}
 
 	private onXiaKuanLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'下款');
+		this.handleStringDrop(e,'下款','xiakuan');
 	}
 
 	private onDateLabelComponentDrop(e: lzlib.LzDragEvent): void
 	{
-		this.handleStringDrop(e,'日期');
+		this.handleStringDrop(e,'日期','date');
 	}
 
-	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string)
+	private onStageDrop(e: lzlib.LzDragEvent): void
+	{
+		let dragObject = e.dragObject as LabelComponents;
+		
+		dragObject.x = this.labelPoint[dragObject.text].x;
+		dragObject.y = this.labelPoint[dragObject.text].y;
+		setTimeout( () => {
+			dragObject.x = this.labelPoint[dragObject.text].x;
+			dragObject.y = this.labelPoint[dragObject.text].y;
+			this.game1Scene.addNameGroupChildrent(dragObject);
+		},100)	
+	}
+
+	private handleStringDrop(e: lzlib.LzDragEvent ,dropStr: string,curLabelName: string)
 	{
 		let dragObject = e.dragObject as LabelComponents;
 		let targetObject = e.target as LabelComponents;
@@ -305,6 +335,10 @@ class ContentComponent extends eui.Component implements  eui.UIComponent {
 			this.alertGame1Component && (this.alertGame1Component.visible = false);
 			targetObject.text = dropStr;
 			this.finishNum++;
+	
+			this.game1Scene.removeNameChildrent(curLabelName);
+			
+
 		}
 	}
 

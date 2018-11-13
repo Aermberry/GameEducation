@@ -14,4 +14,5 @@ interface Game2View {
 	hideLackNameGroup(): void;
 	hideCorrectGroup(): void;
 	alertYouAreCorrect(): void;
+	disableButton(): void;
 }

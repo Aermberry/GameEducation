@@ -12,6 +12,7 @@ class Game2Presenter {
 
 	public async onLackLabelComponentTap(text: string): Promise<void>
 	{
+		this.view.hideRect();
 		if(UtilString.trim(text,'g') == this.game2Repo.lackOfPart){
 			//选择正确
 			this.view.hideRect();
@@ -30,6 +31,7 @@ class Game2Presenter {
 	{
 		if(UtilString.trim(text,'g') == this.game2Repo.correctOfPart){
 			//选择正确
+			this.view.disableButton();
 			this.view.showCorrectOfPart();
 			this.view.showCorrectGroup();
 			this.view.showNextLevelAnimation();
