@@ -33,6 +33,8 @@ class Main extends eui.UILayer {
     protected createChildren(): void {
         super.createChildren();
 
+        Main.instance = this
+
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
         })
@@ -60,7 +62,7 @@ class Main extends eui.UILayer {
     private async runGame() {
         await this.loadResource()
         this.createGameScene();
-        const result = await RES.getResAsync("description_json");
+        const result = await RES.getResAsync("description_json")
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
@@ -68,16 +70,18 @@ class Main extends eui.UILayer {
     }
 
     private async loadResource() {
+        const loadingView = new LoadingUI();
         try {
-            const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
-            this.stage.removeChild(loadingView);
         }
         catch (e) {
             console.error(e);
+        }
+        finally {
+            this.stage.removeChild(loadingView);
         }
     }
 
@@ -93,6 +97,7 @@ class Main extends eui.UILayer {
         })
     }
 
+<<<<<<< HEAD
     private scenes = [
         new StartScene(),
         new Question1Scene(),
@@ -103,24 +108,30 @@ class Main extends eui.UILayer {
         new Question6Scene()
     ];
 
+=======
+>>>>>>> 9-加法應用題
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
+<<<<<<< HEAD
         Main.instance = this;
         if (egret.getOption('scene')) {
             this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
         } else {
             this.addChild(new StartScene());
         }
+=======
+        this.addChild(new StartScene())
+>>>>>>> 9-加法應用題
     }
 
     public static instance: Main
 
     public gotoScene(scene: eui.Component)
     {
-        this.removeChildren();
+        this.removeChildren()
         this.addChild(scene);
     }
 }

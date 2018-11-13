@@ -119,7 +119,11 @@
 	<ns1:ImageButton id="exitButton" x="1706" y="142" width="192" height="110" backgroundImageSource="leave_box_png" normalImageSource="exit_normal_png" overImageSource="exit_over_png" />
 	<e:Image x="20" y="156.79" source="number_box_png"/>
 	<ns1:ImageButton id="nextButton" x="1712" y="942" normalImageSource="next_normal_png" overImageSource="next_over_png" />
+<<<<<<< HEAD
 	<ns1:ImageButton id="examplesButton" x="384" y="582" normalImageSource="button_normal_png" overImageSource="button_over_png"  visible="false"/>
+=======
+	<ns1:ImageButton id="examplesButton" x="384" y="582" normalImageSource="button_normal_png" overImageSource="button_over_png"  alpha="1" visible="false"/>
+>>>>>>> 9-加法應用題
 	<ns1:ImageButton id="lastButton" x="10" y="946" normalImageSource="last-normal_png" overImageSource="last-over_png" />
 	<e:Label text="5" x="60.7" y="178.46" size="120" textColor="0x002b58"/>
 </e:Skin>
