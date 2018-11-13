@@ -166,26 +166,26 @@
 		<ns1:CoinComponent id="jiaoLeftCoinComponent" width="62" height="180" x="1557" y="92.06" number="5" coinSource="jiao_coin_png" heightY="40" visible="false"/>
 		<ns1:CoinComponent id="jiaoRightCoinComponent" width="62" height="120" x="1557.06" y="416.06" number="3" coinSource="jiao_coin_png" heightY="40" visible="false"/>
 		<e:Group width="478.79" height="272" x="1123" y="545" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image id="lineFormulaImage" x="16" y="115.39" source="line_formula_png" visible="false"/>
+			<e:Image id="lineFormulaImage" x="16" y="124.48" source="line_formula_png" visible="false"/>
 			<e:Group id="yuanAndJiao" width="475.76" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 				<e:Image x="230.61" y="12" source="yuan_unti_png"/>
 				<e:Image x="170" y="12" source="jiao_unti_png" right="0"/>
 			</e:Group>
 			<e:Group id="priceLeftGroup" y="62" anchorOffsetX="0" left="0" right="0" visible="false">
-				<e:Label text="2" x="137.22" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label text="2" x="243.27" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+				<e:Label text="2" x="137.22" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label text="2" x="243.27" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label text="5" x="446.3" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
 			</e:Group>
-			<e:Group id="priceRightGroup" y="110.48" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
-				<e:Label text="3" x="137" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label id="restLabel" text="1" x="218.27" y="23.06" textColor="0x000000" size="26" fontFamily="標楷體" alpha="0"/>
-				<e:Label text="9" x="243" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
-				<e:Label text="3" x="446.3" y="11" textColor="0x000000" size="46" fontFamily="標楷體"/>
+			<e:Group id="priceRightGroup" y="116.54" anchorOffsetX="0" left="0" right="-0.20999999999997954" visible="false">
+				<e:Label text="3" x="137" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label id="restLabel" text="1" x="218.27" y="23.06" textColor="0x000000" size="38" fontFamily="標楷體" alpha="0"/>
+				<e:Label text="9" x="243" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
+				<e:Label text="3" x="446.3" y="11" textColor="0x000000" size="50" fontFamily="標楷體"/>
 			</e:Group>
 			<e:Group id="resultGroup" y="195.33" anchorOffsetX="0" left="0" right="-0.20999999999997954">
-				<e:Label id="baiLabel" text="6" x="137" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
-				<e:Label id="shiLabel" text="1" x="243" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
-				<e:Label id="geLabel" text="8" x="446.3" y="11" textColor="0x000000" size="46" alpha="0" fontFamily="標楷體"/>
+				<e:Label id="baiLabel" text="6" x="137" y="11" textColor="0x000000" size="50" alpha="0" fontFamily="標楷體"/>
+				<e:Label id="shiLabel" text="1" x="243" y="11" textColor="0x000000" size="50" alpha="0" fontFamily="標楷體"/>
+				<e:Label id="geLabel" text="8" x="446.3" y="11" textColor="0x000000" size="50" alpha="0" fontFamily="標楷體"/>
 			</e:Group>
 		</e:Group>
 		<ns1:CoinComponent id="tenYuanResultCoinComponent" width="68" height="68" x="1351" y="484.21" number="1" alpha="0"/>

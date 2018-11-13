@@ -20,8 +20,9 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 	private coinMoveAnimation: egret.tween.TweenGroup;
 	private geweiAnimation: egret.tween.TweenGroup;
 	private shiweiAnimation: egret.tween.TweenGroup;
+
+	private isResolve = true;
 	 
-	
 	public constructor() {
 		super();
 	}
@@ -44,13 +45,13 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.calcComponent.visible = false;
 		lzlib.SoundUtility.playSound('streamsound5_1_mp3');
-		await lzlib.ThreadUtility.sleep(8000);
+		await this.sleep(8000);
 		this.coinMoveAnimation.play(0);
-		await lzlib.ThreadUtility.sleep(5000);
+		await this.sleep(5000);
 		this.hideSisterAndCoin();
 		this.showMeImage();
 		this.formulaComponent.showTitleImage();
-		await lzlib.ThreadUtility.sleep(1000);
+		await this.sleep(1000);
 		this.formulaComponent.showLeftImage();
 		await lzlib.SoundUtility.playSound('streamsound5_2_mp3');
 		this.formulaComponent.showRightImage();
@@ -68,7 +69,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.shiweiAnimation.play(0);
 		await lzlib.SoundUtility.playSound('streamsound5_6_mp3');
 		this.showShiWei();
-		await lzlib.ThreadUtility.sleep(1000);
+		await this.sleep(1000);
 		this.showBaiWei();
 		await lzlib.SoundUtility.playSound('streamsound5_7_mp3');
 		this.formulaComponent.showResultImage();
@@ -77,6 +78,7 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 
 	private onLastQuestionTap(): void
 	{
+		this.isResolve = false;
 		Main.instance.gotoScene(new Question4Scene());
 	}
 
@@ -147,5 +149,15 @@ class Question5Scene extends eui.Component implements  eui.UIComponent {
 		this.restLabel.alpha = 0;
 	}
 
-	
+	private sleep(ms = 0): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+			setTimeout(() => {
+				if(this.isResolve)
+				{
+					resolve();
+				}
+			}, ms)
+		});
+	}
 }
