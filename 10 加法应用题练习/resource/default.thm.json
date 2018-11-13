@@ -23,13 +23,15 @@
 		"Question4Scene": "resource/scenes/Question4Scene.exml",
 		"Question5Scene": "resource/scenes/Question5Scene.exml",
 		"Question6Scene": "resource/scenes/Question6Scene.exml",
-		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml"
+		"MovieClipPlayer": "resource/components/MovieClipPlayer.exml",
+		"Nextbgnoall": "resource/components/Nextbgnoall.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/EditableLabel.exml",
 		"resource/components/ImageButton.exml",
 		"resource/components/MovieClipPlayer.exml",
+		"resource/components/Nextbgnoall.exml",
 		"resource/components/NumberPad.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

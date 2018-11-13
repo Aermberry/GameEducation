@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\10 加法应用题练习\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}

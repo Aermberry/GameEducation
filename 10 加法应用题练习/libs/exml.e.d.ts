@@ -4,6 +4,8 @@ declare class ImageButtonSkin extends eui.Skin{
 }
 declare class MovieClipPlayerSkin extends eui.Skin{
 }
+declare class NextbgnoallSkin extends eui.Skin{
+}
 declare class NumberPadSkin extends eui.Skin{
 }
 declare module skins{
