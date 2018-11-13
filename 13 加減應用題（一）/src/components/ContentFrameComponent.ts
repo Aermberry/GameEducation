@@ -1,6 +1,7 @@
 class ContentFrameComponent extends eui.Component implements  eui.UIComponent {
 	
 	private currentlevelLabel: eui.Label;
+	private exitBackgroundImage: eui.Image;
 	private exitImage: eui.Image;
 	
 	public constructor() {
@@ -22,6 +23,8 @@ class ContentFrameComponent extends eui.Component implements  eui.UIComponent {
 		this.exitImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
 		this.exitImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 		this.currentlevelLabel.text = this._currentlevel;
+		this.exitBackgroundImage.visible = this._displayClose;
+		this.exitImage.visible = this._displayClose;
 	}
 	
 	private onExitImageTap(): void
@@ -49,6 +52,18 @@ class ContentFrameComponent extends eui.Component implements  eui.UIComponent {
 	public set currentlevel(num: string)
 	{
 		this._currentlevel = num;
+	}
+
+	private _displayClose = true;
+
+	public set displayClose(isDisplay: boolean)
+	{
+		this._displayClose = isDisplay;
+	}
+
+	public get displayClose(): boolean
+	{
+		return this._displayClose;
 	}
 	
 }

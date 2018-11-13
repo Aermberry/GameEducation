@@ -53,7 +53,7 @@
 	<e:Group width="1885" height="890" x="88" y="134" anchorOffsetX="0" anchorOffsetY="0" left="19">
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="5"/>
 		<e:Image id="textBackground" width="849.67" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
-		<e:Image id="question5StartImage" x="194.94" y="98.97" source="question5_start_png" alpha="1"/>
+		<e:Image id="question5StartImage" x="194.94" y="98.97" source="question5_start_png" alpha="1" width="801" height="181"/>
 		<ns1:FormulaComponent id="formulaComponent" width="524" height="268" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula5_title_png" leftImageSource="formula5_left_png" rightImageSource="formula5_right_png" resultImageSource="formula5_result_png"/>
 		<e:Image x="1053.37" y="87.58" source="kangkang_supermarket_png"/>
 		<e:Image x="1053.37" y="599.42" source="jiajia_supermarket_png"/>

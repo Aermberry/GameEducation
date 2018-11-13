@@ -12,6 +12,7 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	private formulaComponent: FormulaComponent;
 	private nextQuestionComponent: NextQuestionComponent;
 	private lastQuestionComponent: LastQuestionComponent;
+	private finishImage: eui.Image;
 	
 	public constructor() {
 		super();
@@ -25,6 +26,11 @@ class Question8Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.finishImage, true);
+		this.finishImage.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {window.close()}, this);
+		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, () => {this.finishImage.source = 'finish_over_png'}, this);
+		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, () => {this.finishImage.source = 'finish_normal_png'}, this);
 		this.lastQuestionComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLastQuestionComponent, this);
 		await this.playMP3AndShow();
 		this.muchButtonComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHightButtonComponentTap, this);
