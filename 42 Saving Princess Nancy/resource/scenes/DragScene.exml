@@ -126,9 +126,15 @@
 	<e:Label text="    Princess Nancy is sixteen years old.  " x="58.7" y="36.7" textColor="0x4c2759" size="42" multiline="true" width="1800" lineSpacing="12" fontFamily="Calg421n"/>
 	<e:Label id="description1Label" text="                                                                      She is tall and slim. Her skin is as white as snow and lips are as red as roses. She has long wavy brown hair and big round blue eyes." x="58.7" y="36.7" textColor="0x4C2759" size="42" multiline="true" width="1800" lineSpacing="12" fontFamily="Calg421n"/>
 	<e:Label id="description2Label" text="Her nose turns up a little at the end." x="1262.7" y="92.7" textColor="0x4C2759" size="42" multiline="true" width="800" lineSpacing="12" fontFamily="Calg421n"/>
-	<e:Label text="    The princess is gentle and friendly. Her smile is sweet and her voice is soft. She sings like a nightingale and she usually walks with little dancing steps." x="58.7" y="227.61" textColor="0x4C2759" size="42" multiline="true" width="1666.67" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" touchEnabled="false"/>
-	<e:Label id="gentleLabel" text="gentle" x="372.27" y="227.61" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" textColor="0x266232" fontFamily="Calg421n" name="gentle"/>
-	<e:Label id="nightingaleLabel" text="nightingale" x="60.62" y="282.15" textColor="0x266232" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" name="nightingale"/>
+	<e:Label text="    The princess is gentle and friendly. Her smile is sweet and her voice is soft. She sings like a nightingale and she usually walks with little dancing steps." x="58.7" y="203.61" textColor="0x4C2759" size="42" multiline="true" width="1666.67" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" touchEnabled="false"/>
+	<e:Label id="gentleLabel" text="gentle" x="372.27" y="203.61" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" textColor="0x266232" fontFamily="Calg421n" name="gentle"/>
+	<e:Group id="nightingaleGroup" x="-106" y="34" visible="false">
+		<e:Image x="40" y="-16" source="message_border_dragscene_png" anchorOffsetX="0" width="961" anchorOffsetY="0" height="247"/>
+		<e:Label text="small bird that sings beautifully, especially at night" x="188" y="20" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="613" anchorOffsetY="0" height="109"/>
+		<e:Image x="510" y="50" source="nightingale_png" anchorOffsetX="0" width="389.02" anchorOffsetY="0" height="441"/>
+		<e:Image x="924" y="-8" anchorOffsetX="0" anchorOffsetY="0" source="music_png"/>
+	</e:Group>
+	<e:Label id="nightingaleLabel" text="nightingale" x="60.62" y="258.15" textColor="0x266232" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" name="nightingale" anchorOffsetY="0"/>
 	<e:Label id="description3Label" text="    She is wearing a crown, a pink gown, " x="58.7" y="360.94" textColor="0x4C2759" size="42" multiline="true" width="850" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n"/>
 	<e:Label id="description5Label" text="She is  also wearing a necklace and a pair of earrings." x="58.7" y="421.55" textColor="0x4C2759" size="42" multiline="true" width="1019.69" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" anchorOffsetY="0" height="48.06"/>
 	<e:Label id="description4Label" text="a pair of glass slippers and a pair of white gloves. " x="762.33" y="357.92" textColor="0x4C2759" size="42" multiline="true" width="1089.39" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n"/>
@@ -139,6 +145,7 @@
 	<e:Group id="princessGroup" x="375.87" y="633.45">
 		<e:Image name="hairWave" id="hairImage" x="64" y="-145" anchorOffsetX="0" anchorOffsetY="0" source="hair_png" alpha="1" visible="false"/>
 		<e:Image name="princessModel" id="princessModelImage" source="princess_model_png" anchorOffsetX="0" width="331.98" anchorOffsetY="0" height="809.82" y="0" alpha="1"/>
+		<e:Image id="handImage" source="hand_png" name="hand" y="184"/>
 		<e:Image name="clothes1" id="gownImage" x="-68.41" y="67.54" anchorOffsetX="0" anchorOffsetY="0" source="gown_png" width="620.2" height="571.59" alpha="1" visible="false"/>
 		<e:Image name="crown" id="crownImage" x="126" y="-171" source="crown_png" anchorOffsetX="0" width="145.6" anchorOffsetY="0" height="78.72" alpha="1" visible="false"/>
 		<e:Image name="eyesBlue" id="eyesImage" x="152.81" y="-69.26" anchorOffsetX="0" anchorOffsetY="0" source="eyes_blue_png" width="84.92" height="24.58" alpha="1" visible="false"/>
@@ -213,19 +220,13 @@
 		<e:Rect id="gloveRect" name="gloves" x="105.39" y="175.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" height="260" rotation="31.32" width="57.42"/>
 		<e:Rect id="feetRect" name="glassSlippers" x="109.91" y="713.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" width="180" height="92"/>
 	</e:Group>
-	<e:Group id="headAndBodyGroup" x="375.87" y="633.45">
+	<e:Group id="headAndBodyGroup" x="375.87" y="633.45" visible="false">
 		<e:Rect id="headRect" name="gloves" x="133.39" y="-112.84" anchorOffsetX="0" anchorOffsetY="0" alpha="0" height="124" width="137.42"/>
 		<e:Rect id="bodyRect" name="glassSlippers" x="9.91" y="57.16" anchorOffsetX="0" anchorOffsetY="0" alpha="0" width="308" height="748"/>
 	</e:Group>
 	<e:Group id="gentleGroup" x="292" y="0" visible="false">
 		<e:Image x="40" y="0" source="message_border_dragscene_png" anchorOffsetX="0" width="385" anchorOffsetY="0" height="231"/>
 		<e:Label text="kind and careful" x="96" y="56" size="45" textColor="0x266232" fontFamily="Calg421n"/>
-	</e:Group>
-	<e:Group id="nightingaleGroup" x="110" y="62" visible="false">
-		<e:Image x="40" y="-16" source="message_border_dragscene_png" anchorOffsetX="0" width="961" anchorOffsetY="0" height="247"/>
-		<e:Label text="small bird that sings beautifully, especially at night" x="188" y="20" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="613" anchorOffsetY="0" height="109"/>
-		<e:Image x="510" y="50" source="nightingale_png" anchorOffsetX="0" width="389.02" anchorOffsetY="0" height="441"/>
-		<e:Image x="924" y="-8" anchorOffsetX="0" anchorOffsetY="0" source="music_png"/>
 	</e:Group>
 	<e:Group id="crownGroup" x="114" y="138" visible="false">
 		<e:Image x="40" y="-96" source="message_border_dragscene_png" anchorOffsetX="0" width="1041" anchorOffsetY="0" height="327"/>
@@ -246,6 +247,6 @@
 		<e:Label id="label" text="Good job! you drew a picture of princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="400" size="50" alpha="0"/>
 		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="300" x="120"  alpha="0"/>
 	</e:Group>
-	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666" visible="false"/>
+	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Home"/>
 </e:Skin>

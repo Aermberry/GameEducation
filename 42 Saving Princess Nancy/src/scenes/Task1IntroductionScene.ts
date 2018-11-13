@@ -28,6 +28,7 @@ class Task1IntroductionScene extends eui.Component implements  eui.UIComponent {
 	private onBackClick(): void
 	{
 		Main.instance.gotoScene(new SelectTaskScene());
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 	private onNextClick(e: egret.TouchEvent): void

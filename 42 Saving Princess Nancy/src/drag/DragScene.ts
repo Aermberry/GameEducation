@@ -71,8 +71,9 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		// await this.playStartMP3();
-		// await this.playBodyPartMaskAnimation();
+		await this.playStartMP3();
+		await lzlib.SoundUtility.playSound('drag_Introduction_mp3');
+		await this.playBodyPartMaskAnimation();
 		mouse.enable(this.stage);
 		this.mouseOverTexts = {
 			'gown': this.gownGroup,
@@ -104,7 +105,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	private async playStartMP3(): Promise<void>
 	{
-		await lzlib.SoundUtility.playSound('drag_Introduction_mp3');
+		// await lzlib.SoundUtility.playSound('drag_Introduction_mp3');
 	}
 
 	private initDrop(): void

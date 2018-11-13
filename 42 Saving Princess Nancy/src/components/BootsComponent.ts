@@ -16,6 +16,9 @@ class BootsComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.textLabel, true);
+		mouse.setButtonMode(this.boots, true);
 		this.textLabel.text = this._text;
 		this.boots.playLoop();
 
