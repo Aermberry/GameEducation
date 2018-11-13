@@ -192,7 +192,7 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" anchorOffsetX="0" width="444.66" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png" anchorOffsetX="0" width="293.15" anchorOffsetY="0" height="71.18"/>
-		<e:Label text="105(次)" x="56.42" y="0" textColor="0x000000" size="58" fontFamily="華康楷書體" scaleY="1.26" scaleX="1.21"/>
+		<e:Label text="105(次)" x="59.45" y="9.09" textColor="0x000000" size="58" fontFamily="華康楷書體"/>
 	</e:Group>
 
 </e:Skin>
