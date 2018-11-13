@@ -8,7 +8,7 @@ class CurrectRD {
 	private textRD = [
 		'Try again! Read the 1rd paragraph again.',
 		'Try again! Read the 3rd paragraph again.'
-		]
+		];
 
 	private curRD: number;
 

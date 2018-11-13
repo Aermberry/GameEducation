@@ -44,6 +44,9 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 	private stick1DownAnimation: egret.tween.TweenGroup;
 	private stick2DownAnimation: egret.tween.TweenGroup;
 	private finishAnimation: egret.tween.TweenGroup;
+
+	private backBootsComponent: BootsComponent;
+	private listenComponent: ListenComponent;
 	
 	public constructor() {
 		super();
@@ -55,9 +58,10 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.playIntroductionMP3();
 		this.alertComponents = {
 					person1: this.person1AlertComponent,
 					person2: this.person2AlertComponent,
@@ -73,7 +77,13 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 		this.person6Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person3AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onPerson3AlertClose, this);
 		this.person5AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onPerson5AlertClose, this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 		
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new DistinguishRole3Scene());
 	}
 
 	private async onCorrectClick(): Promise<void>
@@ -178,6 +188,13 @@ class DistinguishRole4Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.stickElectric1Movie.visible = false;
 		this.stickElectric2Movie.visible = false;
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 	
 }

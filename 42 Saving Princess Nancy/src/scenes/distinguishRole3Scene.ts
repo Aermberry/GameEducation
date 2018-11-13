@@ -2,13 +2,17 @@ class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
 	
 	private personGroup: eui.Group;
 
-	private correctAlertComponent: AlertComponent;
+	private correctGroup: eui.Group;
 	private nextBootsComponent: BootsComponent;
 	private alert2Component: AlertComponent;
 	private alert3Component: AlertComponent;
 	private stickImage: eui.Image;
 
 	private currentAlertComponent: AlertComponent;
+	private backBootsComponent: BootsComponent;
+
+	private correctAnimation: egret.tween.TweenGroup;
+	private listenComponent: ListenComponent;
 	
 	public constructor() {
 		super();
@@ -20,16 +24,23 @@ class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.playIntroductionMP3();
 		this.initiPersonTap();
 		this.nextBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextClick, this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 	}
 
 	private onNextClick(): void
 	{
 		Main.instance.gotoScene(new DistinguishRole4Scene());
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new DistinguishRole2Scene());
 	}
 
 	private initiPersonTap(): void
@@ -46,10 +57,10 @@ class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
 		{
 			//人物选择正确
 			lzlib.SoundUtility.playSound('listening3_correct_mp3');
-			this.correctAlertComponent.visible = true;
-			this.currentAlertComponent = this.correctAlertComponent;
+			this.correctGroup.visible = true;
 			this.nextBootsComponent.visible = true;
 			this.stickImage.visible = true;
+			this.correctAnimation.play(0);
 		}else{
 			//人物选择错误
 			if(e.target == this.personGroup.getChildByName('person2'))
@@ -69,6 +80,13 @@ class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
 	private hideCurrentAlert(): void
 	{
 		this.currentAlertComponent && (this.currentAlertComponent.visible = false);
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 	
 }

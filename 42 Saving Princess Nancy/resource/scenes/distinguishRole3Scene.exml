@@ -2,20 +2,8 @@
 <e:Skin class="DistinguishRole3SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="correctAnimation">
-			<tween:TweenItem target="{correctAlertComponent}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="1500">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
 			<tween:TweenItem target="{stickImage}">
-				<tween:Wait duration="1550"/>
+				<tween:Wait duration="2500"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -27,16 +15,26 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{correctGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1500">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16622fdcac5" ></w:Config>
 	<e:Image source="listen3_background_png" left="-148" right="-133" top="-167" bottom="-33" scaleX="1.15" scaleY="1.14"/>
 	<e:Image x="115.1" y="621.21" source="stick_png" rotation="352.8"/>
 	<e:Image x="1545.73" y="466.63" source="sword_png" anchorOffsetX="0" width="87.55" anchorOffsetY="0" height="414.36"/>
-	<ns1:AlertComponent id="correctAlertComponent" width="702" height="276" x="46.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="Congratulations!                You can get the stick to kill the fire-breathing dragon" visible="false"/>
 	<ns1:AlertComponent id="alert2Component" width="702" height="276" x="606.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="I have a scar but my eyes are not big." visible="false"/>
 	<ns1:AlertComponent id="alert3Component" width="702" height="276" x="1198.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="My eyes are big but i don't have a scar." visible="false"/>
-	<e:Image id="stickImage" x="407.77" y="215.1" source="stick_png" rotation="333.11" anchorOffsetX="0" width="353.08" anchorOffsetY="0" height="598.78" visible="false"/>
 	<e:Group id="personGroup">
 		<e:Image x="193.64" name="person1" y="621.45" source="listen3_person1_png" anchorOffsetX="0" width="296.26" anchorOffsetY="0" height="603.33"/>
 		<e:Image x="772.43" name="person2" y="615.39" source="listen3_person2_png"/>
@@ -46,7 +44,12 @@
 	<e:Image x="-533.45" y="1104" source="listen2_grass_png"/>
 	<e:Image x="46.43" y="1207" source="listen2_grass_png"/>
 	<e:Image x="721.32" y="1146.42" source="listen2_grass_png"/>
-	<ns1:ListenComponent width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="2"/>
+	<e:Group id="correctGroup" x="46.43" y="210.63" visible="false">
+		<e:Image source="rect_alert_png" anchorOffsetX="0" width="715.76" anchorOffsetY="0" height="396.31"/>
+		<e:Label text="Congratulations!                You can get the stick to kill the fire-breathing dragon" textColor="0x000000" multiline="true" width="588" size="50" lineSpacing="28" anchorOffsetX="0" horizontalCenter="-6" verticalCenter="0.5" fontFamily="Calg421n"/>
+	</e:Group>
+	<e:Image id="stickImage" x="411.77" y="195.1" source="stick_png" rotation="333.11" anchorOffsetX="0" width="353.08" anchorOffsetY="0" height="598.78" alpha="0" visible="false"/>
+	<ns1:ListenComponent id="listenComponent" width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="2"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>

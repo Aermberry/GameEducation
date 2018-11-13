@@ -131,7 +131,7 @@
 	<e:Image id="person2Image" name="person2" x="814.61" y="887.75" anchorOffsetX="0" anchorOffsetY="0" source="listen_person2_png" width="388.91" height="666.63"/>
 	<e:Image id="person3Image" name="person3" x="1192.18" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="388.91" height="666.63" source="listen_person3_png"/>
 	<e:Image id="person4Image" name="person4" x="1587.02" y="887.75" anchorOffsetX="0" anchorOffsetY="0" width="471.22" height="620.12" source="listen_person4_png"/>
-	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
+	<ns1:ListenComponent id="listenComponent" width="512" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="4"/>
 	<ns1:MovieClipPlayer id="person4Movie" x="1200" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
 	<ns1:MovieClipPlayer id="person2Movie" x="456" y="700" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
 	<ns1:MovieClipPlayer id="person1Movie" x="34" y="710" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" visible="false"/>
@@ -140,24 +140,24 @@
 	<ns1:AlertComponent id="person2AlertComponent" name="person2" width="636" height="292" x="336" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have freckles." visible="false"/>
 	<ns1:AlertComponent id="person1AlertComponent" name="person1" width="636" height="292" x="36" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have small mouth." visible="false"/>
 	<e:Image id="image" x="-956.25" y="817.57" source="princess_and_horse_png" anchorOffsetX="0" width="932.07" anchorOffsetY="0" height="803"/>
+	<e:Group id="stickGroup4" visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie" name="electric" x="1672.64" y="922.75" dataSet="electric2_json" texture="electric2_png" movieClipName="electric2" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Image id="image0" x="800.33" y="1441.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
+	<e:Group id="stickGroup2" x="-776" visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie0" name="electric" x="1672.64" y="922.75" dataSet="electric2_json" texture="electric2_png" movieClipName="electric2" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Image id="image1" x="800.33" y="1453.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
+	<e:Group id="stickGroup1" x="-1144" visible="false">
+		<ns1:MovieClipPlayer id="stickElectric1Movie1" name="electric" x="1672.64" y="922.75" dataSet="electric2_json" texture="electric2_png" movieClipName="electric2" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Image id="image2" x="800.33" y="1445.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
+	</e:Group>
 	<e:Group id="dragonGroup" x="1487.02" y="916" anchorOffsetX="0" width="523.9" anchorOffsetY="0" height="597" visible="false">
 		<ns1:MovieClipPlayer id="dragonMovie" dataSet="dragon_json" texture="dragon_png" movieClipName="dragon" width="331.27" height="334.4" rotation="0" anchorOffsetX="0" anchorOffsetY="0"/>
 		<e:Image id="dragonBackground1Image" x="4" y="-26.72" source="dragon_background1_png" anchorOffsetX="0" width="566.33" anchorOffsetY="0" height="698.85" alpha="0"/>
 		<e:Image id="dragonBackground2Image" x="4" y="-26.72" anchorOffsetX="0" width="565.33" anchorOffsetY="0" height="698.85" source="dragon_background2_png" alpha="0"/>
 		<e:Image id="dragonBackground3Image" x="4" y="-26.72" anchorOffsetX="0" width="565.33" anchorOffsetY="0" height="698.85" source="dragon_background3_png" alpha="0"/>
 		<e:Image id="dragonElectricImage" x="30" y="19.28" anchorOffsetX="0" anchorOffsetY="0" source="dragon_electric_png" width="517.82" height="485.67" alpha="1" visible="false"/>
-	</e:Group>
-	<e:Group id="stickGroup4" visible="false">
-		<ns1:MovieClipPlayer id="stickElectric1Movie" name="electric" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-		<e:Image id="image0" x="800.33" y="1441.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
-	</e:Group>
-	<e:Group id="stickGroup2" x="-776" visible="false">
-		<ns1:MovieClipPlayer id="stickElectric1Movie0" name="electric" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-		<e:Image id="image1" x="800.33" y="1453.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
-	</e:Group>
-	<e:Group id="stickGroup1" x="-1144" visible="false">
-		<ns1:MovieClipPlayer id="stickElectric1Movie1" name="electric" x="1672.64" y="906.75" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
-		<e:Image id="image2" x="800.33" y="1445.67" source="stick_png" anchorOffsetX="0" width="659.27" anchorOffsetY="0" height="1118.04"/>
 	</e:Group>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1576" y="1196" visible="false"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>

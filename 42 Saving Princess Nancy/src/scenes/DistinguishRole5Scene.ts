@@ -40,6 +40,9 @@ class DistinguishRole5Scene extends eui.Component implements  eui.UIComponent {
 			'person4': 'listening5_person4_mp3',
 	};
 	
+	private backBootsComponent: BootsComponent;
+	private listenComponent: ListenComponent;
+
 	public constructor() {
 		super();
 	}
@@ -50,9 +53,10 @@ class DistinguishRole5Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.playIntroductionMP3();
 		this.alertComponents = {
 			'person1': this.person1AlertComponent,
 			'person2': this.person2AlertComponent,
@@ -76,6 +80,12 @@ class DistinguishRole5Scene extends eui.Component implements  eui.UIComponent {
 		this.person2AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onAlertClose, this);
 		this.person4AlertComponent.addEventListener(AlertEvent.ALERT_CLOSR, this.onAlertClose, this);
 		this.nextBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextComponentClick, this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new DistinguishRole4Scene());
 	}
 
 	private onNextComponentClick(): void
@@ -154,6 +164,13 @@ class DistinguishRole5Scene extends eui.Component implements  eui.UIComponent {
 	{
 		this.dragonGroup.visible = false;
 		this.dragonElectricImage.visible = false;
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 
 }

@@ -9,6 +9,6 @@
 	<e:Label text="follow her instructions." x="154.24" y="705.27" size="70" fontFamily="Calg421n"/>
 	<e:Label text="Find the good people and click on them." x="154.24" y="814.36" size="70" fontFamily="Calg421n"/>
 	<e:Image x="1035.42" y="930.03" source="fairy_png"/>
-	<ns1:BootsComponent id="NextBootsComponent" width="276" height="244" x="1472" y="1116" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:BootsComponent id="NextBootsComponent" width="171" height="213" x="1472" y="1195" anchorOffsetX="0" anchorOffsetY="0"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>

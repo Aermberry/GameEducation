@@ -26,6 +26,8 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 	};
 
 	private nextBootsComponent: BootsComponent;
+	private backBootsComponent: BootsComponent;
+	private listenComponent: ListenComponent;
 	
 	public constructor() {
 		super();
@@ -38,9 +40,10 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.playIntroductionMP3();
 		this.AlertComponents = {
 			person1Image: this.person1AlertComponent,
 			person3Image: this.person3AlertComponent,
@@ -55,11 +58,17 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 		this.person5Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.person6Image.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPersonClick, this);
 		this.nextBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextClick, this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 	}
 
 	private onNextClick(): void
 	{
 		Main.instance.gotoScene(new DistinguishRole3Scene());
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new DistinguishRole1Scene());
 	}
 
 	private onCorrectClick(): void
@@ -80,6 +89,13 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 	private stopMP3(): void
 	{
 		this.Channel && this.Channel.stop();
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 	
 }

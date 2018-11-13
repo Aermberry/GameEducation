@@ -47,12 +47,14 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private partsOfBody: any;
 	private mouseOverTexts: any;
 	private curShowText: eui.Group;
-	private bootsComponent: BootsComponent;
 
 	private finishAnimationGroup: eui.Group;
 	private drapFinishAnimation: egret.tween.TweenGroup;
 	private bodyPartMaskRectAnimation: egret.tween.TweenGroup;
 	private alertTextAnimation: egret.tween.TweenGroup;
+
+	private bootsComponent: BootsComponent;
+	private backBootsComponent: BootsComponent;
 
 	private presenter = new DragPresenter();
 
@@ -93,6 +95,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 		};
 		this.descriptionRD = [new TextFlicker([this.description1Label,this.description2Label]),new TextFlicker([this.description3Label,this.description4Label,this.description5Label])];
 		this.bootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, () => Main.instance.gotoScene(new Task2IntroductionScene()), this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, () => Main.instance.gotoScene(new SelectTaskScene()), this);
 		this.initDrap();
 		this.initDrop();
 		this.initMouse();
@@ -180,7 +183,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	public async AlertReTry(): Promise<void>
 	{
 		console.log('reTry');
-		this.alertTetxLabel.text = 'Try again!';
+		this.alertTetxLabel.text = '     Try again!';
 		this.playAlertMovie();
 	}
 
@@ -195,8 +198,12 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	public textFlicker(curRD: number): void
 	{
-		let textFlicker = this.descriptionRD[curRD];
-		textFlicker.flicker();
+		try{
+			let textFlicker = this.descriptionRD[curRD];
+			textFlicker.flicker();
+		}catch(e){
+			this.AlertReTry();
+		}
 	}
 
 	public hideDrapPart(dragObj: eui.Image): void

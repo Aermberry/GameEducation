@@ -19,7 +19,7 @@
 	<e:Image x="772.09" y="1031.3" source="listen2_grass_png" anchorOffsetY="0" height="415.89" anchorOffsetX="0" width="534.25"/>
 	<e:Image x="507.27" y="1147.86" source="listen2_grass_png" anchorOffsetY="0" height="318.92" anchorOffsetX="0" width="409.69"/>
 	<e:Image id="person6Image" name="person6Image" x="357.88" y="732.93" anchorOffsetX="0" anchorOffsetY="0" width="319.78" height="963.49" source="listen2_person6_png"/>
-	<ns1:ListenComponent width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="1"/>
+	<ns1:ListenComponent id="listenComponent" width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="1"/>
 	<ns1:AlertComponent id="person5AlertComponent" width="512" height="248" x="1132" y="592" anchorOffsetX="0" anchorOffsetY="0" text="The lady you look for is at the top of the hill." visible="false"/>
 	<ns1:AlertComponent id="person2AlertComponent" width="512" height="248" x="1070" y="174" anchorOffsetX="0" anchorOffsetY="0" text="Correct! Your energy will be increased." visible="false"/>
 	<ns1:AlertComponent id="person4AlertComponent" width="512" height="248" x="1384" y="424" anchorOffsetX="0" anchorOffsetY="0" text="The lady you look for is at the top of the hill." visible="false"/>

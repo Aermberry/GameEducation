@@ -1,5 +1,6 @@
 class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 	
+	private tryAgainGroup: eui.Group;
 	private shadow1Group: eui.Group;
 	private shadow2Group: eui.Group;
 	private shadow3Group: eui.Group;
@@ -13,8 +14,13 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 	private textLabel2Animation: egret.tween.TweenGroup;
 	private textLabel3Animation: egret.tween.TweenGroup;
 	private thankAnimation: egret.tween.TweenGroup;
+	private tryAgainAnimation: egret.tween.TweenGroup;
 
 	private nextBootsComponent: BootsComponent;
+	private backBootsComponent: BootsComponent;
+	private listenComponent: ListenComponent;
+
+	private cloudMovie: MovieClipPlayer;
 
 	private shadowFun: any;
 	
@@ -31,6 +37,7 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.playIntroductionMP3();
 		await this.playShadow1();
 		await this.playShadow2();
 		await this.playShadow3();
@@ -42,13 +49,20 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 			'shadow1': this.playShadow1,
 			'shadow2': this.playShadow2
 		};
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 	}
 
-	private onWrongClick(e: egret.TouchEvent): void
+	private async onWrongClick(e: egret.TouchEvent): Promise<void>
 	{
 		let name = e.target.$name;
 		this.shadowFun[name].call(this);
 		//淡出reTry框；
+		this.tryAgainGroup.visible = true;
+		this.cloudMovie.play();
+		await this.tryAgainAnimation.playOnceAsync();
+		this.tryAgainGroup.visible = false;
+		
+
 	}
 
 	private async onCorrectClick(e: egret.TouchEvent): Promise<void>
@@ -60,11 +74,17 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 		this.thankAnimation.playOnceAsync();
 		await lzlib.ThreadUtility.sleep(1000);
 		this.princessMovie.visible = true;
+		this.nextBootsComponent.visible = true;
 	}
 
 	private onNextClick(): void
 	{
 		Main.instance.gotoScene(new FinishScene());
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new DistinguishRole3Scene());
 	}
 
 	private async playShadow1(): Promise<void>
@@ -101,5 +121,12 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 		helpLabel.visible = false;
 		await this.textLabel3Animation.playOnceAsync();
 		this.shadow3Group.visible = false;
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 }

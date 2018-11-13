@@ -87,7 +87,7 @@ class SelectTaskScene extends eui.Component implements  eui.UIComponent {
 	private async onTask2Click(): Promise<void>
 	{
 		await this.playMaskAnimation(true);
-		Main.instance.gotoScene(new Task1IntroductionScene());
+		Main.instance.gotoScene(new Task2IntroductionScene());
 	}
 
 	private async playMaskAnimation(isFinish = false): Promise<void>

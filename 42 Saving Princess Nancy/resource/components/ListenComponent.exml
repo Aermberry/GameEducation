@@ -2,5 +2,6 @@
 <e:Skin class="ListenComponentSkin" width="490" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="166249ac9d9" ></w:Config>
 	<e:Image y="0" source="headset_png" anchorOffsetX="0" width="103.47" anchorOffsetY="0" height="143.46"/>
-	<e:Image id="titleAndFairyImage" x="126.82" y="6.89" source="listen1_normal_png" anchorOffsetX="0" width="357.61" anchorOffsetY="0" height="135.13"/>
+	<e:Image id="titleAndFairyImage" x="114.12" y="37.58" source="listen1_normal_png" anchorOffsetX="0" anchorOffsetY="0" width="266.72" height="66.52"/>
+	<e:Image x="387.32" y="12.33" source="fairy_png" anchorOffsetX="0" width="101.13" anchorOffsetY="0" height="120.33"/>
 </e:Skin>

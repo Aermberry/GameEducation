@@ -8,6 +8,7 @@ class DragPresenter {
 	private alertInfoRepo = new AlertInfoRepository();
 	private currectRD = new CurrectRD();
 	private headBodyRepo = new HeadBodyRepository();
+	private correctDecoration = new CorrectDecoration();
 
 	public constructor() {
 	}
@@ -52,7 +53,7 @@ class DragPresenter {
 				// curRD == undefined ? this.view.AlertReTry() : this.view.textFlicker(curRD);
 				this.view.textFlicker(curRD);
 				//弹出信息 alert info
-				this.view.alertWrongtInfo(this.currectRD.getTextRD());
+				this.correctDecoration.isCorrectDecoration(dragName) == false && this.view.alertWrongtInfo(this.currectRD.getTextRD());
 			}
 			
 		}

@@ -6,8 +6,10 @@ class DistinguishRole1Scene extends eui.Component implements  eui.UIComponent {
 	private person3AlertComponent: AlertComponent;
 	private person2AlertComponent: AlertComponent;
 	private nextBootsComponent: BootsComponent;
+	private backBootsComponent: BootsComponent;
 
 	private princeAndHorseMove: egret.tween.TweenGroup;
+	private listenComponent: ListenComponent;
 	
 	public constructor() {
 		super();
@@ -19,17 +21,24 @@ class DistinguishRole1Scene extends eui.Component implements  eui.UIComponent {
 	}
 
 
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		this.initiPersonClick();
 		this.princeAndHorseMove.play(0);
+		await this.playIntroductionMP3();
+		this.initiPersonClick();
 		this.nextBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextClick, this);
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 	}
 
 	private onNextClick(): void
 	{
 		Main.instance.gotoScene(new DistinguishRole2Scene());
+	}
+
+	private onBackClick(): void
+	{
+		Main.instance.gotoScene(new Task2IntroductionScene());
 	}
 
 	private initiPersonClick(): void
@@ -60,6 +69,13 @@ class DistinguishRole1Scene extends eui.Component implements  eui.UIComponent {
 			}
 		}
 
+	}
+
+	private async playIntroductionMP3(): Promise<void>
+	{
+		return new Promise<void>((resolve, reject)=> {
+            this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
+        });
 	}
 	
 }

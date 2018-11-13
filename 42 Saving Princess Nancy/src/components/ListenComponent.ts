@@ -34,11 +34,12 @@ class ListenComponent extends eui.Component implements  eui.UIComponent {
 	// 	lzlib.SoundUtility.playSound(this.MP3List[this._currentListen]);
 	// }
 
-	private onBegin(e: egret.TouchEvent): void
+	private async onBegin(e: egret.TouchEvent): Promise<void>
 	{
 		this.titleAndFairyImage.source = this.listenClick[this._currentListen];
 		console.log(this.MP3List[this._currentListen]);
-		lzlib.SoundUtility.playSound(this.MP3List[this._currentListen]);
+		await lzlib.SoundUtility.playSound(this.MP3List[this._currentListen]);
+		this.dispatchEvent(new Listen());
 	}
 
 	private onMouseOver(e: egret.TouchEvent): void
@@ -63,4 +64,14 @@ class ListenComponent extends eui.Component implements  eui.UIComponent {
 		this._currentListen = index;
 	}
 	
+}
+
+class Listen extends egret.TouchEvent
+{
+	public static readonly LISTEN_AUDIO_COMPLETE = 'listen_audio_complete';//音乐播放完成
+
+	public constructor()
+	{
+		super(Listen.LISTEN_AUDIO_COMPLETE);
+	}
 }

@@ -63,11 +63,28 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="tryAgainAnimation">
+			<tween:TweenItem target="{tryAgainLabel}">
+				<tween:Wait duration="1500"/>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2000"/>
+				<tween:Set/>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="166235fd3eb" ></w:Config>
 		<e:Image source="listen5_background2_png" anchorOffsetX="0" width="4841.96" anchorOffsetY="0" height="2601.38" y="-547.37" x="-2196.47"/>
 	<e:Image left="-2709" right="-262" top="-482" bottom="-2187" anchorOffsetX="0" anchorOffsetY="0" source="listen6_background_png"/>
-	<ns1:ListenComponent width="512" height="106.54" x="60" y="28" currentListen="5"/>
+	<ns1:ListenComponent id="listenComponent" width="512" height="106.54" x="60" y="28" currentListen="5"/>
 	<ns1:MovieClipPlayer name="shadow2" id="shadow2Movie" width="20" height="20" x="1144" y="620" dataSet="princessShadow1_json" texture="princessShadow1_png" movieClipName="princessShadow1" isLoopPlay="true"/>
 	<ns1:MovieClipPlayer name="shadow1" id="shadow1Movie" width="4" height="0" x="398" y="548" dataSet="princessShadow2_json" texture="princessShadow2_png" movieClipName="princessShadow2" isLoopPlay="true" anchorOffsetX="0" anchorOffsetY="0"/>
 	<ns1:MovieClipPlayer id="shadow3Movie" width="4" height="0" x="1610" y="532" dataSet="princessShadow2_json" texture="princessShadow2_png" movieClipName="princessShadow2" isLoopPlay="true" anchorOffsetX="0" anchorOffsetY="0"/>
@@ -93,4 +110,8 @@
 	<ns1:MovieClipPlayer id="princessMovie" width="20" height="20" x="888" y="860" dataSet="princess_json" texture="princess_png" movieClipName="pricess" visible="false"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1576" y="1196" visible="false"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
+	<e:Group id="tryAgainGroup" width="200" height="200" x="564" y="648">
+		<ns1:MovieClipPlayer id="cloudMovie" x="0" y="0" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" isLoopPlay="false"/>
+		<e:Label id="tryAgainLabel" text="Try again!" x="184" y="356" textColor="0x000000" fontFamily="Calg421n" size="130" anchorOffsetY="0" height="186" alpha="0"/>
+	</e:Group>
 </e:Skin>

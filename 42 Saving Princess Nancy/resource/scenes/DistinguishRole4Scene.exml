@@ -373,9 +373,9 @@
 		<e:Image id="stickElectricBackground6Image" x="744" y="499.37" rotation="336.11" source="stick_electric_background3_png" alpha="0" visible="false"/>
 		
 	</e:Group>
-	<e:Image id="wolfNormal2Image" x="670" y="118" source="wolf_normal_png" anchorOffsetX="0" width="223.65" anchorOffsetY="0" height="367.49" alpha="1" visible="false"/>
+	<e:Image id="wolfNormal2Image" x="670" y="146" source="wolf_normal_png" anchorOffsetX="0" width="223.65" anchorOffsetY="0" height="367.49" alpha="1" visible="false"/>
 
-	<e:Group id="wolf1Group" visible="false">
+	<e:Group id="wolf1Group" y="24" visible="false">
 		<e:Image id="electricBackground1Image" x="636" y="112" source="electric_background1_png" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94"/>
 		<e:Image id="electricBackground2Image" x="636" y="112" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background2_png" alpha="0"/>
 		<e:Image id="electricBackground3Image" x="636" y="112" anchorOffsetX="0" width="288" anchorOffsetY="0" height="388.94" source="electric_background3_png" alpha="0"/>
@@ -389,9 +389,9 @@
 	<e:Image x="521.96" y="378.63" source="guardrail_png" anchorOffsetY="0" height="276.27"/>
 	<e:Image id="person1Image" name="person1" x="33.55" y="185.27" source="listen4_person1_png" anchorOffsetX="0" width="193.12" anchorOffsetY="0" height="553.93"/>
 	<e:Image id="person2Image" name="person2" x="333.22" y="245.88" source="listen4_person2_png" anchorOffsetX="0" width="219.77" anchorOffsetY="0" height="501.58"/>
-	<ns1:ListenComponent width="332" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="3"/>
-	<ns1:MovieClipPlayer id="stickElectric1Movie" x="728" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="508" rotation="336.35" visible="false"/>
-	<ns1:MovieClipPlayer id="stickElectric2Movie" x="1240" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="410.65" rotation="336.35" anchorOffsetY="0" visible="false"/>
+	<ns1:ListenComponent id="listenComponent" width="332" height="106.54" x="60" y="28" anchorOffsetX="0" anchorOffsetY="0" currentListen="3"/>
+	<ns1:MovieClipPlayer id="stickElectric1Movie" x="732" y="472" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="508" rotation="336.35" visible="false"/>
+	<ns1:MovieClipPlayer id="stickElectric2Movie" x="1240" y="464" dataSet="electric_json" texture="electric_png" movieClipName="electric" width="400" height="410.65" rotation="336.35" anchorOffsetY="0" visible="false"/>
 	<e:Image id="stickImage" x="621" y="1817" source="stick_png" anchorOffsetX="0" width="482.37" anchorOffsetY="0" height="818.04" rotation="315"/>
 	<!--<e:Group id="person3Group" x="737.22" y="-51.42">
 		<e:Image id="image" x="-32" y="275.5" source="cloud2_png" anchorOffsetX="0" width="106.78" anchorOffsetY="0" height="101.02" alpha="0"/>
