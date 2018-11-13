@@ -89,9 +89,13 @@
 	</e:Group>
 	<ns1:ImageButton id="nextQuestionButton" y="725" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="15" visible="false"/>
 	<e:Group id="restartGroup" top="185" right="10" width="240" height="115">
-		<e:Rect top="0" right="0" bottom="0" left="0" strokeWeight="10" strokeColor="0x296675" fillColor="0x7CAFCB" ellipseWidth="50"/>
+		<e:Rect top="0" right="0" bottom="0" left="0" strokeWeight="10" fillColor="0x7CAFCB" ellipseWidth="50" strokeColor="0x296675"/>
 		<e:Image id="restartImage" horizontalCenter="0" verticalCenter="0" source="restart_normal_png" scaleX="0.8" scaleY="0.8"/>
 	</e:Group>
 	<e:Image id="congratulationImage" x="1336" y="332" source="congratulation_png" visible="false"/>
+	<e:Group id="nextPass" x="1660.76" y="636.67" visible="false">
+		<e:Rect width="240" height="115" x="0" y="0" fillColor="0x7cafcb" strokeColor="0x296675" strokeWeight="10" ellipseWidth="50"/>
+		<e:Image x="17.88" y="36.39" source="next_degree_normal_png" scaleX="0.8" scaleY="0.8"/>
+	</e:Group>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>
