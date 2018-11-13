@@ -565,8 +565,6 @@
 
 
 		</tween:TweenGroup>
-<<<<<<< HEAD
-=======
 		<tween:TweenGroup id="motion_4">
 			<tween:TweenItem target="{image41}">
 				<tween:Set>
@@ -600,7 +598,6 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
->>>>>>> 9-加法應用題
 	</w:Declarations>
 	<w:Config id="165a246dcdd"/>
 	<e:Image x="127.5" y="188" source="rectangle_blue_large_png" locked="true"/>

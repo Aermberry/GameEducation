@@ -97,34 +97,12 @@ class Main extends eui.UILayer {
         })
     }
 
-<<<<<<< HEAD
-    private scenes = [
-        new StartScene(),
-        new Question1Scene(),
-        new Question2Scene(),
-        new Question3Scene(),
-        new Question4Scene(),
-        new Question5Scene(),
-        new Question6Scene()
-    ];
-
-=======
->>>>>>> 9-加法應用題
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
-<<<<<<< HEAD
-        Main.instance = this;
-        if (egret.getOption('scene')) {
-            this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
-        } else {
-            this.addChild(new StartScene());
-        }
-=======
         this.addChild(new StartScene())
->>>>>>> 9-加法應用題
     }
 
     public static instance: Main

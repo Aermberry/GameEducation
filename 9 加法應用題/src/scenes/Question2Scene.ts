@@ -2,10 +2,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private motion_1: egret.tween.TweenGroup;
 	private motion_2: egret.tween.TweenGroup;
 	private motion_3: egret.tween.TweenGroup;
-	private image37: eui.Image;
-	private image38: eui.Image;
-	private image39: eui.Image;
-	private image40: eui.Image;
+	private motion_4: egret.tween.TweenGroup;
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private examplesButton: ImageButton;
@@ -50,23 +47,6 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	private async playGame(): Promise<void> {
 		this.motion_1.play(0);
 		this.motion_2.play(0);
-<<<<<<< HEAD
-		await lzlib.SoundUtility.playSound('add_2streamsound 0_mp3');
-		this.examplesButton.visible = true;
-	}
-
-	private async playExamples(): Promise<void> {
-		this.examplesButton.visible = false;
-		this.motion_3.play(0);
-		await lzlib.SoundUtility.playSound('add_2streamsound 1_mp3');
-		this.image37.visible = true;
-		this.image38.visible = true;
-		await lzlib.SoundUtility.playSound('add_2streamsound 2_mp3');
-		this.image39.visible = true;
-		await lzlib.SoundUtility.playSound('add_2streamsound 3_mp3');
-		this.image40.visible = true;
-		await lzlib.SoundUtility.playSound('add_2streamsound 4_mp3');
-=======
 		await lzlib.SoundUtility.playSound('add_2streamsound_0_mp3');
 		this.examplesButton.visible = true;
 
@@ -79,6 +59,5 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound('add_2streamsound_2_mp3');
 		await lzlib.SoundUtility.playSound('add_2streamsound_3_mp3');
 		await lzlib.SoundUtility.playSound('add_2streamsound_4_mp3');
->>>>>>> 9-加法應用題
 	}
 }

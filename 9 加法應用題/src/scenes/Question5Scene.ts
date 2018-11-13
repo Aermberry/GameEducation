@@ -1,10 +1,6 @@
 class Question5Scene extends eui.Component implements eui.UIComponent {
 	private motion_milk1: egret.tween.TweenGroup;
-	private image7: eui.Image;
-	private image8: eui.Image;
-	private image9: eui.Image;
-	private image10: eui.Image;
-	private image11: eui.Image;
+	private motion_milk2: egret.tween.TweenGroup;
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private examplesButton: ImageButton;
@@ -46,14 +42,6 @@ class Question5Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playGame(): Promise<void> {
-<<<<<<< HEAD
-		await lzlib.SoundUtility.playSound('add_5streamsound 0_mp3');
-		this.motion_milk1.play(0);
-		await lzlib.SoundUtility.playSound('add_5streamsound 1_mp3');
-		this.image7.visible = true;
-		await lzlib.SoundUtility.playSound('add_5streamsound 2_mp3');
-		this.examplesButton.visible = true;
-=======
 		this.motion_milk1.play(0);
 		await lzlib.SoundUtility.playSound('add_5streamsound_0_mp3');
 		await lzlib.SoundUtility.playSound('add_5streamsound_1_mp3');
@@ -62,25 +50,13 @@ class Question5Scene extends eui.Component implements eui.UIComponent {
 		this.examplesButton.visible = true;
 
 
->>>>>>> 9-加法應用題
 	}
 
 	private async playExamples(): Promise<void> {
 		this.examplesButton.visible = false;
-<<<<<<< HEAD
-		await lzlib.SoundUtility.playSound('add_5streamsound 3_mp3');
-		this.image8.visible = true;
-		this.image9.visible = true;
-		await lzlib.SoundUtility.playSound('add_5streamsound 4_mp3');
-		this.image10.visible = true;
-		await lzlib.SoundUtility.playSound('add_5streamsound 5_mp3');
-		this.image11.visible = true;
-		await lzlib.SoundUtility.playSound('add_5streamsound 6_mp3');
-=======
 		this.motion_milk2.play(0);
 		await lzlib.SoundUtility.playSound('add_5streamsound_4_mp3');
 		await lzlib.SoundUtility.playSound('add_5streamsound_5_mp3');
 		await lzlib.SoundUtility.playSound('add_5streamsound_6_mp3');
->>>>>>> 9-加法應用題
 	}
 }

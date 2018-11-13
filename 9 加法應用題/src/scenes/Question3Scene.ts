@@ -1,9 +1,6 @@
 class Question3Scene extends eui.Component implements eui.UIComponent {
 	private motion_card_1: egret.tween.TweenGroup;
-	private image4: eui.Image;
-	private image5: eui.Image;
-	private image6: eui.Image;
-	private image7: eui.Image;
+	private motion_card_2: egret.tween.TweenGroup;
 	private exitButton: ImageButton;
 	private nextButton: ImageButton;
 	private examplesButton: ImageButton;
@@ -46,23 +43,6 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playGame(): Promise<void> {
-<<<<<<< HEAD
-		this.motion_card_1.play();
-		await lzlib.SoundUtility.playSound('add_3streamsound 0_mp3');
-		this.examplesButton.visible = true;
-	}
-
-	private async playExamples(): Promise<void> {
-		this.examplesButton.visible = false;
-		await lzlib.SoundUtility.playSound('add_3streamsound 1_mp3');
-		this.image4.visible = true;
-		this.image5.visible = true;
-		await lzlib.SoundUtility.playSound('add_3streamsound 2_mp3');
-		this.image6.visible = true;
-		await lzlib.SoundUtility.playSound('add_3streamsound 3_mp3');
-		this.image7.visible = true;
-		await lzlib.SoundUtility.playSound('add_3streamsound 4_mp3');
-=======
 		this.motion_card_1.play(0);
 		await lzlib.SoundUtility.playSound('add_3streamsound_0_mp3');
 		await lzlib.SoundUtility.playSound('add_3streamsound_1_mp3');
@@ -76,6 +56,5 @@ class Question3Scene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound('add_3streamsound_2_mp3');
 		await lzlib.SoundUtility.playSound('add_3streamsound_3_mp3');
 		await lzlib.SoundUtility.playSound('add_3streamsound_4_mp3');
->>>>>>> 9-加法應用題
 	}
 }
