@@ -29,6 +29,7 @@
 		"bin-debug/gameLevelScenes/Level08Scene.js",
 		"bin-debug/gameLevelScenes/Level09Scene.js",
 		"bin-debug/gameLevelScenes/Level10Scene.js",
+		"bin-debug/gameLevelScenes/Level11Scene.js",
 		"bin-debug/scenes/DescriptionExampleScene.js",
 		"bin-debug/scenes/DescriptionGameplayScene.js",
 		"bin-debug/scenes/ResultScene.js",
