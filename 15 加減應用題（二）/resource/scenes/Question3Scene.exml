@@ -40,7 +40,7 @@
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="3"/>
 		<e:Image id="textBackground" width="683" height="205" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="0"/>
 		<e:Image id="question3StartImage" x="209" y="102" source="question3_start_png" alpha="0"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="267.51" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula3_question_png" leftImageSource="formula3_left_png" rightImageSource="formula3_right_png" resultImageSource="formula3_result_png"/>
 		<e:Image id="glodfishImage" x="969" y="88" alpha="0" source="glodfish_png" anchorOffsetX="0" anchorOffsetY="0" width="756" height="323"/>
 		<e:Image id="koiImage" x="969" y="488" source="koi_png" width="756" height="323" visible="false"/>
 		<e:Group id="alertAndOperationGroup">

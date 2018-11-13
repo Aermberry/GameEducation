@@ -40,7 +40,7 @@
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="2"/>
 		<e:Image id="textBackground" width="766" height="228" x="178" y="89" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="0"/>
 		<e:Image id="question2StartImage" x="185" y="110" alpha="0" source="question2_start_png"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula2_question_png" leftImageSource="formula2_left_png" rightImageSource="formula2_right_png" resultImageSource="formula2_result_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="267.51" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula2_question_png" leftImageSource="formula2_left_png" rightImageSource="formula2_right_png" resultImageSource="formula2_result_png"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="342" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="formula2_title_png"/>
 			<ns1:ButtonComponent id="muchButtonComponent" width="180" height="102" x="296.43" y="612" anchorOffsetX="0" anchorOffsetY="0" normalSource="much_normal_png" overSource="much_over_png" visible="false"/>

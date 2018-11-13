@@ -95,7 +95,7 @@
 		<ns1:ContentFrameComponent  alpha="1" currentlevel="6"/>
 		<e:Image id="textBackground" width="570" height="220" x="178" y="85" anchorOffsetX="0" anchorOffsetY="0" source="text_background_png" alpha="1"/>
 		<e:Image x="189" y="98" source="question6_start_png"/>
-		<e:Rect id="xiaoLiTopLineRect" width="480" height="1" x="1229.48" y="255.92" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		<e:Rect id="xiaoLiTopLineRect" width="480" height="1" x="1229.48" y="255.92" anchorOffsetX="0" anchorOffsetY="0" alpha="0" strokeWeight="1"/>
 		<e:Image id="xiaoMingHeightLabel" x="1227.66" y="285" source="54cm_and_arrow_png" alpha="0" anchorOffsetY="0"/>
 		<e:Rect id="xiaoMingHeightArrowBottomRect" width="1" height="120" x="1330" y="255.96" alpha="0" strokeWeight="1"/>
 		<e:Image id="xiaoLiHeightArrowRect" width="20" height="592" x="1616" y="262" source="arrow_top_png" alpha="1" visible="false"/>
@@ -104,9 +104,9 @@
 		<e:Rect id="xiaoMingTopLineRect" width="540" height="1" x="974.61" y="374.49" alpha="0" strokeWeight="1"/>
 		<e:Image id="xiaoMingImage" x="1090" y="478" anchorOffsetX="0" anchorOffsetY="0" bottom="39" alpha="1" source="xiaoming_red_png"/>
 		<e:Image id="xiaoMingAndXiaoliImage" x="1092" y="488" anchorOffsetX="0" anchorOffsetY="0" bottom="39" alpha="0" source="xiaoming_and_xiaoli_png"/>
-		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="1"/>
+		<e:Rect id="bottomLineRect" width="800" height="1" x="886.88" y="847.14" anchorOffsetX="0" anchorOffsetY="0" alpha="1" strokeWeight="1"/>
 		<e:Image id="xiaoming6HeightImage" x="953.36" y="584.27" source="xiaoming6_height_png" alpha="0"/>
-		<ns1:FormulaComponent id="formulaComponent" width="524" height="316" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula6_title_png" leftImageSource="formula6_left_png" rightImageSource="formula6_right_png" resultImageSource="formula6_result_png"/>
+		<ns1:FormulaComponent id="formulaComponent" width="524" height="267.51" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula6_title_png" leftImageSource="formula6_left_png" rightImageSource="formula6_right_png" resultImageSource="formula6_result_png"/>
 		<e:Group id="alertAndOperationGroup">
 			<ns1:CloudAlertComponent id="cloudAlertComponent" width="729.09" height="456.36" x="154" y="302" anchorOffsetX="0" anchorOffsetY="0" alpha="0" titleImageSource="question6_png"/>
 			<ns1:ButtonComponent id="hightButtonComponent" width="180" height="102" x="296.43" y="584" anchorOffsetX="0" anchorOffsetY="0"  normalSource="hight_normal_png" overSource="hight_over_png"  visible="false"/>
