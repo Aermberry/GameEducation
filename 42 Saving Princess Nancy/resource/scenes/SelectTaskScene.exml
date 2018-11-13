@@ -44,4 +44,6 @@
 	<e:Label id="task2Label" text="Task 2 Finding Princess Nancy" x="972.72" y="1054.6" textColor="0x7E512F" size="46" fontFamily="Calg421n"/>
 	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" visible="false"/>
 	<ns1:MovieClipPlayer id="person4Movie" x="64" y="-1115.67" dataSet="cloud5_json" texture="cloud5_png" movieClipName="cloud5" alpha="1" isLoopPlay="false"/>
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

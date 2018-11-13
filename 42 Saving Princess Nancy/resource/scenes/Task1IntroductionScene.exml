@@ -24,5 +24,5 @@
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 	<e:Label text="Task1" x="588" y="1056" textColor="0x000000" anchorOffsetX="0" anchorOffsetY="0" size="42" fontFamily="Calg421n"/>
 	<e:Label text="To make sure you know how princess Nancy look like, read about her and drag the correct items to draw a picture of her." x="588" y="1118" textColor="0x000000" anchorOffsetX="0" anchorOffsetY="0" size="42" width="705" height="272" lineSpacing="20" fontFamily="Calg421n"/>
-	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" visible="false"/>
+	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 </e:Skin>

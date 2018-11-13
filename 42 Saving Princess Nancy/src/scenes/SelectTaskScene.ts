@@ -3,6 +3,8 @@ class SelectTaskScene extends eui.Component implements  eui.UIComponent {
 	private task1Label: eui.Label;
 	private task2Label: eui.Label;
 	private maskRect: eui.Rect;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	private maskAnimation: egret.tween.TweenGroup;
 	private finishMaskAnimation: egret.tween.TweenGroup;
@@ -23,9 +25,7 @@ class SelectTaskScene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.task1Label, true);
 		mouse.setButtonMode(this.task2Label, true);
-		lzlib.SoundUtility.playSound('select_task_mp3');
-		await this.playMaskAnimation();
-		this.maskRect.visible = false;
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
 		this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask1Over, this);
 		this.task2Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask2Over, this);
 		this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onTask1Out, this);
@@ -36,6 +36,15 @@ class SelectTaskScene extends eui.Component implements  eui.UIComponent {
 		this.task2Label.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTask2Click, this);
 		this.task1Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask1End, this);
 		this.task2Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask2End, this);
+	}
+	
+	private async onStartButton2Click(): Promise<void>
+	{
+		this.maskRect.visible = false;
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		lzlib.SoundUtility.playSound('select_task_mp3');
+		await this.playMaskAnimation();
 	}
 
 	private onTask1Begin(): void

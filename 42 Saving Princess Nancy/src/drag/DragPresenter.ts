@@ -24,7 +24,6 @@ class DragPresenter {
 		let dragName = dragImage.name
 		if(dragName == e.target.$name){
 			//拖拽正确 drop correct
-			console.log('drop correct');
 			this.isCorrect = true;
 			this.currectIndex++;
 			//显示拖拽正确部分 show part for correct 
@@ -47,7 +46,7 @@ class DragPresenter {
 				return;
 			}else{
 				//拖拽失败 drop failure
-				console.log('drop failure');
+				
 				//闪烁拖拽部位的对应文字  flicker text 
 				let curRD = this.currectRD.getCurrectRD(dragName);
 				// curRD == undefined ? this.view.AlertReTry() : this.view.textFlicker(curRD);
