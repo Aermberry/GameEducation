@@ -26,6 +26,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private strawberryImage: eui.Image;
 	private finishImage: eui.Image;
 	private finishGroup: eui.Group;
+	private operationGroup: eui.Group;
 
 	private numberPad: NumberPad;
 
@@ -279,6 +280,11 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public hideFInishTip(): void
 	{
 		this.finishGroup.visible = false;
+	}
+
+	public showOperation(): void
+	{
+		this.operationGroup.visible = true;
 	}
 
 }
