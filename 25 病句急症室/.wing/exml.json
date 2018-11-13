@@ -68,5 +68,10 @@
         "path": "gameLevelScenes\\Level10Scene.ts",
         "class": "Level10Scene",
         "parentPath": ""
+    },
+    "1670af9d418": {
+        "path": "gameLevelScenes/Level11Scene.ts",
+        "class": "Level11Scene",
+        "parentPath": ""
     }
 }

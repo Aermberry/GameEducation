@@ -258,7 +258,7 @@
 <w:Config id="164dabde492" ></w:Config>
 <e:Image source="description_example_frame_png" visible="false"/>
 <e:Image source="description_example_bg_png" y="154"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" visible="false"/>
+<e:Label text="中國語文" textColor="0x0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" visible="false"/>
 <e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" visible="false"/>
 <e:Image source="head_icon_png" x="1480" y="24" visible="false"/>
 <e:Image source="right_headline_png" x="1610" y="24" visible="false"/>

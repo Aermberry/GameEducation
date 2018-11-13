@@ -1,4 +1,4 @@
-class Level10Scene extends eui.Component implements  eui.UIComponent {
+class Level11Scene extends eui.Component implements  eui.UIComponent {
 	private exitBtn:ExitButton;
 	private blueFrameTweenGroup:egret.tween.TweenGroup;
 	private exitTipLabel:eui.Label;
@@ -59,7 +59,7 @@ class Level10Scene extends eui.Component implements  eui.UIComponent {
 
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		if ((e.data as number) == 1) {
+		if ((e.data as number) == 8) {
             e.preventDefault();
 			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);
@@ -72,7 +72,7 @@ class Level10Scene extends eui.Component implements  eui.UIComponent {
 			this.doctorAngryImg.visible = false;
 			this.doctorBlinkImg.visible = true;
 			await lzlib.ThreadUtility.sleep(1500);
-			Main.instance.gotoScene(new Level09Scene());
+			Main.instance.gotoScene(new Level10Scene());
 		}
 		else{
            await this.doctorAngryTweenGroup.playOnceAsync();
