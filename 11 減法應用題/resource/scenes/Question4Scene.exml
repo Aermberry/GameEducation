@@ -159,7 +159,7 @@
 		<e:Image id="questionImage" x="204.15" y="264.47" alpha="0" source="question4_png"/>
 		<ns1:FormulaComponent id="formulaComponent" width="524" height="253.21" x="225" y="422" anchorOffsetX="0" anchorOffsetY="0" titleImageSource="formula4_title_png" leftImageSource="formula4_left_png" rightImageSource="formula4_right_png" resultImageSource="formula4_result_png"/>
 		<e:Rect width="700" height="1" x="1011.58" y="820.67" strokeWeight="1"/>
-		<e:Rect id="height134LineRect" width="1" height="514" x="1095.82" y="308"/>
+		<e:Rect id="height134LineRect" width="1" height="514" x="1095.82" y="308" strokeWeight="2"/>
 		<e:Rect id="height134RowLineRect" width="450" height="1" x="996.37" y="306.45" strokeWeight="1"/>
 		<e:Image id="height134cmimage" x="947.67" y="503.06" alpha="0" source="134cm_png"/>
 		<e:Image x="1104" y="245.24" bottom="66" source="xiaoan_and_xiaoli_png"/>
