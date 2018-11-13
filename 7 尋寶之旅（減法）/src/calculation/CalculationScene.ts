@@ -84,13 +84,18 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private initRestartExitButton(): void
 	{
 		mouse.setButtonMode(this.restartImage, true);
-		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.startCalulation, this.presenter);
+		// this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.startCalulation, this.presenter);
+		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestartImageClick , this);
 		mouse.setButtonMode(this.exitImage, true);
 		this.exitImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onExitImageClick , this);
 	}
 
 	private onExitImageClick(): void {
 		window.close();
+	}
+
+	private onRestartImageClick(): void {
+		Main.instance.gotoScene(new StartScene());
 	}
 
 	private initAngelGroup(): void
@@ -225,6 +230,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.topDialogTitleLabel.text = '要退位嗎？';
 		this.yesButton.visible = true;
 		this.noButton.visible = true;
+		this.angelGroup.visible = true;
 	}
 
 	/** 隐藏是否需要借位的对话框 */
@@ -293,7 +299,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.topDialogGroup.visible = true;
 		this.topDialogBodyLabel.visible = true;
 		let positionString = position == 0 ? '個' : '十';
-		this.topDialogBodyLabel.text = minuend.toString() + `被${positionString}位借了1後，\n還余多少？`;
+		this.topDialogBodyLabel.text = minuend.toString() + `被${positionString}位借了1後，\n還餘多少？`;
 	}
 
 	/** 十位已向百位借1，變成10，又借1給個位，變成9。*/
@@ -382,8 +388,16 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public openBox(): void
 	{
 		this.boxOpenTweenGroup.play(0);
-		
+		this.boyImage.visible = false;
+		this.boyMovie.visible = true;
 	}
+
+	public boyshowhie():void
+	{
+		this.boyImage.visible = true;
+		this.boyMovie.visible = false;
+	}
+
 	public closeBox(): void
 	{
 		this.boxOpenImage.alpha = 0;

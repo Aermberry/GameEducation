@@ -21,7 +21,12 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	private actionLeftButton: CircleButton;
 	private actionRightButton: CircleButton;
 
+	private correctGroup: eui.Group;
+
 	private currentSoundChannel: egret.SoundChannel;
+
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	private presenter = new MainPresenter();
 
@@ -44,7 +49,14 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 		this.instructionButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onInstructionButtonClick, this.presenter);
 		this.validateButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onValidateButtonClick, this.presenter);
 		this.exitButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+	}
+
+	private onStartButton2Click(): void
+	{
 		this.presenter.loadView(this, this.goodsGroup.$children.map(child => child as GoodsComponent));
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
 	}
 
 	private initGoodsDragDrop(): void
@@ -214,14 +226,16 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	
 	public playSomeGoodsNotInRoomAudio(): void 
 	{
-		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play(0, 1);
+		// this.stopCurrentSound();
+		// this.currentSoundChannel = (RES.getRes('sound 6 (guideSound1Raw)_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound('sound 6 (guideSound1Raw)_mp3');
 	}
 	
 	public playNotAllGoodsInCorrectPlayAudio(): void 
 	{
-		this.stopCurrentSound();
-		this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
+		// this.stopCurrentSound();
+		// this.currentSoundChannel = (RES.getRes('sound 5 (guideSound2Raw)_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound('sound 5 (guideSound2Raw)_mp3');
 		this.actionGroup.visible = true;
 	}
 
@@ -237,6 +251,7 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 
 	public closeContinuePanel(): void
 	{
+		console.log('continue');
 		this.actionGroup.visible = false;
 		this.actionLeftButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onContinueButtonClick, this.presenter);
 		this.actionRightButton.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onExitButtonClick, this.presenter);
@@ -278,6 +293,14 @@ class MainScene extends eui.Component implements  eui.UIComponent, MainView {
 	
 	public reopenMyself(): void
 	{
-		Main.instance.gotoScene(new MainScene());
+		// Main.instance.gotoScene(new MainScene());
+		window.location.reload();
+		
+	}
+
+	public showCorrectGroup(): void
+	{
+		this.toastGroup.visible = false;
+		this.correctGroup.visible = true;
 	}
 }

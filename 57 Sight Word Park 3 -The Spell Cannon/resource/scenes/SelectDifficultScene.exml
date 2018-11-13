@@ -8,5 +8,5 @@
     <e:Image id="whiteCanvasPicture" source="white_canvas_picture_png" x="689" y="336"/>
     <e:Label id="theSpellCannon" x="693" y="253" size="60" text="The Spelling Cannon" textColor="#000000" fontFamily="Kristen_ITC"/>
     <e:Label id="descriptionOneText" x="426" y="743" fontFamily="Kristen_ITC" size="44" text="Shoot the castle and defeat the enemy by choosing" textColor="#000000"/>
-    <e:Label id="descriptionTwoText" x="426" y="798" fontFamily="Kristen_ITC" size="44" text="the right world!" textColor="#000000"/>
+    <e:Label id="descriptionTwoText" x="426" y="798" fontFamily="Kristen_ITC" size="44" text="the right word!" textColor="#000000"/>
 </e:Skin>

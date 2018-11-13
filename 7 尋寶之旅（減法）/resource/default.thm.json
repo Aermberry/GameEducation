@@ -20,6 +20,8 @@
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/components/EditableLabel.exml",
+		"resource/components/NumberPad.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -33,8 +35,6 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/components/EditableLabel.exml",
-		"resource/components/NumberPad.exml",
 		"resource/scenes/CalculationScene.exml",
 		"resource/scenes/StartScene.exml"
 	],

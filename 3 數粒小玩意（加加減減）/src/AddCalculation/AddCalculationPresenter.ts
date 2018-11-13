@@ -34,12 +34,20 @@ class AddCalculationPresenter {
 			if (position < this.getMaxNumberLength(this.addend, this.augend) - 1) {
 				//最后一位不需要确认进位
 				await this.confirmCarryNeed(correctSum)
-				if (correctSum > 10) {
+				if (correctSum >= 10) {
 					this.view.setCarry(1, position);
 					await this.view.mergeCarry(position);
 				}
 			}
 
+			let answerSum = (this.addend + this.augend).toString();
+
+			if (position == answerSum.length - 1 )
+			{
+				//應彈出 問用戶重新開始還是繼續
+				this.view.showAlertImage();
+			} 			
+		
 			this.view.normalizeOperand(position);
 			carry = this.getDigitAtPosition(correctSum, 1);
 		}

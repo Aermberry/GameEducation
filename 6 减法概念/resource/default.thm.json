@@ -13,7 +13,7 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"StartScene": "resource/scenes/StartScene.exml",
+		"StartScenes.StartScene": "resource/scenes/StartScene.exml",
 		"ChooseEquationScene": "resource/scenes/ChooseEquationScene.exml",
 		"Plus125And53Scene": "resource/scenes/Plus125And53Scene.exml",
 		"Plus16And27Scene": "resource/scenes/Plus16And27Scene.exml",

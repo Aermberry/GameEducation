@@ -27,7 +27,7 @@ class RoundPresenter {
 		this.view.alertPlayingInstruction();
 		await this.view.playInstructionAsync(this.instructionAudioName);
 		this.view.alertYouCanMoveGoodsNow();
-		this.view.enableInstructionButton();
+		// this.view.enableInstructionButton();
 		this.view.enableValidateButton();
 		this.view.enableGoods(this.goods);
 		this.view.updateGoodsStateToNormal(this.goods);
@@ -52,12 +52,14 @@ class RoundPresenter {
 
 		this.view.disableGoods(this.goods);
 		if (this.isLastRound) {
+			this.view.showCorrectGroup();
 			this.view.toastGamePassedMessage();
 			this.view.showGamePassedPanel();
 			this.view.playGamePassedAudio();
 			this.view.playGamePassedMovie();
 		} else {
 			this.view.toastNextRoundMessage();
+			this.view.enableInstructionButton();
 			this.view.openNextRoundPanel();
 		}
 	}
@@ -74,6 +76,7 @@ class RoundPresenter {
 
 	public onContinueButtonClick(): void
 	{
+		this.view.enableInstructionButton();
 		this.view.closeContinuePanel();
 	}
 }

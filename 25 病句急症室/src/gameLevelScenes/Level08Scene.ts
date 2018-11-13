@@ -49,7 +49,6 @@ class Level08Scene extends eui.Component implements  eui.UIComponent {
 			let drag = new lzlib.Drag();
 			this.addChild(drag);
 			drag.enableDrag(child, false, index);
-			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
 
 		let drop = new lzlib.Drop();
@@ -58,14 +57,9 @@ class Level08Scene extends eui.Component implements  eui.UIComponent {
 		this.trashGroup.addEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 	}
 
-	private onDragCancel(e: lzlib.LzDragEvent): void
-	{
-		this.doctorAngryTweenGroup.playOnceAsync();
-	}
-
 	private async onTrashDrop(e: lzlib.LzDragEvent):Promise<void>
 	{
-		if ((e.data as number) == 2) {
+		if ((e.data as number) == 3) {
             e.preventDefault();
 			this.trashGroup.removeEventListener(lzlib.LzDragEvent.DROP, this.onTrashDrop, this);
 			this.stage.removeChild(e.dragObject);

@@ -49,14 +49,8 @@ class Particle extends eui.Component implements  eui.UIComponent, IParticleCompo
 
 	}
 
-	/** 减少数字 */
-	public reduce(value: number): void
-	{
-
-	}
-
 	/** 复制指定数量的children */
-	public getChildren(count: number): IParticleComponent[]
+	public getCededChildren(count: number): IParticleComponent[]
 	{
 		return [];
 	}
@@ -65,5 +59,35 @@ class Particle extends eui.Component implements  eui.UIComponent, IParticleCompo
 	public copyColor(source: IParticleComponent[], destIndex: number): void
 	{
 
+	}
+
+	/** 借位 */
+	public borrowOne(): IParticleComponent
+	{
+		throw new Error('Impossible to run here');
+	}
+
+	/** 移动到目标的左边 */
+	public moveToLeftOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+	/** 移动到目标的右边 */
+	public moveToRightOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+	/** 移动到目标的后边 */
+	public moveToBehideOf(target: IParticleComponent): Promise<void>
+	{
+		throw new Error('Impossible to run here');
+	}
+	
+	/** 变成半透明 */
+	public translucent(tranlucientAmount: number): void
+	{
+		this.alpha = 0.2;
 	}
 }

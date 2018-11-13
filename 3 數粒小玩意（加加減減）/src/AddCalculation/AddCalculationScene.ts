@@ -28,6 +28,8 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 
 	private presenter: AddCalculationPresenter;
 
+	private alertBackgroundImage: eui.Image;
+
 	public constructor(addend: number, augend: number) {
 		super();
 		this.presenter = new AddCalculationPresenter(addend, augend);
@@ -73,6 +75,13 @@ class AddCalculationScene extends eui.Component implements  eui.UIComponent, IAd
 	public showRestartButton(): void
 	{
 		this.restartGroup.visible = true;
+	}
+
+	public async showAlertImage(): Promise<void>
+	{
+		this.alertBackgroundImage.visible = true;
+		await lzlib.ThreadUtility.sleep(1500);
+		this.alertBackgroundImage.visible = false;
 	}
 
 	/** highlight操作数，包括expressionGroup和demoGroup里的操作数 */

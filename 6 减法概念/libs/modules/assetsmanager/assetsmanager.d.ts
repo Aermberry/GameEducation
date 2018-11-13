@@ -17,7 +17,6 @@ declare module RES {
         root: string;
         crc32?: string;
         size?: number;
-        extra?: 1 | undefined;
         name: string;
         soundType?: string;
         scale9grid?: string;
@@ -77,14 +76,6 @@ declare module RES {
             type?: string;
             url: string;
             root?: string;
-            extra?: 1 | undefined;
-        }): void;
-        removeResourceData(data: {
-            name: string;
-            type?: string;
-            url: string;
-            root?: string;
-            extra?: 1 | undefined;
         }): void;
         destory(): void;
     }
@@ -247,10 +238,9 @@ declare module RES {
         [file: string]: File | Dictionary;
     }
     interface FileSystem {
-        addFile(filename: string, type?: string, root?: string, extra?: 1 | undefined): any;
+        addFile(filename: string, type?: string, root?: string): any;
         getFile(filename: string): File | null;
         profile(): void;
-        removeFile(filename: string): any;
     }
     class NewFileSystem {
         private data;

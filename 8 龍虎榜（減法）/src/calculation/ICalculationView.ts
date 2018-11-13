@@ -4,10 +4,12 @@ interface ICalculationView {
 
 	/** 要求用户输入姓名 */
 	getNameAsync(): Promise<string>
-	/** 向用户确认是否需要输入退位 */
+	/** 向用户确认是是否要输入退位，在游戏一开始的时候出现。
+	 * 如果用户选择是，在做题的每一步系统都会咨问用户是否要退位。
+	 * 如果用户选择否，系统就不会再问用户是否要退位。 */
 	confirmInputBorrowNeedAsync(): Promise<boolean>;
-	/** 向用户确认是否需要退位 */
-	confirmBorrowNeedAsync(): Promise<boolean>
+	/** 在做题的每一步系统都会咨问用户是否要退位 */
+	confirmBorrowNeedAsync(): Promise<boolean>;
 
 	minuend: number;
 	subtrahend: number;
@@ -31,6 +33,10 @@ interface ICalculationView {
 	playAnswerMinuendDeleteMovie(position: number, borrowTime: number): void;
 	/** 隐藏被减数被删除的动画 */
 	hideAnswerMinuendDeleteMovies(): void;
+	/** 显示完成按钮的提示 */
+	alertFinishTips(): Promise<void>;
+	/** 等待用户点击“完成按钮" */
+	confirmFinishButtonClick(): Promise<void>
 
 	/** 设置指定位的差 */
 	setCorrectDifference(sum: string, position: number): void;
@@ -56,5 +62,4 @@ interface ICalculationView {
 
 	/** 清除用户的输入 */
 	clearUserInput(): void;
-	openRankingScene(): void;
 }

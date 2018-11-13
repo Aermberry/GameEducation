@@ -28,5 +28,5 @@
 	<e:Rect id="backgroundRect" x="75" y="75" width="150" height="150" anchorOffsetX="75" anchorOffsetY="75" fillColor="0xffffff" strokeWeight="12" strokeColor="0x000000" ellipseWidth="150" scaleX.over="1.1" scaleY.over="1.1" scaleX="1" scaleY="1" alpha.disabled="0.6" alpha="1"/>
 	<e:Label id="titleLabel" text="離開" horizontalCenter="0" verticalCenter="0" fontFamily="華康超黑體" size="92" textColor="0x000000" scaleX.over="0.66" scaleY.over="1.1" scaleX="0.6" scaleY="1" scaleY.normal="1" alpha.disabled="0.6" alpha="1" />
 	<e:Image id="iconImage" horizontalCenter="0" verticalCenter="0"  source="speaker_png" scaleX.over="1.1" scaleY.over="1.1" scaleX="1" scaleY="1" alpha.disabled="0.6" alpha="1"/>
-	<e:Label id="tipLabel" text="離開" x="50" y="-30" textColor="0x000000" size="40"  backgroundColor="0xffffff" background="true" border="true" visible.over="true" visible="false"/>
+	<e:Label id="tipLabel" text="離開" x="50" y="-30" textColor="0x000000" size="46"  backgroundColor="0xffffff" background="true" border="true" visible.over="true" bold="true" visible="false"/>
 </e:Skin>

@@ -6,7 +6,7 @@
 
 <e:Label id="HearSceneText" text="They hear" y="1038" x="583" textColor="#000000" size="74.5" bold="true" locked="true"/>
 <e:Label id="scrollText" text=" ..." y="1038" x="960" textColor="#000000"  size="74.5" locked="true"/>
-<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" locked="true"/>
+<e:Image id="nextSceneButton" source="button_png" x="1794" y="1088"  alpha="1" visible="false" locked="true"/>
 <e:Image id="girlCry" source="girl_sad_png" y="56" x="388" locked="true"/>
 <e:Image id="whisper" source="twoboy_whisper_png" y="442" x="1020" locked="true"/>
 <e:Image id="door" source="door_png" y="41" x="1712" locked="true"/>

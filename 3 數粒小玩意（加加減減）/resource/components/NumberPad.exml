@@ -14,7 +14,7 @@
 	<ns1:ImageButton id="nineButton" x="885" verticalCenter="0" source="nine_normal_png" mouseOverSource="nine_selected_png"/>
 	<ns1:ImageButton id="zeroButton" x="990" verticalCenter="0" source="zero_normal_png" mouseOverSource="zero_selected_png"/>
 
-	<ns1:ImageButton id="addButton" x="1066" verticalCenter="1" source="dollar00_png" mouseOverSource="dollar01_png" width="114" height="100"/>
+	<!--<ns1:ImageButton id="addButton" x="1066" verticalCenter="1" source="dollar00_png" mouseOverSource="dollar01_png" width="114" height="100"/>-->
 	<ns1:ImageButton id="addButton" x="1160" verticalCenter="-2" source="add_normal_png" mouseOverSource="add_selected_png"/>
 	<ns1:ImageButton id="minusButton" x="1265" verticalCenter="0" source="minus_normal_png" mouseOverSource="minus_selected_png"/>
 	<ns1:ImageButton id="eraserButton" x="1370" verticalCenter="0" source="eraser_normal_png" mouseOverSource="eraser_selected_png"/>

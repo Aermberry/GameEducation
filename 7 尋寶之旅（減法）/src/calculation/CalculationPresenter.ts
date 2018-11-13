@@ -69,6 +69,7 @@ class CalculationPresenter {
 				this.view.hideMinuendDeleteMovies();
 				this.view.closeBox();
 				this.view.clearUserInput();
+				this.view.boyshowhie();
 			}
 		}
 
