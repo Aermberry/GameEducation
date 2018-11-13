@@ -26,9 +26,8 @@
 	</e:Group>
 	<e:Group id="goodsAndRoomGroup">
 		<e:Group width="960" height="974" x="1" y="3">
-			<e:Rect width="960" height="974" x="11" y="10" anchorOffsetX="11" anchorOffsetY="9" fillColor="0xc5edfd"/>
-			<e:Rect bottom="0" width="960" x="0" height="4" fillColor="0x610316"/>
-			<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0"/>
+			<e:Rect width="974" height="984" x="3" y="2" anchorOffsetX="11" anchorOffsetY="9" fillColor="0x610316"/>
+			<e:Rect width="940" height="974" x="20.77" y="10" anchorOffsetX="10.77" anchorOffsetY="9" fillColor="0xc5edfd"/>
 			<e:Image width="863" height="881" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="title_blue_png"/>
 			<e:Group id="goodsGroup" width="863" height="881" x="52" y="52">
 				<ns1:GoodsComponent id="lampDeskImage" x="581.74" y="582" source="furniture_lamp_desk_png" audioName="sound 3 (oSound2)_mp3" targetRectX="333" targetRectY="590" enabled="false" currentState="gray"/>
@@ -41,21 +40,28 @@
 				<ns1:GoodsComponent id="bookImage" x="305.5" y="15" source="goods_book_png" audioName="sound 13 (oSound6)_mp3" targetRectX="255" targetRectY="635" targetRectWidth="363" targetRectHeight="157" enabled="false" currentState="gray"/>
 			</e:Group>
 			<e:Label text="選擇物件" x="61.91" y="77" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
+			<!--<e:Rect width="4" x="942" top="0" bottom="0" fillColor="0x610316" right="0" strokeWeight="1"/>
+			<e:Rect width="4" x="0" top="0" bottom="0" fillColor="0x610316" strokeWeight="1"/>-->
 		</e:Group>
 		<e:Group id="roomGroup" width="960" height="974" x="964" y="0">
-			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
-			<e:Image id="rectWhiteFloorImage" width="962.43" height="474.54" x="-7" y="498.46" anchorOffsetX="0" anchorOffsetY="0" source="rect_white_floor_png"/>
-			<e:Image id="wallLeftImage" width="417" height="559" x="-8" y="155" anchorOffsetX="0" anchorOffsetY="0" source="wall_left_png"/>
-			<e:Image id="wallWindowImage" width="545.98" height="488" x="405.97" y="158.03" anchorOffsetX="0" anchorOffsetY="0" rotation="359.67" source="wall_window_png"/>
-			<e:Image id="furnitureDoorWhiteImage" width="97" height="311" x="-4" y="401.94" anchorOffsetX="0" anchorOffsetY="0" skewY="-22" source="furniture_door_white_png"/>
+			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x610316"/>
+			<e:Rect left="0" right="12" top="4" bottom="0" fillColor="0xffffff" width="956" anchorOffsetY="0" anchorOffsetX="0"/>
+			<e:Image id="rectWhiteFloorImage" width="950.43" height="486.54" x="-3" y="502.46" anchorOffsetX="0" anchorOffsetY="0" source="rect_white_floor_png"/>
+			<e:Image id="wallLeftImage" width="417" height="559" x="0" y="155" anchorOffsetX="0" anchorOffsetY="0" source="wall_left_png"/>
+			<e:Image id="wallWindowImage" width="538" height="488" x="409.97" y="158.03" anchorOffsetX="0" anchorOffsetY="0" rotation="359.67" source="wall_window_png"/>
+			<e:Image id="furnitureDoorWhiteImage" width="97" height="311" x="0" y="401.94" anchorOffsetX="0" anchorOffsetY="0" skewY="-22" source="furniture_door_white_png"/>
 			<e:Image id="furnitureWardrobeImage" width="180" height="321" x="148" y="366" anchorOffsetX="0" anchorOffsetY="0" source="furniture_wardrobe_png"/>
 			<e:Image id="furnitureTableImage" width="293" height="263" x="531.39" y="502.3" anchorOffsetX="139.39" anchorOffsetY="130.3" rotation="3.85" source="furniture_table_png"/>
 			<e:Image id="furnitureStoolImage" width="373" height="277" x="249" y="629" source="furniture_stool_png"/>
 			<e:Image id="floorRedImage" width="128" height="71" x="806" y="637" anchorOffsetX="0" anchorOffsetY="0" skewY="12" skewX="40" source="floor_red_png"/>
-			<e:Group id="toastGroup" width="870" height="235" x="75" y="43" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group id="toastGroup" width="870" height="235" x="55" y="43" anchorOffsetX="0" anchorOffsetY="0">
 				<e:Image width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_blue_png"/>
 				<e:Label id="toastLabel" y="55" fontFamily="華康中黑體" size="85"  horizontalCenter="0" text="請留心聆聽指示內容" textColor="0x000000"/>
 				<ns1:MovieClipPlayer id="hornAnimation" width="333" height="20" x="281.55" y="167" anchorOffsetX="0" anchorOffsetY="0" dataSet="horn_animation_json" texture="horn_animation_png" movieClipName="horn_animation" />
+			</e:Group>
+			<e:Group id="correctGroup" width="870" height="235" x="55" y="43" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+				<e:Image width="610.91" height="126.06" x="6" y="9.86" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" source="alert_border_green_png"/>
+				<e:Label id="toastLabel0" y="63" fontFamily="華康中黑體" size="85" horizontalCenter="8" text="成功完成了！" textColor="0x000000"/>
 			</e:Group>
 		</e:Group>
 	</e:Group>
@@ -63,12 +69,12 @@
 		<e:Rect height="4" y="-0.21" fillColor="0x010002" left="0" right="0"/>
 		<e:Image height="457" y="2.61" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" source="panel_bottom_png"/>
 		<e:Group width="560.61" height="281.82" x="36" y="145.09" anchorOffsetX="0" anchorOffsetY="0">
-			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" iconSource="speaker_png" tip="播放/暫停" enabled="false"/>
+			<ns1:CircleButton id="instructionButton" width="147" height="147" x="34" y="70" iconSource="speaker_png" tip="播放指示" enabled="false"/>
 			<ns1:CircleButton id="validateButton" width="147" height="147" x="209" y="70" title="核對" titleColor="0x296419" strokeColor="0x41962A" backgroundColor="0xDEFDD9" tip="核對物件" enabled="false"/>
 			<ns1:CircleButton id="exitButton" width="147" height="147" x="385" y="70" title="離開" tip="離開" />
 		</e:Group>
 		<ns1:BiscuitProgressBar id="progressBar" x="650" y="170" />
-		<e:Label text="控制臺" x="58" y="60" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
+		<e:Label text="控制台" x="58" y="60" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
 		<e:Label text="現時進度" x="688" y="56.97" textColor="0x000000" fontFamily="華康超黑體" size="70"/>
 	</e:Group>
 	<e:Group id="actionGroup" left="0" right="0" anchorOffsetY="0" top="979" bottom="0" visible="false">
@@ -77,4 +83,7 @@
 		<ns1:CircleButton id="actionLeftButton" x="610" y="213.59" />
 		<ns1:CircleButton id="actionRightButton" x="1267.01" y="213.59" />
 	</e:Group>
+
+	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

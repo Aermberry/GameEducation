@@ -23,7 +23,8 @@ class GoodsComponent extends eui.Component implements eui.UIComponent, lzlib.Clo
 
 	private onMouseOver(): void
 	{
-		this.enabledAudioName && this.audioName && (RES.getRes(this.audioName) as egret.Sound).play(0, 1);
+		// this.enabledAudioName && this.audioName && (RES.getRes(this.audioName) as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound(this.audioName);
 	}
 	
 	private _source = '';

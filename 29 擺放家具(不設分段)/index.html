@@ -27,34 +27,28 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
+        }
+        label {
+             -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
         }
         @font-face {
             font-family:"華康超黑體";
             src: url("resource/fonts/華康超黑體.woff2") format('woff2'),
-                 url('resource/fonts/華康超黑體.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family:"華康粗黑體";
-            src: url("resource/fonts/華康粗黑體.woff2") format('woff2'),
-                 url('resource/fonts/華康粗黑體.woff') format('woff');
+                 url('resource/fonts/華康超黑體.woff') format('woff'),
+                 url('resource/fonts/華康超黑體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
             font-family:"華康中黑體";
             src: url("resource/fonts/華康中黑體.woff2") format('woff2'),
-                 url('resource/fonts/華康中黑體.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family:"新細明體";
-            src: url("resource/fonts/新細明體.woff2") format('woff2'),
-                 url('resource/fonts/新細明體.ttf') format('truetype');
+                 url('resource/fonts/華康中黑體.woff') format('woff'),
+                 url('resource/fonts/華康中黑體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -86,7 +80,7 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
     <div id="egret-player" 
         class="egret-player" 
         data-entry-class="Main" 
@@ -100,13 +94,14 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
+        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: 華康超黑體; font-size: 1px;" />
-    <label style="font-family: 華康粗黑體; font-size: 1px;" />
-    <label style="font-family: 華康中黑體; font-size: 1px;" />
-    <label style="font-family: 新細明體; font-size: 1px;" />
+    <label style="font-family: 華康超黑體; color: transparent;">離開選擇物件控制台現時進度繼續努力遊戲完成！重設重新開始遊戲下一節繼續努力核對</label>
+    <label style="font-family: 華康粗黑體; color: transparent;">小朋友，以下你會聽到一個故事，你要留意一下故事中的角色，講說話的時候是甚麼心情和應該用甚麼語氣。\r\r好了，現在就按綠色按鈕開始吧。</label>
+    <label style="font-family: 華康中黑體; color: transparent;">請留心聆聽指示內容成功完成了！請前往下一節啦！遊戲完成！重設重新開始遊戲繼續努力現在可以移動傢俬了</label>
+    <label style="font-family: 新細明體; color: transparent;">離開</label>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -162,29 +157,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
