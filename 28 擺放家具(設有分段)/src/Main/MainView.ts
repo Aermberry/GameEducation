@@ -32,4 +32,5 @@ interface MainView {
 	updateProgress(inCorrectPlaceCount: number, inWrongPlaceCount: number): void;
 	hideToastView(): void;
 	reopenMyself(): void;
+	showCorrectGroup(): void;
 }
