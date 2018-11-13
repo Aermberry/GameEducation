@@ -27,13 +27,21 @@
             color: #666;
         }    
         #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 3%;
+        margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+         label {
+             -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
         @font-face {
             font-family:"華康楷書體";
-            src: url("resource/fonts/y華康楷書體.woff2") format('woff2'),
-                 url('resource/fonts/華康楷書體.woff') format('woff');
+            src: url("resource/fonts/華康楷書體.woff2") format('woff2'),
+                 url('resource/fonts/華康楷書體.woff') format('woff'),
+                 url('resource/fonts/華康楷書體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -65,7 +73,7 @@
 </head>
 
 <body>
-    <img id="logo" style='position: absolute; ' src="resource/images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
     <div id="egret-player" 
         class="egret-player" 
         data-entry-class="Main" 
@@ -79,10 +87,11 @@
         data-show-log="false"
         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
-    <div id="copyright" style='position:absolute; bottom:0; height: 3%; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
+    <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'>
+        2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: 華康楷書體; font-size: 1px;" />    
+    <label style="font-family: 華康楷書體; color: transparent;">巴士上層有乘客40人，下層乘客比上層多25人。巴士下層有乘客多少人？巴士下層有乘客：弟弟有80元，姐姐比他多120元。姐姐有多少元？姐姐有：文具店有鉛筆350支，原子筆比鉛筆多250支。文具店有原子筆多少支？文具店有原子筆： 果汁店昨天售出蘋果汁323杯，今天比昨天多售出110杯。今天售出蘋果汁多少杯？今天售出蘋果汁：榨汁機237，比多士爐貴37元。多士爐售多少元？多士爐售：鳳義身高158cm，她比秀芬高18cm。秀芬身高多少？秀芬的身高：糖果店有朱古力糖850粒，比椰子糖多130粒。糖果店有椰子糖多少粒？糖果店有椰子糖：今天快餐店賣出三文治152件，比昨天多賣24件。昨天賣出三文治多少件？昨天賣出三文治：40+2580+12-1234567890</label>
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;
@@ -138,29 +147,21 @@
                 }
             });
 
-            var egretPlayer = document.getElementById('egret-player');
-            var canvas = egretPlayer.childNodes[1];
-            if (canvas != null) {
-                document.getElementById('logo').style.left = canvas.style.left;
-                document.getElementById('copyright').style.right = canvas.style.left;
-            }
+            alignHeaderFooter();
         });
     });
     xhr.send(null);
 </script>
 <script>
-    //判断手机横竖屏状态：
-    function hengshuping() {
-        // 竖
-        if (window.orientation == 180 || window.orientation == 0) {
-            window.location.reload()
-        }
-        // 横
-        if (window.orientation == 90 || window.orientation == -90) {
-            window.location.reload()
+    function alignHeaderFooter() {
+        var egretPlayer = document.getElementById('egret-player');
+        var canvas = egretPlayer.children[0];
+        if (canvas != null) {
+            document.getElementById('logo').style.left = canvas.style.left;
+            document.getElementById('copyright').style.right = canvas.style.left;
         }
     }
-    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+    window.addEventListener("resize", function() { window.setTimeout(alignHeaderFooter, 600); }, false);
 </script>
 </body>
 
