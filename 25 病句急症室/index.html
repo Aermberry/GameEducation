@@ -32,6 +32,14 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+        .canvasbox{
+             padding: auto auto;width: 100%;top: 59px; bottom: 20px;
+        }
+        @media screen and (max-width:480px){
+            .canvasbox{
+                padding-top: 200px;
+            }
+        }
         @font-face {
             font-family:"華康標楷體";
             src: url("resource/fonts/華康標楷體.woff2") format('woff2'),
@@ -85,10 +93,11 @@
 
 
 <!--拼接开始动画-->
-<div style="margin:0px;">
-<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:960px">
-<canvas id="canvas" width="1920" height="960" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:960px; position: absolute; left: 0px; top: 0px; display: block;">
+<div class="canvasbox">
+    <div style="margin:0px;">
+<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1280px;">
+<canvas id="canvas" width="1920" height="1280px;" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1280px; position: absolute; left: 0px; top: 0px; display: block;"></div>
 </div>
 </div>
 </div>
@@ -161,6 +170,7 @@
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
         dom_overlay_container = document.getElementById("dom_overlay_container");
+        var egret = document.getElementById("egret-player");
         var comp = AdobeAn.getComposition("ACB8E617B69E4B7BA2037A52363D4FC9");
         var lib = comp.getLibrary();
         var loader = new createjs.LoadQueue(false);
@@ -169,6 +179,7 @@
         var lib = comp.getLibrary();
         loader.loadManifest(lib.properties.manifest);
         anim_container.style.display = "block";
+        egret.style.display = "none";
     }
     function handleComplete(evt, comp) {
         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
@@ -232,8 +243,10 @@
     }
 
     function showAnimation() {
+        var egret = document.getElementById("egret-player");
         var anim_container = document.getElementById("animation_container");
         anim_container.style.display = "none";
+        egret.style.display = "block";
     }
 
 </script>
