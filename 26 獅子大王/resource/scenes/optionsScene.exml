@@ -2,56 +2,14 @@
 <e:Skin class="optionsSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="invitationAnimation">
-			<tween:TweenItem target="{invitation}">
-				<tween:Set>
-					<tween:props>
-						<e:Object scaleX="{0.5}" scaleY="{0.5}" y="{792}" x="{149}" alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:Wait duration="50"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}" y="{792}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="250">
-					<tween:props>
-						<e:Object x="{300}" y="{600}"/>
-					</tween:props>
-				</tween:To>
-				<tween:To duration="250">
-					<tween:props>
-						<e:Object x="{600}" y="{792}"/>
-					</tween:props>
-				</tween:To>
-				<tween:To duration="300">
-					<tween:props>
-						<e:Object x="{800}" y="{600}"/>
-					</tween:props>
-				</tween:To>
-				<tween:To duration="200">
-					<tween:props>
-						<e:Object scaleX="{0.5}" scaleY="{0.5}" y="{792}" x="{902}"/>
-					</tween:props>
-				</tween:To>
-				<tween:To duration="400">
-					<tween:props>
-						<e:Object scaleX="{1.1}" scaleY="{1.1}" x="{454.04}" y="{623.49}"/>
-					</tween:props>
-				</tween:To>
-				<tween:To duration="300" ease="quadInOut">
-					<tween:props>
-						<e:Object scaleX="{1}" scaleY="{1}" x="{454.04}" y="{623.49}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
+
 			<tween:TweenItem target="{image}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="950"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -64,7 +22,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="950"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -77,7 +35,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -90,7 +48,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -103,7 +61,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -116,7 +74,7 @@
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1750"/>
+				<tween:Wait duration="1000"/>
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{1}"/>
@@ -129,35 +87,35 @@
 					<e:Object alpha="{0}"/>
 				</tween:props>
 				</tween:Set>
-				<tween:Wait duration="1800"/>
+				<tween:Wait duration="1050"/>
 				<tween:Set>
 				<tween:props>
-					<e:Object width="{0}" height="{0}" alpha="{1}"/>
+					<e:Object width="{0}" height="{0}" alpha="{1}" scaleX="{0}" scaleY="{0}"/>
 				</tween:props>
 				</tween:Set>
 				<tween:To duration="200">
 				<tween:props>
-					<e:Object width="{563.67}" height="{319.45}"/>
+					<e:Object width="{563.67}" height="{319.45}" scaleX="{1}" scaleY="{1}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 				<tween:props>
-					<e:Object rotation="{11}"/>
+					<e:Object rotation="{8}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 				<tween:props>
-					<e:Object rotation="{-11}"/>
+					<e:Object rotation="{-8}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 				<tween:props>
-					<e:Object rotation="{11}"/>
+					<e:Object rotation="{5}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 				<tween:props>
-					<e:Object rotation="{-11}"/>
+					<e:Object rotation="{-5}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="250">
@@ -166,12 +124,61 @@
 				</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{invitation}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.4}" scaleY="{0.4}" y="{881.19}" x="{383.89}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" x="{555.89}" y="{881.19}" scaleX="{0.4}" scaleY="{0.4}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{963.19}" x="{646.89}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object x="{669.89}" y="{892.19}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object x="{723.89}" y="{892.19}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object x="{799.89}" y="{1007.19}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.4}" scaleY="{0.4}" x="{799.89}" y="{1007.19}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1.1}" scaleY="{1.1}" x="{938.89}" y="{893.19}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="167071e3aa4" ></w:Config>
 	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="0" height="271.85" textAlign="center" verticalAlign="middle" top="0" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true"/>
 	<e:Rect top="0" left="0" right="0" bottom="0" fillAlpha="0.7" fillColor="0x000000" alpha="1"/>
-	<e:Group id="invitation" x="454.04" y="623.49" anchorOffsetY="0" height="512.52">
+	<e:Group id="invitation" x="938.89" y="893.19" anchorOffsetY="269.7" height="512.52" anchorOffsetX="484.85">
 		<e:Image source="letter_bg_jpg" x="0" y="-6.05" scale9Grid="176,97,455,73" anchorOffsetY="0" height="521.26" anchorOffsetX="0" width="958.36"/>
 		<e:Label text="你們要來參加秋季嘉年華！\n希望你能出席，不見不散！" textColor="0x000000" fontFamily="華康中黑體" lineSpacing="100" textAlign="center" verticalAlign="middle" size="59" bold="true" anchorOffsetX="463.64" anchorOffsetY="263.64" left="3" right="7" top="-6" bottom="-0.4800000000000182"/>
 	</e:Group>
@@ -187,6 +194,7 @@
 		<e:Image id="image5" source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>
 		<e:Label text="小白兔，我決定先\n吃了你。" x="130.18" y="99.22" textColor="0x000000" fontFamily="華康中黑體" size="45" lineSpacing="25" bold="true"/>
 	</e:Group>
+
 
 
 
