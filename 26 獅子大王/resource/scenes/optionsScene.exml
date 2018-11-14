@@ -81,7 +81,7 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{dialogBoxGroup}">
+			<tween:TweenItem target="{LionDialogBoxGroup}">
 				<tween:Set>
 				<tween:props>
 					<e:Object alpha="{0}"/>
@@ -176,8 +176,13 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="167071e3aa4" ></w:Config>
-	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="0" height="271.85" textAlign="center" verticalAlign="middle" top="0" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true"/>
+	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="0.5" height="214.27" textAlign="center" verticalAlign="middle" top="0" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true"/>
 	<e:Rect top="0" left="0" right="0" bottom="0" fillAlpha="0.7" fillColor="0x000000" alpha="1"/>
+
+	<e:Group id="rabbitDialogBoxGroup" x="1200.94" y="284.4">
+		<e:Image source="dialogBox_png" x="0" y="163.18" scaleY="-1" anchorOffsetY="0" height="277.53" rotation="1.28"/>
+		<e:Label text="不要啊！" textColor="0x000000" size="60" x="165.39" y="0" bold="true" fontFamily="華康中黑體"/>
+	</e:Group>
 	<e:Group id="invitation" x="938.89" y="893.19" anchorOffsetY="269.7" height="512.52" anchorOffsetX="484.85">
 		<e:Image source="letter_bg_jpg" x="0" y="-6.05" scale9Grid="176,97,455,73" anchorOffsetY="0" height="521.26" anchorOffsetX="0" width="958.36"/>
 		<e:Label text="你們要來參加秋季嘉年華！\n希望你能出席，不見不散！" textColor="0x000000" fontFamily="華康中黑體" lineSpacing="100" textAlign="center" verticalAlign="middle" size="59" bold="true" anchorOffsetX="463.64" anchorOffsetY="263.64" left="3" right="7" top="-6" bottom="-0.4800000000000182"/>
@@ -186,13 +191,39 @@
 	<e:Image id="image4" source="rat_png" x="1044.85" y="1221.08"/>
 	<e:Image id="image3" source="giraffe_png" x="1454.54" y="933.77"/>
 	<e:Image id="image2"  source="sheep_png" x="1606.33" y="750.3"/>
-	<e:Image id="image1" source="snake_png" x="1454.54" y="499.1"/>
+	<e:Image id="image1" source="snake_png" x="1469.52" y="405.16" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Image id="image0" source="rabbit_png" x="1032.85" y="271.83"/>
 	<e:Image id="image" source="pig_png" x="637.02" y="337.6"/>
 
-	<e:Group id="dialogBoxGroup" x="569.3" y="1145.88" anchorOffsetX="187.88" anchorOffsetY="115.15">
+	<e:Group id="LionDialogBoxGroup" x="569.3" y="1145.88" anchorOffsetX="187.88" anchorOffsetY="115.15">
 		<e:Image id="image5" source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>
 		<e:Label text="小白兔，我決定先\n吃了你。" x="130.18" y="99.22" textColor="0x000000" fontFamily="華康中黑體" size="45" lineSpacing="25" bold="true"/>
+	</e:Group>
+	<e:Label id="headTitleLabel" text="（請點選小白兔）" textColor="0xe70a0c" size="66" bold="true" fontFamily="華康中黑體" x="668.61" y="184.62"/>
+
+	<e:Group id="snakeDialogBoxGroup" x="1048" y="462.36">
+		<e:Image source="dialogBox_png" x="415.07" y="0" scaleX="-1"/>
+		<e:Label text="饒了我吧！" textColor="0x000000" x="-12.12" y="106.9" size="60" bold="true"/>
+	</e:Group>
+
+	<e:Group id="pigDialogBoxGroup" x="236.72" y="307.3">
+		<e:Image source="dialogBox_png" x="391.21" y="201.6" scaleY="-1" scaleX="-1"/>
+		<e:Label text="不要呀！\n不要呀！" size="60" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體"/>
+	</e:Group>
+
+	<e:Group id="ratDialogBoxGroup" x="1112.36" y="1106.01">
+		<e:Image source="dialogBox_png" x="0" y="161.16" scaleY="-1"/>
+		<e:Label text="不要啊！" textColor="0x000000" bold="true" fontFamily="華康中黑體" size="60" x="171.18" y="0"/>
+	</e:Group>
+
+	<e:Group id="sheepDialogBoxGroup" x="1099" y="562.07">
+		<e:Image source="dialogBox_png" x="506.6" y="245.49" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="584.88" anchorOffsetY="0" height="340.67"/>
+		<e:Label text="我不好吃的，\n不要吃我！" size="60" textColor="0x000000" fontFamily="華康中黑體" x="0" y="0" lineSpacing="25" bold="true"/>
+	</e:Group>
+
+	<e:Group id="giraffeDialogBoxGroup" anchorOffsetX="0" width="623.42" x="829.36" y="845.38">
+	<e:Image source="dialogBox_png" scaleX="-1" scaleY="-1" anchorOffsetX="0" width="624.28" x="624.28" anchorOffsetY="0" height="377.03" y="250.62"/>
+	<e:Label text="大王，\n我很不好吃的！" textColor="0x000000" size="60" fontFamily="華康中黑體"  bold="true" lineSpacing="25" x="79.44" y="-16.45"/>
 	</e:Group>
 
 
