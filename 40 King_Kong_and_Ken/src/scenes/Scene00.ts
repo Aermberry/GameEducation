@@ -1,6 +1,13 @@
 class Scene00 extends eui.Component implements eui.UIComponent {
+	
 	private textLabel: eui.Label;
+
 	private nextButton: eui.Button;
+	private startMask: eui.Rect;
+    private startButton: eui.Button;
+
+    private loadingAnim:egret.tween.TweenGroup
+
 	public constructor() {
 		super();
 	}
@@ -12,19 +19,26 @@ class Scene00 extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP,
 			this.onNextSceneClick, this);
-		this.playBackgroundMusic();
+		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
+	}
+
+	private  async onStartButtonClick(): Promise<void>{
+		await this.loadingAnim.play(0);
+		this.startMask.visible = false;
+		this.startButton.visible = false;
+		await lzlib.ThreadUtility.sleep(2000)
+		await this.playBackgroundMusic();
 	}
 
 	private async playBackgroundMusic(): Promise<void> {
-		await lzlib.SoundUtility.playSound('01a_mp3');//加載音頻
-		this.textLabel.text = "Let's listen to  the poem about them.";//文字變換
-		this.textLabel.textColor = 0x5d20f5;//我腦子顔色變換
+		await lzlib.SoundUtility.playSound('01a_mp3');
+		this.textLabel.text = "Let's listen to a poem about them.";
+		this.textLabel.textColor = 0x5d20f5;
 		await lzlib.SoundUtility.playSound('01b_mp3')
-		// await lzlib.ThreadUtility.sleep(3000);
 		this.nextButton.visible = true;
-		// Main.instance.gotoScene(new Scene01());
 	}
 
 	private onNextSceneClick(): void {

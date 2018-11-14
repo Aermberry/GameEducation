@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Scene10Skin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1657f781cd4" ></w:Config>
-	<e:Label text="Now listen carefully to the &quot;K&quot; sound." y="246" textColor="0xd28344" size="98" textAlign="center" left="24" right="-24" fontFamily="Comic Sans MS" anchorOffsetY="0" height="134.36"/>
+	<e:Label text="Now listen carefully to the 'k' sound." y="246" textColor="0xd28344" size="98" textAlign="center" left="24" right="-24" fontFamily="Comic Sans MS" anchorOffsetY="0" height="134.36"/>
 	<e:Button id="nextButton" label="Next" x="1533.64" y="826" anchorOffsetX="0" width="212.73" anchorOffsetY="0" height="112.36" visible="false"/>
 </e:Skin>

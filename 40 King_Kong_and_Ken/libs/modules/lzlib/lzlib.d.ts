@@ -93,6 +93,7 @@ declare namespace lzlib {
     class SoundUtility {
         static currentSoundChannel: egret.SoundChannel;
         static playSound(soundName: string, stopCurrentSound?: boolean): Promise<void>;
+        static stopCurrentSound(): void;
     }
 }
 interface String {
@@ -101,7 +102,6 @@ interface String {
 declare namespace lzlib {
     class ThreadUtility {
         static sleep(ms?: number): Promise<{}>;
-        static playSound(soundName: string): Promise<void>;
     }
 }
 declare namespace egret.tween {

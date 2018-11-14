@@ -84,4 +84,15 @@
 	         textAlign="center"  fontFamily="Comic Sans MS" visible="false"/>
 	<e:Label id="group03" text="To shake his hand." y="704.06" size="80"
 	         lineSpacing="80" textAlign="center" left="0" right="0" textColor="0xC26FF7"  fontFamily="Comic Sans MS" anchorOffsetY="0" height="98.18"/>
+
+			 <e:Group id="redLineGroup" x="580" y="280" touchThrough="true">
+		<e:Rect width="167" height="8" fillColor="0xd92e20" y="22" x="-5" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="180" height="8" fillColor="0xd92e20" y="20" x="355" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="197" height="8" fillColor="0xd92e20" y="20" x="551" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="171" height="8" fillColor="0xd92e20" y="344" x="7" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="191" height="8" fillColor="0xd92e20" y="344" x="194" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+		<e:Rect width="154" height="8" fillColor="0xd92e20" y="344" x="604" ellipseHeight="50" ellipseWidth="50" visible="false"/>
+
+
+	</e:Group>
 </e:Skin>
