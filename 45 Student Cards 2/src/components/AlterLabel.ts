@@ -25,7 +25,6 @@ namespace Ui {
 		}
 
 		public  get text() {
-			console.log(this._text);
 			return this._text;
 		}
 
