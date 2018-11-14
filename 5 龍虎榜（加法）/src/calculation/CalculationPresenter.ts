@@ -1,7 +1,7 @@
 class CalculationPresenter {
 	private view: ICalculationView;
 	public numberGenerator: INumberGenerator;
-	public maxQuestionCount = 10;
+	public maxQuestionCount = 3;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
 	private answerSum: SumAndCarry;
@@ -30,7 +30,12 @@ class CalculationPresenter {
 				let augend = this.view.augend = pair[1];
 				
 				this.questionIndex == 0 && (this.view.showFInishTip());
-				
+				//判断是否为最后一题
+				if(this.questionIndex+1 == this.maxQuestionCount){
+					this.view.showOperation();
+					this.view.hideNextQuestionButton();
+				}
+
 				this.timer = setInterval(async () => {
 					if(this.isClear)
 					{
@@ -50,7 +55,6 @@ class CalculationPresenter {
 				// 	this.view.alertAnswerWrong();
 				// }
 				this.view.enableFinishImage();
-
 				await this.view.nextQuestionButtonClickAsync();
 				this.view.disableFinishImage();
 				this.view.showFinishImage();
@@ -95,7 +99,7 @@ class CalculationPresenter {
 			clearInterval(this.timer);
 			// this.view.hideFInishTip();
 			this.view.hideFinishImage();
-			this.view.showNextQuestionButton();
+			this.questionIndex+1 != this.maxQuestionCount && this.view.showNextQuestionButton();
 			this.view.showCorrectGroup();
 			await this.showCorrectSumAndCarry(this.correctSum);
 	}
