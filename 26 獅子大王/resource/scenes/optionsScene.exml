@@ -123,22 +123,47 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
-			<tween:TweenItem target="{image5}">
+			<tween:TweenItem target="{dialogBoxGroup}">
 				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
+				<tween:props>
+					<e:Object alpha="{0}"/>
+				</tween:props>
 				</tween:Set>
 				<tween:Wait duration="1800"/>
 				<tween:Set>
-					<tween:props>
-						<e:Object width="{0}" height="{0}" alpha="{1}"/>
-					</tween:props>
+				<tween:props>
+					<e:Object width="{0}" height="{0}" alpha="{1}"/>
+				</tween:props>
 				</tween:Set>
 				<tween:To duration="200">
-					<tween:props>
-						<e:Object width="{563.67}" height="{319.45}"/>
-					</tween:props>
+				<tween:props>
+					<e:Object width="{563.67}" height="{319.45}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object rotation="{11}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object rotation="{-11}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object rotation="{11}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object rotation="{-11}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+				<tween:props>
+					<e:Object rotation="{0}"/>
+				</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
@@ -157,7 +182,12 @@
 	<e:Image id="image1" source="snake_png" x="1454.54" y="499.1"/>
 	<e:Image id="image0" source="rabbit_png" x="1032.85" y="271.83"/>
 	<e:Image id="image" source="pig_png" x="637.02" y="337.6"/>
-	<e:Image id="image5" source="dialogBox_png" x="381.42" y="1030.73" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>
+
+	<e:Group id="dialogBoxGroup" x="569.3" y="1145.88" anchorOffsetX="187.88" anchorOffsetY="115.15">
+		<e:Image id="image5" source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>
+		<e:Label text="小白兔，我決定先\n吃了你。" x="130.18" y="99.22" textColor="0x000000" fontFamily="華康中黑體" size="45" lineSpacing="25" bold="true"/>
+	</e:Group>
+
 
 
 
