@@ -13,6 +13,7 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 	private person3AlertComponent: AlertComponent;
 	private person6AlertComponent: AlertComponent;
 	private person4AlertComponent: AlertComponent;
+	private currentAlert: AlertComponent;
 
 	private Channel: egret.SoundChannel;
 
@@ -73,6 +74,7 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 
 	private onCorrectClick(): void
 	{
+		this.hideCurrectAlert();
 		this.stopMP3();
 		this.Channel = (RES.getRes('listening2_correct_mp3') as egret.Sound).play(0,1);
 		this.person2AlertComponent.visible = true;
@@ -81,8 +83,10 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 
 	private onPersonClick(e:egret.TouchEvent): void
 	{
+		this.hideCurrectAlert();
 		this.stopMP3();
-		(this.AlertComponents[e.target.$name] as AlertComponent).visible = true;
+		this.currentAlert = (this.AlertComponents[e.target.$name] as AlertComponent)
+		this.currentAlert.visible = true;
 		this.Channel = (RES.getRes(this.Audios[e.target.$name]) as egret.Sound).play(0,1);
 	}
 
@@ -96,6 +100,11 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 		return new Promise<void>((resolve, reject)=> {
             this.listenComponent.addEventListener(Listen.LISTEN_AUDIO_COMPLETE, resolve, this);    
         });
+	}
+
+	private hideCurrectAlert(): void
+	{
+		this.currentAlert && (this.currentAlert.visible = false);
 	}
 	
 }
