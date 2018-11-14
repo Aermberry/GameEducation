@@ -72,7 +72,7 @@ class Level09Scene extends eui.Component implements  eui.UIComponent {
 			this.doctorAngryImg.visible = false;
 			this.doctorBlinkImg.visible = true;
 			await lzlib.ThreadUtility.sleep(1500);
-			Main.instance.gotoScene(new Level10Scene());
+			Main.instance.gotoScene(new ResultScene());
 		}
 		else{
            await this.doctorAngryTweenGroup.playOnceAsync();

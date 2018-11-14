@@ -14,7 +14,8 @@
 		"Level07Scene": "resource/gameLevelScenes/Level07Scene.exml",
 		"Level08Scene": "resource/gameLevelScenes/Level08Scene.exml",
 		"Level09Scene": "resource/gameLevelScenes/Level09Scene.exml",
-		"Level10Scene": "resource/gameLevelScenes/Level10Scene.exml"
+		"Level10Scene": "resource/gameLevelScenes/Level10Scene.exml",
+		"Level11Scene": "resource/gameLevelScenes/Level11Scene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -32,6 +33,7 @@
 		"resource/gameLevelScenes/Level08Scene.exml",
 		"resource/gameLevelScenes/Level09Scene.exml",
 		"resource/gameLevelScenes/Level10Scene.exml",
+		"resource/gameLevelScenes/Level11Scene.exml",
 		"resource/scenes/DescriptionExampleScene.exml",
 		"resource/scenes/DescriptionGameplayScene.exml",
 		"resource/scenes/ResultScene.exml",

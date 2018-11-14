@@ -256,13 +256,13 @@
 	</w:Declarations>
 
 <w:Config id="164dabde492" ></w:Config>
-<e:Image source="description_example_frame_png"/>
+<e:Image source="description_example_frame_png" visible="false"/>
 <e:Image source="description_example_bg_png" y="154"/>
-<e:Label text="中國語文" textColor="#0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25"/>
-<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25"/>
-<e:Image source="head_icon_png" x="1480" y="24"/>
-<e:Image source="right_headline_png" x="1610" y="24"/>
-<e:Label text="(多了些什麽？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體"/>
+<e:Label text="中國語文" textColor="0x0032BE" fontFamily="華康標楷體" size="86.4" x="28" y="25" visible="false"/>
+<e:Label text=" 第一學習階段" fontFamily="華康標楷體" size="86.4" x="412" y="25" visible="false"/>
+<e:Image source="head_icon_png" x="1480" y="24" visible="false"/>
+<e:Image source="right_headline_png" x="1610" y="24" visible="false"/>
+<e:Label text="(多了些什麼？)" textColor="#000000" x="123" y="326" size="43.2" fontFamily="華康標楷體"/>
 	<e:ToggleButton id="cueButton" label="" x="1269" y="239">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
@@ -276,8 +276,8 @@
 <e:Group id="cueGroup" visible="false">
 	<e:Image id="greenFrame" source="green_frame_png" x="866.07" y="303"/>
 	<e:Label id="firstTipLabel" x="905.24" text="句子出現兩次「我們」，有這個需\r要嗎？" fontFamily="華康標楷體" size="55" textColor="#284997" y="460.6" lineSpacing="20"/>
-	<e:Image id="returnBtnImg" source="return-btn_png" x="1545.04" y="573"/>
-	<e:Label id="returnLabel" text="返回" textColor="#000000" size="43" fontFamily="華康標楷體" x="1564.54" y="585"/>
+	<e:Image id="returnBtnImg" source="return-btn_png" x="1545.04" y="554.82"/>
+	<e:Label id="returnLabel" text="返回" textColor="#000000" size="43" fontFamily="華康標楷體" x="1564.54" y="563.79"/>
 	<e:Group id="returnGroup" x="1545.04" y="573" width="123" height="78" />
 </e:Group>
 

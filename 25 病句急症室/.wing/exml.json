@@ -1,0 +1,77 @@
+{
+    "164d4293be7": {
+        "path": "scenes\\StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "164d58fd342": {
+        "path": "scenes\\DescriptionExampleScene.ts",
+        "class": "DescriptionExampleScene",
+        "parentPath": ""
+    },
+    "164d605fef6": {
+        "path": "scenes\\DescriptionGameplayScene.ts",
+        "class": "DescriptionGameplayScene",
+        "parentPath": ""
+    },
+    "164da7ab662": {
+        "path": "scenes\\PlayGameScene.ts",
+        "class": "PlayGameScene",
+        "parentPath": ""
+    },
+    "164dabde492": {
+        "path": "gameLevelScenes\\Level01Scene.ts",
+        "class": "Level01Scene",
+        "parentPath": ""
+    },
+    "164de87b829": {
+        "path": "scenes\\ResultScene.ts",
+        "class": "ResultScene",
+        "parentPath": ""
+    },
+    "164eb63e3df": {
+        "path": "gameLevelScenes\\Level03Scene.ts",
+        "class": "Level03Scene",
+        "parentPath": ""
+    },
+    "164eb6c3644": {
+        "path": "gameLevelScenes\\Level04Scene.ts",
+        "class": "Level04Scene",
+        "parentPath": ""
+    },
+    "164eb8218de": {
+        "path": "gameLevelScenes\\Level05Scene.ts",
+        "class": "Level05Scene",
+        "parentPath": ""
+    },
+    "164eb877b02": {
+        "path": "gameLevelScenes\\Level06Scene.ts",
+        "class": "Level06Scene",
+        "parentPath": ""
+    },
+    "164eb8a138c": {
+        "path": "gameLevelScenes\\Level07Scene.ts",
+        "class": "Level07Scene",
+        "parentPath": ""
+    },
+    "164eb987be3": {
+        "path": "gameLevelScenes\\Level08Scene.ts",
+        "class": "Level08Scene",
+        "parentPath": ""
+    },
+    "164eba68cd8": {
+        "path": "gameLevelScenes\\Level09Scene.ts",
+        "class": "Level09Scene",
+        "parentPath": ""
+    },
+    "164ebaf391e": {
+        "path": "gameLevelScenes\\Level10Scene.ts",
+        "class": "Level10Scene",
+        "parentPath": ""
+    },
+    "1670af9d418": {
+        "path": "gameLevelScenes/Level11Scene.ts",
+        "class": "Level11Scene",
+        "parentPath": ""
+    }
+}
