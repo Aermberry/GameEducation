@@ -3,6 +3,7 @@ class CalculationPresenter {
 	private expressionRepo: IExpressionRepository;
 	private correctAnswerCount = 0;
 	private borrowNeed = false; //是否需要输入退位
+	private expressions: Expression[];//题目
 
 	public constructor() {
 	}
@@ -21,20 +22,29 @@ class CalculationPresenter {
 		this.borrowNeed = await this.view.confirmInputBorrowNeedAsync();
 		this.view.correctAnswerCount = 0;
 		this.view.alertFinishTips();
-		let expressions = this.expressionRepo.getAll();
-		expressions.shuffle();
-		for (let questionIndex = 0; questionIndex < expressions.length; questionIndex++) {
+		this.expressions = this.expressionRepo.getAll();
+		this.expressions.shuffle();
+		for (let questionIndex = 0; questionIndex < this.expressions.length; questionIndex++) {
 			try {
 				this.view.questionIndex = questionIndex + 1;
-				let expression = expressions[questionIndex];
+				let expression = this.expressions[questionIndex];
 				this.view.minuend = expression.minuend;
 				let minuend = this.splitNumber(expression.minuend);
 				this.view.subtrahend = expression.subtrahend;
 				let subtrahend = this.splitNumber(expression.subtrahend);
 				
+				//判断当前是否最后一题；
+				if(questionIndex+1 == this.expressions.length)
+				{
+					this.view.showOperation();
+				}
+
 				let answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
 				let correctDifference = this.getCorrectDifferenceAndNewMinuend(expression.minuend, expression.subtrahend);
 				await this.view.confirmFinishButtonClick();
+
+				
+
 				if (answerDifferrence.equals(correctDifference, this.borrowNeed)) {
 					this.correctAnswerCount++;
 					this.view.correctAnswerCount = this.correctAnswerCount;
@@ -43,8 +53,9 @@ class CalculationPresenter {
 				} else {
 					this.view.alertAnswerWrong();
 				}
+				//判断是否需要显示下一题；
 
-				this.view.showNextQuestionButton();
+				this.view.questionIndex != this.expressions.length && this.view.showNextQuestionButton();
 				this.view.showCorrectGroup();
 				await this.showCorrectDifferenceAndNewMinuend(correctDifference);
 				

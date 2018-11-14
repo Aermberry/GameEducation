@@ -216,7 +216,7 @@
 	<ns1:ImageButton id="nextQuestionButton" y="693" source="next_question_normal_png" mouseOverSource="next_question_selected_png" right="137" visible="false" locked="true"/>
 	<e:Label id="correctLabel" text="答對題數：         題" x="155" y="280" textColor="0x000000" size="40" locked="true"/>
 
-	<e:Group id="finishTipsGroup" x="1353.77" y="515.61" visible="false" locked="true">
+	<e:Group id="finishTipsGroup" x="1353.77" y="515.61" locked="true" visible="false">
 		<e:Image x="0" y="0" source="Finish_tips_png" anchorOffsetY="0"/>
 		<e:Label text="計完後，\n請「按完成」。" x="31.05" y="2.18" anchorOffsetX="0" width="367.94" anchorOffsetY="0" height="148.18" textColor="0x000000" textAlign="center" verticalAlign="middle" size="41" fontFamily="華康標楷體" lineSpacing="20" bold="true"/>
 	</e:Group>
@@ -227,6 +227,12 @@
 		<e:Label text="要輸入退位嗎？" y="385" textColor="0x426273" size="80" x="680"/>
 		<ns1:ImageButton id="yesButton2" x="680" y="585" source="yes_normal_png" mouseOverSource="yes_selected_png"/>
 		<ns1:ImageButton id="noButton2" x="1061" y="585" source="no_normal_png" mouseOverSource="no_selected_png"/>
+	</e:Group>
+	<e:Group id="operationGroup" width="200" height="200" x="1675.27" y="5.73" visible="false">
+		<e:Image source="background_restart_png" anchorOffsetX="0" width="205.52" anchorOffsetY="0" height="79.27"/>
+		<e:Image anchorOffsetX="0" width="123.71" anchorOffsetY="0" height="70.18" x="76.66" y="94.84" source="background_restart_png"/>
+		<e:Image id="restartImage" x="28" y="21.15" source="restart_normal_png" anchorOffsetX="0" width="156.54" anchorOffsetY="0" height="39.79"/>
+		<e:Image id="closeImage" x="98.61" y="106.91" anchorOffsetX="0" anchorOffsetY="0" source="close_normal_png" width="87.17" height="42.85"/>
 	</e:Group>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>
