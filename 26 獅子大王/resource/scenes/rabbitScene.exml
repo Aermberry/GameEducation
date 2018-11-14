@@ -1,3 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="rabbitSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+<e:Skin class="rabbitSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="plantMask">
+			<tween:TweenItem target="{plantMaskRect}">
+				<tween:Set/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
+	<e:Image source="rabbit_Bg_jpg" y="88.24" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" horizontalCenter="0"/>
+	<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="212.78" y="96.97" anchorOffsetX="0" width="1490.61" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體"/>
+<e:Image source="lion_png" y="766.66" x="88.54"/>
+
+
+	<e:Group x="438.53" y="984.64">
+		<e:Image source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="748.51" anchorOffsetY="0" height="380.06"/>
+		<e:Label text="小白兔，我請你參加\n嘉年華，你竟然不\n來，該當吃掉！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" visible="false"/>
+		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" linespace="25"/>
+		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" linespace="25"/>
+	</e:Group>
+	<e:Group x="1092.45" y="803.82">
+		<e:Image source="dialogBox_png" x="659.61" y="288.37" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="787.92" anchorOffsetY="0" height="380.07"/>
+
+
+
+		<e:Group x="0" y="0" visible="false">
+			<e:Label text="對不起，卡上沒有我\n的       ！我            掉大\n王是        來啊。" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+			<e:Label text="名字" anchorOffsetY="0" height="57.28" x="51.53" y="75.76" anchorOffsetX="0" width="123.05" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+			<e:Label text="不知道" anchorOffsetY="0" height="60.31" x="238.46" y="73.65" anchorOffsetX="0" width="174.57" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+			<e:Label text="請我" anchorOffsetY="0" height="60.31" x="101.83" y="150.33" anchorOffsetX="0" width="106.39" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		</e:Group>
+        <e:Label text="卡上沒有     \n   ，讓我寫上吧！" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		<e:Label text="收卡人姓" anchorOffsetY="0" height="60.3" x="206.97" y="0.91" anchorOffsetX="0" width="236.7" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		<e:Label text="名" anchorOffsetY="0" height="66.36" x="0.91" y="76.66" anchorOffsetX="0" width="63.97" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+	</e:Group>
+    <e:Rect width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600" x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0"/>
 </e:Skin>
