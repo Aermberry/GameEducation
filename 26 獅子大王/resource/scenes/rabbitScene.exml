@@ -26,9 +26,6 @@
 	</e:Group>
 	<e:Group x="1092.45" y="803.82">
 		<e:Image source="dialogBox_png" x="659.61" y="288.37" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="787.92" anchorOffsetY="0" height="380.07"/>
-
-
-
 		<e:Group x="0" y="0" visible="false">
 			<e:Label text="對不起，卡上沒有我\n的       ！我            掉大\n王是        來啊。" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
 			<e:Label text="名字" anchorOffsetY="0" height="57.28" x="51.53" y="75.76" anchorOffsetX="0" width="123.05" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
@@ -40,4 +37,7 @@
 		<e:Label text="名" anchorOffsetY="0" height="66.36" x="0.91" y="76.66" anchorOffsetX="0" width="63.97" size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
 	</e:Group>
     <e:Rect width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600" x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0"/>
+    <e:Label text="提示" size="90" x="671.25" y="1288" bold="true" fontFamily="華康中黑體"/>
+    <e:Label text="完成" size="90" x="1293.53" y="1288" bold="true" fontFamily="華康中黑體"/>
+    <e:Label text="親愛的 小動物 ：" size="90" x="260.54" y="136.36" textColor="0x000000" bold="true" fontFamily="華康中黑體" visible="false"/>
 </e:Skin>
