@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\47 Card Writing 2 Sending Miss Chan a Card\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}
