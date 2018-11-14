@@ -1,7 +1,7 @@
 class CalculationPresenter {
 	private view: ICalculationView;
 	public numberGenerator: INumberGenerator;
-	public maxQuestionCount = 3;
+	public maxQuestionCount = 10;
 	public correctAnswerCount = 0;
 	private carryNeed = false;
 	private answerSum: SumAndCarry;
