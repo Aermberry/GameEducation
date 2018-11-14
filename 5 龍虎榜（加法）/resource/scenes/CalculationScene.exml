@@ -94,5 +94,11 @@
 		<e:Image source="border_finish_png" anchorOffsetX="0" width="347.89" anchorOffsetY="0" height="138.49"/>
 		<e:Image source="finish_text_png" anchorOffsetX="0" width="228.29" anchorOffsetY="0" height="80.01" x="72.72" y="15.15"/>
 	</e:Group>
+	<e:Group id="operationGroup" width="200" height="200" x="1675.27" y="5.73" visible="false">
+		<e:Image source="background_restart_png" anchorOffsetX="0" width="205.52" anchorOffsetY="0" height="79.27"/>
+		<e:Image anchorOffsetX="0" width="123.71" anchorOffsetY="0" height="70.18" x="76.66" y="94.84" source="background_restart_png"/>
+		<e:Image id="restartImage" x="28" y="21.15" source="restart_normal_png" anchorOffsetX="0" width="156.54" anchorOffsetY="0" height="39.79"/>
+		<e:Image id="closeImage" x="98.61" y="106.91" anchorOffsetX="0" anchorOffsetY="0" source="close_normal_png" width="87.17" height="42.85"/>
+	</e:Group>
 	<w:Config id="164a26657c5" ></w:Config>
 </e:Skin>

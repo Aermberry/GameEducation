@@ -14,8 +14,7 @@ class CalculationPresenter {
 	public constructor() {
 	}
 
-	public async loadView(view: ICalculationView): Promise<void>
-	{
+	public async loadView(view: ICalculationView): Promise<void> {
 		this.view = view;
 		this.numberGenerator = new MediumNumberGenerator();
 		this.questionPairs = this.range(0, this.maxQuestionCount).map(() => this.numberGenerator.generate(), this);
@@ -28,17 +27,21 @@ class CalculationPresenter {
 				let pair = this.questionPairs[this.questionIndex];
 				let addend = this.view.addend = pair[0];
 				let augend = this.view.augend = pair[1];
-				
+
 				this.questionIndex == 0 && (this.view.showFInishTip());
-				
+				//判断是否为最后一题
+				// if(this.questionIndex+1 == this.maxQuestionCount){
+				// 	this.view.showOperation();
+				// 	this.view.hideNextQuestionButton();
+				// }
+
 				this.timer = setInterval(async () => {
-					if(this.isClear)
-					{
+					if (this.isClear) {
 						this.isClear = false;
 						this.view.clearUserInput();
-						this.answerSum = await this.getAnswerSumAndCarryAsync();	
+						this.answerSum = await this.getAnswerSumAndCarryAsync();
 					}
-				},100)
+				}, 100)
 				this.answerSum = await this.getAnswerSumAndCarryAsync();
 				this.correctSum = this.getCorrectSumAndCarry(addend, augend);
 				// if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
@@ -50,7 +53,6 @@ class CalculationPresenter {
 				// 	this.view.alertAnswerWrong();
 				// }
 				this.view.enableFinishImage();
-
 				await this.view.nextQuestionButtonClickAsync();
 				this.view.disableFinishImage();
 				this.view.showFinishImage();
@@ -72,8 +74,7 @@ class CalculationPresenter {
 
 	}
 
-	range(start: number, count: number): number[] 
-	{
+	range(start: number, count: number): number[] {
 		var ans = [];
 		for (let i = 0; i <= count; i++) {
 			ans.push(start + i);
@@ -82,30 +83,36 @@ class CalculationPresenter {
 	}
 
 	//当点击完成按钮时
-	public async onInputFinish(): Promise<void>
-	{		
-			if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
-				this.correctAnswerCount++;
-				this.view.correctAnswerCount = this.correctAnswerCount;
-				this.view.alertAnswerCorrect();
-				this.view.openBox();
-			} else {
-				this.view.alertAnswerWrong();
-			}
-			clearInterval(this.timer);
-			// this.view.hideFInishTip();
-			this.view.hideFinishImage();
-			this.view.showNextQuestionButton();
-			this.view.showCorrectGroup();
-			await this.showCorrectSumAndCarry(this.correctSum);
+	public async onInputFinish(): Promise<void> {
+
+		//判断是否为最后一题
+		if (this.questionIndex + 1 == this.maxQuestionCount) {
+			this.view.showOperation();
+			this.view.hideNextQuestionButton();
+		}
+
+
+		if (this.answerSum.equals(this.correctSum, this.carryNeed)) {
+			this.correctAnswerCount++;
+			this.view.correctAnswerCount = this.correctAnswerCount;
+			this.view.alertAnswerCorrect();
+			this.view.openBox();
+		} else {
+			this.view.alertAnswerWrong();
+		}
+		clearInterval(this.timer);
+		// this.view.hideFInishTip();
+		this.view.hideFinishImage();
+		this.questionIndex + 1 != this.maxQuestionCount && this.view.showNextQuestionButton();
+		this.view.showCorrectGroup();
+		await this.showCorrectSumAndCarry(this.correctSum);
 	}
 
 
 	/**
 	 * 获取用户输入的和、进位
 	 */
-	private async getAnswerSumAndCarryAsync(): Promise<SumAndCarry>
-	{
+	private async getAnswerSumAndCarryAsync(): Promise<SumAndCarry> {
 		let sumArray = [];
 		let carryArray = [];
 		for (let position = 0; position < 4; position++) {
@@ -127,16 +134,14 @@ class CalculationPresenter {
 		return new SumAndCarry(parseInt(sumArray.reverse().join(''), 10), parseInt(carryArray.reverse().join(''), 10));
 	}
 
-	private getCorrectSumAndCarry(addend: number, augend: number): SumAndCarry
-	{
+	private getCorrectSumAndCarry(addend: number, augend: number): SumAndCarry {
 		return new SumAndCarry(addend + augend, this.getCarry(addend, augend));
 	}
 
 	/**
 	 * 获取和的进位
 	 */
-	private getCarry(addend: number, augend: number): number
-	{
+	private getCarry(addend: number, augend: number): number {
 		let carryArray = [0];
 		for (let position = 0; position < this.getMaxNumberLength(addend, augend); position++) {
 			carryArray[position + 1] = Math.floor((this.getDigitAtPosition(addend, position) + this.getDigitAtPosition(augend, position) + carryArray[position]) / 10);
@@ -147,23 +152,20 @@ class CalculationPresenter {
 	/**
 	 * 获取两个数最大的是多少位
 	 */
-	private getMaxNumberLength(left: number, right: number): number
-	{
+	private getMaxNumberLength(left: number, right: number): number {
 		return Math.max(left, right).toString().length;
 	}
 
 	/**
 	 * 获取指定位置的数字
 	 */
-	private getDigitAtPosition(num: number, position: number): number
-	{
+	private getDigitAtPosition(num: number, position: number): number {
 		let str = num.toString();
 		return position >= str.length ? 0 : parseInt(str[str.length - position - 1], 10);
 	}
 
 	/** 显示正确的和、进位 */
-	private async showCorrectSumAndCarry(result: SumAndCarry): Promise<void>
-	{
+	private async showCorrectSumAndCarry(result: SumAndCarry): Promise<void> {
 		for (let position = 0; position < 4; position++) {
 			this.view.changeCorrectSumToEditMode(position);
 			this.view.setCorrectSum(this.getDigitAtPosition(result.sum, position).toString(), position);

@@ -26,6 +26,9 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private strawberryImage: eui.Image;
 	private finishImage: eui.Image;
 	private finishGroup: eui.Group;
+	private operationGroup: eui.Group;
+	private restartImage: eui.Image;
+	private closeImage: eui.Image;
 
 	private numberPad: NumberPad;
 
@@ -46,16 +49,52 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.finishImage, true);
+		this.restartImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onRestartOver, this);
+		this.restartImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRestartOut, this);
+		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onCloseOver, this);
+		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onCloseOut, this);
 		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onFinishOver, this);
 		this.finishImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onFinishOut, this);
 		this.finishImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onFinishClick, this);
+		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestartClick, this);
+		this.closeImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCloseClick, this);
 		this.presenter.loadView(this);
 		this.numberPad.calcPresenter = this.presenter;
+	}
+
+	private onRestartClick(): void
+	{
+		Main.instance.gotoScene(new StartScene());
+	}
+
+	private onCloseClick(): void
+	{
+		window.close();
 	}
 
 	private onFinishClick(e: egret.TouchEvent): void
 	{
 		this.presenter.onInputFinish();
+	}
+
+	private onRestartOver(): void
+	{
+		this.restartImage.source = 'restart_selected_png'
+	}
+
+	private onRestartOut(): void
+	{
+		this.restartImage.source = 'restart_normal_png'
+	}
+
+	private onCloseOver(): void
+	{
+		this.closeImage.source = 'close_selected_png'
+	}
+
+	private onCloseOut(): void
+	{
+		this.closeImage.source = 'close_normal_png'
 	}
 
 	private onFinishOver(e: egret.TouchEvent): void
@@ -279,6 +318,11 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public hideFInishTip(): void
 	{
 		this.finishGroup.visible = false;
+	}
+
+	public showOperation(): void
+	{
+		this.operationGroup.visible = true;
 	}
 
 }

@@ -56,6 +56,7 @@ interface ICalculationView {
 
 	/** 清除用户的输入 */
 	clearUserInput(): void;
-	showFInishTip(): Promise<void>
-	hideFInishTip():void
+	showFInishTip(): Promise<void>;
+	hideFInishTip():void;
+	showOperation(): void;
 }
