@@ -54,6 +54,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	private yesButton2: ImageButton;
 	private noButton2: ImageButton;
 
+	private operationGroup: eui.Group;
+	private restartImage: eui.Image;
+	private closeImage: eui.Image;
+
 	private presenter = new CalculationPresenter();
 
 	public constructor() {
@@ -70,6 +74,12 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.restartImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestartClick, this);
+		this.closeImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCloseClick, this);
+		this.restartImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onRestartOver, this);
+		this.restartImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRestartOut, this);
+		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onCloseOver, this);
+		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onCloseOut, this);
 		this.initAngelGroup();
 		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
@@ -88,6 +98,37 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 
 		this.presenter.loadView(this);
 	}
+
+	private onRestartClick(): void
+	{
+		Main.instance.gotoScene(new StartScene());
+	}
+
+	private onCloseClick(): void
+	{
+		window.close();
+	}
+
+	private onRestartOver(): void
+	{
+		this.restartImage.source = 'restart_selected_png'
+	}
+
+	private onRestartOut(): void
+	{
+		this.restartImage.source = 'restart_normal_png'
+	}
+
+	private onCloseOver(): void
+	{
+		this.closeImage.source = 'close_selected_png'
+	}
+
+	private onCloseOut(): void
+	{
+		this.closeImage.source = 'close_normal_png'
+	}
+
 
 	private initAngelGroup(): void
 	{
@@ -122,6 +163,11 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public set questionIndex(value: number)
 	{
 		this.questionIndexLabel.text = value.toString();
+	}
+
+	public get questionIndex(): number
+	{
+		return parseInt(this.questionIndexLabel.text);
 	}
 
 	public set correctAnswerCount(value: number)
@@ -358,5 +404,10 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 				(child as EditableLabel).clear();
 			}
 		}
+	}
+
+	public showOperation(): void
+	{
+		this.operationGroup.visible = true;
 	}
 }

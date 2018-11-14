@@ -12,7 +12,7 @@
 	],
 	"game": [
 		"bin-debug/components/EditableLabel.js",
-		"bin-debug/calculation/ICalculationView.js",
+		"bin-debug/scenes/StartScene.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
@@ -22,7 +22,7 @@
 		"bin-debug/biz/SeniorExpressionRepository.js",
 		"bin-debug/calculation/CalculationPresenter.js",
 		"bin-debug/calculation/CalculationScene.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/calculation/ICalculationView.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/components/EditableLargeLabel.js",
 		"bin-debug/components/EditableSmallLabel.js",
@@ -32,6 +32,6 @@
 		"bin-debug/domains/Degree.js",
 		"bin-debug/domains/DifferenceAndNewMinuend.js",
 		"bin-debug/domains/Expression.js",
-		"bin-debug/scenes/StartScene.js"
+		"bin-debug/LoadingUI.js"
 	]
 }
