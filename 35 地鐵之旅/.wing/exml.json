@@ -1,0 +1,40 @@
+{
+    "16714f2cc67": {
+        "path": "scenes/StartScene.ts",
+        "class": "StartScene",
+        "parentPath": ""
+    },
+    "1671512f0cd": {
+        "path": "scenes/EntranceScene.ts",
+        "class": "EntranceScene",
+        "parentPath": ""
+    },
+    "167151e09d2": {
+        "path": "scenes/BookingScene.ts",
+        "class": "BookingScene",
+        "parentPath": ""
+    },
+    "1671524f348": {
+        "path": "components/RouteComponent.ts",
+        "class": "RouteComponent",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "167154a089d": {
+        "path": "../resource/scenes/TicketCheck1Scene.ts",
+        "class": "TicketCheck1Scene",
+        "parentPath": ""
+    },
+    "1671574655d": {
+        "path": "components/ControllingComponent.ts",
+        "class": "ControllingComponent",
+        "parentPath": ""
+    },
+    "16715fe3763": {
+        "path": "../resource/scenes/Arriving1Scene.ts",
+        "class": "Arriving1Scene",
+        "parentPath": ""
+    }
+}

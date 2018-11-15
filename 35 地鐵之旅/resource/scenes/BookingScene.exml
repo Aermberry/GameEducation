@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BookingSceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="167151e09d2" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="background_booking_png"/>
+	<e:Image y="75.27" source="rect_border_white_png" horizontalCenter="0.5"/>
+	<e:Label text="海龍公園站    自動售票機" y="145" textColor="0x000000" size="138" horizontalCenter="0"/>
+	<e:Label text="請選擇目的地" y="715.06" textColor="0x000000" size="76" horizontalCenter="0"/>
+	<e:Image x="511.88" y="924.06" source="route2_png"/>
+	<e:Image x="236" y="958" source="route1_png"/>
+	<e:Label text="海龍公園" x="503.3" y="921.57" textColor="0x333333"/>
+	<e:Label text="機場" x="272.27" y="1236.76" textColor="0x333333"/>
+	<e:Label text="香蕉" x="481.88" y="1236.76" textColor="0x333333"/>
+	<e:Label text="桃花" x="637.33" y="1177.06" textColor="0x333333"/>
+	<e:Label text="太陽" x="791.88" y="1177.06" textColor="0x333333"/>
+	<e:Label text="花果山" x="967.64" y="1177.06" textColor="0x333333"/>
+	<e:Label text="火車路線" x="952.49" y="984.03" textColor="0xebb69e"/>
+	<e:Label text="荔枝園" x="1194.91" y="1177.06" textColor="0x333333"/>
+	<e:Label text="菊花" x="1379.76" y="1177.06" textColor="0x333333"/>
+	<e:Label text="蘋果" x="1549.45" y="1177.06" textColor="0x333333"/>
+	<e:Label text="海龍線" x="413.3" y="970.96" textColor="0x5f9dcb"/>
+	<e:Label text="機場線 " x="136.91" y="1180.88" textColor="0x699828"/>
+	<e:Label text="花果山線 " x="1658.06" y="1069.51" textColor="0xff0000"/>
+	<e:Group width="1515.15" height="448.48" x="203.06" y="861" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="333.03" y="96.09" source="icon_station_png"/>
+		<e:Image x="436.97" y="251.54" source="icon_station_png"/>
+		<e:Image x="68.18" y="303.96" source="icon_station_png"/>
+		<e:Image x="779.39" y="251.54" source="icon_station_png"/>
+		<e:Image x="1000.61" y="251.54" source="icon_station_png"/>
+		<e:Image x="1179.4" y="251.54" source="icon_station_png"/>
+		<e:Image x="1349.1" y="251.54" source="icon_station_png"/>
+		<e:Image x="279.03" y="250.85" source="icon_transfer_png"/>
+		<e:Image x="589.03" y="194.18" source="icon_transfer_png"/>
+	</e:Group>
+</e:Skin>

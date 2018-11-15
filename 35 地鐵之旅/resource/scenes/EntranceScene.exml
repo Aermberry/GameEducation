@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EntranceSceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1671512f0cd" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+	<e:Image left="0" right="0" top="946" bottom="0" source="background_entrance_png" scaleY="0.28" anchorOffsetY="0"/>
+	<e:Image x="299.54" y="86.76" source="stairs_png"/>
+	<e:Image x="211.03" y="273.15" source="blue_color_motorcar_png"/>
+	<e:Image x="211.03" y="273.15" source="motorcar_png"/>
+	<e:Image x="278.33" y="706" source="arrow_red_png"/>
+</e:Skin>
