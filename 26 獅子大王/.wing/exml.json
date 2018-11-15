@@ -1,15 +1,25 @@
 {
-  "167071c13eb": {
-    "path": "scenes\\startScene.ts",
-    "class": "startScene",
-    "parentPath": ""
-  },
-  "167071e3aa4": {
-    "path": "scenes\\optionsScene.ts",
-    "class": "optionsScene",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": false
-  }
+    "167071c13eb": {
+        "path": "scenes\\startScene.ts",
+        "class": "startScene",
+        "parentPath": ""
+    },
+    "167071e3aa4": {
+        "path": "scenes\\optionsScene.ts",
+        "class": "optionsScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "16715e9b262": {
+        "path": "components\\achieveComponent.ts",
+        "class": "achieveComponent",
+        "parentPath": ""
+    },
+    "1671610423e": {
+        "path": "components\\achieveComponent.ts",
+        "class": "achieveComponent",
+        "parentPath": ""
+    }
 }
