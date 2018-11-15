@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,sound 8_mp3,sound 54_mp3,sound 57_mp3,sound 66_mp3,sound 75_mp3,sound 112_mp3,sound 140_mp3,sound 231_mp3,sound 262_mp3,sound 263_mp3,sound 264_mp3,sound 266_mp3,sound 318_mp3,sound 338_mp3,sound 346_mp3,sound 348_mp3,sound 350_mp3,sound 356_mp3,sound 366_mp3,sound 1 (D4.mp3)_mp3,sound 2 (D13.mp3)_mp3,sound 3 (D11_a.mp3)_mp3,sound 4 (D10.mp3)_mp3,sound 5 (D9.mp3)_mp3,sound 6 (D8.mp3)_mp3,sound 7 (D7.mp3)_mp3,sound 8 (D6.mp3)_mp3,sound 9 (D5.mp3)_mp3,sound 10 (D12.mp3)_mp3,sound 11 (D2.mp3)_mp3,sound 12 (D1_a.mp3)_mp3,sound 13 (D3.mp3)_mp3,sound 24_mp3,sound 25_mp3,sound 34_mp3,sound 69_mp3,sound 95_mp3,sound 131_mp3,sound 157_mp3,sound 228_mp3,sound 232_mp3,sound 238_mp3,sound 240_mp3,sound 261_mp3,sound 263 (1)_mp3,sound 273_mp3,sound 275_mp3,sound 286_mp3,sound 288_mp3,sound 293_mp3,sound 295_mp3,sound 299_mp3,sound 303_mp3,sound 320_mp3,sound 322_mp3,sound 342_mp3,sound 364_mp3,sound 366 (1)_mp3,sound 375_mp3,sound 377_mp3,sound 379_mp3,sound 381_mp3,sound 404_mp3,sound 406_mp3,sound 407_mp3,sound 409_mp3,sound 417_mp3,sound 462_mp3,sound 464_mp3,sound 466_mp3,sound 468_mp3,sound 470_mp3,sound 490_mp3,sound 491_mp3,sound 497_mp3,sound 500_mp3,sound 502_mp3,sound 505_mp3,sound 513_mp3,sound 515_mp3,sound 529_mp3,sound 546_mp3,sound 550_mp3,sound 553_mp3,sound 555_mp3,sound 557_mp3,sound 584_mp3,sound 586_mp3,sound 587_mp3,sound 599_mp3,sound 627_mp3,sound 628_mp3,sound 637_mp3,sound 6_mp3,sound 157 (1)_mp3,start_png,lion_png,letter_bg_jpg,rat_png,giraffe_png,sheep_png,snake_png,rabbit_png,pig_png,dialogBox_png,rabbit_Bg_jpg,lion_body_png,lion_tail_png,rabbit_body_png,rabbit-mouth_png,lione_Silly_png,bulb_normal_png,lamplight_png,bulb_png,bulb_active_png,finish_active_png,bulb2_png,bulb_normal2_png,bulb_active2_png,lamplight2_png,active_normal_png,achieve_active_png,lion_body2_png,lion_tail2_png,lione_Silly2_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,sound 8_mp3,sound 54_mp3,sound 57_mp3,sound 66_mp3,sound 75_mp3,sound 112_mp3,sound 140_mp3,sound 231_mp3,sound 262_mp3,sound 263_mp3,sound 264_mp3,sound 266_mp3,sound 318_mp3,sound 338_mp3,sound 346_mp3,sound 348_mp3,sound 350_mp3,sound 356_mp3,sound 366_mp3,sound 1 (D4.mp3)_mp3,sound 2 (D13.mp3)_mp3,sound 3 (D11_a.mp3)_mp3,sound 4 (D10.mp3)_mp3,sound 5 (D9.mp3)_mp3,sound 6 (D8.mp3)_mp3,sound 7 (D7.mp3)_mp3,sound 8 (D6.mp3)_mp3,sound 9 (D5.mp3)_mp3,sound 10 (D12.mp3)_mp3,sound 11 (D2.mp3)_mp3,sound 12 (D1_a.mp3)_mp3,sound 13 (D3.mp3)_mp3,sound 24_mp3,sound 25_mp3,sound 34_mp3,sound 69_mp3,sound 95_mp3,sound 131_mp3,sound 157_mp3,sound 228_mp3,sound 232_mp3,sound 238_mp3,sound 240_mp3,sound 261_mp3,sound 263 (1)_mp3,sound 273_mp3,sound 275_mp3,sound 286_mp3,sound 288_mp3,sound 293_mp3,sound 295_mp3,sound 299_mp3,sound 303_mp3,sound 320_mp3,sound 322_mp3,sound 342_mp3,sound 364_mp3,sound 366 (1)_mp3,sound 375_mp3,sound 377_mp3,sound 379_mp3,sound 381_mp3,sound 404_mp3,sound 406_mp3,sound 407_mp3,sound 409_mp3,sound 417_mp3,sound 462_mp3,sound 464_mp3,sound 466_mp3,sound 468_mp3,sound 470_mp3,sound 490_mp3,sound 491_mp3,sound 497_mp3,sound 500_mp3,sound 502_mp3,sound 505_mp3,sound 513_mp3,sound 515_mp3,sound 529_mp3,sound 546_mp3,sound 550_mp3,sound 553_mp3,sound 555_mp3,sound 557_mp3,sound 584_mp3,sound 586_mp3,sound 587_mp3,sound 599_mp3,sound 627_mp3,sound 628_mp3,sound 637_mp3,sound 6_mp3,sound 157 (1)_mp3,start_png,lion_png,letter_bg_jpg,dialogBox_png,rabbit_Bg_jpg,lion_body_png,lion_tail_png,lione_Silly_png,bulb_normal_png,lamplight_png,bulb_active_png,active_normal_png,achieve_active_png,giraffe_inactivated_png,pig_inactivated_png,rabbit_inactivated_png,sheep_inactivated_png,snake_inactivated_png,bulb_inactivated_png,pig_normal_png,giraffe_normal_png,rat_inactivated_png,rat_normal_png,snake_normal_png,sheep_normal_png,rabbit_normal_png",
 			"name": "preload"
 		}
 	],
@@ -637,36 +637,6 @@
 			"name": "letter_bg_jpg"
 		},
 		{
-			"url": "textures/rat.png",
-			"type": "image",
-			"name": "rat_png"
-		},
-		{
-			"url": "textures/giraffe.png",
-			"type": "image",
-			"name": "giraffe_png"
-		},
-		{
-			"url": "textures/sheep.png",
-			"type": "image",
-			"name": "sheep_png"
-		},
-		{
-			"url": "textures/snake.png",
-			"type": "image",
-			"name": "snake_png"
-		},
-		{
-			"url": "textures/rabbit.png",
-			"type": "image",
-			"name": "rabbit_png"
-		},
-		{
-			"url": "textures/pig.png",
-			"type": "image",
-			"name": "pig_png"
-		},
-		{
 			"url": "textures/dialogBox.png",
 			"type": "image",
 			"name": "dialogBox_png"
@@ -687,16 +657,6 @@
 			"name": "lion_tail_png"
 		},
 		{
-			"url": "textures/rabbit_body.png",
-			"type": "image",
-			"name": "rabbit_body_png"
-		},
-		{
-			"url": "textures/rabbit-mouth.png",
-			"type": "image",
-			"name": "rabbit-mouth_png"
-		},
-		{
 			"url": "textures/lione_Silly.png",
 			"type": "image",
 			"name": "lione_Silly_png"
@@ -712,69 +672,84 @@
 			"name": "lamplight_png"
 		},
 		{
-			"url": "textures/bulb.png",
-			"type": "image",
-			"name": "bulb_png"
-		},
-		{
 			"url": "textures/bulb_active.png",
 			"type": "image",
 			"name": "bulb_active_png"
 		},
 		{
-			"url": "textures/finish_normal.png",
+			"url": "textures/active_normal.png",
 			"type": "image",
-			"name": "finish_normal_png"
+			"name": "active_normal_png"
 		},
 		{
-			"name": "finish_active_png",
+			"url": "textures/achieve_active.png",
 			"type": "image",
-			"url": "textures/finish_active.png"
+			"name": "achieve_active_png"
 		},
 		{
-			"name": "bulb2_png",
+			"url": "textures/giraffe_inactivated.png",
 			"type": "image",
-			"url": "textures/bulb.png"
+			"name": "giraffe_inactivated_png"
 		},
 		{
-			"name": "bulb_normal2_png",
+			"url": "textures/pig_inactivated.png",
 			"type": "image",
-			"url": "textures/bulb_normal.png"
+			"name": "pig_inactivated_png"
 		},
 		{
-			"name": "bulb_active2_png",
+			"url": "textures/rabbit_inactivated.png",
 			"type": "image",
-			"url": "textures/bulb_active.png"
+			"name": "rabbit_inactivated_png"
 		},
 		{
-			"name": "lamplight2_png",
+			"url": "textures/sheep_inactivated.png",
 			"type": "image",
-			"url": "textures/lamplight.png"
+			"name": "sheep_inactivated_png"
 		},
 		{
-			"name": "active_normal_png",
+			"url": "textures/snake_inactivated.png",
 			"type": "image",
-			"url": "textures/active_normal.png"
+			"name": "snake_inactivated_png"
 		},
 		{
-			"name": "achieve_active_png",
+			"url": "textures/bulb_inactivated.png",
 			"type": "image",
-			"url": "textures/achieve_active.png"
+			"name": "bulb_inactivated_png"
 		},
 		{
-			"name": "lion_body2_png",
+			"url": "textures/pig_normal.png",
 			"type": "image",
-			"url": "textures/lion_body.png"
+			"name": "pig_normal_png"
 		},
 		{
-			"name": "lion_tail2_png",
+			"url": "textures/giraffe_normal.png",
 			"type": "image",
-			"url": "textures/lion_tail.png"
+			"name": "giraffe_normal_png"
 		},
 		{
-			"name": "lione_Silly2_png",
+			"url": "textures/rat_inactivated.png",
 			"type": "image",
-			"url": "textures/lione_Silly.png"
+			"name": "rat_inactivated_png"
+		},
+		{
+			"url": "textures/rat_normal.png",
+			"type": "image",
+			"name": "rat_normal_png"
+		},
+		{
+			"url": "textures/snake_normal.png",
+			"type": "image",
+			"name": "snake_normal_png"
+		},
+		{
+			"url": "textures/sheep_normal.png",
+			"type": "image",
+			"name": "sheep_normal_png"
+		},
+		{
+			"url": "textures/rabbit_normal.png",
+			"type": "image",
+			"name": "rabbit_normal_png"
 		}
 	]
 }

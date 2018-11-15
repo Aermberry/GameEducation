@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="rabbitSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"><!---->
+<e:Skin class="rabbitSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*"><!---->
 	<w:Declarations>
 		<tween:TweenGroup id="plantMask">
 			<tween:TweenItem target="{plantMaskRect}">
@@ -273,16 +273,16 @@
     <e:Label text="親愛的 小動物 ：" size="90" x="260.54" y="136.36" textColor="0x000000" bold="true" fontFamily="華康中黑體" visible="false"/>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
 	<e:Group x="1581.84" y="944.14">
-		<e:Image source="rabbit_body_png" x="0" y="0" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64"/>
+		<e:Image x="0" y="0" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64" source="rabbit_normal_png"/>
 		<e:Image source="rabbit-mouth_png" x="137.77" y="260.25" anchorOffsetX="11.51" anchorOffsetY="8.66" width="19" height="20"/>
 	</e:Group>
 	<e:Group x="540.95" y="1256.09">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000"/>
-		<e:Group id="bubleGroup" x="214.91" y="0">
-			<e:Image source="bulb_png" x="1" y="0"/>
-			<e:Image id="image0" source="lamplight_png" x="9.12" y="7.6"/>
-		</e:Group>
 	</e:Group>
-	<e:Label text="完成" size="90" x="1090.5" y="1272.85" fontFamily="華康中黑體" textColor="0x000000"/>
-	<e:Image id="arrows" source="finish_normal_png" x="1295.27" y="1327.49" anchorOffsetY="81.82" anchorOffsetX="-1.52"/>
+
+
+	<e:Group x="1090.5" y="1272.85" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03">
+		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000"/>
+		<ns1:achieveComponent width="20" height="20" x="218.34" y="38.82" skinName="achieveComponentSkin"/>
+	</e:Group>
 </e:Skin>

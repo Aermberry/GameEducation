@@ -21,5 +21,10 @@
         "path": "components\\achieveComponent.ts",
         "class": "achieveComponent",
         "parentPath": ""
+    },
+    "16716576bff": {
+        "path": "components\\bulbComponent.ts",
+        "class": "bulbComponent",
+        "parentPath": ""
     }
 }

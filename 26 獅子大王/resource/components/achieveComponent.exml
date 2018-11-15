@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="achieveComponentSkin" width="400" height="300" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,active" >
+<e:Skin class="achieveComponentSkin" width="400" height="176" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,active">
 	<w:Declarations>
 		<tween:TweenGroup id="flexAnim">
 			<tween:TweenItem target="{achieve_normal}">

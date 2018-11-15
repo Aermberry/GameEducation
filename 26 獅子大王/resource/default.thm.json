@@ -21,11 +21,13 @@
 		"pigScene": "resource/scenes/pigScene.exml",
 		"mouseScene": "resource/scenes/mouseScene.exml",
 		"giraffeScene": "resource/scenes/giraffeScene.exml",
-		"achieveComponent": "resource/components/achieveComponent.exml"
+		"achieveComponent": "resource/components/achieveComponent.exml",
+		"bulbComponent": "resource/components/bulbComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/achieveComponent.exml",
+		"resource/components/bulbComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",

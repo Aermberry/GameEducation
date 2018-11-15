@@ -3,7 +3,7 @@
 	<w:Declarations>
 		<tween:TweenGroup id="invitationAnimation">
 
-			<tween:TweenItem target="{image}">
+			<tween:TweenItem target="{pig}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -196,7 +196,7 @@
 	<e:Image id="image2"  source="sheep_png" x="1606.33" y="750.3"/>
 	<e:Image id="image1" source="snake_png" x="1469.52" y="405.16" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Image id="image0" source="rabbit_png" x="1032.85" y="271.83"/>
-	<e:Image id="image" source="pig_png" x="637.02" y="337.6"/>
+	<e:Image id="pig" source="pig_png" x="637.02" y="337.6"/>
 
 	<e:Group id="LionDialogBoxGroup" x="569.3" y="1145.88" anchorOffsetX="187.88" anchorOffsetY="115.15">
 		<e:Image id="image5" source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>
