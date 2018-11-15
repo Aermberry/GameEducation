@@ -30,7 +30,7 @@
     <e:Group id="teacherDialogGroup"  visible="false">	
 	    <e:Image source="blue_frame_png" x="875.5" y="43"/>
 		<e:Label id="firstLabel" text="......" fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1065" y="230.18"/>
-		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1087" y="304.85"/>	    	
+		<e:Label id="secondLabel" text="  " fontFamily="ComicSansMS3" size="50" textColor="0x000000" x="1068.82" y="304.85" height="120"/>	    	
    </e:Group>
 
     
@@ -44,8 +44,8 @@
 			<e:Image x="0" y="0" source="fram_exitTips_png"/>
 			<e:Label text="Do you really want to exit?" textColor="0x000000" y="68.21" size="68" fontFamily="ComicSansMS3" bold="true" horizontalCenter="0"/>
 			<e:Group y="195.49" x="211">
-			<e:Label id="Label_true" text="Yes!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
-			<e:Label id="Label_false" text="No!" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
+			<e:Label id="Label_true" text="Yes" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="0" bold="true"/>
+			<e:Label id="Label_false" text="No" textColor="0x000000" y="0" size="90" fontFamily="ComicSansMS3" x="363.63" bold="true"/>
 			</e:Group>
 		</e:Group>
 	</e:Group>

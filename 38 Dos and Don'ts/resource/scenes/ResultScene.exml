@@ -3,11 +3,11 @@
 	<w:Config id="164f5daafa6" ></w:Config>
 	<e:Image source="result_bg_png" left="0" right="0" top="0" bottom="0"/>
 	<e:Image source="shadow_png" x="267.33" y="1068" anchorOffsetY="0" alpha="0.5"/>
-	<e:Image source="result_frame_png" x="701.09" y="275.76"/>
+	<e:Image source="result_frame_png" x="701.09" y="248.26" anchorOffsetX="0" width="652.7" anchorOffsetY="0" height="257.5"/>
 	<e:Image source="result_amy_png" x="209.09" y="275.76"/>
-	<e:Image source="light_red_normal_png" x="1577.48" y="459.76"/>
+	<e:Image source="light_red_normal_png" x="1719.9" y="1105.22"/>
 	
-	<e:Label text="Exit" fontFamily="ComicSansMS3" size="45" textColor="0xFF3200" x="1585.98" y="483.26"/>
-	<e:Label text="I had a good day, bye bye!" x="751" y="342" textColor="0x000000" size="40" width="486" anchorOffsetX="0" anchorOffsetY="0" fontFamily="ComicSansMS3" height="57"/>
-	<e:Group id="ExitGroup" x="1577.5" y="459.7" height="90" width="90"/>
+	<e:Label text="Exit" fontFamily="ComicSansMS3" size="45" textColor="0xFF3200" x="1728.4" y="1128.72"/>
+	<e:Label text="I had a good day, bye bye." x="751" y="311.71" textColor="0x000000" size="44" width="690" anchorOffsetX="0" anchorOffsetY="0" fontFamily="ComicSansMS3" height="81.23"/>
+	<e:Group id="ExitGroup" x="1719.92" y="1105.16" height="90" width="90"/>
 </e:Skin>
