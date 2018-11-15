@@ -27,6 +27,10 @@ class bulbComponent extends eui.Component implements eui.UIComponent {
 		target.play();
 	}
 
+	private status(statue:string ):void {
+		this.currentState=statue;
+	}
+
 }
 
 
