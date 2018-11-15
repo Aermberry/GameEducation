@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="achieveComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="achieveComponentSkin" width="400" height="300" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,active" >
+	<w:Declarations>
+		<tween:TweenGroup id="flexAnim">
+			<tween:TweenItem target="{achieve_normal}">
+				<tween:Set/>
+				<tween:To duration="250" ease="quadInOut">
+					<tween:props>
+						<e:Object width="{399}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150" ease="quadInOut">
+					<tween:props>
+						<e:Object width="{184}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150" ease="quadInOut">
+					<tween:props>
+						<e:Object width="{247}" height="{166}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1671610423e" ></w:Config>
+	<e:Image id="achieve_active" source="achieve_active_png" includeIn="active" left="0" verticalCenter="0"/>
+	<e:Image id="achieve_normal" source="active_normal_png" includeIn="normal" left="0" verticalCenter="0"/>
 </e:Skin>
