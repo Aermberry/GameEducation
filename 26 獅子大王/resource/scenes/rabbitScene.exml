@@ -276,8 +276,9 @@
 		<e:Image x="0" y="0" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64" source="rabbit_normal_png"/>
 		<e:Image source="rabbit-mouth_png" x="137.77" y="260.25" anchorOffsetX="11.51" anchorOffsetY="8.66" width="19" height="20"/>
 	</e:Group>
-	<e:Group x="540.95" y="1256.09">
+	<e:Group x="540.95" y="1256.09" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000"/>
+		<ns1:bulbComponent width="20" height="20" x="215.15" y="3.03"/>
 	</e:Group>
 
 

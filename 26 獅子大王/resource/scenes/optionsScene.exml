@@ -2,7 +2,6 @@
 <e:Skin class="optionsSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="invitationAnimation">
-
 			<tween:TweenItem target="{pig}">
 				<tween:Set>
 					<tween:props>
@@ -191,12 +190,12 @@
 		<e:Image id="image" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75" width="330" height="224"/>
 		<e:Image source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
 	</e:Group>
-	<e:Image id="image4" source="rat_png" x="1044.85" y="1221.08"/>
-	<e:Image id="image3" source="giraffe_png" x="1454.54" y="933.77"/>
-	<e:Image id="image2"  source="sheep_png" x="1606.33" y="750.3"/>
-	<e:Image id="image1" source="snake_png" x="1469.52" y="405.16" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Image id="image0" source="rabbit_png" x="1032.85" y="271.83"/>
-	<e:Image id="pig" source="pig_png" x="637.02" y="337.6"/>
+	<e:Image id="image4" x="1044.85" y="1221.08" source="rat_inactivated_png"/>
+	<e:Image id="image3" x="1454.54" y="933.77" source="giraffe_inactivated_png"/>
+	<e:Image id="image2"  x="1606.33" y="750.3" source="sheep_inactivated_png"/>
+	<e:Image id="image1" x="1469.52" y="405.16" anchorOffsetX="0" anchorOffsetY="0" source="snake_inactivated_png"/>
+	<e:Image id="image0" x="1032.85" y="271.83" source="rabbit_inactivated_png"/>
+	<e:Image id="pig" x="637.02" y="337.6" source="pig_inactivated_png"/>
 
 	<e:Group id="LionDialogBoxGroup" x="569.3" y="1145.88" anchorOffsetX="187.88" anchorOffsetY="115.15">
 		<e:Image id="image5" source="dialogBox_png" x="0" y="0" anchorOffsetX="0" width="563.67" anchorOffsetY="0" height="319.45"/>

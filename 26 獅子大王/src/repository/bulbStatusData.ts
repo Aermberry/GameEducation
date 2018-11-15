@@ -1,1 +1,5 @@
-// TypeScript file
+enum bulbStatus{
+    active,
+    hover,
+    normal
+}
