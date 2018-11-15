@@ -10,7 +10,7 @@
 				</tween:Set>
 				<tween:To duration="450" ease="quadInOut">
 				<tween:props>
-					<e:Object width="{399}" height="{166}"/>
+					<e:Object height="{166}" width="{371}" x="{43.3}"/>
 				</tween:props>
 				</tween:To>
 				<tween:To duration="150" ease="quadInOut">

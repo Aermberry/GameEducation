@@ -176,7 +176,7 @@
 	</w:Declarations>
 	<w:Config id="167071e3aa4" ></w:Config>
 	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="0.5" height="214.27" textAlign="center" verticalAlign="middle" top="0" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true"/>
-	<e:Rect top="0" left="0" right="0" bottom="0" fillAlpha="0.7" fillColor="0x000000" alpha="1"/>
+
 
 	<e:Group id="rabbitDialogBoxGroup" x="1200.94" y="284.4">
 		<e:Image source="dialogBox_png" x="0" y="163.18" scaleY="-1" anchorOffsetY="0" height="277.53" rotation="1.28"/>

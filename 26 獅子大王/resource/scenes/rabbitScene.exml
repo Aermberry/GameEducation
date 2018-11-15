@@ -228,7 +228,7 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 
-	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff"/>
+	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0"/>
 		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1490.61" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體"/>
@@ -268,18 +268,16 @@
 		</e:Group>
 	</e:Group>
     <e:Rect width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600" x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0" visible="false"/>
-
-
     <e:Label text="親愛的 小動物 ：" size="90" x="260.54" y="136.36" textColor="0x000000" bold="true" fontFamily="華康中黑體" visible="false"/>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
 		<e:Image x="1595.05" y="953.61" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64" source="rabbit_normal_png"/>
-	<e:Group id="bulbGroup" x="540.95" y="1256.09" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3">
+	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000"/>
 		<ns1:bulbComponent width="20" height="20" x="215.15" y="3.03"/>
 	</e:Group>
 
 
-	<e:Group id="achieveGroup" x="1090.5" y="1272.85" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03">
+	<e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03">
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000"/>
 		<ns1:achieveComponent width="20" height="20" x="218.34" y="38.82" skinName="achieveComponentSkin"/>
 	</e:Group>
