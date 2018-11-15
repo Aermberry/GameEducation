@@ -6,19 +6,19 @@
 	         width="1424" lineSpacing="50" top="0"  horizontalCenter="14"/>
 	<e:Image source="shelf_png"  verticalCenter="-199" horizontalCenter="0"/>
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Mary:                                                        Let's bug one more present.\nLet's buy a ________________ for Pam.\nSam:Oh yes, she "
+	         text="Mary:                                                        Let's bug one more present.\n           Let's buy a ________________ for Pam.\nSam:  Oh yes, she "
 	         size="58" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="416"
 	         anchorOffsetX="0" width="1913.24" lineSpacing="50"  textColor="0x000000" x="5.82" bottom="61"/>
 	<e:Group id="TipsGroup" x="155.64" y="968.36" anchorOffsetY="0" height="408.82">
 		<e:Group x="3.03" y="69.69">
-		<e:Label text="Well,  we have sixteen dollars now." x="28.12" y="-10" anchorOffsetX="0" width="939.67" anchorOffsetY="0" height="74" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="sixteen dollars" x="433.37" y="-9.03" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1" visible="false"/>
+		<e:Label text="Well, we have sixteen dollars now." x="28.12" y="-10" anchorOffsetX="0" width="939.67" anchorOffsetY="0" height="74" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="sixteen dollars" x="412.16" y="-9.03" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1" visible="false"/>
 		</e:Group>
 		<e:Group x="325.15" y="257.52">
-		<e:Label text="likes collecting coins. She can put the coins in it." x="-9.09" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="collecting" x="128.31" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
-		<e:Label text="put" x="798.45" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
-		<e:Label text="in" x="1168.19" y="2.52" anchorOffsetX="0" width="52.79" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		<e:Label text="likes collecting coins. She can put the coins in it." x="30.3" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="collecting" x="173.76" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
+		<e:Label text="put" x="834.81" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
+		<e:Label text="in" x="1210.61" y="2.52" anchorOffsetX="0" width="52.79" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
 		</e:Group>
 	</e:Group>
 	<e:Group id="maskGroup" x="284" y="246.18" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554">
@@ -46,10 +46,10 @@
 	<e:Button id="helpButton" label="Help" x="1341.77" y="1364" anchorOffsetX="0" width="154" anchorOffsetY="0" height="66" visible="false"/>
 
 
-	<e:Group id="dropGroup" x="374.91" y="1092.18" width="467.27" height="119.76" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="dropGroup" x="523.39" y="1083.09" width="467.27" height="119.76" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Label fontFamily="Comic Sans MS" text="piggy bank" width="292" height="100" background="true" backgroundColor="0xffffff"
 		         border="true" borderColor="0x9900A2" textAlign="center" verticalAlign="middle" size="50" anchorOffsetX="0"
-		         textColor="0x9900a2"  horizontalCenter="9.365000000000009" verticalCenter="0.11999999999999744" visible="false"/>
+		         textColor="0x9900a2"  horizontalCenter="9.365000000000009" verticalCenter="9.119999999999997" visible="false"/>
 	</e:Group>
-	<e:Image id="logImage" source="true_png" x="766.36" y="1139.09" rotation="354.36" visible="false"/>
+	<e:Image id="logImage" source="true_png" x="808.78" y="1139.09" rotation="354.36" visible="false"/>
 </e:Skin>
