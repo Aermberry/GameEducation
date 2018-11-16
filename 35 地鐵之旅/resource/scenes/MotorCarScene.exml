@@ -19,6 +19,10 @@
 	</e:Group>
 	<e:Rect fillColor="0xff0c0c" left="0" right="0" top="0" bottom="0"/>
 	<e:Image x="1776" y="208" source="window1_png" anchorOffsetY="0" height="1464.95" rotation="357.9"/>
+	<e:Image x="132.33" y="151.67" source="window1_png" anchorOffsetY="0" height="1464.95" rotation="1.23" scaleX="-1" skewY="-30"/>
+	<e:Image x="600.36" y="348.25" source="window1_png" anchorOffsetY="0" height="684.53" rotation="2.46" scaleX="-1" skewY="-30" anchorOffsetX="0" width="156.54"/>
+	<e:Image x="804.36" y="404.25" source="window1_png" anchorOffsetY="0" height="418.65" rotation="2.46" scaleX="-1" skewY="-30" anchorOffsetX="0" width="95.74"/>
+	<e:Image x="892.36" y="460.25" source="window1_png" anchorOffsetY="0" height="253.64" rotation="2.46" scaleX="-1" skewY="-30" anchorOffsetX="0" width="58"/>
 	<e:Image x="1296.12" y="395.27" source="window1_png" anchorOffsetY="0" rotation="357.9"/>
 	<e:Image x="1121.33" y="474.05" source="window1_png" anchorOffsetY="0" rotation="357.9" anchorOffsetX="0" width="84.25" height="308.31"/>
 	<e:Image x="1038.04" y="513.51" source="window1_png" anchorOffsetY="0" rotation="357.9" anchorOffsetX="0" width="33.12" height="121.2"/>

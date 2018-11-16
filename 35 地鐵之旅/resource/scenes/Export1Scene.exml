@@ -25,7 +25,7 @@
 		</e:layout>
 	</e:Group>
 	<e:Group width="200" height="200" x="293.99" y="402.94">
-		<e:Label text="出" x="27.27" y="27.27" textColor="0x6dea1c" size="147" bold="true"/>
+		<e:Label text="出" x="27.27" y="27.27" textColor="0x6dea1c" size="148" bold="true"/>
 		<e:Label text="A" x="287.88" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:Label text="B" x="521.21" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:Label text="C" x="754.54" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>

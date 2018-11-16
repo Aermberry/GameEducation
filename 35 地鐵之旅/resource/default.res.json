@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,background_journey1_png,background_journey2_png,background_start_png,background_entrance_png,yellow_color_motorcar_png,blue_color_motorcar_png,arrow_red_png,stairs_png,motorcar_png,background_booking_png,route1_png,route2_png,rect_border_white_png,icon_station_png,icon_transfer_png,rect_border_blue_png,check_png,pillar_png,rect_blue_png,rect_gradual_png,rect_border_black_png,rect_border_blue_bold_png,rect_border_red_png,railway_platform_png,rect_pink_png,rect_border_grap_png,rect_border_black_small_png,door_export_png,car_png,arrow_black_png,lift_png,lift_rail_right_png,lift_rail_left_png,rect_gradual_lift_png,rect_background_car_png,rect_yellow_png,arcdoor_export_png,shape376_png,pillar_pink_png,pillar_pink2_png,pillar_green_png,pillar_red_png,pillar_blue_png,pillar_orange_png,upper_strata_png,arrow_red_left_png,motor_car_png,window_png,floor_png,gameEui_json,shape363_png,carinside_ceiling_png,carinside_floor_png,window1_png,window2_png,seat_png,handrail1_png,handrail2_png,window3_png,floor_waiting_png,light_png,road_png,stripe_png,popup_png,background_waiting_json,background_waiting_png,background_motorcar_json,background_motorcar_png,background_motorcar copy_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,background_journey1_png,background_journey2_png,background_start_png,background_entrance_png,yellow_color_motorcar_png,blue_color_motorcar_png,arrow_red_png,stairs_png,motorcar_png,background_booking_png,route1_png,route2_png,rect_border_white_png,icon_station_png,icon_transfer_png,rect_border_blue_png,check_png,pillar_png,rect_blue_png,rect_gradual_png,rect_border_black_png,rect_border_blue_bold_png,rect_border_red_png,railway_platform_png,rect_pink_png,rect_border_grap_png,rect_border_black_small_png,door_export_png,car_png,arrow_black_png,lift_png,lift_rail_right_png,lift_rail_left_png,rect_gradual_lift_png,rect_background_car_png,rect_yellow_png,arcdoor_export_png,shape376_png,pillar_pink_png,pillar_pink2_png,pillar_green_png,pillar_red_png,pillar_blue_png,pillar_orange_png,upper_strata_png,arrow_red_left_png,motor_car_png,window_png,floor_png,gameEui_json,shape363_png,carinside_ceiling_png,carinside_floor_png,window1_png,window2_png,seat_png,handrail1_png,handrail2_png,window3_png,floor_waiting_png,light_png,road_png,stripe_png,popup_png,background_waiting_json,background_waiting_png,background_motorcar_json,background_motorcar_png,background_motorcar copy_png,car_json",
 			"name": "preload"
 		}
 	],
@@ -490,6 +490,11 @@
 			"name": "background_motorcar copy_png",
 			"type": "image",
 			"url": "textures/background_motorcar copy.png"
+		},
+		{
+			"name": "car_json",
+			"type": "json",
+			"url": "textures/car.json"
 		}
 	]
 }
