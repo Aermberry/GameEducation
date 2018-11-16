@@ -28,7 +28,23 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private async playAnim(): Promise<void> {
     this.plantMask.play(0);
     this.tailWiggle.play(0);
-    await lzlib.ThreadUtility.sleep(5000);
-    await this.invitationCard.play(0);
+    await lzlib.ThreadUtility.sleep(2500);
+    await this.invitationCard.playOnceAsync().then((resolve) => {
+      return this.lionDialog.playOnceAsync();
+    });
+    await lzlib.ThreadUtility.sleep(2000);
+    this.lionDialogText(lionDialogText.rabbitText_a);
+  }
+
+  //lion動態文本
+  private async lionDialogText(text: string): Promise<void> {
+    let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
+    lionLabel.text = text;
+  }
+
+  //語音播放
+  private playVoice(voice: string): void {
+    let sound: egret.Sound = RES.getRes(voice);
+    sound.play(0, 1);
   }
 }
