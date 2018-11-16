@@ -11,6 +11,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private lionDialogGroup: eui.Group;
   private rabbitDialogGroup: eui.Group;
 
+  private circleRect: eui.Rect;
+
   private lion: eui.Image;
   public constructor() {
     super();
@@ -29,22 +31,47 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.plantMask.play(0);
     this.tailWiggle.play(0);
     await lzlib.ThreadUtility.sleep(2500);
-    await this.invitationCard.playOnceAsync().then((resolve) => {
-      return this.lionDialog.playOnceAsync();
+    await this.invitationCard.playOnceAsync().then(() => {
+      this.lionDialog.playOnceAsync();
     });
     await lzlib.ThreadUtility.sleep(2000);
     this.lionDialogText(lionDialogText.rabbitText_a);
+    this.playVoice(lionDialogVoice.lionVoice_a).then(() => {
+      return new Promise((resolve) => {
+        this.rabbitDialogBox.play();
+        this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
+      }).then(() => {
+        (this.rabbitDialogGroup.$children[3] as eui.Group).visible = true;
+        this.playVoice(rabbitDialogVoice.rabbitVoice_a);
+        setTimeout(() => {
+          this.circleRect.visible = true;
+        }, 4000)
+      })
+    })
+
+    await lzlib.ThreadUtility.sleep(18000).then(() => {
+      this.lion.source = "lione_Silly_png";
+      this.playVoice(lionDialogVoice.lionVoice_b);
+      this.lionDialogText(lionDialogText.rabbitText_b);
+    });
   }
 
   //lion動態文本
-  private async lionDialogText(text: string): Promise<void> {
+  private lionDialogText(text: lionDialogText): void {
     let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
-    lionLabel.text = text;
+    lionLabel.text = text.toString();
+    //   lionLabel.textFlow = [
+    //    {text:"hello",style:{size:60,textColor:0x000000}},
+    //  {text:"hello",style:{size:60,textColor:0xffff00}}
+    //   ]
+    // console.log(text);
   }
 
   //語音播放
-  private playVoice(voice: string): void {
-    let sound: egret.Sound = RES.getRes(voice);
-    sound.play(0, 1);
+  private async playVoice(voice: lionDialogVoice | rabbitDialogVoice): Promise<void> {
+    // let sound: egret.Sound = RES.getRes(voice.toString());
+    // sound.play(0, 1);
+    let sound = lzlib.SoundUtility.playSound(voice.toString())
+    return sound;
   }
 }
