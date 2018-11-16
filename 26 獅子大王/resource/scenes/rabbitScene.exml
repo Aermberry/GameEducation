@@ -42,10 +42,16 @@
 		</tween:TweenGroup>
 		<tween:TweenGroup id="invitationCard">
 			<tween:TweenItem target="{invitationGroup}">
-				<tween:Wait duration="150"/>
+				<tween:Wait duration="100"/>
 				<tween:Set>
 					<tween:props>
-						<e:Object rotation="{32.64}" scaleX="{0.4}" scaleY="{0.4}" y="{26.85}" x="{17.7}"/>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{32.64}" scaleX="{0.4}" scaleY="{0.4}" y="{26.85}" x="{17.7}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:Wait duration="50"/>
@@ -226,23 +232,68 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="changCard">
+			<tween:TweenItem target="{invitationGroup}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleY="{0.1}" scaleX="{0.1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group}">
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 
 	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
-	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61">
+	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0"/>
-		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1490.61" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體"/>
+		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1490.61" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體" border="true"/>
+
+
+
+		<e:Group id="group" x="55.54" y="50" alpha="0">
+			<e:Label text="親愛的                ：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體" scaleX="1" scaleY="1"/>
+			<e:Group x="289.47" y="0">
+				<e:Label text="Label" x="0" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
+				<e:Label text="Label" x="118.18" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
+				<e:Label text="Label" x="242.42" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
+			</e:Group>
+		</e:Group>
 	</e:Group>
 
 	<e:Group x="86.1" y="771.55">
 		<e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75" width="330" height="224"/>
-		<e:Image id="lion_normal" source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
+		<e:Image id="lion" source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
 		<e:Image id="lion_active" source="lione_Silly_png" x="0" y="0" width="418.08" height="558.54" visible="false"/>
 	</e:Group>
 
 
 
-	<e:Group x="438.53" y="984.64" visible="false">
+	<e:Group id="lionDialogGroup" x="438.53" y="984.64" visible="false">
 		<e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="748.51" anchorOffsetY="6.06" height="380.06"/>
 		<e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51" width="748.51" anchorOffsetY="93.94" height="380.06"/>
 		<e:Label text="小白兔，我請你參加\n嘉年華，你竟然不\n來，該當吃掉！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"/>
@@ -250,7 +301,7 @@
 		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"/>
 		<e:Image source="finish_png" x="855" y="259.58"/>
 	</e:Group>
-	<e:Group x="977.29" y="849.27" visible="false">
+	<e:Group id="rabbitDialogGroup" x="977.29" y="849.27" visible="false">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="640.21" y="236.24" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="666.71" anchorOffsetY="0" height="337.07" rotation="3.38"/>
 		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="452.33" y="121.09" scaleY="-1" scaleX="-1" anchorOffsetX="194.34" width="666.71" anchorOffsetY="103.87" height="337.07" rotation="3.38"/>
 		<e:Group x="0" y="0" visible="false">
@@ -268,17 +319,18 @@
 		</e:Group>
 	</e:Group>
     <e:Rect width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600" x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0" visible="false"/>
-    <e:Label text="親愛的 小動物 ：" size="90" x="260.54" y="136.36" textColor="0x000000" bold="true" fontFamily="華康中黑體" visible="false"/>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
+
+
 		<e:Image x="1595.05" y="953.61" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64" source="rabbit_normal_png"/>
-	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3">
+	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" visible="false">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000"/>
-		<ns1:bulbComponent width="20" height="20" x="215.15" y="3.03"/>
+		<ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03"/>
 	</e:Group>
 
 
-	<e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03">
+	<e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03" visible="false">
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000"/>
-		<ns1:achieveComponent width="20" height="20" x="218.34" y="38.82" skinName="achieveComponentSkin"/>
+		<ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82" skinName="achieveComponentSkin"/>
 	</e:Group>
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff"/>
 </e:Skin>
