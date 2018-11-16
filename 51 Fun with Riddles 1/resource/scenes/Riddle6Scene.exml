@@ -3,7 +3,7 @@
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="16624dd5d65"></w:Config>
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true" />
-	<e:Image source="clickyouranswer_png" x="268" y="759.39" />
+	<e:Image source="clickyouranswer_png" x="268" y="759.39"  visible="false"/>
 	<e:Image x="148.91" y="342.39" source="title06_png" />
 
 	<e:Group id="goodsGroup" x="432.41" y="965">
@@ -13,13 +13,13 @@
 		<e:Image id="cash" x="934.47" y="0" source="cash_png" />
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0" />
-		<e:Label text="We        it on sunny and rainy days.It can be long or short." x="45.66" y="8.8" anchorOffsetX="0"
-		         width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle"
+		<e:Image source="bigLabel_png" x="-15.15" y="0"  anchorOffsetX="0" width="1138.51"/>
+		<e:Label text="We       it on sunny and rainy days.\nIt can be long or short.What is it?" x="45.66" y="8.8" anchorOffsetX="0"
+		         width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="62" verticalAlign="middle"
 		         textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
-		<e:Group id="useGroup" x="164.72" y="26.56">
-			<e:Label text="use" x="0" y="0" anchorOffsetX="0" width="116.43" anchorOffsetY="0" height="114.85" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Group id="useGroup" x="152.6" y="23.53">
+			<e:Label text="use" x="0" y="0" anchorOffsetX="0" width="116.43" anchorOffsetY="0" height="114.85" textColor="0x5C2C47" size="62" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
 			<e:Rect width="105" height="3" x="4.04" y="89.6" anchorOffsetY="0" fillColor="0x5c2c47"/>
 		</e:Group>
 	</e:Group>
@@ -31,7 +31,7 @@
 	</e:Group>
 	<e:Group id="bottleTipsGroup" x="143" y="931" visible="false">
 		<e:Image source="Label_png" x="103.03" y="0"  scale9Grid="86,48,519,111" anchorOffsetX="0" width="587.97"/>
-		<e:Label text="We keep drinks in a\nbottle" x="163.63" y="18.14" width="453.13" height="181.73" textColor="0x66002e" size="48"
+		<e:Label text="We keep drinks in abottle." x="163.63" y="18.14" width="453.13" height="181.73" textColor="0x66002e" size="48"
 		         textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
 		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
 	</e:Group>
@@ -42,4 +42,8 @@
 		<e:Image source="monkey_png" x="614.79" y="56.21" rotation="7.66" />
 	</e:Group>
 	<e:Image id="isTrueImage" source="true_png" x="783.39" y="1055.59" rotation="346.24"  visible="false"/>
+	<e:Group x="345" y="759.24">
+		<e:Image x="-63.64" y="0" source="bigLabel02_png" scaleX="0.6" scaleY="0.4"/>
+		<e:Label text="Choose your answer below." x="-53.85" y="28.88" textColor="0x000000" size="48" bold="true" fontFamily="Comic Sans MS"/>
+	</e:Group>
 </e:Skin>

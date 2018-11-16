@@ -3,29 +3,29 @@
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="16624d8fccc"></w:Config>
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" />
-	<e:Image source="clickyouranswer_png" x="268" y="759.39" />
+	<e:Image source="clickyouranswer_png" x="268" y="759.39"  visible="false"/>
 
 	<e:Image x="251" y="405" source="title02_png" />
 	<e:Group id="goodsGroup" x="442" y="964">
 		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
-		<e:Image id="apple" source="apple_png" x="0" y="5.49" />
+		<e:Image id="apple" source="apple_png" x="12.12" y="35.79" />
 		<e:Image id="key" source="key_png" x="434" y="72" />
 		<e:Image id="Puzzle" source="Puzzle_png" x="837" y="0" />
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0" />
-		<e:Label text="We       different pieces                 make a beautiful picture." x="45.66" y="8.8"
-		         anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64"
+		<e:Image source="bigLabel_png" x="0" y="0"  scaleY="1.1"/>
+		<e:Label text="We       different pieces of something                to make a beautiful picture.What are they?" x="45.66" y="8.8"
+		         anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="242.12" textColor="0x5c2c47" size="64"
 		         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
-		<e:Group id="togetherGroup" x="792.03" y="49.1">
+		<e:Group id="togetherGroup" x="198.09" y="91.52">
 			<e:Label text="together" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-			<e:Rect width="253" height="3" x="5.85" y="64.89" anchorOffsetY="0" fillColor="0x5C2C47"/>
+			<e:Rect width="253" height="3" x="5.85" y="80.04" anchorOffsetY="0" fillColor="0x5C2C47"/>
 		</e:Group>
-		<e:Group id="putGroup" x="165.72" y="51.19">
+		<e:Group id="putGroup" x="165.72" y="-0.32">
 			<e:Label text="put" x="0.65" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64"
 			         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
-			<e:Rect width="92" height="3" x="0" y="64.6" anchorOffsetY="0" fillColor="0x5c2c47" />
+			<e:Rect width="92" height="3" x="0" y="76.72" anchorOffsetY="0" fillColor="0x5c2c47" />
 		</e:Group>
 	</e:Group>
 	<e:Group id="tipsGroup" x="864.63" y="192.76" visible="false">
@@ -42,9 +42,14 @@
 	</e:Group>
 	<e:Group id="keyTipsGroup" x="594" y="931" visible="false">
 		<e:Image source="Label_png" x="0" y="0" />
+		<e:Image source="monkey_png" x="593.57" y="68.33" rotation="7.66"/>
 		<e:Label text="We use keys to open doors." x="12.12" y="15.11" width="668.28" height="181.73" textColor="0x66002e"
 		         size="48" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
-		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
+
 	</e:Group>
 	<e:Image id="isTrueImage" source="true_png" x="1410.66" y="1055.59" rotation="346.24"  visible="false"/>
+	<e:Group x="345" y="759.24">
+		<e:Image x="-63.64" y="0" source="bigLabel02_png" scaleX="0.6" scaleY="0.4"/>
+		<e:Label text="Choose your answer below." x="-53.85" y="28.88" textColor="0x000000" size="48" bold="true" fontFamily="Comic Sans MS"/>
+	</e:Group>
 </e:Skin>

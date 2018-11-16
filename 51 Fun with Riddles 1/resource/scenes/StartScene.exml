@@ -14,7 +14,7 @@
 	</w:Declarations>
 	<w:Config id="16624d7e75d" ></w:Config>
 	<e:Image source="StartSceneBackground_png" horizontalCenter="-47.5" verticalCenter="3"/>
-	<e:Label x="467" y="414" text="Today is the school fun fair.\n\nYou are  guessing riddles at the\n 'Riddles' both.\n\nClick the riddles and choose your\nanswers." textColor="0x9e0000" fontFamily="Comic Sans MS" size="64" lineSpacing="25"/>
+	<e:Label x="467" y="414" text="Today is the school fun fair.\n\nYou are guessing riddles at the\n'Riddles' booth.\n\nClick the riddles and guess the\nanswers." textColor="0x9e0000" fontFamily="Comic Sans MS" size="64" lineSpacing="25"/>
 	<e:Button id="nextButton" label="Next" x="871" y="1184" anchorOffsetX="0" width="226" anchorOffsetY="0" height="100"/>
 	<e:Rect id="maskLayer" top="0" left="0" right="0" bottom="0" fillColor="0xFFFFFF"/>
 	<e:Image id="playButton" source="start_png" horizontalCenter="0" verticalCenter="-50.5"/>
