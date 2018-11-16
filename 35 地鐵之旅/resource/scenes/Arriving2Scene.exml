@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Arriving2SceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="167166739f1" ></w:Config>
+	<e:Image x="630.54" y="404.35" source="rect_gradual_lift_png" anchorOffsetY="0" height="819.48"/>
+	<e:Image x="1137.21" y="343.02" source="lift_png" anchorOffsetX="0" width="372.21" anchorOffsetY="0" height="807.69" scaleX="-1"/>
+	<e:Image x="1002.75" y="267.7" source="lift_rail_left_png" anchorOffsetX="0" width="221.75" anchorOffsetY="0" height="903.49" rotation="0.87"/>
+	<e:Image x="864.21" y="269.64" source="lift_rail_left_png" anchorOffsetX="0" width="217.97" anchorOffsetY="0" height="888.1" rotation="353.82" scaleX="-1"/>
+	<e:Image y="3.03" source="arcdoor_export_png"/>
+	<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16"/>
+	<e:Group y="170" horizontalCenter="40.5">
+		<e:Image source="rect_border_black_small_png"/>
+		<e:Label text="B" x="166.24" y="24" textColor="0x93ce0e" size="92" bold="true"/>
+		<e:Label text="往      海龍公園" x="363.21" y="30.06" size="78" backgroundColor="0x0e27d6" textColor="0x0512af"/>
+	</e:Group>
+	
+</e:Skin>

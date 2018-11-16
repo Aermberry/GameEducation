@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chinese Math Game Template</title>
+    <title>35 地鐵之旅</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -30,11 +30,38 @@
         margin: auto;width: 100%;top: 59px; bottom: 20px;
 
         }
+        @font-face {
+            font-family:"華康超黑體";
+            src: 
+                 url('resource/fonts/華康粗黑體.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family:"華康中黑體";
+            src: 
+                 url('resource/fonts/華康中黑體.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family:"華康细黑體";
+            src: 
+                 url('resource/fonts/華康细黑體.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 		@font-face {
-            font-family:"your font name";
-            src: url("resource/fonts/your font name.woff2") format('woff2'),
-                 url('resource/fonts/your font name.woff') format('woff'),
-                 url('resource/fonts/your font name.ttf') format('truetype');
+            font-family:"標準黑體";
+            src: 
+                 url('resource/fonts/標準儷黑體.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family:"華康楷書體";
+            src: 
+                 url('resource/fonts/華康楷書體.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -84,7 +111,12 @@
         2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
         style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
     </div>
-    <label style="font-family: your font name; color: transparent;"></label>
+    <label style="font-family: 標準黑體; color: transparent;"></label>
+    <label style="font-family: 華康中黑體; color: transparent;"></label>
+     <label style="font-family: 華康细黑體; color: transparent;"></label>
+    <label style="font-family: 華康楷書體; color: transparent;"></label>
+    <label style="font-family: 華康超黑體; color: transparent;"></label>
+    
 <script>
     var loadScript = function (list, callback) {
         var loaded = 0;

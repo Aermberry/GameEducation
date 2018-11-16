@@ -33,8 +33,63 @@
         "parentPath": ""
     },
     "16715fe3763": {
-        "path": "../resource/scenes/Arriving1Scene.ts",
+        "path": "../resource/scenes/Export1Scene.ts",
+        "class": "Export1Scene",
+        "parentPath": ""
+    },
+    "1671614b69a": {
+        "path": "scenes/Arriving1Scene.ts",
         "class": "Arriving1Scene",
+        "parentPath": ""
+    },
+    "167163c2885": {
+        "path": "scenes/FinishScene.ts",
+        "class": "FinishScene",
+        "parentPath": ""
+    },
+    "167165fc2ce": {
+        "path": "scenes/Entrance2Scene.ts",
+        "class": "Entrance2Scene",
+        "parentPath": ""
+    },
+    "1671661f2ae": {
+        "path": "scenes/TicketCheck2Scene.ts",
+        "class": "TicketCheck2Scene",
+        "parentPath": ""
+    },
+    "167166739f1": {
+        "path": "scenes/Arriving2Scene.ts",
+        "class": "Arriving2Scene",
+        "parentPath": ""
+    },
+    "1671668f6fe": {
+        "path": "scenes/Export2Scene.ts",
+        "class": "Export2Scene",
+        "parentPath": ""
+    },
+    "167168a712b": {
+        "path": "scenes/WaitingScene.ts",
+        "class": "WaitingScene",
+        "parentPath": ""
+    },
+    "1671a544a99": {
+        "path": "scenes/MotorCarScene.ts",
+        "class": "MotorCarScene",
+        "parentPath": ""
+    },
+    "1671a551861": {
+        "path": "scenes/MotorCarScene.ts",
+        "class": "MotorCarScene",
+        "parentPath": ""
+    },
+    "1671a9ccdd9": {
+        "path": "components/PopupComponent.ts",
+        "class": "PopupComponent",
+        "parentPath": ""
+    },
+    "1671a9dd18a": {
+        "path": "components/PopupComponent.ts",
+        "class": "PopupComponent",
         "parentPath": ""
     }
 }

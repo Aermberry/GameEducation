@@ -4,11 +4,11 @@
 	<e:Image left="0" right="0" top="0" bottom="0" source="background_scene_png"/>
 	<e:Group x="582" y="648.06">
 		<e:Image source="background_journey2_png"/>
-		<e:Label text="旅途一" left="0" right="0" top="0" bottom="0" textColor="0xd75f63" size="87" textAlign="center" verticalAlign="middle"/>
+		<e:Label text="旅程一" left="0" right="0" top="0" bottom="0" textColor="0xd75f63" size="87" textAlign="center" verticalAlign="middle" fontFamily="標準黑體"/>
 	</e:Group>
 	<e:Group x="582" y="835.94">
 		<e:Image source="background_journey1_png"/>
-		<e:Label text="旅途二" left="0" right="0" top="0" bottom="0" textColor="0xD75F63" size="87" textAlign="center" verticalAlign="middle"/>
+		<e:Label text="旅程二" left="0" right="0" top="0" bottom="0" textColor="0xD75F63" size="87" textAlign="center" verticalAlign="middle" fontFamily="標準黑體"/>
 	</e:Group>
 	<e:Group x="803.42" y="1097.39">
 		<e:Image source="background_start_png"/>

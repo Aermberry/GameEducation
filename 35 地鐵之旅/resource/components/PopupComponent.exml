@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PopupComponentSkin" width="359" height="145" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1671a9dd18a" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="popup_png"/>
+	<e:Rect id="yesButton" width="48" height="37" x="114" y="85" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x000000" alpha="0"/>
+	<e:Rect id="noButton" width="48" height="37" x="197" y="85" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x000000" alpha="0"/>
+</e:Skin>
