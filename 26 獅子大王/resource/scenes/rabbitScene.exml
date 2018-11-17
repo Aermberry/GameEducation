@@ -256,15 +256,15 @@
 	</w:Declarations>
 
 	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false"/>
-	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0">
+	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1" touchThrough="true">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0"/>
-		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1490.61" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體" border="true"/>
+		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1496.67" anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100" bold="true" fontFamily="華康中黑體" border="true"/>
 
 
 
-		<e:Group id="group" x="55.54" y="50" alpha="0">
+		<e:Group id="group" x="55.54" y="50" alpha="1" touchThrough="true">
 			<e:Label text="親愛的                ：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體" scaleX="1" scaleY="1"/>
-			<e:Group x="289.47" y="0">
+			<e:Group x="289.47" y="0" touchThrough="true">
 				<e:Label text="Label" x="0" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
 				<e:Label text="Label" x="118.18" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
 				<e:Label text="Label" x="242.42" y="0" anchorOffsetY="0" height="90.61" anchorOffsetX="0" width="98.24" background="true" border="true" bold="false"/>
@@ -310,13 +310,13 @@
 
 
 		<e:Image x="1607.17" y="877.85" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64" source="rabbit_normal_png"/>
-	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" visible="false">
+	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" alpha="0">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000"/>
 		<ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03"/>
 	</e:Group>
 
 
-	<e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03" visible="false">
+	<e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03" alpha="0">
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000"/>
 		<ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82" skinName="achieveComponentSkin"/>
 	</e:Group>

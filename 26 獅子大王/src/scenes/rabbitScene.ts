@@ -5,6 +5,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private lionDialog: egret.tween.TweenGroup;
   private rabbitDialogBox: egret.tween.TweenGroup;
   private bubleGrad: egret.tween.TweenGroup;
+  private changCard: egret.tween.TweenGroup;
 
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
@@ -54,12 +55,20 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
       this.lionDialogText(lionDialogText.rabbitText_b);
     });
 
-    await this.playVoice(lionDialogVoice.lionVoice_b).then(()=>{
+    await this.playVoice(lionDialogVoice.lionVoice_b).then(() => {
       this.lionDialogText(lionDialogText.rabbitText_c);
       this.playVoice(lionDialogVoice.lionVoice_c);
+      this.circleRect.visible = false;
     });
-    
-
+    await this.changCard.playOnceAsync();
+    await lzlib.ThreadUtility.sleep(5000);
+    (this.rabbitDialogGroup.$children[3] as eui.Group).visible = false;
+    (this.rabbitDialogGroup.$children[4] as eui.Group).visible = true;
+    await this.playVoice(rabbitDialogVoice.rabbitVoice_b);
+    egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
+      egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
+      egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
+    });
   }
 
   //lion動態文本
