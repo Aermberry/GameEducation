@@ -51,9 +51,15 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
     await lzlib.ThreadUtility.sleep(18000).then(() => {
       this.lion.source = "lione_Silly_png";
-      this.playVoice(lionDialogVoice.lionVoice_b);
       this.lionDialogText(lionDialogText.rabbitText_b);
     });
+
+    await this.playVoice(lionDialogVoice.lionVoice_b).then(()=>{
+      this.lionDialogText(lionDialogText.rabbitText_c);
+      this.playVoice(lionDialogVoice.lionVoice_c);
+    });
+    
+
   }
 
   //lion動態文本

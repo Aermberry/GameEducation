@@ -80,7 +80,7 @@
 				</tween:Set>
 				<tween:To duration="100">
 					<tween:props>
-						<e:Object rotation="{360}" scaleX="{1}" scaleY="{1}" x="{974.7}" y="{448.85}"/>
+						<e:Object rotation="{360}" scaleX="{1}" scaleY="{1}" x="{974.7}" y="{448.85}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -218,20 +218,7 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-		<tween:TweenGroup id="bubleGrad">
-			<tween:TweenItem target="{image0}">
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{0}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="1000">
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
+
 		<tween:TweenGroup id="changCard">
 			<tween:TweenItem target="{invitationGroup}">
 				<tween:Wait duration="250"/>
