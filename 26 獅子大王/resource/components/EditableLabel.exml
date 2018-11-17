@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EditableLabelSkin" width="200" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16720b2f6e8" ></w:Config>
+	<e:Rect width="180" height="180" horizontalCenter="0" verticalCenter="0" strokeWeight="10" top="0" left="0" right="0" bottom="0" fillAlpha="0" strokeColor="0x000000"/>
+	<e:TextInput/>
+	
+</e:Skin>

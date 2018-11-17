@@ -26,5 +26,10 @@
         "path": "components\\bulbComponent.ts",
         "class": "bulbComponent",
         "parentPath": ""
+    },
+    "16720b2f6e8": {
+        "path": "components\\EditableLabel.ts",
+        "class": "EditableLabel",
+        "parentPath": ""
     }
 }
