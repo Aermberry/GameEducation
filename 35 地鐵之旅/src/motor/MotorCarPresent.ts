@@ -1,0 +1,4 @@
+class MotorCarPresent {
+	public constructor() {
+	}
+}

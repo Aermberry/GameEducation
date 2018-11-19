@@ -1,0 +1,4 @@
+class WaitingPresent {
+	public constructor() {
+	}
+}
