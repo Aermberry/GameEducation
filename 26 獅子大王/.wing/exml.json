@@ -36,5 +36,10 @@
         "path": "..\\resource\\components\\tipsComponent.ts",
         "class": "tipsComponent",
         "parentPath": ""
+    },
+    "1672b4b22f5": {
+        "path": "components\\startMask.ts",
+        "class": "startMask",
+        "parentPath": ""
     }
 }

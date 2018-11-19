@@ -6,8 +6,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private rabbitDialogBox: egret.tween.TweenGroup;
   private bubleGrad: egret.tween.TweenGroup;
   private changCard: egret.tween.TweenGroup;
-  private tipsComponent:tipsComponent;
-  private achieveComponent:achieveComponent
+  private tipsComponent: tipsComponent;
+  private achieveComponent: achieveComponent
 
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
@@ -15,13 +15,14 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private rabbitDialogGroup: eui.Group;
 
   private tipsBulbComponent: bulbComponent;
+  private bulbComponent: bulbComponent;
   private resultAchieveComponent: achieveComponent;
 
   private circleRect: eui.Rect;
 
   private lion: eui.Image;
 
-  private optionsScene:optionsScene;
+  private optionsScene: optionsScene;
   public constructor(/*optionsScene:optionsScene*/) {
     super();
     // this.optionsScene=optionsScene;
@@ -33,10 +34,17 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
-  
+
     this.playAnim();
-    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.tips,this);
-    this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.result,this);
+    
+    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tips, this);
+    this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => {
+      this.bulbComponent.currentState = this.bulbComponent.skin.states[0].name;
+    }, this);
+    this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => {
+      this.bulbComponent.currentState = this.bulbComponent.skin.states[1].name;
+    }, this);
+    this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
   }
 
   private async playAnim(): Promise<void> {
@@ -102,13 +110,14 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   private tips(): void {
+    this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
     this.tipsComponent = new tipsComponent(this);
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();
   }
 
-  private result():void{
-    this.achieveComponent=new achieveComponent(this.optionsScene,this);
+  private result(): void {
+    this.achieveComponent = new achieveComponent(this.optionsScene, this);
     // if(){
 
     // }
@@ -122,5 +131,5 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     // }
   }
 
-  
+
 }

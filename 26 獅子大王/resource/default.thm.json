@@ -24,13 +24,15 @@
 		"achieveComponent": "resource/components/achieveComponent.exml",
 		"bulbComponent": "resource/components/bulbComponent.exml",
 		"EditableLabel": "resource/components/EditableLabel.exml",
-		"tipsComponent": "resource/eui_skins/tipsComponent.exml"
+		"tipsComponent": "resource/eui_skins/tipsComponent.exml",
+		"maskPanel": "resource/components/maskPanel.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
 		"resource/components/achieveComponent.exml",
 		"resource/components/bulbComponent.exml",
 		"resource/components/EditableLabel.exml",
+		"resource/components/maskPanel.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
