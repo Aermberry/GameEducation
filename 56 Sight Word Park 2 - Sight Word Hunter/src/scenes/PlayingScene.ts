@@ -28,6 +28,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private desktopWords = []; //从词库中选到桌子上的单词，用于解决桌面上出现重复词的问题
 	private spokenWord = 'a'; //语音播报出来的单词，需要用户选中该单词才能进入下一关。
 	private wordRepo: WordRepository;
+	private questionNumber = 1; //用户答对题目数量
 
 	public constructor(wordRepo: WordRepository) {
 		super();
@@ -160,7 +161,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			await ThreadUtility.sleep(2000);
 			this.passedCurrentRound = true;
 		} else {
-			this.playTipAnimation("Try Again!");
+			this.playTipAnimation("Try again.");
 		}
 	}
 
@@ -228,8 +229,9 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			console.log('时间到，进入下一轮');
 			this.disableAllTargets();
 			//用户在本轮游戏时间内没有答对问题，跳过本轮，进入下一题。
-			this.playTipAnimation('Next Question!');
+			this.playTipAnimation('The next question.');
 			this.startNewRound();
+			
 		}
 
 		//用户答对，进入下一轮
@@ -237,6 +239,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			console.log('用户答对进入下一轮');
 			this.passedCurrentRound = false;
 			this.startNewRound();
+			console.log(this.questionNumber++)
 		}
 	}
 
