@@ -1,7 +1,14 @@
 class achieveComponent extends eui.Component implements eui.UIComponent {
 	private flexAnim: egret.tween.TweenGroup;
-	public constructor() {
+	private optionsScene:optionsScene;
+	private rabbitScene:rabbitScene;
+	private achieve_normal:eui.Image;
+	private achieve_active:eui.Image;
+
+	public constructor(optionsScene:optionsScene,rabbitScene:rabbitScene) {
 		super();
+		this.optionsScene=optionsScene;
+		this.rabbitScene=rabbitScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -11,6 +18,9 @@ class achieveComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		  mouse.enable(this.stage);
+    mouse.setButtonMode(this.achieve_normal,true);
+    mouse.setButtonMode(this.achieve_active,true);
 		this.playAnimation(this.flexAnim, true);
 	}
 
@@ -30,7 +40,7 @@ class achieveComponent extends eui.Component implements eui.UIComponent {
 	private gotoHomeScene(): void {
 		let currentState = this.getCurrentState()
 		if (currentState == "active")
-			Main.instance.gotoScene(new optionsScene());
+			this.optionsScene.removeChild(this.rabbitScene);
 	}
 
 }

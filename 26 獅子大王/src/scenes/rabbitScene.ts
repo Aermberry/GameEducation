@@ -6,17 +6,25 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private rabbitDialogBox: egret.tween.TweenGroup;
   private bubleGrad: egret.tween.TweenGroup;
   private changCard: egret.tween.TweenGroup;
+  private tipsComponent:tipsComponent;
+  private achieveComponent:achieveComponent
 
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
   private lionDialogGroup: eui.Group;
   private rabbitDialogGroup: eui.Group;
 
+  private tipsBulbComponent: bulbComponent;
+  private resultAchieveComponent: achieveComponent;
+
   private circleRect: eui.Rect;
 
   private lion: eui.Image;
-  public constructor() {
+
+  private optionsScene:optionsScene;
+  public constructor(/*optionsScene:optionsScene*/) {
     super();
+    // this.optionsScene=optionsScene;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -25,7 +33,10 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
+  
     this.playAnim();
+    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.tips,this);
+    this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.result,this);
   }
 
   private async playAnim(): Promise<void> {
@@ -89,4 +100,27 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     let sound = lzlib.SoundUtility.playSound(voice.toString())
     return sound;
   }
+
+  private tips(): void {
+    this.tipsComponent = new tipsComponent(this);
+    this.addChild(this.tipsComponent);
+    this.tipsComponent.playAnim();
+  }
+
+  private result():void{
+    this.achieveComponent=new achieveComponent(this.optionsScene,this);
+    // if(){
+
+    // }
+    // else{
+    //   this.rabbitDialogGroup.$children[4].visible=false
+    //   this.rabbitDialogGroup.$children[5].visible=true;
+    //   setTimeout(()=>{
+    //     this.rabbitDialogGroup.$children[5].visible=false;
+    //     this.rabbitDialogGroup.$children[4].visible=true;
+    //   },5000)
+    // }
+  }
+
+  
 }

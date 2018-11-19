@@ -4,6 +4,10 @@ class bulbComponent extends eui.Component implements eui.UIComponent {
 
 	private lampGrad: egret.tween.TweenGroup;
 
+	private lampLight_normal: eui.Group;
+	private bulb_hover: eui.Image;
+	private bulb_active: eui.Image;
+
 	public constructor() {
 		super();
 	}
@@ -15,6 +19,10 @@ class bulbComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode( this.lampLight_normal, true);
+		mouse.setButtonMode(this.bulb_hover, true);
+		mouse.setButtonMode(this.bulb_active, true);
 		this.playAnimation(this.lampGrad, true);
 	}
 
@@ -27,8 +35,8 @@ class bulbComponent extends eui.Component implements eui.UIComponent {
 		target.play();
 	}
 
-	private status(statue:string ):void {
-		this.currentState=statue;
+	private status(statue: string): void {
+		this.currentState = statue;
 	}
 
 }

@@ -31,5 +31,10 @@
         "path": "components\\EditableLabel.ts",
         "class": "EditableLabel",
         "parentPath": ""
+    },
+    "16729f88f76": {
+        "path": "..\\resource\\components\\tipsComponent.ts",
+        "class": "tipsComponent",
+        "parentPath": ""
     }
 }

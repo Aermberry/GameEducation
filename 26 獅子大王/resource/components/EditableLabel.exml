@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="EditableLabelSkin" width="200" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="EditableLabelSkin" width="90" height="98" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="edit,view" >
 	<w:Config id="16720b2f6e8" ></w:Config>
-	<e:Rect width="180" height="180" horizontalCenter="0" verticalCenter="0" strokeWeight="10" top="0" left="0" right="0" bottom="0" fillAlpha="0" strokeColor="0x000000"/>
-	<e:TextInput/>
-	
+	<e:Rect width="180" height="180" horizontalCenter="0" verticalCenter="0" strokeWeight="5" top="0" left="0" right="0" bottom="0" fillAlpha="1" strokeColor="0x000000" fillColor.view="0xffffff" strokeWeight.view="2"/>
+	<e:Label id="resultLabel" text="Label" includeIn="view" x="62" y="55" top="10" left="10" right="10" bottom="10" background="false" backgroundColor="0xa50303" verticalAlign="middle" textAlign="center" textColor="0x000000" size="25" fontFamily="華康中黑體"/>
+	<e:TextInput id="userInput" width="101" height="127" includeIn="edit" x="54" y="61" anchorOffsetX="0" anchorOffsetY="0" top="2" left="2" right="2" bottom="2" maxChars="1"/>
 </e:Skin>

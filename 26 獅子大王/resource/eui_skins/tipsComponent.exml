@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tipsComponentSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="tipsAnim">
+			<tween:TweenItem target="{rect}">
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{group}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="550">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="16729f88f76" ></w:Config>
+	<e:Rect id="rect" fillColor="0xffffff" top="0" left="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Image id="image" source="littleCircle_png" y="1290.91" x="-33.33" anchorOffsetX="0" width="94.21" anchorOffsetY="0" height="98.21"/>
+	<e:Image id="image0" source="middleCircle_png" x="100" y="1124.24" anchorOffsetX="0" width="152.36" anchorOffsetY="0" height="162.42"/>
+	<e:Image id="image1" source="biggerCircle_png" x="281.82" y="875.22" anchorOffsetX="0" width="252.91" anchorOffsetY="0" height="251.35"/>
+	<e:Group id="group" x="423.43" y="77.21">
+		<e:Image source="entirlyCircle_png" x="0" y="0" anchorOffsetX="0" width="1388.07" anchorOffsetY="0" height="890.36"/>
+		<e:Group x="231.12" y="256.12">
+			<e:Label text="                 要      森林裏\n的         來誰誰參加嘉年\n華。收卡人的姓名應該\n怎樣寫？" x="-121.2" y="0" textColor="0x000000" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+			<e:Label text="獅子大王" x="21.21" y="0" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true" textColor="0xeb0000"/>
+			<e:Label text="邀請" x="457.57" y="0" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true" textColor="0xeb0000"/>
+			<e:Label text="小動物" x="-33.34" y="109.09" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true" textColor="0xeb0000"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="returnGroup" x="1325.82" y="644.06">
+		<e:Label text="返回" x="0" y="40.55" textColor="0x020202" anchorOffsetX="0" width="205.45" anchorOffsetY="0" height="102.73" size="94" bold="true"/>
+		<e:Image source="return_png" x="211.51" y="0"/>
+	</e:Group>
+</e:Skin>
