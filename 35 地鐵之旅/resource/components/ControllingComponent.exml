@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ControllingComponentSkin" width="1904" height="180" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="ControllingComponentSkin" width="1904" height="180" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="1671574655d" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_white_png"/>
 	<e:Label text="控制台" x="48.21" y="42" textColor="0x000000" size="94"/>
 	<e:Image x="1205.84" y="42" source="rect_border_red_png"/>
-	<e:Image x="1496.75" y="42" source="rect_border_blue_bold_png"/>
+	<e:Image id="routeBorderImage" x="1496.75" y="42" source="rect_border_blue_bold_png"/>
 	<e:Image x="1714.93" y="42" source="rect_border_black_png"/>
-	<e:Label text="重新開始" x="1230.03" y="70.03" textColor="0xf51828" size="50"/>
-	<e:Label text="路線圖" x="1511.97" y="70.03" textColor="0x62b0f9" size="50"/>
-	<e:Label text="關閉" x="1729.97" y="70" textColor="0x000000" size="50"/>
+	<e:Label id="restartLabel" text="重新開始" x="1230.03" y="70.03" textColor="0xf51828" size="50"/>
+	<e:Label id="routeMapLabel" text="路線圖" x="1511.97" y="70.03" textColor="0x62b0f9" size="50"/>
+	<e:Label id="closeLabel" text="關閉" x="1729.97" y="70" textColor="0x000000" size="50"/>
+	<ns1:PopupComponent id="popupComponent" width="359" height="145" x="746.94" y="-509" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 </e:Skin>

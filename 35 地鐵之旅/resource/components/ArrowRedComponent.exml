@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ArrowRedComponentSkin" width="258" height="115" currentState="disable" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="disable,normal,over" >
+	<w:Config id="1671f748f05" ></w:Config>
+	<e:Image includeIn="over" left="-16" right="-12" top="-7" bottom="-5" source="arrow_red_over_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="arrow_red_left_png" alpha.disable="0.5"/>
+</e:Skin>

@@ -91,5 +91,10 @@
         "path": "components/PopupComponent.ts",
         "class": "PopupComponent",
         "parentPath": ""
+    },
+    "1671f748f05": {
+        "path": "components/ArrowRedComponent.ts",
+        "class": "ArrowRedComponent",
+        "parentPath": ""
     }
 }

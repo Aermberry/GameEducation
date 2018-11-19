@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,background_journey1_png,background_journey2_png,background_start_png,background_entrance_png,yellow_color_motorcar_png,blue_color_motorcar_png,arrow_red_png,stairs_png,motorcar_png,background_booking_png,route1_png,route2_png,rect_border_white_png,icon_station_png,icon_transfer_png,rect_border_blue_png,check_png,pillar_png,rect_blue_png,rect_gradual_png,rect_border_black_png,rect_border_blue_bold_png,rect_border_red_png,railway_platform_png,rect_pink_png,rect_border_grap_png,rect_border_black_small_png,door_export_png,car_png,arrow_black_png,lift_png,lift_rail_right_png,lift_rail_left_png,rect_gradual_lift_png,rect_background_car_png,rect_yellow_png,arcdoor_export_png,shape376_png,pillar_pink_png,pillar_pink2_png,pillar_green_png,pillar_red_png,pillar_blue_png,pillar_orange_png,upper_strata_png,arrow_red_left_png,motor_car_png,window_png,floor_png,gameEui_json,shape363_png,carinside_ceiling_png,carinside_floor_png,window1_png,window2_png,seat_png,handrail1_png,handrail2_png,window3_png,floor_waiting_png,light_png,road_png,stripe_png,popup_png,background_waiting_json,background_waiting_png,background_motorcar_json,background_motorcar_png,background_motorcar copy_png,car_json,person1_png,person2_png,person3_png,person4_png,person5_png,person6_png,person7_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,checkbox_select_disabled2_png,checkbox_select_down2_png,checkbox_select_up2_png,checkbox_unselect2_png,background_journey1_png,background_journey2_png,background_start_png,background_entrance_png,yellow_color_motorcar_png,blue_color_motorcar_png,arrow_red_png,stairs_png,motorcar_png,background_booking_png,route1_png,route2_png,rect_border_white_png,icon_station_png,icon_transfer_png,rect_border_blue_png,check_png,pillar_png,rect_blue_png,rect_gradual_png,rect_border_black_png,rect_border_blue_bold_png,rect_border_red_png,railway_platform_png,rect_pink_png,rect_border_grap_png,rect_border_black_small_png,door_export_png,car_png,arrow_black_png,lift_png,lift_rail_right_png,lift_rail_left_png,rect_gradual_lift_png,rect_background_car_png,rect_yellow_png,arcdoor_export_png,shape376_png,pillar_pink_png,pillar_pink2_png,pillar_green_png,pillar_red_png,pillar_blue_png,pillar_orange_png,upper_strata_png,arrow_red_left_png,motor_car_png,window_png,floor_png,gameEui_json,shape363_png,carinside_ceiling_png,carinside_floor_png,window1_png,window2_png,seat_png,handrail1_png,handrail2_png,window3_png,floor_waiting_png,light_png,road_png,stripe_png,popup_png,background_waiting_json,background_waiting_png,background_motorcar_json,background_motorcar_png,background_motorcar copy_png,car_json,person1_png,person2_png,person3_png,person4_png,person5_png,person6_png,person7_png,arrow_red_over_png,circle_yellow_png,close_png,car2_png,background_scene_png,sound 15 (inst_intro.mp3)_mp3,sound 8 (inst_mission_p3.mp3)_mp3,sound 9 (inst_mission_p2.mp3)_mp3,sound 10 (inst_mission_p1.mp3)_mp3,sound 11 (inst_mission_dest_park.mp3)_mp3,sound 12 (inst_mission_dest_mount.mp3)_mp3,sound 2 (inst_wrongDest.mp3)_mp3,sound 3 (inst_ticket.mp3)_mp3,sound 17 (inst_chkMap.mp3)_mp3,circle_yellow_selected_png,icon_yellow_selected_png,sound 26 (go_1_2.mp3)_mp3,sound 54 (e_directionSun.mp3)_mp3,sound 55 (e_directionPark.mp3)_mp3,sound 19 (inst_c_exit.mp3)_mp3,sound 21 (goes.mp3)_mp3,sound 28 (exit_E.mp3)_mp3,sound 29 (exit_D.mp3)_mp3,sound 30 (exit_C.mp3)_mp3,sound 31 (exit_B.mp3)_mp3,sound 32 (exit_A.mp3)_mp3,sound 59 (dest_univ.mp3)_mp3,sound 60 (dest_trainSt.mp3)_mp3,sound 61 (dest_stadium.mp3)_mp3,sound 62 (dest_park.mp3)_mp3,sound 63 (dest_office.mp3)_mp3,sound 64 (dest_oceanWorld.mp3)_mp3,sound 65 (dest_gov.mp3)_mp3,sound 66 (dest_carpark.mp3)_mp3,sound 67 (dest_cargo.mp3)_mp3,sound 68 (dest_busTerminus.mp3)_mp3,sound 69 (dest_appleSt.mp3)_mp3,sound 70 (dest_applePlaza.mp3)_mp3,sound 71 (dest_airport.mp3)_mp3,sound 1 (inst_wrongExit.mp3)_mp3,sound 16 (inst_complete.mp3)_mp3,sound 6 (inst_st_banana.mp3)_mp3,sound 56 (e_directionMount.mp3)_mp3,sound 57 (e_directionBanana.mp3)_mp3,sound 58 (e_directionAirport.mp3)_mp3,sound 23 (go_3_4.mp3)_mp3,sound 18 (inst_c_plm.mp3)_mp3",
 			"name": "preload"
 		}
 	],
@@ -467,69 +467,304 @@
 			"name": "popup_png"
 		},
 		{
-			"name": "background_waiting_json",
+			"url": "textures/background_waiting.json",
 			"type": "json",
-			"url": "textures/background_waiting.json"
+			"name": "background_waiting_json"
 		},
 		{
-			"name": "background_waiting_png",
+			"url": "textures/background_waiting.png",
 			"type": "image",
-			"url": "textures/background_waiting.png"
+			"name": "background_waiting_png"
 		},
 		{
-			"name": "background_motorcar_json",
+			"url": "textures/background_motorcar.json",
 			"type": "json",
-			"url": "textures/background_motorcar.json"
+			"name": "background_motorcar_json"
 		},
 		{
-			"name": "background_motorcar_png",
+			"url": "textures/background_motorcar.png",
 			"type": "image",
-			"url": "textures/background_motorcar.png"
+			"name": "background_motorcar_png"
 		},
 		{
-			"name": "background_motorcar copy_png",
+			"url": "textures/background_motorcar copy.png",
 			"type": "image",
-			"url": "textures/background_motorcar copy.png"
+			"name": "background_motorcar copy_png"
 		},
 		{
-			"name": "car_json",
+			"url": "textures/car.json",
 			"type": "json",
-			"url": "textures/car.json"
+			"name": "car_json"
 		},
 		{
-			"name": "person1_png",
+			"url": "textures/person1.png",
 			"type": "image",
-			"url": "textures/person1.png"
+			"name": "person1_png"
 		},
 		{
-			"name": "person2_png",
+			"url": "textures/person2.png",
 			"type": "image",
-			"url": "textures/person2.png"
+			"name": "person2_png"
 		},
 		{
-			"name": "person3_png",
+			"url": "textures/person3.png",
 			"type": "image",
-			"url": "textures/person3.png"
+			"name": "person3_png"
 		},
 		{
-			"name": "person4_png",
+			"url": "textures/person4.png",
 			"type": "image",
-			"url": "textures/person4.png"
+			"name": "person4_png"
 		},
 		{
-			"name": "person5_png",
+			"url": "textures/person5.png",
 			"type": "image",
-			"url": "textures/person5.png"
+			"name": "person5_png"
 		},
 		{
-			"name": "person6_png",
+			"url": "textures/person6.png",
 			"type": "image",
-			"url": "textures/person6.png"
+			"name": "person6_png"
 		},
 		{
-			"name": "person7_png",
+			"url": "textures/person7.png",
 			"type": "image",
-			"url": "textures/person7.png"
+			"name": "person7_png"
+		},
+		{
+			"url": "textures/arrow_red_over.png",
+			"type": "image",
+			"name": "arrow_red_over_png"
+		},
+		{
+			"url": "textures/circle_yellow.png",
+			"type": "image",
+			"name": "circle_yellow_png"
+		},
+		{
+			"url": "textures/close.png",
+			"type": "image",
+			"name": "close_png"
+		},
+		{
+			"url": "textures/car2.png",
+			"type": "image",
+			"name": "car2_png"
+		},
+		{
+			"url": "textures/background_scene.png",
+			"type": "image",
+			"name": "background_scene_png"
+		},
+		{
+			"name": "sound 15 (inst_intro.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 15 (inst_intro.mp3).mp3"
+		},
+		{
+			"name": "sound 8 (inst_mission_p3.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 8 (inst_mission_p3.mp3).mp3"
+		},
+		{
+			"name": "sound 9 (inst_mission_p2.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 9 (inst_mission_p2.mp3).mp3"
+		},
+		{
+			"name": "sound 10 (inst_mission_p1.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 10 (inst_mission_p1.mp3).mp3"
+		},
+		{
+			"name": "sound 11 (inst_mission_dest_park.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 11 (inst_mission_dest_park.mp3).mp3"
+		},
+		{
+			"name": "sound 12 (inst_mission_dest_mount.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 12 (inst_mission_dest_mount.mp3).mp3"
+		},
+		{
+			"name": "sound 2 (inst_wrongDest.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 2 (inst_wrongDest.mp3).mp3"
+		},
+		{
+			"name": "sound 3 (inst_ticket.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 3 (inst_ticket.mp3).mp3"
+		},
+		{
+			"name": "sound 17 (inst_chkMap.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 17 (inst_chkMap.mp3).mp3"
+		},
+		{
+			"name": "circle_yellow_selected_png",
+			"type": "image",
+			"url": "textures/circle_yellow_selected.png"
+		},
+		{
+			"name": "icon_yellow_selected_png",
+			"type": "image",
+			"url": "textures/icon_yellow_selected.png"
+		},
+		{
+			"name": "sound 26 (go_1_2.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 26 (go_1_2.mp3).mp3"
+		},
+		{
+			"name": "sound 54 (e_directionSun.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 54 (e_directionSun.mp3).mp3"
+		},
+		{
+			"name": "sound 55 (e_directionPark.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 55 (e_directionPark.mp3).mp3"
+		},
+		{
+			"name": "sound 19 (inst_c_exit.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 19 (inst_c_exit.mp3).mp3"
+		},
+		{
+			"name": "sound 21 (goes.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 21 (goes.mp3).mp3"
+		},
+		{
+			"name": "sound 28 (exit_E.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 28 (exit_E.mp3).mp3"
+		},
+		{
+			"name": "sound 29 (exit_D.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 29 (exit_D.mp3).mp3"
+		},
+		{
+			"name": "sound 30 (exit_C.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 30 (exit_C.mp3).mp3"
+		},
+		{
+			"name": "sound 31 (exit_B.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 31 (exit_B.mp3).mp3"
+		},
+		{
+			"name": "sound 32 (exit_A.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 32 (exit_A.mp3).mp3"
+		},
+		{
+			"name": "sound 59 (dest_univ.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 59 (dest_univ.mp3).mp3"
+		},
+		{
+			"name": "sound 60 (dest_trainSt.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 60 (dest_trainSt.mp3).mp3"
+		},
+		{
+			"name": "sound 61 (dest_stadium.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 61 (dest_stadium.mp3).mp3"
+		},
+		{
+			"name": "sound 62 (dest_park.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 62 (dest_park.mp3).mp3"
+		},
+		{
+			"name": "sound 63 (dest_office.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 63 (dest_office.mp3).mp3"
+		},
+		{
+			"name": "sound 64 (dest_oceanWorld.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 64 (dest_oceanWorld.mp3).mp3"
+		},
+		{
+			"name": "sound 65 (dest_gov.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 65 (dest_gov.mp3).mp3"
+		},
+		{
+			"name": "sound 66 (dest_carpark.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 66 (dest_carpark.mp3).mp3"
+		},
+		{
+			"name": "sound 67 (dest_cargo.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 67 (dest_cargo.mp3).mp3"
+		},
+		{
+			"name": "sound 68 (dest_busTerminus.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 68 (dest_busTerminus.mp3).mp3"
+		},
+		{
+			"name": "sound 69 (dest_appleSt.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 69 (dest_appleSt.mp3).mp3"
+		},
+		{
+			"name": "sound 70 (dest_applePlaza.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 70 (dest_applePlaza.mp3).mp3"
+		},
+		{
+			"name": "sound 71 (dest_airport.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 71 (dest_airport.mp3).mp3"
+		},
+		{
+			"name": "sound 1 (inst_wrongExit.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 1 (inst_wrongExit.mp3).mp3"
+		},
+		{
+			"name": "sound 16 (inst_complete.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 16 (inst_complete.mp3).mp3"
+		},
+		{
+			"name": "sound 6 (inst_st_banana.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 6 (inst_st_banana.mp3).mp3"
+		},
+		{
+			"name": "sound 56 (e_directionMount.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 56 (e_directionMount.mp3).mp3"
+		},
+		{
+			"name": "sound 57 (e_directionBanana.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 57 (e_directionBanana.mp3).mp3"
+		},
+		{
+			"name": "sound 58 (e_directionAirport.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 58 (e_directionAirport.mp3).mp3"
+		},
+		{
+			"name": "sound 23 (go_3_4.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 23 (go_3_4.mp3).mp3"
+		},
+		{
+			"name": "sound 18 (inst_c_plm.mp3)_mp3",
+			"type": "sound",
+			"url": "audios/sound 18 (inst_c_plm.mp3).mp3"
 		}
 	]
 }

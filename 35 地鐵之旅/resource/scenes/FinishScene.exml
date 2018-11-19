@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="FinishSceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+<e:Skin class="FinishSceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="startAnimation">
+			<tween:TweenItem target="{finishLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{journeyLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{dateLabel}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="167163c2885" ></w:Config>
 	<e:Rect width="1920" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x989898" top="0" bottom="0"/>
-	<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16"/>
+	<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16" disableRoute="true"/>
 	<e:Rect width="1920" height="1210.91" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xffffff"/>
-	<e:Label text="完成！" y="397" textColor="0x000000" horizontalCenter="0" size="138"/>
+	<e:Label id="finishLabel" text="完成！" y="397" textColor="0x000000" horizontalCenter="0" size="138"/>
 	<e:Label id="journeyLabel" text="旅程一" y="590.94" textColor="0x000000" horizontalCenter="-50.5" size="77"/>
 	<e:Label id="dateLabel" text="完成時間：3分34秒" y="733.36" textColor="0x000000" horizontalCenter="-50" size="77"/>
+	<ns1:RouteComponent x="12" y="436" icon="huaguoshan" visible="false"/>
 </e:Skin>

@@ -2,15 +2,15 @@
 <e:Skin class="StartSceneSkin" width="1920" height="1396" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16714f2cc67" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="background_scene_png"/>
-	<e:Group x="582" y="648.06">
-		<e:Image source="background_journey2_png"/>
-		<e:Label text="旅程一" left="0" right="0" top="0" bottom="0" textColor="0xd75f63" size="87" textAlign="center" verticalAlign="middle" fontFamily="標準黑體"/>
+	<e:Group id="journey1Group" x="582" y="648.06" name="selected">
+		<e:Image id="journey1Image" source="background_journey2_png"/>
+		<e:Label text="旅程一" left="0" right="0" top="0" bottom="0" textColor="0xd75f63" size="87" textAlign="center" verticalAlign="middle"/>
 	</e:Group>
-	<e:Group x="582" y="835.94">
-		<e:Image source="background_journey1_png"/>
-		<e:Label text="旅程二" left="0" right="0" top="0" bottom="0" textColor="0xD75F63" size="87" textAlign="center" verticalAlign="middle" fontFamily="標準黑體"/>
+	<e:Group id="journey2Group" x="582" y="835.94">
+		<e:Image id="journey2Image" source="background_journey1_png"/>
+		<e:Label text="旅程二" left="0" right="0" top="0" bottom="0" textColor="0xD75F63" size="87" textAlign="center" verticalAlign="middle"/>
 	</e:Group>
-	<e:Group x="803.42" y="1097.39">
+	<e:Group id="startGroup" x="803.42" y="1097.39" alpha="0.7">
 		<e:Image source="background_start_png"/>
 		<e:Label text="開始" size="82" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>

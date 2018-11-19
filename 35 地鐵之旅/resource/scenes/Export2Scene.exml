@@ -13,7 +13,7 @@
 	<e:Image x="1479.01" y="833.54" source="check_png" height="382.67" width="387.26"/>
 	<e:Label text="海龍公園" y="97" textColor="0x000000" size="105" horizontalCenter="0" fontFamily="華康中黑體"/>
 	<e:Label text="車站大堂" y="239.42" textColor="0x000000" size="81" horizontalCenter="0" fontFamily="華康中黑體"/>
-	<e:Group width="200" height="200" x="293.99" y="402.94">
+	<e:Group id="exportBackGroup" width="200" height="200" x="293.99" y="402.94" alpha="0.3">
 		<e:Image source="rect_border_grap_png"/>
 		<e:Image source="rect_border_grap_png"/>
 		<e:Image source="rect_border_grap_png"/>
@@ -24,16 +24,17 @@
 			<e:HorizontalLayout gap="18"/>
 		</e:layout>
 	</e:Group>
-	<e:Group width="200" height="200" x="293.99" y="402.94">
-		<e:Label text="出" x="27.27" y="27.27" textColor="0x6dea1c" size="147" bold="true"/>
+	<e:Label id="chuLabel" text="出" x="323.27" y="431.27" textColor="0x6dea1c" size="147" bold="true" alpha="0.3"/>
+	<e:Group id="exportGroup" width="200" height="200" x="293.99" y="402.94" alpha="0.3">
 		<e:Label text="A" x="287.88" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:Label text="B" x="521.21" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:Label text="C" x="754.54" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
-		<e:Label text="C" x="990.9" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
+		<e:Label text="D" x="990.9" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:Label text="E" x="1233.32" y="27.27" textColor="0x6DEA1C" size="147" bold="true"/>
 		<e:layout>
 			<e:BasicLayout/>
 		</e:layout>
 	</e:Group>
+	<ns1:RouteComponent x="12" y="436" icon="hailong" visible="false"/>
 	
 </e:Skin>

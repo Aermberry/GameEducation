@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="RouteComponentSkin" width="1896" height="518" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1671524f348" ></w:Config>
-	<e:Image id="rect_border_blue_png" left="0" right="0" top="0" bottom="0"/>
-	<e:Image x="511.88" y="24.06" source="route2_png"/>
-	<e:Image x="236" y="58" source="route1_png"/>
-	<e:Label text="海龍公園" x="503.3" y="21.57" textColor="0x333333"/>
-	<e:Label text="機場" x="272.27" y="336.76" textColor="0x333333"/>
-	<e:Label text="香蕉" x="481.88" y="336.76" textColor="0x333333"/>
-	<e:Label text="桃花" x="637.33" y="277.06" textColor="0x333333"/>
-	<e:Label text="太陽" x="791.88" y="277.06" textColor="0x333333"/>
-	<e:Label text="花果山" x="967.64" y="277.06" textColor="0x333333"/>
-	<e:Label text="火車路線" x="952.49" y="84.03" textColor="0xebb69e"/>
-	<e:Label text="荔枝園" x="1194.91" y="277.06" textColor="0x333333"/>
-	<e:Label text="菊花" x="1379.76" y="277.06" textColor="0x333333"/>
-	<e:Label text="蘋果" x="1549.45" y="277.06" textColor="0x333333"/>
-	<e:Label text="海龍線" x="413.3" y="70.96" textColor="0x5f9dcb"/>
-	<e:Label text="機場線 " x="136.91" y="280.88" textColor="0x699828"/>
-	<e:Label text="花果山線 " x="1658.06" y="169.51" textColor="0xff0000"/>
-	<e:Group width="1515.15" height="448.48" x="203.06" y="-39" anchorOffsetX="0" anchorOffsetY="0">
-		<e:Image x="333.03" y="96.09" source="icon_station_png"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_blue_png"/>
+	<e:Image x="511.88" y="39.21" source="route2_png"/>
+	<e:Image x="236" y="73.15" source="route1_png"/>
+	<e:Label text="海龍公園" x="503.3" y="36.72" textColor="0x333333"/>
+	<e:Label text="機場" x="272.27" y="351.91" textColor="0x333333"/>
+	<e:Label text="香蕉" x="481.88" y="351.91" textColor="0x333333"/>
+	<e:Label text="桃花" x="637.33" y="292.21" textColor="0x333333"/>
+	<e:Label text="太陽" x="791.88" y="292.21" textColor="0x333333"/>
+	<e:Label text="花果山" x="967.64" y="292.21" textColor="0x333333"/>
+	<e:Label text="火車路線" x="952.49" y="99.18" textColor="0xebb69e"/>
+	<e:Label text="荔枝園" x="1194.91" y="292.21" textColor="0x333333"/>
+	<e:Label text="菊花" x="1379.76" y="292.21" textColor="0x333333"/>
+	<e:Label text="蘋果" x="1549.45" y="292.21" textColor="0x333333"/>
+	<e:Label text="海龍線" x="413.3" y="86.11" textColor="0x5f9dcb"/>
+	<e:Label text="機場線 " x="136.91" y="296.03" textColor="0x699828"/>
+	<e:Label text="花果山線 " x="1658.06" y="184.66" textColor="0xff0000"/>
+	<e:Group id="iconGroup" width="1515.15" height="448.48" x="203.06" y="-23.85" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="333.03" y="96.09" source="icon_station_png" name="hailong" width="56" height="56"/>
 		<e:Image x="436.97" y="251.54" source="icon_station_png"/>
 		<e:Image x="68.18" y="303.96" source="icon_station_png"/>
-		<e:Image x="779.39" y="251.54" source="icon_station_png"/>
+		<e:Image x="779.39" y="251.54" source="icon_station_png" name="huaguoshan" width="56" height="56"/>
 		<e:Image x="1000.61" y="251.54" source="icon_station_png"/>
 		<e:Image x="1179.4" y="251.54" source="icon_station_png"/>
 		<e:Image x="1349.1" y="251.54" source="icon_station_png"/>
 		<e:Image x="279.03" y="250.85" source="icon_transfer_png"/>
 		<e:Image x="589.03" y="194.18" source="icon_transfer_png"/>
 	</e:Group>
+	<e:Image x="45.27" y="402.67" source="circle_yellow_png"/>
+	<e:Label text="目的地" x="121.27" y="414.88" textColor="0x000000" size="40"/>
+	<e:Image id="closeImage" x="1748" y="30" source="close_png" right="60"/>
 </e:Skin>

@@ -1,4 +1,7 @@
 class Arriving2Scene extends eui.Component implements  eui.UIComponent {
+	
+	private startAnimation: egret.tween.TweenGroup;
+	
 	public constructor() {
 		super();
 	}
@@ -8,10 +11,11 @@ class Arriving2Scene extends eui.Component implements  eui.UIComponent {
 		super.partAdded(partName,instance);
 	}
 
-
-	protected childrenCreated():void
+	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		await this.startAnimation.playOnceAsync();
+		Main.instance.gotoScene(new FinishScene());
 	}
 	
 }
