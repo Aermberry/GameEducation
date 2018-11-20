@@ -20,8 +20,8 @@
 		<e:Label fontFamily="Hoffmanhand" text="Here’s your prize" bold="true" size="115" textColor="#000000" y="594.09" horizontalCenter="19" />
 		
 		<e:Image id="medalImage" horizontalCenter="0" y="750.15" scaleX="0.7" scaleY="0.7"  source="bird_png"/>
-		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7" visible="false" />
-		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="#000000" size="80" bold="true" x="824.09" y="980" />
+		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7"  visible="false"/>
+		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="#000000" size="80" bold="true" x="888.09" y="980" />
 		<e:Image id="exitImage" source="arrow_right_png" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
 		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="#000000" size="80" bold="true" x="890.75" y="1100" />
 		<e:Label id="questionNumber" text="0" x="500.91" y="484.24" size="115" textColor="0x000000" fontFamily="Hoffmanhand"/>
