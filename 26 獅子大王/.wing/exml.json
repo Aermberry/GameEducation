@@ -10,7 +10,7 @@
         "parentPath": ""
     },
     "global": {
-        "globalAutoLayerMarkEnable": false
+        "globalAutoLayerMarkEnable": true
     },
     "16715e9b262": {
         "path": "components\\achieveComponent.ts",
@@ -42,9 +42,9 @@
         "class": "startMask",
         "parentPath": ""
     },
-    "1672ed52ac4": {
-        "path": "components\\flustered.ts",
-        "class": "flustered",
+    "16730373aef": {
+        "path": "scenes\\invitation.ts",
+        "class": "invitation",
         "parentPath": ""
     }
 }

@@ -26,14 +26,18 @@
         "EditableLabel": "resource/components/EditableLabel.exml",
         "tipsComponent": "resource/components/tipsComponent.exml",
         "maskPanel": "resource/components/maskPanel.exml",
-        "flustered": "resource/components/flustered.exml"
+        "flustered": "resource/components/flustered.exml",
+        "resultScene": "resource/scenes/resultScene.exml",
+        "invitation": "resource/compponents/invitation.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [
         "resource/components/achieveComponent.exml",
         "resource/components/bulbComponent.exml",
         "resource/components/EditableLabel.exml",
+        "resource/components/flustered.exml",
         "resource/components/maskPanel.exml",
+        "resource/components/tipsComponent.exml",
         "resource/eui_skins/ButtonSkin.exml",
         "resource/eui_skins/CheckBoxSkin.exml",
         "resource/eui_skins/HScrollBarSkin.exml",
@@ -44,7 +48,6 @@
         "resource/eui_skins/RadioButtonSkin.exml",
         "resource/eui_skins/ScrollerSkin.exml",
         "resource/eui_skins/TextInputSkin.exml",
-        "resource/eui_skins/tipsComponent.exml",
         "resource/eui_skins/ToggleSwitchSkin.exml",
         "resource/eui_skins/VScrollBarSkin.exml",
         "resource/eui_skins/VSliderSkin.exml",
@@ -53,6 +56,7 @@
         "resource/scenes/optionsScene.exml",
         "resource/scenes/pigScene.exml",
         "resource/scenes/rabbitScene.exml",
+        "resource/scenes/resultScene.exml",
         "resource/scenes/sheepScene.exml",
         "resource/scenes/snakeScene.exml",
         "resource/scenes/startScene.exml"
