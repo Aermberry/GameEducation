@@ -63,6 +63,18 @@
 			<e:Label text="嘉年華的舉辦日期在\n哪天？請參考範例：" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
 			<e:Label text="日期：六月二十日" y="222.66" x="-15.82" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
+		<e:Group x="293.94" y="221.22" visible="false">
+			<e:Label text="嘉年華在甚麽時間舉\n行？可參考範例的寫法：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
+			<e:Label text="時間：上午十時" y="225.69" x="-70.37" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
+		</e:Group>
+		<e:Group x="293.94" y="221.22" visible="false">
+			<e:Label text="我（發卡人）的姓名\n應寫在哪兒？不如參\n考以下        吧！" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
+			<e:Label text="格式" y="225.69" x="202.36" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
+		</e:Group>
+			<e:Group x="330.3" y="245.46">
+			<e:Label text="邀請卡是哪天發出呢？\n可參考範例：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
+			<e:Label text="二零零零年九月一日" y="228.72" x="-55.22" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
+		</e:Group>
 	</e:Group>
 	<e:Group id="returnGroup" x="1325.82" y="644.06">
 		<e:Label text="返回" x="0" y="40.55" textColor="0x020202" anchorOffsetX="0" width="205.45" anchorOffsetY="0" height="102.73" size="94" bold="true"/>

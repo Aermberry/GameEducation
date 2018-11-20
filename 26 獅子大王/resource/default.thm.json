@@ -28,7 +28,7 @@
         "maskPanel": "resource/components/maskPanel.exml",
         "flustered": "resource/components/flustered.exml",
         "resultScene": "resource/scenes/resultScene.exml",
-        "invitation": "resource/compponents/invitation.exml"
+        "invitation": "resource/scenes/invitation.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [
