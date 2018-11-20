@@ -41,5 +41,10 @@
         "path": "components\\startMask.ts",
         "class": "startMask",
         "parentPath": ""
+    },
+    "1672ed52ac4": {
+        "path": "components\\flustered.ts",
+        "class": "flustered",
+        "parentPath": ""
     }
 }
