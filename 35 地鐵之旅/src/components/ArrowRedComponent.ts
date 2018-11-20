@@ -29,6 +29,7 @@ class ArrowRedComponent extends eui.Component implements  eui.UIComponent {
 	public disable(): void
 	{
 		this.enabled = false;
+		this.currentState = 'disable';
 	}
 
 	public enable(): void
