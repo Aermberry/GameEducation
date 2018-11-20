@@ -28,7 +28,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	private desktopWords = []; //从词库中选到桌子上的单词，用于解决桌面上出现重复词的问题
 	private spokenWord = 'a'; //语音播报出来的单词，需要用户选中该单词才能进入下一关。
 	private wordRepo: WordRepository;
-	private questionNumber = 1; //用户答对题目数量
+	public questionNumber = 1; //用户答对题目数量
 
 	public constructor(wordRepo: WordRepository) {
 		super();
@@ -118,6 +118,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.allWords = this.wordRepo.getAll();
 		this.readyTweenGroup.play(0);
+		this.questionNumber = 1;
 	}
 
 	private resetTargetWords() {
@@ -239,7 +240,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 			console.log('用户答对进入下一轮');
 			this.passedCurrentRound = false;
 			this.startNewRound();
-			console.log(this.questionNumber++)
+			this.questionNumber++;
 		}
 	}
 
