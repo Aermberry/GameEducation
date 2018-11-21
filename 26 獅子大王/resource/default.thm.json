@@ -28,7 +28,8 @@
 		"maskPanel": "resource/components/maskPanel.exml",
 		"flustered": "resource/components/flustered.exml",
 		"resultScene": "resource/scenes/resultScene.exml",
-		"invitation": "resource/scenes/invitation.exml"
+		"invitation": "resource/scenes/invitation.exml",
+		"stampComponent": "resource/components/stampComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -37,6 +38,7 @@
 		"resource/components/EditableLabel.exml",
 		"resource/components/flustered.exml",
 		"resource/components/maskPanel.exml",
+		"resource/components/stampComponent.exml",
 		"resource/components/tipsComponent.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",

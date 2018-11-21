@@ -287,7 +287,7 @@
 		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
 		         visible="false" />
 	</e:Group>
-	<e:Group id="rabbitDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
+	<e:Group id="snakeDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
 		         anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0" />
 		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
@@ -311,7 +311,7 @@
 			<e:Label text="名" anchorOffsetY="0" height="66.36" x="0.91" y="76.66" anchorOffsetX="0" width="63.97" size="50"
 			         textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
 		</e:Group>
-		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="華康中黑體" bold="true"/>
+		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
 	</e:Group>
 	<e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"

@@ -286,30 +286,30 @@
                  x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
                  visible="false" />
     </e:Group>
-    <e:Group id="rabbitDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
+    <e:Group id="ratDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
         <e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
                  anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0" />
         <e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
                  anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
         <e:Label text="好像有什麽地方寫錯\n了，需要提示嗎？按\n下方的提示按鈕吧" x="66.67" lineSpacing="25" size="50" y="-21.21"
                  textColor="0x000000" fontFamily="華康中黑體" bold="true"  visible="false"/>
-        <e:Group x="36.35" y="-24.25">
+        <e:Group x="36.35" y="-24.25" visible="false">
             <e:Label text="對不起! 我想參加\n嘉年華，只是不知\n聚會的地點？" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0"
                      width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
             <e:Label text="聚會的地點" anchorOffsetY="0" height="57.28" x="-0.07" y="149.8" anchorOffsetX="0" width="123.05"
                      size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
         </e:Group>
         <e:Group x="69.69" y="3.03" visible="false">
-            <e:Label text="讓我替你寫上聚會\n的時間吧！是下午\n六時吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
+            <e:Label text="啊！原來地點是森林\n果園，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
                      anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
                      fontFamily="華康中黑體" bold="true" />
-            <e:Label text="下午" anchorOffsetY="0" height="60.3" x="305.78" y="76.17" anchorOffsetX="0" width="111.37"
+            <e:Label text="森林" anchorOffsetY="0" height="60.3" x="357.35" y="-1.11" anchorOffsetX="0" width="111.37"
                      size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
-            <e:Label text="六時" anchorOffsetY="0" height="66.36" x="-0.42" y="148.66" anchorOffsetX="0" width="114.64"
+            <e:Label text="果園" anchorOffsetY="0" height="66.36" x="-0.42" y="75.94" anchorOffsetX="0" width="114.64"
                      size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
         </e:Group>
-        <e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體"
-                 bold="true"  visible="false"/>
+        <e:Label text="太好了！\n大王萬歲！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體"
+                 bold="true" />
     </e:Group>
     <e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
             x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"

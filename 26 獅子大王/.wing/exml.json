@@ -46,5 +46,10 @@
         "path": "scenes\\invitation.ts",
         "class": "invitation",
         "parentPath": ""
+    },
+    "1673407dcb3": {
+        "path": "components\\stampComponent.ts",
+        "class": "stampComponent",
+        "parentPath": ""
     }
 }
