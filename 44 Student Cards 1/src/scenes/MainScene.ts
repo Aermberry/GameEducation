@@ -5,8 +5,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private colorTips: eui.Group;
 	private helpGroup: eui.Group;
 	private alertGroup: eui.Group;
-	
-	private currentQuestionIndex = 0; //当前问题，用户只能按顺序拖动label，逐条回答问题
+
+	private currentQuestionIndex = 0; //当前问题
+	private currentTarget;
 
 	public constructor() {
 		super();
@@ -24,16 +25,14 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		lzlib.SoundUtility.playSound('02_mp3');
 	}
 
-	private initHelpButton(): void
-	{
+	private initHelpButton(): void {
 		this.helpGroup.$children.forEach(child => {
 			mouse.setButtonMode(child, true);
 			child.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onHelpButtonClick, this);
 		});
 	}
 
-	private async onHelpButtonClick(): Promise<void>
-	{
+	private async onHelpButtonClick(): Promise<void> {
 		let originalChildIndex = this.getChildIndex(this.alertGroup);
 		this.setChildIndex(this.alertGroup, this.numChildren - 1);
 		this.alertGroup.getChildAt(this.currentQuestionIndex).visible = true;
@@ -49,54 +48,72 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			drag.enableDrag(child, false);
 			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
+		console.log(this.currentQuestionIndex);
 		this.initDropableLabel();
 	}
 
-	private initDropableLabel(): void
-	{
-		let drop = new lzlib.Drop();
-		this.addChild(drop);
+	private initDropableLabel(): void {
 
-		let child = this.dropGroup.getChildAt(this.currentQuestionIndex);
-		drop.enableDrop(child);
-		child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
+
+		for (let child of this.dropGroup.$children) {
+			let drop = new lzlib.Drop();
+			this.addChild(drop);
+			drop.enableDrop(child);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
+		}
 	}
 
 	private async onLabelDrop(e: lzlib.LzDragEvent): Promise<void> {
 		let targetComponent = e.target as eui.Label;
+		this.currentTarget = targetComponent.text.toString();
 		let dragComponent = e.dragObject as eui.Label;
+
+		this.getCurrentIndex();
 
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
+
 			this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = false;
 			this.confirmGroup.getChildAt(this.currentQuestionIndex).visible = true;
-			
+
 			if (this.confirmGroup.$children.every(child => child.visible)) {
 				await lzlib.SoundUtility.stopCurrentSound();
 				await lzlib.ThreadUtility.sleep(2000)
 				Main.instance.gotoScene(new FinishScene());
 			} else {
-				this.currentQuestionIndex++;
 				this.initDropableLabel();
-				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
+
 			}
 		}
 		else {
+			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			this.showCorrectLabelToDrag();
 		}
 	}
 
-	private onDragCancel(e: lzlib.LzDragEvent): void 
-	{
+	private getCurrentIndex(): void {
+
+		for (let child of this.dropGroup.$children) {
+			let labelText = (child as eui.Label).text
+			if (labelText.toString() == this.currentTarget) {
+				let index = this.dropGroup.getChildIndex(child);
+				console.log(index)
+				this.currentQuestionIndex = index;
+			}
+		}
+	}
+
+
+	private onDragCancel(e: lzlib.LzDragEvent): void {
+		this.getCurrentIndex();
 		this.showCorrectLabelToDrag();
 	}
 
 	//提示用户应该拖动哪个label
-	private async showCorrectLabelToDrag(): Promise<void>
-	{
+	private async showCorrectLabelToDrag(): Promise<void> {
 		this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(2000);
 		this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
