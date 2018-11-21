@@ -35,11 +35,13 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 			CurrectJourneyRepository.termiuns = 'huaguoshan';
 			CurrectJourneyRepository.currectJourney = '旅程一';
 			CurrectJourneyRepository.startDate = new Date();
+			CurrectJourneyRepository.arriving = '花果山站';
 			Main.instance.gotoScene(new EntranceScene);
 		}else{
 			CurrectJourneyRepository.termiuns = 'hailong';
 			CurrectJourneyRepository.currectJourney = '旅程二';
 			CurrectJourneyRepository.startDate = new Date();
+			CurrectJourneyRepository.arriving = '海龍公園站';
 			Main.instance.gotoScene(new Entrance2Scene);
 		}
 	}

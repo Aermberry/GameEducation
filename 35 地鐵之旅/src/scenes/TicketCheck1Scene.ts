@@ -24,7 +24,7 @@ class TicketCheck1Scene extends eui.Component implements  eui.UIComponent {
 
 	private onPlatformClick(): void
 	{
-		Main.instance.gotoScene(new WaitingScene(this.lineRepo.line1,0));
+		Main.instance.gotoScene(new WaitingScene(this.lineRepo.line1,1));
 	}
 
 	private async playMP3(): Promise<void>

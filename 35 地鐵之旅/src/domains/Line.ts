@@ -4,7 +4,12 @@ class Line {
 
 	private position: number;
 
-	public constructor(stations: Station[]) {
+	public constructor() {
+		
+	}
+
+	public setStations(stations: Station[]): void
+	{
 		this.stations = stations;
 	}
 
@@ -16,14 +21,17 @@ class Line {
 
 	public getLastStation(): Station
 	{
-		console.log(this.stations.length-1);
-		console.log(this.stations[this.stations.length-1]);
 		return this.stations[this.stations.length-1];
 	}
 
 	public getNextStation(): Station
 	{
 		return this.stations[this.position+1];
+	}
+
+	public nextStationCursor(): Station
+	{
+		return this.stations[this.position++];
 	}
 
 	public getStartingStation(): Station
@@ -44,5 +52,13 @@ class Line {
 	public isStartingStation(): boolean
 	{
 		return this.position == 0;
+	}
+
+	public getPosition(name: string): number
+	{
+		for(let i = 0; i < this.stations.length; i++)
+		{
+			if(name == this.stations[i].stationName) return i
+		}
 	}
 }

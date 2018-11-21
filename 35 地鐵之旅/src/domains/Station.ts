@@ -5,6 +5,8 @@ class Station {
 	// private terminalStation: string;
 	// private startingStation: string;
 	private mp3: string[]; //站点播放的MP3
+	private nextStationMP3: string[];
+	private lastStationMP3: string[];
 	private background: string;//站点背景
 	private upperStrataLine: Line;
 	private lowerStrataLine: Line;
@@ -71,6 +73,22 @@ class Station {
 		for(let i = 0; i < this.mp3.length; i++)
 		{
 			await lzlib.SoundUtility.playSound(this.mp3[i]);
+		}
+	}
+
+	public async playNextStationMP3(): Promise<void>
+	{
+		for(let i = 0; i < this.nextStationMP3.length; i++)
+		{
+			await lzlib.SoundUtility.playSound(this.nextStationMP3[i]);
+		}
+	}
+
+	public async playLastStationMP3(): Promise<void>
+	{
+		for(let i = 0; i < this.lastStationMP3.length; i++)
+		{
+			await lzlib.SoundUtility.playSound(this.lastStationMP3[i]);
 		}
 	}
 

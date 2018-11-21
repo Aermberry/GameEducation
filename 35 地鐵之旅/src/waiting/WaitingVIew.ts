@@ -13,4 +13,19 @@ interface WaitingVIew {
     disableLeftArrow(): void;
     enableRightArrow(): void;
     disableRightArrow(): void;
+    showOperationLeft(): void;
+    showOperationRight(): void;
+    hideOperationLeft(): void;
+    hideOperationRight(): void;
+    showExitButtonLeft(): void;
+    hideExitButtonLeft(): void;
+    showExitButtonRight(): void;
+    hideExitButtonright(): void;
+    setTipTextLeft(text: string): void;
+    setTipTextRight(text: string): void;
+    showTipLeft(): void;
+    hideTipLeft(): void;
+    showTipRight(): void;
+    hideTipRight(): void;
+    initMouseOperation(): void;
 }

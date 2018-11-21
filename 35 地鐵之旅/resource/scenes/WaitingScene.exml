@@ -40,23 +40,31 @@
 		<e:Label text="海 龍 公 園 站" y="158.84" textColor="0x000000" width="116" size="116" horizontalCenter="0.5" lineSpacing="8" name="text"/>
 	</e:Group>
 	<e:Group id="operateLeftGroup" x="580" y="304">
-		<e:Group width="200" height="200" x="20">
+		<e:Group id="strataLeftGroup" width="200" height="200" x="20">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_grap_png"/>
 			<e:Image source="upper_strata_png" anchorOffsetX="0" width="148.85" anchorOffsetY="0" height="143" y="28" x="24"/>
 		</e:Group>
-		<e:Group width="200" height="200" x="-188">
+		<e:Group width="200" height="200" x="-188" name="exit">
 			<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_grap_png"/>
 			<e:Label text="出" x="24" y="20" textColor="0x0bea0e" size="148" bold="true"/>
 		</e:Group>
+		<e:Group id="tipLeftGroup" x="-106" name="tip" y="-50" visible="false">
+			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+			<e:Label text="往下層" scaleX="1" scaleY="1" textColor="0x000000" size="68" name="tipText"/>
+		</e:Group>
 	</e:Group>
 	<e:Group id="operateRightGroup" x="1328" y="304">
-		<e:Group width="200" height="200" x="-184">
+		<e:Group id="strataRightGroup" width="200" height="200" x="-184">
 		<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_grap_png"/>
 		<e:Image source="upper_strata_png" anchorOffsetX="0" width="148.85" anchorOffsetY="0" height="143" y="28" x="176" scaleX="-1"/>
 		</e:Group>
-		<e:Group width="200" height="200" x="24">
+		<e:Group width="200" height="200" x="24" name="exit">
 		<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_grap_png"/>
 		<e:Label text="出" x="24" y="20" textColor="0x0BEA0E" size="148" bold="true"/>
+		</e:Group>
+		<e:Group id="tipRightGroup" x="-106" y="-50" name="tip" visible="false">
+			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+			<e:Label text="往下層" scaleX="1" scaleY="1" textColor="0x000000" size="68" name="tipText"/>
 		</e:Group>
 	</e:Group>
 	<ns1:RouteComponent id="routeComponent" width="1852" height="528" x="32" y="612" anchorOffsetX="0" anchorOffsetY="0" icon="hailong" visible="false"/>

@@ -3,6 +3,7 @@ class CurrectJourneyRepository {
 	public static currectJourney = '旅程一';
 	public static startDate = new Date;
 	public static termiuns = 'huaguoshan';
+	public static arriving = '花果山站';
 
 	private termiunAudios = {
 		'huaguoshan': 'sound 12 (inst_mission_dest_mount.mp3)_mp3',

@@ -1,7 +1,11 @@
 class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew {
 
+	private tipLeftGroup: eui.Group;
+	private tipRightGroup: eui.Group;
 	private markingLeft: eui.Group;
 	private markingRight: eui.Group;
+	private strataLeftGroup: eui.Group;
+	private strataRightGroup: eui.Group;
 	private operateLeftGroup: eui.Group;
 	private operateRightGroup: eui.Group;
 	private pillarGroup: eui.Group;
@@ -18,6 +22,12 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 
 	private position: number;//在当前线的第position站
 
+	private operationAudios = {
+		'往下層': 'sound 22 (go_3and4.mp3)_mp3',
+		'往上層': 'sound 26 (go_1_2.mp3)_mp3',
+		'往大堂': 'sound 20 (goesLobby.mp3)_mp3'
+	}
+
 	public constructor(line: Line,position:number) {
 		super();
 		this.currentLine = line;
@@ -33,6 +43,35 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	{
 		super.childrenCreated();
 		this.presenter.loadView(this,this.currentLine,this.position);
+	}
+
+	public initMouseOperation(): void
+	{
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.operateLeftGroup, true);
+		mouse.setButtonMode(this.operateRightGroup, true);
+		this.operateLeftGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onOperateLeftOver, this);
+		this.operateRightGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onOperateRightOver, this);
+		this.operateLeftGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.presenter.onOperateLeftOut, this.presenter);
+		this.operateRightGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.presenter.onOperateRightOut, this.presenter);
+		this.strataLeftGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onStrataClick, this.presenter);
+		this.strataRightGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onStrataClick, this.presenter);
+		this.arrowLeft.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowLeftClick, this.presenter);
+		this.arrowRight.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowRightClick, this.presenter);
+	}
+
+	public onOperateLeftOver(e: egret.TouchEvent): void
+	{
+		this.showTipLeft();
+		let label = this.tipLeftGroup.getChildByName('tipText') as eui.Label;
+		lzlib.SoundUtility.playSound(this.operationAudios[label.text]);
+	}
+
+	public onOperateRightOver(e: egret.TouchEvent): void
+	{
+		this.showTipRight();
+		let label = this.tipRightGroup.getChildByName('tipText') as eui.Label;
+		lzlib.SoundUtility.playSound(this.operationAudios[label.text]);
 	}
 
 	public stationColor(backPath: string): void
@@ -120,5 +159,78 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	{
 		this.arrowRight.disable();
 	}
+
+	public showOperationLeft(): void
+	{
+		this.operateLeftGroup.visible = true;
+	}
+
+	public showOperationRight(): void
+	{
+		this.operateRightGroup.visible = true;
+	}
+
+	public hideOperationLeft(): void
+	{
+		this.operateLeftGroup.visible = false;
+	}
+
+	public hideOperationRight(): void
+	{
+		this.operateRightGroup.visible = false;
+	}
+
+	public showExitButtonLeft(): void
+	{
+		(this.operateLeftGroup.getChildByName('exit') as eui.Group).visible = true;
+	}
+
+	public hideExitButtonLeft(): void
+	{
+		(this.operateLeftGroup.getChildByName('exit') as eui.Group).visible = false;
+	}
+
+	public showExitButtonRight(): void
+	{
+		(this.operateRightGroup.getChildByName('exit') as eui.Group).visible = true;
+	}
+
+	public hideExitButtonright(): void
+	{
+		(this.operateRightGroup.getChildByName('exit') as eui.Group).visible = false;
+	}
+
+	public setTipTextLeft(text: string): void
+	{
+		let label = this.tipLeftGroup.getChildByName('tipText') as eui.Label;
+		label.text = text;
+	}	
+
+	public setTipTextRight(text: string): void
+	{
+		let label = this.tipRightGroup.getChildByName('tipText') as eui.Label;
+		label.text = text;
+	}	
+
+	public showTipLeft(): void
+	{
+		this.tipLeftGroup.visible = true;
+	}
+
+	public hideTipLeft(): void
+	{
+		this.tipLeftGroup.visible = false;
+	}
+
+	public showTipRight(): void
+	{
+		this.tipRightGroup.visible = true;
+	}
+
+	public hideTipRight(): void
+	{
+		this.tipRightGroup.visible = false;
+	}
+
 
 }
