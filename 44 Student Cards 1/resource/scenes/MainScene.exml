@@ -68,7 +68,7 @@
 		<Ui:Tips id="clubTip" width="507.88" height="244.24" x="1018.73" y="698" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Which club does Mary join?" visible="false"/>
 	</e:Group>
 
-	<e:Group id="helpGroup" x="1566" y="409.09" anchorOffsetY="0" height="739">
+	<e:Group id="helpGroup" x="1566" y="409.09" anchorOffsetY="0" height="739" touchThrough="true">
 		<e:Button label="dummy" x="0" y="-10"  alpha="0" visible="false"/>
 		<e:Button label="dummy" x="0" y="-10"  alpha="0" visible="false"/>
 		<e:Button id="ageButton" label="Help" x="0" y="0"  visible="false"/>
@@ -88,14 +88,14 @@
 		<e:Label text="playing the piano" x="62.32" y="965" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 		<e:Label text="Music Club" x="183.32" y="1054" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
 	</e:Group>
-	<e:Group id="dropGroup" x="965.12" y="242.42" anchorOffsetX="0" width="470">
-		<e:Label text="Mary Li" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" y="45.45" x="151.51" anchorOffsetX="0" width="362.97" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
-		<e:Label text="3A" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" y="109.02" x="145.5" anchorOffsetX="0" width="373.09" textAlign="center" anchorOffsetY="0" height="56.09" visible="false"/>
-		<e:Label text="9" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="172.91" x="105.58" anchorOffsetX="0" width="412.33" textAlign="center" anchorOffsetY="0" height="62.15" visible="false"/>
+	<e:Group id="dropGroup" x="965.12" y="242.42" anchorOffsetX="0" width="470" touchThrough="true">
+		<e:Label text="Mary Li" size="47" fontFamily="Comic Sans MS" textColor="0x0091ff" y="45.45" x="-0.49" anchorOffsetX="0" width="585.97" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
+		<e:Label text="3A" fontFamily="Comic Sans MS" size="47" textColor="0x0091ff" y="109.02" x="3.5" anchorOffsetX="0" width="515.09" textAlign="center" anchorOffsetY="0" height="56.09" visible="false"/>
+		<e:Label text="9" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="172.91" x="1.58" anchorOffsetX="0" width="516.33" textAlign="center" anchorOffsetY="0" height="62.15" visible="false"/>
 		<e:Label text="                  Flat B, 6/F,\n Happy Garden, Sha Tin." fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="left" lineSpacing="15" y="320.94" x="-3.33" anchorOffsetX="0" width="525.12" anchorOffsetY="0" height="105.97" visible="false"/>
-		<e:Label text="4th April" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="507.97" x="208.63" anchorOffsetX="0" width="349.49" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
-		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="655.24" x="156.34" anchorOffsetX="0" width="387.24" anchorOffsetY="0" height="63.97" visible="false"/>
+		<e:Label text="4th April" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="507.97" x="3.63" anchorOffsetX="0" width="642.49" anchorOffsetY="0" height="53.06" textAlign="center" visible="false"/>
+		<e:Label text="reading" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="655.24" x="2.34" anchorOffsetX="0" width="547.24" anchorOffsetY="0" height="63.97" visible="false"/>
 		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="720.67" x="0" anchorOffsetX="0" width="555.91" anchorOffsetY="0" height="69" visible="false"/>
-		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="841.33" x="118.12" anchorOffsetX="0" width="397.64" anchorOffsetY="0" height="65.18" textAlign="center" visible="false"/>
+		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="841.33" x="0.12" anchorOffsetX="0" width="538.64" anchorOffsetY="0" height="65.18" textAlign="center" visible="false"/>
 	</e:Group>
 </e:Skin>
