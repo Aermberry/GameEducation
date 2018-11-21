@@ -5,8 +5,7 @@ class Station {
 	// private terminalStation: string;
 	// private startingStation: string;
 	private mp3: string[]; //站点播放的MP3
-	private nextStationMP3: string[];
-	private lastStationMP3: string[];
+	private stationAudio: StationAudio;
 	private background: string;//站点背景
 	private upperStrataLine: Line;
 	private lowerStrataLine: Line;
@@ -18,8 +17,9 @@ class Station {
 	// public isHaveLowerStrat: boolean;//当前站点是否有下层
 
 
-	public constructor(mp3:string[],background:string,name:string,upperLine = null,lowerLine = null,isUpper = true,exitInLeft = true,is1And2 = true) {
+	public constructor(mp3:string[],stationAudio:StationAudio,background:string,name:string,upperLine = null,lowerLine = null,isUpper = true,exitInLeft = true,is1And2 = true) {
 		this.mp3 = mp3;
+		this.stationAudio = stationAudio;
 		this.background = background;
 		this.stationName = name;
 		this.upperStrataLine = upperLine;
@@ -73,22 +73,6 @@ class Station {
 		for(let i = 0; i < this.mp3.length; i++)
 		{
 			await lzlib.SoundUtility.playSound(this.mp3[i]);
-		}
-	}
-
-	public async playNextStationMP3(): Promise<void>
-	{
-		for(let i = 0; i < this.nextStationMP3.length; i++)
-		{
-			await lzlib.SoundUtility.playSound(this.nextStationMP3[i]);
-		}
-	}
-
-	public async playLastStationMP3(): Promise<void>
-	{
-		for(let i = 0; i < this.lastStationMP3.length; i++)
-		{
-			await lzlib.SoundUtility.playSound(this.lastStationMP3[i]);
 		}
 	}
 
