@@ -43,8 +43,10 @@ class SelectTaskScene extends eui.Component implements  eui.UIComponent {
 		this.maskRect.visible = false;
 		this.startMask.visible = false;
 		this.startButton2.visible = false;
-		lzlib.SoundUtility.playSound('select_task_mp3');
-		await this.playMaskAnimation();
+		init();
+
+		// lzlib.SoundUtility.playSound('select_task_mp3');
+		// await this.playMaskAnimation();
 	}
 
 	private onTask1Begin(): void
