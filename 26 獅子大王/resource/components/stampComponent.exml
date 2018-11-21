@@ -49,8 +49,78 @@
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="changSzieAnim">
+			<tween:TweenItem target="{image2}">
+				<tween:Set>
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}" rotation="{0}" alpha="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object scaleX="{1.5}" scaleY="{1.5}" rotation="{0}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{0}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{-9}" alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{9}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object scaleX="{0.8}" scaleY="{0.8}" rotation="{-9}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object rotation="{9}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object rotation="{-9}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object rotation="{0}" scaleX="{0.8}" scaleY="{0.8}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1673407dcb3" ></w:Config>
-	<e:Image id="image" source="stamper_normal0_png" anchorOffsetX.normal="0" anchorOffsetY.normal="0" y.normal="76" x.normal="110"/>
-	<e:Image id="image0" source="stamper_normal1_png" x.normal="0" y.normal="0"/>
+	<e:Group x="0" y="0" alpha.normal="1">
+		<e:Image id="image" source="stamper_normal0_png" alpha.normal="1" alpha.hover="0" alpha.active="0"/>
+		<e:Image id="image0" source="stamper_normal1_png" alpha.normal="1" alpha.hover="0" alpha.active="0"/>
+	</e:Group>
+	<e:Image id="image2" source="stamper_active_png" alpha="1" verticalCenter="0" alpha.normal="0" horizontalCenter.hover="0" verticalCenter.hover="0" alpha.hover="0" horizontalCenter.active="0" verticalCenter.active="0" alpha.active="1"/>
+	<e:Image id="image1" source="stamper_hover_png" alpha="1"  verticalCenter="0" alpha.normal="0" horizontalCenter.hover="0" verticalCenter.hover="0" alpha.hover="1" horizontalCenter.active="0" verticalCenter.active="0" alpha.active="0"/>
 </e:Skin>
