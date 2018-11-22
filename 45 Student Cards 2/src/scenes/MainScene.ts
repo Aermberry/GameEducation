@@ -5,7 +5,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private alterGroup: eui.Group;
 	private colorTips: eui.Group;
 
-	private currentQuestionIndex = 0;// 当前问题，用户只能按顺序拖动label,逐条回答问题
+	private currentQuestionIndex = 0;// 記錄当前问题index
+	private currentTarget;//紀錄當前拖動的問題對象
+	private currentTargets;
 
 	public constructor() {
 		super();
@@ -23,7 +25,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 	private async loadVoic(): Promise<void> {
 		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
-			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
+			// this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			this.initHelpButton();
 			this.initDropable();
 		})
@@ -40,23 +42,29 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDropableLabel(): void {
-		let drop = new lzlib.Drop();
-		this.addChild(drop);
-		let child = this.dropGroup.getChildAt(this.currentQuestionIndex);
-		drop.enableDrop(child);
-		child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this)
+		for (let child of this.dropGroup.$children) {
+			let drop = new lzlib.Drop();
+			this.addChild(drop);
+			drop.enableDrop(child);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
+		}
 	}
 
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
+		this.currentTargets = targetComponent;
+		this.currentTarget = targetComponent.text.replace(/\s+/g, "");
 		let dragComponent = e.dragObject as eui.Label;
 
-		console.log("onLabelDrop:" + this.currentQuestionIndex)
+		this.getCurrentIndex()
+
+
 		if (dragComponent.text.replace(/\s+/g, "") === targetComponent.text.replace(/\s+/g, "")) {
-			console.log("==:" + this.currentQuestionIndex)
+
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
+
 			this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = false;
 
@@ -65,21 +73,36 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				lzlib.ThreadUtility.sleep(3000);
 				Main.instance.gotoScene(new FinishScene());
 			}
-			else {
-				this.currentQuestionIndex++;
-				console.log("+++:"+this.currentQuestionIndex)
-				this.initDropable();
-				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
-			}
 		}
 		else {
-			console.log("show==:"+this.currentQuestionIndex)
-			this.showCorrectLabelToDrag();
-			this.initDropable()
+			let current = this.currentQuestionIndex
+			if (current || current == 0) {
+				if (targetComponent.visible == false) {
+					this.showCorrectLabelToDrag();
+					console.log(this.currentQuestionIndex);
+					this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
+				}
+
+			}
 		}
 	}
 
+	//查詢當前被拽動的問題，所在dropGroup的index
+	private getCurrentIndex(): void {
+
+		for (let child of this.dropGroup.$children) {
+			let labelText = (child as eui.Label).text
+			if (labelText.replace(/\s+/g, "") == this.currentTarget) {
+				let index = this.dropGroup.getChildIndex(child);
+				// console.log(index)
+				this.currentQuestionIndex = index;
+			}
+		}
+	}
+
+
 	private onDragCancel(e: lzlib.LzDragEvent): void {
+		this.getCurrentIndex()
 		this.showCorrectLabelToDrag();
 	}
 
@@ -89,6 +112,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(2000);
 		this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
+		for (var i = 0; i < this.colorTips.$children.length; i++) {
+			this.colorTips.getChildAt(i).visible = false;
+		}
 	}
 
 	// help模块
@@ -100,14 +126,21 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async onHelpButtonClick(): Promise<void> {
-		let currentindex = this.currentQuestionIndex;
-		let originalChildIndex = this.getChildIndex(this.alterGroup);//返回一个指定元素的index
-		this.setChildIndex(this.alterGroup, this.numChildren - 1);//控制alerGroup的层级在最顶层
-		this.alterGroup.getChildAt(currentindex).visible = true;//根据index获取alterGroup中的指定的元素
-		this.colorTips.getChildAt(currentindex).visible = true;
-		await lzlib.ThreadUtility.sleep(3000);
-		this.alterGroup.getChildAt(currentindex).visible = false;
-		this.colorTips.getChildAt(currentindex).visible = false;
-		this.setChildIndex(this.alterGroup, originalChildIndex);//将层级调回到原来的位置
+
+		let current = this.currentQuestionIndex
+		if (current || current == 0) {
+			if (this.currentTargets.visible == false) {
+
+				let originalChildIndex = this.getChildIndex(this.alterGroup);//返回一个指定元素的index
+				this.setChildIndex(this.alterGroup, this.numChildren - 1);//控制alerGroup的层级在最顶层
+				this.alterGroup.getChildAt(this.currentQuestionIndex).visible = true;//根据index获取alterGroup中的指定的元素
+				this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
+				await lzlib.ThreadUtility.sleep(3000);
+				this.alterGroup.getChildAt(this.currentQuestionIndex).visible = false;
+				this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
+				this.setChildIndex(this.alterGroup, originalChildIndex);//将层级调回到原来的位置	
+			}
+
+		}
 	}
 }

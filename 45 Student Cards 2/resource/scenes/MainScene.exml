@@ -25,7 +25,7 @@
 		</e:Group>
 	</e:Group>
 	<e:Image source="girl_png" x="1501.11" y="158.09" width="305.98" height="317.79" anchorOffsetX="0" anchorOffsetY="0"/>
-	<e:Group id="alterGroup" x="1200.19" y="430.48" anchorOffsetY="0" height="851.22">
+	<e:Group id="alterGroup" x="1200.19" y="430.48" anchorOffsetY="0" height="851.22" touchThrough="true">
 		<Ui:AlterLabel width="535.15" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="What is her name?" fontSize="50" scaleX="1" scaleY="1" visible="false"/>
 		<Ui:AlterLabel width="535.15" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="Which class is she in?" fontSize="50" scaleX="1" scaleY="1" y="103.03" visible="false"/>
 		<Ui:AlterLabel width="535.15" height="129.09" anchorOffsetX="0" anchorOffsetY="0" skinName="AlterLabelSkin" text="How old is she?" fontSize="50" scaleX="1" scaleY="1" y="203.03" visible="false"/>
@@ -64,18 +64,18 @@
 
 </e:Group>
 
-	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="815.3" width="630.34">
-		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" textAlign="center" left="0" right="0.34000000000003183" textColor="0x525ff5" verticalAlign="middle" anchorOffsetY="0" height="96.94" y="-4.55" visible="false"/>
-		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" y="97.39" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.43" verticalAlign="middle" visible="false"/>
-		<e:Label text="9" size="53" fontFamily="Comic Sans MS" y="200.85" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" visible="false"/>
+	<e:Group id="dropGroup" anchorOffsetX="0" x="1110.3" y="488" anchorOffsetY="0" height="815.3" width="575.79" touchThrough="true">
+		<e:Label text="Ann Ho" size="53" fontFamily="Comic Sans MS" textAlign="center" left="-133" right="60.789999999999964" textColor="0x525ff5" verticalAlign="bottom" anchorOffsetY="0" height="133.3" y="-62.12" anchorOffsetX="0" visible="false"/>
+		<e:Label text="P.3B" size="53" fontFamily="Comic Sans MS" y="97.39" left="-118" right="51.34000000000003" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.43" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
+		<e:Label text="9" size="53" fontFamily="Comic Sans MS" y="200.85" left="-112" right="72.34000000000003" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
 
 
 
-		<e:Label text="Flat C, 9/F, \nLucky Court, Wanchai" size="53" fontFamily="Comic Sans MS" y="300.4" left="139" right="-39.65999999999997" textAlign="left" textColor="0x525ff5" anchorOffsetY="0" height="199.96" verticalAlign="middle" anchorOffsetX="0" lineSpacing="55" visible="false"/>
-		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" y="507.88" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" visible="false"/>
+		<e:Label text="Flat C, 9/F, \nLucky Court, Wanchai" size="53" fontFamily="Comic Sans MS" y="300.4" left="114" right="-82.65999999999997" textAlign="left" textColor="0x525ff5" anchorOffsetY="0" height="199.96" verticalAlign="middle" anchorOffsetX="0" lineSpacing="55" visible="false"/>
+		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" y="507.88" left="-127" right="-2.2100000000000364" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
 
-		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" y="605.39" left="0" right="0.34000000000003183" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="106.03" verticalAlign="middle" visible="false"/>
-		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" y="715.03" left="0" right="-4.659999999999968" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" anchorOffsetX="0" verticalAlign="middle" visible="false"/>
+		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" y="605.39" left="-121" right="17.789999999999964" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="106.03" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
+		<e:Label text="English Club" size="53" fontFamily="Comic Sans MS" y="715.03" left="-133" right="4.789999999999964" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="96.94" anchorOffsetX="0" verticalAlign="middle" visible="false"/>
 
 	</e:Group>
 
