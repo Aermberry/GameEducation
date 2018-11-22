@@ -44,5 +44,5 @@
 	<e:Label text="play" x="165.06" y="24.3" anchorOffsetX="0" width="100" anchorOffsetY="0" height="84" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
 	</e:Group>
-	<e:Button id="nextButton" label="Next" x="1569.77" y="1310.97" anchorOffsetX="0" width="246" anchorOffsetY="0" height="110"/>
+	<e:Button id="nextButton" label="Next" x="1569.77" y="1310.97" anchorOffsetX="0" width="246" anchorOffsetY="0" height="110" visible="false"/>
 </e:Skin>
