@@ -1,5 +1,5 @@
 class StatueScene extends eui.Component implements eui.UIComponent {
-	private nextButton: eui.Button;
+	private nextButton: eui.Group;
 	private startMask: eui.Rect;
 	private startButton: eui.Button;
 	private loadingAnim: egret.tween.TweenGroup
