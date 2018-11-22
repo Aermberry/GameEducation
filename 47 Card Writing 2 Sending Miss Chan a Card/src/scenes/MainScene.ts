@@ -10,6 +10,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	private currentQuestionIndex = 0;
 	private currentTarget;
+	private currentTargets;
 	private originalChildIndex: number;
 	public constructor() {
 		super();
@@ -54,6 +55,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
+		this.currentTargets = targetComponent;
 		this.currentTarget = targetComponent.text.toString();
 		let dragComponent = e.dragObject as eui.Label;
 
@@ -74,9 +76,15 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 		}
 		else {
-			
-			this.showTipsLabel();
-			this.swapChildren(this.dropGroup, this.maskLayerGroup);
+			let current = this.currentQuestionIndex
+			if (current || current == 0) {
+				if (targetComponent.visible == false) {
+					this.showTipsLabel();
+					this.swapChildren(this.dropGroup, this.maskLayerGroup);
+				}
+			}
+
+
 		}
 	}
 
@@ -98,12 +106,20 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async showTipsLabel(): Promise<void> {
-		this.originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
-		this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将yipsGroup层级升至最高
-		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = true;
-		await lzlib.ThreadUtility.sleep(2000);
-		this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = false
-		this.setChildIndex(this.tipsGroup, this.originalChildIndex);//返回至原来的层级
+		let current = this.currentQuestionIndex
+		if (current || current == 0) {
+			if (this.currentTargets.visible == false) {
+				this.originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
+				this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将yipsGroup层级升至最高
+				this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = true;
+				await lzlib.ThreadUtility.sleep(2000);
+				for (let child of this.tipsGroup.$children) {
+					(child as Ui.TexttLabel).visible = false;
+				}
+				// this.tipsGroup.getChildAt(this.currentQuestionIndex).visible = false
+				this.setChildIndex(this.tipsGroup, this.originalChildIndex);//返回至原来的层级
+			}
+		}
 	}
 
 }
