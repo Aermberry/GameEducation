@@ -5,7 +5,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private alterGroup: eui.Group;
 	private colorTips: eui.Group;
 
-	private currentQuestionIndex: number = 0;// 当前问题，用户只能按顺序拖动label,逐条回答问题
+	private currentQuestionIndex = 0;// 当前问题，用户只能按顺序拖动label,逐条回答问题
 
 	public constructor() {
 		super();
@@ -25,11 +25,11 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		await lzlib.SoundUtility.playSound('02_mp3').then(() => {
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			this.initHelpButton();
-			this.initDragable();
+			this.initDropable();
 		})
 	}
 
-	private initDragable(): void {
+	private initDropable(): void {
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
 			this.stage.addChild(drag);
@@ -51,7 +51,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		let dragComponent = e.dragObject as eui.Label;
 
+		console.log("onLabelDrop:" + this.currentQuestionIndex)
 		if (dragComponent.text.replace(/\s+/g, "") === targetComponent.text.replace(/\s+/g, "")) {
+			console.log("==:" + this.currentQuestionIndex)
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
@@ -60,19 +62,20 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 			if (this.dropGroup.$children.every(child => child.visible)) {
 				lzlib.SoundUtility.stopCurrentSound;
-				setTimeout(() => {
-					Main.instance.gotoScene(new FinishScene());
-				},3000)
-
+				lzlib.ThreadUtility.sleep(3000);
+				Main.instance.gotoScene(new FinishScene());
 			}
 			else {
-				++this.currentQuestionIndex;
-				this.initDropableLabel();
+				this.currentQuestionIndex++;
+				console.log("+++:"+this.currentQuestionIndex)
+				this.initDropable();
 				this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			}
 		}
 		else {
+			console.log("show==:"+this.currentQuestionIndex)
 			this.showCorrectLabelToDrag();
+			this.initDropable()
 		}
 	}
 
