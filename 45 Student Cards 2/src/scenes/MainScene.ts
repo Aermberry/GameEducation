@@ -135,7 +135,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				this.setChildIndex(this.alterGroup, this.numChildren - 1);//控制alerGroup的层级在最顶层
 				this.alterGroup.getChildAt(this.currentQuestionIndex).visible = true;//根据index获取alterGroup中的指定的元素
 				this.colorTips.getChildAt(this.currentQuestionIndex).visible = true;
-				await lzlib.ThreadUtility.sleep(3000);
+				await lzlib.ThreadUtility.sleep(1000);
 				this.alterGroup.getChildAt(this.currentQuestionIndex).visible = false;
 				this.colorTips.getChildAt(this.currentQuestionIndex).visible = false;
 				this.setChildIndex(this.alterGroup, originalChildIndex);//将层级调回到原来的位置	

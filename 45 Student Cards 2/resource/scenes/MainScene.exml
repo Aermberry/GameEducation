@@ -3,7 +3,7 @@
 	<w:Config id="165b2de45c0" ></w:Config>
 	<Ui:Options width="932.11" height="1246.66" x="960.85" y="63.43" anchorOffsetX="0" anchorOffsetY="0" skinName="OptionsSkin"/>
 	<Ui:Resume width="892.08" height="1175.75" x="36" y="63.28" anchorOffsetX="0" anchorOffsetY="0" skinName="ResumeSkin"/>
-	<e:Label text="Hi! I am Ann Ho. I have a\nbrother, Mike.\nWe live in Flat C, 9/F, Lucky Court, Wanchai. We go\nto School by bus.\nMike is 12 years old and\nI'm 9. My birthday is on\n15 June.\nI am in P.3B and Mike is in\nP.6A.\nI like swimming and Mike\nlikes playing football. I join\nthe English Club and Mike\njoins the Computer Club." x="87.58" y="88.21" anchorOffsetY="0" height="1127.33" anchorOffsetX="0" width="847.06" lineSpacing="20" size="61" fontFamily="Comic Sans MS" textColor="0x525ff5"/>
+	<e:Label text="Hi! I am Ann Ho. I have a\nbrother, Mike.\nWe live in Flat C, 9/F, Lucky Court, Wan Chai. We go\nto school by bus.\nMike is 12 years old and\nI'm 9. My birthday is on\n15 June.\nI am in P.3B and Mike is in\nP.6A.\nI like swimming and Mike\nlikes playing football. I join\nthe English Club and Mike\njoins the Computer Club." x="87.58" y="88.21" anchorOffsetY="0" height="1127.33" anchorOffsetX="0" width="847.06" lineSpacing="20" size="61" fontFamily="Comic Sans MS" textColor="0x525ff5"/>
 	<e:Label text="Sunshine Primary School\nStudent card\n\n\nName:_____________________\nClass:_____________________\nAge:______________________\nAddress:___________________\n               __________________\nBirthday:__________________\nHobby:____________________\nClub:______________________" x="996.21" y="90.55" textColor="0x990707" anchorOffsetY="0" height="1361.87" anchorOffsetX="0" width="1072.79" size="53" lineSpacing="50" fontFamily="Comic Sans MS"/>
 
 	<e:Group id="colorTips" y="92" x="112" anchorOffsetY="0" height="803" anchorOffsetX="0" width="674">
@@ -60,7 +60,7 @@
 	<e:Label text="15 June" size="61" fontFamily="Comic Sans MS" x="-22.94" y="568" textColor="0x525ff5"/>
 	<e:Label text="swimming" textColor="0x525FF5" size="61" fontFamily="Comic Sans MS" y="812.21" x="144.57" anchorOffsetY="0" height="85"/>
 	<e:Label text="English Club" size="61" fontFamily="Comic Sans MS" y="975.78" x="91.61" textColor="0x525ff5" anchorOffsetY="0" height="85" anchorOffsetX="0" width="450.12"/>
-	<e:Label text="                 Flat C, 9/F, Lucky\n Court, Wanchai" size="61" fontFamily="Comic Sans MS" anchorOffsetX="0" width="897.47" x="-40.1" y="162.91" anchorOffsetY="0" height="172.02" lineSpacing="20" textColor="0x525ff5"/>
+	<e:Label text="                 Flat C, 9/F, Lucky\n Court, Wan Chai" size="61" fontFamily="Comic Sans MS" anchorOffsetX="0" width="897.47" x="-40.1" y="162.91" anchorOffsetY="0" height="172.02" lineSpacing="20" textColor="0x525ff5"/>
 
 </e:Group>
 
@@ -71,7 +71,7 @@
 
 
 
-		<e:Label text="Flat C, 9/F, \nLucky Court, Wanchai" size="53" fontFamily="Comic Sans MS" y="300.4" left="114" right="-82.65999999999997" textAlign="left" textColor="0x525ff5" anchorOffsetY="0" height="199.96" verticalAlign="middle" anchorOffsetX="0" lineSpacing="55" visible="false"/>
+		<e:Label text="Flat C, 9/F, \nLucky Court, Wan Chai" size="53" fontFamily="Comic Sans MS" y="300.4" left="114" right="-82.65999999999997" textAlign="left" textColor="0x525ff5" anchorOffsetY="0" height="199.96" verticalAlign="middle" anchorOffsetX="0" lineSpacing="55" visible="false"/>
 		<e:Label text="15 June" size="53" fontFamily="Comic Sans MS" y="507.88" left="-127" right="-2.2100000000000364" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="95.42" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
 
 		<e:Label text="swimming" size="53" fontFamily="Comic Sans MS" y="605.39" left="-121" right="17.789999999999964" textAlign="center" textColor="0x525ff5" anchorOffsetY="0" height="106.03" verticalAlign="middle" anchorOffsetX="0" visible="false"/>
