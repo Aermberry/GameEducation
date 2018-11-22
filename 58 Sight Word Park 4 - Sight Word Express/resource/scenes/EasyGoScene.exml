@@ -13,8 +13,8 @@
 	</e:Group>
 	<e:Image x="394.57" y="346.88" source="scene_bg_png" anchorOffsetX="0" width="651.82" anchorOffsetY="0" height="434.55"/>
 	<e:Label text="Sight Word Express" x="612.6" y="196.91" textColor="0x000000" size="80" fontFamily="Kristen_ITC"/>
-	<e:Label text="1.  Read the sentences \ncarefully." x="1072.7" y="391" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
-	<e:Label text="2. Click the words on the \ncorrect cargoes. " x="1072.55" y="509" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
-	<e:Label text="3. Click the bird icon      to \nlisten to the words. " x="1072.61" y="636" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
-	<e:Image x="1490.43" y="629.88" source="bird_tow_png" anchorOffsetX="0" width="46.91" anchorOffsetY="0" height="51.33"/>
+	<e:Label text="1. Read the sentences \n    carefully." x="1072.7" y="391" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
+	<e:Label text="2. Click the words on the \n    correct cargoes. " x="1072.55" y="509" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>
+	<!--<e:Label text="3. Click the bird icon      to \nlisten to the words. " x="1072.61" y="636" textColor="0x000000" size="40" fontFamily="Kristen_ITC"/>-->
+	<!--<e:Image x="1490.43" y="629.88" source="bird_tow_png" anchorOffsetX="0" width="46.91" anchorOffsetY="0" height="51.33"/>-->
 </e:Skin>

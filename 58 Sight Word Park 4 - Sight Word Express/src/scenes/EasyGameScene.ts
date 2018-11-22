@@ -3,7 +3,7 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	private playEasyGmeTweenGroup:egret.tween.TweenGroup;
 	private goodJobTweenGroup:egret.tween.TweenGroup;
 
-	private birdImg:eui.Image;
+	// private birdImg:eui.Image;
 
 	private sentenceLabel:eui.Label;
 	private redLightImg:eui.Image;
@@ -48,8 +48,8 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.backBtn, true);
 
-		this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.birdImg.source= 'bird_normal_png', this);
-		this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.birdImg.source= 'bird_hover_png', this);
+		// this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.birdImg.source= 'bird_normal_png', this);
+		// this.birdImg.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.birdImg.source= 'bird_hover_png', this);
 
 
 		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
@@ -77,7 +77,7 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	{
 		this.cargoLeft = 20;
     	await this.playEasyGmeTweenGroup.playOnceAsync();
-		this.birdImg.visible = true;
+		// this.birdImg.visible = true;
 		this.redLightImg.visible= true;
 		this.trainImg.visible = true;
 	    this.driverImg.visible = true;
@@ -167,8 +167,10 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 	private async playCargoDropdownMovie(cargoIndex: number): Promise<void>
 	{
 		this.greenLightImg.visible = true;
+		this.redLightImg.source = "red_lights_png";
         (RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
         await this.getCargoDropMovie(cargoIndex).playAsync();
 		this.greenLightImg.visible = false;
+		this.redLightImg.source = "red_light_png";
 	}
 }

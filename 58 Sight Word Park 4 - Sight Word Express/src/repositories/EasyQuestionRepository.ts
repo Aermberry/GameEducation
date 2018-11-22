@@ -41,7 +41,7 @@ class EasyQuestionRepository {
 			new Question('I have ____ rabbits.','three',['three','where','jump']),
 			new Question('We walk ____ the park.','to',['to','see','here']),
 			new Question('I have ____ hands.','two',['two','help','a']),
-			new Question('We run ____ to the hill.','up',['up','we','two']),
+			new Question('We ran ____ the hill.','up',['up','we','two']),
 			new Question('____ are good friends.','We',['We','Run','The']),
 			new Question('____ are you?','Where',['Where','Come','Little']),
 			new Question('Lemons are _________.','sour',['thick','sour','spicy']),

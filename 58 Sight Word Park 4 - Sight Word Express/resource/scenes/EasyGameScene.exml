@@ -223,7 +223,7 @@
 	<e:Label id="readyText" text="Ready"  size="480" textColor="0x9D0000" fontFamily="Hoffmanhand" x="412" y="-500" alpha="0"/>
 	<e:Label id="goText" text="Go!!" fontFamily="Hoffmanhand"  textColor="0x9D0000"  size="480" alpha="0" horizontalCenter="0" y="-500"/>
 
-	<e:Image  id="birdImg" source="bird_normal_png" x="1314" y="381" visible="false"/>
+	<!--<e:Image  id="birdImg" source="bird_normal_png" x="1314" y="381"/>-->
 	<e:Image id="smokeImg" source="smoke_png" x="224.97" y="500" visible="false"/>
 
 	
