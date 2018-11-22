@@ -230,17 +230,15 @@ var lzlib;
         };
         Drop.prototype.onTouchEnd = function (e) {
             if (lzlib.Drag.isDraging) {
-                if (this.isDragDropObjectIntersets()) {
+                if (this.isDragDropObjectIntersets(e.stageX, e.stageY)) {
                     //drop on target
                     lzlib.Drag.isAccepted = !this.dropObject.dispatchEvent(new lzlib.LzDragEvent(lzlib.LzDragEvent.DROP, lzlib.Drag.dragingObject, lzlib.Drag.dataTransfer, e.stageX, e.stageY, e.touchPointID));
                 }
             }
         };
-        Drop.prototype.isDragDropObjectIntersets = function () {
-            var dragingObjectGlobalPoint = lzlib.Drag.dragingObject.parent.localToGlobal(lzlib.Drag.dragingObject.x, lzlib.Drag.dragingObject.y);
+        Drop.prototype.isDragDropObjectIntersets = function (mouseStageX, mouseStageY) {
             var dropObjectGlobalPoint = this.dropObject.parent.localToGlobal(this.dropObject.x, this.dropObject.y);
-            return new egret.Rectangle(dragingObjectGlobalPoint.x, dragingObjectGlobalPoint.y, lzlib.Drag.dragingObject.width, lzlib.Drag.dragingObject.height)
-                .intersects(new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height));
+            return new egret.Rectangle(dropObjectGlobalPoint.x, dropObjectGlobalPoint.y, this.dropObject.width, this.dropObject.height).contains(mouseStageX, mouseStageY);
         };
         return Drop;
     }(egret.Sprite));
@@ -293,13 +291,6 @@ var lzlib;
         ThreadUtility.sleep = function (ms) {
             if (ms === void 0) { ms = 0; }
             return new Promise(function (r) { return setTimeout(r, ms); });
-        };
-        ThreadUtility.playSound = function (soundName) {
-            var _this = this;
-            return new Promise(function (resolve, reject) {
-                RES.getRes(soundName).play(0, 1)
-                    .once(egret.Event.SOUND_COMPLETE, resolve, _this);
-            });
         };
         return ThreadUtility;
     }());
