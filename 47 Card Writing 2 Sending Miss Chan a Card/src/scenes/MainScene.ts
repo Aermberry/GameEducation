@@ -9,6 +9,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private loadingAnim: egret.tween.TweenGroup
 
 	private currentQuestionIndex = 0;
+	private currentTarget;
 	private originalChildIndex: number;
 	public constructor() {
 		super();
@@ -43,16 +44,20 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDropableLabel(): void {
-		let drop = new lzlib.Drop();
-		this.addChild(drop);
-		let child = this.dropGroup.getChildAt(this.currentQuestionIndex);
-		drop.enableDrop(child);
-		child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
+		for (let child of this.dropGroup.$children) {
+			let drop = new lzlib.Drop();
+			this.addChild(drop);
+			drop.enableDrop(child);
+			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
+		}
 	}
 
 	private onLabelDrop(e: lzlib.LzDragEvent): void {
 		let targetComponent = e.target as eui.Label;
+		this.currentTarget = targetComponent.text.toString();
 		let dragComponent = e.dragObject as eui.Label;
+
+		this.getCurrentIndex();
 
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
 			e.preventDefault;
@@ -67,22 +72,28 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				lzlib.ThreadUtility.sleep(3000);
 				Main.instance.gotoScene(new FinishScene());
 			}
-			else {
-				this.currentQuestionIndex++;
-				this.initDragable();
-			}
 		}
 		else {
+			
 			this.showTipsLabel();
-
 			this.swapChildren(this.dropGroup, this.maskLayerGroup);
-			// lzlib.ThreadUtility.sleep(2000).then(() => {
-			// 	this.swapChildren(this.dropGroup, this.maskLayerGroup);
-			// })
+		}
+	}
+
+	private getCurrentIndex(): void {
+
+		for (let child of this.dropGroup.$children) {
+			let labelText = (child as eui.Label).text
+			if (labelText.toString() == this.currentTarget) {
+				let index = this.dropGroup.getChildIndex(child);
+				console.log(index)
+				this.currentQuestionIndex = index;
+			}
 		}
 	}
 
 	private onDragCancel(e: lzlib.LzDragEvent): void {
+		this.getCurrentIndex();
 		this.showTipsLabel();
 	}
 
