@@ -39,7 +39,7 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 		await this.playMindoorMP3();	
 	}
 
-	private async playMindoorMP3(): Promise<void>
+	public async playMindoorMP3(): Promise<void>
 	{
 		await lzlib.SoundUtility.playSound('sound 52 (e_minddoor.mp3)_mp3');
 	}
@@ -75,5 +75,15 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 			let image = child as eui.Image;
 			image.source = src;
 		})
+	}
+
+	public driveCar(): void
+	{
+		this.startAnimation.playLoopAsync();
+	}
+
+	public stopDriveCar(): void
+	{
+		this.startAnimation.stop();
 	}
 }

@@ -21,7 +21,7 @@ class Line {
 
 	public getLastStation(): Station
 	{
-		return this.stations[this.stations.length-1];
+		return this.stations[this.position-1];
 	}
 
 	public getNextStation(): Station
@@ -29,14 +29,14 @@ class Line {
 		return this.stations[this.position+1];
 	}
 
-	public nextStationCursor(): Station
+	public nextStationCursor(): number
 	{
-		return this.stations[++this.position];
+		return this.position++;
 	}
 
-	public lastStationCursor(): Station
+	public lastStationCursor(): number
 	{
-		return this.stations[--this.position];
+		return this.position--;
 	}
 
 	public getStartingStation(): Station
@@ -44,10 +44,10 @@ class Line {
 		return this.stations[0];
 	}
 
-	// public getTerminalStation(): Station
-	// {
-	// 	return this.stations[--this.stations.length];
-	// }
+	public getTerminalStation(): Station
+	{
+		return this.stations[this.stations.length-1];
+	}
 
 	public isLastStation(): boolean
 	{

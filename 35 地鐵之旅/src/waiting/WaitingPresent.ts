@@ -28,17 +28,17 @@ class WaitingPresent {
 			this.station.is1And2Marking ? this.view.marking1And2(this.currentLine.getStartingStation().stationName) : this.view.marking3And4(this.currentLine.getStartingStation().stationName);
 		}else if(this.currentLine.isStartingStation())
 		{
-			this.station.is1And2Marking ? this.view.marking1And2(this.currentLine.getLastStation().stationName) : this.view.marking3And4(this.currentLine.getLastStation().stationName);
+			this.station.is1And2Marking ? this.view.marking1And2(this.currentLine.getTerminalStation().stationName) : this.view.marking3And4(this.currentLine.getTerminalStation().stationName);
 		}else
 		{
 			if(this.station.is1And2Marking)
 			{
-				this.view.marking1(this.currentLine.getLastStation().stationName);
+				this.view.marking1(this.currentLine.getTerminalStation().stationName);
 				this.view.marking2(this.currentLine.getStartingStation().stationName);
 			}else
 			{
 				this.view.marking3(this.currentLine.getStartingStation().stationName);
-				this.view.marking4(this.currentLine.getLastStation().stationName);
+				this.view.marking4(this.currentLine.getTerminalStation().stationName);
 			}
 		}
 

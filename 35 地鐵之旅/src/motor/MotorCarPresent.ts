@@ -12,7 +12,6 @@ class MotorCarPresent {
 		this.position = position;
 		this.isRight = isRight;
 		this.station = this.line.getCurrectStation(this.position);
-		console.log(position);
 	}
 
 	public async loadView(view: MotorCarView): Promise<void>
@@ -22,7 +21,7 @@ class MotorCarPresent {
 		this.isRight ? this.view.openRightDoor() : this.view.openLeftDoor();
 		await this.view.playStartIntroduction();
 		this.isRight ? this.view.closeRightDoor() : this.view.closeLeftDoor();
-
+		this.view.stationPillarBackground(this.station.getBackground());
 		this.runCar();
 	}
 
@@ -35,49 +34,43 @@ class MotorCarPresent {
 			if(this.isRight)
 			{
 				//往终点站方向
-				let currentStation = this.line.nextStationCursor();
-				console.log(currentStation);
+				let currentStation = this.line.getNextStation();
 				if (currentStation)
 				{
-				
 					this.station = currentStation;
-					this.view.stationPillarBackground(this.station.getBackground());
-						console.log(1);
-					console.log(this.station);
+					this.line.nextStationCursor();
+
 					await this.rightDoor();	
-					this.view.closeRightDoor();
+					await this.view.closeRightDoor();
 					
 				}else{
-					this.station = this.line.lastStationCursor();
-					this.view.stationPillarBackground(this.station.getBackground());
-					console.log(2);
-					console.log(this.station);
+					this.station = this.line.getLastStation();
+					this.line.lastStationCursor();
+
 					await this.leftDoor();
-					this.view.closeLeftDoor();
+					await this.view.closeLeftDoor();
 					
 					this.isRight = false;
 					
 				}
 			}else{
 				//往起始站方向
-				let currentStation = this.line.lastStationCursor();
-				console.log(currentStation);
+				let currentStation = this.line.getLastStation();
+			
 				if (currentStation)
 				{	
 					this.station = currentStation;
-					this.view.stationPillarBackground(this.station.getBackground());
-					console.log(3);
-					console.log(this.station);
+					this.line.lastStationCursor();
+				
 					await this.leftDoor();
-					this.view.closeLeftDoor();
+					await this.view.closeLeftDoor();
 
 				}else{				
-					this.station = this.line.nextStationCursor();
-					this.view.stationPillarBackground(this.station.getBackground());
-					console.log(4);
-					console.log(this.station);
+					this.station = this.line.getNextStation();
+					this.line.nextStationCursor();
+			
 					await this.rightDoor();
-					this.view.closeRightDoor();
+					await this.view.closeRightDoor();
 					this.isRight = true;
 				}
 			}
@@ -89,6 +82,7 @@ class MotorCarPresent {
 	{
 		await this.stationAudio.playLastStationMP3();
 		await lzlib.SoundUtility.playSound('sound 39 (e_openLeft.mp3)_mp3');
+		this.view.stationPillarBackground(this.station.getBackground());
 		this.view.openLeftDoor();
 		await lzlib.ThreadUtility.sleep(3500);
 	}
@@ -97,6 +91,7 @@ class MotorCarPresent {
 	{
 		await this.stationAudio.playNextStationMP3();
 		await lzlib.SoundUtility.playSound('sound 38 (e_openRight.mp3)_mp3');
+		this.view.stationPillarBackground(this.station.getBackground());
 		this.view.openRightDoor();
 		await lzlib.ThreadUtility.sleep(3500);
 	}
