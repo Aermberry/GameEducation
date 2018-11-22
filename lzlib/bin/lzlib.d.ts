@@ -76,7 +76,7 @@ declare namespace lzlib {
         enableDrop(dropObject: egret.DisplayObject): void;
         disableDrop(): void;
         private onTouchEnd(e);
-        private isDragDropObjectIntersets();
+        private isDragDropObjectIntersets(mouseStageX, mouseStageY);
     }
 }
 declare namespace lzlib {
@@ -102,7 +102,6 @@ interface String {
 declare namespace lzlib {
     class ThreadUtility {
         static sleep(ms?: number): Promise<{}>;
-        static playSound(soundName: string): Promise<void>;
     }
 }
 declare namespace egret.tween {
