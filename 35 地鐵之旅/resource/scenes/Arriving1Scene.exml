@@ -21,7 +21,7 @@
 	<e:Image x="924.21" y="233.64" source="lift_rail_left_png" anchorOffsetX="0" width="217.97" anchorOffsetY="0" height="888.1" rotation="8.55"/>
 	<e:Image x="840.16" y="207.35" anchorOffsetX="0" width="222.9" anchorOffsetY="0" height="908.17" rotation="352.41" source="lift_rail_right_png" scaleX="-1"/>
 	<e:Image source="door_export_png" y="3.03"/>
-	<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16" disableRoute="true"/>
+	<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16" disableRoute="true"/>
 	<e:Image x="1445" y="476.24" source="car2_png"/>
 	<e:Group y="170" horizontalCenter="0">
 		<e:Image source="rect_border_black_small_png"/>
@@ -33,7 +33,7 @@
 		<e:Label text="城際列車" x="24.06" y="27.06" size="82"/>
 		<e:Image x="385" y="30.97" source="arrow_black_png"/>
 	</e:Group>
-	<ns1:RouteComponent x="12" y="436" icon="huaguoshan" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="huaguoshan" visible="false"/>
 		<e:Rect id="maskRect" left="0" right="0" top="0" bottom="180" fillColor="0xffffff" alpha="0" anchorOffsetY="0"/>
 	</e:Group>
 	

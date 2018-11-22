@@ -13,7 +13,6 @@ class StationAudio {
 	{
 		for(let i = 0; i < this.nextAudios.length; i++)
 		{
-			console.log(this.nextAudios[i]);
 			await lzlib.SoundUtility.playSound(this.nextAudios[i]);
 		}
 	}

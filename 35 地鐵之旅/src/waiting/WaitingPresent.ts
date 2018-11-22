@@ -25,13 +25,13 @@ class WaitingPresent {
 		//左右两边的标志
 		if(this.currentLine.isLastStation())
 		{
-			this.station.is1And2Marking ? this.view.marking1And2(this.currentLine.getStartingStation().stationName) : this.view.marking3And4(this.currentLine.getStartingStation().stationName);
+			this.station.is1And2 ? this.view.marking1And2(this.currentLine.getStartingStation().stationName) : this.view.marking3And4(this.currentLine.getStartingStation().stationName);
 		}else if(this.currentLine.isStartingStation())
 		{
-			this.station.is1And2Marking ? this.view.marking1And2(this.currentLine.getTerminalStation().stationName) : this.view.marking3And4(this.currentLine.getTerminalStation().stationName);
+			this.station.is1And2 ? this.view.marking1And2(this.currentLine.getTerminalStation().stationName) : this.view.marking3And4(this.currentLine.getTerminalStation().stationName);
 		}else
 		{
-			if(this.station.is1And2Marking)
+			if(this.station.is1And2)
 			{
 				this.view.marking1(this.currentLine.getTerminalStation().stationName);
 				this.view.marking2(this.currentLine.getStartingStation().stationName);
@@ -142,33 +142,34 @@ class WaitingPresent {
 		{
 			//往上层
 			let line = this.station.getUpperStrataLine();
-			let position = line.getPosition(this.station.stationName);
+			let position = line.getPositionByName(this.station.stationName);
 			Main.instance.gotoScene(new WaitingScene(line, position));
 		}else if(name == this.lowerStrata)
 		{
 			//往下层
 			let line = this.station.getLowerStrataLine();
-			let position = line.getPosition(this.station.stationName);
+			let position = line.getPositionByName(this.station.stationName);
 			Main.instance.gotoScene(new WaitingScene(line, position));
 		}
 	}
 
 	public onArrowLeftClick(): void
 	{
-		let line: Line = null;
-		if(this.station.isUpperStrata)
-		{
-			line = this.station.getUpperStrataLine();
-		}else{
-			line = this.station.getLowerStrataLine();
-		}
-		let position = line.getPosition(this.station.stationName);
-		Main.instance.gotoScene(new MotorCarScene(line, position, true));
+		// let line: Line = null;
+		// if(this.station.isUpperStrata)
+		// {
+		// 	line = this.station.getUpperStrataLine();
+		// }else{
+		// 	line = this.station.getLowerStrataLine();
+		// }
+		let position = this.currentLine.getPositionByName(this.station.stationName);
+		Main.instance.gotoScene(new MotorCarScene(this.currentLine, position, true));
 	}
 
 	public onArrowRightClick(): void
 	{
-		
+		let position = this.currentLine.getPositionByName(this.station.stationName);
+		Main.instance.gotoScene(new MotorCarScene(this.currentLine, position, false));
 	}
 	
 }

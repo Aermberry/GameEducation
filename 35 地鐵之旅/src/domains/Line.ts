@@ -59,11 +59,16 @@ class Line {
 		return this.position == 0;
 	}
 
-	public getPosition(name: string): number
+	public getPositionByName(name: string): number
 	{
 		for(let i = 0; i < this.stations.length; i++)
 		{
 			if(name == this.stations[i].stationName) return i
 		}
+	}
+
+	public getPosition(): number
+	{
+		return this.position;
 	}
 }

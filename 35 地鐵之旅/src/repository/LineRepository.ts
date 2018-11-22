@@ -30,7 +30,7 @@ class LineRepository {
 		]
 		this.stations3 = [
 			new Station(['sound 21 (goes.mp3)_mp3','sound 35 (ep_st_banana.mp3)_mp3','sound 26 (go_1_2.mp3)_mp3'],this.stationAudioRepo.jichang,'pillar_gray_png','機場站',this.line3),
-			new Station(['sound 21 (goes.mp3)_mp3','sound 36 (ep_st_apple.mp3)_mp3','sound 26 (go_1_2.mp3)_mp3'],this.stationAudioRepo.xiangjiao3,'pillar_yellow_png','香蕉站',this.line2,this.line3),
+			new Station(['sound 21 (goes.mp3)_mp3','sound 37 (ep_st_airport.mp3)_mp3','sound 22 (go_3and4.mp3)_mp3'],this.stationAudioRepo.xiangjiao3,'pillar_yellow_png','香蕉站',this.line2,this.line3,false,true,false),
 		]
 
 		this.line1.setStations(this.stations1);

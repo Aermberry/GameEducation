@@ -9,4 +9,8 @@ interface MotorCarView {
     playMindoorMP3(): Promise<void>;
     driveCar(): void;
     stopDriveCar(): void;
+    enableLeftArrow(): void;
+    disableLeftArrow(): void;
+    enableRightArrow(): void;
+    disableRightArrow(): void;
 }

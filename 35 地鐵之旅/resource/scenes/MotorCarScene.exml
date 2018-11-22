@@ -199,8 +199,8 @@
 		<e:Image x="1104" y="672.5" anchorOffsetX="0" anchorOffsetY="0" source="person7_png" width="252" height="460.98" visible="false"/>
 		<e:Image x="1174" y="810.5" anchorOffsetX="0" anchorOffsetY="0" source="person4_png" width="226.72" height="474.2" visible="false"/>
 	</e:Group>
-		<ns1:ArrowRedComponent width="258" x="72" y="776" height="115"/>
-		<ns1:ArrowRedComponent width="258" x="1852" y="776" height="115" scaleX="-1"/>
-		<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16"/>
+		<ns1:ArrowRedComponent id="arrowLeft" width="258" x="72" y="776" height="115"/>
+		<ns1:ArrowRedComponent id="arrowRight" width="258" x="1852" y="776" height="115" scaleX="-1"/>
+		<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16"/>
 	<ns1:RouteComponent x="12" y="436" icon="huaguoshan" visible="false"/>
 </e:Skin>

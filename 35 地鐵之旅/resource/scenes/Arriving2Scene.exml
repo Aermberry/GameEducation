@@ -22,12 +22,12 @@
 	<e:Image x="1002.75" y="267.7" source="lift_rail_left_png" anchorOffsetX="0" width="221.75" anchorOffsetY="0" height="903.49" rotation="0.87"/>
 	<e:Image x="864.21" y="269.64" source="lift_rail_left_png" anchorOffsetX="0" width="217.97" anchorOffsetY="0" height="888.1" rotation="353.82" scaleX="-1"/>
 	<e:Image y="3.03" source="arcdoor_export_png"/>
-	<ns1:ControllingComponent width="1904" height="180" x="9.03" y="1215.16" disableRoute="true"/>
+	<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16" disableRoute="true"/>
 	<e:Group y="170" horizontalCenter="40.5">
 		<e:Image source="rect_border_black_small_png"/>
 		<e:Label text="B" x="166.24" y="24" textColor="0x93ce0e" size="92" bold="true"/>
 		<e:Label text="往      海龍公園" x="363.21" y="30.06" size="78" backgroundColor="0x0e27d6" textColor="0x0512af"/>
 	</e:Group>
-	<ns1:RouteComponent x="12" y="436" icon="hailong" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="hailong" visible="false"/>
 	<e:Rect id="maskRect" height="1216" y="0" anchorOffsetY="0" left="0" right="0" fillColor="0xffffff"/>
 </e:Skin>

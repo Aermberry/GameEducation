@@ -2,6 +2,7 @@ class TicketCheck2Scene extends eui.Component implements  eui.UIComponent {
 	
 	private platform1Group: eui.Group;
 	private platform2Group: eui.Group;
+	private lineRepo = new LineRepository();
 	
 	public constructor() {
 		super();
@@ -24,12 +25,12 @@ class TicketCheck2Scene extends eui.Component implements  eui.UIComponent {
 
 	private onPlatform1Click(): void
 	{
-		
+		Main.instance.gotoScene(new WaitingScene(this.lineRepo.line2,0));
 	}
 
 	private onPlatform2Click(): void
 	{
-
+		Main.instance.gotoScene(new WaitingScene(this.lineRepo.line3,1));
 	}
 
 	private async playMP3(): Promise<void>

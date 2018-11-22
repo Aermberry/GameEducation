@@ -10,9 +10,10 @@ class Station {
 	private upperStrataLine: Line;
 	private lowerStrataLine: Line;
 	private exitInLeft: boolean;
+	private is1And2Marking: boolean; //本站的左右两边标示是否为1和2
 	public stationName: string;//站点名称
 	public isUpperStrata: boolean; //当前站点是否在上层
-	public is1And2Marking: boolean; 
+	
 	// public isHaveUpperStrat: boolean;//当前站点是否有上层
 	// public isHaveLowerStrat: boolean;//当前站点是否有下层
 

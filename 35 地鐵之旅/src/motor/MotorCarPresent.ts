@@ -17,11 +17,11 @@ class MotorCarPresent {
 	public async loadView(view: MotorCarView): Promise<void>
 	{
 		this.view = view;
-		
+		//设置柱子颜色
+		this.view.stationPillarBackground(this.station.getBackground());
 		this.isRight ? this.view.openRightDoor() : this.view.openLeftDoor();
 		await this.view.playStartIntroduction();
-		this.isRight ? this.view.closeRightDoor() : this.view.closeLeftDoor();
-		this.view.stationPillarBackground(this.station.getBackground());
+		await this.isRight ? this.view.closeRightDoor() : this.view.closeLeftDoor();
 		this.runCar();
 	}
 
@@ -30,7 +30,7 @@ class MotorCarPresent {
 		while(true)
 		{
 			this.stationAudio = this.station.getStationAudio();
-		
+			
 			if(this.isRight)
 			{
 				//往终点站方向
@@ -40,6 +40,10 @@ class MotorCarPresent {
 					this.station = currentStation;
 					this.line.nextStationCursor();
 
+					this.view.driveCar();
+					await this.stationAudio.playNextStationMP3();
+					await lzlib.ThreadUtility.sleep(2000);
+					this.view.stopDriveCar();
 					await this.rightDoor();	
 					await this.view.closeRightDoor();
 					
@@ -47,6 +51,10 @@ class MotorCarPresent {
 					this.station = this.line.getLastStation();
 					this.line.lastStationCursor();
 
+					this.view.driveCar();
+					await this.stationAudio.playLastStationMP3();
+					await lzlib.ThreadUtility.sleep(2000);
+					this.view.stopDriveCar();
 					await this.leftDoor();
 					await this.view.closeLeftDoor();
 					
@@ -61,7 +69,11 @@ class MotorCarPresent {
 				{	
 					this.station = currentStation;
 					this.line.lastStationCursor();
-				
+					
+					this.view.driveCar();
+					await this.stationAudio.playLastStationMP3();
+					await lzlib.ThreadUtility.sleep(2000);
+					this.view.stopDriveCar();
 					await this.leftDoor();
 					await this.view.closeLeftDoor();
 
@@ -69,6 +81,10 @@ class MotorCarPresent {
 					this.station = this.line.getNextStation();
 					this.line.nextStationCursor();
 			
+					this.view.driveCar();
+					await this.stationAudio.playNextStationMP3();
+					await lzlib.ThreadUtility.sleep(2000);
+					this.view.stopDriveCar();
 					await this.rightDoor();
 					await this.view.closeRightDoor();
 					this.isRight = true;
@@ -80,19 +96,30 @@ class MotorCarPresent {
 
 	public async leftDoor(): Promise<void>
 	{
-		await this.stationAudio.playLastStationMP3();
 		await lzlib.SoundUtility.playSound('sound 39 (e_openLeft.mp3)_mp3');
 		this.view.stationPillarBackground(this.station.getBackground());
 		this.view.openLeftDoor();
-		await lzlib.ThreadUtility.sleep(3500);
+		this.view.enableLeftArrow();
+		await this.view.playGapMP3();
+		//禁止左边箭头点击
+		await this.view.playMindoorMP3();
+		this.view.disableLeftArrow();
 	}
 
 	public async rightDoor(): Promise<void>
 	{
-		await this.stationAudio.playNextStationMP3();
 		await lzlib.SoundUtility.playSound('sound 38 (e_openRight.mp3)_mp3');
 		this.view.stationPillarBackground(this.station.getBackground());
 		this.view.openRightDoor();
-		await lzlib.ThreadUtility.sleep(3500);
+		this.view.enableRightArrow();
+		await this.view.playGapMP3();
+		//禁止左边箭头点击
+		await this.view.playMindoorMP3();
+		this.view.disableRightArrow();
+	}
+
+	public onArrowClick(): void
+	{
+		Main.instance.gotoScene(new WaitingScene(this.line,this.line.getPosition()));
 	}
 }
