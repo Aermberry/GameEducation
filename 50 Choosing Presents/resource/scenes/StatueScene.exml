@@ -17,7 +17,7 @@
 	<e:Label fontFamily="Comic Sans MS" text="Choosing presents" textColor="0xCC3366" size="121" textAlign="center"
 	         verticalAlign="middle" horizontalCenter="-25.5" y="36.42"  anchorOffsetY="0" height="236.16" anchorOffsetX="0" width="1315"/>
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Mary and Sam want to buy Christmas presents for theirfriends. \nThey are at Yoyo Gift Shop now. What do they buy?Read and \ndrag the correct words to the blanks full stop."
+	         text="Mary and Sam want to buy Christmas presents for theirfriends. \nThey are at Yoyo Gift Shop now. What do they buy? Read and \ndrag the correct words to the blanks full stop."
 	         textColor="0xCC6699" size="62" textAlign="left" verticalAlign="middle" y="268" anchorOffsetY="0" height="360"
 	         anchorOffsetX="0" width="1851.06" lineSpacing="50" horizontalCenter="5.5" />
 	<e:Image source="piggy bank 3_png" x="450" y="720" />
