@@ -4,6 +4,7 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 	private position: number;
 	private isRight: boolean;
 
+	private pillarsGroup: eui.Group;
 	private startAnimation: egret.tween.TweenGroup;
 	private openRightDoorAnimation: egret.tween.TweenGroup;
 	private closeRightDoorAnimation: egret.tween.TweenGroup;
@@ -66,5 +67,13 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 	public async closeLeftDoor(): Promise<void>
 	{
 		this.closeLeftDoorAnimation.playOnceAsync();
+	}
+
+	public stationPillarBackground(src: string): void
+	{
+		this.pillarsGroup.$children.map((child) => {
+			let image = child as eui.Image;
+			image.source = src;
+		})
 	}
 }

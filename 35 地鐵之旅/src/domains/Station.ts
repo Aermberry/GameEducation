@@ -68,6 +68,11 @@ class Station {
 		return this.background;
 	}
 
+	public getStationAudio(): StationAudio
+	{
+		return this.stationAudio;
+	}
+
 	public async playIntroductionMP3(): Promise<void>
 	{
 		for(let i = 0; i < this.mp3.length; i++)

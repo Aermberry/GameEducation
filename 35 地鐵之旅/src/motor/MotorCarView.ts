@@ -5,4 +5,5 @@ interface MotorCarView {
     closeRightDoor(): Promise<void>;
     openLeftDoor(): Promise<void>;
     closeLeftDoor(): Promise<void>;
+    stationPillarBackground(src: string): void;
 }

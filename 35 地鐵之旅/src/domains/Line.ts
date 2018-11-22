@@ -31,7 +31,12 @@ class Line {
 
 	public nextStationCursor(): Station
 	{
-		return this.stations[this.position++];
+		return this.stations[++this.position];
+	}
+
+	public lastStationCursor(): Station
+	{
+		return this.stations[--this.position];
 	}
 
 	public getStartingStation(): Station
