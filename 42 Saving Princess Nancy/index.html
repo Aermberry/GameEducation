@@ -256,11 +256,11 @@
         fnStartAnimation();
     }
     function continueEgretGame(){
-        console.log(123)
         var egret = document.getElementById("egret-player");
         var animation = document.getElementById("animation");
         animation.style.display = "none";
         egret.style.display = "block";
+        HauntedHouse.SelectTaskScene.instance.onStartQuestion();
 
     }
     function playSound(id, loop) {

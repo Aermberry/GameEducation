@@ -103,12 +103,13 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        if (egret.getOption('scene')) {
+        // if (egret.getOption('scene')) {
             //允许用户跳转到指定的Scene
-            this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
-        } else {
-            this.addChild(new SelectTaskScene());
-        }
+        //     this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
+        // } else {
+        //     this.addChild(new HauntedHouse.SelectTaskScene());
+        // }
+         this.addChild(new HauntedHouse.SelectTaskScene());
     }
 
     public static instance: Main

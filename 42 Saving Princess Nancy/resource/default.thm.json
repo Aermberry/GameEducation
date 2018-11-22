@@ -13,7 +13,7 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"SelectTaskScene": "resource/scenes/SelectTaskScene.exml",
+		"HauntedHouse.SelectTaskScene": "resource/scenes/SelectTaskScene.exml",
 		"Task1IntroductionScene": "resource/scenes/Task1IntroductionScene.exml",
 		"DragScene": "resource/scenes/DragScene.exml",
 		"Task2IntroductionScene": "resource/scenes/Task2IntroductionScene.exml",

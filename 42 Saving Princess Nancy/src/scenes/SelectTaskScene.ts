@@ -1,116 +1,111 @@
-class SelectTaskScene extends eui.Component implements  eui.UIComponent {
-	
-	private task1Label: eui.Label;
-	private task2Label: eui.Label;
-	private maskRect: eui.Rect;
-	private startButton2: eui.Image;
-	private startMask: eui.Rect;
+module HauntedHouse {
+	export class SelectTaskScene extends eui.Component implements eui.UIComponent {
 
-	private maskAnimation: egret.tween.TweenGroup;
-	private finishMaskAnimation: egret.tween.TweenGroup;
-	
-	public constructor() {
-		super();
-	}
+		private task1Label: eui.Label;
+		private task2Label: eui.Label;
+		private maskRect: eui.Rect;
+		private startButton2: eui.Image;
+		private startMask: eui.Rect;
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
-	}
+		private maskAnimation: egret.tween.TweenGroup;
+		private finishMaskAnimation: egret.tween.TweenGroup;
 
+		private static instance: SelectTaskScene;
 
-	protected async childrenCreated(): Promise<void>
-	{
-		super.childrenCreated();
-		mouse.enable(this.stage);
-		mouse.setButtonMode(this.task1Label, true);
-		mouse.setButtonMode(this.task2Label, true);
-		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
-		this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask1Over, this);
-		this.task2Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask2Over, this);
-		this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onTask1Out, this);
-		this.task2Label.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onTask2Out, this);
-		this.task1Label.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTask1Begin, this);
-		this.task2Label.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTask2Begin, this);
-		this.task1Label.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTask1Click, this);
-		this.task2Label.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTask2Click, this);
-		this.task1Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask1End, this);
-		this.task2Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask2End, this);
-	}
-	
-	private async onStartButton2Click(): Promise<void>
-	{
-		this.maskRect.visible = false;
-		this.startMask.visible = false;
-		this.startButton2.visible = false;
-		init();
-
-		lzlib.SoundUtility.playSound('select_task_mp3');
-		await this.playMaskAnimation();
-	}
-
-	private onTask1Begin(): void
-	{
-		this.task1Label.textColor = 0xf33b3d;
-	}
-
-	private onTask2Begin(): void
-	{
-		this.task2Label.textColor = 0xf33b3d;
-	}
-
-	private onTask1Over(): void
-	{
-		this.task1Label.textColor = 0xc38f44;
-	}
-
-	private onTask2Over(): void
-	{
-		this.task2Label.textColor = 0xc38f44;
-	}
-
-	private onTask1Out(): void
-	{
-		this.task1Label.textColor = 0x7E512F;
-	}
-
-	private onTask2Out(): void
-	{
-		this.task2Label.textColor = 0x7E512F;
-	}
-
-	private onTask1End(): void
-	{
-		this.task1Label.textColor = 0x7E512F;
-	}
-
-	private onTask2End(): void
-	{
-		this.task2Label.textColor = 0x7E512F;
-	}
-
-	private async onTask1Click(): Promise<void>
-	{
-		await this.playMaskAnimation(true);
-		Main.instance.gotoScene(new Task1IntroductionScene());
-	}
-
-	private async onTask2Click(): Promise<void>
-	{
-		await this.playMaskAnimation(true);
-		Main.instance.gotoScene(new Task2IntroductionScene());
-	}
-
-	private async playMaskAnimation(isFinish = false): Promise<void>
-	{
-		this.maskRect.visible = true;
-		if(isFinish){
-			await this.finishMaskAnimation.playOnceAsync();
-		}else{
-			await this.maskAnimation.playOnceAsync();
+		public constructor() {
+			super();
+			SelectTaskScene.instance = this;
 		}
-		
-		this.maskRect.visible = false;
+
+		protected partAdded(partName: string, instance: any): void {
+			super.partAdded(partName, instance);
+		}
+
+
+		protected async childrenCreated(): Promise<void> {
+			super.childrenCreated();
+			mouse.enable(this.stage);
+			mouse.setButtonMode(this.task1Label, true);
+			mouse.setButtonMode(this.task2Label, true);
+			this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+			this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask1Over, this);
+			this.task2Label.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onTask2Over, this);
+			this.task1Label.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onTask1Out, this);
+			this.task2Label.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onTask2Out, this);
+			this.task1Label.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTask1Begin, this);
+			this.task2Label.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTask2Begin, this);
+			this.task1Label.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTask1Click, this);
+			this.task2Label.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTask2Click, this);
+			this.task1Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask1End, this);
+			this.task2Label.addEventListener(egret.TouchEvent.TOUCH_END, this.onTask2End, this);
+		}
+
+		private async onStartButton2Click(): Promise<void> {
+			this.maskRect.visible = false;
+			this.startMask.visible = false;
+			this.startButton2.visible = false;
+			init();
+
+			// lzlib.SoundUtility.playSound('select_task_mp3');
+			// await this.playMaskAnimation();
+		}
+
+		public onStartQuestion(): void {
+			console.log('开始动画')
+		}
+
+		private onTask1Begin(): void {
+			this.task1Label.textColor = 0xf33b3d;
+		}
+
+		private onTask2Begin(): void {
+			this.task2Label.textColor = 0xf33b3d;
+		}
+
+		private onTask1Over(): void {
+			this.task1Label.textColor = 0xc38f44;
+		}
+
+		private onTask2Over(): void {
+			this.task2Label.textColor = 0xc38f44;
+		}
+
+		private onTask1Out(): void {
+			this.task1Label.textColor = 0x7E512F;
+		}
+
+		private onTask2Out(): void {
+			this.task2Label.textColor = 0x7E512F;
+		}
+
+		private onTask1End(): void {
+			this.task1Label.textColor = 0x7E512F;
+		}
+
+		private onTask2End(): void {
+			this.task2Label.textColor = 0x7E512F;
+		}
+
+		private async onTask1Click(): Promise<void> {
+			await this.playMaskAnimation(true);
+			Main.instance.gotoScene(new Task1IntroductionScene());
+		}
+
+		private async onTask2Click(): Promise<void> {
+			await this.playMaskAnimation(true);
+			Main.instance.gotoScene(new Task2IntroductionScene());
+		}
+
+		private async playMaskAnimation(isFinish = false): Promise<void> {
+			this.maskRect.visible = true;
+			if (isFinish) {
+				await this.finishMaskAnimation.playOnceAsync();
+			} else {
+				await this.maskAnimation.playOnceAsync();
+			}
+
+			this.maskRect.visible = false;
+		}
+
 	}
-	
 }
