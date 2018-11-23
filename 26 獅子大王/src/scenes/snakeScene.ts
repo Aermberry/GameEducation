@@ -6,7 +6,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private rabbitDialogBox: egret.tween.TweenGroup;
 	private bubleGrad: egret.tween.TweenGroup;
 	private changCard: egret.tween.TweenGroup;
-	private flustered:egret.tween.TweenGroup;
+	private flustered: egret.tween.TweenGroup;
 	private tipsComponent: tipsComponent;
 	private achieveComponent: achieveComponent
 
@@ -71,13 +71,13 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			})
 		})
 
-		await lzlib.ThreadUtility.sleep(18000).then(() => {
+		await lzlib.ThreadUtility.sleep(14000).then(() => {
 			this.lion.source = "lione_Silly_png";
 			this.lionDialogText(lionDialogText.snakeText_b);
 		});
 
 		await this.playVoice(lionDialogVoice.lionVoice_snakeB).then(() => {
-			this.lionDialogText(lionDialogText.snakeText_c);
+			this.lionDialogTextFlow();
 			this.playVoice(lionDialogVoice.lionVoice_c);
 			this.circleRect.visible = false;
 		});
@@ -101,6 +101,15 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		//  {text:"hello",style:{size:60,textColor:0xffff00}}
 		//   ]
 		// console.log(text);
+	}
+
+	private lionDialogTextFlow(): void {
+		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
+		lionLabel.textFlow = [
+			{ text: lionDialogText.snakeText_c.toString(), style: { size: 50, textColor: 0x000000 } },
+			{ text: lionDialogText.snakeText_d.toString(), style: { size: 50, textColor: 0xa00000 } },
+			{ text: lionDialogText.snakeText_e.toString(), style: { size: 50, textColor: 0x000000 } }
+		]
 	}
 
 	//語音播放
