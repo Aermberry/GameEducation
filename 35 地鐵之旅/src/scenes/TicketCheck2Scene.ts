@@ -2,6 +2,8 @@ class TicketCheck2Scene extends eui.Component implements  eui.UIComponent {
 	
 	private platform1Group: eui.Group;
 	private platform2Group: eui.Group;
+	private routeComponent: RouteComponent;
+	private controllingComponent: ControllingComponent;
 	private lineRepo = new LineRepository();
 	
 	public constructor() {
@@ -20,7 +22,12 @@ class TicketCheck2Scene extends eui.Component implements  eui.UIComponent {
 		this.enablePlatform();
 		this.platform1Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPlatform1Click, this);
 		this.platform2Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPlatform2Click, this);
-		
+		this.controllingComponent.addEventListener(ControllingEvent.ROUTE_CLICK, this.onRouteClick, this);
+	}
+
+	private onRouteClick(): void
+	{
+		this.routeComponent.visible = true;
 	}
 
 	private onPlatform1Click(): void

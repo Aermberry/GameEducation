@@ -17,5 +17,5 @@
 		<e:Image source="railway_platform_png" scaleX="-1" scaleY="1"/>
 		<e:Label text="1/2號月台" size="66" x="-315.15" y="54.54"/>
 	</e:Group>
-	<ns1:RouteComponent x="12" y="436" icon="huaguoshan" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="huaguoshan" visible="false"/>
 </e:Skin>

@@ -17,6 +17,7 @@ class EntranceScene extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 		await this.playMP3();
 		this.arrowComponent.enable();
+		this.arrowComponent.enableMouse();
 		this.arrowComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onArrowClick, this);
 	}
 

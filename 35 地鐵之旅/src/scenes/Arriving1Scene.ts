@@ -1,8 +1,9 @@
 class Arriving1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private routeComponent: RouteComponent;
-	private startAnimation: egret.tween.TweenGroup;
 	private controllingComponent: ControllingComponent;
+	private startAnimation: egret.tween.TweenGroup;
+	
 	
 	public constructor() {
 		super();

@@ -12,6 +12,8 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 	private closeLeftDoorAnimation: egret.tween.TweenGroup;
 	private arrowLeft: ArrowRedComponent;
 	private arrowRight: ArrowRedComponent;
+	private routeComponent: RouteComponent;
+	private controllingComponent: ControllingComponent;
 
 	private presenter: MotorCarPresent;
 
@@ -34,7 +36,13 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 		super.childrenCreated();
 		this.arrowLeft.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowClick, this.presenter);
 		this.arrowRight.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowClick, this.presenter);
+		this.controllingComponent.addEventListener(ControllingEvent.ROUTE_CLICK, this.onRouteClick, this);
 		this.presenter.loadView(this);
+	}
+
+	private onRouteClick(): void
+	{
+		this.routeComponent.visible = true;
 	}
 
 	public async playStartIntroduction(): Promise<void>
@@ -95,20 +103,24 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 		public enableLeftArrow(): void
 	{
 		this.arrowLeft.enable();
+		this.arrowLeft.enableMouse();
 	}
 
 	public disableLeftArrow(): void
 	{
 		this.arrowLeft.disable();
+		this.arrowLeft.disableMouse();
 	}
 
 	public enableRightArrow(): void
 	{
 		this.arrowRight.enable();
+		this.arrowRight.enableMouse();
 	}
 
 	public disableRightArrow(): void
 	{
 		this.arrowRight.disable();
+		this.arrowRight.disableMouse();
 	}
 }

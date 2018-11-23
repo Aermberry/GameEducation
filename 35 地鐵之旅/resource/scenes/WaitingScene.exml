@@ -67,7 +67,7 @@
 			<e:Label text="往下層" scaleX="1" scaleY="1" textColor="0x000000" size="68" name="tipText"/>
 		</e:Group>
 	</e:Group>
-	<ns1:RouteComponent id="routeComponent" width="1852" height="528" x="32" y="612" anchorOffsetX="0" anchorOffsetY="0" icon="hailong" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" width="1852" height="528" x="32" y="456" anchorOffsetX="0" anchorOffsetY="0" icon="hailong" visible="false"/>
 	<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16"/>
 	<e:Group id="markingLeft" x="12" y="24">
 		<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189"/>

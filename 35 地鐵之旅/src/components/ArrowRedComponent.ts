@@ -12,8 +12,6 @@ class ArrowRedComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
-		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
-		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}
 
 	private onMouseOver(): void
@@ -36,6 +34,18 @@ class ArrowRedComponent extends eui.Component implements  eui.UIComponent {
 	{
 		this.enabled = true;
 		this.currentState = 'normal';
+	}
+
+	public enableMouse(): void
+	{
+		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
+	}
+
+	public disableMouse(): void
+	{
+		this.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onMouseOver, this);
+		this.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.onMouseOut, this);
 	}
 	
 }

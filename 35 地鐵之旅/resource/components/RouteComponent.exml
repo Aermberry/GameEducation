@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="RouteComponentSkin" width="1896" height="518" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="RouteComponentSkin" width="1896" height="518" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="hailongAnimation">
+			<tween:TweenItem target="{hailong}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="huaguoAnimation">
+			<tween:TweenItem target="{huaguo}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="750"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1671524f348" ></w:Config>
 	<e:Image left="0" right="0" top="0" bottom="0" source="rect_border_blue_png"/>
 	<e:Image x="511.88" y="39.21" source="route2_png"/>
@@ -27,6 +83,10 @@
 		<e:Image x="1349.1" y="251.54" source="icon_station_png"/>
 		<e:Image x="279.03" y="250.85" source="icon_transfer_png"/>
 		<e:Image x="589.03" y="194.18" source="icon_transfer_png"/>
+	</e:Group>
+	<e:Group id="iconGroup0" width="1515.15" height="448.48" x="203.06" y="-23.85" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="hailong" x="333.03" y="96.09" name="hailong" width="56" height="56" source="circle_yellow_selected_png" alpha="0"/>
+		<e:Image id="huaguo" x="779.39" y="251.54" name="huaguoshan" width="56" height="56" source="circle_yellow_selected_png" alpha="0"/>
 	</e:Group>
 	<e:Image x="45.27" y="402.67" source="circle_yellow_png"/>
 	<e:Label text="目的地" x="121.27" y="414.88" textColor="0x000000" size="40"/>

@@ -12,6 +12,8 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	private smallPillarGroup: eui.Group;
 	private currentLine: Line;//当前线
 
+	private routeComponent: RouteComponent;
+
 	private carLeftAnimation: egret.tween.TweenGroup;
 	private carRightAnimation: egret.tween.TweenGroup;
 	private controllingComponent: ControllingComponent;
@@ -58,6 +60,12 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 		this.strataRightGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onStrataClick, this.presenter);
 		this.arrowLeft.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowLeftClick, this.presenter);
 		this.arrowRight.addEventListener(egret.TouchEvent.TOUCH_TAP, this.presenter.onArrowRightClick, this.presenter);
+		this.controllingComponent.addEventListener(ControllingEvent.ROUTE_CLICK, this.onRouteClick, this);
+	}
+
+	private onRouteClick(): void
+	{
+		this.routeComponent.visible = true;
 	}
 
 	public onOperateLeftOver(e: egret.TouchEvent): void
@@ -132,32 +140,36 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 
 	public async runLeftCar(): Promise<void>
 	{
-		this.carLeftAnimation.playLoopAsync();
+		await this.carLeftAnimation.playOnceAsync();
 	}
 
 	public async runRightCar(): Promise<void>
 	{
-		this.carRightAnimation.playLoopAsync();
+		await this.carRightAnimation.playOnceAsync();
 	}
 
 	public enableLeftArrow(): void
 	{
 		this.arrowLeft.enable();
+		this.arrowLeft.enableMouse();
 	}
 
 	public disableLeftArrow(): void
 	{
 		this.arrowLeft.disable();
+		this.arrowLeft.disableMouse();
 	}
 
 	public enableRightArrow(): void
 	{
 		this.arrowRight.enable();
+		this.arrowRight.enableMouse();
 	}
 
 	public disableRightArrow(): void
 	{
 		this.arrowRight.disable();
+		this.arrowRight.disableMouse();
 	}
 
 	public showOperationLeft(): void

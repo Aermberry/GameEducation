@@ -3,6 +3,8 @@ class Export1Scene extends eui.Component implements  eui.UIComponent {
 	private chuLabel: eui.Label;
 	private exportGroup: eui.Group;
 	private exportBackGroup: eui.Group;
+	private routeComponent: RouteComponent;
+	private controllingComponent: ControllingComponent;
 
 	private exportRepo = new ExportRepository();
 	
@@ -24,6 +26,12 @@ class Export1Scene extends eui.Component implements  eui.UIComponent {
 		this.enableExportClick();
 		this.initMouse();
 		this.initClick();
+		this.controllingComponent.addEventListener(ControllingEvent.ROUTE_CLICK, this.onRouteClick, this);
+	}
+
+	private onRouteClick(): void
+	{
+		this.routeComponent.visible = true;
 	}
 
 	private initMouse(): void

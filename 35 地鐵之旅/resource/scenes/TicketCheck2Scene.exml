@@ -21,6 +21,6 @@
 		<e:Image source="railway_platform_png" scaleY="1"/>
 		<e:Label text="3/4號月台" size="66" x="30.3" y="54.54"/>
 	</e:Group>
-	<ns1:RouteComponent x="12" y="436" icon="hailong" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="hailong" visible="false"/>
 	
 </e:Skin>

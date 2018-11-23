@@ -35,6 +35,6 @@
 			<e:BasicLayout/>
 		</e:layout>
 	</e:Group>
-	<ns1:RouteComponent x="12" y="436" icon="hailong" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="hailong" visible="false"/>
 	
 </e:Skin>

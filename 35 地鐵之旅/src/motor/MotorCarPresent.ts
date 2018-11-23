@@ -19,7 +19,14 @@ class MotorCarPresent {
 		this.view = view;
 		//设置柱子颜色
 		this.view.stationPillarBackground(this.station.getBackground());
+		//打开车门
 		this.isRight ? this.view.openRightDoor() : this.view.openLeftDoor();
+		//启用箭头点击
+		this.isRight ? this.view.enableRightArrow() : this.view.enableLeftArrow();
+		await lzlib.ThreadUtility.sleep(4000);
+		//禁止箭头点击
+		this.isRight ? this.view.disableRightArrow() : this.view.disableLeftArrow();
+
 		await this.view.playStartIntroduction();
 		await this.isRight ? this.view.closeRightDoor() : this.view.closeLeftDoor();
 		this.runCar();

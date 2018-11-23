@@ -3,6 +3,10 @@ class RouteComponent extends eui.Component implements  eui.UIComponent {
 	private iconGroup: eui.Group;
 	private closeImage: eui.Image;
 
+	private hailongAnimation: egret.tween.TweenGroup;
+	private huaguoAnimation: egret.tween.TweenGroup;
+	private iconAnimation = {};
+
 	public constructor() {
 		super();
 	}
@@ -17,6 +21,10 @@ class RouteComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		this.closeImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCloseClick, this)
+		this.iconAnimation = {
+			'huaguoshan': this.huaguoAnimation,
+			'hailong': this.hailongAnimation
+		};
 		this.setIcon();
 	}
 
@@ -43,7 +51,7 @@ class RouteComponent extends eui.Component implements  eui.UIComponent {
 		{
 			this.iconGroup.$children.map((child) => {
 				let image = (child as eui.Image);
-				image.name == this.icon && (image.source = 'circle_yellow_png');
+				image.name == CurrectJourneyRepository.termiuns && (this.iconAnimation[image.name] as egret.tween.TweenGroup).playLoopAsync();
 			})
 		}
 	}

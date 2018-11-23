@@ -1,6 +1,8 @@
 class TicketCheck1Scene extends eui.Component implements  eui.UIComponent {
 	
 	private platformGroup: eui.Group;
+	private routeComponent: RouteComponent;
+	private controllingComponent: ControllingComponent;
 	private lineRepo = new LineRepository();
 
 	public constructor() {
@@ -19,7 +21,12 @@ class TicketCheck1Scene extends eui.Component implements  eui.UIComponent {
 		await this.playMP3();
 		this.enablePlatform();
 		this.platformGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPlatformClick, this);
-		
+		this.controllingComponent.addEventListener(ControllingEvent.ROUTE_CLICK, this.onRouteClick, this);
+	}
+
+	private onRouteClick(): void
+	{
+		this.routeComponent.visible = true;
 	}
 
 	private onPlatformClick(): void

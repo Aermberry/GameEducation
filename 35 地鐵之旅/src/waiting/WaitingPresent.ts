@@ -4,6 +4,7 @@ class WaitingPresent {
 	private currentLine: Line;//当前线
 	private position: number;//在当前线的第position站
 	private station: Station;//当前站
+	private isArrowClick = false;
 
 	private upperStrata = '往上層';
 	private lowerStrata = '往下層';
@@ -81,6 +82,7 @@ class WaitingPresent {
 
 		this.runRail();
 		await this.station.playIntroductionMP3();
+		this.isArrowClick = true;
 		this.view.initMouseOperation();
 
 	}
@@ -100,9 +102,9 @@ class WaitingPresent {
 			this.view.runLeftCar();
 			await lzlib.ThreadUtility.sleep(1500);
 			//enable左箭头按钮
-			this.view.enableLeftArrow()
+			this.isArrowClick && this.view.enableLeftArrow()
 			await lzlib.ThreadUtility.sleep(3000);
-			this.view.disableLeftArrow();
+			this.isArrowClick &&  this.view.disableLeftArrow();
 	}
 
 	private async runRightCar(): Promise<void>
@@ -110,9 +112,9 @@ class WaitingPresent {
 			this.view.runRightCar();
 			await lzlib.ThreadUtility.sleep(1500);
 			//enable右箭头按钮
-			this.view.enableRightArrow();
+			this.isArrowClick &&  this.view.enableRightArrow();
 			await lzlib.ThreadUtility.sleep(3000);
-			this.view.disableRightArrow();
+			this.isArrowClick &&  this.view.disableRightArrow();
 	}
 
 	public onOperateLeftOut(e: egret.TouchEvent): void
@@ -134,7 +136,7 @@ class WaitingPresent {
 			//往大堂
 			if(this.station.stationName == CurrectJourneyRepository.arriving)
 			{
-				CurrectJourneyRepository.currectJourney == '旅程一' ? Main.instance.gotoScene(new Arriving1Scene()) : Main.instance.gotoScene(new Arriving2Scene());
+				CurrectJourneyRepository.currectJourney == '旅程一' ? Main.instance.gotoScene(new Export1Scene()) : Main.instance.gotoScene(new Export2Scene());
 			}else{
 				lzlib.SoundUtility.playSound('sound 2 (inst_wrongDest.mp3)_mp3');
 			}

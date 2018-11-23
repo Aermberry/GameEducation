@@ -202,5 +202,5 @@
 		<ns1:ArrowRedComponent id="arrowLeft" width="258" x="72" y="776" height="115"/>
 		<ns1:ArrowRedComponent id="arrowRight" width="258" x="1852" y="776" height="115" scaleX="-1"/>
 		<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16"/>
-	<ns1:RouteComponent x="12" y="436" icon="huaguoshan" visible="false"/>
+	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="huaguoshan" visible="false"/>
 </e:Skin>
