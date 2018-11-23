@@ -252,6 +252,37 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="flustered">
+			<tween:TweenItem target="{flustered0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1"
@@ -294,10 +325,10 @@
 		         anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
 		<e:Label text="好像有什麽地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="66.67" lineSpacing="25" size="50" y="-21.21" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
 		<e:Group x="36.35" y="-24.25" visible="false">
-			<e:Label text="對不起！ 我不知道\n應該     來參加！" anchorOffsetY="0" height="211.82" x="0" y="0"
+			<e:Label text="對不起！ 我不知道\n應該      來參加！" anchorOffsetY="0" height="211.82" x="0" y="0"
 			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
-			<e:Label text="哪天" anchorOffsetY="0" height="57.28" x="107.63" y="78.8" anchorOffsetX="0" width="123.05" size="50"
+			<e:Label text="哪天" anchorOffsetY="0" height="57.28" x="100.66" y="73.77" anchorOffsetX="0" width="123.05" size="50"
 			         textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
 
 
@@ -317,7 +348,7 @@
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
 	        anchorOffsetY="0" alpha="1" visible="false" />
 	<e:Image source="snake_normal_png" x="1588.17" y="1041.5"/>
-	<ns1:flustered x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0" height="153.7" rotation="346.55"/>
+	<ns1:flustered id="flustered0" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0" height="153.7" rotation="346.55"/>
 	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" alpha="0">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000" />
 		<ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03" />

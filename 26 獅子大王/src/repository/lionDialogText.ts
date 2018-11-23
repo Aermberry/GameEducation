@@ -11,6 +11,7 @@ enum lionDialogText {
   rabbitText_d = '做得好！\n放你一馬吧！',
   snakeText_a ='我請你來嘉年華，\n你爲什麽沒有來？',
   snakeText_b ='噢！我忘了寫日期，你說得對！',
+  snakeText_c ='我把嘉年華改至下星\n期，即11月9日！你寫\n給我看看。',
   pigText_a='我約定你「不見不\n散」，害我白等,\n真不識抬舉！',
   pigText_b='噢！我忘了寫時\n間,你説的對！',
   ratText_a='小老鼠，我連嘉年華\n舉行的地方都畫在卡上，你竟膽大不來！',

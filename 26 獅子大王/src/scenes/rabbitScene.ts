@@ -62,7 +62,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
         this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
       }).then(() => {
         (this.rabbitDialogGroup.$children[3] as eui.Group).visible = true;
-        this.playVoice(rabbitDialogVoice.rabbitVoice_a);
+        this.playVoice(animalDialogVoice.rabbitVoice_a);
         setTimeout(() => {
           this.circleRect.visible = true;
         }, 4000)
@@ -83,7 +83,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await lzlib.ThreadUtility.sleep(5000);
     (this.rabbitDialogGroup.$children[3] as eui.Group).visible = false;
     (this.rabbitDialogGroup.$children[4] as eui.Group).visible = true;
-    await this.playVoice(rabbitDialogVoice.rabbitVoice_b);
+    await this.playVoice(animalDialogVoice.rabbitVoice_b);
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
       egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
       egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -102,7 +102,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   //語音播放
-  private async playVoice(voice: lionDialogVoice | rabbitDialogVoice): Promise<void> {
+  private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
     // let sound: egret.Sound = RES.getRes(voice.toString());
     // sound.play(0, 1);
     let sound = lzlib.SoundUtility.playSound(voice.toString())
