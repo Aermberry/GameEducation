@@ -23,6 +23,9 @@ class WaitingPresent {
 		this.view.stationColor(this.station.getBackground());
 		this.view.stationText(this.station.stationName);
 		
+		//设置表示两边颜色
+		this.view.setMarkingColor(this.currentLine.color);
+
 		//左右两边的标志
 		if(this.currentLine.isLastStation())
 		{

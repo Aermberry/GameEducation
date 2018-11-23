@@ -17,6 +17,8 @@ class MotorCarPresent {
 	public async loadView(view: MotorCarView): Promise<void>
 	{
 		this.view = view;
+		//显示车上的人
+		this.view.showPeople(this.choosePerson());
 		//设置柱子颜色
 		this.view.stationPillarBackground(this.station.getBackground());
 		//打开车门
@@ -99,6 +101,18 @@ class MotorCarPresent {
 			}
 		}
 		
+	}
+
+	private choosePerson(): number[]
+	{
+		let count = Math.randomMinMax(1,3);
+		let num = [];
+		for(let i = 0; i < count; i++)
+		{
+			num[i] = Math.randomMinMax(0,6);
+		}
+		console.log(num);
+		return num;
 	}
 
 	public async leftDoor(): Promise<void>

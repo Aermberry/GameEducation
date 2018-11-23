@@ -35,7 +35,9 @@ class LineRepository {
 
 		this.line1.setStations(this.stations1);
 		this.line2.setStations(this.stations2);
+		this.line2.color = 0xFF001B;
 		this.line3.setStations(this.stations3);
+		this.line3.color = 0x369924;
 
 	}
 }

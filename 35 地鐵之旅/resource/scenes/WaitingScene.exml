@@ -80,7 +80,7 @@
 		<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189"/>
 		<e:Label text="往海龍公園" x="28" y="56" textColor="0x000000" size="75" name="station"/>
 		<e:Label text="月台" x="588" y="56" textColor="0x000000" size="75"/>
-		<e:Rect width="120" height="120" x="424" y="32" fillColor="0x27A1F4" ellipseHeight="150" ellipseWidth="150"/>
+		<e:Rect width="120" height="120" x="424" y="32" fillColor="0x27A1F4" ellipseHeight="150" ellipseWidth="150" name="circle"/>
 		<e:Label text="2" x="456" y="44" size="96" bold="true" name="platformLabel"/>
 	</e:Group>
 </e:Skin>

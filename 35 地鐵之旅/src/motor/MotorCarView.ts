@@ -13,4 +13,5 @@ interface MotorCarView {
     disableLeftArrow(): void;
     enableRightArrow(): void;
     disableRightArrow(): void;
+    showPeople(personIndex: number[]): void;
 }

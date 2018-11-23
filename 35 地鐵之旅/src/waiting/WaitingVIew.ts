@@ -29,4 +29,5 @@ interface WaitingVIew {
     hideTipRight(): void;
     initMouseOperation(): void;
     wrongMP3(): void;
+    setMarkingColor(color: number): void;
 }

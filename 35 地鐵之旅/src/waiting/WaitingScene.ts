@@ -250,5 +250,10 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 		lzlib.SoundUtility.playSound('sound 17 (inst_chkMap.mp3)_mp3');
 	}
 
+	public setMarkingColor(color: number): void
+	{
+		(this.markingLeft.getChildByName('circle') as eui.Rect).fillColor = color;
+		(this.markingRight.getChildByName('circle') as eui.Rect).fillColor = color;
+	}
 
 }

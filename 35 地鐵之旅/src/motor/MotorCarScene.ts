@@ -4,6 +4,7 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 	private position: number;
 	private isRight: boolean;
 
+	private peopleGroup: eui.Group;
 	private pillarsGroup: eui.Group;
 	private startAnimation: egret.tween.TweenGroup;
 	private openRightDoorAnimation: egret.tween.TweenGroup;
@@ -122,5 +123,13 @@ class MotorCarScene extends eui.Component implements  eui.UIComponent,MotorCarVi
 	{
 		this.arrowRight.disable();
 		this.arrowRight.disableMouse();
+	}
+
+	public showPeople(personIndex: number[]): void
+	{
+		for(let i = 0; i < personIndex.length; i++)
+		{
+			(this.peopleGroup.getChildAt(personIndex[i]) as eui.Image).visible = true;
+		}
 	}
 }

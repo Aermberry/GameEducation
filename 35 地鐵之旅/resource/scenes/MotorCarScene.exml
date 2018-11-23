@@ -24,6 +24,28 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{peopleGroup}">
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{-16}" x="{-4}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object x="{0}" y="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object y="{-12}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object x="{0}" y="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="openRightDoorAnimation">
 			<tween:TweenItem target="{doorRight1Image}">
@@ -190,7 +212,7 @@
 		<e:Image source="background_motorcar_png" width="1920" height="1396"/>
 	</e:Group>
 
-	<e:Group id="peopleGroup" left="0" right="0" top="0" bottom="0">
+	<e:Group id="peopleGroup" width="1920" height="1396">
 		<e:Image x="688" y="608.5" source="person5_png" anchorOffsetX="0" width="183.35" anchorOffsetY="0" height="325" visible="false"/>
 		<e:Image x="678" y="690.5" anchorOffsetX="0" anchorOffsetY="0" source="person1_png" width="225.79" height="485" visible="false"/>
 		<e:Image x="436" y="800.5" anchorOffsetX="0" anchorOffsetY="0" source="person3_png" width="305.48" height="495" visible="false"/>

@@ -1,11 +1,21 @@
 class Line {
 
 	private stations: Station[];
-
+	private circleColor = 0x27A1F4;
 	private position: number;
 
 	public constructor() {
 		
+	}
+
+	public get color(): number
+	{
+		return this.circleColor;
+	}
+
+	public set color(color: number)
+	{
+		this.circleColor = color;
 	}
 
 	public setStations(stations: Station[]): void
