@@ -7,4 +7,6 @@
 	<e:Image x="211.03" y="273.15" source="yellow_color_motorcar_png"/>
 	<e:Image x="211.03" y="273.15" source="motorcar_png"/>
 	<ns1:ArrowRedComponent id="arrowComponent" width="258" height="115" x="534.33" y="706" scaleX="-1"/>
+	<e:Label text="香蕉站" x="440" y="348" size="75" rotation="353.6" visible="false"/>
+	<e:Image x="392" y="332" source="entering2_title_png" rotation="355.33"/>
 </e:Skin>

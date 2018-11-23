@@ -6,6 +6,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private journey1Image: eui.Image;
 	private journey2Image: eui.Image;
 
+	private currentButtonIndex = 1;
+
 	public constructor() {
 		super();
 	}
@@ -27,10 +29,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onStartClick(): void
 	{
-		let group = this.getChildByName('selected');
-		let index = this.getChildIndex(group);
-		
-		if(index == 1)
+		if(this.currentButtonIndex == 1)
 		{
 			CurrectJourneyRepository.termiuns = 'huaguoshan';
 			CurrectJourneyRepository.currectJourney = '旅程一';
@@ -48,16 +47,14 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 
 	private onJourney1Click(): void
 	{
-		this.journey2Group.name = '';
-		this.journey1Group.name = 'selected';
+		this.currentButtonIndex = 1;
 		this.journey1Image.source = 'background_journey2_png';
 		this.journey2Image.source = 'background_journey1_png';
 	}
 
 	private onJourney2Click(): void
 	{
-		this.journey1Group.name = '';
-		this.journey2Group.name = 'selected';
+		this.currentButtonIndex = 2;
 		this.journey1Image.source = 'background_journey1_png';
 		this.journey2Image.source = 'background_journey2_png';
 	}

@@ -7,4 +7,5 @@
 	<e:Image x="211.03" y="273.15" source="blue_color_motorcar_png"/>
 	<e:Image x="211.03" y="273.15" source="motorcar_png"/>
 	<ns1:ArrowRedComponent id="arrowComponent" x="536.33" y="706" scaleX="-1"/>
+	<e:Image x="348" y="340" source="entering1_title_png" rotation="355.85" anchorOffsetX="0" width="392.04" anchorOffsetY="0" height="87.12"/>
 </e:Skin>

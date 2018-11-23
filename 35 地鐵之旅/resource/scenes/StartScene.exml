@@ -14,4 +14,5 @@
 		<e:Image source="background_start_png"/>
 		<e:Label text="開始" size="82" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
+	<e:Image source="title_start_png" anchorOffsetX="0" width="1920" anchorOffsetY="0" height="478.67"/>
 </e:Skin>
