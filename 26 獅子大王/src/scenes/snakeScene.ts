@@ -96,11 +96,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
-		//   lionLabel.textFlow = [
-		//    {text:"hello",style:{size:60,textColor:0x000000}},
-		//  {text:"hello",style:{size:60,textColor:0xffff00}}
-		//   ]
-		// console.log(text);
 	}
 
 	private lionDialogTextFlow(): void {
@@ -114,8 +109,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		// let sound: egret.Sound = RES.getRes(voice.toString());
-		// sound.play(0, 1);
 		let sound = lzlib.SoundUtility.playSound(voice.toString())
 		return sound;
 	}
@@ -123,6 +116,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private tips(): void {
 		this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
 		this.tipsComponent = new tipsComponent(this);
+		this.tipsComponent.currentState="snake"
 		this.addChild(this.tipsComponent);
 		this.tipsComponent.playAnim();
 	}

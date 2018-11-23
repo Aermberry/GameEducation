@@ -112,6 +112,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private tips(): void {
     this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
     this.tipsComponent = new tipsComponent(this);
+    this.tipsComponent.currentState="rabbit";
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();
   }

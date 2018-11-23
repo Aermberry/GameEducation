@@ -59,7 +59,7 @@
 			<e:Label text="邀請" x="457.57" y="0" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true" textColor="0xeb0000"/>
 			<e:Label text="小動物" x="-33.34" y="109.09" size="87" lineSpacing="25" fontFamily="華康中黑體" bold="true" textColor="0xeb0000"/>
 		</e:Group>
-		<e:Group x="293.94" y="221.22" includeIn="snake">
+		<e:Group x="293.94" y="290.91" includeIn="snake">
 			<e:Label text="嘉年華的舉辦日期在\n哪天？請參考範例：" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
 			<e:Label text="日期：六月二十日" y="222.66" x="-15.82" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>

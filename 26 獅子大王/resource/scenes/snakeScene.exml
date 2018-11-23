@@ -334,7 +334,7 @@
 
 
 		</e:Group>
-		<e:Group x="48.48" y="-33.34" visible="false">
+		<e:Group x="60.6" y="-15.16" visible="false">
 			<e:Label text="讓我寫上     \n   吧！當天是11月\n9日對吧？" anchorOffsetY="130.3" height="211.82" x="366.67" y="127.27"
 			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
