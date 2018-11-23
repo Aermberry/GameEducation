@@ -10,9 +10,11 @@
 		<e:Image id="journey2Image" source="background_journey1_png"/>
 		<e:Label text="旅程二" left="0" right="0" top="0" bottom="0" textColor="0xD75F63" size="87" textAlign="center" verticalAlign="middle"/>
 	</e:Group>
-	<e:Group id="startGroup" x="803.42" y="1097.39" alpha="0.7">
+	<e:Group id="startGroup" x="803.42" y="1097.39" alpha="0.7" visible="false">
 		<e:Image source="background_start_png"/>
-		<e:Label text="開始" size="82" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label text="開始" size="66" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
 	<e:Image source="title_start_png" anchorOffsetX="0" width="1920" anchorOffsetY="0" height="478.67"/>
+		<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
 </e:Skin>

@@ -8,19 +8,19 @@
 	<e:Label text="請選擇目的地" y="715.06" textColor="0x000000" size="76" horizontalCenter="0"/>
 	<e:Image x="511.88" y="924.06" source="route2_png"/>
 	<e:Image x="236" y="958" source="route1_png"/>
-	<e:Label text="海龍公園" x="503.3" y="921.57" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="機場" x="272.27" y="1236.76" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="香蕉" x="481.88" y="1236.76" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="桃花" x="637.33" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="太陽" x="791.88" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="花果山" x="967.64" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="火車路線" x="952.49" y="984.03" textColor="0xebb69e" fontFamily="華康楷書體"/>
-	<e:Label text="荔枝園" x="1194.91" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="菊花" x="1379.76" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="蘋果" x="1549.45" y="1177.06" textColor="0x333333" fontFamily="華康楷書體"/>
-	<e:Label text="海龍線" x="413.3" y="970.96" textColor="0x5f9dcb" fontFamily="華康楷書體"/>
-	<e:Label text="機場線 " x="136.91" y="1180.88" textColor="0x699828" fontFamily="華康楷書體"/>
-	<e:Label text="花果山線 " x="1658.06" y="1069.51" textColor="0xff0000" fontFamily="華康楷書體"/>
+	<e:Label text="海龍公園" x="503.3" y="921.57" textColor="0x333333"/>
+	<e:Label text="機場" x="272.27" y="1236.76" textColor="0x333333"/>
+	<e:Label text="香蕉" x="481.88" y="1236.76" textColor="0x333333"/>
+	<e:Label text="桃花" x="637.33" y="1177.06" textColor="0x333333"/>
+	<e:Label text="太陽" x="791.88" y="1177.06" textColor="0x333333"/>
+	<e:Label text="花果山" x="967.64" y="1177.06" textColor="0x333333"/>
+	<e:Label text="火車路線" x="952.49" y="984.03" textColor="0xebb69e"/>
+	<e:Label text="荔枝園" x="1194.91" y="1177.06" textColor="0x333333"/>
+	<e:Label text="菊花" x="1379.76" y="1177.06" textColor="0x333333"/>
+	<e:Label text="蘋果" x="1549.45" y="1177.06" textColor="0x333333"/>
+	<e:Label text="海龍線" x="413.3" y="970.96" textColor="0x5f9dcb"/>
+	<e:Label text="機場線 " x="136.91" y="1180.88" textColor="0x699828"/>
+	<e:Label text="花果山線 " x="1658.06" y="1069.51" textColor="0xff0000"/>
 	<e:Group id="pointGroup" width="1515.15" height="448.48" x="203.06" y="861" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image x="333.03" y="96.09" source="icon_station_png" name="hailong" width="56" height="56"/>
 		<e:Image x="436.97" y="251.54" source="icon_station_png" name="taohua" width="56" height="56"/>

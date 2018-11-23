@@ -28,4 +28,5 @@ interface WaitingVIew {
     showTipRight(): void;
     hideTipRight(): void;
     initMouseOperation(): void;
+    wrongMP3(): void;
 }

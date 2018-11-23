@@ -138,7 +138,7 @@ class WaitingPresent {
 			{
 				CurrectJourneyRepository.currectJourney == '旅程一' ? Main.instance.gotoScene(new Export1Scene()) : Main.instance.gotoScene(new Export2Scene());
 			}else{
-				lzlib.SoundUtility.playSound('sound 2 (inst_wrongDest.mp3)_mp3');
+				this.view.wrongMP3();
 			}
 		}else if(name == this.upperStrata)
 		{

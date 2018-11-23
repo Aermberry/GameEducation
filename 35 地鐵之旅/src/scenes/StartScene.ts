@@ -5,6 +5,8 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	private startGroup: eui.Group;
 	private journey1Image: eui.Image;
 	private journey2Image: eui.Image;
+	private startButton2: eui.Image;
+	private startMask: eui.Rect;
 
 	private currentButtonIndex = 1;
 
@@ -20,11 +22,20 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		await lzlib.SoundUtility.playSound('sound 15 (inst_intro.mp3)_mp3');
+		
 		this.enableStartButton();
 		this.journey1Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney1Click, this);
 		this.journey2Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney2Click, this);
 		this.startGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartClick, this);
+		this.startButton2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartButton2Click, this);
+	}
+
+	private async onStartButton2Click(): Promise<void>
+	{
+		this.startMask.visible = false;
+		this.startButton2.visible = false;
+		this.startGroup.visible = true;
+		await lzlib.SoundUtility.playSound('sound 15 (inst_intro.mp3)_mp3');
 	}
 
 	private onStartClick(): void

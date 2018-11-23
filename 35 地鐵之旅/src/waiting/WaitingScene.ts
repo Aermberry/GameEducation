@@ -244,5 +244,11 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 		this.tipRightGroup.visible = false;
 	}
 
+	public async wrongMP3(): Promise<void>
+	{
+		await lzlib.SoundUtility.playSound('sound 2 (inst_wrongDest.mp3)_mp3');
+		lzlib.SoundUtility.playSound('sound 17 (inst_chkMap.mp3)_mp3');
+	}
+
 
 }
