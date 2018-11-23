@@ -130,6 +130,4 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     //   },5000)
     // }
   }
-
-
 }

@@ -308,7 +308,7 @@
 			<e:Label text="請我" anchorOffsetY="0" height="60.31" x="150.31" y="150.33" anchorOffsetX="0" width="106.39" size="50"
 			         textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
 		</e:Group>
-		<e:Group x="69.69" y="3.03" visible="false">
+		<e:Group x="33.33" y="3.03" visible="false">
 			<e:Label text="卡上沒有     \n   ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
 			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />

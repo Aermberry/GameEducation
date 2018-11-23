@@ -1,12 +1,12 @@
 class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	private tipsAnim: egret.tween.TweenGroup;
-	private rect:eui.Rect;
-	private returnGroup:eui.Group;
-	private rabbitScene:rabbitScene;
-	public constructor(rabbitScene:rabbitScene) {
+	private rect: eui.Rect;
+	private returnGroup: eui.Group;
+	private scene: eui.Component;
+	public constructor(scene: eui.Component) {
 		super();
-		this.rabbitScene=rabbitScene;
+		this.scene = scene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -16,14 +16,23 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.return,this)
+		this.currentState = this.skin.states[0].name
+		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.return, this)
 	}
 
 	public playAnim(): void {
 		this.tipsAnim.playOnceAsync();
+		this.playVoice().then(()=>{
+			this.returnGroup.visible = true; 
+		})
 	}
 
-	private return():void {
-		this.rabbitScene.removeChild(this);
-  }
+	private return(): void {
+		this.scene.removeChild(this);
+	}
+
+	private async playVoice(): Promise<void> {
+		let sound = lzlib.SoundUtility.playSound('sound 342_mp3');
+		return sound;
+	}
 }

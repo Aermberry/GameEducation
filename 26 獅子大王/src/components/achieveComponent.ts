@@ -1,14 +1,14 @@
 class achieveComponent extends eui.Component implements eui.UIComponent {
 	private flexAnim: egret.tween.TweenGroup;
 	private optionsScene: optionsScene;
-	private rabbitScene: rabbitScene;
+	private Scene: eui.Component;
 	private achieve_normal: eui.Image;
 	private achieve_active: eui.Image;
 
-	public constructor(optionsScene: optionsScene, rabbitScene: rabbitScene) {
+	public constructor(optionsScene: optionsScene, scene: eui.Component) {
 		super();
 		this.optionsScene = optionsScene;
-		this.rabbitScene = rabbitScene;
+		this.Scene = scene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -40,7 +40,7 @@ class achieveComponent extends eui.Component implements eui.UIComponent {
 	private gotoHomeScene(): void {
 		let currentState = this.getCurrentState()
 		if (currentState == "active")
-			this.optionsScene.removeChild(this.rabbitScene);
+			this.optionsScene.removeChild(this.Scene);
 	}
 
 }
