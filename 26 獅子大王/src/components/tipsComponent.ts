@@ -4,9 +4,12 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private rect: eui.Rect;
 	private returnGroup: eui.Group;
 	private scene: eui.Component;
-	public constructor(scene: eui.Component) {
+	private voice:string;
+
+	public constructor(scene: eui.Component,voice:string) {
 		super();
 		this.scene = scene;
+		this.voice=voice
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -22,7 +25,7 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	public playAnim(): void {
 		this.tipsAnim.playOnceAsync();
-		this.playVoice().then(()=>{
+		this.playVoice(this.voice).then(()=>{
 			this.returnGroup.visible = true; 
 		})
 	}
@@ -31,8 +34,8 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		this.scene.removeChild(this);
 	}
 
-	private async playVoice(): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound('sound 342_mp3');
+	private async playVoice(voiceName:string): Promise<void> {
+		let sound = lzlib.SoundUtility.playSound(voiceName);
 		return sound;
 	}
 }
