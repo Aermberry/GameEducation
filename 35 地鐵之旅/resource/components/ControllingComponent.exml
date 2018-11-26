@@ -9,5 +9,5 @@
 	<e:Label id="restartLabel" text="重新開始" x="1230.03" y="70.03" textColor="0xf51828" size="50"/>
 	<e:Label id="routeMapLabel" text="路線圖" x="1511.97" y="70.03" textColor="0x62b0f9" size="50"/>
 	<e:Label id="closeLabel" text="關閉" x="1729.97" y="70" textColor="0x000000" size="50"/>
-	<ns1:PopupComponent id="popupComponent" width="359" height="145" x="746.94" y="-509" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+	<ns1:PopupComponent id="popupComponent" x="746.94" y="-509" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
 </e:Skin>
