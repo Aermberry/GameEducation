@@ -43,6 +43,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private alertGroup: eui.Group;
 	private alertTetxLabel: eui.Label;//拖拽后的提示信息标签
 	private alertMovie: MovieClipPlayer;
+	private rdTetxLabel: eui.Label;
 
 	private partsOfBody: any;
 	private mouseOverTexts: any;
@@ -52,6 +53,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	private drapFinishAnimation: egret.tween.TweenGroup;
 	private bodyPartMaskRectAnimation: egret.tween.TweenGroup;
 	private alertTextAnimation: egret.tween.TweenGroup;
+	private alertRdAnimation: egret.tween.TweenGroup;
 
 	private bootsComponent: BootsComponent;
 	private backBootsComponent: BootsComponent;
@@ -178,7 +180,11 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	public async alertWrongtInfo(text: string): Promise<void>
 	{
 		this.alertTetxLabel.text = text;
-		this.playAlertMovie();
+		this.alertGroup.visible = true;
+		this.alertMovie.play();
+		await lzlib.ThreadUtility.sleep(500);
+		this.alertTextAnimation.playOnceAsync();
+		this.alertRdAnimation.playOnceAsync();
 	}
 
 	public async AlertReTry(): Promise<void>
