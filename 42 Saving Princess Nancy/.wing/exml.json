@@ -1,95 +1,105 @@
 {
-  "1661dfbbbc7": {
-    "path": "scenes/SelectTaskScene.ts",
-    "class": "SelectTaskScene",
-    "parentPath": ""
-  },
-  "1661e1ee44f": {
-    "path": "scenes/Task1IntroductionScene.ts",
-    "class": "Task1IntroductionScene",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  },
-  "1661f6df82d": {
-    "path": "scenes/Task2IntroductionScene.ts",
-    "class": "Task2IntroductionScene",
-    "parentPath": ""
-  },
-  "1661f8c50fe": {
-    "path": "scenes/DistinguishRole1Scene.ts",
-    "class": "DistinguishRole1Scene",
-    "parentPath": ""
-  },
-  "16622da6591": {
-    "path": "scenes/DistinguishRole2Scene.ts",
-    "class": "DistinguishRole2Scene",
-    "parentPath": ""
-  },
-  "16622fdcac5": {
-    "path": "scenes/DistinguishRole3Scene.ts",
-    "class": "DistinguishRole3Scene",
-    "parentPath": ""
-  },
-  "1662311577f": {
-    "path": "../resource/scenes/DistinguishRole4Scene.ts",
-    "class": "DistinguishRole4Scene",
-    "parentPath": ""
-  },
-  "166233e5828": {
-    "path": "scenes/GoToCastleScene.ts",
-    "class": "GoToCastleScene",
-    "parentPath": ""
-  },
-  "166234e9d23": {
-    "path": "scenes/DistinguishRole5Scene.ts",
-    "class": "DistinguishRole5Scene",
-    "parentPath": ""
-  },
-  "166235fd3eb": {
-    "path": "scenes/DistinguishRole6Scene.ts",
-    "class": "DistinguishRole6Scene",
-    "parentPath": ""
-  },
-  "16623e811f6": {
-    "path": "scenes/FinishScene.ts",
-    "class": "FinishScene",
-    "parentPath": ""
-  },
-  "166241b423b": {
-    "path": "components/BootsComponent.ts",
-    "class": "BootsComponent",
-    "parentPath": ""
-  },
-  "166248e2030": {
-    "path": "components/AlertComponent.ts",
-    "class": "AlertComponent",
-    "parentPath": ""
-  },
-  "166249ac9d9": {
-    "path": "components/ListenComponent.ts",
-    "class": "ListenComponent",
-    "parentPath": ""
-  },
-  "16651acb1c0": {
-    "path": "components/GreenTextComponent.ts",
-    "class": "GreenTextComponent",
-    "parentPath": ""
-  },
-  "166523b0881": {
-    "path": "components/FireWordsComponent.ts",
-    "class": "FireWordsComponent",
-    "parentPath": ""
-  },
-  "166850ee57f": {
-    "path": "components/CloudComponent.ts",
-    "class": "CloudComponent",
-    "parentPath": ""
-  },
-  "16685121697": {
-    "path": "components/CloudComponent.ts",
-    "class": "CloudComponent",
-    "parentPath": ""
-  }
+    "1661dfbbbc7": {
+        "path": "scenes/SelectTaskScene.ts",
+        "class": "SelectTaskScene",
+        "parentPath": ""
+    },
+    "1661e1ee44f": {
+        "path": "scenes/Task1IntroductionScene.ts",
+        "class": "Task1IntroductionScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "1661f6df82d": {
+        "path": "scenes/Task2IntroductionScene.ts",
+        "class": "Task2IntroductionScene",
+        "parentPath": ""
+    },
+    "1661f8c50fe": {
+        "path": "scenes/DistinguishRole1Scene.ts",
+        "class": "DistinguishRole1Scene",
+        "parentPath": ""
+    },
+    "16622da6591": {
+        "path": "scenes/DistinguishRole2Scene.ts",
+        "class": "DistinguishRole2Scene",
+        "parentPath": ""
+    },
+    "16622fdcac5": {
+        "path": "scenes/DistinguishRole3Scene.ts",
+        "class": "DistinguishRole3Scene",
+        "parentPath": ""
+    },
+    "1662311577f": {
+        "path": "../resource/scenes/DistinguishRole4Scene.ts",
+        "class": "DistinguishRole4Scene",
+        "parentPath": ""
+    },
+    "166233e5828": {
+        "path": "scenes/GoToCastleScene.ts",
+        "class": "GoToCastleScene",
+        "parentPath": ""
+    },
+    "166234e9d23": {
+        "path": "scenes/DistinguishRole5Scene.ts",
+        "class": "DistinguishRole5Scene",
+        "parentPath": ""
+    },
+    "166235fd3eb": {
+        "path": "scenes/DistinguishRole6Scene.ts",
+        "class": "DistinguishRole6Scene",
+        "parentPath": ""
+    },
+    "16623e811f6": {
+        "path": "scenes/FinishScene.ts",
+        "class": "FinishScene",
+        "parentPath": ""
+    },
+    "166241b423b": {
+        "path": "components/BootsComponent.ts",
+        "class": "BootsComponent",
+        "parentPath": ""
+    },
+    "166248e2030": {
+        "path": "components/AlertComponent.ts",
+        "class": "AlertComponent",
+        "parentPath": ""
+    },
+    "166249ac9d9": {
+        "path": "components/ListenComponent.ts",
+        "class": "ListenComponent",
+        "parentPath": ""
+    },
+    "16651acb1c0": {
+        "path": "components/GreenTextComponent.ts",
+        "class": "GreenTextComponent",
+        "parentPath": ""
+    },
+    "166523b0881": {
+        "path": "components/FireWordsComponent.ts",
+        "class": "FireWordsComponent",
+        "parentPath": ""
+    },
+    "166850ee57f": {
+        "path": "components/CloudComponent.ts",
+        "class": "CloudComponent",
+        "parentPath": ""
+    },
+    "16685121697": {
+        "path": "components/CloudComponent.ts",
+        "class": "CloudComponent",
+        "parentPath": ""
+    },
+    "1674ec38655": {
+        "path": "scenes/DistinguishRole3Scene.ts",
+        "class": "DistinguishRole3Scene",
+        "parentPath": ""
+    },
+    "1674ec9d112": {
+        "path": "scenes/DistinguishRole3Scene.ts",
+        "class": "DistinguishRole3Scene",
+        "parentPath": ""
+    }
 }
