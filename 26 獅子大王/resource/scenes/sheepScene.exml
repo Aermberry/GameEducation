@@ -280,11 +280,8 @@
 		<e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
 		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
 		         verticalAlign="middle" />
-		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" visible="false" />
-		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
-		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
-		         visible="false" />
+
+
 	</e:Group>
 	<e:Group id="sheepDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
@@ -293,7 +290,7 @@
 		         anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
 		<e:Label text="好像有什麽地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="66.67" lineSpacing="25" size="50" y="-21.21" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
 		<e:Group x="36.35" y="-24.25" visible="false">
-			<e:Label text="對不起！ 我不知道是\n大王請客，我以爲這\n只是宣傳單張" anchorOffsetY="0" height="211.82" x="0" y="0"
+			<e:Label text="對不起！ 我不知道是\n大王請客，我以爲這\n只是宣傳單張。" anchorOffsetY="0" height="211.82" x="0" y="0"
 			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
 
@@ -301,23 +298,23 @@
 
 		</e:Group>
 		<e:Group x="69.69" y="3.03" visible="false">
-			<e:Label text="邀請卡沒有大王的\n名字" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
+			<e:Label text="邀請卡沒有大王的\n名字。" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
 			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
 		</e:Group>
-        <e:Group x="69.69" y="3.03" visible="false">
-		<e:Label text="卡上沒有大王\n(發卡人)的名字，\n讓我來蓋印章吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
+        <e:Group x="69.69" y="-45.45" visible="false">
+		<e:Label text="卡上沒有大王\n            的名字，\n讓我來          吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
 			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
-        <e:Label text="(發卡人)" textColor="0xa00000" x="2.21" y="76.06" size="50"/>
-        <e:Label text="蓋印章" textColor="0xa00000" y="149.1" size="50" x="154"/>
+        <e:Label text="(發卡人)" x="2.21" y="76.06" size="50" bold="true" textColor="0xa00000"/>
+        <e:Label text="蓋印章" y="149.1" size="50" x="154" bold="true" textColor="0xa00000"/>
 		</e:Group>
 		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
 	</e:Group>
 	<e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
 	        anchorOffsetY="0" alpha="1" visible="false" />
-	<e:Image x="1509.38" y="1105.14" source="sheep_normal_png"/>
+	<e:Image x="1488.17" y="1053.62" source="sheep_normal_png"/>
 
 	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" alpha="0">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000" />
@@ -326,7 +323,7 @@
 	<e:Group id="stamperGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03"
 	         alpha="0">
 		<e:Label text="拿起印章" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
-		<ns1:stampComponent width="20" height="20" x="570.24" y="-1"/>
+		<ns1:stampComponent id="stamperComponent" width="20" height="20" x="570.24" y="-1"/>
 
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>

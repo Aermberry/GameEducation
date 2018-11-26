@@ -77,17 +77,17 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 			this.lionDialogText(lionDialogText.ratText_b);
 		});
 
-		await this.playVoice(lionDialogVoice.lionVoice_snakeB).then(() => {
-			this.lionDialogTextFlow();
-			this.playVoice(lionDialogVoice.lionVoice_c);
+		await this.playVoice(lionDialogVoice.lionVoice_ratB).then(() => {
+			this.lionDialogText(lionDialogText.ratText_c)
+			this.playVoice(lionDialogVoice.lionVoice_ratC);
 			this.circleLeftRect.visible = false
 			this.circleRightRect.visible = false;
 		});
 		await this.changCard.playOnceAsync();
-		await lzlib.ThreadUtility.sleep(5000);
+		await lzlib.ThreadUtility.sleep(3000);
 		(this.ratDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.ratDialogGroup.$children[4] as eui.Group).visible = true;
-		await this.playVoice(animalDialogVoice.rabbitVoice_b);
+		await this.playVoice(animalDialogVoice.ratVoice_b);
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -98,15 +98,6 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
-	}
-
-	private lionDialogTextFlow(): void {
-		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
-		lionLabel.textFlow = [
-			{ text: lionDialogText.snakeText_c.toString(), style: { size: 50, textColor: 0x000000 } },
-			{ text: lionDialogText.snakeText_d.toString(), style: { size: 50, textColor: 0xa00000 } },
-			{ text: lionDialogText.snakeText_e.toString(), style: { size: 50, textColor: 0x000000 } }
-		]
 	}
 
 	//語音播放
