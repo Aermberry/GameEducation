@@ -21,7 +21,7 @@ class TextFlicker {
 			// this.curflickerNum++;
 			this.changeTextColor(this.color);
 			await lzlib.ThreadUtility.sleep(1200);
-			this.changeTextColor(this.color);
+			this.changeTextColor(0x4C2759);
 			clearTimeout(timer);
 		})
 	}

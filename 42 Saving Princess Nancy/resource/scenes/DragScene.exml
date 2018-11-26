@@ -242,7 +242,7 @@
 			<e:Image id="braceletImage" name="bracelet" x="385.55" y="-35.08" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="bracelet_png"/>
 		</e:Group>
 	</e:Group>
-	<e:Group id="alertGroup" x="68" y="524">
+	<e:Group id="alertGroup" x="68" y="524" visible="false">
 		<!--<e:Image x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0.7"/>
 		<e:Image x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
 		<e:Image x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png"/>-->
@@ -268,7 +268,7 @@
 	</e:Group>
 	<e:Group id="gentleGroup" x="292" y="0" visible="false">
 		<e:Image x="40" y="0" source="message_border_dragscene_png" anchorOffsetX="0" width="385" anchorOffsetY="0" height="231"/>
-		<e:Label text="kind and careful" x="96" y="56" size="45" textColor="0x266232" fontFamily="Calg421n"/>
+		<e:Label text="kind" x="184" y="56" size="45" textColor="0x266232" fontFamily="Calg421n"/>
 	</e:Group>
 	<e:Group id="crownGroup" x="114" y="138" visible="false">
 		<e:Image x="40" y="-96" source="message_border_dragscene_png" anchorOffsetX="0" width="1041" anchorOffsetY="0" height="327"/>
@@ -286,8 +286,8 @@
 		<e:Image id="image0" x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0"/>
 		<e:Image id="image" x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
 		<e:Image id="image1" x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png" alpha="0"/>
-		<e:Label id="label" text="Good job! you drew a picture of princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="400" size="50" alpha="0"/>
-		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="300" x="120"  alpha="0"/>
+		<e:Label id="label" text="Good job! You     Completed a         picture of princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="400" size="50" alpha="0"/>
+		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="312" x="120"  alpha="0"/>
 	</e:Group>
 	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Home"/>
