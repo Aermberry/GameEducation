@@ -19,7 +19,6 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		// this.currentState = this.skin.states[0].name
 		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.return, this)
 	}
 

@@ -80,7 +80,7 @@
 			<e:Label text="二零零零年九月一日" y="228.72" x="-55.22" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
 	</e:Group>
-	<e:Group id="returnGroup" x="1325.82" y="644.06" visible.snake="false" visible.rabbit="false">
+	<e:Group id="returnGroup" x="1325.82" y="644.06" visible.snake="false" visible.rabbit="false" visible="false">
 		<e:Label text="返回" x="0" y="40.55" textColor="0x020202" anchorOffsetX="0" width="205.45" anchorOffsetY="0" height="102.73" size="94" bold="true"/>
 		<e:Image source="return_png" x="211.51" y="0"/>
 	</e:Group>

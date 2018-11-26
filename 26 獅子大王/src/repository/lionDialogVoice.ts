@@ -8,4 +8,5 @@ enum lionDialogVoice {
   lionVoice_pigA = "sound 9 (D5.mp3)_mp3",
   lionVoice_pigB = "sound 7 (D7.mp3)_mp3",
   lionVoice_pigC = "sound 6 (D8.mp3)_mp3",
+  lionVoice_ratA = "sound 462_mp3",
 }
