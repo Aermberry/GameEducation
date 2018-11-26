@@ -3,7 +3,7 @@
 	<w:Config id="16619932adb" ></w:Config>
 	<e:Rect fillColor="0xffffff" top="30" left="30" right="30" bottom="30" strokeWeight="10" strokeColor="0xA7FD50" ellipseHeight="100" ellipseWidth="100"/>
 	<e:Button id="backButton" label="Back" x="1518.27" y="1190.49" anchorOffsetX="0" width="235.09" anchorOffsetY="0" height="129.63"/>
-	<e:Label text="Label" x="1279" y="273.1" text.top="at the top" textColor.top="0x2f0093" size.top="112" x.top="1191.12" y.top="339.76" fontFamily.top="Comic Sans MS" includeIn="top" anchorOffsetY="0" height="193.82" anchorOffsetX="0" width="571.55"/>
+	<e:Label text="Label" x="1279" y="273.1" text.top="at the top" textColor.top="0x2f0093" size.top="112" x.top="1191.12" y.top="297.34" fontFamily.top="Comic Sans MS" includeIn="top" anchorOffsetY="0" height="193.82" anchorOffsetX="0" width="571.55"/>
 	<e:Image source="top_png" includeIn="top" x="590.52" y="227.55" rotation="0.32"/>
 	<e:Label text="put in it" x="776.03" y="1015.58" text.top="at the top" textColor.top="0x2f0093" size.top="112" x.top="1191.12" y.top="339.76" fontFamily.top="Comic Sans MS" includeIn="put" anchorOffsetX="0" width="380" anchorOffsetY="0" height="150" textColor="0x000000" size="112" textAlign="center" verticalAlign="middle"/>
 	<e:Label text="put in" x="776.03" y="1015.58" text.top="at the top" textColor.top="0x2f0093" size.top="112" x.top="1191.12" y.top="339.76" fontFamily.top="Comic Sans MS" includeIn="put" anchorOffsetX="0" width="289" anchorOffsetY="0" height="150" size="112" textColor="0xffffff" background="true" backgroundColor="0xff0099" verticalAlign="middle" textAlign="center"/>

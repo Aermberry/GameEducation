@@ -7,7 +7,7 @@
 	         width="1778.82" lineSpacing="50" top="21"  horizontalCenter="55.5"/>
 	<e:Image source="shelf_png"  verticalCenter="-108" horizontalCenter="0"/>
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Mary: Look, Sam.There's a __________.\n          What about buying it for her?\n Sam: That's a good idea."
+	         text="Mary: Look, Sam. There's a __________.\n          What about buying it for her?\n Sam: That's a good idea."
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="356"
 	         anchorOffsetX="0" width="1727.06" lineSpacing="50" bottom="115"  textColor="0x000000" horizontalCenter="-72.5"/>
 			 <e:Group id="maskGroup" x="284" y="328" anchorOffsetX="0" width="1343" anchorOffsetY="0" height="554"/>
@@ -37,7 +37,7 @@
 	</e:Group>
 	<e:Group id="bankGroup" width="604" height="186" y="78.78" x="-3.03" visible="false">
 	<Ui:TexttLabel width="604" height="225" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="   We keep  money in a\n    piggy bank." fontSize="50" verticalAlign="middle" fontColor="0x000000" textAglign="left"/>
-	<e:Label text="keep" x="162.01" y="39.04" anchorOffsetX="0" width="120.67" anchorOffsetY="0" height="80.97" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
+	<e:Label text="keep" x="162.01" y="29.95" anchorOffsetX="0" width="120.67" anchorOffsetY="0" height="80.97" size="50" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" backgroundColor="0xFF0099" background="true" alpha="1" textColor="0xffffff"/>
 	</e:Group>
 	<e:Group id="playGroup" width="604" height="148" y="78.79" visible="false">
 	<Ui:TexttLabel anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="We play basketball." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" width="604" height="148"/>
