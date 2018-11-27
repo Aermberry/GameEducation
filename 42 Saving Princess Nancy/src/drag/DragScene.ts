@@ -42,6 +42,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	private alertGroup: eui.Group;
 	private alertTetxLabel: eui.Label;//拖拽后的提示信息标签
+	private alertRDTetxLabel: eui.Label;
 	private alertMovie: MovieClipPlayer;
 	private rdTetxLabel: eui.Label;
 
@@ -179,11 +180,11 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	public async alertWrongtInfo(text: string): Promise<void>
 	{
-		this.alertTetxLabel.text = text;
+		this.alertRDTetxLabel.text = text;
 		this.alertGroup.visible = true;
 		this.alertMovie.play();
 		await lzlib.ThreadUtility.sleep(500);
-		this.alertTextAnimation.playOnceAsync();
+		// this.alertTextAnimation.playOnceAsync();
 		this.alertRdAnimation.playOnceAsync();
 	}
 
