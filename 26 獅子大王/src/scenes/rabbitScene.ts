@@ -13,6 +13,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private achieveGroup: eui.Group;
   private lionDialogGroup: eui.Group;
   private rabbitDialogGroup: eui.Group;
+  private editGroup: eui.Group;
 
   private tipsBulbComponent: bulbComponent;
   private bulbComponent: bulbComponent;
@@ -34,9 +35,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
-
     this.playAnim();
-    
+
     this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tips, this);
     this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => {
       this.bulbComponent.currentState = this.bulbComponent.skin.states[0].name;
@@ -94,41 +94,56 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private lionDialogText(text: lionDialogText): void {
     let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
     lionLabel.text = text.toString();
-    //   lionLabel.textFlow = [
-    //    {text:"hello",style:{size:60,textColor:0x000000}},
-    //  {text:"hello",style:{size:60,textColor:0xffff00}}
-    //   ]
-    // console.log(text);
   }
 
   //語音播放
   private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-    // let sound: egret.Sound = RES.getRes(voice.toString());
-    // sound.play(0, 1);
     let sound = lzlib.SoundUtility.playSound(voice.toString())
     return sound;
   }
 
   private tips(): void {
     this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
-    this.tipsComponent = new tipsComponent(this,tipsVoices.rabbitTip.toString());
-    this.tipsComponent.currentState="rabbit";
+    this.tipsComponent = new tipsComponent(this, tipsVoices.rabbitTip.toString());
+    this.tipsComponent.currentState = "rabbit";
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();
   }
 
+//驗證模塊
+  private confirmMessage(): boolean {
+    var children = this.editGroup.$children;
+    let result = (children[1] as eui.EditableText).text == "小" && (children[2] as eui.EditableText).text == "動" && (children[3] as eui.EditableText).text == "物";
+    return result
+    
+  }
+
+//判斷模塊
   private result(): void {
     this.achieveComponent = new achieveComponent(this.optionsScene, this);
-    // if(){
+    let isConfirm=this.confirmMessage();
+    if (isConfirm) {
+      egret.Tween.get(this.rabbitDialogGroup).to({ alpha: 0 }, 1000).call(() => {
+        egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
+        egret.Tween.get(this.achieveGroup).to({ alpha: 0 }, 1000);
+      });
+    }
+    else {
+      this.bulbGroup.visible = false;
+      this.achieveGroup.visible = false;
+      this.rabbitDialogGroup.$children[4].visible = false
+      this.rabbitDialogGroup.$children[2].visible = true;
+      setTimeout(() => {
+        this.rabbitDialogGroup.$children[2].visible = false;
+        this.rabbitDialogGroup.$children[4].visible = true;
+        this.bulbGroup.visible = true;
+        this.achieveGroup.visible = true;
+      }, 5000)
+    }
+  }
 
-    // }
-    // else{
-    //   this.rabbitDialogGroup.$children[4].visible=false
-    //   this.rabbitDialogGroup.$children[5].visible=true;
-    //   setTimeout(()=>{
-    //     this.rabbitDialogGroup.$children[5].visible=false;
-    //     this.rabbitDialogGroup.$children[4].visible=true;
-    //   },5000)
-    // }
+  //第二部分動畫
+  private congratulateAnim():void{
+
   }
 }

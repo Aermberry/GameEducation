@@ -37,10 +37,4 @@ class achieveComponent extends eui.Component implements eui.UIComponent {
 		status ? this.currentState = "normal" : this.currentState = "active"
 	}
 
-	private gotoHomeScene(): void {
-		let currentState = this.getCurrentState()
-		if (currentState == "active")
-			this.optionsScene.removeChild(this.Scene);
-	}
-
 }
