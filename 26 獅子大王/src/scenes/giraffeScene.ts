@@ -58,13 +58,13 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		});
 		await lzlib.ThreadUtility.sleep(2000);
 		this.lionDialogText(lionDialogText.giraffeText_a);
-		this.playVoice(lionDialogVoice.lionVoice_snakeA).then(() => {
+		this.playVoice(lionDialogVoice.lionVoice_giraffeA).then(() => {
 			return new Promise((resolve) => {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
 				(this.giraffeDialogGroup.$children[3] as eui.Group).visible = true;
-				this.playVoice(animalDialogVoice.snakeVoice_a);
+				this.playVoice(animalDialogVoice.giraffe_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
 				}, 4000)
@@ -74,18 +74,16 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(14000).then(() => {
 			this.lion.source = "lione_Silly_png";
 			this.lionDialogText(lionDialogText.giraffeText_b);
+			setTimeout(() => {
+				this.lionDialogText(lionDialogText.giraffeText_c)
+			},5800)
 		});
 
-		await this.playVoice(lionDialogVoice.lionVoice_snakeB).then(() => {
-			this.lionDialogText(lionDialogText.giraffeText_c);
-			this.playVoice(lionDialogVoice.lionVoice_c);
-			this.circleRect.visible = false;
-		});
-		await this.changCard.playOnceAsync();
-		await lzlib.ThreadUtility.sleep(5000);
+		await this.playVoice(lionDialogVoice.lionVoice_giraffeB);
+
 		(this.giraffeDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.giraffeDialogGroup.$children[4] as eui.Group).visible = true;
-		await this.playVoice(animalDialogVoice.rabbitVoice_b);
+		await this.playVoice(animalDialogVoice.giraffe_b);
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
