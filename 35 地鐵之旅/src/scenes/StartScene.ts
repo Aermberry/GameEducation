@@ -22,8 +22,6 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
-		
-		this.enableStartButton();
 		this.journey1Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney1Click, this);
 		this.journey2Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney2Click, this);
 		this.startGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartClick, this);
@@ -36,6 +34,7 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 		this.startButton2.visible = false;
 		this.startGroup.visible = true;
 		await lzlib.SoundUtility.playSound('sound 15 (inst_intro.mp3)_mp3');
+		this.enableStartButton();
 	}
 
 	private onStartClick(): void
