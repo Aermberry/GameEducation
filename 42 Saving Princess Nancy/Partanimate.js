@@ -7206,7 +7206,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		function fl_MouseClickHandler_4()
 		{
 			continueEgretGame();
-			alert("已单击鼠标");
+			
 			// 结束您的自定义代码
 		}
 	}
