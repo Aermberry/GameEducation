@@ -33,8 +33,8 @@
 	<e:Image source="listen3_background_png" left="-148" right="-133" top="-167" bottom="-33" scaleX="1.15" scaleY="1.14"/>
 	<e:Image x="115.1" y="621.21" source="stick_png" rotation="352.8"/>
 	<e:Image x="1545.73" y="466.63" source="sword_png" anchorOffsetX="0" width="87.55" anchorOffsetY="0" height="414.36"/>
-	<ns1:AlertComponent id="alert2Component" width="702" height="276" x="606.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="I have a scar but my eyes are not big." visible="false"/>
-	<ns1:AlertComponent id="alert3Component" width="702" height="276" x="1198.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="My eyes are big but i don't have a scar." visible="false"/>
+	<ns1:AlertComponent id="alert2Component" width="702" height="276" x="606.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="I have a scar but my eyes are not big" visible="false"/>
+	<ns1:AlertComponent id="alert3Component" width="702" height="276" x="1198.43" y="314.63" anchorOffsetX="0" anchorOffsetY="0" text="My eyes are big but i don't have a   scar." visible="false"/>
 	<e:Group id="personGroup">
 		<e:Image x="193.64" name="person1" y="621.45" source="listen3_person1_png" anchorOffsetX="0" width="296.26" anchorOffsetY="0" height="603.33"/>
 		<e:Image x="772.43" name="person2" y="615.39" source="listen3_person2_png"/>
