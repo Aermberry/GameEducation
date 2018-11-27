@@ -272,6 +272,23 @@
 		         height="558.54" />
 		<e:Image id="lion_active" source="lione_Silly_png" x="0" y="0" width="418.08" height="558.54" visible="false" />
 	</e:Group>
+	<e:Group id="giraffeDialogGroup" x="713.64" y="776.55" alpha="1" width="750" height="411">
+		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1" anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0"/>
+		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1" anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0"/>
+		<e:Label text="好像有什麽地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="-3.02" lineSpacing="25" size="50" y="-30.3" textColor="0x000000" fontFamily="華康中黑體" bold="true" visible="false"/>
+		<e:Group x="36.35" y="-30.31" visible="false">
+		<e:Label text="對不起！我以爲這\n是舊的邀請卡！卡\n上沒有發卡日期！" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		</e:Group>
+		<e:Group x="36.36" y="-42.42" visible="false">
+		<e:Label text="卡上沒有發卡日期，\n讓我替你寫上\n   吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3" anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		<e:Label text="發卡日" anchorOffsetY="130.3" x="415.39" y="201.65" anchorOffsetX="109" size="50" textColor="0xa00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		<e:Label text="期" anchorOffsetY="0" x="-5.82" y="150.14" anchorOffsetX="-3.12" size="50" textColor="0xa00000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		</e:Group>
+		<e:Group x="25.44" y="-42.43" visible="false">
+		<e:Label text="你先前寫的是中國數\n字還是阿拉伯數字？\n兩者要一致才對啊！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3" anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true"/>
+		</e:Group>
+		<e:Label text="太好了！\n大王萬歲！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體" bold="true" visible="false"/>
+	</e:Group>
 	<e:Group id="lionDialogGroup" x="438.53" y="999.79">
 		<e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="748.51"
 		         anchorOffsetY="6.06" height="380.06" alpha="0" />
@@ -280,52 +297,26 @@
 		<e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
 		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
 		         verticalAlign="middle" />
-		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" visible="false" />
+		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="42.41" y="-45.46"
+		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"  visible="false"/>
 		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
-		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
-		         visible="false" />
+		         x="57.57" y="-48.49" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
+		          visible="false"/>
 	</e:Group>
-	<e:Group id="giraffeDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
-		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
-		         anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0" />
-		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
-		         anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
-		<e:Label text="好像有什麽地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="66.67" lineSpacing="25" size="50" y="-21.21" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
-		<e:Group x="36.35" y="-24.25" visible="false">
-			<e:Label text="對不起！我以爲這\n是舊的邀請卡！卡\n上沒有發卡日期！" anchorOffsetY="0" height="211.82" x="0" y="0"
-			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
-			         bold="true" />
-		</e:Group>
-		<e:Group x="69.69" y="3.03" visible="false">
-			<e:Label text="卡上沒有發卡日期，\n讓我替你寫上發卡日\n期吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
-			         bold="true" />
-                     <e:Label text="發卡日期" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0xa00000" lineSpacing="25" fontFamily="華康中黑體"
-			         bold="true" />
-		</e:Group>
-        	<e:Group x="-50.31" y="3.03" visible="false">
-			<e:Label text="你先前寫的是中國數\n字還是阿拉伯數字？\n兩者要一致才對啊！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
-			         bold="true" />
 
-		</e:Group>
-		<e:Label text="太好了！\n大王萬歲！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="華康中黑體" bold="true"/>
-	</e:Group>
 	<e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
-	        anchorOffsetY="0" alpha="1" visible="false" />
+	        anchorOffsetY="0" alpha="1"  visible="false"/>
 
 
-	<e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3" alpha="0">
+	<e:Group id="bulbGroup" x="564.84" y="1145" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
 		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000" />
 		<ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03" />
 	</e:Group>
-	<e:Group id="stamperGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03"
+	<e:Group id="achieveGroup" x="987.47" y="1176.15" anchorOffsetX="0" anchorOffsetY="0"
 	         alpha="0">
-		<e:Label text="拿起印章" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
-		<ns1:stampComponent width="20" height="20" x="570.24" y="-1"/>
+		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
+		<ns1:achieveComponent width="20" height="20" x="236.91" y="35"/>
 
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
