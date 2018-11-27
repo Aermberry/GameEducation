@@ -3,6 +3,7 @@ class TextFlicker {
 	private labels: eui.Label[];
 	private flickerNum = 2;//闪烁次数；
 	private curflickerNum = 0;
+	private color = 0xff0000;//闪烁颜色
 
 	public constructor(labels: eui.Label[]) {
 		this.labels = labels;
@@ -18,7 +19,7 @@ class TextFlicker {
 			// 	return;
 			// }
 			// this.curflickerNum++;
-			this.changeTextColor(0x1530D6);
+			this.changeTextColor(this.color);
 			await lzlib.ThreadUtility.sleep(1200);
 			this.changeTextColor(0x4C2759);
 			clearTimeout(timer);
