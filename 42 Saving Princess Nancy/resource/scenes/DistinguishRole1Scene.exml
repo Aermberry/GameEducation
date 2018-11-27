@@ -25,10 +25,10 @@
 	<ns1:ListenComponent id="listenComponent" width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="0"/>
 	<e:Group id="correctGroup" x="148" y="356" visible="false">
 		<e:Image source="rect_alert_png" anchorOffsetX="0" width="715.76" anchorOffsetY="0" height="396.31"/>
-		<e:Label text="Correct! Let me show you the way to the castle." textColor="0x000000" multiline="true" width="588" size="50" lineSpacing="28" anchorOffsetX="0" horizontalCenter="-6" verticalCenter="0.5" fontFamily="Calg421n"/>
+		<e:Label text="Correct! Let me show you   the way to the castle." textColor="0x000000" multiline="true" width="588" size="50" lineSpacing="28" anchorOffsetX="0" horizontalCenter="-6" verticalCenter="0.5" fontFamily="Calg421n"/>
 	</e:Group>
-	<ns1:AlertComponent id="person3AlertComponent" width="576" height="284" x="1268" y="228" anchorOffsetX="0" anchorOffsetY="0" text="My hair is curly, not straight." visible="false"/>
-	<ns1:AlertComponent id="person2AlertComponent" width="576" height="284" x="924" y="228" anchorOffsetX="0" anchorOffsetY="0" text="My hair is wavy, not straight." visible="false"/>
+	<ns1:AlertComponent id="person3AlertComponent" width="576" height="284" x="1268" y="228" anchorOffsetX="0" anchorOffsetY="0" text="          My hair is curly, not                straight." visible="false"/>
+	<ns1:AlertComponent id="person2AlertComponent" width="576" height="284" x="924" y="228" anchorOffsetX="0" anchorOffsetY="0" text="          My hair is wavy,not                straight." visible="false"/>
 	<ns1:BootsComponent id="nextBootsComponent" width="171" height="213" x="1538" y="1195"  visible="false"/>
 	<ns1:BootsComponent id="backBootsComponent" width="171" height="213" x="102" y="1195" text="Back"/>
 </e:Skin>
