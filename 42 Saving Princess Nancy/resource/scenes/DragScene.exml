@@ -121,7 +121,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="alertRdAnimation">
-			<tween:TweenItem target="{alertTetxLabel}">
+			<tween:TweenItem target="{rdTetxLabel}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -140,7 +140,7 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
-			<tween:TweenItem target="{rdTetxLabel}">
+			<tween:TweenItem target="{alertRDTetxLabel}">
 				<tween:Set>
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -152,7 +152,11 @@
 					</tween:props>
 				</tween:To>
 				<tween:Wait duration="2000"/>
-				<tween:Set/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
 				<tween:To duration="1000">
 					<tween:props>
 						<e:Object alpha="{0}"/>
@@ -186,8 +190,8 @@
 	<e:Group id="princessGroup" x="375.87" y="633.45">
 		<e:Image name="hairWave" id="hairImage" x="64" y="-145" anchorOffsetX="0" anchorOffsetY="0" source="hair_png" alpha="1" visible="false"/>
 		<e:Image name="princessModel" id="princessModelImage" source="princess_model_png" anchorOffsetX="0" width="331.98" anchorOffsetY="0" height="809.82" y="0" alpha="1"/>
-		<e:Image id="handImage" source="hand_png" name="hand" y="184"/>
 		<e:Image name="clothes1" id="gownImage" x="-68.41" y="67.54" anchorOffsetX="0" anchorOffsetY="0" source="gown_png" width="620.2" height="571.59" alpha="1" visible="false"/>
+		<e:Image id="handImage" source="hand_png" name="hand" y="182" anchorOffsetX="0" width="136.34" anchorOffsetY="0" height="205" x="3"/>
 		<e:Image name="crown" id="crownImage" x="126" y="-171" source="crown_png" anchorOffsetX="0" width="145.6" anchorOffsetY="0" height="78.72" alpha="1" visible="false"/>
 		<e:Image name="eyesBlue" id="eyesImage" x="152.81" y="-69.26" anchorOffsetX="0" anchorOffsetY="0" source="eyes_blue_png" width="84.92" height="24.58" alpha="1" visible="false"/>
 		<e:Image name="nosePointed" id="noseImage" x="183.02" y="-34.98" anchorOffsetX="0" anchorOffsetY="0" source="nose_pointed_png" width="15.42" height="15.25" alpha="1" visible="false"/>
@@ -248,6 +252,7 @@
 		<e:Image x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png"/>-->
 		<ns1:MovieClipPlayer id="alertMovie" width="20" height="20" dataSet="dragCloud_json" texture="dragCloud_png" movieClipName="dragCloud" isLoopPlay="false" scaleX="1" scaleY="1" x="-68" y="-72"/>
 		<e:Label id="alertTetxLabel" text="Try again! Read the 1st paragraph again." x="36" y="116" anchorOffsetX="0" width="290" anchorOffsetY="0" textColor="0x070707" size="42" fontFamily="Calg421n" alpha="0"/>
+		<e:Label id="alertRDTetxLabel" text="Try again! Read the 1    paragraph again." x="36" y="116" anchorOffsetX="0" width="299.09" anchorOffsetY="0" textColor="0x070707" size="42" fontFamily="Calg421n" alpha="0"/>
 		<e:Label id="rdTetxLabel" text="rd" x="124" y="160" anchorOffsetX="0" width="290" anchorOffsetY="0" textColor="0x070707" size="32" fontFamily="Calg421n" alpha="0"/>
 	</e:Group>
 	<e:Group id="princessRectGroup" x="375.87" y="633.45">
