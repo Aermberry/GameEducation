@@ -2,6 +2,10 @@ declare class EditableLabelSkin extends eui.Skin{
 }
 declare class NumberPadSkin extends eui.Skin{
 }
+declare class CalculationSceneSkin extends eui.Skin{
+}
+declare class StartSceneSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -53,8 +57,4 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
-}
-declare class CalculationSceneSkin extends eui.Skin{
-}
-declare class StartSceneSkin extends eui.Skin{
 }

@@ -71,6 +71,8 @@ class CalculationPresenter {
 				if (ex.message == EraseError.message) {
 					//重新做该题
 					this.view.clearUserInput();
+					this.view.hideAnswerMinuendDeleteMovies();
+					console.log(1)
 					questionIndex--;
 				} else {
 					throw ex;
