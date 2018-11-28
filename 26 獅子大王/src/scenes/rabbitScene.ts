@@ -1,30 +1,42 @@
 class rabbitScene extends eui.Component implements eui.UIComponent {
   private plantMask: egret.tween.TweenGroup;
-  private endMaskRectAnim:egret.tween.TweenGroup;
+  private endMaskRectAnim: egret.tween.TweenGroup;
   private tailWiggle: egret.tween.TweenGroup;
   private invitationCard: egret.tween.TweenGroup;
   private lionDialog: egret.tween.TweenGroup;
   private rabbitDialogBox: egret.tween.TweenGroup;
   private bubleGrad: egret.tween.TweenGroup;
   private changCard: egret.tween.TweenGroup;
-  private happyAnim:egret.tween.TweenGroup;
+  private happyAnim: egret.tween.TweenGroup;
   private tipsComponent: tipsComponent;
   private achieveComponent: achieveComponent;
-  
+
 
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
   private lionDialogGroup: eui.Group;
   private rabbitDialogGroup: eui.Group;
   private editGroup: eui.Group;
+  private lionSmellGroup: eui.Group;
 
   private tipsBulbComponent: bulbComponent;
   private bulbComponent: bulbComponent;
   private resultAchieveComponent: achieveComponent;
 
   private circleRect: eui.Rect;
+  private plantMaskRect: eui.Rect;
+  private endMaskRect: eui.Rect;
+  private firstBgRect: eui.Rect
+  private secondBgRect: eui.Rect
+  private thirdBgRect: eui.Rect
 
   private lion: eui.Image;
+  private lion_active: eui.Image;
+
+  private editableText_first: eui.EditableText;
+  private editableText_second: eui.EditableText;
+  private editableText_third: eui.EditableText;
+
 
   private optionsScene: optionsScene;
   public constructor(/*optionsScene:optionsScene*/) {
@@ -38,23 +50,40 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
+    mouse.enable(this.stage);
+    mouse.setButtonMode(this.bulbGroup, true);
+    RES.getRes("sound 24_mp3").play(0, -1)
     this.playAnim();
+    this.bulbGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, () => {
+      this.bulbComponent.currentState = "hover";
+    }, this);
+    this.bulbGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, () => {
+      this.bulbComponent.currentState = "normal"
+    }, this);
 
+    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => {
+      this.bulbComponent.currentState = "active";
+    }, this);
     this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tips, this);
-    this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => {
-      this.bulbComponent.currentState = this.bulbComponent.skin.states[0].name;
+    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_END, () => {
+      this.bulbComponent.currentState = "normal";
     }, this);
-    this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => {
-      this.bulbComponent.currentState = this.bulbComponent.skin.states[1].name;
-    }, this);
+
+
+
+
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
   }
 
   private async playAnim(): Promise<void> {
-    this.plantMask.play(0);
+    await this.plantMask.play(0);
     this.tailWiggle.play(0);
     await lzlib.ThreadUtility.sleep(2500);
     await this.invitationCard.playOnceAsync().then(() => {
+      this.plantMaskRect.visible = false;
+      this.editableText_first.touchEnabled = false
+      this.editableText_second.touchEnabled = false
+      this.editableText_third.touchEnabled = false
       this.lionDialog.playOnceAsync();
     });
     await lzlib.ThreadUtility.sleep(2000);
@@ -87,10 +116,14 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     (this.rabbitDialogGroup.$children[3] as eui.Group).visible = false;
     (this.rabbitDialogGroup.$children[4] as eui.Group).visible = true;
     await this.playVoice(animalDialogVoice.rabbitVoice_b);
+    lzlib.SoundUtility.playSound("sound 322_mp3");
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
       egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
       egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
     });
+    this.editableText_first.touchEnabled = true;
+    this.editableText_second.touchEnabled = true;
+    this.editableText_third.touchEnabled = true;
   }
 
   //lion動態文本
@@ -106,32 +139,35 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   private tips(): void {
-    this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
     this.tipsComponent = new tipsComponent(this, tipsVoices.rabbitTip.toString());
     this.tipsComponent.currentState = "rabbit";
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();
   }
 
-//驗證模塊
+  //驗證模塊
   private confirmMessage(): boolean {
     var children = this.editGroup.$children;
-    let result = (children[1] as eui.EditableText).text == "小" && (children[2] as eui.EditableText).text == "動" && (children[3] as eui.EditableText).text == "物";
+    let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
     return result
-    
   }
 
-//判斷模塊
+  //判斷模塊
   private result(): void {
     this.achieveComponent = new achieveComponent(this.optionsScene, this);
-    let isConfirm=this.confirmMessage();
+    let isConfirm = this.confirmMessage();
     if (isConfirm) {
       egret.Tween.get(this.rabbitDialogGroup).to({ alpha: 0 }, 1000).call(() => {
         egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
         egret.Tween.get(this.achieveGroup).to({ alpha: 0 }, 1000);
       });
+      this.editableText_first.touchEnabled = false;
+      this.editableText_second.touchEnabled = false;
+      this.editableText_third.touchEnabled = false;
+      setTimeout(() => {
+        this.congratulateAnim();
+      }, 3000)
 
-      this.congratulateAnim();
     }
     else {
       this.bulbGroup.visible = false;
@@ -148,14 +184,25 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   //第二部分動畫
-  private async congratulateAnim():Promise<void>{
+  private async congratulateAnim(): Promise<void> {
+    this.lion_active.visible = false;
+    this.lionSmellGroup.visible = true;
+    this.tailWiggle.play(0);
     this.happyAnim.play(0);
-      this.tailWiggle.play(0);
-      this.lionDialog.playOnceAsync();
-      this.lionDialogText(lionDialogText.rabbitText_d);
-      // this.playVoice(lionDialogVoice.);
-      await this.rabbitDialogBox.playOnceAsync();
-      this.rabbitDialogGroup.$children[5].visible = true;
-      this.endMaskRectAnim.playOnceAsync();
+    await egret.Tween.get(this.lionDialogGroup).to({ alpha: 1 }, 1000);
+    this.lionDialogText(lionDialogText.rabbitText_d);
+    await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
+      egret.Tween.get(this.rabbitDialogGroup).to({ alpha: 1 }, 1000);
+    })
+    this.rabbitDialogGroup.$children[4].visible = false;
+    this.rabbitDialogGroup.$children[5].visible = true;
+    this.playVoice(animalDialogVoice.rabbitVoice_d);
+    await lzlib.ThreadUtility.sleep(5000);
+    this.endMaskRect.visible = true;
+    await this.endMaskRectAnim.playOnceAsync();
+
+    // this.playVoice(lionDialogVoice.);
+
+
   }
 }
