@@ -22,6 +22,11 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.journey1Group, true);
+		mouse.setButtonMode(this.journey2Group, true);
+		mouse.setButtonMode(this.startGroup, true);
+		mouse.setButtonMode(this.startButton2, true);
 		this.journey1Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney1Click, this);
 		this.journey2Group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onJourney2Click, this);
 		this.startGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartClick, this);

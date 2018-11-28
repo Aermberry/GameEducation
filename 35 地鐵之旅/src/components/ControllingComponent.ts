@@ -19,6 +19,10 @@ class ControllingComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.restartLabel, true);
+		mouse.setButtonMode(this.closeLabel, true);
+		mouse.setButtonMode(this.routeMapLabel, true);
 		this.restartLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onReStartClick, this);
 		this.closeLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onCloseClick, this);
 		this.routeMapLabel.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onRouteMapClick, this);

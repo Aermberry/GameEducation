@@ -1,4 +1,7 @@
 class ArrowRedComponent extends eui.Component implements  eui.UIComponent {
+	
+	private arrowImage: eui.Image;
+	
 	public constructor() {
 		super();
 	}
@@ -12,6 +15,7 @@ class ArrowRedComponent extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		mouse.setButtonMode(this.arrowImage, true);
 	}
 
 	private onMouseOver(): void

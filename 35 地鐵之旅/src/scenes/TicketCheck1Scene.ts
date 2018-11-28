@@ -1,5 +1,6 @@
 class TicketCheck1Scene extends eui.Component implements  eui.UIComponent {
 	
+	private platformImage: eui.Image;
 	private platformGroup: eui.Group;
 	private routeComponent: RouteComponent;
 	private controllingComponent: ControllingComponent;
@@ -18,6 +19,8 @@ class TicketCheck1Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.platformImage, true);
 		await this.playMP3();
 		this.enablePlatform();
 		this.platformGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPlatformClick, this);

@@ -54,6 +54,8 @@ class MotorCarPresent {
 					await lzlib.ThreadUtility.sleep(2000);
 					this.view.stopDriveCar();
 					await this.rightDoor();	
+					await lzlib.ThreadUtility.sleep(5000);
+					this.view.disableRightArrow();
 					await this.view.closeRightDoor();
 					
 				}else{
@@ -65,6 +67,8 @@ class MotorCarPresent {
 					await lzlib.ThreadUtility.sleep(2000);
 					this.view.stopDriveCar();
 					await this.leftDoor();
+					await lzlib.ThreadUtility.sleep(5000);
+					this.view.disableLeftArrow();
 					await this.view.closeLeftDoor();
 					
 					this.isRight = false;
@@ -84,6 +88,8 @@ class MotorCarPresent {
 					await lzlib.ThreadUtility.sleep(2000);
 					this.view.stopDriveCar();
 					await this.leftDoor();
+					await lzlib.ThreadUtility.sleep(5000);
+					this.view.disableLeftArrow();
 					await this.view.closeLeftDoor();
 
 				}else{				
@@ -95,6 +101,8 @@ class MotorCarPresent {
 					await lzlib.ThreadUtility.sleep(2000);
 					this.view.stopDriveCar();
 					await this.rightDoor();
+					await lzlib.ThreadUtility.sleep(5000);
+					this.view.disableRightArrow();
 					await this.view.closeRightDoor();
 					this.isRight = true;
 				}
@@ -124,7 +132,6 @@ class MotorCarPresent {
 		await this.view.playGapMP3();
 		//禁止左边箭头点击
 		await this.view.playMindoorMP3();
-		this.view.disableLeftArrow();
 	}
 
 	public async rightDoor(): Promise<void>
@@ -135,8 +142,7 @@ class MotorCarPresent {
 		this.view.enableRightArrow();
 		await this.view.playGapMP3();
 		//禁止左边箭头点击
-		await this.view.playMindoorMP3();
-		this.view.disableRightArrow();
+		await this.view.playMindoorMP3();	
 	}
 
 	public onArrowClick(): void

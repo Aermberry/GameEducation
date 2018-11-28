@@ -14,11 +14,11 @@
 	<e:Label text="香蕉" y="97" textColor="0x000000" size="105" horizontalCenter="0" fontFamily="華康中黑體"/>
 	<e:Label text="車站大堂" y="239.42" textColor="0x000000" size="81" horizontalCenter="0" fontFamily="華康中黑體"/>
 	<e:Group id="platform1Group" x="578.36" y="212.54" alpha="0.5">
-		<e:Image source="railway_platform_png" scaleX="-1" scaleY="1"/>
+		<e:Image id="platform1Image" source="railway_platform_png" scaleX="-1" scaleY="1"/>
 		<e:Label text="1/2號月台" size="66" x="-315.15" y="54.54"/>
 	</e:Group>
 	<e:Group id="platform2Group" x="1363.2" y="212.54" alpha="0.5">
-		<e:Image source="railway_platform_png" scaleY="1"/>
+		<e:Image id="platform2Image" source="railway_platform_png" scaleY="1"/>
 		<e:Label text="3/4號月台" size="66" x="30.3" y="54.54"/>
 	</e:Group>
 	<ns1:RouteComponent id="routeComponent" x="12" y="436" icon="hailong" visible="false"/>

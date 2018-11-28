@@ -16,6 +16,9 @@ class PopupComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.yesButton, true);
+		mouse.setButtonMode(this.noButton, true);
 		this.yesButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onYesClick, this);
 		this.noButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNoClick, this);
 	}
