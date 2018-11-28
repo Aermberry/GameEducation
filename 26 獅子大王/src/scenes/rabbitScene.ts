@@ -1,13 +1,16 @@
 class rabbitScene extends eui.Component implements eui.UIComponent {
   private plantMask: egret.tween.TweenGroup;
+  private endMaskRectAnim:egret.tween.TweenGroup;
   private tailWiggle: egret.tween.TweenGroup;
   private invitationCard: egret.tween.TweenGroup;
   private lionDialog: egret.tween.TweenGroup;
   private rabbitDialogBox: egret.tween.TweenGroup;
   private bubleGrad: egret.tween.TweenGroup;
   private changCard: egret.tween.TweenGroup;
+  private happyAnim:egret.tween.TweenGroup;
   private tipsComponent: tipsComponent;
-  private achieveComponent: achieveComponent
+  private achieveComponent: achieveComponent;
+  
 
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
@@ -127,6 +130,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
         egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
         egret.Tween.get(this.achieveGroup).to({ alpha: 0 }, 1000);
       });
+
+      this.congratulateAnim();
     }
     else {
       this.bulbGroup.visible = false;
@@ -143,7 +148,14 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   //第二部分動畫
-  private congratulateAnim():void{
-
+  private async congratulateAnim():Promise<void>{
+    this.happyAnim.play(0);
+      this.tailWiggle.play(0);
+      this.lionDialog.playOnceAsync();
+      this.lionDialogText(lionDialogText.rabbitText_d);
+      // this.playVoice(lionDialogVoice.);
+      await this.rabbitDialogBox.playOnceAsync();
+      this.rabbitDialogGroup.$children[5].visible = true;
+      this.endMaskRectAnim.playOnceAsync();
   }
 }
