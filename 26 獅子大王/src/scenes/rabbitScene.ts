@@ -18,6 +18,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private rabbitDialogGroup: eui.Group;
   private editGroup: eui.Group;
   private lionSmellGroup: eui.Group;
+  private bulbComponentGroup: eui.Group;
 
   private tipsBulbComponent: bulbComponent;
   private bulbComponent: bulbComponent;
@@ -54,25 +55,33 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     mouse.setButtonMode(this.bulbGroup, true);
     RES.getRes("sound 24_mp3").play(0, -1)
     this.playAnim();
-    this.bulbGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, () => {
-      this.bulbComponent.currentState = "hover";
-    }, this);
-    this.bulbGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, () => {
-      this.bulbComponent.currentState = "normal"
-    }, this);
-
-    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => {
-      this.bulbComponent.currentState = "active";
-    }, this);
-    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tips, this);
-    this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_END, () => {
-      this.bulbComponent.currentState = "normal";
-    }, this);
-
-
-
-
+    this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
+    this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
+    this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
+    this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+  }
+
+  private async hover(): Promise<void> {
+    this.bulbComponent.currentState = "hover";
+  }
+
+  private async normal():Promise<void> {
+    await this.enableMouse();
+    this.bulbComponent.currentState = "normal"
+
+  }
+
+  private  async active(): Promise<void>  {
+    await this.disableMouse();
+    this.bulbComponent.currentState = "active";
+  }
+
+  private async disableMouse():Promise<void>{
+    this.bulbComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
+  }
+  private enableMouse():void {
+    this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.hover,this);
   }
 
   private async playAnim(): Promise<void> {
@@ -139,7 +148,9 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   private tips(): void {
+    this.normal();
     this.tipsComponent = new tipsComponent(this, tipsVoices.rabbitTip.toString());
+    this.tipsComponent.enableMouse();
     this.tipsComponent.currentState = "rabbit";
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();

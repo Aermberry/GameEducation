@@ -315,14 +315,12 @@
         <e:Label text="太好了！\n大王萬歲！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體"
                  bold="true"  visible="false"/>
     </e:Group>
-
-
-
-    <e:Group id="bulbGroup" x="540.95" y="1256" anchorOffsetX="0" width="323.67" anchorOffsetY="0" height="152.3"
-             alpha="0">
-        <e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000" />
-        <ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03" />
-    </e:Group>
+    <e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
+		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
+		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
+		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
+		</e:Group>
+	</e:Group>
     <e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03"
              alpha="0">
         <e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />

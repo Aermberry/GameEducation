@@ -4,12 +4,12 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private rect: eui.Rect;
 	private returnGroup: eui.Group;
 	private scene: eui.Component;
-	private voice:string;
+	private voice: string;
 
-	public constructor(scene: eui.Component,voice:string) {
+	public constructor(scene: eui.Component, voice: string) {
 		super();
 		this.scene = scene;
-		this.voice=voice
+		this.voice = voice
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -24,8 +24,8 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	public playAnim(): void {
 		this.tipsAnim.playOnceAsync();
-		this.playVoice(this.voice).then(()=>{
-			this.returnGroup.visible = true; 
+		this.playVoice(this.voice).then(() => {
+			this.returnGroup.visible = true;
 		})
 	}
 
@@ -33,8 +33,26 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		this.scene.removeChild(this);
 	}
 
-	private async playVoice(voiceName:string): Promise<void> {
+	private async playVoice(voiceName: string): Promise<void> {
 		let sound = lzlib.SoundUtility.playSound(voiceName);
 		return sound;
+	}
+
+	public enableMouse(): void {
+		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onHover, this);
+		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onOut, this);
+	}
+
+	public disableMouse(): void {
+		this.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onHover, this)
+		this.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onOut, this)
+	}
+
+	private onHover(): void {
+		this.currentState = "hover"
+	}
+
+	private onOut(): void {
+		this.currentState = "normal"
 	}
 }

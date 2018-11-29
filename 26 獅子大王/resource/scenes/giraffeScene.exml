@@ -309,9 +309,11 @@
 	        anchorOffsetY="0" alpha="1"  visible="false"/>
 
 
-	<e:Group id="bulbGroup" x="564.84" y="1145" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
-		<e:Label text="提示" size="90" x="0" y="31.91" fontFamily="華康中黑體" textColor="0x000000" />
-		<ns1:bulbComponent id="bulbComponent" width="20" height="20" x="215.15" y="3.03" />
+	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
+		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
+		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
+		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
+		</e:Group>
 	</e:Group>
 	<e:Group id="achieveGroup" x="987.47" y="1176.15" anchorOffsetX="0" anchorOffsetY="0"
 	         alpha="0">
