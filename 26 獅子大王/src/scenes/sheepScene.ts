@@ -1,5 +1,5 @@
 class sheepScene extends eui.Component implements eui.UIComponent {
-	
+
 	private plantMask: egret.tween.TweenGroup;
 	private endMaskRectAnim: egret.tween.TweenGroup;
 	private tailWiggle: egret.tween.TweenGroup;
@@ -14,7 +14,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private achieveComponent: achieveComponent;
 
 	private bulbGroup: eui.Group;
-	private stamperGroup:eui.Group;
+	private stamperGroup: eui.Group;
 	private achieveGroup: eui.Group;
 	private lionDialogGroup: eui.Group;
 	private sheepDialogGroup: eui.Group;
@@ -63,7 +63,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-		// this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("sdsd")},this)
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
 	}
 
@@ -122,9 +121,9 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 			(this.sheepDialogGroup.$children[4] as eui.Group).visible = false;
 			(this.sheepDialogGroup.$children[5] as eui.Group).visible = true;
 		});
-		 this.changCard.playOnceAsync();
+		this.changCard.playOnceAsync();
 		await lzlib.ThreadUtility.sleep(3000);
-	
+
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.stamperGroup).to({ alpha: 1 }, 1000);
@@ -144,6 +143,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private tips(): void {
+		this.normal();
 		this.tipsComponent = new tipsComponent(this, tipsVoices.ratTip.toString());
 		this.tipsComponent.currentState = "rat"
 		this.addChild(this.tipsComponent);

@@ -147,6 +147,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private tips(): void {
+		this.normal();
 		this.tipsComponent = new tipsComponent(this, tipsVoices.ratTip.toString());
 		this.tipsComponent.currentState = "rat"
 		this.addChild(this.tipsComponent);

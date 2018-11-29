@@ -538,6 +538,7 @@
 		</tween:TweenGroup>
     </w:Declarations>
     <e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
+	<e:Image x="1618.6" y="999.88" source="rat_normal_png"/>
     <e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1"
              touchThrough="true">
         <e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0" />
@@ -615,7 +616,7 @@
                               skinName="achieveComponentSkin" />
     </e:Group>
     <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
-	<e:Image x="1618.6" y="999.88" source="rat_normal_png"/>
-    <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" />
+
+    <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 
 </e:Skin>

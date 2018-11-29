@@ -151,7 +151,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private tips(): void {
     this.normal();
     this.tipsComponent = new tipsComponent(this, tipsVoices.rabbitTip.toString());
-    this.tipsComponent.enableMouse();
     this.tipsComponent.currentState = "rabbit";
     this.addChild(this.tipsComponent);
     this.tipsComponent.playAnim();

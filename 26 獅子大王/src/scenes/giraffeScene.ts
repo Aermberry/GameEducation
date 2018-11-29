@@ -142,7 +142,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private tips(): void {
-		this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
+		this.normal();
 		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString());
 		this.tipsComponent.currentState = "giraffe"
 		this.addChild(this.tipsComponent);

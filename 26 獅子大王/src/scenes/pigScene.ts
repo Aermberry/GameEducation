@@ -154,6 +154,7 @@ class pigScene extends eui.Component implements  eui.UIComponent {
 	}
 
 	private tips(): void {
+		this.normal();
 		this.tipsComponent = new tipsComponent(this,tipsVoices.pigTip.toString());
 		this.tipsComponent.currentState="pig"
 		this.addChild(this.tipsComponent);

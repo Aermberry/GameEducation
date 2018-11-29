@@ -62,7 +62,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-		// this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("sdsd")},this)
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
 	}
 
@@ -110,21 +109,25 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			})
 		})
 
-		await lzlib.ThreadUtility.sleep(14000).then(() => {
+		await lzlib.ThreadUtility.sleep(11500).then(() => {
 			this.lion.source = "lione_Silly_png";
 			this.lionDialogText(lionDialogText.snakeText_b);
 		});
 
 		await this.playVoice(lionDialogVoice.lionVoice_snakeB).then(() => {
-			this.lionDialogTextFlow();
-			this.playVoice(lionDialogVoice.lionVoice_c);
-			this.circleRect.visible = false;
+			this.playVoice(lionDialogVoice.lionVoice_snakeC)
+			setTimeout(() => {
+				this.lionDialogTextFlow();
+				this.circleRect.visible = false;
+			}, 2000)
+
 		});
 		await this.changCard.playOnceAsync();
-		await lzlib.ThreadUtility.sleep(5000);
+		await lzlib.ThreadUtility.sleep(9500);
 		(this.snakeDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.snakeDialogGroup.$children[4] as eui.Group).visible = true;
-		await this.playVoice(animalDialogVoice.rabbitVoice_b);
+		await this.playVoice(animalDialogVoice.snakeVoice_c);
+		lzlib.SoundUtility.playSound("sound 406_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -153,7 +156,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private tips(): void {
-		this.bulbComponent.currentState = this.bulbComponent.skin.states[2].name;
+		this.normal();
 		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString());
 		this.tipsComponent.currentState = "snake"
 		this.addChild(this.tipsComponent);
