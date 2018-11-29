@@ -37,22 +37,4 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		let sound = lzlib.SoundUtility.playSound(voiceName);
 		return sound;
 	}
-
-	public enableMouse(): void {
-		this.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onHover, this);
-		this.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onOut, this);
-	}
-
-	public disableMouse(): void {
-		this.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onHover, this)
-		this.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onOut, this)
-	}
-
-	private onHover(): void {
-		this.currentState = "hover"
-	}
-
-	private onOut(): void {
-		this.currentState = "normal"
-	}
 }

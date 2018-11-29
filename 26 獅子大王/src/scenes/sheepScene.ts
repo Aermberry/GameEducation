@@ -1,26 +1,47 @@
 class sheepScene extends eui.Component implements eui.UIComponent {
+	
 	private plantMask: egret.tween.TweenGroup;
+	private endMaskRectAnim: egret.tween.TweenGroup;
 	private tailWiggle: egret.tween.TweenGroup;
 	private invitationCard: egret.tween.TweenGroup;
 	private lionDialog: egret.tween.TweenGroup;
 	private rabbitDialogBox: egret.tween.TweenGroup;
+	private flustered: egret.tween.TweenGroup
 	private bubleGrad: egret.tween.TweenGroup;
 	private changCard: egret.tween.TweenGroup;
+	private happyAnim: egret.tween.TweenGroup;
 	private tipsComponent: tipsComponent;
-	private stamperComponent: stampComponent;
+	private achieveComponent: achieveComponent;
 
 	private bulbGroup: eui.Group;
 	private stamperGroup:eui.Group;
+	private achieveGroup: eui.Group;
 	private lionDialogGroup: eui.Group;
 	private sheepDialogGroup: eui.Group;
+	private editGroup: eui.Group;
+	private lionSmellGroup: eui.Group;
+	private bulbComponentGroup: eui.Group;
 
 	private tipsBulbComponent: bulbComponent;
 	private bulbComponent: bulbComponent;
 	private resultAchieveComponent: achieveComponent;
 
+	private circleRect: eui.Rect;
+	private plantMaskRect: eui.Rect;
+	private endMaskRect: eui.Rect;
+	private firstBgRect: eui.Rect
+	private secondBgRect: eui.Rect
+	private thirdBgRect: eui.Rect
+
 	private lion: eui.Image;
+	private lion_active: eui.Image;
+
+	private editableText_first: eui.EditableText;
+	private editableText_second: eui.EditableText;
+	private editableText_third: eui.EditableText;
 
 	private optionsScene: optionsScene;
+
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
 		// this.optionsScene=optionsScene;
@@ -106,18 +127,64 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.tipsComponent.playAnim();
 	}
 
-	private result(): void {
-		this.stamperComponent = new stampComponent();
-		// if(){
+	//驗證模塊
+	private confirmMessage(): boolean {
+		var children = this.editGroup.$children;
+		let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
+		return result
+	}
 
-		// }
-		// else{
-		//   this.sheepDialogGroup.$children[4].visible=false
-		//   this.sheepDialogGroup.$children[5].visible=true;
-		//   setTimeout(()=>{
-		//     this.sheepDialogGroup.$children[5].visible=false;
-		//     this.sheepDialogGroup.$children[4].visible=true;
-		//   },5000)
-		// }
+	//判斷模塊
+	private result(): void {
+		this.achieveComponent = new achieveComponent(this.optionsScene, this);
+		let isConfirm = this.confirmMessage();
+		if (isConfirm) {
+			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 0 }, 1000).call(() => {
+				egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
+				egret.Tween.get(this.achieveGroup).to({ alpha: 0 }, 1000);
+			});
+			this.editableText_first.touchEnabled = false;
+			this.editableText_second.touchEnabled = false;
+			this.editableText_third.touchEnabled = false;
+			setTimeout(() => {
+				this.congratulateAnim();
+			}, 3000)
+
+		}
+		else {
+			this.bulbGroup.visible = false;
+			this.achieveGroup.visible = false;
+			this.sheepDialogGroup.$children[4].visible = false
+			this.sheepDialogGroup.$children[2].visible = true;
+			setTimeout(() => {
+				this.sheepDialogGroup.$children[2].visible = false;
+				this.sheepDialogGroup.$children[4].visible = true;
+				this.bulbGroup.visible = true;
+				this.achieveGroup.visible = true;
+			}, 5000)
+		}
+	}
+
+	//第二部分動畫
+	private async congratulateAnim(): Promise<void> {
+		this.lion_active.visible = false;
+		this.lionSmellGroup.visible = true;
+		this.tailWiggle.play(0);
+		this.happyAnim.play(0);
+		await egret.Tween.get(this.lionDialogGroup).to({ alpha: 1 }, 1000);
+		this.lionDialogText(lionDialogText.rabbitText_d);
+		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
+			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 1 }, 1000);
+		})
+		this.sheepDialogGroup.$children[4].visible = false;
+		this.sheepDialogGroup.$children[5].visible = true;
+		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		await lzlib.ThreadUtility.sleep(5000);
+		this.endMaskRect.visible = true;
+		await this.endMaskRectAnim.playOnceAsync();
+
+		// this.playVoice(lionDialogVoice.);
+
+
 	}
 }
