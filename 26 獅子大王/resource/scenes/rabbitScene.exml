@@ -571,10 +571,6 @@
 		         width="330" height="224" />
 		<e:Image id="lion" source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0"
 		         height="558.54" />
-
-
-
-
 		<e:Image id="lion_active" source="lione_Silly_png" x="0" y="0" width="418.08" height="558.54"  visible="false"/>
 		<e:Group id="lionSmellGroup" x="0" y="0" alpha="1" visible="false">
 			<e:Image id="lionsmell_body" source="lionSmell_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
@@ -591,11 +587,8 @@
 		<e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
 		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
 		         verticalAlign="middle" />
-		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" visible="false" />
-		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
-		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
-		         visible="false" />
+
+
 	</e:Group>
 	<e:Group id="rabbitDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
@@ -644,6 +637,6 @@
 		<ns1:achieveComponent id="achieveComponent" x="218.34" y="19"
 		                      skinName="achieveComponentSkin" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

@@ -251,6 +251,291 @@
                 </tween:Set>
             </tween:TweenItem>
         </tween:TweenGroup>
+        <tween:TweenGroup id="happyAnim">
+			<tween:TweenItem target="{lionsmell_mouth_02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lionsmell_mouth_01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lionsmell_body}">
+				<tween:Set/>
+			</tween:TweenItem>
+			<tween:TweenItem target="{lionsmell_head}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{0}" y="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="100">
+					<tween:props>
+						<e:Object x="{0}" y="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{0}" y="{-5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="100"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{-5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="endMaskRectAnim">
+			<tween:TweenItem target="{endMaskRect}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1650">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
     </w:Declarations>
     <e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
     <e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1"
@@ -265,16 +550,18 @@
         </e:Group>
     </e:Group>
     <e:Group x="86.1" y="771.55">
-			<e:Rect id="circleLeftRect" width="500" height="500" anchorOffsetX="0" ellipseHeight="800" ellipseWidth="800" x="11.97" y="-347.09" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0" alpha="1" visible="false"/>
-			<e:Rect id="circleRightRect" width="500" height="500" anchorOffsetX="0" ellipseHeight="800" ellipseWidth="800" x="1242.28" y="-313.75" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000" anchorOffsetY="0" alpha="1" visible="false"/>
-        <e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75"
-                 width="330" height="224" />
-        <e:Image id="lion" source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0"
-                 height="558.54" />
-        <e:Image id="lion_active" source="lione_Silly_png" x="0" y="0" width="418.08" height="558.54" visible="false" />
-
-
-    </e:Group>
+		<e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75"
+		         width="330" height="224" />
+		<e:Image id="lion" source="lion_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0"
+		         height="558.54" />
+		<e:Image id="lion_active" source="lione_Silly_png" x="0" y="0" width="418.08" height="558.54"  visible="false"/>
+		<e:Group id="lionSmellGroup" x="0" y="0" alpha="1" visible="false">
+			<e:Image id="lionsmell_body" source="lionSmell_body_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
+			<e:Image id="lionsmell_head" source="lionSmell_head_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
+			<e:Image id="lionsmell_mouth_01" source="lionSmell_01_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
+			<e:Image id="lionsmell_mouth_02" source="lionSmell_02_png" y="0" x="0" anchorOffsetX="0" width="418.08" anchorOffsetY="0" height="558.54"/>
+		</e:Group>
+	</e:Group>
     <e:Group id="lionDialogGroup" x="438.53" y="999.79">
         <e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="748.51"
                  anchorOffsetY="6.06" height="380.06" alpha="0" />
@@ -329,5 +616,6 @@
     </e:Group>
     <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Image x="1618.6" y="999.88" source="rat_normal_png"/>
+    <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" />
 
 </e:Skin>
