@@ -53,17 +53,39 @@ class pigScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 
-		this.playAnim();
+		mouse.enable(this.stage);
+		mouse.setButtonMode(this.bulbGroup, true);
+		RES.getRes("sound 24_mp3").play(0, -1)
 		this.flustered.playLoopAsync();
-
-		this.bulbGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tips, this);
-		this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => {
-			this.bulbComponent.currentState = this.bulbComponent.skin.states[0].name;
-		}, this);
-		this.bulbGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => {
-			this.bulbComponent.currentState = this.bulbComponent.skin.states[1].name;
-		}, this);
+		this.playAnim();
+		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
+		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
+		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
+		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
+		// this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("sdsd")},this)
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	private async hover(): Promise<void> {
+		this.bulbComponent.currentState = "hover";
+	}
+
+	private async normal(): Promise<void> {
+		await this.enableMouse();
+		this.bulbComponent.currentState = "normal"
+
+	}
+
+	private async active(): Promise<void> {
+		await this.disableMouse();
+		this.bulbComponent.currentState = "active";
+	}
+
+	private async disableMouse(): Promise<void> {
+		this.bulbComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
+	}
+	private enableMouse(): void {
+		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 	}
 
 	private async playAnim(): Promise<void> {

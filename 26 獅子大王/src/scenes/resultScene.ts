@@ -31,8 +31,5 @@ class resultScene extends eui.Component implements  eui.UIComponent {
 			}
 		}
 		target.play();
-	}
-
-
-	
+	}	
 }
