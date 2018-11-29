@@ -628,7 +628,7 @@
 	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
 		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
-		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
+		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3"  touchEnabled="true"/>
 		</e:Group>
 	</e:Group>
 	<e:Group id="achieveGroup" x="987.47" y="1220" anchorOffsetX="0" anchorOffsetY="0"
