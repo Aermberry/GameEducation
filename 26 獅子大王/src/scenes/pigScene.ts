@@ -118,10 +118,10 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		await lzlib.ThreadUtility.sleep(14000).then(() => {
 			this.lion.source = "lione_Silly_png";
-			this.lionDialogText(lionDialogText.snakeText_b);
+			this.lionDialogText(lionDialogText.pigText_b);
 		});
 
-		await this.playVoice(lionDialogVoice.lionVoice_snakeB).then(() => {
+		await this.playVoice(lionDialogVoice.lionVoice_pigB).then(() => {
 			this.lionDialogTextFlow();
 			this.playVoice(lionDialogVoice.lionVoice_pigC);
 			this.circleRect.visible = false;
@@ -237,7 +237,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		this.pigDialogGroup.$children[5].visible = true;
 		this.pigImage.source = "pig_happy_png";
 		this.flusteredComponent.visible = false;
-		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		this.playVoice(animalDialogVoice.pigVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();
