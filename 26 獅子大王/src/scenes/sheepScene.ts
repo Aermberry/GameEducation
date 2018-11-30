@@ -205,9 +205,5 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();
-
-		// this.playVoice(lionDialogVoice.);
-
-
 	}
 }

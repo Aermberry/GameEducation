@@ -252,7 +252,7 @@
             </tween:TweenItem>
         </tween:TweenGroup>
         <tween:TweenGroup id="flustered">
-            <tween:TweenItem target="{flustered0}">
+            <tween:TweenItem target="{flusteredComponent}">
                 <tween:Set>
                     <tween:props>
                         <e:Object alpha="{1}" />
@@ -569,50 +569,47 @@
 		</tween:TweenGroup>
     </w:Declarations>
     <e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
-    <e:Image source="pig_normal_png" x="1496.89" y="975.55" />
-    <e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1"
+    <e:Image id="pigImage" source="pig_normal_png" x="1496.89" y="975.55" />
+    <e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0"
              touchThrough="true">
-        <e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0" />
+        <e:Image source="rabbit_Bg_jpg" y="6.06" anchorOffsetX="-3.03" width="1509.88" anchorOffsetY="6.06" height="721.27" x="-3.03" />
         <e:Label text="你們要來參加秋季嘉年華 !" x="274.44" y="202.66" anchorOffsetX="0"
                  anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87"
-                 textColor="0x000000" lineSpacing="60" bold="true" fontFamily="華康中黑體" border="true" />
+                 textColor="0x000000" lineSpacing="60" bold="true" fontFamily="華康中黑體" border="false" />
+
+        <e:Label text="日期：11月9日\n希望你能出席，不見不散！" x="274.44" y="160.24" anchorOffsetX="0"
+                 anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87"
+                 textColor="0x000000" lineSpacing="60" bold="true" fontFamily="華康中黑體" border="false"  height="594.85"/>
 			<e:Group id="editGroup" x="288.88" y="437.89" alpha="1" touchThrough="true" visible="false">
-				<e:Group x="-13.7" y="0" touchThrough="true">
+				<e:Group x="-13.7" y="0" touchThrough="true" touchEnabled="true">
 				<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" width="120" height="110" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="115.1" y="0">
+				<e:Group x="115.1" y="0" touchThrough="true">
 				<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_second" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="243.29" y="0">
+				<e:Group x="243.29" y="0" touchThrough="true">
 				<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="373.6" y="0">
+				<e:Group x="373.6" y="0" touchThrough="true">
 				<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_fourth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="500.87" y="0">
+				<e:Group x="500.87" y="0" touchThrough="true">
 				<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_fifth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="631.16" y="0">
+				<e:Group x="631.16" y="0" touchThrough="true">
 				<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_sixth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="761.47" y="0">
+				<e:Group x="761.47" y="0" touchThrough="true">
 				<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_seventh" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 				</e:Group>
-				<e:Group x="888.74" y="0">
-				<e:Rect id="eightBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_eightth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
-				</e:Group>
 			</e:Group>
-        <e:Label text="日期：11月9日\n希望你能出席，不見不散！" x="274.44" y="160.24" anchorOffsetX="0"
-                 anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87"
-                 textColor="0x000000" lineSpacing="60" bold="true" fontFamily="華康中黑體" border="true"  height="594.85"/>
 
         <e:Group id="group" x="55.54" y="22.73" alpha="1" touchThrough="true">
             <e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體" scaleX="1"
@@ -669,7 +666,7 @@
         <e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體"
                  bold="true" visible="false" />
     </e:Group>
-    <ns1:flustered id="flustered0" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0"
+    <ns1:flustered id="flusteredComponent" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0"
                    height="153.7" rotation="346.55" />
     <e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
@@ -683,6 +680,6 @@
         <ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
                               skinName="achieveComponentSkin" />
     </e:Group>
-    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
+    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
     <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

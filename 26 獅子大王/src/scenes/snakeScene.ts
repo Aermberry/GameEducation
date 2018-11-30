@@ -148,12 +148,12 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
 		});
 		this.editableText_first.touchEnabled = true;
-    this.editableText_second.touchEnabled = true;
-    this.editableText_fourth.touchEnabled = true;
-    this.editableText_fifth.touchEnabled = true;
-    this.editableText_sixth.touchEnabled = true;
-    this.editableText_seventh.touchEnabled = true;
-    this.editableText_seventh.touchEnabled = true;
+		this.editableText_second.touchEnabled = true;
+		this.editableText_fourth.touchEnabled = true;
+		this.editableText_fifth.touchEnabled = true;
+		this.editableText_sixth.touchEnabled = true;
+		this.editableText_seventh.touchEnabled = true;
+		this.editableText_eightth.touchEnabled = true;
 	}
 
 	//lion動態文本

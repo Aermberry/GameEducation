@@ -611,7 +611,7 @@
 			<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 			<e:EditableText id="editableText_seventh" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 			</e:Group>
-			<e:Group x="888.74" y="0">
+			<e:Group x="888.74" y="0" touchEnabled="false">
 			<e:Rect id="eightBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 			<e:EditableText id="editableText_eightth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 			</e:Group>
@@ -692,6 +692,6 @@
 		<ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
 		                      skinName="achieveComponentSkin" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" visible="false" />
 </e:Skin>
