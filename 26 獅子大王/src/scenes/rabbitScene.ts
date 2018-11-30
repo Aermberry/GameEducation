@@ -129,7 +129,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     lzlib.SoundUtility.playSound("sound 322_mp3");
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
       egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
-      egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
+      egret.Tween.get(this.achieveGroup).to({ alpha:  1 }, 1000);
     });
     this.editableText_first.touchEnabled = true;
     this.editableText_second.touchEnabled = true;

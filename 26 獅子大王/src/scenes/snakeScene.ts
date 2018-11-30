@@ -20,10 +20,12 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private editGroup: eui.Group;
 	private lionSmellGroup: eui.Group;
 	private bulbComponentGroup: eui.Group;
+	private invitationGroup: eui.Group;
 
 	private tipsBulbComponent: bulbComponent;
 	private bulbComponent: bulbComponent;
 	private resultAchieveComponent: achieveComponent;
+	private flusteredComponent: flustered
 
 	private circleRect: eui.Rect;
 	private plantMaskRect: eui.Rect;
@@ -34,10 +36,15 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	private lion: eui.Image;
 	private lion_active: eui.Image;
+	private snake: eui.Image;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
-	private editableText_third: eui.EditableText;
+	private editableText_fourth: eui.EditableText;
+	private editableText_fifth: eui.EditableText;
+	private editableText_sixth: eui.EditableText;
+	private editableText_seventh: eui.EditableText;
+	private editableText_eightth: eui.EditableText;
 
 	private optionsScene: optionsScene;
 
@@ -92,6 +99,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		this.tailWiggle.play(0);
 		await lzlib.ThreadUtility.sleep(2500);
 		await this.invitationCard.playOnceAsync().then(() => {
+			this.plantMaskRect.visible = false;
 			this.lionDialog.playOnceAsync();
 		});
 		await lzlib.ThreadUtility.sleep(2000);
@@ -118,11 +126,18 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			this.playVoice(lionDialogVoice.lionVoice_snakeC)
 			setTimeout(() => {
 				this.lionDialogTextFlow();
-				this.circleRect.visible = false;
+
 			}, 2000)
 
 		});
-		await this.changCard.playOnceAsync();
+
+		this.circleRect.visible = false;
+		await this.changCard.playOnceAsync().then(() => {
+			(this.invitationGroup.$children[1] as eui.Label).lineSpacing = 160;
+			this.invitationGroup.$children[3].visible = true;
+		});
+
+
 		await lzlib.ThreadUtility.sleep(9500);
 		(this.snakeDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.snakeDialogGroup.$children[4] as eui.Group).visible = true;
@@ -132,6 +147,13 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
 		});
+		this.editableText_first.touchEnabled = true;
+    this.editableText_second.touchEnabled = true;
+    this.editableText_fourth.touchEnabled = true;
+    this.editableText_fifth.touchEnabled = true;
+    this.editableText_sixth.touchEnabled = true;
+    this.editableText_seventh.touchEnabled = true;
+    this.editableText_seventh.touchEnabled = true;
 	}
 
 	//lion動態文本
@@ -165,9 +187,9 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
-		return result
+		let result = this.editableText_first.text == "日" && this.editableText_second.text == "期" && this.editableText_fourth.text == "1" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "月" && this.editableText_seventh.text == "9" && this.editableText_eightth.text == "日"
+
+		return result;
 	}
 
 	//判斷模塊
@@ -181,7 +203,9 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			});
 			this.editableText_first.touchEnabled = false;
 			this.editableText_second.touchEnabled = false;
-			this.editableText_third.touchEnabled = false;
+			this.editableText_fourth.touchEnabled = false;
+			this.editableText_sixth.touchEnabled = false;
+			this.editableText_seventh.touchEnabled = false;
 			setTimeout(() => {
 				this.congratulateAnim();
 			}, 3000)
@@ -214,7 +238,9 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		})
 		this.snakeDialogGroup.$children[4].visible = false;
 		this.snakeDialogGroup.$children[5].visible = true;
-		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		this.snake.source = "snake_happy_png";
+		this.flusteredComponent.visible = false;
+		this.playVoice(animalDialogVoice.snakeVoice_d);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();

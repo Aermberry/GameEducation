@@ -538,7 +538,7 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0x000000" />
+	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0x000000"  visible="false"/>
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0"
 	         touchThrough="true">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0" />
