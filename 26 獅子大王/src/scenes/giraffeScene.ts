@@ -38,6 +38,12 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
 	private editableText_third: eui.EditableText;
+	private editableText_fourth: eui.EditableText;
+	private editableText_fifth: eui.EditableText;
+	private editableText_sixth: eui.EditableText;
+	private editableText_seventh: eui.EditableText;
+	private editableText_eightth: eui.EditableText;
+	private editableText_nineth: eui.EditableText;
 
 	private optionsScene: optionsScene;
 	
@@ -116,6 +122,10 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 			},5800)
 		});
 
+		await this.changCard.playOnceAsync().then(()=>{
+			this.editGroup.visible=true;
+		});
+
 		await this.playVoice(lionDialogVoice.lionVoice_giraffeB);
 
 		(this.giraffeDialogGroup.$children[3] as eui.Group).visible = false;
@@ -150,7 +160,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	//驗證模塊
 	private confirmMessage(): boolean {
 		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
+		let result = this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_third.text == "5"&&this.editableText_fourth.text=="年"&&this.editableText_fifth.text=="1"&&this.editableText_sixth.text=="1"&&this.editableText_seventh.text=="月"&&this.editableText_eightth.text=="3"&&this.editableText_nineth.text=="日";
 		return result
 	}
 
@@ -172,6 +182,14 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 		}
 		else {
+			this.editableText_first.text="";
+			this.editableText_second.text="";
+			this.editableText_third.text="";
+			this.editableText_fourth.text="";
+			this.editableText_fifth.text="";
+			this.editableText_sixth.text="";
+			this.editableText_seventh.text="";
+			this.editableText_nineth.text="";
 			this.bulbGroup.visible = false;
 			this.achieveGroup.visible = false;
 			this.giraffeDialogGroup.$children[4].visible = false
@@ -197,8 +215,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.giraffeDialogGroup).to({ alpha: 1 }, 1000);
 		})
 		this.giraffeDialogGroup.$children[4].visible = false;
-		this.giraffeDialogGroup.$children[5].visible = true;
-		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		this.giraffeDialogGroup.$children[6].visible = true;
+		this.playVoice(animalDialogVoice.giraffe_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();

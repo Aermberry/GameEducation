@@ -5,6 +5,8 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private returnGroup: eui.Group;
 	private scene: eui.Component;
 	private voice: string;
+	private bulbComponent:bulbComponent;
+	private calendar:eui.Image;
 
 	public constructor(scene: eui.Component, voice: string) {
 		super();
@@ -36,5 +38,9 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private async playVoice(voiceName: string): Promise<void> {
 		let sound = lzlib.SoundUtility.playSound(voiceName);
 		return sound;
+	}
+
+	private showCalendar():void{
+		this.calendar.visible=true
 	}
 }

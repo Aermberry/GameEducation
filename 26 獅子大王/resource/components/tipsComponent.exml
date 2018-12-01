@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="tipsComponentSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="rabbit,snake,rat,giraffe,pig,sheep" >
+<e:Skin class="tipsComponentSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*"  states="rabbit,snake,rat,giraffe,pig,sheep" >
 	<w:Declarations>
 		<tween:TweenGroup id="tipsAnim">
 			<tween:TweenItem target="{rect}">
@@ -79,7 +79,12 @@
 			<e:Label text="邀請卡是哪天發出呢？\n可參考範例：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="華康中黑體"/>
 			<e:Label text="二零零零年九月一日" y="228.72" x="-55.22" fontFamily="華康中黑體" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
+		<e:Group includeIn="giraffe" x="397.88" y="592.24" touchThrough="true">
+			<e:Label text="月曆" includeIn="giraffe" x="0" y="33.76" textColor="0x000000" size="90" fontFamily="華康中黑體" bold="true"/>
+			<ns1:bulbComponent id="bulbComponent" includeIn="giraffe" x="211.63" y="0"/>
+		</e:Group>
 	</e:Group>
+	<e:Image id="calendar" source="calendar_png" x="905.94" y="154.05" x.giraffe="1108.97" y.giraffe="90.41"/>
 	<e:Group id="returnGroup" x="1325.82" y="644.06" visible.snake="false" visible.rabbit="false" visible="false">
 		<e:Label text="返回" x="0" y="40.55" textColor="0x020202" anchorOffsetX="0" width="205.45" anchorOffsetY="0" height="102.73" size="94" bold="true"/>
 		<e:Image source="return_png" x="211.51" y="0"/>
