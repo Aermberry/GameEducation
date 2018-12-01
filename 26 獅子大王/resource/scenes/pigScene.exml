@@ -580,7 +580,7 @@
         <e:Label text="日期：11月9日\n希望你能出席，不見不散！" x="274.44" y="160.24" anchorOffsetX="0"
                  anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87"
                  textColor="0x000000" lineSpacing="60" bold="true" fontFamily="華康中黑體" border="false"  height="594.85"/>
-			<e:Group id="editGroup" x="288.88" y="437.89" alpha="1" touchThrough="true" visible="false">
+			<e:Group id="editGroup" x="288.88" y="437.89" alpha="1" touchThrough="true">
 				<e:Group x="-13.7" y="0" touchThrough="true" touchEnabled="true">
 				<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 				<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" width="120" height="110" y="0" touchEnabled="false"/>

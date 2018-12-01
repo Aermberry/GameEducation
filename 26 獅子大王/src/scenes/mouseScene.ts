@@ -6,7 +6,6 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private invitationCard: egret.tween.TweenGroup;
 	private lionDialog: egret.tween.TweenGroup;
 	private rabbitDialogBox: egret.tween.TweenGroup;
-	private flustered: egret.tween.TweenGroup
 	private bubleGrad: egret.tween.TweenGroup;
 	private changCard: egret.tween.TweenGroup;
 	private happyAnim: egret.tween.TweenGroup;
@@ -14,6 +13,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private achieveComponent: achieveComponent;
 
 	private bulbGroup: eui.Group;
+	private invitationGroup: eui.Group;
 	private achieveGroup: eui.Group;
 	private lionDialogGroup: eui.Group;
 	private ratDialogGroup: eui.Group;
@@ -35,10 +35,14 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 	private lion: eui.Image;
 	private lion_active: eui.Image;
+	private ratImage: eui.Image
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
-	private editableText_third: eui.EditableText;
+	private editableText_fourth: eui.EditableText;
+	private editableText_fifth: eui.EditableText;
+	private editableText_sixth: eui.EditableText;
+	private editableText_seventh: eui.EditableText;
 
 	private optionsScene: optionsScene;
 
@@ -57,13 +61,11 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		RES.getRes("sound 24_mp3").play(0, -1)
-		this.flustered.playLoopAsync();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-		// this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("sdsd")},this)
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
 	}
 
@@ -74,7 +76,6 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private async normal(): Promise<void> {
 		await this.enableMouse();
 		this.bulbComponent.currentState = "normal"
-
 	}
 
 	private async active(): Promise<void> {
@@ -94,6 +95,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		this.tailWiggle.play(0);
 		await lzlib.ThreadUtility.sleep(2500);
 		await this.invitationCard.playOnceAsync().then(() => {
+			this.plantMaskRect.visible = false;
 			this.lionDialog.playOnceAsync();
 		});
 		await lzlib.ThreadUtility.sleep(2000);
@@ -104,7 +106,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
 				(this.ratDialogGroup.$children[3] as eui.Group).visible = true;
-				this.playVoice(animalDialogVoice.ratVoice_a); 
+				this.playVoice(animalDialogVoice.ratVoice_a);
 				setTimeout(() => {
 					this.circleLeftRect.visible = true;
 					this.circleRightRect.visible = true;
@@ -123,15 +125,28 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 			this.circleLeftRect.visible = false
 			this.circleRightRect.visible = false;
 		});
-		await this.changCard.playOnceAsync();
+		
 		await lzlib.ThreadUtility.sleep(3000);
 		(this.ratDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.ratDialogGroup.$children[4] as eui.Group).visible = true;
+		await this.changCard.playOnceAsync().then(() => {
+			(this.invitationGroup.$children[1] as eui.Label).y = 177;
+			(this.invitationGroup.$children[3] as eui.Label).y = 675;
+			(this.invitationGroup.$children[2] as eui.Group).visible = true;
+		});
+
 		await this.playVoice(animalDialogVoice.ratVoice_b);
+		lzlib.SoundUtility.playSound("sound 490_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
 		});
+		this.editableText_first.touchEnabled = true;
+		this.editableText_second.touchEnabled = true;
+		this.editableText_fourth.touchEnabled = true;
+		this.editableText_fifth.touchEnabled = true;
+		this.editableText_sixth.touchEnabled = true;
+		this.editableText_seventh.touchEnabled = true;
 	}
 
 	//lion動態文本
@@ -157,7 +172,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	//驗證模塊
 	private confirmMessage(): boolean {
 		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
+		let result = this.editableText_first.text == "地" && this.editableText_second.text == "點" && this.editableText_fourth.text == "森" && this.editableText_fifth.text == "林" && this.editableText_sixth.text == "果" && this.editableText_seventh.text == "園";
 		return result
 	}
 
@@ -172,7 +187,10 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 			});
 			this.editableText_first.touchEnabled = false;
 			this.editableText_second.touchEnabled = false;
-			this.editableText_third.touchEnabled = false;
+			this.editableText_fourth.touchEnabled = false;
+			this.editableText_fifth.touchEnabled = false;
+			this.editableText_sixth.touchEnabled = false;
+			this.editableText_seventh.touchEnabled = false;
 			setTimeout(() => {
 				this.congratulateAnim();
 			}, 3000)
@@ -205,14 +223,11 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		})
 		this.ratDialogGroup.$children[4].visible = false;
 		this.ratDialogGroup.$children[5].visible = true;
-		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		this.ratImage.source="rat_happy_png"
+		this.playVoice(animalDialogVoice.ratVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();
-
-		// this.playVoice(lionDialogVoice.);
-
-
 	}
 
 }
