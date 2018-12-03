@@ -288,6 +288,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		})
 		this.giraffeDialogGroup.$children[4].visible = false;
 		this.giraffeDialogGroup.$children[6].visible = true;
+		this.giraffe.source="giraffe_happy_png"
 		this.playVoice(animalDialogVoice.giraffe_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;

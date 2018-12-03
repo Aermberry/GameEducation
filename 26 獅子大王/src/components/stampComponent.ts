@@ -2,6 +2,11 @@ class stampComponent extends eui.Component implements eui.UIComponent {
 
 	private stamperAnim: egret.tween.TweenGroup;
 	private changSzieAnim:egret.tween.TweenGroup;
+
+	private stamperNormal:eui.Image;
+	private stamperNormal_active:eui.Image;
+	private stamper_active:eui.Image;
+	private stamper_hover:eui.Image;
 	public constructor() {
 		super();
 	}
@@ -13,9 +18,12 @@ class stampComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		// this.playAnimation(this.stamperAnim,true);
-		this.currentState=this.skin.states[2].name
-		this.changSzieAnim.playOnceAsync();
+		mouse.enable(this.stage);
+		mouse.setButtonMode( this.stamperNormal, true);
+		mouse.setButtonMode( this.stamperNormal_active, true);
+		mouse.setButtonMode( this.stamper_active, true);
+		mouse.setButtonMode(this.stamper_hover, true);
+		// this.playAnimation(this.stamperAnim, true);
 	}
 
 	private playAnimation(target: egret.tween.TweenGroup, isLoop: boolean): void {

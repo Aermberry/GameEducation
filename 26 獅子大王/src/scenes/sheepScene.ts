@@ -6,7 +6,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private invitationCard: egret.tween.TweenGroup;
 	private lionDialog: egret.tween.TweenGroup;
 	private rabbitDialogBox: egret.tween.TweenGroup;
-	private flustered: egret.tween.TweenGroup
 	private bubleGrad: egret.tween.TweenGroup;
 	private changCard: egret.tween.TweenGroup;
 	private happyAnim: egret.tween.TweenGroup;
@@ -21,9 +20,11 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private editGroup: eui.Group;
 	private lionSmellGroup: eui.Group;
 	private bulbComponentGroup: eui.Group;
+	private stamperComponentGroup:eui.Group
 
 	private tipsBulbComponent: bulbComponent;
 	private bulbComponent: bulbComponent;
+	private stamperComponent:stampComponent;
 	private resultAchieveComponent: achieveComponent;
 
 	private circleRect: eui.Rect;
@@ -35,6 +36,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	private lion: eui.Image;
 	private lion_active: eui.Image;
+	private sheep:eui.Image;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -54,26 +56,35 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 
-		mouse.enable(this.stage);
-		mouse.setButtonMode(this.bulbGroup, true);
 		RES.getRes("sound 24_mp3").play(0, -1)
-		this.flustered.playLoopAsync();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+
+		// this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.stamperHover, this);
+		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.stamperNormal, this);
+		// this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.stamperActive, this);
+		// this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
+		
 	}
 
 	private async hover(): Promise<void> {
 		this.bulbComponent.currentState = "hover";
 	}
+	private async stamperHover(): Promise<void> {
+		this.stamperComponent.currentState="hover";
+	}
 
 	private async normal(): Promise<void> {
 		await this.enableMouse();
-		this.bulbComponent.currentState = "normal"
+		this.bulbComponent.currentState = "normal";
 
+	}
+	private async stamperNormal():Promise<void>{
+		await this.stamperEnableMouse();
+		this.stamperComponent.currentState="normal";
 	}
 
 	private async active(): Promise<void> {
@@ -81,11 +92,23 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.currentState = "active";
 	}
 
+	private async stamperActive():Promise<void> {
+		await this.stamperDisableMouse();
+		this.stamperComponent.currentState="active";
+	}
+
 	private async disableMouse(): Promise<void> {
 		this.bulbComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 	}
+	private async stamperDisableMouse():Promise<void> {
+		this.stamperComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER,this.stamperHover,this);
+	}
 	private enableMouse(): void {
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
+	}
+
+	private  stamperEnableMouse():void {
+		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.stamperHover,this);
 	}
 
 	private async playAnim(): Promise<void> {
@@ -144,50 +167,13 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	private tips(): void {
 		this.normal();
-		this.tipsComponent = new tipsComponent(this, tipsVoices.ratTip.toString());
-		this.tipsComponent.currentState = "rat"
+		this.tipsComponent = new tipsComponent(this, tipsVoices.sheepTip.toString());
+		this.tipsComponent.currentState = "sheep"
 		this.addChild(this.tipsComponent);
 		this.tipsComponent.playAnim();
 	}
 
-	//驗證模塊
-	private confirmMessage(): boolean {
-		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "小" && this.editableText_second.text == "動" && this.editableText_third.text == "物";
-		return result
-	}
-
-	//判斷模塊
-	private result(): void {
-		this.achieveComponent = new achieveComponent(this.optionsScene, this);
-		let isConfirm = this.confirmMessage();
-		if (isConfirm) {
-			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 0 }, 1000).call(() => {
-				egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
-				egret.Tween.get(this.achieveGroup).to({ alpha: 0 }, 1000);
-			});
-			this.editableText_first.touchEnabled = false;
-			this.editableText_second.touchEnabled = false;
-			this.editableText_third.touchEnabled = false;
-			setTimeout(() => {
-				this.congratulateAnim();
-			}, 3000)
-
-		}
-		else {
-			this.bulbGroup.visible = false;
-			this.achieveGroup.visible = false;
-			this.sheepDialogGroup.$children[4].visible = false
-			this.sheepDialogGroup.$children[2].visible = true;
-			setTimeout(() => {
-				this.sheepDialogGroup.$children[2].visible = false;
-				this.sheepDialogGroup.$children[4].visible = true;
-				this.bulbGroup.visible = true;
-				this.achieveGroup.visible = true;
-			}, 5000)
-		}
-	}
-
+	
 	//第二部分動畫
 	private async congratulateAnim(): Promise<void> {
 		this.lion_active.visible = false;
@@ -201,7 +187,8 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		})
 		this.sheepDialogGroup.$children[4].visible = false;
 		this.sheepDialogGroup.$children[5].visible = true;
-		this.playVoice(animalDialogVoice.rabbitVoice_d);
+		this.sheep.source="sheep_happy_png"
+		this.playVoice(animalDialogVoice.sheepVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();

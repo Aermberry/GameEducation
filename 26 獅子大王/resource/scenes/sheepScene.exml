@@ -540,12 +540,12 @@
 	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="1"
 	         touchThrough="true">
-		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0" />
-		<e:Label text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1496.67" anchorOffsetY="0"
-		         height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="100"
+		<e:Image y="-84.85" anchorOffsetX="0" anchorOffsetY="0" x="0"  source="letter_sheep_jpg" width="1570.48" height="1112.82"/>
+		<e:Label text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時\n地點：森林公園\n希望你能出席，不見不散 ！" x="347.18" y="126.92" anchorOffsetX="0" anchorOffsetY="0"
+		         textAlign="left" verticalAlign="middle" size="70" textColor="0x000000" lineSpacing="80"
 		         bold="true" fontFamily="華康中黑體" border="true" />
-		<e:Group id="group" x="55.54" y="50" alpha="1" touchThrough="true">
-			<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體"
+		<e:Group id="group" x="55.54" y="1.52" alpha="1" touchThrough="true">
+			<e:Label text="親愛的小動物：" size="70" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體"
 			         scaleX="1" scaleY="1" />
 
 		</e:Group>
@@ -605,19 +605,20 @@
 	<e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
 	        anchorOffsetY="0" alpha="1" visible="false" />
-	<e:Image x="1488.17" y="1053.62" source="sheep_normal_png"/>
+	<e:Image id="sheep" x="1488.17" y="1053.62" source="sheep_normal_png"/>
 
-	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
+	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="1" touchEnabled="true" touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
 		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
 		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
 		</e:Group>
 	</e:Group>
-	<e:Group id="stamperGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03"
-	         alpha="0">
-		<e:Label text="拿起印章" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
-		<ns1:stampComponent id="stamperComponent" width="20" height="20" x="570.24" y="-1"/>
-
+	<e:Group id="stamperGroup" x="987.47" y="1210.25" anchorOffsetX="0" anchorOffsetY="0"
+	         alpha="1" touchChildren="true" touchEnabled="true" touchThrough="true">
+		<e:Label text="拿起印章" size="90" x="0" fontFamily="華康中黑體" textColor="0x000000"  verticalCenter="0"/>
+		<e:Group id="stamperComponentGroup" anchorOffsetX="0" x="387.88" anchorOffsetY="0" height="227.06" width="362.42" touchChildren="true" touchEnabled="true" touchThrough="true" verticalCenter="0">
+		<ns1:stampComponent id="stamperComponent" x="3.03" y="3.03" anchorOffsetX="0" width="325.1" anchorOffsetY="0" height="207.91"/>
+		</e:Group>
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
