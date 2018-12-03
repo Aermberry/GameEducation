@@ -123,7 +123,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 				this.lionDialogText(lionDialogText.giraffeText_c)
 			}, 5800)
 		});
-
+		this.circleRect.visible = false;
 		await this.changCard.playOnceAsync().then(() => {
 			this.editGroup.visible = true;
 		});
@@ -226,6 +226,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 			this.editableText_seventh.touchEnabled = false;
 			this.editableText_eightth.touchEnabled = false;
 			this.editableText_nineth.touchEnabled = false;
+
 			setTimeout(() => {
 				this.congratulateAnim();
 			}, 3000)
@@ -247,7 +248,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 			}
 		}
 	}
-	
+
 	private tipsDialog(): void {
 		this.bulbGroup.visible = false;
 		this.achieveGroup.visible = false;
