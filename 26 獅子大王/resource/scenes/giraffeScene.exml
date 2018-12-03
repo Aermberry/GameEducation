@@ -545,39 +545,39 @@
 		<e:Group id="editGroup" x="407.94" y="934.86" alpha="1" touchThrough="true" touchChildren="true" visible="false">
 		<e:Group x="-13.7" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="firstBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="83.62" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="secondBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_second" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_second" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="180.94" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="thirdBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_third" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_third" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="277.31" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="fourthBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_fourth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_fourth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="373.98" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="fifthBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_fifth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_fifth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="470.27" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="sixthBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_sixth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_sixth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="567.63" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="seventhBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_seventh" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_seventh" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="664.6" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="eightthBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_eightth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_eightth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="761.92" y="0" touchThrough="true" touchEnabled="false">
 			<e:Rect id="ninethBgRect" width="100" height="90" x="0" fillColor="0xffffff" strokeWeight="3" y="0"/>
-			<e:EditableText id="editableText_nineth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="true"/>
+			<e:EditableText id="editableText_nineth" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="70" fontFamily="華康中黑體" anchorOffsetY="0" width="100" height="90" y="0" touchEnabled="false"/>
 		</e:Group>
 		</e:Group>
 		<e:Group id="group" x="67.66" y="71.21" alpha="1" touchThrough="true">
@@ -657,6 +657,6 @@
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
 		<ns1:achieveComponent width="20" height="20" x="236.91" y="35" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" visible="false" />
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

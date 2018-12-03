@@ -5,4 +5,5 @@ enum tipsVoices{
     ratTip="sound 491_mp3",
     sheepTip="sound 529_mp3",
     giraffeTip="sound 587_mp3",
+    giraffeTips="sound 10 (D12.mp3)_mp3"
 }
