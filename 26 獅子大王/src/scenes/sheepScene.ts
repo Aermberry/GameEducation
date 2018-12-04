@@ -10,7 +10,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private changCard: egret.tween.TweenGroup;
 	private happyAnim: egret.tween.TweenGroup;
 	private tipsComponent: tipsComponent;
-	private achieveComponent: achieveComponent;
 
 	private bulbGroup: eui.Group;
 	private stamperGroup: eui.Group;
@@ -194,9 +193,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.initDrop(this.stamperRect, this.onStamperDrop);
 		mouse.setMouseMoveEnabled(true);
 		this.stamperComponent.currentState = "normal";
-		this.invitationLetter.addEventListener(mouse.MouseEvent.MOUSE_MOVE, () => {
-			console.log("ddddd")
-		}, this)
+		this.stamperComponent.addEventListener(lzlib.LzDragEvent.CANCEL,this.onDropCancel,this)
 	}
 
 	private initDrop(dropTarget: eui.Component, dropFunction: (e: lzlib.LzDragEvent) => void): void {
@@ -209,16 +206,34 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private async onStamperDrop(e: lzlib.LzDragEvent): Promise<void> {
 		let dragComponent = e.dragObject as eui.Component;
 		let target = (e.target as eui.Rect).name
-		console.log("tttttt");
+		this.stamperActiveColone.play()
 		if (target == "lister") {
 			e.preventDefault();
-			this.stamperActiveColone.play().then(() => {
-				this.dropStamper.visible = true;
-				e.dragObject.visible = false;
+			this.dropStamper.visible = true;
+			e.dragObject.visible = false;
+			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 0 }, 1000).call(() => {
+				egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
+				egret.Tween.get(this.stamperGroup).to({ alpha: 0 }, 1000);
 			});
-
-
+				setTimeout(() => {
+				this.congratulateAnim();
+			}, 2800)
 		}
+		
+
+	}
+
+	private async onDropCancel():Promise<void> {
+			this.bulbGroup.visible = false;
+			this.stamperGroup.visible = false;
+			this.sheepDialogGroup.$children[5].visible = false;
+			this.sheepDialogGroup.$children[2].visible = true;
+			this.playVoice(animalDialogVoice.sheepVoice_d).then(() => {
+				this.bulbGroup.visible = true;
+				this.stamperGroup.visible = true;
+				this.sheepDialogGroup.$children[5].visible = true;
+				this.sheepDialogGroup.$children[2].visible = false;
+			})
 	}
 
 

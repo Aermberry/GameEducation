@@ -16,6 +16,7 @@ enum animalDialogVoice {
   sheepVoice_a="sound 502_mp3",
   sheepVoice_b="sound 513_mp3",
   sheepVoice_c="sound 550_mp3",
+  sheepVoice_d="sound 546_mp3",
   giraffe_a = "sound 555_mp3",
   giraffe_b = "sound 584_mp3",
   giraffe_c = "sound 599_mp3",
