@@ -84,10 +84,22 @@
 			<ns1:bulbComponent id="bulbComponent" includeIn="giraffe" x="187.39" y="0"/>
 		</e:Group>
 	</e:Group>
-
+	<e:Group id="letterTipsGroup" includeIn="sheep" x="615" y="641" touchEnabled="true">
+		<e:Label text="格式參考" includeIn="sheep" x="4.21" y="38.67" textColor="0x000000" size="94" fontFamily="華康中黑體" bold="true"/>
+		<ns1:bulbComponent includeIn="sheep" x="394.94" y="-4.73"/>
+	</e:Group>
 	<e:Group id="returnGroup" x="1325.82" y="644.06" visible.snake="false" visible.rabbit="false" visible="false">
 		<e:Label text="返回" x="0" y="40.55" textColor="0x020202" anchorOffsetX="0" width="205.45" anchorOffsetY="0" height="102.73" size="94" bold="true"/>
 		<e:Image source="return_png" x="211.51" y="0"/>
 	</e:Group>
 	<e:Image id="calendar" source="calendar_png" x="905.94" y="154.05" x.giraffe="1108.97" y.giraffe="90.41" includeIn="giraffe" touchEnabled="false" visible="false"/>
+	<e:Group id="letterGroup" includeIn="sheep" x="787.07" y="54.08" visible="false">
+		<e:Image source="letterFormat_png" x="0" y="0" anchorOffsetX="0" width="1129.63" anchorOffsetY="0" height="977.91"/>
+		<e:Label text="收件人姓名" includeIn="sheep" x="81.14" y="61.46" size="50" fontFamily="華康中黑體"/>
+		<e:Label text="問候語" includeIn="sheep" x="541.75" y="206.91" size="50" fontFamily="華康中黑體"/>
+		<e:Label text="正文" includeIn="sheep" x="488.75" y="385.27" size="131" fontFamily="華康中黑體"/>
+		<e:Label text="祝語" includeIn="sheep" x="93.26" y="673.57" size="50" fontFamily="華康中黑體"/>
+		<e:Label text="發件人姓名" includeIn="sheep" x="554.69" y="761.45" size="50" fontFamily="華康中黑體"/>
+		<e:Label text="日期" includeIn="sheep" x="917.51" y="867.51" size="50" fontFamily="華康中黑體"/>
+	</e:Group>
 </e:Skin>

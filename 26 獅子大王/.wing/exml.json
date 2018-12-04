@@ -1,67 +1,72 @@
 {
-  "167071c13eb": {
-    "path": "scenes\\startScene.ts",
-    "class": "startScene",
-    "parentPath": ""
-  },
-  "167071e3aa4": {
-    "path": "scenes\\optionsScene.ts",
-    "class": "optionsScene",
-    "parentPath": ""
-  },
-  "global": {
-    "globalAutoLayerMarkEnable": true
-  },
-  "16715e9b262": {
-    "path": "components\\achieveComponent.ts",
-    "class": "achieveComponent",
-    "parentPath": ""
-  },
-  "1671610423e": {
-    "path": "components\\achieveComponent.ts",
-    "class": "achieveComponent",
-    "parentPath": ""
-  },
-  "16716576bff": {
-    "path": "components\\bulbComponent.ts",
-    "class": "bulbComponent",
-    "parentPath": ""
-  },
-  "16720b2f6e8": {
-    "path": "components\\EditableLabel.ts",
-    "class": "EditableLabel",
-    "parentPath": ""
-  },
-  "16729f88f76": {
-    "path": "..\\resource\\components\\tipsComponent.ts",
-    "class": "tipsComponent",
-    "parentPath": ""
-  },
-  "1672b4b22f5": {
-    "path": "components\\startMask.ts",
-    "class": "startMask",
-    "parentPath": ""
-  },
-  "16730373aef": {
-    "path": "scenes\\invitation.ts",
-    "class": "invitation",
-    "parentPath": ""
-  },
-  "1673407dcb3": {
-    "path": "components\\stampComponent.ts",
-    "class": "stampComponent",
-    "parentPath": ""
-  },
-  "167775d88e6": {
-    "guideLines": [
-      {
-        "type": "v",
-        "pos": 266.667
-      },
-      {
-        "type": "h",
-        "pos": 745.455
-      }
-    ]
-  }
+    "167071c13eb": {
+        "path": "scenes\\startScene.ts",
+        "class": "startScene",
+        "parentPath": ""
+    },
+    "167071e3aa4": {
+        "path": "scenes\\optionsScene.ts",
+        "class": "optionsScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "16715e9b262": {
+        "path": "components\\achieveComponent.ts",
+        "class": "achieveComponent",
+        "parentPath": ""
+    },
+    "1671610423e": {
+        "path": "components\\achieveComponent.ts",
+        "class": "achieveComponent",
+        "parentPath": ""
+    },
+    "16716576bff": {
+        "path": "components\\bulbComponent.ts",
+        "class": "bulbComponent",
+        "parentPath": ""
+    },
+    "16720b2f6e8": {
+        "path": "components\\EditableLabel.ts",
+        "class": "EditableLabel",
+        "parentPath": ""
+    },
+    "16729f88f76": {
+        "path": "..\\resource\\components\\tipsComponent.ts",
+        "class": "tipsComponent",
+        "parentPath": ""
+    },
+    "1672b4b22f5": {
+        "path": "components\\startMask.ts",
+        "class": "startMask",
+        "parentPath": ""
+    },
+    "16730373aef": {
+        "path": "scenes\\invitation.ts",
+        "class": "invitation",
+        "parentPath": ""
+    },
+    "1673407dcb3": {
+        "path": "components\\stampComponent.ts",
+        "class": "stampComponent",
+        "parentPath": ""
+    },
+    "167775d88e6": {
+        "guideLines": [
+            {
+                "type": "v",
+                "pos": 266.667
+            },
+            {
+                "type": "h",
+                "pos": 745.455
+            }
+        ]
+    },
+    "16778a19029": {
+        "path": "components\\pigComponent.ts",
+        "class": "pigComponent",
+        "parentPath": ""
+    }
 }

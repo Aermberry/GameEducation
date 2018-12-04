@@ -7,12 +7,17 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private returnGroup: eui.Group;
 	private calendarTipsGroup:eui.Group;
 
+	private letterGroup:eui.Group;
+
 	private scene: eui.Component;
 	private bulbComponent:bulbComponent;
 
 	private calendar:eui.Image;
 
 	private voice: string;
+
+	private letterTipsGroup:eui.Group;
+
 
 	public constructor(scene: eui.Component, voice: string) {
 		super();
@@ -35,6 +40,8 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.calendarTipsGroup, true);
 		this.calendarTipsGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.showCalendar,this);
 		this.calendarTipsGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT,this.cancleShowCalendar,this);
+		this.letterTipsGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.showLetter,this);
+		this.letterTipsGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT,this.cancleShowLetter,this);
 		this.returnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.return, this)
 	}
 
@@ -52,6 +59,7 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private async playVoice(voiceName: string): Promise<void> {
 		let sound = lzlib.SoundUtility.playSound(voiceName).then(()=>{
 			this.calendarTipsGroup.visible=true;
+			this.letterTipsGroup.visible=true;
 		});
 		return sound;
 	}
@@ -61,6 +69,14 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	}
 	private cancleShowCalendar():void{
 		this.calendar.visible=false;
+	}
+
+	private showLetter():void{
+		this.letterGroup.visible=true;
+	}
+
+	private cancleShowLetter():void{
+		this.letterGroup.visible=false;
 	}
 
 }
