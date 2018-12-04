@@ -23,7 +23,7 @@ class stampComponent extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode( this.stamperNormal_active, true);
 		mouse.setButtonMode( this.stamper_active, true);
 		mouse.setButtonMode(this.stamper_hover, true);
-		// this.playAnimation(this.stamperAnim, true);
+		this.playAnimation(this.stamperAnim, true);
 	}
 
 	private playAnimation(target: egret.tween.TweenGroup, isLoop: boolean): void {
@@ -33,6 +33,11 @@ class stampComponent extends eui.Component implements eui.UIComponent {
 			}
 		}
 		target.play();
+	}
+
+	public async play():Promise<void>{
+		let play= this.changSzieAnim.playOnceAsync();
+		return play;
 	}
 
 }

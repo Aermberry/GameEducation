@@ -20,23 +20,28 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private editGroup: eui.Group;
 	private lionSmellGroup: eui.Group;
 	private bulbComponentGroup: eui.Group;
-	private stamperComponentGroup:eui.Group
+	private stamperComponentGroup: eui.Group
+	private stamperActiveGroup: eui.Group;
 
 	private tipsBulbComponent: bulbComponent;
 	private bulbComponent: bulbComponent;
-	private stamperComponent:stampComponent;
+	private stamperComponent: stampComponent;
+	private stamperActiveColone: stampComponent;
 	private resultAchieveComponent: achieveComponent;
 
-	private circleRect: eui.Rect;
 	private plantMaskRect: eui.Rect;
 	private endMaskRect: eui.Rect;
 	private firstBgRect: eui.Rect
 	private secondBgRect: eui.Rect
 	private thirdBgRect: eui.Rect
+	private stamperRect: eui.Rect
 
 	private lion: eui.Image;
 	private lion_active: eui.Image;
-	private sheep:eui.Image;
+	private sheep: eui.Image;
+	private stamper: eui.Image;
+	private dropStamper: eui.Image;
+	private invitationLetter: eui.Image;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -63,28 +68,30 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 
-		// this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.stamperHover, this);
-		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.stamperNormal, this);
-		// this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.stamperActive, this);
-		// this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-		
+		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.stamperHover, this);
+		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.stamperNormal, this)
+		this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.stamperActive, this);
+		this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_END, () => {
+			// console.log("TOUCH_END")
+			this.initDrag();
+		}, this);
+
 	}
 
 	private async hover(): Promise<void> {
 		this.bulbComponent.currentState = "hover";
 	}
 	private async stamperHover(): Promise<void> {
-		this.stamperComponent.currentState="hover";
+		this.stamperComponent.currentState = "hover";
 	}
 
 	private async normal(): Promise<void> {
 		await this.enableMouse();
 		this.bulbComponent.currentState = "normal";
-
 	}
-	private async stamperNormal():Promise<void>{
+	private async stamperNormal(): Promise<void> {
 		await this.stamperEnableMouse();
-		this.stamperComponent.currentState="normal";
+		this.stamperComponent.currentState = "normal";
 	}
 
 	private async active(): Promise<void> {
@@ -92,23 +99,23 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.currentState = "active";
 	}
 
-	private async stamperActive():Promise<void> {
+	private async stamperActive(): Promise<void> {
 		await this.stamperDisableMouse();
-		this.stamperComponent.currentState="active";
+		this.stamperComponent.currentState = "active";
 	}
 
 	private async disableMouse(): Promise<void> {
 		this.bulbComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 	}
-	private async stamperDisableMouse():Promise<void> {
-		this.stamperComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER,this.stamperHover,this);
+	private async stamperDisableMouse(): Promise<void> {
+		this.stamperComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.stamperHover, this);
 	}
 	private enableMouse(): void {
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 	}
 
-	private  stamperEnableMouse():void {
-		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.stamperHover,this);
+	private stamperEnableMouse(): void {
+		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.stamperHover, this);
 	}
 
 	private async playAnim(): Promise<void> {
@@ -173,7 +180,48 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.tipsComponent.playAnim();
 	}
 
-	
+	//蓋印章
+	private initDrag(): void {
+		let drag = new lzlib.Drag();
+
+		this.stamperActiveColone = new stampComponent();
+		this.stamperActiveColone.currentState = "active";
+		this.stamperActiveGroup.addChild(this.stamperActiveColone);
+
+		// this.stamper=new eui.Image();
+		this.addChild(drag);
+		drag.enableDrag(this.stamperActiveColone, false);
+		this.initDrop(this.stamperRect, this.onStamperDrop);
+		mouse.setMouseMoveEnabled(true);
+		this.stamperComponent.currentState = "normal";
+		this.invitationLetter.addEventListener(mouse.MouseEvent.MOUSE_MOVE, () => {
+			console.log("ddddd")
+		}, this)
+	}
+
+	private initDrop(dropTarget: eui.Component, dropFunction: (e: lzlib.LzDragEvent) => void): void {
+		let drop = new lzlib.Drop();
+		this.addChild(drop);
+		drop.enableDrop(dropTarget);
+		dropTarget.addEventListener(lzlib.LzDragEvent.DROP, dropFunction, this);
+	}
+
+	private async onStamperDrop(e: lzlib.LzDragEvent): Promise<void> {
+		let dragComponent = e.dragObject as eui.Component;
+		let target = (e.target as eui.Rect).name
+		console.log("tttttt");
+		if (target == "lister") {
+			e.preventDefault();
+			this.stamperActiveColone.play().then(() => {
+				this.dropStamper.visible = true;
+				e.dragObject.visible = false;
+			});
+
+
+		}
+	}
+
+
 	//第二部分動畫
 	private async congratulateAnim(): Promise<void> {
 		this.lion_active.visible = false;
@@ -187,7 +235,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		})
 		this.sheepDialogGroup.$children[4].visible = false;
 		this.sheepDialogGroup.$children[5].visible = true;
-		this.sheep.source="sheep_happy_png"
+		this.sheep.source = "sheep_happy_png"
 		this.playVoice(animalDialogVoice.sheepVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;

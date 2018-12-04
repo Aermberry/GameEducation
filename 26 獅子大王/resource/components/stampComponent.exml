@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="stampComponentSkin" width="516" height="317" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,hover,active" >
+<e:Skin class="stampComponentSkin" width="516" height="317" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,hover,active" width.normal="302" height.normal="189" width.hover="302" height.hover="189" width.active="302" height.active="189">
 	<w:Declarations>
 		<tween:TweenGroup id="stamperAnim">
 			<tween:TweenItem target="{stamperNormal}">
@@ -117,10 +117,10 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1673407dcb3" ></w:Config>
-	<e:Group id="stamperNormalGroup" x="0" y="0" alpha.normal="1" visible.active="false" visible.hover="false">
+	<e:Group id="stamperNormalGroup" x="0" y="0" alpha.normal="1" includeIn="normal">
 		<e:Image id="stamperNormal" source="stamper_normal0_png" alpha.normal="1" alpha.hover="0" alpha.active="0"/>
-		<e:Image id="stamperNormal_active" source="stamper_normal1_png" alpha.normal="0" alpha.hover="0" alpha.active="0"/>
+		<e:Image id="stamperNormal_active" source="stamper_normal1_png" alpha.normal="1" alpha.hover="0" alpha.active="0"/>
 	</e:Group>
-	<e:Image id="stamper_active" source="stamper_active_png" alpha="1" verticalCenter="0" alpha.normal="0" horizontalCenter.hover="0" verticalCenter.hover="0" alpha.hover="0" horizontalCenter.active="0" verticalCenter.active="0" alpha.active="1" visible.hover="false" visible.normal="false"/>
-	<e:Image id="stamper_hover" source="stamper_hover_png" alpha="1"  verticalCenter="0" alpha.normal="0" horizontalCenter.hover="0" verticalCenter.hover="0" alpha.hover="1" horizontalCenter.active="0" verticalCenter.active="0" alpha.active="0" visible.active="false" visible.normal="false"/>
+	<e:Image id="stamper_active" source="stamper_active_png" alpha="1" alpha.normal="0" horizontalCenter.hover="0" verticalCenter.hover="0" alpha.hover="0" horizontalCenter.active="-51" verticalCenter.active="-3" alpha.active="1" includeIn="active" verticalCenter="0" x="0"/>
+	<e:Image id="stamper_hover" source="stamper_hover_png" alpha="1"  alpha.normal="0" horizontalCenter.hover="-57" verticalCenter.hover="0.5" alpha.hover="1" horizontalCenter.active="0" verticalCenter.active="0" alpha.active="0" includeIn="hover" y="33" x="0"/>
 </e:Skin>

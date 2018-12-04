@@ -51,5 +51,17 @@
     "path": "components\\stampComponent.ts",
     "class": "stampComponent",
     "parentPath": ""
+  },
+  "167775d88e6": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 266.667
+      },
+      {
+        "type": "h",
+        "pos": 745.455
+      }
+    ]
   }
 }
