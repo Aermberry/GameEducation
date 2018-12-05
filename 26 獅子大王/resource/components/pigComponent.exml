@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="pigComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="normal,active,hover" >
+<e:Skin class="pigComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*"  states="normal,active,hover" >
+	<w:Declarations>
+		<tween:TweenGroup id="eyeAnim">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{53}" height="{54}" y="{111.45}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{46}" height="{51}" y="{112.95}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{52}" height="{56}" y="{110.6}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set/>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{80}" height="{69}" x="{140.84}" y="{105.04}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{67}" height="{66}" x="{141.17}" y="{106.52}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object width="{72}" height="{70}" x="{141.02}" y="{104.64}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="flusteredAnim">
+			<tween:TweenItem target="{flustered}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="16778a19029" ></w:Config>
-	<e:Image source="pig_normal_png" includeIn="active" horizontalCenter="0" verticalCenter="0"/>
-	<e:Image source="pig_inactivated_png" includeIn="normal" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="pig_body_png" includeIn="hover" verticalCenter="0" left="0"/>
+	<e:Image id="image" source="pig_leftEye_png" includeIn="hover" x="63" y="114" anchorOffsetY="27"/>
+	<e:Image id="image0" source="pig_rightEye_png" includeIn="hover" x="141" y="106" anchorOffsetX="-2" anchorOffsetY="35"/>
+	<e:Image source="pig_eyes_png" includeIn="hover" x="65" y="98.5"/>
+	<e:Image id="flustered" source="flustered_png" includeIn="hover" x="230" y="2" alpha="0"/>
+	<e:Image source="pig_normal_png" includeIn="active" verticalCenter="0" left="0"/>
+	<e:Image source="pig_inactivated_png" includeIn="normal" verticalCenter="0" left="0"/>
 </e:Skin>

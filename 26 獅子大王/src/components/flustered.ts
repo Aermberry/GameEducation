@@ -1,7 +1,7 @@
 class flustered extends eui.Component implements  eui.UIComponent {
 
 	private flusteredAnim:egret.tween.TweenGroup;
-	
+
 	public constructor() {
 		super();
 	}
@@ -15,15 +15,20 @@ class flustered extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		this.playAnimation(this.flusteredAnim,true);
 	}
 	
-	private playAnimation(target: egret.tween.TweenGroup, isLoop: boolean): void {
+	public playAnimation(target: egret.tween.TweenGroup, isLoop: boolean): void {
 		if (isLoop) {
 			for (var key in target.items) {
 				target.items[key].props = { loop: true };
 			}
 		}
 		target.play();
+	}
+
+	public playVoice(str:string):void {
+		lzlib.SoundUtility.playSound(str);
 	}
 	
 }

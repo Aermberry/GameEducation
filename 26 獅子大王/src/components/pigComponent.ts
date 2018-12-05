@@ -1,4 +1,8 @@
 class pigComponent extends eui.Component implements  eui.UIComponent {
+
+	private eyeAnim:egret.tween.TweenGroup;
+	private flusteredAnim:egret.tween.TweenGroup;
+	
 	public constructor() {
 		super();
 	}
@@ -14,4 +18,9 @@ class pigComponent extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 	}
 	
+	public async onAnim():Promise<void>{
+		this.eyeAnim.playOnceAsync().then(()=>{
+			this.flusteredAnim.playLoopAsync();
+		})
+	}
 }

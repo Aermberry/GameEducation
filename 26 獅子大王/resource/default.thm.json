@@ -30,7 +30,10 @@
         "resultScene": "resource/scenes/resultScene.exml",
         "invitation": "resource/scenes/invitation.exml",
         "stampComponent": "resource/components/stampComponent.exml",
-        "pigComponent": "resource/components/pigComponent.exml"
+        "pigComponent": "resource/components/pigComponent.exml",
+        "rabbirComponent": "resource/components/rabbirComponent.exml",
+        "snakeComponent": "resource/components/snakeComponent.exml",
+        "sheeepComponent": "resource/components/sheeepComponent.exml"
     },
     "autoGenerateExmlsList": true,
     "exmls": [
@@ -39,6 +42,7 @@
         "resource/components/EditableLabel.exml",
         "resource/components/flustered.exml",
         "resource/components/maskPanel.exml",
+        "resource/components/pigComponent.exml",
         "resource/components/stampComponent.exml",
         "resource/components/tipsComponent.exml",
         "resource/eui_skins/ButtonSkin.exml",

@@ -68,5 +68,10 @@
         "path": "components\\pigComponent.ts",
         "class": "pigComponent",
         "parentPath": ""
+    },
+    "1677c80e654": {
+        "path": "components\\sheeepComponent.ts",
+        "class": "sheeepComponent",
+        "parentPath": ""
     }
 }
