@@ -110,7 +110,8 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 	}
 
 	private onBackImageClick(e: egret.TouchEvent): void
-	{
+	{	
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new StartScene());
 	}
 

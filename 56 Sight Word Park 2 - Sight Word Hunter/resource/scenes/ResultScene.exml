@@ -16,8 +16,8 @@
 		<e:Image id="yelloHeadImage" source="smiling_yellow_head_png" horizontalCenter="0" y="30" width="1250" height="1500" />
 		<e:Label fontFamily="Hoffmanhand" text="Congratulations!" bold="true" size="115" textColor="#000000" y="220.15" horizontalCenter="0" />
 		<e:Label fontFamily="Hoffmanhand" text="You’ve answered" bold="true" size="115" textColor="#000000" y="347.12" horizontalCenter="0" />
-		<e:Label fontFamily="Hoffmanhand" text="questions correctly" bold="true" size="115" textColor="#000000" y="469.09" horizontalCenter="90" />
-		<e:Label fontFamily="Hoffmanhand" text="Here’s your prize" bold="true" size="115" textColor="#000000" y="594.09" horizontalCenter="19" />
+		<e:Label fontFamily="Hoffmanhand" text="questions correctly." bold="true" size="115" textColor="#000000" y="469.09" horizontalCenter="90" />
+		<e:Label fontFamily="Hoffmanhand" text="Here’s your prize." bold="true" size="115" textColor="#000000" y="594.09" horizontalCenter="19" />
 		
 		<e:Image id="medalImage" horizontalCenter="0" y="750.15" scaleX="0.7" scaleY="0.7"  source="bird_png"/>
 		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7"  visible="false"/>
