@@ -12,9 +12,9 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<e:Rect fillColor="0xffffff" alpha="0.4" x="0" y="0" width="100%" height="100%" />
-	<e:Group id="contentGroup" x="0" y="1301" width="100%" height="100%">
+	<e:Group id="contentGroup" x="0" y="1300" width="100%" height="100%">
 		<e:Image id="yelloHeadImage" source="smiling_yellow_head_png" horizontalCenter="0" y="30" width="1250" height="1500" />
-		<e:Label fontFamily="Hoffmanhand" text="    Good job! Here’s \n          your prize." bold="true" size="150" textColor="0x000000" y="456.68" horizontalCenter="-67" />
+		<e:Label fontFamily="Hoffmanhand" text="       Good job! \n   All cargo have \nbeen transported!" bold="true" size="150" textColor="0x000000" y="326.38" horizontalCenter="2" />
 		<e:Label fontFamily="Hoffmanhand" text="e' s your prize" bold="true" size="180" textColor="0x000000" y="515.18" horizontalCenter="1.5"  visible="false"/>
 		<e:Label fontFamily="Hoffmanhand" text="transported!" bold="true" size="180" textColor="0x000000" y="680" horizontalCenter="0.5"  visible="false"/>
 		
