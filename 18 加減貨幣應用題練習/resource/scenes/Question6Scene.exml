@@ -82,7 +82,7 @@
 		<ns1:EditableLabel width="62" height="90" anchorOffsetX="0" anchorOffsetY="0" x="2" y="24" visible="false"/>
 	</e:Group>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="= 30元1角" size="59" textColor="0x000000" fontFamily="華康楷書體"/>
+	<e:Label text="= 30元1角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
 	<e:Rect width="234" y="63" height="4" x="43"/>
 	<e:Rect width="234" y="73" height="4" x="43"/>
 	</e:Group>

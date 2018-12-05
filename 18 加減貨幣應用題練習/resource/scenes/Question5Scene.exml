@@ -41,7 +41,7 @@
 	<e:Label id="answerLabel" text="78元 + 8元9角" textColor="0x000000" x="284.54" y="519.98" size="59"  visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
-	                   skinName="nextStepButtonSkin" visible="false" />
+	                   skinName="nextStepButtonSkin"  visible="false"/>
 	<e:Group id="worldsGroup" x="1028.05" y="314.94" visible="false">
 		<e:Image id="tipsImage" source="tipsLabel_png"  x="318" y="80" anchorOffsetX="318" anchorOffsetY="80"/>
 		<e:Label id="tipLabel" text="想一想，横式應該是..."  anchorOffsetY="0" height="144" x="135.71" verticalAlign="middle" textAlign="center" textColor="0x000000" size="45" y="6.5" fontFamily="華康楷書體" bold="true"/>
@@ -81,7 +81,7 @@
 		<ns1:EditableLabel width="62" height="110" anchorOffsetX="0" anchorOffsetY="0" x="-6" visible="false"/>
 	</e:Group>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="= 86元9角" fontFamily="華康楷書體" size="59" textColor="0x000000"/>
+	<e:Label text="= 86元9角" fontFamily="華康楷書體" size="59" textColor="0x000000" bold="true"/>
 	<e:Rect width="234" y="63" height="4" x="43"/>
 	<e:Rect width="234" y="73" height="4" x="43"/>
 	</e:Group>
