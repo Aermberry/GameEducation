@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ratComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,active,hover,click" >
+	<w:Declarations>
+		<tween:TweenGroup id="Flustered">
+			<tween:TweenItem target="{flustered}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="eyes">
+			<tween:TweenItem target="{eyeLeft}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{180}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{360}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{eyeRight}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{180}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{360}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1677d194254" ></w:Config>
+	<e:Image source="rat_body_png" includeIn="click" left="0" bottom="0"/>
+	<e:Image source="rat_normal_png" includeIn="active,hover" bottom="0" left="0"/>
+	<e:Group includeIn="hover,click" x="93" y="31">
+		<e:Image source="dialogBoxleft_png" includeIn="hover,click" x="0" y="0" anchorOffsetX="0" width="305" anchorOffsetY="0" height="174.82"/>
+		<e:Label text="不要啊！" includeIn="hover,click" x="75" y="63.91" textColor="0x000000" bold="true" fontFamily="華康中黑體" size="47"/>
+	</e:Group>
+	<e:Image id="flustered" source="flustered_png" includeIn="hover,click" x="81.55" y="179" anchorOffsetX="0" width="50.91" anchorOffsetY="0" height="74"/>
+	<e:Image id="eyeRight" source="rat_left_png" includeIn="click" x="52" y="256.5" anchorOffsetX="12" anchorOffsetY="13"/>
+	<e:Image id="eyeLeft" source="rat_right_png" includeIn="click" x="23" y="234" anchorOffsetX="11" anchorOffsetY="10"/>
+	<e:Image source="rat_inactivated_png" includeIn="normal" left="0" bottom="0"/>
+</e:Skin>

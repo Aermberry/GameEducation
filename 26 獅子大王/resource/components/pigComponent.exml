@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="pigComponentSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*"  states="normal,active,hover" >
+<e:Skin class="pigComponentSkin" width="738" height="348" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*"  states="normal,active,hover,click" width.hover="738" height.hover="348">
 	<w:Declarations>
 		<tween:TweenGroup id="eyeAnim">
 			<tween:TweenItem target="{image}">
@@ -62,11 +62,13 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16778a19029" ></w:Config>
-	<e:Image source="pig_body_png" includeIn="hover" verticalCenter="0" left="0"/>
-	<e:Image id="image" source="pig_leftEye_png" includeIn="hover" x="63" y="114" anchorOffsetY="27"/>
-	<e:Image id="image0" source="pig_rightEye_png" includeIn="hover" x="141" y="106" anchorOffsetX="-2" anchorOffsetY="35"/>
-	<e:Image source="pig_eyes_png" includeIn="hover" x="65" y="98.5"/>
-	<e:Image id="flustered" source="flustered_png" includeIn="hover" x="230" y="2" alpha="0"/>
-	<e:Image source="pig_normal_png" includeIn="active" verticalCenter="0" left="0"/>
-	<e:Image source="pig_inactivated_png" includeIn="normal" verticalCenter="0" left="0"/>
+	<e:Image source="pig_body_png" includeIn="hover,click" verticalCenter="0.5" left="354"/>
+	<e:Image id="image" source="pig_leftEye_png" includeIn="hover" x="417" y="138.5" anchorOffsetY="27"/>
+	<e:Image id="image0" source="pig_rightEye_png" includeIn="hover" x="495" y="130.5" anchorOffsetX="-2" anchorOffsetY="35"/>
+	<e:Image source="pig_eyes_png" includeIn="hover" x="419" y="123"/>
+	<e:Image id="flustered" source="flustered_png" includeIn="hover,click" x="584" y="1.5" alpha="1"/>
+	<e:Image source="dialogBoxleft_png" includeIn="hover,click" x="339.5" y="3" scaleX="-1" anchorOffsetX="0" width="322" anchorOffsetY="0" height="192"/>
+	<e:Label text="不要呀！\n不要呀\n" includeIn="hover,click" x="67" y="43.5" textColor="0x000000" lineSpacing="5" bold="true" size="52" fontFamily="華康中黑體" text.click="大王，\n不要吃我呀！" textAlign.click="center" x.click="43.5" y.click="47.5" size.click="38"/>
+	<e:Image source="pig_normal_png" includeIn="active" x="354" y="24"/>
+	<e:Image source="pig_inactivated_png" includeIn="normal" x="354" y="24"/>
 </e:Skin>

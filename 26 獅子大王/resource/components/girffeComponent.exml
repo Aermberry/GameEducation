@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="girffeComponentSkin" width="719" height="516" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="normal,active,hover,click" >
+	<w:Declarations>
+		<tween:TweenGroup id="eye">
+			<tween:TweenItem target="{right}">
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{37}" height="{36}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="400"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{27}" height="{32}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="400"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{37}" height="{36}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{left}">
+				<tween:Set/>
+				<tween:Wait duration="400"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object height="{36}" y="{28.77}" width="{31}" x="{25.78}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="400"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{26}" height="{28}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="flustedAnim">
+			<tween:TweenItem target="{flusted}">
+				<tween:Set/>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="eyeSmell">
+			<tween:TweenItem target="{leftEye}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{393}" y="{174}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{404}" y="{174}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{393}" y="{174}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rightEye}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{438}" y="{174}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{432}" y="{174}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{438}" y="{174}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1677d2fd116" ></w:Config>
+	<e:Group includeIn="hover,click" x="49" y="59.67">
+		<e:Image source="dialogBox_png" includeIn="hover,click" y="152" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="369" anchorOffsetY="0" height="210" x="320"/>
+		<e:Label text="大王，\n我不好吃的！" includeIn="hover,click" x="0" y="0" textColor="0x000000" fontFamily="華康中黑體" bold="true" size="40"/>
+	</e:Group>
+	<e:Image source="giraffe_body_png" includeIn="hover,click" bottom="0" right="0"/>
+	<e:Image id="leftEye" source="giraffe_left_png" includeIn="click" x="393" y="174"/>
+	<e:Image id="rightEye" source="girffe_right_png" includeIn="click" x="438" y="174"/>
+	<e:Image id="flusted" source="flustered_png" includeIn="click" x="471.99" y="119.19" anchorOffsetX="0" width="90.21" anchorOffsetY="0" height="135" rotation="5.95"/>
+	<e:Group includeIn="hover" x="391.5" y="164">
+		<e:Image id="left" source="leftWhite_png" includeIn="hover" x="26" y="29" anchorOffsetX="26" anchorOffsetY="29"/>
+		<e:Image source="leftBlack_png" includeIn="hover" x="13.5" y="12.65"/>
+	</e:Group>
+	<e:Group includeIn="hover" x="427.5" y="159">
+		<e:Image id="right" source="rightwhite_png" includeIn="hover" x="0" y="36" anchorOffsetY="36"/>
+		<e:Image source="rightBlack_png" includeIn="hover" x="1.52" y="11.67"/>
+	</e:Group>
+	<e:Image source="giraffe_normal_png" includeIn="active" right="0" bottom="0"/>
+	<e:Image source="giraffe_inactivated_png" includeIn="normal" right="0" bottom="0"/>
+</e:Skin>

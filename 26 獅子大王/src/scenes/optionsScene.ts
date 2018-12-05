@@ -1,9 +1,16 @@
 class optionsScene extends eui.Component implements eui.UIComponent {
 
   private invitationAnimation:egret.tween.TweenGroup;
-
+  private tailWiggle:egret.tween.TweenGroup;
   private headTitleLabel:eui.Label;
 
+  private rabbit:rabbirComponent;
+  private pig:pigComponent;
+  private snake:snakeComponent;
+  private sheep:sheeepComponent;
+  private giraffe:girffeComponent;
+  private rat:ratComponent;
+  
   public constructor() {
     super();
   }
@@ -14,6 +21,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
 		super.childrenCreated();
+    mouse.enable(this.stage);
 		this.startLoadingAnimation();
 	}
 	
@@ -32,7 +40,4 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     return sound;
   }
 
-  private  playAnim():void{
-    
-  }
 }
