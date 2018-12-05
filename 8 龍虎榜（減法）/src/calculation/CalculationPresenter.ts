@@ -181,11 +181,4 @@ class CalculationPresenter {
 		}
 	}
 
-	public onEraserClick(): void
-	{
-
-		// this.view.clearUserInput();
-		// this.view.hideAnswerMinuendDeleteMovies();
-		// console.log(2)
-	}
 }
