@@ -111,7 +111,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private onBackImageClick(e: egret.TouchEvent): void
 	{	
-		lzlib.SoundUtility.stopCurrentSound();
+		egret.clearInterval(this.tickInterval)
 		Main.instance.gotoScene(new StartScene());
 	}
 
@@ -208,6 +208,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private intervalHandler(): void
 	{
+		console.log('时间到');
 		this.timeLeftInRoundImage.height = this.timeLeftInRoundImageOriginalHeight * this.secondsLeftInRound / this.secondsPerRound;
 		this.secondsLeftInRound -= 0.1;
 		this.secondsLeftInTotal -= 0.1;
