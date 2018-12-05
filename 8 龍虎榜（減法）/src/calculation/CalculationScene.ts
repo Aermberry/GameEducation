@@ -80,6 +80,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.restartImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onRestartOut, this);
 		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onCloseOver, this);
 		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onCloseOut, this);
+		this.numberPad.addEventListener(EraserEvent.ERASER_CLICK, this.presenter.onEraserClick, this.presenter);
 		this.initAngelGroup();
 		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {

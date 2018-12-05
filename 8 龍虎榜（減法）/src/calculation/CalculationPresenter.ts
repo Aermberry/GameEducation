@@ -4,6 +4,7 @@ class CalculationPresenter {
 	private correctAnswerCount = 0;
 	private borrowNeed = false; //是否需要输入退位
 	private expressions: Expression[];//题目
+	private isClear = true;
 
 	public constructor() {
 	}
@@ -72,8 +73,8 @@ class CalculationPresenter {
 					//重新做该题
 					this.view.clearUserInput();
 					this.view.hideAnswerMinuendDeleteMovies();
-					console.log(1)
 					questionIndex--;
+					console.log(questionIndex);
 				} else {
 					throw ex;
 				}
@@ -178,5 +179,13 @@ class CalculationPresenter {
 			}
 			await lzlib.ThreadUtility.sleep(500);
 		}
+	}
+
+	public onEraserClick(): void
+	{
+
+		// this.view.clearUserInput();
+		// this.view.hideAnswerMinuendDeleteMovies();
+		// console.log(2)
 	}
 }
