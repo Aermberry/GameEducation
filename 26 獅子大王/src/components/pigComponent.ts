@@ -34,7 +34,7 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 		this.onAnim();
 	}
 
-	private clickStatus(): void {
+	public clickStatus(): void {
 		this.currentState = "click";
 	}
 

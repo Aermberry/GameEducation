@@ -40,7 +40,7 @@ class sheeepComponent extends eui.Component implements eui.UIComponent {
 		lzlib.SoundUtility.playSound("sound 95_mp3")
 	}
 
-	private clickStatus(): void {
+	public clickStatus(): void {
 		this.currentState = "click";
 	}
 

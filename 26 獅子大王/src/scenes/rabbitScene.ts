@@ -40,9 +40,9 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
 
   private optionsScene: optionsScene;
-  public constructor(/*optionsScene:optionsScene*/) {
+  public constructor(optionsScene:optionsScene) {
     super();
-    // this.optionsScene=optionsScene;
+    this.optionsScene=optionsScene;
   }
 
   protected partAdded(partName: string, instance: any): void {
