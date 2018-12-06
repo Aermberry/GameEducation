@@ -81,6 +81,7 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onCloseOver, this);
 		this.closeImage.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onCloseOut, this);
 		this.numberPad.addEventListener(EraserEvent.ERASER_CLICK, this.presenter.onEraserClick, this.presenter);
+		this.numberPad.addEventListener(KeyDownEvent.EVENT, this.presenter.onKeyDownClick, this.presenter);
 		this.initAngelGroup();
 		this.onChangeFinshButtonTexutre();
 		this.answerDeleteMinuendMovies = {
@@ -410,5 +411,21 @@ class CalculationScene extends eui.Component implements  eui.UIComponent, ICalcu
 	public showOperation(): void
 	{
 		this.operationGroup.visible = true;
+	}
+
+	public disableInput(): void
+	{
+		this.numberPad.enabled = false;
+	}
+
+	public enableInput(): void
+	{
+		this.numberPad.enabled = true;
+	}
+
+	public async setLastNum(char: string): Promise<number>
+	{
+		(this.questionGroup.getChildByName(`difference2Label`) as EditableLabel).text = char;
+		return parseInt(char, 10);
 	}
 }

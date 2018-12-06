@@ -17,4 +17,11 @@ class DifferenceAndNewMinuend {
 		? this.difference == other.difference && JSON.stringify(this.newMinuend) == JSON.stringify(other.newMinuend)
 		: this.difference == other.difference;
 	}
+
+	public setFirstNumber(num: string): void
+	{
+		let arr = this.difference.toString().split("");
+		arr[0] = num;
+		this.difference = parseInt(arr.join(''), 10);
+	}
 }

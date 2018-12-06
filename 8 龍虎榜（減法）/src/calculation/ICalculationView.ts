@@ -63,4 +63,7 @@ interface ICalculationView {
 	/** 清除用户的输入 */
 	clearUserInput(): void;
 	showOperation(): void;
+	 disableInput(): void;
+	  enableInput(): void;
+	setLastNum(char: string): Promise<number>
 }

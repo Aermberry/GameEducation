@@ -4,7 +4,9 @@ class CalculationPresenter {
 	private correctAnswerCount = 0;
 	private borrowNeed = false; //是否需要输入退位
 	private expressions: Expression[];//题目
-	private isClear = true;
+	private answerDifferrence: DifferenceAndNewMinuend;//输入的答案;
+	private isClear = false;
+	private isLastNum = false;
 
 	public constructor() {
 	}
@@ -27,6 +29,8 @@ class CalculationPresenter {
 		this.expressions.shuffle();
 		for (let questionIndex = 0; questionIndex < this.expressions.length; questionIndex++) {
 			try {
+				this.isLastNum = false;
+				this.view.enableInput();
 				this.view.questionIndex = questionIndex + 1;
 				let expression = this.expressions[questionIndex];
 				this.view.minuend = expression.minuend;
@@ -40,13 +44,29 @@ class CalculationPresenter {
 					this.view.showOperation();
 				}
 
-				let answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
+				let timer = setInterval(async ()=>{
+					if(this.isClear)
+					{
+						this.isClear = false;
+						this.view.clearUserInput();
+						this.view.hideAnswerMinuendDeleteMovies();
+						this.answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
+						this.isLastNum = true;
+						this.view.changeAnswerDifferenceToEditMode(2);
+					}
+				},100)
+
+				this.answerDifferrence = await this.getAnswerDifferenceAndNewMinuendAsync(expression.minuend, expression.subtrahend);
+				this.isLastNum = true;
+				this.view.changeAnswerDifferenceToEditMode(2);
+
 				let correctDifference = this.getCorrectDifferenceAndNewMinuend(expression.minuend, expression.subtrahend);
 				await this.view.confirmFinishButtonClick();
+				clearInterval(timer);
+				this.view.disableInput();
+				this.view.changeAnswerDifferenceToViewMode(2);
 
-				
-
-				if (answerDifferrence.equals(correctDifference, this.borrowNeed)) {
+				if (this.answerDifferrence.equals(correctDifference, this.borrowNeed)) {
 					this.correctAnswerCount++;
 					this.view.correctAnswerCount = this.correctAnswerCount;
 					this.view.alertAnswerCorrect();
@@ -74,7 +94,6 @@ class CalculationPresenter {
 					this.view.clearUserInput();
 					this.view.hideAnswerMinuendDeleteMovies();
 					questionIndex--;
-					console.log(questionIndex);
 				} else {
 					throw ex;
 				}
@@ -112,7 +131,6 @@ class CalculationPresenter {
 				this.view.setAnswerDifference('', position);
 			}
 		}
-
 		return new DifferenceAndNewMinuend(parseInt(differenceArray.reverse().join(''), 10), newMinuendArray);
 	}
 
@@ -183,9 +201,15 @@ class CalculationPresenter {
 
 	public onEraserClick(): void
 	{
+		this.isClear = true;
+		this.isLastNum = false;
+	}
 
-		// this.view.clearUserInput();
-		// this.view.hideAnswerMinuendDeleteMovies();
-		// console.log(2)
+	public onKeyDownClick(e: KeyDownEvent): void
+	{
+		if(e.char == '') return;
+		if(this.isLastNum == false) return;
+		this.view.setLastNum(e.char);
+		this.answerDifferrence.setFirstNumber(e.char);
 	}
 }
