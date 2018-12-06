@@ -35,6 +35,12 @@ class NumberPad extends eui.Component implements  eui.UIComponent {
 		this.nineButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('9'), this);
 		this.zeroButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown('0'), this);
 		this.eraserButton.addEventListener(egret.TouchEvent.TOUCH_TAP, () => this.onKeyDown(''), this);
+		this.eraserButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onEraserClick, this);
+	}
+
+	private onEraserClick(): void
+	{
+		this.dispatchEvent(new EraserEvent());
 	}
 
 	private onKeyDown(char: string): void
@@ -60,5 +66,15 @@ class KeyDownEvent extends egret.Event
 	{
 		super(KeyDownEvent.EVENT);
 		this.char = char;
+	}
+}
+
+class EraserEvent extends egret.Event
+{
+	public static readonly ERASER_CLICK = 'ERASER_CLICK';
+
+	public constructor() 
+	{
+		super(EraserEvent.ERASER_CLICK);
 	}
 }
