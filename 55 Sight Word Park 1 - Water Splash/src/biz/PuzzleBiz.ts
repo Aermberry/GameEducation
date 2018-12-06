@@ -7,6 +7,6 @@ class PuzzleBiz {
 
 	public generate(words: string[], dimension: number): string[][]
 	{
-		return wordfind.newPuzzle(words, { width: dimension, height: dimension, preferOverlap: 0, orientations: ['horizontal', 'vertical', 'diagonal'] });
+		return wordfind.newPuzzle(words, { width: dimension, height: dimension, preferOverlap: false, orientations: ['horizontal', 'vertical', 'diagonal'] });
 	}
 }

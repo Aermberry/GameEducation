@@ -3,7 +3,7 @@
 		"target": "es5",
 		"noImplicitAny": false,
 		"sourceMap": false,
-		"declaration": true,
+		"declaration": false,
 		"allowJs": true,
 		"outFile": "bin/wordfind.js"
 	},
