@@ -73,7 +73,7 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="1677c80e654" ></w:Config>
-	<e:Image source="sheep_body_png" includeIn="hover,click" right="0" verticalCenter="0"/>
+	<e:Image id="sheep_hover" source="sheep_body_png" includeIn="hover,click" right="0" verticalCenter="0"/>
 	<e:Image id="whiteEye" source="sheep_whiteEye_png" includeIn="hover" x="345" y="150" anchorOffsetX="-1" anchorOffsetY="28"/>
 	<e:Image source="sheep_eye_png" includeIn="hover" x="347" y="132.5"/>
 	<e:Image id="image0" source="flustered_png" includeIn="hover,click" x="422" y="27" anchorOffsetX="0" width="82.56" anchorOffsetY="0" height="120" alpha="0" alpha.hover="1"/>
@@ -82,6 +82,6 @@
 		<e:Label text="我不好吃的，\n不要吃我！" includeIn="hover,click" x="0" y="51.5" textColor="0x000000" bold="true" lineSpacing="10" size="35"/>
 	</e:Group>
 	<e:Image id="smellEye" source="sheep_eyes_png" includeIn="click" x="356" y="138.5" anchorOffsetX="-1" width="20" anchorOffsetY="12" height="20"/>
-	<e:Image source="sheep_normal_png" includeIn="active" right="0" verticalCenter="0"/>
+	<e:Image id="sheep_active" source="sheep_normal_png" includeIn="active" right="0" verticalCenter="0"/>
 	<e:Image source="sheep_inactivated_png" includeIn="normal" verticalCenter="0" right="0"/>
 </e:Skin>

@@ -2,9 +2,9 @@
 <e:Skin class="snakeComponentSkin" width="565" height="380" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="normal,active,hover,click">
 	<w:Config id="1677c69670f" ></w:Config>
 	<e:Image source="snake_click_png" includeIn="click" x="301" y="123"/>
-	<e:Image source="snake_hover_png" includeIn="hover" x="301" y="123"/>
+	<e:Image id="snake_hover" source="snake_hover_png" includeIn="hover" x="301" y="123"/>
 	<ns1:flustered includeIn="hover,click" y="27" right="5"/>
-	<e:Image source="snake_normal_png" includeIn="active" x="301" y="123"/>
+	<e:Image id="snake_active" source="snake_normal_png" includeIn="active" x="301" y="123"/>
 	<e:Image source="snake_inactivated_png" includeIn="normal" bottom="7" horizontalCenter="143.5"/>
 	<e:Image source="dialogBox_png" includeIn="hover,click" x="296" y="194" anchorOffsetX="0" width="291" anchorOffsetY="0" height="180" scaleX="-1"/>
 	<e:Label text="饒了我吧！" includeIn="hover" x="44" y="263.5" textColor="0x000000" bold="true" size="37"/>

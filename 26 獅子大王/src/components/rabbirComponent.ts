@@ -25,6 +25,7 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 
 	private hoverStatus(): void {
 		this.currentState = "hover";
+		lzlib.SoundUtility.playSound("sound 157_mp3")
 	}
 
 	private clickStatus(): void {

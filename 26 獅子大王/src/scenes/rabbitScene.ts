@@ -59,7 +59,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
-    // this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("sdsd")},this)
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
   }
 
@@ -70,7 +69,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private async normal():Promise<void> {
     await this.enableMouse();
     this.bulbComponent.currentState = "normal"
-
   }
 
   private  async active(): Promise<void>  {
