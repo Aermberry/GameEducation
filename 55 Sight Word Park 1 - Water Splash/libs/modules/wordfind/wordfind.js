@@ -170,22 +170,8 @@
             // only using the ones with the maximum overlap that we calculated
             return options.preferOverlap ?
                 pruneLocations(locations, maxOverlap) :
-                deleteOverlapLocations(locations);
+                locations;
         };
-
-        /**
-         * 删除重叠的location
-         */
-        var deleteOverlapLocations = function (locations) {
-            var pruned = [];
-            for (var i = 0, len = locations.length; i < len; i++) {
-                if (locations[i].overlap === 0) {
-                    pruned.push(locations[i]);
-                }
-            }
-            return pruned;
-        };
-
         /**
         * Determines whether or not a particular word fits in a particular
         * orientation within the puzzle.

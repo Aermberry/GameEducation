@@ -9,6 +9,6 @@
 		<e:Label text="Enter" y="82" size="51" textColor="0x000000" fontFamily="KristenITCRegular" bold="true" verticalAlign="middle" textAlign="center" left="0" right="0"/>
 	</e:Group>
 
-	<e:Label text="Water Splash!" y="711.51" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="20.5"/>
-	<e:Label text="Find the hidden words in the word puzzles\nto win the prizes!" y="826.66" anchorOffsetX="0" width="1622.36" anchorOffsetY="0" height="288.31" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="55" lineSpacing="25" horizontalCenter="0" touchEnabled="false"/>
+	<e:Label text="Water Splash" y="711.51" anchorOffsetX="0" width="646.73" anchorOffsetY="0" height="69.4" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="90" lineSpacing="25" horizontalCenter="20.5"/>
+	<e:Label text="Find the hidden words in the word puzzles." y="826.66" anchorOffsetX="0" width="1622.36" anchorOffsetY="0" height="288.31" fontFamily="KristenITCRegular" verticalAlign="top" textAlign="center" size="55" lineSpacing="25" horizontalCenter="0" touchEnabled="false"/>
 </e:Skin>

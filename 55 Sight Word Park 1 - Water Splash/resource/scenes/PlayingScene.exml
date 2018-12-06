@@ -178,11 +178,11 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="164ef3ce84c" ></w:Config>
-	<e:Image id="gameBgImg" source="game_bg_png" verticalCenter="196" horizontalCenter="0"/>
+	<e:Image id="gameBgImg" source="game_bg_png" verticalCenter="206.5" horizontalCenter="-6" anchorOffsetX="0" width="2470.43" anchorOffsetY="0" height="1701.21"/>
 	<e:Image id="wordListBoxImg" source="word_list_box_png" x="-40"/>	
 	<e:Image id="orangeCanvasImg" source="orange_canvas_png" x="765" y="-86.5"/>
 	<e:Image id="firePumpImg" source="fire_pump_png" x="344" y="1019"/>
-	<e:Image id="redStageImg" source="red_stage_png"  verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="redStageImg" source="red_stage_png"  verticalCenter="3" horizontalCenter="-3"/>
      	
 	
 	<e:Image id="shootBtnImg" source="confirm_normal_png" x="595" y="544"/>
@@ -197,7 +197,7 @@
 	<ns1:Puzzle id="puzzle" x="922" y="171" />
 	<e:Label text="Shoot" x="675.5" y="612.5" size="45" fontFamily="Arial" bold="true" touchEnabled="false"/>
 	<e:Label text="Reset" x="675.5" y="435" size="45" fontFamily="Arial" bold="true" touchEnabled="false"/>
-	<e:Group id="wordGroup" width="312" height="508" x="224" y="388" anchorOffsetX="0" anchorOffsetY="0" locked="true">
+	<e:Group id="wordGroup" width="312" height="508" x="224" y="388" anchorOffsetX="0" anchorOffsetY="0">
 		<ns1:RedLineLabel left="0" right="0" top="10" />
 		<ns1:RedLineLabel left="0" right="0" top="75" />
 		<ns1:RedLineLabel left="0" right="0" top="140" />
@@ -205,13 +205,13 @@
 		<ns1:RedLineLabel left="0" right="0" top="270" />
 		<ns1:RedLineLabel left="0" right="0" top="335" />
 	</e:Group>
-	<e:Group id="goodJobGroup" y="1280" locked="true">
+	<e:Group id="goodJobGroup" y="1280">
 		<e:Image id="whiteCanvas" source="white_canvas_png" x="24" alpha="0"/>
 		<e:Label id="goodJob" text="Good Job!" horizontalCenter="0" fontFamily="KristenITCRegular" size="300" textColor="#000000" alpha="0"/>
 	</e:Group>
 	<e:Label id="readyText" text="Ready!" size="480" textColor="0x9D0000" fontFamily="KristenITCRegular" y="-500" alpha="0" horizontalCenter="0"/>
-	<e:Label id="goText" text="Go!!" fontFamily="KristenITCRegular" textColor="0x9D0000" size="480" alpha="0" horizontalCenter="0" y="-500"/>
+	<e:Label id="goText" text="Go!" fontFamily="KristenITCRegular" textColor="0x9D0000" size="480" alpha="0" horizontalCenter="0" y="-500"/>
 	<e:Label id="compeletText" text="Completed" fontFamily="KristenITCRegular" textColor="0x9D0000" size="263" alpha="0" y="1280" textAlign="center" horizontalCenter="0"/>
-	<e:Label id="requestText" text="HINT: play" x="696.39" y="1148.97" textColor="0x000000" bold="true" size="46" fontFamily="Arial" width="534" textAlign="center" verticalAlign="middle"/>
-	<e:Label id="tipsText" text="HANT:" x="796.61" y="1148.03" textColor="0x000000" size="46" bold="true" fontFamily="Arial" alpha="0"/>
+	<e:Label id="requestText" text="HINT:" x="590.35" y="1167.15" textColor="0x000000" bold="true" size="46" fontFamily="Arial" width="534" textAlign="center" verticalAlign="middle" visible="false"/>
+	<e:Label id="tipsText" text="HINT:" x="796.61" y="1166.21" textColor="0x000000" size="46" bold="true" fontFamily="Arial" alpha="1"/>
 </e:Skin>

@@ -12,15 +12,15 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<e:Rect fillColor="0xffffff" alpha="0.4" x="0" y="0" width="100%" height="100%" />
-	<e:Group id="contentGroup" x="0" y="1280" width="100%" height="100%">
-		<e:Image id="yelloHeadImage" source="smiling_yellow_head_svg" horizontalCenter="0" y="30" width="1250" height="1500" />
-		<e:Label fontFamily="Hoffmanhand" text="Good job! You" bold="true" size="180" textColor="0x000000" y="409" horizontalCenter="0.5" />
-		<e:Label fontFamily="Hoffmanhand" text="won the game." bold="true" size="180" textColor="0x000000" y="619" horizontalCenter="1" />
+	<e:Group id="contentGroup" x="0" y="1300" width="100%" height="100%">
+		<e:Image id="yelloHeadImage" horizontalCenter="0" y="30" width="1250" height="1500"  source="smiling_yellow_head_png"/>
+		<e:Label fontFamily="KristenITCRegular" text="Good job! You" bold="true" size="150" textColor="0x000000" y="409" horizontalCenter="0.5" />
+		<e:Label fontFamily="KristenITCRegular" text="won the game." bold="true" size="150" textColor="0x000000" y="619" horizontalCenter="1" />
 		
-		<e:Image id="playAgainImage" source="arrow_right_svg" x="715.9" y="980" scaleX="0.7" scaleY="0.7" visible="false" />
-		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="0x000000" size="80" bold="true" x="915" y="980" />
-		<e:Image id="exitImage" source="arrow_right_svg" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
-		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="0x000000" size="80" bold="true" x="915" y="1100" />
+		<e:Image id="playAgainImage" x="715.9" y="980" scaleX="0.7" scaleY="0.7"  source="arrow_right_png" visible="false"/>
+		<e:Label id="playAgainLabel" fontFamily="KristenITCRegular" text="Play again" textColor="0x000000" size="80" bold="true" x="915" y="980" />
+		<e:Image id="exitImage" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" source="arrow_right_png" visible="false"/>
+		<e:Label id="exitLabel" fontFamily="KristenITCRegular" text="Exit" textColor="0x000000" size="80" bold="true" x="915" y="1100" />
 	</e:Group>
 
 	<w:Config id="163f6d836ac" ></w:Config>
