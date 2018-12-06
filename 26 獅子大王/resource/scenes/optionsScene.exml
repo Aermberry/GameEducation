@@ -102,7 +102,7 @@
 		         textColor="0x020202" bold="true" size="43" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
 		         verticalAlign="middle" />
 	</e:Group>
-	<ns1:pigComponent id="pigComponent" x="479.15" y="293.04" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:pigComponent id="pigComponent" x="103.39" y="293.04" anchorOffsetX="0" anchorOffsetY="0"/>
 	<ns1:snakeComponent id="snakeComponent" x="1138" y="293.04"/>
 	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07" y.rabbit="290.89"/>
 	<ns1:sheeepComponent id="sheepComponent" x="1169.4" y="681.05"/>

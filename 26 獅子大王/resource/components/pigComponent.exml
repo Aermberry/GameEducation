@@ -3,38 +3,46 @@
 	<w:Declarations>
 		<tween:TweenGroup id="eyeAnim">
 			<tween:TweenItem target="{image}">
-				<tween:Set/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{417}" y="{138.5}"/>
+					</tween:props>
+				</tween:Set>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{53}" height="{54}" y="{111.45}"/>
+						<e:Object width="{53}" height="{54}" x="{417}" y="{138.5}"/>
 					</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{46}" height="{51}" y="{112.95}"/>
+						<e:Object width="{46}" height="{51}" x="{417}" y="{138.5}"/>
 					</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{52}" height="{56}" y="{110.6}"/>
+						<e:Object width="{52}" height="{56}" x="{417}" y="{138.5}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 			<tween:TweenItem target="{image0}">
-				<tween:Set/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{495}" y="{130.5}"/>
+					</tween:props>
+				</tween:Set>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{80}" height="{69}" x="{140.84}" y="{105.04}"/>
+						<e:Object width="{80}" height="{69}" x="{495}" y="{130.5}"/>
 					</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{67}" height="{66}" x="{141.17}" y="{106.52}"/>
+						<e:Object width="{67}" height="{66}" x="{495}" y="{130.5}"/>
 					</tween:props>
 				</tween:To>
 				<tween:To duration="250">
 					<tween:props>
-						<e:Object width="{72}" height="{70}" x="{141.02}" y="{104.64}"/>
+						<e:Object width="{72}" height="{70}" x="{495}" y="{130.5}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -60,15 +68,63 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
+		<tween:TweenGroup id="eyes">
+			<tween:TweenItem target="{leftEye}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250" ease="cubicIn">
+					<tween:props>
+						<e:Object rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{rightEye}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250" ease="cubicIn">
+					<tween:props>
+						<e:Object rotation="{5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250" ease="cubicIn">
+					<tween:props>
+						<e:Object rotation="{-5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16778a19029" ></w:Config>
 	<e:Image source="pig_body_png" includeIn="hover,click" verticalCenter="0.5" left="354"/>
 	<e:Image id="image" source="pig_leftEye_png" includeIn="hover" x="417" y="138.5" anchorOffsetY="27"/>
 	<e:Image id="image0" source="pig_rightEye_png" includeIn="hover" x="495" y="130.5" anchorOffsetX="-2" anchorOffsetY="35"/>
 	<e:Image source="pig_eyes_png" includeIn="hover" x="419" y="123"/>
-	<e:Image id="flustered" source="flustered_png" includeIn="hover,click" x="584" y="1.5" alpha="1"/>
+	<e:Image id="flustered" source="flustered_png" includeIn="hover,click" x="584" y="1.5" alpha="1" alpha.hover="0"/>
 	<e:Image source="dialogBoxleft_png" includeIn="hover,click" x="339.5" y="3" scaleX="-1" anchorOffsetX="0" width="322" anchorOffsetY="0" height="192"/>
 	<e:Label text="不要呀！\n不要呀\n" includeIn="hover,click" x="67" y="43.5" textColor="0x000000" lineSpacing="5" bold="true" size="52" fontFamily="華康中黑體" text.click="大王，\n不要吃我呀！" textAlign.click="center" x.click="43.5" y.click="47.5" size.click="38"/>
+	<e:Image id="leftEye" source="giraffe_left_png" includeIn="click" x="447" y="134.5" anchorOffsetX="33.31" width="35" anchorOffsetY="16.38" height="37" rotation="1.07"/>
+	<e:Image id="rightEye" source="girffe_right_png" includeIn="click" x="501" y="135.5" width="35" height="37" anchorOffsetX="1" anchorOffsetY="20"/>
 	<e:Image source="pig_normal_png" includeIn="active" x="354" y="24"/>
 	<e:Image source="pig_inactivated_png" includeIn="normal" x="354" y="24"/>
 </e:Skin>

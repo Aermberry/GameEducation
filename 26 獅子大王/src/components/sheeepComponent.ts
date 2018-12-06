@@ -17,7 +17,7 @@ class sheeepComponent extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.currentState="click"
+		// this.currentState="click"
 		this.playLoopAnim(this.flustered)
 		this.playLoopAnim(this.eyeAnim)
 		this.playLoopAnim(this.eyesAnims)
