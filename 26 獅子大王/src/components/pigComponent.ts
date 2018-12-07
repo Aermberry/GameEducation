@@ -17,7 +17,6 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		// this.onAnim();
 		this.eyes.playLoopAsync();
 		this.pig_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
 		this.pig_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
@@ -42,5 +41,13 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 		this.eyeAnim.playOnceAsync().then(() => {
 			this.flusteredAnim.playLoopAsync();
 		})
+	}
+
+	public disableMouse(): void {
+		this.pig_hover.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
+	public ableMouse(): void {
+		this.pig_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
 	}
 }

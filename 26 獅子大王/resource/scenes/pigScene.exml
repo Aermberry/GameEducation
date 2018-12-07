@@ -251,37 +251,7 @@
                 </tween:Set>
             </tween:TweenItem>
         </tween:TweenGroup>
-        <tween:TweenGroup id="flustered">
-            <tween:TweenItem target="{flusteredComponent}">
-                <tween:Set>
-                    <tween:props>
-                        <e:Object alpha="{1}" />
-                    </tween:props>
-                </tween:Set>
-                <tween:To duration="150">
-                    <tween:props>
-                        <e:Object alpha="{1}" />
-                    </tween:props>
-                </tween:To>
-                <tween:Wait duration="50" />
-                <tween:Set>
-                    <tween:props>
-                        <e:Object alpha="{0}" />
-                    </tween:props>
-                </tween:Set>
-                <tween:To duration="150">
-                    <tween:props>
-                        <e:Object alpha="{0}" />
-                    </tween:props>
-                </tween:To>
-                <tween:Wait duration="50" />
-                <tween:Set>
-                    <tween:props>
-                        <e:Object alpha="{1}" />
-                    </tween:props>
-                </tween:Set>
-            </tween:TweenItem>
-        </tween:TweenGroup>
+
         <tween:TweenGroup id="happyAnim">
 			<tween:TweenItem target="{lionsmell_mouth_02}">
 				<tween:Set>
@@ -680,6 +650,6 @@
         <ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
                               skinName="achieveComponentSkin" />
     </e:Group>
-    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
+    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
     <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

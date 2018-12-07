@@ -37,4 +37,12 @@ class ratComponent extends eui.Component implements eui.UIComponent {
 		this.currentState = "click";
 	}
 
+	public disableMouse(): void {
+		this.rat_hover.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
+	public ableMouse(): void {
+		this.rat_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
 }

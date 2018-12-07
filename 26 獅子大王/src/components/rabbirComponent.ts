@@ -14,12 +14,12 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.currentState = "active"
+		// this.currentState = "active"
 		this.rabbit_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
 		this.rabbit_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
 	}
 
-	private async activeStatus(): Promise<void> {
+	public  activeStatus(): void {
 		this.currentState = "active";
 	}
 

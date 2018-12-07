@@ -37,4 +37,12 @@ class snakeComponent extends eui.Component implements eui.UIComponent {
 		this.currentState = "click";
 	}
 
+	public disableMouse(): void {
+		this.snake_hover.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
+	public ableMouse(): void {
+		this.snake_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
 }

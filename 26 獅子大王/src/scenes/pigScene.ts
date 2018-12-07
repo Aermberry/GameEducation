@@ -6,7 +6,6 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private invitationCard: egret.tween.TweenGroup;
 	private lionDialog: egret.tween.TweenGroup;
 	private rabbitDialogBox: egret.tween.TweenGroup;
-	private flustered: egret.tween.TweenGroup
 	private bubleGrad: egret.tween.TweenGroup;
 	private changCard: egret.tween.TweenGroup;
 	private happyAnim: egret.tween.TweenGroup;
@@ -62,7 +61,6 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		RES.getRes("sound 24_mp3").play(0, -1)
-		this.flustered.playLoopAsync();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);

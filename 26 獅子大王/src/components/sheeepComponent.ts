@@ -44,6 +44,14 @@ class sheeepComponent extends eui.Component implements eui.UIComponent {
 		this.currentState = "click";
 	}
 
+	public disableMouse(): void {
+		this.sheep_hover.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
+	public ableMouse(): void {
+		this.sheep_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+	}
+
 
 
 }
