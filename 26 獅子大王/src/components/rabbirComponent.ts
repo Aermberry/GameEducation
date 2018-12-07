@@ -19,28 +19,28 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 		this.rabbit_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
 	}
 
-	private async activeStatus():Promise<void> {
-		await this.enableMouse();
+	private async activeStatus(): Promise<void> {
 		this.currentState = "active";
-		
 	}
 
 	private async hoverStatus(): Promise<void> {
-		await this.disableMouse();
 		this.currentState = "hover";
 		lzlib.SoundUtility.playSound("sound 157_mp3")
 	}
 
 	public clickStatus(): void {
 		this.currentState = "click";
+		// setTimeout(function() {
+		// 	this.ableMouse();
+		// }, 100);
 	}
 
-	public enableMouse():void{
-		this.rabbit_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
+	public disableMouse(): void {
+		this.rabbit_hover.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
 	}
 
-	private disableMouse():void {
-		this.rabbit_hover.removeEventListener(mouse.MouseEvent.MOUSE_OVER,this.hoverStatus,this);
+	public ableMouse(): void {
+		this.rabbit_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
 	}
 
 }

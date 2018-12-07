@@ -43,7 +43,8 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.startLoadingAnimation();
 
     this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-      this.rabbitComponent.clickStatus(); 
+      this.rabbitComponent.disableMouse();
+        this.rabbitComponent.clickStatus(); 
       this.toGameScene(this.rabbitScene) }, this);
     this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, () => { 
       this.toGameScene(this.pigScene) }, this)

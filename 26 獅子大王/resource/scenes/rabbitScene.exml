@@ -623,8 +623,8 @@
 	<e:Rect id="circleRect" width="309.08" height="196.97" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 	        x="362.17" y="263.48" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
 	        anchorOffsetY="0" alpha="1" visible="false" />
-	<e:Image x="1607.17" y="877.85" anchorOffsetX="0" width="276.27" anchorOffsetY="0" height="425.64"
-	         source="rabbit_normal_png" />
+	<e:Image x="1607.17" y="877.85" anchorOffsetX="0" width="252.03" anchorOffsetY="0" height="425.64"
+	          source="rabbit_active_png"/>
 	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
 		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
