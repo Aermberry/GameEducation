@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,math143Less21Rectbg_png,minus_info_png,gameEui_json,start_png,bar_png,particle_png,block_png,chunk_png,calculation_font_fnt,calculation_font_png,title_png,GGGFont_png,GGGFont_fnt,streamsound0_mp3,streamsound1_mp3,streamsound10_mp3,streamsound11_mp3,streamsound12_mp3,streamsound13_mp3,streamsound14_mp3,streamsound15_mp3,streamsound16_mp3,streamsound17_mp3,streamsound18_mp3,streamsound19_mp3,streamsound2_mp3,streamsound20_mp3,streamsound21_mp3,streamsound22_mp3,streamsound23_mp3,streamsound24_mp3,streamsound25_mp3,streamsound26_mp3,streamsound27_mp3,streamsound28_mp3,streamsound29_mp3,streamsound3_mp3,streamsound30_mp3,streamsound31_mp3,streamsound32_mp3,streamsound4_mp3,streamsound5_mp3,streamsound6_mp3,streamsound7_mp3,streamsound8_mp3,streamsound9_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,add_and_subtract_png,automobile_exhauts_png,cactus_png,car_png,cloud1_png,cloud2_png,cloud3_png,education_and_manpower_bureau_png,eight_png,five_png,four_and_cactus_png,grass_dark_light_png,grass_dark_png,grass_light_dark_png,grass_light_png,nine_png,one_png,rectangle_cyan_png,seven_png,six_png,three_png,two_png,splash_bg_png,one_roof_png,five_roof_png,seven_shadow_png,three_roof_png,three_shadow_png,three_shadow_middle_png,three_shadow_bottom_png,three_shadow_middle_bottom_png,nine_shadow_bottom_png,nine_shadow_middle_png,nine_roof_png,six_shadow_bottom_png,six_shadow_middle_png,six_roof_png,eight_shadow_top_left_png,eight_shadow_bottom_right_png,eight_shadow_bottom_left_png,minus_info_png,gameEui_json,start_png,bar_png,particle_png,block_png,chunk_png,calculation_font_fnt,calculation_font_png,title_png,GGGFont_png,GGGFont_fnt",
 			"name": "preload"
 		}
 	],
@@ -337,11 +337,6 @@
 			"name": "eight_shadow_bottom_left_png"
 		},
 		{
-			"url": "textures/math143Less21Rectbg.png",
-			"type": "image",
-			"name": "math143Less21Rectbg_png"
-		},
-		{
 			"url": "textures/splash/minus_info.png",
 			"type": "image",
 			"name": "minus_info_png"
@@ -405,171 +400,6 @@
 			"url": "textures/GGGFont.fnt",
 			"type": "font",
 			"name": "GGGFont_fnt"
-		},
-		{
-			"name": "streamsound0_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound0.mp3"
-		},
-		{
-			"name": "streamsound1_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound1.mp3"
-		},
-		{
-			"name": "streamsound10_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound10.mp3"
-		},
-		{
-			"name": "streamsound11_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound11.mp3"
-		},
-		{
-			"name": "streamsound12_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound12.mp3"
-		},
-		{
-			"name": "streamsound13_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound13.mp3"
-		},
-		{
-			"name": "streamsound14_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound14.mp3"
-		},
-		{
-			"name": "streamsound15_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound15.mp3"
-		},
-		{
-			"name": "streamsound16_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound16.mp3"
-		},
-		{
-			"name": "streamsound17_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound17.mp3"
-		},
-		{
-			"name": "streamsound18_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound18.mp3"
-		},
-		{
-			"name": "streamsound19_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound19.mp3"
-		},
-		{
-			"name": "streamsound2_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound2.mp3"
-		},
-		{
-			"name": "streamsound20_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound20.mp3"
-		},
-		{
-			"name": "streamsound21_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound21.mp3"
-		},
-		{
-			"name": "streamsound22_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound22.mp3"
-		},
-		{
-			"name": "streamsound23_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound23.mp3"
-		},
-		{
-			"name": "streamsound24_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound24.mp3"
-		},
-		{
-			"name": "streamsound25_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound25.mp3"
-		},
-		{
-			"name": "streamsound26_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound26.mp3"
-		},
-		{
-			"name": "streamsound27_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound27.mp3"
-		},
-		{
-			"name": "streamsound28_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound28.mp3"
-		},
-		{
-			"name": "streamsound29_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound29.mp3"
-		},
-		{
-			"name": "streamsound3_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound3.mp3"
-		},
-		{
-			"name": "streamsound30_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound30.mp3"
-		},
-		{
-			"name": "streamsound31_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound31.mp3"
-		},
-		{
-			"name": "streamsound32_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound32.mp3"
-		},
-		{
-			"name": "streamsound4_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound4.mp3"
-		},
-		{
-			"name": "streamsound5_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound5.mp3"
-		},
-		{
-			"name": "streamsound6_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound6.mp3"
-		},
-		{
-			"name": "streamsound7_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound7.mp3"
-		},
-		{
-			"name": "streamsound8_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound8.mp3"
-		},
-		{
-			"name": "streamsound9_mp3",
-			"type": "sound",
-			"url": "sounds/streamsound9.mp3"
 		}
 	]
 }
