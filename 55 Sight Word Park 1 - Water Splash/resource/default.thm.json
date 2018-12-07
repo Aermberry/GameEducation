@@ -16,14 +16,14 @@
 	],
 	"path": "resource/default.thm.json",
 	"exmls": [
+		"resource/components/MovieClipPlayer.exml",
+		"resource/components/Puzzle.exml",
+		"resource/components/PuzzleCell.exml",
+		"resource/components/RedLineLabel.exml",
 		"resource/scenes/PlayingScene.exml",
 		"resource/scenes/ResultScene.exml",
 		"resource/scenes/SelectDiffcultScene.exml",
 		"resource/scenes/StartScene.exml",
-		"resource/scenes/StudentSelectScene.exml",
-		"resource/components/MovieClipPlayer.exml",
-		"resource/components/Puzzle.exml",
-		"resource/components/PuzzleCell.exml",
-		"resource/components/RedLineLabel.exml"
+		"resource/scenes/StudentSelectScene.exml"
 	]
 }

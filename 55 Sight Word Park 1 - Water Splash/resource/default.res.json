@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,wlts_logo_jpg,gameEui_json,student_select_bg_png,select_diffcult_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,smiling_yellow_head_svg,arrow_right_svg,wlts_logo2_jpg,start_png,start_scene_bg_png,sight_word_park_png,select_fire_png,Bg_cloudy_png,img_example_png,smiling_yellow_head_png,arrow_right_png",
+			"keys": "description_json,gameEui_json,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,movie_clip_json,movie_clip_png,back_png,game_bg_png,word_grid_png,hide_word_png,show_word_png,hints_png,water_pump_png,red_line_png,confirm_hover_png,red_stage_png,next_puzzle_png,word_list_box_png,correct_words_box_png,select_word_box_png,fire_pump_png,fire_png,orange_canvas_png,confirm_normal_png,white_canvas_png,peng_mp3,congratulation_mp3,start_png,start_scene_bg_png,sight_word_park_png,select_fire_png,Bg_cloudy_png,img_example_png,smiling_yellow_head_png,arrow_right_png",
 			"name": "preload"
 		}
 	],
@@ -10,11 +10,6 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "images/wlts_logo.jpg",
-			"type": "image",
-			"name": "wlts_logo_jpg"
 		},
 		{
 			"url": "gameEui.json",
@@ -27,19 +22,9 @@
 			"name": "false_drop_down_box_png"
 		},
 		{
-			"url": "textures/rainbow.svg",
-			"type": "image",
-			"name": "rainbow_svg"
-		},
-		{
 			"url": "textures/right_drop_down_box.png",
 			"type": "image",
 			"name": "right_drop_down_box_png"
-		},
-		{
-			"url": "textures/sight_word_park.svg",
-			"type": "image",
-			"name": "sight_word_park_svg"
 		},
 		{
 			"url": "textures/start_game_hover.png",
@@ -52,11 +37,6 @@
 			"name": "start_game_normal_png"
 		},
 		{
-			"url": "textures/start_scene_bg.svg",
-			"type": "image",
-			"name": "start_scene_bg_svg"
-		},
-		{
 			"url": "textures/false_drop_down_box.json",
 			"type": "json",
 			"name": "false_drop_down_box_json"
@@ -65,16 +45,6 @@
 			"url": "textures/right_drop_down_box.json",
 			"type": "json",
 			"name": "right_drop_down_box_json"
-		},
-		{
-			"url": "textures/student_select_bg.png",
-			"type": "image",
-			"name": "student_select_bg_png"
-		},
-		{
-			"url": "textures/select_diffcult_bg.png",
-			"type": "image",
-			"name": "select_diffcult_bg_png"
 		},
 		{
 			"url": "audios/select_difficulty_scene_bgm.mp3",
@@ -97,164 +67,149 @@
 			"name": "movie_clip_png"
 		},
 		{
-			"name": "back_png",
+			"url": "textures/back.png",
 			"type": "image",
-			"url": "textures/back.png"
+			"name": "back_png"
 		},
 		{
-			"name": "game_bg_png",
+			"url": "textures/game_bg.png",
 			"type": "image",
-			"url": "textures/game_bg.png"
+			"name": "game_bg_png"
 		},
 		{
-			"name": "word_grid_png",
+			"url": "textures/word_grid.png",
 			"type": "image",
-			"url": "textures/word_grid.png"
+			"name": "word_grid_png"
 		},
 		{
-			"name": "hide_word_png",
+			"url": "textures/hide_word.png",
 			"type": "image",
-			"url": "textures/hide_word.png"
+			"name": "hide_word_png"
 		},
 		{
-			"name": "show_word_png",
+			"url": "textures/show_word.png",
 			"type": "image",
-			"url": "textures/show_word.png"
+			"name": "show_word_png"
 		},
 		{
-			"name": "hints_png",
+			"url": "textures/hints.png",
 			"type": "image",
-			"url": "textures/hints.png"
+			"name": "hints_png"
 		},
 		{
-			"name": "water_pump_png",
+			"url": "textures/water_pump.png",
 			"type": "image",
-			"url": "textures/water_pump.png"
+			"name": "water_pump_png"
 		},
 		{
-			"name": "red_line_png",
+			"url": "textures/red_line.png",
 			"type": "image",
-			"url": "textures/red_line.png"
+			"name": "red_line_png"
 		},
 		{
-			"name": "confirm_hover_png",
+			"url": "textures/confirm_hover.png",
 			"type": "image",
-			"url": "textures/confirm_hover.png"
+			"name": "confirm_hover_png"
 		},
 		{
-			"name": "red_stage_png",
+			"url": "textures/red_stage.png",
 			"type": "image",
-			"url": "textures/red_stage.png"
+			"name": "red_stage_png"
 		},
 		{
-			"name": "next_puzzle_png",
+			"url": "textures/next_puzzle.png",
 			"type": "image",
-			"url": "textures/next_puzzle.png"
+			"name": "next_puzzle_png"
 		},
 		{
-			"name": "word_list_box_png",
+			"url": "textures/word_list_box.png",
 			"type": "image",
-			"url": "textures/word_list_box.png"
+			"name": "word_list_box_png"
 		},
 		{
-			"name": "correct_words_box_png",
+			"url": "textures/correct_words_box.png",
 			"type": "image",
-			"url": "textures/correct_words_box.png"
+			"name": "correct_words_box_png"
 		},
 		{
-			"name": "select_word_box_png",
+			"url": "textures/select_word_box.png",
 			"type": "image",
-			"url": "textures/select_word_box.png"
+			"name": "select_word_box_png"
 		},
 		{
-			"name": "fire_pump_png",
+			"url": "textures/fire_pump.png",
 			"type": "image",
-			"url": "textures/fire_pump.png"
+			"name": "fire_pump_png"
 		},
 		{
-			"name": "fire_png",
+			"url": "textures/fire.png",
 			"type": "image",
-			"url": "textures/fire.png"
+			"name": "fire_png"
 		},
 		{
-			"name": "orange_canvas_png",
+			"url": "textures/orange_canvas.png",
 			"type": "image",
-			"url": "textures/orange_canvas.png"
+			"name": "orange_canvas_png"
 		},
 		{
-			"name": "confirm_normal_png",
+			"url": "textures/confirm_normal.png",
 			"type": "image",
-			"url": "textures/confirm_normal.png"
+			"name": "confirm_normal_png"
 		},
 		{
-			"name": "white_canvas_png",
+			"url": "textures/white_canvas.png",
 			"type": "image",
-			"url": "textures/white_canvas.png"
+			"name": "white_canvas_png"
 		},
 		{
-			"name": "peng_mp3",
+			"url": "audios/peng.mp3",
 			"type": "sound",
-			"url": "audios/peng.mp3"
+			"name": "peng_mp3"
 		},
 		{
-			"name": "congratulation_mp3",
+			"url": "audios/congratulation.mp3",
 			"type": "sound",
-			"url": "audios/congratulation.mp3"
+			"name": "congratulation_mp3"
 		},
 		{
-			"name": "smiling_yellow_head_svg",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/smiling_yellow_head.svg"
+			"name": "start_png"
 		},
 		{
-			"name": "arrow_right_svg",
+			"url": "textures/start_scene_bg.png",
 			"type": "image",
-			"url": "textures/arrow_right.svg"
+			"name": "start_scene_bg_png"
 		},
 		{
-			"name": "wlts_logo2_jpg",
+			"url": "textures/sight_word_park.png",
 			"type": "image",
-			"url": "images/wlts_logo.jpg"
+			"name": "sight_word_park_png"
 		},
 		{
-			"name": "start_png",
+			"url": "textures/select_fire.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "select_fire_png"
 		},
 		{
-			"name": "start_scene_bg_png",
+			"url": "textures/Bg_cloudy.png",
 			"type": "image",
-			"url": "textures/start_scene_bg.png"
+			"name": "Bg_cloudy_png"
 		},
 		{
-			"name": "sight_word_park_png",
+			"url": "textures/img_example.png",
 			"type": "image",
-			"url": "textures/sight_word_park.png"
+			"name": "img_example_png"
 		},
 		{
-			"name": "select_fire_png",
+			"url": "textures/smiling_yellow_head.png",
 			"type": "image",
-			"url": "textures/select_fire.png"
+			"name": "smiling_yellow_head_png"
 		},
 		{
-			"name": "Bg_cloudy_png",
+			"url": "textures/arrow_right.png",
 			"type": "image",
-			"url": "textures/Bg_cloudy.png"
-		},
-		{
-			"name": "img_example_png",
-			"type": "image",
-			"url": "textures/img_example.png"
-		},
-		{
-			"name": "smiling_yellow_head_png",
-			"type": "image",
-			"url": "textures/smiling_yellow_head.png"
-		},
-		{
-			"name": "arrow_right_png",
-			"type": "image",
-			"url": "textures/arrow_right.png"
+			"name": "arrow_right_png"
 		}
 	]
 }
