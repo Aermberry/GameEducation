@@ -85,9 +85,9 @@
 
 
 
-	<e:Label id="answerLabel" text="35元4角 + 14元2角" textColor="0x000000" x="290.54" y="536.47" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="35元4角 + 14元2角" textColor="0x000000" x="290.54" y="536.47" size="59"  fontFamily="華康楷書體" visible="false"/>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="= 49元6角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
+	<e:Label text="= 49元6角" size="59" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Rect width="234" y="63" height="4" x="43"/>
 	<e:Rect width="234" y="73" height="4" x="43"/>
 	</e:Group>

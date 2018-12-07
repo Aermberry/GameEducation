@@ -39,7 +39,7 @@
 	         width="1155.76" anchorOffsetY="0" height="160.06" textColor="0x000000" size="59" lineSpacing="25"
 	          fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="還餘：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="42元6角 – 12元5角" textColor="0x000000" x="280.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="42元6角 – 12元5角" textColor="0x000000" x="280.54" y="521.98" size="59"  fontFamily="華康楷書體" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>
@@ -82,7 +82,7 @@
 		<ns1:EditableLabel width="62" height="90" anchorOffsetX="0" anchorOffsetY="0" x="2" y="24" visible="false"/>
 	</e:Group>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="= 30元1角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
+	<e:Label text="= 30元1角" size="59" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Rect width="234" y="63" height="4" x="43"/>
 	<e:Rect width="234" y="73" height="4" x="43"/>
 	</e:Group>

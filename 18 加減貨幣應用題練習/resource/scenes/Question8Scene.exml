@@ -38,7 +38,7 @@
 	<e:Label id="questionLabel" text="水仙茶葉售55元8角，茉莉茶葉售30元8角。\n兩種茶葉的售價相差多少元？" x="273.18" y="224.12" anchorOffsetX="0" width="1158.79"
 	         anchorOffsetY="0" height="147.94" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="華康楷書體" visible="false"/>
 			 <e:Label id="titleLabel" text="兩種茶葉的售價相差："  size="59" x="270.97" y="426.44" textColor="0x000000" fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="55元8角 – 30元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="55元8角 – 30元8角" textColor="0x000000" x="280.54" y="537.98" size="59"  fontFamily="華康楷書體" visible="false"/>
 
 
 
@@ -78,7 +78,7 @@
 		<ns1:EditableLabel width="62" height="92" anchorOffsetX="0" anchorOffsetY="0" x="-2" y="26" visible="false"/>
 	</e:Group>
 <e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="=  25元" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
+	<e:Label text="=  25元" size="59" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Rect width="156" y="63" height="4" x="43"/>
 	<e:Rect width="156" y="73" height="4" x="43"/>
 	</e:Group>
