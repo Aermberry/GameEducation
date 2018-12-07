@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TopTitleComponentSkin" width="1363" height="134" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="165a7d555d4" ></w:Config>
+		<e:Image left="0" right="0" top="0" bottom="0" source="title_left_png"/>
+	<e:Image width="536" height="80" x="776" y="27" source="title_right_png"/>
+</e:Skin>

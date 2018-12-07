@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\19 貨幣減法應用題\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}
