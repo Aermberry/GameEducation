@@ -7,21 +7,23 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private lionDialog: egret.tween.TweenGroup;
   private headTitleLabel: eui.Label;
 
-  private rabbitComponent: rabbirComponent;
-  private pigComponent: pigComponent;
-  private snakeComponent: snakeComponent;
-  private sheepComponent: sheeepComponent;
-  private giraffeComponent: girffeComponent;
-  private ratComponent: ratComponent;
+  public rabbitComponent: rabbirComponent;
+  public pigComponent: pigComponent;
+  public snakeComponent: snakeComponent;
+  public sheepComponent: sheeepComponent;
+  public giraffeComponent: girffeComponent;
+  public ratComponent: ratComponent;
 
-  public rabbitScene: rabbitScene;
-  public snakeScene: snakeScene;
-  public pigScene: pigScene;
-  public sheepScene: sheepScene;
-  public giraffeScene: giraffeScene;
-  public ratScene: mouseScene;
+  private rabbitScene: rabbitScene;
+  private snakeScene: snakeScene;
+  private pigScene: pigScene;
+  private sheepScene: sheepScene;
+  private giraffeScene: giraffeScene;
+  private ratScene: mouseScene;
 
   private lionDialogGroup: eui.Group;
+  private componentGroup:eui.Group;
+  public isTrueGroup:eui.Group;
 
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
 
@@ -35,7 +37,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeScene = new giraffeScene();
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
-
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -103,7 +104,8 @@ class optionsScene extends eui.Component implements eui.UIComponent {
        lzlib.SoundUtility.playSound(optionLionVoice[this.index]).then(()=>{
          this.headLine(optionAnimText[this.index]);
          this.playVoice(optionAnimVoice[this.index])
-         
+         this.rabbitComponent.currentState="active"
+         this.rabbitComponent.touchChildren=true;
        })
     })
   }
@@ -122,13 +124,15 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.headTitleLabel.text = `請點選${str}`
   }
 
-
   private toGameScene(sense: eui.Component): void {
     setTimeout(() => {
+      // this.addChild(sense)
       Main.instance.gotoScene(sense);
     }, 1000)
+  }
 
-
+  public activeStatue(components?:rabbirComponent|snakeComponent|pigComponent|ratComponent|sheepScene|girffeComponent):void{
+    components.currentState="active"
   }
 
 }

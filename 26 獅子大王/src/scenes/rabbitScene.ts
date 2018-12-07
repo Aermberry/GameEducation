@@ -176,7 +176,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
       setTimeout(() => {
         this.congratulateAnim();
       }, 3000)
-
     }
     else {
       this.bulbGroup.visible = false;
@@ -209,5 +208,14 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await lzlib.ThreadUtility.sleep(5000);
     this.endMaskRect.visible = true;
     await this.endMaskRectAnim.playOnceAsync();
+    // (this.optionsScene.isTrueGroup.$children[0] as eui.Image).visible=true;
+    // this.optionsScene.rabbitComponent.currentState="normal";
+    // this.optionsScene.rabbitComponent.touchChildren=false
+    // this.parent.removeChild(this)
+    let options=new optionsScene();
+    (options.isTrueGroup.$children[0] as eui.Image).visible=true;
+    options.rabbitComponent.currentState="normal";
+    options.rabbitComponent.touchChildren=false;
+    await Main.instance.gotoScene(options);
   }
 }

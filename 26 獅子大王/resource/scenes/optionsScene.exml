@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="optionsSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*" states="rabbit">
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
 	<w:Declarations>
 		<tween:TweenGroup id="plantMask">
 			<tween:TweenItem target="{plantMaskRect}">
@@ -266,19 +266,21 @@
 		         textColor="0x020202" bold="true" size="43" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
 		         verticalAlign="middle" />
 	</e:Group>
+	<e:Group id="componentGroup">
 	<ns1:pigComponent id="pigComponent" x="103.39" y="293.04" anchorOffsetX="0" anchorOffsetY="0"  alpha="0" touchEnabled="false" touchChildren="false"/>
 	<ns1:snakeComponent id="snakeComponent" x="1138" y="293.04"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07" y.rabbit="290.89"  alpha="1" touchEnabled="false" touchChildren="false"/>
+	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07"  alpha="1" touchEnabled="false" touchChildren="false"/>
 	<ns1:sheeepComponent id="sheepComponent" x="1169.4" y="681.05"  alpha="0" touchEnabled="false" touchChildren="false"/>
 	<ns1:girffeComponent id="giraffeComponent" x="1169.4" y="880.7"  alpha="0" touchEnabled="false" touchChildren="false"/>
 	<ns1:ratComponent id="ratComponent" x="1014.57" y="1117.48"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<e:Group id="isTrueGroup" x="688.11" y="295.53" touchThrough="true" visible="false">
-		<e:Image source="isTrue_png" x="344.62" y="0" />
-		<e:Image source="isTrue_png" x="814.43" y="76.63" />
-		<e:Image source="isTrue_png" x="0" y="10.3" />
-		<e:Image source="isTrue_png" x="268.87" y="843.17" />
-		<e:Image source="isTrue_png" x="939.43" y="355.24" />
-		<e:Image source="isTrue_png" x="862.43" y="773.28" />
+	</e:Group>
+	<e:Group id="isTrueGroup" x="688.11" y="295.53" touchThrough="true">
+		<e:Image source="isTrue_png" x="344.62" y="0"  visible="false"/>
+		<e:Image source="isTrue_png" x="814.43" y="76.63"  visible="false"/>
+		<e:Image source="isTrue_png" x="0" y="10.3"  visible="false"/>
+		<e:Image source="isTrue_png" x="268.87" y="843.17"  visible="false"/>
+		<e:Image source="isTrue_png" x="939.43" y="355.24"  visible="false"/>
+		<e:Image source="isTrue_png" x="862.43" y="773.28"  visible="false"/>
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" visible="false" />
