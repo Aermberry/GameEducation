@@ -1,27 +1,38 @@
-class resultScene extends eui.Component implements  eui.UIComponent {
+class resultScene extends eui.Component implements eui.UIComponent {
 
-	private commitLabel:eui.Label;
-	private Anim:egret.tween.TweenGroup;
+	private commitLabel: eui.Label;
+
+	private Anim: egret.tween.TweenGroup;
+	private plantMask: egret.tween.TweenGroup;
+
+	private achieveComponent: achieveComponent;
+	private achieveComponentGroup: eui.Group;
+
 
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
 
-	protected childrenCreated():void
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
+		this.plantMask.playOnceAsync().then(() => {
+			RES.getRes("sound 627_mp3").play(0, -1)
+		})
 		this.textBook();
-		this.playAnimation(this.Anim,true);
+		this.playAnimation(this.Anim, true);
+		lzlib.SoundUtility.playSound("sound 628_mp3").then(() => {
+			this.achieveComponentGroup.visible = true;
+		})
+		this.achieveComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toInvitationScene, this)
 	}
 
-	private textBook():void {
-		this.commitLabel.text=lionDialogText.thanksTalk.toString();
+	private textBook(): void {
+		this.commitLabel.text = lionDialogText.thanksTalk.toString();
 	}
 
 	private playAnimation(target: egret.tween.TweenGroup, isLoop: boolean): void {
@@ -31,5 +42,9 @@ class resultScene extends eui.Component implements  eui.UIComponent {
 			}
 		}
 		target.play();
-	}	
+	}
+
+	private toInvitationScene(): void {
+		Main.instance.gotoScene(new invitation());
+	}
 }

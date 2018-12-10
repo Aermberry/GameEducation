@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="optionsSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*" states="rabbit,snake,pig,rat,sheep,giraffe" >
 	<w:Declarations>
 		<tween:TweenGroup id="plantMask">
 			<tween:TweenItem target="{plantMaskRect}">
@@ -245,7 +245,7 @@
 	         verticalAlign="middle" top="-27" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true" />
 	<e:Label id="headTitleLabel" text="" textColor="0xe70a0c" size="66" bold="true" fontFamily="華康中黑體" x="765.58"
 	         y="184.62" />
-	<e:Group id="invitation" x="938.89" y="893.19" anchorOffsetY="269.7" height="512.52" anchorOffsetX="484.85" alpha="0">
+	<e:Group id="invitation" x="938.89" y="893.19" anchorOffsetY="269.7" height="512.52" anchorOffsetX="484.85" alpha="0" alpha.rabbit="0">
 		<e:Image source="letter_bg_jpg" x="0" y="-6.05" scale9Grid="176,97,455,73" anchorOffsetY="0" height="521.26"
 		         anchorOffsetX="0" width="958.36" />
 		<e:Label text="你們要來參加秋季嘉年華！\n希望你能出席，不見不散！" textColor="0x000000" fontFamily="華康中黑體" lineSpacing="100"
@@ -267,20 +267,20 @@
 		         verticalAlign="middle" />
 	</e:Group>
 	<e:Group id="componentGroup">
-	<ns1:pigComponent id="pigComponent" x="103.39" y="293.04" anchorOffsetX="0" anchorOffsetY="0"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<ns1:snakeComponent id="snakeComponent" x="1138" y="293.04"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07"  alpha="1" touchEnabled="false" touchChildren="false"/>
-	<ns1:sheeepComponent id="sheepComponent" x="1169.4" y="681.05"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<ns1:girffeComponent id="giraffeComponent" x="1169.4" y="880.7"  alpha="0" touchEnabled="false" touchChildren="false"/>
-	<ns1:ratComponent id="ratComponent" x="1014.57" y="1117.48"  alpha="0" touchEnabled="false" touchChildren="false"/>
+	<ns1:pigComponent id="pigComponent" x="103.39" y="293.04" anchorOffsetX="0" anchorOffsetY="0"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1"/>
+	<ns1:snakeComponent id="snakeComponent" x="1138" y="293.04"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1"/>
+	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07"  alpha="1" touchEnabled="false" touchChildren="false" alpha.rabbit="0"/>
+	<ns1:sheeepComponent id="sheepComponent" x="1169.4" y="681.05"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1"/>
+	<ns1:girffeComponent id="giraffeComponent" x="1169.4" y="880.7"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1"/>
+	<ns1:ratComponent id="ratComponent" x="1014.57" y="1117.48"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1"/>
 	</e:Group>
-	<e:Group id="isTrueGroup" x="688.11" y="295.53" touchThrough="true">
-		<e:Image source="isTrue_png" x="344.62" y="0"  visible="false"/>
-		<e:Image source="isTrue_png" x="814.43" y="76.63"  visible="false"/>
-		<e:Image source="isTrue_png" x="0" y="10.3"  visible="false"/>
-		<e:Image source="isTrue_png" x="268.87" y="843.17"  visible="false"/>
-		<e:Image source="isTrue_png" x="939.43" y="355.24"  visible="false"/>
-		<e:Image source="isTrue_png" x="862.43" y="773.28"  visible="false"/>
+	<e:Group id="isTrueGroup" x="688.11" y="295.53" touchThrough="true" includeIn="snake,pig,rat,sheep,giraffe">
+		<e:Image source="isTrue_png" x="344.62" y="0" />
+		<e:Image source="isTrue_png" x="814.43" y="76.63"  visible.snake="false"/>
+		<e:Image source="isTrue_png" x="0" y="10.3"  visible.snake="false" visible.pig="false"/>
+		<e:Image source="isTrue_png" x="268.87" y="843.17"  visible.snake="false" visible.pig="false" visible.rat="false"/>
+		<e:Image source="isTrue_png" x="939.43" y="355.24"  visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false"/>
+		<e:Image source="isTrue_png" x="862.43" y="773.28"  visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false" visible.giraffe="false"/>
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" visible="false" />

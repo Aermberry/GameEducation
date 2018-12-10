@@ -14,10 +14,8 @@ class snakeComponent extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-
 		this.snake_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
 		this.snake_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
-		this.currentState = "active"
 	}
 
 	private playLoopAnim(Anim: egret.tween.TweenGroup): void {

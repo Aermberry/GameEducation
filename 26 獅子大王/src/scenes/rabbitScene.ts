@@ -40,9 +40,9 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
 
   private optionsScene: optionsScene;
-  public constructor(optionsScene:optionsScene) {
+  public constructor(/*optionsScene: optionsScene*/) {
     super();
-    this.optionsScene=optionsScene;
+    // this.optionsScene = optionsScene;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -66,21 +66,21 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.bulbComponent.currentState = "hover";
   }
 
-  private async normal():Promise<void> {
+  private async normal(): Promise<void> {
     await this.enableMouse();
     this.bulbComponent.currentState = "normal"
   }
 
-  private  async active(): Promise<void>  {
+  private async active(): Promise<void> {
     await this.disableMouse();
     this.bulbComponent.currentState = "active";
   }
 
-  private async disableMouse():Promise<void>{
+  private async disableMouse(): Promise<void> {
     this.bulbComponentGroup.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
   }
-  private enableMouse():void {
-    this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER,this.hover,this);
+  private enableMouse(): void {
+    this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
   }
 
   private async playAnim(): Promise<void> {
@@ -127,7 +127,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     lzlib.SoundUtility.playSound("sound 322_mp3");
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
       egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
-      egret.Tween.get(this.achieveGroup).to({ alpha:  1 }, 1000);
+      egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
     });
     this.editableText_first.touchEnabled = true;
     this.editableText_second.touchEnabled = true;
@@ -207,15 +207,13 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.playVoice(animalDialogVoice.rabbitVoice_d);
     await lzlib.ThreadUtility.sleep(5000);
     this.endMaskRect.visible = true;
-    await this.endMaskRectAnim.playOnceAsync();
-    // (this.optionsScene.isTrueGroup.$children[0] as eui.Image).visible=true;
-    // this.optionsScene.rabbitComponent.currentState="normal";
-    // this.optionsScene.rabbitComponent.touchChildren=false
-    // this.parent.removeChild(this)
-    let options=new optionsScene();
-    (options.isTrueGroup.$children[0] as eui.Image).visible=true;
-    options.rabbitComponent.currentState="normal";
-    options.rabbitComponent.touchChildren=false;
-    await Main.instance.gotoScene(options);
+    await this.endMaskRectAnim.playOnceAsync()
+    await this.gohome();
+  }
+  private gohome(): void {
+    this.optionsScene = new optionsScene();
+    this.optionsScene.currentState="snake"
+    this.optionsScene.statueIndex();
+    Main.instance.gotoScene(this.optionsScene)
   }
 }

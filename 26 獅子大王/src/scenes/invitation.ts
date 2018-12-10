@@ -12,6 +12,7 @@ class invitation extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
+		RES.getRes("sound 637_mp3").play(0,1)
 	}
 	
 }

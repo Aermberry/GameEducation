@@ -21,11 +21,8 @@ class girffeComponent extends eui.Component implements eui.UIComponent {
 		this.eye.playLoopAsync();
 		this.eyeSmell.playLoopAsync();
 		this.flustedAnim.playLoopAsync();
-		// this.currentState="click"
-
 		this.giraffe_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
 		this.giraffe_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
-		this.currentState = "active"
 	}
 
 	private activeStatus(): void {

@@ -22,15 +22,17 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private ratScene: mouseScene;
 
   private lionDialogGroup: eui.Group;
-  private componentGroup:eui.Group;
-  public isTrueGroup:eui.Group;
+  private componentGroup: eui.Group;
+  private invitation: eui.Group;
+  public isTrueGroup: eui.Group;
 
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
+  private statusIndex: number = 0;
 
   public constructor() {
     super();
 
-    this.rabbitScene = new rabbitScene(this);
+    this.rabbitScene = new rabbitScene();
     this.snakeScene = new snakeScene();
     this.pigScene = new pigScene();
     this.sheepScene = new sheepScene();
@@ -46,6 +48,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   protected childrenCreated(): void {
     super.childrenCreated();
     mouse.enable(this.stage);
+    this.normal();
     this.startLoadingAnimation();
     this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
     this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
@@ -95,18 +98,16 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private async startLoadingAnimation(): Promise<void> {
     this.plantMask.play(0)
     await lzlib.ThreadUtility.sleep(1000)
-    await this.invitationAnimation.playOnceAsync().then(() => {
-      this.tailWiggle.play(0);
-      this.displayAnim.play(0);
-    });
+    await this.invitationAnimations();
     await this.lionDialog.playOnceAsync().then(() => {
-       this.lionDialogText(optionLionText[this.index])
-       lzlib.SoundUtility.playSound(optionLionVoice[this.index]).then(()=>{
-         this.headLine(optionAnimText[this.index]);
-         this.playVoice(optionAnimVoice[this.index])
-         this.rabbitComponent.currentState="active"
-         this.rabbitComponent.touchChildren=true;
-       })
+      this.lionDialogText(optionLionText[this.index])
+      lzlib.SoundUtility.playSound(optionLionVoice[this.index]).then(() => {
+        this.headLine(optionAnimText[this.index]);
+        this.playVoice(optionAnimVoice[this.index]).then(() => {
+          this.statusAnim()
+
+        })
+      })
     })
   }
 
@@ -119,20 +120,77 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
     lionLabel.text = text.toString();
   }
-  //redheadtitle
+
   public headLine(str: string): void {
     this.headTitleLabel.text = `請點選${str}`
   }
 
   private toGameScene(sense: eui.Component): void {
     setTimeout(() => {
-      // this.addChild(sense)
       Main.instance.gotoScene(sense);
     }, 1000)
   }
 
-  public activeStatue(components?:rabbirComponent|snakeComponent|pigComponent|ratComponent|sheepScene|girffeComponent):void{
-    components.currentState="active"
+  public activeStatue(components?: rabbirComponent | snakeComponent | pigComponent | ratComponent | sheepScene | girffeComponent): void {
+    components.currentState = "active";
+  }
+
+  public statueIndex(): void {
+    this.statusIndex++
+    this.index = this.statusIndex.toString();
+  }
+
+  private async invitationAnimations(): Promise<void> {
+    switch (this.index) {
+      case "0":
+        await this.invitationAnimation.playOnceAsync().then(() => {
+          this.tailWiggle.play(0);
+          this.displayAnim.play(0);
+        });
+        break
+      default:
+        this.invitation.alpha = 1
+        break;
+    }
+  }
+
+  private statusAnim(): void {
+    switch (this.index) {
+      case "0":
+        this.rabbitComponent.currentState = "active"
+        this.rabbitComponent.touchChildren = true;
+        break;
+      case "1":
+        this.snakeComponent.currentState = "active"
+        this.snakeComponent.touchChildren = true;
+        break;
+      case "2":
+        this.pigComponent.currentState = "active"
+        this.pigComponent.touchChildren = true;
+        break;
+      case "3":
+        this.ratComponent.currentState = "active"
+        this.ratComponent.touchChildren = true;
+        break;
+      case "4":
+        this.sheepComponent.currentState = "active"
+        this.sheepComponent.touchChildren = true;
+        break;
+      default:
+        this.giraffeComponent.currentState = "active"
+        this.giraffeComponent.touchChildren = true;
+        break;
+    }
+  }
+
+  private normal(): void {
+    this.rabbitComponent.currentState = "normal";
+    this.snakeComponent.currentState = "normal";
+    this.pigComponent.currentState = "normal";
+    this.ratComponent.currentState = "normal";
+    this.sheepComponent.currentState = "normal";
+    this.giraffeComponent.currentState = "normal";
+
   }
 
 }

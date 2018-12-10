@@ -239,5 +239,13 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();
+		await this.gohome()
 	}
+
+	private gohome(): void {
+    this.optionsScene = new optionsScene();
+    this.optionsScene.currentState="rat"
+    Main.instance.gotoScene(this.optionsScene)
+
+  }
 }

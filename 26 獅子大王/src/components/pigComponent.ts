@@ -20,7 +20,6 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 		this.eyes.playLoopAsync();
 		this.pig_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
 		this.pig_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
-		this.currentState = "active"
 	}
 
 	private activeStatus(): void {
