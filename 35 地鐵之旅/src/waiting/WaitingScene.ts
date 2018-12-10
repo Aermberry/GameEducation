@@ -19,6 +19,10 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	private controllingComponent: ControllingComponent;
 	private arrowLeft: ArrowRedComponent;
 	private arrowRight: ArrowRedComponent;
+	private circleLeftRect: eui.Rect;
+	private circleRightRect: eui.Rect;
+	private platformLeftLabel: eui.Label;
+	private platformRightLabel: eui.Label;
 
 	private presenter = new WaitingPresent();
 
@@ -101,41 +105,41 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	public marking1And2(name: string): void
 	{
 			(this.markingLeft.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-			(this.markingLeft.getChildByName('platformLabel') as eui.Label).text = '1';
+			this.platformLeftLabel.text = '1';
 			(this.markingRight.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-			(this.markingRight.getChildByName('platformLabel') as eui.Label).text = '2';
+			this.platformRightLabel.text = '2';
 	}
 	
 	public marking3And4(name: string): void
 	{
 			(this.markingLeft.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-			(this.markingLeft.getChildByName('platformLabel') as eui.Label).text = '3';
+			this.platformLeftLabel.text = '3';
 			(this.markingRight.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-			(this.markingRight.getChildByName('platformLabel') as eui.Label).text = '4';
+			this.platformRightLabel.text = '4';
 	}
 
 	public marking1(name: string): void
 	{
 		(this.markingLeft.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-		(this.markingLeft.getChildByName('platformLabel') as eui.Label).text = '1';
+		this.platformLeftLabel.text = '1';
 	}
 
 	public marking2(name: string): void
 	{
 		(this.markingRight.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-		(this.markingRight.getChildByName('platformLabel') as eui.Label).text = '2';
+		this.platformRightLabel.text = '2';
 	}
 
 	public marking3(name: string): void
 	{
 		(this.markingLeft.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-		(this.markingLeft.getChildByName('platformLabel') as eui.Label).text = '3';
+		this.platformLeftLabel.text = '3';
 	}
 
 	public marking4(name: string): void
 	{
 		(this.markingRight.getChildByName('station') as eui.Label).text = '往' + name.substring(0,name.length-1);
-		(this.markingRight.getChildByName('platformLabel') as eui.Label).text = '4';
+		this.platformRightLabel.text = '4';
 	}
 
 	public async runLeftCar(): Promise<void>
@@ -245,15 +249,15 @@ class WaitingScene extends eui.Component implements  eui.UIComponent,WaitingVIew
 	}
 
 	public async wrongMP3(): Promise<void>
-	{
+	{ 
 		await lzlib.SoundUtility.playSound('sound 2 (inst_wrongDest.mp3)_mp3');
 		lzlib.SoundUtility.playSound('sound 17 (inst_chkMap.mp3)_mp3');
 	}
 
 	public setMarkingColor(color: number): void
 	{
-		(this.markingLeft.getChildByName('circle') as eui.Rect).fillColor = color;
-		(this.markingRight.getChildByName('circle') as eui.Rect).fillColor = color;
+		this.circleLeftRect.fillColor = color;
+		this.circleRightRect.fillColor = color;
 	}
 
 }

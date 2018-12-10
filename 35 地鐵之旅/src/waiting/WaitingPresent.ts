@@ -160,13 +160,6 @@ class WaitingPresent {
 
 	public onArrowLeftClick(): void
 	{
-		// let line: Line = null;
-		// if(this.station.isUpperStrata)
-		// {
-		// 	line = this.station.getUpperStrataLine();
-		// }else{
-		// 	line = this.station.getLowerStrataLine();
-		// }
 		let position = this.currentLine.getPositionByName(this.station.stationName);
 		Main.instance.gotoScene(new MotorCarScene(this.currentLine, position, true));
 	}

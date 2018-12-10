@@ -69,18 +69,28 @@
 	</e:Group>
 	<ns1:RouteComponent id="routeComponent" width="1852" height="528" x="32" y="456" anchorOffsetX="0" anchorOffsetY="0" icon="hailong" visible="false"/>
 	<ns1:ControllingComponent id="controllingComponent" width="1904" height="180" x="9.03" y="1215.16"/>
-	<e:Group id="markingLeft" x="12" y="24">
-		<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189"/>
+	<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189" x="12" y="24"/>
+	<e:Group id="markingLeft" x="32" y="24" anchorOffsetX="0" width="745" anchorOffsetY="0" height="180">
 		<e:Label text="往海龍公園" x="28" y="56" textColor="0x000000" size="75" name="station"/>
+		<e:Group x="404" y="32">
+			<e:Rect id="circleLeftRect" width="120" height="120" x="20" y="0" fillColor="0x27a1f4" ellipseHeight="150" ellipseWidth="150" name="circle" scaleX="1" scaleY="1"/>
+			<e:Label id="platformLeftLabel" text="1" x="52" y="12" size="96" bold="true" name="platformLabel" scaleX="1" scaleY="1"/>
+		</e:Group>
 		<e:Label text="月台" x="588" y="56" textColor="0x000000" size="75"/>
-		<e:Rect width="120" height="120" x="424" y="32" fillColor="0x27a1f4" ellipseHeight="150" ellipseWidth="150" name="circle"/>
-		<e:Label text="1" x="456" y="44" size="96" bold="true" name="platformLabel"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="10"/>
+		</e:layout>
 	</e:Group>
-	<e:Group id="markingRight" x="1132" y="24">
-		<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189"/>
+	<e:Image source="rect_border_black_small_png" anchorOffsetX="0" anchorOffsetY="0" width="779" height="189" x="1132" y="24"/>
+	<e:Group id="markingRight" x="1176" y="24" anchorOffsetX="0" width="698" anchorOffsetY="0" height="172">
 		<e:Label text="往海龍公園" x="28" y="56" textColor="0x000000" size="75" name="station"/>
+		<e:Group x="380" y="28">
+			<e:Rect id="circleRightRect" width="120" height="120" x="44" y="4" fillColor="0x27A1F4" ellipseHeight="150" ellipseWidth="150" name="circle" scaleX="1" scaleY="1"/>
+			<e:Label id="platformRightLabel" text="2" x="76" y="16" size="96" bold="true" name="platformLabel" scaleX="1" scaleY="1"/>
+		</e:Group>
 		<e:Label text="月台" x="588" y="56" textColor="0x000000" size="75"/>
-		<e:Rect width="120" height="120" x="424" y="32" fillColor="0x27A1F4" ellipseHeight="150" ellipseWidth="150" name="circle"/>
-		<e:Label text="2" x="456" y="44" size="96" bold="true" name="platformLabel"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="10"/>
+		</e:layout>
 	</e:Group>
 </e:Skin>
