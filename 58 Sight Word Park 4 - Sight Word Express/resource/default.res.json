@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,start_png,start2_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,start3_png,movie_clip_json,movie_clip_png,start_imgs_png,scene_bg_png,go_to_png,shape68_png,shape42_png,bird_tow_png,red_lights_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,start_png,start2_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,start3_png,movie_clip_json,movie_clip_png,start_imgs_png,scene_bg_png,go_to_png,shape68_png,shape42_png,bird_tow_png,red_lights_png,good_png",
 			"name": "preload"
 		}
 	],
@@ -265,6 +265,11 @@
 			"name": "red_lights_png",
 			"type": "image",
 			"url": "textures/red_lights.png"
+		},
+		{
+			"name": "good_png",
+			"type": "image",
+			"url": "textures/good.png"
 		}
 	]
 }

@@ -22,6 +22,7 @@
 		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="0x000000" size="80" bold="true" x="878.63" y="980" />
 		<e:Image id="exitImage" source="arrow_right_png" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
 		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="0x000000" size="80" bold="true" x="884.7" y="1100" />
+		<e:Image x="869.64" y="800.4" source="good_png" anchorOffsetX="0" width="162.35" anchorOffsetY="0" height="164.52"/>
 	</e:Group>
 
 	<w:Config id="163f6d836ac" ></w:Config>
