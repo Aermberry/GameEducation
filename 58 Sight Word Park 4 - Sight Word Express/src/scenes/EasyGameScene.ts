@@ -1,49 +1,46 @@
-class EasyGameScene extends eui.Component implements  eui.UIComponent {
-    private backBtn:eui.Image;
-	private playEasyGmeTweenGroup:egret.tween.TweenGroup;
-	private goodJobTweenGroup:egret.tween.TweenGroup;
+class EasyGameScene extends eui.Component implements eui.UIComponent {
+	private backBtn: eui.Image;
+	private playEasyGmeTweenGroup: egret.tween.TweenGroup;
+	private goodJobTweenGroup: egret.tween.TweenGroup;
 
 	// private birdImg:eui.Image;
 
-	private sentenceLabel:eui.Label;
-	private redLightImg:eui.Image;
-	private trainImg:eui.Image;
-	private driverImg:eui.Image;
-	private smokeImg:eui.Image;
+	private sentenceLabel: eui.Label;
+	private redLightImg: eui.Image;
+	private trainImg: eui.Image;
+	private driverImg: eui.Image;
+	private smokeImg: eui.Image;
 	private cargoLeftLabel: eui.Label;
-	private greenLightImg:eui.Image;
+	private greenLightImg: eui.Image;
 
-	private trainEnterTweenGroup:egret.tween.TweenGroup;
-	private trainAwayTweenGroup:egret.tween.TweenGroup;
-	private firstBoxTweenGroup:egret.tween.TweenGroup;
-	private secondBoxTweenGroup:egret.tween.TweenGroup;
-	private thirdBoxTweenGroup:egret.tween.TweenGroup;
+	private trainEnterTweenGroup: egret.tween.TweenGroup;
+	private trainAwayTweenGroup: egret.tween.TweenGroup;
+	private firstBoxTweenGroup: egret.tween.TweenGroup;
+	private secondBoxTweenGroup: egret.tween.TweenGroup;
+	private thirdBoxTweenGroup: egret.tween.TweenGroup;
 	private questionBiz: QuestionBiz;
 
 	//答对或答错提示下拉框
-    private dropDownBoxGroup:eui.Group;
-    private dropDownBoxMovieClip:egret.MovieClip;
-    private dropDownBoxFactory:egret.MovieClipDataFactory;
+	private dropDownBoxGroup: eui.Group;
+	private dropDownBoxMovieClip: egret.MovieClip;
+	private dropDownBoxFactory: egret.MovieClipDataFactory;
 
 	//cargo
 	private cargoGroup: eui.Group;
 
 	private currentQuestion: Question;
 	private cargoLeft = 0;
-    
-	public constructor(questionRepo: IQuestionRepository) 
-	{
+
+	public constructor(questionRepo: IQuestionRepository) {
 		super();
 		this.questionBiz = new QuestionBiz(questionRepo);
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
-     
-	protected childrenCreated():void
-	{
+
+	protected childrenCreated(): void {
 		super.childrenCreated();
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.backBtn, true);
@@ -54,83 +51,96 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 
 		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
 			let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
-			let cargoDropdownFactory = new egret.MovieClipDataFactory( RES.getRes('box_drop_down_json'), RES.getRes('box_drop_down_png'));
-        	let cargoDropdownMovieClip = new egret.MovieClip(cargoDropdownFactory.generateMovieClipData('box_drop_down'));
+			let cargoDropdownFactory = new egret.MovieClipDataFactory(RES.getRes('box_drop_down_json'), RES.getRes('box_drop_down_png'));
+			let cargoDropdownMovieClip = new egret.MovieClip(cargoDropdownFactory.generateMovieClipData('box_drop_down'));
 			cargoDropdownMovieClip.name = 'movie';
+			cargoDropdownMovieClip.gotoAndPlay(3);
+			cargoDropdownMovieClip.gotoAndStop(3);
 			cargo.addChild(cargoDropdownMovieClip);
 			cargo.swapChildren(cargoDropdownMovieClip, cargo.getChildByName('label'));
 			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
 			mouse.setButtonMode(cargo, true);
 		}
+		this.cargoAddClick();
 
 		this.startGame();
 		this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
-		
+
 	}
 
-	private goStartScene() 
-	{
+	private cargoRemoviClick(): void {
+		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
+			let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
+			cargo.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this)
+		}
+	}
+
+	private cargoAddClick(): void {
+		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
+			let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
+			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
+		}
+	}
+
+	private goStartScene() {
 		Main.instance.gotoScene(new StartScene());
 	}
-	
-	public async startGame():Promise<void>
-	{
+
+	public async startGame(): Promise<void> {
 		this.cargoLeft = 20;
-    	await this.playEasyGmeTweenGroup.playOnceAsync();
+		await this.playEasyGmeTweenGroup.playOnceAsync();
 		// this.birdImg.visible = true;
-		this.redLightImg.visible= true;
+		this.redLightImg.visible = true;
 		this.trainImg.visible = true;
-	    this.driverImg.visible = true;
+		this.driverImg.visible = true;
 		this.smokeImg.visible = true;
 
 		this.nextCargo();
 	}
 
-	private async nextCargo(): Promise<void>
-	{
-		this.cargoLeftLabel.text =  this.cargoLeft.toString() + "：trains Left ";
+	private async nextCargo(): Promise<void> {
+		this.cargoLeftLabel.text = this.cargoLeft.toString() + "：train(s) left ";
 		this.resetCargoMovie();
 		this.currentQuestion = this.questionBiz.random();
-		this.sentenceLabel.text = this.currentQuestion.sentence;
+		this.sentenceLabel.text = '"' + this.currentQuestion.sentence + '"';
 		await this.trainEnterTweenGroup.playOnceAsync();
 		this.currentQuestion.options.shuffle();
-		
+
 		for (let index = 0; index < this.currentQuestion.options.length; index++) {
 			this.setCargoLabel(index, this.currentQuestion.options[index]);
 		}
 	}
 
-	private resetCargoMovie(): void
-	{
+	private resetCargoMovie(): void {
 		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
 			this.getCargoDropMovie(index).gotoAndStop(0);
 		}
 	}
 
-	private getCargoDropMovie(cargoIndex: number): egret.MovieClip
-	{
+	private getCargoDropMovie(cargoIndex: number): egret.MovieClip {
 		let cargo = this.cargoGroup.getChildAt(cargoIndex) as eui.Group;
 		return cargo.getChildByName('movie') as egret.MovieClip;
 	}
 
-	private setCargoLabel(cargoIndex: number, text: string): void
-	{
+	private setCargoLabel(cargoIndex: number, text: string): void {
 		let cargo = this.cargoGroup.getChildAt(cargoIndex) as eui.Group;
 		let label = cargo.getChildByName('label') as eui.Label;
 		label.text = text;
 	}
 
-	private async onPackSelect(e: egret.TouchEvent): Promise<void>
-	{
+	private async onPackSelect(e: egret.TouchEvent): Promise<void> {
+		this.cargoRemoviClick();
 		let cargoIndex = this.cargoGroup.getChildIndex(e.target as egret.DisplayObject);
 		if (this.currentQuestion.options[cargoIndex] == this.currentQuestion.answer) {
 			this.goodJobTweenGroup.play(0);
 			this.playCorrectAnimation();
 			this.setCargoLabel(cargoIndex, '');
 			await this.playCargoDropdownMovie(cargoIndex);
-			(RES.getRes('wuwu_mp3') as egret.Sound).play(0, 1);
+			// (RES.getRes('wuwu_mp3') as egret.Sound).play(0, 1);
+			lzlib.SoundUtility.playSound("wuwu_mp3");
 			await this.trainAwayTweenGroup.playOnceAsync();
 			this.cargoLeft--;
+			console.log(this.cargoLeft)
 
 			if (this.cargoLeft > 0) {
 				this.nextCargo();
@@ -138,38 +148,38 @@ class EasyGameScene extends eui.Component implements  eui.UIComponent {
 				this.addChild(new ResultScene(this));
 			}
 		} else {
-			(RES.getRes('diao_mp3') as egret.Sound).play(0, 1);
+			// (RES.getRes('diao_mp3') as egret.Sound).play(0, 1);
+			lzlib.SoundUtility.playSound("diao_mp3");
 			this.playWrongAnimation();
 		}
+
+		this.cargoAddClick();
 	}
 
 	/** 播放用户选择成功字母的动画 */
-    public playCorrectAnimation(): void
-    {
-        this.dropDownBoxFactory = new egret.MovieClipDataFactory( RES.getRes('right_drop_down_box_json'), RES.getRes('right_drop_down_box_png'));
-        this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('right_drop_down_box'));
-        this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
-        this.dropDownBoxMovieClip.play(0); 
-        this.goodJobTweenGroup.play(0);
-    }
+	public playCorrectAnimation(): void {
+		this.dropDownBoxFactory = new egret.MovieClipDataFactory(RES.getRes('right_drop_down_box_json'), RES.getRes('right_drop_down_box_png'));
+		this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('right_drop_down_box'));
+		this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
+		this.dropDownBoxMovieClip.play(0);
+		this.goodJobTweenGroup.play(0);
+	}
 
-    /** 播放用户选择错误字母的动画 */
-    public playWrongAnimation(): void
-    {
-        this.dropDownBoxFactory = new egret.MovieClipDataFactory( RES.getRes('false_drop_down_box_json'), RES.getRes('false_drop_down_box_png'));
-        this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('false_drop_down_box'));
-        this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
-        this.dropDownBoxMovieClip.play(0); 
-        (RES.getRes('diao_mp3') as egret.Sound).play(0, 1);
-    }
+	/** 播放用户选择错误字母的动画 */
+	public playWrongAnimation(): void {
+		this.dropDownBoxFactory = new egret.MovieClipDataFactory(RES.getRes('false_drop_down_box_json'), RES.getRes('false_drop_down_box_png'));
+		this.dropDownBoxMovieClip = new egret.MovieClip(this.dropDownBoxFactory.generateMovieClipData('false_drop_down_box'));
+		this.dropDownBoxGroup.addChild(this.dropDownBoxMovieClip);
+		this.dropDownBoxMovieClip.play(0);
+		(RES.getRes('diao_mp3') as egret.Sound).play(0, 1);
+	}
 
 	/** 播放货物掉下的动画 */
-	private async playCargoDropdownMovie(cargoIndex: number): Promise<void>
-	{
+	private async playCargoDropdownMovie(cargoIndex: number): Promise<void> {
 		this.greenLightImg.visible = true;
 		this.redLightImg.source = "red_lights_png";
-        (RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
-        await this.getCargoDropMovie(cargoIndex).playAsync();
+		(RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
+		await this.getCargoDropMovie(cargoIndex).playAsync();
 		this.greenLightImg.visible = false;
 		this.redLightImg.source = "red_light_png";
 	}

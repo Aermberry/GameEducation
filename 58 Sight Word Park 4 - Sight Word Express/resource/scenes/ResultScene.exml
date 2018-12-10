@@ -14,12 +14,12 @@
 	<e:Rect fillColor="0xffffff" alpha="0.4" x="0" y="0" width="100%" height="100%" />
 	<e:Group id="contentGroup" x="0" y="1300" width="100%" height="100%">
 		<e:Image id="yelloHeadImage" source="smiling_yellow_head_png" horizontalCenter="0" y="30" width="1250" height="1500" />
-		<e:Label fontFamily="Hoffmanhand" text="       Good job! \n   All cargo have \nbeen transported!" bold="true" size="150" textColor="0x000000" y="326.38" horizontalCenter="2" />
+		<e:Label fontFamily="Hoffmanhand" text="     Great work! \n  All the cargoes\n      have been \n    transported." bold="true" size="150" textColor="0x000000" y="199.12" horizontalCenter="-63.5" />
 		<e:Label fontFamily="Hoffmanhand" text="e' s your prize" bold="true" size="180" textColor="0x000000" y="515.18" horizontalCenter="1.5"  visible="false"/>
 		<e:Label fontFamily="Hoffmanhand" text="transported!" bold="true" size="180" textColor="0x000000" y="680" horizontalCenter="0.5"  visible="false"/>
 		
 		<e:Image id="playAgainImage" source="arrow_right_png" x="715.9" y="980" scaleX="0.7" scaleY="0.7" visible="false" />
-		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="0x000000" size="80" bold="true" x="802.88" y="980" />
+		<e:Label id="playAgainLabel" fontFamily="Hoffmanhand" text="Play again" textColor="0x000000" size="80" bold="true" x="878.63" y="980" />
 		<e:Image id="exitImage" source="arrow_right_png" x="715.9" y="1098.1" scaleX="0.7" scaleY="0.7" visible="false"/>
 		<e:Label id="exitLabel" fontFamily="Hoffmanhand" text="Exit" textColor="0x000000" size="80" bold="true" x="884.7" y="1100" />
 	</e:Group>
