@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:author="http://www.sothink.com"
+width="254px" height="254px"
+xml:space="preserve">
+<g id="29" transform="matrix(1, 0, 0, 1, 126.75, 126.75)">
+<path style="fill:#999999;fill-opacity:1" d="M109.9,-46.4Q119.25 -24.25 119.25 0Q119.25 24.25 109.9 46.4Q100.8 67.8 84.3 84.3Q67.8 100.8 46.4 109.9Q24.25 119.25 0 119.25Q-24.25 119.25 -46.4 109.9Q-67.8 100.85 -84.3 84.3Q-100.8 67.8 -109.9 46.4Q-119.25 24.25 -119.25 0Q-119.25 -24.25 -109.9 -46.4Q-100.85 -67.8 -84.3 -84.3Q-67.8 -100.85 -46.4 -109.9Q-24.25 -119.25 0 -119.25Q24.25 -119.25 46.4 -109.9Q67.8 -100.85 84.3 -84.3Q100.8 -67.8 109.9 -46.4" />
+<path style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M109.9,-46.4Q119.25 -24.25 119.25 0Q119.25 24.25 109.9 46.4Q100.8 67.8 84.3 84.3Q67.8 100.8 46.4 109.9Q24.25 119.25 0 119.25Q-24.25 119.25 -46.4 109.9Q-67.8 100.85 -84.3 84.3Q-100.8 67.8 -109.9 46.4Q-119.25 24.25 -119.25 0Q-119.25 -24.25 -109.9 -46.4Q-100.85 -67.8 -84.3 -84.3Q-67.8 -100.85 -46.4 -109.9Q-24.25 -119.25 0 -119.25Q24.25 -119.25 46.4 -109.9Q67.8 -100.85 84.3 -84.3Q100.8 -67.8 109.9 -46.4z" />
+<path style="fill:#CCCCCC;fill-opacity:1" d="M31.2,-41.7L3.6 55.4L-15.65 49.95L12 -47.2L31.2 -41.7" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M31.2,-41.7L3.6 55.4L-15.65 49.95L12 -47.2L31.2 -41.7z" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M10.75,-50.5Q5.65 -58.2 9.4 -68.6Q10.4 -72.95 20.6 -74.2Q27.65 -75.05 34.2 -71.85Q39.85 -69.15 41.55 -65.65Q44.65 -59.5 41.9 -54.9L49 -55.25Q57.95 -58.4 60.35 -53.05Q61.9 -47.65 55.35 -47.45Q46.25 -47.45 44.35 -46.15Q39.45 -42.6 35.85 -43.65Q33.85 -40.3 33.05 -36.65Q16.55 -37.95 8.75 -44.35Q11.15 -48.3 10.75 -50.5" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M8.75,-44.35Q16.55 -37.95 33.05 -36.65Q33.85 -40.3 35.85 -43.65Q39.45 -42.6 44.35 -46.15Q46.25 -47.45 55.35 -47.45Q61.9 -47.65 60.35 -53.05Q57.95 -58.4 49 -55.25L41.9 -54.9Q44.65 -59.5 41.55 -65.65Q39.85 -69.15 34.2 -71.85Q27.65 -75.05 20.6 -74.2Q10.4 -72.95 9.4 -68.6Q5.65 -58.2 10.75 -50.5Q11.15 -48.3 8.75 -44.35z" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M50.15,-85.2Q54.9 -89.1 56.8 -85.7Q59.8 -83.5 56.3 -79.35Q53.7 -76.25 42 -59.85L36.7 -69.65Q45.45 -81.35 50.15 -85.2" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M42,-59.85Q53.7 -76.25 56.3 -79.35Q59.8 -83.5 56.8 -85.7Q54.9 -89.1 50.15 -85.2Q45.45 -81.35 36.7 -69.65" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M28.25,-72.8Q32.15 -85.5 35.4 -93.4Q38.7 -101.3 43.15 -99.5Q48.15 -98.9 46.3 -92.4Q44.45 -85.9 36.05 -70.1L28.25 -72.8" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M36.05,-70.1Q44.45 -85.9 46.3 -92.4Q48.15 -98.9 43.15 -99.5Q38.7 -101.3 35.4 -93.4Q32.15 -85.5 28.25 -72.8" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M18.6,-72.7Q20.4 -77.15 21.55 -93.95Q21.5 -102.05 25.65 -101.9Q29.15 -103.25 30.7 -96.85Q31.7 -89.5 27.6 -73.25L18.6 -72.7" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M27.6,-73.25Q31.7 -89.5 30.7 -96.85Q29.15 -103.25 25.65 -101.9Q21.5 -102.05 21.55 -93.95Q20.4 -77.15 18.6 -72.7" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M10.5,-68.8Q10.15 -73.4 9.25 -79.15L7.85 -88.75Q7.9 -98.1 14.7 -94.6Q18.7 -88.55 17.35 -72.8L10.5 -68.8" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M17.35,-72.8Q18.7 -88.55 14.7 -94.6Q7.9 -98.1 7.85 -88.75L9.25 -79.15Q10.15 -73.4 10.5 -68.8" />
+<path style="fill:#CCCCCC;fill-opacity:1" d="M-41.1,41.75L-56.55 54.5L-86.45 18.2L-71 5.5L-41.1 41.75" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-41.1,41.75L-56.55 54.5L-86.45 18.2L-71 5.5L-41.1 41.75z" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M-41.6,37.45Q-39.7 41.7 -37.65 42.65Q-28.45 42.8 -22 51.75Q-18.95 55.1 -23.75 64.2Q-27.05 70.45 -33.35 74.05Q-38.8 77.15 -42.7 76.6Q-49.5 75.65 -51.7 70.75Q-53.2 74.9 -55.5 76.8Q-57.95 85.95 -63.75 84.9Q-69.05 83.1 -65.5 77.6Q-60.35 70.1 -60.3 67.8Q-60.45 61.75 -57.55 59.35Q-59.15 55.85 -61.75 53.1Q-51.3 40.25 -41.6 37.45" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-61.75,53.1Q-59.15 55.85 -57.55 59.35Q-60.45 61.75 -60.3 67.8Q-60.35 70.1 -65.5 77.6Q-69.05 83.1 -63.75 84.9Q-57.95 85.95 -55.5 76.8Q-53.2 74.9 -51.7 70.75Q-49.5 75.65 -42.7 76.6Q-38.8 77.15 -33.35 74.05Q-27.05 70.45 -23.75 64.2Q-18.95 55.1 -22 51.75Q-28.45 42.8 -37.65 42.65Q-39.7 41.7 -41.6 37.45Q-51.3 40.25 -61.75 53.1z" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M-31.45,94.8Q-31 100.85 -34.85 100.5Q-38.35 101.75 -39.8 96.45Q-41.2 91.45 -47.75 73.65L-36.65 74.85Q-31.95 88.7 -31.45 94.8" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-47.75,73.65Q-41.2 91.45 -39.8 96.45Q-38.35 101.75 -34.85 100.5Q-31 100.85 -31.45 94.8Q-31.95 88.7 -36.65 74.85" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M-29.25,69.7Q-21 80.1 -16.35 87.3Q-11.75 94.5 -15.7 97.15Q-19.1 100.9 -23.4 95.7Q-27.7 90.45 -35.95 74.6L-29.25 69.7" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-35.95,74.6Q-27.7 90.45 -23.4 95.7Q-19.1 100.9 -15.7 97.15Q-11.75 94.5 -16.35 87.3Q-21 80.1 -29.25 69.7" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M-23.85,61.7Q-21.2 65.7 -8 76.2Q-1.35 80.75 -3.8 84.05Q-4.7 87.7 -10.85 85.35Q-17.45 82.05 -28.5 69.45L-23.85 61.7" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-28.5,69.45Q-17.45 82.05 -10.85 85.35Q-4.7 87.7 -3.8 84.05Q-1.35 80.75 -8 76.2Q-21.2 65.7 -23.85 61.7" />
+<path style="fill:#FFFFFF;fill-opacity:1" d="M-22.45,52.8Q-18.4 55.2 -13.25 57.7L-4.5 61.95Q3.15 67.3 -3.6 70.95Q-10.9 70.75 -23.05 60.75L-22.45 52.8" />
+<path style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#000000;stroke-opacity:1" d="M-23.05,60.75Q-10.9 70.75 -3.6 70.95Q3.15 67.3 -4.5 61.95L-13.25 57.7Q-18.4 55.2 -22.45 52.8" />
+</g>
+</svg>
