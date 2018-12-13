@@ -46,8 +46,7 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	   await ThreadUtility.sleep(3000);
 	   this.grayCanvasGroup.visible = false;
 	   this.dialogGroup.visible = true;
-	   this.classRoomBook();
-
+	    this.classRoomBook();
 	   this.exitGroup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.showExitTips,this);
 	   this.Label_true.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeCurrentWindow,this);
 		this.Label_false.addEventListener(egret.TouchEvent.TOUCH_TAP,this.closeExitTipsFrame,this);
@@ -69,8 +68,8 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 
 	private async classRoomBook():Promise<void>
 	{
-	   this.currentSoundChannel = (RES.getRes('put_book_mp3') as egret.Sound).play(0,1);
-	   await ThreadUtility.sleep(2000);
+	//    this.currentSoundChannel = (RES.getRes('put_book_mp3') as egret.Sound).play(0,1);
+	   await lzlib.SoundUtility.playSound("put_book_mp3");
 	   this.teacherTouchImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.nextDialog, this);
 	   this.teacherTouchImg.addEventListener(mouse.MouseEvent.ROLL_OUT, ()=>this.teacherHeadImg.source='teacher_head_normal_png', this);
 	   this.teacherTouchImg.addEventListener(mouse.MouseEvent.ROLL_OVER, ()=>this.teacherHeadImg.source='teacher_head_hover_png', this);		   
@@ -82,12 +81,11 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	   this.teacher1Label.text = 'Yes, you can. You can put'
 	   this.teacher2Label.text= "away your books now.";
 	   
-	   
-	   this.currentSoundChannel = (RES.getRes('vo_books_mp3') as egret.Sound).play(0,1);
-	   await ThreadUtility.sleep(3000);
+	   this.currentSoundChannel.stop();	
+	//    this.currentSoundChannel = (RES.getRes('vo_books_mp3') as egret.Sound).play(0,1);
+	   await lzlib.SoundUtility.playSound("vo_books_mp3");
 	   this.nextGroup.visible = true;
 	   this.nextBtnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>Main.instance.gotoScene(new lineUpScene2()), this);
-       
 	}
 	
 }

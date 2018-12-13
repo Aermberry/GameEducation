@@ -55,8 +55,8 @@ class FlowersScene6 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playSound(): Promise<void> {
-		this.currentSoundChannl = (RES.getRes('flower_amy_mp3') as egret.Sound).play(0, 1);
-		await ThreadUtility.sleep(2000);
+		// this.currentSoundChannl = (RES.getRes('flower_amy_mp3') as egret.Sound).play(0, 1);
+		await lzlib.SoundUtility.playSound("flower_amy_mp3");
 		this.nextDialogGroup.visible = true;
 		this.firstWorkerImg.visible = false;
 		this.initWorkerTouchEvent();
@@ -71,11 +71,10 @@ class FlowersScene6 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async nextDialog(): Promise<void> {
-		this.currentSoundChannl.stop();
-		this.currentSoundChannl = (RES.getRes('flower_worker_mp3') as egret.Sound).play(0, 1);
+		// this.currentSoundChannl = (RES.getRes('flower_worker_mp3') as egret.Sound).play(0, 1);
 		this.firstLabel.text = "No, you can't.";
 		this.secondLabel.text = "You can't pick the flowers.";
-		await ThreadUtility.sleep(3000);
+		await lzlib.SoundUtility.playSound("flower_worker_mp3");
 		this.nextGroup.visible = true;
 		this.nextBtnGroup.addEventListener(mouse.MouseEvent.ROLL_OUT, () => this.nextLabel.textColor = 0, this);
 		this.nextBtnGroup.addEventListener(mouse.MouseEvent.ROLL_OVER, () => this.nextLabel.textColor = 16766720, this);

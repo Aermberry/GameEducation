@@ -23,7 +23,8 @@ class LeaveAndEnterScene4 extends eui.Component implements  eui.UIComponent {
 
 	private async playSoundToNextGroup():Promise<void>
 	{
-		this.currentSoundChannl = (RES.getRes('leave_school_mp3') as egret.Sound).play(0,1);
+		// this.currentSoundChannl = (RES.getRes('leave_school_mp3') as egret.Sound).play(0,1);
+		lzlib.SoundUtility.playSound("leave_school_mp3");
         await ThreadUtility.sleep(2500);
 		this.stopSoundChannel();
 		this.leaverSchoolGroup.visible = false;
@@ -33,7 +34,8 @@ class LeaveAndEnterScene4 extends eui.Component implements  eui.UIComponent {
 
 	private async enterPark():Promise<void>
 	{
-		this.currentSoundChannl = (RES.getRes('enter_park_mp3') as egret.Sound).play(0,1);
+		// this.currentSoundChannl = (RES.getRes('enter_park_mp3') as egret.Sound).play(0,1);
+		lzlib.SoundUtility.playSound("enter_park_mp3");
         await ThreadUtility.sleep(3000);
 		Main.instance.gotoScene(new PhotoSCene5());
 	}

@@ -58,8 +58,9 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playSound(): Promise<void> {
-		this.currentSoundChannl = (RES.getRes('can_we_talk_now_mp3') as egret.Sound).play(0, 1);
-		await ThreadUtility.sleep(1300);
+		// this.currentSoundChannl = (RES.getRes('can_we_talk_now_mp3') as egret.Sound).play(0, 1);
+		// await ThreadUtility.sleep(1300);
+		await lzlib.SoundUtility.playSound("can_we_talk_now_mp3")
 		this.teacherDialogGroup.visible = true;
 		this.teacherUnhappyImg.visible = true;
 		this.teacherTouchImg.visible = true;
@@ -76,8 +77,9 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async nextDialog(): Promise<void> {
-		this.currentSoundChannl.stop();
-		this.currentSoundChannl = (RES.getRes('listen_me_mp3') as egret.Sound).play(0, 1);
+		// this.currentSoundChannl.stop();
+		// this.currentSoundChannl = (RES.getRes('listen_me_mp3') as egret.Sound).play(0, 1);
+		lzlib.SoundUtility.playSound("listen_me_mp3");
 		this.firstLabel.text = "No, you can't.";
 		this.secondLabel.text = "You must listen to me.";
 		await ThreadUtility.sleep(4200);
