@@ -10,9 +10,9 @@
     <meta name="screen-orientation" content="portrait" />
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
-    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="createjs.js"></script>
+    <script src="Lion_Main-20100111_End_6.js?1545030260044"></script>
     <script src="Lion_Main-20100111_Opening_6_HTML5 Canvas.js?1545025185248"></script>
-    <script src="Lion_Main-20100111_End_6.js?1545027784113"></script>
     <style>
         html, body {
             -ms-touch-action: none;
@@ -78,7 +78,7 @@
 </head>
 
 <body>
-<img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
 <div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
     data-content-width="1920" data-content-height="1440" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
     data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
@@ -254,13 +254,13 @@
     function playSound(id, loop) {
         return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
     }
-    function continueEgretGame() {
-        var animation_container_noe = document.getElementById("animation_container_noe");
-        var egret_box = document.getElementById("egret-player");
-        animation_container_noe.style.display = "none";
-        egret_box.style.display = 'block';
-        StartGmes.startScene.instance.onStartQuestion();
-    }
+    // function continueEgretGame() {
+    //     var animation_container_noe = document.getElementById("animation_container_noe");
+    //     var egret_box = document.getElementById("egret-player");
+    //     animation_container_noe.style.display = "none";
+    //     egret_box.style.display = 'block';
+    //     StartGmes.startScene.instance.onStartQuestion();
+    // }
 
 
     //   --结尾动画--
@@ -353,7 +353,7 @@
             return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
         }
     }
-    function EndtheGame(){
+    function EndtheGame() {
         window.close();
     }
 </script>

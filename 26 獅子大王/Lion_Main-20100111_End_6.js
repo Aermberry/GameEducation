@@ -11658,7 +11658,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{One
 		{
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"已单击鼠标"。
-			EndtheGame();			// 结束您的自定义代码
+			EndtheGame();
+			// 结束您的自定义代码
 		}
 		/* stopAllSounds ();
 		stop ();

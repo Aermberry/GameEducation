@@ -33,6 +33,7 @@ module StartGmes {
       setTimeout(() => {
         this.maskLayer.visible = false;
         startInit();
+        //  Main.instance.gotoScene(new optionsScene());
       }, 1500)
     }
   }

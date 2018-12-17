@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_", frames: [[0,3968,5169,976],[2522,0,1742,1641],[2522,1643,2001,955],[4266,0,822,394],[0,0,2520,3966]]}
+		{name:"Lion_Main", frames: [[0,3968,5169,976],[2522,0,1742,1641],[2522,1643,2001,955],[4266,0,822,394],[0,0,2520,3966]]}
 ];
 
 
@@ -12,35 +12,35 @@ lib.ssMetadata = [
 
 
 (lib.image1 = function() {
-	this.initialize(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"]);
+	this.initialize(ss["Lion_Main"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.image242 = function() {
-	this.initialize(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"]);
+	this.initialize(ss["Lion_Main"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.image361 = function() {
-	this.initialize(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"]);
+	this.initialize(ss["Lion_Main"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.image363 = function() {
-	this.initialize(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"]);
+	this.initialize(ss["Lion_Main"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.image67 = function() {
-	this.initialize(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"]);
+	this.initialize(ss["Lion_Main"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -2524,7 +2524,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,153,95.8);
 
 	// Layer 2
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["Lion_Main"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(0.182,0,0,0.182,-75,-35.9)).s().p("ArtFoIAArPIXbAAIAALPg")
 	}.bind(this);
@@ -2562,7 +2562,7 @@ p.nominalBounds = new cjs.Rectangle(-76.1,-36.6,151.7,73.5);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"],2);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["Lion_Main"],2);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(0.072,-0.019,0.019,0.072,-81.7,-15.1)).s().p("AswiXIWomEIC5KyI2oGFg")
 	}.bind(this);
@@ -27181,7 +27181,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_.png?1545025184280", id:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"},
+		{src:"images/Lion_Main.png?1545025184280", id:"Lion_Main"},
 		{src:"sounds/sound112.mp3?1545025185211", id:"sound112"},
 		{src:"sounds/sound140.mp3?1545025185211", id:"sound140"},
 		{src:"sounds/sound231.mp3?1545025185211", id:"sound231"},
