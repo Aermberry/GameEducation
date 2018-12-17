@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="startSceneSkin" width="1920" height="1440"
+<e:Skin class="StartGmes.startSceneSkin" width="1920" height="1440"
 	xmlns:e="http://ns.egret.com/eui"
 	xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
 	<w:Declarations>
