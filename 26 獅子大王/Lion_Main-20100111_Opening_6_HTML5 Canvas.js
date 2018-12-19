@@ -25186,24 +25186,18 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_21 = function() {
-		/* Mouse Click 事件
-		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		/* 单击以转到 Web 页
+		单击指定的元件实例会在新浏览器窗口中加载 URL。
 		
 		说明:
-		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
-		单击此元件实例时，此代码将执行。
+		1. 用所需 URL 地址替换 http://www.adobe.com。
+		   保留引号 ("")。
 		*/
 		
+		this.button_1.addEventListener("click", fl_ClickToGoToWebPage_2);
 		
-		this.button_1.addEventListener("click", fl_MouseClickHandler_3.bind(this));
-		
-		function fl_MouseClickHandler_3()
-		{
-			// 开始您的自定义代码
-			// 此示例代码在"输出"面板中显示"已单击鼠标"。
-			this.stop();
-			continueEgretGame();
-			// 结束您的自定义代码
+		function fl_ClickToGoToWebPage_2() {
+			window.location.href="gameindex.html"
 		}
 		playSound("sound8");
 	}
@@ -27049,7 +27043,15 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.instance_46.parent = this;
 	this.instance_46.setTransform(0,0,2.4,2.4);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_46).to({alpha:0.0508},20).wait(1).to({alpha:0},0).wait(406).to({alpha:1},31).to({_off:true},1).wait(3906));
+	this.movieClip_2 = new lib.sprite6();
+	this.movieClip_2.name = "movieClip_2";
+	this.movieClip_2.parent = this;
+	this.movieClip_2.setTransform(0,0,2.4,2.4);
+	this.movieClip_2.alpha = 0;
+	this.movieClip_2._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_46).to({alpha:0.0508},20).to({_off:true},1).wait(4344));
+	this.timeline.addTween(cjs.Tween.get(this.movieClip_2).wait(21).to({_off:false},0).wait(406).to({alpha:1},31).to({_off:true},1).wait(3906));
 
 	// Layer 70
 	this.instance_47 = new lib.sprite251();
@@ -27236,26 +27238,26 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_.png?1545197667458", id:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"},
-		{src:"sounds/sound112.mp3?1545197668495", id:"sound112"},
-		{src:"sounds/sound140.mp3?1545197668496", id:"sound140"},
-		{src:"sounds/sound231.mp3?1545197668496", id:"sound231"},
-		{src:"sounds/sound262.mp3?1545197668496", id:"sound262"},
-		{src:"sounds/sound263.mp3?1545197668496", id:"sound263"},
-		{src:"sounds/sound264.mp3?1545197668496", id:"sound264"},
-		{src:"sounds/sound266.mp3?1545197668496", id:"sound266"},
-		{src:"sounds/sound318.mp3?1545197668496", id:"sound318"},
-		{src:"sounds/sound338.mp3?1545197668496", id:"sound338"},
-		{src:"sounds/sound346.mp3?1545197668496", id:"sound346"},
-		{src:"sounds/sound348.mp3?1545197668496", id:"sound348"},
-		{src:"sounds/sound350.mp3?1545197668496", id:"sound350"},
-		{src:"sounds/sound356.mp3?1545197668496", id:"sound356"},
-		{src:"sounds/sound366.mp3?1545197668496", id:"sound366"},
-		{src:"sounds/sound54.mp3?1545197668496", id:"sound54"},
-		{src:"sounds/sound57.mp3?1545197668496", id:"sound57"},
-		{src:"sounds/sound66.mp3?1545197668496", id:"sound66"},
-		{src:"sounds/sound75.mp3?1545197668496", id:"sound75"},
-		{src:"sounds/sound8.mp3?1545197668496", id:"sound8"}
+		{src:"images/Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_.png?1545209620184", id:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"},
+		{src:"sounds/sound112.mp3?1545209621142", id:"sound112"},
+		{src:"sounds/sound140.mp3?1545209621142", id:"sound140"},
+		{src:"sounds/sound231.mp3?1545209621142", id:"sound231"},
+		{src:"sounds/sound262.mp3?1545209621142", id:"sound262"},
+		{src:"sounds/sound263.mp3?1545209621142", id:"sound263"},
+		{src:"sounds/sound264.mp3?1545209621142", id:"sound264"},
+		{src:"sounds/sound266.mp3?1545209621142", id:"sound266"},
+		{src:"sounds/sound318.mp3?1545209621142", id:"sound318"},
+		{src:"sounds/sound338.mp3?1545209621142", id:"sound338"},
+		{src:"sounds/sound346.mp3?1545209621142", id:"sound346"},
+		{src:"sounds/sound348.mp3?1545209621142", id:"sound348"},
+		{src:"sounds/sound350.mp3?1545209621142", id:"sound350"},
+		{src:"sounds/sound356.mp3?1545209621142", id:"sound356"},
+		{src:"sounds/sound366.mp3?1545209621142", id:"sound366"},
+		{src:"sounds/sound54.mp3?1545209621142", id:"sound54"},
+		{src:"sounds/sound57.mp3?1545209621142", id:"sound57"},
+		{src:"sounds/sound66.mp3?1545209621142", id:"sound66"},
+		{src:"sounds/sound75.mp3?1545209621142", id:"sound75"},
+		{src:"sounds/sound8.mp3?1545209621142", id:"sound8"}
 	],
 	preloads: []
 };

@@ -22,9 +22,9 @@ module StartGmes {
       );
     }
 
-    public onStartQuestion(): void {
-      Main.instance.gotoScene(new optionsScene());
-    }
+    // public onStartQuestion(): void {
+    //   Main.instance.gotoScene(new optionsScene());
+    // }
 
 
     private async startLoadingAnimation(): Promise<void> {
@@ -32,8 +32,8 @@ module StartGmes {
       await this.LoadingAnimation.play();
       setTimeout(() => {
         this.maskLayer.visible = false;
-        startInit();
-        //  Main.instance.gotoScene(new optionsScene());
+        // startInit();
+         Main.instance.gotoScene(new optionsScene());
       }, 1500)
     }
   }

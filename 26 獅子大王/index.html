@@ -1,380 +1,120 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>獅子大王</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="full-screen" content="true" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="360-fullscreen" content="true" />
-    <script src="createjs.js"></script>
-    <script src="Lion_Main-20100111_End_6.js?1545030260044"></script>
-    <script src="Lion_Main-20100111_Opening_6_HTML5 Canvas.js?1545025185248"></script>
-    <style>
-        html, body {
-            -ms-touch-action: none;
-            background: #1E1E1E;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            height: 100%;
-        }
-        #copyright{
-            font-size: 12px;
-        }
-        a {
-            font-size: 12px;
-            color: #666;
-        }    
-        #egret-player{
-        margin: auto;width: 100%;top: 59px; bottom: 20px;
-        }
-         #animation_container , #animation_container_two {
-            position:absolute;
-            margin:auto;
-            left:0;right:0;
-            top:0;bottom:0;
-        }
-        #animation_container_noe,#animation_container_box{
-            display: none;
-        }
-		@font-face {
-            font-family:"華康中黑體";
-            src: url("resource/fonts/華康中黑體.woff2") format('woff2'),
-                 url('resource/fonts/華康中黑體.woff') format('woff'),
-                 url('resource/fonts/華康中黑體.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @media screen and (max-device-width:641px) and (max-device-height:823px){
-           #logo {
-               height: 25px;
-           }
-           #egret-player{
-               top: 25px;
-           }
-        }
-        @media screen and (orientation: landscape) {
-            #logo {
-               height: 25px;
-           }
-           #egret-player{
-               top: 25px;
-           }
-        }
-        @media (min-width: 1200px) {
-            #logo {
-               height: auto;
-           }
-           #egret-player{
-               top: 59px;
-           }
-        } 
-    </style>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>獅子大王</title>
+<!-- write your code here -->
+<style>
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Lion_Main-20100111_Opening_6_HTML5 Canvas.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("F190F6E910556D429EF85AB5E8868046");
+	var lib=comp.getLibrary();
+	createjs.MotionGuidePlugin.install();
+	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.Lion_Main20100111_Opening_6_HTML5Canvas();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+function playSound(id, loop) {
+	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+}
+  function continueEgretGame() {
+        window.location.href="gameindex.html"
+    }
+</script>
+<!-- write your code here -->
 </head>
-
-<body>
-    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
-<div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
-    data-content-width="1920" data-content-height="1440" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
-    data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
-</div>
-<div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
-    style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
-</div>
-
-<!--开头动画-->
-<div id="animation_container_noe" style="margin:0px;" >
-<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
-<canvas id="canvas" width="1920" height="1440" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: block;">
-</div>
-</div>
-</div>
-
-<!--结尾动画-->
-<div id="animation_container_box" style="margin:0px;">
-<div id="animation_container_two" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
-<canvas id="canvas_two" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-<div id="dom_overlay_container_two" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
-</div>
-</div>
-<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-</div>
-</div>
-
-<label style="font-family:華康中黑體; color: transparent;"></label>
-<script>
-    var loadScript = function (list, callback) {
-        var loaded = 0;
-        var loadNext = function () {
-            loadSingleScript(list[loaded], function () {
-                loaded++;
-                if (loaded >= list.length) {
-                    callback();
-                }
-                else {
-                    loadNext();
-                }
-            })
-        };
-        loadNext();
-    };
-
-    var loadSingleScript = function (src, callback) {
-        var s = document.createElement('script');
-        s.async = false;
-        s.src = src;
-        s.addEventListener('load', function () {
-            s.parentNode.removeChild(s);
-            s.removeEventListener('load', arguments.callee, false);
-            callback();
-        }, false);
-        document.body.appendChild(s);
-    };
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
-    xhr.addEventListener("load", function () {
-        var manifest = JSON.parse(xhr.response);
-        var list = manifest.initial.concat(manifest.game);
-        loadScript(list, function () {
-            /**
-             * {
-             * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
-             * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
-             * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
-             * "calculateCanvasScaleFactor": //a function return canvas scale factor
-             * }
-             **/
-            egret.runEgret({
-                renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
-                    var backingStore = context.backingStorePixelRatio ||
-                        context.webkitBackingStorePixelRatio ||
-                        context.mozBackingStorePixelRatio ||
-                        context.msBackingStorePixelRatio ||
-                        context.oBackingStorePixelRatio ||
-                        context.backingStorePixelRatio || 1;
-                    return (window.devicePixelRatio || 1) / backingStore;
-                }
-            });
-
-            alignHeaderFooter();
-        });
-    });
-    xhr.send(null);
-
-
-    // --开头动画--js
-
-    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-    function startInit() {
-        canvas = document.getElementById("canvas");
-        anim_container = document.getElementById("animation_container");
-        dom_overlay_container = document.getElementById("dom_overlay_container");
-        var animation_container_noe = document.getElementById("animation_container_noe");
-        var egret_box = document.getElementById("egret-player");
-        var comp = AdobeAn.getComposition("F190F6E910556D429EF85AB5E8868046");
-        var lib = comp.getLibrary();
-        createjs.MotionGuidePlugin.install();
-        var loader = new createjs.LoadQueue(false);
-        loader.installPlugin(createjs.Sound);
-        loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
-        loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-        var lib = comp.getLibrary();
-        loader.loadManifest(lib.properties.manifest);
-        animation_container_noe.style.display = 'block';
-        egret_box.style.display = 'none';
-
-    }
-    function handleFileLoad(evt, comp) {
-            var images = comp.getImages();
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
-        }
-        function handleComplete(evt, comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
-            var queue = evt.target;
-            var ssMetadata = lib.ssMetadata;
-            for (i = 0; i < ssMetadata.length; i++) {
-                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
-            }
-            var preloaderDiv = document.getElementById("_preload_div_");
-            preloaderDiv.style.display = 'none';
-            canvas.style.display = 'block';
-           exportRoot = new lib.Lion_Main20100111_Opening_6_HTML5Canvas();
-            stage = new lib.Stage(canvas);
-            stage.enableMouseOver();
-            //Registers the "tick" event listener.
-            fnStartAnimation = function () {
-                stage.addChild(exportRoot);
-                createjs.Ticker.setFPS(lib.properties.fps);
-                createjs.Ticker.addEventListener("tick", stage);
-            }
-            //Code to support hidpi screens and responsive scaling.
-            function makeResponsive(isResp, respDim, isScale, scaleType) {
-                var lastW, lastH, lastS = 1;
-                window.addEventListener('resize', resizeCanvas);
-                resizeCanvas();
-                function resizeCanvas() {
-                    var w = lib.properties.width, h = lib.properties.height;
-                    var iw = window.innerWidth, ih = window.innerHeight;
-                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
-                    if (isResp) {
-                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
-                            sRatio = lastS;
-                        }
-                        else if (!isScale) {
-                            if (iw < w || ih < h)
-                                sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 1) {
-                            sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 2) {
-                            sRatio = Math.max(xRatio, yRatio);
-                        }
-                    }
-                    canvas.width = w * pRatio * sRatio;
-                    canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio + 'px';
-                    stage.scaleX = pRatio * sRatio;
-                    stage.scaleY = pRatio * sRatio;
-                    lastW = iw; lastH = ih; lastS = sRatio;
-                    stage.tickOnUpdate = false;
-                    stage.update();
-                    stage.tickOnUpdate = true;
-                }
-            }
-            makeResponsive(true, 'both', false, 1);
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
-        }
-        function playSound(id, loop) {
-            return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
-        }
-
-    
-    function continueEgretGame() {
-        var animation_container_noe = document.getElementById("animation_container_noe");
-        var egret_box = document.getElementById("egret-player");
-        animation_container_noe.style.display = "none";
-        egret_box.style.display = 'block';
-        StartGmes.startScene.instance.onStartQuestion();
-    }
-
-
-    //   --结尾动画-- exportRoot = new lib.Lion_Main20100111_Opening_6_HTML5Canvas();
-    function initTow() {
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-        function init() {
-            canvas = document.getElementById("canvas_two");
-            anim_container = document.getElementById("animation_container_two");
-            dom_overlay_container = document.getElementById("animation_container_two");
-            var animation_container_box = document.getElementById("animation_container_box");
-            var egret_box = document.getElementById("egret-player");
-            var comp = AdobeAn.getComposition("A704C585E154E3459FAF70B8E053218E");
-            var lib = comp.getLibrary();
-            var loader = new createjs.LoadQueue(false);
-            loader.installPlugin(createjs.Sound);
-            loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
-            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-            var lib = comp.getLibrary();
-            loader.loadManifest(lib.properties.manifest);
-            animation_container_box.style.display = 'block';
-            egret_box.style.display = 'none';
-        }
-        function handleFileLoad(evt, comp) {
-            var images = comp.getImages();
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
-        }
-        function handleComplete(evt, comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
-            var queue = evt.target;
-            var ssMetadata = lib.ssMetadata;
-            for (i = 0; i < ssMetadata.length; i++) {
-                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
-            }
-            var preloaderDiv = document.getElementById("_preload_div_");
-            preloaderDiv.style.display = 'none';
-            canvas.style.display = 'block';
-            exportRoot = new lib.Lion_Main20100111_End_6();
-            stage = new lib.Stage(canvas);
-            stage.enableMouseOver();
-            //Registers the "tick" event listener.
-            fnStartAnimation = function () {
-                stage.addChild(exportRoot);
-                createjs.Ticker.setFPS(lib.properties.fps);
-                createjs.Ticker.addEventListener("tick", stage);
-            }
-            //Code to support hidpi screens and responsive scaling.
-            function makeResponsive(isResp, respDim, isScale, scaleType) {
-                var lastW, lastH, lastS = 1;
-                window.addEventListener('resize', resizeCanvas);
-                resizeCanvas();
-                function resizeCanvas() {
-                    var w = lib.properties.width, h = lib.properties.height;
-                    var iw = window.innerWidth, ih = window.innerHeight;
-                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
-                    if (isResp) {
-                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
-                            sRatio = lastS;
-                        }
-                        else if (!isScale) {
-                            if (iw < w || ih < h)
-                                sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 1) {
-                            sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 2) {
-                            sRatio = Math.max(xRatio, yRatio);
-                        }
-                    }
-                    canvas.width = w * pRatio * sRatio;
-                    canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio + 'px';
-                    stage.scaleX = pRatio * sRatio;
-                    stage.scaleY = pRatio * sRatio;
-                    lastW = iw; lastH = ih; lastS = sRatio;
-                    stage.tickOnUpdate = false;
-                    stage.update();
-                    stage.tickOnUpdate = true;
-                }
-            }
-            makeResponsive(true, 'both', false, 1);
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
-        }
-        return init();
-        function playSound(id, loop) {
-            return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
-        }
-    }
-    function EndtheGame() {
-        window.close();
-    }
-</script>
-<script>
-    function alignHeaderFooter() {
-        var egretPlayer = document.getElementById('egret-player');
-        var canvas = egretPlayer.children[0];
-        if (canvas != null) {
-            document.getElementById('logo').style.left = canvas.style.left;
-            document.getElementById('copyright').style.right = canvas.style.left;
-        }
-    }
-    window.addEventListener("resize", function () { window.setTimeout(alignHeaderFooter, 600); }, false);
-</script>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+		<canvas id="canvas" width="1920" height="1440" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
 </body>
-
 </html>
