@@ -95,3 +95,4 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
         this.progressBar.width = this.progressBarWidth * current / total;
     }
 }
+
