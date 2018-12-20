@@ -1737,11 +1737,11 @@ p.nominalBounds = new cjs.Rectangle(-136.5,-84.5,240.5,260.3);
 
 	// Layer 5
 	this.shape_37 = new cjs.Shape();
-	this.shape_37.graphics.f().s("#000000").ss(3,1,1).p("AAVgHQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeAgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQgegFghgPAhIAnIADABIAGACQCnBCj9gX");
+	this.shape_37.graphics.f().s("#000000").ss(3,1,1).p("AgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQCnBCj9gXAhIAnIADABIAGACAAVgHQgegFghgP");
 	this.shape_37.setTransform(76.8,38.9);
 
 	this.shape_38 = new cjs.Shape();
-	this.shape_38.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQgegFghgPQAhAPAeAFQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQB7AxhqAAQglAAhCgGgAhFAoIAGACIgGgCIgDgBg");
+	this.shape_38.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQB7AxhqAAQglAAhCgGgAhFAoIAGACIgGgCIgDgBgAAVgHQgegFghgPQAhAPAeAFg");
 	this.shape_38.setTransform(76.8,38.9);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_38},{t:this.shape_37}]}).wait(1));
@@ -1912,11 +1912,11 @@ p.nominalBounds = new cjs.Rectangle(-127.9,-108.4,255.9,216.4);
 
 	// Layer 6
 	this.shape_20 = new cjs.Shape();
-	this.shape_20.graphics.f().s("#000000").ss(3,1,1).p("AAUgHQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfIgFgCAgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQgdgGghgOAhDApQCtBDj/gX");
+	this.shape_20.graphics.f().s("#000000").ss(3,1,1).p("AgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfQCtBDj/gXAhDApIgFgCAAUgHQgdgGghgO");
 	this.shape_20.setTransform(76.7,39);
 
 	this.shape_21 = new cjs.Shape();
-	this.shape_21.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQgdgGghgOQAhAOAdAGQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfIgFgCIAFACQCBAyhtAAQglAAhBgGg");
+	this.shape_21.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfQCBAyhtAAQglAAhBgGgAhDApIgFgCgAAUgHQgdgGghgOQAhAOAdAGg");
 	this.shape_21.setTransform(76.7,39);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_21},{t:this.shape_20}]}).wait(1));
@@ -6320,7 +6320,7 @@ p.nominalBounds = new cjs.Rectangle(-128,-108.3,221.3,216.3);
 
 
 (lib.sprite30 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{Hello:0});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Hello:0});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -6340,6 +6340,12 @@ p.nominalBounds = new cjs.Rectangle(-128,-108.3,221.3,216.3);
 		playSound("sound29");
 	}
 	this.frame_310 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
 		/* stop ();
 		*/
 	}
@@ -6496,6 +6502,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 	this.frame_175 = function() {
 		console.log("@我没故事。")
+		
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		this.stop();
 	}
 	this.frame_334 = function() {
 		/* loadMovieNum("Magic1.swf", 0);
