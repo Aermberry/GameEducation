@@ -6501,7 +6501,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_175 = function() {
-		console.log("播放第二段游戏");
+		console.log("完成第一段游戏");
 		continueTwoGame();
 		/* 在此帧处停止
 		时间轴将在插入此代码的帧处停止/暂停。

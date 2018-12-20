@@ -1599,7 +1599,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_262 = function() {
 		/* loadMovieNum("Magic2_cond.swf", 0);
 		*/
-		console.log("@播放第四段游戏")
+		continueFiveGame();
+		console.log("@完成第四段游戏")
 	}
 
 	// actions tween:

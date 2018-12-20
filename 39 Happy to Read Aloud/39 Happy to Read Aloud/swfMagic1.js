@@ -1131,7 +1131,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		/* loadMovieNum("Magic1_cond.swf", 0);
 		*/
 		continueThreeGame();
-		console.log("@播放第三段游戏")
+		console.log("@完成第二段游戏")
 	}
 
 	// actions tween:
