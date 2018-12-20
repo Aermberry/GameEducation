@@ -6501,8 +6501,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_175 = function() {
-		console.log("@我没故事。")
-		
+		console.log("播放第二段游戏");
+		continueTwoGame();
 		/* 在此帧处停止
 		时间轴将在插入此代码的帧处停止/暂停。
 		也可用于停止/暂停影片剪辑的时间轴。
