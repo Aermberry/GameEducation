@@ -11628,7 +11628,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 
 
 (lib.sprite119 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -11651,6 +11651,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 		*/
 		
 		this.stop();
+		console.log("@我没故事。")
 	}
 
 	// actions tween:
@@ -12925,8 +12926,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		{
 			window.close();
 		}
-		
-		console.log("@我没故事。")
 		/* stop ();
 		*/
 	}
