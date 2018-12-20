@@ -266,8 +266,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.8,241.8,76);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("AhOBMIgBhDIAUALICBAAIAOgNIATASIgKAHIAAA5IABAqIgUAJIAAgdIiFAAIAAAYIgUAJIABhEgAg7BoICFAAIAAhNIiFAAgAgFgxIAAgoQgdAjgfAVQgfAVgmANIgBgEQAlgUAhgbQAggcAbgnIhTAAQgMAAgOAEIgLgLIDZAAIATgTIAaAaIh2AAQgNANgEAGIATALIgJAIIAAAyQAAAPACAOIgVAHQADgnAAgRgAB4gIQgLgMgXgRQgWgQgkgTIABgFQBaAhAJAOQAKANgDAIQgCAHgEAAQgEAAgFgGg");
-	this.shape.setTransform(13.9,15.4);
+	this.shape.graphics.f("#FF0000").s().p("AhcCIIAAh9IC9AAIAAB5IgZAAIAAgLIiLAAIAAAPgAhDBhICLAAIAAg+IiLAAgAiMgOQBcgjArg/IiAAAIAAgXIENAAIAAAXIhuAAIgMASIAABcIgYAAIAAg/QgvAzhKAZgAAcg1IAOgVQA3ATAsAgIgPAXQgygigwgTg");
+	this.shape.setTransform(13.8,15.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -280,8 +280,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.9,40.5,74.8);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFCCCC").s().p("AhYBWIgBhMIAWANICSAAIAPgOIAVATIgLAJIAAA/IABAwIgWAKIAAghIiWAAIAAAbIgWAKQABgmAAgmgAhDB1ICWAAIAAhWIiWAAgAgGg3IAAgtQghAngjAYQgjAYgqAPIgBgFQAqgXAkgeQAlgfAdgsIhcAAQgOAAgQAEIgNgMID2AAIAVgWIAdAeIiFAAQgPAOgEAHIAVANIgJAIIAAA4IABAhIgXAJQADgsAAgUgACHgJQgNgOgZgSQgZgSgpgVIABgGQBlAlALAPQALAQgDAIQgDAIgEAAQgFAAgFgHg");
-	this.shape.setTransform(15.9,17.6);
+	this.shape.graphics.f("#FFCCCC").s().p("AhoCZIAAiNIDVAAIAACJIgcAAIAAgNIicAAIAAARgAhLBuICcAAIAAhHIicAAgAidgQQBngnAxhHIiRAAIAAgaIEvAAIAAAaIh8AAIgNAUIAABoIgbAAIAAhIQg1A6hTAcgAAgg8IAPgYQA+AWAxAkIgRAaQg4gng1gVg");
+	this.shape.setTransform(15.8,18.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -294,8 +294,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.8,44.8,83.8);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("AhYBWIgBhMIAWANICSAAIAPgOIAVATIgLAJIAAA/IABAwIgWAKIAAghIiWAAIAAAbIgWAKQABgmAAgmgAhDB1ICWAAIAAhWIiWAAgAgGg3IAAgtQghAngjAYQgjAYgqAPIgBgFQAqgXAkgeQAlgfAdgsIhcAAQgOAAgQAEIgNgMID2AAIAVgWIAdAeIiFAAQgPAOgEAHIAVANIgJAIIAAA4IABAhIgXAJQADgsAAgUgACHgJQgNgOgZgSQgZgSgpgVIABgGQBlAlALAPQALAQgDAIQgDAIgEAAQgFAAgFgHg");
-	this.shape.setTransform(15.9,17.6);
+	this.shape.graphics.f("#FF0000").s().p("AhoCZIAAiNIDVAAIAACJIgcAAIAAgNIicAAIAAARgAhLBuICcAAIAAhHIicAAgAidgQQBngnAxhHIiRAAIAAgaIEvAAIAAAaIh8AAIgNAUIAABoIgbAAIAAhIQg1A6hTAcgAAgg8IAPgYQA+AWAxAkIgRAaQg4gng1gVg");
+	this.shape.setTransform(15.8,18.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -308,8 +308,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.8,44.8,83.8);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#0000FF").s().p("AiFCBQAzgmANhPIAaAPQgHAFgEAGQgDAGgFANQAUAZAkAPIAAhaIhVAAQgPgBgNAEIgLgKIDYAAIASgRIAYAYIh2AAIAAAnIA9AAIAPgPIAWAXIhiAAIAAAvQAVAHAnAAQAnAAAZgDIAAAGQgVAEgCAOQhGgBgcgKQgcgIgSgOQgSgOgOgTQgXAxgrAVgAhDhHIgBg8IATALIBhAAIALgMIATAPIgLAJQAABBABATIgRAJIAAgPIhlAAIAAALIgSAHIABg7gAgyglIBlAAIAAgjIhlAAgAgyhPIBlAAIAAgiIhlAAg");
-	this.shape.setTransform(13.1,14);
+	this.shape.graphics.f("#0000FF").s().p("AiDBrQAugUAQg+IAaAHQAEAEgIABIgIAWQAXAZAaAJIAAhQIhzAAIAAgVID8AAIAAAVIh0AAIAAAbIBVAAIAAAWIhVAAIAAAmIB1AAIgGAWIheAAQg+AAgigsQgYAlgdAOgAhTgbIAAhlICrAAIAABlgAg7guIB8AAIAAgWIh8AAgAg7hXIB8AAIAAgWIh8AAg");
+	this.shape.setTransform(13,14.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -322,8 +322,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.9,38.4,70.5);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#99FFFF").s().p("AigCbQA+guAQheIAfASQgJAGgEAGQgFAIgFAPQAYAdAsATIAAhsIhnAAQgTAAgPAEIgNgMIEDAAIAWgVIAdAdIiOAAIAAAvIBJAAIASgSIAbAbIh2AAIAAA6QAaAGAuACQAwAAAdgEIAAAHQgZAGgDAQQhTgDgigKQgigKgWgRQgVgRgRgXQgbA7g0AagAhPhVIgChIIAWANIB1AAIANgPIAWASIgMALQAABOABAXIgUALIAAgTIh6AAIAAANIgVAJIAChGgAg8gtIB6AAIAAgqIh6AAgAg8hgIB6AAIAAgoIh6AAg");
-	this.shape.setTransform(16.1,17.3);
+	this.shape.graphics.f("#99FFFF").s().p("AidCAQA3gYAThKIAfAIQAGAGgKABIgKAZQAbAfAfAKIAAhfIiKAAIAAgaIEvAAIAAAaIiKAAIAAAgIBlAAIAAAbIhlAAIAAAtICLAAIgHAaIhwAAQhLAAgpg0QgcAsgjARgAhjghIAAh5IDNAAIAAB5gAhHg3ICVAAIAAgbIiVAAgAhHhoICVAAIAAgbIiVAAg");
+	this.shape.setTransform(15.9,17.7);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -336,8 +336,8 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.8,44.8,83.8);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#0000FF").s().p("AigCbQA+guAQheIAfASQgJAGgEAGQgFAIgFAPQAYAdAsATIAAhsIhnAAQgTAAgPAEIgNgMIEDAAIAWgVIAdAdIiOAAIAAAvIBJAAIASgSIAbAbIh2AAIAAA6QAaAGAuACQAwAAAdgEIAAAHQgZAGgDAQQhTgDgigKQgigKgWgRQgVgRgRgXQgbA7g0AagAhPhVIgChIIAWANIB1AAIANgPIAWASIgMALQAABOABAXIgUALIAAgTIh6AAIAAANIgVAJIAChGgAg8gtIB6AAIAAgqIh6AAgAg8hgIB6AAIAAgoIh6AAg");
-	this.shape.setTransform(16.1,17.3);
+	this.shape.graphics.f("#0000FF").s().p("AidCAQA3gYAThKIAfAIQAGAGgKABIgKAZQAbAfAfAKIAAhfIiKAAIAAgaIEvAAIAAAaIiKAAIAAAgIBlAAIAAAbIhlAAIAAAtICLAAIgHAaIhwAAQhLAAgpg0QgcAsgjARgAhjghIAAh5IDNAAIAAB5gAhHg3ICVAAIAAgbIiVAAgAhHhoICVAAIAAgbIiVAAg");
+	this.shape.setTransform(15.9,17.7);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -2352,6 +2352,12 @@ p.nominalBounds = new cjs.Rectangle(-45,-23,90,71.6);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
 		/* stop ();
 		*/
 	}
@@ -2363,6 +2369,44 @@ p.nominalBounds = new cjs.Rectangle(-45,-23,90,71.6);
 		playSound("sound28");
 	}
 	this.frame_7 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
+		*/
+		
+		this.trueButton.addEventListener("click", fl_MouseClickHandler.bind(this));
+		
+		function fl_MouseClickHandler()
+		{
+			window.close();
+		}
+		
+		/* 单击以转到帧并停止
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并停止影片。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		
+		this.falseButton.addEventListener("click", fl_ClickToGoToAndStopAtFrame.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame()
+		{
+			this.gotoAndStop(0);
+		}
 		/* stop ();
 		*/
 	}
@@ -2371,47 +2415,49 @@ p.nominalBounds = new cjs.Rectangle(-45,-23,90,71.6);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(5).call(this.frame_7).wait(1));
 
 	// Layer 8
-	this.instance = new lib.button44();
+	this.falseButton = new lib.button44();
+	this.falseButton.name = "falseButton";
+	this.falseButton.parent = this;
+	this.falseButton.setTransform(165.9,-16);
+	this.falseButton._off = true;
+	new cjs.ButtonHelper(this.falseButton, 0, 1, 2, false, new lib.button44(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.falseButton).wait(7).to({_off:false},0).wait(1));
+
+	// Layer 5
+	this.trueButton = new lib.button38();
+	this.trueButton.name = "trueButton";
+	this.trueButton.parent = this;
+	this.trueButton.setTransform(106.1,-16);
+	this.trueButton._off = true;
+	new cjs.ButtonHelper(this.trueButton, 0, 1, 2, false, new lib.button38(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.trueButton).wait(7).to({_off:false},0).wait(1));
+
+	// Layer 4
+	this.instance = new lib.text31("synched",0);
 	this.instance.parent = this;
-	this.instance.setTransform(165.9,-16);
+	this.instance.setTransform(-176,-30.6);
 	this.instance._off = true;
-	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.button44(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(7).to({_off:false},0).wait(1));
 
-	// Layer 5
-	this.instance_1 = new lib.button38();
+	// Layer 3
+	this.instance_1 = new lib.shape29("synched",0);
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(106.1,-16);
 	this.instance_1._off = true;
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.button38(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(7).to({_off:false},0).wait(1));
 
-	// Layer 4
-	this.instance_2 = new lib.text31("synched",0);
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(-176,-30.6);
-	this.instance_2._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(7).to({_off:false},0).wait(1));
-
-	// Layer 3
-	this.instance_3 = new lib.shape29("synched",0);
-	this.instance_3.parent = this;
-	this.instance_3._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(7).to({_off:false},0).wait(1));
-
 	// Layer 1
-	this.instance_4 = new lib.button27();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(255,-190.7,0.15,0.15);
-	this.instance_4.alpha = 0.398;
-	this.instance_4._off = true;
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.button27(), 3);
+	this.instance_2 = new lib.button27();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(255,-190.7,0.15,0.15);
+	this.instance_2.alpha = 0.398;
+	this.instance_2._off = true;
+	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.button27(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({_off:false},0).to({scaleX:0.79,scaleY:0.79,x:63.7,y:-47.6},3).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({scaleX:0.79,scaleY:0.79,x:63.7,y:-47.6},3).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(3));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
@@ -2423,6 +2469,27 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_0 = function() {
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
+		*/
+		
+		this.exitButton.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		
+		function fl_MouseClickHandler_2()
+		{
+			/* 播放影片剪辑
+		播放舞台上指定的影片剪辑。
+		
+		说明:
+		1. 将此代码用于当前停止的影片剪辑。
+		*/
+		
+		this.Quit.play();
+		}
 		/* fscommand("fullscreen", "true");
 		fscommand("allowscale", "true");
 		fscommand("trapallkeys", "false");
@@ -2430,6 +2497,28 @@ p.nominalBounds = null;
 		*/
 	}
 	this.frame_19 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.startButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame()
+		{
+			this.gotoAndPlay(23);
+		}
 		/* stop ();
 		*/
 	}
@@ -2438,6 +2527,30 @@ p.nominalBounds = null;
 		*/
 	}
 	this.frame_33 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
+		*/
+		
+		this.setoutButton.addEventListener("click", fl_MouseClickHandler_3.bind(this));
+		
+		function fl_MouseClickHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"已单击鼠标"。
+			alert("已单击鼠标");
+			// 结束您的自定义代码
+		}
 		/* stop ();
 		*/
 	}
@@ -2454,141 +2567,144 @@ p.nominalBounds = null;
 	this.timeline.addTween(cjs.Tween.get(this.Quit).wait(34));
 
 	// Layer 130
-	this.instance = new lib.button25();
-	this.instance.parent = this;
-	this.instance.setTransform(1825.1,53.1,1.984,1.984);
-	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.button25(), 3);
+	this.exitButton = new lib.button25();
+	this.exitButton.name = "exitButton";
+	this.exitButton.parent = this;
+	this.exitButton.setTransform(1825.1,53.1,1.984,1.984);
+	new cjs.ButtonHelper(this.exitButton, 0, 1, 2, false, new lib.button25(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(34));
+	this.timeline.addTween(cjs.Tween.get(this.exitButton).wait(34));
 
 	// Layer 126
-	this.instance_1 = new lib.button53();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(972.8,916.6,3.2,3.2);
-	this.instance_1._off = true;
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.button53(), 3);
+	this.startButton = new lib.button53();
+	this.startButton.name = "startButton";
+	this.startButton.parent = this;
+	this.startButton.setTransform(972.8,916.6,3.2,3.2);
+	this.startButton._off = true;
+	new cjs.ButtonHelper(this.startButton, 0, 1, 2, false, new lib.button53(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(19).to({_off:false},0).to({_off:true},4).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.startButton).wait(19).to({_off:false},0).to({_off:true},4).wait(11));
 
 	// Layer 125
-	this.instance_2 = new lib.text47("synched",0);
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(855.8,619.2,0.946,0.946);
-	this.instance_2._off = true;
+	this.instance = new lib.text47("synched",0);
+	this.instance.parent = this;
+	this.instance.setTransform(855.8,619.2,0.946,0.946);
+	this.instance._off = true;
 
-	this.instance_3 = new lib.shape55("synched",0);
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(296,323,1.28,1.28);
+	this.instance_1 = new lib.shape55("synched",0);
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(296,323,1.28,1.28);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},12).to({state:[{t:this.instance_2}]},5).to({state:[{t:this.instance_2}]},1).to({state:[]},5).to({state:[{t:this.instance_3}]},8).wait(3));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(12).to({_off:false},0).to({scaleX:2.82,scaleY:2.83,x:665.1,y:512.6},5).wait(1).to({scaleX:3.2,scaleY:3.2,x:627,y:491.4},0).to({_off:true},5).wait(11));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},12).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},1).to({state:[]},5).to({state:[{t:this.instance_1}]},8).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12).to({_off:false},0).to({scaleX:2.82,scaleY:2.83,x:665.1,y:512.6},5).wait(1).to({scaleX:3.2,scaleY:3.2,x:627,y:491.4},0).to({_off:true},5).wait(11));
 
 	// Layer 124
-	this.instance_4 = new lib.shape46("synched",0);
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(957.1,679.4,0.946,0.946);
-	this.instance_4._off = true;
+	this.instance_2 = new lib.shape46("synched",0);
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(957.1,679.4,0.946,0.946);
+	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(12).to({_off:false},0).to({scaleX:2.82,scaleY:2.83,x:967.5,y:692.3},5).wait(1).to({scaleX:3.2,scaleY:3.2,x:969.6,y:694.9},0).to({_off:true},5).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(12).to({_off:false},0).to({scaleX:2.82,scaleY:2.83,x:967.5,y:692.3},5).wait(1).to({scaleX:3.2,scaleY:3.2,x:969.6,y:694.9},0).to({_off:true},5).wait(11));
 
 	// Layer 123
-	this.instance_5 = new lib.text20("synched",0);
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(150.1,292.5,2.88,2.88);
+	this.instance_3 = new lib.text20("synched",0);
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(150.1,292.5,2.88,2.88);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({startPosition:0},23).to({scaleX:3.2,scaleY:3.2,x:59.8,y:244.8},7).to({_off:true},1).wait(2).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({startPosition:0},23).to({scaleX:3.2,scaleY:3.2,x:59.8,y:244.8},7).to({_off:true},1).wait(2).to({_off:false},0).wait(1));
 
 	// Layer 122
-	this.instance_6 = new lib.text19("synched",0);
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(129.6,1064,3.168,3.168);
+	this.instance_4 = new lib.text19("synched",0);
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(129.6,1064,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:1102.1},7).to({_off:true},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:1102.1},7).to({_off:true},1).wait(3));
 
 	// Layer 121
-	this.instance_7 = new lib.text18("synched",0);
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(129.6,1011.7,3.168,3.168);
+	this.instance_5 = new lib.text18("synched",0);
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(129.6,1011.7,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:1044},7).to({_off:true},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:1044},7).to({_off:true},1).wait(3));
 
 	// Layer 120
-	this.instance_8 = new lib.text17("synched",0);
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(129.6,961,3.168,3.168);
+	this.instance_6 = new lib.text17("synched",0);
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(129.6,961,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:987.7},7).to({_off:true},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:987.7},7).to({_off:true},1).wait(3));
 
 	// Layer 119
-	this.instance_9 = new lib.text16("synched",0);
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(129.6,907.2,3.168,3.168);
+	this.instance_7 = new lib.text16("synched",0);
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(129.6,907.2,3.168,3.168);
 
-	this.instance_10 = new lib.text20("synched",0);
-	this.instance_10.parent = this;
-	this.instance_10.setTransform(59.8,244.8,3.2,3.2);
+	this.instance_8 = new lib.text20("synched",0);
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(59.8,244.8,3.2,3.2);
 
-	this.instance_11 = new lib.button58();
-	this.instance_11.parent = this;
-	this.instance_11.setTransform(1749.8,789.9,3.2,3.2);
-	new cjs.ButtonHelper(this.instance_11, 0, 1, 2, false, new lib.button58(), 3);
+	this.setoutButton = new lib.button58();
+	this.setoutButton.name = "setoutButton";
+	this.setoutButton.parent = this;
+	this.setoutButton.setTransform(1749.8,789.9,3.2,3.2);
+	new cjs.ButtonHelper(this.setoutButton, 0, 1, 2, false, new lib.button58(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9}]}).to({state:[{t:this.instance_9}]},23).to({state:[{t:this.instance_9}]},7).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},2).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:927.8},7).to({_off:true},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7}]}).to({state:[{t:this.instance_7}]},23).to({state:[{t:this.instance_7}]},7).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.setoutButton}]},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:927.8},7).to({_off:true},1).wait(3));
 
 	// Layer 118
-	this.instance_12 = new lib.text15("synched",0);
-	this.instance_12.parent = this;
-	this.instance_12.setTransform(129.6,854.9,3.168,3.168);
+	this.instance_9 = new lib.text15("synched",0);
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(129.6,854.9,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:869.8},7).wait(1).to({x:36.8,y:869.9},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:37,y:869.8},7).wait(1).to({x:36.8,y:869.9},0).wait(3));
 
 	// Layer 117
-	this.instance_13 = new lib.text13("synched",0);
-	this.instance_13.parent = this;
-	this.instance_13.setTransform(188.3,862.7,3.168,3.168);
+	this.instance_10 = new lib.text13("synched",0);
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(188.3,862.7,3.168,3.168);
 
-	this.instance_14 = new lib.text54("synched",0);
-	this.instance_14.parent = this;
-	this.instance_14.setTransform(102.1,878.6,3.52,3.52);
+	this.instance_11 = new lib.text54("synched",0);
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(102.1,878.6,3.52,3.52);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_13}]}).to({state:[{t:this.instance_13}]},23).to({state:[{t:this.instance_13}]},7).to({state:[{t:this.instance_14}]},1).wait(3));
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:102.2,y:878.4},7).to({_off:true},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10}]}).to({state:[{t:this.instance_10}]},23).to({state:[{t:this.instance_10}]},7).to({state:[{t:this.instance_11}]},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:102.2,y:878.4},7).to({_off:true},1).wait(3));
 
 	// Layer 116
-	this.instance_15 = new lib.text12("synched",0);
-	this.instance_15.parent = this;
-	this.instance_15.setTransform(128,763.4,3.168,3.168);
+	this.instance_12 = new lib.text12("synched",0);
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(128,763.4,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:35.2,y:768},7).wait(1).to({x:35,y:768.2},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:35.2,y:768},7).wait(1).to({x:35,y:768.2},0).wait(3));
 
 	// Layer 115
-	this.instance_16 = new lib.text11("synched",0);
-	this.instance_16.parent = this;
-	this.instance_16.setTransform(242.1,177.6,3.168,3.168);
+	this.instance_13 = new lib.text11("synched",0);
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(242.1,177.6,3.168,3.168);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_16).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:161.9,y:117.1},7).wait(1).to({x:161.8,y:117.3},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).to({startPosition:0},23).to({scaleX:3.52,scaleY:3.52,x:161.9,y:117.1},7).wait(1).to({x:161.8,y:117.3},0).wait(3));
 
 	// Layer 9
-	this.instance_17 = new lib.sprite9();
-	this.instance_17.parent = this;
-	this.instance_17.setTransform(783.8,513.6,2.851,2.851);
+	this.instance_14 = new lib.sprite9();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(783.8,513.6,2.851,2.851);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(23).to({scaleX:3.17,scaleY:3.17,x:764,y:490.6},7).wait(1).to({x:763.8,y:490.7},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(23).to({scaleX:3.17,scaleY:3.17,x:764,y:490.6},7).wait(1).to({x:763.8,y:490.7},0).wait(3));
 
 	// Layer 8
-	this.instance_18 = new lib.shape2("synched",0);
-	this.instance_18.parent = this;
-	this.instance_18.setTransform(962.7,721.1,2.218,2.218);
+	this.instance_15 = new lib.shape2("synched",0);
+	this.instance_15.parent = this;
+	this.instance_15.setTransform(962.7,721.1,2.218,2.218);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_18).to({startPosition:0},23).to({scaleX:2.25,scaleY:2.25,x:962.6},1).to({scaleX:2.43,scaleY:2.43},5).to({scaleX:2.46,scaleY:2.46,x:962.7},1).wait(1).to({x:962.6,y:721.3},0).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).to({startPosition:0},23).to({scaleX:2.25,scaleY:2.25,x:962.6},1).to({scaleX:2.43,scaleY:2.43},5).to({scaleX:2.46,scaleY:2.46,x:962.7},1).wait(1).to({x:962.6,y:721.3},0).wait(3));
 
 	// Layer 1
-	this.instance_19 = new lib.shape1("synched",0);
-	this.instance_19.parent = this;
-	this.instance_19.setTransform(0,0,3.2,3.2);
+	this.instance_16 = new lib.shape1("synched",0);
+	this.instance_16.parent = this;
+	this.instance_16.setTransform(0,0,3.2,3.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(34));
+	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(34));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(644.1,392.4,2236,1767.6);
@@ -2601,8 +2717,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound28.mp3?1543539804576", id:"sound28"},
-		{src:"sounds/sound37overtodown.mp3?1543539804576", id:"sound37overtodown"}
+		{src:"sounds/sound28.mp3?1545288748894", id:"sound28"},
+		{src:"sounds/sound37overtodown.mp3?1545288748894", id:"sound37overtodown"}
 	],
 	preloads: []
 };
