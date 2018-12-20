@@ -22251,27 +22251,34 @@ p.nominalBounds = new cjs.Rectangle(-8,1,4394,829);
 (lib.跳过 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// 图层_1
+	// 图层_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("AksDbQAugSAugcIAAioIhNAAIAAgwICBAAIAADVQAcAxB0AAIE6AAIgNAxIlMAAQhYAAg2g9QgfAeg4AqgAhsC/IAAkYIA5AAIAAi8IELAAIAAC8IA0AAIAADnQAAArgsAAIguAAIgGgwIAiAAQALAAgBgKIAAinIkPAAIAADngABghZIBMAAIAAg8IhMAAgAgHhZIA7AAIAAhkIB4AAIAAgvIizAAgAgBCdIAAihICpAAIAACDIh+AAIAAAegAAqBVIBSAAIAAgxIhSAAgAj7jpIArgnQAzAkAdArIgrAsQgogzgoghg");
-	this.shape.setTransform(32.9,-0.7);
+	this.shape.graphics.f("rgba(0,0,0,0.004)").s().p("Av7MCIAA4DIf3AAIAAYDg");
+	this.shape.setTransform(1,5.05);
 
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(4));
+
+	// 图层_1
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#000000").s().p("AhWDtQCCgmAAh5IAAglIhAA7QgCAYgKgQIgdgsIBphPIAAkMIApAAQAVADgTANIAAFlQAACWiZArgACqEMQgnAAAAgpIAAn+IAqAAQAUADgSANIAACTIBBhWIArAtQADAMgPgEIhgBmIAAAYQBGAtAxAxIgfAzQgmgugygpIAACqQABASARAAIAdAAQASAAACgSIAIgzIAxANIgNBCQgHAngyAAgAkVEFIgVg5IAhgGIAAjXIAqAAQAVADgSANIAAC9IAogKIAAkGIgoAAIgnAAIAAi/IC/AAIAAC/IhEAAIAABeIBGAAIAAAyIhGAAIAABpIBQgXIAOAsIjfBCQgBAMgFAAQgDAAgDgDgAjYh9IBoAAIAAhsIhoAAgAg4ipIAqgVQAeA8ARBHIgtAWQgHggglhkg");
-	this.shape_1.setTransform(-32.85,-0.95);
+	this.shape_1.graphics.f("#000000").s().p("AksDbQAugSAugcIAAioIhNAAIAAgwICBAAIAADVQAcAxB0AAIE6AAIgNAxIlMAAQhYAAg2g9QgfAeg4AqgAhsC/IAAkYIA5AAIAAi8IELAAIAAC8IA0AAIAADnQAAArgsAAIguAAIgGgwIAiAAQALAAgBgKIAAinIkPAAIAADngABghZIBMAAIAAg8IhMAAgAgHhZIA7AAIAAhkIB4AAIAAgvIizAAgAgBCdIAAihICpAAIAACDIh+AAIAAAegAAqBVIBSAAIAAgxIhSAAgAj7jpIArgnQAzAkAdArIgrAsQgogzgoghg");
+	this.shape_1.setTransform(32.9,-0.7);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#FF0000").s().p("AksDbQAugSAugcIAAioIhNAAIAAgwICBAAIAADVQAcAxB0AAIE6AAIgNAxIlMAAQhYAAg2g9QgfAeg4AqgAhsC/IAAkYIA5AAIAAi8IELAAIAAC8IA0AAIAADnQAAArgsAAIguAAIgGgwIAiAAQALAAgBgKIAAinIkPAAIAADngABghZIBMAAIAAg8IhMAAgAgHhZIA7AAIAAhkIB4AAIAAgvIizAAgAgBCdIAAihICpAAIAACDIh+AAIAAAegAAqBVIBSAAIAAgxIhSAAgAj7jpIArgnQAzAkAdArIgrAsQgogzgoghg");
-	this.shape_2.setTransform(32.9,-0.7);
+	this.shape_2.graphics.f("#000000").s().p("AhWDtQCCgmAAh5IAAglIhAA7QgCAYgKgQIgdgsIBphPIAAkMIApAAQAVADgTANIAAFlQAACWiZArgACqEMQgnAAAAgpIAAn+IAqAAQAUADgSANIAACTIBBhWIArAtQADAMgPgEIhgBmIAAAYQBGAtAxAxIgfAzQgmgugygpIAACqQABASARAAIAdAAQASAAACgSIAIgzIAxANIgNBCQgHAngyAAgAkVEFIgVg5IAhgGIAAjXIAqAAQAVADgSANIAAC9IAogKIAAkGIgoAAIgnAAIAAi/IC/AAIAAC/IhEAAIAABeIBGAAIAAAyIhGAAIAABpIBQgXIAOAsIjfBCQgBAMgFAAQgDAAgDgDgAjYh9IBoAAIAAhsIhoAAgAg4ipIAqgVQAeA8ARBHIgtAWQgHggglhkg");
+	this.shape_2.setTransform(-32.85,-0.95);
 
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#FF0000").s().p("AhWDtQCCgmAAh5IAAglIhAA7QgCAYgKgQIgdgsIBphPIAAkMIApAAQAVADgTANIAAFlQAACWiZArgACqEMQgnAAAAgpIAAn+IAqAAQAUADgSANIAACTIBBhWIArAtQADAMgPgEIhgBmIAAAYQBGAtAxAxIgfAzQgmgugygpIAACqQABASARAAIAdAAQASAAACgSIAIgzIAxANIgNBCQgHAngyAAgAkVEFIgVg5IAhgGIAAjXIAqAAQAVADgSANIAAC9IAogKIAAkGIgoAAIgnAAIAAi/IC/AAIAAC/IhEAAIAABeIBGAAIAAAyIhGAAIAABpIBQgXIAOAsIjfBCQgBAMgFAAQgDAAgDgDgAjYh9IBoAAIAAhsIhoAAgAg4ipIAqgVQAeA8ARBHIgtAWQgHggglhkg");
-	this.shape_3.setTransform(-32.85,-0.95);
+	this.shape_3.graphics.f("#FF0000").s().p("AksDbQAugSAugcIAAioIhNAAIAAgwICBAAIAADVQAcAxB0AAIE6AAIgNAxIlMAAQhYAAg2g9QgfAeg4AqgAhsC/IAAkYIA5AAIAAi8IELAAIAAC8IA0AAIAADnQAAArgsAAIguAAIgGgwIAiAAQALAAgBgKIAAinIkPAAIAADngABghZIBMAAIAAg8IhMAAgAgHhZIA7AAIAAhkIB4AAIAAgvIizAAgAgBCdIAAihICpAAIAACDIh+AAIAAAegAAqBVIBSAAIAAgxIhSAAgAj7jpIArgnQAzAkAdArIgrAsQgogzgoghg");
+	this.shape_3.setTransform(32.9,-0.7);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).to({state:[{t:this.shape_1},{t:this.shape}]},1).to({state:[{t:this.shape_3},{t:this.shape_2}]},1).to({state:[{t:this.shape_3},{t:this.shape_2}]},1).wait(1));
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#FF0000").s().p("AhWDtQCCgmAAh5IAAglIhAA7QgCAYgKgQIgdgsIBphPIAAkMIApAAQAVADgTANIAAFlQAACWiZArgACqEMQgnAAAAgpIAAn+IAqAAQAUADgSANIAACTIBBhWIArAtQADAMgPgEIhgBmIAAAYQBGAtAxAxIgfAzQgmgugygpIAACqQABASARAAIAdAAQASAAACgSIAIgzIAxANIgNBCQgHAngyAAgAkVEFIgVg5IAhgGIAAjXIAqAAQAVADgSANIAAC9IAogKIAAkGIgoAAIgnAAIAAi/IC/AAIAAC/IhEAAIAABeIBGAAIAAAyIhGAAIAABpIBQgXIAOAsIjfBCQgBAMgFAAQgDAAgDgDgAjYh9IBoAAIAAhsIhoAAgAg4ipIAqgVQAeA8ARBHIgtAWQgHggglhkg");
+	this.shape_4.setTransform(-32.85,-0.95);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1}]}).to({state:[{t:this.shape_2},{t:this.shape_1}]},1).to({state:[{t:this.shape_4},{t:this.shape_3}]},1).to({state:[{t:this.shape_4},{t:this.shape_3}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-68.1,-38.5,136.2,77.1);
+p.nominalBounds = new cjs.Rectangle(-101,-71.9,204,154);
 
 
 (lib.sprite389 = function(mode,startPosition,loop) {
@@ -23375,8 +23382,15 @@ p.nominalBounds = new cjs.Rectangle(0,0,432.8,509.6);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2}]}).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 
+	// 图层_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.004)").s().p("A3+MRIAA4hMAv9AAAIAAYhg");
+	this.shape.setTransform(257.5,50.55);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(4));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(60,0,343.2,157.6);
+p.nominalBounds = new cjs.Rectangle(60,-27.9,351,185.5);
 
 
 (lib.sprite368 = function(mode,startPosition,loop) {
@@ -25186,18 +25200,22 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_21 = function() {
-		/* 单击以转到 Web 页
-		单击指定的元件实例会在新浏览器窗口中加载 URL。
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
 		
 		说明:
-		1. 用所需 URL 地址替换 http://www.adobe.com。
-		   保留引号 ("")。
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
 		*/
 		
-		this.button_1.addEventListener("click", fl_ClickToGoToWebPage_2);
+		this.button_1.addEventListener("click", fl_MouseClickHandler_6.bind(this));
 		
-		function fl_ClickToGoToWebPage_2() {
+		function fl_MouseClickHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"已单击鼠标"。
 			window.location.href="gameindex.html"
+			// 结束您的自定义代码
 		}
 		playSound("sound8");
 	}
@@ -25290,7 +25308,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		时间轴将在插入此代码的帧处停止/暂停。
 		也可用于停止/暂停影片剪辑的时间轴。
 		*/
-		continueEgretGame();
+		console.log("播放下一步");
 	}
 
 	// actions tween:
@@ -27238,26 +27256,26 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_.png?1545209620184", id:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"},
-		{src:"sounds/sound112.mp3?1545209621142", id:"sound112"},
-		{src:"sounds/sound140.mp3?1545209621142", id:"sound140"},
-		{src:"sounds/sound231.mp3?1545209621142", id:"sound231"},
-		{src:"sounds/sound262.mp3?1545209621142", id:"sound262"},
-		{src:"sounds/sound263.mp3?1545209621142", id:"sound263"},
-		{src:"sounds/sound264.mp3?1545209621142", id:"sound264"},
-		{src:"sounds/sound266.mp3?1545209621142", id:"sound266"},
-		{src:"sounds/sound318.mp3?1545209621142", id:"sound318"},
-		{src:"sounds/sound338.mp3?1545209621142", id:"sound338"},
-		{src:"sounds/sound346.mp3?1545209621142", id:"sound346"},
-		{src:"sounds/sound348.mp3?1545209621142", id:"sound348"},
-		{src:"sounds/sound350.mp3?1545209621142", id:"sound350"},
-		{src:"sounds/sound356.mp3?1545209621142", id:"sound356"},
-		{src:"sounds/sound366.mp3?1545209621142", id:"sound366"},
-		{src:"sounds/sound54.mp3?1545209621142", id:"sound54"},
-		{src:"sounds/sound57.mp3?1545209621142", id:"sound57"},
-		{src:"sounds/sound66.mp3?1545209621142", id:"sound66"},
-		{src:"sounds/sound75.mp3?1545209621142", id:"sound75"},
-		{src:"sounds/sound8.mp3?1545209621142", id:"sound8"}
+		{src:"images/Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_.png?1545270806416", id:"Lion_Main_20100111_Opening_6_HTML5 Canvas_atlas_"},
+		{src:"sounds/sound112.mp3?1545270807338", id:"sound112"},
+		{src:"sounds/sound140.mp3?1545270807338", id:"sound140"},
+		{src:"sounds/sound231.mp3?1545270807338", id:"sound231"},
+		{src:"sounds/sound262.mp3?1545270807338", id:"sound262"},
+		{src:"sounds/sound263.mp3?1545270807338", id:"sound263"},
+		{src:"sounds/sound264.mp3?1545270807338", id:"sound264"},
+		{src:"sounds/sound266.mp3?1545270807338", id:"sound266"},
+		{src:"sounds/sound318.mp3?1545270807338", id:"sound318"},
+		{src:"sounds/sound338.mp3?1545270807338", id:"sound338"},
+		{src:"sounds/sound346.mp3?1545270807338", id:"sound346"},
+		{src:"sounds/sound348.mp3?1545270807338", id:"sound348"},
+		{src:"sounds/sound350.mp3?1545270807338", id:"sound350"},
+		{src:"sounds/sound356.mp3?1545270807338", id:"sound356"},
+		{src:"sounds/sound366.mp3?1545270807338", id:"sound366"},
+		{src:"sounds/sound54.mp3?1545270807338", id:"sound54"},
+		{src:"sounds/sound57.mp3?1545270807338", id:"sound57"},
+		{src:"sounds/sound66.mp3?1545270807338", id:"sound66"},
+		{src:"sounds/sound75.mp3?1545270807338", id:"sound75"},
+		{src:"sounds/sound8.mp3?1545270807338", id:"sound8"}
 	],
 	preloads: []
 };
