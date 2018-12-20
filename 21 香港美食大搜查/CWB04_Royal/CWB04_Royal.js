@@ -5550,6 +5550,62 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 		*/
 	}
 	this.frame_28 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.leftButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_10()
+		{
+			this.gotoAndPlay(35);
+		}
+		
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.rightButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_11.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_11()
+		{
+			this.gotoAndPlay(220);
+		}
+		
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.frontButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_12.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_12()
+		{
+			this.gotoAndPlay(220);
+		}
 		/* stop ();
 		*/
 	}
@@ -5558,6 +5614,28 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 		*/
 	}
 	this.frame_145 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.gogoButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_13()
+		{
+			this.gotoAndPlay(150);
+		}
 		/* stop ();
 		*/
 	}
@@ -5566,10 +5644,63 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 		*/
 	}
 	this.frame_216 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* 单击以转到帧并停止
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并停止影片。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		
+		
+		
+		
+		/* 单击以转到帧并停止
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并停止影片。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		
+		this.tufuButton.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(217);
+		}
 		/* stop ();
 		*/
 	}
 	this.frame_217 = function() {
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
+		*/
+		
+		this.kkButton.addEventListener("click", fl_MouseClickHandler_3.bind(this));
+		
+		function fl_MouseClickHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"已单击鼠标"。
+			alert("已单击鼠标");
+			// 结束您的自定义代码
+		}
 		/* stop ();
 		*/
 	}
@@ -5578,6 +5709,29 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 		*/
 	}
 	this.frame_236 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
+		*/
+		
+		this.stop();
+		
+		/* 单击以转到帧并停止
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并停止影片。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		
+		this.againButton.addEventListener("click", fl_ClickToGoToAndStopAtFrame_5.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_5()
+		{
+			this.gotoAndStop(29);
+		}
 		/* stop ();
 		*/
 	}
@@ -5602,14 +5756,14 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(143).to({_off:false},0).to({_off:true},6).wait(90));
 
 	// Layer 302
-	this.goonButton = new lib.button78();
-	this.goonButton.name = "goonButton";
-	this.goonButton.parent = this;
-	this.goonButton.setTransform(1747.2,799.7,3.2,3.2);
-	this.goonButton._off = true;
-	new cjs.ButtonHelper(this.goonButton, 0, 1, 2, false, new lib.button78(), 3);
+	this.gogoButton = new lib.button78();
+	this.gogoButton.name = "gogoButton";
+	this.gogoButton.parent = this;
+	this.gogoButton.setTransform(1747.2,799.7,3.2,3.2);
+	this.gogoButton._off = true;
+	new cjs.ButtonHelper(this.gogoButton, 0, 1, 2, false, new lib.button78(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.goonButton).wait(145).to({_off:false},0).to({_off:true},4).wait(90));
+	this.timeline.addTween(cjs.Tween.get(this.gogoButton).wait(145).to({_off:false},0).to({_off:true},4).wait(90));
 
 	// Layer 301
 	this.instance_2 = new lib.text75("synched",0);
@@ -5845,14 +5999,14 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 	this.timeline.addTween(cjs.Tween.get(this.instance_26).wait(236).to({_off:false},0).wait(3));
 
 	// Layer 158
-	this.goonButton_1 = new lib.button38();
-	this.goonButton_1.name = "goonButton_1";
-	this.goonButton_1.parent = this;
-	this.goonButton_1.setTransform(1747,775.8,3.2,3.2);
-	this.goonButton_1._off = true;
-	new cjs.ButtonHelper(this.goonButton_1, 0, 1, 2, false, new lib.button38(), 3);
+	this.goonButton = new lib.button38();
+	this.goonButton.name = "goonButton";
+	this.goonButton.parent = this;
+	this.goonButton.setTransform(1747,775.8,3.2,3.2);
+	this.goonButton._off = true;
+	new cjs.ButtonHelper(this.goonButton, 0, 1, 2, false, new lib.button38(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.goonButton_1).wait(21).to({_off:false},0).to({_off:true},3).wait(215));
+	this.timeline.addTween(cjs.Tween.get(this.goonButton).wait(21).to({_off:false},0).to({_off:true},3).wait(215));
 
 	// Layer 157
 	this.instance_27 = new lib.text31("synched",0);
@@ -5954,19 +6108,19 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 	this.instance_40.setTransform(1454.7,600.6,1.218,1.218);
 	this.instance_40._off = true;
 
-	this.goonButton_2 = new lib.button87();
-	this.goonButton_2.name = "goonButton_2";
-	this.goonButton_2.parent = this;
-	this.goonButton_2.setTransform(828.3,1061.9,3.2,3.2);
-	new cjs.ButtonHelper(this.goonButton_2, 0, 1, 2, false, new lib.button87(), 3);
+	this.tufuButton = new lib.button87();
+	this.tufuButton.name = "tufuButton";
+	this.tufuButton.parent = this;
+	this.tufuButton.setTransform(828.3,1061.9,3.2,3.2);
+	new cjs.ButtonHelper(this.tufuButton, 0, 1, 2, false, new lib.button87(), 3);
 
-	this.setUpButton = new lib.button91();
-	this.setUpButton.name = "setUpButton";
-	this.setUpButton.parent = this;
-	this.setUpButton.setTransform(829.1,1061.1,3.2,3.2);
-	new cjs.ButtonHelper(this.setUpButton, 0, 1, 2, false, new lib.button91(), 3);
+	this.kkButton = new lib.button91();
+	this.kkButton.name = "kkButton";
+	this.kkButton.parent = this;
+	this.kkButton.setTransform(829.1,1061.1,3.2,3.2);
+	new cjs.ButtonHelper(this.kkButton, 0, 1, 2, false, new lib.button91(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_39}]},54).to({state:[]},37).to({state:[{t:this.instance_40}]},84).to({state:[{t:this.instance_40}]},2).to({state:[{t:this.instance_40}]},1).to({state:[]},31).to({state:[{t:this.goonButton_2}]},7).to({state:[{t:this.setUpButton}]},1).to({state:[]},2).wait(20));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_39}]},54).to({state:[]},37).to({state:[{t:this.instance_40}]},84).to({state:[{t:this.instance_40}]},2).to({state:[{t:this.instance_40}]},1).to({state:[]},31).to({state:[{t:this.tufuButton}]},7).to({state:[{t:this.kkButton}]},1).to({state:[]},2).wait(20));
 	this.timeline.addTween(cjs.Tween.get(this.instance_40).wait(175).to({_off:false},0).to({scaleX:2.69,scaleY:2.69,x:1447.2,y:508.5},2).wait(1).to({scaleX:3.42,scaleY:3.42,x:1443.4,y:462.6},0).to({_off:true},31).wait(30));
 
 	// Layer 115
@@ -5982,7 +6136,7 @@ p.nominalBounds = new cjs.Rectangle(-61.8,-124,123.7,249.4);
 
 	this.instance_43 = new lib.text88("synched",0);
 	this.instance_43.parent = this;
-	this.instance_43.setTransform(294.4,634.2,3.2,3.2);
+	this.instance_43.setTransform(268.4,634.2,3.2,3.2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_41}]},175).to({state:[{t:this.instance_41}]},2).to({state:[{t:this.instance_41}]},1).to({state:[{t:this.instance_42}]},31).to({state:[{t:this.instance_42}]},3).to({state:[{t:this.instance_42}]},1).to({state:[{t:this.instance_43}]},4).to({state:[]},2).wait(20));
 	this.timeline.addTween(cjs.Tween.get(this.instance_41).wait(175).to({_off:false},0).to({scaleX:2.69,scaleY:2.69,x:1554.9,y:535.8},2).wait(1).to({scaleX:3.42,scaleY:3.42,x:1580.6,y:497.4},0).to({_off:true},31).wait(30));
@@ -6476,9 +6630,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/image57.jpg?1545200971448", id:"image57"},
-		{src:"sounds/sound37overtodown.mp3?1545200971448", id:"sound37overtodown"},
-		{src:"sounds/sound41overtodown.mp3?1545200971448", id:"sound41overtodown"}
+		{src:"images/image57.jpg?1545273700478", id:"image57"},
+		{src:"sounds/sound37overtodown.mp3?1545273700478", id:"sound37overtodown"},
+		{src:"sounds/sound41overtodown.mp3?1545273700478", id:"sound41overtodown"}
 	],
 	preloads: []
 };
