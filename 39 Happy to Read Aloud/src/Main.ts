@@ -67,7 +67,7 @@ class Main extends eui.UILayer {
 
     }
 
-    private async loadResource() {
+   private async loadResource() {
         const loadingView = new LoadingUI();
         try {
             this.stage.addChild(loadingView);
@@ -96,25 +96,25 @@ class Main extends eui.UILayer {
     }
 
     private scenes = [];
-    
+
     /**
      * 创建场景界面
      * Create scene interface
      */
     protected createGameScene(): void {
         Main.instance = this;
-        if (egret.getOption('scene')) {
-            //允许用户跳转到指定的Scene
-            this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
-        } else {
-            this.addChild(new StartScene());
-        }
+        this.addChild(new StartScene());
+        // if (egret.getOption('scene')) {
+        //     //允许用户跳转到指定的Scene
+        //     this.addChild(this.scenes[parseInt(egret.getOption('scene'))]);
+        // } else {
+        //     this.addChild(new StartScene());
+        // }
     }
 
     public static instance: Main
 
-    public gotoScene(scene: eui.Component)
-    {
+    public gotoScene(scene: eui.Component) {
         this.removeChildren();
         this.addChild(scene);
     }

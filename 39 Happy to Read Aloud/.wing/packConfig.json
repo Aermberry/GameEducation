@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\39 Happy to Read Aloud\\39 Happy to Read Aloud\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}

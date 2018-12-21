@@ -1340,7 +1340,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_490 = function() {
 		/* loadMovieNum("All_words.swf", 0);
 		*/
-		console.log("@我没故事。")
+		console.log("第十段游戏播放完成。")
 		continueElevenGame();
 	}
 
