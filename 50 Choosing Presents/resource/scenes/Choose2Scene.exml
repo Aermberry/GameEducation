@@ -14,8 +14,8 @@
 		<e:Group id="bankTipsGroup" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74" x="9.09" y="-3.03">
 			<e:Label id="bankTipsWorldlabel" text="It costs fifteen dollars" anchorOffsetX="0" width="684" anchorOffsetY="0" height="74"
 			         textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle"
-			         textAlign="left"  x="36.63" y="-5.27"/>
-			<e:Label id="bankColorTipsLabe" text="fifteen dollars" x="285.06" y="-6.06" anchorOffsetX="0" width="426.85" anchorOffsetY="0" height="74"
+			         textAlign="left"  x="36.63" y="-11.33"/>
+			<e:Label id="bankColorTipsLabe" text="fifteen dollars" x="285.06" y="-12.12" anchorOffsetX="0" width="426.85" anchorOffsetY="0" height="74"
 			         size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center"
 			         textColor="0xffffff" backgroundColor="0xff0099" background="true"  visible="false"/>
 		</e:Group>

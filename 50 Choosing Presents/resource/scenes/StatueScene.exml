@@ -17,16 +17,16 @@
 	<e:Label fontFamily="Comic Sans MS" text="Choosing presents" textColor="0xCC3366" size="121" textAlign="center"
 	         verticalAlign="middle" horizontalCenter="-25.5" y="36.42"  anchorOffsetY="0" height="236.16" anchorOffsetX="0" width="1315"/>
 	<e:Label fontFamily="Comic Sans MS"
-	         text="Mary and Sam want to buy Christmas presents for their friends. They are at Yoyo Gift Shop now. What do they buy? Read and drag the correct words to the blanks."
-	         textColor="0xCC6699" size="62" textAlign="left" verticalAlign="middle" y="268" anchorOffsetY="0" height="360"
-	         anchorOffsetX="0" width="1654.09" lineSpacing="50" horizontalCenter="-2" />
+	         text="Mary and Sam want to buy Christmas presents for their friends. They are at Yoyo Gift Shop now. What are they going to buy? Read and drag the correct words to the \nblanks."
+	         textColor="0xCC6699" size="62" textAlign="left" verticalAlign="middle" y="268" anchorOffsetY="0" height="417.57"
+	         anchorOffsetX="0" width="1632.89" lineSpacing="50" horizontalCenter="-12.5" />
 	<e:Image source="piggy bank 3_png" x="450" y="720" />
 	<e:Image source="basketball_png" x="984" y="765" />
 	<e:Image source="pen_png" x="600" y="1144" />
 	<e:Image source="book_png" x="964.5" y="1090" />
 
-	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9"  visible="false"/>
-	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0"  visible="false"/>
+	<e:Rect id="startMask" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
+	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" />
 	<e:Group id="nextButton" x="1499" y="1224">
 		<e:Button x="0" y="0" anchorOffsetX="0" width="278" anchorOffsetY="0" height="130"/>
 		<e:Label text="Start" x="58.88" y="30.85" size="70" fontFamily="Comic Sans MS"/>

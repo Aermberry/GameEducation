@@ -27,8 +27,8 @@
 			 </e:Group>
 	<e:Image id="logImage" source="true_png" x="1075.04" y="1013.46" rotation="354.36" visible="false"/>
 	<e:Group x="1213.64" y="1045.1" width="560" height="86">
-	<e:Label id="worldLabel" text="Kitty likes reading." anchorOffsetX="0" width="560" anchorOffsetY="0" height="86" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" x="21.21" y="-45.46"/>
-	<e:Label id="colorKeyWorldLabel" text="read    " x="336.21" y="-45.45" anchorOffsetX="0" width="132" anchorOffsetY="0" height="86" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" backgroundColor="0xff0099" background="true" textColor="0xffffff" alpha="1" visible="false"/>
+	<e:Label id="worldLabel" text=" Kitty likes reading." anchorOffsetX="0" width="560" anchorOffsetY="0" height="86" textColor="0x000000" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" x="21.21" y="-21.22"/>
+	<e:Label id="colorKeyWorldLabel" text="read    " x="354.39" y="-33.33" anchorOffsetX="0" width="132" anchorOffsetY="0" height="86" size="62" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" backgroundColor="0xff0099" background="true" textColor="0xffffff" alpha="1" visible="false"/>
 	</e:Group>
 	<e:Group id="tipsGroup" x="921.33" y="1106.6" width="970.67" height="186" touchThrough="true" anchorOffsetX="0">
 	<e:Group id="penGroup" width="604" height="148" y="81.82" visible="false">
