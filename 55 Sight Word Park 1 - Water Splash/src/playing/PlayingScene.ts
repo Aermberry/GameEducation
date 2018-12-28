@@ -90,10 +90,12 @@ class PlayingScene extends eui.Component implements  eui.UIComponent, IPlayingVi
 		}
 	}
 
-	public tipsanswer(answerIndex:number,words: string[]): void
+	public async tipsanswer(answerIndex:number,words: string[]): Promise <void>
 	{
 		this.tipsText.text = "HINT:" + words[answerIndex];
-		this.tipsTweenGroup.play(0);
+		// this.tipsTweenGroup.play(0);
+		await lzlib.ThreadUtility.sleep(4000);
+		this.tipsText.text = 'Please help stop the fire!';
 	};
 
 	public onRestartButtonClick(): void

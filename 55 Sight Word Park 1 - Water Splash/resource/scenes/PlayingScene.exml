@@ -213,5 +213,5 @@
 	<e:Label id="goText" text="Go!" fontFamily="KristenITCRegular" textColor="0x9D0000" size="480" alpha="0" horizontalCenter="0" y="-500"/>
 	<e:Label id="compeletText" text="Completed" fontFamily="KristenITCRegular" textColor="0x9D0000" size="263" alpha="0" y="1280" textAlign="center" horizontalCenter="0"/>
 	<e:Label id="requestText" text="HINT:" x="590.35" y="1167.15" textColor="0x000000" bold="true" size="46" fontFamily="Arial" width="534" textAlign="center" verticalAlign="middle" visible="false"/>
-	<e:Label id="tipsText" text="HINT:" x="796.61" y="1166.21" textColor="0x000000" size="46" bold="true" fontFamily="Arial" alpha="1"/>
+	<e:Label id="tipsText" text="Please help stop the fire!" x="696.61" y="1163.18" textColor="0x000000" size="46" bold="true" fontFamily="Arial" alpha="1"/>
 </e:Skin>
