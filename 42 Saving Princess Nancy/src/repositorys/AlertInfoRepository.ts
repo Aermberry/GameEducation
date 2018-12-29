@@ -7,10 +7,10 @@ class AlertInfoRepository {
 			'mouthRed': new DecorationInfo('Correct. Her     lips are as red as roses.','correct_lips_mp3'),
 			'hairWave': new DecorationInfo('Correct. She       has long wavy   brown hair.','correct_hair_mp3'),
 			'crown': new DecorationInfo('Correct. She is wearing a            crown.','correct_crown_mp3'),
-			'glassSlippers': new DecorationInfo('Correct. She is wearing a pair      of glass slippers','correct_slippers_mp3'),
+			'glassSlippers': new DecorationInfo('Correct. She is wearing a pair  \nof glass \nslippers.','correct_slippers_mp3'),
 			'necklace': new DecorationInfo('Correct. She is wearing a            necklace.','correct_necklace_mp3'),
 			'earrings': new DecorationInfo('Correct. She is wearing a pair    of earrings.','correct_earsings_mp3'),
-			'gloves': new DecorationInfo('Correct. She is wearing a pair   of white gloves','correct_gloves_mp3')
+			'gloves': new DecorationInfo('Correct. She is wearing a pair  \nof white gloves.','correct_gloves_mp3')
 		};
 	public constructor() {
 	}

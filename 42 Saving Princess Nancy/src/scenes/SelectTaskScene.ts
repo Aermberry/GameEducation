@@ -50,8 +50,9 @@ module HauntedHouse {
 			// await this.playMaskAnimation();
 		}
 
-		public onStartQuestion(): void {
-			console.log('开始动画')
+		public async onStartQuestion(): Promise <void> {
+			lzlib.SoundUtility.playSound('select_task_mp3');
+			await this.playMaskAnimation();
 		}
 
 		private onTask1Begin(): void {

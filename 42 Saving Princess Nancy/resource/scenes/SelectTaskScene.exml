@@ -38,7 +38,7 @@
 	<e:Image x="642.56" y="56.5" source="roll_paper_png"/>
 	<e:Image x="872.67" y="884.94" source="task_border_png"/>
 	<e:Image x="872.67" y="1030.39" source="task_border_png"/>
-	<e:Image x="932" y="168" source="select_scene_text_png" anchorOffsetX="0" width="827.33" anchorOffsetY="0" height="419"/>
+	<e:Image x="932" y="168" anchorOffsetX="0" width="827.33" anchorOffsetY="0" height="419" source="select_scene_text_1_png"/>
 	<e:Image x="919.67" y="660" anchorOffsetX="0" anchorOffsetY="0" source="select_scene_text2_png" width="820" height="132.38"/>
 	<e:Label id="task1Label" text="Task 1 Knowing Princess Nancy" x="972.72" y="912.18" textColor="0x7e512f" size="46" fontFamily="Calg421n"/>
 	<e:Label id="task2Label" text="Task 2 Finding Princess Nancy" x="972.72" y="1054.6" textColor="0x7E512F" size="46" fontFamily="Calg421n"/>

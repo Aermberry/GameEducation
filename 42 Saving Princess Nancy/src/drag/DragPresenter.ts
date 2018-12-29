@@ -52,6 +52,7 @@ class DragPresenter {
 				// curRD == undefined ? this.view.AlertReTry() : this.view.textFlicker(curRD);
 				this.view.textFlicker(curRD);
 				//弹出信息 alert info
+				curRD == 0 ? this.view.rdText('st') : this.view.rdText('rd');
 				this.correctDecoration.isCorrectDecoration(dragName) == false && this.view.alertWrongtInfo(this.currectRD.getTextRD());
 			}
 			
@@ -75,7 +76,7 @@ class DragPresenter {
 	public onMouseOut(e: egret.TouchEvent): void
 	{
 		let textLabel = e.target as eui.Label;
-		textLabel.textColor = 0x266232;
+		textLabel.textColor = 0xF55125;
 		this.audioRepo.stopMP3();
 		this.view.hideOverText();
 	}

@@ -12,4 +12,5 @@ interface DragView {
 	playFinishAnimation(): void;
 	playFinishMP3(): void;
 	AlertReTry(): Promise<void>;
+	rdText(text: string): void;
 }
