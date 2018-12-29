@@ -76,7 +76,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 	{
 		super.childrenCreated();
 		await this.playStartMP3();
-		await lzlib.SoundUtility.playSound('drag_Introduction_mp3');
+		// await lzlib.SoundUtility.playSound('drag_Introduction_mp3');
 		await this.playBodyPartMaskAnimation();
 		mouse.enable(this.stage);
 		this.mouseOverTexts = {

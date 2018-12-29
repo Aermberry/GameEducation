@@ -33,8 +33,8 @@ class Task1IntroductionScene extends eui.Component implements  eui.UIComponent {
 
 	private onNextClick(e: egret.TouchEvent): void
 	{
-		Main.instance.gotoScene(new DragScene());
 		lzlib.SoundUtility.stopCurrentSound();
+		Main.instance.gotoScene(new DragScene());
 	}
 	
 }
