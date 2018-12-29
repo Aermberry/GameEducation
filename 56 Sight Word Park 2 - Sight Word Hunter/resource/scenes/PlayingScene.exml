@@ -132,7 +132,7 @@
 	<e:Image source="sight_word_hunter_small_png" x="25" y="130" width="380" height="268" />
 
 	<ns1:TargetButton skinName="BirdTarget" x="607" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="0" cannonballExitY="640" leftOrRight="left" />
-	<ns1:TargetButton skinName="BottleTarget" x="927" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="850" cannonballExitY="1280" leftOrRight="center" />
+	<ns1:TargetButton skinName="BottleTarget" x="964.88" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="850" cannonballExitY="1280" leftOrRight="center"  scaleX="1.28"/>
 	<ns1:TargetButton skinName="CakeTarget" x="1344" bottom="835" width="270" height="325" anchorOffsetX="135" cannonballExitX="1920" cannonballExitY="640" leftOrRight="right" />
 
 	<ns1:TargetButton skinName="BalloonTarget" x="657" bottom="465" width="270" height="325" anchorOffsetX="135" cannonballExitX="0" cannonballExitY="840" leftOrRight="left" />

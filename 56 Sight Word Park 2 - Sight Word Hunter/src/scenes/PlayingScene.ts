@@ -14,6 +14,7 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private readonly secondsInTotalGame = 120;
 	private secondsLeftInTotal = 0; //本游戏还剩多少秒
+	private offInterval = true;
 
 	private readonly secondsPerRound = 20; //一轮的总秒数
 	private secondsLeftInRound = 0;  ////本轮秤还剩多少秒
@@ -80,9 +81,11 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 		this.speakerImage.addEventListener(egret.TouchEvent.TOUCH_TAP, ()=>this.speakCurrentWord(), this);
 	}
 
-	private initReadyTweenGroup()
+	private async initReadyTweenGroup():Promise <void>
 	{
 		this.readyTweenGroup.addEventListener(egret.Event.COMPLETE, this.onReadyTweenGroupComplete, this);
+	   		// await this.readyTweenGroup.play();
+			// this.onReadyTweenGroupComplete();
 	}
 
 	private onReadyTweenGroupComplete()
@@ -111,6 +114,8 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private onBackImageClick(e: egret.TouchEvent): void
 	{	
+		this.readyTweenGroup.stop();
+		lzlib.SoundUtility.stopCurrentSound;
 		egret.clearInterval(this.tickInterval)
 		Main.instance.gotoScene(new StartScene());
 	}
@@ -208,11 +213,10 @@ class PlayingScene extends eui.Component implements  eui.UIComponent {
 
 	private intervalHandler(): void
 	{
-		console.log('时间到');
+		
 		this.timeLeftInRoundImage.height = this.timeLeftInRoundImageOriginalHeight * this.secondsLeftInRound / this.secondsPerRound;
 		this.secondsLeftInRound -= 0.1;
 		this.secondsLeftInTotal -= 0.1;
-		
 		if (this.secondsLeftInTotal <= 0) {
 			egret.clearInterval(this.tickInterval);
 			(RES.getRes('sound_effect_win_mp3') as egret.Sound).play(0, 1);
