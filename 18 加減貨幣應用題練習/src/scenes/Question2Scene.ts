@@ -91,7 +91,7 @@ class Question2Scene extends eui.Component implements eui.UIComponent {
 	// 下一步
 	private verification(): void {
 		const verification = StringUtility.trim(this.expression),
-			inputssion = "12元5角+41元2角",
+			inputssion = "12元5角+42元2角",
 			inputssiontwo = "42元2角+12元5角"
 		if (verification == inputssion || inputssiontwo) {
 			this.scarfImage.visible = false;
