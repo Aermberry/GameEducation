@@ -10,7 +10,7 @@
 		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
 		<e:Image id="apple" source="apple_png" x="0" y="0" />
 		<e:Image id="glasses" x="449.45" y="76.51" source="glasses_png" />
-		<e:Image id="cup" x="1015.79" y="31.51" source="cup_png" />
+		<e:Image id="cup" x="1015.79" y="40.6"  source="blue_cup_png" anchorOffsetX="0" width="202.31" anchorOffsetY="0" height="156.27"/>
 	</e:Group>
 	<e:Group x="669.76" y="376.41" anchorOffsetY="0" height="267.18">
 		<e:Image source="bigLabel_png" x="0" y="0"  anchorOffsetY="0" height="261.12"/>

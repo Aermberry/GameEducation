@@ -9,7 +9,7 @@
 
 	<e:Group id="goodsGroup" x="369.27" y="926">
 	<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
-		<e:Image id="bag" x="0" y="43.49" source="schoolbag_png"/>
+		<e:Image id="bag" x="12.12" y="25.31" source="recycle_png" anchorOffsetX="0" width="226.76" anchorOffsetY="0" height="263.38" rotation="360"/>
 		<e:Image id="food" x="525.02" y="0" source="food_png"/>
 		<e:Image id="colorPen" x="1067.31" y="38" source="colorLead_png"/>
 	</e:Group>
