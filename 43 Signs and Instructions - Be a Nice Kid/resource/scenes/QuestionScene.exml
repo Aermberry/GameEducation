@@ -473,7 +473,7 @@
 	<e:Group id="optionAnswerGroup" width="1202" height="1038" x="338.94" y="21.42">
 		<e:Image x="0" y="0" source="background_game_png" scaleX="1" scaleY="1"/>
 		<e:Image x="49" y="-21.18" source="background_introduction_png"/>
-		<e:Label text="Listen to the instructions and click the correct pictures!" x="169.85" y="-9.06" textColor="0x000000" size="34" fontFamily="Comic Sans MS"/>
+		<e:Label text="Listen to the instructions. Choose the correct answer and click “OK”." x="60.76" y="-9.06" textColor="0x000000" size="34" fontFamily="Comic Sans MS"/>
 		<e:Group id="optionsGroup">
 			<e:Group x="91.3" y="70.51" anchorOffsetX="0" width="415.48" anchorOffsetY="0" height="290.6">
 				<ns1:MovieClipPlayer dataSet="picture12_json" texture="picture12_png" movieClipName="picture12" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
@@ -498,7 +498,7 @@
 		</e:Group>
 		
 		<e:Group width="1051.52" height="63.64" x="88.12" y="778.94" anchorOffsetY="0" anchorOffsetX="0">
-			<e:Label id="repeatLabel" text="Repeat question again" x="403.67" textColor="0x000000" size="34" fontFamily="Comic Sans MS" multiline="true" top="0" bottom="0" verticalAlign="middle"/>
+			<e:Label id="repeatLabel" text="Repeat the question" x="403.67" textColor="0x000000" size="34" fontFamily="Comic Sans MS" multiline="true" top="0" bottom="0" verticalAlign="middle"/>
 			<!--<e:Label id="continueLabel" text="Continue" x="896.94" y="15.09" textColor="0x000000" size="34"/>-->
 			<ns1:ButtonComponent id="okButtonComponent" width="174" height="60" x="878.82" y="3"/>
 			<ns1:ButtonComponent id="continueButtonComponent" text="Continue" width="174" height="60" x="878.82" y="3" visible="false"/>
@@ -510,6 +510,6 @@
 	</e:Group>
 	<e:Group id="cloudAlertGroup" width="748" height="305" x="578" y="300" visible="false">
 		<e:Image left="0" right="0" top="0" bottom="0" source="cloud_png"/>
-		<e:Label text="Try  Again" x="238" y="108" textColor="0x000000" size="60" fontFamily="Comic Sans MS" anchorOffsetY="0" height="80"/>
+		<e:Label text="Try again." x="238" y="108" textColor="0x000000" size="60" fontFamily="Comic Sans MS" anchorOffsetY="0" height="80"/>
 	</e:Group>
 </e:Skin>

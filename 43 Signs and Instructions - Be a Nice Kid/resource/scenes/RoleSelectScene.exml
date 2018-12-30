@@ -119,7 +119,7 @@
 
 	<e:Group id="needHelpGroup" width="1087.76" height="100" x="354.24" y="918.77" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
-		<e:Label text="Hi kids，some children need your help." x="170.24" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
+		<e:Label text="Hi, kids. Some children need your help." x="170.24" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
 	<e:Group id="poorCountriesGroup" width="1003.19" height="100" x="442.12" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="0">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
@@ -135,7 +135,7 @@
 	</e:Group>
 	<e:Group id="ListenGroup" width="1450.69" height="100" x="284.55" y="918.77" scaleX="0.86" anchorOffsetX="0" alpha="1" visible="false">
 		<e:Image source="background_child_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" bottom="0" left="0" right="0"/>
-		<e:Label text="Listen to the instructions and click the correct pictures!" x="225.13" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
+		<e:Label text="Listen to the instructions and click the correct pictures." x="225.13" y="30.15" textColor="0x000000" size="40" fontFamily="Comic Sans MS"/>
 	</e:Group>
 	<e:Image id="startImage" x="1673.12" y="745.61" source="start_normal_png" visible="false"/>
 	<e:Image id="selectedChildImage" x="857.9" y="302.63" source=""/>
