@@ -4,6 +4,11 @@ class Puzzle extends eui.Component implements  eui.UIComponent {
 	private padding = 10;
 	private labelSpacing = 10;
 	private currentSelectedLabels: PuzzleCell[] = [];
+	private cellArrageValidators = [
+		new HorizontalPuzzleCellArrangeValidator(),
+		new VerticalPuzzleCellArrangeValidator(),
+		new DiagnalPuzzleCellArrangeValidator()
+	]
 
 	public constructor() {
 		super();
@@ -83,7 +88,11 @@ class Puzzle extends eui.Component implements  eui.UIComponent {
 
 	public get currentSelectedChars(): string[]
 	{
-		return this.currentSelectedLabels.map(label => label.text);
+		if (this.cellArrageValidators.any(validator => validator.validate(this.currentSelectedLabels))) {
+			return this.currentSelectedLabels.map(label => label.text);
+		} else {
+			return [];
+		}
 	}
 
 	public deselectChars(): void
