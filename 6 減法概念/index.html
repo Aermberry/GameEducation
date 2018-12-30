@@ -241,6 +241,9 @@
                 stage.addChild(exportRoot);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -342,6 +345,9 @@
                 stage.addChild(exportRoot2);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot2;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -442,6 +448,9 @@
                 stage.addChild(exportRoot3);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot3;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -542,6 +551,9 @@
                 stage.addChild(exportRoot4);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot4;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -642,6 +654,9 @@
                 stage.addChild(exportRoot5);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot5;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -704,6 +719,13 @@
         anim_container4.style.display = 'none';
         anim_container5.style.display = 'none';
 
+        stopAnimation();
+    }
+
+    function stopAnimation() {
+        window.stage.removeChild(window.exportRoot);
+        createjs.Ticker.addEventListener("tick", window.stage);
+        createjs.Sound.removeAllSounds();
     }
 </script>
 <script>

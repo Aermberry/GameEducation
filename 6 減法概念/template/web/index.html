@@ -73,6 +73,7 @@
     data-content-width="1920" data-content-height="1061" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
     data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
 </div>
+<div id='_preload_div_' style='position:absolute; top:0; left:0; bottom: 0; right: 0; display: none; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1544192277196 style='vertical-align: middle; max-height: 100%'/></div>
 <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
     style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
 </div>
@@ -183,6 +184,8 @@
 
     // 动画开始
     function initOne() {
+        var preloaderDiv = document.getElementById("_preload_div_");
+	    preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
@@ -213,7 +216,6 @@
             loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
             var lib = comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
-            anim_container.style.display = "block";
         }
         function handleFileLoad(evt, comp) {
             var images = comp.getImages();
@@ -228,6 +230,9 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
+            var preloaderDiv = document.getElementById("_preload_div_");
+	        preloaderDiv.style.display = 'none';
+            anim_container.style.display = 'block';
             exportRoot = new lib.Asub1();
             stage = new lib.Stage(canvas);
             stage.enableMouseOver();
@@ -236,6 +241,9 @@
                 stage.addChild(exportRoot);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -280,6 +288,8 @@
     }
     // 第二个
     function initTwo() {
+        var preloaderDiv = document.getElementById("_preload_div_");
+	    preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
@@ -309,7 +319,6 @@
             loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
             var lib = comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
-            anim_container.style.display = "block";
         }
         function handleFileLoad(evt, comp) {
             var images = comp.getImages();
@@ -324,6 +333,9 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
+            var preloaderDiv = document.getElementById("_preload_div_");
+	        preloaderDiv.style.display = 'none';
+            anim_container.style.display = 'block';
             exportRoot2 = new lib.Asub2();
             console.log(exportRoot2)
             stage = new lib.Stage(canvas);
@@ -333,6 +345,9 @@
                 stage.addChild(exportRoot2);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot2;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -378,6 +393,8 @@
 
     // 第三个
     function initThree() {
+        var preloaderDiv = document.getElementById("_preload_div_");
+	    preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
@@ -406,7 +423,6 @@
             loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
             var lib = comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
-            anim_container.style.display = "block";
         }
         function handleFileLoad(evt, comp) {
             var images = comp.getImages();
@@ -421,6 +437,9 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
+            var preloaderDiv = document.getElementById("_preload_div_");
+	        preloaderDiv.style.display = 'none';
+            anim_container.style.display = 'block';
             exportRoot3 = new lib.Asub3();
             stage = new lib.Stage(canvas);
             stage.enableMouseOver();
@@ -429,6 +448,9 @@
                 stage.addChild(exportRoot3);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot3;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -474,6 +496,8 @@
 
     // 第四个
     function initFour() {
+        var preloaderDiv = document.getElementById("_preload_div_");
+	    preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
@@ -502,7 +526,6 @@
             loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
             var lib = comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
-            anim_container.style.display = 'block';
         }
         function handleFileLoad(evt, comp) {
             var images = comp.getImages();
@@ -517,6 +540,9 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
+            var preloaderDiv = document.getElementById("_preload_div_");
+	        preloaderDiv.style.display = 'none';
+            anim_container.style.display = 'block';
             exportRoot4 = new lib.Asub4();
             stage = new lib.Stage(canvas);
             stage.enableMouseOver();
@@ -525,6 +551,9 @@
                 stage.addChild(exportRoot4);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot4;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -570,6 +599,8 @@
 
     // 第五个
     function initFive() {
+        var preloaderDiv = document.getElementById("_preload_div_");
+	    preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
@@ -598,7 +629,6 @@
             loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
             var lib = comp.getLibrary();
             loader.loadManifest(lib.properties.manifest);
-            anim_container.style.display = 'block';
         }
         function handleFileLoad(evt, comp) {
             var images = comp.getImages();
@@ -613,6 +643,9 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
+            var preloaderDiv = document.getElementById("_preload_div_");
+	        preloaderDiv.style.display = 'none';
+            anim_container.style.display = 'block';
             exportRoot5 = new lib.Asub5();
             stage = new lib.Stage(canvas);
             stage.enableMouseOver();
@@ -621,6 +654,9 @@
                 stage.addChild(exportRoot5);
                 createjs.Ticker.setFPS(lib.properties.fps);
                 createjs.Ticker.addEventListener("tick", stage);
+
+                window.stage = stage;
+                window.exportRoot = exportRoot5;
             }
             //Code to support hidpi screens and responsive scaling.
             function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -683,6 +719,13 @@
         anim_container4.style.display = 'none';
         anim_container5.style.display = 'none';
 
+        stopAnimation();
+    }
+
+    function stopAnimation() {
+        window.stage.removeChild(window.exportRoot);
+        createjs.Ticker.addEventListener("tick", window.stage);
+        createjs.Sound.removeAllSounds();
     }
 </script>
 <script>
