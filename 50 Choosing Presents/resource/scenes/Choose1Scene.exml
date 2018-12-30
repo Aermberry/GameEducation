@@ -2,9 +2,9 @@
 <e:Skin class="Choose1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*">
 	<w:Config id="1661925edc2"></w:Config>
-	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) into the blanks full stop." textColor="0xFF0099"
+	<e:Label fontFamily="Comic Sans MS" text="Read and drag the correct word(s) into the blanks." textColor="0xFF0099"
 	         size="62" textAlign="left" verticalAlign="middle" anchorOffsetY="0" height="166.19" anchorOffsetX="0"
-	         width="1778.82" lineSpacing="50" top="21"  horizontalCenter="55.5"/>
+	         width="1642.46" lineSpacing="50" top="21"  horizontalCenter="62"/>
 	<e:Image source="shelf_png"  verticalCenter="-108" horizontalCenter="0"/>
 	<e:Label fontFamily="Comic Sans MS"
 	         text="Mary: Look, Sam. There's a __________.\n          What about buying it for her?\n Sam: That's a good idea."
