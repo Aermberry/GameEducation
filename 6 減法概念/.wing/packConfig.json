@@ -2,7 +2,7 @@
     "useClip": true,
     "maxImageWidth": 2048,
     "maxImageHeight": 2048,
-    "defaultResPath": "/Users/lichengfa/Documents/Work/EDB WLTS - Flash转HTML5/WLTS/6 减法概念/resource/default.res.json",
+    "defaultResPath": "/Users/lichengfa/Documents/Work/EDB WLTS - Flash转HTML5/WLTS/6 減法概念/resource/default.res.json",
     "packGroups": {
         "preload": true
     }
