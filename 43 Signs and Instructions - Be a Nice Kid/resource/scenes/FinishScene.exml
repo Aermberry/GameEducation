@@ -62,12 +62,12 @@
 	<e:Group id="cretificateGroup" width="1086.82" height="801.19" x="377.2" y="249.01" alpha="0">
 		<e:Image source="certificate_background_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" alpha="1"/>
 		<e:Label text="Congratulations!" textColor="0x000000" size="50" fontFamily="Comic Sans MS" horizontalCenter="-31.409999999999968" verticalCenter="-145.59500000000003" alpha="1" anchorOffsetY="0" height="62"/>
-		<e:Label id="contentLabel" text="You hava helped one children!" textColor="0x000000" size="47" fontFamily="Comic Sans MS" horizontalCenter="-24.909999999999968" verticalCenter="-21.095000000000027" alpha="1"/>
+		<e:Label id="contentLabel" text="You helped one child!" textColor="0x000000" size="47" fontFamily="Comic Sans MS" horizontalCenter="-24.909999999999968" verticalCenter="-21.095000000000027" alpha="1"/>
 	</e:Group>
 	<ns1:ButtonComponent id="ButtonComponent" width="220" height="65.45" x="1639" y="848.85" anchorOffsetX="0" anchorOffsetY="0" text="Continue" alpha="0"/>
-	<e:Group id="printGroup" width="288" height="124" x="1600" y="692" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+	<e:Group id="printGroup" width="321.33" height="142.18" x="1566.67" y="692" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
 		<e:Image left="4" right="-4" top="0" bottom="0" source="background_button_png"/>
-		<e:Label id="printLabel" text="Print" y="12" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0" textAlign="center"/>
-		<e:Label id="certificateLabel" text="certificate" y="60" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0" textAlign="center"/>
+		<e:Label id="printLabel" text="Print" y="21.09" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0.3299999999999841" textAlign="center"/>
+		<e:Label id="certificateLabel" text="this certificate" y="69.09" textColor="0x000000" size="40" fontFamily="Comic Sans MS" left="0" right="0.3299999999999841" textAlign="center"/>
 	</e:Group>
 </e:Skin>
