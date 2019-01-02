@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_7_mp3,wave20_mp3,wave21_mp3,wave5_mp3,sound13_idel_to_over_mp3,streamsound 27_mp3,streamsound 31_mp3,wave1_mp3,wave10_mp3,wave11_mp3,wave12_mp3,wave13_mp3,wave14_mp3,wave15_mp3,wave16_mp3,wave17_mp3,wave18_mp3,wave19_mp3,wave2_mp3,wave22_mp3,wave23_mp3,wave24_mp3,wave25_mp3,wave26_mp3,wave27_mp3,wave28_mp3,wave29_mp3,wave3_mp3,wave30_mp3,wave31_mp3,wave4_mp3,wave6_mp3,wave7_mp3,wave8_mp3,wave9_mp3,description_json,wlts_logo_jpg,background_button_png,background_child_png,background_game_png,background_introduction_png,boy0_png,boy1_png,boy2_png,boy3_png,boy4_png,certificate_background_png,circle_png,circle_point_png,clock_wall_png,cloud_png,horn_normal_png,island_png,like_png,picture1_json,picture1_png,picture10_json,picture10_png,picture11_json,picture11_png,picture12_json,picture12_png,picture13_json,picture13_png,picture14_json,picture14_png,picture15_json,picture15_png,picture16_json,picture16_png,picture17_json,picture17_png,picture18_json,picture18_png,picture19_json,picture19_png,picture2_json,picture2_png,picture20_json,picture20_png,picture21_json,picture21_png,picture22_json,picture22_png,picture23_json,picture23_png,picture24_json,picture24_png,picture25_json,picture25_png,picture26_json,picture26_png,picture27_json,picture27_png,picture28_json,picture28_png,picture29_json,picture29_png,picture3_json,picture3_png,picture30_json,picture30_png,picture31_json,picture31_png,picture4_json,picture4_png,picture5_json,picture5_png,picture6_json,picture6_png,picture7_json,picture7_png,picture8_json,picture8_png,picture9_json,picture9_png,start_normal_png,start_over_png,title_png,shoes_png,clothes_png,trousers_png,boy0_clean_png,book_bag_png,juice_png,milk_png,fish_png,meat_png,vegetable_png,color_pen_png,rubber_png,pencil_png,book_png,bear_png,block_png,boy1_clean_png,boy2_clean_png,boy3_clean_png,boy4_clean_png,star_png,horn_over_png,background_button_blue_png,gameEui_json,start_png",
+			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,streamsound1_0_mp3,streamsound1_1_mp3,streamsound1_7_mp3,wave20_mp3,wave21_mp3,wave5_mp3,sound13_idel_to_over_mp3,streamsound 27_mp3,streamsound 31_mp3,wave1_mp3,wave10_mp3,wave11_mp3,wave12_mp3,wave13_mp3,wave14_mp3,wave15_mp3,wave16_mp3,wave17_mp3,wave18_mp3,wave19_mp3,wave2_mp3,wave22_mp3,wave23_mp3,wave24_mp3,wave25_mp3,wave26_mp3,wave27_mp3,wave28_mp3,wave29_mp3,wave3_mp3,wave30_mp3,wave31_mp3,wave4_mp3,wave6_mp3,wave7_mp3,wave8_mp3,wave9_mp3,description_json,wlts_logo_jpg,background_button_png,background_child_png,background_game_png,background_introduction_png,boy0_png,boy1_png,boy2_png,boy3_png,boy4_png,certificate_background_png,circle_png,circle_point_png,clock_wall_png,cloud_png,horn_normal_png,island_png,like_png,picture1_json,picture1_png,picture10_json,picture10_png,picture11_json,picture11_png,picture12_json,picture12_png,picture13_json,picture13_png,picture14_json,picture14_png,picture15_json,picture15_png,picture16_json,picture16_png,picture17_json,picture17_png,picture18_json,picture18_png,picture19_json,picture19_png,picture2_json,picture2_png,picture20_json,picture20_png,picture21_json,picture21_png,picture22_json,picture22_png,picture23_json,picture23_png,picture25_json,picture25_png,picture26_json,picture26_png,picture27_json,picture27_png,picture28_json,picture28_png,picture29_json,picture29_png,picture3_json,picture3_png,picture30_json,picture30_png,picture31_json,picture31_png,picture4_json,picture4_png,picture5_json,picture5_png,picture6_json,picture6_png,picture7_json,picture7_png,picture8_json,picture8_png,picture9_json,picture9_png,start_normal_png,start_over_png,title_png,shoes_png,clothes_png,trousers_png,boy0_clean_png,book_bag_png,juice_png,milk_png,fish_png,meat_png,vegetable_png,color_pen_png,rubber_png,pencil_png,book_png,bear_png,block_png,boy1_clean_png,boy2_clean_png,boy3_clean_png,boy4_clean_png,star_png,horn_over_png,background_button_blue_png,gameEui_json,start_png,picture24_png,picture24_json,picture242_png,picture242_json",
 			"name": "preload"
 		}
 	],
@@ -562,16 +562,6 @@
 			"name": "picture23_png"
 		},
 		{
-			"url": "textures/movieClip/picture24.json",
-			"type": "json",
-			"name": "picture24_json"
-		},
-		{
-			"url": "textures/movieClip/picture24.png",
-			"type": "image",
-			"name": "picture24_png"
-		},
-		{
 			"url": "textures/movieClip/picture25.json",
 			"type": "json",
 			"name": "picture25_json"
@@ -850,6 +840,26 @@
 			"name": "start_png",
 			"type": "image",
 			"url": "textures/start.png"
+		},
+		{
+			"name": "picture24_png",
+			"type": "image",
+			"url": "textures/movieClip/picture24.png"
+		},
+		{
+			"name": "picture24_json",
+			"type": "json",
+			"url": "textures/movieClip/picture24.json"
+		},
+		{
+			"name": "picture242_png",
+			"type": "image",
+			"url": "textures/movieClip/picture24.png"
+		},
+		{
+			"name": "picture242_json",
+			"type": "json",
+			"url": "textures/movieClip/picture24.json"
 		}
 	]
 }
