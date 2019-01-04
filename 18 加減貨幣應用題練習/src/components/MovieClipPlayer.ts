@@ -17,8 +17,6 @@ namespace Ui {
 		}
 
 		protected childrenCreated(): void {
-			
-			
 		}
 
 		private _dataSet = '';

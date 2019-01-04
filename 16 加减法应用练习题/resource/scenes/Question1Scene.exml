@@ -151,7 +151,7 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false"/>
 		<e:Label id="totalTextlmage" text="550-30" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
-	<e:Label id="text1label" text="今天賣出多少件。" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
+	<e:Label id="text1label" text="今天賣出多少件？" x="263.73" y="266.82" size="50" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Label id="text2lmage" text="昨天西餅店賣出蛋糕550件，今天比昨天少賣30件。" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
 	<e:Label id="textRunnersLabel" text="今天賣出蛋糕：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
@@ -182,7 +182,7 @@
 
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
 		<e:BitmapLabel height="70" x="164" y="164" text="550" anchorOffsetX="0" width="235.09" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
-		<e:Image x="28.03" y="272.27" source="reduce_png"/>
+		<e:Image x="28.03" y="278.27" source="reduce_png" width="60"/>
 		<e:BitmapLabel width="159" height="80" x="259.06" y="263" text="30" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1175.12" y="740">
@@ -192,10 +192,10 @@
 	</e:Group>
 	<e:Group id="totalBoxlmage" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="520(件）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
+		<e:Label text="520(件)" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體"/>
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="57" y="9.66" source="eject_box1_png" anchorOffsetY="0" height="217.61"/>
-		<e:Label text="今天賣出的蛋糕較少，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
+		<e:Label text="今天賣出的蛋糕是較少。應怎樣列式？" x="108.88" y="51.94" textColor="0x000000" fontFamily="華康楷書體" size="58" anchorOffsetX="0" width="636.36"/>
 	</e:Group>
 </e:Skin>

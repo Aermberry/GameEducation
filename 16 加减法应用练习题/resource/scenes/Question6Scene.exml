@@ -133,6 +133,9 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false" />
 		<e:Label id="totalTextlmage" text="215+120" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
 		         alpha="0" />
+		<e:Rect width="90" height="4" x="281" y="255"/>
+		<e:Rect width="90" height="4" x="278" y="308"/>
+		<e:Rect width="90" height="4" x="660.91" y="257.91"/>
 	</e:Group>
 	<e:Label id="text2lmage" text="小明有215元，比小嫦少120元。\n小嫦有多少元？" x="273" y="209.52" size="50" textColor="0x000000"
 	         fontFamily="華康楷書體" scaleX="1" scaleY="1" />
@@ -179,13 +182,14 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png" />
-		<e:Label text="335(元）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
+		<e:Label text="335(元)" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
 		         width="281.52" />
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0"
 	         visible="false">
 		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19" />
-		<e:Label text="小嫦錢比較多，應怎\n樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
+		<e:Label text="小嫦有較多錢。應怎\n樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
 		         anchorOffsetX="0" width="636.36" />
+		<e:Rect width="110" height="3" x="118.18" y="94.15"/>
 	</e:Group>
 </e:Skin>

@@ -132,6 +132,9 @@
 		<e:Image id="repeat" x="1026.94" y="360.57" source="repeat_png" alpha="1" visible="false" />
 		<e:Label id="totalTextlmage" text="330+120" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體"
 		         alpha="0" />
+		<e:Rect width="90" height="2" x="279.48" y="256.64"/>
+		<e:Rect width="90" height="2" x="279" y="310"/>
+		<e:Rect width="90" height="2" x="905.82" y="257.94"/>
 	</e:Group>
 	<e:Label id="text2lmage" text="大雄喝了牛奶330毫升，他比小安少喝120毫升。\n小安喝了牛奶多少毫升？" x="273" y="209.52" size="50" textColor="0x000000"
 	         fontFamily="華康楷書體" scaleX="1" scaleY="1" />
@@ -169,13 +172,14 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png" />
-		<e:Label text="450(毫升）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
+		<e:Label text="450(毫升)" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0"
 		         width="336.07" />
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0"
 	         visible="false">
 		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19" />
-		<e:Label text="小安喝了較多牛奶，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
+		<e:Label text="小安喝了較多牛奶。\n應怎樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60"
 		         anchorOffsetX="0" width="636.36" />
+		<e:Rect width="110" height="2" x="117.76" y="94.06"/>
 	</e:Group>
 </e:Skin>

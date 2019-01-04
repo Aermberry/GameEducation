@@ -36,6 +36,14 @@
 					</tween:props>
 				</tween:Set>
 			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:Wait duration="2000"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
 
 
 
@@ -155,13 +163,14 @@
 		<e:Label id="totalTextlmage" text="992-252" x="284.7" y="436.85" size="60" textColor="0x000000" fontFamily="華康楷書體" alpha="0"/>
 	</e:Group>
 
-	<e:Label id="text2lmage" text="中文字典有992頁，英文字典比它少252頁。\n英文自字典有多少頁？" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
-	<e:Label id="textRunnersLabel" text="英文自字典有：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
+	<e:Label id="text2lmage" text="中文字典有992頁，英文字典比它少252頁。\n英文字典有多少頁？" x="273" y="209.52" size="50" textColor="0x000000" fontFamily="華康楷書體" scaleX="1" scaleY="1"/>
+	<e:Label id="textRunnersLabel" text="英文字典有：" x="275.91" y="357.91" textColor="0x000000" size="50" fontFamily="華康楷書體" alpha="0"/>
 	<e:Group id="runnersGroup" x="1018.09" y="427.33" alpha="1" anchorOffsetX="0" width="644.7" anchorOffsetY="0" height="465.81">
 		<e:Image id="Chineselmage" x="145.12" y="27.52" source="Chineselmage_png" alpha="0"/>
 		<e:Image id="Englishlmage" x="430.85" y="236.12" source="Englishlmage_png" alpha="0"/>
 		<e:Image id="yeshulmage" x="357.33" y="79" source="yeshulmage_png" anchorOffsetY="0" height="327.34" scaleY="1.13" scaleX="0.95" alpha="0"/>
 		<e:Image id="image2runners" x="324.6" y="300.43" source="runners_r_png" anchorOffsetX="0" width="70.88" anchorOffsetY="0" height="95.85" alpha="0"/>
+		<e:Label id="label" text=" English \n Dictionary" x="439" y="242.4" textColor="0xf40404" alpha="0"/>
 
 
 
@@ -198,7 +207,7 @@
 
 		<e:Image x="-8.11" y="333.3" source="line_png"/>
 		<e:BitmapLabel height="70" x="164" y="164" text="992" anchorOffsetX="0" width="229.03" anchorOffsetY="0" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30"/>
-		<e:Image x="28.03" y="272.27" source="reduce_png"/>
+		<e:Image x="28.03" y="278.33" source="reduce_png" width="60"/>
 		<e:BitmapLabel width="249.91" height="80" x="171.18" y="263" text="252" font="calculation_font_fnt" letterSpacing="70" lineSpacing="30" anchorOffsetX="0"/>
 	</e:Group>
 	<e:Group id="editableLabelGroup" x="1181.18" y="740">
@@ -208,10 +217,10 @@
 	</e:Group>
 	<e:Group id="totalBoxGroup" x="236.73" y="525.42" visible="false">
 		<e:Image id="totalmage" x="0" y="29.49" source="totalmage_png"/>
-		<e:Label text="740(頁）" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0" width="281.52"/>
+		<e:Label text="740(頁)" x="56.42" y="0" textColor="0x000000" size="60" fontFamily="華康楷書體" anchorOffsetX="0" width="281.52"/>
 	</e:Group>
 	<e:Group id="CaketextGroup" width="745.45" height="242.42" x="870" y="251.07" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image x="57" y="12.69" source="eject_box1_png" anchorOffsetY="0" height="175.19"/>
-		<e:Label text="英文字典頁數較少，\n應怎樣列式" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
+		<e:Label text="英文字典的頁數是較\n少。應怎樣列式？" x="108.88" y="36.79" textColor="0x000000" fontFamily="華康楷書體" size="60" anchorOffsetX="0" width="636.36"/>
 	</e:Group>
 </e:Skin>
