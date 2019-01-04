@@ -1116,7 +1116,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_3()
 		{
-			
+			continueFourGame();
 		}
 		
 		/* Mouse Click 事件
@@ -1131,7 +1131,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_4()
 		{
-			
+			continueThirteenGame();
+			console.log("2")
 		}
 		
 		/* Mouse Click 事件
@@ -1146,7 +1147,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_5()
 		{
-			
+			console.log("3")
 		}
 		/* stop ();
 		*/
@@ -1180,9 +1181,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		*/
 		
 		this.stop();
-		
-		console.log("我在這裏")
-		continueFourGame();
 		/* stop ();
 		loadMovieNum("CWB.swf", 0);
 		*/

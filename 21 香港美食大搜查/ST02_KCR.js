@@ -2575,7 +2575,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 		
 		this.stop();
-		console.log("我在這裏")
+		continueSevenGame();
 	}
 
 	// actions tween:
