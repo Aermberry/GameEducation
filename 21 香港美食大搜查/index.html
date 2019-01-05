@@ -34,6 +34,15 @@
     <script src="08_EZE.js"></script>
     <script src="09_FaYeun.js"></script>
     <script src="10_MilkTea.js"></script>
+    <script src="CWB.js"></script>
+    <script src="CWB01_MTR.js"></script>
+    <script src="CWB02_Exit.js"></script>
+    <script src="CWB03_Centre.js"></script>
+    <script src="CWB04_Royal.js"></script>
+    <script src="CWB05_Pancake.js"></script>
+    <script src="CWB06_Hotel.js"></script>
+    <script src="CWB07_Hotel.js"></script>
+    <script src="CWB08_Teashop.js"></script>
     <style>
         html, body {
             -ms-touch-action: none;
@@ -88,7 +97,7 @@
         } 
         #animation_container, #_preload_div_ ,#animation_container_two ,#_preload_div_two,#animation_container_Three ,#_preload_div_Three,#animation_container_Four,#_preload_div_Four,#animation_container_Five,#_preload_div_Five,#animation_container_Six,#_preload_div_Six,
         #animation_container_Seven, #_preload_div_Seven,#animation_container_Eight, #_preload_div_Eight,#animation_container_Nine, #_preload_div_Nine,#animation_container_Ten, #_preload_div_Ten,#animation_container_Eleven, #_preload_div_Eleven,#animation_container_Twelve, #_preload_div_Twelve,
-        #animation_container_Thirteen, #_preload_div_Thirteen,#animation_container_Fourteen,#_preload_div_Fourteen,#animation_container_Fifteen,#_preload_div_Fifteen,#animation_container_Sixteen,#_preload_div_Sixteen,#animation_container_Seventeen,#_preload_div_Seventeen,#animation_container_Eighteen,#_preload_div_Eighteen,#animation_container_Nineteen,#_preload_div_Nineteen,#animation_container_Twenty,#_preload_div_Twenty,#animation_container_Twenty-one,#_preload_div_Twenty-one,#animation_container_Twenty_two,#_preload_div_Twenty_two,#animation_container_Twenty_Three,#_preload_div_Twenty_Three
+        #animation_container_Thirteen, #_preload_div_Thirteen,#animation_container_Fourteen,#_preload_div_Fourteen,#animation_container_Fifteen,#_preload_div_Fifteen,#animation_container_Sixteen,#_preload_div_Sixteen,#animation_container_Seventeen,#_preload_div_Seventeen,#animation_container_Eighteen,#_preload_div_Eighteen,#animation_container_Nineteen,#_preload_div_Nineteen,#animation_container_Twenty,#_preload_div_Twenty,#animation_container_Twenty-one,#_preload_div_Twenty-one,#animation_container_Twenty_two,#_preload_div_Twenty_two,#animation_container_Twenty_Three,#_preload_div_Twenty_Three,#animation_container_Twenty_Four,#_preload_div_Twenty_Four,#animation_container_Twenty_Five,#_preload_div_Twenty_Five,#animation_container_Twenty_Six,#_preload_div_Twenty_Six,#animation_container_Twenty_Seven,#_preload_div_Twenty_Seven,#animation_container_Twenty_Eight,#_preload_div_Twenty_Eight,#animation_container_Twenty_Nine,#_preload_div_Twenty_Nine,#animation_container_Thirty,#_preload_div_Thirty,#animation_container_Thirty_one,#_preload_div_Thirty_one,#animation_container_Thirty_two,#_preload_div_Thirty_two
         {
             position:absolute;
             margin:auto;
@@ -97,14 +106,14 @@
             /*padding: 30px 0;*/
         }
 
-        #animation_two , #animation_Three, #animation_Four, #animation_Five, #animation_Six, #animation_Seven,#animation_Eight,#animation_Nine,#animation_Ten,#animation_Eleven, #animation_Twelve,#animation_Thirteen,#animation_Fourteen,#animation_Fifteen,#animation_Sixteen,#animation_Seventeen,#animation_Eighteen,#animation_Nineteen,#animation_Twenty,#animation_Twenty-one,#animation_Twenty_two,#animation_Twenty_Three{
+        #animation_noe,#animation_two , #animation_Three, #animation_Four, #animation_Five, #animation_Six, #animation_Seven,#animation_Eight,#animation_Nine,#animation_Ten,#animation_Eleven, #animation_Twelve,#animation_Thirteen,#animation_Fourteen,#animation_Fifteen,#animation_Sixteen,#animation_Seventeen,#animation_Eighteen,#animation_Nineteen,#animation_Twenty,#animation_Twenty-one,#animation_Twenty_two,#animation_Twenty_Three,#animation_Twenty_Four,#animation_Twenty_Five,#animation_Twenty_Six,#animation_Twenty_Seven,#animation_Twenty_Eight,#animation_Twenty_Nine,#animation_Thirty,#animation_Thirty_one,#animation_Thirty_two{
             display: none;
         }
 
     </style>
 </head>
 
-<body onload="init();">
+<body>
 <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
 <div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
     data-content-width="1920" data-content-height="1440" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
@@ -369,6 +378,109 @@
 <img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </div>
 
+
+<!--第二十四段游戏 铜锣湾-->
+<div id="animation_Twenty_Four">
+    <div id="animation_container_Twenty_Four" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Four" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Four" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Four' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第二十五段游戏 铜锣湾-->
+<div id="animation_Twenty_Five">
+    <div id="animation_container_Twenty_Five" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Five" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Five" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Five' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第二十六段游戏 铜锣湾-->
+<div id="animation_Twenty_Six">
+    <div id="animation_container_Twenty_Six" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Six" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Six" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Six' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第二十七段游戏 铜锣湾-->
+<div id="animation_Twenty_Seven">
+    <div id="animation_container_Twenty_Seven" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Seven" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Seven" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Seven' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第二十八段游戏 铜锣湾-->
+<div id="animation_Twenty_Eight">
+    <div id="animation_container_Twenty_Eight" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Eight" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Eight" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Eight' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+
+<!--第二十九段游戏 铜锣湾-->
+<div id="animation_Twenty_Nine">
+    <div id="animation_container_Twenty_Nine" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Twenty_Nine" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Twenty_Nine" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Twenty_Nine' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第三十段游戏 铜锣湾-->
+<div id="animation_Thirty">
+    <div id="animation_container_Thirty" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Thirty" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Thirty" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Thirty' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第三十一段游戏 铜锣湾-->
+<div id="animation_Thirty_one">
+    <div id="animation_container_Thirty_one" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Thirty_one" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Thirty_one" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Thirty_one' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+<!--第三十二段游戏 铜锣湾-->
+<div id="animation_Thirty_two">
+    <div id="animation_container_Thirty_two" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+<canvas id="canvas_Thirty_two" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Thirty_two" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id='_preload_div_Thirty_two' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</div>
+
+
+
 <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
     style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
 </div>
@@ -434,13 +546,17 @@
     xhr.send(null);
 
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-    function init() {
+    function startInit() {
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
         dom_overlay_container = document.getElementById("dom_overlay_container");
+        var animation_noe = document.getElementById("animation_noe");
+        var egret_player = document.getElementById("egret-player");
         var comp = AdobeAn.getComposition("2DE111E45AF150499AA22C2D873E1955");
         var lib = comp.getLibrary();
         handleComplete({}, comp);
+        animation_noe.style.display = 'block';
+        egret_player.style.display = 'none';
     }
     function handleComplete(evt, comp) {
         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
@@ -589,7 +705,9 @@
         var animation_Three = document.getElementById("animation_Three")
         var animation_two = document.getElementById("animation_two")
         var animation_Twelve = document.getElementById("animation_Twelve")
-         var animation_Twenty_Three = document.getElementById("animation_Twenty_Three")
+        var animation_Twenty_Three = document.getElementById("animation_Twenty_Three")
+        var animation_Thirty_two = document.getElementById("animation_Thirty_two")
+        animation_Thirty_two.style.display = 'none';
         animation_Twenty_Three.style.display = "none";
         animation_Twelve.style.display = "none";
         animation_two.style.display = "none";
@@ -2360,7 +2478,7 @@
 
     // 第二十三段游戏代码
     function itinTwentythree() {
-         init();
+        init();
         var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas_Twenty_Three");
@@ -2387,6 +2505,804 @@
             preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib._10_MilkTea();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第二十四段游戏函数执行
+    function continueTwentyFourGame() {
+        var animation_Twenty_Four = document.getElementById("animation_Twenty_Four")
+        var animation_Three = document.getElementById("animation_Three")
+        animation_Three.style.display = "none";
+        animation_Twenty_Four.style.display = 'block';
+        itinTwentyFour();
+    }
+
+    // 第二十四段游戏代码
+    function itinTwentyFour() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Four");
+            anim_container = document.getElementById("animation_container_Twenty_Four");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Four");
+            var comp = AdobeAn.getComposition("81CFC8A75128BB42A48CC66096F75A4A");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Four");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第二十五段游戏函数执行
+    function continueTwentyFiveGame() {
+        var animation_Twenty_Four = document.getElementById("animation_Twenty_Four")
+        var animation_Twenty_Five = document.getElementById("animation_Twenty_Five")
+        animation_Twenty_Five.style.display = "block";
+        animation_Twenty_Four.style.display = 'none';
+        itinTwentyFive();
+    }
+
+    // 第二十五段代码
+    function itinTwentyFive() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Five");
+            anim_container = document.getElementById("animation_container_Twenty_Five");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Five");
+            var comp = AdobeAn.getComposition("1436343A2FC1514A8E9490BD2895A41D");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Five");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB01_MTR();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+
+    // 播放第二十六段游戏函数执行
+    function continueTwentySixGame() {
+        var animation_Twenty_Six = document.getElementById("animation_Twenty_Six")
+        var animation_Twenty_Five = document.getElementById("animation_Twenty_Five")
+        animation_Twenty_Five.style.display = "none";
+        animation_Twenty_Six.style.display = 'block';
+        itinTwentySix();
+    }
+
+    //第二十六段游戏代码
+    function itinTwentySix() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Six");
+            anim_container = document.getElementById("animation_container_Twenty_Six");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Six");
+            var comp = AdobeAn.getComposition("8B436203ED1890479F09B78F8B0D705B");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Six");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB02_Exit();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第二十七段游戏函数执行
+    function continueTwentySevenGame() {
+        var animation_Twenty_Six = document.getElementById("animation_Twenty_Six")
+        var animation_Twenty_Seven = document.getElementById("animation_Twenty_Seven")
+        animation_Twenty_Seven.style.display = "block";
+        animation_Twenty_Six.style.display = 'none';
+        itinTwentySeven();
+    }
+
+    // 27段游戏代码
+    function itinTwentySeven() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Seven");
+            anim_container = document.getElementById("animation_container_Twenty_Seven");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Seven");
+            var comp = AdobeAn.getComposition("8D46E4DA0D4E2844B1E6FFB822BBE6F7");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Seven");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB03_Centre();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第二十八段游戏函数执行
+    function continueTwentyEightGame() {
+        var animation_Twenty_Eight = document.getElementById("animation_Twenty_Eight")
+        var animation_Twenty_Seven = document.getElementById("animation_Twenty_Seven")
+        animation_Twenty_Seven.style.display = "none";
+        animation_Twenty_Eight.style.display = 'block';
+        itinTwentyEight();
+    }
+
+    // 第二十八段游戏代码
+    function itinTwentyEight() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Eight");
+            anim_container = document.getElementById("animation_container_Twenty_Eight");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Eight");
+            var comp = AdobeAn.getComposition("C859D66DE859D747929C8F8A18531EAE");
+            var lib = comp.getLibrary();
+            createjs.MotionGuidePlugin.install();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Eight");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB04_Royal();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+
+    // 播放第二十九段游戏函数执行
+    function continueTwentyNineGame() {
+        var animation_Twenty_Eight = document.getElementById("animation_Twenty_Eight")
+        var animation_Twenty_Nine = document.getElementById("animation_Twenty_Nine")
+        animation_Twenty_Nine.style.display = "block";
+        animation_Twenty_Eight.style.display = 'none';
+        itinTwentyNine();
+    }
+
+    // 第二十九段游戏代码
+    function itinTwentyNine() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Twenty_Nine");
+            anim_container = document.getElementById("animation_container_Twenty_Nine");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Twenty_Nine");
+            var comp = AdobeAn.getComposition("43BD6C29A7B1474288A6647053DD00D7");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Twenty_Nine");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB05_Pancake();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第三十段游戏函数执行
+    function continueThirtyGame() {
+        var animation_Thirty = document.getElementById("animation_Thirty")
+        var animation_Twenty_Nine = document.getElementById("animation_Twenty_Nine")
+        animation_Twenty_Nine.style.display = "none";
+        animation_Thirty.style.display = 'block';
+        itinThirty();
+    }
+    // 第三十段游戏代码
+    function itinThirty() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Thirty");
+            anim_container = document.getElementById("animation_container_Thirty");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Thirty");
+            var comp = AdobeAn.getComposition("BE3F8FE83D0E3340B222C6D3EF0DA34C");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Thirty");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB06_Hotel();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第三十一段游戏函数执行
+    function continueThirtyoneGame() {
+        var animation_Thirty = document.getElementById("animation_Thirty")
+        var animation_Thirty_one = document.getElementById("animation_Thirty_one")
+        animation_Thirty_one.style.display = "block";
+        animation_Thirty.style.display = 'none';
+        itinThirtyone();
+    }
+    // 31游戏代码
+    function itinThirtyone() {
+        init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Thirty_one");
+            anim_container = document.getElementById("animation_container_Thirty_one");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Thirty_one");
+            var comp = AdobeAn.getComposition("8F774AB0BD6A604BA825464596012FE7");
+            var lib = comp.getLibrary();
+            createjs.MotionGuidePlugin.install();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Thirty_one");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB07_Hotel();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio - 150 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 150 + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(true, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    }
+
+    // 播放第三十二段游戏函数执行
+    function continueThirtytwoGame() {
+        var animation_Thirty_two = document.getElementById("animation_Thirty_two")
+        var animation_Thirty_one = document.getElementById("animation_Thirty_one")
+        animation_Thirty_one.style.display = "none";
+        animation_Thirty_two.style.display = 'block';
+        itinThirtytwo();
+    }
+
+    function itinThirtytwo() {
+         init();
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas_Thirty_two");
+            anim_container = document.getElementById("animation_container_Thirty_two");
+            dom_overlay_container = document.getElementById("dom_overlay_container_Thirty_two");
+            var comp = AdobeAn.getComposition("9C5D437E2838C24A959DA4B8D7DDB717");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_Thirty_two");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.CWB08_Teashop();
             stage = new lib.Stage(canvas);
             stage.enableMouseOver();
             //Registers the "tick" event listener.

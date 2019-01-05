@@ -1147,6 +1147,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_5()
 		{
+			continueTwentyFourGame();
 			console.log("3")
 		}
 		/* stop ();

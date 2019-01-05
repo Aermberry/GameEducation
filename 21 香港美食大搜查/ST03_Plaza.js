@@ -6512,7 +6512,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		
 		this.stop();
 		console.log("我在這裏")
-		continueEightGame();
+		continueTwentyEightGame();
 		/* stop ();
 		loadMovieNum("ST04_SaSa.swf", 0);
 		*/

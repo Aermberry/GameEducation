@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16812e50c63" ></w:Config>
-	<e:Rect width="1920" height="1440" x="0" y="0" fillColor="0xffffff"/>
+	<e:Rect id="maksRect" width="1920" height="1440" x="0" y="0" fillColor="0xffffff"/>
+	<e:Image id="statrButton" x="763.33" y="658.56" source="start_png"/>
 </e:Skin>
