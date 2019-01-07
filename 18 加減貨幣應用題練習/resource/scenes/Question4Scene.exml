@@ -38,7 +38,7 @@
 	<e:Label id="questionLabel" text="小明原有9元8角，媽媽再給他45元。\n小明現有幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0" width="964.85"
 	         anchorOffsetY="0" height="157.03" textColor="0x000000" size="59" lineSpacing="25"  fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="小明現有：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="9元8角 + 45元" textColor="0x000000" x="278.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="9元8角 + 45元" textColor="0x000000" x="278.54" y="521.98" size="59"  fontFamily="華康楷書體" visible="false"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
 	<ui:nextStepButton id="nextStepButton" x="780.52" y="782.37" anchorOffsetX="0" anchorOffsetY="0"
 	                   skinName="nextStepButtonSkin"  visible="false"/>

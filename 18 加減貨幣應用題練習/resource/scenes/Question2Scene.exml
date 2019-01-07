@@ -79,11 +79,11 @@
 	<w:Config id="165d61708f0"></w:Config>
 	<Ui:Background left="0" right="0" top="0" bottom="0" skinName="BackgroundSkin" index="2" />
 	<ns1:NumberPad id="numberPad" x="138.5" y="909.03" />
-	<e:Label id="questionLabel" text="姐姐買手帕用去12元5角，買頸巾又用去41元2角。\n姐姐共用去幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
+	<e:Label id="questionLabel" text="姐姐買手帕用去12元5角，買頸巾又用去42元2角。\n姐姐共用去幾元幾角？" x="273.18" y="224.12" anchorOffsetX="0"
 	         width="1319.39" anchorOffsetY="0" height="157.04" textColor="0x000000" size="59" lineSpacing="25"
 	          fontFamily="華康楷書體" visible="false"/>
 	<e:Label id="titleLabel" text="姐姐共用去：" size="59" x="270.97" y="426.44" textColor="0x000000"  fontFamily="華康楷書體" visible="false"/>
-	<e:Label id="answerLabel" text="12元5角 + 42元2角" textColor="0x000000" x="274.54" y="521.98" size="59"  fontFamily="華康楷書體" bold="true" visible="false"/>
+	<e:Label id="answerLabel" text="12元5角 + 42元2角" textColor="0x000000" x="274.54" y="521.98" size="59"  fontFamily="華康楷書體" visible="false"/>
 	<e:Image id="scarfImage" source="scarf_png" x="1331.74" y="584.75"  alpha="0" anchorOffsetX="0" width="333.33" anchorOffsetY="0" height="216.67"/>
 	<e:Image id="handkerchiefImage" source="handkerchief_png" x="1053.17" y="574.15"  alpha="0" anchorOffsetX="0" width="360.61" anchorOffsetY="0" height="204.34"/>
 	<ns1:Beer id="Beer" x="812.98" y="527.75" width="0" height="0" alpha="0" />
@@ -125,7 +125,7 @@
 		<ns1:EditableLabel width="62" height="72" anchorOffsetX="0" anchorOffsetY="0" x="-8" y="30" visible="false"/>
 	</e:Group>
 	<e:Group id="totalGroup" y="624" x="244" visible="false">
-	<e:Label text="= 54元7角" size="59" textColor="0x000000" fontFamily="華康楷書體" bold="true"/>
+	<e:Label text="= 54元7角" size="59" textColor="0x000000" fontFamily="華康楷書體"/>
 	<e:Rect width="234" y="63" height="4" x="43"/>
 	<e:Rect width="234" y="73" height="4" x="43"/>
 	</e:Group>
