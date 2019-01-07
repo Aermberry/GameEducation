@@ -47,8 +47,8 @@ const config: ResourceManagerConfig = {
                             "libs/modules/tween/tween.min.js",
                             "libs/modules/game/game.min.js",
                             "libs/modules/promise/promise.min.js",
-                            "libs/modules/mouse/mouse.min.js",
-                            "libs/modules/lzlib/lzlib.min.js",
+                            // "libs/modules/mouse/mouse.min.js",
+                            // "libs/modules/lzlib/lzlib.min.js",
                             "resource/default.thm.js",
                             "main.js"
                         ],
