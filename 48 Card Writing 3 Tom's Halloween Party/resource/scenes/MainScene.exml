@@ -5,13 +5,13 @@
 	<e:Group x="6.72" y="10.31">
 		<e:Group anchorOffsetX="0" anchorOffsetY="0" includeInLayout="false" left="0" right="0" top="0" bottom="0">
 			<e:Rect id="dd" width="777.27" height="316" x="-1.03" y="0" fillColor="0xffffbf" anchorOffsetY="0"  anchorOffsetX="0"/>
-			<e:Label text="Susan cannot go to Tom's party.\nShe writes a card to Tom.Drag\nthe words to the right places in\nthe card."
+			<e:Label text="Susan cannot go to Tom's party.\nShe is writing a card to Tom.\nDrag the words to the right\nplaces in the card."
 			         x="10.85" y="16" size="50" textColor="0x64605c" lineSpacing="25" background="true" backgroundColor="0xFFFFBF"
 			         wordWrap="true"  fontFamily="Comic Sans MS"/>
 		</e:Group>
 	</e:Group >
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0" />
-	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry,I______________to your party.I have ________________\non _______________________\nat_________________.\n                                    Best wishes,                                     Susan" x="948.54" y="199.66" anchorOffsetX="0" width="810.37" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
+	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry,I______________to your party.I have ________________\non _______________________\nat_________________.\n                                    Best wishes,                                     Susan" x="960.66" y="190.57" anchorOffsetX="0" width="810.37" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
 	<e:Group id="tipsGroup" x="931.83" y="270.1" anchorOffsetX="0" width="823.67" anchorOffsetY="0" height="813.36">
 		<e:Label text="    Tom sends Susan a card.  \nShe thanks him for the card." x="13.66" y="54.94" anchorOffsetX="0" width="803" anchorOffsetY="0" height="168.58" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" textAlign="center" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" visible="false"/>
 		<e:Label text="Susan cannot go to Tom's party." x="13.66" y="244.74" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
