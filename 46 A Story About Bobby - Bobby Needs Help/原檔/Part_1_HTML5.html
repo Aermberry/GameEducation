@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>恢复_Part_1_HTML5</title>
+<title>Part_1_HTML5</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -22,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="恢复_Part_1_HTML5.js?1545645508488"></script>
+<script src="Part_1_HTML5.js?1547025558192"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -53,14 +53,39 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib.恢复_Part_1_HTML5();
+	exportRoot = new lib.Part_1_HTML5();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage);
+		createjs.Ticker.addEventListener("tick", stage)
+		stage.addEventListener("tick", handleTick)
+		function handleTick(event) {
+			var cameraInstance = exportRoot.___camera___instance;
+			if(cameraInstance)
+			{
+				var stageCenter = { 'x' : lib.properties.width/2, 'y' : lib.properties.height/2 };
+				if(cameraInstance._off != null && cameraInstance._off == true)
+					exportRoot.transformMatrix = new createjs.Matrix2D();
+				else
+				{
+					if(cameraInstance.pinToObject !== undefined)
+					{
+						cameraInstance.x = cameraInstance.pinToObject.x + cameraInstance.pinToObject.pinOffsetX;
+						cameraInstance.y = cameraInstance.pinToObject.y + cameraInstance.pinToObject.pinOffsetY;
+					}
+					var mat = cameraInstance.getMatrix();
+					mat.tx -= stageCenter.x;
+					mat.ty -= stageCenter.y;
+					var inverseMat = mat.invert();
+					inverseMat.prependTransform(stageCenter.x, stageCenter.y, 1, 1, 0, 0, 0, 0, 0);
+					inverseMat.appendTransform(-stageCenter.x, -stageCenter.y, 1, 1, 0, 0, 0, 0, 0);
+					exportRoot.transformMatrix = inverseMat;
+				}
+			}
+		}
 	}	    
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {		
@@ -106,11 +131,11 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(153, 204, 255, 1.00); width:1920px; height:1440px">
-		<canvas id="canvas" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(153, 204, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+	<div id="animation_container" style="background-color:rgba(153, 204, 255, 1.00); width:2118px; height:1450px">
+		<canvas id="canvas" width="2118" height="1450" style="position: absolute; display: none; background-color:rgba(153, 204, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2118px; height:1450px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1545645508488 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1450px; width: 2118px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1547025558193 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
