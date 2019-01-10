@@ -2,6 +2,7 @@
 <e:Skin class="Riddle1SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:Ui="Ui.*" >
 	<w:Config id="16624d86904" ></w:Config>
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
+	<e:Image source="correctAnswer_png" x="345" y="759"/>
 	<e:Image x="251" y="405" anchorOffsetX="0" anchorOffsetY="0" source="title01_png"/>
 
 
@@ -14,7 +15,7 @@
 	</e:Group>
 	<e:Group x="639.82" y="393.88">
 		<e:Image source="bigLabel_png" x="-10" y="-6"/>
-		<e:Label text="We usually          some books and a pencil case in it.What is it?" x="-11.21" y="10" anchorOffsetX="0" width="1074" anchorOffsetY="0" height="230" textColor="0x5C2C47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS"/>
+		<e:Label text="We usually          some books and a pencil case in it. What is it?" x="-11.21" y="10" anchorOffsetX="0" width="1074" anchorOffsetY="0" height="230" textColor="0x5C2C47" verticalAlign="middle" textAlign="center" size="64" fontFamily="Comic Sans MS"/>
 
 		<e:Group id="keepClickGroup" x="336.36" y="54.55">
 			<e:Rect width="151" height="3" x="8.15" y="64.64" anchorOffsetY="0" fillColor="0x5c2c47"/>
@@ -46,8 +47,5 @@
 		<e:Image x="602.7" y="107.77" rotation="7.66" source="monkey_png"/>
 	</e:Group>
 	<e:Image id="isTrueImage" source="true_png" x="1432.88" y="1047.68" rotation="350.52" alpha="1" visible="false"/>
-	<e:Group x="345" y="759.24">
-		<e:Image x="-63.64" y="0" source="bigLabel02_png" scaleX="0.6" scaleY="0.4"/>
-		<e:Label text="Choose your answer below." x="-53.85" y="28.88" textColor="0x000000" size="48" bold="true" fontFamily="Comic Sans MS"/>
-	</e:Group>
+
 </e:Skin>

@@ -2,7 +2,7 @@
 <e:Skin class="Riddle4SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624da5477" ></w:Config>
 	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" locked="true"/>
-	<e:Image source="clickyouranswer_png" x="268" y="759.39" visible="false"/>
+	<e:Image source="correctAnswer_png" x="345" y="759"/>
 	<e:Image x="148.91" y="342.39" source="title04_png"/>
 
 
@@ -47,8 +47,5 @@
 		<e:Image source="monkey_png" x="526.91" y="95.6" rotation="7.66"/>
 	</e:Group>
 	<e:Image id="isTrueImage" source="true_png" x="325.81" y="1055.59" rotation="346.24" visible="false"/>
-	<e:Group x="345" y="759.24">
-		<e:Image x="-63.64" y="0" source="bigLabel02_png" scaleX="0.6" scaleY="0.4"/>
-		<e:Label text="Choose your answer below." x="-53.85" y="28.88" textColor="0x000000" size="48" bold="true" fontFamily="Comic Sans MS"/>
-	</e:Group>
+
 </e:Skin>

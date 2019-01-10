@@ -2,9 +2,8 @@
 <e:Skin class="Riddle2SceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="16624d8fccc"></w:Config>
-	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3" />
-	<e:Image source="clickyouranswer_png" x="268" y="759.39"  visible="false"/>
-
+	<e:Image source="SceneQuestion_png" horizontalCenter="-47.5" verticalCenter="3"  locked="true"/>
+	<e:Image source="correctAnswer_png" x="345" y="759" locked="true"/>
 	<e:Image x="251" y="405" source="title02_png" />
 	<e:Group id="goodsGroup" x="442" y="964">
 		<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
@@ -13,16 +12,16 @@
 		<e:Image id="Puzzle" source="Puzzle_png" x="837" y="0" />
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0"  scaleY="1.1"/>
-		<e:Label text="We       different pieces of something                to make a beautiful picture.What are they?" x="45.66" y="8.8"
-		         anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="242.12" textColor="0x5c2c47" size="64"
+		<e:Image source="bigLabel_png" x="-45.45" y="-27.27"  scaleY="1.1" anchorOffsetX="0" width="1180.93" anchorOffsetY="0" height="284.81"/>
+		<e:Label text="We      different pieces of something\n               to make a beautiful picture.\nWhat are they?" x="-17.97" y="8.8"
+		         anchorOffsetX="0" width="1192.18" anchorOffsetY="0" height="242.12" textColor="0x5c2c47" size="64"
 		         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
-		<e:Group id="togetherGroup" x="198.09" y="91.52">
+		<e:Group id="togetherGroup" x="-17.06" y="94.55">
 			<e:Label text="together" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 			<e:Rect width="253" height="3" x="5.85" y="80.04" anchorOffsetY="0" fillColor="0x5C2C47"/>
 		</e:Group>
-		<e:Group id="putGroup" x="165.72" y="-0.32">
+		<e:Group id="putGroup" x="93" y="-0.32">
 			<e:Label text="put" x="0.65" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64"
 			         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 			<e:Rect width="92" height="3" x="0" y="76.72" anchorOffsetY="0" fillColor="0x5c2c47" />
@@ -48,8 +47,5 @@
 
 	</e:Group>
 	<e:Image id="isTrueImage" source="true_png" x="1410.66" y="1055.59" rotation="346.24"  visible="false"/>
-	<e:Group x="345" y="759.24">
-		<e:Image x="-63.64" y="0" source="bigLabel02_png" scaleX="0.6" scaleY="0.4"/>
-		<e:Label text="Choose your answer below." x="-53.85" y="28.88" textColor="0x000000" size="48" bold="true" fontFamily="Comic Sans MS"/>
-	</e:Group>
+
 </e:Skin>
