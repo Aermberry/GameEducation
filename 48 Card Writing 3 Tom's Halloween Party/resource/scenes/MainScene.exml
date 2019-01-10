@@ -5,13 +5,13 @@
 	<e:Group x="6.72" y="10.31">
 		<e:Group anchorOffsetX="0" anchorOffsetY="0" includeInLayout="false" left="0" right="0" top="0" bottom="0">
 			<e:Rect id="dd" width="777.27" height="316" x="-1.03" y="0" fillColor="0xffffbf" anchorOffsetY="0"  anchorOffsetX="0"/>
-			<e:Label text="Susan cannot join Tom’s party.\nis writing a card to Tom. Drag\nthe words to the right places in\nthe card."
+			<e:Label text="Susan cannot join Tom’s party.\nShe is writing a card to Tom. Drag the words to the right places i nthe card."
 			         x="10.85" y="16" size="50" textColor="0x64605c" lineSpacing="25" background="true" backgroundColor="0xFFFFBF"
-			         wordWrap="true"  fontFamily="Comic Sans MS"/>
+			         wordWrap="true"  fontFamily="Comic Sans MS" anchorOffsetX="0" width="782.82" anchorOffsetY="0" height="308.33"/>
 		</e:Group>
 	</e:Group >
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0" />
-	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry, I___________your party. l will have ______________\non _______________________\nat_________________\n                                   Best wishes,\n                                       Susan" x="948.54" y="199.66" anchorOffsetX="0" width="816.43" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
+	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry, I___________your party. l will have ______________\non _______________________\nat_________________\n                                   Best wishes,\n                                       Susan" x="948.54" y="199.66" anchorOffsetX="0" width="819.46" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
 	<e:Group id="tipsGroup" x="931.83" y="270.1" anchorOffsetX="0" width="823.67" anchorOffsetY="0" height="813.36">
 		<e:Label text="    Tom sent Susan a card.  \nSusan would like to thank him for \nthe card." x="13.66" y="27.67" anchorOffsetX="0" width="803" anchorOffsetY="0" height="220.09" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" textAlign="center" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" visible="false"/>
 		<e:Label text="Can Susan join Tom’s party?" x="13.66" y="244.74" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
