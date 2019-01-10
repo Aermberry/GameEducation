@@ -180,7 +180,7 @@ class EasyWordRepository implements WordRepository {
 			'three',
 			'to',
 			'today',
-			'together',
+			// 'together',
 			'too',
 			'try',
 			'two',
