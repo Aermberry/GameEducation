@@ -35,14 +35,14 @@
 	<w:Config id="164d4293be7"></w:Config>
 	<e:Group id="group" verticalCenter="0" horizontalCenter="0">
 		<e:Image id="pingBgImg" source="pink_bg_png" horizontalCenter="0" verticalCenter="0" />
-		<e:Image id="pinkBannerImg" source="pink_banner_png" horizontalCenter="0" verticalCenter="0" />
+		<e:Image id="pinkBannerImg" source="pink_banner_png" horizontalCenter="0" verticalCenter="1.5"  scaleY="1.11"/>
 		<e:Group id="title" anchorOffsetY="0" verticalCenter="4.5" height="341" horizontalCenter="0.5">
 			<e:Label text="Dos" y="0" fontFamily="One Stroke Script LET" size="123" horizontalCenter="0" textColor="0x6664fd" />
 			<e:Label text="&amp;" y="115" fontFamily="One Stroke Script LET" size="123" horizontalCenter="0" textColor="0xfd65ca" />
 			<e:Label text="Don'ts" y="210" fontFamily="One Stroke Script LET" size="127" horizontalCenter="0"
 			         textColor="0x6664fd" />
 		</e:Group>
-		<e:Image id="bannerImg" source="banner_png" horizontalCenter="0" verticalCenter="0" />
+		<e:Image id="bannerImg" source="banner_png" horizontalCenter="0" verticalCenter="0"  scaleY="1.1"/>
 	</e:Group>
 	<e:Group id="schoolGroup" verticalCenter="0" horizontalCenter="0" alpha="0">
 		<e:Image id="schoolImg" source="school_png" verticalCenter="0" horizontalCenter="0" locked="true" />
