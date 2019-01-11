@@ -6,9 +6,10 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 	private maskGroup: eui.Group;
 
 	private nextButton: eui.Label;
+	private againButton: eui.Label;
 	private logImage: eui.Image;
 	private helpButton: eui.Button;
-	private storybook:eui.Label;
+	private storybook: eui.Label;
 
 	private tipsComponent: Ui.TexttLabel;
 
@@ -29,6 +30,7 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 		this.initDragable();
 		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.displayChildrenStage, this);
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.gotoNextScene, this);
+		this.againButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.againTips, this);
 	}
 
 	private initDragable(): void {
@@ -54,7 +56,6 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 		let drag = e.dragObject as eui.Label;
 
 		this.currentText = drag.text;
-		this.nextButton.visible = true;
 
 		if (drag.text.trim() == target.text.trim()) {
 			e.preventDefault();
@@ -68,10 +69,16 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 						element.visible = true;
 					});
 				})
+
+				if (this.dropGroup.$children.every(children => children.visible) && this.logImage.visible) {
+					this.nextButton.visible = true;
+
+				}
 			}
 		}
 		else {
-			this.storybook.visible=true;
+			this.againButton.visible = true;
+			this.storybook.visible = true;
 			this.showTipsLabel();
 			this.swapChildren(this.dragGroup, this.maskGroup);
 		}
@@ -108,23 +115,20 @@ class Choose3Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gotoNextScene(): void {
-		const confirm = this.dropGroup.$children.every(children => children.visible) && this.logImage.visible
-		if (confirm) {
-			Main.instance.gotoScene(new FinishScene())
-		}
-		else {
-			this.TipsGroup.$children.forEach((children, index) => {
-				(children.$children[0] as eui.Label).textColor = 0x000000;
-				for (let index = 1; index < children.$children.length; index++) {
-					children.$children[index].visible = false;
-				}
-			})
-			this.helpButton.visible = false;
-			this.nextButton.visible = false;
-			this.tipsComponent.visible = false;
-			this.swapChildren(this.dragGroup, this.maskGroup);
-		}
+		Main.instance.gotoScene(new FinishScene())
+	}
 
+	private againTips(): void {
+		this.TipsGroup.$children.forEach((children, index) => {
+			(children.$children[0] as eui.Label).textColor = 0x000000;
+			for (let index = 1; index < children.$children.length; index++) {
+				children.$children[index].visible = false;
+			}
+		})
+		this.helpButton.visible = false;
+		this.againButton.visible = false;
+		this.tipsComponent.visible = false;
+		this.swapChildren(this.dragGroup, this.maskGroup);
 	}
 
 	private displayChildrenStage(): void {

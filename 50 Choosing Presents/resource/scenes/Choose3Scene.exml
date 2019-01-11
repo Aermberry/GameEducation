@@ -15,7 +15,7 @@
 		<e:Label text="sixteen dollars" x="412.16" y="-9.03" anchorOffsetX="0" width="405.63" anchorOffsetY="0" height="74" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" alpha="1" visible="false"/>
 		</e:Group>
 		<e:Group x="325.15" y="257.52">
-		<e:Label text="likes collecting coins. She can put the coins in  it." x="30.3" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="likes collecting coins. She can put the coins in it." x="30.3" y="-5.21" anchorOffsetX="0" width="1417" anchorOffsetY="0" height="121.45" textColor="0x000000" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left"/>
 		<e:Label text="collecting" x="173.76" y="0" anchorOffsetX="0" width="264.73" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="left" textColor="0xffffff" backgroundColor="0xff0099" background="true" visible="false"/>
 		<e:Label text="put" x="834.81" y="1" anchorOffsetX="0" width="97.75" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
 		<e:Label text="in" x="1210.61" y="2.52" anchorOffsetX="0" width="52.79" anchorOffsetY="0" height="104" size="58" fontFamily="Comic Sans MS" lineSpacing="50" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" backgroundColor="0xFF0099" background="true" visible="false"/>
@@ -42,8 +42,9 @@
 
 
 	<Ui:TexttLabel id="tipsComponent" width="767.64" height="128.48" x="484" y="892.46" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The storybook costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" visible="false"/>
-	<e:Button id="nextButton" label="Next" x="1685.77" y="1358" anchorOffsetX="0" width="184" anchorOffsetY="0" height="70" visible="false"/>
-	<e:Button id="helpButton" label="Help" x="1341.77" y="1364" anchorOffsetX="0" width="154" anchorOffsetY="0" height="66" visible="false"/>
+	<e:Button id="nextButton" label="Next" x="1660.01" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
+	<e:Button id="againButton" label="try again" x="1649.41" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
+	<e:Button id="helpButton" label="Help" x="1341.77" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
 
 
 	<e:Group id="dropGroup" x="523.39" y="1083.09" width="467.27" height="119.76" anchorOffsetX="0" anchorOffsetY="0">
