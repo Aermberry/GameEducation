@@ -1,5 +1,6 @@
 class Choose2Scene extends eui.Component implements eui.UIComponent {
 
+	private againButton: eui.Button;
 	private nextButton: eui.Button;
 	private helpButton: eui.Button;
 	private logImage: eui.Image;
@@ -7,7 +8,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	private bankColorTipsLabe: eui.Label;
 	private basketballTipWorldLabel: eui.Label;
 	private basketballTipColorLabel: eui.Label;
-	private storybook:eui.Label;
+	private storybook: eui.Label;
 
 	private dropGroup: eui.Group;
 	private dragGroup: eui.Group;
@@ -31,6 +32,7 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 
+		this.againButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.againTips, this)
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.gotoNextScene, this)
 		this.helpButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.displayChildrenStage, this);
 		this.initDragable();
@@ -64,17 +66,20 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 			e.preventDefault();
 			targetCompent.visible = true;
 			dragCompent.visible = false;
-			this.nextButton.visible=true
 			if (this.dropGroup.$children.every(children => children.visible) && (this.logImage.visible = true)) {
 				this.TipsGroup.$children.forEach((children, index) => {
 					(children.$children[0] as eui.Label).textColor = 0xFF0099;
 					children.$children[1].visible = true
 				})
+
+				if (this.dropGroup.$children.every(children => children.visible) && this.logImage.visible) {
+					this.nextButton.visible = true;
+				}
 			}
 		}
 
 		else {
-			this.storybook.visible=true
+			this.storybook.visible = true
 			this.onshowTips();
 			console.log("drop")
 			this.swapChildren(this.dragGroup, this.maskGroup);
@@ -86,14 +91,14 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 		if (this.optionText == "piggy bank") {
 			this.bankTipsWorldlabel.textColor = 0xFF0099
 			this.bankColorTipsLabe.visible = true
-			this.nextButton.visible=true
+			this.againButton.visible = true
 		}
 
 		if (this.optionText == "basketball") {
 			this.basketballTipWorldLabel.textColor = 0xFF0099
 			this.basketballTipColorLabel.visible = true
 			this.helpButton.visible = true
-			this.nextButton.visible=true
+			this.againButton.visible = true
 		}
 
 		if (this.optionText == "storybook") {
@@ -102,27 +107,22 @@ class Choose2Scene extends eui.Component implements eui.UIComponent {
 			this.basketballTipWorldLabel.textColor = 0xFF0099;
 			this.basketballTipColorLabel.visible = true;
 			this.helpButton.visible = true
-			this.nextButton.visible=true
+			this.againButton.visible = true
 		}
 	}
 
-
-
 	private gotoNextScene(): void {
-		const confirm = this.dropGroup.$children.every(children => children.visible) && this.logImage.visible
-		if (confirm) {
-			Main.instance.gotoScene(new Choose3Scene())
-		}
-		else {
-			this.nextButton.visible = false;
-			this.basketballTipWorldLabel.textColor = 0x000000;
-			this.bankTipsWorldlabel.textColor = 0x000000;
-			this.bankColorTipsLabe.visible = false;
-			this.basketballTipColorLabel.visible = false;
-			this.helpButton.visible = false;
-			this.swapChildren(this.dragGroup, this.maskGroup);
-		}
+		Main.instance.gotoScene(new Choose3Scene())
+	}
 
+	private againTips(): void {
+		this.againButton.visible = false;
+		this.basketballTipWorldLabel.textColor = 0x000000;
+		this.bankTipsWorldlabel.textColor = 0x000000;
+		this.bankColorTipsLabe.visible = false;
+		this.basketballTipColorLabel.visible = false;
+		this.helpButton.visible = false;
+		this.swapChildren(this.dragGroup, this.maskGroup);
 	}
 
 	private displayChildrenStage(): void {
