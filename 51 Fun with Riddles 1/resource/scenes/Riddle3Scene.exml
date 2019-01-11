@@ -13,7 +13,7 @@
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
 		<e:Image source="bigLabel_png" x="0" y="0" />
-		<e:Label text="We       it to draw and write.What is it?" x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0"
+		<e:Label text="We       it to draw and write. What is it?" x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0"
 		         height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25"
 		         fontFamily="Comic Sans MS" />
 

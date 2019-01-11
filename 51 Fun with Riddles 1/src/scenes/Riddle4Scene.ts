@@ -57,7 +57,7 @@ class Riddle4Scene extends eui.Component implements eui.UIComponent {
       this.goodsGroup,
       this.transparentBlock
     );
-    await lzlib.ThreadUtility.sleep(5000);
+    await lzlib.ThreadUtility.sleep(3000);
     object.visible = false;
   }
 

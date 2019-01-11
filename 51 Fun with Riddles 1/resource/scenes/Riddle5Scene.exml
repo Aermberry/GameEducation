@@ -14,7 +14,7 @@
 	</e:Group>
 	<e:Group x="669.76" y="376.41" anchorOffsetY="0" height="267.18">
 		<e:Image source="bigLabel_png" x="0" y="0"  anchorOffsetY="0" height="261.12"/>
-		<e:Label text="We       it every day.We drink water,milk,orange juice,tea or coffee with it.\nWhat is it?" x="48.97" y="6.47"
+		<e:Label text="We       it every day. We drink water, milk, orange juice, tea or coffee with it.\nWhat is it?" x="48.97" y="6.47"
 		         anchorOffsetX="0" width="1034.6" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="54"
 		         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 

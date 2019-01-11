@@ -14,7 +14,7 @@
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
 		<e:Image source="bigLabel_png" x="-15.15" y="0"  anchorOffsetX="0" width="1138.51"/>
-		<e:Label text="We       it on sunny and rainy days.\nIt can be long or short.What is it?" x="45.66" y="8.8" anchorOffsetX="0"
+		<e:Label text="We       it on sunny and rainy days.\nIt can be long or short. What is it?" x="45.66" y="8.8" anchorOffsetX="0"
 		         width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="62" verticalAlign="middle"
 		         textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
@@ -31,7 +31,7 @@
 	</e:Group>
 	<e:Group id="bottleTipsGroup" x="143" y="931" visible="false">
 		<e:Image source="Label_png" x="103.03" y="0"  scale9Grid="86,48,519,111" anchorOffsetX="0" width="587.97"/>
-		<e:Label text="We keep drinks in abottle." x="163.63" y="18.14" width="453.13" height="181.73" textColor="0x66002e" size="48"
+		<e:Label text="We keep drinks in a bottle." x="163.63" y="18.14" width="453.13" height="181.73" textColor="0x66002e" size="48"
 		         textAlign="left" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="25" />
 		<e:Image source="monkey_png" x="523.88" y="56.21" rotation="7.66" />
 	</e:Group>
