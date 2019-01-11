@@ -73,7 +73,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private async showTipsLabel(): Promise<void> {
 		let currentQuestionIndex = this.currentQuestionIndex;
 		let originalChildIndex = this.getChildIndex(this.tipsGroup);//获取tipsgroup的Id
-		this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将yipsGroup层级升至最高
+		this.setChildIndex(this.tipsGroup, this.numChildren - 1);//将tipsGroup层级升至最高
 		this.tipsGroup.getChildAt(currentQuestionIndex).visible = true;
 		await lzlib.ThreadUtility.sleep(2000);
 		this.tipsGroup.getChildAt(currentQuestionIndex).visible = false

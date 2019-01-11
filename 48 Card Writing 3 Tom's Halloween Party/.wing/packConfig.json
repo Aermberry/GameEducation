@@ -1,0 +1,9 @@
+{
+    "useClip": true,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\EDB WLTS\\WLTS\\48 Card Writing 3 Tom's Halloween Party\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true
+    }
+}
