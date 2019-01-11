@@ -25,7 +25,17 @@
     "backgroundHeight": -1,
     "useBgImage": true,
     "useBgColor": true,
-    "backgroundAlpha": 100
+    "backgroundAlpha": 100,
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": -654.545
+      },
+      {
+        "type": "h",
+        "pos": 1054.545
+      }
+    ]
   },
   "1661a737e1a": {
     "path": "scenes\\FinishScene.ts",
