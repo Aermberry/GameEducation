@@ -11,7 +11,7 @@
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-   
+
     <style>
         html, body {
             -ms-touch-action: none;
@@ -73,7 +73,8 @@
     data-content-width="1920" data-content-height="1061" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
     data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
 </div>
-<div id='_preload_div_' style='position:absolute; top:0; left:0; bottom: 0; right: 0; display: none; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1544192277196 style='vertical-align: middle; max-height: 100%'/></div>
+<div id='_preload_div_' style='position:absolute; top:0; left:0; bottom: 0; right: 0; display: none; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif?1544192277196 style='vertical-align: middle; max-height: 100%'/></div>
 <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/tc/other/important_notices.html">重要告示</a> | <a href="http://wlts.edb.hkedcity.net/tc/other/privacy_policy.html"
     style="margin-right: 30px;">私隱權政策</a>最近修訂日期： 2018年7月29日
 </div>
@@ -185,18 +186,18 @@
     // 动画开始
     function initOne() {
         var preloaderDiv = document.getElementById("_preload_div_");
-	    preloaderDiv.style.display = 'inline-block';
+        preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
         //     script.parentNode.removeChild(script);
         // }
         // var script = document.createElement('script');
-        script.onload = script.onreadystatechange = function() {
-            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-            console.log('动态JS加载完成');
-            init();
-            script.onload = script.onreadystatechange = null;
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                console.log('动态JS加载完成');
+                init();
+                script.onload = script.onreadystatechange = null;
             }
         };
 
@@ -211,15 +212,7 @@
             dom_overlay_container = document.getElementById("dom_overlay_container");
             var comp = AdobeAn.getComposition("86A442D1E96B104BA16AAFB49A960442");
             var lib = comp.getLibrary();
-            var loader = new createjs.LoadQueue(false);
-            loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
-            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-            var lib = comp.getLibrary();
-            loader.loadManifest(lib.properties.manifest);
-        }
-        function handleFileLoad(evt, comp) {
-            var images = comp.getImages();
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+            handleComplete({}, comp);
         }
         function handleComplete(evt, comp) {
             //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
@@ -231,7 +224,7 @@
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
             var preloaderDiv = document.getElementById("_preload_div_");
-	        preloaderDiv.style.display = 'none';
+            preloaderDiv.style.display = 'none';
             anim_container.style.display = 'block';
             exportRoot = new lib.Asub1();
             stage = new lib.Stage(canvas);
@@ -289,18 +282,18 @@
     // 第二个
     function initTwo() {
         var preloaderDiv = document.getElementById("_preload_div_");
-	    preloaderDiv.style.display = 'inline-block';
+        preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
         //     script.parentNode.removeChild(script);
         // }
         // var script = document.createElement('script');
-        script.onload = script.onreadystatechange = function() {
-            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-            console.log('动态JS加载完成');
-            init();
-            script.onload = script.onreadystatechange = null;
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                console.log('动态JS加载完成');
+                init();
+                script.onload = script.onreadystatechange = null;
             }
         };
         script.type = 'text/javascript';
@@ -334,7 +327,7 @@
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
             var preloaderDiv = document.getElementById("_preload_div_");
-	        preloaderDiv.style.display = 'none';
+            preloaderDiv.style.display = 'none';
             anim_container.style.display = 'block';
             exportRoot2 = new lib.Asub2();
             console.log(exportRoot2)
@@ -394,17 +387,17 @@
     // 第三个
     function initThree() {
         var preloaderDiv = document.getElementById("_preload_div_");
-	    preloaderDiv.style.display = 'inline-block';
+        preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
         //     script.parentNode.removeChild(script);
         // }
-         script.onload = script.onreadystatechange = function() {
-            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-            console.log('动态JS加载完成');
-            init();
-            script.onload = script.onreadystatechange = null;
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                console.log('动态JS加载完成');
+                init();
+                script.onload = script.onreadystatechange = null;
             }
         };
         script.type = 'text/javascript';
@@ -438,7 +431,7 @@
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
             var preloaderDiv = document.getElementById("_preload_div_");
-	        preloaderDiv.style.display = 'none';
+            preloaderDiv.style.display = 'none';
             anim_container.style.display = 'block';
             exportRoot3 = new lib.Asub3();
             stage = new lib.Stage(canvas);
@@ -497,17 +490,17 @@
     // 第四个
     function initFour() {
         var preloaderDiv = document.getElementById("_preload_div_");
-	    preloaderDiv.style.display = 'inline-block';
+        preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
         //     script.parentNode.removeChild(script);
         // }
-        script.onload = script.onreadystatechange = function() {
-            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-            console.log('动态JS加载完成');
-            init();
-            script.onload = script.onreadystatechange = null;
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                console.log('动态JS加载完成');
+                init();
+                script.onload = script.onreadystatechange = null;
             }
         };
         script.type = 'text/javascript';
@@ -541,7 +534,7 @@
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
             var preloaderDiv = document.getElementById("_preload_div_");
-	        preloaderDiv.style.display = 'none';
+            preloaderDiv.style.display = 'none';
             anim_container.style.display = 'block';
             exportRoot4 = new lib.Asub4();
             stage = new lib.Stage(canvas);
@@ -600,17 +593,17 @@
     // 第五个
     function initFive() {
         var preloaderDiv = document.getElementById("_preload_div_");
-	    preloaderDiv.style.display = 'inline-block';
+        preloaderDiv.style.display = 'inline-block';
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
         // if(script != null) {
         //     script.parentNode.removeChild(script);
         // }
-        script.onload = script.onreadystatechange = function() {
-            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-            console.log('动态JS加载完成');
-            init();
-            script.onload = script.onreadystatechange = null;
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                console.log('动态JS加载完成');
+                init();
+                script.onload = script.onreadystatechange = null;
             }
         };
         script.type = 'text/javascript';
@@ -644,7 +637,7 @@
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
             var preloaderDiv = document.getElementById("_preload_div_");
-	        preloaderDiv.style.display = 'none';
+            preloaderDiv.style.display = 'none';
             anim_container.style.display = 'block';
             exportRoot5 = new lib.Asub5();
             stage = new lib.Stage(canvas);
@@ -703,7 +696,7 @@
     // 播放完成返回目录
     function backToChooseEquationScene() {
         var script = document.getElementById("script");
-         if(script != null) {
+        if (script != null) {
             script.parentNode.removeChild(script);
         }
 
@@ -712,7 +705,7 @@
         var anim_container3 = document.getElementById("animation_container_Three");
         var anim_container4 = document.getElementById("animation_container_Four");
         var anim_container5 = document.getElementById("animation_container_Five");
-        
+
         anim_container.style.display = 'none';
         anim_container2.style.display = 'none';
         anim_container3.style.display = 'none';
