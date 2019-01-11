@@ -1,8 +1,8 @@
 class CurrectRD {
 
 	private decorations = [
-		['glasses','hat','bracelet','boots','necklace','bracelet'],
-		['clothes2','clothes3','eyesBlack','eyesBrown','nose','noseLine','mouthPink','mouthBrown','hairStraight','hairCurly','necklace']	
+		['eyesBlack','eyesBrown','nose','noseLine','mouthPink','mouthBrown','hairStraight','hairCurly','necklace'],	
+		['clothes2','clothes3','glasses','hat','bracelet','boots','necklace','bracelet']	
 	]
 
 	private textRD = [

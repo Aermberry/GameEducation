@@ -52,7 +52,7 @@ class DragPresenter {
 				// curRD == undefined ? this.view.AlertReTry() : this.view.textFlicker(curRD);
 				this.view.textFlicker(curRD);
 				//弹出信息 alert info
-				curRD == 0 ? this.view.rdText('st') : this.view.rdText('rd');
+				curRD == 0 ? this.view.rdText('st') : this.view.rdText('rd'); //判断当前的段落显示不同的值；
 				this.correctDecoration.isCorrectDecoration(dragName) == false && this.view.alertWrongtInfo(this.currectRD.getTextRD());
 			}
 			

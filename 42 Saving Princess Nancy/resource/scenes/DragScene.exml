@@ -277,11 +277,11 @@
 	</e:Group>
 	<e:Group id="crownGroup" x="114" y="138" visible="false">
 		<e:Image x="40" y="-96" source="message_border_dragscene_png" anchorOffsetX="0" width="1041" anchorOffsetY="0" height="327"/>
-		<e:Label text="circle made of gold and decorated with jewels, worn by kings and queens on \ntheir heads" x="192" y="-44" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="723.42" anchorOffsetY="0" height="133"/>
+		<e:Label text="an object in the shape  of a circle made of gold and decorated with jewels, worn by kings and queens on their heads" x="192" y="-44" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="746.42" anchorOffsetY="0" height="133"/>
 	</e:Group>
 	<e:Group id="gownGroup" x="364" y="138" visible="false">
 		<e:Image x="684" y="-36" source="message_border_dragscene_png" anchorOffsetX="0" width="957" anchorOffsetY="0" height="267" scaleX="-1"/>
-		<e:Label text="long dress worn by women on formal occasions." x="-132" y="12" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="705" anchorOffsetY="0" height="133"/>
+		<e:Label text="long dress worn by women on formal occasions" x="-132" y="12" size="45" textColor="0x266232" fontFamily="Calg421n" anchorOffsetX="0" width="705" anchorOffsetY="0" height="133"/>
 	</e:Group>
 	<e:Group id="glovesGroup" x="1142" y="138" visible="false">
 		<e:Image x="684" y="-36" source="message_border_dragscene_png" anchorOffsetX="0" width="957" anchorOffsetY="0" height="267" scaleX="-1"/>
@@ -291,7 +291,7 @@
 		<e:Image id="image0" x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0"/>
 		<e:Image id="image" x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
 		<e:Image id="image1" x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png" alpha="0"/>
-		<e:Label id="label" text="Good job! You     completed a         Picture of princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="400" size="50" alpha="0"/>
+		<e:Label id="label" text="Good job! You       Completed a         Picture of Princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="400" size="50" alpha="0"/>
 		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="312" x="120"  alpha="0"/>
 	</e:Group>
 	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666"/>

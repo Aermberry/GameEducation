@@ -191,7 +191,7 @@ class DragScene extends eui.Component implements  eui.UIComponent,DragView {
 
 	public async AlertReTry(): Promise<void>
 	{
-		this.alertTetxLabel.text = '     Try again!';
+		this.alertTetxLabel.text = '     Try again.';
 		this.playAlertMovie();
 	}
 

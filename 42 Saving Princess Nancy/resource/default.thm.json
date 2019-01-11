@@ -19,7 +19,7 @@
 		"Task2IntroductionScene": "resource/scenes/Task2IntroductionScene.exml",
 		"DistinguishRole1Scene": "resource/scenes/DistinguishRole1Scene.exml",
 		"DistinguishRole2Scene": "resource/scenes/DistinguishRole2Scene.exml",
-		"DistinguishRole3Scene": "resource/scenes/DistinguishRole3Scene.exml",
+		"DistinguishRole3Scene": "resource/scenes/distinguishRole3Scene.exml",
 		"DistinguishRole4Scene": "resource/scenes/DistinguishRole4Scene.exml",
 		"GoToCastleScene": "resource/scenes/GoToCastleScene.exml",
 		"DistinguishRole5Scene": "resource/scenes/DistinguishRole5Scene.exml",
@@ -55,7 +55,6 @@
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/DistinguishRole1Scene.exml",
 		"resource/scenes/DistinguishRole2Scene.exml",
-		"resource/scenes/distinguishRole3Scene.exml",
 		"resource/scenes/DistinguishRole4Scene.exml",
 		"resource/scenes/DistinguishRole5Scene.exml",
 		"resource/scenes/DistinguishRole6Scene.exml",
@@ -64,7 +63,8 @@
 		"resource/scenes/GoToCastleScene.exml",
 		"resource/scenes/SelectTaskScene.exml",
 		"resource/scenes/Task1IntroductionScene.exml",
-		"resource/scenes/Task2IntroductionScene.exml"
+		"resource/scenes/Task2IntroductionScene.exml",
+		"resource/scenes/distinguishRole3Scene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
