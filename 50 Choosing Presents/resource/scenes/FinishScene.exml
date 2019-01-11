@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="1661a737e1a" ></w:Config>
-	<e:Label text="Well done!" size="201" horizontalCenter="0" y="539" fontFamily="Comic Sans MS" textColor="0xcc3366" textAlign="center" verticalAlign="middle" bold="true"/>
+	<e:Label text="Well done!" size="221" horizontalCenter="0.5" y="439" fontFamily="Comic Sans MS" textColor="0xcc3366" textAlign="center" verticalAlign="middle" bold="true" anchorOffsetY="0" height="321"/>
 </e:Skin>
