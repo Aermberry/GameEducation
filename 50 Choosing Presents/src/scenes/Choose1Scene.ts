@@ -6,9 +6,10 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	private playGroup: eui.Group;
 	private bankGroup: eui.Group;
 	private tipsGroup: eui.Group;
-	private maskGroup:eui.Group;
+	private maskGroup: eui.Group;
 
 	private nextButton: eui.Button;
+	private againButton: eui.Button;
 	private logImage: eui.Image;
 	private worldLabel: eui.Label;
 	private colorKeyWorldLabel: eui.Label;
@@ -29,9 +30,10 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		this.initDragable();
 		this.nextButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.gotoNextScene, this);
+		this.againButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.againTips, this);
 	}
 
-	
+
 	private initDragable(): void {
 
 		for (let children of this.dragGroup.$children) {
@@ -58,7 +60,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 
 		this.optionText = dragComponent.text;
 
-		this.nextButton.visible = true;
+		this.againButton.visible = true;
 		this.worldLabel.textColor = 0xFF0099;
 		this.colorKeyWorldLabel.visible = true;
 		if (dragComponent.text.trim() == targetComponent.text.trim()) {
@@ -67,12 +69,16 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 			dragComponent.visible = false;
 
 			this.dropGroup.$children.every(children => children.visible) &&
-				(this.logImage.visible = true) && (this.nextButton.visible = true);
+				(this.logImage.visible = true) && (this.againButton.visible = true);
+
+			if (this.dropGroup.$children.every(children => children.visible) && this.logImage.visible) {
+				this.nextButton.visible = true;
+			}
 		}
 		else {
-			
+
 			this.showTipsLabel();
-			this.swapChildren(this.dragGroup,this.maskGroup);		
+			this.swapChildren(this.dragGroup, this.maskGroup);
 		}
 	}
 
@@ -81,7 +87,7 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 	}
 
 	private async showTipsLabel(): Promise<void> {
-		
+
 		this.optionText == "pen" && (this.penGroup.visible = true);
 		this.optionText == "piggy bank" && (this.bankGroup.visible = true);
 		this.optionText == "basketball" && (this.playGroup.visible = true);
@@ -93,15 +99,15 @@ class Choose1Scene extends eui.Component implements eui.UIComponent {
 		if (this.dropGroup.$children.every(children => children.visible) && this.logImage.visible) {
 			Main.instance.gotoScene(new Choose2Scene());
 		}
-		else {
-			
-			this.nextButton.visible = false;
-			this.worldLabel.textColor = 0x000000;
-			this.colorKeyWorldLabel.visible = false;
-			this.swapChildren(this.dragGroup,this.maskGroup);
-			for (let children of this.tipsGroup.$children) {
-				children.visible && (children.visible = false)
-			}
+	}
+
+	private againTips(): void {
+		this.againButton.visible = false;
+		this.worldLabel.textColor = 0x000000;
+		this.colorKeyWorldLabel.visible = false;
+		this.swapChildren(this.dragGroup, this.maskGroup);
+		for (let children of this.tipsGroup.$children) {
+			children.visible && (children.visible = false)
 		}
 	}
 }
