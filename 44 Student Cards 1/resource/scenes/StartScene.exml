@@ -16,7 +16,7 @@
 	<w:Config id="165a27b608f"></w:Config>
 	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xFFFFCC" />
 	<Ui:TextLabel anchorOffsetX="0" anchorOffsetY="0" skinName="TextLabelSkin"
-	              text=" Mary's teacher asks the pupils to talk\n about themselves.\n\nRead what Mary says.\n\nHelp her fill in her student card.\n\nDrag the correct words to the blanks."
+	              text=" Mary's teacher asks the pupils to talk\n about themselves.\n\n Read what Mary says.\n\n Help her fill in her student card.\n\n Drag the correct words to the blanks."
 	              left="109" right="109" top="242" bottom="328" fontSize="91" />
 	<e:Button id="nextButton" label="Next" x="1559.48" y="1230.33" anchorOffsetX="0" width="251.52" anchorOffsetY="0"
 	          height="113.64" />
