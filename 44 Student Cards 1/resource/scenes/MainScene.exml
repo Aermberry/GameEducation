@@ -53,7 +53,9 @@
 	<e:Group id="alertGroup">
 		<e:Group/>
 		<e:Group/>
-		<Ui:Tips id="ageLabe" width="389.69" height="201.82" x="960" y="216.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="How old is Mary?" visible="false"/>
+		<e:Group visible="false">
+		<Ui:Tips id="ageLabe" width="389.69" height="201.82" x="960" y="216.58" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="How old is Mary?"/>
+		</e:Group>
 		<e:Group id="mailGroup" width="1106.06" height="545.45" x="-2.96" y="8.85" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<Ui:Tips id="addressLabel" width="353.34" height="238.18" x="1066.1" y="846.61" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Look at the envelope"/>
 		<e:Image source="mail_png" x="-825.18" y="-28.97"/>
@@ -65,7 +67,9 @@
 			<Ui:Hobby id="hobbySence" width="877.56" height="1426.07" x="24.34" y="13.54" anchorOffsetX="0" anchorOffsetY="0" skinName="HobbySkin"/>
 		</e:Group>
 		<e:Group/>
-		<Ui:Tips id="clubTip" width="507.88" height="244.24" x="1018.73" y="698" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Which club does Mary join?" visible="false"/>
+		<e:Group visible="false">
+		<Ui:Tips id="clubTip" width="507.88" height="244.24" x="1018.73" y="698" anchorOffsetX="0" anchorOffsetY="0" skinName="TipsSkin" tipString="Which club does Mary join?"/>
+		</e:Group>
 	</e:Group>
 
 	<e:Group id="helpGroup" x="1566" y="409.09" anchorOffsetY="0" height="739" touchThrough="true">

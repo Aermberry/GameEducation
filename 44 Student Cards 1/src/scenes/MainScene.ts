@@ -6,7 +6,8 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private helpGroup: eui.Group;
 	private alertGroup: eui.Group;
 
-	private currentQuestionIndex = 0; //当前问题
+	private currentQuestionIndex:number = 0; //当前问题
+	private lastQuestionIndex:number=0//記錄上一次的index
 	private currentTarget;
 
 	public constructor() {
@@ -67,12 +68,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		let targetComponent = e.target as eui.Label;
 		this.currentTarget = targetComponent.text.toString();
 		let dragComponent = e.dragObject as eui.Label;
-
+		this.lastQuestionIndex=this.currentQuestionIndex;
 		this.getCurrentIndex();
-		// console.log(targetComponent.text.replace(/\s+/g,""))
-		// console.log(dragComponent.text.replace(/\s+/g,""))
 
-		if (dragComponent.text.replace(/\s+/g,"") == targetComponent.text.replace(/\s+/g,"")) {
+		if (dragComponent.text.replace(/\s+/g, "") == targetComponent.text.replace(/\s+/g, "")) {
 			e.preventDefault();
 			targetComponent.visible = true;
 			dragComponent.visible = false;
@@ -91,16 +90,17 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 		}
 		else {
+			this.helpGroup.getChildAt(this.lastQuestionIndex).visible = false;  
 			this.helpGroup.getChildAt(this.currentQuestionIndex).visible = true;
 			this.showCorrectLabelToDrag();
 		}
 	}
 
 	private getCurrentIndex(): void {
-
 		for (let child of this.dropGroup.$children) {
 			let labelText = (child as eui.Label).text
 			if (labelText.toString() == this.currentTarget) {
+				console.log(labelText.toString())
 				let index = this.dropGroup.getChildIndex(child);
 				console.log(index)
 				this.currentQuestionIndex = index;
