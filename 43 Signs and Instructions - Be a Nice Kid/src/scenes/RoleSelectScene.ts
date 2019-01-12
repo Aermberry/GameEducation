@@ -26,6 +26,7 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 		mouse.enable(this.stage);
+		this.handleHelpedBoy();//根据当前是否还没帮助小孩，如果否，隐藏开始按钮直接开始
 		this.loadBoys();
 		this.startImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStartImageClick, this)
 		this.startImage.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onStartImageOver, this)
@@ -119,6 +120,17 @@ class RoleSelectScene extends eui.Component implements  eui.UIComponent {
 		this.startImage.visible = true;
 		await lzlib.SoundUtility.playSound('streamsound1_7_mp3');
 		this.ListenGroup.visible = false;
+	}
+
+	private async handleHelpedBoy() : Promise<void>
+	{
+		if(BoyRepository.helpedBoys != 0)
+		{
+			this.startButton2.visible = false;
+			this.startMask.visible = false;
+			await this.handleMP3AndShow();
+			this.handleMouseAndClickOnChild();
+		}
 	}
 	
 }

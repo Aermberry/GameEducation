@@ -35,4 +35,5 @@ class BoyRepository {
 	{
 		BoyRepository.boys[index] = '';
 	}
+
 }
