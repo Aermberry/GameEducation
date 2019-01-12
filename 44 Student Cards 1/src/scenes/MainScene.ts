@@ -53,6 +53,8 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDropableLabel(): void {
+
+
 		for (let child of this.dropGroup.$children) {
 			let drop = new lzlib.Drop();
 			this.addChild(drop);
@@ -83,6 +85,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				Main.instance.gotoScene(new FinishScene());
 			} else {
 				this.initDropableLabel();
+
 			}
 		}
 		else {
@@ -92,6 +95,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private getCurrentIndex(): void {
+
 		for (let child of this.dropGroup.$children) {
 			let labelText = (child as eui.Label).text
 			if (labelText.toString() == this.currentTarget) {
@@ -101,6 +105,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 		}
 	}
+
 
 	private onDragCancel(e: lzlib.LzDragEvent): void {
 		this.getCurrentIndex();
