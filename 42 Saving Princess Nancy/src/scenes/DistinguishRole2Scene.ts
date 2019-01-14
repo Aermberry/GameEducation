@@ -64,6 +64,7 @@ class DistinguishRole2Scene extends eui.Component implements  eui.UIComponent {
 
 	private onNextClick(): void
 	{
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new DistinguishRole3Scene());
 	}
 

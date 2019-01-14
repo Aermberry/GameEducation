@@ -171,7 +171,7 @@
 	<e:Label id="description1Label" text="                                                                      She is tall and slim. Her skin is as white as snow and her            lips are as red as roses. She has long wavy brown hair and big round blue eyes." x="58.7" y="36.7" textColor="0x4C2759" size="42" multiline="true" width="1800" lineSpacing="12" fontFamily="Calg421n"/>
 	<e:Label id="description2Label" text=" Her nose turns up" x="1422.7" y="92.7" textColor="0x4C2759" size="42" multiline="true" width="400" lineSpacing="12" fontFamily="Calg421n"/>
 	<e:Label id="description6Label" text=" a little at the end." x="46.7" y="151.5" textColor="0x4C2759" size="42" multiline="true" width="400" lineSpacing="12" fontFamily="Calg421n"/>
-	<e:Label text="    The princess is gentle and friendly. Her smile is sweet and her voice is soft. She sings like a nightingale and she usually walks with little dancing steps." x="58.7" y="227.61" textColor="0x4C2759" size="42" multiline="true" width="1666.67" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" touchEnabled="false"/>
+	<e:Label text="    The princess is gentle and friendly. Her smile is sweet and her voice is soft. She sings like a nightingale and she usually walks with little dancing steps." x="58.7" y="227.61" textColor="0x4C2759" size="42" multiline="true" width="1606.67" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" touchEnabled="false"/>
 	<e:Label id="gentleLabel" text="gentle" x="372.27" y="227.61" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" name="gentle" textColor="0xf55125"/>
 	<e:Group id="nightingaleGroup" x="-106" y="34" visible="false">
 		<e:Image x="40" y="-16" source="message_border_dragscene_png" anchorOffsetX="0" width="961" anchorOffsetY="0" height="247"/>
@@ -179,7 +179,7 @@
 		<e:Image x="510" y="50" source="nightingale_png" anchorOffsetX="0" width="389.02" anchorOffsetY="0" height="441"/>
 		<e:Image x="924" y="-8" anchorOffsetX="0" anchorOffsetY="0" source="music_png"/>
 	</e:Group>
-	<e:Label id="nightingaleLabel" text="nightingale" x="60.62" y="282.15" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" name="nightingale" anchorOffsetY="0" textColor="0xf55125"/>
+	<e:Label id="nightingaleLabel" text="nightingale" x="87.23" y="282.15" size="42" multiline="true" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" name="nightingale" anchorOffsetY="0" textColor="0xf55125"/>
 	<e:Label id="description3Label" text="    She is wearing a crown, a pink gown, " x="58.7" y="360.94" textColor="0x4C2759" size="42" multiline="true" width="850" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n"/>
 	<e:Label id="description5Label" text="She is also wearing a necklace and a pair of earrings." x="58.7" y="421.55" textColor="0x4C2759" size="42" multiline="true" width="1019.69" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n" anchorOffsetY="0" height="48.06"/>
 	<e:Label id="description4Label" text="a pair of glass slippers and a pair of white gloves. " x="762.33" y="357.92" textColor="0x4C2759" size="42" multiline="true" width="1089.39" lineSpacing="12" anchorOffsetX="0" fontFamily="Calg421n"/>
