@@ -14,6 +14,7 @@
 	"path": "resource/default.thm.json",
 	"exmls": [
 		"resource/components/FirstTarget.exml",
+		"resource/components/MovieClipPlayer.exml",
 		"resource/components/SecondTarget.exml",
 		"resource/components/ThirdTarget.exml",
 		"resource/scenes/EasyGameScene.exml",

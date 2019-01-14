@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<ns1:MovieClipPlayer id="movieClipPlayer1" dataSet="car_move_json" texture="car_move_png" movieClipName="car_move" width="20" height="20" x="2000" y="501.81"/>
+	<ns1:MovieClipPlayer id="movieClipPlayer2" dataSet="car_stop_json" texture="car_stop_png" movieClipName="car_stop" width="20" height="20" x="2000" y="501.81"/>
+	
 	<e:Image id="bg" source="start_scene_bg_png"  horizontalCenter="-188" verticalCenter="123.5" anchorOffsetX="0" width="2896.25" anchorOffsetY="0" height="1763.33"/>
 	<e:Image id="rainbowImage" source="rainbow_png" x="1920" y="85" height="295"/>
 	<e:Image id="sightWordParkImage" source="sight_word_park_png"  y="85" width="1520" height="350" horizontalCenter="0" visible="false"/>
@@ -18,4 +21,6 @@
 	<e:Group id="startGameBtn2" width="366.67" height="524.25" x="1048.48" y="702.96" anchorOffsetX="0" anchorOffsetY="0"/>
 	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9" />
 	<e:Image id="startButton2" source="start_png" horizontalCenter="0" verticalCenter="0"/>
+	
+	
 </e:Skin>

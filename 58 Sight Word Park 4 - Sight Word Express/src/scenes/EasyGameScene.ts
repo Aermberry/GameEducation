@@ -25,6 +25,8 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 	private dropDownBoxMovieClip: egret.MovieClip;
 	private dropDownBoxFactory: egret.MovieClipDataFactory;
 
+	private carMovieClipPlayer: MovieClipPlayer;//火车文件
+
 	//cargo
 	private cargoGroup: eui.Group;
 
@@ -91,9 +93,9 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		await this.playEasyGmeTweenGroup.playOnceAsync();
 		// this.birdImg.visible = true;
 		this.redLightImg.visible = true;
-		this.trainImg.visible = true;
-		this.driverImg.visible = true;
-		this.smokeImg.visible = true;
+		// this.trainImg.visible = true;
+		// this.driverImg.visible = true;
+		// this.smokeImg.visible = true;
 
 		this.nextCargo();
 	}
@@ -104,6 +106,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		this.currentQuestion = this.questionBiz.random();
 		this.sentenceLabel.text = '"' + this.currentQuestion.sentence + '"';
 		await this.trainEnterTweenGroup.playOnceAsync();
+		this.carMovieClipPlayer.setMovie = 'car_stop';
 		this.currentQuestion.options.shuffle();
 
 		for (let index = 0; index < this.currentQuestion.options.length; index++) {
@@ -139,6 +142,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 			// (RES.getRes('wuwu_mp3') as egret.Sound).play(0, 1);
 			lzlib.SoundUtility.playSound("wuwu_mp3");
 			await this.trainAwayTweenGroup.playOnceAsync();
+			this.carMovieClipPlayer.setMovie = 'car_move'
 			this.cargoLeft--;
 			console.log(this.cargoLeft)
 
@@ -179,7 +183,12 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		this.greenLightImg.visible = true;
 		this.redLightImg.source = "red_lights_png";
 		(RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
+
+		//设置正确的完整句子
+		this.sentenceLabel.text = this.currentQuestion.fullSentence;
+
 		await this.getCargoDropMovie(cargoIndex).playAsync();
+
 		this.greenLightImg.visible = false;
 		this.redLightImg.source = "red_light_png";
 	}

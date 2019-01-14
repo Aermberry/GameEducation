@@ -1,5 +1,7 @@
 declare class FirstTarget extends eui.Skin{
 }
+declare class MovieClipPlayerSkin extends eui.Skin{
+}
 declare class SecondTarget extends eui.Skin{
 }
 declare class ThirdTarget extends eui.Skin{

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,start_png,start2_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,start3_png,movie_clip_json,movie_clip_png,start_imgs_png,scene_bg_png,go_to_png,shape68_png,shape42_png,bird_tow_png,red_lights_png,good_png",
+			"keys": "bg_jpg,egret_icon_png,description_json,false_drop_down_box_json,false_drop_down_box_png,right_drop_down_box_png,right_drop_down_box_json,box_drop_down_json,box_drop_down_png,select_diffcult_bg_png,go_bg_png,select_difficulty_scene_bgm_mp3,start_scene_bgm_mp3,red_stage_png,river_bg_png,back_png,bird_normal_png,bird_hover_png,sight_word_express_png,top_train_png,clipper_normal_png,clipper_hover_png,smoke_png,driver_png,train_png,green_light_png,red_light_png,box_png,railway_png,dingding_mp3,diao_mp3,wuwu_mp3,congratulation_mp3,start_png,start2_png,arrow_right_png,rainbow_png,sight_word_park_png,smiling_yellow_head_png,start_scene_bg_png,start3_png,movie_clip_json,movie_clip_png,start_imgs_png,scene_bg_png,go_to_png,shape68_png,shape42_png,bird_tow_png,red_lights_png,good_png,car_stop_json,car_stop_png,car_move_png,car_move_json",
 			"name": "preload"
 		}
 	],
@@ -82,194 +82,214 @@
 			"name": "go_bg_png"
 		},
 		{
-			"name": "select_difficulty_scene_bgm_mp3",
+			"url": "audios/select_difficulty_scene_bgm.mp3",
 			"type": "sound",
-			"url": "audios/select_difficulty_scene_bgm.mp3"
+			"name": "select_difficulty_scene_bgm_mp3"
 		},
 		{
-			"name": "start_scene_bgm_mp3",
+			"url": "audios/start_scene_bgm.mp3",
 			"type": "sound",
-			"url": "audios/start_scene_bgm.mp3"
+			"name": "start_scene_bgm_mp3"
 		},
 		{
-			"name": "red_stage_png",
+			"url": "textures/red_stage.png",
 			"type": "image",
-			"url": "textures/red_stage.png"
+			"name": "red_stage_png"
 		},
 		{
-			"name": "river_bg_png",
+			"url": "textures/river_bg.png",
 			"type": "image",
-			"url": "textures/river_bg.png"
+			"name": "river_bg_png"
 		},
 		{
-			"name": "back_png",
+			"url": "textures/back.png",
 			"type": "image",
-			"url": "textures/back.png"
+			"name": "back_png"
 		},
 		{
-			"name": "bird_normal_png",
+			"url": "textures/bird_normal.png",
 			"type": "image",
-			"url": "textures/bird_normal.png"
+			"name": "bird_normal_png"
 		},
 		{
-			"name": "bird_hover_png",
+			"url": "textures/bird_hover.png",
 			"type": "image",
-			"url": "textures/bird_hover.png"
+			"name": "bird_hover_png"
 		},
 		{
-			"name": "sight_word_express_png",
+			"url": "textures/sight_word_express.png",
 			"type": "image",
-			"url": "textures/sight_word_express.png"
+			"name": "sight_word_express_png"
 		},
 		{
-			"name": "top_train_png",
+			"url": "textures/top_train.png",
 			"type": "image",
-			"url": "textures/top_train.png"
+			"name": "top_train_png"
 		},
 		{
-			"name": "clipper_normal_png",
+			"url": "textures/clipper_normal.png",
 			"type": "image",
-			"url": "textures/clipper_normal.png"
+			"name": "clipper_normal_png"
 		},
 		{
-			"name": "clipper_hover_png",
+			"url": "textures/clipper_hover.png",
 			"type": "image",
-			"url": "textures/clipper_hover.png"
+			"name": "clipper_hover_png"
 		},
 		{
-			"name": "smoke_png",
+			"url": "textures/smoke.png",
 			"type": "image",
-			"url": "textures/smoke.png"
+			"name": "smoke_png"
 		},
 		{
-			"name": "driver_png",
+			"url": "textures/driver.png",
 			"type": "image",
-			"url": "textures/driver.png"
+			"name": "driver_png"
 		},
 		{
-			"name": "train_png",
+			"url": "textures/train.png",
 			"type": "image",
-			"url": "textures/train.png"
+			"name": "train_png"
 		},
 		{
-			"name": "green_light_png",
+			"url": "textures/green_light.png",
 			"type": "image",
-			"url": "textures/green_light.png"
+			"name": "green_light_png"
 		},
 		{
-			"name": "red_light_png",
+			"url": "textures/red_light.png",
 			"type": "image",
-			"url": "textures/red_light.png"
+			"name": "red_light_png"
 		},
 		{
-			"name": "box_png",
+			"url": "textures/box.png",
 			"type": "image",
-			"url": "textures/box.png"
+			"name": "box_png"
 		},
 		{
-			"name": "railway_png",
+			"url": "textures/railway.png",
 			"type": "image",
-			"url": "textures/railway.png"
+			"name": "railway_png"
 		},
 		{
-			"name": "dingding_mp3",
+			"url": "audios/dingding.mp3",
 			"type": "sound",
-			"url": "audios/dingding.mp3"
+			"name": "dingding_mp3"
 		},
 		{
-			"name": "diao_mp3",
+			"url": "audios/diao.mp3",
 			"type": "sound",
-			"url": "audios/diao.mp3"
+			"name": "diao_mp3"
 		},
 		{
-			"name": "wuwu_mp3",
+			"url": "audios/wuwu.mp3",
 			"type": "sound",
-			"url": "audios/wuwu.mp3"
+			"name": "wuwu_mp3"
 		},
 		{
-			"name": "congratulation_mp3",
+			"url": "audios/congratulation.mp3",
 			"type": "sound",
-			"url": "audios/congratulation.mp3"
+			"name": "congratulation_mp3"
 		},
 		{
-			"name": "start_png",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "start_png"
 		},
 		{
-			"name": "start2_png",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "start2_png"
 		},
 		{
-			"name": "arrow_right_png",
+			"url": "textures/arrow_right.png",
 			"type": "image",
-			"url": "textures/arrow_right.png"
+			"name": "arrow_right_png"
 		},
 		{
-			"name": "rainbow_png",
+			"url": "textures/rainbow.png",
 			"type": "image",
-			"url": "textures/rainbow.png"
+			"name": "rainbow_png"
 		},
 		{
-			"name": "sight_word_park_png",
+			"url": "textures/sight_word_park.png",
 			"type": "image",
-			"url": "textures/sight_word_park.png"
+			"name": "sight_word_park_png"
 		},
 		{
-			"name": "smiling_yellow_head_png",
+			"url": "textures/smiling_yellow_head.png",
 			"type": "image",
-			"url": "textures/smiling_yellow_head.png"
+			"name": "smiling_yellow_head_png"
 		},
 		{
-			"name": "start_scene_bg_png",
+			"url": "textures/start_scene_bg.png",
 			"type": "image",
-			"url": "textures/start_scene_bg.png"
+			"name": "start_scene_bg_png"
 		},
 		{
-			"name": "start3_png",
+			"url": "textures/start.png",
 			"type": "image",
-			"url": "textures/start.png"
+			"name": "start3_png"
 		},
 		{
-			"name": "start_imgs_png",
+			"url": "textures/start_imgs.png",
 			"type": "image",
-			"url": "textures/start_imgs.png"
+			"name": "start_imgs_png"
 		},
 		{
-			"name": "scene_bg_png",
+			"url": "textures/scene_bg.png",
 			"type": "image",
-			"url": "textures/scene_bg.png"
+			"name": "scene_bg_png"
 		},
 		{
-			"name": "go_to_png",
+			"url": "textures/go_to.png",
 			"type": "image",
-			"url": "textures/go_to.png"
+			"name": "go_to_png"
 		},
 		{
-			"name": "shape68_png",
+			"url": "textures/shape68.png",
 			"type": "image",
-			"url": "textures/shape68.png"
+			"name": "shape68_png"
 		},
 		{
-			"name": "shape42_png",
+			"url": "textures/shape42.png",
 			"type": "image",
-			"url": "textures/shape42.png"
+			"name": "shape42_png"
 		},
 		{
-			"name": "bird_tow_png",
+			"url": "textures/bird_tow.png",
 			"type": "image",
-			"url": "textures/bird_tow.png"
+			"name": "bird_tow_png"
 		},
 		{
-			"name": "red_lights_png",
+			"url": "textures/red_lights.png",
 			"type": "image",
-			"url": "textures/red_lights.png"
+			"name": "red_lights_png"
 		},
 		{
-			"name": "good_png",
+			"url": "textures/good.png",
 			"type": "image",
-			"url": "textures/good.png"
+			"name": "good_png"
+		},
+		{
+			"url": "textures/car_stop.json",
+			"type": "json",
+			"name": "car_stop_json"
+		},
+		{
+			"url": "textures/car_stop.png",
+			"type": "image",
+			"name": "car_stop_png"
+		},
+		{
+			"url": "textures/car_move.png",
+			"type": "image",
+			"name": "car_move_png"
+		},
+		{
+			"url": "textures/car_move.json",
+			"type": "json",
+			"name": "car_move_json"
 		}
 	]
 }
