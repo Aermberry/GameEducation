@@ -629,13 +629,13 @@
 		<e:Label text="好像有什麽地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="-6.05" lineSpacing="25" size="50" y="-30.3" textColor="0x000000"
 		         fontFamily="華康中黑體" bold="true"  visible="false"/>
 		<e:Group x="48.47" y="-6.07" visible="false">
-			<e:Label text="對不起！ 我不知道\n應該      來參加！" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0"
+			<e:Label text="對不起！ 我不知道\n應該        來參加！" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0"
 			         width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
-			<e:Label text="哪天" anchorOffsetY="0" height="57.28" x="100.66" y="73.77" anchorOffsetX="0" width="123.05" size="50"
+			<e:Label text="哪天" anchorOffsetY="0" height="57.28" x="102.18" y="73.77" anchorOffsetX="0" width="123.05" size="50"
 			         textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
 		</e:Group>
 		<e:Group x="60.6" y="-15.16" visible="false">
-			<e:Label text="讓我寫上     \n   吧！當天是11月\n9日對吧？" anchorOffsetY="130.3" height="211.82" x="366.67" y="127.27"
+			<e:Label text="讓我寫上     \n    吧！當天是11月\n9日對吧？" anchorOffsetY="130.3" height="211.82" x="366.67" y="127.27"
 			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
 			         bold="true" />
 			<e:Label text="聚會的日" anchorOffsetY="0" height="69.39" x="203.94" y="-2.12" anchorOffsetX="0" width="236.7" size="50"
@@ -644,7 +644,7 @@
 			         textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
 		</e:Group>
 		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="華康中黑體"
-		         bold="true" visible="false" />
+		         bold="true"  visible="false"/>
 	</e:Group>
 	<e:Image id="snake" source="snake_normal_png" x="1588.17" y="1041.5" />
 	<ns1:flustered id="flusteredComponent" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0" height="153.7"
@@ -662,6 +662,6 @@
 		<ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
 		                      skinName="achieveComponentSkin" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

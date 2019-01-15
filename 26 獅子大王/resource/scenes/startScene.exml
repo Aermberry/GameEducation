@@ -15,7 +15,7 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="167071c13eb"></w:Config>
-	<e:Rect top="0" left="0" right="0" bottom="0" fillColor="0x000000"/>
+
 	<e:Rect id="maskLayer" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="1"/>
 	<e:Image source="start_png" verticalCenter="0" horizontalCenter="0" id="startButton"/>
 >
