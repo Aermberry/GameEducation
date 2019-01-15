@@ -28,6 +28,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
   private statusIndex: number = 0;
+  private static _
 
   public constructor() {
     super();

@@ -248,6 +248,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
     this.optionsScene = new optionsScene();
     this.optionsScene.currentState="pig"
+	this.optionsScene.statueIndex()
     Main.instance.gotoScene(this.optionsScene)
 
   }
