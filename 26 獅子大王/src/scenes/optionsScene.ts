@@ -28,11 +28,13 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
   private statusIndex: number = 0;
-  private static _
+  private static _instance: optionsScene;
+  private sound: egret.Sound
+  private soundchannel: egret.SoundChannel
 
   public constructor() {
     super();
-
+    optionsScene._instance = this
     this.rabbitScene = new rabbitScene();
     this.snakeScene = new snakeScene();
     this.pigScene = new pigScene();
@@ -40,6 +42,11 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeScene = new giraffeScene();
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
+    this.onPlayVoice("sound 24_mp3")
+  }
+
+  public static get getOptionInstance(): optionsScene {
+    return optionsScene._instance;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -51,6 +58,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     mouse.enable(this.stage);
     this.normal();
     this.startLoadingAnimation();
+    this.playVoice
     this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
     this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
     this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
@@ -62,6 +70,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private rabbiteEvet(): void {
     this.rabbitComponent.disableMouse();
     this.rabbitComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.rabbitScene)
   }
 
@@ -112,7 +121,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     })
   }
 
-  public async playVoice(str: string): Promise<void> {
+  private async playVoice(str: string): Promise<void> {
     let sound = lzlib.SoundUtility.playSound(str);
     return sound;
   }
@@ -191,7 +200,17 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.ratComponent.currentState = "normal";
     this.sheepComponent.currentState = "normal";
     this.giraffeComponent.currentState = "normal";
+  }
 
+  // BG播放
+  public onPlayVoice(voice: string): void {
+    this.sound = RES.getRes(voice)
+    this.soundchannel = this.sound.play(0, -1);
+
+  }
+
+  public onPauseVoice(): void {
+    this.soundchannel.stop()
   }
 
 }

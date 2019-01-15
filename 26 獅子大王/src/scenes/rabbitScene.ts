@@ -54,6 +54,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     mouse.enable(this.stage);
     mouse.setButtonMode(this.bulbGroup, true);
     // RES.getRes("sound 24_mp3").play(0, -1)
+    optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3")
+
     this.playAnim();
     this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
     this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -212,6 +214,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
   private gohome(): void {
     this.optionsScene = new optionsScene();
+    this.optionsScene.onPauseVoice()
     this.optionsScene.currentState="snake"
     this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
