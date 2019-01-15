@@ -33,6 +33,9 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 	private currentQuestion: Question;
 	private cargoLeft = 0;
 
+	private currentBoxSelected: number;
+	private boxGroupX: number;
+
 	public constructor(questionRepo: IQuestionRepository) {
 		super();
 		this.questionBiz = new QuestionBiz(questionRepo);
@@ -134,6 +137,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 	private async onPackSelect(e: egret.TouchEvent): Promise<void> {
 		this.cargoRemoviClick();
 		let cargoIndex = this.cargoGroup.getChildIndex(e.target as egret.DisplayObject);
+		this.currentBoxSelected = cargoIndex;
 		if (this.currentQuestion.options[cargoIndex] == this.currentQuestion.answer) {
 			this.goodJobTweenGroup.play(0);
 			this.playCorrectAnimation();
@@ -141,10 +145,11 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 			await this.playCargoDropdownMovie(cargoIndex);
 			// (RES.getRes('wuwu_mp3') as egret.Sound).play(0, 1);
 			lzlib.SoundUtility.playSound("wuwu_mp3");
+			this.boxMove();
 			await this.trainAwayTweenGroup.playOnceAsync();
 			this.carMovieClipPlayer.setMovie = 'car_move'
 			this.cargoLeft--;
-			console.log(this.cargoLeft)
+			this.boxMoveToNormalPlace();
 
 			if (this.cargoLeft > 0) {
 				this.nextCargo();
@@ -192,4 +197,27 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		this.greenLightImg.visible = false;
 		this.redLightImg.source = "red_light_png";
 	}
+
+	/** 箱子移动 */
+	private async boxMove(): Promise<void>
+	{
+		let boxGroup = this.cargoGroup.getChildAt(this.currentBoxSelected);
+		this.boxGroupX = boxGroup.x;
+		let tw = egret.Tween.get(boxGroup);
+		tw.to({
+			x: this.boxGroupX - this.boxGroupX - boxGroup.width
+		}, 500);
+	}
+
+
+	/** 箱子移动回正常位置 */
+	private boxMoveToNormalPlace(): void
+	{
+		let boxGroup = this.cargoGroup.getChildAt(this.currentBoxSelected);
+		let tw = egret.Tween.get(boxGroup);
+		tw.to({
+			x: this.boxGroupX
+		}, 500);
+	}
+
 }
