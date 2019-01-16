@@ -60,7 +60,8 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		RES.getRes("sound 24_mp3").play(0, -1)
+		// RES.getRes("sound 24_mp3").play(0, -1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -179,9 +180,20 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "時" && this.editableText_second.text == "間" && this.editableText_fourth.text == "下" && this.editableText_fifth.text == "午" && this.editableText_sixth.text == "6" && this.editableText_seventh.text == "時";
-		return result
+
+		let result: boolean = true;
+
+		let dataResult = this.editableText_first.text + this.editableText_second.text +"："+this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
+
+		if (dataResult == '時間：下午6時') {
+			return result
+		}
+
+		if (dataResult == '時間：下午六時') {
+			return result
+		}
+
+		return result = false
 	}
 
 	//判斷模塊
@@ -243,9 +255,10 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-    this.optionsScene = new optionsScene();
-    this.optionsScene.currentState="rat"
-    Main.instance.gotoScene(this.optionsScene)
-
-  }
+		optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new optionsScene();
+		this.optionsScene.currentState = "rat"
+		this.optionsScene.statueIndex();
+		Main.instance.gotoScene(this.optionsScene)
+	}
 }

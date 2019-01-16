@@ -243,7 +243,7 @@
 	<w:Config id="167071e3aa4"></w:Config>
 	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="102.5" height="214.27" textAlign="center"
 	         verticalAlign="middle" top="-27" fontFamily="華康中黑體" textColor="0x000000" anchorOffsetY="0" bold="true" />
-	<e:Label id="headTitleLabel" text="" textColor="0xe70a0c" size="66" bold="true" fontFamily="華康中黑體" x="765.58"
+	<e:Label id="headTitleLabel" text="" textColor="0xe70a0c" size="66" fontFamily="華康中黑體" x="765.58"
 	         y="184.62" />
 	<e:Group id="invitation" x="938.89" y="893.19" anchorOffsetY="269.7" height="512.52" anchorOffsetX="484.85" alpha="0" alpha.rabbit="0" alpha.snake="0" alpha.pig="0" alpha.rat="0" alpha.sheep="0" alpha.giraffe="0">
 	<e:Image source="snakeScene_png" x.snake="32.16" y.snake="15.94" visible.rabbit="false" x.pig="54.54" y.pig="15.15" source.pig="pig_png" source.rat="rat_jpg" source.sheep="sheep_jpg" source.giraffe="giraffe_jpg" x.giraffe="48.79" y.giraffe="-181.94"/>

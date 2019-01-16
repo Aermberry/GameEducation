@@ -537,7 +537,7 @@
             </tween:TweenItem>
         </tween:TweenGroup>
     </w:Declarations>
-    <e:Rect top="0" left="0" right="0" bottom="0" fillColor="0xffffff" visible="false" />
+
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0" touchThrough="true">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="869.76" x="0" scale9Grid="102,93,618,250"/>
 		<e:Label text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時" x="274" y="226.9" anchorOffsetX="0" anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="35" bold="true" fontFamily="華康中黑體" border="false"/>
@@ -601,7 +601,7 @@
         <e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="748.51"
                  anchorOffsetY="6.06" height="380.06" alpha="0" />
         <e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51"
-                 width="748.51" anchorOffsetY="93.94" height="380.06" alpha="0" />
+                 width="748.51" anchorOffsetY="93.94" height="380.06" alpha="1"  visible="false"/>
         <e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
                  textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
                  verticalAlign="middle" />
@@ -617,22 +617,22 @@
                  anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0" />
         <e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
                  anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
-        <e:Label text="好像有什麽地方寫錯\n了，需要提示嗎？按\n下方的提示按鈕吧" x="42.43" lineSpacing="25" size="50" y="-21.21"
+        <e:Label text="好像有什麽地方寫錯\n了，需要提示嗎？按\n下方的提示按鈕吧" x="24.25" lineSpacing="25" size="50" y="-36.36"
                  textColor="0x000000" fontFamily="華康中黑體" bold="true"  visible="false"/>
-        <e:Group x="36.35" y="-24.25" visible="false">
-            <e:Label text="對不起! 我想參加\n嘉年華，只是不知\n               ？" anchorOffsetY="0" height="211.82" x="0" y="0"
+        <e:Group x="48.47" y="-42.43" visible="false">
+            <e:Label text="對不起! 我想參加\n嘉年華，只是不知\n                    ？" anchorOffsetY="0" height="211.82" x="0" y="0"
                      anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
                      bold="true" />
             <e:Label text="聚會的地點" anchorOffsetY="0" x="-0.07" y="149.8" anchorOffsetX="0" size="50" textColor="0xA00000"
                      lineSpacing="25" fontFamily="華康中黑體" bold="true" />
         </e:Group>
         <e:Group x="15.14" y="-3.03" visible="false">
-            <e:Label text="啊！原來地點是    \n   ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
+            <e:Label text="啊！原來地點是    \n       ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
                      anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
                      fontFamily="華康中黑體" bold="true" />
             <e:Label text="森林" anchorOffsetY="0" height="60.3" x="357.35" y="-1.11" anchorOffsetX="0" width="111.37"
                      size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
-            <e:Label text="果園" anchorOffsetY="0" height="66.36" x="-0.42" y="75.94" anchorOffsetX="0" width="114.64"
+            <e:Label text="果園" anchorOffsetY="0" height="66.36" x="-0.42" y="77.46" anchorOffsetX="0" width="114.64"
                      size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
         </e:Group>
         <e:Label text="太好了！\n大王萬歲！" x="130.31" lineSpacing="25" size="50" y="3.04" textColor="0x000000"

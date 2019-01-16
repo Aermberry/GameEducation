@@ -60,7 +60,8 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 
-		RES.getRes("sound 24_mp3").play(0, -1)
+		// RES.getRes("sound 24_mp3").play(0, -1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -258,8 +259,10 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await this.gohome()
 	}
 	private gohome(): void {
+	optionsScene.getOptionInstance.onPauseVoice();
     this.optionsScene = new optionsScene();
     this.optionsScene.currentState="snake"
+	this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
   }
 }

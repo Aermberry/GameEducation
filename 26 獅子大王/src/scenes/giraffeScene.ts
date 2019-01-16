@@ -62,7 +62,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		RES.getRes("sound 24_mp3").play(0, -1)
+		// RES.getRes("sound 24_mp3").play(0, -1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -297,6 +298,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private toResultScene(): void {
+		optionsScene.getOptionInstance.onPauseVoice();
 		Main.instance.gotoScene(new resultScene())
 	}
 }

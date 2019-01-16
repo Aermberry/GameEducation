@@ -60,7 +60,8 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		RES.getRes("sound 24_mp3").play(0, -1)
+		// RES.getRes("sound 24_mp3").play(0, -1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -125,7 +126,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 			this.circleLeftRect.visible = false
 			this.circleRightRect.visible = false;
 		});
-		
+
 		await lzlib.ThreadUtility.sleep(3000);
 		(this.ratDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.ratDialogGroup.$children[4] as eui.Group).visible = true;
@@ -223,7 +224,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		})
 		this.ratDialogGroup.$children[4].visible = false;
 		this.ratDialogGroup.$children[5].visible = true;
-		this.ratImage.source="rat_happy_png"
+		this.ratImage.source = "rat_happy_png"
 		this.playVoice(animalDialogVoice.ratVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
@@ -232,10 +233,12 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-    this.optionsScene = new optionsScene();
-    this.optionsScene.currentState="sheep"
-    Main.instance.gotoScene(this.optionsScene)
+		optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new optionsScene();
+		this.optionsScene.currentState = "sheep"
+		this.optionsScene.statueIndex();
+		Main.instance.gotoScene(this.optionsScene)
 
-  }
+	}
 
 }

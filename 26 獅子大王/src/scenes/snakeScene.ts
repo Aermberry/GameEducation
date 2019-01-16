@@ -61,7 +61,8 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		RES.getRes("sound 24_mp3").play(0, -1)
+		// RES.getRes("sound 24_mp3").play(0, -1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -185,9 +186,19 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		let result = this.editableText_first.text == "日" && this.editableText_second.text == "期" && this.editableText_fourth.text == "1" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "月" && this.editableText_seventh.text == "9" && this.editableText_eightth.text == "日"
+		let result: boolean = true;
 
-		return result;
+		let dataResult = this.editableText_first.text + this.editableText_second.text +'：'+ this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text
+
+		if (dataResult=='日期：十一月九日') {
+			return result
+		}
+
+		if (dataResult=='日期：11月9日') {
+			return result
+		}
+
+		return result=false
 	}
 
 	//判斷模塊
@@ -246,10 +257,10 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-    this.optionsScene = new optionsScene();
-    this.optionsScene.currentState="pig"
-	this.optionsScene.statueIndex()
-    Main.instance.gotoScene(this.optionsScene)
-
-  }
+		optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new optionsScene();
+		this.optionsScene.currentState = "pig"
+		this.optionsScene.statueIndex();
+		Main.instance.gotoScene(this.optionsScene)
+	}
 }

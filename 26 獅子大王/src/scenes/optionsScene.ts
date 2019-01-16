@@ -27,7 +27,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   public isTrueGroup: eui.Group;
 
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
-  private statusIndex: number = 0;
+  private static statusIndex: number = 0;
   private static _instance: optionsScene;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
@@ -65,6 +65,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
     this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
+    console.log(optionsScene.statusIndex)
   }
 
   private rabbiteEvet(): void {
@@ -77,30 +78,35 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private sheepEvet(): void {
     this.sheepComponent.disableMouse();
     this.sheepComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.sheepScene)
   }
 
   private snakeEvet(): void {
     this.snakeComponent.disableMouse();
     this.snakeComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.snakeScene)
   }
 
   private pigEvet(): void {
     this.pigComponent.disableMouse();
     this.pigComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.pigScene)
   }
 
   private giraffeEvet(): void {
     this.giraffeComponent.disableMouse();
     this.giraffeComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.giraffeScene)
   }
 
   private ratEvet(): void {
     this.ratComponent.disableMouse();
     this.ratComponent.clickStatus();
+    this.onPauseVoice()
     this.toGameScene(this.ratScene)
   }
 
@@ -146,8 +152,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
   public statueIndex(): void {
-    this.statusIndex++
-    this.index = this.statusIndex.toString();
+    optionsScene.statusIndex++
+    console.log(optionsScene.statusIndex)
+    this.index = optionsScene.statusIndex.toString();
   }
 
   private async invitationAnimations(): Promise<void> {

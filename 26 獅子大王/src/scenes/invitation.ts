@@ -1,20 +1,16 @@
-class invitation extends eui.Component implements  eui.UIComponent {
+class invitation extends eui.Component implements eui.UIComponent {
 	public constructor() {
 		super();
 	}
 
-	protected partAdded(partName:string,instance:any):void
-	{
-		super.partAdded(partName,instance);
+	protected partAdded(partName: string, instance: any): void {
+		super.partAdded(partName, instance);
 	}
 
-
-	protected async childrenCreated(): Promise <void>
-	{
+	protected childrenCreated(): void {
 		super.childrenCreated();
-		await lzlib.SoundUtility.playSound("sound 637_mp3");
-		// RES.getRes("sound 637_mp3").play(0,1)
+		optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
+		lzlib.SoundUtility.playSound("sound 637_mp3");
 		initTow();
 	}
-	
 }

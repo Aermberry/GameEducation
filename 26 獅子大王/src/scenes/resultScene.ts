@@ -21,7 +21,8 @@ class resultScene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		this.plantMask.playOnceAsync().then(() => {
-			RES.getRes("sound 627_mp3").play(0, -1)
+			// RES.getRes("sound 627_mp3").play(0, -1)
+			optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
 		})
 		this.textBook();
 		this.playAnimation(this.Anim, true);
@@ -45,6 +46,7 @@ class resultScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private toInvitationScene(): void {
+		optionsScene.getOptionInstance.onPauseVoice();
 		Main.instance.gotoScene(new invitation());
 	}
 }

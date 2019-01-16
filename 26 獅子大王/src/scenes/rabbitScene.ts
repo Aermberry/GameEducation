@@ -213,8 +213,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await this.gohome();
   }
   private gohome(): void {
+    optionsScene.getOptionInstance.onPauseVoice()
     this.optionsScene = new optionsScene();
-    this.optionsScene.onPauseVoice()
     this.optionsScene.currentState="snake"
     this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
