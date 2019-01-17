@@ -1,5 +1,5 @@
 class EditableLabel extends eui.Component implements eui.UIComponent {
-
+	protected bgImage:eui.Image
 	protected userInput: eui.TextInput;
 	protected resultLabel: eui.Label;
 

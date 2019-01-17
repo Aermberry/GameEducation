@@ -34,6 +34,7 @@ class EditableLabel extends eui.Component implements  eui.UIComponent {
 		this._text = this.userInput.text.trim();
 		this.resultLabel.text = this._text;
 		this.dispatchEvent(new egret.Event(egret.Event.CHANGE, true, true, this._text));
+		this.dispatchEvent
 	}
 
 	private _text: string;
@@ -50,7 +51,6 @@ class EditableLabel extends eui.Component implements  eui.UIComponent {
 		this.resultLabel && (this.resultLabel.text = value);
 	}
 
-	
 	public async getNewValueAsync(): Promise<number>
 	{
 		return new Promise<number>(resolve => {

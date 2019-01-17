@@ -103,7 +103,8 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new StartGmes.startScene());
+        // this.addChild(new StartGmes.startScene());
+        this.addChild(new EditableLabel());
         // if (egret.getOption('scene')) {
         //     this.addChild(this.scenes[parseInt(egret.getOption('scene'))]); //允许用户跳转到指定场景
         // } else {
