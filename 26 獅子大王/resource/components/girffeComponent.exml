@@ -94,7 +94,7 @@
 	<w:Config id="1677d2fd116" ></w:Config>
 	<e:Group includeIn="hover,click" x="49" y="59.67">
 		<e:Image source="dialogBox_png" includeIn="hover,click" y="152" scaleY="-1" scaleX="-1" anchorOffsetX="0" width="369" anchorOffsetY="0" height="210" x="320"/>
-		<e:Label text="大王，\n我不好吃的！" includeIn="hover,click" x="0" y="0" textColor="0x000000" fontFamily="華康中黑體" bold="true" size="40"/>
+		<e:Label text="大王，\n我不好吃的！" includeIn="hover,click" x="0" y="0" textColor="0x000000" fontFamily="SourceHanSansHW-Bold" bold="true" size="40"/>
 	</e:Group>
 	<e:Image id="giraffe_hover" source="giraffe_body_png" includeIn="hover,click" bottom="0" right="0"/>
 	<e:Image id="leftEye" source="giraffe_left_png" includeIn="click" x="393" y="174"/>

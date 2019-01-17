@@ -540,40 +540,40 @@
 
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0" touchThrough="true">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="869.76" x="0" scale9Grid="102,93,618,250"/>
-		<e:Label text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時" x="274" y="226.9" anchorOffsetX="0" anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="35" bold="true" fontFamily="華康中黑體" border="false"/>
+		<e:Label text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時" x="274" y="226.9" anchorOffsetX="0" anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="35" bold="true" fontFamily="SourceHanSansHW-Bold" border="false"/>
 		<e:Group id="editGroup" x="282.82" y="534.86" alpha="1" touchThrough="true" visible="false">
 		<e:Group x="-13.7" y="0" touchThrough="true" touchEnabled="true">
 			<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" width="120" height="110" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="120" height="110" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="115.1" y="0" touchThrough="true">
 			<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_second" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_second" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="243.29" y="0" touchThrough="true">
 			<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="373.6" y="0" touchThrough="true">
 			<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_fourth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_fourth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="500.87" y="0" touchThrough="true">
 			<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_fifth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_fifth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="631.16" y="0" touchThrough="true">
 			<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_sixth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_sixth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		<e:Group x="761.47" y="0" touchThrough="true">
 			<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_seventh" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="華康中黑體" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+			<e:EditableText id="editableText_seventh" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
 		</e:Group>
 		</e:Group>
-		<e:Label text="希望你能出席，不見不散！" x="253" y="590.19" anchorOffsetX="0" anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="35" bold="true" fontFamily="華康中黑體" border="false"/>
+		<e:Label text="希望你能出席，不見不散！" x="253" y="590.19" anchorOffsetX="0" anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87" textColor="0x000000" lineSpacing="35" bold="true" fontFamily="SourceHanSansHW-Bold" border="false"/>
 		<e:Group id="group" x="55.54" y="50" alpha="1" touchThrough="true">
-		<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體" scaleX="1" scaleY="1"/>
+		<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold" scaleX="1" scaleY="1"/>
 		</e:Group>
 		<e:Rect id="circleLeftRect" width="410" height="410" x="-67.63" fillColor="0xffffff" strokeWeight="10" ellipseHeight="500" ellipseWidth="500" y="327.55" fillAlpha="0" strokeColor="0xff0000" visible="false"/>
 		<e:Rect id="circleRightRect" width="410" height="410" x="1180.85" fillColor="0xffffff" strokeWeight="10" ellipseHeight="500" ellipseWidth="500" y="327.55" fillAlpha="0" strokeColor="0xff0000" visible="false"/>
@@ -603,13 +603,13 @@
         <e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51"
                  width="748.51" anchorOffsetY="93.94" height="380.06" alpha="1"  visible="false"/>
         <e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
-                 textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
+                 textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
                  verticalAlign="middle" />
         <e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22"
-                 y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
+                 y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
                  visible="false" />
         <e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
-                 x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體"
+                 x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
                  visible="false" />
     </e:Group>
     <e:Group id="ratDialogGroup" x="1080.31" y="937.16" alpha="1" width="750" height="411">
@@ -618,36 +618,36 @@
         <e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
                  anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
         <e:Label text="好像有什麽地方寫錯\n了，需要提示嗎？按\n下方的提示按鈕吧" x="24.25" lineSpacing="25" size="50" y="-36.36"
-                 textColor="0x000000" fontFamily="華康中黑體" bold="true"  visible="false"/>
+                 textColor="0x000000" fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
         <e:Group x="48.47" y="-42.43" visible="false">
             <e:Label text="對不起! 我想參加\n嘉年華，只是不知\n                    ？" anchorOffsetY="0" height="211.82" x="0" y="0"
-                     anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
+                     anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
                      bold="true" />
             <e:Label text="聚會的地點" anchorOffsetY="0" x="-0.07" y="149.8" anchorOffsetX="0" size="50" textColor="0xA00000"
-                     lineSpacing="25" fontFamily="華康中黑體" bold="true" />
+                     lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
         </e:Group>
         <e:Group x="15.14" y="-3.03" visible="false">
             <e:Label text="啊！原來地點是    \n       ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
                      anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
-                     fontFamily="華康中黑體" bold="true" />
+                     fontFamily="SourceHanSansHW-Bold" bold="true" />
             <e:Label text="森林" anchorOffsetY="0" height="60.3" x="357.35" y="-1.11" anchorOffsetX="0" width="111.37"
-                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
+                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
             <e:Label text="果園" anchorOffsetY="0" height="66.36" x="-0.42" y="77.46" anchorOffsetX="0" width="114.64"
-                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="華康中黑體" bold="true" />
+                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
         </e:Group>
         <e:Label text="太好了！\n大王萬歲！" x="130.31" lineSpacing="25" size="50" y="3.04" textColor="0x000000"
-                 fontFamily="華康中黑體" bold="true"  visible="false"/>
+                 fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
     </e:Group>
     <e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true"
              touchThrough="true" touchChildren="true">
-        <e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
+        <e:Label text="提示" size="90" x="0" y="39" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
         <e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
             <ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
         </e:Group>
     </e:Group>
     <e:Group id="achieveGroup" x="987.47" y="1286" anchorOffsetX="0" width="481.42" anchorOffsetY="0" height="93.03"
              alpha="0">
-        <e:Label text="完成" size="90" x="0" y="0" fontFamily="華康中黑體" textColor="0x000000" />
+        <e:Label text="完成" size="90" x="0" y="0" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
         <ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
                               skinName="achieveComponentSkin" />
     </e:Group>

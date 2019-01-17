@@ -69,7 +69,7 @@
 	<e:Image id="rat_hover" source="rat_normal_png" includeIn="hover" x="0" y="146"/>
 	<e:Group includeIn="hover,click" x="93" y="31">
 		<e:Image source="dialogBoxleft_png" includeIn="hover,click" x="0" y="0" anchorOffsetX="0" width="305" anchorOffsetY="0" height="174.82"/>
-		<e:Label text="不要啊！" includeIn="hover,click" x="75" y="63.91" textColor="0x000000" bold="true" fontFamily="華康中黑體" size="47"/>
+		<e:Label text="不要啊！" includeIn="hover,click" x="75" y="63.91" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold" size="47"/>
 	</e:Group>
 	<e:Image id="flustered" source="flustered_png" includeIn="hover,click" x="81.55" y="179" anchorOffsetX="0" width="50.91" anchorOffsetY="0" height="74"/>
 	<e:Image id="eyeRight" source="rat_left_png" includeIn="click" x="52" y="256.5" anchorOffsetX="12" anchorOffsetY="13"/>

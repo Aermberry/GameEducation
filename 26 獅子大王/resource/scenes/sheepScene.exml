@@ -544,9 +544,9 @@
 		<e:Image id="invitationLetter" y="-85" anchorOffsetX="0" anchorOffsetY="0" x="0"  source="letter_sheep_jpg" width="1570" height="1112"/>
 		<e:Label text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時\n地點：森林公園\n希望你能出席，不見不散 ！" x="347.18" y="93.59" anchorOffsetX="0" anchorOffsetY="0"
 		         textAlign="left" verticalAlign="middle" size="70" textColor="0x000000" lineSpacing="80"
-		         bold="true" fontFamily="華康中黑體" border="false" />
+		         bold="true" fontFamily="SourceHanSansHW-Bold" border="false" />
 		<e:Group id="group" x="55.54" y="-31.81" alpha="1" touchThrough="true">
-			<e:Label text="親愛的小動物：" size="70" x="0" y="0" textColor="0x000000" bold="true" fontFamily="華康中黑體"
+			<e:Label text="親愛的小動物：" size="70" x="0" y="0" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold"
 			         scaleX="1" scaleY="1" />
 
 		</e:Group>
@@ -571,7 +571,7 @@
 		<e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51" width="748.51"
 		         anchorOffsetY="93.94" height="380.06" alpha="0" />
 		<e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="華康中黑體" textAlign="left"
+		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
 		         verticalAlign="middle" />
 
 
@@ -585,13 +585,13 @@
 
 
 		<e:Group x="39.4" y="-36.36" visible="false">
-			<e:Label text="印章好像      \n    ，需要提示嗎？按\n下方的提示按鈕吧！" x="0" lineSpacing="25" size="50" y="0" textColor="0x000000" fontFamily="華康中黑體" bold="true"/>
-			<e:Label text="蓋錯了位" x="203.03" lineSpacing="25" size="50" y="3.03" fontFamily="華康中黑體" bold="true" textColor="0xff0000"/>
-			<e:Label text="置" x="3.03" lineSpacing="25" size="50" y="72.73" fontFamily="華康中黑體" bold="true" textColor="0xff0000"/>
+			<e:Label text="印章好像      \n    ，需要提示嗎？按\n下方的提示按鈕吧！" x="0" lineSpacing="25" size="50" y="0" textColor="0x000000" fontFamily="SourceHanSansHW-Bold" bold="true"/>
+			<e:Label text="蓋錯了位" x="203.03" lineSpacing="25" size="50" y="3.03" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xff0000"/>
+			<e:Label text="置" x="3.03" lineSpacing="25" size="50" y="72.73" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xff0000"/>
 		</e:Group>
 		<e:Group x="18.17" y="-30.31" visible="false">
 			<e:Label text="對不起！ 我不知道是\n大王請客，我以爲這\n只是宣傳單張。" anchorOffsetY="0" height="211.82" x="0" y="0"
-			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
+			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
 			         bold="true" />
 
 
@@ -599,30 +599,30 @@
 		</e:Group>
 		<e:Group x="39.39" y="0" visible="false">
 			<e:Label text="邀請卡沒有大王的\n名字。" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
+			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
 			         bold="true" />
 		</e:Group>
         <e:Group x="69.69" y="-45.45" visible="false">
 		<e:Label text="卡上沒有大王\n                的名字，\n讓我來             吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="華康中黑體"
+			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
 			         bold="true" />
         <e:Label text="(發卡人)" x="2.21" y="76.06" size="50" bold="true" textColor="0xa00000"/>
         <e:Label text="蓋印章" y="149.1" size="50" x="157.03" bold="true" textColor="0xa00000"/>
 		</e:Group>
-		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="華康中黑體" bold="true" visible="false"/>
+		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="SourceHanSansHW-Bold" bold="true" visible="false"/>
 	</e:Group>
 
 	<e:Image id="sheep" x="1536.65" y="1059.68" source="sheep_normal_png"/>
 
 	<e:Group id="bulbGroup" x="540.95" y="1251.15" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
-		<e:Label text="提示" size="90" x="0" y="39" fontFamily="華康中黑體" textColor="0x000000" />
+		<e:Label text="提示" size="90" x="0" y="39" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
 		<e:Group id="bulbComponentGroup" touchThrough="true" touchEnabled="true" touchChildren="true">
 		<ns1:bulbComponent id="bulbComponent" x="215.15" y="3" />
 		</e:Group>
 	</e:Group>
 	<e:Group id="stamperGroup" x="987.47" y="1225.4" anchorOffsetX="0" anchorOffsetY="0"
 	         alpha="0" touchChildren="true" touchEnabled="true" touchThrough="true">
-		<e:Label text="拿起印章" size="90" x="0" fontFamily="華康中黑體" textColor="0x000000"  verticalCenter="0"/>
+		<e:Label text="拿起印章" size="90" x="0" fontFamily="SourceHanSansHW-Bold" textColor="0x000000"  verticalCenter="0"/>
 		<e:Group id="stamperComponentGroup" anchorOffsetX="0" x="384.85" anchorOffsetY="0" height="227.06" width="362.42" touchChildren="true" touchEnabled="true" touchThrough="true" verticalCenter="-0.5">
 		<ns1:stampComponent id="stamperComponent" x="3.03" y="3.03" anchorOffsetX="0" anchorOffsetY="0"/>
 		</e:Group>
