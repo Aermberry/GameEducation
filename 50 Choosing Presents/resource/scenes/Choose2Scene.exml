@@ -29,7 +29,7 @@
 	</e:Group>
 	<e:Button id="nextButton" label="Next" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0"
 	          height="110"  visible="false"/>
-	<e:Button id="againButton" label="try again" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0"
+	<e:Button id="againButton" label="Try again" x="1569.77" y="1314" anchorOffsetX="0" width="246" anchorOffsetY="0"
 	          height="110"  visible="false"/>
 	<e:Button id="helpButton" label="Help" x="1063.41" y="1326" anchorOffsetX="0" width="206" anchorOffsetY="0" height="104"  visible="false"/>
 	<e:Group id="dropGroup" x="1074.91" y="995.21" width="285.46" height="95.52" anchorOffsetX="0" anchorOffsetY="0">

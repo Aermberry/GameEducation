@@ -43,7 +43,7 @@
 
 	<Ui:TexttLabel id="tipsComponent" width="767.64" height="128.48" x="484" y="892.46" anchorOffsetX="0" anchorOffsetY="0" skinName="TexttLabelSkin" text="The storybook costs $17." fontSize="50" textAglign="center" verticalAlign="middle" fontColor="0x000000" visible="false"/>
 	<e:Button id="nextButton" label="Next" x="1660.01" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
-	<e:Button id="againButton" label="try again" x="1649.41" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
+	<e:Button id="againButton" label="Try again" x="1649.41" anchorOffsetX="0" width="252.15" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
 	<e:Button id="helpButton" label="Help" x="1341.77" anchorOffsetX="0" width="237" anchorOffsetY="0" height="103" bottom="0" visible="false"/>
 
 
