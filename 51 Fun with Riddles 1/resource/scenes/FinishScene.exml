@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="FinishSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16624df64ef" ></w:Config>
-	<e:Image horizontalCenter="1" verticalCenter="-2.5" source="EDB_game_51-01_png" scaleY="1.31" anchorOffsetX="0" width="1975.55" anchorOffsetY="0" height="1110.67"/>
-	<e:Image source="finishScene_png" horizontalCenter="-23.5" verticalCenter="68" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+	<e:Image horizontalCenter="-41.5" verticalCenter="4" scaleY="1.31" anchorOffsetX="0" width="2509.33" anchorOffsetY="0" height="1410.77" source="SceneQuestion_png"/>
+	<e:Image horizontalCenter="-23.5" verticalCenter="68" anchorOffsetX="0" anchorOffsetY="0" source="ziyuan3_png"/>
 </e:Skin>
