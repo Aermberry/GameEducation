@@ -28,10 +28,7 @@ class PlayingPresenter {
 		if (this.words.indexOf(selectedWord) >= 0) {
 			this.view.lockCurrentSelectChars();
 			this.view.markWordAsDeleted(this.words.indexOf(selectedWord));
-			console.log(selectedWord)
-			console.log(this.words)
 			this.handleWords(this.words,selectedWord);
-			console.log(this.words)
 			this.view.playGoodJobMovie();
 			this.correctWordCount++;
 		}
@@ -48,7 +45,6 @@ class PlayingPresenter {
 
 	public onHintsBtnImgClick():void
 	{
-		console.log("num:"+this.correctWordCount);
 		this.view.tipsanswer(0, this.words);
 	}
 
