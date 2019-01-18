@@ -1,6 +1,6 @@
 class EditableLabel extends eui.Component implements eui.UIComponent {
 	protected bgImage:eui.Image
-	protected userInput: eui.TextInput;
+	protected userInput: eui.EditableText;
 	protected resultLabel: eui.Label;
 
 	public constructor() {
@@ -14,15 +14,10 @@ class EditableLabel extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
-		this.userInput.textDisplay.left = 10;
-		this.userInput.textDisplay.right = 10;
-		this.userInput.textDisplay.top = 10;
-		this.userInput.textDisplay.bottom = 10;
-		this.userInput.textDisplay.textAlign = 'center';
-		this.userInput.textDisplay.verticalAlign = 'center';
 		this.userInput.text = this.text;
 		this.userInput.addEventListener(egret.Event.CHANGE, this.onUserInputChange, this);
 		this.resultLabel.text = this.text;
+		this.currentState="edit"
 	}
 
 
