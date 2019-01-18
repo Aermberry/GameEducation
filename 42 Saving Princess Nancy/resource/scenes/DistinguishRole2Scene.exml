@@ -20,9 +20,9 @@
 	<e:Image x="507.27" y="1147.86" source="listen2_grass_png" anchorOffsetY="0" height="318.92" anchorOffsetX="0" width="409.69"/>
 	<e:Image id="person6Image" name="person6Image" x="357.88" y="732.93" anchorOffsetX="0" anchorOffsetY="0" width="319.78" height="963.49" source="listen2_person6_png"/>
 	<ns1:ListenComponent id="listenComponent" width="536" height="172" x="60" y="52" anchorOffsetX="0" anchorOffsetY="0" currentListen="1"/>
-	<ns1:AlertComponent id="person5AlertComponent" width="512" height="248" x="1132" y="592" anchorOffsetX="0" anchorOffsetY="0" text="     The lady who you are looking for at the top of the hill." visible="false"/>
+	<ns1:AlertComponent id="person5AlertComponent" width="472" height="248" x="1132" y="592" anchorOffsetX="0" anchorOffsetY="0" text="The lady who you are \n looking for at the top \n of the hill."/>
 	<ns1:AlertComponent id="person2AlertComponent" width="512" height="248" x="1070" y="174" anchorOffsetX="0" anchorOffsetY="0" text="Correct. Here's an apple for you. It can give you more energy." visible="false"/>
-	<ns1:AlertComponent id="person4AlertComponent" width="458" height="248" x="1384" y="424" anchorOffsetX="0" anchorOffsetY="0" text="The lady who you are looking for is at the   top of the hill." visible="false"/>
+	<ns1:AlertComponent id="person4AlertComponent" width="458" height="248" x="1383.43" y="313.31" anchorOffsetX="0" anchorOffsetY="0" text="The lady who you are looking for is at the      top of the hill."/>
 	<ns1:AlertComponent id="person3AlertComponent" width="512" height="248" x="1346" y="298" anchorOffsetX="0" anchorOffsetY="0" text="I don't wear glasses." visible="false"/>
 	<ns1:AlertComponent id="person6AlertComponent" width="512" height="248" x="165.66" y="511.39" anchorOffsetX="0" anchorOffsetY="0" text="I am not at the top of      the hill." visible="false"/>
 	<ns1:AlertComponent id="person1AlertComponent" width="512" height="248" x="39.66" y="233.39" anchorOffsetX="0" anchorOffsetY="0" text="I don't wear earrings." visible="false"/>
