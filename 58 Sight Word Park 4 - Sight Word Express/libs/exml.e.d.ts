@@ -6,6 +6,8 @@ declare class SecondTarget extends eui.Skin{
 }
 declare class ThirdTarget extends eui.Skin{
 }
+declare class QuestionComponentSkin extends eui.Skin{
+}
 declare class EasyGameSceneSkin extends eui.Skin{
 }
 declare class EasyGoSceneSkin extends eui.Skin{

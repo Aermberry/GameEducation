@@ -5,7 +5,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 
 	// private birdImg:eui.Image;
 
-	private sentenceLabel: eui.Label;
+	private sentenceLabel: QuestionComponent;
 	private redLightImg: eui.Image;
 	private trainImg: eui.Image;
 	private driverImg: eui.Image;
@@ -139,7 +139,8 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		this.cargoLeftLabel.text = this.cargoLeft.toString() + "：train(s) left ";
 		this.resetCargoMovie();
 		this.currentQuestion = this.questionBiz.random();
-		this.sentenceLabel.text = '"' + this.currentQuestion.sentence + '"';
+		// this.sentenceLabel.text = '"' + this.currentQuestion.sentence + '"';
+		this.sentenceLabel.setQuestion = this.currentQuestion.sentence;
 		await this.trainEnterTweenGroup.playOnceAsync();
 		this.carMovieClipPlayer.setMovie = 'car_stop';
 		this.currentQuestion.options.shuffle();
@@ -224,7 +225,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		(RES.getRes('dingding_mp3') as egret.Sound).play(0, 1);
 
 		//设置正确的完整句子
-		this.sentenceLabel.text = this.currentQuestion.fullSentence;
+		this.sentenceLabel.setFullSentence = this.currentQuestion.fullSentence;
 
 		await this.getCargoDropMovie(cargoIndex).playAsync();
 

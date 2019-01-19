@@ -5,7 +5,8 @@
 		"EasyGoScene": "resource/scenes/EasyGoScene.exml",
 		"ProGoScene": "resource/scenes/ProGoScene.exml",
 		"EasyGameScene": "resource/scenes/EasyGameScene.exml",
-		"ResultScene": "resource/scenes/ResultScene.exml"
+		"ResultScene": "resource/scenes/ResultScene.exml",
+		"QuestionComponent": "resource/eui_skins/QuestionComponent.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
@@ -17,6 +18,7 @@
 		"resource/components/MovieClipPlayer.exml",
 		"resource/components/SecondTarget.exml",
 		"resource/components/ThirdTarget.exml",
+		"resource/eui_skins/QuestionComponent.exml",
 		"resource/scenes/EasyGameScene.exml",
 		"resource/scenes/EasyGoScene.exml",
 		"resource/scenes/ProGoScene.exml",

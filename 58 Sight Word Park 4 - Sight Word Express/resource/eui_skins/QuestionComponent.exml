@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QuestionComponentSkin" width="1076" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16864e54fc7" ></w:Config>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Label id="leftLabel" text="I drink" x="5" y="4" size="50"/>
+		<e:Label id="middleLabel" text="____" x="103" size="50"/>
+		<e:Label id="rightLabel" text="cup of milk every morning." x="216" y="5" size="50"/>
+		<e:layout>
+			<e:HorizontalLayout gap="20" verticalAlign="middle" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>
