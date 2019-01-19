@@ -64,6 +64,8 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 			cargo.addChild(cargoDropdownMovieClip);
 			cargo.swapChildren(cargoDropdownMovieClip, cargo.getChildByName('label'));
 			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
+			cargo.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onBoxCargoOver, this);
+			cargo.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onBoxCargoOut, this);
 			mouse.setButtonMode(cargo, true);
 		}
 		this.cargoAddClick();
@@ -71,6 +73,18 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		this.startGame();
 		this.backBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.goStartScene, this);
 
+	}
+
+	private onBoxCargoOver(e: egret.TouchEvent): void
+	{
+		let boxMovieClip = (e.target as eui.Group).$children[0] as egret.MovieClip;
+		boxMovieClip.gotoAndStop(2);
+	}
+
+	private onBoxCargoOut(e: egret.TouchEvent): void
+	{
+		let boxMovieClip = (e.target as eui.Group).$children[0] as egret.MovieClip;
+		boxMovieClip.gotoAndStop(3);
 	}
 
 	private cargoRemoviClick(): void {
@@ -84,6 +98,24 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		for (let index = 0; index < this.cargoGroup.numChildren; index++) {
 			let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
 			cargo.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onPackSelect, this);
+		}
+	}
+
+	// 是否启用鼠标事件
+	private set enableBoxCargoMouse(bool: boolean)
+	{
+		if(bool) {
+			for (let index = 0; index < this.cargoGroup.numChildren; index++) {
+				let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
+				cargo.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.onBoxCargoOver, this);
+				cargo.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.onBoxCargoOut, this);
+			}
+		}else {
+			for (let index = 0; index < this.cargoGroup.numChildren; index++) {
+				let cargo = this.cargoGroup.getChildAt(index) as eui.Group;
+				cargo.removeEventListener(mouse.MouseEvent.MOUSE_OVER, this.onBoxCargoOver, this);
+				cargo.removeEventListener(mouse.MouseEvent.MOUSE_OUT, this.onBoxCargoOut, this);
+			}
 		}
 	}
 
@@ -136,6 +168,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 
 	private async onPackSelect(e: egret.TouchEvent): Promise<void> {
 		this.cargoRemoviClick();
+		this.enableBoxCargoMouse = false;
 		let cargoIndex = this.cargoGroup.getChildIndex(e.target as egret.DisplayObject);
 		this.currentBoxSelected = cargoIndex;
 		if (this.currentQuestion.options[cargoIndex] == this.currentQuestion.answer) {
@@ -163,6 +196,7 @@ class EasyGameScene extends eui.Component implements eui.UIComponent {
 		}
 
 		this.cargoAddClick();
+		this.enableBoxCargoMouse = true;
 	}
 
 	/** 播放用户选择成功字母的动画 */
