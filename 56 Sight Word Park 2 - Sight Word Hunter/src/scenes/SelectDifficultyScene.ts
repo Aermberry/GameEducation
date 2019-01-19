@@ -24,7 +24,8 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 		mouse.setButtonMode(this.backImage, true);
 		mouse.setButtonMode(this.easyImage, true);
 		mouse.setButtonMode(this.proImage, true);
-		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
+		// this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
+		lzlib.SoundUtility.playSound("select_difficulty_scene_bgm_mp3");
 
 		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
 
@@ -44,7 +45,8 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 
 	private onBackImageClick(e: egret.TouchEvent): void
 	{
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new StartScene());
 	}
 	
@@ -60,13 +62,15 @@ class SelectDifficultyScene extends eui.Component implements  eui.UIComponent {
 
 	private onEasyImageClick(e: egret.TouchEvent): void
 	{
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new ReadyToPlayScene(new EasyWordRepository()));
 	}
 
 	private onProImageClick(e: egret.TouchEvent): void
 	{
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new ReadyToPlayScene(new ProWordRepository()));
 	}
 

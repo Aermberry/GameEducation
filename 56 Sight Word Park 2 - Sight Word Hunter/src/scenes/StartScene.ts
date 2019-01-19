@@ -37,7 +37,8 @@ class StartScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private loadMusic(): void {
-		this.bgmSoundChannel = (RES.getRes('start_scene_bgm_mp3') as egret.Sound).play(0, -1);
+		// this.bgmSoundChannel = (RES.getRes('start_scene_bgm_mp3') as egret.Sound).play(0, -1);
+		lzlib.SoundUtility.playSound("start_scene_bgm_mp3");
 		this.mcFactory = new egret.MovieClipDataFactory(RES.getRes('movie_clip_json'), RES.getRes("movie_clip_png"));
 		egret.Tween.get(this.rainbowImage)
 			.to({ x: 0 }, 500)
@@ -63,7 +64,8 @@ class StartScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onSightWordHunterClick(e: egret.TouchEvent): void {
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new SelectDifficultyScene());
 	}
 }

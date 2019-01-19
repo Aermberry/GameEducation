@@ -21,7 +21,8 @@ class ReadyToPlayScene extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.goImage, true);
 		this.backImage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackImageClick, this);
 
-		this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
+		// this.bgmSoundChannel = (RES.getRes('select_difficulty_scene_bgm_mp3') as egret.Sound).play();
+		lzlib.SoundUtility.playSound("select_difficulty_scene_bgm_mp3");
 
 		this.goImage.addEventListener(mouse.MouseEvent.ROLL_OVER, this.onGoImageMouseOver, this);
 		this.goImage.addEventListener(mouse.MouseEvent.ROLL_OUT, this.onGoImageMouseOut, this);
@@ -33,7 +34,8 @@ class ReadyToPlayScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onBackImageClick(e: egret.TouchEvent): void {
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new StartScene());
 	}
 
@@ -46,7 +48,8 @@ class ReadyToPlayScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private onGoImageClick(e: egret.TouchEvent): void {
-		this.bgmSoundChannel.stop();
+		// this.bgmSoundChannel.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		Main.instance.gotoScene(new PlayingScene(this.wordRepo));
 	}
 
