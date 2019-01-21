@@ -1,0 +1,84 @@
+{
+    "ANIMATION": {
+        "name": "swfAll_words",
+        "StageInstance": {
+            "SYMBOL_Instance": {
+                "SYMBOL_name": "clock",
+                "Instance_Name": "InstName",
+                "symbolType": "graphic",
+                "firstFrame": 0,
+                "loop": "loop",
+                "transformationPoint": {
+                    "x": 114.85,
+                    "y": 116.15
+                },
+                "Matrix3D": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m03": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0,
+                    "m13": 0,
+                    "m20": 0,
+                    "m21": 0,
+                    "m22": 1,
+                    "m23": 0,
+                    "m30": -117.6,
+                    "m31": -118.85,
+                    "m32": 0,
+                    "m33": 1
+                },
+                "DecomposedMatrix": {
+                    "Position": {
+                        "x": -117.6,
+                        "y": -118.85,
+                        "z": 0
+                    },
+                    "Rotation": {
+                        "x": 0,
+                        "y": -0,
+                        "z": 0
+                    },
+                    "Scaling": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                }
+            }
+        },
+        "SYMBOL_name": "clock",
+        "TIMELINE": {
+            "LAYERS": [
+                {
+                    "Layer_name": "图层_1",
+                    "Frames": [
+                        {
+                            "index": 0,
+                            "duration": 1,
+                            "elements": [
+                                {
+                                    "ATLAS_SPRITE_instance": {
+                                        "name": "0000",
+                                        "Position": {
+                                            "x": 0,
+                                            "y": 0
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "SYMBOL_DICTIONARY": {
+        "Symbols": []
+    },
+    "metadata": {
+        "framerate": 12
+    }
+}

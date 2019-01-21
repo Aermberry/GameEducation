@@ -7079,14 +7079,14 @@ p.nominalBounds = new cjs.Rectangle(-115.3,-105.9,227.8,211.7);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],0), null, new cjs.Matrix2D(0.395,0,0,0.396,-31.8,-35.4)).s().p("Ak9FjIAArFIJ7AAIAALFg");
-	this.shape.setTransform(25.6,-48.7);
+	this.instance = new lib.image26();
+	this.instance.parent = this;
+	this.instance.setTransform(-6,-84,0.393,0.396);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-6.2,-84.1,63.6,70.9);
+p.nominalBounds = new cjs.Rectangle(-6,-84,63.6,70.9);
 
 
 (lib.shape32OverDownHit = function(mode,startPosition,loop) {
@@ -7129,14 +7129,14 @@ p.nominalBounds = new cjs.Rectangle(-16.4,-89.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],0), null, new cjs.Matrix2D(0.292,0,0,0.293,-23.5,-26.2)).s().p("AjqEGIAAoLIHVAAIAAILg");
-	this.shape.setTransform(27.1,-46.4);
+	this.instance = new lib.image26();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-73,0.29,0.293);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.6,-72.6,47,52.4);
+p.nominalBounds = new cjs.Rectangle(4,-73,47,52.4);
 
 
 (lib.shape24Up = function(mode,startPosition,loop) {
@@ -11284,19 +11284,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic2_cond_atlas_.png", id:"swfMagic2_cond_atlas_"},
-		{src:"sounds/_02sock.mp3", id:"_02sock"},
-		{src:"sounds/_06clock.mp3", id:"_06clock"},
-		{src:"sounds/sound101.mp3", id:"sound101"},
-		{src:"sounds/sound106.mp3", id:"sound106"},
-		{src:"sounds/sound120overtodown.mp3", id:"sound120overtodown"},
-		{src:"sounds/_05block.mp3", id:"_05block"},
-		{src:"sounds/_04rock.mp3", id:"_04rock"},
-		{src:"sounds/_03dock.mp3", id:"_03dock"},
-		{src:"sounds/_01cock.mp3", id:"_01cock"},
-		{src:"sounds/sound83overtodown.mp3", id:"sound83overtodown"},
-		{src:"sounds/sound85.mp3", id:"sound85"},
-		{src:"sounds/sound94.mp3", id:"sound94"}
+		{src:"images/swfMagic2_cond_atlas_.png?1548063913479", id:"swfMagic2_cond_atlas_"},
+		{src:"sounds/_02sock.mp3?1548063913907", id:"_02sock"},
+		{src:"sounds/_06clock.mp3?1548063913907", id:"_06clock"},
+		{src:"sounds/sound101.mp3?1548063913907", id:"sound101"},
+		{src:"sounds/sound106.mp3?1548063913907", id:"sound106"},
+		{src:"sounds/sound120overtodown.mp3?1548063913907", id:"sound120overtodown"},
+		{src:"sounds/_05block.mp3?1548063913907", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548063913907", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548063913907", id:"_03dock"},
+		{src:"sounds/_01cock.mp3?1548063913907", id:"_01cock"},
+		{src:"sounds/sound83overtodown.mp3?1548063913907", id:"sound83overtodown"},
+		{src:"sounds/sound85.mp3?1548063913907", id:"sound85"},
+		{src:"sounds/sound94.mp3?1548063913907", id:"sound94"}
 	],
 	preloads: []
 };
