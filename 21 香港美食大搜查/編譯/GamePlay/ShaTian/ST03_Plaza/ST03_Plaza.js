@@ -6520,7 +6520,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		/* play ();
 		*/
 	}
-	this.frame_109 = function() {
+	this.frame_110 = function() {
 		/* 在此帧处停止
 		时间轴将在插入此代码的帧处停止/暂停。
 		也可用于停止/暂停影片剪辑的时间轴。
@@ -6544,17 +6544,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		{
 			this.gotoAndStop(34);
 		}
-	}
-	this.frame_110 = function() {
 		/* stop ();
 		*/
 	}
-	this.frame_113 = function() {
-		
-	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(29).call(this.frame_29).wait(5).call(this.frame_34).wait(6).call(this.frame_40).wait(49).call(this.frame_89).wait(6).call(this.frame_95).wait(14).call(this.frame_109).wait(1).call(this.frame_110).wait(3).call(this.frame_113).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(29).call(this.frame_29).wait(5).call(this.frame_34).wait(6).call(this.frame_40).wait(49).call(this.frame_89).wait(6).call(this.frame_95).wait(15).call(this.frame_110).wait(5));
 
 	// Layer 178
 	this.Quit = new lib.sprite32();
