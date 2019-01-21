@@ -121,7 +121,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
         this.headLine(optionAnimText[this.index]);
         this.playVoice(optionAnimVoice[this.index]).then(() => {
           this.statusAnim()
-
         })
       })
     })
