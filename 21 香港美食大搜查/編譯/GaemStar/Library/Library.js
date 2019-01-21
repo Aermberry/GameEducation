@@ -6142,7 +6142,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Con
 		
 		function fl_MouseClickHandler_4()
 		{
-		
+			continueThreeGame();
+			console.log("促发第三段游戏");
 		}
 		console.log("這裏")
 		/* stop ();

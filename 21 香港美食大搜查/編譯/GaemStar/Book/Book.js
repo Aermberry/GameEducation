@@ -1116,7 +1116,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_3()
 		{
-			console.log("我在這裏")
+			continueFourGame();
 		}
 		
 		/* Mouse Click 事件
@@ -1131,7 +1131,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_4()
 		{
-			console.log("我在這裏")
+			continueThirteenGame();
 			
 		}
 		
@@ -1147,7 +1147,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sha
 		
 		function fl_MouseClickHandler_5()
 		{
-			console.log("我在這裏")
+			continueTwentyFourGame();
 		}
 		/* stop ();
 		*/
