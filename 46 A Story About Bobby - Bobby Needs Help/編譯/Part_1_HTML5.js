@@ -44280,24 +44280,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{que
 		*/
 	}
 	this.frame_1529 = function() {
-		/* 单击以转到帧并停止
-		单击指定的元件实例会将播放头移动到时间轴中的指定帧并停止影片。
-		可在主时间轴或影片剪辑时间轴上使用。
-		
-		说明:
-		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
-		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
-		*/
-		
-		
-		this.llButton.addEventListener("click", fl_ClickToGoToAndStopAtFrame_33.bind(this));
-		
-		function fl_ClickToGoToAndStopAtFrame_33()
-		{
-			this.gotoAndStop(5);
-		}
-		
-		
 		/* 单击以转到帧并播放
 		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
 		可在主时间轴或影片剪辑时间轴上使用。
@@ -44956,7 +44938,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{que
 
 	this.instance_28 = new lib.text393("synched",0);
 	this.instance_28.parent = this;
-	this.instance_28.setTransform(87.6,109.1,2.191,2.191);
+	this.instance_28.setTransform(91.1,119.6,2.191,2.191);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.nextgoBUtton}]},1034).to({state:[]},5).to({state:[{t:this.go20Button}]},209).to({state:[]},1).to({state:[{t:this.instance_28}]},280).to({state:[]},3).wait(245));
 
@@ -46402,7 +46384,7 @@ lib.properties = {
 	color: "#99CCFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/image52.jpg?1548059536678", id:"image52"}
+		{src:"images/image52.jpg", id:"image52"}
 	],
 	preloads: []
 };
