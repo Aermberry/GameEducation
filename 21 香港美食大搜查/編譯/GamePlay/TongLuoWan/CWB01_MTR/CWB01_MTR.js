@@ -2715,6 +2715,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		
 		this.stop();
 		console.log("我在這裏")
+		continueTwentySixGame();
 		/* stop ();
 		loadMovieNum("CWB02_Exit.swf", 0);
 		*/

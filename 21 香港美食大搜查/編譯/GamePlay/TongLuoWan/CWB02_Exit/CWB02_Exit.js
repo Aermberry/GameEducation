@@ -4293,6 +4293,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		
 		this.stop();
 		console.log("我在這裏")
+		continueTwentySevenGame();
 		/* stop ();
 		loadMovieNum("CWB03_Centre.swf", 0);
 		*/

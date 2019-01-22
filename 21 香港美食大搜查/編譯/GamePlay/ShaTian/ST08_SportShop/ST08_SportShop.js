@@ -4963,7 +4963,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Cak
 		
 		function fl_MouseClickHandler_3()
 		{
-		
+			continueThreeGame();
 		}
 		console.log("我在這裏")
 		/* stop ();
