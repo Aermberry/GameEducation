@@ -2530,7 +2530,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Not
 		
 		function fl_MouseClickHandler_3()
 		{
-			
+			continueFourteenGame();
 		}
 		console.log("我在這裏")
 		/* stop ();

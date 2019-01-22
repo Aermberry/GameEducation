@@ -3818,7 +3818,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Nex
 		
 		function fl_MouseClickHandler()
 		{
-			
+			continueSeventeenGame();
 		}
 		/* stop ();
 		*/

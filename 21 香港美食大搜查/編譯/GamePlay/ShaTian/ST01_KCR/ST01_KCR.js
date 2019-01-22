@@ -4096,6 +4096,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		this.stop();
 		
 		console.log("我在這裏")
+		continueSixGame();
 		/* stop ();
 		loadMovieNum("ST02_KCR.swf", 0);
 		*/

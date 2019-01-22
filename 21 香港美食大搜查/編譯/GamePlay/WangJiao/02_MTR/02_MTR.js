@@ -6845,6 +6845,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		*/
 		
 		this.stop();
+		continueSixteenGame();
 		console.log("我在這裏")
 	}
 

@@ -8692,7 +8692,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Boo
 		
 		function fl_MouseClickHandler_3()
 		{
-			
+			continueTwentyoneGame();
 		}console.log("我在這裏")
 		/* stop ();
 		*/

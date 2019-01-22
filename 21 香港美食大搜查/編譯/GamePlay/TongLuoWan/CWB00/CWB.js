@@ -2222,7 +2222,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Not
 		
 		function fl_MouseClickHandler_3()
 		{
-		
+			continueTwentyFiveGame();
 		}
 		
 		console.log("我在這裏")

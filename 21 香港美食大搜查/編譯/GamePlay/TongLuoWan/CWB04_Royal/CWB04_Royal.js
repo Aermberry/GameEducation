@@ -5672,7 +5672,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		
 		function fl_MouseClickHandler_3()
 		{
-		
+			continueTwentyNineGame();
 		}
 		console.log("我在這裏")
 		/* stop ();

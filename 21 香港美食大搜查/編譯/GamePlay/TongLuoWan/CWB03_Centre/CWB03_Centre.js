@@ -3291,7 +3291,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"Ce
 		*/
 		
 		this.stop();
-		console.log("我在這裏")
+		console.log("我在這裏");
+		continueTwentyEightGame();
 		/* stop ();
 		loadMovieNum("CWB04_Royal.swf", 0);
 		*/

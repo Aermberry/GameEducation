@@ -4488,6 +4488,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		*/
 		
 		this.stop();
+		continueFifteenGame();
 		console.log("我在這裏")
 		/* stop ();
 		loadMovieNum("02_MTR.swf", 0);

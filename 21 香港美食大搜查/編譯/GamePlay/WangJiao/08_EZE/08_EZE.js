@@ -7575,6 +7575,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		
 		this.stop();
 		console.log("我在這裏")
+		continueTwentytwoGame();
 		/* stop ();
 		loadMovieNum("09_FaYeun.swf", 0);
 		*/
