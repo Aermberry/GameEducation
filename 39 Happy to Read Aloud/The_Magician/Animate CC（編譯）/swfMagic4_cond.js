@@ -6972,14 +6972,14 @@ p.nominalBounds = new cjs.Rectangle(-37,-14.9,69,33.5);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],2), null, new cjs.Matrix2D(1.164,0,0,1.164,-31.4,-32)).s().p("Ak5FAIAAp/IJzAAIAAJ/g");
-	this.shape.setTransform(24.5,-47.5);
+	this.instance = new lib.image69();
+	this.instance.parent = this;
+	this.instance.setTransform(-7,-80,1.164,1.164);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-6.9,-79.5,62.9,64);
+p.nominalBounds = new cjs.Rectangle(-7,-80,62.9,64);
 
 
 (lib.shape72OverDownHit = function(mode,startPosition,loop) {
@@ -7004,14 +7004,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],2), null, new cjs.Matrix2D(0.8,0,0,0.8,-21.6,-22)).s().p("AjXDcIAAm3IGvAAIAAG3g");
-	this.shape.setTransform(25.4,-46.5);
+	this.instance = new lib.image69();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-69,0.8,0.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.8,-68.5,43.2,44);
+p.nominalBounds = new cjs.Rectangle(4,-69,43.2,44);
 
 
 (lib.shape60OverDownHit = function(mode,startPosition,loop) {
@@ -7506,14 +7506,14 @@ p.nominalBounds = new cjs.Rectangle(-120.1,-143.1,217,299.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],1), null, new cjs.Matrix2D(0.37,0,0,0.372,-33.1,-33.5)).s().p("AlKFPIAAqdIKWAAIAAKdg");
-	this.shape.setTransform(25,-49.4);
+	this.instance = new lib.image43();
+	this.instance.parent = this;
+	this.instance.setTransform(-8,-83,0.368,0.372);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8.2,-82.9,66.3,67.1);
+p.nominalBounds = new cjs.Rectangle(-8,-83,66.3,67.1);
 
 
 (lib.shape47OverDownHit = function(mode,startPosition,loop) {
@@ -7538,14 +7538,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],1), null, new cjs.Matrix2D(0.294,0,0,0.296,-26.3,-26.6)).s().p("AkGEKIAAoTIINAAIAAITg");
-	this.shape.setTransform(25.9,-47.3);
+	this.instance = new lib.image43();
+	this.instance.parent = this;
+	this.instance.setTransform(0,-74,0.292,0.296);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.4,-73.9,52.7,53.3);
+p.nominalBounds = new cjs.Rectangle(0,-74,52.7,53.3);
 
 
 (lib.shape39OverDownHit = function(mode,startPosition,loop) {
@@ -7752,14 +7752,14 @@ p.nominalBounds = new cjs.Rectangle(-115.3,-105.9,227.8,211.7);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],0), null, new cjs.Matrix2D(0.395,0,0,0.396,-31.8,-35.4)).s().p("Ak9FjIAArFIJ7AAIAALFg");
-	this.shape.setTransform(25.6,-48.7);
+	this.instance = new lib.image26();
+	this.instance.parent = this;
+	this.instance.setTransform(-6,-84,0.393,0.396);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-6.2,-84.1,63.6,70.9);
+p.nominalBounds = new cjs.Rectangle(-6,-84,63.6,70.9);
 
 
 (lib.shape32OverDownHit = function(mode,startPosition,loop) {
@@ -7802,14 +7802,14 @@ p.nominalBounds = new cjs.Rectangle(-16.4,-89.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic4_cond_atlas_"],0), null, new cjs.Matrix2D(0.292,0,0,0.293,-23.5,-26.2)).s().p("AjqEGIAAoLIHVAAIAAILg");
-	this.shape.setTransform(27.1,-46.4);
+	this.instance = new lib.image26();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-73,0.29,0.293);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.6,-72.6,47,52.4);
+p.nominalBounds = new cjs.Rectangle(4,-73,47,52.4);
 
 
 (lib.shape24Up = function(mode,startPosition,loop) {
@@ -11968,19 +11968,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic4_cond_atlas_.png", id:"swfMagic4_cond_atlas_"},
-		{src:"sounds/_06clock.mp3", id:"_06clock"},
-		{src:"sounds/sound103.mp3", id:"sound103"},
-		{src:"sounds/sound108.mp3", id:"sound108"},
-		{src:"sounds/sound122overtodown.mp3", id:"sound122overtodown"},
-		{src:"sounds/_05block.mp3", id:"_05block"},
-		{src:"sounds/_04rock.mp3", id:"_04rock"},
-		{src:"sounds/_03dock.mp3", id:"_03dock"},
-		{src:"sounds/_02sock.mp3", id:"_02sock"},
-		{src:"sounds/_01cock.mp3", id:"_01cock"},
-		{src:"sounds/sound83overtodown.mp3", id:"sound83overtodown"},
-		{src:"sounds/sound85.mp3", id:"sound85"},
-		{src:"sounds/sound96.mp3", id:"sound96"}
+		{src:"images/swfMagic4_cond_atlas_.png?1548137208732", id:"swfMagic4_cond_atlas_"},
+		{src:"sounds/_06clock.mp3?1548137209172", id:"_06clock"},
+		{src:"sounds/sound103.mp3?1548137209172", id:"sound103"},
+		{src:"sounds/sound108.mp3?1548137209172", id:"sound108"},
+		{src:"sounds/sound122overtodown.mp3?1548137209172", id:"sound122overtodown"},
+		{src:"sounds/_05block.mp3?1548137209172", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548137209172", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548137209172", id:"_03dock"},
+		{src:"sounds/_02sock.mp3?1548137209172", id:"_02sock"},
+		{src:"sounds/_01cock.mp3?1548137209172", id:"_01cock"},
+		{src:"sounds/sound83overtodown.mp3?1548137209172", id:"sound83overtodown"},
+		{src:"sounds/sound85.mp3?1548137209172", id:"sound85"},
+		{src:"sounds/sound96.mp3?1548137209172", id:"sound96"}
 	],
 	preloads: []
 };
