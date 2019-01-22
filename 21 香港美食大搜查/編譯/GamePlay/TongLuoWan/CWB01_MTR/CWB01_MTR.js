@@ -2766,7 +2766,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 	// Layer 225
 	this.instance_1 = new lib.shape47("synched",0);
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(1555,1228.6,3.526,3.2);
+	this.instance_1.setTransform(1414.4,1219.4,5.664,2.638,0,0,0,19.8,0.1);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(56).to({_off:false},0).wait(1));
