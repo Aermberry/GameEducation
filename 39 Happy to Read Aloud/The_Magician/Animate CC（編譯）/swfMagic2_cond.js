@@ -6299,14 +6299,14 @@ p.nominalBounds = new cjs.Rectangle(-37,-14.9,69,33.5);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],2), null, new cjs.Matrix2D(1.164,0,0,1.164,-31.4,-32)).s().p("Ak5FAIAAp/IJzAAIAAJ/g");
-	this.shape.setTransform(24.5,-47.5);
+	this.instance = new lib.image69();
+	this.instance.parent = this;
+	this.instance.setTransform(-7,-80,1.164,1.164);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-6.9,-79.5,62.9,64);
+p.nominalBounds = new cjs.Rectangle(-7,-80,62.9,64);
 
 
 (lib.shape72OverDownHit = function(mode,startPosition,loop) {
@@ -6331,14 +6331,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],2), null, new cjs.Matrix2D(0.8,0,0,0.8,-21.6,-22)).s().p("AjXDcIAAm3IGvAAIAAG3g");
-	this.shape.setTransform(25.4,-46.5);
+	this.instance = new lib.image69();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-69,0.8,0.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.8,-68.5,43.2,44);
+p.nominalBounds = new cjs.Rectangle(4,-69,43.2,44);
 
 
 (lib.shape60OverDownHit = function(mode,startPosition,loop) {
@@ -6833,14 +6833,14 @@ p.nominalBounds = new cjs.Rectangle(-123.2,-138.5,216.3,298.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],1), null, new cjs.Matrix2D(0.37,0,0,0.372,-33.1,-33.5)).s().p("AlKFPIAAqdIKWAAIAAKdg");
-	this.shape.setTransform(25,-49.4);
+	this.instance = new lib.image43();
+	this.instance.parent = this;
+	this.instance.setTransform(-8,-83,0.368,0.372);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8.2,-82.9,66.3,67.1);
+p.nominalBounds = new cjs.Rectangle(-8,-83,66.3,67.1);
 
 
 (lib.shape47OverDownHit = function(mode,startPosition,loop) {
@@ -6865,14 +6865,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic2_cond_atlas_"],1), null, new cjs.Matrix2D(0.294,0,0,0.296,-26.3,-26.6)).s().p("AkGEKIAAoTIINAAIAAITg");
-	this.shape.setTransform(25.9,-47.3);
+	this.instance = new lib.image43();
+	this.instance.parent = this;
+	this.instance.setTransform(0,-74,0.292,0.296);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.4,-73.9,52.7,53.3);
+p.nominalBounds = new cjs.Rectangle(0,-74,52.7,53.3);
 
 
 (lib.shape39OverDownHit = function(mode,startPosition,loop) {
@@ -11284,19 +11284,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic2_cond_atlas_.png?1548063913479", id:"swfMagic2_cond_atlas_"},
-		{src:"sounds/_02sock.mp3?1548063913907", id:"_02sock"},
-		{src:"sounds/_06clock.mp3?1548063913907", id:"_06clock"},
-		{src:"sounds/sound101.mp3?1548063913907", id:"sound101"},
-		{src:"sounds/sound106.mp3?1548063913907", id:"sound106"},
-		{src:"sounds/sound120overtodown.mp3?1548063913907", id:"sound120overtodown"},
-		{src:"sounds/_05block.mp3?1548063913907", id:"_05block"},
-		{src:"sounds/_04rock.mp3?1548063913907", id:"_04rock"},
-		{src:"sounds/_03dock.mp3?1548063913907", id:"_03dock"},
-		{src:"sounds/_01cock.mp3?1548063913907", id:"_01cock"},
-		{src:"sounds/sound83overtodown.mp3?1548063913907", id:"sound83overtodown"},
-		{src:"sounds/sound85.mp3?1548063913907", id:"sound85"},
-		{src:"sounds/sound94.mp3?1548063913907", id:"sound94"}
+		{src:"images/swfMagic2_cond_atlas_.png?1548119684188", id:"swfMagic2_cond_atlas_"},
+		{src:"sounds/_02sock.mp3?1548119684613", id:"_02sock"},
+		{src:"sounds/_06clock.mp3?1548119684613", id:"_06clock"},
+		{src:"sounds/sound101.mp3?1548119684613", id:"sound101"},
+		{src:"sounds/sound106.mp3?1548119684613", id:"sound106"},
+		{src:"sounds/sound120overtodown.mp3?1548119684613", id:"sound120overtodown"},
+		{src:"sounds/_05block.mp3?1548119684613", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548119684613", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548119684613", id:"_03dock"},
+		{src:"sounds/_01cock.mp3?1548119684613", id:"_01cock"},
+		{src:"sounds/sound83overtodown.mp3?1548119684613", id:"sound83overtodown"},
+		{src:"sounds/sound85.mp3?1548119684613", id:"sound85"},
+		{src:"sounds/sound94.mp3?1548119684613", id:"sound94"}
 	],
 	preloads: []
 };
