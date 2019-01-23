@@ -98,7 +98,7 @@ class Riddle1Scene extends eui.Component implements eui.UIComponent {
       optionGroup.setChildIndex(transparentBlock, currentIndex);
       setTimeout(() => {
         optionGroup.setChildIndex(transparentBlock, originIndex);
-      }, 5000);
+      }, 2000);
     }
   }
 }
