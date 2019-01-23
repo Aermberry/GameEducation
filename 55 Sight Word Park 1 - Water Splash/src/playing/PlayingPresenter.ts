@@ -20,7 +20,7 @@ class PlayingPresenter {
 		this.view.playReadyGoMovie();
 		this.nextPuzzleButtonClick();
 		this.wordsCopy = this.onCopyArry(this.words)
-		console.log("wordsCopy:" + this.wordsCopy)
+		// console.log("wordsCopy:" + this.wordsCopy)
 	}
 
 	// 保存初始的數組
@@ -36,17 +36,17 @@ class PlayingPresenter {
 		let selectedWord = this.view.currentSelectedChars.join('');
 		if (this.words.indexOf(selectedWord) >= 0) {
 			this.view.lockCurrentSelectChars();
-			console.log("當前的wordsCopy:" + this.wordsCopy)
-			console.log("wordsCopy中的index:" + this.wordsCopy.indexOf(selectedWord))
+			// console.log("當前的wordsCopy:" + this.wordsCopy)
+			// console.log("wordsCopy中的index:" + this.wordsCopy.indexOf(selectedWord))
 			this.view.markWordAsDeleted(this.wordsCopy.indexOf(selectedWord));
-			console.log(selectedWord)
-			console.log(this.words)
+			// console.log(selectedWord)
+			// console.log(this.words)
 			this.handleWords(this.words, selectedWord);
-			console.log(this.words)
+			// console.log(this.words)
 			this.view.playGoodJobMovie();
 			this.correctWordCount++;
-			console.log("正確的個數：" + this.correctWordCount)
-			console.log("words的個數：" + this.words.length)
+			// console.log("正確的個數：" + this.correctWordCount)
+			// console.log("words的個數：" + this.words.length)
 		}
 		// if (this.correctWordCount == this.words.length) {
 		// 	this.view.playCompleteAnimation();
@@ -62,7 +62,7 @@ class PlayingPresenter {
 	}
 
 	public onHintsBtnImgClick(): void {
-		console.log("num:" + this.correctWordCount);
+		// console.log("num:" + this.correctWordCount);
 		this.view.tipsanswer(0, this.words);
 	}
 
