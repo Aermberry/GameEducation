@@ -13,9 +13,9 @@
 		<e:Image id="cup" x="1015.79" y="40.6"  source="blue_cup_png" anchorOffsetX="0" width="202.31" anchorOffsetY="0" height="156.27"/>
 	</e:Group>
 	<e:Group x="669.76" y="376.41" anchorOffsetY="0" height="267.18">
-		<e:Image source="bigLabel_png" x="-3.03" y="0"  anchorOffsetY="0" height="261.12" anchorOffsetX="0" width="1090.03"/>
-		<e:Label text="We       it every day. We drink water, milk, orange juice, tea or coffee with it. What \nis it?" x="6.55" y="18.59"
-		         anchorOffsetX="0" width="1080.05" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="54"
+		<e:Image source="bigLabel_png" x="-30.3" y="-18.18"  anchorOffsetY="0" height="306.57" anchorOffsetX="0" width="1159.72"/>
+		<e:Label text="We        it every day. We drink water, milk,\norange juice, tea or coffee with it. What \nis it?" x="6.55" y="18.59"
+		         anchorOffsetX="0" width="1098.23" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="54"
 		         verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS" />
 
 		<e:Group id="useGroup" x="106.34" y="19.87">
