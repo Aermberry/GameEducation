@@ -6091,7 +6091,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Sel
 		*/
 		
 		this.stop();
-		console.log("我在這裏")
+		console.log("我在這裏");
+		continueElevenGame();
 		/* stop ();
 		loadMovieNum("ST07_Plaza.swf", 0);
 		*/
