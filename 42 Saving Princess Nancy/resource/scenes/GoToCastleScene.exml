@@ -103,6 +103,47 @@
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{birdwingLeftImage}">
+				<tween:To duration="14000">
+					<tween:props>
+						<e:Object width="{523.33}" height="{456.24}" y="{96}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{birdwingRightImage}">
+				<tween:To duration="14000">
+					<tween:props>
+						<e:Object width="{523}" height="{456}" y="{96}" x="{1007.69}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="wingFightAnimation">
+			<tween:TweenItem target="{birdwingLeftImage}">
+				<tween:Set/>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object rotation="{-35}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{birdwingRightImage}">
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object rotation="{35}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="166233e5828" ></w:Config>
@@ -118,6 +159,8 @@
 	<e:Image id="cloud4Image" x="476.32" y="359.85" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
 	<e:Image id="cloud5Image" x="1122.14" y="283.22" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
 	<e:Image id="cloud6Image" x="956" y="377.24" source="cloud_png" anchorOffsetX="0" width="672.53" anchorOffsetY="0" height="170.79"/>
+	<e:Image id="birdwingLeftImage" x="960" y="340" source="birdwing_left_png" anchorOffsetX="4" width="156" anchorOffsetY="72" height="136" scaleX="-1"/>
+	<e:Image id="birdwingRightImage" x="1032" y="340" source="birdwing_left_png" width="156" height="136" anchorOffsetX="4" anchorOffsetY="68"/>
 	<e:Image id="princessBirdImage" x="874.57" y="136.61" source="princess_bird_png" anchorOffsetX="0" width="247.57" anchorOffsetY="0" height="788.06"/>
-	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+	<e:Rect id="maskRect" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" visible="false"/>
 </e:Skin>

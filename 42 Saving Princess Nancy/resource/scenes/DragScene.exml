@@ -291,7 +291,7 @@
 		<e:Image id="image0" x="-48" y="29.52" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" alpha="0"/>
 		<e:Image id="image" x="110" y="-44.48" source="cloud2_png" anchorOffsetX="0" width="366.78" anchorOffsetY="0" height="347" rotation="24.7"/>
 		<e:Image id="image1" x="49.44" y="86.2" anchorOffsetX="0" width="316.04" anchorOffsetY="0" height="299" source="cloud_png" alpha="0"/>
-		<e:Label id="label" text="Good job! You \n completed a \n Picture of Princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="408" size="50" alpha="0" anchorOffsetX="0"/>
+		<e:Label id="label" text="Good job! You \n completed a \n Picture of princess Nancy." x="52" y="108" textColor="0x000000" fontFamily="Calg421n" width="408" size="50" alpha="0" anchorOffsetX="0"/>
 		<ns1:BootsComponent id="bootsComponent" width="171" height="213" y="312" x="120"  alpha="0"/>
 	</e:Group>
 	<e:Rect id="bodyPartMaskRect" width="1132" height="964" x="736" y="480" anchorOffsetX="0" anchorOffsetY="0" alpha="0" fillColor="0x666666"/>

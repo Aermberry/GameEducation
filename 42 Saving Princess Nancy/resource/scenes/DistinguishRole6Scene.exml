@@ -101,7 +101,7 @@
 	<e:Group id="shadow3Group" width="200" height="200" x="1200" y="340" visible="false">
 		<e:Image source="message_border_listen6_png" anchorOffsetX="0" width="411.73" anchorOffsetY="0" height="289.12"/>
 		<e:Label text="Help!" x="100" y="56" anchorOffsetX="0" width="242" anchorOffsetY="0" height="150" size="84" verticalAlign="middle" textAlign="center" fontFamily="WolfSans" textColor="0x1b27f7" name="help" visible="false"/>
-		<e:Label id="textLabel3" text="Help! Save me please, gentleman!" x="72" y="84" anchorOffsetX="0" width="298" anchorOffsetY="0" height="150" textColor="0x000000" size="42" fontFamily="WolfSans" name="text" alpha="0"/>
+		<e:Label id="textLabel3" text="Help! Save me please, \n gentleman!" x="72" y="84" anchorOffsetX="0" width="298" anchorOffsetY="0" height="150" textColor="0x000000" size="42" fontFamily="WolfSans" name="text" alpha="0"/>
 	</e:Group>
 	<e:Group id="thankGroup" width="200" height="200" x="206" y="578" visible="false">
 		<e:Image source="message_border_listen6_png" anchorOffsetX="0" width="753.51" anchorOffsetY="0" height="529.12"/>

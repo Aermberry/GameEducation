@@ -27,6 +27,7 @@ class DistinguishRole3Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		lzlib.SoundUtility.stopCurrentSound();
 		await this.playIntroductionMP3();
 		this.initiPersonTap();
 		this.nextBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onNextClick, this);

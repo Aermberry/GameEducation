@@ -56,6 +56,7 @@ class DistinguishRole5Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 		await this.playIntroductionMP3();
 		this.alertComponents = {
 			'person1': this.person1AlertComponent,

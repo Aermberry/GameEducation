@@ -1,6 +1,7 @@
 class GoToCastleScene extends eui.Component implements  eui.UIComponent {
 	
 	private startAnimation: egret.tween.TweenGroup;
+	private wingFightAnimation: egret.tween.TweenGroup;
 	
 	public constructor() {
 		super();
@@ -14,6 +15,7 @@ class GoToCastleScene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.wingFightAnimation.playLoopAsync();
 		await this.playStartAnimation();
 		Main.instance.gotoScene(new DistinguishRole5Scene());
 	}

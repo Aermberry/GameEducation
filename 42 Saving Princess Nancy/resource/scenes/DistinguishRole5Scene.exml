@@ -138,7 +138,7 @@
 	<ns1:AlertComponent id="person4AlertComponent" name="person4" width="636" height="292" x="1048" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have large eyes." visible="false"/>
 	<ns1:AlertComponent id="person3AlertComponent" name="person3" width="636" height="292" x="856" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I will help you to save Princess Nancy." visible="false"/>
 	<ns1:AlertComponent id="person2AlertComponent" name="person2" width="636" height="292" x="336" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have freckles." visible="false"/>
-	<ns1:AlertComponent id="person1AlertComponent" name="person1" width="636" height="292" x="36" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don't have small mouth." visible="false"/>
+	<ns1:AlertComponent id="person1AlertComponent" name="person1" width="636" height="292" x="36" y="492" anchorOffsetX="0" anchorOffsetY="0" text="I don’t have a small mouth." visible="false"/>
 	<e:Image id="image" x="-956.25" y="817.57" source="princess_and_horse_png" anchorOffsetX="0" width="932.07" anchorOffsetY="0" height="803"/>
 	<e:Group id="stickGroup4" visible="false">
 		<ns1:MovieClipPlayer id="stickElectric1Movie" name="electric" x="1672.64" y="922.75" dataSet="electric2_json" texture="electric2_png" movieClipName="electric2" width="331.27" height="334.4" rotation="70.22" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>

@@ -37,6 +37,7 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 	protected async childrenCreated(): Promise<void>
 	{
 		super.childrenCreated();
+		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 		await this.playIntroductionMP3();
 		await this.playShadow1();
 		await this.playShadow2();
@@ -49,7 +50,6 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 			'shadow1': this.playShadow1,
 			'shadow2': this.playShadow2
 		};
-		this.backBootsComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBackClick, this);
 	}
 
 	private async onWrongClick(e: egret.TouchEvent): Promise<void>
@@ -84,7 +84,7 @@ class DistinguishRole6Scene extends eui.Component implements  eui.UIComponent {
 
 	private onBackClick(): void
 	{
-		Main.instance.gotoScene(new DistinguishRole3Scene());
+		Main.instance.gotoScene(new DistinguishRole5Scene());
 	}
 
 	private async playShadow1(): Promise<void>
