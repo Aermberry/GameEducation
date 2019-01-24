@@ -13,7 +13,7 @@ class QuestionRepository {
 		new Question('Pass your worksheets to your leader.','picture10','wave10_mp3'),
 		new Question('Line up, children!','picture11','wave11_mp3'),
 		new Question('Do not run in the classroom!','picture12','wave12_mp3'),
-		new Question('Speak up! I can’t help you.','picture13','wave13_mp3'),
+		new Question('Speak up! I can’t hear you.','picture13','wave13_mp3'),
 		new Question('Click your fingers.','picture14','wave14_mp3'),
 		new Question('Spell your name.','picture15','wave15_mp3'),
 		new Question('Underline the answer.','picture16','wave16_mp3'),
