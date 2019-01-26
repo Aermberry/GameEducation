@@ -30,7 +30,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		this.initDropLabel()
 	}
 
-	
+
 	private initDropLabel() {
 		let drop = new lzlib.Drop();
 		this.addChild(drop);
@@ -47,9 +47,12 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			e.preventDefault();
 			targetCompent.visible = true;
 			dragCompent.visible = false;
-			
+
 			if (this.dropGroup.$children.every(child => child.visible)) {
-				Main.instance.gotoScene(new FinishScene());
+				setTimeout(() => {
+					Main.instance.gotoScene(new FinishScene());
+				}, 1000)
+
 			}
 			else {
 				this.currentQuestionIndex++;
