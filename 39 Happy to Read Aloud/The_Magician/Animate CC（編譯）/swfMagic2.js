@@ -1599,6 +1599,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_262 = function() {
 		/* loadMovieNum("Magic2_cond.swf", 0);
 		*/
+		continueFiveGame();
 		console.log("@我没故事。")
 	}
 

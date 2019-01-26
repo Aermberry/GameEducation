@@ -3638,6 +3638,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		/* stop ();
 		*/
 		console.log("@我没故事。")
+		continueSevenGame();
 	}
 
 	// actions tween:

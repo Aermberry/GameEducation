@@ -1130,6 +1130,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_361 = function() {
 		/* loadMovieNum("Magic1_cond.swf", 0);
 		*/
+		continueThreeGame();
 		console.log("@我没故事。")
 	}
 

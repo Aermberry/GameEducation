@@ -6346,7 +6346,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Hel
 		*/
 		
 		this.stop();
-		
+		continueTwoGame();
 		console.log("Here")
 		/* stop ();
 		*/

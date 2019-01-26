@@ -3343,6 +3343,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		/* loadMovieNum("Magic4_cond.swf", 0);
 		*/
 		console.log("@我没故事。")
+		continueNineGame();
 	}
 
 	// actions tween:

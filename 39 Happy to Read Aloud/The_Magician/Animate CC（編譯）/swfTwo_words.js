@@ -1341,6 +1341,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		/* loadMovieNum("All_words.swf", 0);
 		*/
 		console.log("@我没故事。")
+		continueElevenGame();
 	}
 
 	// actions tween:

@@ -10069,6 +10069,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 		*/
 		this.stop();
 		console.log("@我没故事。")
+		continueTenGame();
 	}
 
 	// actions tween:
