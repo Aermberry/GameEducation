@@ -11,7 +11,7 @@
 		</e:Group>
 	</e:Group >
 	<e:Image source="EDB_game_48_scene2_png" x="791" y="0" />
-	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry, I___________your party. l will have ______________\non _______________________\nat_________________\n                                   Best wishes,\n                                       Susan" x="948.54" y="199.66" anchorOffsetX="0" width="819.46" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
+	<e:Label text="                             22nd October\nDear Tom, \n   Thank you for_____________.Sorry, I___________your party. l will have ______________\non _______________\nat___________\n                                   Best wishes,\n                                       Susan" x="948.54" y="199.66" anchorOffsetX="0" width="819.46" anchorOffsetY="0" height="1190.61" size="50" textColor="0x64605c" lineSpacing="70" fontFamily="Comic Sans MS"/>
 	<e:Group id="tipsGroup" x="931.83" y="270.1" anchorOffsetX="0" width="823.67" anchorOffsetY="0" height="813.36">
 		<e:Label text="    Tom sent Susan a card.  \nSusan would like to thank him for \nthe card." x="13.66" y="27.67" anchorOffsetX="0" width="803" anchorOffsetY="0" height="220.09" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" textAlign="center" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" visible="false"/>
 		<e:Label text="Can Susan join Tom’s party?" x="13.66" y="244.74" anchorOffsetX="0" width="803" anchorOffsetY="0" height="120" background="true" backgroundColor="0xDD06CE" size="50" verticalAlign="middle" lineSpacing="25" border="true" borderColor="0x000000" fontFamily="Comic Sans MS" textAlign="center" visible="false"/>
@@ -42,9 +42,9 @@
 	<e:Group id="dropGroup" x="957.51" y="252.22" anchorOffsetX="0" width="766.79" anchorOffsetY="0" height="1019.18">
 		<e:Label text="your card" x="387.88" y="132.52" anchorOffsetX="0" width="346.36" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
 		<e:Label text="cannot join" x="137.18" y="279.09" anchorOffsetX="0" width="425" anchorOffsetY="0" height="92.85" size="61" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
-		<e:Label text="a piano exam" x="305.09" y="366.46" anchorOffsetX="0" width="464" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
-		<e:Label text="31st October" x="149.94" y="490.6" anchorOffsetX="0" width="461.36" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
-		<e:Label text="2:30 p.m." x="139.94" y="604.85" anchorOffsetX="0" width="310" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="a piano exam" x="226.3" y="387.67" anchorOffsetX="0" width="464" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="31st October" x="62.06" y="511.81" anchorOffsetX="0" width="461.36" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
+		<e:Label text="2:30 p.m." x="58.12" y="629.09" anchorOffsetX="0" width="310" anchorOffsetY="0" height="108" size="71" textAlign="center" verticalAlign="middle" background="false" backgroundColor="0xFFFFFF" textColor="0xDF005C" fontFamily="Comic Sans MS" visible="false"/>
 	</e:Group>
 
 

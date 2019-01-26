@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1956.36" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="StartSceneSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="165fb96ddee" ></w:Config>
-	<e:Image source="EDB_game_48_scene1_png" y="20" anchorOffsetX="0" anchorOffsetY="0" left="0" scale9Grid="164,175,1025,1050" width="1415"/>
-	<e:Label text="4th October" x="1032.85" y="145.15" textColor="0x6375e2" size="50" fontFamily="Comic Sans MS"/>
-	<e:Label text="Dear Susan," x="628.3" y="301.29" textColor="0x6375e2" size="65" fontFamily="Comic Sans MS"/>
-	<e:Label text="    I am having a Halloween\n party on 31st October at\n 2:30 p.m at my home. Can\n you come?" x="624.93" y="495.08" textColor="0x6375e2" size="65" lineSpacing="35" textAlign="left" anchorOffsetY="0" height="498.34" fontFamily="Comic Sans MS" anchorOffsetX="0" width="828.22"/>
-	<e:Label text="Cheers," x="1147.47" y="1084.54" textColor="0x6375e2" size="65" lineSpacing="25" fontFamily="Comic Sans MS"/>
-	<e:Label text="Tom" x="1156.09" y="1184.54" textColor="0x6375e2" size="65" fontFamily="Comic Sans MS"/>
-	<e:Label text="Tom is preparing for a Halloween party. \n \nHe wrote a card to \ninvite Susan to join his party. Read the card." x="1433.18" y="297.44" size="54" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="803.41" fontFamily="Comic Sans MS" anchorOffsetX="0" width="506.57" verticalAlign="middle" textAlign="left"/>
+	<e:Image source="EDB_game_48_scene1_png" y="20" anchorOffsetX="0" anchorOffsetY="0" left="46" scale9Grid="164,175,1025,1050" width="1342.28"/>
+	<e:Label text="4th October" x="981.33" y="139.09" textColor="0x6375e2" size="55" fontFamily="Comic Sans MS"/>
+	<e:Label text="Dear Susan," x="643.45" y="301.29" textColor="0x6375e2" size="55" fontFamily="Comic Sans MS"/>
+	<e:Label text="    I am having a Halloween\n party on 31st October at\n 2:30 p.m. at my home. Can\n you come?" x="665.08" y="455.69" textColor="0x6375e2" size="56" lineSpacing="35" textAlign="left" anchorOffsetY="0" height="498.34" fontFamily="Comic Sans MS" anchorOffsetX="0" width="707.01"/>
+	<e:Label text="Cheers," x="1144.44" y="1020.9" textColor="0x6375e2" size="55" lineSpacing="25" fontFamily="Comic Sans MS"/>
+	<e:Label text="Tom" x="1153.06" y="1120.9" textColor="0x6375e2" size="55" fontFamily="Comic Sans MS"/>
+	<e:Label text="Tom is preparing for a Halloween party. \n \nHe wrote a card to \ninvite Susan to join\nhis party. Read the\ncard." x="1421.06" y="297.44" size="50" lineSpacing="45" textColor="0x461fff" anchorOffsetY="0" height="803.41" fontFamily="Comic Sans MS" anchorOffsetX="0" width="488.39" verticalAlign="middle" textAlign="left"/>
 	<e:Button id="nextButton" label="Next" x="1484.4" y="1114.7" anchorOffsetX="0" width="227.28" anchorOffsetY="0" height="134.84"/>
 	<e:Rect id="startMask" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="0.9"  visible="false"/>
 	<e:Image id="startButton" source="start_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
