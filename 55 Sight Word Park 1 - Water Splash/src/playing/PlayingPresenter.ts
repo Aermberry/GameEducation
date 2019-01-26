@@ -51,7 +51,7 @@ class PlayingPresenter {
 		// if (this.correctWordCount == this.words.length) {
 		// 	this.view.playCompleteAnimation();
 		// }
-		if (this.correctWordCount == 6) {
+		if (this.correctWordCount == this.wordsCopy.length) {
 			this.view.playCompleteAnimation();
 		}
 	}
