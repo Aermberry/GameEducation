@@ -1147,7 +1147,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// Layer 10
 	this.instance_1 = new lib.sprite17();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(1549.6,1066.7,3.91,3.91);
+	this.instance_1.setTransform(1549.6,1153,3.91,3.91);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(70).to({_off:false},0).to({_off:true},95).wait(197));
@@ -1252,12 +1252,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound18.mp3", id:"sound18"},
-		{src:"sounds/sound19.mp3", id:"sound19"},
-		{src:"sounds/sound21.mp3", id:"sound21"},
-		{src:"sounds/sound23.mp3", id:"sound23"},
-		{src:"sounds/sound30.mp3", id:"sound30"},
-		{src:"sounds/sound6.mp3", id:"sound6"}
+		{src:"sounds/sound18.mp3?1548316321052", id:"sound18"},
+		{src:"sounds/sound19.mp3?1548316321052", id:"sound19"},
+		{src:"sounds/sound21.mp3?1548316321052", id:"sound21"},
+		{src:"sounds/sound23.mp3?1548316321052", id:"sound23"},
+		{src:"sounds/sound30.mp3?1548316321052", id:"sound30"},
+		{src:"sounds/sound6.mp3?1548316321052", id:"sound6"}
 	],
 	preloads: []
 };
