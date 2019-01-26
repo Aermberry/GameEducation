@@ -6502,17 +6502,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 	this.frame_175 = function() {
 		console.log("完成第一段游戏");
-		continueTwoGame();
 		/* 在此帧处停止
 		时间轴将在插入此代码的帧处停止/暂停。
 		也可用于停止/暂停影片剪辑的时间轴。
 		*/
+		continueTwoGame();
 		this.stop();
 	}
 	this.frame_334 = function() {
 		/* loadMovieNum("Magic1.swf", 0);
 		*/
-
+		console.log(1)
 	}
 
 	// actions tween:
