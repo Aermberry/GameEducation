@@ -7,7 +7,7 @@ class ProQuestionRepository {
 		return [
 			new Question('I ____ play football with my friends.','always',['always','around','green']),
 			new Question('The bees fly ____ the flowers.','around',['around','best','many']),
-			new Question('I like playing football ____ it is fun.','because',['because','always','would']),
+			new Question('I like playing football ____ it is fun.','because',['because','always','before']),
 			new Question('It has ____ raining for three days.','been',['been','don\'t','made']),
 			new Question('Brush your teeth ____ you go to bed.','before',['before','sleep','would']),
 			new Question('Tom is my ____ friend.','best',['best','upon','very']),
@@ -22,9 +22,10 @@ class ProQuestionRepository {
 			new Question('There are ____ ducks.','five',['five','use','gave']),
 			new Question('We ____ the treasure!','found',['found','would','those']),
 			new Question('Tom ____ me a gift yesterday.','gave',['gave','both','right']),
-			new Question('He ____ to school by bus.','goes',['goes','read','fast']),
+			new Question('He ____ to school by bus.','goes',['goes','going','fast']),
 			new Question('The tree is ____.','green',['green','which','before']),
 			new Question('The dog likes ____ new house.','its',['its','off','us']),
+			new Question('Look! Felix is ____ now.','running',['runs','run','running']),
 			new Question('I ____ a paper plane yesterday.','made',['made','tell','best']),
 			new Question('How ____ apples do you have?','many',['many','made','around']),
 			new Question('Turn ____ the light.','off',['off','cold','fast']),
@@ -47,7 +48,7 @@ class ProQuestionRepository {
 			new Question('____ do you prefer, milk or apple juice?','Which',['Which','Read','Those'], 0),
 			new Question('____ do you like playing football?','Why',['Why','Sing','Their'], 0),
 			new Question('I ____ you a Merry Christmas.','wish',['wish','work','been']),
-			new Question('The ants ____ very hard.','work',['work','upon','many']),
+			new Question('The ants ____ very hard.','work',['work','upon','working']),
 			new Question('I ____ like to go to the washroom.','would',['would','around','because']),
 			new Question('I ____ a letter to Mary.','wrote',['wrote','sleep','right']),
 			new Question('What is ____ name?','your',['your','why','does']),
@@ -91,7 +92,11 @@ class ProQuestionRepository {
 			new Question('____ is Christmas!','Today',['Today','Shall','Eight'], 0),
 			new Question('We play football ____.','together',['together','bring','small']),
 			new Question('I want to ____ the food.','try',['try','six','if']),
-			new Question('The soup is ____.','warm',['warm','today','only'])
+			new Question('The soup is ____.','warm',['warm','today','only']),
+			new Question('Philip ____ housework every day.','does',['do','doing','does']),
+			new Question('The teacher ____, “Open your book.”','says',['say','says','saying']),
+			new Question('Emily____ shopping.','enjoys',['enjoy','enjoys','enjoying']),
+			new Question('Sally ____ her homework every night.','does',['do','doing','does']),
 		]
 	}
 }

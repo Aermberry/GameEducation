@@ -85,9 +85,9 @@ class EasyQuestionRepository {
 			new Question('I will be back ____.','soon',['soon','this','into']),
 			new Question('____ is my book.','That',['That','Too','Get'], 0),
 			new Question('____ are two cars on the road.','There',['There','Please','What'], 0),
-			new Question('____ go to school on foot.','They',['They','With','That'], 0),
+			new Question('They ____ to school on foot.','go',['go','going','goes']),
 			new Question('____ is my friend, Jane.','This',['This','Soon','Ride'], 0),
-			new Question('I enjoy reading science books." " Me, ____.','too',['too','have','be']),
+			new Question('"I enjoy reading science books." " Me, ____."','too',['too','have','be']),
 			new Question('The cat is ____ the table.','under',['under','white','like']),
 			new Question('I ____ to play with Tom.','want',['want','who','must']),
 			new Question('I ____ late for school yesterday.','was',['was','she','came']),
@@ -139,7 +139,21 @@ class EasyQuestionRepository {
 			new Question('I ____ the duck is cute.','think',['think','let','open']),
 			new Question('We ____ to school every morning.','walk',['walk','stop','live']),
 			new Question('The children ____ in the playground.','were',['were','going','take']),
-			new Question('____ is your birthday?','When',['When','Thank','From'], 0)
+			new Question('____ is your birthday?','When',['When','Thank','From'], 0),
+			new Question('My mum ____ a pie every Sunday.','makes',['make','makes','making']),
+			new Question('The students are ____ .','clapping',['clap','claps','clapping']),
+			new Question('Nick is ______ his birthday cake.','cutting',['cuts','cut','cutting']),
+			new Question('We are ____ for the school picnic.','planning',['plans','plan','planning']),
+			new Question('I am ____ a bicycle.','riding',['ride','riding','rides']),
+			new Question('Ada is ____ a train to her cousin’s home. ','taking',['takes','taking','take']),
+			new Question('Roy and Angel ____ us to go to their party.','ask',['ask','asks','asking']),
+			new Question('Amy ____ at Happy Primary School.','studies',['study','studying','studies']),
+			new Question('He ____ at home every night.','stays',['stay','stays','staying']),
+			new Question('Polly is ____ behind the tree.','hiding',['hide','hides','hiding']),
+			new Question('His uncle is ____ him a red packet.','giving',['give','gives','giving']),
+			new Question('Ben’s cousins are walking with ____.','him',['he','his','him']),
+
+
 		]
 	}
 }
