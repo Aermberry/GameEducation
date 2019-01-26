@@ -1737,11 +1737,11 @@ p.nominalBounds = new cjs.Rectangle(-136.5,-84.5,240.5,260.3);
 
 	// Layer 5
 	this.shape_37 = new cjs.Shape();
-	this.shape_37.graphics.f().s("#000000").ss(3,1,1).p("AgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQCnBCj9gXAhIAnIADABIAGACAAVgHQgegFghgP");
+	this.shape_37.graphics.f().s("#000000").ss(3,1,1).p("AAVgHQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeAgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQgegFghgPAhIAnIADABIAGACQCnBCj9gX");
 	this.shape_37.setTransform(76.8,38.9);
 
 	this.shape_38 = new cjs.Shape();
-	this.shape_38.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQB7AxhqAAQglAAhCgGgAhFAoIAGACIgGgCIgDgBgAAVgHQgegFghgPQAhAPAeAFg");
+	this.shape_38.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgmgDQgegFghgPQAhAPAeAFQAzAMAmAAQAXAAgHANQgGANgcALQhIAehTgeQB7AxhqAAQglAAhCgGgAhFAoIAGACIgGgCIgDgBg");
 	this.shape_38.setTransform(76.8,38.9);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_38},{t:this.shape_37}]}).wait(1));
@@ -1912,11 +1912,11 @@ p.nominalBounds = new cjs.Rectangle(-127.9,-108.4,255.9,216.4);
 
 	// Layer 6
 	this.shape_20 = new cjs.Shape();
-	this.shape_20.graphics.f().s("#000000").ss(3,1,1).p("AgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfQCtBDj/gXAhDApIgFgCAAUgHQgdgGghgO");
+	this.shape_20.graphics.f().s("#000000").ss(3,1,1).p("AAUgHQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfIgFgCAgghaQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQgdgGghgOAhDApQCtBDj/gX");
 	this.shape_20.setTransform(76.7,39);
 
 	this.shape_21 = new cjs.Shape();
-	this.shape_21.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfQCBAyhtAAQglAAhBgGgAhDApIgFgCgAAUgHQgdgGghgOQAhAOAdAGg");
+	this.shape_21.graphics.f("#FFFFFF").s().p("AiVBVIB1ivQBWAUBQAAQATAAgDAQQgDARgXAPQgbARgmABIgngDQgdgGghgOQAhAOAdAGQA0AMAmAAQAXAAgHANQgGANgcALQhJAehWgfIgFgCIAFACQCBAyhtAAQglAAhBgGg");
 	this.shape_21.setTransform(76.7,39);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_21},{t:this.shape_20}]}).wait(1));
@@ -6346,6 +6346,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Hel
 		*/
 		
 		this.stop();
+		
+		console.log("Here")
 		/* stop ();
 		*/
 	}
@@ -6501,44 +6503,44 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_175 = function() {
-		console.log("完成第一段游戏");
 		/* 在此帧处停止
 		时间轴将在插入此代码的帧处停止/暂停。
 		也可用于停止/暂停影片剪辑的时间轴。
 		*/
-		continueTwoGame();
 		this.stop();
 	}
-	this.frame_334 = function() {
-		/* loadMovieNum("Magic1.swf", 0);
+	this.frame_333 = function() {
+		/* 在此帧处停止
+		时间轴将在插入此代码的帧处停止/暂停。
+		也可用于停止/暂停影片剪辑的时间轴。
 		*/
-		console.log(1)
+		this.stop();
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(175).call(this.frame_175).wait(159).call(this.frame_334).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(175).call(this.frame_175).wait(158).call(this.frame_333).wait(1));
 
 	// Layer 84
 	this.instance = new lib.sprite30();
 	this.instance.parent = this;
-	this.instance.setTransform(911.5,2337.5,9.376,9.376);
+	this.instance.setTransform(873.5,2240,8.985,8.985);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:5.07,scaleY:5.07,x:988.3,y:914.2},16).wait(1).to({scaleX:4.8,scaleY:4.8,x:993.1,y:825.1},0).to({_off:true},317).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:4.86,scaleY:4.86,x:947.1,y:876.1},16).wait(1).to({scaleX:4.6,scaleY:4.6,x:951.7,y:790.7},0).wait(317));
 
 	// Layer 83
 	this.instance_1 = new lib.shape1("synched",0);
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(926.3,1603.6,5.933,5.933);
+	this.instance_1.setTransform(887.7,1536.7,5.686,5.686);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({scaleX:3,scaleY:3,x:958,y:772},16).wait(1).to({scaleX:2.81,scaleY:2.81,x:959.9,y:720},0).to({startPosition:0},157).wait(1).to({x:960},0).to({_off:true},159).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({scaleX:2.87,scaleY:2.87,x:918,y:739.8},16).wait(1).to({scaleX:2.7,scaleY:2.7,x:919.9,y:689.9},0).to({startPosition:0},157).wait(1).to({startPosition:0},0).wait(159));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-155.7,602.9,4083.9,3923.8);
+p.nominalBounds = new cjs.Rectangle(-149.2,577.8,3913.7,3760.2);
 // library properties:
 lib.properties = {
 	id: '18E4F3599F228F4DB8C2EEBE1372161F',
-	width: 1920,
-	height: 1440,
+	width: 1840,
+	height: 1380,
 	fps: 12,
 	color: "#FFFFFF",
 	opacity: 1.00,
