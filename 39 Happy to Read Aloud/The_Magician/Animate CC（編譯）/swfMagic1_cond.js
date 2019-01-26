@@ -8033,14 +8033,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic1_cond_atlas_"],2), null, new cjs.Matrix2D(0.8,0,0,0.8,-21.6,-22)).s().p("AjXDcIAAm3IGvAAIAAG3g");
-	this.shape.setTransform(25.4,-46.5);
+	this.instance = new lib.image70();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-69,0.8,0.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.8,-68.5,43.2,44);
+p.nominalBounds = new cjs.Rectangle(4,-69,43.2,44);
 
 
 (lib.shape61OverDownHit = function(mode,startPosition,loop) {
@@ -8566,14 +8566,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,54,55);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic1_cond_atlas_"],1), null, new cjs.Matrix2D(0.294,0,0,0.296,-26.3,-26.6)).s().p("AkGEKIAAoTIINAAIAAITg");
-	this.shape.setTransform(25.9,-47.3);
+	this.instance_1 = new lib.image44();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,-74,0.292,0.296);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.4,-73.9,52.7,53.3);
+p.nominalBounds = new cjs.Rectangle(0,-74,52.7,53.3);
 
 
 (lib.shape40OverDownHit = function(mode,startPosition,loop) {
@@ -8829,14 +8829,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,162,179);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(cjs.SpriteSheetUtils.extractFrame(ss["swfMagic1_cond_atlas_"],0), null, new cjs.Matrix2D(0.292,0,0,0.293,-23.5,-26.2)).s().p("AjqEGIAAoLIHVAAIAAILg");
-	this.shape.setTransform(27.1,-46.4);
+	this.instance = new lib.image27();
+	this.instance.parent = this;
+	this.instance.setTransform(4,-73,0.29,0.293);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(3.6,-72.6,47,52.4);
+p.nominalBounds = new cjs.Rectangle(4,-73,47,52.4);
 
 
 (lib.shape25Up = function(mode,startPosition,loop) {
@@ -12696,23 +12696,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.frame_34 = function() {
 		this.stop();
 		
-		this.colck.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_3.bind(this));
-		
-		function fl_ClickToGoToAndPlayFromFrame_3()
-		{
-			this.gotoAndPlay(39);
-		}
-		
-		
-		/*按一下前往影格並播放
-		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並從該影格繼續播放。
-		亦可用於主時間軸或影片片段時間軸。
-		
-		指示:
-		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
-		2. EaselJS 中的影格編號從 0 開始，而非 1
-		*/
-		
 		this.rockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_4.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_4()
@@ -12803,6 +12786,24 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		function fl_ClickToGoToAndPlayFromFrame_2()
 		{
 			this.gotoAndPlay(75);
+		}
+		
+		
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
+		*/
+		
+		this.clockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_4.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_4()
+		{
+			this.gotoAndPlay(39);
 		}
 		/* stop ();
 		*/
@@ -12927,7 +12928,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	// Layer 153
 	this.instance_1 = new lib.shape71Up("synched",0);
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(1519,1241.8,2.3,2.301);
+	this.instance_1.setTransform(1521.2,1241.9,2.3,2.301);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(39).to({_off:false},0).to({_off:true},127).wait(24));
@@ -13122,7 +13123,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 
 	this.instance_19 = new lib.shape45Up_1("synched",0);
 	this.instance_19.parent = this;
-	this.instance_19.setTransform(691,1241.8,2.3,2.301);
+	this.instance_19.setTransform(691,1243,2.3,2.301);
 
 	this.instance_20 = new lib.shape25Up("synched",0);
 	this.instance_20.parent = this;
@@ -13214,7 +13215,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	// Layer 68
 	this.instance_31 = new lib.shape28Up("synched",0);
 	this.instance_31.parent = this;
-	this.instance_31.setTransform(138.9,1241.6,2.3,2.3);
+	this.instance_31.setTransform(136.1,1241.6,2.3,2.3);
 
 	this.instance_32 = new lib.shape25Up("synched",0);
 	this.instance_32.parent = this;
@@ -13242,14 +13243,14 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_34}]},39).to({state:[]},132).to({state:[{t:this.instance_35}]},14).wait(5));
 
 	// 图层_3
-	this.colck = new lib.button64();
-	this.colck.name = "colck";
-	this.colck.parent = this;
-	this.colck.setTransform(138.9,1241.6,2.3,2.3);
-	this.colck._off = true;
-	new cjs.ButtonHelper(this.colck, 0, 1, 2, false, new lib.button64(), 3);
+	this.colckButton = new lib.button64();
+	this.colckButton.name = "colckButton";
+	this.colckButton.parent = this;
+	this.colckButton.setTransform(138.9,1241.6,2.3,2.3);
+	this.colckButton._off = true;
+	new cjs.ButtonHelper(this.colckButton, 0, 1, 2, false, new lib.button64(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.colck).wait(185).to({_off:false},0).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.colckButton).wait(185).to({_off:false},0).wait(5));
 
 	// Layer 65
 	this.instance_36 = new lib.button36();
@@ -13264,11 +13265,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_36}]},29).to({state:[]},5).to({state:[{t:this.instance_37}]},145).to({state:[]},6).wait(5));
 
 	// Layer 64
-	this.colck_1 = new lib.button64();
-	this.colck_1.name = "colck_1";
-	this.colck_1.parent = this;
-	this.colck_1.setTransform(138.9,1241.6,2.3,2.3);
-	new cjs.ButtonHelper(this.colck_1, 0, 1, 2, false, new lib.button64(), 3);
+	this.clockButton = new lib.button64();
+	this.clockButton.name = "clockButton";
+	this.clockButton.parent = this;
+	this.clockButton.setTransform(138.9,1241.6,2.3,2.3);
+	new cjs.ButtonHelper(this.clockButton, 0, 1, 2, false, new lib.button64(), 3);
 
 	this.instance_38 = new lib.text107("synched",0);
 	this.instance_38.parent = this;
@@ -13279,7 +13280,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.instance_39.parent = this;
 	this.instance_39.setTransform(913.3,781,2.3,2.3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.colck_1}]},34).to({state:[]},5).to({state:[{t:this.instance_38}]},110).to({state:[{t:this.instance_39}]},2).to({state:[{t:this.instance_38}]},2).to({state:[{t:this.instance_38}]},19).to({state:[{t:this.instance_38}]},6).to({state:[{t:this.instance_38}]},1).to({state:[]},6).wait(5));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.clockButton}]},34).to({state:[]},5).to({state:[{t:this.instance_38}]},110).to({state:[{t:this.instance_39}]},2).to({state:[{t:this.instance_38}]},2).to({state:[{t:this.instance_38}]},19).to({state:[{t:this.instance_38}]},6).to({state:[{t:this.instance_38}]},1).to({state:[]},6).wait(5));
 	this.timeline.addTween(cjs.Tween.get(this.instance_38).wait(149).to({_off:false},0).to({_off:true},2).wait(2).to({_off:false,x:936.3},0).to({startPosition:0},19).to({y:657.9},6).wait(1).to({y:631.5},0).to({_off:true},6).wait(5));
 
 	// Mask Layer 61 (mask)
@@ -13431,19 +13432,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic1_cond_atlas_.png?1548485260222", id:"swfMagic1_cond_atlas_"},
-		{src:"sounds/_06clock.mp3?1548485260731", id:"_06clock"},
-		{src:"sounds/sound106.mp3?1548485260731", id:"sound106"},
-		{src:"sounds/sound111.mp3?1548485260731", id:"sound111"},
-		{src:"sounds/sound126overtodown.mp3?1548485260731", id:"sound126overtodown"},
-		{src:"sounds/_05block.mp3?1548485260731", id:"_05block"},
-		{src:"sounds/_04rock.mp3?1548485260732", id:"_04rock"},
-		{src:"sounds/_03dock.mp3?1548485260732", id:"_03dock"},
-		{src:"sounds/_02sock.mp3?1548485260732", id:"_02sock"},
-		{src:"sounds/_01cock.mp3?1548485260732", id:"_01cock"},
-		{src:"sounds/sound84overtodown.mp3?1548485260732", id:"sound84overtodown"},
-		{src:"sounds/sound86.mp3?1548485260732", id:"sound86"},
-		{src:"sounds/sound99.mp3?1548485260732", id:"sound99"}
+		{src:"images/swfMagic1_cond_atlas_.png?1548490646282", id:"swfMagic1_cond_atlas_"},
+		{src:"sounds/_06clock.mp3?1548490646799", id:"_06clock"},
+		{src:"sounds/sound106.mp3?1548490646799", id:"sound106"},
+		{src:"sounds/sound111.mp3?1548490646799", id:"sound111"},
+		{src:"sounds/sound126overtodown.mp3?1548490646799", id:"sound126overtodown"},
+		{src:"sounds/_05block.mp3?1548490646799", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548490646799", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548490646799", id:"_03dock"},
+		{src:"sounds/_02sock.mp3?1548490646799", id:"_02sock"},
+		{src:"sounds/_01cock.mp3?1548490646799", id:"_01cock"},
+		{src:"sounds/sound84overtodown.mp3?1548490646799", id:"sound84overtodown"},
+		{src:"sounds/sound86.mp3?1548490646799", id:"sound86"},
+		{src:"sounds/sound99.mp3?1548490646799", id:"sound99"}
 	],
 	preloads: []
 };
