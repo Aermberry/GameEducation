@@ -13432,19 +13432,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic1_cond_atlas_.png?1548490646282", id:"swfMagic1_cond_atlas_"},
-		{src:"sounds/_06clock.mp3?1548490646799", id:"_06clock"},
-		{src:"sounds/sound106.mp3?1548490646799", id:"sound106"},
-		{src:"sounds/sound111.mp3?1548490646799", id:"sound111"},
-		{src:"sounds/sound126overtodown.mp3?1548490646799", id:"sound126overtodown"},
-		{src:"sounds/_05block.mp3?1548490646799", id:"_05block"},
-		{src:"sounds/_04rock.mp3?1548490646799", id:"_04rock"},
-		{src:"sounds/_03dock.mp3?1548490646799", id:"_03dock"},
-		{src:"sounds/_02sock.mp3?1548490646799", id:"_02sock"},
-		{src:"sounds/_01cock.mp3?1548490646799", id:"_01cock"},
-		{src:"sounds/sound84overtodown.mp3?1548490646799", id:"sound84overtodown"},
-		{src:"sounds/sound86.mp3?1548490646799", id:"sound86"},
-		{src:"sounds/sound99.mp3?1548490646799", id:"sound99"}
+		{src:"images/swfMagic1_cond_atlas_.png", id:"swfMagic1_cond_atlas_"},
+		{src:"sounds/_06clock.mp3", id:"_06clock"},
+		{src:"sounds/sound106.mp3", id:"sound106"},
+		{src:"sounds/sound111.mp3", id:"sound111"},
+		{src:"sounds/sound126overtodown.mp3", id:"sound126overtodown"},
+		{src:"sounds/_05block.mp3", id:"_05block"},
+		{src:"sounds/_04rock.mp3", id:"_04rock"},
+		{src:"sounds/_03dock.mp3", id:"_03dock"},
+		{src:"sounds/_02sock.mp3", id:"_02sock"},
+		{src:"sounds/_01cock.mp3", id:"_01cock"},
+		{src:"sounds/sound84overtodown.mp3", id:"sound84overtodown"},
+		{src:"sounds/sound86.mp3", id:"sound86"},
+		{src:"sounds/sound99.mp3", id:"sound99"}
 	],
 	preloads: []
 };
