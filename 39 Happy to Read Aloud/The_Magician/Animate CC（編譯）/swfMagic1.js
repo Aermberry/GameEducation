@@ -989,7 +989,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 
 
 (lib.sprite17 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -999,6 +999,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 	this.frame_89 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -1097,7 +1098,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_72 = function() {
 		playSound("sound18");
 	}
-	this.frame_79 = function() {
+	this.frame_78 = function() {
 		playSound("sound19");
 	}
 	this.frame_164 = function() {
@@ -1134,7 +1135,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(72).call(this.frame_72).wait(7).call(this.frame_79).wait(85).call(this.frame_164).wait(1).call(this.frame_165).wait(11).call(this.frame_176).wait(31).call(this.frame_207).wait(104).call(this.frame_311).wait(1).call(this.frame_312).wait(5).call(this.frame_317).wait(44).call(this.frame_361).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(72).call(this.frame_72).wait(6).call(this.frame_78).wait(86).call(this.frame_164).wait(1).call(this.frame_165).wait(11).call(this.frame_176).wait(31).call(this.frame_207).wait(104).call(this.frame_311).wait(1).call(this.frame_312).wait(5).call(this.frame_317).wait(44).call(this.frame_361).wait(1));
 
 	// Layer 16
 	this.instance = new lib.shape22("synched",0);
@@ -1252,12 +1253,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound18.mp3?1548316321052", id:"sound18"},
-		{src:"sounds/sound19.mp3?1548316321052", id:"sound19"},
-		{src:"sounds/sound21.mp3?1548316321052", id:"sound21"},
-		{src:"sounds/sound23.mp3?1548316321052", id:"sound23"},
-		{src:"sounds/sound30.mp3?1548316321052", id:"sound30"},
-		{src:"sounds/sound6.mp3?1548316321052", id:"sound6"}
+		{src:"sounds/sound18.mp3", id:"sound18"},
+		{src:"sounds/sound19.mp3", id:"sound19"},
+		{src:"sounds/sound21.mp3", id:"sound21"},
+		{src:"sounds/sound23.mp3", id:"sound23"},
+		{src:"sounds/sound30.mp3", id:"sound30"},
+		{src:"sounds/sound6.mp3", id:"sound6"}
 	],
 	preloads: []
 };
