@@ -10146,9 +10146,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_30 = function() {
 		playSound("sound231");
 	}
+	this.frame_355 = function() {
+		console.log("Here")
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(30).call(this.frame_30).wait(326));
+	this.timeline.addTween(cjs.Tween.get(this).wait(30).call(this.frame_30).wait(325).call(this.frame_355).wait(1));
 
 	// Layer 1347
 	this.instance = new lib.shape7("synched",0);

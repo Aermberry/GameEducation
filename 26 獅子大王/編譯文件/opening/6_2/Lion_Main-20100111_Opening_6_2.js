@@ -10872,16 +10872,19 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_1566 = function() {
 		playSound("sound366");
 	}
+	this.frame_1679 = function() {
+		console.log("Here")
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(10).call(this.frame_10).wait(172).call(this.frame_182).wait(50).call(this.frame_232).wait(155).call(this.frame_387).wait(83).call(this.frame_470).wait(17).call(this.frame_487).wait(152).call(this.frame_639).wait(180).call(this.frame_819).wait(116).call(this.frame_935).wait(160).call(this.frame_1095).wait(159).call(this.frame_1254).wait(312).call(this.frame_1566).wait(114));
+	this.timeline.addTween(cjs.Tween.get(this).wait(10).call(this.frame_10).wait(172).call(this.frame_182).wait(50).call(this.frame_232).wait(155).call(this.frame_387).wait(83).call(this.frame_470).wait(17).call(this.frame_487).wait(152).call(this.frame_639).wait(180).call(this.frame_819).wait(116).call(this.frame_935).wait(160).call(this.frame_1095).wait(159).call(this.frame_1254).wait(312).call(this.frame_1566).wait(113).call(this.frame_1679).wait(1));
 
 	// Layer 318
 	this.instance = new lib.shape7("synched",0);
 	this.instance.parent = this;
 	this.instance.setTransform(0.1,0.1,2.408,2.408);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1680));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1679).to({startPosition:0},0).wait(1));
 
 	// Layer 316
 	this.instance_1 = new lib.sprite261();
