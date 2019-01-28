@@ -1253,12 +1253,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound18.mp3", id:"sound18"},
-		{src:"sounds/sound19.mp3", id:"sound19"},
-		{src:"sounds/sound21.mp3", id:"sound21"},
-		{src:"sounds/sound23.mp3", id:"sound23"},
-		{src:"sounds/sound30.mp3", id:"sound30"},
-		{src:"sounds/sound6.mp3", id:"sound6"}
+		{src:"sounds/sound18.mp3?1548639117964", id:"sound18"},
+		{src:"sounds/sound19.mp3?1548639117964", id:"sound19"},
+		{src:"sounds/sound21.mp3?1548639117964", id:"sound21"},
+		{src:"sounds/sound23.mp3?1548639117964", id:"sound23"},
+		{src:"sounds/sound30.mp3?1548639117964", id:"sound30"},
+		{src:"sounds/sound6.mp3?1548639117964", id:"sound6"}
 	],
 	preloads: []
 };
