@@ -1321,7 +1321,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		playSound("sound10");
 	}
 	this.frame_96 = function() {
-		playSound("sound21");
+		playSound("sound21_01");
 	}
 	this.frame_292 = function() {
 		/* gotoAndStop(294);
@@ -1340,7 +1340,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_490 = function() {
 		/* loadMovieNum("All_words.swf", 0);
 		*/
-		console.log("第十段游戏播放完成。")
+		console.log("@我没故事。")
 		continueElevenGame();
 	}
 
@@ -1675,7 +1675,7 @@ lib.properties = {
 	manifest: [
 		{src:"images/image14.png", id:"image14"},
 		{src:"sounds/sound10.mp3", id:"sound10"},
-		{src:"sounds/sound21.mp3", id:"sound21"},
+		{src:"sounds/sound21_01.mp3", id:"sound21_01"},
 		{src:"sounds/sound35.mp3", id:"sound35"},
 		{src:"sounds/sound9.mp3", id:"sound9"}
 	],

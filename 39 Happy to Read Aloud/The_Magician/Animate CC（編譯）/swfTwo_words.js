@@ -1321,7 +1321,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		playSound("sound10");
 	}
 	this.frame_96 = function() {
-		playSound("sound21");
+		playSound("sound21_01");
 	}
 	this.frame_292 = function() {
 		/* gotoAndStop(294);
@@ -1672,11 +1672,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/image14.png?1548137490571", id:"image14"},
-		{src:"sounds/sound10.mp3?1548137490571", id:"sound10"},
-		{src:"sounds/sound21.mp3?1548137490571", id:"sound21"},
-		{src:"sounds/sound35.mp3?1548137490571", id:"sound35"},
-		{src:"sounds/sound9.mp3?1548137490571", id:"sound9"}
+		{src:"images/image14.png", id:"image14"},
+		{src:"sounds/sound10.mp3", id:"sound10"},
+		{src:"sounds/sound21_01.mp3", id:"sound21_01"},
+		{src:"sounds/sound35.mp3", id:"sound35"},
+		{src:"sounds/sound9.mp3", id:"sound9"}
 	],
 	preloads: []
 };
