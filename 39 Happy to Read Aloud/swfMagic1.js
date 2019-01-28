@@ -1099,7 +1099,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		playSound("sound18");
 	}
 	this.frame_78 = function() {
-		playSound("sound19");
+		playSound("sound19_2");
 	}
 	this.frame_164 = function() {
 		/* gotoAndStop(166);
@@ -1131,8 +1131,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_361 = function() {
 		/* loadMovieNum("Magic1_cond.swf", 0);
 		*/
-		continueThreeGame();
 		console.log("@我没故事。")
+		continueThreeGame();
 	}
 
 	// actions tween:
@@ -1255,7 +1255,7 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"sounds/sound18.mp3", id:"sound18"},
-		{src:"sounds/sound19.mp3", id:"sound19"},
+		{src:"sounds/sound19_2.mp3", id:"sound19_2"},
 		{src:"sounds/sound21.mp3", id:"sound21"},
 		{src:"sounds/sound23.mp3", id:"sound23"},
 		{src:"sounds/sound30.mp3", id:"sound30"},
