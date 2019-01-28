@@ -3637,6 +3637,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_54 = function() {
 		/* stop ();
 		*/
+		this.stop();
 		console.log("@我没故事。")
 	}
 
@@ -3769,6 +3770,7 @@ p.nominalBounds = new cjs.Rectangle(-183,-85,355.5,168.5);
 	this.frame_49 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -3864,6 +3866,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_143 = function() {
 		/* gotoAndStop(145);
 		*/
+		this.gotoAndPlay(144)
 	}
 	this.frame_144 = function() {
 		/* play ();
@@ -3875,10 +3878,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_202 = function() {
 		/* gotoAndStop(204);
 		*/
+		this.gotoAndStop(203)
 	}
 	this.frame_203 = function() {
 		/* play ();
 		*/
+		this.play();
 	}
 	this.frame_211 = function() {
 		playSound("sound25");
@@ -3898,10 +3903,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_287 = function() {
 		/* gotoAndStop(289);
 		*/
+		this.gotoAndPlay(288);
 	}
 	this.frame_288 = function() {
 		/* play ();
 		*/
+		this.play();
 	}
 	this.frame_305 = function() {
 		playSound("sound61");
@@ -4198,14 +4205,14 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound17.mp3?1548637175665", id:"sound17"},
-		{src:"sounds/sound20.mp3?1548637175665", id:"sound20"},
-		{src:"sounds/sound25.mp3?1548637175665", id:"sound25"},
-		{src:"sounds/sound47.mp3?1548637175665", id:"sound47"},
-		{src:"sounds/sound50.mp3?1548637175665", id:"sound50"},
-		{src:"sounds/sound51.mp3?1548637175665", id:"sound51"},
-		{src:"sounds/sound6.mp3?1548637175665", id:"sound6"},
-		{src:"sounds/sound61.mp3?1548637175665", id:"sound61"}
+		{src:"sounds/sound17.mp3", id:"sound17"},
+		{src:"sounds/sound20.mp3", id:"sound20"},
+		{src:"sounds/sound25.mp3", id:"sound25"},
+		{src:"sounds/sound47.mp3", id:"sound47"},
+		{src:"sounds/sound50.mp3", id:"sound50"},
+		{src:"sounds/sound51.mp3", id:"sound51"},
+		{src:"sounds/sound6.mp3", id:"sound6"},
+		{src:"sounds/sound61.mp3", id:"sound61"}
 	],
 	preloads: []
 };

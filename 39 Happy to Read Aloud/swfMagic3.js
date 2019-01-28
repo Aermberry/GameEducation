@@ -3627,7 +3627,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 
 
 (lib.sprite60 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -3637,6 +3637,9 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 	this.frame_54 = function() {
 		/* stop ();
 		*/
+		this.stop();
+		continueSevenGame();
+		console.log("@我没故事。")
 	}
 
 	// actions tween:
@@ -3768,6 +3771,7 @@ p.nominalBounds = new cjs.Rectangle(-183,-85,355.5,168.5);
 	this.frame_49 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -3863,6 +3867,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_143 = function() {
 		/* gotoAndStop(145);
 		*/
+		this.gotoAndPlay(144)
 	}
 	this.frame_144 = function() {
 		/* play ();
@@ -3874,10 +3879,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_202 = function() {
 		/* gotoAndStop(204);
 		*/
+		this.gotoAndStop(203)
 	}
 	this.frame_203 = function() {
 		/* play ();
 		*/
+		this.play();
 	}
 	this.frame_211 = function() {
 		playSound("sound25");
@@ -3897,12 +3904,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_287 = function() {
 		/* gotoAndStop(289);
 		*/
+		this.gotoAndPlay(288);
 	}
 	this.frame_288 = function() {
 		/* play ();
 		*/
-		console.log("@完成第六段游戏")
-		continueSevenGame();
+		this.play();
 	}
 	this.frame_305 = function() {
 		playSound("sound61");

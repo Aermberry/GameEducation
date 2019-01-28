@@ -11836,6 +11836,7 @@ p.nominalBounds = new cjs.Rectangle(-118.6,-130.2,237.2,260.4);
 	this.frame_12 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -11867,7 +11868,7 @@ p.nominalBounds = new cjs.Rectangle(-118.6,-130.2,237.2,260.4);
 
 
 (lib.sprite17 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{Tryagain:10});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Tryagain:10});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -12166,7 +12167,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button67 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_1 = function() {
@@ -12231,7 +12232,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button66 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_1 = function() {
@@ -12368,7 +12369,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button64 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_1 = function() {
@@ -13428,19 +13429,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic1_cond_atlas_.png", id:"swfMagic1_cond_atlas_"},
-		{src:"sounds/_06clock.mp3", id:"_06clock"},
-		{src:"sounds/sound106.mp3", id:"sound106"},
-		{src:"sounds/sound111.mp3", id:"sound111"},
-		{src:"sounds/sound126overtodown.mp3", id:"sound126overtodown"},
-		{src:"sounds/_05block.mp3", id:"_05block"},
-		{src:"sounds/_04rock.mp3", id:"_04rock"},
-		{src:"sounds/_03dock.mp3", id:"_03dock"},
-		{src:"sounds/_02sock.mp3", id:"_02sock"},
-		{src:"sounds/_01cock.mp3", id:"_01cock"},
-		{src:"sounds/sound84overtodown.mp3", id:"sound84overtodown"},
-		{src:"sounds/sound86.mp3", id:"sound86"},
-		{src:"sounds/sound99.mp3", id:"sound99"}
+		{src:"images/swfMagic1_cond_atlas_.png?1548659331448", id:"swfMagic1_cond_atlas_"},
+		{src:"sounds/_06clock.mp3?1548659331967", id:"_06clock"},
+		{src:"sounds/sound106.mp3?1548659331967", id:"sound106"},
+		{src:"sounds/sound111.mp3?1548659331967", id:"sound111"},
+		{src:"sounds/sound126overtodown.mp3?1548659331967", id:"sound126overtodown"},
+		{src:"sounds/_05block.mp3?1548659331967", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548659331967", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548659331967", id:"_03dock"},
+		{src:"sounds/_02sock.mp3?1548659331967", id:"_02sock"},
+		{src:"sounds/_01cock.mp3?1548659331967", id:"_01cock"},
+		{src:"sounds/sound84overtodown.mp3?1548659331967", id:"sound84overtodown"},
+		{src:"sounds/sound86.mp3?1548659331967", id:"sound86"},
+		{src:"sounds/sound99.mp3?1548659331967", id:"sound99"}
 	],
 	preloads: []
 };
