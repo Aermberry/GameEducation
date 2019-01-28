@@ -37,7 +37,7 @@
 		<e:Image id="pingBgImg" source="pink_bg_png" horizontalCenter="0" verticalCenter="0" />
 		<e:Image id="pinkBannerImg" source="pink_banner_png" horizontalCenter="0" verticalCenter="1.5"  scaleY="1.11"/>
 		<e:Group id="title" anchorOffsetY="0" verticalCenter="4.5" height="359.18" horizontalCenter="0.5">
-			<e:Label text="Do's" y="-16" fontFamily="One Stroke Script LET" size="123" horizontalCenter="0" textColor="0x6664fd"  anchorOffsetY="0" height="159" verticalAlign="bottom"/>
+			<e:Label text="Dos" y="-16" fontFamily="One Stroke Script LET" size="123" horizontalCenter="0" textColor="0x6664fd"  anchorOffsetY="0" height="159" verticalAlign="bottom"/>
 			<e:Label text="&amp;" y="103" fontFamily="One Stroke Script LET" size="123" horizontalCenter="0.5" textColor="0xfd65ca"  anchorOffsetY="0" height="155" verticalAlign="bottom"/>
 			<e:Label text="Don'ts" y="218" fontFamily="One Stroke Script LET" size="127" horizontalCenter="0"
 			         textColor="0x6664fd"  anchorOffsetY="0" height="139" verticalAlign="bottom"/>
