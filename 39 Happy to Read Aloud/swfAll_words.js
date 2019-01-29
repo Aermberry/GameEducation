@@ -2059,7 +2059,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		{
 			
 			console.log("@我没故事。")
-			backToFirstGame();
+			continue12thGame();
 		}
 	}
 	this.frame_274 = function() {
