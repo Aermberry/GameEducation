@@ -10090,14 +10090,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 (lib.button63 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_06clock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 6
 	this.instance = new lib.text29Up("synched",0);
 	this.instance.parent = this;
@@ -10585,6 +10577,46 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		function fl_ClickToGoToAndPlayFromFrame_8()
 		{
 			this.gotoAndPlay(39);
+		}
+		
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseover", fl_MouseOverHandler);
+		
+		function fl_MouseOverHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseout", fl_MouseOutHandler);
+		
+		function fl_MouseOutHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			// 结束您的自定义代码
 		}
 	}
 	this.frame_39 = function() {
@@ -11131,7 +11163,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 
 	this.instance_49 = new lib.text116("synched",0);
 	this.instance_49.parent = this;
-	this.instance_49.setTransform(1041.5,1290.8,2.3,2.3);
+	this.instance_49.setTransform(1005.8,1290.8,2.3,2.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_48}]},29).to({state:[]},5).to({state:[{t:this.instance_49}]},129).wait(1));
 
@@ -11284,19 +11316,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic2_cond_atlas_.png?1548135831424", id:"swfMagic2_cond_atlas_"},
-		{src:"sounds/_02sock.mp3?1548135831825", id:"_02sock"},
-		{src:"sounds/_06clock.mp3?1548135831825", id:"_06clock"},
-		{src:"sounds/sound101.mp3?1548135831825", id:"sound101"},
-		{src:"sounds/sound106.mp3?1548135831825", id:"sound106"},
-		{src:"sounds/sound120overtodown.mp3?1548135831825", id:"sound120overtodown"},
-		{src:"sounds/_05block.mp3?1548135831825", id:"_05block"},
-		{src:"sounds/_04rock.mp3?1548135831825", id:"_04rock"},
-		{src:"sounds/_03dock.mp3?1548135831825", id:"_03dock"},
-		{src:"sounds/_01cock.mp3?1548135831825", id:"_01cock"},
-		{src:"sounds/sound83overtodown.mp3?1548135831825", id:"sound83overtodown"},
-		{src:"sounds/sound85.mp3?1548135831825", id:"sound85"},
-		{src:"sounds/sound94.mp3?1548135831825", id:"sound94"}
+		{src:"images/swfMagic2_cond_atlas_.png?1548733349935", id:"swfMagic2_cond_atlas_"},
+		{src:"sounds/_02sock.mp3?1548733350351", id:"_02sock"},
+		{src:"sounds/_06clock.mp3?1548733350351", id:"_06clock"},
+		{src:"sounds/sound101.mp3?1548733350351", id:"sound101"},
+		{src:"sounds/sound106.mp3?1548733350351", id:"sound106"},
+		{src:"sounds/sound120overtodown.mp3?1548733350351", id:"sound120overtodown"},
+		{src:"sounds/_05block.mp3?1548733350351", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548733350351", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548733350351", id:"_03dock"},
+		{src:"sounds/_01cock.mp3?1548733350351", id:"_01cock"},
+		{src:"sounds/sound83overtodown.mp3?1548733350351", id:"sound83overtodown"},
+		{src:"sounds/sound85.mp3?1548733350351", id:"sound85"},
+		{src:"sounds/sound94.mp3?1548733350351", id:"sound94"}
 	],
 	preloads: []
 };
