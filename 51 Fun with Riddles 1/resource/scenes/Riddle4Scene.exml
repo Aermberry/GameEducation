@@ -9,18 +9,18 @@
 
 	<e:Group id="goodsGroup" x="369.27" y="926">
 	<e:Rect id="transparentBlock" x="-109.09" y="-36.36" width="1338" height="376" alpha="0" />
-		<e:Image id="bag" x="12.12" y="25.31" source="recycle_png" anchorOffsetX="0" width="226.76" anchorOffsetY="0" height="263.38" rotation="360"/>
+		<e:Image id="bag" x="3.73" y="121" anchorOffsetX="0" anchorOffsetY="0" rotation="360" source="chopsticks_png"/>
 		<e:Image id="food" x="525.02" y="0" source="food_png"/>
 		<e:Image id="colorPen" x="1067.31" y="38" source="colorLead_png"/>
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
-		<e:Image source="bigLabel_png" x="0" y="0" scaleY="1.1"/>
-		<e:Label text="We         it when we go shopping.We usually         money and keys in it. What is it?" x="45.66" y="8.8" anchorOffsetX="0" width="1025.52" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Group id="takeGroup" x="156.54" y="7.1">
+		<e:Image source="bigLabel_png" x="0" y="0" scaleY="1.1" anchorOffsetX="0" width="1114.27"/>
+		<e:Label text="They come in pairs. We eat Chinese food with them. What are they?" x="30.51" y="14.86" anchorOffsetX="0" width="1061.88" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Group id="takeGroup" x="156.54" y="7.1" visible="false">
 			<e:Rect width="142" height="3" x="0" y="62.62" anchorOffsetY="0" fillColor="0x5c2c47"/>
 			<e:Label text="take" x="4.61" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
-		<e:Group id="keepGroup" x="381.39" y="91.53">
+		<e:Group id="keepGroup" x="381.39" y="91.53" visible="false">
 			<e:Label text="keep" x="0" y="-3.03" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
 			<e:Rect width="136" height="3" x="0.33" y="77.04" anchorOffsetY="0" fillColor="0x5C2C47"/>
 		</e:Group>
