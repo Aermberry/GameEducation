@@ -64,6 +64,7 @@ class PlayingPresenter {
 	public nextPuzzleButtonClick(): void {
 		this.correctWordCount = 0;
 		this.view.words = this.words = this.wordBiz.random(this.difficulty == Difficulty.easy ? 5 : 6);
+		this.wordsCopy = this.onCopyArry(this.words)
 		this.view.puzzleCharacters = this.puzzleBiz.generate(this.words, this.difficulty == Difficulty.easy ? 5 : 8);
 		this.view.deselectChars();
 		this.view.markWordsAsNormal();
