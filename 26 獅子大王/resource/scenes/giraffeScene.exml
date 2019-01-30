@@ -587,7 +587,7 @@
 	</e:Group>
 
 
-	<e:Image x="1440.15" y="861.15" source="giraffe_normal_png"/>
+	<e:Image id="giraffe" x="1440.15" y="861.15" source="giraffe_normal_png"/>
 
 	<e:Group x="80.04" y="859.43">
 		<e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75"

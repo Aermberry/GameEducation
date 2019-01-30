@@ -221,6 +221,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		this.lionDialogText(lionDialogText.rabbitText_d);
 		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
 			egret.Tween.get(this.ratDialogGroup).to({ alpha: 1 }, 1000);
+			console.log("here")
 		})
 		this.ratDialogGroup.$children[4].visible = false;
 		this.ratDialogGroup.$children[5].visible = true;

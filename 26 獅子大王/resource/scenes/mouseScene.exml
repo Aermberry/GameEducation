@@ -578,7 +578,7 @@
 		<e:Rect id="circleLeftRect" width="410" height="410" x="-67.63" fillColor="0xffffff" strokeWeight="10" ellipseHeight="500" ellipseWidth="500" y="327.55" fillAlpha="0" strokeColor="0xff0000" visible="false"/>
 		<e:Rect id="circleRightRect" width="410" height="410" x="1180.85" fillColor="0xffffff" strokeWeight="10" ellipseHeight="500" ellipseWidth="500" y="327.55" fillAlpha="0" strokeColor="0xff0000" visible="false"/>
 	</e:Group>
-    <e:Image x="1706.48" y="1208.97" source="rat_normal_png" />
+    <e:Image id="ratImage" x="1706.48" y="1208.97" source="rat_normal_png" />
 
     <e:Group x="86.1" y="771.55">
         <e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75"
@@ -601,16 +601,16 @@
         <e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="748.51"
                  anchorOffsetY="6.06" height="380.06" alpha="0" />
         <e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51"
-                 width="748.51" anchorOffsetY="93.94" height="380.06" alpha="1"  visible="false"/>
+                 width="748.51" anchorOffsetY="93.94" height="380.06" alpha="0" />
         <e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
                  textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
                  verticalAlign="middle" />
         <e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22"
                  y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-                 visible="false" />
+                  visible="false"/>
         <e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
                  x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-                 visible="false" />
+                  visible="false"/>
     </e:Group>
     <e:Group id="ratDialogGroup" x="1080.31" y="937.16" alpha="1" width="750" height="411">
         <e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
@@ -652,5 +652,5 @@
                               skinName="achieveComponentSkin" />
     </e:Group>
     <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
-    <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" visible="false" />
+    <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>
