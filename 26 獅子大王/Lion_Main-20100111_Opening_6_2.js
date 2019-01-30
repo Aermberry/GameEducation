@@ -9679,6 +9679,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,800,600);
 	this.frame_57 = function() {
 		/* gotoAndPlay(Sweat);
 		*/
+		this.gotoAndPlay("Sweat");
 	}
 
 	// actions tween:
@@ -9757,6 +9758,8 @@ p.nominalBounds = new cjs.Rectangle(0,-22.6,77.8,99.5);
 	this.frame_53 = function() {
 		/* gotoAndPlay(SheepSweat);
 		*/
+		
+		this.gotoAndPlay("SheepSweat");
 	}
 
 	// actions tween:
@@ -9824,6 +9827,7 @@ p.nominalBounds = new cjs.Rectangle(0,-12.9,153,108.7);
 	this.frame_80 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -9971,6 +9975,8 @@ p.nominalBounds = new cjs.Rectangle(0,-22.6,77.8,99.5);
 	this.frame_23 = function() {
 		/* stop ();
 		*/
+		
+		this.stop();
 	}
 
 	// actions tween:
@@ -9993,6 +9999,7 @@ p.nominalBounds = new cjs.Rectangle(-0.8,0,61.9,108.2);
 	this.frame_25 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -10264,12 +10271,13 @@ p.nominalBounds = new cjs.Rectangle(8.1,33.2,207.4,200.4);
 
 
 (lib.sprite368 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{"Sad":0});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{"Sad":0});
 
 	// timeline functions:
 	this.frame_0 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -10292,7 +10300,7 @@ p.nominalBounds = new cjs.Rectangle(8.1,33.2,207.4,200.4);
 
 
 (lib.sprite365 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_83 = function() {
@@ -10362,6 +10370,8 @@ p.nominalBounds = new cjs.Rectangle(-346.4,-390.7,693.9,781.3);
 	this.frame_24 = function() {
 		/* stop ();
 		*/
+		
+		this.stop();
 	}
 
 	// actions tween:
@@ -10391,6 +10401,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,61.1,108.2);
 	this.frame_80 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -10504,6 +10515,7 @@ p.nominalBounds = new cjs.Rectangle(-346.4,-390.7,693.9,781.3);
 	this.frame_80 = function() {
 		/* stop ();
 		*/
+		this.stop();
 	}
 
 	// actions tween:
@@ -10537,6 +10549,8 @@ p.nominalBounds = new cjs.Rectangle(-346.4,-390.7,693.9,781.3);
 	this.frame_58 = function() {
 		/* gotoAndPlay(Sweat);
 		*/
+		
+		this.gotoAndPlay("Sweat");
 	}
 
 	// actions tween:
@@ -10606,6 +10620,8 @@ p.nominalBounds = new cjs.Rectangle(0.1,0.1,120,125.5);
 	this.frame_45 = function() {
 		/* gotoAndPlay(GiSweat);
 		*/
+		
+		this.gotoAndPlay("GiSweat");
 	}
 
 	// actions tween:
@@ -10660,6 +10676,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,349.6,440.4);
 	this.frame_53 = function() {
 		/* gotoAndPlay(SheepSweat);
 		*/
+		
+		this.gotoAndPlay("SheepSweat");
 	}
 
 	// actions tween:
@@ -10848,28 +10866,28 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_387 = function() {
 		playSound("sound266");
 	}
-	this.frame_470 = function() {
+	this.frame_469 = function() {
 		playSound("sound263");
 	}
-	this.frame_487 = function() {
+	this.frame_486 = function() {
 		playSound("sound318");
 	}
-	this.frame_639 = function() {
+	this.frame_638 = function() {
 		playSound("sound338");
 	}
-	this.frame_819 = function() {
+	this.frame_818 = function() {
 		playSound("sound346");
 	}
-	this.frame_935 = function() {
+	this.frame_934 = function() {
 		playSound("sound348");
 	}
-	this.frame_1095 = function() {
+	this.frame_1094 = function() {
 		playSound("sound350");
 	}
-	this.frame_1254 = function() {
+	this.frame_1253 = function() {
 		playSound("sound356");
 	}
-	this.frame_1566 = function() {
+	this.frame_1565 = function() {
 		playSound("sound366");
 	}
 	this.frame_1679 = function() {
@@ -10878,7 +10896,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(10).call(this.frame_10).wait(172).call(this.frame_182).wait(50).call(this.frame_232).wait(155).call(this.frame_387).wait(83).call(this.frame_470).wait(17).call(this.frame_487).wait(152).call(this.frame_639).wait(180).call(this.frame_819).wait(116).call(this.frame_935).wait(160).call(this.frame_1095).wait(159).call(this.frame_1254).wait(312).call(this.frame_1566).wait(113).call(this.frame_1679).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(10).call(this.frame_10).wait(172).call(this.frame_182).wait(50).call(this.frame_232).wait(155).call(this.frame_387).wait(82).call(this.frame_469).wait(17).call(this.frame_486).wait(152).call(this.frame_638).wait(180).call(this.frame_818).wait(116).call(this.frame_934).wait(160).call(this.frame_1094).wait(159).call(this.frame_1253).wait(312).call(this.frame_1565).wait(114).call(this.frame_1679).wait(1));
 
 	// Layer 318
 	this.instance = new lib.shape7("synched",0);
