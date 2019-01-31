@@ -55,6 +55,7 @@
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scenes/DistinguishRole1Scene.exml",
 		"resource/scenes/DistinguishRole2Scene.exml",
+		"resource/scenes/distinguishRole3Scene.exml",
 		"resource/scenes/DistinguishRole4Scene.exml",
 		"resource/scenes/DistinguishRole5Scene.exml",
 		"resource/scenes/DistinguishRole6Scene.exml",
@@ -63,8 +64,7 @@
 		"resource/scenes/GoToCastleScene.exml",
 		"resource/scenes/SelectTaskScene.exml",
 		"resource/scenes/Task1IntroductionScene.exml",
-		"resource/scenes/Task2IntroductionScene.exml",
-		"resource/scenes/distinguishRole3Scene.exml"
+		"resource/scenes/Task2IntroductionScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }

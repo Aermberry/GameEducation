@@ -1342,24 +1342,24 @@
 			"name": "select_scene_text_1_png"
 		},
 		{
-			"name": "princesses_and_princess_horse1_png",
+			"url": "textures/princesses_and_princess_horse1.png",
 			"type": "image",
-			"url": "textures/princesses_and_princess_horse1.png"
+			"name": "princesses_and_princess_horse1_png"
 		},
 		{
-			"name": "listening4_bridge copy_mp3",
+			"url": "audios/listening4_bridge copy.mp3",
 			"type": "sound",
-			"url": "audios/listening4_bridge copy.mp3"
+			"name": "listening4_bridge copy_mp3"
 		},
 		{
-			"name": "birdwing_left_png",
+			"url": "textures/birdwing_left.png",
 			"type": "image",
-			"url": "textures/birdwing_left.png"
+			"name": "birdwing_left_png"
 		},
 		{
-			"name": "birdwing_right_png",
+			"url": "textures/birdwing_right.png",
 			"type": "image",
-			"url": "textures/birdwing_right.png"
+			"name": "birdwing_right_png"
 		}
 	]
 }
