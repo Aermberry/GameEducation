@@ -109,7 +109,8 @@ class Main extends eui.UILayer {
         // } else {
         //     this.addChild(new HauntedHouse.SelectTaskScene());
         // }
-         this.addChild(new HauntedHouse.SelectTaskScene());
+        //  this.addChild(new HauntedHouse.SelectTaskScene());
+         this.addChild(new DistinguishRole4Scene());
         // this.addChild(new GoToCastleScene());
       
     }
