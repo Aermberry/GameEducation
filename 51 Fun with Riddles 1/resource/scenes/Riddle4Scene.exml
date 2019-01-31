@@ -15,10 +15,10 @@
 	</e:Group>
 	<e:Group x="669.76" y="376.41">
 		<e:Image source="bigLabel_png" x="0" y="0" scaleY="1.1" anchorOffsetX="0" width="1114.27"/>
-		<e:Label text="They come in pairs. We eat Chinese food with them. What are they?" x="30.51" y="14.86" anchorOffsetX="0" width="1061.88" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
-		<e:Group id="takeGroup" x="156.54" y="7.1" visible="false">
-			<e:Rect width="142" height="3" x="0" y="62.62" anchorOffsetY="0" fillColor="0x5c2c47"/>
-			<e:Label text="take" x="4.61" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Label text="They come in pairs. We       Chinese food with them. What are they?" x="30.51" y="14.86" anchorOffsetX="0" width="1061.88" anchorOffsetY="0" height="236.06" textColor="0x5c2c47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
+		<e:Group id="takeGroup" x="736.01" y="52.57">
+			<e:Rect width="109" height="3" x="0" y="62.62" anchorOffsetY="0" fillColor="0x5c2c47"/>
+			<e:Label text="eat" x="4.61" y="0" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="left" lineSpacing="25" fontFamily="Comic Sans MS"/>
 		</e:Group>
 		<e:Group id="keepGroup" x="381.39" y="91.53" visible="false">
 			<e:Label text="keep" x="0" y="-3.03" anchorOffsetX="0" anchorOffsetY="0" textColor="0x5C2C47" size="64" verticalAlign="middle" textAlign="center" lineSpacing="25" fontFamily="Comic Sans MS"/>
