@@ -2059,7 +2059,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		{
 			
 			console.log("@我没故事。")
-			continue12thGame();
+			var replay=new initOne();
+			replay();
 		}
 	}
 	this.frame_274 = function() {

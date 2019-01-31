@@ -35,7 +35,7 @@ lib.ssMetadata = [
 (lib.shape45Up = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// ???_1
+	// 图层_1
 	this.instance = new lib.image44();
 	this.instance.parent = this;
 
@@ -7843,11 +7843,11 @@ p.nominalBounds = new cjs.Rectangle(-118.6,-130.2,237.2,260.4);
 	this.shape_84.setTransform(18.4,-74.8);
 
 	this.shape_85 = new cjs.Shape();
-	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBIATgFIgBACIgGAEgAgjA1QgIgJgBgLIAFgYIABgDIADgEIgEgCQAAgSgJgRQAJARAAASIgIgNQgEgMADgKQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgJAKgSAJIgiAFIgBADIgCAEIgTAFgAgQAwgAAVAkIAAAAgAAwARQgFAOgTAEIgDABQASgJAJgKgAAwARIAAAAg");
+	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBIATgFIgBACIgGAEgAgjA1QgIgJgBgLIAFgYIABgDIADgEIgEgCIgIgNQgEgMADgKQAJARAAASQAAgSgJgRQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgJAKgSAJIgiAFIgBADIgCAEIgTAFgAAwARQgFAOgTAEIgDABQASgJAJgKgAgwgjIAAAAg");
 	this.shape_85.setTransform(17.9,-48.1);
 
 	this.shape_86 = new cjs.Shape();
-	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIgVAGIAMgagAgsEUIgFAYQABALAIAJIAAAAIAMAAIAGgDIABgCIACgEIABgDIAigFIADgBQATgEAFgOIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALIgKgQIAKAQQgDAKAEALIAIAOIAEADIgDAEIgBADIAAgKIAAAKgAABE1IgWAGIAWgGIAPgGgAArEcQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKg");
+	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIgVAGIAMgaQABALAIAJIAAAAIAMAAIAGgDIABgCIACgEIABgDIAigFIADgBQATgEAFgOIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALQgDAKAEALIAIAOIAAAKIAAgKIAEADIgDAEIgBADIgFAYgAABE1IgWAGIAWgGIAPgGgAArEcQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKgAg1DnIgKgQgAgsEKg");
 	this.shape_86.setTransform(18.4,-74.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_86},{t:this.shape_85},{t:this.shape_84},{t:this.shape_83}]}).wait(1));
@@ -8379,14 +8379,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 
 	// Layer 18
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(2,1,1).p("AhihaIgJgoAhQghIgNgmAg3AUIgSgjAgVBFIgXggABACVIgggYAByCzIgigTAASBwIgbgcAhuiWIgDgc");
+	this.shape.graphics.f().s("#000000").ss(2,1,1).p("AgVBFIgXggAg3AUIgSgjAhQghIgNgmAhihaIgJgoAASBwIgbgcAByCzIgigTABACVIgggYAhuiWIgDgc");
 	this.shape.setTransform(-39.4,65.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Layer 17
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("ABAi1IgmAPAB0jQIgjATAAIifIglAMAhfgNIABAnAhmhLIAFApAhtiBIgGABIAJAhAgxiOIgoAJAhfAvIgCAoAhpCoIgHApAhjBsIgFAo");
+	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("AAIifIglAMAB0jQIgjATABAi1IgmAPAhfAvIgCAoAgxiOIgoAJAhtiBIgGABIAJAhAhmhLIAFApAhfgNIABAnAhpCoIgHApAhjBsIgFAo");
 	this.shape_1.setTransform(45.3,38.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
@@ -8548,7 +8548,7 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 (lib.shape451Up = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// ???_1
+	// 图层_1
 	this.instance = new lib.image70();
 	this.instance.parent = this;
 
@@ -8811,7 +8811,7 @@ p.nominalBounds = new cjs.Rectangle(-16.4,-89.9,87,87);
 (lib.shape281Up = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// ???_1
+	// 图层_1
 	this.instance = new lib.image27();
 	this.instance.parent = this;
 
@@ -11638,14 +11638,14 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 		
 		
-		/* ?????????
-		????????????????????????/????�
-		?????????/????????????????�
+		/* 在此影格停止
+		時間軸會在插入此程式碼的影格停止/暫停。
+		亦可用來停止/暫停影片片段的時間軸。
 		*/
 		
 		this.stop();
 		continueFourGame();
-		console.log("@???????�")
+		console.log("@我没故事。")
 	}
 
 	// actions tween:
@@ -11759,7 +11759,7 @@ p.nominalBounds = new cjs.Rectangle(-560.6,183.3,153,206.7);
 	// Mask Layer 54 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	var mask_graphics_37 = new cjs.Graphics().p("A3CVLIAAsBMAgVAAAIAAMBgA3CJJIAAweMAt6AAAIAALcQALAIAAAKQAAAehnAWQhmAWiRAAQiRAAhngWIgKgCIAAAqIkQAAIAADUgA3CnVIAAt1MAt6AAAIAAN1g");
+	var mask_graphics_37 = new cjs.Graphics().p("A3CVLIAAsBMAgVAAAIAAMBgA3CJJIAAweMAt6AAAMgt6AAAIAAt1MAt6AAAIAAN1IAALcQALAIAAAKQAAAehnAWQhmAWiRAAQiRAAhngWIgKgCIAAAqIkQAAIAADUg");
 
 	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(37).to({graphics:mask_graphics_37,x:-180.4,y:-4.5}).wait(68));
 
@@ -12044,14 +12044,6 @@ p.nominalBounds = new cjs.Rectangle(-37,-17.8,69,59.8);
 (lib.button76 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_05block");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 5
 	this.instance = new lib.shape451Up("synched",0);
 	this.instance.parent = this;
@@ -12104,14 +12096,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,89.9,162.6);
 
 (lib.button68 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_06clock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 32
 	this.instance = new lib.shape59Up("synched",0);
@@ -12168,15 +12152,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button67 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_02sock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 21
 	this.instance = new lib.shape53Up("synched",0);
@@ -12233,15 +12209,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button66 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_01cock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 6
 	this.instance = new lib.text46Up("synched",0);
@@ -12307,14 +12275,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88.3,162.6);
 (lib.button65 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_04rock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 25
 	this.instance = new lib.shape38Up("synched",0);
 	this.instance.parent = this;
@@ -12370,15 +12330,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 
 (lib.button64 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_06clock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 6
 	this.instance = new lib.text30Up("single",0);
@@ -12693,6 +12645,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	}
 	this.frame_34 = function() {
 		this.stop();
+		var sound=null;
 		
 		this.rockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_4.bind(this));
 		
@@ -12702,13 +12655,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/*???????�???????�
-		???????????????????????????????????????????????????????????��
-		?????????????????????????�
+		/*按一下前往影格並播放
+		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並從該影格繼續播放。
+		亦可用於主時間軸或影片片段時間軸。
 		
-		???:
-		1. ??????????�???????????????????�??????????????????????????? 5 ??????????�
-		2. EaselJS ??????????� 0 ?????�?? 1
+		指示:
+		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
+		2. EaselJS 中的影格編號從 0 開始，而非 1
 		*/
 		
 		this.sockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_5.bind(this));
@@ -12719,13 +12672,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/*???????�???????�
-		???????????????????????????????????????????????????????????��
-		?????????????????????????�
+		/*按一下前往影格並播放
+		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並從該影格繼續播放。
+		亦可用於主時間軸或影片片段時間軸。
 		
-		???:
-		1. ??????????�???????????????????�??????????????????????????? 5 ??????????�
-		2. EaselJS ??????????� 0 ?????�?? 1
+		指示:
+		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
+		2. EaselJS 中的影格編號從 0 開始，而非 1
 		*/
 		
 		this.dock.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_6.bind(this));
@@ -12736,13 +12689,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/*???????�???????�
-		???????????????????????????????????????????????????????????��
-		?????????????????????????�
+		/*按一下前往影格並播放
+		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並從該影格繼續播放。
+		亦可用於主時間軸或影片片段時間軸。
 		
-		???:
-		1. ??????????�???????????????????�??????????????????????????? 5 ??????????�
-		2. EaselJS ??????????� 0 ?????�?? 1
+		指示:
+		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
+		2. EaselJS 中的影格編號從 0 開始，而非 1
 		*/
 		
 		this.block.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_7.bind(this));
@@ -12753,13 +12706,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/* ?????????????�
-		??????????????????????????????????????????????????��
-		??????????????????????????��
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
 		
-		???:
-		1. ??????????????????????????????????????????????� 5?�
-		2. EaselJS ????????? 0 ?�??�????? 1 ?�?�
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
 		*/
 		
 		this.exitButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
@@ -12770,13 +12723,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/* ?????????????�
-		??????????????????????????????????????????????????��
-		??????????????????????????��
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
 		
-		???:
-		1. ??????????????????????????????????????????????� 5?�
-		2. EaselJS ????????? 0 ?�??�????? 1 ?�?�
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
 		*/
 		
 		this.clockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_2.bind(this));
@@ -12788,13 +12741,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		
 		
 		
-		/* ?????????????�
-		??????????????????????????????????????????????????��
-		??????????????????????????��
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
 		
-		???:
-		1. ??????????????????????????????????????????????� 5?�
-		2. EaselJS ????????? 0 ?�??�????? 1 ?�?�
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
 		*/
 		
 		this.cockButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_4.bind(this));
@@ -12802,6 +12755,252 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		function fl_ClickToGoToAndPlayFromFrame_4()
 		{
 			this.gotoAndPlay(39);
+		}
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cockButton.addEventListener("mouseover", fl_MouseOverHandler_2);
+		
+		function fl_MouseOverHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_01cock");
+
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cockButton.addEventListener("mouseout", fl_MouseOutHandler_2);
+		
+		function fl_MouseOutHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			sound.paused=true;
+			console.log("鼠标已离开");
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rockButton.addEventListener("mouseover", fl_MouseOverHandler_3);
+		
+		function fl_MouseOverHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_04rock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rockButton.addEventListener("mouseout", fl_MouseOutHandler_3);
+		
+		function fl_MouseOutHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clockButton.addEventListener("mouseover", fl_MouseOverHandler_4);
+		
+		function fl_MouseOverHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_06clock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clockButton.addEventListener("mouseout", fl_MouseOutHandler_4);
+		
+		function fl_MouseOutHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sockButton.addEventListener("mouseover", fl_MouseOverHandler_5);
+		
+		function fl_MouseOverHandler_5()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_02sock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sockButton.addEventListener("mouseout", fl_MouseOutHandler_5);
+		
+		function fl_MouseOutHandler_5()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseover", fl_MouseOverHandler_6);
+		
+		function fl_MouseOverHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_03dock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseout", fl_MouseOutHandler_6);
+		
+		function fl_MouseOutHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseover", fl_MouseOverHandler_7);
+		
+		function fl_MouseOverHandler_7()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_05block");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseout", fl_MouseOutHandler_7);
+		
+		function fl_MouseOutHandler_7()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
 		}
 		/* stop ();
 		*/
@@ -12818,9 +13017,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		playSound("sound106");
 	}
 	this.frame_179 = function() {
-		/* ?????????
-		????????????????????????/????�
-		?????????/????????????????�
+		/* 在此影格停止
+		時間軸會在插入此程式碼的影格停止/暫停。
+		亦可用來停止/暫停影片片段的時間軸。
 		*/
 		
 		this.stop();
@@ -12836,13 +13035,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		
 		
 		
-		/* ???????�???????�
-		?????????????????????????????????????????????????????��
-		?????????????????????????�
+		/* 按一下前往影格並停止
+		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並停止影片。
+		亦可用於主時間軸或影片片段時間軸。
 		
-		???:
-		1. ??????????�???????????????????�??????????????????????????? 5 ??????????�
-		2. EaselJS ??????????� 0 ?????�?? 1
+		指示:
+		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
+		2. EaselJS 中的影格編號從 0 開始，而非 1
 		*/
 		
 		
@@ -12854,12 +13053,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		}
 		
 		
-		/* ?????????
-		??????????????????????????????????????????????????��
+		/* 滑鼠按鍵事件
+		您可將函數增加至您自訂的程式碼，按一下特定元件實體，就會執行該函數。
 		
-		???:
-		1. ????????��// ??????????????�????????????????????????????��
-		???????????????????????��
+		指示:
+		1. 在下方含有「// 啟動您的自訂程式碼」的程式碼之後，將自訂的程式碼加入新行。
+		按下元件實體時，就會執行程式碼。
 		*/
 		
 		this.trueButton.addEventListener("click", fl_MouseClickHandler.bind(this));
@@ -13240,7 +13439,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_34}]},39).to({state:[]},132).to({state:[{t:this.instance_35}]},14).wait(5));
 
-	// ???_3
+	// 图层_3
 	this.colckButton = new lib.button64();
 	this.colckButton.name = "colckButton";
 	this.colckButton.parent = this;
@@ -13430,19 +13629,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic1_cond_atlas_.png", id:"swfMagic1_cond_atlas_"},
-		{src:"sounds/_06clock.mp3", id:"_06clock"},
-		{src:"sounds/sound106.mp3", id:"sound106"},
-		{src:"sounds/sound111.mp3", id:"sound111"},
-		{src:"sounds/sound126overtodown.mp3", id:"sound126overtodown"},
-		{src:"sounds/_05block.mp3", id:"_05block"},
-		{src:"sounds/_04rock.mp3", id:"_04rock"},
-		{src:"sounds/_03dock.mp3", id:"_03dock"},
-		{src:"sounds/_02sock.mp3", id:"_02sock"},
-		{src:"sounds/_01cock.mp3", id:"_01cock"},
-		{src:"sounds/sound84overtodown.mp3", id:"sound84overtodown"},
-		{src:"sounds/sound86.mp3", id:"sound86"},
-		{src:"sounds/sound99.mp3", id:"sound99"}
+		{src:"images/swfMagic1_cond_atlas_.png?1548745884251", id:"swfMagic1_cond_atlas_"},
+		{src:"sounds/_06clock.mp3?1548745884758", id:"_06clock"},
+		{src:"sounds/sound106.mp3?1548745884758", id:"sound106"},
+		{src:"sounds/sound111.mp3?1548745884758", id:"sound111"},
+		{src:"sounds/sound126overtodown.mp3?1548745884758", id:"sound126overtodown"},
+		{src:"sounds/_05block.mp3?1548745884758", id:"_05block"},
+		{src:"sounds/_04rock.mp3?1548745884758", id:"_04rock"},
+		{src:"sounds/_03dock.mp3?1548745884758", id:"_03dock"},
+		{src:"sounds/_02sock.mp3?1548745884758", id:"_02sock"},
+		{src:"sounds/_01cock.mp3?1548745884758", id:"_01cock"},
+		{src:"sounds/sound84overtodown.mp3?1548745884758", id:"sound84overtodown"},
+		{src:"sounds/sound86.mp3?1548745884758", id:"sound86"},
+		{src:"sounds/sound99.mp3?1548745884758", id:"sound99"}
 	],
 	preloads: []
 };

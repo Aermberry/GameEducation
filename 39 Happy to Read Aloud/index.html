@@ -306,9 +306,9 @@
     // --第一段游戏--
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function initOne() {
-        init();
+        // init();
         
-        function init() {
+       return function init() {
             canvas = document.getElementById("canvas");
             anim_container = document.getElementById("animation_container");
             dom_overlay_container = document.getElementById("dom_overlay_container");
@@ -1315,98 +1315,98 @@
     }
 
     //播放第十二段游戲函數執行
-    function continue12thGame() {
-        var animation_noe = document.getElementById('animation_Eleven');
-        var animation_two = document.getElementById("animation_12th")
-        animation_Eleven.style.display = "none";
-        animation_12th.style.display = 'block';
-        init12th();
-    }
+    // function continue12thGame() {
+    //     var animation_noe = document.getElementById('animation_Eleven');
+    //     var animation_two = document.getElementById("animation_12th")
+    //     animation_Eleven.style.display = "none";
+    //     animation_12th.style.display = 'block';
+    //     init12th();
+    // }
 
-    function init12th() {
-        init();
+    // function init12th() {
+    //     init();
 
-        function init() {
-            canvas = document.getElementById("canvas_12th");
-            anim_container = document.getElementById("anim_container_12th");
-            dom_overlay_container = document.getElementById("dom_overlay_container_12th");
-            var animation_noe = document.getElementById("animation_12th");
-            var egret = document.getElementById("egret-player");
-            var comp = AdobeAn.getComposition("18E4F3599F228F4DB8C2EEBE1372161F");
-            var lib = comp.getLibrary();
-            var loader = new createjs.LoadQueue(false);
-            loader.installPlugin(createjs.Sound);
-            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
-            var lib = comp.getLibrary();
-            loader.loadManifest(lib.properties.manifest);
-            animation_noe.style.display = 'block';
-            egret.style.display = 'none';
-        }
-        function handleComplete(evt, comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
-            var queue = evt.target;
-            var ssMetadata = lib.ssMetadata;
-            for (i = 0; i < ssMetadata.length; i++) {
-                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
-            }
-            // var preloaderDiv = document.getElementById("_preload_div_12th");
-            // preloaderDiv.style.display = 'none';
-            canvas.style.display = 'block';
-            exportRoot = new lib.swfMovie1();
-            stage = new lib.Stage(canvas);
-            //Registers the "tick" event listener.
-            fnStartAnimation = function () {
-                stage.addChild(exportRoot);
-                createjs.Ticker.setFPS(lib.properties.fps);
-                createjs.Ticker.addEventListener("tick", stage);
-            }
-            //Code to support hidpi screens and responsive scaling.
-            function makeResponsive(isResp, respDim, isScale, scaleType) {
-                var lastW, lastH, lastS = 1;
-                window.addEventListener('resize', resizeCanvas);
-                resizeCanvas();
-                function resizeCanvas() {
-                    var w = lib.properties.width, h = lib.properties.height;
-                    var iw = window.innerWidth, ih = window.innerHeight;
-                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
-                    if (isResp) {
-                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
-                            sRatio = lastS;
-                        }
-                        else if (!isScale) {
-                            if (iw < w || ih < h)
-                                sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 1) {
-                            sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if (scaleType == 2) {
-                            sRatio = Math.max(xRatio, yRatio);
-                        }
-                    }
-                    canvas.width = w * pRatio * sRatio;
-                    canvas.height = h * pRatio * sRatio;
-                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+    //     function init() {
+    //         canvas = document.getElementById("canvas_12th");
+    //         anim_container = document.getElementById("anim_container_12th");
+    //         dom_overlay_container = document.getElementById("dom_overlay_container_12th");
+    //         var animation_noe = document.getElementById("animation_12th");
+    //         var egret = document.getElementById("egret-player");
+    //         var comp = AdobeAn.getComposition("18E4F3599F228F4DB8C2EEBE1372161F");
+    //         var lib = comp.getLibrary();
+    //         var loader = new createjs.LoadQueue(false);
+    //         loader.installPlugin(createjs.Sound);
+    //         loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+    //         var lib = comp.getLibrary();
+    //         loader.loadManifest(lib.properties.manifest);
+    //         animation_noe.style.display = 'block';
+    //         egret.style.display = 'none';
+    //     }
+    //     function handleComplete(evt, comp) {
+    //         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+    //         var lib = comp.getLibrary();
+    //         var ss = comp.getSpriteSheet();
+    //         var queue = evt.target;
+    //         var ssMetadata = lib.ssMetadata;
+    //         for (i = 0; i < ssMetadata.length; i++) {
+    //             ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+    //         }
+    //         // var preloaderDiv = document.getElementById("_preload_div_12th");
+    //         // preloaderDiv.style.display = 'none';
+    //         canvas.style.display = 'block';
+    //         exportRoot = new lib.swfMovie1();
+    //         stage = new lib.Stage(canvas);
+    //         //Registers the "tick" event listener.
+    //         fnStartAnimation = function () {
+    //             stage.addChild(exportRoot);
+    //             createjs.Ticker.setFPS(lib.properties.fps);
+    //             createjs.Ticker.addEventListener("tick", stage);
+    //         }
+    //         //Code to support hidpi screens and responsive scaling.
+    //         function makeResponsive(isResp, respDim, isScale, scaleType) {
+    //             var lastW, lastH, lastS = 1;
+    //             window.addEventListener('resize', resizeCanvas);
+    //             resizeCanvas();
+    //             function resizeCanvas() {
+    //                 var w = lib.properties.width, h = lib.properties.height;
+    //                 var iw = window.innerWidth, ih = window.innerHeight;
+    //                 var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+    //                 if (isResp) {
+    //                     if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+    //                         sRatio = lastS;
+    //                     }
+    //                     else if (!isScale) {
+    //                         if (iw < w || ih < h)
+    //                             sRatio = Math.min(xRatio, yRatio);
+    //                     }
+    //                     else if (scaleType == 1) {
+    //                         sRatio = Math.min(xRatio, yRatio);
+    //                     }
+    //                     else if (scaleType == 2) {
+    //                         sRatio = Math.max(xRatio, yRatio);
+    //                     }
+    //                 }
+    //                 canvas.width = w * pRatio * sRatio;
+    //                 canvas.height = h * pRatio * sRatio;
+    //                 // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+    //                 canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
 
-                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+    //                 // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
 
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
-                    stage.scaleX = pRatio * sRatio;
-                    stage.scaleY = pRatio * sRatio;
-                    lastW = iw; lastH = ih; lastS = sRatio;
-                    stage.tickOnUpdate = false;
-                    stage.update();
-                    stage.tickOnUpdate = true;
-                }
-            }
-            makeResponsive(true, 'both', false, 1);
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
-        }
-    }
+    //                 canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
+    //                 stage.scaleX = pRatio * sRatio;
+    //                 stage.scaleY = pRatio * sRatio;
+    //                 lastW = iw; lastH = ih; lastS = sRatio;
+    //                 stage.tickOnUpdate = false;
+    //                 stage.update();
+    //                 stage.tickOnUpdate = true;
+    //             }
+    //         }
+    //         makeResponsive(true, 'both', false, 1);
+    //         AdobeAn.compositionLoaded(lib.properties.id);
+    //         fnStartAnimation();
+    //     }
+    // }
 
 
     function playSound(id, loop) {
