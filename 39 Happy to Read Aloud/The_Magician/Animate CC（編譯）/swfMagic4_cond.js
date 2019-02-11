@@ -6804,11 +6804,11 @@ p.nominalBounds = new cjs.Rectangle(-118.6,-130.2,237.2,260.4);
 	this.shape_84.setTransform(18.4,-74.8);
 
 	this.shape_85 = new cjs.Shape();
-	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBIATgFIgBACIgGAEgAgjA1QgIgJgBgLIAFgYIABgDIADgEIgEgCIgIgNQgEgMADgKQAJARAAASQAAgSgJgRQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgJAKgSAJIgiAFIgBADIgCAEIgTAFgAAwARQgFAOgTAEIgDABQASgJAJgKgAgwgjIAAAAg");
+	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBIATgFIgBACIgGAEgAgjA1QgIgJgBgLIAFgYIABgDIADgEIgEgCQAAgSgJgRQAJARAAASIgIgNQgEgMADgKQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgJAKgSAJIgiAFIgBADIgCAEIgTAFgAgQAwgAAVAkIAAAAgAAwARQgFAOgTAEIgDABQASgJAJgKgAAwARIAAAAg");
 	this.shape_85.setTransform(17.9,-48.1);
 
 	this.shape_86 = new cjs.Shape();
-	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIgVAGIAMgaQABALAIAJIAAAAIAMAAIAGgDIABgCIACgEIABgDIAigFIADgBQATgEAFgOIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALQgDAKAEALIAIAOIAAAKIAAgKIAEADIgDAEIgBADIgFAYgAABE1IgWAGIAWgGIAPgGgAArEcQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKgAg1DnIgKgQgAgsEKg");
+	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIgVAGIAMgagAgsEUIgFAYQABALAIAJIAAAAIAMAAIAGgDIABgCIACgEIABgDIAigFIADgBQATgEAFgOIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALIgKgQIAKAQQgDAKAEALIAIAOIAEADIgDAEIgBADIAAgKIAAAKgAABE1IgWAGIAWgGIAPgGgAArEcQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKg");
 	this.shape_86.setTransform(18.4,-74.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_86},{t:this.shape_85},{t:this.shape_84},{t:this.shape_83}]}).wait(1));
@@ -7354,14 +7354,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 
 	// Layer 18
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(2,1,1).p("Ai9kBIgFgwAglB2Igog3AheAiIgfg8AiKg5IgWhBAAeDAIgugxABtD/Ig2gpADDEyIg6ghAipiaIgPhF");
+	this.shape.graphics.f().s("#000000").ss(2,1,1).p("Ai9kBIgFgwAiKg5IgWhBAheAiIgfg8AglB2Igog3ABtD/Ig2gpAAeDAIgugxADDEyIg6ghAipiaIgPhF");
 	this.shape.setTransform(-79,118);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Layer 17
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("AANkQIg/AUABtk2IhAAaAhUj0IhEAPAijBQIgDBFAiqC4IgIBFAi6jeIgMACIAQA4AiviBIAJBHAijgXIABBEAi1EgIgKBGADHllIg8Ah");
+	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("AhUj0IhEAPABtk2IhAAaAANkQIg/AUAijgXIABBEAiviBIAJBHAi6jeIgMACIAQA4AiqC4IgIBFAijBQIgDBFAi1EgIgKBGADHllIg8Ah");
 	this.shape_1.setTransform(65.8,72.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
@@ -10069,6 +10069,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 		*/
 		this.stop();
 		console.log("@我没故事。")
+		continueTenGame();
 	}
 
 	// actions tween:
@@ -10164,7 +10165,7 @@ p.nominalBounds = new cjs.Rectangle(-560.6,183.3,153,206.7);
 	// Mask Layer 54 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	var mask_graphics_30 = new cjs.Graphics().p("AzhSNIAA2kMAm4AAAMgm4AAAIAAt1MAm4AAAIAAN1IAALcQALAIAAAKQAAAfhnAVQhmAWiRAAQiRAAhngWQhngVABgfIAAgBIi0AAIAAK3g");
+	var mask_graphics_30 = new cjs.Graphics().p("AzhSNIAA2kMAm4AAAIAALcQALAIAAAKQAAAfhnAVQhmAWiRAAQiRAAhngWQhngVABgfIAAgBIi0AAIAAK3gAzhkXIAAt1MAm4AAAIAAN1g");
 
 	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(30).to({graphics:mask_graphics_30,x:-157.9,y:-23.5}).wait(55));
 
@@ -10438,14 +10439,6 @@ p.nominalBounds = new cjs.Rectangle(-37,-17.8,69,59.8);
 (lib.button75 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_05block");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 5
 	this.instance = new lib.shape74OverDownHit("synched",0);
 	this.instance.parent = this;
@@ -10496,14 +10489,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,89.9,162.6);
 
 (lib.button67 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_03dock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 32
 	this.instance = new lib.shape58Up("synched",0);
@@ -10562,14 +10547,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 (lib.button66 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_02sock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 21
 	this.instance = new lib.shape52Up("synched",0);
 	this.instance.parent = this;
@@ -10626,14 +10603,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 (lib.button65 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_01cock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 6
 	this.instance = new lib.text45Up("synched",0);
@@ -10697,14 +10666,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88.3,162.6);
 (lib.button64 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_04rock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 25
 	this.instance = new lib.shape37Up("synched",0);
 	this.instance.parent = this;
@@ -10761,14 +10722,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 (lib.button63 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_06clock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 6
 	this.instance = new lib.text29Up("synched",0);
@@ -11144,7 +11097,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		時間軸會在插入此程式碼的影格停止/暫停。
 		亦可用來停止/暫停影片片段的時間軸。
 		*/
-		
+		var sound=null;
 		this.stop();
 		
 		
@@ -11264,6 +11217,253 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		function fl_ClickToGoToAndPlayFromFrame_7()
 		{
 			this.gotoAndPlay(39);
+		}
+		
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseover", fl_MouseOverHandler);
+		
+		function fl_MouseOverHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_01cock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseout", fl_MouseOutHandler);
+		
+		function fl_MouseOutHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rock.addEventListener("mouseover", fl_MouseOverHandler_2);
+		
+		function fl_MouseOverHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_04rock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rock.addEventListener("mouseout", fl_MouseOutHandler_2);
+		
+		function fl_MouseOutHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clock.addEventListener("mouseover", fl_MouseOverHandler_3);
+		
+		function fl_MouseOverHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_06clock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clock.addEventListener("mouseout", fl_MouseOutHandler_3);
+		
+		function fl_MouseOutHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sock.addEventListener("mouseover", fl_MouseOverHandler_4);
+		
+		function fl_MouseOverHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_02sock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sock.addEventListener("mouseout", fl_MouseOutHandler_4);
+		
+		function fl_MouseOutHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseover", fl_MouseOverHandler_5);
+		
+		function fl_MouseOverHandler_5()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_03dock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseout", fl_MouseOutHandler_5);
+		
+		function fl_MouseOutHandler_5()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseover", fl_MouseOverHandler_6);
+		
+		function fl_MouseOverHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound=playSound("_05block");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseout", fl_MouseOutHandler_6);
+		
+		function fl_MouseOutHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
 		}
 	}
 	this.frame_39 = function() {
@@ -11393,7 +11593,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.falseButton = new lib.button126();
 	this.falseButton.name = "falseButton";
 	this.falseButton.parent = this;
-	this.falseButton.setTransform(1785.8,1328.7,2.3,2.3);
+	this.falseButton.setTransform(1785.8,1333.5,2.3,2.3);
 	this.falseButton._off = true;
 	new cjs.ButtonHelper(this.falseButton, 0, 1, 2, false, new lib.button126(), 3);
 
@@ -11403,7 +11603,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.trueButton = new lib.button123();
 	this.trueButton.name = "trueButton";
 	this.trueButton.parent = this;
-	this.trueButton.setTransform(1682.5,1326.5,2.3,2.3);
+	this.trueButton.setTransform(1694.5,1331.3,2.3,2.3);
 	this.trueButton._off = true;
 	new cjs.ButtonHelper(this.trueButton, 0, 1, 2, false, new lib.button123(), 3);
 
@@ -11412,7 +11612,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	// Layer 154
 	this.instance_4 = new lib.text118("synched",0);
 	this.instance_4.parent = this;
-	this.instance_4.setTransform(1041.5,1290.8,2.3,2.3);
+	this.instance_4.setTransform(1022.7,1300.4,2.3,2.3);
 	this.instance_4._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(172).to({_off:false},0).wait(1));
@@ -11421,17 +11621,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	var mask = new cjs.Shape();
 	mask._off = true;
 	var mask_graphics_168 = new cjs.Graphics().p("EBNxBtjIAAzDMCFUAAAIAATDg");
-	var mask_graphics_169 = new cjs.Graphics().p("EA8tBtjIAAzDMCFUAAAIAATDg");
-	var mask_graphics_170 = new cjs.Graphics().p("EAroBtjIAAzDMCFUAAAIAATDg");
-	var mask_graphics_171 = new cjs.Graphics().p("EAakBtjIAAzDMCFUAAAIAATDg");
-	var mask_graphics_172 = new cjs.Graphics().p("EAJfBtjIAAzDMCFUAAAIAATDg");
+	var mask_graphics_169 = new cjs.Graphics().p("EA8vBtBIAAxkMCFTAAAIAARkg");
+	var mask_graphics_170 = new cjs.Graphics().p("EArsBsfIAAwEMCFUAAAIAAQEg");
+	var mask_graphics_171 = new cjs.Graphics().p("EAapBr9IAAulMCFUAAAIAAOlg");
+	var mask_graphics_172 = new cjs.Graphics().p("EAJlBrcIAAtGMCFUAAAIAANGg");
 
-	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_graphics_169,x:1241.7,y:701.1}).wait(1).to({graphics:mask_graphics_170,x:1132.4,y:701.1}).wait(1).to({graphics:mask_graphics_171,x:1023.2,y:701.1}).wait(1).to({graphics:mask_graphics_172,x:913.9,y:701.1}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_graphics_169,x:1241.8,y:697.7}).wait(1).to({graphics:mask_graphics_170,x:1132.8,y:694.3}).wait(1).to({graphics:mask_graphics_171,x:1023.7,y:690.9}).wait(1).to({graphics:mask_graphics_172,x:914.5,y:687.6}).wait(1));
 
 	// Masked Layer 152 - 151
 	this.instance_5 = new lib.shape117("synched",0);
 	this.instance_5.parent = this;
-	this.instance_5.setTransform(1308.2,1329,2.3,2.3);
+	this.instance_5.setTransform(1829.4,1332.7,2.378,2.3,0,0,0,226.6,1.6);
 	this.instance_5._off = true;
 
 	var maskedShapeInstanceList = [this.instance_5];
@@ -11968,19 +12168,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfMagic4_cond_atlas_.png?1548137208732", id:"swfMagic4_cond_atlas_"},
-		{src:"sounds/_06clock.mp3?1548137209172", id:"_06clock"},
-		{src:"sounds/sound103.mp3?1548137209172", id:"sound103"},
-		{src:"sounds/sound108.mp3?1548137209172", id:"sound108"},
-		{src:"sounds/sound122overtodown.mp3?1548137209172", id:"sound122overtodown"},
-		{src:"sounds/_05block.mp3?1548137209172", id:"_05block"},
-		{src:"sounds/_04rock.mp3?1548137209172", id:"_04rock"},
-		{src:"sounds/_03dock.mp3?1548137209172", id:"_03dock"},
-		{src:"sounds/_02sock.mp3?1548137209172", id:"_02sock"},
-		{src:"sounds/_01cock.mp3?1548137209172", id:"_01cock"},
-		{src:"sounds/sound83overtodown.mp3?1548137209172", id:"sound83overtodown"},
-		{src:"sounds/sound85.mp3?1548137209172", id:"sound85"},
-		{src:"sounds/sound96.mp3?1548137209172", id:"sound96"}
+		{src:"images/swfMagic4_cond_atlas_.png", id:"swfMagic4_cond_atlas_"},
+		{src:"sounds/_06clock.mp3", id:"_06clock"},
+		{src:"sounds/sound103.mp3", id:"sound103"},
+		{src:"sounds/sound108.mp3", id:"sound108"},
+		{src:"sounds/sound122overtodown.mp3", id:"sound122overtodown"},
+		{src:"sounds/_05block.mp3", id:"_05block"},
+		{src:"sounds/_04rock.mp3", id:"_04rock"},
+		{src:"sounds/_03dock.mp3", id:"_03dock"},
+		{src:"sounds/_02sock.mp3", id:"_02sock"},
+		{src:"sounds/_01cock.mp3", id:"_01cock"},
+		{src:"sounds/sound83overtodown.mp3", id:"sound83overtodown"},
+		{src:"sounds/sound85.mp3", id:"sound85"},
+		{src:"sounds/sound96.mp3", id:"sound96"}
 	],
 	preloads: []
 };

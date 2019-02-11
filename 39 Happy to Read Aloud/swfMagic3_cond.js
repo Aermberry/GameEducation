@@ -11634,7 +11634,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		時間軸會在插入此程式碼的影格停止/暫停。
 		亦可用來停止/暫停影片片段的時間軸。
 		*/
-		var sound=null;
+		var sound = null;
 		this.stop();
 		
 		/* 滑鼠按鍵事件
@@ -11783,7 +11783,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标已离开"。
 			console.log("鼠标已离开");
-			sound.paused=true;
+			sound.paused = true;
 			// 结束您的自定义代码
 		}
 		
@@ -11804,7 +11804,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标悬停"。
 			console.log("鼠标悬停");
-			sound=playSound("_04rock");
+			sound = playSound("_04rock");
 			// 结束您的自定义代码
 		}
 		
@@ -11824,7 +11824,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标已离开"。
 			console.log("鼠标已离开");
-			sound.paused=true;
+			sound.paused = true;
 			// 结束您的自定义代码
 		}
 		
@@ -11845,7 +11845,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标悬停"。
 			console.log("鼠标悬停");
-			sound=playSound("_06clock");
+			sound = playSound("_06clock");
 			// 结束您的自定义代码
 		}
 		
@@ -11865,7 +11865,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标已离开"。
 			console.log("鼠标已离开");
-			sound.paused=true;
+			sound.paused = true;
 			// 结束您的自定义代码
 		}
 		
@@ -11886,7 +11886,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标悬停"。
 			console.log("鼠标悬停");
-			sound=playSound("_02sock");
+			sound = playSound("_02sock");
 			// 结束您的自定义代码
 		}
 		
@@ -11929,7 +11929,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标悬停"。
 			console.log("鼠标悬停");
-			sound=playSound("_03dock");
+			sound = playSound("_03dock");
 			// 结束您的自定义代码
 		}
 		
@@ -11949,7 +11949,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标已离开"。
 			console.log("鼠标已离开");
-			sound.paused=true;
+			sound.paused = true;
 			// 结束您的自定义代码
 		}
 		
@@ -11970,7 +11970,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标悬停"。
 			console.log("鼠标悬停");
-			sound=playSound("_05block");
+			sound = playSound("_05block");
 			// 结束您的自定义代码
 		}
 		
@@ -11989,7 +11989,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		{
 			// 开始您的自定义代码
 			// 此示例代码在"输出"面板中显示"鼠标已离开"。
-			sound.paused=true;
+			sound.paused = true;
 			console.log("鼠标已离开");
 			// 结束您的自定义代码
 		}
@@ -12499,7 +12499,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.falseButton = new lib.button127();
 	this.falseButton.name = "falseButton";
 	this.falseButton.parent = this;
-	this.falseButton.setTransform(1785.8,1328.7,2.3,2.3);
+	this.falseButton.setTransform(1785.8,1335.9,2.3,2.3);
 	this.falseButton._off = true;
 	new cjs.ButtonHelper(this.falseButton, 0, 1, 2, false, new lib.button127(), 3);
 
@@ -12509,7 +12509,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.trueButton = new lib.button124();
 	this.trueButton.name = "trueButton";
 	this.trueButton.parent = this;
-	this.trueButton.setTransform(1682.5,1326.5,2.3,2.3);
+	this.trueButton.setTransform(1682.5,1333.7,2.3,2.3);
 	this.trueButton._off = true;
 	new cjs.ButtonHelper(this.trueButton, 0, 1, 2, false, new lib.button124(), 3);
 
@@ -12523,7 +12523,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 
 	this.instance_49 = new lib.text119("synched",0);
 	this.instance_49.parent = this;
-	this.instance_49.setTransform(1041.5,1290.8,2.3,2.3);
+	this.instance_49.setTransform(1041.5,1300.4,2.3,2.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_48}]},29).to({state:[]},5).to({state:[{t:this.instance_49}]},138).wait(1));
 
@@ -12531,17 +12531,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	var mask_1 = new cjs.Shape();
 	mask_1._off = true;
 	var mask_1_graphics_168 = new cjs.Graphics().p("EBNxBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_169 = new cjs.Graphics().p("EA8tBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_170 = new cjs.Graphics().p("EAroBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_171 = new cjs.Graphics().p("EAakBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_172 = new cjs.Graphics().p("EAJfBtjIAAzDMCFUAAAIAATDg");
+	var mask_1_graphics_169 = new cjs.Graphics().p("EA8tBtDIAAx/MCFUAAAIAAR/g");
+	var mask_1_graphics_170 = new cjs.Graphics().p("EAroBsjIAAw7MCFUAAAIAAQ7g");
+	var mask_1_graphics_171 = new cjs.Graphics().p("EAakBsDIAAv2MCFUAAAIAAP2g");
+	var mask_1_graphics_172 = new cjs.Graphics().p("EAJfBrjIAAuzMCFUAAAIAAOzg");
 
-	this.timeline.addTween(cjs.Tween.get(mask_1).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_1_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_1_graphics_169,x:1241.7,y:701.1}).wait(1).to({graphics:mask_1_graphics_170,x:1132.4,y:701.1}).wait(1).to({graphics:mask_1_graphics_171,x:1023.2,y:701.1}).wait(1).to({graphics:mask_1_graphics_172,x:913.9,y:701.1}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(mask_1).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_1_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_1_graphics_169,x:1241.7,y:697.9}).wait(1).to({graphics:mask_1_graphics_170,x:1132.4,y:694.7}).wait(1).to({graphics:mask_1_graphics_171,x:1023.2,y:691.5}).wait(1).to({graphics:mask_1_graphics_172,x:913.9,y:688.3}).wait(1));
 
 	// Masked Layer 63 - 62
 	this.instance_50 = new lib.shape118("synched",0);
 	this.instance_50.parent = this;
-	this.instance_50.setTransform(1308.2,1329,2.3,2.3);
+	this.instance_50.setTransform(1829.2,1332.7,2.429,2.3,0,0,0,226.5,1.6);
 	this.instance_50._off = true;
 
 	var maskedShapeInstanceList = [this.instance_50];

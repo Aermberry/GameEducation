@@ -117,97 +117,97 @@ p.nominalBounds = new cjs.Rectangle(-4,-3.9,42,59.8);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF6600").s().p("AgaBJQgDgDAAgEQAAgGADgFQAEgFAFAAQAKAAAAALQAAAFgDAFQgCAFgGAAQgEAAgEgDgAgUAkQgCgDAAgEQAAgHAMgKIAXgRQAMgKAAgJQAAgMgKgJQgLgKgLAAQgFAAgKAHQgJAGgDAAQgEAAgCgDQgEgDAAgEQAAgIAPgIQAOgHAIAAQAUAAAPAQQARAPgBAUQAAAOgJAKQgFAHgPAKQgPALgFAHQgDAEgEAAQgFAAgDgDg");
-	this.shape.setTransform(262.6,13.3);
+	this.shape.graphics.f("#FF6600").s().p("AgaBJQgDgDAAgEQAAgGADgFQAEgFAFAAQAKAAAAALQAAAFgDAFQgDAFgFAAQgEAAgEgDgAgTAkQgDgDAAgEQAAgHAMgKIAXgRQAMgKAAgJQAAgMgKgJQgLgKgLAAQgFAAgKAHQgKAGgCAAQgDAAgDgDQgEgDAAgEQABgIAPgIQANgHAIAAQAUAAAPAQQARAPgBAUQAAAOgJAKQgGAHgOAKQgPALgFAHQgDAEgEAAQgFAAgCgDg");
+	this.shape.setTransform(245.4,13.3);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FF6600").s().p("AgFBFQgDgDAAgEIAAgLIAAgLIgCg4IgWgCQgIgBAAgIQAAgFACgDQADgCAEAAIAUABIAAgNIAAgMQAAgEADgCQADgEADAAQAJAAABAPIAAAJIAAAFIAAAGIANgBQALAAADABQAGACAAAHQAAAEgCADQgEADgEAAIgEgBIgGAAIgMACIACA5IAAAEIAAAFQAAAWgKgBQgEAAgCgCg");
-	this.shape_1.setTransform(253,13.7);
+	this.shape_1.graphics.f("#FF6600").s().p("AgFBFQgDgDgBgEIABgLIAAgLIgCg4IgVgCQgJgBAAgIQAAgFACgDQADgCAEAAIAUABIAAgNIAAgMQAAgEACgCQAEgEADAAQAJAAABAPIAAAJIAAAFIAAAGIAOgBQAKAAADABQAGACAAAHQAAAEgCADQgDADgFAAIgFgBIgEAAIgOACIADA5IAAAEIAAAFQAAAWgKgBQgEAAgCgCg");
+	this.shape_1.setTransform(235.8,13.7);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#FF6600").s().p("AgJBHQgDgDAAgFIAAgRIAAgSIABgWIABgWQAAgEADgDQADgDADAAQAEAAACADQADADAAAEIgBAWIgBAWIAAASIABARQAAAFgDADQgDACgDAAQgEAAgDgCgAgFg1QgEgDAAgFQAAgEAEgEQADgDAEgBQAFABADADQADAEAAAEQAAAFgDADQgDAEgFAAQgEAAgDgEg");
-	this.shape_2.setTransform(245.7,12.9);
+	this.shape_2.graphics.f("#FF6600").s().p("AgJBHQgDgDAAgFIAAgRIAAgSIABgWIABgWQAAgEACgDQAEgDADAAQAEAAADADQACADAAAEIgBAWIgBAWIAAASIABARQAAAFgDADQgDACgDAAQgEAAgDgCgAgFg1QgEgDAAgFQAAgEAEgEQADgDAEgBQAFABADADQADAEAAAEQAAAFgDADQgDAEgFAAQgEAAgDgEg");
+	this.shape_2.setTransform(228.5,12.9);
 
 	this.shape_3 = new cjs.Shape();
 	this.shape_3.graphics.f("#FF6600").s().p("AAeA0IgegoIgTAUIgRAQQgDADgEAAQgEAAgCgCQgDgDAAgEQAAgDACgDIAJgJIAJgIIAUgVIgMgSQgIgMgGgFQgEgDAAgEQAAgEADgDQADgDAEAAQAFAAAMAPIAQAYIATgSQAMgLAEgHQADgEAEAAQAEAAADADQADADAAADQAAAGgJAJIgOANIgSASIAgAoQADADAAADQAAAEgDADQgDADgEAAQgEAAgDgEg");
-	this.shape_3.setTransform(236.8,15);
+	this.shape_3.setTransform(219.6,15);
 
 	this.shape_4 = new cjs.Shape();
 	this.shape_4.graphics.f("#FF6600").s().p("AghAqQgPgMAAgWQAAgYANgSQANgSAWAAQAQAAAKAFQAMAHAAAOQAAAKgLAIIgUAKIglARQAGAIAIAEQAIAFAKAAQAHAAAJgDQALgDAEgFQADgGAEAAQADAAADADQADADAAADQAAALgSAIQgPAGgOAAQgVAAgOgLgAgUgZQgHAJgEARIAegNQAQgJAIgGQgJgIgOAAQgMAAgIAKg");
-	this.shape_4.setTransform(225.7,15.3);
+	this.shape_4.setTransform(208.5,15.3);
 
 	this.shape_5 = new cjs.Shape();
 	this.shape_5.graphics.f("#FF6600").s().p("AgcApQgNgNgBgXQgBgVAMgRQAOgUAXAAQAUAAAKASQAIAPgBAUQAAAVgLAPQgMASgUAAQgQAAgMgNgAgRgTQgGALAAANQAAAOAIAIQAGAHAJAAQAJAAAHgIQAJgIAAgOQACglgWAAQgOAAgIAOg");
-	this.shape_5.setTransform(204.6,15.4);
+	this.shape_5.setTransform(187.4,15.4);
 
 	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#FF6600").s().p("AgFBFQgDgDgBgEIABgLIAAgLIgCg4IgVgCQgJgBAAgIQAAgFACgDQADgCAEAAIAUABIAAgNIAAgMQAAgEACgCQAEgEADAAQAJAAABAPIAAAJIAAAFIAAAGIAOgBQAKAAADABQAGACAAAHQAAAEgCADQgDADgEAAIgGgBIgEAAIgOACIADA5IAAAEIAAAFQAAAWgKgBQgEAAgCgCg");
-	this.shape_6.setTransform(194.9,13.7);
+	this.shape_6.graphics.f("#FF6600").s().p("AgFBFQgEgDAAgEIABgLIAAgLIgCg4IgVgCQgJgBAAgIQAAgFACgDQADgCAEAAIAUABIAAgNIAAgMQAAgEACgCQAEgEADAAQAJAAABAPIAAAJIAAAFIAAAGIAOgBQAKAAADABQAGACAAAHQAAAEgCADQgEADgDAAIgGgBIgEAAIgOACIADA5IAAAEIAAAFQAAAWgLgBQgCAAgDgCg");
+	this.shape_6.setTransform(177.7,13.7);
 
 	this.shape_7 = new cjs.Shape();
-	this.shape_7.graphics.f("#FF6600").s().p("AgGBFQgCgDAAgEIAAgLIAAgLIgCg4IgWgCQgIgBAAgIQAAgFADgDQACgCAEAAIAVABIAAgNIgBgMQAAgEADgCQACgEAFAAQAHAAACAPIAAAJIAAAFIAAAGIANgBQALAAADABQAGACAAAHQAAAEgDADQgCADgFAAIgEgBIgGAAIgMACIABA5IAAAEIAAAFQABAWgKgBQgEAAgDgCg");
-	this.shape_7.setTransform(175.5,13.7);
+	this.shape_7.graphics.f("#FF6600").s().p("AgGBFQgCgDAAgEIAAgLIAAgLIgCg4IgWgCQgIgBAAgIQAAgFADgDQACgCAEAAIAVABIAAgNIgBgMQAAgEADgCQACgEAFAAQAHAAACAPIAAAJIAAAFIAAAGIANgBQALAAADABQAGACAAAHQAAAEgDADQgCADgFAAIgEgBIgGAAIgMACIACA5IAAAEIAAAFQAAAWgKgBQgDAAgEgCg");
+	this.shape_7.setTransform(158.3,13.7);
 
 	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.f("#FF6600").s().p("AAYAwIgDgWIgBgVIAAgJIAAgJQAAgVgHAAQgLAAgJANQgJAMgFARIgBAKIgBAJIABAJIAAAJQABAEgDADQgDACgEAAQgFAAgCgCQgCgDgBgEIAAgJIgBgJIABgbIACgcIgBgJIAAgJQABgFACgCQADgDAEAAQAJAAABANIAAALQAQgWARAAQAPAAAHAOQAEAJAAASIAAAKIAAAIQAAAIACANQACANAAAIQAAAEgDADQgCADgFAAQgIAAgBgJg");
-	this.shape_8.setTransform(165.8,15.2);
+	this.shape_8.graphics.f("#FF6600").s().p("AAYAwIgDgWIgBgVIABgJIAAgJQgBgVgHAAQgLAAgJANQgJAMgFARIgBAKIgBAJIABAJIAAAJQABAEgDADQgDACgEAAQgFAAgCgCQgCgDgBgEIAAgJIgBgJIABgbIACgcIgBgJIAAgJQABgFACgCQADgDAEAAQAJAAABANIAAALQAQgWARAAQAQAAAFAOQAFAJAAASIAAAKIAAAIQAAAIACANQACANAAAIQAAAEgDADQgCADgFAAQgIAAgBgJg");
+	this.shape_8.setTransform(148.6,15.2);
 
 	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.f("#FF6600").s().p("AAfAyIgHgHIgQAHQgHADgEAAQgWAAgLgNQgKgMAAgZQAAgXAQgQQAQgRAWAAQAJAAAKAEQANAGABAHQAAADgCACIgCAMIAAAVQgBAMACAHIAGARIADAGIAAABQAAAEgDADQgDACgDAAQgCAAgFgEgAgPgYQgMANAAAPQAAAQAGAIQAGAIALAAQAJAAAGgDIAKgIQgDgZgBgNIABgJIACgKIgHgDIgDgBQgPAAgKAMg");
-	this.shape_9.setTransform(155.3,15.4);
+	this.shape_9.graphics.f("#FF6600").s().p("AAfAyIgHgHIgQAHQgHADgEAAQgWAAgLgNQgKgMAAgZQAAgXAQgQQAQgRAWAAQAIAAALAEQAOAGAAAHQAAADgCACIgCAMIgBAVQAAAMACAHIAGARIADAGIAAABQAAAEgDADQgDACgDAAQgCAAgFgEgAgPgYQgMANAAAPQAAAQAGAIQAFAIAMAAQAJAAAGgDIAKgIQgEgZAAgNIABgJIACgKIgGgDIgFgBQgOAAgKAMg");
+	this.shape_9.setTransform(138.1,15.4);
 
 	this.shape_10 = new cjs.Shape();
-	this.shape_10.graphics.f("#FF6600").s().p("AAGAcIgEgXIgCgUIgIARIgPApIgDAFQgEAGgGAAQgHAAgIgdQgDgPgEgZIgCgPIgBgOQAAgFADgCQADgDAEAAQAHAAACAIIACAOIABAPIAGArQALgdALgoQAEgLAHAAQAIAAADANIAGAjIAGAlIAIgaIANg1QABgGAHAAQAEAAADADQADADAAAEIgBAEQgIAggMAnQgDAJgGAKQgDAFgHAAQgKgBgGgag");
-	this.shape_10.setTransform(143.3,15.5);
+	this.shape_10.graphics.f("#FF6600").s().p("AAGAcIgEgXIgCgUIgIARIgPApIgDAFQgEAGgGAAQgIAAgGgdQgEgPgEgZIgCgPIgBgOQAAgFADgCQADgDAEAAQAHAAACAIIACAOIABAPIAGArQALgdALgoQAEgLAHAAQAIAAADANIAFAjIAHAlIAIgaIAMg1QACgGAHAAQAEAAADADQADADAAAEIgBAEQgIAggMAnQgDAJgGAKQgEAFgGAAQgKgBgGgag");
+	this.shape_10.setTransform(126.1,15.5);
 
 	this.shape_11 = new cjs.Shape();
 	this.shape_11.graphics.f("#FF6600").s().p("AgZBNQgDgEAAgEQAAgJAVgvIgjhCIgFgHQgCgFAAgDQAAgEADgDQADgDAEAAQAEAAADADQAQAYASAqIAPghIAPgfQADgFAFAAQAEAAADADQADADAAAEIgBAEIgiBIQgMAbgGASIgGATQgDAHgGAAQgEAAgDgCg");
-	this.shape_11.setTransform(120.9,17.9);
+	this.shape_11.setTransform(103.7,17.9);
 
 	this.shape_12 = new cjs.Shape();
 	this.shape_12.graphics.f("#FF6600").s().p("AgKBGIABgjIABgjIAAgjIABgjQAAgKAIAAQAKAAAAAKIAAAjIgBAjIgBAxIgBAWQgBAJgIAAQgJAAAAgKg");
-	this.shape_12.setTransform(113.3,12.5);
+	this.shape_12.setTransform(96.1,12.5);
 
 	this.shape_13 = new cjs.Shape();
 	this.shape_13.graphics.f("#FF6600").s().p("AgKBGIABgjIABgjIAAgjIABgjQAAgKAIAAQAKAAAAAKIAAAjIgBAjIgBAxIgBAWQgBAJgIAAQgJAAAAgKg");
-	this.shape_13.setTransform(107.8,12.5);
+	this.shape_13.setTransform(90.6,12.5);
 
 	this.shape_14 = new cjs.Shape();
-	this.shape_14.graphics.f("#FF6600").s().p("AAfAyIgHgHIgQAHQgHADgEAAQgWAAgLgNQgKgMAAgZQAAgXAQgQQAQgRAWAAQAJAAAKAEQANAGAAAHQAAADgBACIgCAMIAAAVQgBAMACAHIAGARIADAGIAAABQAAAEgDADQgDACgDAAQgCAAgFgEgAgPgYQgMANAAAPQAAAQAGAIQAGAIALAAQAJAAAGgDIAKgIQgDgZgBgNIABgJIACgKIgHgDIgDgBQgPAAgKAMg");
-	this.shape_14.setTransform(99.9,15.4);
+	this.shape_14.graphics.f("#FF6600").s().p("AAfAyIgHgHIgQAHQgHADgEAAQgWAAgLgNQgKgMAAgZQAAgXARgQQAPgRAWAAQAIAAALAEQAOAGAAAHQAAADgCACIgCAMIgBAVQAAAMACAHIAGARIADAGIAAABQAAAEgDADQgCACgEAAQgCAAgFgEgAgPgYQgMANAAAPQAAAQAGAIQAFAIAMAAQAJAAAGgDIAKgIQgEgZAAgNIABgJIACgKIgGgDIgFgBQgOAAgKAMg");
+	this.shape_14.setTransform(82.7,15.4);
 
 	this.shape_15 = new cjs.Shape();
 	this.shape_15.graphics.f("#FF6600").s().p("AghAqQgPgMAAgWQAAgYANgSQANgSAWAAQAQAAAKAFQAMAHAAAOQAAAKgLAIIgUAKIglARQAGAIAIAEQAIAFAKAAQAHAAAJgDQALgDAEgFQADgGAEAAQADAAADADQADADAAADQAAALgSAIQgPAGgOAAQgVAAgOgLgAgUgZQgHAJgEARIAegNQAQgJAIgGQgJgIgOAAQgMAAgIAKg");
-	this.shape_15.setTransform(89.5,15.3);
+	this.shape_15.setTransform(72.3,15.3);
 
 	this.shape_16 = new cjs.Shape();
-	this.shape_16.graphics.f("#FF6600").s().p("AglAtIAAhEIAAgJIAAgKQAAgKAJAAQAKAAAAAQQASgSAWAAQAJAAADAGQAEAGAAAMIAAAHQgBAMgIAAQgJAAAAgJIAAgHIAAgIQgQABgIAHQgJAHgGAMIAAA1QAAAKgKAAQgIAAAAgKg");
-	this.shape_16.setTransform(79.3,15.3);
+	this.shape_16.graphics.f("#FF6600").s().p("AglAtIAAhEIAAgJIAAgKQAAgKAJAAQAJAAABAQQASgSAWAAQAJAAADAGQAEAGAAAMIAAAHQgBAMgIAAQgJAAAAgJIAAgHIAAgIQgQABgIAHQgJAHgGAMIAAA1QAAAKgKAAQgIAAAAgKg");
+	this.shape_16.setTransform(62.1,15.3);
 
 	this.shape_17 = new cjs.Shape();
 	this.shape_17.graphics.f("#FF6600").s().p("AAWAuQgMAHgPAAQgNAAgIgGQgKgGgBgMQgEgaAAgTQAAgNADgRQABgJAIAAQAEAAADACQADAEAAAEIgBAOIgCAPIABAbQABAMACAGIAHADIAGABQAMAAAPgEIgBgUIAAgSQAAgVACgPQABgKAJABQAEgBADADQACADAAAEIgBAlIAAAUIAAAVIAAAGIAAAHQAAAEgCADQgDADgEAAQgIAAgCgKg");
-	this.shape_17.setTransform(59,15.4);
+	this.shape_17.setTransform(41.8,15.4);
 
 	this.shape_18 = new cjs.Shape();
 	this.shape_18.graphics.f("#FF6600").s().p("AgcApQgNgNgBgXQgBgVAMgRQAOgUAXAAQAUAAAKASQAIAPgBAUQAAAVgLAPQgMASgUAAQgQAAgMgNgAgRgTQgGALAAANQAAAOAIAIQAGAHAJAAQAJAAAHgIQAJgIAAgOQACglgWAAQgOAAgIAOg");
-	this.shape_18.setTransform(48.4,15.4);
+	this.shape_18.setTransform(31.2,15.4);
 
 	this.shape_19 = new cjs.Shape();
 	this.shape_19.graphics.f("#FF6600").s().p("AgZBNQgDgEAAgEQAAgJAVgvIgjhCIgFgHQgCgFAAgDQAAgEADgDQADgDAEAAQAEAAADADQAQAYASAqIAPghIAPgfQADgFAFAAQAEAAADADQADADAAAEIgBAEIgiBIQgMAbgGASIgGATQgDAHgGAAQgEAAgDgCg");
-	this.shape_19.setTransform(37.9,17.9);
+	this.shape_19.setTransform(20.7,17.9);
 
 	this.shape_20 = new cjs.Shape();
 	this.shape_20.graphics.f("#FF6600").s().p("AgcApQgNgNgBgXQgBgVAMgRQAOgUAXAAQAUAAAKASQAIAPgBAUQAAAVgLAPQgMASgUAAQgQAAgMgNgAgRgTQgGALAAANQAAAOAIAIQAGAHAJAAQAJAAAHgIQAJgIAAgOQACglgWAAQgOAAgIAOg");
-	this.shape_20.setTransform(17.6,15.4);
+	this.shape_20.setTransform(0.4,15.4);
 
 	this.shape_21 = new cjs.Shape();
 	this.shape_21.graphics.f("#FF6600").s().p("Ag6BIIAAiPIAxAAQAQAAAIACQANADAIAHQAMAKAFAPQAGAPAAATQAAAQgEAMQgEAMgGAJQgFAIgIAFQgHAFgKACQgKACgMABgAgnA2IAeAAQANAAAIgCQAIgDAFgEQAHgHAEgLQAEgMAAgPQAAgWgIgNQgHgMgLgEQgHgDgQAAIgeAAg");
-	this.shape_21.setTransform(5.5,13);
+	this.shape_21.setTransform(-11.7,13);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-4,-3.9,280.4,59.8);
+p.nominalBounds = new cjs.Rectangle(-21.2,-3.9,280.4,59.8);
 
 
 (lib.text115 = function(mode,startPosition,loop) {
@@ -7336,11 +7336,11 @@ p.nominalBounds = new cjs.Rectangle(-118.6,-130.2,237.2,260.4);
 	this.shape_84.setTransform(18.4,-74.8);
 
 	this.shape_85 = new cjs.Shape();
-	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBQgIgJgBgLIAFgYIABgDIADgEIgEgCQAAgSgJgRQAJARAAASIgIgNQgEgMADgKQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgFAOgTAEIgDABIgiAFIgBADIgCAEIgBACIgGAEgAgjA1IATgFgAAVAkQASgJAJgKQgJAKgSAJg");
+	this.shape_85.graphics.f("#FFFFFF").s().p("AgjA2IAAgBIATgFIgBACIgGAEgAgjA1QgIgJgBgLIAFgYIABgDIADgEIgEgCQAAgSgJgRQAJARAAASIgIgNQgEgMADgKQAEgLANgHQAOAAAIAGIAGgEQA2AFgBA0IgCALQgJAKgSAJIgiAFIgBADIgCAEIgTAFgAgQAwgAAVAkIAAAAgAAwARQgFAOgTAEIgDABQASgJAJgKgAAwARIAAAAg");
 	this.shape_85.setTransform(17.9,-48.1);
 
 	this.shape_86 = new cjs.Shape();
-	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIAAAAIAMAAIAGgDIABgCIAWgGIAPgGIADgBQATgEAFgOQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALIgKgQIAKAQQgDAKAEALIAIAOIAEADIgDAEIgBADIAAgKIAAAKIgFAYQABALAIAJIgVAGIAMgaIgMAagAg9FGgAgoFAIAAAAgAgTE3IABgDIAigFIgPAGIgWAGgAAQEvg");
+	this.shape_86.graphics.f("#FFBFBF").s().p("AitGVQiZgUANhuQgQkhBQj9QAUhQAuhGQAbANBQAEIDRgEQC7gDgEAuIgKB5QgUDOAbD/QAWCaiYAeQhIAOhaAAQhYAAhqgOgAg9FGIAVgGIAAAAIAMAAIAGgDIABgCIACgEIABgDIAigFIADgBQATgEAFgOIACgLQABg1g2gFIgGAEQgIgGgOAAQgNAHgEALIgKgQIAKAQQgDAKAEALIAIAOIAAAKIgFAYIgMAagAABE1IgWAGIAWgGIAPgGgAArEcQAKgKAAgLQAAgFgCgFQgLghg2gHQgOgBgOAAIAAAAIAAAAIgNAAIgBAAIgEAAIgGABIAGgBIAEAAIABAAIANAAIAAAAIAAAAQAOAAAOABQA2AHALAhQACAFAAAFQAAALgKAKgAgxEsQABALAIAJIgVAGgAgoFAIAAAAgAgsEUIAAgKIAEADIgDAEIgBADgAgsEKg");
 	this.shape_86.setTransform(18.4,-74.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_86},{t:this.shape_85},{t:this.shape_84},{t:this.shape_83}]}).wait(1));
@@ -7886,14 +7886,14 @@ p.nominalBounds = new cjs.Rectangle(-18.4,-91.9,87,87);
 
 	// Layer 18
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(2,1,1).p("AiiiVIgPhBAi2j3IgFguAiEg3IgWg+AAeC5IgtgvAC8EmIg4gfABpD2Ig0goAgjBxIgng1AhaAgIgeg5");
+	this.shape.graphics.f().s("#000000").ss(2,1,1).p("Ai2j3IgFguAiiiVIgPhBAiEg3IgWg+AgjBxIgng1ABpD2Ig0goAC8EmIg4gfAAeC5IgtgvAhaAgIgeg5");
 	this.shape.setTransform(-70.4,113.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Layer 17
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("ADAlYIg6AgAAMkGIg8ATABpkqIg9AYAhRjrIhBAPAizjWIgMACIAQA2AidBNIgDBCAikCyIgHBBAiph8IAJBEAidgXIABBCAiuEVIgKBE");
+	this.shape_1.graphics.f().s("#000000").ss(2,1,1).p("ADAlYIg6AgAizjWIgMACIAQA2AhRjrIhBAPABpkqIg9AYAAMkGIg8ATAidgXIABBCAiph8IAJBEAikCyIgHBBAidBNIgDBCAiuEVIgKBE");
 	this.shape_1.setTransform(69,69.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
@@ -10603,6 +10603,7 @@ p.nominalBounds = new cjs.Rectangle(-400,-300,800,600.1);
 		*/
 		this.stop();
 		console.log("@我没故事。")
+		continueEightGame();
 	}
 
 	// actions tween:
@@ -10698,7 +10699,7 @@ p.nominalBounds = new cjs.Rectangle(-560.6,183.3,153,206.7);
 	// Mask Layer 54 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	var mask_graphics_35 = new cjs.Graphics().p("A4/VLIAAsBMAibAAAIAAgBMgibAAAIAAweMAx0AAAMgx0AAAIAAt1MAx0AAAIAAN1IAALcQALAIAAAKQAAAehnAWQhmAWiRAAQiRAAhngWQhngWABgeIAAgBIgGAAIAAGGIiuAAIAAKtg");
+	var mask_graphics_35 = new cjs.Graphics().p("A4/VLIAAsBMAibAAAIAAgBMgibAAAIAAweMAx0AAAIAALcQALAIAAAKQAAAehnAWQhmAWiRAAQiRAAhngWQhngWABgeIAAgBIgGAAIAAGGIiuAAIAAKtgA4/nVIAAt1MAx0AAAIAAN1g");
 
 	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(35).to({graphics:mask_graphics_35,x:-192.9,y:-4.5}).wait(50));
 
@@ -10975,14 +10976,6 @@ p.nominalBounds = new cjs.Rectangle(-37,-17.8,69,59.8);
 (lib.button75 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_05block");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 5
 	this.instance = new lib.shape74OverDownHit("synched",0);
 	this.instance.parent = this;
@@ -11033,14 +11026,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,89.9,162.6);
 
 (lib.button67 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_03dock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 32
 	this.instance = new lib.shape58Up("synched",0);
@@ -11099,14 +11084,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 (lib.button66 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_02sock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 21
 	this.instance = new lib.shape52Up("synched",0);
 	this.instance.parent = this;
@@ -11163,14 +11140,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 (lib.button65 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_01cock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 6
 	this.instance = new lib.text45Up("synched",0);
@@ -11234,14 +11203,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88.3,162.6);
 (lib.button64 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_04rock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
-
 	// Layer 25
 	this.instance = new lib.shape37Up("synched",0);
 	this.instance.parent = this;
@@ -11298,14 +11259,6 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-90.9,88,162.6);
 
 (lib.button63 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_1 = function() {
-		playSound("_06clock");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(3));
 
 	// Layer 6
 	this.instance = new lib.text29Up("synched",0);
@@ -11681,7 +11634,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		時間軸會在插入此程式碼的影格停止/暫停。
 		亦可用來停止/暫停影片片段的時間軸。
 		*/
-		
+		var sound = null;
 		this.stop();
 		
 		/* 滑鼠按鍵事件
@@ -11792,6 +11745,252 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 		
 		function fl_MouseClickHandler_8() {
 			this.gotoAndPlay(39);
+		}
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseover", fl_MouseOverHandler);
+		
+		function fl_MouseOverHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.cock.addEventListener("mouseout", fl_MouseOutHandler);
+		
+		function fl_MouseOutHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused = true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rock.addEventListener("mouseover", fl_MouseOverHandler_2);
+		
+		function fl_MouseOverHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound = playSound("_04rock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.rock.addEventListener("mouseout", fl_MouseOutHandler_2);
+		
+		function fl_MouseOutHandler_2()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused = true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clock.addEventListener("mouseover", fl_MouseOverHandler_3);
+		
+		function fl_MouseOverHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound = playSound("_06clock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.clock.addEventListener("mouseout", fl_MouseOutHandler_3);
+		
+		function fl_MouseOutHandler_3()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused = true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sock.addEventListener("mouseover", fl_MouseOverHandler_4);
+		
+		function fl_MouseOverHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound = playSound("_02sock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.sock.addEventListener("mouseout", fl_MouseOutHandler_4);
+		
+		function fl_MouseOutHandler_4()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused=true;
+			// 结束您的自定义代码
+		}
+		
+		
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseover", fl_MouseOverHandler_5);
+		
+		function fl_MouseOverHandler_5()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound = playSound("_03dock");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.dock.addEventListener("mouseout", fl_MouseOutHandler_6);
+		
+		function fl_MouseOutHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			console.log("鼠标已离开");
+			sound.paused = true;
+			// 结束您的自定义代码
+		}
+		
+		/* Mouse Over 事件
+		鼠标悬停到此元件实例上会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标悬停到此元件实例上时，此代码将执行。
+		frequency 是事件应被触发的次数。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseover", fl_MouseOverHandler_6);
+		
+		function fl_MouseOverHandler_6()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标悬停"。
+			console.log("鼠标悬停");
+			sound = playSound("_05block");
+			// 结束您的自定义代码
+		}
+		
+		/* 鼠标离开事件
+		鼠标离开此元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		鼠标离开此元件实例时，此代码将执行。
+		*/
+		var frequency = 3;
+		stage.enableMouseOver(frequency);
+		this.block.addEventListener("mouseout", fl_MouseOutHandler_7);
+		
+		function fl_MouseOutHandler_7()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"鼠标已离开"。
+			sound.paused = true;
+			console.log("鼠标已离开");
+			// 结束您的自定义代码
 		}
 	}
 	this.frame_39 = function() {
@@ -12299,7 +12498,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.falseButton = new lib.button127();
 	this.falseButton.name = "falseButton";
 	this.falseButton.parent = this;
-	this.falseButton.setTransform(1785.8,1328.7,2.3,2.3);
+	this.falseButton.setTransform(1785.8,1335.9,2.3,2.3);
 	this.falseButton._off = true;
 	new cjs.ButtonHelper(this.falseButton, 0, 1, 2, false, new lib.button127(), 3);
 
@@ -12309,7 +12508,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	this.trueButton = new lib.button124();
 	this.trueButton.name = "trueButton";
 	this.trueButton.parent = this;
-	this.trueButton.setTransform(1682.5,1326.5,2.3,2.3);
+	this.trueButton.setTransform(1682.5,1333.7,2.3,2.3);
 	this.trueButton._off = true;
 	new cjs.ButtonHelper(this.trueButton, 0, 1, 2, false, new lib.button124(), 3);
 
@@ -12323,7 +12522,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 
 	this.instance_49 = new lib.text119("synched",0);
 	this.instance_49.parent = this;
-	this.instance_49.setTransform(1041.5,1290.8,2.3,2.3);
+	this.instance_49.setTransform(1041.5,1300.4,2.3,2.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_48}]},29).to({state:[]},5).to({state:[{t:this.instance_49}]},138).wait(1));
 
@@ -12331,17 +12530,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{Mai
 	var mask_1 = new cjs.Shape();
 	mask_1._off = true;
 	var mask_1_graphics_168 = new cjs.Graphics().p("EBNxBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_169 = new cjs.Graphics().p("EA8tBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_170 = new cjs.Graphics().p("EAroBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_171 = new cjs.Graphics().p("EAakBtjIAAzDMCFUAAAIAATDg");
-	var mask_1_graphics_172 = new cjs.Graphics().p("EAJfBtjIAAzDMCFUAAAIAATDg");
+	var mask_1_graphics_169 = new cjs.Graphics().p("EA8tBtDIAAx/MCFUAAAIAAR/g");
+	var mask_1_graphics_170 = new cjs.Graphics().p("EAroBsjIAAw7MCFUAAAIAAQ7g");
+	var mask_1_graphics_171 = new cjs.Graphics().p("EAakBsDIAAv2MCFUAAAIAAP2g");
+	var mask_1_graphics_172 = new cjs.Graphics().p("EAJfBrjIAAuzMCFUAAAIAAOzg");
 
-	this.timeline.addTween(cjs.Tween.get(mask_1).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_1_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_1_graphics_169,x:1241.7,y:701.1}).wait(1).to({graphics:mask_1_graphics_170,x:1132.4,y:701.1}).wait(1).to({graphics:mask_1_graphics_171,x:1023.2,y:701.1}).wait(1).to({graphics:mask_1_graphics_172,x:913.9,y:701.1}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(mask_1).to({graphics:null,x:0,y:0}).wait(168).to({graphics:mask_1_graphics_168,x:1350.9,y:701.1}).wait(1).to({graphics:mask_1_graphics_169,x:1241.7,y:697.9}).wait(1).to({graphics:mask_1_graphics_170,x:1132.4,y:694.7}).wait(1).to({graphics:mask_1_graphics_171,x:1023.2,y:691.5}).wait(1).to({graphics:mask_1_graphics_172,x:913.9,y:688.3}).wait(1));
 
 	// Masked Layer 63 - 62
 	this.instance_50 = new lib.shape118("synched",0);
 	this.instance_50.parent = this;
-	this.instance_50.setTransform(1308.2,1329,2.3,2.3);
+	this.instance_50.setTransform(1829.2,1332.7,2.429,2.3,0,0,0,226.5,1.6);
 	this.instance_50._off = true;
 
 	var maskedShapeInstanceList = [this.instance_50];
