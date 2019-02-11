@@ -11644,6 +11644,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 		
 		this.stop();
+		continueFourGame();
 		console.log("@我没故事。")
 	}
 
