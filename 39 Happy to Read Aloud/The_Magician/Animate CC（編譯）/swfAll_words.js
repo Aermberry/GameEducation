@@ -1973,7 +1973,7 @@ p.nominalBounds = new cjs.Rectangle(-37,-17.8,69,59.8);
 	// Layer 3
 	this.instance = new lib.text31Up("synched",0);
 	this.instance.parent = this;
-	this.instance.setTransform(-33,-13.9);
+	this.instance.setTransform(-32.2,-13.9);
 
 	this.instance_1 = new lib.text33Over("synched",0);
 	this.instance_1.parent = this;
@@ -2004,7 +2004,7 @@ p.nominalBounds = new cjs.Rectangle(-37,-17.8,69,59.8);
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-37,-17.8,72.1,59.8);
+p.nominalBounds = new cjs.Rectangle(-37,-17.8,72.9,59.8);
 
 
 // stage content:
@@ -2020,30 +2020,28 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_4 = function() {
-		playSound("sound13");
+		playSound("sound13_01");
 	}
 	this.frame_269 = function() {
-		/* 滑鼠按鍵事件
-		您可將函數增加至您自訂的程式碼，按一下特定元件實體，就會執行該函數。
+		this.stop();
 		
-		指示:
-		1. 在下方含有「// 啟動您的自訂程式碼」的程式碼之後，將自訂的程式碼加入新行。
-		按下元件實體時，就會執行程式碼。
+		
+		/* 单击以转到帧并播放
+		单击指定的元件实例会将播放头移动到时间轴中的指定帧并继续从该帧回放。
+		可在主时间轴或影片剪辑时间轴上使用。
+		
+		说明:
+		1. 单击元件实例时，用希望播放头移动到的帧编号替换以下代码中的数字 5。
+		2. EaselJS 中的帧编号从 0 开始而不是从 1 开始
 		*/
 		
-		this.exitButton.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.exitButton.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_ClickToGoToAndPlayFromFrame()
 		{
-		this.gotoAndPlay(271)
+			this.gotoAndPlay(270);
 		}
 		
-		/* 在此影格停止
-		時間軸會在插入此程式碼的影格停止/暫停。
-		亦可用來停止/暫停影片片段的時間軸。
-		*/
-		
-		this.stop();
 		
 		/* Mouse Click 事件
 		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
@@ -2053,55 +2051,29 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		单击此元件实例时，此代码将执行。
 		*/
 		
-		this.replayButton.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.replayButton.addEventListener("click", fl_MouseClickHandler_6.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandler_6()
 		{
-			
-			console.log("@我没故事。")
+			location.reload();
 		}
 	}
 	this.frame_274 = function() {
-		/* 滑鼠按鍵事件
-		您可將函數增加至您自訂的程式碼，按一下特定元件實體，就會執行該函數。
+		this.stop();
 		
-		指示:
-		1. 在下方含有「// 啟動您的自訂程式碼」的程式碼之後，將自訂的程式碼加入新行。
-		按下元件實體時，就會執行程式碼。
-		*/
+		this.trueButton.addEventListener("click", fl_MouseClickHandler_4.bind(this));
 		
-		this.trueButton.addEventListener("click", fl_MouseClickHandler.bind(this));
-		
-		function fl_MouseClickHandler()
+		function fl_MouseClickHandler_4()
 		{
 			window.close();
 		}
-		
-		/* 在此影格停止
-		時間軸會在插入此程式碼的影格停止/暫停。
-		亦可用來停止/暫停影片片段的時間軸。
-		*/
-		
-		this.stop();
-		
-		/* 按一下前往影格並停止
-		在特定元件實體上按一下，會將播放磁頭移到時間軸中的特定影格，並停止影片。
-		亦可用於主時間軸或影片片段時間軸。
-		
-		指示:
-		1. 決定您希望按一下元件實體時，播放磁頭前往的影格編號，並在下方程式碼中，將數字 5 取代為該編號。
-		2. EaselJS 中的影格編號從 0 開始，而非 1
-		*/
-		
 		
 		this.falseButton.addEventListener("click", fl_ClickToGoToAndStopAtFrame.bind(this));
 		
 		function fl_ClickToGoToAndStopAtFrame()
 		{
-			this.gotoAndStop(269)
+			this.gotoAndStop(269);
 		}
-		
-		console.log("@我没故事。");
 	}
 
 	// actions tween:
@@ -2367,7 +2339,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.falseButton = new lib.button62();
 	this.falseButton.name = "falseButton";
 	this.falseButton.parent = this;
-	this.falseButton.setTransform(1784,1315.5,2.3,2.3);
+	this.falseButton.setTransform(1784,1323.6,2.3,2.3);
 	this.falseButton._off = true;
 	new cjs.ButtonHelper(this.falseButton, 0, 1, 2, false, new lib.button62(), 3);
 
@@ -2383,7 +2355,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.trueButton = new lib.button59();
 	this.trueButton.name = "trueButton";
 	this.trueButton.parent = this;
-	this.trueButton.setTransform(1680.7,1313.4,2.3,2.3);
+	this.trueButton.setTransform(1680.7,1321.5,2.3,2.3);
 	new cjs.ButtonHelper(this.trueButton, 0, 1, 2, false, new lib.button59(), 3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.exitButton}]},267).to({state:[]},3).to({state:[{t:this.trueButton}]},4).wait(1));
@@ -2395,7 +2367,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	this.instance_34 = new lib.text54("synched",0);
 	this.instance_34.parent = this;
-	this.instance_34.setTransform(1039.7,1277.7,2.3,2.3);
+	this.instance_34.setTransform(1039.7,1285.8,2.3,2.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_33}]}).to({state:[{t:this.instance_33}]},1).to({state:[{t:this.instance_33}]},2).to({state:[]},1).to({state:[{t:this.instance_34}]},270).wait(1));
 	this.timeline.addTween(cjs.Tween.get(this.instance_33).to({regX:0,regY:0,scaleX:1.23,scaleY:1.23,x:919.9,y:505.9},1).to({regX:0.2,regY:0.2,scaleX:0.46,scaleY:0.46,x:920,y:506},2).to({_off:true},1).wait(271));
@@ -2411,17 +2383,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	var mask = new cjs.Shape();
 	mask._off = true;
 	var mask_graphics_270 = new cjs.Graphics().p("EBNoBshIAAzDMCFUAAAIAATDg");
-	var mask_graphics_271 = new cjs.Graphics().p("EA8kBshIAAzDMCFTAAAIAATDg");
-	var mask_graphics_272 = new cjs.Graphics().p("EArfBshIAAzDMCFUAAAIAATDg");
-	var mask_graphics_273 = new cjs.Graphics().p("EAabBshIAAzDMCFTAAAIAATDg");
-	var mask_graphics_274 = new cjs.Graphics().p("EAJWBshIAAzDMCFUAAAIAATDg");
+	var mask_graphics_271 = new cjs.Graphics().p("EA8lBr6IAAxYMCFUAAAIAARYg");
+	var mask_graphics_272 = new cjs.Graphics().p("EAriBrTIAAvtMCFTAAAIAAPtg");
+	var mask_graphics_273 = new cjs.Graphics().p("EAaeBqsIAAuCMCFUAAAIAAOCg");
+	var mask_graphics_274 = new cjs.Graphics().p("EAJaBqFIAAsYMCFUAAAIAAMYg");
 
-	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(270).to({graphics:mask_graphics_270,x:1350,y:694.5}).wait(1).to({graphics:mask_graphics_271,x:1240.7,y:694.5}).wait(1).to({graphics:mask_graphics_272,x:1131.5,y:694.5}).wait(1).to({graphics:mask_graphics_273,x:1022.2,y:694.5}).wait(1).to({graphics:mask_graphics_274,x:913,y:694.5}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(270).to({graphics:mask_graphics_270,x:1350,y:694.5}).wait(1).to({graphics:mask_graphics_271,x:1240.9,y:690.6}).wait(1).to({graphics:mask_graphics_272,x:1131.7,y:686.7}).wait(1).to({graphics:mask_graphics_273,x:1022.6,y:682.8}).wait(1).to({graphics:mask_graphics_274,x:913.4,y:678.9}).wait(1));
 
 	// Masked Layer 3 - 2
 	this.instance_36 = new lib.shape53("synched",0);
 	this.instance_36.parent = this;
-	this.instance_36.setTransform(1306.3,1315.9,2.3,2.3);
+	this.instance_36.setTransform(1827.3,1319.8,2.408,2.3,0,0,0,226.5,1.7);
 	this.instance_36._off = true;
 
 	var maskedShapeInstanceList = [this.instance_36];
@@ -2465,7 +2437,7 @@ lib.properties = {
 	manifest: [
 		{src:"images/swfAll_words_atlas_.png", id:"swfAll_words_atlas_"},
 		{src:"sounds/clock.mp3", id:"clock"},
-		{src:"sounds/sound13.mp3", id:"sound13"},
+		{src:"sounds/sound13_01.mp3", id:"sound13_01"},
 		{src:"sounds/block.mp3", id:"block"},
 		{src:"sounds/rock.mp3", id:"rock"},
 		{src:"sounds/dock.mp3", id:"dock"},
