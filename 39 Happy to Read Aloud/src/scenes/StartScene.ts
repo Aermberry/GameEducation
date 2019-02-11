@@ -20,8 +20,8 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		this.startButton2.visible = false;
 
 		var first = new initOne();
-		// first()
-		continueElevenGame()
+		first()
+		// continueElevenGame()
 		// continueFiveGame();
 	}
 
