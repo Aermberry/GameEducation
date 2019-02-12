@@ -42,6 +42,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeScene = new giraffeScene();
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
+    
     this.onPlayVoice("sound 24_mp3")
   }
 
@@ -55,10 +56,10 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
+    console.log('childrenCreated')
     mouse.enable(this.stage);
     this.normal();
     this.startLoadingAnimation();
-    this.playVoice
     this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
     this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
     this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
@@ -120,8 +121,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     await lzlib.ThreadUtility.sleep(1000)
     await this.invitationAnimations();
     await this.lionDialog.playOnceAsync().then(() => {
+      console.log('lionDialog')
       this.lionDialogText(optionLionText[this.index])
-      lzlib.SoundUtility.playSound(optionLionVoice[this.index]).then(() => {
+      this.playVoice(optionLionVoice[this.index]).then(() => {
         this.headLine(optionAnimText[this.index]);
         this.playVoice(optionAnimVoice[this.index]).then(() => {
           this.statusAnim()
@@ -130,9 +132,15 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     })
   }
 
-  private async playVoice(str: string): Promise<void> {
-    let sound = lzlib.SoundUtility.playSound(str);
-    return sound;
+
+//人物聲道
+  public async playVoice(soundName: string): Promise<void> {
+    let currentSoundChannel:egret.SoundChannel;
+    await RES.getResAsync(soundName);
+    return new Promise<void>((resolve,reject)=>{
+    currentSoundChannel=(RES.getRes(soundName) as egret.Sound).play(0,1);
+    currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);
+    })
   }
 
   private lionDialogText(text: lionDialogText): void {
@@ -213,10 +221,10 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
   // BG播放
-  public onPlayVoice(voice: string): void {
-    this.sound = RES.getRes(voice)
+  public async onPlayVoice(voice: string): Promise<void> {
+    await RES.getResAsync(voice);
+    this.sound = RES.getRes(voice);
     this.soundchannel = this.sound.play(0, -1);
-
   }
 
   public onPauseVoice(): void {

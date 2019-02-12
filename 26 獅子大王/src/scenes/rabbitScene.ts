@@ -54,6 +54,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     mouse.enable(this.stage);
     mouse.setButtonMode(this.bulbGroup, true);
     // RES.getRes("sound 24_mp3").play(0, -1)
+    RES.getResAsync("sound 24_mp3");
     optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3")
 
     this.playAnim();
