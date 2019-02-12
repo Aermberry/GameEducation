@@ -1584,7 +1584,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_166 = function() {
-		playSound("sound23");
+		playSound("sound23_1");
 	}
 	this.frame_209 = function() {
 		/* gotoAndStop(211);
@@ -1741,7 +1741,7 @@ lib.properties = {
 	manifest: [
 		{src:"sounds/sound17.mp3", id:"sound17"},
 		{src:"sounds/sound20.mp3", id:"sound20"},
-		{src:"sounds/sound23.mp3", id:"sound23"},
+		{src:"sounds/sound23_1.mp3", id:"sound23_1"},
 		{src:"sounds/sound26.mp3", id:"sound26"},
 		{src:"sounds/sound6.mp3", id:"sound6"}
 	],

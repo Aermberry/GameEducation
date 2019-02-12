@@ -1584,7 +1584,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_166 = function() {
-		playSound("sound23");
+		playSound("sound23_1");
 	}
 	this.frame_209 = function() {
 		/* gotoAndStop(211);
@@ -1600,6 +1600,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.frame_262 = function() {
 		/* loadMovieNum("Magic2_cond.swf", 0);
 		*/
+		continueFiveGame();
 		console.log("@我没故事。")
 	}
 
@@ -1738,11 +1739,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound17.mp3?1548578017030", id:"sound17"},
-		{src:"sounds/sound20.mp3?1548578017030", id:"sound20"},
-		{src:"sounds/sound23.mp3?1548578017030", id:"sound23"},
-		{src:"sounds/sound26.mp3?1548578017030", id:"sound26"},
-		{src:"sounds/sound6.mp3?1548578017030", id:"sound6"}
+		{src:"sounds/sound17.mp3", id:"sound17"},
+		{src:"sounds/sound20.mp3", id:"sound20"},
+		{src:"sounds/sound23_1.mp3", id:"sound23_1"},
+		{src:"sounds/sound26.mp3", id:"sound26"},
+		{src:"sounds/sound6.mp3", id:"sound6"}
 	],
 	preloads: []
 };

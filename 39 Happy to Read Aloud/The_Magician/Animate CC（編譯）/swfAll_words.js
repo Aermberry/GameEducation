@@ -2435,16 +2435,16 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/swfAll_words_atlas_.png", id:"swfAll_words_atlas_"},
-		{src:"sounds/clock.mp3", id:"clock"},
-		{src:"sounds/sound13_01.mp3", id:"sound13_01"},
-		{src:"sounds/block.mp3", id:"block"},
-		{src:"sounds/rock.mp3", id:"rock"},
-		{src:"sounds/dock.mp3", id:"dock"},
-		{src:"sounds/sound44overtodown.mp3", id:"sound44overtodown"},
-		{src:"sounds/sock.mp3", id:"sock"},
-		{src:"sounds/sound58overtodown.mp3", id:"sound58overtodown"},
-		{src:"sounds/cock.mp3", id:"cock"}
+		{src:"images/swfAll_words_atlas_.png?1549875239720", id:"swfAll_words_atlas_"},
+		{src:"sounds/clock.mp3?1549875239879", id:"clock"},
+		{src:"sounds/sound13_01.mp3?1549875239879", id:"sound13_01"},
+		{src:"sounds/block.mp3?1549875239879", id:"block"},
+		{src:"sounds/rock.mp3?1549875239879", id:"rock"},
+		{src:"sounds/dock.mp3?1549875239879", id:"dock"},
+		{src:"sounds/sound44overtodown.mp3?1549875239879", id:"sound44overtodown"},
+		{src:"sounds/sock.mp3?1549875239879", id:"sock"},
+		{src:"sounds/sound58overtodown.mp3?1549875239879", id:"sound58overtodown"},
+		{src:"sounds/cock.mp3?1549875239879", id:"cock"}
 	],
 	preloads: []
 };

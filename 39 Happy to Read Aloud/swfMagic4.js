@@ -3305,7 +3305,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		playSound("sound6");
 	}
 	this.frame_136 = function() {
-		playSound("sound23");
+		playSound("sound23_4");
 	}
 	this.frame_211 = function() {
 		/* gotoAndStop(213);
@@ -3548,7 +3548,7 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"sounds/sound13.mp3", id:"sound13"},
-		{src:"sounds/sound23.mp3", id:"sound23"},
+		{src:"sounds/sound23_4.mp3", id:"sound23_4"},
 		{src:"sounds/sound33.mp3", id:"sound33"},
 		{src:"sounds/sound36.mp3", id:"sound36"},
 		{src:"sounds/sound37.mp3", id:"sound37"},

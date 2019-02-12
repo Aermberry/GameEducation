@@ -43,7 +43,7 @@
 
         }
         #animation_container, #_preload_div_ ,#animation_container_two ,#_preload_div_two,#animation_container_Three ,#_preload_div_Three,#animation_container_Four,#_preload_div_Four,#animation_container_Five,#_preload_div_Five,#animation_container_Six,#_preload_div_Six,
-        #animation_container_Seven, #_preload_div_Seven,#animation_container_Eight, #_preload_div_Eight,#animation_container_Nine, #_preload_div_Nine,#animation_container_Ten, #_preload_div_Ten,#animation_container_Eleven, #_preload_div_Eleven
+        #animation_container_Seven, #_preload_div_Seven,#animation_container_Eight, #_preload_div_Eight,#animation_container_Nine, #_preload_div_Nine,#animation_container_Ten, #_preload_div_Ten,#animation_container_Eleven, #_preload_div_Eleven,#anim_container_12th,#_preload_div_12th
         {
         position:absolute;
         margin:auto;
@@ -51,7 +51,7 @@
         top:0;bottom:0;
         padding: 30px 0;
     }
-    #animation_two , #animation_Three, #animation_Four, #animation_Five, #animation_Six, #animation_Seven,#animation_Eight,#animation_Nine,#animation_Ten,#animation_Eleven{
+    #animation_two , #animation_Three, #animation_Four, #animation_Five, #animation_Six, #animation_Seven,#animation_Eight,#animation_Nine,#animation_Ten,#animation_Eleven,#animation_12th{
         display: none;
     }
 		@font-face {
@@ -91,20 +91,21 @@
 </head>
 
 <body>
-<img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
+    <img id="logo" style='position: absolute; ' src="images/wlts_logo.jpg" />
 <div id="egret-player" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30"
     data-content-width="1920" data-content-height="1440" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
     data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
 </div>
 <!--第一段游戏-->
 <div id="animation_noe" style="display: none">
-    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1350px">
+<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1350px">
 <canvas id="canvas" width="1920" height="1350px" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1350px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1350px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1350px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 <!--第二段游戏-->
 <div id="animation_two">
@@ -113,8 +114,9 @@
 <div id="dom_overlay_container_two" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_two' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_two' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第三段游戏-->
@@ -124,8 +126,9 @@
 <div id="dom_overlay_container_Three" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Three' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Three' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第四段游戏-->
@@ -135,8 +138,9 @@
 <div id="dom_overlay_container_Four" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Four' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Four' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第五段游戏-->
@@ -146,8 +150,9 @@
 <div id="dom_overlay_container_Five" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Five' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Five' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第六段游戏-->
@@ -157,8 +162,9 @@
 <div id="dom_overlay_container_Six" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Six' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Six' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第七段游戏-->
@@ -168,8 +174,9 @@
 <div id="dom_overlay_container_Seven" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Seven' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Seven' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第八段游戏-->
@@ -179,8 +186,9 @@
 <div id="dom_overlay_container_Eight" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Eight' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Eight' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第九段游戏-->
@@ -190,8 +198,9 @@
 <div id="dom_overlay_container_Nine" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Nine' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Nine' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第十段游戏-->
@@ -201,18 +210,33 @@
 <div id="dom_overlay_container_Ten" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
 </div>
 </div>
-<div id='_preload_div_Ten' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
-<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<!--<div id='_preload_div_Ten' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <!--第十一段游戏-->
 <div id="animation_Eleven">
     <div id="animation_container_Eleven" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
-		<canvas id="canvas_Eleven" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container_Eleven" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
-		</div>
-	</div>
-    <div id='_preload_div_Eleven' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+<canvas id="canvas_Eleven" width="1920" height="1440" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_Eleven" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<!--<div id='_preload_div_Eleven' style='position:absolute; top:0; left:0; display: inline-block; height:1440px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
+</div>
+
+<!--第十二段游戏-->
+<div id="animation_12th">
+    <div id="anim_container_12th" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1350px">
+<canvas id="canvas_12th" width="1920" height="1350px" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<div id="dom_overlay_container_12th" style="pointer-events:none; overflow:hidden; width:1920px; height:1350px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<!--<div id='_preload_div_12th' style='position:absolute; top:0; left:0; display: inline-block; height:1350px; width: 1920px; text-align: center;'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
+<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/>
+</div>-->
 </div>
 
 <div id="copyright" style='position:absolute; bottom:0; height: 20px; color: #666;'> 2010 | <a href="http://wlts.edb.hkedcity.net/en/other/important_notices.html">Important Notices</a> | <a href="http://wlts.edb.hkedcity.net/en/other/privacy_policy.html"
@@ -278,16 +302,18 @@
         });
     });
     xhr.send(null);
+
     // --第一段游戏--
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function initOne() {
-        init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-        function init() {
+        // init();
+        
+       return function init() {
             canvas = document.getElementById("canvas");
             anim_container = document.getElementById("animation_container");
             dom_overlay_container = document.getElementById("dom_overlay_container");
             var animation_noe = document.getElementById("animation_noe");
-            var egret = document.getElementById("egret-player") ;
+            var egret = document.getElementById("egret-player");
             var comp = AdobeAn.getComposition("18E4F3599F228F4DB8C2EEBE1372161F");
             var lib = comp.getLibrary();
             var loader = new createjs.LoadQueue(false);
@@ -307,8 +333,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMovie1();
             stage = new lib.Stage(canvas);
@@ -344,8 +370,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -372,7 +402,7 @@
     // 第二段游戏
     function initTwo() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+       
         function init() {
             canvas = document.getElementById("canvas_two");
             anim_container = document.getElementById("animation_container_two");
@@ -394,8 +424,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_two");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_two");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic1();
             stage = new lib.Stage(canvas);
@@ -431,8 +461,10 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -460,7 +492,7 @@
     // 第三段游戏代码
     function initThree() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+       
         function init() {
             canvas = document.getElementById("canvas_Three");
             anim_container = document.getElementById("animation_container_Three");
@@ -482,8 +514,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Three");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Three");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic1_cond();
             stage = new lib.Stage(canvas);
@@ -519,8 +551,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -548,7 +584,7 @@
     // 第四段游戏代码
     function initFour() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        
         function init() {
             canvas = document.getElementById("canvas_Four");
             anim_container = document.getElementById("animation_container_Four");
@@ -570,11 +606,12 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Four");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Four");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic2();
             stage = new lib.Stage(canvas);
+
             //Registers the "tick" event listener.
             fnStartAnimation = function () {
                 stage.addChild(exportRoot);
@@ -607,8 +644,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -636,7 +677,7 @@
     // 第五段游戏代码
     function initFive() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        
         function init() {
             canvas = document.getElementById("canvas_Five");
             anim_container = document.getElementById("animation_container_Five");
@@ -658,11 +699,12 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Five");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Five");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic2_cond();
             stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
             //Registers the "tick" event listener.
             fnStartAnimation = function () {
                 stage.addChild(exportRoot);
@@ -695,8 +737,13 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -724,7 +771,7 @@
     // 第六段游戏代码
     function initSix() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+       
         function init() {
             canvas = document.getElementById("canvas_Six");
             anim_container = document.getElementById("animation_container_Six");
@@ -746,8 +793,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Six");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Six");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic3();
             stage = new lib.Stage(canvas);
@@ -783,8 +830,13 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -812,7 +864,7 @@
     // 第七段游戏代码
     function initSeven() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        
         function init() {
             canvas = document.getElementById("canvas_Seven");
             anim_container = document.getElementById("animation_container_Seven");
@@ -834,8 +886,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Seven");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Seven");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic3_cond();
             stage = new lib.Stage(canvas);
@@ -871,8 +923,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -900,7 +956,6 @@
     // 第八段游戏代码
     function initEight() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas_Eight");
             anim_container = document.getElementById("animation_container_Eight");
@@ -922,8 +977,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Eight");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Eight");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic4();
             stage = new lib.Stage(canvas);
@@ -959,8 +1014,13 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -988,7 +1048,6 @@
     // 第九段游戏代码
     function initNine() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas_Nine");
             anim_container = document.getElementById("animation_container_Nine");
@@ -1010,8 +1069,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Nine");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Nine");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfMagic4_cond();
             stage = new lib.Stage(canvas);
@@ -1047,8 +1106,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -1075,7 +1138,6 @@
     // 第十段游戏代码
     function initTen() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas_Ten");
             anim_container = document.getElementById("animation_container_Ten");
@@ -1102,8 +1164,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Ten");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Ten");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfTwo_words();
             stage = new lib.Stage(canvas);
@@ -1139,8 +1201,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
+
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -1165,7 +1231,6 @@
     }
     function initEleven() {
         init();
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
         function init() {
             canvas = document.getElementById("canvas_Eleven");
             anim_container = document.getElementById("animation_container_Eleven");
@@ -1192,8 +1257,8 @@
             for (i = 0; i < ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
             }
-            var preloaderDiv = document.getElementById("_preload_div_Eleven");
-            preloaderDiv.style.display = 'none';
+            // var preloaderDiv = document.getElementById("_preload_div_Eleven");
+            // preloaderDiv.style.display = 'none';
             canvas.style.display = 'block';
             exportRoot = new lib.swfAll_words();
             stage = new lib.Stage(canvas);
@@ -1229,8 +1294,12 @@
                     }
                     canvas.width = w * pRatio * sRatio;
                     canvas.height = h * pRatio * sRatio;
-                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+                    // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+                    canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+                    // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
                     stage.scaleX = pRatio * sRatio;
                     stage.scaleY = pRatio * sRatio;
                     lastW = iw; lastH = ih; lastS = sRatio;
@@ -1244,6 +1313,100 @@
             fnStartAnimation();
         }
     }
+
+    //播放第十二段游戲函數執行
+    // function continue12thGame() {
+    //     var animation_noe = document.getElementById('animation_Eleven');
+    //     var animation_two = document.getElementById("animation_12th")
+    //     animation_Eleven.style.display = "none";
+    //     animation_12th.style.display = 'block';
+    //     init12th();
+    // }
+
+    // function init12th() {
+    //     init();
+
+    //     function init() {
+    //         canvas = document.getElementById("canvas_12th");
+    //         anim_container = document.getElementById("anim_container_12th");
+    //         dom_overlay_container = document.getElementById("dom_overlay_container_12th");
+    //         var animation_noe = document.getElementById("animation_12th");
+    //         var egret = document.getElementById("egret-player");
+    //         var comp = AdobeAn.getComposition("18E4F3599F228F4DB8C2EEBE1372161F");
+    //         var lib = comp.getLibrary();
+    //         var loader = new createjs.LoadQueue(false);
+    //         loader.installPlugin(createjs.Sound);
+    //         loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+    //         var lib = comp.getLibrary();
+    //         loader.loadManifest(lib.properties.manifest);
+    //         animation_noe.style.display = 'block';
+    //         egret.style.display = 'none';
+    //     }
+    //     function handleComplete(evt, comp) {
+    //         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+    //         var lib = comp.getLibrary();
+    //         var ss = comp.getSpriteSheet();
+    //         var queue = evt.target;
+    //         var ssMetadata = lib.ssMetadata;
+    //         for (i = 0; i < ssMetadata.length; i++) {
+    //             ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+    //         }
+    //         // var preloaderDiv = document.getElementById("_preload_div_12th");
+    //         // preloaderDiv.style.display = 'none';
+    //         canvas.style.display = 'block';
+    //         exportRoot = new lib.swfMovie1();
+    //         stage = new lib.Stage(canvas);
+    //         //Registers the "tick" event listener.
+    //         fnStartAnimation = function () {
+    //             stage.addChild(exportRoot);
+    //             createjs.Ticker.setFPS(lib.properties.fps);
+    //             createjs.Ticker.addEventListener("tick", stage);
+    //         }
+    //         //Code to support hidpi screens and responsive scaling.
+    //         function makeResponsive(isResp, respDim, isScale, scaleType) {
+    //             var lastW, lastH, lastS = 1;
+    //             window.addEventListener('resize', resizeCanvas);
+    //             resizeCanvas();
+    //             function resizeCanvas() {
+    //                 var w = lib.properties.width, h = lib.properties.height;
+    //                 var iw = window.innerWidth, ih = window.innerHeight;
+    //                 var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+    //                 if (isResp) {
+    //                     if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+    //                         sRatio = lastS;
+    //                     }
+    //                     else if (!isScale) {
+    //                         if (iw < w || ih < h)
+    //                             sRatio = Math.min(xRatio, yRatio);
+    //                     }
+    //                     else if (scaleType == 1) {
+    //                         sRatio = Math.min(xRatio, yRatio);
+    //                     }
+    //                     else if (scaleType == 2) {
+    //                         sRatio = Math.max(xRatio, yRatio);
+    //                     }
+    //                 }
+    //                 canvas.width = w * pRatio * sRatio;
+    //                 canvas.height = h * pRatio * sRatio;
+    //                 // canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w * sRatio + 'px';
+    //                 canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = w * sRatio + 'px';
+
+    //                 // canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h * sRatio - 180 + 'px';
+
+    //                 canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio - 180 + 'px';
+    //                 stage.scaleX = pRatio * sRatio;
+    //                 stage.scaleY = pRatio * sRatio;
+    //                 lastW = iw; lastH = ih; lastS = sRatio;
+    //                 stage.tickOnUpdate = false;
+    //                 stage.update();
+    //                 stage.tickOnUpdate = true;
+    //             }
+    //         }
+    //         makeResponsive(true, 'both', false, 1);
+    //         AdobeAn.compositionLoaded(lib.properties.id);
+    //         fnStartAnimation();
+    //     }
+    // }
 
 
     function playSound(id, loop) {

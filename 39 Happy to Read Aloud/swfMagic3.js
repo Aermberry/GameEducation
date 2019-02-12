@@ -3862,7 +3862,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		playSound("sound6");
 	}
 	this.frame_72 = function() {
-		playSound("sound17");
+		playSound("sound17_03");
 	}
 	this.frame_143 = function() {
 		/* gotoAndStop(145);
@@ -3874,7 +3874,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		*/
 	}
 	this.frame_155 = function() {
-		playSound("sound20");
+		playSound("sound20_03");
 	}
 	this.frame_202 = function() {
 		/* gotoAndStop(204);
@@ -3887,10 +3887,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		this.play();
 	}
 	this.frame_211 = function() {
-		playSound("sound25");
+		playSound("sound25_03");
 	}
 	this.frame_233 = function() {
-		playSound("sound25");
+		playSound("sound25_03");
 	}
 	this.frame_251 = function() {
 		playSound("sound47");
@@ -4206,9 +4206,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/sound17.mp3", id:"sound17"},
-		{src:"sounds/sound20.mp3", id:"sound20"},
-		{src:"sounds/sound25.mp3", id:"sound25"},
+		{src:"sounds/sound17_03.mp3", id:"sound17_03"},
+		{src:"sounds/sound20_03.mp3", id:"sound20_03"},
+		{src:"sounds/sound25_03.mp3", id:"sound25_03"},
 		{src:"sounds/sound47.mp3", id:"sound47"},
 		{src:"sounds/sound50.mp3", id:"sound50"},
 		{src:"sounds/sound51.mp3", id:"sound51"},
