@@ -37,6 +37,9 @@
     }, {
       "name": "lzlib",
       "path": "../lzlib"
+    },{
+      "name":"keyboard",
+      "path":"../egret-game-library-master/keyboard/libsrc"
     }
   ]
 }

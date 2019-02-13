@@ -54,7 +54,7 @@
 	<e:Group id="group" x="423.43" y="77.21">
 		<e:Image source="entirlyCircle_png" x="0" y="0" anchorOffsetX="0" width="1388.07" anchorOffsetY="0" height="890.36"/>
 		<e:Group x="231.12" y="256.12" includeIn="rabbit">
-			<e:Label text="                 要        森林裏\n的            來誰誰參加嘉年\n華。收卡人的姓名應該\n怎樣寫？" x="-54.54" y="0" textColor="0x000000" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true"/>
+			<e:Label text="                 要        森林裏\n的            來誰參加嘉年\n華。收卡人的姓名應該\n怎樣寫？" x="-54.54" y="0" textColor="0x000000" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true"/>
 			<e:Label text="獅子大王" x="-39.4" y="0" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>
 			<e:Label text="邀請" x="406.05" y="3.03" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>
 			<e:Label text="小動物" x="30.29" y="109.09" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>

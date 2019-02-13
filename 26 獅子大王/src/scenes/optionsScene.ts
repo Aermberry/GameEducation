@@ -145,7 +145,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);  
     }).then(()=>{
       let aa= RES.destroyRes(soundName);
-      console.log(aa);
     })
   }
 
