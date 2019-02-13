@@ -45,7 +45,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private initDragDrop(): void {
 		for (let child of this.dragGroup.$children) {
 			let drag = new lzlib.Drag();
-			this.stage.addChild(drag);
+			this.addChild(drag);
 			drag.enableDrag(child, false);
 			child.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDragCancel, this);
 		}
@@ -86,7 +86,6 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				Main.instance.gotoScene(new FinishScene());
 			} else {
 				this.initDropableLabel();
-
 			}
 		}
 		else {
@@ -107,7 +106,6 @@ class MainScene extends eui.Component implements eui.UIComponent {
 			}
 		}
 	}
-
 
 	private onDragCancel(e: lzlib.LzDragEvent): void {
 		this.getCurrentIndex();
