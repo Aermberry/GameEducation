@@ -550,34 +550,34 @@
         <e:Label text="日期：11月9日\n希望你能出席，不見不散！" x="274.44" y="160.24" anchorOffsetX="0"
                  anchorOffsetY="0" textAlign="left" verticalAlign="middle" size="87"
                  textColor="0x000000" lineSpacing="60" bold="true" fontFamily="SourceHanSansHW-Bold" border="false"  height="594.85"/>
-			<e:Group id="editGroup" x="288.88" y="437.89" alpha="1" touchThrough="true" visible="false">
+			<e:Group id="editGroup" x="288.88" y="437.89" alpha="1" touchThrough="true">
 				<e:Group x="-13.7" y="0" touchThrough="true" touchEnabled="true">
 				<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_first" text="" x="0" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="120" height="110" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_first" text="" x="13.34" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="94.66" height="110" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="115.1" y="0" touchThrough="true">
 				<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_second" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_second" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="243.29" y="0" touchThrough="true">
 				<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_third" text="：" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="373.6" y="0" touchThrough="true">
 				<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_fourth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_fourth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="500.87" y="0" touchThrough="true">
 				<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_fifth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_fifth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="631.16" y="0" touchThrough="true">
 				<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_sixth" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_sixth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="761.47" y="0" touchThrough="true">
 				<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_seventh" text="" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_seventh" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 			</e:Group>
 

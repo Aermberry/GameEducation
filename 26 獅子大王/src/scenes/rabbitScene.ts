@@ -67,24 +67,25 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
 
     //鍵盤事件監聽
-    this.kb.addEventListener(KeyBoard.onkeydown,this.onkeydown,this);
+    // this.kb.addEventListener(KeyBoard.onkeydown,this.onkeydown,this);
 
     //焦點感應
-    this.editableText_first.addEventListener(egret.FocusEvent.FOCUS_OUT,this.demo,this);
+    // this.editableText_first.addEventListener(egret.FocusEvent.FOCUS_OUT,this.demo,this);
   }
 
-  private demo():void {
-    this.editableText_second.setFocus()
-    console.log("dsdsdsdsds")
-  }
+  // private demo():void {
+  //   this.editableText_second.setFocus()
+  //   console.log("dsdsdsdsds")
+  // }
 
-  private onkeydown(event){
+  // private onkeydown(event){
 
-    if(this.kb.isContain(event.data,KeyBoard.Tab)){
-      // this.editableText_second.setFocus()
-      console.log(event.data);
-    }
-  }
+  //   if(this.kb.isContain(event.data,KeyBoard.Tab)){
+  //     // this.editableText_second
+
+  //     console.log(event.data);
+  //   }
+  // }
 
   private async hover(): Promise<void> {
     this.bulbComponent.currentState = "hover";
