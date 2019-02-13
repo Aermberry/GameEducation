@@ -57,7 +57,7 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playVoice(voiceName: string): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound(voiceName).then(()=>{
+		let sound = optionsScene.getOptionInstance.playVoice(voiceName).then(()=>{
 			this.calendarTipsGroup.visible=true;
 			this.letterTipsGroup.visible=true;
 		});

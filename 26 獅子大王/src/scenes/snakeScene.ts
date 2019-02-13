@@ -141,7 +141,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		(this.snakeDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.snakeDialogGroup.$children[4] as eui.Group).visible = true;
 		await this.playVoice(animalDialogVoice.snakeVoice_c);
-		lzlib.SoundUtility.playSound("sound 406_mp3");
+		optionsScene.getOptionInstance.playVoice("sound 406_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -172,7 +172,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound(voice.toString())
+		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 

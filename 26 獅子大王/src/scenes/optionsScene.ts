@@ -31,6 +31,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private static _instance: optionsScene;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
+  private currentSoundChannel:egret.SoundChannel
 
   public constructor() {
     super();
@@ -135,11 +136,16 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
 //人物聲道
   public async playVoice(soundName: string): Promise<void> {
-    let currentSoundChannel:egret.SoundChannel;
     await RES.getResAsync(soundName);
+    if(this.currentSoundChannel){
+      this.currentSoundChannel.stop()
+    }
     return new Promise<void>((resolve,reject)=>{
-    currentSoundChannel=(RES.getRes(soundName) as egret.Sound).play(0,1);
-    currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);
+    this.currentSoundChannel=(RES.getRes(soundName) as egret.Sound).play(0,1);
+    this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);  
+    }).then(()=>{
+      let aa= RES.destroyRes(soundName);
+      console.log(aa);
     })
   }
 

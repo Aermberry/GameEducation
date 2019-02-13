@@ -29,7 +29,7 @@ class ratComponent extends eui.Component implements eui.UIComponent {
 
 	private hoverStatus(): void {
 		this.currentState = "hover";
-		lzlib.SoundUtility.playSound("sound 34_mp3")
+		optionsScene.getOptionInstance.playVoice("sound 34_mp3")
 	}
 
 	public clickStatus(): void {

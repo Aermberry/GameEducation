@@ -135,7 +135,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		(this.pigDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.pigDialogGroup.$children[4] as eui.Group).visible = true;
 		await this.playVoice(animalDialogVoice.pigVoice_b);
-		lzlib.SoundUtility.playSound("sound 4 (D10.mp3)_mp3");
+		optionsScene.getOptionInstance.playVoice("sound 4 (D10.mp3)_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -166,7 +166,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound(voice.toString())
+		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 

@@ -31,7 +31,7 @@ class girffeComponent extends eui.Component implements eui.UIComponent {
 
 	private hoverStatus(): void {
 		this.currentState = "hover";
-		lzlib.SoundUtility.playSound("sound 69_mp3");
+		optionsScene.getOptionInstance.playVoice("sound 69_mp3");
 	}
 
 	public clickStatus(): void {

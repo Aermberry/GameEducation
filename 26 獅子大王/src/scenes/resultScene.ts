@@ -26,7 +26,7 @@ class resultScene extends eui.Component implements eui.UIComponent {
 		})
 		this.textBook();
 		this.playAnimation(this.Anim, true);
-		lzlib.SoundUtility.playSound("sound 628_mp3").then(() => {
+		optionsScene.getOptionInstance.playVoice("sound 628_mp3").then(() => {
 			this.achieveComponentGroup.visible = true;
 		})
 		this.achieveComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toInvitationScene, this)

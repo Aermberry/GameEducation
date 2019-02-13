@@ -28,7 +28,7 @@ class flustered extends eui.Component implements  eui.UIComponent {
 	}
 
 	public playVoice(str:string):void {
-		lzlib.SoundUtility.playSound(str);
+		optionsScene.getOptionInstance.playVoice(str);
 	}
 	
 }

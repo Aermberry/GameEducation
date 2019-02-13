@@ -168,7 +168,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound(voice.toString())
+		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 

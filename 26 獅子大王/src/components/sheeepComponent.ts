@@ -34,7 +34,7 @@ class sheeepComponent extends eui.Component implements eui.UIComponent {
 
 	private hoverStatus(): void {
 		this.currentState = "hover";
-		lzlib.SoundUtility.playSound("sound 95_mp3")
+		optionsScene.getOptionInstance.playVoice("sound 95_mp3")
 	}
 
 	public clickStatus(): void {

@@ -10,7 +10,7 @@ class invitation extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
-		lzlib.SoundUtility.playSound("sound 637_mp3");
+		optionsScene.getOptionInstance.playVoice("sound 637_mp3");
 		initTow();
 	}
 }

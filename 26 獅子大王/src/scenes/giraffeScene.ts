@@ -157,7 +157,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice | tipsVoices): Promise<void> {
-		let sound = lzlib.SoundUtility.playSound(voice.toString())
+		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
