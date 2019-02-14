@@ -102,4 +102,5 @@
 		<e:Label text="playing the piano" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" textAlign="center" lineSpacing="15" y="708.55" x="0" anchorOffsetX="0" width="555.91" anchorOffsetY="0" height="69" visible="false"/>
 		<e:Label text="Music Club" fontFamily="Comic Sans MS" size="47" textColor="0x0091FF" y="841.33" x="0.12" anchorOffsetX="0" width="538.64" anchorOffsetY="0" height="65.18" textAlign="center" visible="false"/>
 	</e:Group>
+	<e:Rect id="maskRect" width="810.36" height="1179.74" x="32.12" y="61.18" anchorOffsetX="0" anchorOffsetY="0" rotation="0.18" fillAlpha="0" enabled="false"/>
 </e:Skin>
