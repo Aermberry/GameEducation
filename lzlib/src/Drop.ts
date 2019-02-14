@@ -16,7 +16,7 @@ namespace lzlib {
 	export class Drop extends egret.Sprite {
 		private dropObject: egret.DisplayObject;
 
-		public constructor() 
+		public constructor()
 		{
 			super();
 		}
