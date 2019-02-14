@@ -9,6 +9,8 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private currentQuestionIndex:number = 0; //当前问题
 	private lastQuestionIndex:number=0//記錄上一次的index
 	private currentTarget;
+	private dropGroupArry:lzlib.Drop[]=[]
+	private demo:lzlib.Drop[]
 
 	public constructor() {
 		super();
@@ -54,14 +56,15 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private initDropableLabel(): void {
-
-
+		// let dropGroupArry:lzlib.Drop[]=[]
 		for (let child of this.dropGroup.$children) {
 			let drop = new lzlib.Drop();
 			this.addChild(drop);
 			drop.enableDrop(child);
+			this.dropGroupArry.push(drop)
 			child.addEventListener(lzlib.LzDragEvent.DROP, this.onLabelDrop, this);
 		}
+		console.log(this.dropGroupArry)
 	}
 
 	private async onLabelDrop(e: lzlib.LzDragEvent): Promise<void> {

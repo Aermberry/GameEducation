@@ -82,7 +82,7 @@
 		<e:Button label="dummy" x="0" y="-10" alpha="0" visible="false"/>
 		<e:Button id="clubButton" label="Help" x="0" y="666.94"  visible="false"/>
 	</e:Group>
-	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52" visible="false">
+	<e:Group id="dragGroup" anchorOffsetX="0" width="843.52">
 		<e:Label text="Mary Li" x="294.03" y="75.18" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
 		<e:Label text="3A" x="132.32" y="698" textColor="0x178AF1" size="64" fontFamily="Comic Sans MS"/>
 		<e:Label text="9" x="685.21" y="74.72" size="64" textColor="0x178AF1" fontFamily="Comic Sans MS"/>
