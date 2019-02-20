@@ -552,7 +552,7 @@
 			<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold" scaleX="1"
 			         scaleY="1" />
 		</e:Group>
-		<e:Group id="editGroup" x="255.55" y="304.55" alpha="0" touchThrough="true">
+		<e:Group id="editGroup" x="255.55" y="304.55" alpha="1" touchThrough="true" visible="false">
 			<e:Group x="-13.7" y="0" touchThrough="true">
 			<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
 			<e:EditableText id="editableText_first" text="" x="14" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="right" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="93.33" height="110" y="3" touchEnabled="false" anchorOffsetX="0"/>
@@ -662,6 +662,6 @@
 		<ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
 		                      skinName="achieveComponentSkin" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>
