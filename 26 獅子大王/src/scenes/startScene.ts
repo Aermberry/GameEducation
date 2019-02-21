@@ -6,11 +6,12 @@ module StartGmes {
     private static instance: startScene;
     public constructor() {
       super();
+      startScene.instance = this;
     }
 
     protected partAdded(partName: string, instance: any): void {
       super.partAdded(partName, instance);
-      startScene.instance = this;
+      // startScene.instance = this;
     }
 
     protected childrenCreated(): void {
