@@ -123,6 +123,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.tailWiggle.play(0);
 		await lzlib.ThreadUtility.sleep(2500);
 		await this.invitationCard.playOnceAsync().then(() => {
+			this.plantMaskRect.visible=false;
 			this.lionDialog.playOnceAsync();
 		});
 		await lzlib.ThreadUtility.sleep(2000);
@@ -261,7 +262,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 	optionsScene.getOptionInstance.onPauseVoice();
     this.optionsScene = new optionsScene();
-    this.optionsScene.currentState="snake"
+    this.optionsScene.currentState="giraffe"
 	this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
   }

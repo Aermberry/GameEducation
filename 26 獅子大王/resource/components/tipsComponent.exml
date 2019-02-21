@@ -93,13 +93,13 @@
 		<e:Image source="return_png" x="211.51" y="0"/>
 	</e:Group>
 	<e:Image id="calendar" source="calendar_png" x="905.94" y="154.05" x.giraffe="1108.97" y.giraffe="90.41" includeIn="giraffe" touchEnabled="false" visible="false"/>
-	<e:Group id="letterGroup" includeIn="sheep" x="787.07" y="54.08" visible="false">
-		<e:Image source="letterFormat_png" x="0" y="0" anchorOffsetX="0" width="1129.63" anchorOffsetY="0" height="977.91"/>
-		<e:Label text="收件人姓名" includeIn="sheep" x="81.14" y="61.46" size="50" fontFamily="SourceHanSansHW-Bold"/>
-		<e:Label text="問候語" includeIn="sheep" x="541.75" y="206.91" size="50" fontFamily="SourceHanSansHW-Bold"/>
-		<e:Label text="正文" includeIn="sheep" x="488.75" y="385.27" size="131" fontFamily="SourceHanSansHW-Bold"/>
-		<e:Label text="祝語" includeIn="sheep" x="93.26" y="673.57" size="50" fontFamily="SourceHanSansHW-Bold"/>
-		<e:Label text="發件人姓名" includeIn="sheep" x="554.69" y="761.45" size="50" fontFamily="SourceHanSansHW-Bold"/>
-		<e:Label text="日期" includeIn="sheep" x="917.51" y="867.51" size="50" fontFamily="SourceHanSansHW-Bold"/>
+	<e:Group id="letterGroup" includeIn="sheep" x="1146.07" y="54.08" touchChildren="true" touchEnabled="true" touchThrough="true" width="770" height="879" anchorOffsetX="0" visible="false">
+		<e:Image source="letterFormat_png" x="0" y="0" anchorOffsetX="0" width="770" anchorOffsetY="0" height="879"/>
+		<e:Label text="收件人姓名" includeIn="sheep" x="41.74" y="58.42" size="40" fontFamily="SourceHanSansHW-Bold"/>
+		<e:Label text="問候語" includeIn="sheep" x="344.79" y="185.63" size="40" fontFamily="SourceHanSansHW-Bold"/>
+		<e:Label text="正文" includeIn="sheep" x="291.78" y="357.99" size="120" fontFamily="SourceHanSansHW-Bold"/>
+		<e:Label text="祝語" includeIn="sheep" x="52.38" y="609.92" size="40" fontFamily="SourceHanSansHW-Bold"/>
+		<e:Label text="發件人姓名" includeIn="sheep" x="363.37" y="690.47" size="40" fontFamily="SourceHanSansHW-Bold"/>
+		<e:Label text="日期" includeIn="sheep" x="622.39" y="782.66" size="40" fontFamily="SourceHanSansHW-Bold"/>
 	</e:Group>
 </e:Skin>

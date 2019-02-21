@@ -27,8 +27,8 @@ module StartGmes {
       await this.LoadingAnimation.play();
       setTimeout(() => {
         this.maskLayer.visible = false;
-        startInit();
-        // Main.instance.gotoScene(new optionsScene());
+        // startInit();
+        Main.instance.gotoScene(new optionsScene());
       }, 1500)
     }
 
