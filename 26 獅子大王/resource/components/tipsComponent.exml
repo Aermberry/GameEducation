@@ -64,7 +64,7 @@
 			<e:Label text="日期：六月二十日" y="222.66" x="-15.82" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
 		<e:Group x="293.94" y="221.22" includeIn="rat" x.rat="227.27" y.rat="248.49">
-			<e:Label text="嘉年華在甚麼地方舉行？\n可參考範例的寫法" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+			<e:Label text="嘉年華在甚麼地方舉行？\n可參考範例的寫法：" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
 			<e:Label text="地點：森林小河" y="222.66" x="-15.82" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
 		<e:Group x="293.94" y="221.22" anchorOffsetX="0" width="1037.21" includeIn="pig">
