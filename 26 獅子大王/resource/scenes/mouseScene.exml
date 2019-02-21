@@ -627,7 +627,7 @@
                      lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
         </e:Group>
         <e:Group x="15.14" y="-3.03" visible="false">
-            <e:Label text="啊！原來地點是    \n       ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
+            <e:Label text="啊！原來地點是     \n       ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
                      anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
                      fontFamily="SourceHanSansHW-Bold" bold="true" />
             <e:Label text="森林" anchorOffsetY="0" height="60.3" x="357.35" y="-1.11" anchorOffsetX="0" width="111.37"
