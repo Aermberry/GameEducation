@@ -10174,7 +10174,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 	this.frame_355 = function() {
 		console.log("Here")
-		continueEgretGame();
+		playThreeEgretGame();
 		
 	}
 
