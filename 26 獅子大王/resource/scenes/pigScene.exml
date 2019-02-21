@@ -557,27 +557,27 @@
 				</e:Group>
 				<e:Group x="115.1" y="0" touchThrough="true">
 				<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_second" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_second" text="" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="108" width="94.66" y="2" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="243.29" y="0" touchThrough="true">
 				<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_third" text="：" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_third" text="：" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="373.6" y="0" touchThrough="true">
 				<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_fourth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_fourth" text="" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="500.87" y="0" touchThrough="true">
 				<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_fifth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_fifth" text="" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="631.16" y="0" touchThrough="true">
 				<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_sixth" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_sixth" text="" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 				<e:Group x="761.47" y="0" touchThrough="true">
 				<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-				<e:EditableText id="editableText_seventh" text="" x="13.34" background="true" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
+				<e:EditableText id="editableText_seventh" text="" x="13.34" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="94.66" y="0" touchEnabled="false"/>
 				</e:Group>
 			</e:Group>
 
@@ -650,6 +650,6 @@
         <ns1:achieveComponent id="achieveComponent" width="20" height="20" x="218.34" y="38.82"
                               skinName="achieveComponentSkin" />
     </e:Group>
-    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
+    <e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
     <e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>
