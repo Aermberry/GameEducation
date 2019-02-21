@@ -178,10 +178,10 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	private tips(): void {
 		this.normal();
-		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString());
+		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString(),tipsVoices.snakeTip2.toString());
 		this.tipsComponent.currentState = "snake"
 		this.addChild(this.tipsComponent);
-		this.tipsComponent.playAnim();
+		this.tipsComponent.playSnakeAnim();
 	}
 
 	//驗證模塊

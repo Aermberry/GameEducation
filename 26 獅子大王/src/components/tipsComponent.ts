@@ -15,14 +15,16 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	private calendar:eui.Image;
 
 	private voice: string;
+	private voice2:string;
 
 	private letterTipsGroup:eui.Group;
 
 
-	public constructor(scene: eui.Component, voice: string) {
+	public constructor(scene: eui.Component, voice: string,voice2?:string) {
 		super();
 		this.scene = scene;
-		this.voice = voice
+		this.voice = voice;
+		this.voice2=voice2;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -50,6 +52,15 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		this.playVoice(this.voice).then(() => {
 			this.returnGroup.visible = true;
 		})
+	}
+
+	public async playSnakeAnim():Promise<void>{
+		this.tipsAnim.playOnceAsync();
+		await this.playVoice(this.voice);
+		this.playVoice(this.voice2).then(()=>{
+			this.returnGroup.visible=true;
+		})
+
 	}
 
 	private return(): void {
