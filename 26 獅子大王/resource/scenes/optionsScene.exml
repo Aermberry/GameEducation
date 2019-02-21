@@ -241,7 +241,7 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="167071e3aa4"></w:Config>
-	<e:Label text="我有邀請卡爲證，你們有什麽解釋?" size="94" horizontalCenter="102.5" height="214.27" textAlign="center"
+	<e:Label text="我有邀請卡爲證，你們有什麼解釋?" size="94" horizontalCenter="102.5" height="214.27" textAlign="center"
 	         verticalAlign="middle" top="-27" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" anchorOffsetY="0" bold="true" />
 	<e:Label id="headTitleLabel" text="" textColor="0xe70a0c" size="66" fontFamily="SourceHanSansHW-Bold" x="765.58"
 	         y="184.62" />

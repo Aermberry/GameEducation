@@ -108,14 +108,14 @@ class pigScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
 				(this.pigDialogGroup.$children[3] as eui.Group).visible = true;
-				this.playVoice(animalDialogVoice.pigVoice_a);
+				 this.playVoice(animalDialogVoice.pigVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
 				}, 4000)
 			})
 		})
 
-		await lzlib.ThreadUtility.sleep(14000).then(() => {
+		await lzlib.ThreadUtility.sleep(15000).then(() => {
 			this.lion.source = "lione_Silly_png";
 			this.lionDialogText(lionDialogText.pigText_b);
 		});
