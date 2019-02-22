@@ -184,7 +184,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		let result: boolean = true;
 
 		let dataResult = this.editableText_first.text + this.editableText_second.text + "：" + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
-		var aa = optionsScene.getOptionInstance.getWords;
+		
 		if (optionsScene.getOptionInstance.getWords) {
 			if (dataResult == '時間：下午六時') {
 				return result

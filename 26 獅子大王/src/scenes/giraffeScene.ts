@@ -171,42 +171,45 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_third.text == "5" && this.editableText_fourth.text == "年" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_seventh.text == "月" && this.editableText_eightth.text == "3" && this.editableText_nineth.text == "日";
-		if (!result) {
-			if (this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_fourth.text == "年" && this.editableText_seventh.text == "月" && this.editableText_nineth.text == "日") {
-				// console.log((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "一") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三"))
-				if ((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "十") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三")) {
-					if (this.editableText_third.text == "5" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_eightth.text == "3") {
-						return true
-					}
-					else {
-						this.isNumber = true;
+		// let dataResult = this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_third.text == "5" && this.editableText_fourth.text == "年" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_seventh.text == "月" && this.editableText_eightth.text == "3" && this.editableText_nineth.text == "日";
+		// if (!dataResult) {
+		// 	if (this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_fourth.text == "年" && this.editableText_seventh.text == "月" && this.editableText_nineth.text == "日") {
+		// 		if ((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "十") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三")) {
+		// 			if (this.editableText_third.text == "5" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_eightth.text == "3") {
+		// 				return true
+		// 			}
+		// 			else {
+		// 				this.isNumber = true;
+		// 				return false;
+		// 			}
 
-						// this.giraffeDialogGroup.$children[4].visible = false;
-						// this.giraffeDialogGroup.$children[5].visible = true;
-						// this.bulbGroup.visible = false;
-						// this.achieveGroup.visible = false;
-						// this.playVoice(tipsVoices.giraffeTips).then(() => {
-						// 	this.giraffeDialogGroup.$children[4].visible = true;
-						// 	this.giraffeDialogGroup.$children[5].visible = false;
-						// 	this.bulbGroup.visible = true;
-						// 	this.achieveGroup.visible = true;
-						// });
-						return false;
-					}
+		// 		}
+		// 		else {
+		// 			return false
+		// 		}
+		// 	}
+		// 	else {
+		// 		return false
+		// 	}
+		// }
 
-				}
-				else {
-					return false
-				}
-			}
-			else {
-				return false
+		let isTrue: boolean = true;
+
+		let result = this.editableText_first.text + this.editableText_second.text + this.editableText_third.text + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text + this.editableText_nineth.text;
+
+
+		if (optionsScene.getOptionInstance.getWords) {
+			if (result == "大王五年十一月三日") {
+				return isTrue;
 			}
 		}
-		return result
+		else {
+			if (result == "大王5年11月3日") {
+				return isTrue;
+			}
+		}
 
+		return isTrue = false;
 	}
 
 	//判斷模塊
