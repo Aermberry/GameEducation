@@ -31,7 +31,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private static _instance: optionsScene;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
-  private currentSoundChannel:egret.SoundChannel
+  private currentSoundChannel: egret.SoundChannel
 
   public constructor() {
     super();
@@ -43,7 +43,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeScene = new giraffeScene();
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
-    
+
     this.onPlayVoice("sound 24_mp3")
   }
 
@@ -69,9 +69,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
 
-    // this.currentState = "rat"
-    // this.ratComponent.currentState = "active"
-    // this.ratComponent.touchChildren = true;
+    // this.currentState = "snake"
+    // this.snakeComponent.currentState = "active"
+    // this.snakeComponent.touchChildren = true;
 
     //  this.currentState = "giraffe"
     // this.giraffeComponent.currentState = "active"
@@ -138,17 +138,17 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
 
-//人物聲道
+  //人物聲道
   public async playVoice(soundName: string): Promise<void> {
     await RES.getResAsync(soundName);
-    if(this.currentSoundChannel){
+    if (this.currentSoundChannel) {
       this.currentSoundChannel.stop()
     }
-    return new Promise<void>((resolve,reject)=>{
-    this.currentSoundChannel=(RES.getRes(soundName) as egret.Sound).play(0,1);
-    this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);  
-    }).then(()=>{
-      let aa= RES.destroyRes(soundName);
+    return new Promise<void>((resolve, reject) => {
+      this.currentSoundChannel = (RES.getRes(soundName) as egret.Sound).play(0, 1);
+      this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
+    }).then(() => {
+      let aa = RES.destroyRes(soundName);
     })
   }
 
@@ -236,8 +236,25 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.soundchannel = this.sound.play(0, -1);
   }
 
+  //停止BG播放
   public onPauseVoice(): void {
     this.soundchannel.stop()
   }
 
+  //全局字段判斷
+  private _getWorld: string | number = null;
+
+  public set getWords(value: string | number) {
+    this._getWorld = value;
+  }
+
+  public get getWords(): string | number {
+    var content = Number(this._getWorld)
+    // 如果是漢字的情況
+    if (isNaN(content)) {
+      return 1
+    }
+    // 如果是數字就返回1
+    return 0
+  }
 }

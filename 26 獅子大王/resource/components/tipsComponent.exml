@@ -84,7 +84,7 @@
 			<ns1:bulbComponent id="bulbComponent" includeIn="giraffe" x="187.39" y="0"/>
 		</e:Group>
 	</e:Group>
-	<e:Group id="letterTipsGroup" includeIn="sheep" x="615" y="641" touchEnabled="true">
+	<e:Group id="letterTipsGroup" includeIn="sheep" x="615" y="641" touchEnabled="true" visible="false">
 		<e:Label text="格式參考" includeIn="sheep" x="4.21" y="38.67" textColor="0x000000" size="94" fontFamily="SourceHanSansHW-Bold" bold="true"/>
 		<ns1:bulbComponent includeIn="sheep" x="394.94" y="-4.73"/>
 	</e:Group>

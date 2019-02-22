@@ -108,7 +108,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
 				(this.pigDialogGroup.$children[3] as eui.Group).visible = true;
-				 this.playVoice(animalDialogVoice.pigVoice_a);
+				this.playVoice(animalDialogVoice.pigVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
 				}, 4000)
@@ -183,14 +183,17 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		let result: boolean = true;
 
-		let dataResult = this.editableText_first.text + this.editableText_second.text +"："+this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
-
-		if (dataResult == '時間：下午6時') {
-			return result
+		let dataResult = this.editableText_first.text + this.editableText_second.text + "：" + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
+		var aa = optionsScene.getOptionInstance.getWords;
+		if (optionsScene.getOptionInstance.getWords) {
+			if (dataResult == '時間：下午六時') {
+				return result
+			}
 		}
-
-		if (dataResult == '時間：下午六時') {
-			return result
+		else {
+			if (dataResult == '時間：下午6時') {
+				return result
+			}
 		}
 
 		return result = false

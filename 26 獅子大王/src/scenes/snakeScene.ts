@@ -178,7 +178,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	private tips(): void {
 		this.normal();
-		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString(),tipsVoices.snakeTip2.toString());
+		this.tipsComponent = new tipsComponent(this, tipsVoices.snakeTip.toString(), tipsVoices.snakeTip2.toString());
 		this.tipsComponent.currentState = "snake"
 		this.addChild(this.tipsComponent);
 		this.tipsComponent.playSnakeAnim();
@@ -188,17 +188,19 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private confirmMessage(): boolean {
 		let result: boolean = true;
 
-		let dataResult = this.editableText_first.text + this.editableText_second.text +'：'+ this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text
+		let dataResult = this.editableText_first.text + this.editableText_second.text + '：' + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text
 
-		if (dataResult=='日期：十一月九日') {
-			return result
+		//全局文字判斷
+		optionsScene.getOptionInstance.getWords = this.editableText_fourth.text;
+		//局部文字判斷
+		if (dataResult == '日期：十一月九日') {
+			return result;
+		}
+		else if (dataResult == '日期：11月9日') {
+			return result;
 		}
 
-		if (dataResult=='日期：11月9日') {
-			return result
-		}
-
-		return result=false
+		return result = false;
 	}
 
 	//判斷模塊
