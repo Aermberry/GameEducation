@@ -263,6 +263,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	optionsScene.getOptionInstance.onPauseVoice();
     this.optionsScene = new optionsScene();
     this.optionsScene.currentState="giraffe"
+		this.optionsScene.setLetterImage("giraffe(chinese)_jpg",optionsScene.getOptionInstance.getWords);
 	this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
   }

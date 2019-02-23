@@ -237,6 +237,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
 		this.optionsScene.currentState = "sheep"
+			this.optionsScene.setLetterImage("sheep(chinese)_jpg",optionsScene.getOptionInstance.getWords);
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 

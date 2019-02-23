@@ -46,9 +46,11 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private editableText_eightth: eui.EditableText;
 
 	private optionsScene: optionsScene;
+	private optionsScenes: optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
+		// this.optionsScenes=optionsScene
 		// this.optionsScene=optionsScene;
 	}
 
@@ -192,6 +194,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 		//全局文字判斷
 		optionsScene.getOptionInstance.getWords = this.editableText_fourth.text;
+		console.log(optionsScene.getOptionInstance.getWords)
 		//局部文字判斷
 		if (dataResult == '日期：十一月九日') {
 			return result;
@@ -259,10 +262,15 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
+
+		var imgRes=optionsScene.getOptionInstance.setLetterImage("pigScene",
+		optionsScene.getOptionInstance.getWords);
+		console.log(imgRes);
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		this.optionsScene.currentState = "pig"
+		this.optionsScene.currentState = "pig";
 		this.optionsScene.statueIndex();
+		this.optionsScene.setImgUrl(imgRes);
 		Main.instance.gotoScene(this.optionsScene)
 	}
 }

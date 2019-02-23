@@ -6,6 +6,8 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private displayAnim: egret.tween.TweenGroup;
   private lionDialog: egret.tween.TweenGroup;
   private headTitleLabel: eui.Label;
+  private letter: eui.Image;
+  private letter2: eui.Image;
 
   public rabbitComponent: rabbirComponent;
   public pigComponent: pigComponent;
@@ -29,6 +31,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
   private static statusIndex: number = 0;
   private static _instance: optionsScene;
+  private static urlRes:string=null;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
   private currentSoundChannel: egret.SoundChannel
@@ -57,7 +60,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
-    console.log('childrenCreated')
     mouse.enable(this.stage);
     this.normal();
     this.startLoadingAnimation();
@@ -68,6 +70,13 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
+    console.log("children:"+optionsScene.urlRes)
+    if(optionsScene.getOptionInstance.getWords){
+           this.letter.source=optionsScene.urlRes
+           console.log(this.letter.source);
+           console.log("中文")
+    }
+ 
 
     // this.currentState = "snake"
     // this.snakeComponent.currentState = "active"
@@ -194,27 +203,27 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private statusAnim(): void {
     switch (this.index) {
       case "0":
-        this.rabbitComponent.currentState = "active"
+        this.rabbitComponent.currentState = "active";
         this.rabbitComponent.touchChildren = true;
         break;
       case "1":
-        this.snakeComponent.currentState = "active"
+        this.snakeComponent.currentState = "active";
         this.snakeComponent.touchChildren = true;
         break;
       case "2":
-        this.pigComponent.currentState = "active"
+        this.pigComponent.currentState = "active";
         this.pigComponent.touchChildren = true;
         break;
       case "3":
-        this.ratComponent.currentState = "active"
+        this.ratComponent.currentState = "active";
         this.ratComponent.touchChildren = true;
         break;
       case "4":
-        this.sheepComponent.currentState = "active"
+        this.sheepComponent.currentState = "active";
         this.sheepComponent.touchChildren = true;
         break;
       default:
-        this.giraffeComponent.currentState = "active"
+        this.giraffeComponent.currentState = "active";
         this.giraffeComponent.touchChildren = true;
         break;
     }
@@ -242,19 +251,49 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
   //全局字段判斷
-  private _getWorld: string | number = null;
+  private static _getWorld: string | number = null;
 
   public set getWords(value: string | number) {
-    this._getWorld = value;
+    optionsScene._getWorld = value;
   }
 
   public get getWords(): string | number {
-    var content = Number(this._getWorld)
+    console.log("_getWorld:" + optionsScene._getWorld)
+    var content = Number(optionsScene._getWorld)
+
     // 如果是漢字的情況
     if (isNaN(content)) {
+      console.log("isNaN:" + isNaN(content));
+      console.log("option:" + 1)
       return 1
     }
+    console.log("option:" + 0)
     // 如果是數字就返回1
     return 0
+  }
+
+  //根據返回的全局判斷來換背景圖
+  public setLetterImage(valueScens: string, num: string | number): string {
+    if (num) {
+      console.log("num:" + num + "value:" + valueScens);
+      // await RES.getResAsync(value)
+      // await lzlib.ThreadUtility.sleep(3000)
+      this.letter.visible=false;
+      this.letter2.visible=true;
+      console.log(valueScens)
+
+      if(valueScens=="pigScene"){
+        switch(num){
+          case 1:
+          return "pig(chinese)_jpg"
+          default:
+          return "pig_png"
+        }
+      }
+    }
+  }
+
+  public setImgUrl(value:string):void{
+    optionsScene.urlRes=value
   }
 }

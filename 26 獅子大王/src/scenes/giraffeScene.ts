@@ -171,28 +171,6 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		// let dataResult = this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_third.text == "5" && this.editableText_fourth.text == "年" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_seventh.text == "月" && this.editableText_eightth.text == "3" && this.editableText_nineth.text == "日";
-		// if (!dataResult) {
-		// 	if (this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_fourth.text == "年" && this.editableText_seventh.text == "月" && this.editableText_nineth.text == "日") {
-		// 		if ((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "十") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三")) {
-		// 			if (this.editableText_third.text == "5" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_eightth.text == "3") {
-		// 				return true
-		// 			}
-		// 			else {
-		// 				this.isNumber = true;
-		// 				return false;
-		// 			}
-
-		// 		}
-		// 		else {
-		// 			return false
-		// 		}
-		// 	}
-		// 	else {
-		// 		return false
-		// 	}
-		// }
-
 		let isTrue: boolean = true;
 
 		let result = this.editableText_first.text + this.editableText_second.text + this.editableText_third.text + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text + this.editableText_nineth.text;

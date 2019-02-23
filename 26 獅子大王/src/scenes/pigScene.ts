@@ -261,6 +261,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
 		this.optionsScene.currentState = "rat"
+			this.optionsScene.setLetterImage("rat(chinese)_jpg",optionsScene.getOptionInstance.getWords);
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}
