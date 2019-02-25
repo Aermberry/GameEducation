@@ -262,15 +262,10 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-
-		var imgRes=optionsScene.getOptionInstance.setLetterImage("pigScene",
-		optionsScene.getOptionInstance.getWords);
-		console.log(imgRes);
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		this.optionsScene.currentState = "pig";
+		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "pigCh":this.optionsScene.currentState="pig";
 		this.optionsScene.statueIndex();
-		this.optionsScene.setImgUrl(imgRes);
 		Main.instance.gotoScene(this.optionsScene)
 	}
 }

@@ -44,6 +44,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private editableText_sixth: eui.EditableText;
 	private editableText_seventh: eui.EditableText;
 
+	private Textboxes:eui.Label;
 	private optionsScene: optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
@@ -62,12 +63,20 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		this.judgmentstypes();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='日期：十一月九日\n希望你能出席，不見不散！'
+		}
 	}
 
 	private async hover(): Promise<void> {
@@ -260,8 +269,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		this.optionsScene.currentState = "rat"
-			this.optionsScene.setLetterImage("rat(chinese)_jpg",optionsScene.getOptionInstance.getWords);
+		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "ratCH":this.optionsScene.currentState="rat";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}

@@ -46,6 +46,8 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private editableText_second: eui.EditableText;
 	private editableText_third: eui.EditableText;
 
+	private Textboxes:eui.Label;
+
 	private optionsScene: optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
@@ -62,6 +64,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 		// RES.getRes("sound 24_mp3").play(0, -1)
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		this.judgmentstypes();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -76,6 +79,13 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 			this.initDrag();
 		}, this);
 
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林公園\n希望你能出席，不見不散 ！'
+		}
 	}
 
 	private async hover(): Promise<void> {
@@ -262,8 +272,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 	optionsScene.getOptionInstance.onPauseVoice();
     this.optionsScene = new optionsScene();
-    this.optionsScene.currentState="giraffe"
-		this.optionsScene.setLetterImage("giraffe(chinese)_jpg",optionsScene.getOptionInstance.getWords);
+	optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "giraffeCH":this.optionsScene.currentState="giraffe";
 	this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
   }

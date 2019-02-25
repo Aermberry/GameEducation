@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="invitationSkin" width="1920" height="1440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16730373aef" ></w:Config>
-	<e:Image source="invitation_png" verticalCenter="0.5" horizontalCenter="4" anchorOffsetX="0" width="1563.64" anchorOffsetY="0" height="1440.6"/>
+	<e:Image id="intvitationLetter01" verticalCenter="0.5" horizontalCenter="4" anchorOffsetX="0" width="1563.64" anchorOffsetY="0" height="1440.6" source="invitation(number)_jpg"/>
 	<ns1:achieveComponent x="1489.64" y="1251" visible="false"/>
 	<e:Label text="完成" x="1215.64" y="1281" size="116" textColor="0x000000" bold="true" visible="false"/>
 </e:Skin>

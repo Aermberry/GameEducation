@@ -35,6 +35,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private lion_active: eui.Image;
 	private giraffe: eui.Image;
 
+	private Textboxes:eui.Label;
+
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
 	private editableText_third: eui.EditableText;
@@ -63,6 +65,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
+		this.judgmentstypes();
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -70,6 +73,13 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散！'
+		}
 	}
 
 	private async hover(): Promise<void> {

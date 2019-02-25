@@ -6,8 +6,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private displayAnim: egret.tween.TweenGroup;
   private lionDialog: egret.tween.TweenGroup;
   private headTitleLabel: eui.Label;
-  private letter: eui.Image;
-  private letter2: eui.Image;
+  private plantMaskRect: eui.Rect;
 
   public rabbitComponent: rabbirComponent;
   public pigComponent: pigComponent;
@@ -31,7 +30,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
   private static statusIndex: number = 0;
   private static _instance: optionsScene;
-  private static urlRes:string=null;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
   private currentSoundChannel: egret.SoundChannel
@@ -70,14 +68,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
-    console.log("children:"+optionsScene.urlRes)
-    if(optionsScene.getOptionInstance.getWords){
-           this.letter.source=optionsScene.urlRes
-           console.log(this.letter.source);
-           console.log("中文")
-    }
- 
-
     // this.currentState = "snake"
     // this.snakeComponent.currentState = "active"
     // this.snakeComponent.touchChildren = true;
@@ -135,6 +125,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     await lzlib.ThreadUtility.sleep(1000)
     await this.invitationAnimations();
     await this.lionDialog.playOnceAsync().then(() => {
+      this.plantMaskRect.visible = false;
       console.log('lionDialog')
       this.lionDialogText(optionLionText[this.index])
       this.playVoice(optionLionVoice[this.index]).then(() => {
@@ -270,30 +261,5 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     console.log("option:" + 0)
     // 如果是數字就返回1
     return 0
-  }
-
-  //根據返回的全局判斷來換背景圖
-  public setLetterImage(valueScens: string, num: string | number): string {
-    if (num) {
-      console.log("num:" + num + "value:" + valueScens);
-      // await RES.getResAsync(value)
-      // await lzlib.ThreadUtility.sleep(3000)
-      this.letter.visible=false;
-      this.letter2.visible=true;
-      console.log(valueScens)
-
-      if(valueScens=="pigScene"){
-        switch(num){
-          case 1:
-          return "pig(chinese)_jpg"
-          default:
-          return "pig_png"
-        }
-      }
-    }
-  }
-
-  public setImgUrl(value:string):void{
-    optionsScene.urlRes=value
   }
 }
