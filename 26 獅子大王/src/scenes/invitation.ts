@@ -1,6 +1,6 @@
 class invitation extends eui.Component implements eui.UIComponent {
 
-	private intvitationLetter01:eui.Image;
+	private intvitationLetter01: eui.Image;
 	public constructor() {
 		super();
 	}
@@ -11,19 +11,18 @@ class invitation extends eui.Component implements eui.UIComponent {
 
 	protected async childrenCreated(): Promise<void> {
 		super.childrenCreated();
+		this.judgmentstypes();
 		optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
-	 	optionsScene.getOptionInstance.playVoice("sound 637_mp3");
-		 this.judgmentstypes();
-		setTimeout(()=>{
+		optionsScene.getOptionInstance.playVoice("sound 637_mp3").then(() => {
 			optionsScene.getOptionInstance.onPauseVoice();
 			endInit()
-		},10000)
+		});
 	}
 
 	//文字類型判斷
-	private judgmentstypes():void {
-		if(optionsScene.getOptionInstance.getWords){
-			this.intvitationLetter01.source='invitation_png'
+	private judgmentstypes(): void {
+		if (optionsScene.getOptionInstance.getWords) {
+			this.intvitationLetter01.source = 'invitation_png'
 		}
 	}
 
