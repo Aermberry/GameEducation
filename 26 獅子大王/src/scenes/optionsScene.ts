@@ -6,6 +6,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private displayAnim: egret.tween.TweenGroup;
   private lionDialog: egret.tween.TweenGroup;
   private headTitleLabel: eui.Label;
+  private plantMaskRect: eui.Rect;
 
   public rabbitComponent: rabbirComponent;
   public pigComponent: pigComponent;
@@ -31,7 +32,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private static _instance: optionsScene;
   private sound: egret.Sound
   private soundchannel: egret.SoundChannel
-  private currentSoundChannel:egret.SoundChannel
+  private currentSoundChannel: egret.SoundChannel
 
   public constructor() {
     super();
@@ -43,7 +44,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeScene = new giraffeScene();
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
-    
+
     this.onPlayVoice("sound 24_mp3")
   }
 
@@ -57,7 +58,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
 
   protected childrenCreated(): void {
     super.childrenCreated();
-    console.log('childrenCreated')
     mouse.enable(this.stage);
     this.normal();
     this.startLoadingAnimation();
@@ -68,8 +68,11 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
+    // this.currentState = "snake"
+    // this.snakeComponent.currentState = "active"
+    // this.snakeComponent.touchChildren = true;
 
-    // this.currentState = "giraffe"
+    //  this.currentState = "giraffe"
     // this.giraffeComponent.currentState = "active"
     // this.giraffeComponent.touchChildren = true;
   }
@@ -122,6 +125,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     await lzlib.ThreadUtility.sleep(1000)
     await this.invitationAnimations();
     await this.lionDialog.playOnceAsync().then(() => {
+      this.plantMaskRect.visible = false;
       console.log('lionDialog')
       this.lionDialogText(optionLionText[this.index])
       this.playVoice(optionLionVoice[this.index]).then(() => {
@@ -134,17 +138,17 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
 
-//人物聲道
+  //人物聲道
   public async playVoice(soundName: string): Promise<void> {
     await RES.getResAsync(soundName);
-    if(this.currentSoundChannel){
+    if (this.currentSoundChannel) {
       this.currentSoundChannel.stop()
     }
-    return new Promise<void>((resolve,reject)=>{
-    this.currentSoundChannel=(RES.getRes(soundName) as egret.Sound).play(0,1);
-    this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE,resolve,this);  
-    }).then(()=>{
-      let aa= RES.destroyRes(soundName);
+    return new Promise<void>((resolve, reject) => {
+      this.currentSoundChannel = (RES.getRes(soundName) as egret.Sound).play(0, 1);
+      this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
+    }).then(() => {
+      let aa = RES.destroyRes(soundName);
     })
   }
 
@@ -190,27 +194,27 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   private statusAnim(): void {
     switch (this.index) {
       case "0":
-        this.rabbitComponent.currentState = "active"
+        this.rabbitComponent.currentState = "active";
         this.rabbitComponent.touchChildren = true;
         break;
       case "1":
-        this.snakeComponent.currentState = "active"
+        this.snakeComponent.currentState = "active";
         this.snakeComponent.touchChildren = true;
         break;
       case "2":
-        this.pigComponent.currentState = "active"
+        this.pigComponent.currentState = "active";
         this.pigComponent.touchChildren = true;
         break;
       case "3":
-        this.ratComponent.currentState = "active"
+        this.ratComponent.currentState = "active";
         this.ratComponent.touchChildren = true;
         break;
       case "4":
-        this.sheepComponent.currentState = "active"
+        this.sheepComponent.currentState = "active";
         this.sheepComponent.touchChildren = true;
         break;
       default:
-        this.giraffeComponent.currentState = "active"
+        this.giraffeComponent.currentState = "active";
         this.giraffeComponent.touchChildren = true;
         break;
     }
@@ -232,8 +236,30 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.soundchannel = this.sound.play(0, -1);
   }
 
+  //停止BG播放
   public onPauseVoice(): void {
     this.soundchannel.stop()
   }
 
+  //全局字段判斷
+  private static _getWorld: string | number = null;
+
+  public set getWords(value: string | number) {
+    optionsScene._getWorld = value;
+  }
+
+  public get getWords(): string | number {
+    console.log("_getWorld:" + optionsScene._getWorld)
+    var content = Number(optionsScene._getWorld)
+
+    // 如果是漢字的情況
+    if (isNaN(content)) {
+      console.log("isNaN:" + isNaN(content));
+      console.log("option:" + 1)
+      return 1
+    }
+    console.log("option:" + 0)
+    // 如果是數字就返回1
+    return 0
+  }
 }

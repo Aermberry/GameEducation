@@ -35,7 +35,9 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 	private lion: eui.Image;
 	private lion_active: eui.Image;
-	private ratImage: eui.Image
+	private ratImage: eui.Image;
+
+	private Textboxes:eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -61,6 +63,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
+		this.judgmentstypes();
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -68,6 +71,13 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時'
+		}
 	}
 
 	private async hover(): Promise<void> {
@@ -236,7 +246,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		this.optionsScene.currentState = "sheep"
+		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "sheepCH":this.optionsScene.currentState="sheep";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 

@@ -44,6 +44,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private editableText_sixth: eui.EditableText;
 	private editableText_seventh: eui.EditableText;
 
+	private Textboxes:eui.Label;
 	private optionsScene: optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
@@ -62,12 +63,20 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		this.judgmentstypes();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='日期：十一月九日\n希望你能出席，不見不散！'
+		}
 	}
 
 	private async hover(): Promise<void> {
@@ -108,7 +117,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
 				(this.pigDialogGroup.$children[3] as eui.Group).visible = true;
-				 this.playVoice(animalDialogVoice.pigVoice_a);
+				this.playVoice(animalDialogVoice.pigVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
 				}, 4000)
@@ -183,14 +192,17 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		let result: boolean = true;
 
-		let dataResult = this.editableText_first.text + this.editableText_second.text +"："+this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
-
-		if (dataResult == '時間：下午6時') {
-			return result
+		let dataResult = this.editableText_first.text + this.editableText_second.text + "：" + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
+		
+		if (optionsScene.getOptionInstance.getWords) {
+			if (dataResult == '時間：下午六時') {
+				return result
+			}
 		}
-
-		if (dataResult == '時間：下午六時') {
-			return result
+		else {
+			if (dataResult == '時間：下午6時') {
+				return result
+			}
 		}
 
 		return result = false
@@ -257,7 +269,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		this.optionsScene.currentState = "rat"
+		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "ratCH":this.optionsScene.currentState="rat";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}

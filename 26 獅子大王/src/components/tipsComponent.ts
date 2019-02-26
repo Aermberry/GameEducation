@@ -6,7 +6,6 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 
 	private returnGroup: eui.Group;
 	private calendarTipsGroup:eui.Group;
-
 	private letterGroup:eui.Group;
 
 	private scene: eui.Component;
@@ -30,8 +29,6 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 	protected partAdded(partName: string, instance: any): void {
 
 		super.partAdded(partName, instance);
-
-		
 		
 	}
 
@@ -60,7 +57,6 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 		this.playVoice(this.voice2).then(()=>{
 			this.returnGroup.visible=true;
 		})
-
 	}
 
 	private return(): void {

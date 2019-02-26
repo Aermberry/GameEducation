@@ -1,6 +1,7 @@
 class resultScene extends eui.Component implements eui.UIComponent {
 
 	private commitLabel: eui.Label;
+	private plantMaskRect:maskPanel
 
 	private Anim: egret.tween.TweenGroup;
 	private plantMask: egret.tween.TweenGroup;
@@ -22,6 +23,7 @@ class resultScene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		this.plantMask.playOnceAsync().then(() => {
 			// RES.getRes("sound 627_mp3").play(0, -1)
+			this.plantMaskRect.visible=false;
 			optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
 		})
 		this.textBook();

@@ -35,6 +35,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private lion_active: eui.Image;
 	private giraffe: eui.Image;
 
+	private Textboxes:eui.Label;
+
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
 	private editableText_third: eui.EditableText;
@@ -63,6 +65,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
+		this.judgmentstypes();
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -70,6 +73,13 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+	}
+
+	//文字類型判斷
+	private judgmentstypes():void {
+		if(optionsScene.getOptionInstance.getWords){
+			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散！'
+		}
 	}
 
 	private async hover(): Promise<void> {
@@ -171,42 +181,23 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//驗證模塊
 	private confirmMessage(): boolean {
-		var children = this.editGroup.$children;
-		let result = this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_third.text == "5" && this.editableText_fourth.text == "年" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_seventh.text == "月" && this.editableText_eightth.text == "3" && this.editableText_nineth.text == "日";
-		if (!result) {
-			if (this.editableText_first.text == "大" && this.editableText_second.text == "王" && this.editableText_fourth.text == "年" && this.editableText_seventh.text == "月" && this.editableText_nineth.text == "日") {
-				// console.log((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "一") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三"))
-				if ((this.editableText_third.text == "5" || this.editableText_third.text == "五") && (this.editableText_fifth.text == "1" || this.editableText_fifth.text == "十") && (this.editableText_sixth.text == "1" || this.editableText_sixth.text == "一") && (this.editableText_eightth.text == "3" || this.editableText_eightth.text == "三")) {
-					if (this.editableText_third.text == "5" && this.editableText_fifth.text == "1" && this.editableText_sixth.text == "1" && this.editableText_eightth.text == "3") {
-						return true
-					}
-					else {
-						this.isNumber = true;
+		let isTrue: boolean = true;
 
-						// this.giraffeDialogGroup.$children[4].visible = false;
-						// this.giraffeDialogGroup.$children[5].visible = true;
-						// this.bulbGroup.visible = false;
-						// this.achieveGroup.visible = false;
-						// this.playVoice(tipsVoices.giraffeTips).then(() => {
-						// 	this.giraffeDialogGroup.$children[4].visible = true;
-						// 	this.giraffeDialogGroup.$children[5].visible = false;
-						// 	this.bulbGroup.visible = true;
-						// 	this.achieveGroup.visible = true;
-						// });
-						return false;
-					}
+		let result = this.editableText_first.text + this.editableText_second.text + this.editableText_third.text + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text + this.editableText_nineth.text;
 
-				}
-				else {
-					return false
-				}
-			}
-			else {
-				return false
+
+		if (optionsScene.getOptionInstance.getWords) {
+			if (result == "大王五年十一月三日") {
+				return isTrue;
 			}
 		}
-		return result
+		else {
+			if (result == "大王5年11月3日") {
+				return isTrue;
+			}
+		}
 
+		return isTrue = false;
 	}
 
 	//判斷模塊

@@ -38,14 +38,10 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private editableText_second: eui.EditableText;
   private editableText_third: eui.EditableText;
 
-  //鍵盤事件
-  private kb:KeyBoard;
-
   private optionsScene: optionsScene;
   public constructor(/*optionsScene: optionsScene*/) {
     super();
     // this.optionsScene = optionsScene;
-    this.kb=new KeyBoard();
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -56,7 +52,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
     mouse.enable(this.stage);
     mouse.setButtonMode(this.bulbGroup, true);
-    // RES.getRes("sound 24_mp3").play(0, -1)
     optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3")
 
     this.playAnim();
@@ -65,27 +60,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
-
-    //鍵盤事件監聽
-    // this.kb.addEventListener(KeyBoard.onkeydown,this.onkeydown,this);
-
-    //焦點感應
-    // this.editableText_first.addEventListener(egret.FocusEvent.FOCUS_OUT,this.demo,this);
   }
-
-  // private demo():void {
-  //   this.editableText_second.setFocus()
-  //   console.log("dsdsdsdsds")
-  // }
-
-  // private onkeydown(event){
-
-  //   if(this.kb.isContain(event.data,KeyBoard.Tab)){
-  //     // this.editableText_second
-
-  //     console.log(event.data);
-  //   }
-  // }
 
   private async hover(): Promise<void> {
     this.bulbComponent.currentState = "hover";
