@@ -5484,6 +5484,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 	this.frame_1042 = function() {
 		console.log("here")
+		createjs.Sound.stop();
 		playTowEgretGame();
 	}
 
