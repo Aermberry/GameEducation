@@ -72,9 +72,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     // this.snakeComponent.currentState = "active"
     // this.snakeComponent.touchChildren = true;
 
-     this.currentState = "giraffe"
-    this.giraffeComponent.currentState = "active"
-    this.giraffeComponent.touchChildren = true;
+    //  this.currentState = "giraffe"
+    // this.giraffeComponent.currentState = "active"
+    // this.giraffeComponent.touchChildren = true;
   }
 
   private rabbiteEvet(): void {
