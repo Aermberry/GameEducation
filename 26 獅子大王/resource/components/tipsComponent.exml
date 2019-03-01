@@ -68,7 +68,7 @@
 			<e:Label text="地點：森林小河" y="222.66" x="-15.82" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
 		<e:Group x="293.94" y="221.22" anchorOffsetX="0" width="1037.21" includeIn="pig">
-			<e:Label text="嘉年華在甚麽時間舉\n行？可參考範例的寫法：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+			<e:Label text="嘉年華在甚麼時間舉\n行？可參考範例的寫法：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
 			<e:Label text="時間：上午十時" y="225.69" x="-70.37" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
 		</e:Group>
 		<e:Group x="293.94" y="221.22" includeIn="sheep" x.sheep="336.37">
