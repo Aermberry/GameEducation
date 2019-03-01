@@ -69,13 +69,13 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
 
-    this.currentState = "sheep"
-    this.sheepComponent.currentState = "active"
-    this.sheepComponent.touchChildren = true;
+    // this.currentState = "pig"
+    // this.pigComponent.currentState = "active"
+    // this.pigComponent.touchChildren = true;
 
-    //  this.currentState = "giraffe"
-    // this.giraffeComponent.currentState = "active"
-    // this.giraffeComponent.touchChildren = true;
+     this.currentState = "giraffe"
+    this.giraffeComponent.currentState = "active"
+    this.giraffeComponent.touchChildren = true;
   }
 
   private rabbiteEvet(): void {

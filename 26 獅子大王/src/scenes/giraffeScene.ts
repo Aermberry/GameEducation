@@ -35,7 +35,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private lion_active: eui.Image;
 	private giraffe: eui.Image;
 
-	private Textboxes:eui.Label;
+	private Textboxes: eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -47,12 +47,12 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private editableText_eightth: eui.EditableText;
 	private editableText_nineth: eui.EditableText;
 
-	private isNumber: boolean = null;
+	private isMessageFormat: boolean = true;
+
 	private optionsScene: optionsScene;
 
-	public constructor(/*optionsScene:optionsScene*/) {
+	public constructor() {
 		super();
-		// this.optionsScene=optionsScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -76,9 +76,9 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	//文字類型判斷
-	private judgmentstypes():void {
-		if(optionsScene.getOptionInstance.getWords){
-			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散！'
+	private judgmentstypes(): void {
+		if (optionsScene.getOptionInstance.getWords) {
+			this.Textboxes.text = '你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散！'
 		}
 	}
 
@@ -190,13 +190,22 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 			if (result == "大王五年十一月三日") {
 				return isTrue;
 			}
+			else if (result == "大王5年11月3日") {
+				this.isMessageFormat = true
+				return isTrue = false;
+			}
 		}
 		else {
 			if (result == "大王5年11月3日") {
 				return isTrue;
 			}
+			else if (result == "大王五年十一月三日") {
+				this.isMessageFormat = true
+				return isTrue = false;
+			}
 		}
 
+		this.isMessageFormat = false;
 		return isTrue = false;
 	}
 
@@ -226,10 +235,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		}
 		else {
 
-			if (!this.isNumber) {
-				this.empty();
-				this.tipsDialog();
-			} else {
+			if (this.isMessageFormat) {
 				this.giraffeDialogGroup.$children[4].visible = false;
 				this.giraffeDialogGroup.$children[5].visible = true;
 				this.bulbGroup.visible = false;
@@ -237,19 +243,24 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 				this.playVoice(tipsVoices.giraffeTips).then(() => {
 					this.tipsDialog();
 				})
+			} else {
+
+				this.empty();
+				this.tipsDialog();
+
 			}
 		}
 	}
 
-	private tipsDialog(): void {
+	private tipsDialog(textword01:number=4,textword02:number=2): void {
 		this.bulbGroup.visible = false;
 		this.achieveGroup.visible = false;
-		this.giraffeDialogGroup.$children[4].visible = false
+		this.giraffeDialogGroup.$children[textword01].visible = false
 		this.giraffeDialogGroup.$children[5].visible = false
-		this.giraffeDialogGroup.$children[2].visible = true;
+		this.giraffeDialogGroup.$children[textword02].visible = true;
 		setTimeout(() => {
-			this.giraffeDialogGroup.$children[2].visible = false;
-			this.giraffeDialogGroup.$children[4].visible = true;
+			this.giraffeDialogGroup.$children[textword02].visible = false;
+			this.giraffeDialogGroup.$children[textword01].visible = true;
 			this.bulbGroup.visible = true;
 			this.achieveGroup.visible = true;
 		}, 5000)

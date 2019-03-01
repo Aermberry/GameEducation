@@ -657,6 +657,6 @@
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
 		<ns1:achieveComponent width="20" height="20" x="236.91" y="35" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>

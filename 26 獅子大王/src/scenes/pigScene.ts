@@ -44,12 +44,13 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private editableText_sixth: eui.EditableText;
 	private editableText_seventh: eui.EditableText;
 
-	private Textboxes:eui.Label;
+	private Textboxes: eui.Label;
 	private optionsScene: optionsScene;
 
-	public constructor(/*optionsScene:optionsScene*/) {
+	private isMessageFormat:boolean=true;
+
+	public constructor() {
 		super();
-		// this.optionsScene=optionsScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -73,9 +74,9 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	}
 
 	//文字類型判斷
-	private judgmentstypes():void {
-		if(optionsScene.getOptionInstance.getWords){
-			this.Textboxes.text='日期：十一月九日\n希望你能出席，不見不散！'
+	private judgmentstypes(): void {
+		if (optionsScene.getOptionInstance.getWords) {
+			this.Textboxes.text = '日期：十一月九日\n希望你能出席，不見不散！'
 		}
 	}
 
@@ -193,18 +194,27 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		let result: boolean = true;
 
 		let dataResult = this.editableText_first.text + this.editableText_second.text + "：" + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
-		
+
 		if (optionsScene.getOptionInstance.getWords) {
 			if (dataResult == '時間：下午六時') {
 				return result
+			}
+			else if (dataResult == '時間：下午6時') {
+				this.isMessageFormat=true
+				return result=false;
 			}
 		}
 		else {
 			if (dataResult == '時間：下午6時') {
 				return result
 			}
+			else if (dataResult == '時間：下午六時') {
+				this.isMessageFormat=true
+				return result=false;
+			}
 		}
 
+		this.isMessageFormat=false;
 		return result = false
 	}
 
@@ -231,17 +241,27 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		}
 		else {
-			this.bulbGroup.visible = false;
-			this.achieveGroup.visible = false;
-			this.pigDialogGroup.$children[4].visible = false
-			this.pigDialogGroup.$children[2].visible = true;
-			setTimeout(() => {
-				this.pigDialogGroup.$children[2].visible = false;
-				this.pigDialogGroup.$children[4].visible = true;
-				this.bulbGroup.visible = true;
-				this.achieveGroup.visible = true;
-			}, 5000)
+			if(this.isMessageFormat){
+				this.changeWord(4,6)
+			}
+			else{
+				this.changeWord();
+			}
+			
 		}
+	}
+
+	private changeWord(textword01: number = 4, textword02: number = 2): void {
+		this.bulbGroup.visible = false;
+		this.achieveGroup.visible = false;
+		this.pigDialogGroup.$children[textword01].visible = false
+		this.pigDialogGroup.$children[textword02].visible = true;
+		setTimeout(() => {
+			this.pigDialogGroup.$children[textword02].visible = false;
+			this.pigDialogGroup.$children[textword01].visible = true;
+			this.bulbGroup.visible = true;
+			this.achieveGroup.visible = true;
+		}, 5000)
 	}
 
 	//第二部分動畫
@@ -269,7 +289,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 		optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new optionsScene();
-		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "ratCH":this.optionsScene.currentState="rat";
+		optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "ratCH" : this.optionsScene.currentState = "rat";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}

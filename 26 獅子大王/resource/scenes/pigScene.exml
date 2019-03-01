@@ -635,6 +635,8 @@
         </e:Group>
         <e:Label text="逃過一劫，太好了！" x="27.28" lineSpacing="25" size="50" y="42.43" textColor="0x000000" fontFamily="SourceHanSansHW-Bold"
                  bold="true"  visible="false"/>
+        <e:Label text="你剛才寫的是中國數\n字，還是阿拉伯數字？\n兩者要一致才對啊！" x="27.28" lineSpacing="25" size="50" y="-30.3" textColor="0x000000" fontFamily="SourceHanSansHW-Bold"
+                 bold="true"  visible="false"/>
     </e:Group>
     <ns1:flustered id="flusteredComponent" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0"
                    height="153.7" rotation="346.55" />
