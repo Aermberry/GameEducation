@@ -261,7 +261,8 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 1 }, 1000);
 		})
 		this.sheepDialogGroup.$children[4].visible = false;
-		this.sheepDialogGroup.$children[5].visible = true;
+		this.sheepDialogGroup.$children[5].visible = false;
+		this.sheepDialogGroup.$children[6].visible = true;
 		this.sheep.source = "sheep_happy_png"
 		this.playVoice(animalDialogVoice.sheepVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);

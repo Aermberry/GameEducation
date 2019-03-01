@@ -68,9 +68,10 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
-    // this.currentState = "snake"
-    // this.snakeComponent.currentState = "active"
-    // this.snakeComponent.touchChildren = true;
+
+    this.currentState = "sheep"
+    this.sheepComponent.currentState = "active"
+    this.sheepComponent.touchChildren = true;
 
     //  this.currentState = "giraffe"
     // this.giraffeComponent.currentState = "active"

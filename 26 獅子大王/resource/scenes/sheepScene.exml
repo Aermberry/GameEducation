@@ -609,7 +609,7 @@
         <e:Label text="(發卡人)" x="2.21" y="76.06" size="50" bold="true" textColor="0xa00000"/>
         <e:Label text="蓋印章" y="149.1" size="50" x="157.03" bold="true" textColor="0xa00000"/>
 		</e:Group>
-		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"  fontFamily="SourceHanSansHW-Bold" bold="true" visible="false"/>
+		<e:Label text="太好了！\n大王萬歲！" x="136.4" lineSpacing="25" size="50" y="0" textColor="0x000000"  fontFamily="SourceHanSansHW-Bold" bold="true" visible="false"/>
 	</e:Group>
 
 	<e:Image id="sheep" x="1536.65" y="1059.68" source="sheep_normal_png"/>
