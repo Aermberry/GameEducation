@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGmes.startSceneSkin" width="1920" height="1440"
+	xmlns:e="http://ns.egret.com/eui"
+	xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="LoadingAnimation">
+			<tween:TweenItem target="{maskLayer}">
+				<tween:Set/>
+				<tween:To duration="1500" ease="quartInOut">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="167071c13eb"></w:Config>
+
+	<e:Rect id="maskLayer" left="0" right="0" top="0" bottom="0" fillColor="0xffffff" alpha="1"/>
+	<e:Image source="start_png" verticalCenter="0" horizontalCenter="0" id="startButton"/>
+>
+</e:Skin>

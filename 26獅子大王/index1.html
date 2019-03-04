@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+    <title>獅子大王</title>
+    <!-- write your code here -->
+    <style>
+  #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+  #mask img{
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index: 9999;
+  }
+</style>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Lion_Main-20100111_Opening_6_1_1.js"></script>
+<script>
+    window.onload = function () {
+        var heights = window.innerHeight;
+        var widths = window.innerWidth;
+        var mask = document.getElementById("mask");
+        var mask_box = document.querySelector('.mask_box');
+        var images = document.querySelector("#mask img")
+        console.log(heights, widths)
+        mask_box.style.background = "#fff";
+        mask_box.style.width = widths + "px";
+        mask_box.style.height = heights + 'px';
+        mask_box.style.opacity = 0.8;
+
+        images.onclick = function () {
+            init();
+            mask.style.display = "none";
+        }
+    }
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    function init() {
+        canvas = document.getElementById("canvas");
+        anim_container = document.getElementById("animation_container");
+        dom_overlay_container = document.getElementById("dom_overlay_container");
+        var comp = AdobeAn.getComposition("F190F6E910556D429EF85AB5E8868046");
+        var lib = comp.getLibrary();
+        var loader = new createjs.LoadQueue(false);
+        loader.installPlugin(createjs.Sound);
+        loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
+        loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+        var lib = comp.getLibrary();
+        loader.loadManifest(lib.properties.manifest);
+    }
+    function handleFileLoad(evt, comp) {
+        var images = comp.getImages();
+        if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+    }
+    function handleComplete(evt, comp) {
+        //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+        var lib = comp.getLibrary();
+        var ss = comp.getSpriteSheet();
+        var queue = evt.target;
+        var ssMetadata = lib.ssMetadata;
+        for (i = 0; i < ssMetadata.length; i++) {
+            ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+        }
+        exportRoot = new lib.Lion_Main20100111_Opening_6_1_1();
+        stage = new lib.Stage(canvas);
+        stage.enableMouseOver();
+        //Registers the "tick" event listener.
+        fnStartAnimation = function () {
+            stage.addChild(exportRoot);
+            createjs.Ticker.setFPS(lib.properties.fps);
+            createjs.Ticker.addEventListener("tick", stage);
+        }
+        //Code to support hidpi screens and responsive scaling.
+        function makeResponsive(isResp, respDim, isScale, scaleType) {
+            var lastW, lastH, lastS = 1;
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+            function resizeCanvas() {
+                var w = lib.properties.width, h = lib.properties.height;
+                var iw = window.innerWidth, ih = window.innerHeight;
+                var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                if (isResp) {
+                    if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                        sRatio = lastS;
+                    }
+                    else if (!isScale) {
+                        if (iw < w || ih < h)
+                            sRatio = Math.min(xRatio, yRatio);
+                    }
+                    else if (scaleType == 1) {
+                        sRatio = Math.min(xRatio, yRatio);
+                    }
+                    else if (scaleType == 2) {
+                        sRatio = Math.max(xRatio, yRatio);
+                    }
+                }
+                canvas.width = w * pRatio * sRatio;
+                canvas.height = h * pRatio * sRatio;
+                canvas.style.width = dom_overlay_container.style.width = anim_container.style.width = w * sRatio + 'px';
+                canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio + 'px';
+                stage.scaleX = pRatio * sRatio;
+                stage.scaleY = pRatio * sRatio;
+                lastW = iw; lastH = ih; lastS = sRatio;
+                stage.tickOnUpdate = false;
+                stage.update();
+                stage.tickOnUpdate = true;
+            }
+        }
+        makeResponsive(true, 'both', false, 1);
+        AdobeAn.compositionLoaded(lib.properties.id);
+        fnStartAnimation();
+    }
+    
+    function playSound(id, loop) {
+        return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+    }
+    function continueEgretGame() {
+        window.location.href = "stratindex.html"
+    }
+</script>
+<!-- write your code here -->
+</head>
+<body style="margin:0px;overflow: hidden;">
+<div id="mask">
+    <img src="./images/start.png" />
+    <div class="mask_box"></div>
+</div>
+<!--第一段代码-->
+<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1440px">
+    <canvas id="canvas" width="1920" height="1440" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1440px; position: absolute; left: 0px; top: 0px; display: block;">
+    </div>
+</div>
+<!--<img src=images/_preloader.gif?1545269370134 style='vertical-align: middle; max-height: 100%'/></div>-->
+</body>
+</html>
