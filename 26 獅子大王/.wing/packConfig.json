@@ -1,9 +1,0 @@
-{
-    "useClip": true,
-    "maxImageWidth": 2048,
-    "maxImageHeight": 2048,
-    "defaultResPath": "d:\\EDB WLTS\\WLTS\\26 獅子大王\\resource\\default.res.json",
-    "packGroups": {
-        "preload": true
-    }
-}
