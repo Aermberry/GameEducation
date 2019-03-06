@@ -29,10 +29,8 @@
 
 class Main extends eui.UILayer {
 
-
     protected createChildren(): void {
         super.createChildren();
-
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
         })
@@ -67,7 +65,7 @@ class Main extends eui.UILayer {
 
     }
 
-   private async loadResource() {
+    private async loadResource() {
         const loadingView = new LoadingUI();
         try {
             this.stage.addChild(loadingView);
@@ -102,14 +100,18 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         Main.instance = this;
-        this.addChild(new StartSceneMask ());
+        this.addChild(new StartSceneMask());
     }
 
     public static instance: Main
 
-    public gotoScene(scene: eui.Component)
-    {
+    public gotoScene(scene: eui.Component) {
         this.removeChildren();
         this.addChild(scene);
+        
     }
+    
 }
+window['Main'] = Main
+
+
