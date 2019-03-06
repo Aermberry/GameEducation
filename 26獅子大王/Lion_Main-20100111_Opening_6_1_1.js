@@ -5482,6 +5482,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	}
 	this.frame_1021 = function() {
 		console.log("here")
+		playTowEgretGame();
+		createjs.Sound.stop();
+		
 	}
 
 	// actions tween:
