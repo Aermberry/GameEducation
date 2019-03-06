@@ -6,7 +6,7 @@ class FlowersScene6 extends eui.Component implements eui.UIComponent {
 	private nextLabel: eui.Label
 
 
-	private currentSoundChannl: egret.SoundChannel;
+	// private currentSoundChannl: egret.SoundChannel;
 
 	private firstLabel: eui.Label;
 	private secondLabel: eui.Label;
@@ -107,9 +107,10 @@ class FlowersScene6 extends eui.Component implements eui.UIComponent {
 	}
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl != null) {
-			this.currentSoundChannl.stop();
-		}
+		// if (this.currentSoundChannl != null) {
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 

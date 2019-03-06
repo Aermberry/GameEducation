@@ -25,6 +25,7 @@
 		"bin-debug/scenes/PhotoSCene5.js",
 		"bin-debug/scenes/ResultScene.js",
 		"bin-debug/scenes/StartScene.js",
+		"bin-debug/scenes/StartSceneMask.js",
 		"bin-debug/scenes/TalkScene3.js",
 		"bin-debug/utility/ThreadUtility.js"
 	]

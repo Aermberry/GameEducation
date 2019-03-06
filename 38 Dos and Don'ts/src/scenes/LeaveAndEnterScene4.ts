@@ -2,7 +2,7 @@ class LeaveAndEnterScene4 extends eui.Component implements  eui.UIComponent {
 	private leaverSchoolGroup:eui.Group;
 	private enterParkGroup:eui.Group;
 
-	private currentSoundChannl:egret.SoundChannel;
+	// private currentSoundChannl:egret.SoundChannel;
 
 	
 	public constructor() {
@@ -43,8 +43,9 @@ class LeaveAndEnterScene4 extends eui.Component implements  eui.UIComponent {
 
 	private stopSoundChannel():void
 	{
-		if( this.currentSoundChannl != null){
-			this.currentSoundChannl.stop();
-		}
+		// if( this.currentSoundChannl != null){
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 }

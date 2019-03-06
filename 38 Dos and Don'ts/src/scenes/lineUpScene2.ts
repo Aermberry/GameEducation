@@ -2,7 +2,7 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 	private teacherTouchImg:eui.Image;
 	private teacherUnhappyImg:eui.Image;
 
-	private currentSoundChannl:egret.SoundChannel;
+	// private currentSoundChannl:egret.SoundChannel;
 
 	private exitGroup:eui.Group;
 	private exitLogo:eui.Group;
@@ -64,7 +64,8 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 
 	private async playSound():Promise<void>
 	{
-        this.currentSoundChannl = (RES.getRes('can_they_play_here_mp3') as egret.Sound).play(0,1);
+        // this.currentSoundChannl = (RES.getRes('can_they_play_here_mp3') as egret.Sound).play(0,1);
+		lzlib.SoundUtility.playSound('can_they_play_here_mp3');
 		await ThreadUtility.sleep(1000);	
 		this.teacherDialogGroup.visible = true
 		this.exitLogo.visible=true;
@@ -85,8 +86,10 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 
 	private async nextDialog():Promise<void>
 	{   
-		this.currentSoundChannl.stop();		
-        this.currentSoundChannl = (RES.getRes('line_up_mp3') as egret.Sound).play(0,1);
+		// this.currentSoundChannl.stop();		
+		lzlib.SoundUtility.stopCurrentSound();
+        // this.currentSoundChannl = (RES.getRes('line_up_mp3') as egret.Sound).play(0,1);
+		lzlib.SoundUtility.playSound('line_up_mp3');
 		this.firstLabel.text = "No, they can't.";
 		this.secondLabel.text = "They must line up now.";	
 		await ThreadUtility.sleep(3500);
@@ -128,9 +131,10 @@ class lineUpScene2 extends eui.Component implements  eui.UIComponent {
 
 	private stopSoundChannel():void
 	{
-		if( this.currentSoundChannl != null){
-			this.currentSoundChannl.stop();
-		}
+		// if( this.currentSoundChannl != null){
+		// 	this.currentSoundChannl.stop();
+		// }
+		// lzlib.SoundUtility.stopCurrentSound();
 	}
 
 	

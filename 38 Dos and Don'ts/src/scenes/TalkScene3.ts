@@ -2,7 +2,7 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 	private teacherTouchImg: eui.Image;
 	private teacherUnhappyImg: eui.Image;
 
-	private currentSoundChannl: egret.SoundChannel;
+	// private currentSoundChannl: egret.SoundChannel;
 
 	private exitGroup: eui.Group;
 	private forkIconImg: eui.Image;
@@ -78,6 +78,7 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 
 	private async nextDialog(): Promise<void> {
 		// this.currentSoundChannl.stop();
+		lzlib.SoundUtility.stopCurrentSound();
 		// this.currentSoundChannl = (RES.getRes('listen_me_mp3') as egret.Sound).play(0, 1);
 		lzlib.SoundUtility.playSound("listen_me_mp3");
 		this.firstLabel.text = "No, you can't.";
@@ -116,9 +117,10 @@ class TalkScene3 extends eui.Component implements eui.UIComponent {
 	}
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl != null) {
-			this.currentSoundChannl.stop();
-		}
+		// if (this.currentSoundChannl != null) {
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 

@@ -1,54 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="StartSceneSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui"
+<e:Skin class="StartSceneMaskSkin" width="1920" height="1280" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
 	<w:Declarations>
-		<tween:TweenGroup id="bannerTweenGroup">
-			<tween:TweenItem target="{group}">
-				<tween:Set/>
-				<tween:To duration="250">
-					<tween:props>
-						<e:Object alpha="{0}" />
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-			<tween:TweenItem target="{schoolGroup}">
-				<tween:Wait duration="150" />
-				<tween:Set/>
-				<tween:To duration="350">
-					<tween:props>
-						<e:Object alpha="{1}" />
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
-		<tween:TweenGroup id="loadingAnim">
-			<tween:TweenItem target="{startMask}">
-				<tween:Set/>
-				<tween:To duration="750">
-					<tween:props>
-						<e:Object alpha="{0}" />
-					</tween:props>
-				</tween:To>
-			</tween:TweenItem>
-		</tween:TweenGroup>
 		<tween:TweenGroup id="playTweenGroup">
-			<tween:TweenItem target="{group}">
-				<tween:Wait duration="2000"/>
-				<tween:Set>
-					<tween:props>
-						<e:Object alpha="{1}"/>
-					</tween:props>
-				</tween:Set>
-				<tween:To duration="1000">
+			<tween:TweenItem target="{startMask}">
+				<tween:To duration="500">
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
+			<tween:TweenItem target="{group}">
+				<tween:To duration="3000"/>
+			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="164d4293be7"></w:Config>
-	<e:Group id="group" verticalCenter="0" horizontalCenter="0" alpha="1">
+	<e:Group id="group" verticalCenter="0" horizontalCenter="0">
 		<e:Image id="pingBgImg" source="pink_bg_png" horizontalCenter="0" verticalCenter="0" />
 		<e:Image id="pinkBannerImg" source="pink_banner_png" horizontalCenter="0" verticalCenter="1.5"  scaleY="1.11"/>
 		<e:Group id="title" anchorOffsetY="0" verticalCenter="4.5" height="359.18" horizontalCenter="0.5">

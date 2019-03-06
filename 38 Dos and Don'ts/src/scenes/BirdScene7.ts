@@ -3,7 +3,7 @@ class BirdScene7 extends eui.Component implements eui.UIComponent {
 
 	private nextDialogGroup: eui.Group;
 
-	private currentSoundChannl: egret.SoundChannel;
+	// private currentSoundChannl: egret.SoundChannel;
 
 	private nextGroup: eui.Group;
 	private nextLabel: eui.Label;
@@ -119,9 +119,10 @@ class BirdScene7 extends eui.Component implements eui.UIComponent {
 
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl != null) {
-			this.currentSoundChannl.stop();
-		}
+		// if (this.currentSoundChannl != null) {
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 }

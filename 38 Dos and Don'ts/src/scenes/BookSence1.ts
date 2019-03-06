@@ -6,7 +6,7 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 
 	private nextGroup:eui.Group;
 
-	private currentSoundChannel:egret.SoundChannel;
+	// private currentSoundChannel:egret.SoundChannel;
 	private teacherTouchImg:eui.Image;
 	private teacher1Label:eui.Label;
 	private teacher2Label:eui.Label;
@@ -42,8 +42,9 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	private async playAnimation():Promise<void>
 	{
        this.grayTweenGroup.play(0);
-	   this.currentSoundChannel = (RES.getRes('in_class_room_mp3') as egret.Sound).play(0,1);
-	   await ThreadUtility.sleep(3000);
+	//    this.currentSoundChannel = (RES.getRes('in_class_room_mp3') as egret.Sound).play(0,1);
+	  	await lzlib.SoundUtility.playSound('in_class_room_mp3');
+	//    await ThreadUtility.sleep(3000);
 	   this.grayCanvasGroup.visible = false;
 	   this.dialogGroup.visible = true;
 	    this.classRoomBook();
@@ -81,7 +82,8 @@ class BookSence1 extends eui.Component implements  eui.UIComponent {
 	   this.teacher1Label.text = 'Yes, you can. You can put'
 	   this.teacher2Label.text= "away your books now.";
 	   
-	   this.currentSoundChannel.stop();	
+	//    this.currentSoundChannel.stop();	
+		lzlib.SoundUtility.stopCurrentSound();
 	//    this.currentSoundChannel = (RES.getRes('vo_books_mp3') as egret.Sound).play(0,1);
 	   await lzlib.SoundUtility.playSound("vo_books_mp3");
 	   this.nextGroup.visible = true;

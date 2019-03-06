@@ -1,11 +1,13 @@
 class StartScene extends eui.Component implements  eui.UIComponent {
-    private currentSoundChannl:egret.SoundChannel;
+    // private currentSoundChannl:egret.SoundChannel;
 
-	private bannerTweenGroup:egret.tween.TweenGroup;
-
+	// private bannerTweenGroup:egret.tween.TweenGroup;
+	private playTweenGroup:egret.tween.TweenGroup;
+	private group:eui.Group;
+	private schoolGroup:eui.Group;
 	private startMask: eui.Rect;
     private startButton: eui.Button;
-    private loadingAnim:egret.tween.TweenGroup
+    // private loadingAnim:egret.tween.TweenGroup
 
 
 
@@ -22,30 +24,31 @@ class StartScene extends eui.Component implements  eui.UIComponent {
 	protected childrenCreated():void
 	{
 		super.childrenCreated();
-		this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
-		
+		// this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onStartButtonClick,this);
+		this.onStartButtonClick();
 	}
 
-	private  async onStartButtonClick(): Promise<void>{
-		await this.loadingAnim.play(0);
+	private  onStartButtonClick(): void{
+		// await this.loadingAnim.play(0);
 		this.startMask.visible = false;
 		this.startButton.visible = false;
-		await lzlib.ThreadUtility.sleep(2000)
-		await this.playAnimationToNextScene();
+		this.playAnimationToNextScene();
 	}
 
 	private async playAnimationToNextScene():Promise<void>
 	{    
-		this.bannerTweenGroup.play(0);
-		
-		this.currentSoundChannl = (RES.getRes('amy_go_shcool_mp3') as egret.Sound).play(0);
-		await ThreadUtility.sleep(3000);		
-		this.goNextScene();
+		// await lzlib.ThreadUtility.sleep(2000)
+		await this.playTweenGroup.playOnceAsync();
+		this.schoolGroup.visible = true;
+		// await this.playAnimationToNextScene();
+		lzlib.SoundUtility.playSound('amy_go_shcool_mp3');
+		await lzlib.ThreadUtility.sleep(3000)
+		Main.instance.gotoScene(new BookSence1());
 	}
 	
 	private  goNextScene()
 	{
-		this.currentSoundChannl.stop();
+		// this.currentSoundChannl.stop();
 		Main.instance.gotoScene(new BookSence1());
 	}
 		

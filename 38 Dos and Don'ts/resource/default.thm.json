@@ -18,7 +18,8 @@
 		"BirdScene7": "resource/scenes/BirdScene7.exml",
 		"BicycleScene": "resource/scene/BicycleScene.exml",
 		"BicycleScene8": "resource/scenes/BicycleScene8.exml",
-		"ResultScene": "resource/scenes/ResultScene.exml"
+		"ResultScene": "resource/scenes/ResultScene.exml",
+		"StartSceneMask": "resource/scenes/StartSceneMask.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exml": [
@@ -37,6 +38,7 @@
 		"resource/scenes/PhotoSCene5.exml",
 		"resource/scenes/ResultScene.exml",
 		"resource/scenes/StartScene.exml",
+		"resource/scenes/StartSceneMask.exml",
 		"resource/scenes/TalkScene3.exml"
 	]
 }

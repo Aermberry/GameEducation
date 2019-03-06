@@ -16,5 +16,7 @@ declare class ResultSceneSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
 }
+declare class StartSceneMaskSkin extends eui.Skin{
+}
 declare class TalkScene3Skin extends eui.Skin{
 }

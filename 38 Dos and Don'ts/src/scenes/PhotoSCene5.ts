@@ -6,7 +6,7 @@ class PhotoSCene5 extends eui.Component implements eui.UIComponent {
 	private nextLabel: eui.Label
 
 
-	private currentSoundChannl: egret.SoundChannel;
+	// private currentSoundChannl: egret.SoundChannel;
 
 	private firstLabel: eui.Label;
 	private secondLabel: eui.Label;
@@ -85,7 +85,7 @@ class PhotoSCene5 extends eui.Component implements eui.UIComponent {
 
 	private mouseOut(): void {
 		this.workerHeaderImg.source = 'worker_normal_png';
-		this.orangeCircleImg.source = 'oragne_normal_png';
+		this.orangeCircleImg.source = 'worker_hover';
 	}
 
 	private mouseOver(): void {
@@ -108,9 +108,10 @@ class PhotoSCene5 extends eui.Component implements eui.UIComponent {
 	}
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl != null) {
-			this.currentSoundChannl.stop();
-		}
+		// if (this.currentSoundChannl != null) {
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 }

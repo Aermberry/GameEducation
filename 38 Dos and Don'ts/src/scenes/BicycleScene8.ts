@@ -6,7 +6,7 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	private nextLabel: eui.Label
 
 
-	private currentSoundChannl: egret.SoundChannel;
+	// private currentSoundChannl: egret.SoundChannel;
 
 	private firstLabel: eui.Label;
 	private secondLabel: eui.Label;
@@ -58,8 +58,9 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async playSound(): Promise<void> {
-		this.currentSoundChannl = (RES.getRes('bicycle_amy_mp3') as egret.Sound).play(0, 1);
-		await ThreadUtility.sleep(2000);
+		// this.currentSoundChannl = (RES.getRes('bicycle_amy_mp3') as egret.Sound).play(0, 1);
+		await lzlib.SoundUtility.playSound('bicycle_amy_mp3')
+		// await ThreadUtility.sleep(2000);
 		this.nextDialogGroup.visible = true;
 		await this.initWorkerTouchEvent();
 	}
@@ -73,8 +74,9 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	}
 
 	private async nextDialog(): Promise<void> {
-		this.currentSoundChannl.stop();
-		this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0, 1);
+		// this.currentSoundChannl.stop();
+		lzlib.SoundUtility.stopCurrentSound();
+		// this.currentSoundChannl = (RES.getRes('bicycle_worker_mp3') as egret.Sound).play(0, 1);
 		lzlib.SoundUtility.playSound('bicycle_worker_mp3');
 		this.firstLabel.text = "Yes, you can.";
 		this.secondLabel.text = "You can ride your bicycle here.";
@@ -113,9 +115,10 @@ class BicycleScene8 extends eui.Component implements eui.UIComponent {
 	}
 
 	private stopSoundChannel(): void {
-		if (this.currentSoundChannl) {
-			this.currentSoundChannl.stop();
-		}
+		// if (this.currentSoundChannl) {
+		// 	this.currentSoundChannl.stop();
+		// }
+		lzlib.SoundUtility.stopCurrentSound();
 	}
 
 }
