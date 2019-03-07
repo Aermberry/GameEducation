@@ -18,6 +18,8 @@ class StartSceneMask extends eui.Component implements  eui.UIComponent {
 	}
 
 	private async onStartButton(): Promise<void> {
+		var SoundChannel:egret.SoundChannel= (RES.getRes("amy_go_shcool_mp3") as egret.Sound).play(0);
+		SoundChannel.volume=0;
 		this.playTweenGroup.play(0);
 		this.startButton.visible = false;
 		Main.instance.gotoScene(new StartScene());

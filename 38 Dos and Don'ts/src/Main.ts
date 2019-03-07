@@ -112,6 +112,6 @@ class Main extends eui.UILayer {
     }
     
 }
-window['Main'] = Main
+// window['Main'] = Main
 
 
