@@ -542,7 +542,7 @@
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0"
 	         touchThrough="true">
 		<e:Image id="invitationLetter" y="-85" anchorOffsetX="0" anchorOffsetY="0" x="0"  source="letter_sheep_jpg" width="1570" height="1112"/>
-		<e:Label id="Textboxes" text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時\n地點：森林公園\n希望你能出席，不見不散 ！" x="347.18" y="93.59" anchorOffsetX="0" anchorOffsetY="0"
+		<e:Label id="Textboxes" text="你們要來參加秋季嘉年華 !\n日期：11月9日\n時間：下午6時\n地點：森林果園\n希望你能出席，不見不散 ！" x="347.18" y="93.59" anchorOffsetX="0" anchorOffsetY="0"
 		         textAlign="left" verticalAlign="middle" size="70" textColor="0x000000" lineSpacing="80"
 		         bold="true" fontFamily="SourceHanSansHW-Bold" border="false" />
 		<e:Group id="group" x="55.54" y="-31.81" alpha="1" touchThrough="true">

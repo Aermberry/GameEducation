@@ -84,7 +84,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	//文字類型判斷
 	private judgmentstypes():void {
 		if(optionsScene.getOptionInstance.getWords){
-			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林公園\n希望你能出席，不見不散 ！'
+			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散 ！'
 		}
 	}
 
