@@ -35,7 +35,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private lion_active: eui.Image;
 	private giraffe: eui.Image;
 
-	private Textboxes: eui.Label;
+	private TextboxesDate: eui.Label;
+	private TextboxesTime: eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -78,7 +79,8 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	//文字類型判斷
 	private judgmentstypes(): void {
 		if (optionsScene.getOptionInstance.getWords) {
-			this.Textboxes.text = '你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散！'
+			this.TextboxesDate.text = '日期：十一月九日';
+			this.TextboxesTime.text = '時間：下午六時';
 		}
 	}
 

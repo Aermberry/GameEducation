@@ -73,9 +73,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     // this.pigComponent.currentState = "active"
     // this.pigComponent.touchChildren = true;
 
-    //  this.currentState = "giraffe"
-    // this.giraffeComponent.currentState = "active"
-    // this.giraffeComponent.touchChildren = true;
+     this.currentState = "pig"
+    this.pigComponent.currentState = "active"
+    this.pigComponent.touchChildren = true;
   }
 
   private rabbiteEvet(): void {
@@ -149,7 +149,7 @@ class optionsScene extends eui.Component implements eui.UIComponent {
       this.currentSoundChannel = (RES.getRes(soundName) as egret.Sound).play(0, 1);
       this.currentSoundChannel.once(egret.Event.SOUND_COMPLETE, resolve, this);
     }).then(() => {
-      let aa = RES.destroyRes(soundName);
+      RES.destroyRes(soundName);
     })
   }
 

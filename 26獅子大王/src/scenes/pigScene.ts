@@ -243,6 +243,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		else {
 			if(this.isMessageFormat){
 				this.changeWord(4,6)
+				optionsScene.getOptionInstance.playVoice("sound 10 (D12.mp3)_mp3");
 			}
 			else{
 				this.changeWord();
@@ -261,7 +262,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 			this.pigDialogGroup.$children[textword01].visible = true;
 			this.bulbGroup.visible = true;
 			this.achieveGroup.visible = true;
-		}, 5000)
+		}, 10000)
 	}
 
 	//第二部分動畫

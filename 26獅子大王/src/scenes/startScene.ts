@@ -16,24 +16,26 @@ module StartGmes {
 
     protected childrenCreated(): void {
       super.childrenCreated();
-      this.startButton.addEventListener(
-        egret.TouchEvent.TOUCH_TAP,
-        this.startLoadingAnimation,
-        this
-      );
+      this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startLoadingAnimation, this);
     }
 
     private async startLoadingAnimation(): Promise<void> {
       this.startButton.visible = false;
+
+      () => {
+        var SoundChannel: egret.SoundChannel = (RES.getRes("sound112_mp3") as egret.Sound).play(0);
+        SoundChannel.volume = 0;
+      }
+
       await this.LoadingAnimation.play();
       setTimeout(() => {
         this.maskLayer.visible = false;
-        startInit();
-        // Main.instance.gotoScene(new optionsScene());
+        // startInit();
+        Main.instance.gotoScene(new optionsScene());
       }, 1500)
     }
 
-    public gotoOptionsScene():void {
+    public gotoOptionsScene(): void {
       Main.instance.gotoScene(new optionsScene());
     }
 
