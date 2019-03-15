@@ -54,30 +54,30 @@
 	<e:Group id="group" x="423.43" y="77.21">
 		<e:Image source="entirlyCircle_png" x="0" y="0" anchorOffsetX="0" width="1388.07" anchorOffsetY="0" height="890.36"/>
 		<e:Group x="231.12" y="256.12" includeIn="rabbit">
-			<e:Label text="                 要        森林裏\n的            來參加嘉年\n華。收卡人的姓名應該\n怎樣寫？" x="-54.54" y="0" textColor="0x000000" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true"/>
-			<e:Label text="獅子大王" x="-39.4" y="0" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>
-			<e:Label text="邀請" x="406.05" y="3.03" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>
-			<e:Label text="小動物" x="30.29" y="109.09" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xeb0000"/>
+			<e:Label id="rabbitTips" text="" x="9.46" y="-32" textColor="0x000000" size="87" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true"/>
+
+
+
 		</e:Group>
 		<e:Group x="293.94" y="290.91" includeIn="snake">
-			<e:Label text="嘉年華的舉辦日期在\n哪天？請參考範例：" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
-			<e:Label text="日期：六月二十日" y="222.66" x="-15.82" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
+			<e:Label id="snakeTips" text="" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+
 		</e:Group>
 		<e:Group x="293.94" y="221.22" includeIn="rat" x.rat="227.27" y.rat="248.49">
-			<e:Label text="嘉年華在甚麼地方舉行？\n可參考範例的寫法：" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
-			<e:Label text="地點：森林小河" y="222.66" x="-15.82" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
+			<e:Label id="ratTips" text="" x="0" y="0" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+
 		</e:Group>
 		<e:Group x="293.94" y="221.22" anchorOffsetX="0" width="1037.21" includeIn="pig">
-			<e:Label text="嘉年華在甚麼時間舉\n行？可參考範例的寫法：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
-			<e:Label text="時間：上午十時" y="225.69" x="-70.37" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
+			<e:Label id="pigTips" text="" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+
 		</e:Group>
 		<e:Group x="293.94" y="221.22" includeIn="sheep" x.sheep="336.37">
-			<e:Label text="我（發卡人）的姓名\n應寫在哪兒？不如參\n考以下        吧！" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
-			<e:Label text="格式" y="225.69" x="202.36" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
+			<e:Label id="sheepTips" text="" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+			<e:Label text="格式" y="225.69" x="202.36" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true" visible="false"/>
 		</e:Group>
 			<e:Group x="318.18" y="245.46" includeIn="giraffe">
-			<e:Label text="邀請卡是哪天發出呢？\n可參考範例：" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
-			<e:Label text="二零零零年九月一日" y="228.72" x="-55.22" fontFamily="SourceHanSansHW-Bold" size="87" textColor="0xeb0000" bold="true"/>
+			<e:Label id="giraffeTips" text="" x="-60.61" y="3.03" textColor="0x000000" size="87" lineSpacing="25" bold="true" fontFamily="SourceHanSansHW-Bold"/>
+
 		</e:Group>
 		<e:Group id="calendarTipsGroup" includeIn="giraffe" x="334.24" y="592.24" touchThrough="true" visible="false">
 			<e:Label text="月曆" includeIn="giraffe" x="0" y="33.76" textColor="0x000000" size="90" fontFamily="SourceHanSansHW-Bold" bold="true"/>
