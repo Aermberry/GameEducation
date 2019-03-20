@@ -26,7 +26,7 @@ enum lionDialogText {
   sheepText_a='我請你來，你不\n來，真可惡！',
   sheepText_b='你説得有理！你\n把我的印章蓋在適當\n的位置吧！',
   giraffeText_a='長頸鹿，既然收到\n邀請卡，你爲什麼不來？',
-  giraffeText_b='我要今天，即十一\n月三日，再發出邀\n請卡給小動物，',
+  giraffeText_b='我要今天，即十一\n月三日，再發出邀\n請卡給小動物',
   giraffeText_c='應該怎麼寫？',
   thanksTalk='幸好得到小動物們的提醒，\n我才知道邀請卡原來要這樣\n寫的！剛才我對牠們太凶\n了，讓我再修改卡上的用\n詞，希望小動物能感受到我\n是一個有禮和善的王者。',
   rabbitTips_a='獅子大王',
