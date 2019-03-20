@@ -45,7 +45,6 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.ratScene = new mouseScene();
     this.rabbitComponent = new rabbirComponent();
 
-    this.onPlayVoice("sound 24_mp3")
   }
 
   public static get getOptionInstance(): optionsScene {
@@ -59,7 +58,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   protected childrenCreated(): void {
     super.childrenCreated();
     mouse.enable(this.stage);
+
     this.normal();
+    this.onPlayVoice("sound 24_mp3");
     this.startLoadingAnimation();
     this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
     this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
@@ -69,13 +70,14 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
     console.log(optionsScene.statusIndex)
 
+
     // this.currentState = "giraffe"
     // this.giraffeComponent.currentState = "active"
     // this.giraffeComponent.touchChildren = true;
 
-     this.currentState = "snake"
-    this.snakeComponent.currentState = "active"
-    this.snakeComponent.touchChildren = true;
+    //  this.currentState = "snake"
+    // this.snakeComponent.currentState = "active"
+    // this.snakeComponent.touchChildren = true;
   }
 
   private rabbiteEvet(): void {
