@@ -115,7 +115,8 @@ class tipsComponent extends eui.Component implements eui.UIComponent {
 			case "rat":
 				this.ratTips.textFlow = [
 					{ text: lionDialogText.ratTips_a.toString(), style: { size: 87, textColor: 0x000000 } },
-					{ text: lionDialogText.ratTips_b.toString(), style: { size: 87, textColor: 0xa00000 } }
+					{ text: lionDialogText.ratTips_b.toString(), style: { size: 87, textColor: 0x000000 } },
+					{ text: lionDialogText.ratTips_c.toString(), style: { size: 87, textColor: 0xa00000 } }
 				];
 				break;
 			case "giraffe":

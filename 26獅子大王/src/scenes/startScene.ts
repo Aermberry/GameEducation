@@ -29,8 +29,8 @@ module StartGmes {
 
       await this.LoadingAnimation.play();
         this.maskLayer.visible = false;
-        startInit();
-      // this.gotoOptionsScene();
+        // startInit();
+      this.gotoOptionsScene();
     }
 
     public gotoOptionsScene(): void {

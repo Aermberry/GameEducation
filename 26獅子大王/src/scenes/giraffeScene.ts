@@ -37,6 +37,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	private TextboxesDate: eui.Label;
 	private TextboxesTime: eui.Label;
+	private giraffeReply:eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -69,6 +70,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		this.judgmentstypes();
 		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
+		this. lionDialogTextFlow();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
@@ -304,5 +306,13 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	private toResultScene(): void {
 		optionsScene.getOptionInstance.onPauseVoice();
 		Main.instance.gotoScene(new resultScene())
+	}
+
+	private lionDialogTextFlow(): void {
+				this.giraffeReply.textFlow = [
+					{ text: lionDialogText.giraffeTextReply_A.toString(), style: { size: 50, textColor: 0x000000 } },
+					{ text: lionDialogText.giraffeTextReply_B.toString(), style: { size: 50, textColor: 0xa00000 } },
+					{ text: lionDialogText.giraffeTextReply_C.toString(), style: { size: 50, textColor: 0x000000 } }
+				];	
 	}
 }

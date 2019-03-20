@@ -71,9 +71,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     console.log(optionsScene.statusIndex)
 
 
-    // this.currentState = "giraffe"
-    // this.giraffeComponent.currentState = "active"
-    // this.giraffeComponent.touchChildren = true;
+    this.currentState = "giraffe"
+    this.giraffeComponent.currentState = "active"
+    this.giraffeComponent.touchChildren = true;
 
     //  this.currentState = "snake"
     // this.snakeComponent.currentState = "active"
