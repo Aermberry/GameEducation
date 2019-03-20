@@ -71,9 +71,9 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     console.log(optionsScene.statusIndex)
 
 
-    this.currentState = "giraffe"
-    this.giraffeComponent.currentState = "active"
-    this.giraffeComponent.touchChildren = true;
+    // this.currentState = "giraffe"
+    // this.giraffeComponent.currentState = "active"
+    // this.giraffeComponent.touchChildren = true;
 
     //  this.currentState = "snake"
     // this.snakeComponent.currentState = "active"
@@ -165,10 +165,15 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
   private toGameScene(sense: eui.Component): void {
-    setTimeout(() => {
-      Main.instance.gotoScene(sense);
-    }, 1000)
+    var timer: egret.Timer = new egret.Timer(1000, 1)
+    timer.addEventListener(egret.TimerEvent.TIMER, () => { this.timerFunc(sense) }, this);
+    timer.start();
   }
+
+  private timerFunc(sense: eui.Component) {
+    Main.instance.gotoScene(sense);
+  }
+
 
   public activeStatue(components?: rabbirComponent | snakeComponent | pigComponent | ratComponent | sheepScene | girffeComponent): void {
     components.currentState = "active";
