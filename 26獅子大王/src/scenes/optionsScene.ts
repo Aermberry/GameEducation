@@ -59,16 +59,19 @@ class optionsScene extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
     mouse.enable(this.stage);
 
-    this.normal();
-    this.onPlayVoice("sound 24_mp3");
-    this.startLoadingAnimation();
-    this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
-    this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
-    this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
-    this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
-    this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
-    this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
-    console.log(optionsScene.statusIndex)
+    this.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+      this.normal();
+      this.onPlayVoice("sound 24_mp3");
+      this.startLoadingAnimation();
+      this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
+      this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
+      this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
+      this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
+      this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
+      this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
+      console.log(optionsScene.statusIndex)
+    }, this);
+
 
 
     // this.currentState = "giraffe"
@@ -238,8 +241,8 @@ class optionsScene extends eui.Component implements eui.UIComponent {
   }
 
   // BG播放
-  public async onPlayVoice(voice: string): Promise<void> {
-    await RES.getResAsync(voice);
+  public onPlayVoice(voice: string): void {
+    // await RES.getResAsync(voice);
     this.sound = RES.getRes(voice);
     this.soundchannel = this.sound.play(0, -1);
   }
