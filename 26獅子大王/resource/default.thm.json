@@ -13,7 +13,6 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"StartGmes.startScene": "resource/scenes/startScene.exml",
 		"GameStart.optionsScene": "resource/scenes/optionsScene.exml",
 		"snakeScene": "resource/scenes/snakeScene.exml",
 		"sheepScene": "resource/scenes/sheepScene.exml",
@@ -72,8 +71,7 @@
 		"resource/scenes/rabbitScene.exml",
 		"resource/scenes/resultScene.exml",
 		"resource/scenes/sheepScene.exml",
-		"resource/scenes/snakeScene.exml",
-		"resource/scenes/startScene.exml"
+		"resource/scenes/snakeScene.exml"
 	],
 	"path": "resource/default.thm.json"
 }
