@@ -24,11 +24,11 @@ class resultScene extends eui.Component implements eui.UIComponent {
 		this.plantMask.playOnceAsync().then(() => {
 			// RES.getRes("sound 627_mp3").play(0, -1)
 			this.plantMaskRect.visible=false;
-			optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
+			GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
 		})
 		this.textBook();
 		this.playAnimation(this.Anim, true);
-		optionsScene.getOptionInstance.playVoice("sound 628_mp3").then(() => {
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 628_mp3").then(() => {
 			this.achieveComponentGroup.visible = true;
 		})
 		this.achieveComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.toInvitationScene, this)
@@ -48,7 +48,7 @@ class resultScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private toInvitationScene(): void {
-		optionsScene.getOptionInstance.onPauseVoice();
+		GameStart.optionsScene.getOptionInstance.onPauseVoice();
 		Main.instance.gotoScene(new invitation());
 	}
 }

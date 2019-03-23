@@ -24,7 +24,7 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 
 	private async hoverStatus(): Promise<void> {
 		this.currentState = "hover";
-		optionsScene.getOptionInstance.playVoice("sound 157_mp3")
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 157_mp3")
 	}
 
 	public clickStatus(): void {

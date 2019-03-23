@@ -45,9 +45,9 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private editableText_seventh: eui.EditableText;
 
 	private Textboxes: eui.Label;
-	private optionsScene: optionsScene;
+	private optionsScene: GameStart.optionsScene;
 
-	private isMessageFormat:boolean=true;
+	private isMessageFormat: boolean = true;
 
 	public constructor() {
 		super();
@@ -63,7 +63,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
-		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.judgmentstypes();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -75,7 +75,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 	//文字類型判斷
 	private judgmentstypes(): void {
-		if (optionsScene.getOptionInstance.getWords) {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
 			this.Textboxes.text = '日期：十一月九日\n希望你能出席，不見不散！'
 		}
 	}
@@ -145,7 +145,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		(this.pigDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.pigDialogGroup.$children[4] as eui.Group).visible = true;
 		await this.playVoice(animalDialogVoice.pigVoice_b);
-		optionsScene.getOptionInstance.playVoice("sound 4 (D10.mp3)_mp3");
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 4 (D10.mp3)_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -176,7 +176,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+		let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
@@ -195,13 +195,13 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		let dataResult = this.editableText_first.text + this.editableText_second.text + "：" + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text;
 
-		if (optionsScene.getOptionInstance.getWords) {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
 			if (dataResult == '時間：下午六時') {
 				return result
 			}
 			else if (dataResult == '時間：下午6時') {
-				this.isMessageFormat=true
-				return result=false;
+				this.isMessageFormat = true
+				return result = false;
 			}
 		}
 		else {
@@ -209,12 +209,12 @@ class pigScene extends eui.Component implements eui.UIComponent {
 				return result
 			}
 			else if (dataResult == '時間：下午六時') {
-				this.isMessageFormat=true
-				return result=false;
+				this.isMessageFormat = true
+				return result = false;
 			}
 		}
 
-		this.isMessageFormat=false;
+		this.isMessageFormat = false;
 		return result = false
 	}
 
@@ -241,14 +241,14 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		}
 		else {
-			if(this.isMessageFormat){
-				this.changeWord(4,6)
-				optionsScene.getOptionInstance.playVoice("sound 10 (D12.mp3)_mp3");
+			if (this.isMessageFormat) {
+				this.changeWord(4, 6)
+				GameStart.optionsScene.getOptionInstance.playVoice("sound 10 (D12.mp3)_mp3");
 			}
-			else{
+			else {
 				this.changeWord();
 			}
-			
+
 		}
 	}
 
@@ -288,9 +288,9 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-		optionsScene.getOptionInstance.onPauseVoice()
-		this.optionsScene = new optionsScene();
-		optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "ratCH" : this.optionsScene.currentState = "rat";
+		GameStart.optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new GameStart.optionsScene();
+		GameStart.optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "ratCH" : this.optionsScene.currentState = "rat";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}

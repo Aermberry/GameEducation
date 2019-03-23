@@ -14,7 +14,7 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartGmes.startScene": "resource/scenes/startScene.exml",
-		"optionsScene": "resource/scenes/optionsScene.exml",
+		"GameStart.optionsScene": "resource/scenes/optionsScene.exml",
 		"snakeScene": "resource/scenes/snakeScene.exml",
 		"sheepScene": "resource/scenes/sheepScene.exml",
 		"rabbitScene": "resource/scenes/rabbitScene.exml",

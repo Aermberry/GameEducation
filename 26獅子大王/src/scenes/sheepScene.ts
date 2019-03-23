@@ -48,7 +48,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	private Textboxes:eui.Label;
 
-	private optionsScene: optionsScene;
+	private optionsScene: GameStart.optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
@@ -63,7 +63,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 
 		// RES.getRes("sound 24_mp3").play(0, -1)
-		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.judgmentstypes();
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -83,7 +83,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	//文字類型判斷
 	private judgmentstypes():void {
-		if(optionsScene.getOptionInstance.getWords){
+		if(GameStart.optionsScene.getOptionInstance.getWords){
 			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散 ！'
 		}
 	}
@@ -179,7 +179,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+		let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
@@ -271,9 +271,9 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await this.gohome()
 	}
 	private gohome(): void {
-	optionsScene.getOptionInstance.onPauseVoice();
-    this.optionsScene = new optionsScene();
-	optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "giraffeCH":this.optionsScene.currentState="giraffe";
+	GameStart.optionsScene.getOptionInstance.onPauseVoice();
+    this.optionsScene = new GameStart.optionsScene();
+	GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "giraffeCH":this.optionsScene.currentState="giraffe";
 	this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)
   }

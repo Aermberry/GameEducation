@@ -34,7 +34,7 @@ module StartGmes {
     }
 
     public gotoOptionsScene(): void {
-      Main.instance.gotoScene(new optionsScene());
+      Main.instance.gotoScene(new GameStart.optionsScene());
     }
 
   }

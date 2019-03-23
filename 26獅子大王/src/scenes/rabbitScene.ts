@@ -38,7 +38,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private editableText_second: eui.EditableText;
   private editableText_third: eui.EditableText;
 
-  private optionsScene: optionsScene;
+  private optionsScene: GameStart.optionsScene;
   public constructor(/*optionsScene: optionsScene*/) {
     super();
     // this.optionsScene = optionsScene;
@@ -52,7 +52,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     super.childrenCreated();
     mouse.enable(this.stage);
     mouse.setButtonMode(this.bulbGroup, true);
-    optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3")
+    GameStart.optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3")
 
     this.playAnim();
     this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -124,7 +124,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     (this.rabbitDialogGroup.$children[3] as eui.Group).visible = false;
     (this.rabbitDialogGroup.$children[4] as eui.Group).visible = true;
     await this.playVoice(animalDialogVoice.rabbitVoice_b);
-    optionsScene.getOptionInstance.playVoice("sound 322_mp3");
+    GameStart.optionsScene.getOptionInstance.playVoice("sound 322_mp3");
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
       egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
       egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -142,7 +142,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
 
   //語音播放
   private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-    let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+    let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
     return sound;
   }
 
@@ -211,8 +211,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await this.gohome();
   }
   private gohome(): void {
-    optionsScene.getOptionInstance.onPauseVoice()
-    this.optionsScene = new optionsScene();
+    GameStart.optionsScene.getOptionInstance.onPauseVoice()
+    this.optionsScene = new GameStart.optionsScene();
     this.optionsScene.currentState="snake"
     this.optionsScene.statueIndex();
     Main.instance.gotoScene(this.optionsScene)

@@ -28,7 +28,7 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 
 	private hoverStatus(): void {
 		this.currentState = "hover";
-		optionsScene.getOptionInstance.playVoice("sound 13 (D3.mp3)_mp3");
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 13 (D3.mp3)_mp3");
 		this.onAnim();
 	}
 

@@ -45,8 +45,8 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private editableText_seventh: eui.EditableText;
 	private editableText_eightth: eui.EditableText;
 
-	private optionsScene: optionsScene;
-	private optionsScenes: optionsScene;
+	private optionsScene:GameStart.optionsScene;
+	private optionsScenes:GameStart.optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
@@ -64,7 +64,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
-		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -143,7 +143,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		(this.snakeDialogGroup.$children[3] as eui.Group).visible = false;
 		(this.snakeDialogGroup.$children[4] as eui.Group).visible = true;
 		await this.playVoice(animalDialogVoice.snakeVoice_c);
-		optionsScene.getOptionInstance.playVoice("sound 406_mp3");
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 406_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -174,7 +174,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+		let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
@@ -193,8 +193,8 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		let dataResult = this.editableText_first.text + this.editableText_second.text + '：' + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text
 
 		//全局文字判斷
-		optionsScene.getOptionInstance.getWords = this.editableText_fourth.text;
-		console.log(optionsScene.getOptionInstance.getWords)
+		GameStart.optionsScene.getOptionInstance.getWords = this.editableText_fourth.text;
+		console.log(GameStart.optionsScene.getOptionInstance.getWords)
 		//局部文字判斷
 		if (dataResult == '日期：十一月九日') {
 			return result;
@@ -262,9 +262,9 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-		optionsScene.getOptionInstance.onPauseVoice()
-		this.optionsScene = new optionsScene();
-		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "pigCh":this.optionsScene.currentState="pig";
+		GameStart.optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new GameStart.optionsScene();
+		GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "pigCh":this.optionsScene.currentState="pig";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}

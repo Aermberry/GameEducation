@@ -1,2 +1,2 @@
-declare function startInit(): void;
+declare function startInit();
 declare function endInit(): void;

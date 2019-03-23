@@ -1,11 +1,11 @@
 class achieveComponent extends eui.Component implements eui.UIComponent {
 	private flexAnim: egret.tween.TweenGroup;
-	private optionsScene: optionsScene;
+	private optionsScene: GameStart.optionsScene;
 	private Scene: eui.Component;
 	private achieve_normal: eui.Image;
 	private achieve_active: eui.Image;
 
-	public constructor(optionsScene: optionsScene, scene: eui.Component) {
+	public constructor(optionsScene: GameStart.optionsScene, scene: eui.Component) {
 		super();
 		this.optionsScene = optionsScene;
 		this.Scene = scene;

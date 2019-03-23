@@ -46,7 +46,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private editableText_sixth: eui.EditableText;
 	private editableText_seventh: eui.EditableText;
 
-	private optionsScene: optionsScene;
+	private optionsScene: GameStart.optionsScene;
 
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
@@ -64,7 +64,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
 		this.judgmentstypes();
-		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
@@ -75,7 +75,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 	//文字類型判斷
 	private judgmentstypes():void {
-		if(optionsScene.getOptionInstance.getWords){
+		if(GameStart.optionsScene.getOptionInstance.getWords){
 			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時'
 		}
 	}
@@ -147,7 +147,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		});
 
 		await this.playVoice(animalDialogVoice.ratVoice_b);
-		optionsScene.getOptionInstance.playVoice("sound 490_mp3");
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 490_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 			egret.Tween.get(this.bulbGroup).to({ alpha: 1 }, 1000);
 			egret.Tween.get(this.achieveGroup).to({ alpha: 1 }, 1000);
@@ -168,7 +168,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice): Promise<void> {
-		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+		let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
@@ -244,9 +244,9 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private gohome(): void {
-		optionsScene.getOptionInstance.onPauseVoice()
-		this.optionsScene = new optionsScene();
-		optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "sheepCH":this.optionsScene.currentState="sheep";
+		GameStart.optionsScene.getOptionInstance.onPauseVoice()
+		this.optionsScene = new GameStart.optionsScene();
+		GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "sheepCH":this.optionsScene.currentState="sheep";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 

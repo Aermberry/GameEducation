@@ -294,7 +294,6 @@
             AdobeAn.compositionLoaded(lib.properties.id);
             fnStartAnimation();
         }
-
     }
     // 播放第二段开头动画
     function playTowEgretGame() {
@@ -517,7 +516,8 @@
         var egret_player = document.getElementById('egret-player');
         animation_box_thtee.style.display = 'none';
         egret_player.style.display = 'block';
-        StartGmes.startScene.instance.gotoOptionsScene();
+        // StartGmes.startScene.instance.gotoOptionsScene();
+        GameStart.optionsScene. getOptionInstance.chooseOption();
     }
 
     //   --结尾动画-- exportRoot = new lib.Lion_Main20100111_Opening_6_HTML5Canvas();

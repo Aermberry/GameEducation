@@ -37,7 +37,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	private TextboxesDate: eui.Label;
 	private TextboxesTime: eui.Label;
-	private giraffeReply:eui.Label;
+	private giraffeReply: eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -51,7 +51,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	private isMessageFormat: boolean = true;
 
-	private optionsScene: optionsScene;
+	private optionsScene: GameStart.optionsScene;
 
 	public constructor() {
 		super();
@@ -68,9 +68,9 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		mouse.setButtonMode(this.bulbGroup, true);
 		// RES.getRes("sound 24_mp3").play(0, -1)
 		this.judgmentstypes();
-		optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
-		this. lionDialogTextFlow();
+		this.lionDialogTextFlow();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.normal, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
@@ -80,7 +80,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//文字類型判斷
 	private judgmentstypes(): void {
-		if (optionsScene.getOptionInstance.getWords) {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
 			this.TextboxesDate.text = '日期：十一月九日';
 			this.TextboxesTime.text = '時間：下午六時';
 		}
@@ -171,7 +171,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
 	//語音播放
 	private async playVoice(voice: lionDialogVoice | animalDialogVoice | tipsVoices): Promise<void> {
-		let sound = optionsScene.getOptionInstance.playVoice(voice.toString())
+		let sound = GameStart.optionsScene.getOptionInstance.playVoice(voice.toString())
 		return sound;
 	}
 
@@ -190,7 +190,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		let result = this.editableText_first.text + this.editableText_second.text + this.editableText_third.text + this.editableText_fourth.text + this.editableText_fifth.text + this.editableText_sixth.text + this.editableText_seventh.text + this.editableText_eightth.text + this.editableText_nineth.text;
 
 
-		if (optionsScene.getOptionInstance.getWords) {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
 			if (result == "大王五年十一月三日") {
 				return isTrue;
 			}
@@ -256,7 +256,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 		}
 	}
 
-	private tipsDialog(textword01:number=4,textword02:number=2): void {
+	private tipsDialog(textword01: number = 4, textword02: number = 2): void {
 		this.bulbGroup.visible = false;
 		this.achieveGroup.visible = false;
 		this.giraffeDialogGroup.$children[textword01].visible = false
@@ -304,15 +304,15 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 	}
 
 	private toResultScene(): void {
-		optionsScene.getOptionInstance.onPauseVoice();
+		GameStart.optionsScene.getOptionInstance.onPauseVoice();
 		Main.instance.gotoScene(new resultScene())
 	}
 
 	private lionDialogTextFlow(): void {
-				this.giraffeReply.textFlow = [
-					{ text: lionDialogText.giraffeTextReply_A.toString(), style: { size: 50, textColor: 0x000000 } },
-					{ text: lionDialogText.giraffeTextReply_B.toString(), style: { size: 50, textColor: 0xa00000 } },
-					{ text: lionDialogText.giraffeTextReply_C.toString(), style: { size: 50, textColor: 0x000000 } }
-				];	
+		this.giraffeReply.textFlow = [
+			{ text: lionDialogText.giraffeTextReply_A.toString(), style: { size: 50, textColor: 0x000000 } },
+			{ text: lionDialogText.giraffeTextReply_B.toString(), style: { size: 50, textColor: 0xa00000 } },
+			{ text: lionDialogText.giraffeTextReply_C.toString(), style: { size: 50, textColor: 0x000000 } }
+		];
 	}
 }

@@ -12,16 +12,16 @@ class invitation extends eui.Component implements eui.UIComponent {
 	protected async childrenCreated(): Promise<void> {
 		super.childrenCreated();
 		this.judgmentstypes();
-		optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
-		optionsScene.getOptionInstance.playVoice("sound 637_mp3").then(() => {
-			optionsScene.getOptionInstance.onPauseVoice();
+		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 627_mp3')
+		GameStart.optionsScene.getOptionInstance.playVoice("sound 637_mp3").then(() => {
+			GameStart.optionsScene.getOptionInstance.onPauseVoice();
 			endInit()
 		});
 	}
 
 	//文字類型判斷
 	private judgmentstypes(): void {
-		if (optionsScene.getOptionInstance.getWords) {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
 			this.intvitationLetter01.source = 'invitation_png'
 		}
 	}
