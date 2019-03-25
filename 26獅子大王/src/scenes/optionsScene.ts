@@ -31,6 +31,7 @@ module GameStart {
     private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
     private static statusIndex: number = 0;
     private static _instance: GameStart.optionsScene;
+    private static isLoop:boolean=false;
     private sound: egret.Sound
     private soundchannel: egret.SoundChannel
     private currentSoundChannel: egret.SoundChannel
@@ -64,7 +65,13 @@ module GameStart {
       mouse.enable(this.stage);
       console.log(this)
 
-      this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+      if (optionsScene.isLoop){
+        this.chooseOption();
+      }
+      else {
+         this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+        optionsScene.isLoop=true;
+      }
       // this.currentState = "giraffe"
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
@@ -78,6 +85,7 @@ module GameStart {
       ((RES.getRes("sound 24_mp3") as egret.Sound).play(0) as egret.SoundChannel).volume = 0;
       this.startButton.visible = false;
       startInit();
+      // this.chooseOption();
     }
 
     public chooseOption(): void {

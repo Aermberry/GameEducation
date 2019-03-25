@@ -11,7 +11,6 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private tipsComponent: tipsComponent;
   private achieveComponent: achieveComponent;
 
-
   private bulbGroup: eui.Group;
   private achieveGroup: eui.Group;
   private lionDialogGroup: eui.Group;
@@ -38,7 +37,11 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private editableText_second: eui.EditableText;
   private editableText_third: eui.EditableText;
 
+  private rabbitDialogReply: eui.Label;
+
   private optionsScene: GameStart.optionsScene;
+  private dialogTextReply: animalDialogText
+
   public constructor(/*optionsScene: optionsScene*/) {
     super();
     // this.optionsScene = optionsScene;
@@ -60,6 +63,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
     this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
     this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+
+    this.dialogTextReply = new animalDialogText();//獲取動物的回復對話内容
   }
 
   private async hover(): Promise<void> {
@@ -101,7 +106,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
         this.rabbitDialogBox.play();
         this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
       }).then(() => {
-        (this.rabbitDialogGroup.$children[3] as eui.Group).visible = true;
+        this.rabbitDialogText(0);
         this.playVoice(animalDialogVoice.rabbitVoice_a);
         setTimeout(() => {
           this.circleRect.visible = true;
@@ -121,8 +126,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     });
     await this.changCard.playOnceAsync();
     await lzlib.ThreadUtility.sleep(5000);
-    (this.rabbitDialogGroup.$children[3] as eui.Group).visible = false;
-    (this.rabbitDialogGroup.$children[4] as eui.Group).visible = true;
+    this.rabbitDialogText(1);
     await this.playVoice(animalDialogVoice.rabbitVoice_b);
     GameStart.optionsScene.getOptionInstance.playVoice("sound 322_mp3");
     egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
@@ -138,6 +142,11 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private lionDialogText(text: lionDialogText): void {
     let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
     lionLabel.text = text.toString();
+  }
+
+  //rabbit動態文本
+  private rabbitDialogText(index:number ): void {
+    this.rabbitDialogReply.textFlow = this.dialogTextReply.getAll(index);
   }
 
   //語音播放
@@ -180,11 +189,11 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     else {
       this.bulbGroup.visible = false;
       this.achieveGroup.visible = false;
-      this.rabbitDialogGroup.$children[4].visible = false
+      this.rabbitDialogReply.visible=false
       this.rabbitDialogGroup.$children[2].visible = true;
       setTimeout(() => {
         this.rabbitDialogGroup.$children[2].visible = false;
-        this.rabbitDialogGroup.$children[4].visible = true;
+        this.rabbitDialogReply.visible=true;
         this.bulbGroup.visible = true;
         this.achieveGroup.visible = true;
       }, 5000)
@@ -202,8 +211,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
       egret.Tween.get(this.rabbitDialogGroup).to({ alpha: 1 }, 1000);
     })
-    this.rabbitDialogGroup.$children[4].visible = false;
-    this.rabbitDialogGroup.$children[5].visible = true;
+    this.rabbitDialogReply.visible=false
+    this.rabbitDialogGroup.$children[4].visible = true;
     this.playVoice(animalDialogVoice.rabbitVoice_d);
     await lzlib.ThreadUtility.sleep(5000);
     this.endMaskRect.visible = true;
@@ -213,8 +222,9 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private gohome(): void {
     GameStart.optionsScene.getOptionInstance.onPauseVoice()
     this.optionsScene = new GameStart.optionsScene();
-    this.optionsScene.currentState="snake"
+    this.optionsScene.currentState = "snake"
     this.optionsScene.statueIndex();
+    // this.optionsScene.chooseOption();
     Main.instance.gotoScene(this.optionsScene)
   }
 }

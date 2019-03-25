@@ -279,7 +279,7 @@
 		<e:Image source="isTrue_png" x="939.43" y="355.24"  visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false" visible.pigCh="false" visible.ratCH="false" visible.sheepCH="false"/>
 		<e:Image source="isTrue_png" x="862.43" y="773.28"  visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false" visible.giraffe="false" visible.pigCh="false" visible.ratCH="false" visible.sheepCH="false" visible.giraffeCH="false"/>
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
-	<e:Image source="start_png" verticalCenter="0" horizontalCenter="0" id="startButton"/>
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false" visible.giraffe="false" visible.pigCh="false" visible.ratCH="false" visible.sheepCH="false" visible.giraffeCH="false"/>
+	<e:Image source="start_png" verticalCenter="0" horizontalCenter="0" id="startButton" visible.snake="false" visible.pig="false" visible.rat="false" visible.sheep="false" visible.giraffe="false" visible.pigCh="false" visible.ratCH="false" visible.sheepCH="false" visible.giraffeCH="false"/>
 
 </e:Skin>
