@@ -37,7 +37,8 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private lion_active: eui.Image;
 	private ratImage: eui.Image;
 
-	private Textboxes:eui.Label;
+	private Textboxes: eui.Label;
+	private mouseDialogReply: eui.Label;
 
 	private editableText_first: eui.EditableText;
 	private editableText_second: eui.EditableText;
@@ -47,10 +48,10 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private editableText_seventh: eui.EditableText;
 
 	private optionsScene: GameStart.optionsScene;
+	private dialogTextReply: animalDialogText
 
-	public constructor(/*optionsScene:optionsScene*/) {
+	public constructor() {
 		super();
-		// this.optionsScene=optionsScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -62,7 +63,6 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		// RES.getRes("sound 24_mp3").play(0, -1)
 		this.judgmentstypes();
 		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
@@ -71,12 +71,14 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+
+		this.dialogTextReply = new animalDialogText();//獲取動物的回復對話内容
 	}
 
 	//文字類型判斷
-	private judgmentstypes():void {
-		if(GameStart.optionsScene.getOptionInstance.getWords){
-			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時'
+	private judgmentstypes(): void {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
+			this.Textboxes.text = '你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時'
 		}
 	}
 
@@ -116,7 +118,7 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				(this.ratDialogGroup.$children[3] as eui.Group).visible = true;
+				this.mouseDialogText(6);
 				this.playVoice(animalDialogVoice.ratVoice_a);
 				setTimeout(() => {
 					this.circleLeftRect.visible = true;
@@ -138,8 +140,8 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		});
 
 		await lzlib.ThreadUtility.sleep(3000);
-		(this.ratDialogGroup.$children[3] as eui.Group).visible = false;
-		(this.ratDialogGroup.$children[4] as eui.Group).visible = true;
+		
+		this.mouseDialogText(7);
 		await this.changCard.playOnceAsync().then(() => {
 			(this.invitationGroup.$children[1] as eui.Label).y = 177;
 			(this.invitationGroup.$children[3] as eui.Label).y = 675;
@@ -164,6 +166,11 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
+	}
+
+	//pig動態文本
+	private mouseDialogText(index: number): void {
+		this.mouseDialogReply.textFlow = this.dialogTextReply.getAll(index);
 	}
 
 	//語音播放
@@ -210,11 +217,11 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 		else {
 			this.bulbGroup.visible = false;
 			this.achieveGroup.visible = false;
-			this.ratDialogGroup.$children[4].visible = false
+			this.mouseDialogReply.visible=false;
 			this.ratDialogGroup.$children[2].visible = true;
 			setTimeout(() => {
 				this.ratDialogGroup.$children[2].visible = false;
-				this.ratDialogGroup.$children[4].visible = true;
+				this.mouseDialogReply.visible=true;
 				this.bulbGroup.visible = true;
 				this.achieveGroup.visible = true;
 			}, 5000)
@@ -233,20 +240,20 @@ class mouseScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.ratDialogGroup).to({ alpha: 1 }, 1000);
 			console.log("here")
 		})
-		this.ratDialogGroup.$children[4].visible = false;
-		this.ratDialogGroup.$children[5].visible = true;
-		this.ratImage.source = "rat_happy_png"
+		this.mouseDialogReply.visible=false;
+		this.ratDialogGroup.$children[4].visible = true;
+		this.ratImage.source = "rat_happy_png";
 		this.playVoice(animalDialogVoice.ratVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
 		this.endMaskRect.visible = true;
 		await this.endMaskRectAnim.playOnceAsync();
-		await this.gohome()
+		await this.gohome();
 	}
 
 	private gohome(): void {
 		GameStart.optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new GameStart.optionsScene();
-		GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "sheepCH":this.optionsScene.currentState="sheep";
+		GameStart.optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "sheepCH" : this.optionsScene.currentState = "sheep";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 

@@ -618,25 +618,12 @@
         <e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
                  anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
         <e:Label text="好像有什麼地方寫錯\n了，需要提示嗎？按\n下方的提示按鈕吧！" x="24.25" lineSpacing="25" size="50" y="-36.36"
-                 textColor="0x000000" fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
-        <e:Group x="48.47" y="-42.43" visible="false">
-            <e:Label text="對不起! 我想參加\n嘉年華，只是不知\n                    ？" anchorOffsetY="0" height="211.82" x="0" y="0"
-                     anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-                     bold="true" />
-            <e:Label text="聚會的地點" anchorOffsetY="0" x="-0.07" y="149.8" anchorOffsetX="0" size="50" textColor="0xA00000"
-                     lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-        </e:Group>
-        <e:Group x="15.14" y="-3.03" visible="false">
-            <e:Label text="啊！原來地點是       \n         ，讓我寫上吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-                     anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
-                     fontFamily="SourceHanSansHW-Bold" bold="true" />
-            <e:Label text="森林" anchorOffsetY="0" height="60.3" x="357.35" y="-1.11" anchorOffsetX="0" width="111.37"
-                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-            <e:Label text="果園" anchorOffsetY="0" height="66.36" x="-0.42" y="77.46" anchorOffsetX="0" width="114.64"
-                     size="50" textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-        </e:Group>
+                 textColor="0x000000" fontFamily="SourceHanSansHW-Bold"  visible="false"/>
+			<e:Label id="mouseDialogReply" text="" anchorOffsetY="130.3" height="211.82" x="406.06" y="124.24" anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"/>
+
+
         <e:Label text="太好了！\n大王萬歲！" x="130.31" lineSpacing="25" size="50" y="3.04" textColor="0x000000"
-                 fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
+                 fontFamily="SourceHanSansHW-Bold"  visible="false"/>
     </e:Group>
     <e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true"
              touchThrough="true" touchChildren="true">

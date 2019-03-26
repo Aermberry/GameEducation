@@ -161,6 +161,156 @@ class animalDialogText {
                         }
                     }
                 ]
+            case 6:
+                return [
+                    {
+                        text: "對不起！我想參加\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "嘉年華，只是不知\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "聚會的地點", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "？", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }]
+            case 7:
+                return [
+                    {
+                        text: "啊！原來地點是", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "森林\n", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "果園", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "，讓我寫上吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 8:
+                return [
+                    {
+                        text: "啊！原來地點是", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "森林\n", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "果園", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "，讓我寫上吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 9:
+                return [
+                    {
+                        text: "印章好像", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "蓋錯了位\n", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "置", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "，需要提示嗎？按\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }, {
+                        text: "下方的提示按鈕吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 10:
+                return [
+                    {
+                        text: "對不起！我不知道是\n大王請客，我以爲這\n只是宣傳單張", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 11:
+                return [
+                    {
+                        text: "邀請卡沒有大王的\n名字。", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 12:
+                return [
+                    {
+                        text: "卡上沒有大王\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "(發卡人)", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "的名字，\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "讓我來", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "蓋印章", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+
+                ]
+            case 13:
+                return [
+                    {
+                        text: "太好了！\n大王萬歲！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
         }
     }
 }

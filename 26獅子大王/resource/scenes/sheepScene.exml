@@ -576,6 +576,7 @@
 
 
 	</e:Group>
+	<e:Image id="sheep" x="1539.68" y="1065.74" source="sheep_normal22_png"/>
 
 	<e:Group id="sheepDialogGroup" x="934.86" y="815.94" alpha="1" width="750" height="411">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.67" y="296.86" scaleY="-1" scaleX="-1"
@@ -584,35 +585,14 @@
 		         anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
 
 
-		<e:Group x="39.4" y="-36.36" visible="false">
-			<e:Label text="印章好像      \n    ，需要提示嗎？按\n下方的提示按鈕吧！" x="0" lineSpacing="25" size="50" y="0" textColor="0x000000" fontFamily="SourceHanSansHW-Bold" bold="true"/>
-			<e:Label text="蓋錯了位" x="203.03" lineSpacing="25" size="50" y="3.03" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xff0000"/>
-			<e:Label text="置" x="3.03" lineSpacing="25" size="50" y="72.73" fontFamily="SourceHanSansHW-Bold" bold="true" textColor="0xff0000"/>
-		</e:Group>
-		<e:Group x="18.17" y="-30.31" visible="false">
-			<e:Label text="對不起！ 我不知道是\n大王請客，我以爲這\n只是宣傳單張。" anchorOffsetY="0" height="211.82" x="0" y="0"
-			         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-			         bold="true" />
 
 
 
-		</e:Group>
-		<e:Group x="39.39" y="0" visible="false">
-			<e:Label text="邀請卡沒有大王的\n名字。" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-			         bold="true" />
-		</e:Group>
-        <e:Group x="69.69" y="-45.45" visible="false">
-		<e:Label text="卡上沒有大王\n                的名字，\n讓我來             吧！" anchorOffsetY="130.3" height="211.82" x="366.67" y="130.3"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-			         bold="true" />
-        <e:Label text="(發卡人)" x="2.21" y="76.06" size="50" bold="true" textColor="0xa00000"/>
-        <e:Label text="蓋印章" y="149.1" size="50" x="157.03" bold="true" textColor="0xa00000"/>
-		</e:Group>
-		<e:Label text="太好了！\n大王萬歲！" x="136.4" lineSpacing="25" size="50" y="0" textColor="0x000000"  fontFamily="SourceHanSansHW-Bold" bold="true" visible="false"/>
+
+		<e:Label id="sheepDialogReply" text="" x="27.31" lineSpacing="25" size="50" y="-18.18" textColor="0x000000"  fontFamily="SourceHanSansHW-Bold" verticalAlign="middle"/>
 	</e:Group>
 
-	<e:Image id="sheep" x="1536.65" y="1059.68" source="sheep_normal_png"/>
+
 
 	<e:Group id="bulbGroup" x="540.95" y="1251.15" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true" touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />

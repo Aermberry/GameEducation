@@ -46,9 +46,11 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private editableText_second: eui.EditableText;
 	private editableText_third: eui.EditableText;
 
-	private Textboxes:eui.Label;
+	private Textboxes: eui.Label;
+	private sheepDialogReply: eui.Label;
 
 	private optionsScene: GameStart.optionsScene;
+	private dialogTextReply: animalDialogText
 
 	public constructor(/*optionsScene:optionsScene*/) {
 		super();
@@ -79,12 +81,14 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 			this.initDrag();
 		}, this);
 
+		this.dialogTextReply = new animalDialogText();//獲取動物的回復對話内容
+
 	}
 
 	//文字類型判斷
-	private judgmentstypes():void {
-		if(GameStart.optionsScene.getOptionInstance.getWords){
-			this.Textboxes.text='你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散 ！'
+	private judgmentstypes(): void {
+		if (GameStart.optionsScene.getOptionInstance.getWords) {
+			this.Textboxes.text = '你們要來參加秋季嘉年華 !\n日期：十一月九日\n時間：下午六時\n地點：森林果園\n希望你能出席，不見不散 ！'
 		}
 	}
 
@@ -133,7 +137,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.tailWiggle.play(0);
 		await lzlib.ThreadUtility.sleep(2500);
 		await this.invitationCard.playOnceAsync().then(() => {
-			this.plantMaskRect.visible=false;
+			this.plantMaskRect.visible = false;
 			this.lionDialog.playOnceAsync();
 		});
 		await lzlib.ThreadUtility.sleep(2000);
@@ -143,11 +147,13 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				(this.sheepDialogGroup.$children[3] as eui.Group).visible = true;
+				// (this.sheepDialogGroup.$children[3] as eui.Group).visible = true;
+				this.sheepDialogText(10);
 				this.playVoice(animalDialogVoice.sheepVoice_a);
 				setTimeout(() => {
-					(this.sheepDialogGroup.$children[3] as eui.Group).visible = false;
-					(this.sheepDialogGroup.$children[4] as eui.Group).visible = true;
+					// (this.sheepDialogGroup.$children[3] as eui.Group).visible = false;
+					// (this.sheepDialogGroup.$children[4] as eui.Group).visible = true;
+					this.sheepDialogText(11);
 				}, 9500)
 			})
 		})
@@ -159,8 +165,9 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 		await this.playVoice(lionDialogVoice.lionVoice_sheepB).then(() => {
 			this.playVoice(animalDialogVoice.sheepVoice_b);
-			(this.sheepDialogGroup.$children[4] as eui.Group).visible = false;
-			(this.sheepDialogGroup.$children[5] as eui.Group).visible = true;
+			// (this.sheepDialogGroup.$children[4] as eui.Group).visible = false;
+			// (this.sheepDialogGroup.$children[5] as eui.Group).visible = true;
+			this.sheepDialogText(12);
 		});
 		this.changCard.playOnceAsync();
 		await lzlib.ThreadUtility.sleep(3000);
@@ -175,6 +182,11 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
+	}
+
+	//pig動態文本
+	private sheepDialogText(index: number): void {
+		this.sheepDialogReply.textFlow = this.dialogTextReply.getAll(index);
 	}
 
 	//語音播放
@@ -205,7 +217,7 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.initDrop(this.stamperRect, this.onStamperDrop);
 		mouse.setMouseMoveEnabled(true);
 		this.stamperComponent.currentState = "normal";
-		this.stamperComponent.addEventListener(lzlib.LzDragEvent.CANCEL,this.onDropCancel,this)
+		this.stamperActiveColone.addEventListener(lzlib.LzDragEvent.CANCEL, this.onDropCancel, this)
 	}
 
 	private initDrop(dropTarget: eui.Component, dropFunction: (e: lzlib.LzDragEvent) => void): void {
@@ -222,30 +234,34 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		if (target == "lister") {
 			e.preventDefault();
 			this.dropStamper.visible = true;
-			e.dragObject.visible = false;
 			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 0 }, 1000).call(() => {
 				egret.Tween.get(this.bulbGroup).to({ alpha: 0 }, 1000);
 				egret.Tween.get(this.stamperGroup).to({ alpha: 0 }, 1000);
 			});
-				setTimeout(() => {
+			setTimeout(() => {
+				e.dragObject.visible = false;
 				this.congratulateAnim();
 			}, 2800)
 		}
-		
+
 
 	}
 
-	private async onDropCancel():Promise<void> {
-			this.bulbGroup.visible = false;
-			this.stamperGroup.visible = false;
-			this.sheepDialogGroup.$children[5].visible = false;
-			this.sheepDialogGroup.$children[2].visible = true;
-			this.playVoice(animalDialogVoice.sheepVoice_d).then(() => {
-				this.bulbGroup.visible = true;
-				this.stamperGroup.visible = true;
-				this.sheepDialogGroup.$children[5].visible = true;
-				this.sheepDialogGroup.$children[2].visible = false;
-			})
+	private async onDropCancel(): Promise<void> {
+		this.bulbGroup.visible = false;
+		this.stamperGroup.visible = false;
+		this.stamperActiveColone.visible=false;
+		// this.sheepDialogGroup.$children[5].visible = false;
+		// this.sheepDialogGroup.$children[2].visible = true;
+		this.sheepDialogText(9);
+		this.playVoice(animalDialogVoice.sheepVoice_d).then(() => {
+			this.bulbGroup.visible = true;
+			this.stamperGroup.visible = true;
+			this.stamperActiveColone.visible=true;
+			// this.sheepDialogGroup.$children[5].visible = true;
+			// this.sheepDialogGroup.$children[2].visible = false;
+			this.sheepDialogText(12);
+		})
 	}
 
 
@@ -260,9 +276,10 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
 			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 1 }, 1000);
 		})
-		this.sheepDialogGroup.$children[4].visible = false;
-		this.sheepDialogGroup.$children[5].visible = false;
-		this.sheepDialogGroup.$children[6].visible = true;
+		// this.sheepDialogGroup.$children[4].visible = false;
+		// this.sheepDialogGroup.$children[5].visible = false;
+		// this.sheepDialogGroup.$children[6].visible = true;
+		this.sheepDialogText(13);
 		this.sheep.source = "sheep_happy_png"
 		this.playVoice(animalDialogVoice.sheepVoice_c);
 		await lzlib.ThreadUtility.sleep(5000);
@@ -271,10 +288,10 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await this.gohome()
 	}
 	private gohome(): void {
-	GameStart.optionsScene.getOptionInstance.onPauseVoice();
-    this.optionsScene = new GameStart.optionsScene();
-	GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "giraffeCH":this.optionsScene.currentState="giraffe";
-	this.optionsScene.statueIndex();
-    Main.instance.gotoScene(this.optionsScene)
-  }
+		GameStart.optionsScene.getOptionInstance.onPauseVoice();
+		this.optionsScene = new GameStart.optionsScene();
+		GameStart.optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "giraffeCH" : this.optionsScene.currentState = "giraffe";
+		this.optionsScene.statueIndex();
+		Main.instance.gotoScene(this.optionsScene)
+	}
 }
