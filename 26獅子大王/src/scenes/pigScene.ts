@@ -45,7 +45,10 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private editableText_seventh: eui.EditableText;
 
 	private Textboxes: eui.Label;
+	private pigDialogReply: eui.Label;
+
 	private optionsScene: GameStart.optionsScene;
+	private dialogTextReply: animalDialogText
 
 	private isMessageFormat: boolean = true;
 
@@ -62,7 +65,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		// RES.getRes("sound 24_mp3").play(0, -1)
+
 		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.judgmentstypes();
 		this.playAnim();
@@ -71,6 +74,8 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+
+		this.dialogTextReply=new animalDialogText();//獲取動物的回復對話内容
 	}
 
 	//文字類型判斷
@@ -117,7 +122,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				(this.pigDialogGroup.$children[3] as eui.Group).visible = true;
+				this.pigDialogText(4)
 				this.playVoice(animalDialogVoice.pigVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
@@ -135,6 +140,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 			this.playVoice(lionDialogVoice.lionVoice_pigC);
 			this.circleRect.visible = false;
 		});
+
 		await this.changCard.playOnceAsync().then(() => {
 			(this.invitationGroup.$children[2] as eui.Label).lineSpacing = 160;
 			(this.invitationGroup.$children[2] as eui.Label).height = 410;
@@ -142,8 +148,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 			this.invitationGroup.$children[3].visible = true;
 		});
 		await lzlib.ThreadUtility.sleep(5000);
-		(this.pigDialogGroup.$children[3] as eui.Group).visible = false;
-		(this.pigDialogGroup.$children[4] as eui.Group).visible = true;
+		this.pigDialogText(5);
 		await this.playVoice(animalDialogVoice.pigVoice_b);
 		GameStart.optionsScene.getOptionInstance.playVoice("sound 4 (D10.mp3)_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
@@ -162,6 +167,11 @@ class pigScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
+	}
+
+	//pig動態文本
+	private pigDialogText(index: number): void {
+		this.pigDialogReply.textFlow = this.dialogTextReply.getAll(index);
 	}
 
 	private lionDialogTextFlow(): void {
@@ -242,17 +252,16 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		}
 		else {
 			if (this.isMessageFormat) {
-				this.changeWord(4, 6)
+				this.changeWord(3, 5)
 				GameStart.optionsScene.getOptionInstance.playVoice("sound 10 (D12.mp3)_mp3");
 			}
 			else {
 				this.changeWord();
 			}
-
 		}
 	}
 
-	private changeWord(textword01: number = 4, textword02: number = 2): void {
+	private changeWord(textword01: number = 3, textword02: number = 2): void {
 		this.bulbGroup.visible = false;
 		this.achieveGroup.visible = false;
 		this.pigDialogGroup.$children[textword01].visible = false
@@ -276,7 +285,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
 			egret.Tween.get(this.pigDialogGroup).to({ alpha: 1 }, 1000);
 		})
-		this.pigDialogGroup.$children[4].visible = false;
+		this.pigDialogReply.visible=false;
 		this.pigDialogGroup.$children[5].visible = true;
 		this.pigImage.source = "pig_happy_png";
 		this.flusteredComponent.visible = false;

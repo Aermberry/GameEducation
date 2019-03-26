@@ -42,9 +42,8 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   private optionsScene: GameStart.optionsScene;
   private dialogTextReply: animalDialogText
 
-  public constructor(/*optionsScene: optionsScene*/) {
+  public constructor() {
     super();
-    // this.optionsScene = optionsScene;
   }
 
   protected partAdded(partName: string, instance: any): void {
@@ -145,7 +144,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
   }
 
   //rabbit動態文本
-  private rabbitDialogText(index:number ): void {
+  private rabbitDialogText(index: number): void {
     this.rabbitDialogReply.textFlow = this.dialogTextReply.getAll(index);
   }
 
@@ -189,11 +188,11 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     else {
       this.bulbGroup.visible = false;
       this.achieveGroup.visible = false;
-      this.rabbitDialogReply.visible=false
+      this.rabbitDialogReply.visible = false
       this.rabbitDialogGroup.$children[2].visible = true;
       setTimeout(() => {
         this.rabbitDialogGroup.$children[2].visible = false;
-        this.rabbitDialogReply.visible=true;
+        this.rabbitDialogReply.visible = true;
         this.bulbGroup.visible = true;
         this.achieveGroup.visible = true;
       }, 5000)
@@ -211,7 +210,7 @@ class rabbitScene extends eui.Component implements eui.UIComponent {
     await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
       egret.Tween.get(this.rabbitDialogGroup).to({ alpha: 1 }, 1000);
     })
-    this.rabbitDialogReply.visible=false
+    this.rabbitDialogReply.visible = false
     this.rabbitDialogGroup.$children[4].visible = true;
     this.playVoice(animalDialogVoice.rabbitVoice_d);
     await lzlib.ThreadUtility.sleep(5000);

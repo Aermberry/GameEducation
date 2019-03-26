@@ -65,6 +65,102 @@ class animalDialogText {
                         }
                     }
                 ]
+            case 2:
+                return [
+                    {
+                        text: "對不起！我不知道\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "應該", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "哪天", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "來參加！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 3:
+                return [
+                    {
+                        text: "讓我寫上", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "聚會的日\n", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "期", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }, {
+                        text: "當天是11月\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }, {
+                        text: "9日對吧？", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 4:
+                return [
+                    {
+                        text: "對不起！我不知道\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "時間", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "啊！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
+            case 5:
+                return [
+                    {
+                        text: "讓我替你寫上聚會\n", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "的時間吧！是", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "下午\n", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "六時", style: {
+                            size: 50, textColor: 0xa00000
+                        }
+                    }, {
+                        text: "吧！", style: {
+                            size: 50, textColor: 0x000000
+                        }
+                    }
+                ]
         }
     }
 }

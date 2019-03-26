@@ -252,7 +252,6 @@
 				</tween:Set>
 			</tween:TweenItem>
 		</tween:TweenGroup>
-
 		<tween:TweenGroup id="happyAnim">
 			<tween:TweenItem target="{lionsmell_mouth_02}">
 				<tween:Set>
@@ -539,56 +538,77 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-
 	<e:Group id="invitationGroup" x="974.7" y="448.85" anchorOffsetX="769.7" anchorOffsetY="360.61" alpha="0"
 	         touchThrough="true">
 		<e:Image source="rabbit_Bg_jpg" y="0" anchorOffsetX="0" width="1509.88" anchorOffsetY="0" height="721.27" x="0" />
 		<e:Label id="bodyText" text="你們要來參加秋季嘉年華 !\n希望你能出席，不見不散 ！" x="7.78" y="8.73" anchorOffsetX="0" width="1496.67"
 		         anchorOffsetY="0" height="708.79" textAlign="center" verticalAlign="middle" size="87" textColor="0x000000"
 		         lineSpacing="100" bold="true" fontFamily="SourceHanSansHW-Bold" border="true" />
-
-
 		<e:Group id="group" x="55.54" y="50" alpha="1" touchThrough="true">
-			<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold" scaleX="1"
-			         scaleY="1" />
+			<e:Label text="親愛的小動物：" size="90" x="0" y="0" textColor="0x000000" bold="true" fontFamily="SourceHanSansHW-Bold"
+			         scaleX="1" scaleY="1" />
 		</e:Group>
 		<e:Group id="editGroup" x="255.55" y="304.55" alpha="1" touchThrough="true" visible="false">
 			<e:Group x="-13.7" y="0" touchThrough="true">
-			<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_first" text="" x="14" background="false" backgroundColor="0xffffff" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="93.33" height="110" y="3" touchEnabled="false" anchorOffsetX="0"/>
+				<e:Rect id="firstBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_first" text="" x="14" background="false" backgroundColor="0xffffff" border="false"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" width="93.33" height="110" y="3"
+				                touchEnabled="false" anchorOffsetX="0" />
 			</e:Group>
 			<e:Group x="115.1" y="0">
-			<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_second" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="secondBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_second" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="243.29" y="0">
-			<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0" touchEnabled="false"/>
+				<e:Rect id="thirdBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_third" text="：" x="0" background="true" backgroundColor="0xFFFFFF" border="true"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="120" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="373.6" y="0">
-			<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_fourth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="forthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_fourth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="500.87" y="0">
-			<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_fifth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="fifthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_fifth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="631.16" y="0">
-			<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_sixth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="sixthBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_sixth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false"
+				                textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="761.47" y="0">
-			<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_seventh" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="sevenBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_seventh" text="" x="14" background="false" backgroundColor="0xFFFFFF"
+				                border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 			<e:Group x="888.74" y="0" touchEnabled="false">
-			<e:Rect id="eightBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0"/>
-			<e:EditableText id="editableText_eightth" text="" x="14" background="false" backgroundColor="0xFFFFFF" border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90" fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0" touchEnabled="false"/>
+				<e:Rect id="eightBgRect" width="120" height="110" x="0" fillColor="0xffffff" strokeWeight="2" y="0" />
+				<e:EditableText id="editableText_eightth" text="" x="14" background="false" backgroundColor="0xFFFFFF"
+				                border="false" textColor="0x000000" maxChars="1" textAlign="center" verticalAlign="middle" size="90"
+				                fontFamily="SourceHanSansHW-Bold" anchorOffsetY="0" height="110" width="93.33" y="0"
+				                touchEnabled="false" />
 			</e:Group>
 		</e:Group>
 		<e:Rect id="circleRect" width="499.99" height="254.54" anchorOffsetX="0" ellipseHeight="300" ellipseWidth="600"
 		        x="751.33" y="144.58" fillAlpha="0" strokeWeight="10" fillColor="0xa00000" strokeColor="0xa00000"
-		        anchorOffsetY="0" alpha="1"  visible="false"/>
+		        anchorOffsetY="0" alpha="1" visible="false" />
 	</e:Group>
 	<e:Group x="86.1" y="771.55">
 		<e:Image id="lion_tail" source="lion_tail_png" x="217.43" y="244.01" anchorOffsetX="0" anchorOffsetY="58.75"
@@ -613,42 +633,32 @@
 		<e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51" width="748.51"
 		         anchorOffsetY="93.94" height="380.06" alpha="0" />
 		<e:Label text="" anchorOffsetX="0" width="665.77" anchorOffsetY="0" height="284.54" x="181.22" y="41.71"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
-		         verticalAlign="middle" />
+		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
+		         textAlign="left" verticalAlign="middle" />
 		<e:Label text="你説得有理，不吃\n你了！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45" x="181.22" y="84.13"
 		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" visible="false" />
 		<e:Label text="我要再邀請小動物參\n加嘉年華，快替我修\n改吧！" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="175.45"
-		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-		         visible="false" />
+		         x="181.22" y="84.13" textColor="0x020202" bold="true" size="50" lineSpacing="25"
+		         fontFamily="SourceHanSansHW-Bold" visible="false" />
 	</e:Group>
 	<e:Group id="snakeDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
 		         anchorOffsetX="1.12" width="750" anchorOffsetY="0" height="411" rotation="3.38" alpha="0" />
 		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="477.58" y="185.85" scaleY="-1" scaleX="-1"
 		         anchorOffsetX="194.34" width="750" anchorOffsetY="103.87" height="411" rotation="3.38" alpha="0" />
-		<e:Label text="好像有什麼地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="-6.05" lineSpacing="25" size="50" y="-30.3" textColor="0x000000"
+		<e:Label text="好像有什麼地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="3.04" lineSpacing="25" size="50" y="-21.21" textColor="0x000000"
 		         fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
-		<e:Group x="48.47" y="-6.07" visible="false">
-			<e:Label text="對不起！ 我不知道\n應該        來參加！" anchorOffsetY="0" height="211.82" x="0" y="0" anchorOffsetX="0"
-			         width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-			<e:Label text="哪天" anchorOffsetY="0" height="57.28" x="102.18" y="73.77" anchorOffsetX="0" width="123.05" size="50"
-			         textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-		</e:Group>
-		<e:Group x="60.6" y="-15.16" visible="false">
-			<e:Label text="讓我寫上     \n    吧！當天是11月\n9日對吧？" anchorOffsetY="130.3" height="211.82" x="366.67" y="127.27"
-			         anchorOffsetX="366.67" width="582.15" size="50" textColor="0x000000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold"
-			         bold="true" />
-			<e:Label text="聚會的日" anchorOffsetY="0" height="69.39" x="203.94" y="-2.12" anchorOffsetX="0" width="236.7" size="50"
-			         textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-			<e:Label text="期" anchorOffsetY="0" height="66.36" x="-5.15" y="70.6" anchorOffsetX="0" width="63.97" size="50"
-			         textColor="0xA00000" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" bold="true" />
-		</e:Group>
-		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000" fontFamily="SourceHanSansHW-Bold"
-		         bold="true"  visible="false"/>
+		<e:Label id="snakeDialogReply" text="" anchorOffsetY="0" height="211.82" x="39.39" y="-30.3"
+		         anchorOffsetX="0" width="582.15" size="50" textColor="0x000000" lineSpacing="25"
+		         fontFamily="SourceHanSansHW-Bold"  verticalAlign="middle"/>
+
+
+		<e:Label text="逃過一劫，太好了！" x="66.67" lineSpacing="25" size="50" y="45.46" textColor="0x000000"
+		         fontFamily="SourceHanSansHW-Bold" bold="true"  visible="false"/>
 	</e:Group>
 	<e:Image id="snake" source="snake_normal_png" x="1588.17" y="1041.5" />
-	<ns1:flustered id="flusteredComponent" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0" height="153.7"
-	               rotation="346.55" />
+	<ns1:flustered id="flusteredComponent" x="1729.1" y="954.55" anchorOffsetX="0" width="103.45" anchorOffsetY="0"
+	               height="153.7" rotation="346.55" />
 	<e:Group id="bulbGroup" x="540.95" y="1236" anchorOffsetX="0" anchorOffsetY="0" alpha="0" touchEnabled="true"
 	         touchThrough="true" touchChildren="true">
 		<e:Label text="提示" size="90" x="0" y="39" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
@@ -663,5 +673,5 @@
 		                      skinName="achieveComponentSkin" />
 	</e:Group>
 	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
-	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
+	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0" visible="false" />
 </e:Skin>

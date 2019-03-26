@@ -65,27 +65,29 @@ module GameStart {
       mouse.enable(this.stage);
       console.log(this)
 
-      if (optionsScene.isLoop){
-        this.chooseOption();
-      }
-      else {
-         this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
-        optionsScene.isLoop=true;
-      }
+      // if (optionsScene.isLoop){
+      //   this.chooseOption();
+      // }
+      // else {
+      //    this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+      //   optionsScene.isLoop=true;
+      // }
+
+      this.startGames();
       // this.currentState = "giraffe"
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
 
-      //  this.currentState = "snake"
-      // this.snakeComponent.currentState = "active"
-      // this.snakeComponent.touchChildren = true;
+       this.currentState = "pig"
+      this.pigComponent.currentState = "active"
+      this.pigComponent.touchChildren = true;
     }
 
     private startGames(): void {
       ((RES.getRes("sound 24_mp3") as egret.Sound).play(0) as egret.SoundChannel).volume = 0;
       this.startButton.visible = false;
-      startInit();
-      // this.chooseOption();
+      // startInit();
+      this.chooseOption();
     }
 
     public chooseOption(): void {

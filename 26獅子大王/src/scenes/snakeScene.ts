@@ -45,13 +45,13 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private editableText_seventh: eui.EditableText;
 	private editableText_eightth: eui.EditableText;
 
-	private optionsScene:GameStart.optionsScene;
-	private optionsScenes:GameStart.optionsScene;
+	private snakeDialogReply: eui.Label;
 
-	public constructor(/*optionsScene:optionsScene*/) {
+	private optionsScene: GameStart.optionsScene;
+	private dialogTextReply: animalDialogText
+
+	public constructor() {
 		super();
-		// this.optionsScenes=optionsScene
-		// this.optionsScene=optionsScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -63,7 +63,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 		mouse.enable(this.stage);
 		mouse.setButtonMode(this.bulbGroup, true);
-		// RES.getRes("sound 24_mp3").play(0, -1)
 		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.playAnim();
 		this.bulbComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hover, this);
@@ -71,6 +70,8 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.active, this);
 		this.bulbComponent.addEventListener(egret.TouchEvent.TOUCH_END, this.tips, this);
 		this.achieveGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.result, this);
+
+		this.dialogTextReply = new animalDialogText();//獲取動物的回復對話内容
 	}
 
 	private async hover(): Promise<void> {
@@ -80,7 +81,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private async normal(): Promise<void> {
 		await this.enableMouse();
 		this.bulbComponent.currentState = "normal"
-
 	}
 
 	private async active(): Promise<void> {
@@ -103,6 +103,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			this.plantMaskRect.visible = false;
 			this.lionDialog.playOnceAsync();
 		});
+		
 		await lzlib.ThreadUtility.sleep(2000);
 		this.lionDialogText(lionDialogText.snakeText_a);
 		this.playVoice(lionDialogVoice.lionVoice_snakeA).then(() => {
@@ -110,7 +111,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				(this.snakeDialogGroup.$children[3] as eui.Group).visible = true;
+				this.snakeDialogText(0);
 				this.playVoice(animalDialogVoice.snakeVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
@@ -127,7 +128,6 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 			this.playVoice(lionDialogVoice.lionVoice_snakeC)
 			setTimeout(() => {
 				this.lionDialogTextFlow();
-
 			}, 2000)
 
 		});
@@ -140,8 +140,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 
 		await lzlib.ThreadUtility.sleep(9500);
-		(this.snakeDialogGroup.$children[3] as eui.Group).visible = false;
-		(this.snakeDialogGroup.$children[4] as eui.Group).visible = true;
+		this.snakeDialogText(1);
 		await this.playVoice(animalDialogVoice.snakeVoice_c);
 		GameStart.optionsScene.getOptionInstance.playVoice("sound 406_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {
@@ -161,6 +160,11 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private lionDialogText(text: lionDialogText): void {
 		let lionLabel = this.lionDialogGroup.$children[2] as eui.Label;
 		lionLabel.text = text.toString();
+	}
+
+	//snake動態文本
+	private snakeDialogText(index: number): void {
+		this.snakeDialogReply.textFlow = this.dialogTextReply.getAll(index);
 	}
 
 	private lionDialogTextFlow(): void {
@@ -228,11 +232,11 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		else {
 			this.bulbGroup.visible = false;
 			this.achieveGroup.visible = false;
-			this.snakeDialogGroup.$children[4].visible = false
+			this.snakeDialogReply.visible = false;
 			this.snakeDialogGroup.$children[2].visible = true;
 			setTimeout(() => {
 				this.snakeDialogGroup.$children[2].visible = false;
-				this.snakeDialogGroup.$children[4].visible = true;
+				this.snakeDialogReply.visible = true;
 				this.bulbGroup.visible = true;
 				this.achieveGroup.visible = true;
 			}, 5000)
@@ -250,8 +254,8 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
 			egret.Tween.get(this.snakeDialogGroup).to({ alpha: 1 }, 1000);
 		})
-		this.snakeDialogGroup.$children[4].visible = false;
-		this.snakeDialogGroup.$children[5].visible = true;
+		this.snakeDialogReply.visible = false;
+		this.snakeDialogGroup.$children[4].visible = true;
 		this.snake.source = "snake_happy_png";
 		this.flusteredComponent.visible = false;
 		this.playVoice(animalDialogVoice.snakeVoice_d);
@@ -264,7 +268,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 	private gohome(): void {
 		GameStart.optionsScene.getOptionInstance.onPauseVoice()
 		this.optionsScene = new GameStart.optionsScene();
-		GameStart.optionsScene.getOptionInstance.getWords?this.optionsScene.currentState = "pigCh":this.optionsScene.currentState="pig";
+		GameStart.optionsScene.getOptionInstance.getWords ? this.optionsScene.currentState = "pigCh" : this.optionsScene.currentState = "pig";
 		this.optionsScene.statueIndex();
 		Main.instance.gotoScene(this.optionsScene)
 	}
