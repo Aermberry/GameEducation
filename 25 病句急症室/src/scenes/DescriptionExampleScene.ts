@@ -30,7 +30,7 @@ class DescriptionExampleScene extends eui.Component implements  eui.UIComponent 
 	private onStartButtonClick(): void
 	{
 		if (this.startButton.label == '下頁') {
-			this.descriptionLabel.text = '例如：我們一起慶祝聖誕節的到來。\r這個句子中，「的到來」是多餘的部分，因爲，我們慶\r祝的是「聖誕節」，而不是慶祝這個節日「的到來」。';
+			this.descriptionLabel.text = '例如：我們一起慶祝聖誕節的到來。\r這個句子中，「的到來」是多餘的部分，因為，我們慶\r祝的是「聖誕節」，而不是慶祝這個節日「的到來」。';
 			this.startButton.label = '開始';
 		} else {
 			Main.instance.gotoScene(new DescriptionGameplayScene());	
