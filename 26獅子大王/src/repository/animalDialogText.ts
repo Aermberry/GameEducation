@@ -311,6 +311,63 @@ class animalDialogText {
                         }
                     }
                 ]
+            case 14:
+                return [
+                    {
+                        text: "好像有什麼地方寫錯了！\n，需要提示嗎？按\n下方的提示按鈕吧！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
+            case 15:
+                return [
+                    {
+                        text: "對不起！我以爲這\n是舊的邀請卡！卡\n上沒有發卡日期！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
+            case 16:
+                return [
+                    {
+                        text: "卡上沒有發卡日期，\n讓我替你寫上", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    },
+                    {
+                        text: "發卡日\n期", style: {
+                            size: 50,
+                            textColor: 0xa00000
+                        }
+                    },
+                    {
+                        text: "吧！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
+            case 17:
+                return [
+                    {
+                        text: "你先前寫的是中國數\n字還是阿拉伯數字？\n兩者要一致才對！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
+            case 18:
+                return [
+                    {
+                        text: "太好了\n大王萬歲！", style: {
+                            size: 50,
+                            textColor: 0x000000
+                        }
+                    }
+                ]
         }
     }
 }

@@ -78,9 +78,9 @@ module GameStart {
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
 
-       this.currentState = "sheep"
-      this.sheepComponent.currentState = "active"
-      this.sheepComponent.touchChildren = true;
+       this.currentState = "giraffe"
+      this.giraffeComponent.currentState = "active"
+      this.giraffeComponent.touchChildren = true;
     }
 
     private startGames(): void {
