@@ -31,7 +31,7 @@ module GameStart {
     private index: string = "0"//0:rabbit,1:snake,2:pig,3:rat,4:sheep,5:giraffe
     private static statusIndex: number = 0;
     private static _instance: GameStart.optionsScene;
-    private static isLoop:boolean=false;
+    private static isLoop: boolean = false;
     private sound: egret.Sound
     private soundchannel: egret.SoundChannel
     private currentSoundChannel: egret.SoundChannel
@@ -78,7 +78,7 @@ module GameStart {
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
 
-       this.currentState = "giraffe"
+      this.currentState = "giraffe"
       this.giraffeComponent.currentState = "active"
       this.giraffeComponent.touchChildren = true;
     }
@@ -262,7 +262,13 @@ module GameStart {
 
     // BG播放
     public onPlayVoice(voice: string): void {
-      // await RES.getResAsync(voice);
+      this.sound = RES.getRes(voice);
+      this.soundchannel = this.sound.play(0, -1);
+    }
+
+    // BG異步加載播放
+    public async onPlayBackgroundSound(voice: string): Promise<void> {
+      await RES.getResAsync(voice);
       this.sound = RES.getRes(voice);
       this.soundchannel = this.sound.play(0, -1);
     }

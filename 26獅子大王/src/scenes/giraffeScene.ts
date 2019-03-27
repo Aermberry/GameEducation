@@ -36,7 +36,6 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
   private TextboxesDate: eui.Label;
   private TextboxesTime: eui.Label;
-  private giraffeReply: eui.Label;
 
   private editableText_first: eui.EditableText;
   private editableText_second: eui.EditableText;
@@ -362,7 +361,7 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
   }
 
   private lionDialogTextFlow(): void {
-    this.giraffeReply.textFlow = [
+    this.giraffeDialogReply.textFlow = [
       {
         text: lionDialogText.giraffeTextReply_A.toString(),
         style: { size: 50, textColor: 0x000000 }

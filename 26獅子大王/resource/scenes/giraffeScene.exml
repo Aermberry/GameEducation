@@ -618,8 +618,8 @@
 		<e:Image id="rabbitDialogDisplay" source="dialogBox_png" x="676.58" y="296.85" scaleY="-1" scaleX="-1"
 		         anchorOffsetX="1.12" width="700" anchorOffsetY="0" height="350" rotation="3.38" alpha="0" />
 		<e:Image id="rabbirtDialogWiggle" source="dialogBox_png" x="491.58" y="175.66" scaleY="-1" scaleX="-1"
-		         anchorOffsetX="199.3" width="736.33" anchorOffsetY="114.88" height="429.11" rotation="3.38" alpha="1" />
-		<e:Label id="giraffeDialogReply" text="好像有什麼地方寫錯了\n，需要提示嗎？按\n下方的提示按鈕吧！" x="39.1" lineSpacing="25" size="50" y="-39.39" textColor="0x000000"
+		         anchorOffsetX="199.3" width="736.33" anchorOffsetY="114.88" height="429.11" rotation="3.38" alpha="0" />
+		<e:Label id="giraffeDialogReply" text="" x="39.1" lineSpacing="25" size="50" y="-39.39" textColor="0x000000"
 		         fontFamily="SourceHanSansHW-Bold"  verticalAlign="middle"/>
 
 
@@ -632,7 +632,7 @@
 		<e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51" width="700"
 		         anchorOffsetY="93.94" height="340" alpha="0" />
 		<e:Label text="" anchorOffsetX="0" width="490.01" anchorOffsetY="0" height="284.54" x="175.16" y="28.68"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
+		         textColor="0x020202" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
 		         verticalAlign="middle" />
 
 
@@ -649,6 +649,6 @@
 		<e:Label text="完成" size="90" x="0" y="0" fontFamily="SourceHanSansHW-Bold" textColor="0x000000" />
 		<ns1:achieveComponent width="20" height="20" x="236.91" y="35" />
 	</e:Group>
-	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1"  visible="false"/>
+	<e:Rect id="plantMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="1" />
 	<e:Rect id="endMaskRect" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" alpha="0"  visible="false"/>
 </e:Skin>
