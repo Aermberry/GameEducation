@@ -5,6 +5,9 @@ class ratComponent extends eui.Component implements eui.UIComponent {
 	private rat_active: eui.Image;
 	private rat_hover: eui.Image;
 
+	private startTime: number = 0;
+	private endTime: number = 0;
+	private timer: number = 0;
 
 	public constructor() {
 		super();
@@ -19,8 +22,39 @@ class ratComponent extends eui.Component implements eui.UIComponent {
 		super.childrenCreated();
 		this.Flustered.playLoopAsync();
 		this.eyes.playLoopAsync();
-		this.rat_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
-		this.rat_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+
+		if (egret.Capabilities.isMobile) {
+			this.rat_active.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.ontouchStartTime, this)
+			this.rat_active.addEventListener(egret.TouchEvent.TOUCH_END, this.ontouchEndTime, this)
+		}
+		else {
+			this.rat_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
+			this.rat_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+		}
+	}
+
+	//TOUCH_BEGIN 開始時間
+	private ontouchStartTime(): void {
+		let startSeconds = new Date();
+		this.startTime = startSeconds.getTime();
+	}
+
+	//TOUCH_END 結束時間
+	private ontouchEndTime(): void {
+		let endSeconds = new Date();
+		this.endTime = endSeconds.getTime();
+		this.timer = this.endTime - this.startTime;
+		let touchDown: TouchDown = new TouchDown(TouchDown.EVENT)
+		if (this.timer > 700 || this.timer == 700) {
+			this.dispatchEvent(touchDown);
+		}
+		else {
+			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.playVoice("sound 34_mp3");
+			var timer: egret.Timer = new egret.Timer(3000, 1)
+			timer.addEventListener(egret.TimerEvent.TIMER, ()=>{GameStart.optionsScene.getOptionInstance.toGameScene(new mouseScene())}, this);
+			timer.start();
+		}
 	}
 
 	private activeStatus(): void {

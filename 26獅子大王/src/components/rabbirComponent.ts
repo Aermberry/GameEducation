@@ -39,14 +39,18 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 		let endSeconds=new Date();
 		this.endTime=endSeconds.getTime();
 		this.timer=this.endTime-this.startTime;
+		let touchDown:TouchDown=new TouchDown(TouchDown.EVENT)
 		if(this.timer>700 || this.timer==700)
 		{
-			let touchDown:TouchDown=new TouchDown(TouchDown.EVENT)
-			// this.currentState="hover";
-			// GameStart.optionsScene.getOptionInstance.playVoice("sound 157_mp3")
 			this.dispatchEvent(touchDown);
 		}
-		
+		else {
+			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.playVoice("sound 157_mp3");
+			var timer:egret.Timer=new egret.Timer(3000,1)
+			timer.addEventListener(egret.TimerEvent.TIMER,()=>{GameStart.optionsScene.getOptionInstance.toGameScene(new rabbitScene())},this);
+			timer.start();
+		}
 	}
 
 	public activeStatus(): void {
@@ -60,9 +64,6 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 
 	public clickStatus(): void {
 		this.currentState = "click";
-		// setTimeout(function() {
-		// 	this.ableMouse();
-		// }, 100);
 	}
 
 	public disableMouse(): void {
@@ -71,14 +72,5 @@ class rabbirComponent extends eui.Component implements eui.UIComponent {
 
 	public ableMouse(): void {
 		this.rabbit_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
-	}
-
-	public order(): void {
-		var logoEvent: TouchDown = new TouchDown(TouchDown.EVENT);
-		//添加對應的約會信息
-		logoEvent._logo = "來自rabbitCompenent的信息";
-
-		//發送要求事件
-		this.dispatchEvent(logoEvent);
 	}
 }

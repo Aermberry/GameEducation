@@ -6,6 +6,10 @@ class girffeComponent extends eui.Component implements eui.UIComponent {
 	private giraffe_active: eui.Image;
 	private giraffe_hover: eui.Image;
 
+	private startTime: number = 0;
+	private endTime: number = 0;
+	private timer: number = 0;
+
 	public constructor() {
 		super();
 	}
@@ -21,8 +25,40 @@ class girffeComponent extends eui.Component implements eui.UIComponent {
 		this.eye.playLoopAsync();
 		this.eyeSmell.playLoopAsync();
 		this.flustedAnim.playLoopAsync();
-		this.giraffe_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
-		this.giraffe_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+
+		if (egret.Capabilities.isMobile) {
+			this.giraffe_active.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.ontouchStartTime, this)
+			this.giraffe_active.addEventListener(egret.TouchEvent.TOUCH_END, this.ontouchEndTime, this)
+		}
+		else {
+			this.giraffe_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
+			this.giraffe_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+		}
+	}
+
+	//TOUCH_BEGIN 開始時間
+	private ontouchStartTime(): void {
+		let startSeconds = new Date();
+		this.startTime = startSeconds.getTime();
+	}
+
+	//TOUCH_END 結束時間
+	private ontouchEndTime(): void {
+		let endSeconds = new Date();
+		this.endTime = endSeconds.getTime();
+		this.timer = this.endTime - this.startTime;
+		let touchDown: TouchDown = new TouchDown(TouchDown.EVENT)
+		if (this.timer > 700 || this.timer == 700) {
+			this.dispatchEvent(touchDown);
+		}
+		else {
+			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.playVoice("sound 69_mp3");
+			var timer: egret.Timer = new egret.Timer(3000, 1)
+			timer.addEventListener(egret.TimerEvent.TIMER, ()=>{GameStart.optionsScene.getOptionInstance.toGameScene(new giraffeScene())}, this);
+			timer.start();
+		}
+
 	}
 
 	private activeStatus(): void {

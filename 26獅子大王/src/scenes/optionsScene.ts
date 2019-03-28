@@ -93,13 +93,23 @@ module GameStart {
       this.onPlayVoice("sound 24_mp3");
       this.startLoadingAnimation();
 
-      // this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
-      // this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
-      // this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
-      // this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
-      // this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
-      // this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
-      this.rabbitComponent.addEventListener(TouchDown.EVENT, this.stayTouchStatus, this);
+      if (egret.Capabilities.isMobile) {
+        this.rabbitComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.rabbitComponent, "sound 157_mp3") }, this);
+        this.pigComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.pigComponent, "sound 13 (D3.mp3)_mp3") }, this);
+        this.sheepComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.sheepComponent, "sound 95_mp3") }, this);
+        this.snakeComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.snakeComponent, "sound 131_mp3") }, this);
+        this.giraffeComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.giraffeComponent, "sound 69_mp3") }, this);
+        this.ratComponent.addEventListener(TouchDown.EVENT, () => { this.stayTouchStatus(this.ratComponent, "sound 34_mp3") }, this);
+      }
+      else {
+        this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
+        this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
+        this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
+        this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
+        this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
+        this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
+      }
+
     }
 
     private rabbiteEvet(): void {
@@ -186,13 +196,13 @@ module GameStart {
       this.headTitleLabel.text = `請點選${str}`
     }
 
-    private toGameScene(sense: eui.Component): void {
+    public toGameScene(sense: eui.Component): void {
       var timer: egret.Timer = new egret.Timer(1000, 1)
-      timer.addEventListener(egret.TimerEvent.TIMER, () => { this.timerFunc(sense) }, this);
+      timer.addEventListener(egret.TimerEvent.TIMER, () => { this.changeScene(sense) }, this);
       timer.start();
     }
 
-    private timerFunc(sense: eui.Component) {
+    private changeScene(sense: eui.Component) {
       Main.instance.gotoScene(sense);
     }
 
@@ -299,13 +309,14 @@ module GameStart {
       return 0
     }
 
-    public async stayTouchStatus(evt: TouchDown): Promise<void> {
-      this.rabbitComponent.currentState = "hover";
-      await GameStart.optionsScene.getOptionInstance.playVoice("sound 157_mp3");
-      await this.timerFun();
+    public async stayTouchStatus(component: eui.Component, sound: string): Promise<void> {
+      component.currentState = "hover";
+      await GameStart.optionsScene.getOptionInstance.playVoice(sound);
+      await this.returnToActiveState();
     }
 
-    private timerFun() {
+    //切換到Active狀態
+    private returnToActiveState() {
       this.rabbitComponent.currentState = "active";
     }
   }

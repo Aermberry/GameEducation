@@ -3,8 +3,13 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 	private eyeAnim: egret.tween.TweenGroup;
 	private flusteredAnim: egret.tween.TweenGroup;
 	private eyes: egret.tween.TweenGroup;
+
 	private pig_active: eui.Image;
-	private pig_hover:eui.Image;
+	private pig_hover: eui.Image;
+
+	private startTime: number = 0;
+	private endTime: number = 0;
+	private timer: number = 0;
 
 	public constructor() {
 		super();
@@ -18,8 +23,40 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 		this.eyes.playLoopAsync();
-		this.pig_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
-		this.pig_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+
+		if (egret.Capabilities.isMobile) {
+			this.pig_active.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.ontouchStartTime, this)
+			this.pig_active.addEventListener(egret.TouchEvent.TOUCH_END, this.ontouchEndTime, this)
+		}
+		else {
+			this.pig_active.addEventListener(mouse.MouseEvent.MOUSE_OVER, this.hoverStatus, this)
+			this.pig_hover.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.activeStatus, this)
+		}
+	}
+
+	//TOUCH_BEGIN 開始時間
+	private ontouchStartTime(): void {
+		let startSeconds = new Date();
+		this.startTime = startSeconds.getTime();
+	}
+
+	//TOUCH_END 結束時間
+	private ontouchEndTime(): void {
+		let endSeconds = new Date();
+		this.endTime = endSeconds.getTime();
+		this.timer = this.endTime - this.startTime;
+		let touchDown: TouchDown = new TouchDown(TouchDown.EVENT)
+		if (this.timer > 700 || this.timer == 700) {
+			this.dispatchEvent(touchDown);
+		}
+		else {
+			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.playVoice("sound 13 (D3.mp3)_mp3");
+			var timer: egret.Timer = new egret.Timer(3000, 1)
+			timer.addEventListener(egret.TimerEvent.TIMER, ()=>{GameStart.optionsScene.getOptionInstance.toGameScene(new pigScene())}, this);
+			timer.start();
+		}
+
 	}
 
 	private activeStatus(): void {
