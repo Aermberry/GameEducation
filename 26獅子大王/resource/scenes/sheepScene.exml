@@ -571,7 +571,7 @@
 		<e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51" width="748.51"
 		         anchorOffsetY="93.94" height="380.06" alpha="0" />
 		<e:Label text="" anchorOffsetX="0" width="622.01" anchorOffsetY="0" height="408.54" x="181.22" y="-38.29"
-		         textColor="0x020202" bold="true" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
+		         textColor="0x020202" size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
 		          verticalAlign="middle"/>
 
 

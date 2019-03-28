@@ -165,7 +165,7 @@
 	<w:Config id="1672fa4de98"></w:Config>
 	<e:Image source="dialogBox_png" x="650.27" y="980.05" scaleX="1" scaleY="-1" anchorOffsetX="0" width="1248.52"
 	         anchorOffsetY="0" height="864.9" />
-	<e:Label id="commitLabel" text="" size="68" x="960.61" y="303.04" textColor="0x000000" bold="true" textAlign="left"
+	<e:Label id="commitLabel" text="" size="68" x="960.61" y="303.04" textColor="0x000000" textAlign="left"
 	         verticalAlign="middle" fontFamily="SourceHanSansHW-Bold" lineSpacing="25" />
 	<e:Image id="image" source="lionTail_png" x="750.27" y="1442.79" anchorOffsetX="372.73" anchorOffsetY="387.88" />
 	<e:Image source="lionSmell_png" x="0" y="801.5" />

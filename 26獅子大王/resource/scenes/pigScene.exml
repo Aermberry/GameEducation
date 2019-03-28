@@ -608,7 +608,7 @@
                  anchorOffsetY="6.06" height="380.06" alpha="0" />
         <e:Image id="linoeDialogWiggle" source="dialogBox_png" x="151.51" y="93.94" anchorOffsetX="151.51"
                  width="748.51" anchorOffsetY="93.94" height="380.06" alpha="0" />
-        <e:Label text="" anchorOffsetX="0" anchorOffsetY="0" x="169.1" y="87.16" textColor="0x020202" bold="true"
+        <e:Label text="" anchorOffsetX="0" anchorOffsetY="0" x="169.1" y="87.16" textColor="0x020202"
                  size="50" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left" verticalAlign="middle" />
     </e:Group>
     <e:Group id="pigDialogGroup" x="974.25" y="761.4" alpha="1" width="750" height="411">

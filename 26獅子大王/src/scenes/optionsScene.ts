@@ -48,8 +48,6 @@ module GameStart {
       this.giraffeScene = new giraffeScene();
       this.ratScene = new mouseScene();
       this.rabbitComponent = new rabbirComponent();
-
-
     }
 
     public static get getOptionInstance(): GameStart.optionsScene {
@@ -63,25 +61,25 @@ module GameStart {
     protected childrenCreated(): void {
       super.childrenCreated();
       mouse.enable(this.stage);
-      console.log(this)
 
-      // if (optionsScene.isLoop){
-      //   this.chooseOption();
-      // }
-      // else {
-      //    this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
-      //   optionsScene.isLoop=true;
-      // }
+      if (optionsScene.isLoop) {
+        this.chooseOption();
+      }
+      else {
+        this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+        optionsScene.isLoop = true;
+      }
 
-      this.startGames();
+      // this.startGames();
       // this.currentState = "giraffe"
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
 
-      this.currentState = "giraffe"
-      this.giraffeComponent.currentState = "active"
-      this.giraffeComponent.touchChildren = true;
+      // this.currentState = "giraffe"
+      // this.giraffeComponent.currentState = "active"
+      // this.giraffeComponent.touchChildren = true;
     }
+
 
     private startGames(): void {
       ((RES.getRes("sound 24_mp3") as egret.Sound).play(0) as egret.SoundChannel).volume = 0;
@@ -94,13 +92,14 @@ module GameStart {
       this.normal();
       this.onPlayVoice("sound 24_mp3");
       this.startLoadingAnimation();
-      this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
-      this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
-      this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
-      this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
-      this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
-      this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
-      console.log(optionsScene.statusIndex)
+
+      // this.rabbitComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.rabbiteEvet, this);
+      // this.pigComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.pigEvet, this)
+      // this.sheepComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.sheepEvet, this)
+      // this.snakeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.snakeEvet, this)
+      // this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
+      // this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
+      this.rabbitComponent.addEventListener(TouchDown.EVENT, this.stayTouchStatus, this);
     }
 
     private rabbiteEvet(): void {
@@ -141,8 +140,8 @@ module GameStart {
     private ratEvet(): void {
       this.ratComponent.disableMouse();
       this.ratComponent.clickStatus();
-      this.onPauseVoice()
-      this.toGameScene(this.ratScene)
+      this.onPauseVoice();
+      this.toGameScene(this.ratScene);
     }
 
     //開場動畫播放
@@ -298,6 +297,16 @@ module GameStart {
       console.log("option:" + 0)
       // 如果是數字就返回1
       return 0
+    }
+
+    public async stayTouchStatus(evt: TouchDown): Promise<void> {
+      this.rabbitComponent.currentState = "hover";
+      await GameStart.optionsScene.getOptionInstance.playVoice("sound 157_mp3");
+      await this.timerFun();
+    }
+
+    private timerFun() {
+      this.rabbitComponent.currentState = "active";
     }
   }
 }
