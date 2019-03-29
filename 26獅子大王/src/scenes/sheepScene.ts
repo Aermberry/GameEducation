@@ -52,9 +52,8 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	private optionsScene: GameStart.optionsScene;
 	private dialogTextReply: animalDialogText
 
-	public constructor(/*optionsScene:optionsScene*/) {
+	public constructor() {
 		super();
-		// this.optionsScene=optionsScene;
 	}
 
 	protected partAdded(partName: string, instance: any): void {
@@ -64,7 +63,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 	protected childrenCreated(): void {
 		super.childrenCreated();
 
-		// RES.getRes("sound 24_mp3").play(0, -1)
 		GameStart.optionsScene.getOptionInstance.onPlayVoice('sound 24_mp3')
 		this.judgmentstypes();
 		this.playAnim();
@@ -77,7 +75,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.stamperComponentGroup.addEventListener(mouse.MouseEvent.MOUSE_OUT, this.stamperNormal, this)
 		this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.stamperActive, this);
 		this.stamperComponent.addEventListener(egret.TouchEvent.TOUCH_END, () => {
-			// console.log("TOUCH_END")
 			this.initDrag();
 		}, this);
 
@@ -147,12 +144,9 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				// (this.sheepDialogGroup.$children[3] as eui.Group).visible = true;
 				this.sheepDialogText(10);
 				this.playVoice(animalDialogVoice.sheepVoice_a);
 				setTimeout(() => {
-					// (this.sheepDialogGroup.$children[3] as eui.Group).visible = false;
-					// (this.sheepDialogGroup.$children[4] as eui.Group).visible = true;
 					this.sheepDialogText(11);
 				}, 9500)
 			})
@@ -165,8 +159,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 
 		await this.playVoice(lionDialogVoice.lionVoice_sheepB).then(() => {
 			this.playVoice(animalDialogVoice.sheepVoice_b);
-			// (this.sheepDialogGroup.$children[4] as eui.Group).visible = false;
-			// (this.sheepDialogGroup.$children[5] as eui.Group).visible = true;
 			this.sheepDialogText(12);
 		});
 		this.changCard.playOnceAsync();
@@ -251,15 +243,11 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		this.bulbGroup.visible = false;
 		this.stamperGroup.visible = false;
 		this.stamperActiveColone.visible=false;
-		// this.sheepDialogGroup.$children[5].visible = false;
-		// this.sheepDialogGroup.$children[2].visible = true;
 		this.sheepDialogText(9);
 		this.playVoice(animalDialogVoice.sheepVoice_d).then(() => {
 			this.bulbGroup.visible = true;
 			this.stamperGroup.visible = true;
 			this.stamperActiveColone.visible=true;
-			// this.sheepDialogGroup.$children[5].visible = true;
-			// this.sheepDialogGroup.$children[2].visible = false;
 			this.sheepDialogText(12);
 		})
 	}
@@ -276,9 +264,6 @@ class sheepScene extends eui.Component implements eui.UIComponent {
 		await this.playVoice(lionDialogVoice.lionVoice_d).then(() => {
 			egret.Tween.get(this.sheepDialogGroup).to({ alpha: 1 }, 1000);
 		})
-		// this.sheepDialogGroup.$children[4].visible = false;
-		// this.sheepDialogGroup.$children[5].visible = false;
-		// this.sheepDialogGroup.$children[6].visible = true;
 		this.sheepDialogText(13);
 		this.sheep.source = "sheep_happy_png"
 		this.playVoice(animalDialogVoice.sheepVoice_c);

@@ -263,7 +263,7 @@
 		         textColor="0x020202" bold="true" size="43" lineSpacing="25" fontFamily="SourceHanSansHW-Bold" textAlign="left"
 		         verticalAlign="middle" />
 	</e:Group>
-	<e:Group id="componentGroup">
+	<e:Group>
 	<ns1:pigComponent id="pigComponent" x="103.39" y="293.04" anchorOffsetX="0" anchorOffsetY="0"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1" y.giraffe="238.49" alpha.pigCh="1" alpha.ratCH="1" alpha.sheepCH="1" alpha.giraffeCH="1" y.giraffeCH="238.49"/>
 	<ns1:snakeComponent id="snakeComponent" x="1138" y="293.04"  alpha="0" touchEnabled="false" touchChildren="false" alpha.snake="1" alpha.pig="1" alpha.rat="1" alpha.sheep="1" alpha.giraffe="1" y.giraffe="323.34" x.giraffe="1168.31" alpha.pigCh="1" alpha.ratCH="1" alpha.sheepCH="1" alpha.giraffeCH="1" y.giraffeCH="323.34" x.giraffeCH="1168.31"/>
 	<ns1:rabbirComponent id="rabbitComponent" x="947.9" y="309.07"  alpha="1" touchEnabled="false" touchChildren="false" alpha.rabbit="0" y.giraffe="287.85" y.giraffeCH="287.85"/>

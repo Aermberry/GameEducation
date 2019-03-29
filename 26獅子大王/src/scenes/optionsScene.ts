@@ -24,7 +24,6 @@ module GameStart {
     private ratScene: mouseScene;
 
     private lionDialogGroup: eui.Group;
-    private componentGroup: eui.Group;
     private invitation: eui.Group;
     public isTrueGroup: eui.Group;
 
@@ -62,30 +61,27 @@ module GameStart {
       super.childrenCreated();
       mouse.enable(this.stage);
 
-      // if (optionsScene.isLoop) {
-      //   this.chooseOption();
-      // }
-      // else {
-      //   this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
-      //   optionsScene.isLoop = true;
-      // }
+      if (optionsScene.isLoop) {
+        this.chooseOption();
+      }
+      else {
+        this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+        optionsScene.isLoop = true;
+      }
 
-      this.startGames();
+      //調試用環境
+      // this.startGames();
       // this.currentState = "giraffe"
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
-
-      this.currentState = "giraffe"
-      this.giraffeComponent.currentState = "active"
-      this.giraffeComponent.touchChildren = true;
     }
 
 
     private startGames(): void {
       ((RES.getRes("sound 24_mp3") as egret.Sound).play(0) as egret.SoundChannel).volume = 0;
       this.startButton.visible = false;
-      // startInit();
-      this.chooseOption();
+      startInit();
+      // this.chooseOption();
     }
 
     public chooseOption(): void {
@@ -109,7 +105,6 @@ module GameStart {
         this.giraffeComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.giraffeEvet, this)
         this.ratComponent.addEventListener(egret.TouchEvent.TOUCH_TAP, this.ratEvet, this)
       }
-
     }
 
     private rabbiteEvet(): void {
