@@ -44,6 +44,7 @@ class snakeComponent extends eui.Component implements eui.UIComponent {
 		}
 		else {
 			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.onPauseVoice()
 			GameStart.optionsScene.getOptionInstance.playVoice("sound 131_mp3");
 			var timer: egret.Timer = new egret.Timer(3000, 1)
 			timer.addEventListener(egret.TimerEvent.TIMER, () => { GameStart.optionsScene.getOptionInstance.toGameScene(new snakeScene()) }, this);

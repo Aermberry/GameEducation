@@ -67,11 +67,10 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
 
     mouse.enable(this.stage);
     mouse.setButtonMode(this.bulbGroup, true);
-    // RES.getRes("sound 24_mp3").play(0, -1)
+
     this.judgmentstypes();
     GameStart.optionsScene.getOptionInstance.onPlayVoice("sound 24_mp3");
     this.playAnim();
-    this.lionDialogTextFlow();
     this.bulbComponentGroup.addEventListener(
       mouse.MouseEvent.MOUSE_OVER,
       this.hover,
@@ -153,7 +152,6 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
         this.rabbitDialogBox.play();
         this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
       }).then(() => {
-				// (this.giraffeDialogGroup.$children[3] as eui.Group).visible = true;
 				this.giraffeDialogText(15);
         this.playVoice(animalDialogVoice.giraffe_a);
         setTimeout(() => {
@@ -358,22 +356,5 @@ class giraffeScene extends eui.Component implements eui.UIComponent {
   private toResultScene(): void {
     GameStart.optionsScene.getOptionInstance.onPauseVoice();
     Main.instance.gotoScene(new resultScene());
-  }
-
-  private lionDialogTextFlow(): void {
-    this.giraffeDialogReply.textFlow = [
-      {
-        text: lionDialogText.giraffeTextReply_A.toString(),
-        style: { size: 50, textColor: 0x000000 }
-      },
-      {
-        text: lionDialogText.giraffeTextReply_B.toString(),
-        style: { size: 50, textColor: 0xa00000 }
-      },
-      {
-        text: lionDialogText.giraffeTextReply_C.toString(),
-        style: { size: 50, textColor: 0x000000 }
-      }
-    ];
   }
 }

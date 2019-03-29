@@ -51,6 +51,7 @@ class pigComponent extends eui.Component implements eui.UIComponent {
 		}
 		else {
 			this.clickStatus();
+			GameStart.optionsScene.getOptionInstance.onPauseVoice()
 			GameStart.optionsScene.getOptionInstance.playVoice("sound 13 (D3.mp3)_mp3");
 			var timer: egret.Timer = new egret.Timer(3000, 1)
 			timer.addEventListener(egret.TimerEvent.TIMER, ()=>{GameStart.optionsScene.getOptionInstance.toGameScene(new pigScene())}, this);

@@ -621,10 +621,6 @@
 		         anchorOffsetX="199.3" width="736.33" anchorOffsetY="114.88" height="429.11" rotation="3.38" alpha="0" />
 		<e:Label id="giraffeDialogReply" text="" x="39.1" lineSpacing="25" size="50" y="-39.39" textColor="0x000000"
 		         fontFamily="SourceHanSansHW-Bold"  verticalAlign="middle"/>
-
-
-
-
 	</e:Group>
 	<e:Group id="lionDialogGroup" x="438.53" y="1108.88">
 		<e:Image id="lionDialogDisplay" source="dialogBox_png" x="-0.01" y="6.06" anchorOffsetX="-0.01" width="700"

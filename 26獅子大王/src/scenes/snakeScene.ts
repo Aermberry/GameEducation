@@ -111,7 +111,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 				this.rabbitDialogBox.play();
 				this.rabbitDialogBox.once(egret.Event.COMPLETE, resolve, this);
 			}).then(() => {
-				this.snakeDialogText(0);
+				this.snakeDialogText(2);
 				this.playVoice(animalDialogVoice.snakeVoice_a);
 				setTimeout(() => {
 					this.circleRect.visible = true;
@@ -140,7 +140,7 @@ class snakeScene extends eui.Component implements eui.UIComponent {
 
 
 		await lzlib.ThreadUtility.sleep(9500);
-		this.snakeDialogText(1);
+		this.snakeDialogText(3);
 		await this.playVoice(animalDialogVoice.snakeVoice_c);
 		GameStart.optionsScene.getOptionInstance.playVoice("sound 406_mp3");
 		egret.Tween.get(this.lionDialogGroup).to({ alpha: 0 }, 1000).call(() => {

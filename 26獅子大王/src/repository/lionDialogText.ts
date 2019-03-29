@@ -47,8 +47,5 @@ enum lionDialogText {
   pigTips_b ='時間：上午十時',
   sheepTips_a ='我（發卡人）的姓名\n應寫在哪兒？不如參\n考以下',
   sheepTips_b ='格式',
-  sheepTips_c ='吧！',
-  giraffeTextReply_A='卡上沒有發卡日期，\n讓我替你寫上',
-  giraffeTextReply_B='發卡\n日期',
-  giraffeTextReply_C='吧！',
+  sheepTips_c ='吧！'
 }

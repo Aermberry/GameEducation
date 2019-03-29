@@ -286,7 +286,7 @@ class pigScene extends eui.Component implements eui.UIComponent {
 			egret.Tween.get(this.pigDialogGroup).to({ alpha: 1 }, 1000);
 		})
 		this.pigDialogReply.visible=false;
-		this.pigDialogGroup.$children[5].visible = true;
+		this.pigDialogGroup.$children[4].visible = true;
 		this.pigImage.source = "pig_happy_png";
 		this.flusteredComponent.visible = false;
 		this.playVoice(animalDialogVoice.pigVoice_c);

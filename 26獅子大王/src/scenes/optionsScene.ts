@@ -62,22 +62,22 @@ module GameStart {
       super.childrenCreated();
       mouse.enable(this.stage);
 
-      if (optionsScene.isLoop) {
-        this.chooseOption();
-      }
-      else {
-        this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
-        optionsScene.isLoop = true;
-      }
+      // if (optionsScene.isLoop) {
+      //   this.chooseOption();
+      // }
+      // else {
+      //   this.startButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGames, this);
+      //   optionsScene.isLoop = true;
+      // }
 
-      // this.startGames();
+      this.startGames();
       // this.currentState = "giraffe"
       // this.giraffeComponent.currentState = "active"
       // this.giraffeComponent.touchChildren = true;
 
-      // this.currentState = "giraffe"
-      // this.giraffeComponent.currentState = "active"
-      // this.giraffeComponent.touchChildren = true;
+      this.currentState = "giraffe"
+      this.giraffeComponent.currentState = "active"
+      this.giraffeComponent.touchChildren = true;
     }
 
 
@@ -312,12 +312,12 @@ module GameStart {
     public async stayTouchStatus(component: eui.Component, sound: string): Promise<void> {
       component.currentState = "hover";
       await GameStart.optionsScene.getOptionInstance.playVoice(sound);
-      await this.returnToActiveState();
+      await this.returnToActiveState(component);
     }
 
     //切換到Active狀態
-    private returnToActiveState() {
-      this.rabbitComponent.currentState = "active";
+    private returnToActiveState(component: eui.Component) {
+      component.currentState = "active";
     }
   }
 }
